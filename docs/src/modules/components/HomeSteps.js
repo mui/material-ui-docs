@@ -77,7 +77,7 @@ function HomeSteps(props) {
             className={classes.markdownElement}
             text={`
   \`\`\`sh
-  $ npm install material-ui@next
+  $ npm install @material-ui/core
   \`\`\`
                 `}
           />
@@ -88,7 +88,7 @@ function HomeSteps(props) {
             className={classes.markdownElement}
             text={`
   \`\`\`html
-  <script src="https://unpkg.com/material-ui@next/umd/material-ui.production.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@material-ui/core/umd/material-ui.production.min.js" crossorigin="anonymous"></script>
   \`\`\`
                 `}
           />
@@ -127,7 +127,7 @@ function HomeSteps(props) {
             text={`
   \`\`\`jsx
   import React from 'react';
-  import Button from 'material-ui/Button';
+  import Button from '@material-ui/core/Button';
 
   const App = () => (
     <Button variant="raised" color="primary">
