@@ -8,7 +8,7 @@
 
 [React](http://facebook.github.io/react/) components that implement [Google's Material Design](https://www.google.com/design/spec/material-design/introduction.html).
 
-[![npm package](https://img.shields.io/npm/v/material-ui/next.svg)](https://www.npmjs.com/package/material-ui)
+[![npm package](https://img.shields.io/npm/v/@material-ui/core.svg)](https://www.npmjs.com/package/material-ui)
 [![npm download](https://img.shields.io/npm/dm/material-ui.svg)](https://www.npmjs.com/package/material-ui)
 [![CircleCI](https://img.shields.io/circleci/project/github/mui-org/material-ui/v1-beta.svg)](https://circleci.com/gh/mui-org/material-ui/tree/v1-beta)
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-f81a65.svg)](https://gitter.im/callemall/material-ui?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -32,13 +32,13 @@ Material-UI is available as an [npm package](https://www.npmjs.com/package/mater
 npm install material-ui
 ```
 
-**[Pre-release channel (v1-beta)](https://material-ui-next.com/)**
+**[Pre-release channel (v1-rc)](https://material-ui-next.com/)**
 ([Recommended](#should-i-start-with-v1-beta) for new projects.)
 ```sh
-npm install material-ui@next
+npm install @material-ui/core
 ```
 
-Please note that `@next` will only point to pre-releases; to get the latest stable release use `@latest` instead.
+Please note that `@material-ui/core` will only point to pre-releases; to get the latest stable release use `@latest` instead.
 
 ## Supporting Material-UI
 
