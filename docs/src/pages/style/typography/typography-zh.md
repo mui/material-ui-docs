@@ -41,7 +41,7 @@ import 'typeface-roboto';
 
 ## 主题
 
-In some situations you might not be able to use the `Typography` component. Hopefully, you might be able to take advantage of the [`typography`](/customization/default-theme/?expend-path=$.typography) keys of the theme.
+在某些情况下，您可能无法使用 `Typography` 组件。 希望您可以利用主题的 [`排版`](/customization/default-theme/?expend-path=$.typography) 键。
 
 {{"demo": "pages/style/typography/TypographyTheme.js"}}
 
