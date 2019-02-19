@@ -68,7 +68,7 @@ We create a lot of React elements that will never be mounted. It's wasteful
 
 Таким образом, вы получаете преимущество [ленивых вычислений React render](https://overreacted.io/react-as-a-ui-runtime/#lazy-evaluation). The `TableComponent` render method will only be evaluated when opening the modal.
 
-## Accessibility
+## Доступность
 
 - Be sure to add `aria-labelledby="id..."`, referencing the modal title, to the `Modal`. Additionally, you may give a description of your modal with the `aria-describedby="id..."` property on the `Modal`.
 
