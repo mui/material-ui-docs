@@ -384,7 +384,7 @@ This component takes a `theme` property, and makes the `theme` available down th
 
 You can see the full properties API in [this dedicated page](/api/mui-theme-provider/).
 
-#### Examples
+#### Beispiele
 
 ```jsx
 import React from 'react';
@@ -417,7 +417,7 @@ Generate a theme base on the options received.
 
 `theme` (*Object*): A complete, ready to use theme object.
 
-#### Examples
+#### Beispiele
 
 ```js
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -447,7 +447,7 @@ Provide the `theme` object as a property of the input component so it can be use
 
 `Component`: The new component created.
 
-#### Examples
+#### Beispiele
 
 ```js
 import { withTheme } from '@material-ui/core/styles';
