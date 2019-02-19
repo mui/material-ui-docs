@@ -93,7 +93,7 @@ In the following demo, we change the rendered DOM element (*em*, <u>u</u>, ~~del
 
 `media query`: A media query string ready to be used with JSS.
 
-#### Examples
+#### Exemplos
 
 ```js
 const styles = theme => ({
@@ -118,7 +118,7 @@ const styles = theme => ({
 
 `media query`: A media query string ready to be used with JSS, which matches screen widths less than and including the screen size given by the breakpoint key.
 
-#### Examples
+#### Exemplos
 
 ```js
 const styles = theme => ({
@@ -144,7 +144,7 @@ const styles = theme => ({
 
 `media query`: A media query string ready to be used with JSS, which matches screen widths greater than and including the screen size given by the breakpoint key.
 
-#### Examples
+#### Exemplos
 
 ```js
 const styles = theme => ({
@@ -171,7 +171,7 @@ const styles = theme => ({
 
 `media query`: A media query string ready to be used with JSS, which matches screen widths greater than the screen size given by the breakpoint key in the first argument and less than the the screen size given by the breakpoint key in the second argument.
 
-#### Examples
+#### Exemplos
 
 ```js
 const styles = theme => ({
@@ -224,7 +224,7 @@ const theme = createMuiTheme({
 
 `higher-order component`: Should be used to wrap a component.
 
-#### Examples
+#### Exemplos
 
 ```jsx
 import withWidth, { isWidthUp } from '@material-ui/core/withWidth';
