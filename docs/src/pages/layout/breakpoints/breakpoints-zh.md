@@ -4,28 +4,37 @@
 
 为了获得最佳的用户体验，material design 的接口需要在各种断点范围下自适应布局需要。 Material-UI 使用了原先 [specification](https://material.io/design/layout/responsive-layout-grid.html#breakpoints) 的 **简化** 实现。
 
-每个断点都与 * 固定 * 屏幕宽度匹配:
+Each breakpoint (a key) matches with a *fixed* screen width (a value):
 
-- ** xs **, 超小: 0px 或更大
-- ** sm **, 小: 600px 或更大
-- ** md **, 中等: 960px 或更大
-- ** lg **, 大: 1280px 或更大
-- ** xl **, 超大: 1920px 或更大
+- **xs,** extra-small: 0px
+- **sm,** small: 600px
+- **md,** medium: 960px
+- **lg,** large: 1280px
+- **xl,** extra-large: 1920px
 
-这些值可以自定义。 这些值被用于主题设定，你可以在 [`breakpoints.values`](/customization/default-theme/?expend-path=$.breakpoints.values) 对象上找到它们。
+These [breakpoint values](/customization/default-theme/?expend-path=$.breakpoints.values) are used to determine breakpoint ranges. A range starts from the breakpoint value inclusive, to the next breakpoint value exclusive:
 
-许多组件内部都使用了断点来实现响应式要求，同时你也可以利用断点来控制应用的布局，这可借助于 [Grid](/layout/grid/) 和 [Hidden](/layout/hidden/) 组件。
+```js
+value         |0px     600px    960px    1280px   1920px
+key           |xs      sm       md       lg       xl
+screen width  |--------|--------|--------|--------|-------->
+range         |   xs   |   sm   |   md   |   lg   |   xl
+```
+
+这些值可以自定义。 You will find them in the theme, in the [`breakpoints.values`](/customization/default-theme/?expend-path=$.breakpoints.values) object.
+
+The breakpoints are used internally in various components to make them responsive, but you can also take advantage of them for controlling the layout of your application through the [Grid](/layout/grid/) and [Hidden](/layout/hidden/) components.
 
 ## CSS 媒体查询
 
-CSS 媒体查询是让 UI 具有响应性的惯用做法。 我们提供了四个 [CSS-in-JS](/customization/css-in-js/) 的工具函数来实现媒体查询:
+CSS media queries is the idiomatic approach to make your UI responsive. We provide four [CSS-in-JS](/customization/css-in-js/) helpers to do so:
 
 - [theme.breakpoints.up(key)](#theme-breakpoints-up-key-media-query)
 - [theme.breakpoints.down(key)](#theme-breakpoints-down-key-media-query)
 - [theme.breakpoints.only(key)](#theme-breakpoints-only-key-media-query)
 - [theme.breakpoints.between(start, end)](#theme-breakpoints-between-start-end-media-query)
 
-在下面的演示中, 我们根据屏幕宽度更改背景颜色 (红色、蓝色和绿色)。
+In the following demo, we change the background color (red, blue & green) based on the screen width.
 
 ```jsx
 const styles = theme => ({
@@ -48,15 +57,15 @@ const styles = theme => ({
 
 ## JavaScript媒体查询
 
-有时, 使用 CSS 是不够的。 您可能希望基于 JavaScript 中的断点值更改 React 渲染树。
+Sometimes, using CSS isn't enough. You might want to change the React rendering tree based on the breakpoint value, in JavaScript.
 
-### useMediaQuery hook
+### useMediaQuery钩子
 
-您可以在 [useMediaQuery](/layout/use-media-query/) 页面上了解更多信息。
+You can learn more on the [useMediaQuery](/layout/use-media-query/) page.
 
 ### withWidth()
 
-> ⚠️[ useMediaQuery将弃用此高阶组件](/layout/use-media-query/)当React的钩子释放稳定时挂钩。
+> ⚠️ 如果React的钩子发布稳定版本，那么 [MeuserMediaQuery](/layout/use-media-query/) 钩子，这个更高订单组件将被废弃。
 
 ```jsx
 import withWidth from '@material-ui/core/withWidth';
@@ -68,7 +77,7 @@ function MyComponent(props) {
 export default withWidth()(MyComponent);
 ```
 
-在下面的演示中，我们更改了渲染的DOM元素（*em* ，<u>u</u> ，~~ del ~~ & span）基于屏幕宽度。
+In the following demo, we change the rendered DOM element (*em*, <u>u</u>, ~~del~~ & span) based on the screen width.
 
 {{"demo": "pages/layout/breakpoints/WithWidth.js"}}
 
@@ -107,7 +116,7 @@ const styles = theme => ({
 
 #### 返回结果
 
-`media query` ：准备与JSS一起使用的媒体查询字符串。
+`media query`: A media query string ready to be used with JSS, which matches screen widths less than and including the screen size given by the breakpoint key.
 
 #### 例子
 
@@ -133,7 +142,7 @@ const styles = theme => ({
 
 #### 返回结果
 
-`media query` ：准备与JSS一起使用的媒体查询字符串。
+`media query`: A media query string ready to be used with JSS, which matches screen widths greater than and including the screen size given by the breakpoint key.
 
 #### 例子
 
@@ -160,7 +169,7 @@ const styles = theme => ({
 
 #### 返回结果
 
-`media query` ：准备与JSS一起使用的媒体查询字符串。
+`media query`: A media query string ready to be used with JSS, which matches screen widths greater than the screen size given by the breakpoint key in the first argument and less than the the screen size given by the breakpoint key in the second argument.
 
 #### 例子
 
@@ -180,7 +189,7 @@ const styles = theme => ({
 
 ### `withWidth([options]) => higher-order component`
 
-注入`width`属性。 它不会修改传递给它的组件；相反，它返回一个新组件。 这个`width`断点属性与当前屏幕宽度匹配。 It can be one of the following breakpoints:
+Inject a `width` property. It does not modify the component passed to it; instead, it returns a new component. This `width` breakpoint property match the current screen width. It can be one of the following breakpoints:
 
 ```ts
 type Breakpoint = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
@@ -209,7 +218,7 @@ const theme = createMuiTheme({
 });
 ```
 
-- ` options.resizeInterval ` （*数* [可选的]）：默认为166，对应于60 Hz的10帧。 响应屏幕调整大小事件之前等待的毫秒数。
+- `options.resizeInterval` (*Number* [optional]): 默认为166，对应于60 Hz的10帧。 响应屏幕调整大小事件之前等待的毫秒数。
 
 #### 返回结果
 
