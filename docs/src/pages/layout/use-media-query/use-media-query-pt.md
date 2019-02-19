@@ -89,7 +89,7 @@ function MyComponent() {
 
 `matches`: Matches is `true` if the document currently matches the media query and `false` when it does not.
 
-#### Examples
+#### Exemplos
 
 ```jsx
 import React from 'react';
