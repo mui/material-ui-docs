@@ -189,7 +189,7 @@ const styles = theme => ({
 
 ### `withWidth([options]) => higher-order component`
 
-Inject a `width` property. It does not modify the component passed to it; instead, it returns a new component. This `width` breakpoint property match the current screen width. It can be one of the following breakpoints:
+Вставить свойство `width`. Оно не изменяет переданный в него компонент; вместо этого оно возвращает новый компонент. Свойство точки останова `width` соответствует текущей ширине экрана. Это может быть одна из следующих точек останова:
 
 ```ts
 type Breakpoint = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
