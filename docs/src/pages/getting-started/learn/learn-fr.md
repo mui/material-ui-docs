@@ -1,6 +1,6 @@
 # Apprendre Materiel-UI
 
-<p class="description">Nouveau sur Material-UI? C'est facile à apprendre si vous savez par où commencer ! Ce guide vous aidera à démarrer rapidement.</p>
+<p class="description">Nouveau sur Material-UI ? C'est facile à apprendre si vous savez par où commencer ! Ce guide vous aidera à démarrer rapidement.</p>
 
 Les utilisateurs de Material-UI viennent d'horizons et de styles d'apprentissage différents. Que vous préfériez une approche plus théorique ou pratique, nous espérons que cette section vous sera utile. Comme toute technologie inconnue, Material-UI a une courbe d'apprentissage. Avec de la pratique et un peu de patience, vous comprendrez vite.
 
