@@ -9,7 +9,7 @@ Material-UI hat das Ziel, eine solide Grundlage für dynamische UIs zu schaffen.
 In previous versions, Material-UI has used LESS, then a custom inline-style solution to write the style of the components, but these approaches have proven to be limited. Most recently, we have [moved toward](https://github.com/oliviertassinari/a-journey-toward-better-style) a *CSS-in-JS* solution. It **unlocks many great features** (theme nesting, dynamic styles, self-support, etc.). We think that this is the future:
 
 - [Eine vereinheitlichte Styling-Sprache](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660)
-- [Convert SCSS (Sass) to CSS-in-JS](https://egghead.io/courses/convert-scss-sass-to-css-in-js)
+- [SCSS (Sass) in CSS-in-JS umwandeln](https://egghead.io/courses/convert-scss-sass-to-css-in-js)
 
 Material-UI's styling solution is inspired by many other CSS-in-JS libraries like [styled-components](https://www.styled-components.com/) and [emotion](https://emotion.sh/).
 
