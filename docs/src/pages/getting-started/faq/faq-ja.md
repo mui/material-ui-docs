@@ -85,7 +85,7 @@ const theme = createMuiTheme({
 
 私達は[サードパーティ製ルーティングライブラリ](/demos/buttons/#third-party-routing-library)で`ButtonBase`コンポーネントの使い方をドキュメント化しました。 私たちのインタラクティブなコンポーネントの多くはButtonBaseコンポーネントを内部的に使っています：`Button`, `MenuItem`, `<ListItem button />`, `Tab`, などなど。 それらの例を参考にしてください。
 
-## How do I combine the `withStyles()` and `withTheme` HOCs?
+## `withStyles()`と`withTheme`HOCはどうやって結合すればいいですか？
 
 さまざまなオプションがあります。
 
@@ -127,7 +127,7 @@ Material-UIをサポートする方法はたくさんあります。
 - [ドキュメント](https://github.com/mui-org/material-ui/tree/next/docs)を改善する 
 - 他の人が始めるのを手伝う
 - [ライブラリを布教する](https://twitter.com/MaterialUI) 
-- Answer questions on [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) or on [Spectrum](https://spectrum.chat/material-ui).
+- [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui)や[Spectrum](https://spectrum.chat/material-ui)で質問に答える
 
 商用プロジェクトでMaterial-UIを使用していて、スポンサーになることによってその継続的な開発を支援したい場合は、 あるいはサブや趣味のプロジェクトで**スポンサー**になりたい場合は、[OpenCollective](https://opencollective.com/material-ui)を使って行うことができます。
 
