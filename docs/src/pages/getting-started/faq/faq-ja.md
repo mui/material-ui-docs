@@ -2,7 +2,7 @@
 
 <p class="description">特定の問題で立ち往生していますか？ よくある質問でこれらのよくある問題のいくつかを最初に確認してください。</p>
 
-それでも探しているものが見つからない場合は、[gitter](https://gitter.im/mui-org/material-ui)というコミュニティに質問することができます。 使い方の質問やその他のnon-issuesではない場合は、[StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) やGithub issuesの代わりに質問できます。 `material-ui`というStackOverflowタグがあります。 質問にはそのタグをつけてください。
+それでも探しているものが見つからない場合は、[gitter](https://gitter.im/mui-org/material-ui)というコミュニティに質問することができます。 使い方の質問やその他重要ではない問題は、Github issuesではなく[StackOverflow](https://stackoverflow.com/questions/tagged/material-ui)を使ってください。 `material-ui`というStackOverflowタグがあります。 質問にはそのタグをつけてください。
 
 ## productionビルドでコンポーネントが正しくレンダリングされないのはなぜですか？
 
