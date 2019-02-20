@@ -12,7 +12,7 @@
 - ** lg， **大：1280px
 - ** xl， **超大：1920px
 
-这些[断点值](/customization/default-theme/?expend-path=$.breakpoints.values)用于确定断点范围。 A range starts from the breakpoint value inclusive, to the next breakpoint value exclusive:
+这些[断点值](/customization/default-theme/?expend-path=$.breakpoints.values)用于确定断点范围。 每个范围包含起始断点，不包含终止断点。
 
 ```js
 value         |0px     600px    960px    1280px   1920px
@@ -61,7 +61,7 @@ const styles = theme => ({
 
 ### useMediaQuery钩子
 
-You can learn more on the [useMediaQuery](/layout/use-media-query/) page.
+您可以在 [userMediaQuery](/layout/use-media-query/) 页面上了解更多信息。
 
 ### withWidth()
 
