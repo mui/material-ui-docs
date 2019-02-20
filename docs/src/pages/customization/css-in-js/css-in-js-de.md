@@ -14,7 +14,7 @@ In previous versions, Material-UI has used LESS, then a custom inline-style solu
 - [Die Zukunft von komponentenbasierten Styling](https://medium.freecodecamp.org/css-in-javascript-the-future-of-component-based-styling-70b161a79a32)
 - [SCSS (Sass) in CSS-in-JS umwandeln](https://egghead.io/courses/convert-scss-sass-to-css-in-js)
 
-So, you may have noticed in the demos what *CSS-in-JS* looks like. We use the higher-order component created by [`withStyles`](#api) to inject an array of styles into the DOM as CSS, using JSS. Hier ist ein Beispiel:
+Vielleicht hast du es in den Demos bemerkt, wie *CSS-in-JS* aussieht. We use the higher-order component created by [`withStyles`](#api) to inject an array of styles into the DOM as CSS, using JSS. Hier ist ein Beispiel:
 
 {{"demo": "pages/customization/css-in-js/CssInJs.js"}}
 
