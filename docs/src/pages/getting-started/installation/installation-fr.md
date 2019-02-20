@@ -26,7 +26,7 @@ Materiel-UI a été conçu avec la police [Roboto](https://fonts.google.com/spec
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
 ```
 
-Sinon, si vous utilisez JSX sur HTML pour le header:
+Sinon, si vous utilisez JSX à la place du HTML pour générer le header:
 
 ```jsx
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
@@ -34,13 +34,13 @@ Sinon, si vous utilisez JSX sur HTML pour le header:
 
 ## Polices d'icônes
 
-Pour utiliser le composant de police `Icon`, vous devez d’abord ajouter la police d'icônes [Material](https://material.io/tools/icons/). Voici [quelques instructions](/style/icons/#font-icons) sur la façon de le faire. Par exemple, via Google Web Fonts:
+Pour utiliser le composant de police `Icon`, vous devez d’abord ajouter la police d'icônes [Material](https://material.io/tools/icons/). Voici [quelques instructions](/style/icons/#font-icons) sur la façon de le faire. Par exemple, via Google Web Fonts :
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 ```
 
-Sinon, si vous utilisez JSX sur HTML pour le header:
+Sinon, si vous utilisez JSX à la place du HTML pour générer le header:
 
 ```jsx
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
