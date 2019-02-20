@@ -1,4 +1,4 @@
-# 球队
+# 团队
 
 <p class="description">Material-UI的创始团队和核心贡献者概述。</p>
 
