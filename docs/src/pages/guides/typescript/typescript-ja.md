@@ -10,9 +10,9 @@
 
 `withStyles`をTypeScriptで使うのは少し厄介ですが、それをできるだけ簡単に扱うためのユーティリティがいくつかあります。
 
-### Using `createStyles` to defeat type widening
+### `createStyles`を使って型の拡大を打倒する
 
-A frequent source of confusion is TypeScript's [type widening](https://blog.mariusschulz.com/2017/02/04/typescript-2-1-literal-type-widening), which causes this example not to work as expected:
+よくある混乱の原因は、TypeScriptの[型の拡大(widening)](https://blog.mariusschulz.com/2017/02/04/typescript-2-1-literal-type-widening)です。これにより、この例は期待通りに動作しません。
 
 ```ts
 const styles = {
@@ -28,7 +28,7 @@ withStyles(styles);
 //           Type 'string' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "column" | "column-reverse" | "row"...'.
 ```
 
-The problem is that the type of the `flexDirection` property is inferred as `string`, which is too arbitrary. To fix this, you can pass the styles object directly to `withStyles`:
+問題は、`flexDirection`プロパティの型が`string`として型推論されることです。これは独断的すぎます。 これを修正するため、styleオブジェクトを直接`withStyles`に渡します:
 
 ```ts
 withStyles({
