@@ -8,7 +8,7 @@
 
 ## `withStyles`の使い方
 
-Using `withStyles` in TypeScript can be a little tricky, but there are some utilities to make the experience as painless as possible.
+`withStyles`をTypeScriptで使うのは少し厄介ですが、それをできるだけ簡単に扱うためのユーティリティがいくつかあります。
 
 ### Using `createStyles` to defeat type widening
 
