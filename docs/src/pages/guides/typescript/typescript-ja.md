@@ -4,9 +4,9 @@
 
 [Create React AppでのTypeScript](https://github.com/mui-org/material-ui/tree/next/examples/create-react-app-with-typescript)の使用例を参考にしてください。 TypeScript 2.8以上が必要です。
 
-私たちの定義は、こちらの[tsconfig.json](https://github.com/mui-org/material-ui/tree/next/tsconfig.json) でテストしています。 Using a less strict `tsconfig.json` or omitting some of the libraries might cause errors.
+私たちの定義は、こちらの[tsconfig.json](https://github.com/mui-org/material-ui/tree/next/tsconfig.json) でテストしています。 あまり厳密でない`tsconfig.json`を使ったり、一部のライブラリを省略した場合、エラーが発生する可能性があります。
 
-## Usage of `withStyles`
+## `withStyles`の使い方
 
 Using `withStyles` in TypeScript can be a little tricky, but there are some utilities to make the experience as painless as possible.
 
