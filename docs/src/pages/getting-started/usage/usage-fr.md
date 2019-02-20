@@ -2,7 +2,7 @@
 
 <p class="description">Commencez rapidement avec React et Material-UI.</p>
 
-Les composants Material-UI fonctionnent de manière isolée. **Ils sont auto-soutien**, ils d'injecter, et seulement injecter, les styles nécessaires. Ils ne s'appuient sur aucune feuille de style globale telle que [normalize.css](https://github.com/necolas/normalize.css/).
+Les composants Material-UI fonctionnent de manière isolée. **Ils sont autonomes**, ils injectent le minimum de styles nécessaires. Ils ne s'appuient sur aucune feuille de style globale telle que [normalize.css](https://github.com/necolas/normalize.css/).
 
 Vous pouvez utiliser n'importe lequel des composants comme indiqué dans la documentation. Veuillez vous référer à chaque [page de démonstration](/demos/buttons/) pour voir comment les composants doivent être importés.
 
@@ -26,7 +26,7 @@ function App() {
 ReactDOM.render(<App />, document.querySelector('#app'));
 ```
 
-Yes, this really is all you need to get started, as you can see in this live and interactive demo:
+Oui, c'est tout ce dont vous avez besoin pour commencer, comme vous pouvez le voir dans cette démo en direct et interactive :
 
 {{"demo": "pages/getting-started/usage/Usage.js", "hideHeader": true}}
 
@@ -50,11 +50,11 @@ Material-UI provides an optional [CssBaseline](/style/css-baseline/) component. 
 
 ## Documentation versionnée
 
-Cette documentation reflète toujours la dernière version stable de Material-UI. Vous pouvez trouver les anciennes versions de la documentation sur une [page séparée](/versions/) .
+Cette documentation reflète toujours la dernière version stable de Material-UI. Vous pouvez trouver les anciennes versions de la documentation sur une [page séparée](/versions/).
 
 ## Etapes suivantes
 
-Maintenant que vous avez une idée de la configuration de base, il est temps d'en apprendre d'avantage sur:
+Maintenant que vous avez une idée de la configuration de base, il est temps d'en apprendre d'avantage sur :
 
 - How to provide [the Material Design font and typography](/style/typography/).
 - Comment tirer parti de la [solution de thème](/customization/themes/).
