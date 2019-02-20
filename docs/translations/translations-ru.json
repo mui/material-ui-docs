@@ -1,7 +1,7 @@
 {
   "topBanner": "⚠️ ({{versionNumber}}) This is the documentation for the `next` release.",
   "homeQuickWord": "A quick word from our sponsors:",
-  "editWebsiteColors": "Редактирование цветов сайт",
+  "editWebsiteColors": "Изменить цвета сайта",
   "toggleTheme": "Переключить светлую/темную тему",
   "toggleRTL": "Переключить справа-налево/слева-направо",
   "github": "Репозиторий на GitHub",
