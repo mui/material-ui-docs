@@ -1,8 +1,8 @@
 # Exemples de Projets
 
-<p class="description">Vous cherchez un exemple de projet pour commencer?</p>
+<p class="description">Vous cherchez un exemple de projet pour commencer ?</p>
 
-Nous hébergeons quelques exemples de projets que vous pouvez trouver dans le référentiel [GitHub.](https://github.com/mui-org/material-ui) sous les [`/exemples`](https://github.com/mui-org/material-ui/tree/next/examples) dossier:
+Nous hébergeons quelques exemples de projets que vous pouvez trouver dans le référentiel [GitHub](https://github.com/mui-org/material-ui) sous les [`/exemples`](https://github.com/mui-org/material-ui/tree/next/examples) dossier :
 
 - [Create React App](https://github.com/mui-org/material-ui/tree/next/examples/create-react-app-next)
 - [Gatsby](https://github.com/mui-org/material-ui/tree/next/examples/gatsby-next)
