@@ -11,8 +11,8 @@ Material-UI hat das Ziel, eine solide Grundlage für dynamische UIs zu schaffen.
 In previous versions, Material-UI has used LESS, then a custom inline-style solution to write the style of the components, but these approaches have proven to be limited. Most recently, we have [moved toward](https://github.com/oliviertassinari/a-journey-toward-better-style) a *CSS-in-JS* solution. It **unlocks many great features** (theme nesting, dynamic styles, self-support, etc.). Wir denken, das ist die Zukunft:
 
 - [Eine vereinheitlichte Styling-Sprache](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660)
-- [The future of component-based styling](https://medium.freecodecamp.org/css-in-javascript-the-future-of-component-based-styling-70b161a79a32)
-- [Convert SCSS (Sass) to CSS-in-JS](https://egghead.io/courses/convert-scss-sass-to-css-in-js)
+- [Die Zukunft von komponentenbasierten Styling](https://medium.freecodecamp.org/css-in-javascript-the-future-of-component-based-styling-70b161a79a32)
+- [SCSS (Sass) in CSS-in-JS umwandeln](https://egghead.io/courses/convert-scss-sass-to-css-in-js)
 
 So, you may have noticed in the demos what *CSS-in-JS* looks like. We use the higher-order component created by [`withStyles`](#api) to inject an array of styles into the DOM as CSS, using JSS. Hier ist ein Beispiel:
 
