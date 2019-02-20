@@ -32,11 +32,11 @@ Oui, c'est tout ce dont vous avez besoin pour commencer, comme vous pouvez le vo
 
 ## Variables globales
 
-Material-UI usage experience can be improved with a handful of important globals that you’ll need to be aware of.
+L'expérience d'utilisation de Material-UI peut être améliorée avec une poignée d'importants globaux que vous devez connaître.
 
-### Responsive meta tag
+### La balise meta responsive design (vue adaptative)
 
-Material-UI is developed mobile first, a strategy in which we first write code for mobile devices and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your `<head>` element.
+Material-UI est d'abord développé sur mobile, stratégie dans laquelle nous écrivons d'abord du style pour les appareils mobiles, puis mettons à l'échelle les composants à l'aide des media queries CSS. Pour que le rendu et le zoom tactile soient corrects pour tous les périphériques, ajoutez la balise meta viewport à votre élément `<head>`.
 
 ```html
 <meta
@@ -46,7 +46,7 @@ Material-UI is developed mobile first, a strategy in which we first write code f
 
 ### CssBaseline
 
-Material-UI provides an optional [CssBaseline](/style/css-baseline/) component. It's fixing some inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.
+Material-UI fournit un composant [CssBaseline](/style/css-baseline/) facultatif. Il corrige certaines incohérences entre les navigateurs et les appareils tout en fournissant des comportement par défaut à des éléments HTML communs.
 
 ## Documentation versionnée
 
@@ -56,6 +56,6 @@ Cette documentation reflète toujours la dernière version stable de Material-UI
 
 Maintenant que vous avez une idée de la configuration de base, il est temps d'en apprendre d'avantage sur :
 
-- How to provide [the Material Design font and typography](/style/typography/).
+- Comment fournir [la police et la typographie Material Design](/style/typography/) .
 - Comment tirer parti de la [solution de thème](/customization/themes/).
-- How to [override](/customization/overrides/) the look and feel of the components.
+- Comment [modifier](/customization/overrides/), l'apparence des composants.
