@@ -1,5 +1,5 @@
 {
-  "topBanner": "⚠️ ({{versionNumber}}) il s’agit de la documentation de la version `next`.",
+  "topBanner": "⚠️ ({{versionNumber}}) Il s’agit de la documentation de la version `next`.",
   "homeQuickWord": "Un mot rapide de nos sponsors :",
   "editWebsiteColors": "Modifier les couleurs du site",
   "toggleTheme": "Basculer le thème de couleurs \"clair/sombre\"",
@@ -30,7 +30,7 @@
   "thanks": "Merci !",
   "adTitle": "Cette annonce est conçu pour soutenir l'Open Source.",
   "editPage": "Aidez à traduire cette page",
-  "tableOfContents": "Matières",
+  "tableOfContents": "Sommaire",
   "component": "Kit de composants",
   "mdbProDescr": "Material Dashboard Pro React est un theme Admin Material-UI premium.",
   "mkProDescr": "Un theme de composants premium Material-UI basé sur Material Design.",
