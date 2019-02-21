@@ -57,7 +57,7 @@ const styles = theme => ({
 
 ## JavaScript Media Queries
 
-Sometimes, using CSS isn't enough. You might want to change the React rendering tree based on the breakpoint value, in JavaScript.
+Иногда использования CSS недостаточно. You might want to change the React rendering tree based on the breakpoint value, in JavaScript.
 
 ### useMediaQuery hook
 
