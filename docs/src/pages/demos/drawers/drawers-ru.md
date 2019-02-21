@@ -66,9 +66,9 @@ const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
 Рекомендуется использовать вполне видимые навигационные панели на **ПК**.
 
-### Full-height navigation
+### Навигация в полную высоту
 
-Apps focused on information consumption that use a left-to-right hierarchy.
+Исползуется в приложениях, которые сфокусированны на предоставлении информации и используют иерархию элементов слева направо.
 
 {{"demo": "pages/demos/drawers/PermanentDrawerLeft.js", "iframe": true}}
 
