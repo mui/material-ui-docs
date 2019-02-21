@@ -4,7 +4,7 @@
 
 For optimal user experience, material design interfaces need to be able to adapt their layout at various breakpoints. Material-UI uses a **simplified** implementation of the original [specification](https://material.io/design/layout/responsive-layout-grid.html#breakpoints).
 
-Each breakpoint (a key) matches with a *fixed* screen width (a value):
+Каждая точка останова (ключ) соответствует *фиксированной* ширине экрана (значению):
 
 - **xs,** extra-small: 0px
 - **sm,** small: 600px
