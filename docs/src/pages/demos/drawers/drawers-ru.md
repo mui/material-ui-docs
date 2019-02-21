@@ -74,8 +74,8 @@ const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
 {{"demo": "pages/demos/drawers/PermanentDrawerRight.js", "iframe": true}}
 
-### Clipped under the app bar
+### Панель, скрытая за основной полосой
 
-Apps focused on productivity that require balance across the screen.
+Используется в приложениях сфокусированных на эффективной работе и требуют сбалансированного заполнения экрана.
 
 {{"demo": "pages/demos/drawers/ClippedDrawer.js", "iframe": true}}
