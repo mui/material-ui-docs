@@ -34,27 +34,27 @@ const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
 <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} />
 ```
 
-## Responsive drawer
+## Приспосабливающаяся панель
 
-The `Hidden` responsive helper component allows showing different types of drawer depending on the screen width. A `temporary` drawer is shown for small screens while a `permanent` drawer is shown for wider screens.
+Адапивный дизайн может быть достигнут использованием компонента `Hidden`. `cкрытая` панель может быть показана для экранов с небольшим разрешением, тогда как `вполне видимая` панель будет показана на широких экранах.
 
 {{"demo": "pages/demos/drawers/ResponsiveDrawer.js", "iframe": true}}
 
-## Persistent drawer
+## Стойкая панель
 
-Persistent navigation drawers can toggle open or closed. The drawer sits on the same surface elevation as the content. It is closed by default and opens by selecting the menu icon, and stays open until closed by the user. The state of the drawer is remembered from action to action and session to session.
+Стойкая навигационная панель может быть как в открытом так и в закрытом состоянии. Панель находится на том же уровне что и остальное содержимое. По-умолчания она закрыта и может быть открыта с помощю кнопки, оставаясь в таком состоянии пока пользователь не закроет ее. Состояние панель сохраняется между действиями и сессиями.
 
-When the drawer is outside of the page grid and opens, the drawer forces other content to change size and adapt to the smaller viewport.
+Когда панель находится за границей экрана и открывается, остальное содержимое меянет размеры приспосбаливаясь к уменьшеному месту в окне браузера.
 
-Persistent navigation drawers are acceptable for all sizes larger than mobile. They are not recommended for apps with multiple levels of hierarchy that require using an up arrow for navigation.
+Исползование стойких панелей имеет смысл на разрешениях больше чем на мобильных устройствах. Не рекомендуется их использоватся в приложениях с элементами расположенными на нескольких уровнях, где необходимо перемещатся между ними.
 
 {{"demo": "pages/demos/drawers/PersistentDrawerLeft.js", "iframe": true}}
 
 {{"demo": "pages/demos/drawers/PersistentDrawerRight.js", "iframe": true}}
 
-## Mini variant drawer
+## Панель с состоянием минимизации
 
-In this variation, the persistent navigation drawer changes its width. Its resting state is as a mini-drawer at the same elevation as the content, clipped by the app bar. When expanded, it appears as the standard persistent navigation drawer.
+В этом случае стойкая навигационная панель меняет свою ширину. Its resting state is as a mini-drawer at the same elevation as the content, clipped by the app bar. When expanded, it appears as the standard persistent navigation drawer.
 
 The mini variant is recommended for apps sections that need quick selection access alongside content.
 
