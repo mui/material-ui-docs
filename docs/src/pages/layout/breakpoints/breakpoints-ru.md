@@ -12,16 +12,16 @@ For optimal user experience, material design interfaces need to be able to adapt
 - **lg,** large: 1280px
 - **xl,** extra-large: 1920px
 
-These [breakpoint values](/customization/default-theme/?expend-path=$.breakpoints.values) are used to determine breakpoint ranges. A range starts from the breakpoint value inclusive, to the next breakpoint value exclusive:
+Эти [ значения точек останова ](/customization/default-theme/?expend-path=$.breakpoints.values) используются для определения диапазонов точек останова. Диапазон начинается с значения первой точки останова включительно до следующей точки останова не включая её:
 
 ```js
-value         |0px     600px    960px    1280px   1920px
-key           |xs      sm       md       lg       xl
-screen width  |--------|--------|--------|--------|-------->
-range         |   xs   |   sm   |   md   |   lg   |   xl
+значение             |0px     600px    960px    1280px   1920px
+ключ                     |xs      sm       md       lg       xl
+ширина экрана  |----------|--------------|-------------------->
+диапазон             |   xs   |   m   |   md |   lg   |   xl
 ```
 
-These values can always be customized. You will find them in the theme, in the [`breakpoints.values`](/customization/default-theme/?expend-path=$.breakpoints.values) object.
+Эти значения всегда можно изменить. Вы найдете их в теме, в объекте [`breakpoints.values`](/customization/default-theme/?expend-path=$.breakpoints.values).
 
 The breakpoints are used internally in various components to make them responsive, but you can also take advantage of them for controlling the layout of your application through the [Grid](/layout/grid/) and [Hidden](/layout/hidden/) components.
 
