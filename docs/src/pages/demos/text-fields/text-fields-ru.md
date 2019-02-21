@@ -72,7 +72,7 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 {{"demo": "pages/demos/text-fields/OutlinedInputAdornments.js"}}
 
-## Layout
+## Расположение
 
 `TextField`, `FormControl` позволяет спецификации `margin` изменять вертикальные отступы для полей ввода. Использование `none` (по умолчанию) не будет применять отступы для `FormControl`, тогда как `dense` и `normal` будут применять другие стили, которые соответствуют спецификации.
 
@@ -104,15 +104,15 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 {{"demo": "pages/demos/text-fields/FormattedInputs.js"}}
 
-## Accessibility
+## Доступность
 
 Для того, чтобы текстовое поле было доступно, **поле ввода должно быть связано с меткой и вспомогательным текстом**. Базовые узлы DOM должны иметь эту структуру.
 
 ```jsx
 <div class="form-control">
-  <label for="my-input">Email address</label>
+  <label for="my-input">Адрес электронной почты</label>
   <input id="my-input" aria-describedby="my-helper-text" />
-  <span id="my-helper-text">We'll never share your email.</span>
+  <span id="my-helper-text">Мы никогда не распостраним ваш адрес.</span>
 </div>
 ```
 
@@ -121,9 +121,9 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 ```jsx
 <FormControl>
-  <InputLabel htmlFor="my-input">Email address</InputLabel>
+  <InputLabel htmlFor="my-input">Адрес электронной почты</InputLabel>
   <Input id="my-input" aria-describedby="my-helper-text" />
-  <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
+  <FormHelperText id="my-helper-text">Мы никогда не распостраним ваш адрес.</FormHelperText>
 </FormControl>
 ```
 
