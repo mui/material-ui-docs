@@ -54,7 +54,7 @@ const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
 ## Панель с состоянием минимизации
 
-В этом случае стойкая навигационная панель меняет свою ширину. Its resting state is as a mini-drawer at the same elevation as the content, clipped by the app bar. When expanded, it appears as the standard persistent navigation drawer.
+В этом случае стойкая навигационная панель меняет свою ширину. В закрытом состоянии она минимизирована, на том же уровне что и остальное содержимое, и верхняя ее часть скрыта. When expanded, it appears as the standard persistent navigation drawer.
 
 The mini variant is recommended for apps sections that need quick selection access alongside content.
 
