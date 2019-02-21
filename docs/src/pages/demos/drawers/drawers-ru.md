@@ -54,17 +54,17 @@ const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
 ## Панель с состоянием минимизации
 
-В этом случае стойкая навигационная панель меняет свою ширину. В закрытом состоянии она минимизирована, на том же уровне что и остальное содержимое, и верхняя ее часть скрыта. When expanded, it appears as the standard persistent navigation drawer.
+В этом случае стойкая навигационная панель меняет свою ширину. В закрытом состоянии она минимизирована, на том же уровне что и остальное содержимое, и верхняя ее часть скрыта. В открытом состоянии это обычная стойкая навигационная панель.
 
-The mini variant is recommended for apps sections that need quick selection access alongside content.
+Панель с состоянием минимизации рекомендуется использовать в приложениях, где необходимо предоставить быстрый способ обхода вместе с содержимым.
 
 {{"demo": "pages/demos/drawers/MiniDrawer.js", "iframe": true}}
 
-## Permanent drawer
+## Вполне видимая панель
 
-Permanent navigation drawers are always visible and pinned to the left edge, at the same elevation as the content or background. They cannot be closed.
+Вполне видимые навигационные панели всегда видимы и привязанны к левому краю окна браузера, находятся на том же уровне что и остальное содержимое. Они не могут быть скрыты.
 
-Permanent navigation drawers are the **recommended default for desktop**.
+Рекомендуется использовать вполне видимые навигационные панели на **ПК**.
 
 ### Full-height navigation
 
