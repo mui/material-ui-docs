@@ -1,5 +1,5 @@
 ---
-title: Text Field React component
+title: Текстовое Поле, компонент React
 components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, InputBase, InputLabel, OutlinedInput, TextField
 ---
 # Текстовые поля
