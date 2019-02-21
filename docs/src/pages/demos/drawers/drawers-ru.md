@@ -12,17 +12,17 @@ components: Drawer, SwipeableDrawer
 
 ## Скрытая Панель
 
-Temporary navigation drawers can toggle open or closed. Closed by default, the drawer opens temporarily above all other content until a section is selected.
+Скрытая навигационная панель может быть видна либо скрыта. По-умолчанию ее не видно, но ее можно открыть над остальным содержимым и выбрать нужный пункт, после чего панель снова переходит в скрытое состояние.
 
-The Drawer can be cancelled by clicking the overlay or pressing the Esc key. It closes when an item is selected, handled by controlling the `open` prop.
+Также, панель может быть скрыта нажатем на фон или на клавишу Esc. При выборе пункта меню панель закрывается меняя значение свойства `open`.
 
 {{"demo": "pages/demos/drawers/TemporaryDrawer.js"}}
 
-## Swipeable Temporary drawer
+## Скользящая скрытая панель
 
-You can make the drawer swipeable with the `SwipeableDrawer` component.
+Вы можете сделать панель скользящей используя компонент `SwipeableDrawer`.
 
-This component comes with a 2 kB gzipped payload overhead. Some low-end mobile devices won't be able to follow the fingers at 60 FPS. You can use the `disableBackdropTransition` property to help.
+Этот комонент в сжатом виде добавляет 2 kB к загрузке. Some low-end mobile devices won't be able to follow the fingers at 60 FPS. You can use the `disableBackdropTransition` property to help.
 
 {{"demo": "pages/demos/drawers/SwipeableTemporaryDrawer.js"}}
 
