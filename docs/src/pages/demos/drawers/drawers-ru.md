@@ -8,7 +8,7 @@ components: Drawer, SwipeableDrawer
 
 [Навигационные панели](https://material.io/design/components/navigation-drawer.html) позволяют реализовывать такую функциональность как, например, переключение между аккаунтами. Их можно быстро открыть, нажимая на иконку в меню.
 
-[Side sheets](https://material.io/design/components/sheets-side.html) are supplementary surfaces primarily used on tablet and desktop.
+[Боковые панели](https://material. io/design/components/sheets-side.html) являются дополнительными элементами, в основном используемыми на планшетах и ПК.
 
 ## Temporary drawer
 
