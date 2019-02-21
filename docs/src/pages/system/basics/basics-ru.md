@@ -367,7 +367,7 @@ const theme = {
 
 {{"demo": "pages/system/basics/Variant.js"}}
 
-## CSS property
+## Свойство CSS
 
 If you want to support custom CSS values, you can use our `css()` helper. It will process the `css` property.
 
