@@ -1,5 +1,5 @@
 {
-  "topBanner": "⚠️ ({{versionNumber}}) This is the documentation for the `next` release.",
+  "topBanner": "({{versionNumber}}) Эта версия документации для следующего (`next`) релиза.",
   "homeQuickWord": "A quick word from our sponsors:",
   "editWebsiteColors": "Изменить цвета сайта",
   "toggleTheme": "Переключить светлую/темную тему",
