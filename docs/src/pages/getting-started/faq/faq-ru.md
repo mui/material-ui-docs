@@ -85,7 +85,7 @@ As a rule of thumb, only use inline-style for dynamic style properties. The CSS 
 
 Мы описали, как использовать [стороннюю библиотеку маршрутизации](/demos/buttons/#third-party-routing-library) с помощью компонента `ButtonBase`. A lot of our interactive components use it internally: `Button`, `MenuItem`, `<ListItem button />`, `Tab`, etc. Вы можете использовать то же решение с ними.
 
-## How do I combine the `withStyles()` and `withTheme` HOCs?
+## Как мне объединить `withStyles()` и `withTheme` HOCs?
 
 Есть несколько разных вариантов:
 
