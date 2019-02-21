@@ -22,11 +22,11 @@ components: Drawer, SwipeableDrawer
 
 Вы можете сделать панель скользящей используя компонент `SwipeableDrawer`.
 
-Этот комонент в сжатом виде добавляет 2 kB к загрузке. Some low-end mobile devices won't be able to follow the fingers at 60 FPS. You can use the `disableBackdropTransition` property to help.
+Этот комонент в сжатом виде добавляет 2 kB к загрузке. Некоторые бюджетные мобильные устройства не смогут отвечать на прикосновения с частотой 60 кадров в секунду. Используйте свойство `disableBackdropTransition` чтобы исправить ситуацию.
 
 {{"demo": "pages/demos/drawers/SwipeableTemporaryDrawer.js"}}
 
-We are using the following set of properties on this documentation website for optimal usability of the component: - iOS is hosted on high-end devices. We can enable the backdrop transition without dropping frames. The performance will be good enough. - iOS has a "swipe to go back" feature that mess with the discovery feature. We have to disable it.
+Данный вебсайт использует следующие приемы для улучшения качества взаимодействия с пользователем данного компонента: - iOS является мощным устройством. Поэтому использование backdrop transition не вызывает пропуска кадров. Производительность достаточно хороша. - iOS предоставляет скользящий жест для возврата, который мешает использованию панелей. We have to disable it.
 
 ```jsx
 const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
