@@ -2,13 +2,13 @@
 title: Панель расширения (Компонент React)
 components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, ExpansionPanelSummary
 ---
-# Панель расширения
+# Expansion panels (Раскрывающиеся панели)
 
 <p class="description">Панель расширения содержит потоки создания и позволяет легко редактировать элементы.</p>
 
-[An expansion panel](https://material.io/archive/guidelines/components/expansion-panels.html) is a lightweight container that may either stand alone or be connected to a larger surface, such as a card.
+[Expansion panel](https://material.io/archive/guidelines/components/expansion-panels.html) это простой контейнер, который может использоваться отдельно, либо как часть более крупного компонента, такого как Card (карточка).
 
-> **Note:** Expansion panels are no longer documented in the Material Design documentation.
+> **Примечание:** компонента Expansion panel больше нет в документации по Material Design.
 
 ## Simple Expansion Panel
 
