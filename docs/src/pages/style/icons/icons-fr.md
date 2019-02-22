@@ -1,13 +1,13 @@
 ---
 components: Icon, SvgIcon
 ---
-# Icons
+# Icônes
 
-<p class="description">Guidance and suggestions for using icons with Material-UI.</p>
+<p class="description">Conseils et suggestions pour l'utilisation des icônes avec Material-UI.</p>
 
-A [system icon](https://material.io/design/iconography/system-icons.html) or UI icon, symbolizes a command, file, device, or directory. System icons are also used to represent common actions like trash, print, and save, and are commonly found in app bars, toolbars, buttons, and lists. Google has provided a set of [Material icons](https://material.io/tools/icons/?style=baseline) that follow these guidelines.
+Une [icône système](https://material.io/design/iconography/system-icons.html) ou icône UI, symbolise une commande, un fichier, un appareil, ou un répertoire. Les icônes système sont également utilisés pour représenter des actions communes comme des déchets, d'imprimer et d'enregistrer, et sont généralement utilisées dans les barres d'application, les barres d'outils, les boutons et les listes. Google a fourni un ensemble de [icônes "Material"](https://material.io/tools/icons/?style=baseline) qui respectent ces consignes.
 
-Material-UI provides two components to render system icons: `SvgIcon` for rendering SVG paths, and `Icon` for rendering font icons.
+Material-UI fournit deux composants pour le rendu des icônes système: `SvgIcon` pour restituer les chemins SVG et `Icon` pour restituer les icônes de police.
 
 ## Icônes SVG
 
