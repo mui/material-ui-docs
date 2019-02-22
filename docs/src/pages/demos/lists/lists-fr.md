@@ -62,13 +62,13 @@ La case à cocher est l'action principale et l'indicateur d'état pour l'éléme
 
 {{"demo": "pages/demos/lists/CheckboxList.js"}}
 
-The checkbox is the secondary action for the list item and a separate target.
+La case à cocher est l'action secondaire pour un élément de liste et une cible distincte.
 
 {{"demo": "pages/demos/lists/CheckboxListSecondary.js"}}
 
 ### Interrupteur (switch)
 
-The switch is the secondary action and a separate target.
+Le commutateur (switch) est l'action secondaire et une cible distincte.
 
 {{"demo": "pages/demos/lists/SwitchListSecondary.js"}}
 
@@ -76,10 +76,10 @@ The switch is the secondary action and a separate target.
 
 Lors du défilement, les sous-en-têtes restent épinglés en haut de l'écran jusqu'à ce qu'ils soient déplacés en dehors de l'écran par le prochain en-tête.
 
-Cette fonctionnalité repose sur le positionnement persistant (sticky) de CSS. Malheureusement, cette propriété [n'est pas implémentée](https://caniuse.com/#search=sticky) par tous les navigateurs que nous supportons. Nous avons par défaut désactivé ce à l'aide de `disableSticky` lorsqu'il n'est pas pris en charge.
+Cette fonctionnalité repose sur le positionnement persistant (sticky) de CSS. Malheureusement, cette propriété [n'est pas implémentée](https://caniuse.com/#search=sticky) par tous les navigateurs que nous supportons. Nous avons par défaut désactivé cette fonction à l'aide de `disableSticky` lorsqu'il n'est pas pris en charge.
 
 {{"demo": "pages/demos/lists/PinnedSubheaderList.js"}}
 
-## Inset List
+## Liste Insets
 
 {{"demo": "pages/demos/lists/InsetList.js"}}
