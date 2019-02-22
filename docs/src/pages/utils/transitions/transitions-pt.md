@@ -6,7 +6,7 @@ components: Collapse, Fade, Grow, Slide, Zoom
 
 <p class="description">Transições ajudam a fazer a INTERFACE expressiva e fácil de usar.</p>
 
-Material-UI provides a number of transitions that can be used to introduce some basic [motion](https://material.io/design/motion/) to your applications components.
+Material-UI provê um número de transições que podem ser usadas para introduzir algumas [animações](https://material.io/design/motion/) básicas para os componentes de sua aplicação.
 
 To better support server rendering Material-UI provides a `style` property to the children of some transition components (Fade, Grow, Zoom, Slide). A propriedade `style` deve ser aplicada ao DOM para que a animação funcione conforme esperada.
 
