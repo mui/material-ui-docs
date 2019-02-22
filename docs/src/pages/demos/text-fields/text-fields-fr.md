@@ -72,7 +72,7 @@ Icons can be specified as prepended or appended.
 
 {{"demo": "pages/demos/text-fields/OutlinedInputAdornments.js"}}
 
-## Layout
+## Disposition
 
 `TextField`, `FormControl` allow the specification of `margin` to alter the vertical spacing of inputs. Using `none` (default) will not apply margins to the `FormControl`, whereas `dense` and `normal` will as well as alter other styles to meet the specification.
 
