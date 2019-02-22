@@ -44,7 +44,7 @@ Some columns have multiple widths defined, causing the layout to change at the d
 
 ## Interactif
 
-Vous trouverez ci-dessous une démo interactive vous permettant d'explorer les résultats visuels des différents paramètres:
+Vous trouverez ci-dessous une démo interactive vous permettant d'explorer les résultats visuels utilisant différents paramètres:
 
 {{"demo": "pages/layout/grid/InteractiveGrid.js"}}
 
