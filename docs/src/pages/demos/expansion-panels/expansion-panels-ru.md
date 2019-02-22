@@ -10,13 +10,13 @@ components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, Expans
 
 > **Примечание:** компонента Expansion panel больше нет в документации по Material Design.
 
-## Simple Expansion Panel
+## Простая Expansion Panel
 
 {{"demo": "pages/demos/expansion-panels/SimpleExpansionPanel.js"}}
 
-## Controlled Accordion
+## Контролируемый "Аккордеон"
 
-Extend the default panel behavior to create an accordion with the `ExpansionPanel` component.
+Используя компонент `ExpansionPanel`, расширив его поведение по умолчанию, можно получить "аккордеон".
 
 {{"demo": "pages/demos/expansion-panels/ControlledExpansionPanels.js"}}
 
