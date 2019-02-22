@@ -4,11 +4,11 @@ components: Collapse, Divider, List, ListItem, ListItemAvatar, ListItemIcon, Lis
 ---
 # Listes (Lists)
 
-<p class="description">Les listes sont des index continus et verticaux de texte ou d’images.</p>
+<p class="description">Les listes sont continues, des index verticaux de texte ou d’images.</p>
 
-[Lists](https://material.io/design/components/lists.html) are a continuous group of text or images. They are composed of items containing primary and supplemental actions, which are represented by icons and text.
+[Les listes](https://material.io/design/components/lists.html) sont des groupes successifs de textes ou d'images. Ils sont composés d'items contenant les actions primaires ou secondaires, représentés par des icônes et du texte.
 
-## Liste simplifié
+## Liste simple
 
 {{"demo": "pages/demos/lists/SimpleList.js"}}
 
