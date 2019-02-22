@@ -47,7 +47,7 @@ components: Button, Fab, IconButton, ButtonBase, Zoom
 
 [提升动作按钮](https://material.io/design/components/buttons-floating-action-button.html) (FAB) 在屏幕上执行主要的或最常用的操作。 它出现在所有屏幕内容的前面, 通常作为圆形形状, 其中心有一个图标。 FAB有两种类型：常规的和扩展的。
 
-只在它是最适合呈现屏幕主要操作的方式时使用FAB。
+FAB是最适合呈现屏幕主要操作的按钮。
 
 每个屏幕建议只有一个浮动操作按钮来表示最常见的操作。
 
