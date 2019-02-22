@@ -22,7 +22,7 @@ components: Сетка
 
 Адаптивная сетка фокусируется на постоянной ширине отступов, а не на ширине столбца. В Material Design величина отступов и ширина столбцов привязаны к базовой сетке с шагом в **8px**. Свойство `spacing` может принимать целочисленные значения от 0 до 10 включительно. По умолчанию расстояние между соседними элементами (GridItem) задано линейной функцией: `output(spacing) = spacing * 8px`, т.е. `spacing={2}` устанавливает значение интервала 16px.
 
-This output transformation function can be customized [using the theme](/customization/themes/#spacing).
+Поведение функции `output` можно изменить, [отредактировав тему](/customization/themes/#spacing).
 
 {{"demo": "pages/layout/grid/SpacingGrid.js"}}
 
