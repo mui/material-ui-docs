@@ -20,9 +20,9 @@ components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, Expans
 
 {{"demo": "pages/demos/expansion-panels/ControlledExpansionPanels.js"}}
 
-## Secondary heading and Columns
+## Подзаголовок и столбцы
 
-Multiple columns can be used to structure the content, and a helper text may be added to the panel to assist the user.
+Содержимое панели можно структурировать, сгруппировав его в отдельные столбцы, кроме того можно добавить подзаголовок и подсказки для пользователя.
 
 {{"demo": "pages/demos/expansion-panels/DetailedExpansionPanel.js"}}
 
