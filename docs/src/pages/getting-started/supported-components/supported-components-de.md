@@ -1,6 +1,6 @@
-# Supported Components
+# Unterstützte Komponenten
 
-<p class="description">The following is a list of Material Design components & features. Those currently supported by Material-UI are highlighted ✓.</p>
+<p class="description">Im Folgenden finden Sie eine Liste der Komponenten und Funktionen des Material Design. Die derzeit von Material-UI unterstützten Komponenten werden mit ✓ hervorgehoben.</p>
 
 While we strive to follow the guidelines where practical (applying common sense where guidelines contradict - a more common occurrence than one might expect), we do not expect to support every component, or every feature of every component, but rather to provide the building blocks to allow developers to create compelling user interfaces and experiences.
 
