@@ -26,9 +26,9 @@ components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, Expans
 
 {{"demo": "pages/demos/expansion-panels/DetailedExpansionPanel.js"}}
 
-## Customized Expansion Panel
+## Изменение стилей Expansion Panel
 
-If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here is one example of how you can customize the background color of the `ExpansionPanelSummary` and padding of `ExpansionPanelDetails`.
+Если Вы читали [страницу документации переопределение стилей](/customization/overrides/), но недостаточно уверены в себе, чтобы попробовать самостоятельно, посмотрите например того, как можно изменить цвет фона компонента `ExpansionPanelSummary` и отступы `ExpansionPanelDetails`.
 
 ⚠️ Хотя спецификации материал дизайна поощряют использование тем, эти примеры не соответствуют требованиям.
 
