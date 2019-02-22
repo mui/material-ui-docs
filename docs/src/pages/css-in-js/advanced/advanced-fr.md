@@ -274,7 +274,7 @@ const Button = styled(styles, { name: 'button' })(ButtonBase);
 const Button = withStyles(styles, { name: 'button' })(ButtonBase);
 ```
 
-## Content Security Policy (CSP)
+## Politique de sécurité du contenu (CSP)
 
 ### Qu'est-ce que le CSP et en quoi est-ce utile ?
 
@@ -308,7 +308,7 @@ header('Content-Security-Policy')
   .set(`default-src 'self'; style-src: 'self' 'nonce-${nonce}';`);
 ```
 
-If you are using Server Side Rendering (SSR), you should pass the nonce in the `<style>` tag on the server.
+Si vous utilisez le rendu SSR (Server Side Rendering), vous devez transmettre le nonce dans la balise `<style>` sur le serveur.
 
 ```jsx
 <style
@@ -318,7 +318,7 @@ If you are using Server Side Rendering (SSR), you should pass the nonce in the `
 />
 ```
 
-Then, you must pass this nonce to JSS so it can add it to subsequent `<style>` tags. The client side gets the nonce from a header. You must include this header regardless of whether or not SSR is used.
+Ensuite, vous devez transmettre ce nonce à JSS afin qu’il puisse l’ajouter aux balises `<style>` suivantes. Le côté client obtient le nonce à partir d'un en-tête. Vous devez inclure cet en-tête, que le SSR soit utilisé ou non.
 
 ```jsx
 <meta property="csp-nonce" content={nonce} />
