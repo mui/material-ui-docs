@@ -20,7 +20,7 @@ This example demonstrates the use of the `GridListTileBar` to add an overlay to 
 
 {{"demo": "pages/demos/grid-list/TitlebarGridList.js", "hideEditButton": true}}
 
-## Single line Grid list
+## Однострочный Grid List
 
 This example demonstrates a horizontal scrollable single-line grid list of images. Horizontally scrolling grid lists are discouraged because the scrolling interferes with typical reading patterns, affecting comprehension. One notable exception is a horizontally-scrolling, single-line grid list of images, such as a gallery.
 
