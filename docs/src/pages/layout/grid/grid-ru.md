@@ -1,6 +1,6 @@
 ---
 title: React-компонент Сетка
-components: Сетка
+components: Grid
 ---
 # Сетка
 
