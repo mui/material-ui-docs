@@ -1,10 +1,10 @@
 ---
-title: Grid List React component
+title: React-компонент Grid List
 components: GridList, GridListTile, GridListTileBar, ListSubheader, IconButton
 ---
 # Grid List
 
-<p class="description">Grid lists display a collection of images in an organized grid.</p>
+<p class="description">Grid Lists отображают коллекцию изображений в упорядоченной сетке.</p>
 
 [Grid lists](https://material.io/design/components/image-lists.html) represent a collection of items in a repeated pattern. They help improve the visual comprehension of the content they hold.
 
