@@ -14,7 +14,7 @@ components: GridList, GridListTile, GridListTileBar, ListSubheader, IconButton
 
 {{"demo": "pages/demos/grid-list/ImageGridList.js", "hideEditButton": true}}
 
-## Grid list с заголовками
+## Grid list со строкой заголовка
 
 This example demonstrates the use of the `GridListTileBar` to add an overlay to each `GridListTile`. The overlay can accommodate a `title`, `subtitle` and secondary action - in this example an `IconButton`.
 
@@ -28,6 +28,6 @@ This example demonstrates a horizontal scrollable single-line grid list of image
 
 ## Advanced Grid list
 
-This example demonstrates "featured" tiles, using the `rows` and `cols` props to adjust the size of the tile, and the `padding` prop to adjust the spacing. The tiles have a customized titlebar, positioned at the top and with a custom gradient `titleBackground`. The secondary action `IconButton` is positioned on the left.
+В этом примере демонстрирует «рекомендуемые» листы, в которых используются свойства `rows` и `cols` чтобы отрегулировать размер плитки, и свойство `padding` чтобы отрегулировать поля между плитками. The tiles have a customized titlebar, positioned at the top and with a custom gradient `titleBackground`. The secondary action `IconButton` is positioned on the left.
 
 {{"demo": "pages/demos/grid-list/AdvancedGridList.js", "hideEditButton": true}}
