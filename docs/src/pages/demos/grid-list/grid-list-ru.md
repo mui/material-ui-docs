@@ -6,15 +6,15 @@ components: GridList, GridListTile, GridListTileBar, ListSubheader, IconButton
 
 <p class="description">Grid Lists отображают коллекцию изображений в упорядоченной сетке.</p>
 
-[Grid lists](https://material.io/design/components/image-lists.html) represent a collection of items in a repeated pattern. They help improve the visual comprehension of the content they hold.
+[Grid lists](https://material.io/design/components/image-lists.html) являются коллекцией элементов в повторяющемся шаблоне. Они помогают улучшить визуальное восприятие своего содержания.
 
-## Image-only Grid list
+## Grid List только для изображений
 
-A simple example of a scrollable image `GridList`.
+Простой пример прокручиваемого изображения `GridList`.
 
 {{"demo": "pages/demos/grid-list/ImageGridList.js", "hideEditButton": true}}
 
-## Grid list with titlebars
+## Grid list с заголовками
 
 This example demonstrates the use of the `GridListTileBar` to add an overlay to each `GridListTile`. The overlay can accommodate a `title`, `subtitle` and secondary action - in this example an `IconButton`.
 
