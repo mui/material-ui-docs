@@ -2,11 +2,11 @@
 title: Composant React de champ de texte
 components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, InputBase, InputLabel, OutlinedInput, TextField
 ---
-# Champ de texte
+# Champs de texte
 
 <p class="description">Les champs de texte permettent aux utilisateurs d'entrer et de modifier du texte.</p>
 
-[Les champs de texte](https://material.io/design/components/text-fields.html) permettent aux utilisateurs de saisir du texte dans une interface utilisateur. Ils apparaissent généralement dans les formulaires et les boîtes de dialogue.
+[Les champs de texte](https://material.io/design/components/text-fields.html) permettent aux utilisateurs de saisir du texte dans une interface utilisateur. Ils apparaissent généralement dans des formulaires et des boîtes de dialogue.
 
 ## TextField
 
