@@ -16,13 +16,13 @@ components: GridList, GridListTile, GridListTileBar, ListSubheader, IconButton
 
 ## Сеть изображений с заголовками
 
-Этот пример демонстрирует использование `Полосы заголовка сети изображений`, которую следует добавить в каждый `Заголовок сети изображений`. The overlay can accommodate a `title`, `subtitle` and secondary action - in this example an `IconButton`.
+Этот пример демонстрирует использование `Полосы заголовка сети изображений`, которую следует добавить в каждый `Заголовок сети изображений`. Мы можем указать `заголовок`, `подзаголовок` и дополнительное действие - в этом примере `кнопка-иконка`.
 
 {{"demo": "pages/demos/grid-list/TitlebarGridList.js", "hideEditButton": true}}
 
-## Однострочный Grid List
+## Сеть изображений в одну строку
 
-This example demonstrates a horizontal scrollable single-line grid list of images. Horizontally scrolling grid lists are discouraged because the scrolling interferes with typical reading patterns, affecting comprehension. One notable exception is a horizontally-scrolling, single-line grid list of images, such as a gallery.
+Данный пример показывает сеть изображений в одну строку с горизонтальной прокруткой. Однако такие сети изображний лучше не использовать так как это может вызвать у пользователя чувство дискомфорта - обычно при чтении используется вертикальная прокрутка. One notable exception is a horizontally-scrolling, single-line grid list of images, such as a gallery.
 
 {{"demo": "pages/demos/grid-list/SingleLineGridList.js", "hideEditButton": true}}
 
