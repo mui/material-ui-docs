@@ -22,11 +22,11 @@ components: GridList, GridListTile, GridListTileBar, ListSubheader, IconButton
 
 ## Сеть изображений в одну строку
 
-Данный пример показывает сеть изображений в одну строку с горизонтальной прокруткой. Однако такие сети изображний лучше не использовать так как это может вызвать у пользователя чувство дискомфорта - обычно при чтении используется вертикальная прокрутка. One notable exception is a horizontally-scrolling, single-line grid list of images, such as a gallery.
+Данный пример показывает сеть изображений в одну строку с горизонтальной прокруткой. Сети изображений с горизонтальнйо прокруткой не рекомендуется применять, так как это может вызвать дискомфорт у пользователей, ведь обычно при чтении используется вертикальная прокрутка. Исключением из этого правила являются сети с горизонтальной прокруткой в одну строку, например галерея.
 
 {{"demo": "pages/demos/grid-list/SingleLineGridList.js", "hideEditButton": true}}
 
-## Advanced Grid list
+## Более сложный пример
 
 В этом примере демонстрирует «рекомендуемые» листы, в которых используются свойства `rows` и `cols` чтобы отрегулировать размер плитки, и свойство `padding` чтобы отрегулировать поля между плитками. The tiles have a customized titlebar, positioned at the top and with a custom gradient `titleBackground`. The secondary action `IconButton` is positioned on the left.
 
