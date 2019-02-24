@@ -1,22 +1,22 @@
 ---
-title: React-компонент Grid List
+title: Сеть изображений, компонент React
 components: GridList, GridListTile, GridListTileBar, ListSubheader, IconButton
 ---
-# Grid List
+# Сеть изображений
 
-<p class="description">Grid Lists отображают коллекцию изображений в упорядоченной сетке.</p>
+<p class="description">Сеть изображений суть коллекция изображений на упорядоченной сетке.</p>
 
-[Grid lists](https://material.io/design/components/image-lists.html) являются коллекцией элементов в повторяющемся шаблоне. Они помогают улучшить визуальное восприятие своего содержания.
+[Сеть изображений](https://material.io/design/components/image-lists.html) являются коллекцией элементов в повторяющемся шаблоне. Они помогают улучшить визуальное восприятие своего содержания.
 
-## Grid List только для изображений
+## Простая сеть изображений
 
-Простой пример прокручиваемого изображения `GridList`.
+Простой пример прокручиваемой `Сети изображений`.
 
 {{"demo": "pages/demos/grid-list/ImageGridList.js", "hideEditButton": true}}
 
-## Grid list со строкой заголовка
+## Сеть изображений с заголовками
 
-This example demonstrates the use of the `GridListTileBar` to add an overlay to each `GridListTile`. The overlay can accommodate a `title`, `subtitle` and secondary action - in this example an `IconButton`.
+Этот пример демонстрирует использование `Полосы заголовка сети изображений`, которую следует добавить в каждый `Заголовок сети изображений`. The overlay can accommodate a `title`, `subtitle` and secondary action - in this example an `IconButton`.
 
 {{"demo": "pages/demos/grid-list/TitlebarGridList.js", "hideEditButton": true}}
 
