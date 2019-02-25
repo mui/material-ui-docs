@@ -24,7 +24,7 @@ components: Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedi
 
 ## Медиа
 
-Пример карточки, использующей изображение для выделения контента.
+Пример карточки, использующей изображение, дополняющее контент.
 
 {{"demo": "pages/demos/cards/MediaCard.js"}}
 
