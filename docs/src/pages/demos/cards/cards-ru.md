@@ -4,7 +4,7 @@ components: Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedi
 ---
 # Карточки
 
-<p class="description">Карточки содержат контент и действия по одной теме.</p>
+<p class="description">Карточки содержат контент и действия, относящиеся к одной теме.</p>
 
 [Карточки](https://material.io/design/components/cards.html) - это поверхности, которые отображают контент и действия по одной тематике.
 
