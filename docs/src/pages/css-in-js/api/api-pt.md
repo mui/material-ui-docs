@@ -73,7 +73,7 @@ Link a style sheet with a function component using the **hook** pattern.
 
 #### Argumentos
 
-1. `styles` (*Function | Object*): A function generating the styles or a styles object. It will be linked to the component. Use the function signature if you need to have access to the theme. It's provided as the first argument.
+1. `styles` (*Function | Object*): A function generating the styles or a styles object. Ele será vinculado ao componente. Use the function signature if you need to have access to the theme. É fornecido como o primeiro argumento.
 2. `options` (*Object* [optional]): 
     - `options.defaultTheme` (*Object* [optional]): The default theme to use if a theme isn't supplied through a Theme Provider.
     - `options.withTheme` (*Boolean* [optional]): Defaults to `false`. Provide the `theme` object to the component as a property.
@@ -110,7 +110,7 @@ Link a style sheet with a function component using the **styled components** pat
 #### Argumentos
 
 1. `Component`: The component that will be wrapped.
-2. `styles` (*Function | Object*): A function generating the styles or a styles object. It will be linked to the component. Use the function signature if you need to have access to the theme. It's provided as the first argument.
+2. `styles` (*Function | Object*): A function generating the styles or a styles object. Ele será vinculado ao componente. Use the function signature if you need to have access to the theme. É fornecido como o primeiro argumento.
 3. `options` (*Object* [optional]): 
     - `options.defaultTheme` (*Object* [optional]): The default theme to use if a theme isn't supplied through a Theme Provider.
     - `options.withTheme` (*Boolean* [optional]): Defaults to `false`. Provide the `theme` object to the component as a property.
@@ -214,7 +214,7 @@ Some implementation details that might be interesting to being aware of:
 
 #### Argumentos
 
-1. `styles` (*Function | Object*): A function generating the styles or a styles object. It will be linked to the component. Use the function signature if you need to have access to the theme. It's provided as the first argument.
+1. `styles` (*Function | Object*): A function generating the styles or a styles object. Ele será vinculado ao componente. Use the function signature if you need to have access to the theme. É fornecido como o primeiro argumento.
 2. `options` (*Object* [optional]): 
     - `options.defaultTheme` (*Object* [optional]): The default theme to use if a theme isn't supplied through a Theme Provider.
     - `options.withTheme` (*Boolean* [optional]): Defaults to `false`. Provide the `theme` object to the component as a property.
