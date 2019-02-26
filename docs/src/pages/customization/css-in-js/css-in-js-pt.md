@@ -206,7 +206,7 @@ export default App;
 
 ## Plugins
 
-JSS uses the concept of plugins to extend its core, allowing people to cherry-pick the features they need. You pay the performance overhead for only what's you are using. Given `withStyles` is our internal styling solution, all the plugins aren't available by default. We have added the following list:
+JSS uses the concept of plugins to extend its core, allowing people to cherry-pick the features they need. You pay the performance overhead for only what's you are using. Dado que `withStyles` é nossa solução interna de estilos, todos os plugins não estão disponíveis por padrão. We have added the following list:
 
 - [jss-global](http://cssinjs.org/jss-global/)
 - [jss-nested](http://cssinjs.org/jss-nested/)
@@ -215,13 +215,13 @@ JSS uses the concept of plugins to extend its core, allowing people to cherry-pi
 - [jss-vendor-prefixer](http://cssinjs.org/jss-vendor-prefixer/)
 - [jss-props-sort](http://cssinjs.org/jss-props-sort/)
 
-É um subconjunto de [ jss-preset-default ](http://cssinjs.org/jss-preset-default/). Of course, you are free to add a new plugin. Nós temos um exemplo para o [ ` jss-rtl ` plugin ](/guides/right-to-left/#3--jss-rtl).
+É um subconjunto de [ jss-preset-default ](http://cssinjs.org/jss-preset-default/). Claro, você está livre para adicionar um novo plugin. Nós temos um exemplo para o [ ` jss-rtl ` plugin ](/guides/right-to-left/#3--jss-rtl).
 
 ## API
 
 ### `withStyles(styles, [options]) => higher-order component`
 
-Vincule uma folha de estilo a um componente. It does not modify the component passed to it; instead, it returns a new component with a `classes` property. This `classes` object contains the name of the class names injected in the DOM.
+Vincule uma folha de estilo a um componente. Ele não modifica o componente passados para ele; em vez disso, ele retorna um novo componente, com a propriedade `classes`. This `classes` object contains the name of the class names injected in the DOM.
 
 Some implementation details that might be interesting to being aware of:
 
@@ -231,7 +231,7 @@ Some implementation details that might be interesting to being aware of:
 
 #### Argumentos
 
-1. `styles` (*Function | Object*): A function generating the styles or a styles object. It will be linked to the component. Use the function signature if you need to have access to the theme. It's provided as the first argument.
+1. `styles` (*Function | Object*): A function generating the styles or a styles object. Ele será vinculado ao componente. Use the function signature if you need to have access to the theme. É fornecido como o primeiro argumento.
 2. `options` (*Object* [optional]): 
     - `options.withTheme` (*Boolean* [optional]): Defaults to `false`. Provide the `theme` object to the component as a property.
     - `options.name` (*String* [optional]): The name of the style sheet. Useful for debugging. If the value isn't provided, it will try to fallback to the name of the component.
