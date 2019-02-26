@@ -210,7 +210,7 @@ Some implementation details that might be interesting to being aware of:
 
 - Adiciona uma propriedade `classes`, assim você pode substituir, a partir do exterior, os nomes de classe previamente injectados.
 - Ele adiciona uma propriedade `innerRef` para que você possa obter uma referência ao componente encapsulado. O uso de `innerRef` é idêntico a `ref`.
-- It forwards *non React static* properties so this HOC is more "transparent". Por exemplo, pode ser usado para definir um método estático (next.js) `getInitialProps()`.
+- Ele encaminha as propriedades *non React static* para que este HOC seja mais "transparente". Por exemplo, pode ser usado para definir um método estático (next.js) `getInitialProps()`.
 
 #### Argumentos
 
