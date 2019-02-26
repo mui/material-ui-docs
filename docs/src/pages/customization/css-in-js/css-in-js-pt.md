@@ -206,7 +206,7 @@ export default App;
 
 ## Plugins
 
-JSS uses the concept of plugins to extend its core, allowing people to cherry-pick the features they need. You pay the performance overhead for only what's you are using. Dado que `withStyles` é nossa solução interna de estilos, todos os plugins não estão disponíveis por padrão. We have added the following list:
+JSS uses the concept of plugins to extend its core, allowing people to cherry-pick the features they need. You pay the performance overhead for only what's you are using. Dado que `withStyles` é nossa solução interna de estilos, todos os plugins não estão disponíveis por padrão. Nós adicionamos a seguinte lista:
 
 - [jss-global](http://cssinjs.org/jss-global/)
 - [jss-nested](http://cssinjs.org/jss-nested/)
@@ -223,11 +223,11 @@ JSS uses the concept of plugins to extend its core, allowing people to cherry-pi
 
 Vincule uma folha de estilo a um componente. Ele não modifica o componente passados para ele; em vez disso, ele retorna um novo componente, com a propriedade `classes`. This `classes` object contains the name of the class names injected in the DOM.
 
-Some implementation details that might be interesting to being aware of:
+Alguns detalhes de implementação que podem ser interessantes para estar ciente:
 
 - Adiciona uma propriedade `classes`, assim você pode substituir, a partir do exterior, os nomes de classe previamente injectados.
 - Ele adiciona uma propriedade `innerRef` para que você possa obter uma referência ao componente encapsulado. O uso de ` innerRef ` é idêntico a ` ref `.
-- It forwards *non React static* properties so this HOC is more "transparent". Por exemplo, pode ser usado para definir um método estático (next.js) ` getInitialProps () `.
+- Ele encaminha as propriedades *non React static* para que este HOC seja mais "transparente". Por exemplo, pode ser usado para definir um método estático (next.js) ` getInitialProps () `.
 
 #### Argumentos
 
