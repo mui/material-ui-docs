@@ -142,7 +142,7 @@ const styles = theme => ({
 
 #### 返回结果
 
-`media query`: A media query string ready to be used with JSS, which matches screen widths greater than and including the screen size given by the breakpoint key.
+`media query` ：媒体查询字符串已经可以与JSS一起使用，其匹配的屏幕宽度大于断点键给出的屏幕大小。
 
 #### 例子
 
