@@ -8,7 +8,7 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 [Текстовые поля](https://material.io/design/components/text-fields.html) позволяют пользователям вводить текст в интерфейсe. Они обычно появляются в формах и диалогах.
 
-## TextField
+## Текстовое поля
 
 `TextField` представляет собой полноценный элемент управления формы, включая метку (label), само поле ввода и вспомогательный текст.
 
