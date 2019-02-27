@@ -12,7 +12,7 @@ The [usage page](/getting-started/usage/#quick-start) contains a small Material-
 
 We [host some example projects](/getting-started/example-projects/) providing the infrastructure needed to develop and deploy websites in React.
 
-## Page layout examples
+## Exemplos de layout de página
 
 We have a [selection of basic page layouts](/getting-started/page-layout-examples/) to help you get started building your app.
 
