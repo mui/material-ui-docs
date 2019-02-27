@@ -10,25 +10,29 @@ components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, Expans
 
 > **注意：** 材料设计文档中不再记录扩展面板。
 
-## 简单的扩展面板
+## 无障碍功能
+
+For optimal accessibility we recommend setting `id` and `aria-controls` on the `ExpansionPanelSummary`. The `ExpansionPanel` will derive the necessary `aria-labelledby` and `id` for the content region of the panel.
+
+## Simple Expansion Panel
 
 {{"demo": "pages/demos/expansion-panels/SimpleExpansionPanel.js"}}
 
-## 受控手风琴
+## Controlled Accordion
 
-扩展默认面板行为以使用` ExpansionPanel `组件创建手风琴。
+Extend the default panel behavior to create an accordion with the `ExpansionPanel` component.
 
 {{"demo": "pages/demos/expansion-panels/ControlledExpansionPanels.js"}}
 
-## 次要标题和列
+## Secondary heading and Columns
 
-可以使用多列来构造内容，并且可以将辅助文本添加到面板以帮助用户。
+Multiple columns can be used to structure the content, and a helper text may be added to the panel to assist the user.
 
 {{"demo": "pages/demos/expansion-panels/DetailedExpansionPanel.js"}}
 
-## 定制扩展面板
+## Customized Expansion Panel
 
-如果您一直在阅读 [覆盖文档页面](/customization/overrides/) 但是您没有信心跳入， 这里是一个示例，说明如何自定义 `ExpansionPanelSummary` 的背景颜色和 `ExpansionPanelDetails`填充。
+If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here is one example of how you can customize the background color of the `ExpansionPanelSummary` and padding of `ExpansionPanelDetails`.
 
 ⚠️虽然材料设计规范鼓励主题，但这些例子是不合适的。
 
