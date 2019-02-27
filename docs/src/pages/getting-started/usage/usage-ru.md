@@ -1,8 +1,8 @@
-# Usage
+# Использование
 
 <p class="description">Начните работу с React и Material-UI в кратчайшие сроки.</p>
 
-Компоненты Material-UI работают изолированно. **They are self-supporting**, and will inject, and only inject, the styles they need to display. Они не зависят от каких-либо глобальных стилей, таких как [ normalize.css ](https://github.com/necolas/normalize.css/).
+Компоненты Material-UI работают изолированно. **They are self-supporting**, and will only inject the styles they need to display. Они не зависят от каких-либо глобальных стилей, таких как [ normalize.css ](https://github.com/necolas/normalize.css/).
 
 You can use any of the components as demonstrated in the documentation. Please refer to each component's [demo page](/demos/buttons/) to see how they should be imported.
 
