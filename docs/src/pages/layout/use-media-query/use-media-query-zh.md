@@ -9,7 +9,7 @@ title: React中的媒体查询用于响应式设计
 
 - ⚛️它有一个惯用的React API。
 - 🚀它具有高性能，它会观察文档以检测其媒体查询何时发生更改，而不是定期轮询值。
-- 📦小于 [700 B gzipped](https://github.com/mui-org/material-ui/blob/master/.size-limit.js)。
+- 📦 [1 kB gzipped](/size-snapshot).
 - 💄它是反应敏感和反应媒体的替代方案，旨在简化。
 - 🤖它支持服务器端渲染。
 
