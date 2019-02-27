@@ -75,7 +75,7 @@ const Button = withStyles(styles, { name: 'button' })(ButtonBase)
 
 The CSS injected by Material-UI to style a component has the highest specificity possible as the `<link>` is injected at the bottom of the `<head>` to ensure the components always render correctly.
 
-You might, however, also want to override these styles, for example with styled-components. Se você está enfrentando um problema de ordem de injeção de CSS, o JSS [ fornece um mecanismo ](https://github.com/cssinjs/jss/blob/next/docs/setup.md#specify-dom-insertion-point) para lidar com essa situação. Ajustando o posicionamento do ponto de inserção ` ` dentro do seu HTML header, você pode [ controlar a ordem em ](http://cssinjs.org/js-api/#attach-style-sheets-in-a-specific-order) que as regras CSS são aplicadas aos seus componentes.
+You might, however, also want to override these styles, for example with styled-components. Se você está enfrentando um problema de ordem de injeção de CSS, o JSS [ fornece um mecanismo ](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-the-dom-insertion-point) para lidar com essa situação. Ajustando o posicionamento do ponto de inserção ` ` dentro do seu HTML header, você pode [ controlar a ordem em ](http://cssinjs.org/js-api/#attach-style-sheets-in-a-specific-order) que as regras CSS são aplicadas aos seus componentes.
 
 ### Comentário HTML
 
@@ -242,7 +242,7 @@ Alguns detalhes de implementação que podem ser interessantes para estar ciente
 
 `higher-order component`: Should be used to wrap a component.
 
-#### Examples
+#### Exemplos
 
 ```jsx
 import { withStyles } from '@material-ui/core/styles';
@@ -298,7 +298,7 @@ A function which returns [a class name generator function](http://cssinjs.org/js
 
 `class name generator`: The generator should be provided to JSS.
 
-#### Examples
+#### Exemplos
 
 ```jsx
 import JssProvider from 'react-jss/lib/JssProvider';
