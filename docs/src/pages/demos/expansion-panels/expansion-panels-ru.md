@@ -10,6 +10,10 @@ components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, Expans
 
 > **Примечание:** компонента Expansion panel больше нет в документации по Material Design.
 
+## Доступность
+
+For optimal accessibility we recommend setting `id` and `aria-controls` on the `ExpansionPanelSummary`. The `ExpansionPanel` will derive the necessary `aria-labelledby` and `id` for the content region of the panel.
+
 ## Простая Expansion Panel
 
 {{"demo": "pages/demos/expansion-panels/SimpleExpansionPanel.js"}}
