@@ -4,9 +4,9 @@
 
 Компоненты Material-UI работают изолированно. **They are self-supporting**, and will only inject the styles they need to display. Они не зависят от каких-либо глобальных стилей, таких как [ normalize.css ](https://github.com/necolas/normalize.css/).
 
-You can use any of the components as demonstrated in the documentation. Please refer to each component's [demo page](/demos/buttons/) to see how they should be imported.
+Вы можете использовать любой из компонентов, как показано в документации. Пожалуйста, обратитесь к [демо-странице](/demos/buttons/) каждого компонента, чтобы увидеть, как они должны быть импортированы.
 
-## Quick start
+## Быстрый старт
 
 Here's a quick example to get you started, **it's literally all you need**:
 
@@ -26,7 +26,7 @@ function App() {
 ReactDOM.render(<App />, document.querySelector('#app'));
 ```
 
-Yes, this really is all you need to get started, as you can see in this live and interactive demo:
+Да, это действительно все, что вам нужно для начала, как вы можете увидеть в этой интерактивной демонстрации:
 
 {{"demo": "pages/getting-started/usage/Usage.js", "hideHeader": true}}
 
