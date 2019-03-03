@@ -2,13 +2,13 @@
 
 <p class="description">Начните работу с React и Material-UI в кратчайшие сроки.</p>
 
-Компоненты Material-UI работают изолированно. **They are self-supporting**, and will only inject the styles they need to display. Они не зависят от каких-либо глобальных стилей, таких как [ normalize.css ](https://github.com/necolas/normalize.css/).
+Компоненты Material-UI работают изолированно. **Они самодостаточны** и внедрят только те стили, которые им нужны для отображения. Они не зависят от каких-либо глобальных стилей, таких как [ normalize.css ](https://github.com/necolas/normalize.css/).
 
 Вы можете использовать любой из компонентов, как показано в документации. Пожалуйста, обратитесь к [демо-странице](/demos/buttons/) каждого компонента, чтобы увидеть, как они должны быть импортированы.
 
 ## Быстрый старт
 
-Here's a quick example to get you started, **it's literally all you need**:
+Вот краткий пример для начала, **это буквально все что вам нужно**:
 
 ```jsx
 import React from 'react';

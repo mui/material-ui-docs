@@ -251,12 +251,12 @@ You can also combine JSS generated class names with global ones.
 
 ### Deterministic class names
 
-We provide an option to make the class names **deterministic** with the [`dangerouslyUseGlobalCSS`](/css-in-js/api/#creategenerateclassname-options-class-name-generator) option. When turned on, the class names will look like this:
+We provide an option to make the class names **deterministic** with the [`dangerouslyUseGlobalCSS`](/css-in-js/api/#creategenerateclassname-options-class-name-generator) option. Quando ativado, os nomes das classes ficarão assim:
 
 - development: `.AppBar-root`
 - production: `.AppBar-root`
 
-⚠️ **Be cautious when using `dangerouslyUseGlobalCSS`.** We provide this option as an escape hatch for prototyping. Relying on it for code running in production has the following implications:
+⚠️ **Be cautious when using `dangerouslyUseGlobalCSS`.** We provide this option as an escape hatch for prototyping. Confiar nele para o código rodando em produção tem as seguintes implicações:
 
 - O CSS global é inerentemente frágil. As pessoas usam metodologias rigorosas como [ BEM ](http://getbem.com/introduction/) para contornar o problema.
 - É mais difícil controlar as classes ` ` alterações na API.

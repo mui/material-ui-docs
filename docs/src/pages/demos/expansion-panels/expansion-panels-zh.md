@@ -12,7 +12,7 @@ components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, Expans
 
 ## 无障碍功能
 
-For optimal accessibility we recommend setting `id` and `aria-controls` on the `ExpansionPanelSummary`. The `ExpansionPanel` will derive the necessary `aria-labelledby` and `id` for the content region of the panel.
+为获得最佳可访问性，我们建议您在 `ExpansionPanelSummary`中配置 `id` 和 `aria-controls` 。 `ExpansionPanel` 将为面板的内容区域导出必要的 `aria-labelledby` 和 `id`。
 
 ## 简单的扩展面板
 
@@ -30,9 +30,9 @@ For optimal accessibility we recommend setting `id` and `aria-controls` on the `
 
 {{"demo": "pages/demos/expansion-panels/DetailedExpansionPanel.js"}}
 
-## Customized Expansion Panel
+## 定制扩展面板
 
-If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here is one example of how you can customize the background color of the `ExpansionPanelSummary` and padding of `ExpansionPanelDetails`.
+如果您已经在阅读 [组件覆写文档页面](/customization/overrides/) 但是您没有信心进入， 这里是一个关于如何自定义`ExpansionPanelSummary`组件背景自然色和给`ExpansionPanelDetails`组件添加填充的示例。
 
 ⚠️虽然材料设计规范鼓励主题，但这些例子是不合适的。
 

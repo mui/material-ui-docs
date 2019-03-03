@@ -2,7 +2,7 @@
 title: Composant React de champ de texte
 components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, InputBase, InputLabel, OutlinedInput, TextField
 ---
-# Champs de texte
+# Champ de texte
 
 <p class="description">Les champs de texte permettent aux utilisateurs d'entrer et de modifier du texte.</p>
 

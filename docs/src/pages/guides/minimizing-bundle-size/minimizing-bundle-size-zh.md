@@ -4,7 +4,7 @@
 
 ## 捆绑尺寸很重要
 
-The bundle size of Material-UI is taken very seriously. We take size snapshots on every commit for every package and critical parts of those packages ([view latest snapshot](/size-snapshot)). Combined with [dangerJS](https://danger.systems/js/) we can inspect [detailed bundle size changes]((https://github.com/mui-org/material-ui/pull/14638#issuecomment-466658459)) on every Pull Request.
+Material-UI的包大小非常重要。 We take size snapshots on every commit for every package and critical parts of those packages ([view latest snapshot](/size-snapshot)). Combined with [dangerJS](https://danger.systems/js/) we can inspect [detailed bundle size changes]((https://github.com/mui-org/material-ui/pull/14638#issuecomment-466658459)) on every Pull Request.
 
 ## 如何减少捆绑尺寸？
 
@@ -49,6 +49,6 @@ import { Button, TextField } from '@material-ui/core';
 
 在npm上发布的包是 **转换为**，带有 [Babel](https://github.com/babel/babel)，以考虑 [支持的平台](/getting-started/supported-platforms/)。
 
-我们还发布了第二个版本的组件，以针对 **常绿浏览器**。 You can find this version under the [`/es` folder](https://unpkg.com/@material-ui/core@next/es/). 所有非官方语法都被转换为 [ECMA-262标准](https://www.ecma-international.org/publications/standards/Ecma-262.htm)，仅此而已。 这可用于制作针对不同浏览器的单独捆绑包。 较旧的浏览器将需要更多的JavaScript功能进行转换， 会增加捆绑包的大小。 ES2015运行时功能不包含任何填充。 IE11 +和常绿的浏览器支持所有的 必要的功能。 如果您需要支持其他浏览器，请考虑使用 [`@ babel / polyfill`](https://www.npmjs.com/package/@babel/polyfill)。
+我们还发布了第二个版本的组件，以针对 **常绿浏览器**。 您可以在< [`/es` folder](https://unpkg.com/@material-ui/core@next/es/)下找到此版本 。 所有非官方语法都被转换为 [ECMA-262标准](https://www.ecma-international.org/publications/standards/Ecma-262.htm)，仅此而已。 这可用于制作针对不同浏览器的单独捆绑包。 较旧的浏览器将需要更多的JavaScript功能进行转换， 会增加捆绑包的大小。 ES2015运行时功能不包含任何填充。 IE11 +和常绿的浏览器支持所有的 必要的功能。 如果您需要支持其他浏览器，请考虑使用 [`@ babel / polyfill`](https://www.npmjs.com/package/@babel/polyfill)。
 
 ⚠️为了最小化在用户的束的重复代码，我们 **强烈阻止** 从使用库作者 `/es` 的文件夹。
