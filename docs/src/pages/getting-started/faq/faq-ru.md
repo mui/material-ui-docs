@@ -114,7 +114,7 @@ export default withTheme(withStyles(styles)(Modal));
 
 ## Как я могу получить доступ к элементу DOM?
 
-Wrap the component with the [`RootRef`](/api/root-ref/) helper.
+Оберните компонент с помощью [`RootRef`](/api/root-ref/).
 
 ## Why are the colors I am seeing different from what I see here?
 
@@ -124,7 +124,7 @@ The documentation site is using a custom theme. Hence, the color palette is diff
 
 There are many ways to support Material-UI:
 
-- Improve [the documentation](https://github.com/mui-org/material-ui/tree/next/docs).
+- Улучшить [документацию](https://github.com/mui-org/material-ui/tree/next/docs).
 - Help others to get started.
 - [Spread the word](https://twitter.com/MaterialUI).
 - Отвечать на вопросы на [и StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) или [Spectrum](https://spectrum.chat/material-ui).
