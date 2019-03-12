@@ -125,7 +125,7 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
   +<Fab />
   ```
 
-### TextField
+### Текстовое поля
 
 - [InputLabel] You should be able to override all the styles of the FormLabel component using the CSS API of the InputLabel component. The `FormLabelClasses` property has been removed.
   
@@ -138,7 +138,7 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
   </InputLabel>
   ```
 
-### Layout
+### Расположение
 
 - [Grid] In order to support arbitrary spacing values and to remove the need to mentally county by 8, we are changing the spacing API:
   
