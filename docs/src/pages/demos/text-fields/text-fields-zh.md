@@ -16,13 +16,13 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 > **注意：** 材料设计文档中不再记录此版本的文本字段。
 
-## 轮廓
+## Outlined（轮廓）
 
 边框样式的`文本框`
 
 {{"demo": "pages/demos/text-fields/OutlinedTextFields.js"}}
 
-## 填充
+## Filled（填充）
 
 填充样式的`文本框`
 
@@ -104,7 +104,7 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 {{"demo": "pages/demos/text-fields/FormattedInputs.js"}}
 
-## 无障碍功能
+## 可访问性
 
 为了使文本字段可访问， **输入要链接到标签和辅助文本**。底层DOM节点应具有此结构。
 
@@ -129,9 +129,9 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 ## 补充项目
 
-对于更高级的用例，您可以利用：
+对于更高级的用例，您可以使用：
 
-- [redux-form-material-ui](https://github.com/erikras/redux-form-material-ui) 用于更加方便地与Redux Form配搭来使用Material UI的一组包装组件。
-- [formik-material-ui](https://github.com/stackworx/formik-material-ui) 用于结合formik来使用Material-UI的绑定。
-- [final-form-material-ui](https://github.com/Deadly0/final-form-material-ui) 用于更加方便地与Final Form配搭来使用Material UI的一组包装组件。
+- [redux-form-material-ui](https://github.com/erikras/redux-form-material-ui)：一组用于更加方便地与 Redux Form 配搭来使用 Material UI 的封装组件。
+- [formik-material-ui](https://github.com/stackworx/formik-material-ui)：用 formil 来绑定 Material-UI。
+- [final-form-material-ui](https://github.com/Deadly0/final-form-material-ui)：一组配合 Final Form 和 Material UI 的封装组件。
 - [uniforms-material](https://github.com/vazco/uniforms/tree/master/packages/uniforms-material) Uniforms的Material-UI包装器组件，一组用于构建表单的React库。
