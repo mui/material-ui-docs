@@ -249,7 +249,7 @@ Emotion's **css()** method works seamlessly with Material-UI.
 import { jsx, css } from "@emotion/core";
 import Button from "@material-ui/core/Button";
 
-// We just assign them the Button's className attribute
+// Nós apenas atribuímos a eles o atributo className do Button
 function EmotionCSS() {
   return (
     <div>
