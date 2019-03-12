@@ -30,6 +30,12 @@ components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination
 
 {{"demo": "pages/demos/tables/SimpleTable.js"}}
 
+## Dense Table
+
+A simple example of a dense table with no frills.
+
+{{"demo": "pages/demos/tables/DenseTable.js"}}
+
 ## 排序& 筛选
 
 此示例演示了 ` Checkbox（选择框）` 和单击选择行的用法, 该表格具有自定义的 `Toolbar`。 该示例使用 `TableSortLabel` 组件来辅助实现列标题的样式效果。
@@ -46,15 +52,15 @@ components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination
 
 {{"demo": "pages/demos/tables/CustomizedTable.js"}}
 
-## 自定义表格分页操作
+## 自定义表格分页行为
 
-`TablePagination` 组件的 `Action` 属性能够实现自定义操作。
+`TablePagination` 组件的 `Action` 属性允许实现自定义行为。
 
 {{"demo": "pages/demos/tables/CustomPaginationActionsTable.js"}}
 
-## Spanning Table（表跨度）
+## 跨越表格
 
-一个单元格跨多个行 & 列跨越的简单例子。
+一个行 & 列跨越的简单例子
 
 {{"demo": "pages/demos/tables/SpanningTable.js"}}
 
@@ -66,9 +72,10 @@ components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination
 
 ## 补充项目
 
-对于更高级的使用情况下，你可能能够利用：
+对于更高级的用例，您可以利用：
 
 - [ dx-react-grid-material-ui ](https://devexpress.github.io/devextreme-reactive/react/grid/) Material-UI 的一种网格数据, 具有分页，排序功能，过滤，分组和编辑功能([自定义许可证](https://js.devexpress.com/licensing/))。
 - [mui-datatables](https://github.com/gregnb/mui-datatables) Material-UI 的响应式数据表格，包括过滤，排序，搜索等功能。
 - [material-table](https://github.com/mbrn/material-table) DataTable 基于表格组件，它具有搜索，过滤，排序等附加功能。
 - [mui-virtualized-table](https://github.com/techniq/mui-virtualized-table) 虚拟化的Material-UI表格。
+- [mui-tables](https://parkerself.gitbook.io/mui-table/) Customizable table for managing complex data. Features a summary row, de-duplication & merging, as well as filtering, search, etc.
