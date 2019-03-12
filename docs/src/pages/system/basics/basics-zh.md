@@ -1,8 +1,6 @@
 # @material-ui/system
 
-<p class="description">一组样式辅助函数用于帮助用户构建健壮的设计体系。</p>
-
-> ⚠️`@material-ui/system`目前还是实验性版本(alpha版)， 我们正在致力于使它在 Material-UI v4 中稳定下来。
+<p class="description">Styled system & style functions for building powerful design systems.</p>
 
 ## 开始
 
@@ -14,7 +12,7 @@
 - 🦎可以和任何主题对象 (theme object) 配合
 - 💅使用广为流行的 CSS-in-JS 样式方案
 - 📦体积小 [4KB gzipped](https://bundlephobia.com/result?p=@material-ui/system)
-- 🚀 [快速](https://github.com/mui-org/material-ui/blob/master/packages/material-ui-benchmark/README.md#material-uisystem)，性能不是运行时问题
+- 🚀 [快速](https://github.com/mui-org/material-ui/blob/next/packages/material-ui-benchmark/README.md#material-uisystem)，性能不是运行时问题
 
 值得关注的是，整个仓库的函数都是无副作用的(side-effect free)，它们拥有这样的类型签名： ``({ theme, ...style })=> style<、0>。</p>
 
@@ -27,7 +25,7 @@
 import styled from 'styled-components';
 
 const Box = styled.div`${palette}${spacing}${typography}`;
-// 或者你可以 import { unstable_Box as Box } from '@material-ui/core/Box';
+// or import Box from '@material-ui/core/Box';
 
 <Box
   color="primary.main"
@@ -130,7 +128,7 @@ export default App
 如果你已经在使用 `@material-ui/core`，你可以用我们 [预写好的 Box ](/utils/box/)组件 (内部使用了 JSS)：
 
 ```jsx
-import { unstable_Box as Box } from '@material-ui/core/Box';
+import Box from '@material-ui/core/Box';
 ```
 
 ## 互操作性
@@ -409,7 +407,7 @@ const Box = styled.div`
 - TachyTachyons (2017年) 跟随了 [Tailwind CSS](https://tailwindcss.com/) 的脚步 他们让原子CSS更受欢迎。
 - [Twitter Bootstrap](https://getbootstrap.com/docs/4.1/utilities/borders/) 在v2，v3, 和v4中一步步介绍了原子类名 他们使用 `Helper classes` 聚合它们的方式给了我们启发。
 - 在 React 世界中， [Styled System](https://github.com/jxnblk/styled-system) (2017年) 是第一个推动样式函数的。 它可以做出一个通用的 Box 组件来已经衍生其他组件，这种方式可以替换原子CSS之中的辅助原子类的做法。
-- 这样的大公司访问网站审查，Segment.io都使用同样的方法在不同的口味的： 
+- Large companies such as Pinterest, GitHub, and Segment.io are using the same approach in different flavours: 
   - [Evergreen Box](https://evergreen.segment.com/components/layout-primitives)
   - [Gestalt Box](https://pinterest.github.io/gestalt/#/Box)
   - [Primer Box](https://primer.style/components/docs/Box)
