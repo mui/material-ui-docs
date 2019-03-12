@@ -1,13 +1,11 @@
 ---
 title: Box React组件
 ---
-# 盒子（不稳定）
+# Box（盒子）
 
 <p class="description">Box组件充当大多数CSS实用程序需求的包装器组件。</p>
 
 所述盒组件包 [的所有样式的功能](/system/basics/#all-inclusive) 被暴露在 `@material-ui/system`。 它是使用 `@material-ui/styles`的 [`styled()`](/css-in-js/api/#styled-style-function-component) 函数创建的。
-
-> ⚠️“unstable_”API可能会在任何版本中发生变化而不尊重semver。
 
 ## 示例
 
@@ -47,12 +45,12 @@ Box可以将函数作为子组件。 你可以拉出 `className`。
 </Box>
 ```
 
-> ⚠️CSS特异性依赖于导入顺序。 如果你想要保证改写被包裹组件的样式， 您需要在最后导入Box。
+> ⚠️ The CSS specificity relies on the import order. 如果你想要保证改写被包裹组件的样式， 您需要在最后导入Box。
 
 ## API
 
 ```jsx
-import { unstable_Box as Box } from '@material-ui/core/Box';
+import Box from '@material-ui/core/Box';
 ```
 
 | 名称                                                 | 类型                                                                                                                | 默认                                      | 描述                                                   |
