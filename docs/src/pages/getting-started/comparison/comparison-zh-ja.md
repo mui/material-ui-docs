@@ -16,7 +16,7 @@
 
 ## Material-UI
 
-![评星](https://img.shields.io/github/stars/mui-org/material-ui.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/@material-ui/core.svg)
+![评星](https://img.shields.io/github/stars/mui-org/material-ui.svg?style=social&label=Stars) ![npmダウンロード](https://img.shields.io/npm/dm/@material-ui/core.svg)
 
 我们会尽可能地避免偏见, 但是作为核心团队, 我们显然是非常喜欢Material-UI ️❤️的。 在一些问题上， 我们认为它比其他库提供了更好的解决方案；否则我们也不会致力于开发维护它了。
 
@@ -24,7 +24,7 @@
 
 ## Material Design Lite (MDL)
 
-![评星](https://img.shields.io/github/stars/google/material-design-lite.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/material-design-lite.svg)
+![评星](https://img.shields.io/github/stars/google/material-design-lite.svg?style=social&label=Stars) ![npmダウンロード](https://img.shields.io/npm/dm/material-design-lite.svg)
 
 Material Design Lite非常用心地实施了对Material Design，它主要由谷歌的Developer Relations团队维护。 目前，**该项目已无人维护**， 所以，到底发生了什么呢？
 
@@ -32,7 +32,7 @@ Material Design Lite非常用心地实施了对Material Design，它主要由谷
 
 ## Material Components Web (MDC-web)
 
-![评星](https://img.shields.io/github/stars/material-components/material-components-web.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/material-components-web.svg)
+![评星](https://img.shields.io/github/stars/material-components/material-components-web.svg?style=social&label=Stars) ![npmダウンロード](https://img.shields.io/npm/dm/material-components-web.svg)
 
 我们很高兴看到 Google 及其设计团队支持该项目。 这意味着，[Material Design 规范](https://material.io/design/) 将被保留，并获得持续的投入。
 
@@ -86,7 +86,7 @@ MDC-Web 的只旨在在 Web 平台上实现 Material Design。 **不多也不少
 
 ## Materialize
 
-![评星](https://img.shields.io/github/stars/Dogfalo/materialize.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/materialize-css.svg)
+![评星](https://img.shields.io/github/stars/Dogfalo/materialize.svg?style=social&label=Stars) ![npmダウンロード](https://img.shields.io/npm/dm/materialize-css.svg)
 
 ### 浏览器支持
 
@@ -98,7 +98,7 @@ Materialise 使用了 SCSS 样式架构，而 Material-UI 在2年前就摈弃了
 
 ## React Toolbox
 
-![评星](https://img.shields.io/github/stars/react-toolbox/react-toolbox.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/react-toolbox.svg)
+![评星](https://img.shields.io/github/stars/react-toolbox/react-toolbox.svg?style=social&label=Stars) ![npmダウンロード](https://img.shields.io/npm/dm/react-toolbox.svg)
 
 ### 样式调整解决方案
 
