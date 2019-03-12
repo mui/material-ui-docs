@@ -31,7 +31,7 @@ We demonstrate how to use the `Popover` component to implement a popover behavio
 
 Para usos más avanzados tal vez puedas aprovercharte de:
 
-### PopupState helper
+### Ayudante PopupState
 
 There is a 3rd party package [`material-ui-popup-state`](https://github.com/jcoreio/material-ui-popup-state) that takes care of popover state for you in most cases.
 
