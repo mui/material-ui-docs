@@ -2,7 +2,7 @@
 title: Layout React component
 components: Container
 ---
-# Layout
+# Расположение
 
 <p class="description">Components and options for laying out your project, including wrapping containers, a powerful grid system, a flexible media object, and responsive utility classes.</p>
 
