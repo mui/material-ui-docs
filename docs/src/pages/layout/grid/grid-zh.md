@@ -46,7 +46,7 @@ components: 栅格(Grid)
 
 下面是一个交互式演示，可让您探索不同设置的可视结果：
 
-{{"demo": "pages/layout/grid/InteractiveGrid.js"}}
+{{"demo": "pages/layout/grid/InteractiveGrid.js", "hideHeader": true}}
 
 ## 自动布局
 
