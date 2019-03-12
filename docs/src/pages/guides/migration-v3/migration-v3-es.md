@@ -138,7 +138,7 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
   </InputLabel>
   ```
 
-### Disposición
+### Diseño
 
 - [Grid] In order to support arbitrary spacing values and to remove the need to mentally county by 8, we are changing the spacing API:
   
@@ -172,7 +172,7 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 
 - [TablePagination] The component no longer tries to fix invalid (`page`, `count`, `rowsPerPage`) property combinations. It raises a warning instead.
 
-### Tabs
+### Pestañas
 
 - [Tab] Remove the `labelContainer`, `label` and `labelWrapped` class keys for simplicity. This has allowed us to removed 2 intermediary DOM elements. You should be able to move the custom styles to the root class key.
   
