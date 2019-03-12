@@ -30,6 +30,12 @@ Ein einfaches Beispiel ohne Verzierungen.
 
 {{"demo": "pages/demos/tables/SimpleTable.js"}}
 
+## Dense Table
+
+A simple example of a dense table with no frills.
+
+{{"demo": "pages/demos/tables/DenseTable.js"}}
+
 ## Sortieren & Auswahl
 
 Dieses Beispiel demonstriert die Nutzung von `Optionsfeld` und klickbaren Zeilen zur Auswahl mit einer benutzerdefinierten `Werkzeugleiste`. It uses the `TableSortLabel` component to help style column headings.
@@ -64,11 +70,12 @@ Im folgenden Beispiel zeigen wir wie Sie [react-virtualized](https://github.com/
 
 {{"demo": "pages/demos/tables/ReactVirtualizedTable.js"}}
 
-## Complementary projects
+## Ergänzende Projekte
 
-For more advanced use cases you might be able to take advantage of:
+Für fortgeschrittenere Anwendungsfälle können Ihnen folgende Projekte helfen:
 
 - [dx-react-grid-material-ui](https://devexpress.github.io/devextreme-reactive/react/grid/) A data grid for Material-UI with paging, sorting, filtering, grouping and editing features ([custom license](https://js.devexpress.com/licensing/)).
 - [mui-datatables](https://github.com/gregnb/mui-datatables) Responsive data tables for Material-UI with filtering, sorting, search and more.
 - [material-table](https://github.com/mbrn/material-table) DataTable based on table component with additional features like search, filtering, sorting and much more.
 - [mui-virtualized-table](https://github.com/techniq/mui-virtualized-table) Virtualized Material-UI table.
+- [mui-tables](https://parkerself.gitbook.io/mui-table/) Customizable table for managing complex data. Features a summary row, de-duplication & merging, as well as filtering, search, etc.
