@@ -20,8 +20,6 @@ Debemos asegurarnos de que el `divider` se represente como `li` para que coincid
 
 ## Separadores insertados
 
-La propiedad `inset` ahora ha quedado en desuso. Ahora debería usar `variant = "inset"`.
-
 {{"demo": "pages/demos/dividers/InsetDividers.js"}}
 
 ## Divisores de subencabezado
