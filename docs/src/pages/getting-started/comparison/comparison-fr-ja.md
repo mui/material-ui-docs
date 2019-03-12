@@ -16,7 +16,7 @@ JavaScriptの世界は急速に変わっていきます、このドキュメン�
 
 ## Material-UI
 
-![stars](https://img.shields.io/github/stars/mui-org/material-ui.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/@material-ui/core.svg)
+![Stars](https://img.shields.io/github/stars/mui-org/material-ui.svg?style=social&label=Stars) ![npmダウンロード](https://img.shields.io/npm/dm/@material-ui/core.svg)
 
 バイアスがかかることを避けたいと思いますが、コアチームとしては明らかにMaterial-UIがとても好きです。❤️ There are some problems we think it solves better than anything else out there; if we didn’t believe that, we wouldn’t be working on it
 
@@ -24,7 +24,7 @@ JavaScriptの世界は急速に変わっていきます、このドキュメン�
 
 ## Material Design Lite (MDL)
 
-![stars](https://img.shields.io/github/stars/google/material-design-lite.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/material-design-lite.svg)
+![Stars](https://img.shields.io/github/stars/google/material-design-lite.svg?style=social&label=Stars) ![npmダウンロード](https://img.shields.io/npm/dm/material-design-lite.svg)
 
 Material Design Lite, while a very well-thought-out Material Design implementation, was primarily maintained by Developer Relations at Google. 今日、**このプロジェクトはもはやメンテナンスされていません**。 何が起こったのでしょうか。
 
@@ -32,7 +32,7 @@ The Material Components Web team started out building MDC-web as "MDL v2", but, 
 
 ## Material Components Web (MDC-web)
 
-![stars](https://img.shields.io/github/stars/material-components/material-components-web.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/material-components-web.svg)
+![Stars](https://img.shields.io/github/stars/material-components/material-components-web.svg?style=social&label=Stars) ![npmダウンロード](https://img.shields.io/npm/dm/material-components-web.svg)
 
 このプロジェクトがGoogleとそのデザインチームにサポートされていることを嬉しく思います。 It sends a clear signal that the [Material Design specification](https://material.io/design/) is here to stay, as they continue to invest in it.
 
@@ -86,7 +86,7 @@ Still, there is one thing that sets Material-UI apart and it's key: We have [hun
 
 ## Materialize
 
-![stars](https://img.shields.io/github/stars/Dogfalo/materialize.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/materialize-css.svg)
+![Stars](https://img.shields.io/github/stars/Dogfalo/materialize.svg?style=social&label=Stars) ![npmダウンロード](https://img.shields.io/npm/dm/materialize-css.svg)
 
 ### ブラウザサポート
 
@@ -98,7 +98,7 @@ MaterialiseはSCSSを使用しています。これは2年前からMaterial-UI�
 
 ## React Toolbox
 
-![stars](https://img.shields.io/github/stars/react-toolbox/react-toolbox.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/react-toolbox.svg)
+![Stars](https://img.shields.io/github/stars/react-toolbox/react-toolbox.svg?style=social&label=Stars) ![npmダウンロード](https://img.shields.io/npm/dm/react-toolbox.svg)
 
 ### スタイルの解決
 
