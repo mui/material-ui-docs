@@ -11,14 +11,14 @@
 - [ dx-react-grid-material-ui ](https://devexpress.github.io/devextreme-reactive/react/grid/) Material-UI 的一种数据表格, 具有分页，排序功能, 过滤, 分组和编辑功能([自定义许可](https://js.devexpress.com/licensing/))。
 - [final-form-material-ui](https://github.com/Deadly0/final-form-material-ui) 用于更加方便地与Final Form配搭来使用Material UI的一组包装组件。
 - [formik-material-ui](https://github.com/stackworx/formik-material-ui) 用于结合formik来使用Material-UI的绑定。
-- - [material-table](https://github.com/mbrn/material-table) DataTable 是基于表格组件, 具有搜索,过滤,排序等附加功能。
+- [material-table](https://github.com/mbrn/material-table) DataTable 基于表格组件，它具有搜索，过滤，排序等附加功能。
 - [material-ui-autosuggest](https://github.com/plan-three/material-ui-autosuggest) React和Material-UI的模糊搜索组件。
 - [material-ui-next-Pickers](https://github.com/chingyawhao/material-ui-next-pickers) Material UI中的datepicker或timepicker Next或者可以作为时钟或日历组件导入。
 - [material-ui-Pickers](https://github.com/dmtrKovalenko/material-ui-pickers) 为Material-UI实现Material Design日期和时间选择器的组件。
 - [material-ui-popup-state](https://github.com/jcoreio/material-ui-popup-state) 渲染道具组件，管理菜单，弹出窗口和弹出窗口的状态，显着减少样板。
 - [material-ui-theme-editor](https://in-your-saas.github.io/material-ui-theme-editor/) 一款只需要选择颜色即可为你的 Material-UI 应用生成主题的工具，同时还支持在线预览。
 - [material-ui-time-picker](https://github.com/TeamWertarbyte/material-ui-time-picker) 适用于Material-UI的TimePicker。
-- [mui-datatables](https://github.com/gregnb/mui-datatables) Material-UI 的响应式数据表格,包括过滤,排序,搜索等功能.
+- [mui-datatables](https://github.com/gregnb/mui-datatables) Material-UI 的响应式数据表格，包括过滤，排序，搜索等功能。
 - [mui-downshift](https://github.com/techniq/mui-downshift) 在paypal的降档上使用Material-UI可视组件的薄层。
 - [notistack](https://github.com/iamhosseindhv/notistack) 高度可定制的通知零食栏，可以堆叠在一起
 - [react-material-ui-typescript](https://github.com/goemen/react-material-ui-typescript) 使用Typescript，Material UI和Redux，React Router进行React的样板。
