@@ -16,7 +16,7 @@ Wir vergleichen die folgenden Bibliotheken:
 
 ## Material-UI
 
-![stars](https://img.shields.io/github/stars/mui-org/material-ui.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/@material-ui/core.svg)
+![Stars](https://img.shields.io/github/stars/mui-org/material-ui.svg?style=social&label=Stars) ![npmダウンロード](https://img.shields.io/npm/dm/@material-ui/core.svg)
 
 Wir werden unser bestes tun, Voreingenommenheit zu vermeiden, auch wenn wir als Core Team Material-UI natürlich sehr mögen ❤️. There are some problems we think it solves better than anything else out there; if we didn’t believe that, we wouldn’t be working on it
 
@@ -24,7 +24,7 @@ Wir wollen trotzdem so fair und genau sein. Wo also andere Bibliotheken signifik
 
 ## Material Design Lite (MDL)
 
-![stars](https://img.shields.io/github/stars/google/material-design-lite.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/material-design-lite.svg)
+![Stars](https://img.shields.io/github/stars/google/material-design-lite.svg?style=social&label=Stars) ![npmダウンロード](https://img.shields.io/npm/dm/material-design-lite.svg)
 
 Material Design Lite wurde, obwohl eine sehr gut durchdachte Material Design Implementierung, hauptsächlich durch Developer Relations bei Google gepflegt. Aktuell **wird das Projekt nicht länger gepflegt**. Was ist also passiert?
 
@@ -32,7 +32,7 @@ Das Material Components Web Team begann mit dem entwickeln von MDC-web als "MDL 
 
 ## Material Components Web (MDC-web)
 
-![stars](https://img.shields.io/github/stars/material-components/material-components-web.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/material-components-web.svg)
+![Stars](https://img.shields.io/github/stars/material-components/material-components-web.svg?style=social&label=Stars) ![npmダウンロード](https://img.shields.io/npm/dm/material-components-web.svg)
 
 このプロジェクトがGoogleとそのデザインチームにサポートされていることを嬉しく思います。 It sends a clear signal that the [Material Design specification](https://material.io/design/) is here to stay, as they continue to invest in it.
 
@@ -64,7 +64,7 @@ MDC-webはBootstrap v4としてSCSSに依存しています。 The SCSS architec
 
 私たちのビジョンは、** Material Designのガイドライン**をエレガントに実装することです。
 
-> The Material Design guidelines are an incredible starting point, but they do not provide guidance on all aspects or needs of an application. ガイドライン特有の実装に加えて、Material-UIは、すべてMaterial Designガイドラインの準拠した基で、アプリケーション開発に一般的に役立つものになることを望んでいます。
+> Material Designのガイドラインは信じられない出発点ですが、アプリケーションのすべての側面やニーズに関するガイダンスを提供するわけではありません。 ガイドライン特有の実装に加えて、Material-UIは、すべてMaterial Designガイドラインの準拠した基で、アプリケーション開発に一般的に役立つものになることを望んでいます。
 > 
 > *[ドキュメントの[ビジョンセクション](/discover-more/vision/)から抜粋したもの]*
 
@@ -86,7 +86,7 @@ Still, there is one thing that sets Material-UI apart and it's key: We have [hun
 
 ## Materialize
 
-![stars](https://img.shields.io/github/stars/Dogfalo/materialize.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/materialize-css.svg)
+![Stars](https://img.shields.io/github/stars/Dogfalo/materialize.svg?style=social&label=Stars) ![npmダウンロード](https://img.shields.io/npm/dm/materialize-css.svg)
 
 ### ブラウザサポート
 
@@ -98,7 +98,7 @@ MaterialiseはSCSSを使用しています。これは2年前からMaterial-UI�
 
 ## React Toolbox
 
-![stars](https://img.shields.io/github/stars/react-toolbox/react-toolbox.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/react-toolbox.svg)
+![Stars](https://img.shields.io/github/stars/react-toolbox/react-toolbox.svg?style=social&label=Stars) ![npmダウンロード](https://img.shields.io/npm/dm/react-toolbox.svg)
 
 ### スタイルの解決
 
