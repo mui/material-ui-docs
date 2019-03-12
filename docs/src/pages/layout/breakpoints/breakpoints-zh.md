@@ -27,7 +27,7 @@ range         |   xs   |   sm   |   md   |   lg   |   xl
 
 ## CSS 媒体查询
 
-CSS 媒体查询是让 UI 具有响应性的惯用做法。 我们提供了四个 [CSS-in-JS](/customization/css-in-js/) 的工具函数来实现媒体查询:
+CSS 媒体查询是让 UI 具有响应性的惯用做法。 We provide four styles helpers to do so:
 
 - [theme.breakpoints.up(key)](#theme-breakpoints-up-key-media-query)
 - [theme.breakpoints.down(key)](#theme-breakpoints-down-key-media-query)
