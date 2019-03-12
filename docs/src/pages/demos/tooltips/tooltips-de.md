@@ -75,7 +75,7 @@ By default disabled elements like `<button>` do not trigger user interactions so
 
 {{"demo": "pages/demos/tooltips/DisabledTooltips.js"}}
 
-## Transitions
+## Übergänge
 
 Use a different transition.
 
