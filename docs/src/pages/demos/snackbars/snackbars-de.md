@@ -40,7 +40,7 @@ Some snackbars with varying message length.
 
 {{"demo": "pages/demos/snackbars/LongTextSnackbar.js"}}
 
-## Transitions
+## Übergänge
 
 ### Consecutive Snackbars
 
