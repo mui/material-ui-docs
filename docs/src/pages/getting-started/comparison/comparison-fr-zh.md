@@ -32,7 +32,7 @@ The Material Components Web team started out building MDC-web as "MDL v2", but, 
 
 ## Material Components Web (MDC-web)
 
-![stars](https://img.shields.io/github/stars/material-components/material-components-web.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/material-components-web.svg)
+![评星](https://img.shields.io/github/stars/material-components/material-components-web.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/material-components-web.svg)
 
 我们很高兴看到 Google 及其设计团队支持该项目。 It sends a clear signal that the [Material Design specification](https://material.io/design/) is here to stay, as they continue to invest in it.
 
