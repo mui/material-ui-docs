@@ -19,7 +19,7 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 
 - Horizontal
 - Vertical
-- Linear
+- Lineal
 - Non-linear
 
 > **Note:** Steppers are no longer documented in the Material Design documentation.
