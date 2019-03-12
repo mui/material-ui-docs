@@ -53,7 +53,7 @@ function RTL(props) {
 
 ## Démo
 
-*Use the direction toggle button on the top right corner to flip the whole documentation*
+*Utilisez le bouton de navigation situé dans le coin supérieur droit pour retourner toute la documentation*
 
 {{"demo": "pages/guides/right-to-left/Direction.js"}}
 
