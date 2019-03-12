@@ -64,7 +64,7 @@ MDC-web se basa en SCSS como Bootstrap v4. The SCSS architecture is pretty close
 
 Наше видение заключается в том, чтобы обеспечить элегантную реализацию рекомендаций по Material Design **и более**.
 
-> The Material Design guidelines are an incredible starting point, but they do not provide guidance on all aspects or needs of an application. В дополнение к реализации, ориентированной на конкретные рекомендации, мы хотим, чтобы Material-UI стал тем, что обычно полезно для разработки приложений и все это в духе рекомендаций Material Design.
+> Las pautas de Material Design son un excelente punto de partida, pero no brindan dirección sobre todos los aspectos o necesidades de una aplicación. В дополнение к реализации, ориентированной на конкретные рекомендации, мы хотим, чтобы Material-UI стал тем, что обычно полезно для разработки приложений и все это в духе рекомендаций Material Design.
 > 
 > *[Выдержка из раздела [видение](/discover-more/vision/) документации.]*
 
