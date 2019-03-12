@@ -4,7 +4,7 @@ components: Avatar
 ---
 # 头像
 
-<p class="description">在整个材料设计中都可以找到 Avatars，从表格到对话框菜单等各种用途。</p>
+<p class="description">在整个 Material Design 中都可以使用 Avatars，包括表格到对话框菜单等</p>
 
 ## 图片头像
 
