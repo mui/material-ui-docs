@@ -1,5 +1,5 @@
 {
-  "topBanner": "⚠️ ({{versionNumber}}) Il s’agit de la documentation de la version `next`.",
+  "topBanner": "⚠️ ({{versionNumber}}) il s’agit de la documentation de la version `next`.",
   "homeQuickWord": "Un mot rapide de nos sponsors :",
   "editWebsiteColors": "Modifier les couleurs du site",
   "toggleTheme": "Basculer le thème de couleurs \"clair/sombre\"",
@@ -25,7 +25,7 @@
   "team": " Équipe",
   "homeFooterRelease": "Actuellement {{versionNumber}}. Délivrée sous la {{license}}.",
   "license": "Licence MIT",
-  "likeMui": "Vous aimez Material-UI?",
+  "likeMui": "Vous aimez Material-UI ?",
   "adblock": "Si les annonces techniques ne vous dérangent pas et si vous souhaitez soutenir l'Open Source, veuillez ajouter Material-UI à la liste blanche de votre ad blocker.",
   "thanks": "Merci !",
   "adTitle": "Cette annonce est conçu pour soutenir l'Open Source.",
