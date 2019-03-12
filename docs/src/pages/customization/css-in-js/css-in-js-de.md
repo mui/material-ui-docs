@@ -2,35 +2,35 @@
 
 <p class="description">Sie können unsere Styling-Lösung auch nutzen, falls Sie unsere Komponenten nicht verwenden.</p>
 
-> ⚠️ Wir arbeiten daran, die Styling-Lösung in ein eigenes Paket zu migrieren: [`@material-ui/styles`](/css-in-js/basics/). Es ist ein instabiles Projekt (Alpha-Version). Hopefully, we will make it the default style implementation for the core components in Material-UI v4.
+> ⚠️ Wir arbeiten daran, die Styling-Lösung in ein eigenes Paket zu migrieren: [`@material-ui/styles`](/css-in-js/basics/). Es ist ein instabiles Projekt (Alpha-Version). Hoffentlich werden wir es zur Standardstilimplementierung für die Kernkomponenten in Material-UI v4 machen.
 
 Material-UI hat das Ziel, eine solide Grundlage für dynamische UIs zu schaffen. Der Einfachheit halber **stellen wir unseren Nutzern unsere Styling-Lösung bereit**. Sie können sie benutzen, aber Sie müssen nicht. Diese Styling-Lösung [funktioniert mit](/guides/interoperability/) allen anderen bekannten Lösungen.
 
 ## Die Styling-Lösung von Material-UI
 
-In previous versions, Material-UI has used LESS, then a custom inline-style solution to write the style of the components, but these approaches have proven to be limited. Most recently, we have [moved toward](https://github.com/oliviertassinari/a-journey-toward-better-style) a *CSS-in-JS* solution. It **unlocks many great features** (theme nesting, dynamic styles, self-support, etc.). Wir denken, das ist die Zukunft:
+In früheren Versionen hat Material-UI LESS verwendet, eine benutzerdefinierte Inline-Lösung zum Schreiben der Stile der Komponenten. Diese Ansätze erwiesen sich jedoch als begrenzt Einsetzbar. In letzter Zeit haben wir uns in Richtung [ bewegt ](https://github.com/oliviertassinari/a-journey-toward-better-style) eine * CSS-in-JS * Lösung. Es ** schaltet viele großartige Funktionen frei ** (Verschachtelung von Themen, dynamische Stile, Selbstunterstützung usw.). Wir denken, das ist die Zukunft:
 
 - [Eine vereinheitlichte Styling-Sprache](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660)
 - [Die Zukunft von komponentenbasierten Styling](https://medium.freecodecamp.org/css-in-javascript-the-future-of-component-based-styling-70b161a79a32)
 - [SCSS (Sass) in CSS-in-JS umwandeln](https://egghead.io/courses/convert-scss-sass-to-css-in-js)
 
-Vielleicht hast du es in den Demos bemerkt, wie *CSS-in-JS* aussieht. We use the higher-order component created by [`withStyles`](#api) to inject an array of styles into the DOM as CSS, using JSS. Hier ist ein Beispiel:
+Vielleicht hast du es in den Demos bemerkt, wie *CSS-in-JS* aussieht. Wir verwenden eine mit [`withStyles`](#api) erstellte höhere Ordnung Komponente, um ein Array von Stilen als CSS mit JSS in das DOM einzufügen. Hier ist ein Beispiel:
 
 {{"demo": "pages/customization/css-in-js/CssInJs.js"}}
 
 ## JSS
 
-Material-UI's styling solution uses [JSS](https://github.com/cssinjs/jss) at its core. It's a [high performance](https://github.com/cssinjs/jss/blob/next/docs/performance.md) JS to CSS compiler which works at runtime and server-side. It is about 8 kB (minified and gzipped) and is extensible via a [plugins](https://github.com/cssinjs/jss/blob/next/docs/plugins.md) API.
+Die Styling-Lösung von Material-UI verwendet [ JSS ](https://github.com/cssinjs/jss) im Kern. Es ist ein [leistungsstarker](https://github.com/cssinjs/jss/blob/next/docs/performance.md) JS to CSS Compiler, der zur Laufzeit und serverseitig arbeitet. Sie beträgt ca. 8 kB (verkleinert und gzipped) und ist über eine [Plugin](https://github.com/cssinjs/jss/blob/next/docs/plugins.md) API erweiterbar.
 
-If you end up using this styling solution in your codebase, you're going to need to *learn the API*. The best place to start is by looking at the features that each [plugin](https://cssinjs.org/plugins/) provides. Material-UI uses [few of them](#plugins). You can always add new plugins if needed with the [`JssProvider`](https://github.com/cssinjs/react-jss#custom-setup) helper.
+Wenn Sie diese Styling-Lösung in Ihrer Codebase verwenden, müssen Sie die * API erlernen *. Am besten beginnen Sie mit den Funktionen, die jedes [ Plugin](https://cssinjs.org/plugins/) bietet. Die Material-UI verwendet [nur wenige davon ](#plugins). Sie können jederzeit neue Plugins mit dem [`JssProvider`](https://github.com/cssinjs/react-jss#custom-setup) Helfer hinzufügen.
 
-If you wish to build your own instance of `jss` **and** support *rtl* make sure you also include the [jss-rtl](https://github.com/alitaheri/jss-rtl) plugin. Check the jss-rtl [readme](https://github.com/alitaheri/jss-rtl#simple-usage) to learn how.
+Wenn Sie eine eigene Instanz von ` jss`** und ** * Rtl * Ausrichtung Unterstützung erstellen möchten, vergewissern Sie sich, dass Sie auch die [ jss-rtl ](https://github.com/alitaheri/jss-rtl) Plugin enthalten. Schaue in die jss-rtl [Readme-Datei ](https://github.com/alitaheri/jss-rtl#simple-usage), um zu lernen wie.
 
-## Sheets registry
+## Blattregister
 
-When rendering on the server, you will need to get all rendered styles as a CSS string. The `SheetsRegistry` class allows you to manually aggregate and stringify them. Read more about [Server Rendering](/guides/server-rendering/).
+Beim Rendern auf dem Server müssen alle gerenderten Stile als CSS-Zeichenfolge formatiert werden. Die ` SheetsRegistry ` Klasse ermöglicht es, diese manuell zusammenfassen und als String auszugeben. Lesen Sie hier mehr über [ Server-Rendering ](/guides/server-rendering/).
 
-## Sheets manager
+## Blättermanager
 
 The sheets manager uses a [reference counting](https://en.wikipedia.org/wiki/Reference_counting) algorithm in order to attach and detach the style sheets only once per (styles, theme) couple. This technique provides an important performance boost when re-rendering instances of a component.
 
@@ -324,12 +324,12 @@ export default App;
 
 Do you think that [higher-order components are the new mixins](https://cdb.reacttraining.com/use-a-render-prop-50de598f11ce)? Rest assured we don't, however because `withStyles()` is a higher-order component, it can be extended with just a **few lines of code** to match different patterns that are all idiomatic React. Here are a couple of examples.
 
-### Render props API (+11 lines)
+### Render-Props-API (+11 Zeilen)
 
-The term [“render prop”](https://reactjs.org/docs/render-props.html) refers to a simple technique for sharing code between React components using a prop whose value is a function.
+Der Begriff [ “render prop”](https://reactjs.org/docs/render-props.html) bezieht sich auf eine einfache Technik zum Teilen von Code zwischen React-Komponenten mithilfe eines Props, deren Wert eine Funktion ist.
 
 ```jsx
-// You will find the `createStyled` implementation in the source of the demo.
+// Sie finden die "createStyled" Implementierung in der Quelle der Demo.
 const Styled = createStyled({
   root: {
     background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
@@ -357,7 +357,7 @@ function RenderProps() {
 
 {{"demo": "pages/customization/css-in-js/RenderProps.js"}}
 
-You can access the theme the same way you would do it with `withStyles`:
+Sie können genauso auf auf das Thema zugreifen, wie Sie es mit ` mitStyles ` tun würden:
 
 ```js
 const Styled = createStyled(theme => ({
@@ -367,15 +367,15 @@ const Styled = createStyled(theme => ({
 }));
 ```
 
-[@jedwards1211](https://github.com/jedwards1211) Has taken the time to move this module into a package: [material-ui-render-props-styles](https://github.com/jcoreio/material-ui-render-props-styles). Feel free to use it.
+[ @ jedwards1211 ](https://github.com/jedwards1211) hat sich die Zeit genommen, dieses Modul in ein Paket zu verschieben: [ material-ui-render-props-styles ](https://github.com/jcoreio/material-ui-render-props-styles). Fühlen Sie sich frei, es zu benutzen.
 
 ### styled-components API (+15 linhas)
 
-styled-components's API removes the mapping between components and styles. Using components as a low-level styling construct can be simpler.
+Die styled-components API entfernt die Zuordnung zwischen Komponenten und Stilen. Die Verwendung von Komponenten als Low-Level-Styling-Konstrukt kann einfacher sein.
 
 ```jsx
-// You will find the `styled` implementation in the source of the demo.
-// You can even write CSS with https://github.com/cssinjs/jss-template.
+// Sie finden die "gestylte" Implementierung in der Quelle der Demo.
+// Sie können sogar CSS mit https://github.com/cssinjs/jss-template schreiben.
 const MyButton = styled(Button)({
   background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
   borderRadius: 3,
@@ -393,7 +393,7 @@ function StyledComponents() {
 
 {{"demo": "pages/customization/css-in-js/StyledComponents.js"}}
 
-You can access the theme the same way you would do it with `withStyles`:
+Sie können genauso auf auf das Thema zugreifen, wie Sie es mit ` mitStyles ` tun würden:
 
 ```js
 const MyButton = styled(Button)(theme => ({
