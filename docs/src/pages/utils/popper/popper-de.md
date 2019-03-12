@@ -27,7 +27,7 @@ Sie können die Komponente ohne zusätzliche Abhängigkeiten verwenden.
 
 ## Blätter Spielplatz
 
-{{"demo": "pages/utils/popper/ScrollPlayground.js"}}
+{{"demo": "pages/utils/popper/ScrollPlayground.js", "hideHeader": true}}
 
 ## Positionierter Popper
 
