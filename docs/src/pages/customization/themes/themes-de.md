@@ -355,17 +355,17 @@ const theme = createMuiTheme({
 
 ## Accessing the theme in a component
 
-You might need to access the theme variables inside your React components. Let's say you want to display the value of the primary color, you can use the `withTheme` higher-order component to do so. Here is an example:
+Möglicherweise müssen Sie auf die Themevariablen in Ihren React-Komponenten zugreifen. Let's say you want to display the value of the primary color, you can use the `withTheme` higher-order component to do so. Here is an example:
 
 {{"demo": "pages/customization/themes/WithTheme.js"}}
 
 ## Nesting the theme
 
-The theming solution is very flexible, as [you can nest](/css-in-js/advanced/#theme-nesting) multiple theme providers. This can be really useful when dealing with different area of your application that have distinct appearance from each other.
+The theming solution is very flexible, as [you can nest](/css-in-js/advanced/#theme-nesting) multiple theme providers. Dies kann sehr nützlich sein, wenn Sie sich mit unterschiedlichen Bereichen Ihrer Anwendung befassen, die sich voneinander unterscheiden.
 
 {{"demo": "pages/customization/themes/ThemeNesting.js"}}
 
-The inner theme will **override** the outer theme. You can extend the outer theme by providing a function:
+Das innere Theme ** überschreibt** das äußere Theme. Sie können das äußere Theme erweitern, indem Sie eine Funktion bereitstellen:
 
 {{"demo": "pages/customization/themes/ThemeNestingExtend.js"}}
 
