@@ -32,7 +32,7 @@ components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination
 
 ## 紧凑表格
 
-A simple example of a dense table with no frills.
+一个没有多余修饰的简单紧凑型表格
 
 {{"demo": "pages/demos/tables/DenseTable.js"}}
 
@@ -78,4 +78,4 @@ A simple example of a dense table with no frills.
 - [mui-datatables](https://github.com/gregnb/mui-datatables) Material-UI 的响应式数据表格，包括过滤，排序，搜索等功能。
 - [material-table](https://github.com/mbrn/material-table) DataTable 基于表格组件，它具有搜索，过滤，排序等附加功能。
 - [mui-virtualized-table](https://github.com/techniq/mui-virtualized-table) 虚拟化的Material-UI表格。
-- [mui-tables](https://parkerself.gitbook.io/mui-table/) Customizable table for managing complex data. Features a summary row, de-duplication & merging, as well as filtering, search, etc.
+- [mui-tables](https://parkerself. gitbook. io/mui-table/) 自定义表，用于管理复杂数据。具有摘要行，重复数据删除 & 合并，以及过滤，搜索等。
