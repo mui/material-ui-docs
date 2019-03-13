@@ -1,10 +1,10 @@
-# Advanced
+# Erweitert
 
-<p class="description">Advanced Usage.</p>
+<p class="description">Fortgeschrittene Verwendung.</p>
 
 ## Theming
 
-Add a `ThemeProvider` to the top level of your app to access the theme down the React's component tree. Then, you can access the theme object in the style functions.
+Fügen Sie auf der oberste Ebene Ihrer App einen ` ThemeProvider` hinzu, um auf das Theme im Komponentenbaum von React zuzugreifen. Then, you can access the theme object in the style functions.
 
 {{"demo": "pages/css-in-js/advanced/Theming.js"}}
 
