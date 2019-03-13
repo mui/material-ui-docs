@@ -55,7 +55,7 @@
   "dashboardDescr": "这是一个含有任务栏和迷你变体抽屉的最小化管理面板。这个图表由 Recharts 提供，但是很容易替换成其他的。",
   "signInTitle": "登录",
   "signInDescr": "这是一个简单的登录页面。",
-  "signInSideTitle": "登录",
+  "signInSideTitle": "侧边页登录",
   "signInSideDescr": "一个简单的侧面登录页面",
   "signUpTitle": "注册",
   "signUpDescr": "一个简单的注册页面",
