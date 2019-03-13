@@ -11,12 +11,12 @@ Die Komponente rendered seine `Kinder` - Knoten vor einer Hintergrund - Komponen
 - Verwaltet modales Stacking, wenn eins zu einem Zeitpunkt nicht ausreicht.
 - Erstellt einen Hintergrund zum Deaktivieren der Interaktion unter dem Modal.
 - Es deaktiviert das Blättern des Seiteninhalts, während es geöffnet ist.
-- ♿️ It properly manages focus; moving to the modal content, and keeping it there until the modal is closed.
-- ♿️ Adds the appropriate ARIA roles automatically.
+- ♿️ Der Fokus wird richtig verwaltet. Wechseln des Fokus zum modalen Inhalt und diesen halten belassen, bis der Modal geschlossen ist.
+- ♿️ Fügt die entsprechenden ARIA-Rollen automatisch hinzu.
 
-> **Terminology note**. The term "modal" is sometimes used to mean "dialog", but this is a misnomer. A Modal window describes parts of a UI. An element is considered modal if [it blocks interaction with the rest of the application](https://en.wikipedia.org/wiki/Modal_window).
+> **Terminologieanmerkung**. Der Begriff "modal" bedeutet manchmal "Dialog", aber das ist eine Fehlbezeichnung. Ein modales Fenster beschreibt Teile einer Benutzeroberfläche. Ein Element wird als modal betrachtet, wenn es [die Interaktion mit dem Rest der Anwendung blockiert](https://en.wikipedia.org/wiki/Modal_window).
 
-If you are creating a modal dialog, you probably want to use the [Dialog](/demos/dialogs/) component rather than directly using Modal. Modal is a lower-level construct that is leveraged by the following components:
+Wenn Sie ein modales Dialogfeld erstellen, möchten Sie wahrscheinlich die [Dialog-](/demos/dialogs/) Komponente verwenden, anstatt direkt ein Modal zu verwenden. Modal ist ein untergeordnetes Konstrukt, das von den folgenden Komponenten genutzt wird:
 
 - [Dialog](/demos/dialogs/)
 - [Drawer](/demos/drawers/)
@@ -29,7 +29,7 @@ If you are creating a modal dialog, you probably want to use the [Dialog](/demos
 
 ## Performance
 
-The content of the modal is **lazily mounted** into the DOM. It ensures that having many closed modal in your React tree won't slow down your page.
+Der Inhalt des Modals wird **lazily eingehangen** im DOM. Dadurch wird sichergestellt, dass viele geschlossene Modale in Ihrem React-Baum Ihre Seite nicht verlangsamen.
 
 Das Erstellen von React-Elementen ist jedoch ebenfalls mit Kosten verbunden. Betrachten Sie den folgenden Fall:
 
@@ -66,11 +66,11 @@ We create a lot of React elements that will never be mounted. It's wasteful
 </Modal>
 ```
 
-This way, you take advantage of [React render laziness evaluation](https://overreacted.io/react-as-a-ui-runtime/#lazy-evaluation). The `TableComponent` render method will only be evaluated when opening the modal.
+Auf diese Weise nutzen Sie [React Rendering Laziness Evaluation](https://overreacted.io/react-as-a-ui-runtime/#lazy-evaluation). Die Rendermethode der `Tabellen-Komponente` wird nur beim Öffnen des Modals ausgewertet.
 
 ## Barrierefreiheit
 
-- Be sure to add `aria-labelledby="id..."`, referencing the modal title, to the `Modal`. Additionally, you may give a description of your modal with the `aria-describedby="id..."` property on the `Modal`.
+- Achten Sie darauf, eine Referenzierung des modalen Titels durch `aria-labelledby = "id..."` zu dem `Modal` hinzufügen. Zusätzlich können Sie eine Beschreibung Ihres Modals mit der Eigenschaft `aria-descriptionby = "id..."` für das `Modal`angeben.
 
 ```jsx
 <Modal
@@ -86,4 +86,4 @@ This way, you take advantage of [React render laziness evaluation](https://overr
 </Modal>
 ```
 
-- The [WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/dialog.html) can help you set the initial focus on the most relevant element, based on your modal content.
+- Mit den [WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/dialog.html) können Sie den anfänglichen Fokus auf das relevanteste Element setzen, basierend auf Ihrem modalen Inhalt.
