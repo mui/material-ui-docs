@@ -1,5 +1,5 @@
 ---
-title: Consulta de mídia no React para design responsivo
+title: Media queries in React for responsive design
 ---
 # useMediaQuery
 
