@@ -1,5 +1,5 @@
 ---
-title: React Table（表格）组件
+title: React 表格组件
 components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination, TableRow, TableSortLabel
 ---
 # Table（表格）
@@ -30,7 +30,7 @@ components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination
 
 {{"demo": "pages/demos/tables/SimpleTable.js"}}
 
-## Dense Table
+## 紧凑表格
 
 A simple example of a dense table with no frills.
 
