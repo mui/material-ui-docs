@@ -4,13 +4,13 @@
 
 ## Theming
 
-Fügen Sie auf der oberste Ebene Ihrer App einen ` ThemeProvider` hinzu, um auf das Theme im Komponentenbaum von React zuzugreifen. Then, you can access the theme object in the style functions.
+Fügen Sie auf der oberste Ebene Ihrer App einen ` ThemeProvider` hinzu, um auf das Theme im Komponentenbaum von React zuzugreifen. Anschließend können Sie in den Stilfunktionen auf das Designobjekt zugreifen.
 
 {{"demo": "pages/css-in-js/advanced/Theming.js"}}
 
-## Accessing the theme in a component
+## Zugriff auf das Theme in einer Komponente
 
-You might need to access the theme variables inside your React components.
+Möglicherweise müssen Sie auf die Themevariablen in Ihren React-Komponenten zugreifen.
 
 ### `useTheme` hook
 
@@ -20,9 +20,9 @@ You might need to access the theme variables inside your React components.
 
 {{"demo": "pages/css-in-js/advanced/WithTheme.js"}}
 
-## Theme nesting
+## Verschachtelung des Themes
 
-You can nest multiple theme providers. This can be really useful when dealing with different area of your application that have distinct appearance from each other.
+Sie können mehrere Theme Provider verschachteln. Dies kann sehr nützlich sein, wenn Sie sich mit unterschiedlichen Bereichen Ihrer Anwendung befassen, die sich voneinander unterscheiden.
 
 ```jsx
 <ThemeProvider theme={outerTheme}>
@@ -35,7 +35,7 @@ You can nest multiple theme providers. This can be really useful when dealing wi
 
 {{"demo": "pages/css-in-js/advanced/ThemeNesting.js"}}
 
-The inner theme will **override** the outer theme. You can extend the outer theme by providing a function:
+Das innere Theme ** überschreibt** das äußere Theme. Sie können das äußere Theme erweitern, indem Sie eine Funktion bereitstellen:
 
 ```jsx
 <ThemeProvider theme={…} >
@@ -46,9 +46,9 @@ The inner theme will **override** the outer theme. You can extend the outer them
 </ThemeProvider>
 ```
 
-## JSS plugins
+## JSS-Plugins
 
-JSS uses the concept of plugins to extend its core, allowing people to cherry-pick the features they need. You pay the performance overhead for only what's you are using. All the plugins aren't available by default. We have added the following list:
+JSS nutzt das Konzept von Plugins, um seine Kernfunktionalitäten zu erweitern, sodass die Benutzer die gewünschten Funktionen auswählen können. Sie zahlen den Leistungsaufwand nur für das, was Sie verwenden. Alle Plugins sind standardmäßig nicht verfügbar. Wir haben die folgende Liste hinzugefügt:
 
 - [jss-plugin-rule-value-function](https://cssinjs.org/jss-plugin-rule-value-function/)
 - [jss-plugin-global](https://cssinjs.org/jss-plugin-global/)
