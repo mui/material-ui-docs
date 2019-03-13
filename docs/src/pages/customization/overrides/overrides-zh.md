@@ -24,7 +24,7 @@ This example uses the [`withStyles()`](/css-in-js/basics/#higher-order-component
 
 When the `className` property isn't enough, and you need to access deeper elements, you can take advantage of the `classes` object property to customize all the CSS injected by Material-UI for a given component. 每个 组件的类列表记录在 **Component API** 部分中。 例如，您可以查看 [Button CSS API](/api/button/#css)。 Alternatively, you can use the [browser dev tools](#using-the-dev-tools).
 
-这个例子也使用 `withStyles（）` （见上文），但是这里， `ClassesNesting` 使用 `Button`的 `类` prop到 提供了一个对象，它映射了 **个类的名称以覆盖** （样式规则） **CSS类名称应用** （值）。 组件的现有类将继续注入，因此只需要提供要添加或覆盖的特定样式 。
+这个例子也使用了 `withStyles()` （见上文），但在这里， `ClassesNesting` 使用 `Button` 的 `classes` 属性来接收一个对象，该对象将 **要覆盖的classes子项名** （样式规则）映射到 **对应的CSS属性名称** （值）。 组件的现有类将继续注入，因此只需要提供要添加或覆盖的特定样式 。
 
 请注意，除按钮样式外，按钮标签的大小写也已更改：
 
