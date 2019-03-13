@@ -72,7 +72,7 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 {{"demo": "pages/demos/text-fields/OutlinedInputAdornments.js"}}
 
-## 布局
+## Layout
 
 `TextField`, `FormControl` 允许指定`margin`来改变输入的垂直间距。 使用`none` (默认), 将不会在`FormControl`添加margins, 而 `dense`和`normal`也会改变其他样式以符合规范.
 
