@@ -1,16 +1,16 @@
 ---
-title: Modal React component
+title: Modal React-Komponente
 components: Modal
 ---
 # Modal
 
-<p class="description">The modal component provides a solid foundation for creating dialogs, popovers, lightboxes, or whatever else.</p>
+<p class="description">Die modale Komponente bietet eine solide Grundlage für das Erstellen von Dialogen, Popovers, Leuchtkästen oder anderen Elementen.</p>
 
-The component renders its `children` node in front of a backdrop component. The `Modal` offers a few helpful features over using just a [`Portal`](/utils/portal/) component and some styles:
+Die Komponente rendered seine `Kinder` - Knoten vor einer Hintergrund - Komponente. Das `Modal` bietet einige hilfreiche Funktionen gegenüber der Verwendung einer [`Portal`](/utils/portal/) Komponente und einiger Stile:
 
-- Manages modal stacking when one-at-a-time just isn't enough.
-- Creates a backdrop, for disabling interaction below the modal.
-- It disables scrolling of the page content while open.
+- Verwaltet modales Stacking, wenn eins zu einem Zeitpunkt nicht ausreicht.
+- Erstellt einen Hintergrund zum Deaktivieren der Interaktion unter dem Modal.
+- Es deaktiviert das Blättern des Seiteninhalts, während es geöffnet ist.
 - ♿️ It properly manages focus; moving to the modal content, and keeping it there until the modal is closed.
 - ♿️ Adds the appropriate ARIA roles automatically.
 
@@ -23,7 +23,7 @@ If you are creating a modal dialog, you probably want to use the [Dialog](/demos
 - [Menu](/demos/menus/)
 - [Popover](/utils/popover/)
 
-## Simple modal
+## Einfaches Modal
 
 {{"demo": "pages/utils/modal/SimpleModal.js"}}
 
@@ -31,7 +31,7 @@ If you are creating a modal dialog, you probably want to use the [Dialog](/demos
 
 The content of the modal is **lazily mounted** into the DOM. It ensures that having many closed modal in your React tree won't slow down your page.
 
-However, creating React elements has a cost too. Consider the following case:
+Das Erstellen von React-Elementen ist jedoch ebenfalls mit Kosten verbunden. Betrachten Sie den folgenden Fall:
 
 ```jsx
 <Modal open={false}>
@@ -68,7 +68,7 @@ We create a lot of React elements that will never be mounted. It's wasteful
 
 This way, you take advantage of [React render laziness evaluation](https://overreacted.io/react-as-a-ui-runtime/#lazy-evaluation). The `TableComponent` render method will only be evaluated when opening the modal.
 
-## Accessibility
+## Barrierefreiheit
 
 - Be sure to add `aria-labelledby="id..."`, referencing the modal title, to the `Modal`. Additionally, you may give a description of your modal with the `aria-describedby="id..."` property on the `Modal`.
 
