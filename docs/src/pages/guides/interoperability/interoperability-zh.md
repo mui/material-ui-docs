@@ -6,7 +6,7 @@
 
 我们提供了以下样式解决方案的示例：
 
-- [Plain CSS](#plain-css)
+- [纯 CSS](#plain-css)
 - [Styled Components](#styled-components)
 - [CSS Modules](#css-modules)
 - [Emotion](#emotion)
@@ -15,7 +15,7 @@
 - [CSS到MUI webpack Loader](#css-to-mui-webpack-loader)
 - [Glamor](#glamor)
 
-## Plain CSS
+## 纯 CSS
 
 没什么特别的，只是简单的旧CSS。 为什么重新发明轮子已经工作了几十年？
 
