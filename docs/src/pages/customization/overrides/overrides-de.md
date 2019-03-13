@@ -176,7 +176,7 @@ You have learned how to override the style of the Material-UI components in the 
 
 {{"demo": "pages/customization/overrides/DynamicInlineStyle.js"}}
 
-### Theme nesting
+### Verschachtelung des Themes
 
 {{"demo": "pages/customization/overrides/DynamicThemeNesting.js"}}
 
