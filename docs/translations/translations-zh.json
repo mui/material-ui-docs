@@ -89,7 +89,7 @@
     "/getting-started/faq": "常见问题解答",
     "/getting-started/supported-components": "支持的组件",
     "/getting-started/supported-platforms": "支持的平台",
-    "/style": "Content",
+    "/style": "内容",
     "/style/icons": "图标",
     "/style/color": "颜色",
     "/style/typography": "Typography（文字排版）",
@@ -138,7 +138,7 @@
     "/demos/tabs": "选项卡",
     "/demos/text-fields": "Text Fields",
     "/demos/tooltips": "文字提示",
-    "/css-in-js": "Styles",
+    "/css-in-js": "样式",
     "/css-in-js/basics": "基础",
     "/css-in-js/advanced": "高级",
     "/system": "System（系统）",
@@ -185,6 +185,6 @@
     "/discover-more/changelog": "更新日志",
     "/discover-more/governance": "管理",
     "/versions": "版本",
-    "/discover-more/languages": "Languages"
+    "/discover-more/languages": "语言"
   }
 }
