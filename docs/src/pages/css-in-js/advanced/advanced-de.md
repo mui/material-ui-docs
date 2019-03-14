@@ -58,7 +58,7 @@ JSS nutzt das Konzept von Plugins, um seine Kernfunktionalitäten zu erweitern, 
 - [jss-plugin-vendor-prefixer](https://cssinjs.org/jss-plugin-vendor-prefixer/)
 - [jss-plugin-props-sort](https://cssinjs.org/jss-plugin-props-sort/)
 
-Es ist eine Teilmenge von [ Jss-Preset-Default ](https://cssinjs.org/jss-preset-default/). Selbstverständlich können Sie ein neues Plugin hinzufügen. Here is an example with the [jss-rtl](https://github.com/alitaheri/jss-rtl) plugin.
+Es ist eine Teilmenge von [ Jss-Preset-Default ](https://cssinjs.org/jss-preset-default/). Selbstverständlich können Sie ein neues Plugin hinzufügen. Hier ist ein Beispiel mit dem [ jss-rtl ](https://github.com/alitaheri/jss-rtl) Plugin.
 
 ```jsx
 import { create } from 'jss';
@@ -80,9 +80,9 @@ function App() {
 export default App;
 ```
 
-## String templates
+## String-Vorlagen
 
-If you prefer using the CSS syntax, you can use the [jss-plugin-template](https://cssinjs.org/jss-plugin-template) plugin.
+Wenn Sie die CSS-Syntax bevorzugen, können Sie das [Jss-Plugin-Vorlage ](https://cssinjs.org/jss-plugin-template) Plugin verwenden.
 
 ```jsx
 const useStyles = makeStyles({
