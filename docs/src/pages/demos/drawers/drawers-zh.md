@@ -60,11 +60,11 @@ const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
 {{"demo": "pages/demos/drawers/MiniDrawer.js", "iframe": true}}
 
-## 永久抽屉
+## 固定抽屉
 
-永久抽屉始终可见并固定在左侧，与内容或背景位于同一高度。他们无法被关闭。
+固定抽屉始终可见并固定在左侧，与内容或背景位于同一高度。他们无法被关闭。
 
-永久抽屉是桌面**推荐的默认值**。
+固定抽屉是桌面**推荐的默认值**。
 
 ### 全高度导航栏
 
