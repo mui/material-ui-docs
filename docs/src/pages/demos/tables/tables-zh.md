@@ -30,7 +30,7 @@ components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination
 
 {{"demo": "pages/demos/tables/SimpleTable.js"}}
 
-## 紧凑表格
+## Dense Table（紧凑表格）
 
 一个没有多余修饰的简单紧凑型表格
 
@@ -38,29 +38,29 @@ components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination
 
 ## 排序& 筛选
 
-此示例演示了 ` Checkbox（选择框）` 和单击选择行的用法, 该表格具有自定义的 `Toolbar`。 该示例使用 `TableSortLabel` 组件来辅助实现列标题的样式效果。
+此示例演示了 ` Checkbox（选择框）` 和单击选择行的用法, 该表格具有自定义的 `Toolbar（工具条）`。 该示例使用 `TableSortLabel` 组件来辅助实现列标题的样式效果。
 
-此表已被赋予固定宽度，这样能够展示水平方向的滚动. 在 Table 外部使用TablePagination 组件，能够防止分页控件滚动。 (以下的['Custom Table Pagination Action' （自定义表分页操作示例）](#custom-table-pagination-action)展示了 TableFooter 中的分页。)
+此表已被赋予固定宽度，这样能够展示水平方向的滚动。 在表格外部使用 TablePagination 组件，能够防止分页控件的滚动。 (以下的['Custom Table Pagination Action' （自定义表分页操作示例）](#custom-table-pagination-action)展示了 TableFooter 中的分页。)
 
 {{"demo": "pages/demos/tables/EnhancedTable.js"}}
 
 ## 自定义表格
 
-如果您有阅读[重写样式文档页面](/customization/overrides/)，但你还不是很自信能够完全掌握，希望以下关于如何更改一个 Tablecell 的主要颜色的示例给你提供一些帮助。
+如果您有阅读[重写样式文档页面](/customization/overrides/)，但你还不是很自信能够完全掌握，希望以下关于如何更改一个 Tablecell 的主要颜色的示例能够给你提供一些帮助。
 
 ⚠️虽然 material design 规范鼓励创建主题，但这个例子是不合适的。
 
 {{"demo": "pages/demos/tables/CustomizedTable.js"}}
 
-## 自定义表格分页行为
+## 自定义表格的分页操作
 
-`TablePagination` 组件的 `Action` 属性允许实现自定义行为。
+`TablePagination` 组件的 `Action` 属性允许实现自定义操作。
 
 {{"demo": "pages/demos/tables/CustomPaginationActionsTable.js"}}
 
-## 跨越表格
+## Spanning Table（合并的表格）
 
-一个行 & 列跨越的简单例子
+一个简单的合并行 & 列的例子
 
 {{"demo": "pages/demos/tables/SpanningTable.js"}}
 
@@ -74,8 +74,8 @@ components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination
 
 对于更高级的用例，您可以利用：
 
-- [ dx-react-grid-material-ui ](https://devexpress.github.io/devextreme-reactive/react/grid/) Material-UI 的一种网格数据, 具有分页，排序功能，过滤，分组和编辑功能([自定义许可证](https://js.devexpress.com/licensing/))。
-- [mui-datatables](https://github.com/gregnb/mui-datatables) Material-UI 的响应式数据表格，包括过滤，排序，搜索等功能。
-- [material-table](https://github.com/mbrn/material-table) DataTable 基于表格组件，它具有搜索，过滤，排序等附加功能。
-- [mui-virtualized-table](https://github.com/techniq/mui-virtualized-table) 虚拟化的Material-UI表格。
-- [mui-tables](https://parkerself. gitbook. io/mui-table/) 自定义表，用于管理复杂数据。具有摘要行，重复数据删除 & 合并，以及过滤，搜索等。
+- [ dx-react-grid-material-ui ](https://devexpress.github.io/devextreme-reactive/react/grid/)：Material-UI 的一种网格数据, 具有分页，排序功能，过滤，分组和编辑功能([自定义许可证](https://js.devexpress.com/licensing/))。
+- [mui-datatables](https://github.com/gregnb/mui-datatables)：Material-UI 的响应式数据表格，包括过滤，排序，搜索等功能。
+- [material-table](https://github.com/mbrn/material-table)：DataTable 基于表格组件，它具有搜索，过滤，排序等附加功能。
+- [mui-virtualized-table](https://github.com/techniq/mui-virtualized-table)：虚拟化的Material-UI表格。
+- [mui-tables](https://parkerself. gitbook. io/mui-table/)：自定义表，用于管理复杂数据。具有摘要行，重复数据删除 & 合并，以及过滤，搜索等。
