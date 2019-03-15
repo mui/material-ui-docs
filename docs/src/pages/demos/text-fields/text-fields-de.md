@@ -16,19 +16,19 @@ The `TextField` wrapper component is a complete form control including a label, 
 
 > **Note:** This version of the text field is no longer documented in the Material Design documentation.
 
-## Outlined
+## Umrandung
 
 `TextField` supports outlined styling.
 
 {{"demo": "pages/demos/text-fields/OutlinedTextFields.js"}}
 
-## Filled
+## Gefüllt
 
 `TextField` supports filled styling.
 
 {{"demo": "pages/demos/text-fields/FilledTextFields.js"}}
 
-## Components
+## Komponenten
 
 `TextField` is composed of smaller components ( [`FormControl`](/api/form-control/), [`Input`](/api/input/), [`FilledInput`](/api/filled-input/), [`InputLabel`](/api/input-label/), [`OutlinedInput`](/api/outlined-input/), and [`FormHelperText`](/api/form-helper-text/) ) that you can leverage directly to significantly customize your form inputs.
 
@@ -36,7 +36,7 @@ You might also have noticed that some native HTML input properties are missing f
 
 {{"demo": "pages/demos/text-fields/ComposedTextField.js"}}
 
-## Inputs
+## Eingaben
 
 {{"demo": "pages/demos/text-fields/Inputs.js"}}
 
@@ -82,7 +82,7 @@ Icons can be specified as prepended or appended.
 
 The input label "shrink" state isn't always correct. The input label is supposed to shrink as soon as the input is displaying something. In some circumstances, we can't determine the "shrink" state (number input, datetime input, Stripe input). You might notice an overlap.
 
-![shrink](/static/images/text-fields/shrink.png)
+![Schrumpfen](/static/images/text-fields/shrink.png)
 
 To workaround the issue, you can force the "shrink" state of the label.
 
@@ -90,7 +90,7 @@ To workaround the issue, you can force the "shrink" state of the label.
 <TextField InputLabelProps={{ shrink: true }} />
 ```
 
-or
+oder
 
 ```jsx
 <InputLabel shrink>Contagem</InputLabel>
