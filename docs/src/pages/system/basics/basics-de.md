@@ -170,7 +170,7 @@ const Box = styled.div`${palette}${spacing}`;
 
 {{"demo": "pages/system/basics/Emotion.js"}}
 
-## Responsive
+## Reaktionsfähig
 
 **All** the properties are responsive, we support 3 different APIs. It uses this default, but customizable, breakpoints theme structure:
 
@@ -273,13 +273,13 @@ We don't support all the CSS properties. It's possible that you want to support 
 
 #### Arguments
 
-1. `options` (*Object*): 
+1. `Optionen` (*Object*): 
   - `options.prop` (*String*): The property the style function will be triggered on.
   - `options.cssProperty` (*String|Boolean* [optional]): Defaults to `options.prop`. The CSS property used. You can disabled this option by providing `false`. When disabled, the property value will handle as a style object on it's own. It can be used for [rendering variants](#variants).
   - `options.themeKey` (*String* [optional]): The theme path prefix.
   - `options.transform` (*Function* [optional]): Apply a transformation before outputing a CSS value.
 
-#### Returns
+#### Rückgabewerte
 
 `style function`: The style function created.
 
@@ -300,7 +300,7 @@ const borderColor = style({
 
 Merge multiple style functions into one.
 
-#### Returns
+#### Rückgabewerte
 
 `style function`: The style function created.
 
