@@ -62,7 +62,7 @@ Change the direction of the transition. Slide is the default transition.
 
 ### Change Transition
 
-Use a different transition.
+Verwenden Sie einen anderen Übergang.
 
 {{"demo": "pages/demos/snackbars/FadeSnackbar.js"}}
 
