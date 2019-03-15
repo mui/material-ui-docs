@@ -7,7 +7,7 @@ title: Box React component
 
 The Box component packages [all the style functions](/system/basics/#all-inclusive) that are exposed in `@material-ui/system`. It's created using the [`styled()`](/css-in-js/api/#styled-style-function-component) function of `@material-ui/styles`.
 
-## Example
+## Beispiel
 
 [The palette](/system/palette/) style function.
 
@@ -53,7 +53,7 @@ The Box children accepts a render props function. You can pull out the `classNam
 import Box from '@material-ui/core/Box';
 ```
 
-| Name                                               | Type                                                                                                              | Default                                 | Description                                                                                            |
+| Name                                               | Typ                                                                                                               | Standard                                | Description                                                                                            |
 |:-------------------------------------------------- |:----------------------------------------------------------------------------------------------------------------- |:--------------------------------------- |:------------------------------------------------------------------------------------------------------ |
 | <span class="prop-name required">children *</span> | <span class="prop-type">union:&nbsp;node&nbsp;&#124;<br />&nbsp;func<br /></span>                                 |                                         | Box render function or node.                                                                           |
 | <span class="prop-name">clone</span>               | <span class="prop-type">bool</span>                                                                               | <span class="prop-default">false</span> | If `true`, the box will recycle it's children DOM element. It's using `React.cloneElement` internally. |
