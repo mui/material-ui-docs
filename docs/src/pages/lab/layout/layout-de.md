@@ -20,7 +20,7 @@ body {
 
 The container centers your content horizontally. It's the most basic layout element. While containers can be nested, most layouts do not require a nested container.
 
-### Fluid
+### Flexibel
 
 A fluid container width is bounded by that `maxWidth` property value.
 
@@ -30,7 +30,7 @@ A fluid container width is bounded by that `maxWidth` property value.
 
 {{"demo": "pages/lab/layout/SimpleContainer.js", "iframe": true}}
 
-### Fixed
+### Fixiert
 
 If you prefer to design for a fixed set of sizes instead of trying to accommodate a fully fluid viewport, you can set the `fixed` property. The max-width matches the min-width of the current breakpoint.
 
