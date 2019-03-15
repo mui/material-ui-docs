@@ -28,7 +28,7 @@ You need to update your `package.json` to use the latest version of Material-UI.
 }
 ```
 
-Or run
+Oder führe aus
 
 ```sh
 npm install @material-ui/core@next
@@ -44,11 +44,11 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 
 ## Handling Breaking Changes
 
-### Core
+### Grundlegendes
 
 - Every component forward their ref. This is implemented by using `React.forwardRef()`. This affects the internal component tree and display name and therefore might break shallow or snapshot tests. `innerRef` will no longer return a ref to the instance (or nothing if the inner component is a function component) but a ref to its root component. The corresponding API docs list the root component.
 
-### Styles
+### Stile
 
 - Isolation of the styling solution of the core components in a dedicated package. Remove the `MuiThemeProvider` component:
   
@@ -84,7 +84,7 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
   },
   ```
 
-### Typography
+### Typografie
 
 - [Typography] Remove the deprecated typography variants. You can upgrade by performing the following replacements: 
   - display4 => h1
@@ -153,7 +153,7 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
   
   Going forward, you can use the theme to implement [a custom Grid spacing transformation function](https://material-ui.com/system/spacing/#transformation).
 
-### Table
+### Tabelle
 
 - [TableCell] Remove the deprecated `numeric` property.
   
@@ -172,7 +172,7 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 
 - [TablePagination] The component no longer tries to fix invalid (`page`, `count`, `rowsPerPage`) property combinations. It raises a warning instead.
 
-### Tabs
+### Reiter
 
 - [Tab] Remove the `labelContainer`, `label` and `labelWrapped` class keys for simplicity. This has allowed us to removed 2 intermediary DOM elements. You should be able to move the custom styles to the root class key.
   
