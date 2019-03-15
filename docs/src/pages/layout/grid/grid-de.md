@@ -44,7 +44,7 @@ Some columns have multiple widths defined, causing the layout to change at the d
 
 ## Interactive
 
-Below is an interactive demo that lets you explore the visual results of the different settings:
+Nachfolgend finden Sie eine interaktive Demo, mit der Sie die visuellen Ergebnisse der verschiedenen Einstellungen untersuchen können:
 
 {{"demo": "pages/layout/grid/InteractiveGrid.js", "hideHeader": true}}
 
