@@ -1,5 +1,5 @@
 ---
-title: Tabs React component
+title: Tabs React-Komponente
 components: Tabs, Tab
 ---
 # Reiter
