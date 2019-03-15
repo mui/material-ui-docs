@@ -1,5 +1,5 @@
 ---
-title: Text Field React component
+title: Textfeld React-Komponente
 components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, InputBase, InputLabel, OutlinedInput, TextField
 ---
 # Text Felder
@@ -10,11 +10,11 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 ## TextField
 
-The `TextField` wrapper component is a complete form control including a label, input and help text.
+Die `TextField` Wrapper-Komponente ist ein vollständiges Formularsteuerelement, das eine Beschriftung, Eingabe und Hilfetext enthält.
 
 {{"demo": "pages/demos/text-fields/TextFields.js"}}
 
-> **Note:** This version of the text field is no longer documented in the Material Design documentation.
+> **Hinweis:** Diese Version des Textfelds ist nicht mehr in der Material Design-Dokumentation dokumentiert.
 
 ## Umrandung
 
