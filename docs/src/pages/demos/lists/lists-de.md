@@ -80,6 +80,6 @@ This feature is relying on the CSS sticky positioning. Unfortunately it's [not i
 
 {{"demo": "pages/demos/lists/PinnedSubheaderList.js"}}
 
-## Inset List
+## Eingerückte Liste
 
 {{"demo": "pages/demos/lists/InsetList.js"}}
