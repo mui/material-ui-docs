@@ -338,7 +338,7 @@ const variant = style({
   themeKey: 'typography',
 });
 
-// ⚠ Text 已在全局上下文中定义:
+// ⚠ 文本已在全局上下文中定义:
 // https://developer.mozilla.org/en-US/docs/Web/API/Text/Text.
 const Text = styled.span`
   font-family: Helvetica;
