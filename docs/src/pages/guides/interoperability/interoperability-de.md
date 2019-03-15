@@ -6,7 +6,7 @@ This guide aims to document the most popular alternatives, but you should find t
 
 We have provided examples for the following styling solutions:
 
-- [Plain CSS](#plain-css)
+- [Einfaches CSS](#plain-css)
 - [Styled Components](#styled-components)
 - [CSS Modules](#css-modules)
 - [Emotion](#emotion)
@@ -15,7 +15,7 @@ We have provided examples for the following styling solutions:
 - [CSS to MUI webpack Loader](#css-to-mui-webpack-loader)
 - [Glamor](#glamor)
 
-## Plain CSS
+## Einfaches CSS
 
 Nothing fancy, just plain old CSS. Why reinvent the wheel when it has been working for decades?
 
@@ -162,7 +162,7 @@ Material-UI has a rich theme structure that you can leverage for the color manip
 
 {{"demo": "pages/guides/interoperability/StyledComponentsTheme.js"}}
 
-### Portals
+### Portale
 
 The [Portal](/utils/portal/) provides a first-class way to render children into a DOM node that exists outside the DOM hierarchy of the parent component. Because of the way styled-components scopes its CSS, you may run into issues where styling is not applied.
 
