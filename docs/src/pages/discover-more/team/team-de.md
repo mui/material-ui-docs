@@ -8,4 +8,4 @@ Die Material-UI wird von einer kleinen Gruppe von unschätzbaren Kernteilnehmern
 
 Machen Sie mit in der Entwicklung von Material-UI indem Sie ein [ Problem melden](https://github.com/mui-org/material-ui/issues/new) oder eine Pull-Anfrage absenden. Lesen Sie unsere [ Richtlinien ](https://github.com/mui-org/material-ui/blob/next/CONTRIBUTING.md) um Informationen darüber zu erhalten, wie wir uns entwickeln.
 
-[Join the Material-UI Community!](/discover-more/community/)
+[Treten Sie der Material-UI-Community bei!](/discover-more/community/)
