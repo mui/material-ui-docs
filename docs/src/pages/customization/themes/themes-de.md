@@ -20,14 +20,14 @@ Changing the theme configuration variables is the most effective way to match Ma
 
 - [Palette](#palette)
 - [Type (light / dark theme)](#type-light-dark-theme)
-- [Typography](#typography)
-- [Spacing](#spacing)
+- [Typografie](#typography)
+- [Abstände](#spacing)
 - [Other variables](#other-variables)
 - [Custom variables](#custom-variables)
 
 ### Palette
 
-#### Intentions
+#### Intentionen
 
 A color intention is a mapping of a palette to a given intention within your application.
 
@@ -160,11 +160,11 @@ Both the `tonalOffset` and `contrastThreshold` values may be customized as neede
 
 Note that `contrastThreshold` follows a non-linear curve.
 
-#### Example
+#### Beispiel
 
 {{"demo": "pages/customization/themes/Palette.js"}}
 
-#### Color tool
+#### Farbwerkzeug
 
 Need inspiration? The Material Design team has built an awesome [palette configuration tool](/style/color/#color-tool) to help you.
 
@@ -187,7 +187,7 @@ const theme = createMuiTheme({
 
 {{"demo": "pages/customization/themes/DarkTheme.js", "hideEditButton": true}}
 
-### Typography
+### Typografie
 
 Too many type sizes and styles at once can spoil any layout. The theme provides a **limited set of type sizes** that work well together along with the layout grid. These sizes are used across the components.
 
@@ -259,7 +259,7 @@ html {
 
 {{"demo": "pages/customization/themes/FontSizeTheme.js"}}
 
-### Spacing
+### Abstände
 
 We encourage you to use the `theme.spacing()` helper to create consistent spacing between the elements of your UI. Material-UI uses [a recommended 8px scaling factor by default](https://material.io/design/layout/understanding-layout.html).
 
@@ -335,7 +335,7 @@ const theme = createMuiTheme({
 
 The list of these customization points for each component is documented under the **Component API** section. For instance, you can have a look at the [Button](/api/button/#css). Alternatively, you can always have a look at the [implementation](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/Button/Button.js).
 
-### Properties
+### Eigenschaften
 
 You can also apply properties on all the instances of a component type. We expose a `props` key in the `theme` for this use case.
 
@@ -382,11 +382,11 @@ The performance implications of nesting the `ThemeProvider` component are linked
 
 Generate a theme base on the options received.
 
-#### Arguments
+#### Argumente
 
 1. `options` (*Object*): Takes an incomplete theme object and adds the missing parts.
 
-#### Returns
+#### Rückgabewerte
 
 `theme` (*Object*): A complete, ready to use theme object.
 
