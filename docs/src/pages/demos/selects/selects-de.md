@@ -2,7 +2,7 @@
 title: Select React component
 components: Select, NativeSelect
 ---
-# Selects
+# Auswählen
 
 <p class="description">Select components are used for collecting user provided information from a list of options.</p>
 
