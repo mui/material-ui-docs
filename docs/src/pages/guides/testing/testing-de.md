@@ -1,4 +1,4 @@
-# Testing
+# Testen
 
 <p class="description">Write tests to prevent regressions and write better code.</p>
 
@@ -40,13 +40,13 @@ Generate an enhanced shallow function with the needed context. Please refer to t
 
 #### Arguments
 
-1. `options` (*Object* [optional]) 
+1. `Optionen` (*Object* [optional]) 
     - `options.shallow` (*Function* [optional]): The shallow function to enhance, it uses **enzyme by default**.
     - `options.untilSelector` (*String* [optional]): Recursively shallow renders the children until it can find the provided selector. It's useful to drill down higher-order components.
     - `options.dive` (*Boolean* [optional]): Shallow render the one non-DOM child of the current wrapper, and return a wrapper around the result.
     - The other keys are forwarded to the options argument of `enzyme.shallow()`.
 
-#### Returns
+#### Rückgabewerte
 
 `shallow` (*shallow*): A shallow function.
 
@@ -74,11 +74,11 @@ Generate an enhanced mount function with the needed context. Please refer to the
 
 #### Arguments
 
-1. `options` (*Object* [optional]) 
+1. `Optionen` (*Object* [optional]) 
     - `options.mount` (*Function* [optional]): The mount function to enhance, it uses **enzyme by default**.
     - The other keys are forwarded to the options argument of `enzyme.mount()`.
 
-#### Returns
+#### Rückgabewerte
 
 `mount` (*mount*): A mount function.
 
@@ -110,11 +110,11 @@ Generate a render to string function with the needed context. Please refer to th
 
 #### Arguments
 
-1. `options` (*Object* [optional]) 
+1. `Optionen` (*Object* [optional]) 
     - `options.render` (*Function* [optional]): The render function to enhance, it uses **enzyme by default**.
     - The other keys are forwarded to the options argument of `enzyme.render()`.
 
-#### Returns
+#### Rückgabewerte
 
 `render` (*Function*): A render to string function.
 
