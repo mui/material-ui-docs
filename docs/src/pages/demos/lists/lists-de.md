@@ -76,7 +76,7 @@ Der Schalter ist die sekundäre Aktion und ein separates Ziel.
 
 Nach dem Scrollen bleiben angeheftete Kopfzeilen am oberen Bildschirmrand fixiert, bis sie von der nächsten Kopfzeile aus dem Bildschirm gedrückt werden.
 
-This feature is relying on the CSS sticky positioning. Unfortunately it's [not implemented](https://caniuse.com/#search=sticky) by all the browsers we are supporting. We default to `disableSticky` when not supported.
+Diese Funktion basiert auf der CSS-Sticky-Positionierung. Leider ist es [ nicht von allen Browsern implementiert](https://caniuse.com/#search=sticky), die wir unterstützt. Wir setzen standardmäßig auf `disableSticky` wenn dies nicht unterstützt wird.
 
 {{"demo": "pages/demos/lists/PinnedSubheaderList.js"}}
 
