@@ -1,14 +1,14 @@
 ---
-title: List React component
+title: Listen React Komponente
 components: Collapse, Divider, List, ListItem, ListItemAvatar, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader
 ---
 # Listen
 
-<p class="description">Lists are continuous, vertical indexes of text or images.</p>
+<p class="description">Listen sind durchgehende, vertikale Indexe von Text oder Bildern.</p>
 
-[Lists](https://material.io/design/components/lists.html) are a continuous group of text or images. They are composed of items containing primary and supplemental actions, which are represented by icons and text.
+[Listen](https://material.io/design/components/lists.html) sind eine fortlaufende Gruppe von Text oder Bildern. Sie bestehen aus Elementen, die primäre und ergänzende Aktionen enthalten, die durch Symbole und Texte dargestellt werden.
 
-## Simple List
+## Einfache Liste
 
 {{"demo": "pages/demos/lists/SimpleList.js"}}
 
