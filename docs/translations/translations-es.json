@@ -57,7 +57,7 @@
   "signInDescr": "Simple página de inicio de sesión.",
   "signInSideTitle": "Inicio de sesión lateral",
   "signInSideDescr": "Simple página de inicio de sesión lateral.",
-  "signUpTitle": "Registrate",
+  "signUpTitle": "Registrarse",
   "signUpDescr": "Una simple página de registro.",
   "blogTitle": "Blog",
   "blogDescr": "Diseño de una sofisticada página de blog. El soporte para Markdown por cortesía de markdown-to-jsx, pero es fácilmente reemplazable.",
