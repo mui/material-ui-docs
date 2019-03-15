@@ -30,7 +30,7 @@ This output transformation function can be customized [using the theme](/customi
 
 Fluid grids use columns that scale and resize content. A fluid grid’s layout can use breakpoints to determine if the layout needs to change dramatically.
 
-### Basic grid
+### Grundraster
 
 The column widths apply at all breakpoints (i.e. `xs` and up).
 
