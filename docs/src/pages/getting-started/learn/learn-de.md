@@ -32,7 +32,7 @@ When first learning Material-UI, you might find third-party blog posts, books an
 - **Elegant UX in React with Material-UI**: a blog post covering some important Material-UI concepts. 
   - 📝 [The blog post](https://alligator.io/react/material-ui/)
 
-### Paid
+### Kostenpflichtig
 
 - **Builder Book**: Learn how to build a full-stack JavaScript web application from scratch, using a Modern JavaScript stack and Material-UI. 
   - 📘 [The book](https://builderbook.org/book)
