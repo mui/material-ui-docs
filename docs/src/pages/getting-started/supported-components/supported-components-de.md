@@ -6,7 +6,7 @@ Wir bemühen uns darum die Richtlinien soweit wie es praktisch möglich ist zu b
 
 Wenn Sie Unterstützung für eine Komponente oder ein Feature hinzufügen möchten, welche hier nicht markiert sind, suchen Sie bitte nach dem entsprechenden [GitHub-Issue](https://github.com/mui-org/material-ui/issues) oder erstellen Sie ein neues, um die Realisierung zu besprechen, bevor Sie ein Pull-Request absenden.
 
-- App bars 
+- App bar 
   - **[Top](https://material.io/design/components/app-bars-top.html) ✓**
   - **[Bottom](https://material.io/design/components/app-bars-bottom.html) ✓**
 - **[Banners](https://material.io/design/components/banners.html)** ([Can be composed](https://medium.com/material-ui/introducing-material-ui-design-system-93e921beb8df))
@@ -100,7 +100,7 @@ Wenn Sie Unterstützung für eine Komponente oder ein Feature hinzufügen möcht
   - [Assistive elements:](https://material.io/design/components/text-fields.html#anatomy) 
     - **Helper text ✓**
     - **Error message ✓**
-    - **Icons ✓**
+    - **Symbole ✓**
     - Character counter
 - **[Toolbars](https://material.io/archive/guidelines/components/toolbars.html) ✓** (Legacy Material v1)
 - **[Tooltips](https://material.io/design/components/tooltips.html) ✓** 
