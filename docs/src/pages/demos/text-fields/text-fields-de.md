@@ -40,45 +40,45 @@ Möglicherweise haben Sie auch festgestellt, dass einige native HTML-Eingabeeige
 
 {{"demo": "pages/demos/text-fields/Inputs.js"}}
 
-## Customized inputs
+## Benutzerdefinierte Eingabe
 
-If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here's an example of how you can change the main color of an Input.
+Wenn du die [Überschreibungs Dokumentationsseite](/customization/overrides/) gelesen hast, aber dich noch nicht sicher genug fühlst, um direkt loszulegen, ist hier noch ein Beispiel, wie du die Farbe der Eingabe ändern kannst.
 
 ⚠️ Auch wenn die material design Spezifikation zur Verwendung von Themes ermutigt, liegen diese Beispiele außerhalb der üblichen Pfade.
 
 {{"demo": "pages/demos/text-fields/CustomizedInputs.js"}}
 
-Customization does not stop at CSS, you can use composition to build custom components and give your app a unique feel. Below is an example using the [`InputBase`](/api/input-base/) component, inspired by Google Maps.
+Die Anpassung endet nicht bei CSS. Sie können Komposition verwenden, um benutzerdefinierte Komponenten zu erstellen und Ihrer App ein einzigartiges Gefühl zu verleihen. Nachfolgend ein Beispiel mit der [`InputBase`](/api/input-base/) Komponente, die von Google Maps inspiriert wurde.
 
 {{"demo": "pages/demos/text-fields/CustomizedInputBase.js"}}
 
-## Input Adornments
+## Eingabeverzierungen
 
-`Input` allows the provision of `InputAdornment`. These can be used to add a prefix, a suffix or an action to an input. For instance, you can use an icon button to hide or reveal the password.
+`Input` ermöglicht die Bereitstellung von `InputAdornment`. Diese können verwendet werden, um einer Eingabe ein Präfix, ein Suffix oder eine Aktion hinzuzufügen. Sie können beispielsweise eine Symbolschaltfläche verwenden, um das Kennwort ein- oder auszublenden.
 
 {{"demo": "pages/demos/text-fields/InputAdornments.js"}}
 
-### With icon
+### Mit Symbol
 
-Icons can be specified as prepended or appended.
+Symbole können vorangestellt oder angehängt werden.
 
 {{"demo": "pages/demos/text-fields/InputWithIcon.js"}}
 
-### Filled Input Adornments
+### Ausgefüllte Eingabeverzierungen
 
 {{"demo": "pages/demos/text-fields/FilledInputAdornments.js"}}
 
-### Outlined Input Adornments
+### Umrahmte Eingabeverzierungen
 
 {{"demo": "pages/demos/text-fields/OutlinedInputAdornments.js"}}
 
 ## Layout
 
-`TextField`, `FormControl` allow the specification of `margin` to alter the vertical spacing of inputs. Using `none` (default) will not apply margins to the `FormControl`, whereas `dense` and `normal` will as well as alter other styles to meet the specification.
+`TextField`, `FormControl` ermöglicht die Angabe von `Abständen (Margin)`, um den vertikalen Abstand der Eingaben zu ändern. Bei Verwendung von `none` (Standard) werden keine Ränder für das `FormControl` angewendet, wohingegen `dense (dicht)` und `normal` sowie andere Stile angegeben werden können, um die Spezifikation zu erfüllen.
 
 {{"demo": "pages/demos/text-fields/TextFieldMargins.js"}}
 
-## Limitations
+## Einschränkungen
 
 The input label "shrink" state isn't always correct. The input label is supposed to shrink as soon as the input is displaying something. In some circumstances, we can't determine the "shrink" state (number input, datetime input, Stripe input). You might notice an overlap.
 
