@@ -32,7 +32,7 @@ Oder, falls sie JSX anstatt HTML benutzen, um den Head zu rendern:
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
 ```
 
-## Font Icons
+## Schriftarten-Icons
 
 In order to use the font `Icon` component you must first add the [Material icons](https://material.io/tools/icons/) font. Here are [some instructions](/style/icons/#font-icons) on how to do so. Zum Beispiel über Google Web Fonts:
 
