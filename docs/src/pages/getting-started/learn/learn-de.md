@@ -8,7 +8,7 @@ People come to Material-UI from different backgrounds and with different learnin
 
 The [usage page](/getting-started/usage/#quick-start) contains a small Material-UI example with a live editor. Even if you don’t know anything about Material-UI yet, try changing the code and see how it affects the result.
 
-## Example Projects
+## Beispielprojekte
 
 We [host some example projects](/getting-started/example-projects/) providing the infrastructure needed to develop and deploy websites in React.
 
