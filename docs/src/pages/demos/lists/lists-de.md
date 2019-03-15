@@ -12,7 +12,7 @@ components: Collapse, Divider, List, ListItem, ListItemAvatar, ListItemIcon, Lis
 
 {{"demo": "pages/demos/lists/SimpleList.js"}}
 
-The last item of the previous demo shows how you can render a link:
+Das letzte Element der vorherigen Demo zeigt, wie Sie einen Link rendern können:
 
 ```jsx
 function ListItemLink(props) {
