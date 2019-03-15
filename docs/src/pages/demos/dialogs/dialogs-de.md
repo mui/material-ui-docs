@@ -2,7 +2,7 @@
 title: Dialog React component
 components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Slide
 ---
-# Dialogs
+# Dialoge
 
 <p class="description">Dialogs inform users about a task and can contain critical information, require decisions, or involve multiple tasks.</p>
 
@@ -21,7 +21,7 @@ Touch mechanics:
 
 {{"demo": "pages/demos/dialogs/SimpleDialog.js"}}
 
-## Alerts
+## Warnungen
 
 Alerts are urgent interruptions, requiring acknowledgement, that inform the user about a situation.
 
