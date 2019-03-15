@@ -8,13 +8,13 @@ Erkunden Sie das Dokumentationsdesignobjekt:
 
 {{"demo": "pages/customization/default-theme/DefaultTheme.js", "hideEditButton": true}}
 
-> Tipp: Sie können mit dem Theme der Dokumentation in ** Ihrer Konsole **spielen. We expose a documentation `theme` variable on all the documentation pages. Please note that the documentation site is using a custom theme.
+> Tipp: Sie können mit dem Theme der Dokumentation in ** Ihrer Konsole **spielen. Wir stellen eine ` Theme ` Variable auf allen Dokumentationsseiten zur Verfügung. Bitte beachten Sie, dass die Dokumentationsseite ein benutzerdefiniertes Theme verwendet.
 
-If you want to learn more about how the theme is assembled, take a look at [`material-ui/style/createMuiTheme.js`](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/styles/createMuiTheme.js), and the related imports which `createMuiTheme` uses.
+Wenn Sie mehr darüber erfahren möchten, wie das Theme zusammengestellt wird, werfen Sie einen Blick auf [` material-ui / style / createMuiTheme.js `](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/styles/createMuiTheme.js), und die zugehörigen Importe, die ` createMuiTheme ` verwendet.
 
 ## @material-ui/core/styles vs @material-ui/styles
 
-Material-UI styles are powered by the [@material-ui/styles](/css-in-js/basics/) npm package. It's a styling solution for React. This solution is [isolated](https://bundlephobia.com/result?p=@material-ui/styles), it has has no knowledge of the default Material-UI theme. To remove the need for injecting a theme in the React's context **systematically**, we are wrapping the style modules (`makeStyles`, `withStyles` and `styled`) with the default Material-UI theme:
+Material-UI-Stile werden von dem npm paket [ @ material-ui/styles ](/css-in-js/basics/)unterstützt. Es ist eine Styling-Lösung für React. This solution is [isolated](https://bundlephobia.com/result?p=@material-ui/styles), it has has no knowledge of the default Material-UI theme. To remove the need for injecting a theme in the React's context **systematically**, we are wrapping the style modules (`makeStyles`, `withStyles` and `styled`) with the default Material-UI theme:
 
 - `@material-ui/core/styles/makeStyles` wraps `@material-ui/styles/makeStyles`.
 - `@material-ui/core/styles/withStyles` wraps `@material-ui/styles/withStyles`.
