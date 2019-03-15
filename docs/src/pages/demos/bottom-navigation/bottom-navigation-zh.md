@@ -1,14 +1,14 @@
 ---
-title: 底部导航React组件
+title: React Bottom Navigation（底部导航栏）组件
 components: BottomNavigation,BottomNavigationAction
 ---
-# 底部导航
+# Bottom Navigation（底部导航栏）
 
 <p class="description">底部导航栏允许在应用程序的主要导航项之间跳转。</p>
 
 [底部导航栏](https://material.io/design/components/bottom-navigation.html)在屏幕下方显示三到五个导航项。 每一个导航项都由一个图标和一个可选文本标签表示 当点击底部导航图标时，用户将被带到与该图标关联的目标页面顶部。
 
-## 底部导航
+## Bottom Navigation（底部导航栏）
 
 当只有 **三个** 导航项时, 始终显示图标和文本标签。
 
