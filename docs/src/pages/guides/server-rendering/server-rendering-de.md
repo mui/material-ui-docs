@@ -15,7 +15,7 @@ Material-UI was designed from the ground-up with the constraint of rendering on 
 
 On the client side, the CSS will be injected a second time before removing the server-side injected CSS.
 
-## Setting Up
+## Installation
 
 In the following recipe, we are going to look at how to set up server-side rendering.
 
