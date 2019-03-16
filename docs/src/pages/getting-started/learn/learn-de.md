@@ -1,16 +1,16 @@
-# Learn Material-UI
+# Lernen Sie die Material-UI kennen
 
-<p class="description">New to Material-UI? It's easy to learn if you know where to start! This guide will help you to get started quickly.</p>
+<p class="description">Neu bei der Material-UI? Es ist leichter zu lernen, wenn Sie wissen, wo Sie anfangen sollen! Diese Anleitung hilft Ihnen, schnell loszulegen.</p>
 
-People come to Material-UI from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you’ll find this section helpful. Like any unfamiliar technology, Material-UI does have a learning curve. With practice and some patience, you will soon get the hang of it.
+Menschen kommen aus unterschiedlichen Bereichen und mit unterschiedlichen Lernstilen zu Material-UI. Egal, ob Sie einen eher theoretischen oder praktischen Ansatz bevorzugen, wir hoffen, Sie finden diesen Abschnitt hilfreich. Wie jede unbekannte Technologie hat Material-UI eine Lernkurve. Mit etwas Übung und Geduld werden Sie bald den Dreh raus haben.
 
-## First Example
+## Erstes Beispiel
 
-The [usage page](/getting-started/usage/#quick-start) contains a small Material-UI example with a live editor. Even if you don’t know anything about Material-UI yet, try changing the code and see how it affects the result.
+Die [Verwendungsseite](/getting-started/usage/#quick-start) enthält ein kleines Material-UI-Beispiel mit einem Live-Editor. Selbst wenn Sie noch nichts über Material-UI wissen, können Sie den Code ändern und sehen Sie, wie er das Ergebnis beeinflusst.
 
 ## Beispielprojekte
 
-We [host some example projects](/getting-started/example-projects/) providing the infrastructure needed to develop and deploy websites in React.
+Wir [hosten einige Beispielprojekte](/getting-started/example-projects/) mit der Infrastruktur, die für die Entwicklung und Bereitstellung von Websites in React erforderlich ist.
 
 ## Page layout examples
 
