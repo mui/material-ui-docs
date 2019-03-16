@@ -55,7 +55,7 @@ Wenn Sie Unterstützung für eine Komponente oder ein Feature hinzufügen möcht
   - Thumbnail
   - **Controls ✓** 
     - **Checkbox ✓**
-    - **Expand/collapse ✓** (AKA Nested)
+    - **Expand/collapse ✓** (bzw. Verschachtelt)
     - **Switch ✓**
     - Reorder
 - **[Menus](https://material.io/design/components/menus.html) ✓** 
