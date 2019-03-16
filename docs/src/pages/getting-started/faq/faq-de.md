@@ -116,17 +116,17 @@ Wickeln Sie die Komponente mit dem [`RootRef`](/api/root-ref/) Helfer ein.
 
 ## Warum unterscheiden sich die Farben, die ich sehe, von denen, die ich hier sehe?
 
-Die Dokumentationssite verwendet ein benutzerdefiniertes Theme. Daher unterscheidet sich die Farbpalette vom Standarddesign der Material-UI. Please refer to [this page](/customization/themes/) to learn about theme customization.
+Die Dokumentationssite verwendet ein benutzerdefiniertes Theme. Daher unterscheidet sich die Farbpalette vom Standarddesign der Material-UI. Siehe [diese Seite](/customization/themes/), um Informationen zum Anpassen von Motiven zu erhalten.
 
-## Material-UI is awesome. How can I support the project?
+## Material-UI ist großartig. Wie kann ich das Projekt unterstützen?
 
-There are many ways to support Material-UI:
+Es gibt viele Möglichkeiten, die Material-UI zu unterstützen:
 
-- Improve [the documentation](https://github.com/mui-org/material-ui/tree/next/docs).
-- Help others to get started.
-- [Spread the word](https://twitter.com/MaterialUI).
-- Answer questions on [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) or on [Spectrum](https://spectrum.chat/material-ui).
+- Verbessern Sie [die Dokumentation](https://github.com/mui-org/material-ui/tree/next/docs).
+- Helfen Sie anderen, loszulegen.
+- [Verbreiten Sie Material-Ui](https://twitter.com/MaterialUI).
+- Beantworten Sie die Fragen auf [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) oder auf [Spectrum](https://spectrum.chat/material-ui).
 
-If you use Material-UI in a commercial project and would like to support its continued development by becoming a **Sponsor**, or in a side or hobby project and would like to become a backer, you can do so through [OpenCollective](https://opencollective.com/material-ui).
+Wenn Sie die Material-UI in einem kommerziellen Projekt verwenden und ihre weitere Entwicklung unterstützen möchten, indem Sie ein **Sponsor** werden, oder in einem Seiten- oder Hobbyprojekt und möchten ein Geldgeber werden, können Sie dies durch [OpenCollective](https://opencollective.com/material-ui) tun.
 
-All funds raised are managed transparently, and Sponsors receive recognition in the README and on the Material-UI home page.
+Alle erhaltenen Mittel werden transparent verwaltet, und die Sponsoren werden in der README-Datei und auf der Material-UI-Startseite anerkannt.
