@@ -9,7 +9,7 @@ A [system icon](https://material.io/design/iconography/system-icons.html) or UI 
 
 Material-UI provides two components to render system icons: `SvgIcon` for rendering SVG paths, and `Icon` for rendering font icons.
 
-## SVG Icons
+## SVG Symbole
 
 The `SvgIcon` component takes an SVG `path` element as its child and converts it to a React component that displays the path, and allows the icon to be styled and respond to mouse events. SVG elements should be scaled for a 24x24px viewport.
 
