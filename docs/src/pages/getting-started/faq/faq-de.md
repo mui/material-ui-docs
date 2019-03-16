@@ -68,11 +68,11 @@ Es ist sehr zu empfehlen:
 - Es verfügt über eine saubere, konsistente [API](https://cssinjs.org/json-api/).
 - Es unterstützt eine Reihe von erweiterten Funktionen, entweder nativ oder durch [ Plugins](https://cssinjs.org/plugins/).
 
-Vielleicht fügen Sie jedoch einer App einige Material-UI-Komponenten hinzu, die bereits eine andere Styling-Lösung verwendet, oder Sie sind bereits mit einer anderen API vertraut und wollen keine neue lernen? In that case, head over to the [Style Library Interoperability](/guides/interoperability/) section, where we show how simple it is to restyle Material-UI components with alternative style libraries.
+Vielleicht fügen Sie jedoch einer App einige Material-UI-Komponenten hinzu, die bereits eine andere Styling-Lösung verwendet, oder Sie sind bereits mit einer anderen API vertraut und wollen keine neue lernen? In diesem Fall gehen Sie zum [Zusammenführen von Style Libraries](/guides/interoperability/) Abschnitt in dem wir zeigen, wie einfach es ist, Material-UI-Komponenten mit alternativen Stilbibliotheken umzustrukturieren.
 
-## When should I use inline-style vs classes?
+## Wann sollte ich Inline-Styles und wann Klassen verwenden?
 
-As a rule of thumb, only use inline-style for dynamic style properties. The CSS alternative provides more advantages, such as:
+Verwenden Sie als Faustregel Inline-Style nur für dynamische Stileigenschaften. Die CSS-Alternative bietet weitere Vorteile, z.B.:
 
 - auto-prefixing
 - better debugging
