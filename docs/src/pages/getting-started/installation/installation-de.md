@@ -34,7 +34,7 @@ Oder, falls sie JSX anstatt HTML benutzen, um den Head zu rendern:
 
 ## Schriftarten-Icons
 
-In order to use the font `Icon` component you must first add the [Material icons](https://material.io/tools/icons/) font. Here are [some instructions](/style/icons/#font-icons) on how to do so. Zum Beispiel über Google Web Fonts:
+Um die Font `Symbol` Komponente zu verwenden, müssen Sie zuerst die [Material Symbole Schriftart](https://material.io/tools/icons/) hinzufügen. Hier sind einige [Anweisungen](/style/icons/#font-icons) wie das geht. Zum Beispiel über Google Web Fonts:
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -46,15 +46,15 @@ Oder, falls sie JSX anstatt HTML benutzen, um den Head zu rendern:
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
 
-## SVG Icons
+## SVG Symbole
 
-In order to use prebuilt SVG Material icons, such as those found in the [component demos](/demos/app-bar/) you must first install the [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) package:
+Um vorgefertigte SVG-Materialsymbole zu verwenden, wie sie in den [Demos der Komponente](/demos/app-bar/) enthalten sind, müssen Sie zuerst die Symbole [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) Paket installieren:
 
 ```sh
-// with npm
+// mit npm
 npm install @material-ui/icons@next
 
-// with yarn
+// mit yarn
 yarn add @material-ui/icons@next
 ```
 
