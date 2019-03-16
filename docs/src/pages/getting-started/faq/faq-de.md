@@ -51,24 +51,24 @@ import { createMuiTheme } from '@material-ui/core';
 
 const theme = createMuiTheme({
   transitions: {
-    // So we have `transition: none;` everywhere
+    // Jetzt haven wir überall `transition: none;`
     create: () => 'none',
   },
 });
 ```
 
-Sometimes you will want to enable this behavior conditionally, for instance during testing or on low-end devices, in these cases, you can dynamically change the theme value.
+Manchmal wollen Sie dieses Verhalten bedingt ermöglichen, zum Beispiel während der Prüfung oder auf Low-End-Geräten, in diesen Fällen können Sie dynamisch den Wert des Themes ändern.
 
-## Do I have to use JSS to style my app?
+## Muss ich JSS verwenden, um meine App zu stylen?
 
-It's highly recommended:
+Es ist sehr zu empfehlen:
 
-- It comes built in, so carries no additional bundle size overhead.
-- It's fast & memory efficient.
-- It has a clean, consistent [API](https://cssinjs.org/json-api/).
-- It supports a number of advanced features, either natively, or through [plugins](https://cssinjs.org/plugins/).
+- Es wird eingebaut geliefert, so dass keine zusätzlichen Paketgrößen anfallen.
+- Es ist schnell & speichereffizient.
+- Es verfügt über eine saubere, konsistente [API](https://cssinjs.org/json-api/).
+- Es unterstützt eine Reihe von erweiterten Funktionen, entweder nativ oder durch [ Plugins](https://cssinjs.org/plugins/).
 
-However perhaps you're adding some Material-UI components to an app that already uses another styling solution, or are already familiar with a different API, and don't want to learn a new one? In that case, head over to the [Style Library Interoperability](/guides/interoperability/) section, where we show how simple it is to restyle Material-UI components with alternative style libraries.
+Vielleicht fügen Sie jedoch einer App einige Material-UI-Komponenten hinzu, die bereits eine andere Styling-Lösung verwendet, oder Sie sind bereits mit einer anderen API vertraut und wollen keine neue lernen? In that case, head over to the [Style Library Interoperability](/guides/interoperability/) section, where we show how simple it is to restyle Material-UI components with alternative style libraries.
 
 ## When should I use inline-style vs classes?
 
