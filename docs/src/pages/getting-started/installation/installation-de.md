@@ -9,10 +9,10 @@ Material-UI ist als [npm-Paket](https://www.npmjs.com/package/@material-ui/core)
 Um die Abhängigkeit zu ihrer `package.json` hinzuzufügen, führen Sie folgenden Befehl aus:
 
 ```sh
-// with npm
+// mit npm
 npm install @material-ui/core@next
 
-// with yarn
+// mit yarn
 yarn add @material-ui/core@next
 ```
 
