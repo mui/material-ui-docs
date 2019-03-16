@@ -30,9 +30,9 @@ components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination
 
 {{"demo": "pages/demos/tables/SimpleTable.js"}}
 
-## Dense Table
+## Плотная компоновка таблицы
 
-A simple example of a dense table with no frills.
+Простой пример таблицы с плотной компоновкой и без излишеств.
 
 {{"demo": "pages/demos/tables/DenseTable.js"}}
 
