@@ -53,7 +53,7 @@ Form dialogs allow users to fill out form fields within a dialog. For example, i
 
 If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here is one example of how you can customize the `DialogTitle` to support a close button.
 
-⚠️ While the material design specification encourages theming, this example is off the beaten path.
+⚠️ Auch wenn die Material-Design Spezifikation zur Verwendung von Themes ermutigt, liegen diese Beispiele außerhalb der üblichen Pfade.
 
 {{"demo": "pages/demos/dialogs/CustomizedDialog.js"}}
 
