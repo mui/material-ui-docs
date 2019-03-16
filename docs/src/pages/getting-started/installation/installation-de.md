@@ -60,13 +60,13 @@ yarn add @material-ui/icons@next
 
 ## CDN
 
-You can start using Material-UI with minimal Front-end infrastructure, which is great for prototyping. We discourage using this approach in production though - the client has to download the entire library, regardless of which components are actually used, affecting performance and bandwidth utilisation.
+Sie können mit der Material-UI mit minimaler Front-End-Infrastruktur verwenden, was sich hervorragend für das Prototyping eignet. Wir raten davon ab, diesen Ansatz in der Produktion zu verwenden: Der Client muss die gesamte Bibliothek herunterladen, unabhängig davon, welche Komponenten tatsächlich verwendet werden, was die Leistung und Bandbreitennutzung beeinflussen.
 
-#### UMD releases
+#### UMD-Versionen
 
-We are providing two Universal Module Definition (UMD) files:
+Wir bieten zwei UMD-Dateien (Universal Module Definition) an:
 
-- one for development: https://unpkg.com/@material-ui/core@next/umd/material-ui.development.js
-- one for production: https://unpkg.com/@material-ui/core@next/umd/material-ui.production.min.js
+- eine für die Entwicklung: https://unpkg.com/@material-ui/core@next/umd/material-ui.development.js
+- eine für die Entwicklung: https://unpkg.com/@material-ui/core@next/umd/material-ui.production.min.js
 
-You can follow [this CDN example](https://github.com/mui-org/material-ui/tree/next/examples/cdn-next) to quickly get started.
+Sie können diesem [CDN-Beispiel](https://github.com/mui-org/material-ui/tree/next/examples/cdn-next) folgen um schnell anfangen zu können.
