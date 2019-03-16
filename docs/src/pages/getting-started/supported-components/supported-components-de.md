@@ -7,10 +7,10 @@ Wir bemühen uns darum die Richtlinien soweit wie es praktisch möglich ist zu b
 Wenn Sie Unterstützung für eine Komponente oder ein Feature hinzufügen möchten, welche hier nicht markiert sind, suchen Sie bitte nach dem entsprechenden [GitHub-Issue](https://github.com/mui-org/material-ui/issues) oder erstellen Sie ein neues, um die Realisierung zu besprechen, bevor Sie ein Pull-Request absenden.
 
 - App bar 
-  - **[Top](https://material.io/design/components/app-bars-top.html) ✓**
-  - **[Bottom](https://material.io/design/components/app-bars-bottom.html) ✓**
-- **[Banners](https://material.io/design/components/banners.html)** ([Can be composed](https://medium.com/material-ui/introducing-material-ui-design-system-93e921beb8df))
-- **[Bottom navigation](https://material.io/design/components/bottom-navigation.html) ✓**
+  - **[Oben](https://material.io/design/components/app-bars-top.html) ✓**
+  - **[Unten](https://material.io/design/components/app-bars-bottom.html) ✓**
+- **[Banner](https://material.io/design/components/banners.html)** ([ Kann zusammengesetzt werden ](https://medium.com/material-ui/introducing-material-ui-design-system-93e921beb8df))
+- **[Fußzeilennavigation](https://material.io/design/components/bottom-navigation.html) ✓**
 - **[Buttons](https://material.io/design/components/buttons.html) ✓** 
   - **[Text & contained buttons (formerly flat & raised)](https://material.io/design/components/buttons.html) ✓**
   - **[Toggle buttons](https://material.io/design/components/buttons.html#buttons-toggle-buttons) ~** ([Lab](/lab/about/))
