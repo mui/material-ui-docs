@@ -74,26 +74,26 @@ Vielleicht fügen Sie jedoch einer App einige Material-UI-Komponenten hinzu, die
 
 Verwenden Sie als Faustregel Inline-Style nur für dynamische Stileigenschaften. Die CSS-Alternative bietet weitere Vorteile, z.B.:
 
-- auto-prefixing
-- better debugging
-- media queries
-- keyframes
+- Auto-Präfixe
+- Besseres debuggen
+- Medien-Anfragen
+- Keyframes
 
-## How do I use react-router?
+## Wie verwende ich den react-router?
 
-We have documented how to use a [third-party routing library](/demos/buttons/#third-party-routing-library) with the `ButtonBase` component. A lot of our interactive components use it internally: `Button`, `MenuItem`, `<ListItem button />`, `Tab`, etc. You can use the same solution with them.
+Wir haben dokumentiert, wie Sie eine [Routing-Bibliothek von Drittanbietern](/demos/buttons/#third-party-routing-library) mit der `ButtonBase` Komponente verwenden. Viele unserer interaktiven Komponenten verwenden es intern: `Button`, `Menüelement`, ` <1 /> `, `Tab`, usw. Sie können dieselbe Lösung mit ihnen verwenden.
 
-## How do I combine the `withStyles()` and `withTheme` HOCs?
+## Wie kombiniere ich die `withStyles()` und `withTheme` HOCs?
 
-There are a number of different options:
+Es gibt verschiedene Möglichkeiten:
 
-**`withTheme` option:**
+**`withTheme` Option:**
 
 ```js
 export default withStyles(styles, { withTheme: true })(Modal);
 ```
 
-**`compose()` helper function:**
+**`compose ()` Helferfunktion:**
 
 ```js
 import { compose } from 'recompose';
@@ -104,19 +104,19 @@ export default compose(
 )(Modal);
 ```
 
-**raw function chaining:**
+**rohe Funktionsverkettung:**
 
 ```js
 export default withTheme(withStyles(styles)(Modal));
 ```
 
-## How can I access the DOM element?
+## Wie kann ich auf das DOM-Element zugreifen?
 
-Wrap the component with the [`RootRef`](/api/root-ref/) helper.
+Wickeln Sie die Komponente mit dem [`RootRef`](/api/root-ref/) Helfer ein.
 
-## Why are the colors I am seeing different from what I see here?
+## Warum unterscheiden sich die Farben, die ich sehe, von denen, die ich hier sehe?
 
-The documentation site is using a custom theme. Hence, the color palette is different from the default theme that Material-UI ships. Please refer to [this page](/customization/themes/) to learn about theme customization.
+Die Dokumentationssite verwendet ein benutzerdefiniertes Theme. Daher unterscheidet sich die Farbpalette vom Standarddesign der Material-UI. Please refer to [this page](/customization/themes/) to learn about theme customization.
 
 ## Material-UI is awesome. How can I support the project?
 
