@@ -1,10 +1,10 @@
 ---
-title: Drawer React component
+title: Seitliches Menü React-Komponente
 components: Drawer, SwipeableDrawer
 ---
 # Seitliches Menü
 
-<p class="description">Navigation drawers provide access to destinations in your app. Side sheets are surfaces containing supplementary content that are anchored to the left or right edge of the screen.</p>
+<p class="description">Navigationsfächer bieten Zugriff auf Ziele in Ihrer App. Seitenblätter sind Flächen, die zusätzlichen Inhalt enthalten, der am linken oder rechten Rand des Bildschirms verankert ist.</p>
 
 [Navigation drawers](https://material.io/design/components/navigation-drawer.html) provide access to destinations and app functionality, such as switching accounts. They can either be permanently on-screen or controlled by a navigation menu icon.
 
