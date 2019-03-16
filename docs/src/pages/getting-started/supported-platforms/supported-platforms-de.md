@@ -1,20 +1,20 @@
-# Supported Platforms
+# Unterstützte Plattformen
 
-<p class="description">Learn about the platforms, from modern to old, that are supported by Material-UI.</p>
+<p class="description">Erfahren Sie, welche von der modernen bis zu alten Plattformen von Material-UI unterstützt werden.</p>
 
 ## Browser
 
-Material-UI supports the latest, stable releases of all major browsers and platforms. We also support Internet Explorer 11. You don't need to provide any JavaScript polyfill as we manage unsupported browser features internally and in isolation.
+Die Material-UI unterstützt die neuesten, stabilen Versionen aller gängigen Browser und Plattformen. Wir unterstützen auch Internet Explorer 11. Sie müssen keine JavaScript-Komponente angeben, da wir nicht unterstützte Browserfunktionen intern und isoliert verwalten.
 
 | IE | Edge  | Firefox | Chrome | Safari | Googlebot |
 |:-- |:----- |:------- |:------ |:------ |:--------- |
 | 11 | >= 14 | >= 52   | >= 49  | >= 10  | ✅         |
 
-Because Googlebot uses a web rendering service (WRS) to index the page content, it's critical that Material-UI supports it. [WRS is based on Chrome 41](https://developers.google.com/search/docs/guides/rendering). You can expect Material-UI's components to render without major issues.
+Da Googlebot einen Web-Rendering-Service (WRS) zum Indizieren des Seiteninhalts verwendet, ist es entscheidend, dass Material-UI dies unterstützt. [ WRS basiert auf Chrome 41 ](https://developers.google.com/search/docs/guides/rendering). Sie können erwarten, dass die Komponenten von Material-UI ohne größere Probleme gerendert werden.
 
 ## Server
 
-Because Material-UI supports server-side rendering, we need to support the latest, stable releases of [Node.js](https://github.com/nodejs/node). We also try to support the [LTS versions that are in maintenance](https://github.com/nodejs/Release#lts-schedule1). Right now, we support **node v8.x** and newer versions.
+Da die Material-UI serverseitiges Rendering unterstützt, müssen wir die neueste, stabile Version von [Node.js ](https://github.com/nodejs/node) unterstützen. Wir versuchen auch, die in Wartung befindlichen [LTS-Versionen](https://github.com/nodejs/Release#lts-schedule1) zu unterstützen. Derzeit unterstützen wir den **node v8.x** und neuere Versionen.
 
 ### CSS prefixing
 
