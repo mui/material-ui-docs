@@ -22,29 +22,29 @@ Im Allgemeinen ist es einfach, dieses Problem zu beheben, indem jede Material-UI
 
 ## Warum bewegen sich die fest positionierten Elemente, wenn ein Modal geöffnet wird?
 
-Wir blockieren die Blättern, sobald eine Modalität geöffnet ist. Dies verhindert die Interaktion mit dem Hintergrund, wenn der Modal der einzige interaktive Inhalt sein sollte. Wenn Sie jedoch die Bildlaufleiste entfernen, können Sie Ihre **fest positionierten Elemente ** bewegen. In this situation, you can apply a global `.mui-fixed` class name to tell Material-UI to handle those elements.
+Wir blockieren die Blättern, sobald eine Modalität geöffnet ist. Dies verhindert die Interaktion mit dem Hintergrund, wenn der Modal der einzige interaktive Inhalt sein sollte. Wenn Sie jedoch die Bildlaufleiste entfernen, können Sie Ihre **fest positionierten Elemente ** bewegen. In dieser Situation können Sie einen globalen `.mui-fixed` Klassennamen anwenden, damit Material-UI mit diesen Elementen umgehen kann.
 
-## How can I disable the ripple effect globally?
+## Wie kann ich den Ripple-Effekt global deaktivieren?
 
-The ripple effect is exclusively coming from the `BaseButton` component. You can disable the ripple effect globally by providing the following in your theme:
+Der Ripple-Effekt kommt ausschließlich von der `BaseButton` Komponente. Sie können den Ripple-Effekt global deaktivieren, indem Sie in Ihrem Theme folgendes angeben:
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
 
 const theme = createMuiTheme({
   props: {
-    // Name of the component ⚛️
+    // Name des Komponenten ⚛️
     MuiButtonBase: {
-      // The properties to apply
-      disableRipple: true, // No more ripple, on the whole application 
+      // The Eigenschaften, die angewendet werden soll
+      disableRipple: true, // Kein Ripple-Effekt in der ganzen Applikation mehr 
     },
   },
 });
 ```
 
-## How can I disable animations globally?
+## Wie kann ich Animationen global deaktivieren?
 
-You can disable animations globally by providing the following in your theme:
+Sie können Animationen global deaktivieren, indem Sie in Ihrem Theme folgendes angeben:
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
