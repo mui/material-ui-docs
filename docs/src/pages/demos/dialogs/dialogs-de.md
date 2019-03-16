@@ -69,39 +69,39 @@ Sie können die maximale Breite eines Dialogs festlegen, indem Sie die `maxWidth
 
 ## Responsive Vollbild
 
-Sie können einen Dialog responsive machen, indem Sie `withMobileDialog` verwenden. Standardmäßig wird `withMobileDialog()(Dialog)` gesetzt, wenn die [Bildschirmgröße](/layout/basics/) *kleiner gleich* `sm` ist. You can choose your own breakpoint for example `xs` by passing the `breakpoint` argument: `withMobileDialog({breakpoint: 'xs'})(Dialog)`.
+Sie können einen Dialog responsive machen, indem Sie `withMobileDialog` verwenden. Standardmäßig wird `withMobileDialog()(Dialog)` gesetzt, wenn die [Bildschirmgröße](/layout/basics/) *kleiner gleich* `sm` ist. Sie können Ihre eigene Bruchstelle z. B. `xs` auswählen, indem Sie das Argument `breakpoint` `withMobileDialog({breakpoint: 'xs'}) (Dialog)` sezten.
 
 {{"demo": "pages/demos/dialogs/ResponsiveDialog.js"}}
 
-## Confirmation dialogs
+## Bestätigungsdialoge
 
-Confirmation dialogs require users to explicitly confirm their choice before an option is committed. For example, users can listen to multiple ringtones but only make a final selection upon touching “OK”.
+Bestätigungsdialogfelder erfordern, dass Benutzer ihre Wahl explizit bestätigen, bevor eine Option festgelegt wird. Zum Beispiel können Benutzer mehrere Klingeltöne hören, sie müssen jedoch nur eine endgültige Auswahl treffen, wenn Sie auf „OK“ tippen.
 
-Touching “Cancel” in a confirmation dialog, or pressing Back, cancels the action, discards any changes, and closes the dialog.
+Durch Berühren von „Abbrechen“ in einem Bestätigungsdialogfeld oder durch Drücken von Zurück wird die Aktion abgebrochen, alle Änderungen verworfen und das Dialogfeld geschlossen.
 
 {{"demo": "pages/demos/dialogs/ConfirmationDialog.js"}}
 
-## Accessibility
+## Barrierefreiheit
 
-Follow the [Modal accessibility section](/utils/modal/#accessibility).
+Folgen Sie dem [Modal Zugänglichkeit Abschnitt](/utils/modal/#accessibility).
 
-## Scrolling long content
+## Blättern von langen Inhalten
 
-When dialogs become too long for the user’s viewport or device, they scroll.
+Wenn Dialoge für das Ansichtsfenster oder das Gerät des Benutzers zu lang werden, scrollen diese.
 
-- `scroll=paper` the content of the dialog scrolls within the paper element.
-- `scroll=body` the content of the dialog scrolls within the body element.
+- `scroll=paper`: Der Inhalt des Dialogs scrollt innerhalb des Papierelements.
+- `scroll=body`: Der Inhalt des Dialogs scrollt innerhalb des Body-Elements.
 
-Try the demo below to see what we mean:
+Probieren Sie die Demo aus, um zu sehen, was wir meinen:
 
 {{"demo": "pages/demos/dialogs/ScrollDialog.js"}}
 
-## Draggable dialog
+## Ziehbarer Dialog
 
-You can create a draggable dialog by using [react-draggable](https://github.com/mzabriskie/react-draggable). To do so, you can pass the the imported `Draggable` component as the `PaperComponent` of the `Dialog` component. This will make the entire dialog draggable.
+Sie können einen ziehbaren Dialog erstellen, indem Sie [react-draggable](https://github.com/mzabriskie/react-draggable) nutzen. Dazu können Sie die importierte `Draggable` Komponente als `PaperComponent` der `Dialog` Komponente übergeben. Dadurch wird der gesamte Dialog verschiebbar.
 
 {{"demo": "pages/demos/dialogs/DraggableDialog.js"}}
 
 ## Performance
 
-Follow the [Modal performance section](/utils/modal/#performance).
+Folgen Sie den [Modal Zugänglichkeit Abschnitt](/utils/modal/#performance).
