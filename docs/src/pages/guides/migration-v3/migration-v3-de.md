@@ -203,8 +203,8 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
   React solved the same problem with the `for` HTML attribute, they have decided to call the prop `htmlFor`. Diese Änderung folgt den gleichen Überlegungen.
   
   ```diff
-  -<AddIcon nativeColor="#fff" />
-  +<AddIcon htmlColor="#fff" />
+  -<0 />
+  +<1 />
   ```
 
 ### Node
