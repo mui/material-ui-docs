@@ -72,7 +72,7 @@ import { Link } from 'react-router-dom';
 
 class ListItemLink extends React.Component {
   renderLink = React.forwardRef((itemProps, ref) => (
-    // with react-router-dom@^5.0.0 use `ref` instead of `innerRef`
+    // mit react-router-dom@^5.0.0 benutze `ref` anstatt `innerRef`
     <RouterLink to={this.props.to} {...itemProps} innerRef={ref} />
   ));
 
@@ -114,21 +114,21 @@ Here is a demo with [React Router DOM](https://github.com/ReactTraining/react-ro
 
 You can find the details in the [TypeScript guide](/guides/typescript#usage-of-component-property).
 
-### Caveat with refs
+### Vorbehalt bei Refs
 
 Some components such as `ButtonBase` (and therefore `Button`) require access to the underlying DOM node. This was previously done with `ReactDOM.findDOMNode(this)`. However `findDOMNode` was deprecated (which disqualifies its usage in React's concurrent mode) in favour of component refs and ref forwarding.
 
-It is therefore necessary that the component you pass to the `component` prop can hold a ref. This includes:
+It is therefore necessary that the component you pass to the `component` prop can hold a ref. Dazu gehören:
 
-- class components
+- Klassen-Komponenten
 - ref forwarding components (`React.forwardRef`)
 - built-in components e.g. `div` or `a`
 
 If this is not the case we will issue a prop type warning similar to:
 
-> Invalid prop `component` supplied to `ComponentName`. Expected an element type that can hold a ref.
+> Invalid prop `component` supplied to `ComponentName`. Es wurde ein Elementtyp erwartet, der eine Referenz enthalten kann.
 
-In addition React will issue a warning.
+Zusätzlich gibt React eine Warnung aus.
 
 You can fix this warning by using `React.forwardRef`. Learn more about it in [this section in the official React docs](https://reactjs.org/docs/forwarding-refs.html).
 
