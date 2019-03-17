@@ -192,8 +192,8 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 - [Divider] Entfernen Sie die veraltete `inset` Eigenschaft.
   
   ```diff
-  -<Divider inset />
-  +<Divider variant="inset" />
+  - <0 />
+  + <1 />
   ```
 
 ### SvgIcon
@@ -213,7 +213,7 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 
 ### UMD
 
-- This change eases the use of Material-UI with a CDN:
+- Diese Änderung erleichtert die Verwendung von Material-UI mit einem CDN:
   
   ```diff
   const {
@@ -223,7 +223,7 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
   +} = MaterialUI;
   ```
   
-  It's consistent with the other React projects:
+  Es stimmt mit den anderen React-Projekten überein:
   
   - material-ui => MaterialUI
   - react-dom => ReactDOM
