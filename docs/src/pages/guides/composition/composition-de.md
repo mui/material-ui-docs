@@ -121,8 +121,8 @@ Some components such as `ButtonBase` (and therefore `Button`) require access to 
 It is therefore necessary that the component you pass to the `component` prop can hold a ref. Dazu gehören:
 
 - Klassen-Komponenten
-- ref forwarding components (`React.forwardRef`)
-- built-in components e.g. `div` or `a`
+- ref Weiterleitungskomponenten (`React.forwardRef`)
+- eingebaute Komponenten zB `div` oder `a`
 
 If this is not the case we will issue a prop type warning similar to:
 
@@ -130,11 +130,11 @@ If this is not the case we will issue a prop type warning similar to:
 
 Zusätzlich gibt React eine Warnung aus.
 
-You can fix this warning by using `React.forwardRef`. Learn more about it in [this section in the official React docs](https://reactjs.org/docs/forwarding-refs.html).
+Sie können diese Warnung beheben, indem Sie `React.forwardRef` verwenden. Learn more about it in [this section in the official React docs](https://reactjs.org/docs/forwarding-refs.html).
 
 To find out if the Material-UI component you're using has this requirement, check out the the props API documentation for that component. If you need to forward refs the description will link to this section.
 
-### Caveat with StrictMode or unstable_ConcurrentMode
+### Vorsicht bei StrictMode oder unstable_ConcurrentMode
 
 If you pass class components to the `component` prop and don't run in strict mode you won't have to change anything since we can safely use `ReactDOM.findDOMNode`. For function components, however, you have to wrap your component in `React.forwardRef`:
 
