@@ -200,7 +200,7 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 
 - [SvgIcon] Umbenennung nativeColor -> htmlColor.
   
-  React solved the same problem with the `for` HTML attribute, they have decided to call the prop `htmlFor`. Diese Änderung folgt den gleichen Überlegungen.
+  React löst dasselbe Problem mit dem`for` HTML-Attribut. Sie haben beschlossen, die Eigenschaft `htmlFor` zu nennen. Diese Änderung folgt den gleichen Überlegungen.
   
   ```diff
   -<0 />
@@ -209,7 +209,7 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 
 ### Node
 
-- [Drop official node 6 support](https://github.com/nodejs/Release/blob/eb91c94681ea968a69bf4a4fe85c656ed44263b3/README.md#release-schedule), you should upgrade to node 8.
+- [Lassen Sie die offizielle Unterstützung für Knoten 6 fallen](https://github.com/nodejs/Release/blob/eb91c94681ea968a69bf4a4fe85c656ed44263b3/README.md#release-schedule); Sie sollten ein Upgrade auf Knoten 8 durchführen.
 
 ### UMD
 
