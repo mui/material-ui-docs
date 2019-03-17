@@ -1,18 +1,18 @@
 ---
-title: Seitliches Menü React-Komponente
+title: Navigationsleiste React-Komponente
 components: Drawer, SwipeableDrawer
 ---
 # Seitliches Menü
 
 <p class="description">Navigationsfächer bieten Zugriff auf Ziele in Ihrer App. Seitenblätter sind Flächen, die zusätzlichen Inhalt enthalten, der am linken oder rechten Rand des Bildschirms verankert ist.</p>
 
-[Navigationsfächer](https://material.io/design/components/navigation-drawer.html) bieten Zugriff auf Ziele und App-Funktionen, wie z.B. Benutzer wechseln. Sie können entweder permanent auf dem Bildschirm angezeigt oder durch ein Navigationsmenüsymbol gesteuert werden.
+[Navigationsleisten ](https://material.io/design/components/navigation-drawer.html) bieten Zugriff auf Ziele und App-Funktionen, wie z.B. Benutzer wechseln. Sie können entweder permanent auf dem Bildschirm angezeigt oder durch ein Navigationsmenüsymbol gesteuert werden.
 
-[Side sheets](https://material.io/design/components/sheets-side.html) are supplementary surfaces primarily used on tablet and desktop.
+[Die Seitenblätter](https://material.io/design/components/sheets-side.html) sind Zusatzflächen, die hauptsächlich auf Tablets und Desktops verwendet werden.
 
-## Temporary drawer
+## Temporäre Navigationsleisten
 
-Temporary navigation drawers can toggle open or closed. Closed by default, the drawer opens temporarily above all other content until a section is selected.
+Temporäre Navigationsleisten können geöffnet oder geschlossen werden. Die Leiste ist standardmäßig geschlossen und öffnet sich vorübergehend über allen anderen Inhalten, bis ein Bereich ausgewählt wird.
 
 The Drawer can be cancelled by clicking the overlay or pressing the Esc key. It closes when an item is selected, handled by controlling the `open` prop.
 
