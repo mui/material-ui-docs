@@ -96,10 +96,10 @@ Es gibt [3 wichtige Grenzwerte](https://www.nngroup.com/articles/response-times-
 
 ## Einschränkungen
 
-Bei starker Belastung verlieren Sie möglicherweise die Strich-Animation oder sehen zufällige CircularProgress-Ringbreiten. You should run processor intensive operations in a web worker or by batch in order not to block the main rendering thread.
+Bei starker Belastung verlieren Sie möglicherweise die Strich-Animation oder sehen zufällige CircularProgress-Ringbreiten. Sie sollten prozessorintensive Vorgänge in einem Web-Worker oder in Batches ausführen, um den Haupt-Rendering-Thread nicht zu blockieren.
 
 ![schwere Last](/static/images/progress/heavy-load.gif)
 
-When it's not possible, you can leverage the `disableShrink` property to mitigate the issue. See https://github.com/mui-org/material-ui/issues/10327
+Wenn dies nicht möglich ist, können Sie die `disableShrink` Eigenschaft nutzen, um das Problem zu verringern. Siehe https://github.com/mui-org/material-ui/issues/10327
 
 {{"demo": "pages/demos/progress/CircularUnderLoad.js"}}
