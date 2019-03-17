@@ -116,7 +116,7 @@ You can find the details in the [TypeScript guide](/guides/typescript#usage-of-c
 
 ### Vorbehalt bei Refs
 
-Some components such as `ButtonBase` (and therefore `Button`) require access to the underlying DOM node. This was previously done with `ReactDOM.findDOMNode(this)`. However `findDOMNode` was deprecated (which disqualifies its usage in React's concurrent mode) in favour of component refs and ref forwarding.
+Some components such as `ButtonBase` (and therefore `Button`) require access to the underlying DOM node. Dies wurde zuvor mit `ReactDOM.findDOMNode(this)` durchgeführt. However `findDOMNode` was deprecated (which disqualifies its usage in React's concurrent mode) in favour of component refs and ref forwarding.
 
 It is therefore necessary that the component you pass to the `component` prop can hold a ref. Dazu gehören:
 
@@ -124,7 +124,7 @@ It is therefore necessary that the component you pass to the `component` prop ca
 - ref Weiterleitungskomponenten (`React.forwardRef`)
 - eingebaute Komponenten zB `div` oder `a`
 
-If this is not the case we will issue a prop type warning similar to:
+Ist dies nicht der Fall, geben wir eine Warnung ähnlich der folgenden aus:
 
 > Invalid prop `component` supplied to `ComponentName`. Es wurde ein Elementtyp erwartet, der eine Referenz enthalten kann.
 
@@ -132,11 +132,11 @@ Zusätzlich gibt React eine Warnung aus.
 
 Sie können diese Warnung beheben, indem Sie `React.forwardRef` verwenden. Learn more about it in [this section in the official React docs](https://reactjs.org/docs/forwarding-refs.html).
 
-To find out if the Material-UI component you're using has this requirement, check out the the props API documentation for that component. If you need to forward refs the description will link to this section.
+To find out if the Material-UI component you're using has this requirement, check out the the props API documentation for that component. Wenn Sie Refs weiterleiten müssen, wird die Beschreibung mit diesem Abschnitt verknüpft.
 
 ### Vorsicht bei StrictMode oder unstable_ConcurrentMode
 
-If you pass class components to the `component` prop and don't run in strict mode you won't have to change anything since we can safely use `ReactDOM.findDOMNode`. For function components, however, you have to wrap your component in `React.forwardRef`:
+If you pass class components to the `component` prop and don't run in strict mode you won't have to change anything since we can safely use `ReactDOM.findDOMNode`. Bei Funktionskomponenten müssen Sie jedoch Ihre Komponente in `React.forwardRef` einhüllen:
 
 ```diff
 - const MyButton = props => <div {...props} />
