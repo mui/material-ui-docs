@@ -1,6 +1,6 @@
 # Komposition
 
-<p class="description">Material-UI tries to make composition as easy as possible.</p>
+<p class="description">Die Material-UI versucht die Komposition so einfach wie möglich zu gestalten.</p>
 
 ## Wrapping components
 
@@ -116,7 +116,7 @@ You can find the details in the [TypeScript guide](/guides/typescript#usage-of-c
 
 ### Vorbehalt bei Refs
 
-Some components such as `ButtonBase` (and therefore `Button`) require access to the underlying DOM node. Dies wurde zuvor mit `ReactDOM.findDOMNode(this)` durchgeführt. However `findDOMNode` was deprecated (which disqualifies its usage in React's concurrent mode) in favour of component refs and ref forwarding.
+Einige Komponenten wie `ButtonBase` (und daher `Button`) benötigen Zugriff auf den darunterliegenden DOM-Knoten. Dies wurde zuvor mit `ReactDOM.findDOMNode(this)` durchgeführt. `FindDOMNode` ist jedoch veraltet (wodurch es im React Concurrent Modus nicht anwendbar ist), zugunsten der Komponenten Refs und ref - Forwarding.
 
 Es ist daher erforderlich, dass die Komponente, die Sie an die `Komponente` Eigenschaft übergeben, einen Ref halten kann. Dazu gehören:
 
@@ -130,13 +130,13 @@ Ist dies nicht der Fall, geben wir eine Warnung ähnlich der folgenden aus:
 
 Zusätzlich gibt React eine Warnung aus.
 
-Sie können diese Warnung beheben, indem Sie `React.forwardRef` verwenden. Learn more about it in [this section in the official React docs](https://reactjs.org/docs/forwarding-refs.html).
+Sie können diese Warnung beheben, indem Sie `React.forwardRef` verwenden. Weitere Informationen dazu finden Sie in [dieser Sektion in den offiziellen React-Dokumenten](https://reactjs.org/docs/forwarding-refs.html).
 
-To find out if the Material-UI component you're using has this requirement, check out the the props API documentation for that component. Wenn Sie Refs weiterleiten müssen, wird die Beschreibung mit diesem Abschnitt verknüpft.
+Um herauszufinden, ob die Material-UI - Komponente, die Sie verwenden, diese Anforderung hat, überprüfen Sie API - Dokumentation für diese Komponente. Wenn Sie Refs weiterleiten müssen, wird die Beschreibung mit diesem Abschnitt verknüpft.
 
 ### Vorsicht bei StrictMode oder unstable_ConcurrentMode
 
-If you pass class components to the `component` prop and don't run in strict mode you won't have to change anything since we can safely use `ReactDOM.findDOMNode`. Bei Funktionskomponenten müssen Sie jedoch Ihre Komponente in `React.forwardRef` einhüllen:
+Wenn Sie Klassenkomponenten an die `Komponente` Eigenschaft übergeben und nicht im strikten Modus laufen, Sie müssen nichts ändern, da wir `ReactDOM.findDOMNode` sicher verwenden können. Bei Funktionskomponenten müssen Sie jedoch Ihre Komponente in `React.forwardRef` einhüllen:
 
 ```diff
 - const MyButton = props => <div {...props} />
