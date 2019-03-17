@@ -40,13 +40,13 @@ Die `Hidden` Responsive-Hilfskomponente ermöglicht die Anzeige verschiedener Le
 
 {{"demo": "pages/demos/drawers/ResponsiveDrawer.js", "iframe": true}}
 
-## Permanente Navigationsleiste
+## Andauernde Navigationsleiste
 
-Permanente Navigationsleisten können geöffnet oder geschlossen werden. Die Leiste befindet sich auf der gleichen Höhe wie der Inhalt. Sie ist standardmäßig geschlossen und wird durch Auswahl des Menüsymbols geöffnet und bleibt geöffnet, bis es vom Benutzer geschlossen wird. Der Status der Leiste wird von Aktion zu Aktion und von Sitzung zu Sitzung gespeichert.
+Andauernde Navigationsleisten können geöffnet oder geschlossen werden. Die Leiste befindet sich auf der gleichen Höhe wie der Inhalt. Sie ist standardmäßig geschlossen und wird durch Auswahl des Menüsymbols geöffnet und bleibt geöffnet, bis es vom Benutzer geschlossen wird. Der Status der Leiste wird von Aktion zu Aktion und von Sitzung zu Sitzung gespeichert.
 
 Wenn sich die Leiste außerhalb des Seitenrasters befindet und geöffnet wird, zwingt die Schublade andere Inhalte, ihre Größe zu ändern und sich an den kleineren Ansichtsfenster anzupassen.
 
-Permanente Navigationsleisten sind für alle Größen, die größer als mobile sind, zulässig. Sie werden nicht für Apps mit mehreren Hierarchieebenen empfohlen, für deren Navigation ein Aufwärtspfeil erforderlich ist.
+Andauernde Navigationsleisten sind für alle Größen, die größer als mobile sind, zulässig. Sie werden nicht für Apps mit mehreren Hierarchieebenen empfohlen, für deren Navigation ein Aufwärtspfeil erforderlich ist.
 
 {{"demo": "pages/demos/drawers/PersistentDrawerLeft.js", "iframe": true}}
 
@@ -54,28 +54,28 @@ Permanente Navigationsleisten sind für alle Größen, die größer als mobile s
 
 ## Mini-Variante Navigationsleiste
 
-Bei dieser Variante ändert die permanente Navigationsleiste ihre Breite. Ihr Ruhezustand ist eine MiniLeiste auf derselben Höhe wie der Inhalt, die von der App-Leiste abgeschnitten wird. Wenn sieerweitert wird, wird es als standardmäßige permanente Navigationsleiste angezeigt.
+Bei dieser Variante ändert die andauernde Navigationsleiste ihre Breite. Ihr Ruhezustand ist eine MiniLeiste auf derselben Höhe wie der Inhalt, die von der App-Leiste abgeschnitten wird. Wenn sie erweitert wird, wird es als standardmäßige andauernde Navigationsleiste angezeigt.
 
 Die Mini-Variante wird für Anwendungsbereiche empfohlen, die neben Inhalten einen schnellen Auswahlzugriff benötigen.
 
 {{"demo": "pages/demos/drawers/MiniDrawer.js", "iframe": true}}
 
-## Permanent drawer
+## Permanente Navigationsleiste
 
-Permanent navigation drawers are always visible and pinned to the left edge, at the same elevation as the content or background. They cannot be closed.
+Permanente Navigationsleisten sind immer sichtbar und am linken Rand auf derselben Höhe wie der Inhalt oder der Hintergrund fixiert. Sie können nicht geschlossen werden.
 
-Permanent navigation drawers are the **recommended default for desktop**.
+Permanente Navigationsleisten sind die **empfohlene Standardeinstellung für Desktop**.
 
-### Full-height navigation
+### Navigation in voller Höhe
 
-Apps focused on information consumption that use a left-to-right hierarchy.
+Apps, welche sich auf den Informationsverbrauch konzentrieren, verwenden eine Links-Rechts-Hierarchie.
 
 {{"demo": "pages/demos/drawers/PermanentDrawerLeft.js", "iframe": true}}
 
 {{"demo": "pages/demos/drawers/PermanentDrawerRight.js", "iframe": true}}
 
-### Clipped under the app bar
+### Unter der App-Leiste geschnitten
 
-Apps focused on productivity that require balance across the screen.
+Apps, welche sich auf Produktivität konzentrieren, verwenden ein ausgewogenes Verhältnis über den Bildschirm.
 
 {{"demo": "pages/demos/drawers/ClippedDrawer.js", "iframe": true}}
