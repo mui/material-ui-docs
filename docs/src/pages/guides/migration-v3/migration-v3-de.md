@@ -189,7 +189,7 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 
 ### Divider
 
-- [Divider] Remove the deprecated inset prop.
+- [Divider] Entfernen Sie die veraltete `inset` Eigenschaft.
   
   ```diff
   -<Divider inset />
@@ -198,9 +198,9 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 
 ### SvgIcon
 
-- [SvgIcon] Rename nativeColor -> htmlColor.
+- [SvgIcon] Umbenennung nativeColor -> htmlColor.
   
-  React solved the same problem with the `for` HTML attribute, they have decided to call the prop `htmlFor`. This change follows the same reasoning.
+  React solved the same problem with the `for` HTML attribute, they have decided to call the prop `htmlFor`. Diese Änderung folgt den gleichen Überlegungen.
   
   ```diff
   -<AddIcon nativeColor="#fff" />
