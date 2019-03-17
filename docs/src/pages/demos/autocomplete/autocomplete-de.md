@@ -14,7 +14,7 @@ Material-UI bietet keine High-Level-API zur Lösung dieses Problems. Wir unterst
 
 Im folgenden Beispiel demonstrieren wir, wie man einen [downshift](https://github.com/paypal/downshift) benutzt.
 
-The last demo allow to clear the input and show a number of options on focus.
+Die letzte Demo ermöglicht es, die Eingabe zu löschen und eine Reihe von Optionen für den Fokus anzuzeigen.
 
 {{"demo": "pages/demos/autocomplete/IntegrationDownshift.js"}}
 
