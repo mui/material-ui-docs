@@ -33,7 +33,7 @@ yarn add @material-ui/styles
 
 ## 入门
 
-We provide 3 different APIs. They all share the same underlying logic.
+我们实现了3中不同的API。 它们都具有相同的底层逻辑。
 
 ### Hook API
 
