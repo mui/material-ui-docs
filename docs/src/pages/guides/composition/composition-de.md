@@ -118,7 +118,7 @@ You can find the details in the [TypeScript guide](/guides/typescript#usage-of-c
 
 Some components such as `ButtonBase` (and therefore `Button`) require access to the underlying DOM node. Dies wurde zuvor mit `ReactDOM.findDOMNode(this)` durchgeführt. However `findDOMNode` was deprecated (which disqualifies its usage in React's concurrent mode) in favour of component refs and ref forwarding.
 
-It is therefore necessary that the component you pass to the `component` prop can hold a ref. Dazu gehören:
+Es ist daher erforderlich, dass die Komponente, die Sie an die `Komponente` Eigenschaft übergeben, einen Ref halten kann. Dazu gehören:
 
 - Klassen-Komponenten
 - ref Weiterleitungskomponenten (`React.forwardRef`)
