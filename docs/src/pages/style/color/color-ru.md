@@ -14,11 +14,11 @@
 
 #### "Оттенок" и "Тень"
 
-A single color within the palette is made up of a hue such as "red", and shade, such as "500". "red 50" is the lightest shade of red (*pink!*), while "red 900" is the darkest. In addition, most hues come with "accent" shades, prefixed with an `A`.
+Отдельно взятый цвет в палитре состоит из цветового тона, например «красный», и оттенка, например «500». «red 50» - самый светлый оттенок красного (* розовый! *), а «red 900» самый темный. Кроме того, большинство тонов имеют «акцентные» оттенки с префиксом `A`.
 
 ### Примеры
 
-The Material Design color palette comprises primary and accent colors that can be used for illustration or to develop your brand colors. They’ve been designed to work harmoniously with each other.
+Цветовая палитра Material Design включает в себя основные и акцентные цвета, которые можно использовать для иллюстрации или для разработки цвета вашего бренда. Они были разработаны, чтобы работать в гармонии друг с другом.
 
 For instance, you can refer to complementary primary and accent colors (for example 'red 500' & 'purple A200'), like so:
 
