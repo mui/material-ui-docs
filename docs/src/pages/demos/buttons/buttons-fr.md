@@ -14,7 +14,7 @@ components: Button, Fab, IconButton, ButtonBase, Zoom
 - Cartes
 - Barres d'outils
 
-## Contained Buttons
+## Boutons Contained
 
 [Contained buttons](https://material.io/design/components/buttons.html#contained-button) are high-emphasis, distinguished by their use of elevation and fill. Ils contiennent des actions qui sont essentielles à votre application.
 
@@ -91,7 +91,7 @@ Si vous avez lu [la page de la documentation sur les personnalisation](/customiz
 
 ## Boutons complexes
 
-The Text Buttons, Contained Buttons, Floating Action Buttons and Icon Buttons are built on top of the same component: the `ButtonBase`. Vous pouvez tirer parti de ce composant de niveau inférieur pour créer des interactions personnalisées.
+Les boutons texte, les boutons contained, les bouton d'action flottante et les boutons icône sont tous basés sur le composant `ButtonBase`. Vous pouvez tirer parti de ce composant de niveau inférieur pour créer des interactions personnalisées.
 
 {{"demo": "pages/demos/buttons/ButtonBases.js"}}
 
