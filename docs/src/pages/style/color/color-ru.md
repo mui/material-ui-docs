@@ -103,5 +103,5 @@ const theme = createMuiTheme({
 ### Инструменты, созданные сообществом
 
 - [create-mui-theme](https://react-theming.github.io/create-mui-theme/) Это онлайн-инструмент для создания тем Material-UI с помощью Material Design Color Tool.
-- [material-ui-theme-editor](https://in-your-saas.github.io/material-ui-theme-editor/) A tool to generate themes for your Material-UI applications by just selecting the colors and having a live preview.
-- [Material palette generator](https://material.io/inline-tools/color/): The Material palette generator can be used to generate a palette for any color you input.
+- [material-ui-theme-editor](https://in-your-saas.github.io/material-ui-theme-editor/) Инструмент с функцией предварительного просмотра в реальном времени, который позволяет создавать темы для ваших Material-UI приложений, просто выбирая цвета.
+- [Material palette generator](https://material.io/inline-tools/color/): Этот инструмент можно использовать для создания палитры на основе любого выбранного цвета.
