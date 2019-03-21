@@ -31,9 +31,9 @@ const accent = purple['A200']; // #E040FB
 const accent = purple.A200; // #E040FB (alternative method)
 ```
 
-### Color palette
+### Цветовая палитра
 
-Given a *HUE* (red, pink, etc.) and a *SHADE* (500, 600, etc.) you can import the color like this:
+Зная тон *HUE* (red, pink и т. д.) и оттенок *SHADE* (500, 600 и т. д.), можно импортировать цвет следующим образом:
 
 ```jsx
 import HUE from '@material-ui/core/colors/HUE';
