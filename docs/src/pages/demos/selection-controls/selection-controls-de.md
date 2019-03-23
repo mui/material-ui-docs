@@ -82,7 +82,7 @@ You can change the placement of the label:
 
 {{"demo": "pages/demos/selection-controls/FormControlLabelPosition.js"}}
 
-## Accessibility
+## Barrierefreiheit
 
 All form controls should have labels, and this includes radio buttons, checkboxes, and switches. In most cases, this is done by using the `<label>` element ([FormControlLabel](/api/form-control-label/)).
 
