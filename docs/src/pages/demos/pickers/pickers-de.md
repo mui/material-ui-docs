@@ -9,43 +9,41 @@ components: TextField
 - Auf dem Handy sind Pcikers am besten für die Anzeige im Bestätigungsdialogfeld geeignet.
 - Für die Inline-Anzeige, z. B. in einem Formular, sollten Sie kompakte Steuerelemente wie segmentierte Dropdown-Schaltflächen verwenden.
 
-#### Benachrichtigung
+## Native pickers
 
-Wir greifen auf **native Eingabesteuerelemente** zurück.
+⚠️ Native input controls support by browsers [isn't perfect](https://caniuse.com/#feat=input-datetime). Have a look at the [complementary projects](#complementary-projects) for a richer solution.
 
-⚠️ Unterstützung von systemeigenen Eingabesteuerelementen durch Browser [ist nicht perfekt](https://caniuse.com/#feat=input-datetime). Sehen Sie sich die [ergänzenden Projekte](#complementary-projects) an, um bessere Lösungen zu erhalten.
+### Date pickers
 
-## Datums-Auswahl
-
-Ein natives Datumsauswahlbeispiel mit `type="date"`, es kann auch als Kalender verwendet werden.
+A native date picker example with `type="date"`, it can be used as a calendar too.
 
 {{"demo": "pages/demos/pickers/DatePickers.js"}}
 
-## Datum & Zeitauswahl
+### Date & Time pickers
 
-Ein natives Datum & Zeitauswahlbeispiel mit `type="datetime-local"`.
+A native date & time picker example with `type="datetime-local"`.
 
 {{"demo": "pages/demos/pickers/DateAndTimePickers.js"}}
 
-## Zeitauswahl
+### Time pickers
 
-Ein natives Datum Zeitauswahlbeispiel mit `type="time"`.
+A native time picker example with `type="time"`.
 
 {{"demo": "pages/demos/pickers/TimePickers.js"}}
 
-## Ergänzende Projekte
+## Complementary projects
 
-Für fortgeschrittenere Anwendungsfälle können Ihnen folgende Projekte helfen.
+For more advanced use cases you might be able to take advantage of.
 
 ### material-ui-pickers
 
 ![stars](https://img.shields.io/github/stars/dmtrKovalenko/material-ui-pickers.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/material-ui-pickers.svg)
 
-[material-ui-pickers](https://material-ui-pickers.firebaseapp.com/) enthält Steuerelemente für Datum und Uhrzeit, die der Material Design-Spezifikation entsprechen.
+[material-ui-pickers](https://material-ui-pickers.firebaseapp.com/) provides date and time controls that follow the Material Design spec.
 
 {{"demo": "pages/demos/pickers/MaterialUIPickers.js"}}
 
-### Sonstiges
+### Other
 
 - [material-ui-time-picker](https://github.com/TeamWertarbyte/material-ui-time-picker): Zeitauswahl.
 - [material-ui-next-pickers](https://github.com/chingyawhao/material-ui-next-pickers): Datums- und Zeitauswahl.
