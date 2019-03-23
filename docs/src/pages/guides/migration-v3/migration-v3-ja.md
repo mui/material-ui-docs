@@ -84,7 +84,7 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
   },
   ```
 
-### Typography
+### タイポグラフィ
 
 - [Typography] Remove the deprecated typography variants. You can upgrade by performing the following replacements: 
   - display4 => h1
