@@ -4,6 +4,10 @@
 
 Les problèmes résolus par Material-UI étant limités, nous essayons de jouer avec autres bibliothèques. N'hésitez pas à soumettre une pull request pour ajouter plus de projets; nous les accepterons s'ils correspondent à nos critères.
 
+## Design resources
+
+- [Figma UI Kit](https://dribbble.com/shots/6164699-Material-UI-React-components-in-Figma-Free-Download#shot-description) for Material-UI.
+
 ## Projets spécifiques à une interface utilisateur
 
 - [Advanced Filter Builder](https://github.com/logipro/logi-filter-builder) Component will help your users create powerful filter criterias.
