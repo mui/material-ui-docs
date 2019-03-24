@@ -58,13 +58,13 @@ Die linken und rechten Bildlauftasten werden unabhängig von der Breite des Ansi
 
 ### Scrolltasten verhindern
 
-Left and right scroll buttons will never be presented. All scrolling must be initiated through user agent scrolling mechanisms (e.g. left/right swipe, shift-mousewheel, etc.)
+Linke und rechte Bildlauftasten werden niemals angezeigt. Der gesamte Bildlauf muss durch Benutzeragenten-Bildlaufmechanismen (z. B. Wischen nach links / rechts, Shift-Mausrad usw.) eingeleitet werden
 
 {{"demo": "pages/demos/tabs/ScrollableTabsButtonPrevent.js"}}
 
-## Customized Tabs
+## Benutzerdefinierte Tabs
 
-If you have read the [overrides documentation page](/customization/overrides/) but aren't confident jumping in, here's an example of how you can change the main color of the Tabs.
+Wenn du die [Überschreibungs Dokumentationsseite](/customization/overrides/) gelesen hast, aber dich noch nicht sicher genug fühlst, um direkt loszulegen, ist hier noch ein Beispiel, wie du die Farbe der Tabs ändern kannst.
 
 ⚠️ Auch wenn die Material-Design Spezifikation zur Verwendung von Themes ermutigt, liegen diese Beispiele außerhalb der üblichen Pfade.
 
@@ -72,13 +72,13 @@ If you have read the [overrides documentation page](/customization/overrides/) b
 
 ## Nav-Tabs
 
-By default tabs use a `button` element, but you can provide your own custom tag or component. Here's an example of implementing tabbed navigation:
+Standardmäßig verwenden Tabs ein `Button` -Element, aber Sie können Ihren eigenen benutzerdefinierten Tag oder eine Komponente zur Verfügung stellen. Hier ein Beispiel für die Implementierung der Tabnavigation:
 
 {{"demo": "pages/demos/tabs/NavTabs.js"}}
 
-## Icon Tabs
+## Symbol-Tabs
 
-Tab labels may be either all icons or all text.
+Tab-Beschriftungen können entweder nur Symbole oder nur Text enthalten.
 
 {{"demo": "pages/demos/tabs/IconTabs.js"}}
 
