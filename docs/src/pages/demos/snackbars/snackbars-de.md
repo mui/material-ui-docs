@@ -1,28 +1,28 @@
 ---
-title: Snackbar React component
+title: Snackbar React-Komponente
 components: Snackbar, SnackbarContent
 ---
 # Snackbars
 
-<p class="description">Snackbars provide brief messages about app processes through a message - typically at the bottom of the screen</p>
+<p class="description">Snackbars liefern kurze Nachrichten zu App-Prozessen - normalerweise am unteren Bildschirmrand</p>
 
-[Snackbars](https://material.io/design/components/snackbars.html) inform users of a process that an app has performed or will perform. They appear temporarily, towards the bottom of the screen. They shouldn’t interrupt the user experience, and they don’t require user input to disappear.
+[Snackbars](https://material.io/design/components/snackbars.html) informieren Benutzer über einen Prozess, den eine App ausgeführt hat oder ausführen wird. Sie erscheinen vorübergehend am unteren Rand des Bildschirms. Sie sollten die Benutzererfahrung nicht unterbrechen und erfordern keine Benutzereingaben, um verschwinden zu können.
 
-Snackbars contain a single line of text directly related to the operation performed. They may contain a text action, but no icons. You can use them to display notifications.
+Snackbars enthalten eine einzelne Textzeile, die sich direkt auf die ausgeführte Operation bezieht. Sie können eine Textaktion enthalten, jedoch keine Symbole. Sie können sie verwenden, um Benachrichtigungen anzuzeigen.
 
-#### Frequency
+#### Häufigkeit
 
-Only one snackbar may be displayed at a time.
+Es kann immer nur eine Snackbar angezeigt werden.
 
 ## Einfach
 
-A basic snackbar that aims to reproduce Google Keep's snackbar behavior.
+Eine einfache Snackbar, die das Verhalten der Snackbar von Google Keep reproduzieren soll.
 
 {{"demo": "pages/demos/snackbars/SimpleSnackbar.js"}}
 
-## Customized Snackbars
+## Benutzerdefinierte Snackbars
 
-If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here are examples of how you can change the look of a Snackbar.
+Wenn du die [Überschreibungs Dokumentationsseite](/customization/overrides/) gelesen hast, aber dich noch nicht sicher genug fühlst, um direkt loszulegen, ist hier noch ein Beispiel, wie du das Design der Snackbar anpassen könntest.
 
 ⚠️ Auch wenn die material design Spezifikation zur Verwendung von Themes ermutigt, liegen diese Beispiele außerhalb der üblichen Pfade.
 
@@ -30,19 +30,19 @@ If you have been reading the [overrides documentation page](/customization/overr
 
 ## Positioniert
 
-There may be circumstances when the placement of the snackbar needs to be more flexible.
+Es kann Situationen geben, in denen die Anordnung der Snackbar flexibler sein muss.
 
 {{"demo": "pages/demos/snackbars/PositionedSnackbar.js"}}
 
-## Message Length
+## Nachrichtenlänge
 
-Some snackbars with varying message length.
+Einige Snackbars mit unterschiedlicher Nachrichtenlänge.
 
 {{"demo": "pages/demos/snackbars/LongTextSnackbar.js"}}
 
 ## Übergänge
 
-### Consecutive Snackbars
+### Aufeinanderfolgende Snackbars
 
 Per [Google's guidelines](https://material.io/design/components/snackbars.html#snackbars-toasts-usage), when a second snackbar is triggered while the first is displayed, the first should start the contraction motion downwards before the second one animates upwards.
 
