@@ -68,7 +68,7 @@ Ein `Schalter` kann dank der `FormControlLabel` Komponente auch mit einer Etiket
 
 {{"demo": "pages/demos/selection-controls/SwitchesGroup.js"}}
 
-### Customized Switches
+### Anpasster Schalter
 
 If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here's an example of how you can change the color of a Switch, and an iOS style Switch.
 
