@@ -24,47 +24,47 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 
 > **Hinweis:** Steppers sind nicht mehr in der Material Design-Dokumentation dokumentiert.
 
-## Horizontal linear
+## Horizontal Linear
 
 Der `Stepper` kann gesteuert werden, indem der aktuelle Schrittindex (auf Null basierend) als `activeStep` Eigenschaft übergeben wird. Die `Stepper-` Ausrichtung wird mithilfe der Eigenschaft `orientation` gesetzt.
 
-Dieses Beispiel zeigt auch die Verwendung eines optionalen Schritt durch setzten der `optional` Eigenschaft auf der zweiten `Step` Komponente. Beachten Sie, dass Sie selbst entscheiden müssen, wann ein optionaler Schritt übersprungen wird. Once you've determined this for a particular step you must set `completed={false}` to signify that even though the active step index has gone beyond the optional step, it's not actually complete.
+Dieses Beispiel zeigt auch die Verwendung eines optionalen Schritt durch setzten der `optional` Eigenschaft auf der zweiten `Step` Komponente. Beachten Sie, dass Sie selbst entscheiden müssen, wann ein optionaler Schritt übersprungen wird. Wenn Sie dies für einen bestimmten Schritt festgelegt haben, müssen Sie `complete={false}` setzten, um anzuzeigen, dass der Index des aktiven Schritts den optionalen Schritt überschritten hat, jedoch nicht wirklich abgeschlossen ist.
 
 {{"demo": "pages/demos/steppers/HorizontalLinearStepper.js"}}
 
-## Horizontal Non-linear
+## Horizontal Nicht-Linear
 
-Non-linear steppers allow users to enter a multi-step flow at any point.
+Mit nichtlinearen Steppern können Benutzer an jedem Punkt einen mehrstufigen Fluss einsteigen.
 
-This example is similar to the regular horizontal stepper, except steps are no longer automatically set to `disabled={true}` based on the `activeStep` property.
+Dieses Beispiel ähnelt dem regulären horizontalen Stepper, mit der Ausnahme, dass Schritte nicht mehr automatisch auf `=disabled={true}` basierend auf der Eigenschaft `activeStep` gesetzt werden.
 
-We've used the `StepButton` here to demonstrate clickable step labels as well as setting the `completed` flag however because steps can be accessed in a non-linear fashion it's up to your own implementation to determine when all steps are completed (or even if they need to be completed).
+Wir haben den `StepButton` hier verwendet, um anklickbare Schrittbeschriftungen zu demonstrieren sowie das Eigenschaft `completed`. Da Schritte auf nicht lineare Weise aufgerufen werden können, müssen Sie dies selbst implementieren und festzulegen, wann alle Schritte abgeschlossen sind (oder auch wenn sie abgeschlossen sein müssen).
 
 {{"demo": "pages/demos/steppers/HorizontalNonLinearStepper.js"}}
 
-## Horizontal Linear - Alternative Label
+## Horizontal Linear - Alternative Beschriftung
 
-Labels can be placed below the step icon by setting the `alternativeLabel` property on the `Stepper` component.
+Beschriftungen können unterhalb des Schrittsymbols platziert werden, indem Sie die Eigenschaft `alternativeLabel` für die Komponente `Stepper` festlegen.
 
 {{"demo": "pages/demos/steppers/HorizontalLinearAlternativeLabelStepper.js"}}
 
-## Horizontal Non Linear - Alternative Label
+## Horizontal Nicht-Linear - Alternative Beschriftung
 
 {{"demo": "pages/demos/steppers/HorizontalNonLinearAlternativeLabelStepper.js"}}
 
-## Horizontal Non Linear - Error Step
+## Horizontal Nicht-Linear - Fehlerschritt
 
 {{"demo": "pages/demos/steppers/HorizontalNonLinearStepperWithError.js"}}
 
-## Vertical Stepper
+## Vertikaler Stepper
 
 {{"demo": "pages/demos/steppers/VerticalLinearStepper.js"}}
 
-## Customized Stepper
+## Anpasster Stepper
 
-If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here are examples of how you can change the look of a stepper.
+Wenn du die [Überschreibungs Dokumentationsseite](/customization/overrides/) gelesen hast, aber dich noch nicht sicher genug fühlst, um direkt loszulegen, ist hier noch ein Beispiel, wie du das Design des Steppers anpassen könntest.
 
-This component uses a customized `StepConnector` element that changes border color based on the `active` and `completed` state.
+Diese Komponente verwendet ein benutzerdefiniertes `StepConnector` Element, das die Randfarbe basierend auf dem Status `active` und `completed` ändert.
 
 ⚠️ Auch wenn die material design Spezifikation zur Verwendung von Themes ermutigt, liegen diese Beispiele außerhalb der üblichen Pfade.
 
@@ -72,15 +72,15 @@ This component uses a customized `StepConnector` element that changes border col
 
 ## Mobile Stepper
 
-This component implements a compact stepper suitable for a mobile device. See [mobile steps](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steps) for its inspiration.
+Diese Komponente implementiert einen kompakten Stepper, der für ein mobiles Gerät geeignet ist. Siehe [Mobile steps](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steps) zur Inspiration.
 
 ### Mobile Stepper - Text
 
-This is essentially a back/next button positioned correctly. You must implement the textual description yourself, however, an example is provided below for reference.
+Dies ist im Wesentlichen eine Zurück / Nächste Schaltfläche, die richtig positioniert ist. Sie müssen die Textbeschreibung selbst implementieren. Nachfolgend finden Sie ein Beispiel.
 
 {{"demo": "pages/demos/steppers/TextMobileStepper.js"}}
 
-### Mobile Stepper - Text with Carousel effect
+### Mobile Stepper - Text mit Karusselleffekt
 
 This demo is very similar to the previous, the difference is the usage of [react-swipeable-views](https://github.com/oliviertassinari/react-swipeable-views) to make the transition of steps.
 
