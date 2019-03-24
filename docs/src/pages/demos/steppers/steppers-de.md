@@ -82,18 +82,18 @@ Dies ist im Wesentlichen eine Zurück / Nächste Schaltfläche, die richtig posi
 
 ### Mobile Stepper - Text mit Karusselleffekt
 
-This demo is very similar to the previous, the difference is the usage of [react-swipeable-views](https://github.com/oliviertassinari/react-swipeable-views) to make the transition of steps.
+Diese Demo ist der vorherigen sehr ähnlich, der Unterschied besteht in der Verwendung von [react-swipeable-views](https://github.com/oliviertassinari/react-swipeable-views), um den Übergang von Schritten zu realisieren.
 
 {{"demo": "pages/demos/steppers/SwipeableTextMobileStepper.js"}}
 
-### Mobile Stepper - Dots
+### Mobile Stepper - Punkte
 
-Use dots when the number of steps isn’t large.
+Verwenden Sie Punkte, wenn die Anzahl der Schritte nicht groß ist.
 
 {{"demo": "pages/demos/steppers/DotsMobileStepper.js"}}
 
-### Mobile Stepper - Progress
+### Mobile Stepper - Fortschritt
 
-Use a progress bar when there are many steps, or if there are steps that need to be inserted during the process (based on responses to earlier steps).
+Verwenden Sie eine Fortschrittsleiste, wenn viele Schritte vorhanden sind oder wenn Schritte eingefügt werden müssen (basierend auf den Antworten auf frühere Schritte).
 
 {{"demo": "pages/demos/steppers/ProgressMobileStepper.js"}}
