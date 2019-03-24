@@ -1,5 +1,5 @@
 ---
-title: Checkbox, Radio, Switch React component
+title: Kontrollkästchen, Radio, Switch React-Komponente
 components: FormControl, FormGroup, FormLabel, FormControlLabel, RadioGroup, Checkbox, Radio, Switch
 ---
 # Auswahlsteuerelemente
