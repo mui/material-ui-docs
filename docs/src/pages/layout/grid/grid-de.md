@@ -1,22 +1,24 @@
 ---
-title: Grid React component
+title: Grid React Komponente
 components: Grid
 ---
 # Grid
 
-<p class="description">The Material Design responsive layout grid adapts to screen size and orientation, ensuring consistency across layouts.</p>
+<p class="description">Das responsive Layoutraster von Material Design passt sich der Bildschirmgröße und -ausrichtung an und sorgt für Konsistenz über alle Layouts hinweg.</p>
 
-The [grid](https://material.io/design/layout/responsive-layout-grid.html) creates visual consistency between layouts while allowing flexibility across a wide variety of designs. Material Design’s responsive UI is based on a 12-column grid layout.
+Das [Grid](https://material.io/design/layout/responsive-layout-grid.html) sorgt für visuelle Konsistenz zwischen Layouts und ermöglicht Flexibilität bei einer Vielzahl von Designs. Die responsive UI von Material Design basiert auf einem 12-Spalten-Rasterlayout.
 
-## How it works
+## So funktioniert es
 
-The grid system is implemented with the `Grid` component:
+Das Gittersystem wird mit der `Grid-` Komponente implementiert:
 
-- It uses [CSS’s Flexible Box module](https://www.w3.org/TR/css-flexbox-1/) for high flexibility.
-- There are two types of layout: *containers* and *items*.
-- Item widths are set in percentages, so they’re always fluid and sized relative to their parent element.
-- Items have padding to create the spacing between individual items.
-- There are five grid breakpoints: xs, sm, md, lg, and xl.
+- Es verwendet das [CSS Flexible Box - Modul](https://www.w3.org/TR/css-flexbox-1/) für hohe Flexibilität.
+- Es gibt zwei Arten von Layouts: *Container* und *Elemente*.
+- Die Elementbreiten werden in Prozent angegeben. Sie sind daher immer fließend und werden in Bezug auf das übergeordnete Element angepasst.
+- Elemente haben einen Abstand, um den Abstand zwischen den einzelnen Elementen zu erstellen.
+- Es gibt fünf Rasterpunkte: xs, sm, md, lg und xl.
+
+Wenn Sie **neu sind oder Flexbox nicht gut kennen**, empfehlen wir Ihnen, dies zu lesen: [CSS-Tricks Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
 ## Abstände
 
@@ -42,7 +44,7 @@ Some columns have multiple widths defined, causing the layout to change at the d
 
 {{"demo": "pages/layout/grid/FullWidthGrid.js"}}
 
-## Interactive
+## Interaktive Liste
 
 Nachfolgend finden Sie eine interaktive Demo, mit der Sie die visuellen Ergebnisse der verschiedenen Einstellungen untersuchen können:
 
