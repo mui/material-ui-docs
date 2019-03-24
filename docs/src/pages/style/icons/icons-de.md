@@ -36,12 +36,12 @@ Hängen Sie bei *"themed"* Symbolen den Themenamen an den Symbolnamen an. Zum Be
 
 - Das umrahmte [`delete`](https://material.io/tools/icons/?icon=delete&style=outline) Symbol ist unter `@material-ui/icons/DeleteOutlined` bereitgestellt
 - Das runde [`delete`](https://material.io/tools/icons/?icon=delete&style=rounded) Symbol ist unter `@material-ui/icons/DeleteRounded` bereitgestellt
-- The Two Tone [`delete`](https://material.io/tools/icons/?icon=delete&style=twotone) icon is exposed as `@material-ui/icons/DeleteTwoTone`
-- The Sharp [`delete`](https://material.io/tools/icons/?icon=delete&style=sharp) icon is exposed as `@material-ui/icons/DeleteSharp`
+- Das zweifarbige [`delete`](https://material.io/tools/icons/?icon=delete&style=twotone) Symbol ist unter `@material-ui/icons/DeleteTwoTone` bereitgestellt
+- Das eckige [`delete`](https://material.io/tools/icons/?icon=delete&style=sharp) Symbol ist unter `@material-ui/icons/DeleteSharp` bereitgestellt
 
-There are three exceptions to this rule:
+Hier gibt es drei Ausnahmen:
 
-- [`3d_rotation`](https://material.io/tools/icons/?icon=3d_rotation&style=baseline) is exposed as `@material-ui/icons/ThreeDRotation`
+- [`3d_rotation`](https://material.io/tools/icons/?icon=3d_rotation&style=baseline) ist unter `@material-ui/icons/ThreeDRotation` bereitgestellt
 - [`4k`](https://material.io/tools/icons/?icon=4k&style=baseline) is exposed as `@material-ui/icons/FourK`
 - [`360`](https://material.io/tools/icons/?icon=360&style=baseline) is exposed as `@material-ui/icons/ThreeSixty`
 
