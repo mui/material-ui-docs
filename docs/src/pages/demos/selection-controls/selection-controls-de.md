@@ -95,6 +95,6 @@ Wenn ein Label nicht verwendet werden kann, muss der Eingabekomponente ein Attri
 />
 ```
 
-## Guidance
+## Anleitung
 
-- [Checkboxes vs. Radio Buttons](https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/)
+- [Kontrollkästchen vs. Optionsfelder](https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/)
