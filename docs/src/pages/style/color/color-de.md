@@ -67,17 +67,17 @@ const theme = createMuiTheme({
 
 Nur die `Haupttöne` müssen bereitgestellt werden (es sei denn, Sie möchten `light`, `dark` oder `contrastText` weiter anpassen), da die anderen Farben von `createMuiTheme()` berechnet werden, wie in der Sektion [ Designanpassung ](/customization/themes/#palette) beschrieben.
 
-If you are using the default primary and / or secondary shades then by providing the color object, `createMuiTheme()` will use the appropriate shades from the material color for main, light and dark.
+Wenn Sie die standardmäßigen primären und / oder sekundären Farbtöne verwenden, wird durch das Bereitstellen von dem Farbobjekt die entsprechenden Farbtöne der Materialfarbe für main, light und dark von `createMuiTheme()` berechnet.
 
-### Official color tool
+### Offizielles Farbwerkzeug
 
-The Material Design team has also built an awesome palette configuration tool: [material.io/tools/color](https://material.io/tools/color/). This can help you create a color palette for your UI, as well as measure the accessibility level of any color combination.
+Das Material Design Team hat auch ein tolles Tool zur Palettenkonfiguration entwickelt: [material.io/tools/color](https://material.io/tools/color/). Auf diese Weise können Sie eine Farbpalette für Ihre Benutzeroberfläche erstellen und die Zugänglichkeit einer beliebigen Farbkombination messen.
 
 <a href="https://material.io/tools/color/#!/?view.left=0&view.right=0&primary.color=3F51B5&secondary.color=F44336">
-  <img src="/static/images/color/colorTool.png" alt="Official color tool" style="width: 574px" />
+  <img src="/static/images/color/colorTool.png" alt="Offizielles Farbwerkzeug" style="width: 574px" />
 </a>
 
-The output can be fed into `createMuiTheme()` function:
+Die Ausgabe kann in die `createMuiTheme()` Funktion eingegeben werden:
 
 ```jsx
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -100,8 +100,8 @@ const theme = createMuiTheme({
 });
 ```
 
-### Tools by the community
+### Werkzeuge von der Community
 
-- [create-mui-theme](https://react-theming.github.io/create-mui-theme/) Is an online tool for creating Material-UI themes via Material Design Color Tool.
-- [material-ui-theme-editor](https://in-your-saas.github.io/material-ui-theme-editor/) A tool to generate themes for your Material-UI applications by just selecting the colors and having a live preview.
-- [Material palette generator](https://material.io/inline-tools/color/): The Material palette generator can be used to generate a palette for any color you input.
+- [create-mui-theme](https://react-theming.github.io/create-mui-theme/) Ist ein Online-Tool zum Erstellen von Material-UI-Designs mit dem Material Design Color Tool.
+- [material-ui-theme-editor](https://in-your-saas.github.io/material-ui-theme-editor/) Ein Tool zum Erstellen von Designs für Ihre Material-UI-Anwendungen, indem Sie einfach die Farben auswählen und eine Live-Vorschau angezeigt bekommen.
+- [Material palette generator](https://material.io/inline-tools/color/): Mit dem Material-Palettengenerator können Sie eine Palette für jede von Ihnen eingegebene Farbe erstellen.
