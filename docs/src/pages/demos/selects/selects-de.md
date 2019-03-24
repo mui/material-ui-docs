@@ -1,18 +1,18 @@
 ---
-title: Select React component
+title: Auswahl React-Komponente
 components: Select, NativeSelect
 ---
 # Auswählen
 
-<p class="description">Select components are used for collecting user provided information from a list of options.</p>
+<p class="description">Auswahllkomponenten werden zum Sammeln von vom Benutzer bereitgestellten Informationen aus einer Liste von Optionen verwendet.</p>
 
-## Simple Select
+## Einfache Auswahl
 
-Menus are positioned over their emitting elements such that the currently selected menu item appears on top of the emitting element.
+Menüs werden über ihren Referenzelementen so positioniert, dass der aktuell ausgewählte Menüpunkt über dem Referenzelement angezeigt wird.
 
 {{"demo": "pages/demos/selects/SimpleSelect.js"}}
 
-## Native Select
+## Native Auswahl
 
 As the user experience can be improved on mobile using the native select of the platform, we allow such pattern.
 
