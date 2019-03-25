@@ -6,6 +6,22 @@
 
 Fügen Sie auf der oberste Ebene Ihrer App einen ` ThemeProvider` hinzu, um auf das Theme im Komponentenbaum von React zuzugreifen. Anschließend können Sie in den Stilfunktionen auf das Designobjekt zugreifen.
 
+```jsx
+import { ThemeProvider } from '@material-ui/styles';
+
+const theme = {
+  background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+};
+
+function Theming() {
+  return (
+    <ThemeProvider theme={theme}>
+      <DeepChild />
+    </ThemeProvider>
+  );
+}
+```
+
 {{"demo": "pages/css-in-js/advanced/Theming.js"}}
 
 ## Zugriff auf das Theme in einer Komponente
@@ -14,9 +30,28 @@ Möglicherweise müssen Sie auf die Themevariablen in Ihren React-Komponenten zu
 
 ### `useTheme` hook
 
+```jsx
+import { useTheme } from '@material-ui/styles';
+
+function DeepChild() {
+  const theme = useTheme();
+  return <span>{`spacing ${theme.spacing}`}</span>;
+}
+```
+
 {{"demo": "pages/css-in-js/advanced/UseTheme.js"}}
 
 ### `withTheme` HOC
+
+```jsx
+import { withTheme } from '@material-ui/styles';
+
+function DeepChildRaw(props) {
+  return <span>{`spacing ${props.theme.spacing}`}</span>;
+}
+
+const DeepChild = withTheme(DeepChildRaw);
+```
 
 {{"demo": "pages/css-in-js/advanced/WithTheme.js"}}
 
@@ -55,8 +90,8 @@ JSS nutzt das Konzept von Plugins, um seine Kernfunktionalitäten zu erweitern, 
 - [jss-plugin-nested](https://cssinjs.org/jss-plugin-nested/)
 - [jss-plugin-camel-case](https://cssinjs.org/jss-plugin-camel-case/)
 - [jss-plugin-default-unit](https://cssinjs.org/jss-plugin-default-unit/)
-- [jss-plugin-vendor-prefixer](https://cssinjs.org/jss-plugin-vendor-prefixer/)
-- [jss-plugin-props-sort](https://cssinjs.org/jss-plugin-props-sort/)
+- [jss-plugin-vendor-prefixer](https://cssinjs.org/jss-plugin-default-unit/)
+- [jss-plugin-props-sort](https://cssinjs.org/jss-plugin-vendor-prefixer/)
 
 Es ist eine Teilmenge von [ Jss-Preset-Default ](https://cssinjs.org/jss-preset-default/). Selbstverständlich können Sie ein neues Plugin hinzufügen. Hier ist ein Beispiel mit dem [ jss-rtl ](https://github.com/alitaheri/jss-rtl) Plugin.
 
@@ -100,15 +135,30 @@ const useStyles = makeStyles({
 
 {{"demo": "pages/css-in-js/advanced/StringTemplates.js"}}
 
-## CSS injection order
+## CSS-Injektionsreihenfolge
 
-The CSS injected by Material-UI to style a component has the highest specificity possible as the `<link>` is injected at the bottom of the `<head>` to ensure the components always render correctly.
+By default, the styles are injected **last** in the `<head>` element of your page. They gain more specificity than any other style sheet on your page e.g. CSS modules, styled components.
 
-You might, however, also want to override these styles, for example with styled-components. If you are experiencing a CSS injection order issue, JSS [provides a mechanism](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-the-dom-insertion-point) to handle this situation. By adjusting the placement of the `insertionPoint` within your HTML head you can [control the order](https://cssinjs.org/jss-api#attach-style-sheets-in-a-specific-order) that the CSS rules are applied to your components.
+### injectFirst
 
-### HTML-Kommentar
+The `StylesProvider` component has a `injectFirst` prop to inject the styles **first**:
 
-The simplest approach is to add an HTML comment that determines where JSS will inject the styles:
+```js
+import { StylesProvider } from '@material-ui/styles';
+
+<StylesProvider injectFirst>
+  {/* Your component tree.
+      Styled components can override Material-UI's styles. */}
+</StylesProvider>
+```
+
+### insertionPoint
+
+JSS [provides a mechanism](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-the-dom-insertion-point) to gain more control on this situation. Durch Anpassen der Platzierung des `Einfügepunkts` innerhalb Ihres HTML-Heads können Sie die [Reihenfolge steuern ](https://cssinjs.org/jss-api#attach-style-sheets-in-a-specific-order) sodass die CSS-Regeln auf Ihre Komponenten angewendet werden.
+
+#### HTML-Kommentar
+
+Am einfachsten ist es, einen HTML-Kommentar hinzuzufügen, der bestimmt, wo JSS die Stile einfügt:
 
 ```jsx
 <head>
@@ -123,7 +173,7 @@ import { StylesProvider, jssPreset } from '@material-ui/styles';
 
 const jss = create({
   ...jssPreset(),
-  // We define a custom insertion point that JSS will look for injecting the styles in the DOM.
+  // Wir definieren einen individuellen insertion point, welcher von JSS benutzt wird, um die Stile in den DOM einzufügen.
   insertionPoint: 'jss-insertion-point',
 });
 
@@ -134,11 +184,11 @@ function App() {
 export default App;
 ```
 
-### Other HTML element
+#### Andere HTML-Elemente
 
-[Create React App](https://github.com/facebook/create-react-app) strips HTML comments when creating the production build. To get around the issue, you can provide a DOM element (other than a comment) as the JSS insertion point.
+[Create React App](https://github.com/facebook/create-react-app) entfernt HTML-Kommentare beim Erstellen des Produktions-Builds. Um das Problem zu umgehen, können Sie ein DOM-Element (mit Ausnahme eines Kommentars) als JSS-Einfügepunkt angeben.
 
-For example, a `<noscript>` element:
+Zum Beispiel ein `<noscript>` Element:
 
 ```jsx
 <head>
@@ -153,7 +203,7 @@ import { StylesProvider, jssPreset } from '@material-ui/styles';
 
 const jss = create({
   ...jssPreset(),
-  // We define a custom insertion point that JSS will look for injecting the styles in the DOM.
+  // Wir definieren einen individuellen insertion point, welcher von JSS benutzt wird, um die Stile in den DOM einzufügen.
   insertionPoint: document.getElementById('jss-insertion-point'),
 });
 
@@ -164,9 +214,9 @@ function App() {
 export default App;
 ```
 
-### JS createComment
+#### JS createComment
 
-codesandbox.io prevents the access to the `<head>` element. To get around the issue, you can use the JavaScript `document.createComment()` API:
+codesandbox.io verhindert den Zugriff auf das `<head>` Element. Um das Problem zu umgehen, können Sie die JavaScript `Document.createComment()` API verwenden:
 
 ```jsx
 import { create } from 'jss';
@@ -177,7 +227,7 @@ document.head.insertBefore(styleNode, document.head.firstChild);
 
 const jss = create({
   ...jssPreset(),
-  // We define a custom insertion point that JSS will look for injecting the styles in the DOM.
+  // Wir definieren einen individuellen insertion point, welcher von JSS benutzt wird, um die Stile in den DOM einzufügen.
   insertionPoint: 'jss-insertion-point',
 });
 
@@ -188,11 +238,11 @@ function App() {
 export default App;
 ```
 
-## Server Side Rendering
+## Server-Rendering
 
 ## Klassennamen
 
-You may have noticed that the class names generated by our styling solution are **non-deterministic**, so you can't rely on them to stay the same. The class names are generated by [our class name generator](/css-in-js/api/#creategenerateclassname-options-class-name-generator) Let's take the following style as an example:
+Möglicherweise haben Sie festgestellt, dass die Klassennamen, die von unserer Styling-Lösung generiert werden, **nicht deterministisch sind**. Sie können sich also nicht darauf verlassen, dass sie gleich bleiben. Die Klassennamen werden von [unserem Klassennamengenerator generiert](/css-in-js/api/#creategenerateclassname-options-class-name-generator). Nehmen wir den folgenden Stil als Beispiel:
 
 ```jsx
 const useStyles = makeStyles({
@@ -204,7 +254,7 @@ const useStyles = makeStyles({
 });
 ```
 
-It will generate a `AppBar-root-5pbwdt` class name. However, the following CSS won't work:
+Es wird ein `AppBar-root-5pbwdt` Klassenname generiert. Das folgende CSS wird nicht funktionieren:
 
 ```css
 .AppBar-root-5pbwdt {
@@ -212,9 +262,9 @@ It will generate a `AppBar-root-5pbwdt` class name. However, the following CSS w
 }
 ```
 
-You have to use the `classes` property of a component to override them. Thanks to the non-deterministic nature of our class names, we can implement optimizations for development and production. They are easy to debug in development and as short as possible in production:
+Sie müssen die `Klassen` Eigenschaft einer Komponente verwenden, um sie zu überschreiben. Dank der nicht-deterministische Natur der Klassennamen, können wir Optimierungen für Entwicklung und Produktion implementieren. Sie sind in der Entwicklung einfach zu debuggen und in der Produktion so kurz wie möglich:
 
-- In **development**, the class name will be: `.AppBar-root-5pbwdt`, following this logic:
+- In der **Entwicklung** lauten der Klassenname: `.AppBar-root-5pbwdt` nach dieser Logik:
 
 ```js
 const sheetName = 'AppBar';
@@ -224,7 +274,7 @@ const identifier = 5pbwdt;
 const className = `${sheetName}-${ruleName}-${identifier}`;
 ```
 
-- In **production**, the class name will be: `.jss5pbwdt`, following this logic:
+- In der **Produktion** lauten der Klassenname: `.jss5pbwdt` nach dieser Logik:
 
 ```js
 const productionPrefix = 'jss';
@@ -233,13 +283,13 @@ const identifier = 5pbwdt;
 const className = `${productionPrefix}-${identifier}`;
 ```
 
-If you don't like this default behavior, you can change it. JSS basiert auf dem Konzept eines [Generators für Klassennamen](https://cssinjs.org/jss-api/#generate-your-class-names).
+Wenn Sie dieses Standardverhalten nicht mögen, können Sie es ändern. JSS basiert auf dem Konzept eines [Generators für Klassennamen](https://cssinjs.org/jss-api/#generate-your-class-names).
 
 ## Globales CSS
 
 ### `jss-plugin-global`
 
-The [`jss-plugin-global`](#jss-plugins) plugin is installed in the default preset, you can use it to define global class names.
+Das [`jss-plugin-global`](#jss-plugins) Plugin ist in der Standardvoreinstellung installiert. Sie können damit globale Klassennamen definieren.
 
 {{"demo": "pages/css-in-js/advanced/GlobalCss.js"}}
 
@@ -273,6 +323,10 @@ const Button = styled(styles, { name: 'button' })(ButtonBase);
 // Higher-order component
 const Button = withStyles(styles, { name: 'button' })(ButtonBase);
 ```
+
+## CSS prefixes
+
+JSS uses feature detection to apply the correct prefixes. [Don't be surprised](https://github.com/mui-org/material-ui/issues/9293) if you can't see a specific prefix in the latest version of Chrome. Your browser probably doesn't need it.
 
 ## Content Security Policy (CSP)
 
