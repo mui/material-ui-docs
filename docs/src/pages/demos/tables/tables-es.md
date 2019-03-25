@@ -66,7 +66,7 @@ Un ejemplo sencillo con filas & columnas expandibles.
 
 ## Tabla Virtualizada
 
-En el siguiente ejemplo, demostramos como usar [react-virtualized](https://github.com/bvaughn/react-virtualized) con el componente `Table`. Renderiza 200 filas y fácilmente puede manejar más.
+En el siguiente ejemplo, demostramos como usar [react-virtualized](https://github.com/bvaughn/react-virtualized) con el componente `Table`. Renderiza 200 filas y fácilmente puede manejar más. Virtualization helps with performance issues.
 
 {{"demo": "pages/demos/tables/ReactVirtualizedTable.js"}}
 
