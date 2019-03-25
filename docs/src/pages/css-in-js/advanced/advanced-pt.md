@@ -1,10 +1,26 @@
-# Advanced
+# Avançado
 
 <p class="description">Advanced Usage.</p>
 
 ## Theming
 
 Add a `ThemeProvider` to the top level of your app to access the theme down the React's component tree. Then, you can access the theme object in the style functions.
+
+```jsx
+import { ThemeProvider } from '@material-ui/styles';
+
+const theme = {
+  background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+};
+
+function Theming() {
+  return (
+    <ThemeProvider theme={theme}>
+      <DeepChild />
+    </ThemeProvider>
+  );
+}
+```
 
 {{"demo": "pages/css-in-js/advanced/Theming.js"}}
 
@@ -14,9 +30,28 @@ You might need to access the theme variables inside your React components.
 
 ### `useTheme` hook
 
+```jsx
+import { useTheme } from '@material-ui/styles';
+
+function DeepChild() {
+  const theme = useTheme();
+  return <span>{`spacing ${theme.spacing}`}</span>;
+}
+```
+
 {{"demo": "pages/css-in-js/advanced/UseTheme.js"}}
 
 ### `withTheme` HOC
+
+```jsx
+import { withTheme } from '@material-ui/styles';
+
+function DeepChildRaw(props) {
+  return <span>{`spacing ${props.theme.spacing}`}</span>;
+}
+
+const DeepChild = withTheme(DeepChildRaw);
+```
 
 {{"demo": "pages/css-in-js/advanced/WithTheme.js"}}
 
@@ -102,11 +137,26 @@ const useStyles = makeStyles({
 
 ## Ordem de injeção de CSS
 
-O CSS inserido pelo Material-UI para estilizar um componente tem a maior especificidade possível, pois o `<link>` é inserido na parte inferior do `<head>` para garantir que os componentes sejam sempre renderizados corretamente.
+By default, the styles are injected **last** in the `<head>` element of your page. They gain more specificity than any other style sheet on your page e.g. CSS modules, styled components.
 
-Você pode, no entanto, também querer substituir esses estilos, por exemplo, com componentes estilizados. Se você está enfrentando um problema de ordem de injeção de CSS, o JSS [ fornece um mecanismo ](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-the-dom-insertion-point) para lidar com essa situação. Ajustando o posicionamento do ponto de inserção ` ` dentro do seu HTML header, você pode [ controlar a ordem em ](https://cssinjs.org/jss-api#attach-style-sheets-in-a-specific-order) que as regras CSS são aplicadas aos seus componentes.
+### injectFirst
 
-### Comentário HTML
+The `StylesProvider` component has a `injectFirst` prop to inject the styles **first**:
+
+```js
+import { StylesProvider } from '@material-ui/styles';
+
+<StylesProvider injectFirst>
+  {/* Your component tree.
+      Styled components can override Material-UI's styles. */}
+</StylesProvider>
+```
+
+### insertionPoint
+
+JSS [provides a mechanism](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-the-dom-insertion-point) to gain more control on this situation. Ajustando o posicionamento do ponto de inserção ` ` dentro do seu HTML header, você pode [ controlar a ordem em ](https://cssinjs.org/jss-api#attach-style-sheets-in-a-specific-order) que as regras CSS são aplicadas aos seus componentes.
+
+#### Comentário HTML
 
 A abordagem mais simples é adicionar um comentário HTML que determine onde o JSS irá inserir os estilos:
 
@@ -134,7 +184,7 @@ function App() {
 export default App;
 ```
 
-### Outro elemento HTML
+#### Outro elemento HTML
 
 [Create React App](https://github.com/facebook/create-react-app) remove comentários em HTML ao criar a compilação de produção. Para contornar o problema, você pode fornecer um elemento DOM (diferente de um comentário) como o ponto de inserção do JSS.
 
@@ -164,7 +214,7 @@ function App() {
 export default App;
 ```
 
-### JS createComment
+#### JS createComment
 
 codesandbox.io impede o acesso ao elemento `<head>`. Para contornar o problema, você pode usar a API JavaScript `document.createComment()`:
 
@@ -273,6 +323,10 @@ const Button = styled(styles, { name: 'button' })(ButtonBase);
 // Higher-order component
 const Button = withStyles(styles, { name: 'button' })(ButtonBase);
 ```
+
+## CSS prefixes
+
+JSS uses feature detection to apply the correct prefixes. [Don't be surprised](https://github.com/mui-org/material-ui/issues/9293) if you can't see a specific prefix in the latest version of Chrome. Your browser probably doesn't need it.
 
 ## Content Security Policy (CSP)
 
