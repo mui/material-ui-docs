@@ -6,6 +6,22 @@
 
 Add a `ThemeProvider` to the top level of your app to access the theme down the React's component tree. Then, you can access the theme object in the style functions.
 
+```jsx
+import { ThemeProvider } from '@material-ui/styles';
+
+const theme = {
+  background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+};
+
+function Theming() {
+  return (
+    <ThemeProvider theme={theme}>
+      <DeepChild />
+    </ThemeProvider>
+  );
+}
+```
+
 {{"demo": "pages/css-in-js/advanced/Theming.js"}}
 
 ## Accessing the theme in a component
@@ -14,9 +30,28 @@ You might need to access the theme variables inside your React components.
 
 ### `useTheme` hook
 
+```jsx
+import { useTheme } from '@material-ui/styles';
+
+function DeepChild() {
+  const theme = useTheme();
+  return <span>{`spacing ${theme.spacing}`}</span>;
+}
+```
+
 {{"demo": "pages/css-in-js/advanced/UseTheme.js"}}
 
 ### `withTheme` HOC
+
+```jsx
+import { withTheme } from '@material-ui/styles';
+
+function DeepChildRaw(props) {
+  return <span>{`spacing ${props.theme.spacing}`}</span>;
+}
+
+const DeepChild = withTheme(DeepChildRaw);
+```
 
 {{"demo": "pages/css-in-js/advanced/WithTheme.js"}}
 
@@ -102,11 +137,26 @@ const useStyles = makeStyles({
 
 ## CSS injection order
 
-The CSS injected by Material-UI to style a component has the highest specificity possible as the `<link>` is injected at the bottom of the `<head>` to ensure the components always render correctly.
+By default, the styles are injected **last** in the `<head>` element of your page. They gain more specificity than any other style sheet on your page e.g. CSS modules, styled components.
 
-You might, however, also want to override these styles, for example with styled-components. If you are experiencing a CSS injection order issue, JSS [provides a mechanism](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-the-dom-insertion-point) to handle this situation. By adjusting the placement of the `insertionPoint` within your HTML head you can [control the order](https://cssinjs.org/jss-api#attach-style-sheets-in-a-specific-order) that the CSS rules are applied to your components.
+### injectFirst
 
-### HTML comment
+The `StylesProvider` component has a `injectFirst` prop to inject the styles **first**:
+
+```js
+import { StylesProvider } from '@material-ui/styles';
+
+<StylesProvider injectFirst>
+  {/* Your component tree.
+      Styled components can override Material-UI's styles. */}
+</StylesProvider>
+```
+
+### insertionPoint
+
+JSS [provides a mechanism](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-the-dom-insertion-point) to gain more control on this situation. By adjusting the placement of the `insertionPoint` within your HTML head you can [control the order](https://cssinjs.org/jss-api#attach-style-sheets-in-a-specific-order) that the CSS rules are applied to your components.
+
+#### HTML comment
 
 The simplest approach is to add an HTML comment that determines where JSS will inject the styles:
 
@@ -134,7 +184,7 @@ function App() {
 export default App;
 ```
 
-### Other HTML element
+#### Other HTML element
 
 [Create React App](https://github.com/facebook/create-react-app) strips HTML comments when creating the production build. To get around the issue, you can provide a DOM element (other than a comment) as the JSS insertion point.
 
@@ -164,7 +214,7 @@ function App() {
 export default App;
 ```
 
-### JS createComment
+#### JS createComment
 
 codesandbox.io prevents the access to the `<head>` element. To get around the issue, you can use the JavaScript `document.createComment()` API:
 
@@ -273,6 +323,10 @@ const Button = styled(styles, { name: 'button' })(ButtonBase);
 // Higher-order component
 const Button = withStyles(styles, { name: 'button' })(ButtonBase);
 ```
+
+## CSS prefixes
+
+JSS uses feature detection to apply the correct prefixes. [Don't be surprised](https://github.com/mui-org/material-ui/issues/9293) if you can't see a specific prefix in the latest version of Chrome. Your browser probably doesn't need it.
 
 ## Content Security Policy (CSP)
 
