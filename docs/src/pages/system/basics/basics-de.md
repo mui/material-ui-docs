@@ -269,13 +269,13 @@ const Box = styled.div`
 
 Verwenden Sie diesen Helfer, um Ihre eigene Style-Funktion zu erstellen.
 
-We don't support all the CSS properties. It's possible that you want to support new ones. It's also possible that you want to change the theme path prefix.
+Wir unterstützen nicht alle CSS-Eigenschaften. Möglicherweise möchten Sie neue unterstützen. Es ist auch möglich, dass Sie das Designpfad-Präfix ändern möchten.
 
-#### Arguments
+#### Argumente
 
 1. `Optionen` (*Object*): 
-  - `options.prop` (*String*): The property the style function will be triggered on.
-  - `options.cssProperty` (*String|Boolean* [optional]): Defaults to `options.prop`. The CSS property used. You can disabled this option by providing `false`. When disabled, the property value will handle as a style object on it's own. It can be used for [rendering variants](#variants).
+  - `options.pro ` (*String*): Die Eigenschaft, für die die Style-Funktion ausgelöst wird.
+  - `options.cssProperty ` (*String|Boolean* [optional]): Standardeinstellung ist `options.prop`. Die verwendete CSS-Eigenschaft. You can disabled this option by providing `false`. When disabled, the property value will handle as a style object on it's own. It can be used for [rendering variants](#variants).
   - `options.themeKey` (*String* [optional]): The theme path prefix.
   - `options.transform` (*Function* [optional]): Apply a transformation before outputing a CSS value.
 
