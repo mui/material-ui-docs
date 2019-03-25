@@ -20,7 +20,7 @@
 
 ## Elemente verstecken
 
-Verwenden Sie für eine schnellere, mobilere Entwicklung responsive Anzeigeklassen zum Anzeigen und Ausblenden von Elementen nach Gerätetypen. Avoid creating entirely different versions of the same site, instead hide element responsively for each screen size.
+Verwenden Sie für eine schnellere, mobilere Entwicklung responsive Anzeigeklassen zum Anzeigen und Ausblenden von Elementen nach Gerätetypen. Erstellen Sie keine völlig unterschiedlichen Versionen derselben Seite, sondern blenden Sie Elemente für jede Bildschirmgröße entsprechend aus.
 
 | Screen Size        | Klasse                                               |
 |:------------------ |:---------------------------------------------------- |
