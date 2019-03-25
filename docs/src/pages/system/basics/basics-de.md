@@ -52,7 +52,7 @@ yarn add @material-ui/system
 
 ### Komponent erstellen
 
-Um die `Box` Komponente zu verwenden, müssen Sie diese zuerst erstellen. To start with, add a `spacing` and `palette` function to the style argument.
+Um die `Box` Komponente zu verwenden, müssen Sie diese zuerst erstellen. Fügen Sie zunächst eine `Abstand` und eine `Palette ` Funktion zum Stilargument hinzu.
 
 ```jsx
 import styled from 'styled-components';
@@ -63,17 +63,17 @@ const Box = styled.div`${spacing}${palette}`;
 export default Box;
 ```
 
-This Box component now supports new [spacing properties](/system/spacing/#api) and [color properties](/system/palette/#api). For instance, you can provide a padding property: `p` and a color property: `color`.
+Diese Box-Komponente unterstützt jetzt neue [Abstandseigenschaften](/system/spacing/#api) und [Farbeigenschaften](/system/palette/#api). Zum Beispiel können Sie eine Padding-Eigenschaft angeben: `p` und eine Farbeigenschaft: `color`.
 
 ```jsx
-<Box p="1rem" color="grey">Give me some space!</Box>
+<Box p="1rem" color="grey">Gib mir etwas Platz!</Box>
 ```
 
-The component can be styled providing any valid CSS values.
+Die Komponente kann mit beliebigen gültigen CSS-Werten gestaltet werden.
 
 ### Theming
 
-But most of the time, you want to rely on a theme's values to increase the UI consistency. It's preferable to have a predetermined set of padding and color values. Import the theme provider of your styling solution.
+Die meiste Zeit möchten Sie sich jedoch auf die Werte eines Themas verlassen, um die Konsistenz der Benutzeroberfläche zu erhöhen. Es ist besser einen vorgegebenen Satz von Paddings und Farbwerten zu haben. Importieren Sie den theme provider Ihrer Styling-Lösung.
 
 ```jsx
 import React from 'react'
@@ -97,7 +97,7 @@ function App() {
 export default App
 ```
 
-Now, you can provide a spacing multiplier value:
+Jetzt können Sie einen Abstandsmultiplikatorwert angeben:
 
 ```jsx
 <Box p={1}>4px</Box>
@@ -105,15 +105,15 @@ Now, you can provide a spacing multiplier value:
 <Box p={-1}>-4px</Box>
 ```
 
-and a primary color:
+und eine Grundfarbe:
 
 ```jsx
 <Box color="primary">blue</Box>
 ```
 
-### All-inclusive
+### Alles inklusive
 
-To make the Box component more useful, we have been building a collection of style functions, here is the full list:
+Um die Box-Komponente noch nützlicher zu machen, haben wir eine Sammlung von Stilfunktionen erstellt. Hier ist eine vollständige Liste:
 
 - [borders](/system/borders/#api)
 - [display](/system/display/#api)
@@ -125,17 +125,17 @@ To make the Box component more useful, we have been building a collection of sty
 - [spacing](/system/spacing/#api)
 - [typography](/system/typography/#api)
 
-If you are already using `@material-ui/core`, you can use our [prepackaged Box](/utils/box/) component (using JSS internally):
+Wenn Sie bereits `@material-ui/core` verwenden, können Sie unsere [vorgefertigte Box](/utils/box/) Komponente verwenden (intern mit JSS):
 
 ```jsx
 import Box from '@material-ui/core/Box';
 ```
 
-## Interoperability
+## Interoperabilität
 
-`@material-ui/system` works with most CSS-in-JS libraries, including JSS, styled-components, and emotion.
+`@material-ui/system` arbeitet mit den meisten CSS-in-JS-Bibliotheken, einschließlich JSS, Stilkomponenten und Emotionen.
 
-If you are already using `@material-ui/core`, we encourage you to start with the **JSS** solution to minimize bundle size.
+Wenn Sie bereits `@material-ui/core` verwenden, empfehlen wir Ihnen, mit der **JSS** zur Minimierung der Paketgröße zu beginnen.
 
 ### JSS
 
