@@ -72,11 +72,11 @@ Verknüpfen Sie ein Stylesheet mit einer Funktionskomponente mit dem **Hook** Mu
 
 #### Argumente
 
-1. `styles` (* Function | Object *): Eine Funktion, die die Stile oder ein Stilobjekt generiert. It will be linked to the component. Use the function signature if you need to have access to the theme. It's provided as the first argument.
+1. `styles` (* Function | Object *): Eine Funktion, die die Stile oder ein Stilobjekt generiert. Es wird mit der Komponente verknüpft. Verwenden Sie die Funktionssignatur, wenn Sie Zugriff auf das Theme benötigen. Es ist das erste Argument.
 2. `Optionen` (*Object* [optional]): 
-    - `options.defaultTheme` (*Object* [optional]): The default theme to use if a theme isn't supplied through a Theme Provider.
+    - `options.defaultTheme` (*Object* [optional]): Das Standarddesign, das verwendet werden soll, wenn ein Theme nicht über einen Theme Provider bereitgestellt wird.
     - `options.withTheme ` (*Boolean* [optional]): Standardeinstellung ist `false`. Übergeben Sie das `Theme` Objekt als Eigenschaft an die Komponente.
-    - `options.name` (*String* [optional]): The name of the style sheet. Useful for debugging. If the value isn't provided, it will try to fallback to the name of the component.
+    - `options.name` (*String* [optional]): Der Name des Stylesheets. Nützlich zum Debuggen. Wenn der Wert nicht angegeben wird, wird versucht, auf den Namen der Komponente zurückzugreifen.
     - `options.flip` (*Boolean* [optional]): When set to `false`, this sheet will opt-out the `rtl` transformation. When set to `true`, the styles are inversed. When set to `null`, it follows `theme.direction`.
     - The other keys are forwarded to the options argument of [jss.createStyleSheet([styles], [options])](http://cssinjs.org/jss-api/#create-style-sheet).
 
@@ -108,18 +108,18 @@ Link a style sheet with a function component using the **styled components** pat
 
 #### Argumente
 
-1. `Component`: The component that will be wrapped.
-2. `styles` (* Function | Object *): Eine Funktion, die die Stile oder ein Stilobjekt generiert. It will be linked to the component. Use the function signature if you need to have access to the theme. It's provided as the first argument.
+1. `Component`: Die Komponente, die verpackt wird.
+2. `styles` (* Function | Object *): Eine Funktion, die die Stile oder ein Stilobjekt generiert. Es wird mit der Komponente verknüpft. Verwenden Sie die Funktionssignatur, wenn Sie Zugriff auf das Theme benötigen. Es ist das erste Argument.
 3. `Optionen` (*Object* [optional]): 
-    - `options.defaultTheme` (*Object* [optional]): The default theme to use if a theme isn't supplied through a Theme Provider.
+    - `options.defaultTheme` (*Object* [optional]): Das Standarddesign, das verwendet werden soll, wenn ein Theme nicht über einen Theme Provider bereitgestellt wird.
     - `options.withTheme ` (*Boolean* [optional]): Standardeinstellung ist `false`. Übergeben Sie das `Theme` Objekt als Eigenschaft an die Komponente.
-    - `options.name` (*String* [optional]): The name of the style sheet. Useful for debugging. If the value isn't provided, it will try to fallback to the name of the component.
+    - `options.name` (*String* [optional]): Der Name des Stylesheets. Nützlich zum Debuggen. Wenn der Wert nicht angegeben wird, wird versucht, auf den Namen der Komponente zurückzugreifen.
     - `options.flip` (*Boolean* [optional]): When set to `false`, this sheet will opt-out the `rtl` transformation. When set to `true`, the styles are inversed. When set to `null`, it follows `theme.direction`.
     - The other keys are forwarded to the options argument of [jss.createStyleSheet([styles], [options])](http://cssinjs.org/jss-api/#create-style-sheet).
 
 #### Rückgabewerte
 
-`Component`: The new component created.
+`Component`: Die neu erstellte Komponente.
 
 #### Beispiele
 
@@ -138,11 +138,11 @@ export default function StyledComponents() {
 
 ## `StylesProvider`
 
-This component allows you to change the behavior of the styling solution. Durch den Kontext werden die Optionen im React-Baum verfügbar.
+Mit dieser Komponente können Sie das Verhalten der Styling-Lösung ändern. Durch den Kontext werden die Optionen im React-Baum verfügbar.
 
-It should preferably be used at **the root of your component tree**.
+Es sollte vorzugsweise an der **Wurzel Ihres Komponentenbaums** verwendet werden.
 
-#### EigenschaftenBy default, the styles are injected last in the 
+#### EigenschaftenStandardmäßig werden die Stile zuletzt eingefügt 
 
 <head>
   element of your page. Sie erhalten mehr Details als jedes andere Stylesheet auf Ihrer Seite, z.B. CSS-Module oder StilKomponenten. Wenn Sie die Stile der Material-UI überschreiben möchten, setzen Sie diese Option.</td> </tr> 
@@ -187,7 +187,7 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
   </h2>
   
   <p>
-    Diese Komponente hat eine <code>Theme</code> Eigenschaft. Diese wird durch den Kontext in der React-Struktur verfügbar gemacht. It should preferably be used at <strong>the root of your component tree</strong>.
+    Diese Komponente hat eine <code>Theme</code> Eigenschaft. Diese wird durch den Kontext in der React-Struktur verfügbar gemacht. Es sollte vorzugsweise an der <strong>Wurzel Ihres Komponentenbaums</strong> verwendet werden.
   </p>
   
   <h4>
@@ -245,7 +245,7 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
       </td>
       
       <td align="left">
-        Ein Themeobjekt. You can provide a function to extend the outer theme.
+        Ein Themeobjekt. Sie können eine Funktion bereitstellen, um das äußere Theme zu erweitern.
       </td>
     </tr>
   </table>
@@ -274,7 +274,7 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
   </h2>
   
   <p>
-    This hook returns the <code>theme</code> object so it can be used inside a function component.
+    Dieser Hook gibt das <code>Theme</code>-Objekt zurück, so dass es innerhalb einer Funktionskomponente verwendet werden kann.
   </p>
   
   <h4>
@@ -332,19 +332,19 @@ export default function MyComponent() {
   
   <ol start="1">
     <li>
-      <code>styles</code> (<em> Function | Object </em>): Eine Funktion, die die Stile oder ein Stilobjekt generiert. It will be linked to the component. Use the function signature if you need to have access to the theme. It's provided as the first argument.
+      <code>styles</code> (<em> Function | Object </em>): Eine Funktion, die die Stile oder ein Stilobjekt generiert. Es wird mit der Komponente verknüpft. Verwenden Sie die Funktionssignatur, wenn Sie Zugriff auf das Theme benötigen. Es ist das erste Argument.
     </li>
     
     <li>
       <code>Optionen</code> (<em>Object</em> [optional]): <ul>
         <li>
-          <code>options.defaultTheme</code> (<em>Object</em> [optional]): The default theme to use if a theme isn't supplied through a Theme Provider.
+          <code>options.defaultTheme</code> (<em>Object</em> [optional]): Das Standarddesign, das verwendet werden soll, wenn ein Theme nicht über einen Theme Provider bereitgestellt wird.
         </li>
         <li>
           <code>options.withTheme </code> (<em>Boolean</em> [optional]): Standardeinstellung ist <code>false</code>. Übergeben Sie das <code>Theme</code> Objekt als Eigenschaft an die Komponente.
         </li>
         <li>
-          <code>options.name</code> (<em>String</em> [optional]): The name of the style sheet. Useful for debugging. If the value isn't provided, it will try to fallback to the name of the component.
+          <code>options.name</code> (<em>String</em> [optional]): Der Name des Stylesheets. Nützlich zum Debuggen. Wenn der Wert nicht angegeben wird, wird versucht, auf den Namen der Komponente zurückzugreifen.
         </li>
         <li>
           <code>options.flip</code> (<em>Boolean</em> [optional]): When set to <code>false</code>, this sheet will opt-out the <code>rtl</code> transformation. When set to <code>true</code>, the styles are inversed. When set to <code>null</code>, it follows <code>theme.direction</code>.
@@ -387,7 +387,7 @@ export default withStyles(styles)(MyComponent);
 </code></pre>
   
   <p>
-    Also, you can use as <a href="https://babeljs.io/docs/en/babel-plugin-proposal-decorators">decorators</a> like so:
+    Sie können auch so als <a href="https://babeljs.io/docs/en/babel-plugin-proposal-decorators">Dekorateur</a> verwenden:
   </p>
   
   <pre><code class="jsx">import React from 'react';
@@ -414,7 +414,7 @@ export default MyComponent
   </h2>
   
   <p>
-    Provide the <code>theme</code> object as a property of the input component so it can be used in the render method.
+    Geben Sie das <code>Theme</code>-Objekt als Eigenschaft der Eingabekomponente weiter, sodass es in der Render-Methode verwendet werden kann.
   </p>
   
   <h4>
@@ -423,7 +423,7 @@ export default MyComponent
   
   <ol start="1">
     <li>
-      <code>Component</code>: The component that will be wrapped.
+      <code>Component</code>: Die Komponente, die verpackt wird.
     </li>
   </ol>
   
@@ -432,7 +432,7 @@ export default MyComponent
   </h4>
   
   <p>
-    <code>Component</code>: Die neu erstellte Komponente. Does forward refs to the inner component.
+    <code>Component</code>: Die neu erstellte Komponente. Leitet die innere Komponente mit Ref weiter.
   </p>
   
   <h4>
