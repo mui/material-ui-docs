@@ -23,7 +23,7 @@ Changing the theme configuration variables is the most effective way to match Ma
 - [Typografie](#typography)
 - [Abstände](#spacing)
 - [Other variables](#other-variables)
-- [Custom variables](#custom-variables)
+- [Custom variables](#other-variables)
 
 ## Palette
 
