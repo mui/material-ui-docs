@@ -46,17 +46,17 @@ Unter Verwendung einer beliebigen Haltepunkte `down` Eigenschaft, werden die ang
 
 ## Haltepunkte einzeln
 
-Using the breakpoint `only` property, the given *children* will be hidden *at* the specified breakpoint(s).
+Unter Verwendung der Haltepunkt `only` Eigenschaft, werden die angegebenen *Kinder* *bei* dem Haltepunkt(en) ausgeblendet.
 
-The `only` property can be used in two ways:
+Die `only` Eigenschaft kann auf zwei Arten verwendet werden:
 
-- list a single breakpoint
-- list an array of breakpoints
+- Einzelnen Haltepunkt auflisten
+- Listen Sie ein Array von Haltepunkten auf
 
 {{"demo": "pages/layout/hidden/BreakpointOnly.js"}}
 
-## Integration with Grid
+## Integration mit Grid
 
-It is quite common to alter `Grid` at different responsive breakpoints, and in many cases, you want to hide some of those elements.
+Es ist üblich, das`Grid` an verschiedenen Haltepunkten zu ändern, und in vielen Fällen möchten Sie einige dieser Elemente ausblenden.
 
 {{"demo": "pages/layout/hidden/GridIntegration.js"}}
