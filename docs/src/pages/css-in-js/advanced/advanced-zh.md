@@ -6,6 +6,22 @@
 
 将 `ThemeProvider` 添加到应用程序的顶层，以访问React组件树中的主题。 然后，您可以在样式函数中访问主题对象。
 
+```jsx
+import { ThemeProvider } from '@material-ui/styles';
+
+const theme = {
+  background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+};
+
+function Theming() {
+  return (
+    <ThemeProvider theme={theme}>
+      <DeepChild />
+    </ThemeProvider>
+  );
+}
+```
+
 {{"demo": "pages/css-in-js/advanced/Theming.js"}}
 
 ## 访问组件中的主题
@@ -14,9 +30,28 @@
 
 ### `useTheme` hook
 
+```jsx
+import { useTheme } from '@material-ui/styles';
+
+function DeepChild() {
+  const theme = useTheme();
+  return <span>{`spacing ${theme.spacing}`}</span>;
+}
+```
+
 {{"demo": "pages/css-in-js/advanced/UseTheme.js"}}
 
 ### `withTheme` HOC
+
+```jsx
+import { withTheme } from '@material-ui/styles';
+
+function DeepChildRaw(props) {
+  return <span>{`spacing ${props.theme.spacing}`}</span>;
+}
+
+const DeepChild = withTheme(DeepChildRaw);
+```
 
 {{"demo": "pages/css-in-js/advanced/WithTheme.js"}}
 
@@ -102,11 +137,26 @@ const useStyles = makeStyles({
 
 ## CSS 注入顺序
 
-由Material-UI 注入的 CSS 对组件的样式具有最高的特异性, 因为`<link>`被注入到`<head>`的底部, 以确保组件始终正确呈现。
+By default, the styles are injected **last** in the `<head>` element of your page. They gain more specificity than any other style sheet on your page e.g. CSS modules, styled components.
 
-但是, 您可能还希望重写这些样式, 例如使用styled-components。 如果遇到 CSS 注入顺序问题, JSS[提供了一个机制](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-the-dom-insertion-point)来处理这种情况。 通过调整 HTML 头中 ` insertionPoint ` 的位置, 可以 [ 控制顺序 ](https://cssinjs.org/jss-api#attach-style-sheets-in-a-specific-order) 将 CSS 规则应用于组件。
+### injectFirst
 
-### HTML 注释
+The `StylesProvider` component has a `injectFirst` prop to inject the styles **first**:
+
+```js
+import { StylesProvider } from '@material-ui/styles';
+
+<StylesProvider injectFirst>
+  {/* Your component tree.
+      Styled components can override Material-UI's styles. */}
+</StylesProvider>
+```
+
+### insertionPoint
+
+JSS [provides a mechanism](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-the-dom-insertion-point) to gain more control on this situation. 通过调整 HTML 头中 ` insertionPoint ` 的位置, 可以 [ 控制顺序 ](https://cssinjs.org/jss-api#attach-style-sheets-in-a-specific-order) 将 CSS 规则应用于组件。
+
+#### HTML 注释
 
 最简单的方法是添加一个 HTML 注释, 用于确定 JSS 将在何处插入样式:
 
@@ -134,7 +184,7 @@ function App() {
 export default App;
 ```
 
-### 其他 HTML 元素
+#### 其他 HTML 元素
 
 创建生产环境时, [Create React App](https://github.com/facebook/create-react-app) 会剥离 HTML 注释。 若要变通解决此问题, 您可以提供 DOM 元素 (注释以外) 作为 JSS 插入点。
 
@@ -164,7 +214,7 @@ function App() {
 export default App;
 ```
 
-### JS createComment
+#### JS createComment
 
 codesandbox.io 阻止对 `<head>` 元素的访问。 若要变通解决此问题, 您可以使用 JavaScript ` 文档. createComment () ` API:
 
@@ -204,7 +254,7 @@ const useStyles = makeStyles({
 });
 ```
 
-它将生成一个 `AppBar-root-5pbwdt` 类名。 但是，以下CSS不起作用：
+It will generate a `AppBar-root-5pbwdt` class name. However, the following CSS won't work:
 
 ```css
 .AppBar-root-5pbwdt {
@@ -212,7 +262,7 @@ const useStyles = makeStyles({
 }
 ```
 
-您必须使用组件的 `类` 属性来覆盖它们。 由于我们的类名称的非确定性，我们 可以实现开发和生产的优化。 它们在开发中易于调试, 在生产中尽可能短:
+You have to use the `classes` property of a component to override them. Thanks to the non-deterministic nature of our class names, we can implement optimizations for development and production. 它们在开发中易于调试, 在生产中尽可能短:
 
 - 在 **开发**，类名将为： `.AppBar-root-5pbwdt`，遵循以下逻辑：
 
@@ -273,6 +323,10 @@ const Button = styled(styles, { name: 'button' })(ButtonBase);
 // Higher-order component
 const Button = withStyles(styles, { name: 'button' })(ButtonBase);
 ```
+
+## CSS prefixes
+
+JSS uses feature detection to apply the correct prefixes. [Don't be surprised](https://github.com/mui-org/material-ui/issues/9293) if you can't see a specific prefix in the latest version of Chrome. Your browser probably doesn't need it.
 
 ## 内容安全政策（CSP）
 
