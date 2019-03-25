@@ -77,12 +77,12 @@ Verknüpfen Sie ein Stylesheet mit einer Funktionskomponente mit dem **Hook** Mu
     - `options.defaultTheme` (*Object* [optional]): Das Standarddesign, das verwendet werden soll, wenn ein Theme nicht über einen Theme Provider bereitgestellt wird.
     - `options.withTheme ` (*Boolean* [optional]): Standardeinstellung ist `false`. Übergeben Sie das `Theme` Objekt als Eigenschaft an die Komponente.
     - `options.name` (*String* [optional]): Der Name des Stylesheets. Nützlich zum Debuggen. Wenn der Wert nicht angegeben wird, wird versucht, auf den Namen der Komponente zurückzugreifen.
-    - `options.flip` (*Boolean* [optional]): When set to `false`, this sheet will opt-out the `rtl` transformation. When set to `true`, the styles are inversed. When set to `null`, it follows `theme.direction`.
-    - The other keys are forwarded to the options argument of [jss.createStyleSheet([styles], [options])](http://cssinjs.org/jss-api/#create-style-sheet).
+    - `options.flip` (*Boolean* [optional]): Wenn auf `false` gestellt, wird die `Rechts-Nach-Links` Transformation deaktiviert. Wenn es `true` ist sind die Stile invertiert. Wenn es `null` ist, folgt es der `theme.direction` Einstellung.
+    - Die anderen Schlüssel werden an das Optionsargument [jss.createStyleSheet([styles], [options])](http://cssinjs.org/jss-api/#create-style-sheet) weitergeleitet.
 
 #### Rückgabewerte
 
-`hook`: A hook. This hook can be used in a function component. It accepts one argument: the properties that will be used for "interpolation" in the style sheet.
+`Hook`: Ein Hook. Dieser Hook kann in einer Funktionskomponente verwendet werden. Er akzeptiert ein Argument: die Eigenschaften, die für „Interpolation“ in das Stylesheet verwendet wird.
 
 #### Beispiele
 
@@ -104,7 +104,7 @@ export default function MyComponent() {
 
 ## `styled(Component)(styles, [options]) => Component`
 
-Link a style sheet with a function component using the **styled components** pattern.
+Verknüpfen Sie ein Stylesheet mit einer Funktionskomponente mit dem **styled components** Muster.
 
 #### Argumente
 
@@ -114,8 +114,8 @@ Link a style sheet with a function component using the **styled components** pat
     - `options.defaultTheme` (*Object* [optional]): Das Standarddesign, das verwendet werden soll, wenn ein Theme nicht über einen Theme Provider bereitgestellt wird.
     - `options.withTheme ` (*Boolean* [optional]): Standardeinstellung ist `false`. Übergeben Sie das `Theme` Objekt als Eigenschaft an die Komponente.
     - `options.name` (*String* [optional]): Der Name des Stylesheets. Nützlich zum Debuggen. Wenn der Wert nicht angegeben wird, wird versucht, auf den Namen der Komponente zurückzugreifen.
-    - `options.flip` (*Boolean* [optional]): When set to `false`, this sheet will opt-out the `rtl` transformation. When set to `true`, the styles are inversed. When set to `null`, it follows `theme.direction`.
-    - The other keys are forwarded to the options argument of [jss.createStyleSheet([styles], [options])](http://cssinjs.org/jss-api/#create-style-sheet).
+    - `options.flip` (*Boolean* [optional]): Wenn auf `false` gestellt, wird die `Rechts-Nach-Links` Transformation deaktiviert. Wenn es `true` ist sind die Stile invertiert. Wenn es `null` ist, folgt es der `theme.direction` Einstellung.
+    - Die anderen Schlüssel werden an das Optionsargument [jss.createStyleSheet([styles], [options])](http://cssinjs.org/jss-api/#create-style-sheet) weitergeleitet.
 
 #### Rückgabewerte
 
@@ -304,7 +304,7 @@ export default function MyComponent() {
   </h2>
   
   <p>
-    Link a style sheet with a component using the <strong>higher-order component</strong> pattern. It does not modify the component passed to it; instead, it returns a new component with a <code>classes</code> property. This <code>classes</code> object contains the name of the class names injected in the DOM.
+    Verknüpfen Sie ein Stylesheet mit einer Funktionskomponente mit dem <strong>higher-order component</strong> Muster. It does not modify the component passed to it; instead, it returns a new component with a <code>classes</code> property. This <code>classes</code> object contains the name of the class names injected in the DOM.
   </p>
   
   <p>
@@ -347,10 +347,10 @@ export default function MyComponent() {
           <code>options.name</code> (<em>String</em> [optional]): Der Name des Stylesheets. Nützlich zum Debuggen. Wenn der Wert nicht angegeben wird, wird versucht, auf den Namen der Komponente zurückzugreifen.
         </li>
         <li>
-          <code>options.flip</code> (<em>Boolean</em> [optional]): When set to <code>false</code>, this sheet will opt-out the <code>rtl</code> transformation. When set to <code>true</code>, the styles are inversed. When set to <code>null</code>, it follows <code>theme.direction</code>.
+          <code>options.flip</code> (<em>Boolean</em> [optional]): Wenn auf <code>false</code> gestellt, wird die <code>Rechts-Nach-Links</code> Transformation deaktiviert. Wenn es <code>true</code> ist sind die Stile invertiert. Wenn es <code>null</code> ist, folgt es der <code>theme.direction</code> Einstellung.
         </li>
         <li>
-          The other keys are forwarded to the options argument of <a href="http://cssinjs.org/jss-api/#create-style-sheet">jss.createStyleSheet([styles], [options])</a>.
+          Die anderen Schlüssel werden an das Optionsargument <a href="http://cssinjs.org/jss-api/#create-style-sheet">jss.createStyleSheet([styles], [options])</a> weitergeleitet.
         </li>
       </ul>
     </li>
