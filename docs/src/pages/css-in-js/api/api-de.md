@@ -11,7 +11,7 @@ Eine Funktion, die eine [Klassennamengeneratorfunktion](http://cssinjs.org/jss-a
 1. `Optionen` (*Object* [optional]): 
     - `options.dangerouslyUseGlobalCSS ` (*Boolean* [optional]): Standardeinstellung ist `false`. Macht die Klassennamen der Material-UI deterministisch.
     - `options.productionPrefix` (*String* [optional]): Standardeinstellung ist ` 'jss' `. Ein String, der den Klassennamen in der Produktion vorangestellt wird.
-    - `options.seed` (*String* [optional]): Defaults to `''`. The string used to uniquely identify the generator. It can be used to avoid class name collisions when using multiple generators.
+    - `options.seed` (*String* [optional]): Standardeinstellung ist `''`. The string used to uniquely identify the generator. It can be used to avoid class name collisions when using multiple generators.
 
 #### Rückgabewerte
 
