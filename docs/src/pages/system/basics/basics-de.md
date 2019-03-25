@@ -404,11 +404,11 @@ In Praxis kann eine Box-Komponente viel Zeit sparen. In diesem Beispiel wird gez
 `@material-ui/system` synthetisiert Ideen & APIs aus verschiedenen Quellen:
 
 - [Tachyons](https://tachyons.io/) war eine der ersten (2014) CSS-Bibliotheken, die das [Atomic CSS-Muster](https://css-tricks.com/lets-define-exactly-atomic-css/) förderten (oder funktionales CSS).
-- Tachyons was later on (2017) followed by [Tailwind CSS](https://tailwindcss.com/). They have made Atomic CSS more popular.
-- [Twitter Bootstrap](https://getbootstrap.com/docs/4.1/utilities/borders/) has slowly introduced atomic class names in v2, v3, and v4. We have used the way they group their "Helper classes" as inspiration.
-- In the React world, [Styled System](https://github.com/jxnblk/styled-system) was one of the first (2017) to promote the style functions. It can be used as a generic Box component replacing the atomic CSS helpers as well as helpers to write new components.
-- Large companies such as Pinterest, GitHub, and Segment.io are using the same approach in different flavours: 
+- Tachyons wurde später (2017) gefolgt von [Tailwind CSS](https://tailwindcss.com/). Sie haben Atomic CSS populärer gemacht.
+- [Twitter-Bootstrap](https://getbootstrap.com/docs/4.1/utilities/borders/) hat langsam atomare Klassennamen in v2, v3 und v4 eingeführt. Wir haben die Art, wie sie ihre "Helper-Klassen" gruppieren, als Inspiration genutzt.
+- In der Welt von React, war das [Styled System](https://github.com/jxnblk/styled-system) eins der ersten (2017), die Stilfunktionen unterstützte. Sie kann als generische Box-Komponente verwendet werden und ersetzt die atomaren CSS-Helfer sowie Helfer beim Schreiben neuer Komponenten.
+- Große Unternehmen wie Pinterest, GitHub und Segment.io verwenden denselben Ansatz in verschiedenen Geschmacksrichtungen: 
   - [Evergreen Box](https://evergreen.segment.com/components/layout-primitives)
   - [Gestalt Box](https://pinterest.github.io/gestalt/#/Box)
   - [Primer Box](https://primer.style/components/docs/Box)
-- The actual implementation and the object responsive API was inspired by the [Smooth-UI's system](https://smooth-ui.smooth-code.com/docs-basics-system).
+- Die eigentliche Implementierung und die objektabhängige API wurden vom [System der Smooth-UI](https://smooth-ui.smooth-code.com/docs-basics-system) inspiriert.
