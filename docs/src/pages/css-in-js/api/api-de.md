@@ -1,16 +1,16 @@
 # API
 
-<p class="description">The API reference of the @material-ui/styles package.</p>
+<p class="description">Die API-Referenz des @material-ui/styles Pakets.</p>
 
 ## `createGenerateClassName([options]) => class name generator`
 
-A function which returns [a class name generator function](http://cssinjs.org/jss-api/#generate-your-class-names).
+Eine Funktion, die eine [Klassennamengeneratorfunktion](http://cssinjs.org/jss-api/#generate-your-class-names) zurückgibt.
 
 #### Argumente
 
 1. `Optionen` (*Object* [optional]): 
-    - `options.dangerouslyUseGlobalCSS ` (*Boolean* [optional]): Standardeinstellung ist `false`. Makes the Material-UI class names deterministic.
-    - `options.productionPrefix` (*String* [optional]): Defaults to `'jss'`. The string used to prefix the class names in production.
+    - `options.dangerouslyUseGlobalCSS ` (*Boolean* [optional]): Standardeinstellung ist `false`. Macht die Klassennamen der Material-UI deterministisch.
+    - `options.productionPrefix` (*String* [optional]): Standardeinstellung ist ` 'jss' `. Ein String, der den Klassennamen in der Produktion vorangestellt wird.
     - `options.seed` (*String* [optional]): Defaults to `''`. The string used to uniquely identify the generator. It can be used to avoid class name collisions when using multiple generators.
 
 #### Rückgabewerte
