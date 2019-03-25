@@ -37,7 +37,7 @@ export default function App() {
 
 ## `createStyles(styles) => styles`
 
-This function doesn't really "do anything" at runtime, it's just the identity function. Its only purpose is to defeat **TypeScript**'s type widening when providing style rules to `makeStyles`/`withStyles` which are a function of the `Theme`.
+This function doesn't really "do anything" at runtime, it's just the identity function. Sein einziger Zweck ist es, **TypeScript** Typverbreiterung zu verhindern, wenn Style-Regeln für `makeStyles`/`withStyles` bereitgestellt werden, welche eine Funktion des `Themes` sind.
 
 #### Argumente
 
@@ -138,14 +138,14 @@ export default function StyledComponents() {
 
 ## `StylesProvider`
 
-This component allows you to change the behavior of the styling solution. It makes the options available down the React tree thanks to the context.
+This component allows you to change the behavior of the styling solution. Durch den Kontext werden die Optionen im React-Baum verfügbar.
 
 It should preferably be used at **the root of your component tree**.
 
-#### PropsBy default, the styles are injected last in the 
+#### EigenschaftenBy default, the styles are injected last in the 
 
 <head>
-  element of your page. Sie erhalten mehr Details als jedes andere Stylesheet auf Ihrer Seite, z.B. CSS-Module oder StilKomponenten. If you want to override the Material-UI's styles, set this prop.</td> </tr> 
+  element of your page. Sie erhalten mehr Details als jedes andere Stylesheet auf Ihrer Seite, z.B. CSS-Module oder StilKomponenten. Wenn Sie die Stile der Material-UI überschreiben möchten, setzen Sie diese Option.</td> </tr> 
   
   <tr>
     <td align="left">
@@ -161,7 +161,7 @@ It should preferably be used at **the root of your component tree**.
     </td>
     
     <td align="left">
-      JSS's instance.
+      JSS-Instanz.
     </td>
   </tr></tbody> </table> 
   
@@ -187,11 +187,11 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
   </h2>
   
   <p>
-    This component takes a <code>theme</code> property, and makes it available down the React tree thanks to the context. It should preferably be used at <strong>the root of your component tree</strong>.
+    Diese Komponente hat eine <code>Theme</code> Eigenschaft. Diese wird durch den Kontext in der React-Struktur verfügbar gemacht. It should preferably be used at <strong>the root of your component tree</strong>.
   </p>
   
   <h4>
-    Props
+    Eigenschaften
   </h4>
   
   <table>
@@ -209,7 +209,7 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
       </th>
       
       <th align="left">
-        Description
+        Beschreibung
       </th>
     </tr>
     
@@ -227,7 +227,7 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
       </td>
       
       <td align="left">
-        Your component tree.
+        Ihr Komponentenbaum.
       </td>
     </tr>
     
@@ -245,7 +245,7 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
       </td>
       
       <td align="left">
-        A theme object. You can provide a function to extend the outer theme.
+        Ein Themeobjekt. You can provide a function to extend the outer theme.
       </td>
     </tr>
   </table>
@@ -282,7 +282,7 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
   </h4>
   
   <p>
-    <code>theme</code>: The theme object previously injected in the context.
+    <code>Theme</code>: Das Themenobjekt, das zuvor in den Kontext eingefügt wurde.
   </p>
   
   <h4>
