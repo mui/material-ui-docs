@@ -304,7 +304,7 @@ export default function MyComponent() {
   </h2>
   
   <p>
-    Verknüpfen Sie ein Stylesheet mit einer Funktionskomponente mit dem <strong>higher-order component</strong> Muster. It does not modify the component passed to it; instead, it returns a new component with a <code>classes</code> property. This <code>classes</code> object contains the name of the class names injected in the DOM.
+    Verknüpfen Sie ein Stylesheet mit einer Funktionskomponente mit dem <strong>higher-order component</strong> Muster. Die an sie übergebene Komponente wird nicht geändert. Stattdessen wird eine neue Komponente mit der Eigenschaft <code>classes</code> zurückgegeben. Dieses <code>classes</code> Objekt enthält den Namen der Klassennamen, die in das DOM eingefügt wurden.
   </p>
   
   <p>
@@ -313,16 +313,16 @@ export default function MyComponent() {
   
   <ul>
     <li>
-      It adds a <code>classes</code> property so you can override the injected class names from the outside.
+      Es fügt eine <code>classes</code> Eigenschaft hinzu, damit Sie die injizierten Klassennamen von außen überschreiben können.
     </li>
     <li>
-      It forwards refs to the inner component.
+      Leitet die innere Komponente mit Ref weiter.
     </li>
     <li>
-      The <code>innerRef</code> prop is deprecated. Use <code>ref</code> instead.
+      Die <code>innerRef</code> Eigenschaft ist veraltet. Verwenden Sie <code>ref</code> stattdessen.
     </li>
     <li>
-      It does <strong>not</strong> copy over statics. Es kann zum Beispiel verwendet werden, um eine <code>getInitialProps()</code> als statische Methode zu definieren (next.js).
+      Es wird <strong>keine</strong> Statik rüberkopiert. Es kann zum Beispiel verwendet werden, um eine <code>getInitialProps()</code> als statische Methode zu definieren (next.js).
     </li>
   </ul>
   
