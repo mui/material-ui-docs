@@ -53,7 +53,7 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 
 如果您已经阅读了 [覆盖文档页面](/customization/overrides/) 但是您没有信心进入， 这里是一个如何自定义 `DialogTitle` 以支持关闭按钮的示例。
 
-⚠️虽然材料设计规范鼓励主题，但这个例子是不合适的。
+⚠️虽然 Material Design 规范鼓励主题，但这个例子是不合适的。
 
 {{"demo": "pages/demos/dialogs/CustomizedDialog.js"}}
 
