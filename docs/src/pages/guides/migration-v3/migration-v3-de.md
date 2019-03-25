@@ -64,7 +64,7 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
   +const DeepChild = withTheme(DeepChildRaw);
   ```
 
-- Scope the keyframes API. You should apply the following changes in your codebase. It helps isolating the animation logic:
+- Richten Sie die Keyframes-API ein. Sie sollten die folgenden Änderungen in Ihrer Codebase anwenden. Es hilft, die Animationslogik zu isolieren:
   
   ```diff rippleVisible: { opacity: 0.3,
 
