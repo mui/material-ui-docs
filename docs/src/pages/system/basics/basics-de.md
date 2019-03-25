@@ -1,31 +1,31 @@
 # @material-ui/system
 
-<p class="description">Styled system & style functions for building powerful design systems.</p>
+<p class="description">Gestylte System- und Stilfunktionen zum Erstellen leistungsstarker Design-Systeme.</p>
 
-## Getting Started
+## Erste Schritte
 
-`@material-ui/system` provides low-level utility functions called "*style functions*" for building powerful design systems. Some of the key features:
+`@material-ui/system` bietet Hilfsfunktionen auf niedriger Ebene, die als "*Style Funktionen*" bezeichnet werden für den Aufbau leistungsstarker Konstruktionssysteme. Einige der wichtigsten Funktionen:
 
-- ⚛️ Access the theme values directly from the component props.
-- 🦋 Encourage UI consistency.
+- ⚛️ Greifen Sie über die Komponentenrequisiten direkt auf die Themewerte zu.
+- 🦋 Konsistenz der Benutzeroberfläche fördern.
 - 🌈 Schreibe mühelos responsive Styles.
-- 🦎 Work with any theme object.
+- 🦎 Arbeiten Sie mit beliebigen Themeobjekten.
 - 💅 Arbeite mit den bekanntesten CSS-in-JS Lösungen.
 - 📦 Weniger als [4 KB gzipped](https://bundlephobia.com/result?p=@material-ui/system).
 - 🚀 [ Schnell genug ](https://github.com/mui-org/material-ui/blob/next/packages/material-ui-benchmark/README.md#material-uisystem) kein Flaschenhals zur Laufzeit zu sein.
 
-It's important to understand that this package exposes pure (side-effect free) style functions with this signature: `({ theme, ...style }) => style`, **that's it**.
+Es ist wichtig zu verstehen, dass dieses Paket mit dieser Signatur reine (nebenwirkungsfreie) Stilfunktionen bereitstellt: `({ theme, ...style }) => style` ** das ist alles** .
 
 ### Demo
 
-In the rest of this *Getting Started* section we are using **styled-components** as the reference example (to emphasize the universality of this package). Alternatively, you can [use JSS](#interoperability). The demos are also based on the **default** Material-UI [theme object](/customization/default-theme/).
+Im Rest dieses *Erste Schritte* Abschnitts verwenden wir **styled-components** als Referenzbeispiel (um die Universalität dieses Pakets zu betonen). Alternativ können Sie [JSS verwenden](#interoperability). Die Demos basieren ebenfalls auf der **Standardeinstellung** des Material-UI [Themeobjekt](/customization/default-theme/).
 
 ```jsx
 import { palette, spacing, typography } from '@material-ui/system';
 import styled from 'styled-components';
 
 const Box = styled.div`${palette}${spacing}${typography}`;
-// or import Box from '@material-ui/core/Box';
+// oder importiere Box von'@material-ui/core/Box';
 
 <Box
   color="primary.main"
@@ -50,9 +50,9 @@ npm install @material-ui/system
 yarn add @material-ui/system
 ```
 
-### Create a component
+### Komponent erstellen
 
-In order to use the `Box` component, you first need to create it. To start with, add a `spacing` and `palette` function to the style argument.
+Um die `Box` Komponente zu verwenden, müssen Sie diese zuerst erstellen. To start with, add a `spacing` and `palette` function to the style argument.
 
 ```jsx
 import styled from 'styled-components';
@@ -365,7 +365,7 @@ const theme = {
 
 {{"demo": "pages/system/basics/Variant.js"}}
 
-## CSS property
+## CSS-Eigenschaft
 
 If you want to support custom CSS values, you can use our `css()` helper. It will process the `css` property.
 
