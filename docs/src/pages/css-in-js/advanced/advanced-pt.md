@@ -137,7 +137,7 @@ const useStyles = makeStyles({
 
 ## Ordem de injeção de CSS
 
-By default, the styles are injected **last** in the `<head>` element of your page. They gain more specificity than any other style sheet on your page e.g. CSS modules, styled components.
+Por padrão, os estilos são inseridos **por último** no `<head>` elemento da sua página. Eles ganham mais especificidade que outras folhas de estilos na sua página como por exemplo: módulos CSS e componentes estilizados.
 
 ### injectFirst
 
