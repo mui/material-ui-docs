@@ -145,7 +145,7 @@ It should preferably be used at **the root of your component tree**.
 #### PropsBy default, the styles are injected last in the 
 
 <head>
-  element of your page. They gain more specificity than any other style sheet on your page e.g. CSS modules, styled components. If you want to override the Material-UI's styles, set this prop.</td> </tr> 
+  element of your page. Eles ganham mais especificidade que outras folhas de estilos na sua página como por exemplo: módulos CSS e componentes estilizados. If you want to override the Material-UI's styles, set this prop.</td> </tr> 
   
   <tr>
     <td align="left">
