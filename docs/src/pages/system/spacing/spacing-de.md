@@ -1,19 +1,19 @@
 # Abstände
 
-<p class="description">A wide range of shorthand responsive margin and padding utility classes to modify an element’s appearance.</p>
+<p class="description">Eine große Auswahl an reaktionsschnellen Abkürzungs- und Auffüllungswerkzeugklassen zum Ändern der Darstellung eines Elements.</p>
 
-## Notation
+## Vermerk
 
-The space utility converts shorthand margin and padding props to margin and padding CSS declarations. The props are named using the format `{property}{sides}`.
+Die Abstand-Utility konvertiert die Abkürzung für Marginals und Padding-Eigenschaften in CSS-Deklarationen für Margin und Padding. Die Eigenschaften werden im Format `{property}{sides}`.
 
-Where *property* is one of:
+Die *Eigenschaften* ist eine von:
 
-- `m` - for classes that set *margin*
-- `p` - for classes that set *padding*
+- ` m ` - für Klassen mit *margin*
+- `p` - für Klassen mit *padding*
 
-Where *sides* is one of:
+Die *sides* ist eine von:
 
-- `t` - for classes that set *margin-top* or *padding-top*
+- ` t ` - für Klassen, die * margin-top setzen * oder *padding-top*
 - `b` - for classes that set *margin-bottom* or *padding-bottom*
 - `l` - for classes that set *margin-left* or *padding-left*
 - `r` - for classes that set *margin-right* or *padding-right*
@@ -23,9 +23,9 @@ Where *sides* is one of:
 
 ## Transformation
 
-Depending on the input and the theme configuration, the following transformation is applied:
+Abhängig von der Eingabe und der Themenkonfiguration wird die folgende Transformation angewendet:
 
-- input: `number` & theme: `number`: the property is multiplied by the theme value.
+- input: `number` & theme: `number`: tDie Eigenschaft wird mit dem Designwert multipliziert.
 
 ```jsx
 const theme = {
@@ -38,7 +38,7 @@ const theme = {
 <Box m={2} /> // margin: 16px;
 ```
 
-- input: `number` & theme: `array`: the property is value is used as the array index.
+- input: `number` & theme: `array`: Die Eigenschaft Wert wird als Arrayindex verwendet.
 
 ```jsx
 const theme = {
@@ -50,7 +50,7 @@ const theme = {
 <Box m={2} /> // margin: 3px;
 ```
 
-- input: `number` & theme: `function`: the function is called with the property value.
+- input: `number` & theme: `function`: Die Funktion wird mit dem Eigenschaftswert aufgerufen.
 
 ```jsx
 const theme = {
@@ -61,7 +61,7 @@ const theme = {
 <Box m={2} /> // margin: 4px;
 ```
 
-- input: `string`: the property is passed as raw CSS value.
+- input: `string`: Die Eigenschaft wird als unformatierter CSS-Wert übergeben.
 
 ```jsx
 <Box m="2rem" /> // margin: 2rem;
@@ -78,7 +78,7 @@ const theme = {
 
 {{"demo": "pages/system/spacing/Demo.js"}}
 
-## Horizontal centering
+## Horizontale Zentrierung
 
 ```jsx
 <Box mx="auto">…
@@ -109,7 +109,7 @@ import { spacing } from '@material-ui/system';
 | `spacing`  | `px`          | `padding-left`, `padding-right` | [`spacing`](/customization/default-theme/?expend-path=$.spacing) |
 | `spacing`  | `py`          | `padding-top`, `padding-bottom` | [`spacing`](/customization/default-theme/?expend-path=$.spacing) |
 
-*Some people find the property shorthand confusing, you can use the full version if you prefer:*
+*Einige Leute finden die Kurzform der Eigenschaft verwirrend. Sie können die Vollversion verwenden, wenn Sie möchten:*
 
 ```diff
 -<Box pt={2} />
