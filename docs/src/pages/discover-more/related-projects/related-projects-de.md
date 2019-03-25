@@ -6,7 +6,7 @@ Because the scope of problems Material-UI solves is limited, we try to play nice
 
 ## Design resources
 
-- [Figma UI Kit](https://dribbble.com/shots/6164699-Material-UI-React-components-in-Figma-Free-Download#shot-description) for Material-UI.
+- [Figma UI Kit](https://material.5ly.co/) for Material-UI.
 
 ## Material-UI Specific Projects
 
