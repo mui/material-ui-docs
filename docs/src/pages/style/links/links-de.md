@@ -11,7 +11,7 @@ Die Link-Komponente wird auf der [Typography](/api/typography/) Komponente aufge
 
 {{"demo": "pages/style/links/Links.js"}}
 
-Der Link hat jedoch andere Standardeigenschaften als die Typografie: - `color = "primary"` da der Link hervorstechen muss. - `variant="inherit"` as the link will, most of the time, be used as a child of a Typograpy component.
+Der Link hat jedoch andere Standardeigenschaften als die Typografie: - `color = "primary"` da der Link hervorstechen muss. - `variant = "inherit"` da ein Link meistens als untergeordnetes Element einer Typograpy-Komponente verwendet wird.
 
 ## Barrierefreiheit
 
