@@ -22,7 +22,7 @@ Das resultierende Symbol kann so wie es ist, oder als untergeordnetes Element f�
 Es ist interessant, über die Bausteine zu verfügen, die zum Implementieren von benutzerdefinierten Symbolen erforderlich sind, aber was ist mit den Voreinstellungen? Wir bieten ein separates npm-Paket an,[@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons), das die über 1.000 offiziellen [Material-Icons](https://material.io/tools/icons/?style=baseline) besitzt, die in `SvgIcon` Komponenten umgewandelt werden.
 
 <a href="https://material.io/tools/icons/?icon=3d_rotation&style=baseline">
-  <img src="/static/images/icons/icons.png" alt="Official material icons" style="width: 566px" />
+  <img src="/static/images/icons/icons.png" alt="Offizielle Material Symbole" style="width: 566px" />
 </a>
 
 #### Nutzung
@@ -100,23 +100,23 @@ Standardmäßig erbt ein Symbol die aktuelle Textfarbe. Optional können Sie die
 
 ## Schriftart vs SVG. Welchen Ansatz verwenden?
 
-Both approaches work fine, however, there are some subtle differences, especially in terms of performance and rendering quality. Whenever possible SVG is preferred as it allows code splitting, supports more icons, renders faster and better.
+Beide Ansätze funktionieren gut, es gibt jedoch einige geringfügige Unterschiede, insbesondere hinsichtlich der Leistung und der Renderqualität. Wann immer möglich, wird SVG bevorzugt, da es die Codeaufteilung ermöglicht, mehr Symbole unterstützt und schneller und besser rendert.
 
-For more details, you can check out [why GitHub migrated](https://blog.github.com/2016-02-22-delivering-octicons-with-svg/) from font icons to SVG icons.
+Weitere Informationen finden Sie unter [warum GitHub von Zeichensymbolen zu SVG-Symbolen migrierte](https://blog.github.com/2016-02-22-delivering-octicons-with-svg/).
 
-## Accessibility
+## Barrierefreiheit
 
-Icons can convey all sorts of meaningful information, so it’s important that they reach the largest amount of people possible. There are two use cases you’ll want to consider: - **Decorative Icons** are only being used for visual or branding reinforcement. If they were removed from the page, users would still understand and be able to use your page. - **Semantic Icons** are ones that you’re using to convey meaning, rather than just pure decoration. This includes icons without text next to them used as interactive controls — buttons, form elements, toggles, etc.
+Icons können alle Arten von aussagekräftigen Informationen vermitteln, daher ist es wichtig, dass sie die größtmögliche Anzahl von Personen erreichen. Es gibt zwei Anwendungsfälle, die Sie berücksichtigen sollten: - **Dekorative Symbole** werden nur für die visuelle oder Branding-Verstärkung verwendet. Wenn sie von der Seite entfernt würden, könnten Benutzer Ihre Seite trotzdem verstehen und verwenden. - **Semantische Symbole** sind Symbole, die Sie verwenden, um Bedeutung zu vermitteln, und nicht nur reine Dekoration. Dazu gehören Symbole ohne nebenstehenden Text, die als interaktive Steuerelemente verwendet werden, etc.
 
-### Decorative SVG Icons
+### Dekorative SVG-Symbole
 
-If your icons are purely decorative, you’re already done! We add the `aria-hidden=true` attribute so that your icons are properly accessible (invisible).
+Wenn Ihre Icons rein dekorativ sind, sind Sie bereits fertig! Wir fügen das Attribut `aria-hidden=true`, damit Ihre Symbole richtig zugänglich sind (unsichtbar).
 
-### Semantic SVG Icons
+### Semantic SVG Symbole
 
-If your icon has semantic meaning, all you need to do is throw in a `titleAccess="meaning"` property. We add the `role="img"` attribute and the `<title>` element so that your icons are properly accessible.
+Wenn Ihr Symbol semantische Bedeutung hat, alles, was Sie tun müssen, ist das Hinzufügen der `titleAccess=„Bedeutung“` Eigenschaft. Wir fügen das Attribut `role="img"` und das Element `<title>` hinzu, damit Ihre Symbole richtig zugänglich sind.
 
-In the case of focusable interactive elements, like when used with an icon button, you can use the `aria-label` property:
+Bei fokussierbaren interaktiven Elementen können Sie, wie bei der Verwendung einer Symbolschaltfläche, die Eigenschaft `aria-label` benutzen:
 
 ```jsx
 import IconButton from '@material-ui/core/IconButton';
@@ -131,13 +131,13 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 </IconButton>
 ```
 
-### Decorative Font Icons
+### Dekorative Schrift-Symbole
 
-If your icons are purely decorative, you’re already done! We add the `aria-hidden=true` attribute so that your icons are properly accessible (invisible).
+Wenn Ihre Icons rein dekorativ sind, sind Sie bereits fertig! Wir fügen das Attribut `aria-hidden=true`, damit Ihre Symbole richtig zugänglich sind (unsichtbar).
 
-### Semantic Font Icons
+### Semantic Font Symbole
 
-If your icons have semantic meaning, you need to provide a text alternative only visible to assistive technologies.
+Wenn Ihre Symbole eine semantische Bedeutung haben, müssen Sie eine Textalternative bereitstellen, die nur für assistive Technologien sichtbar ist.
 
 ```jsx
 import Icon from '@material-ui/core/Icon';
@@ -146,9 +146,9 @@ import Typography from '@material-ui/core/Typography';
 // ...
 
 <Icon>add_circle</Icon>
-<Typography variant="srOnly">Create a user</Typography>
+<Typography variant="srOnly">Erstellen Sie einen Benutzer</Typography>
 ```
 
-### Reference
+### Referenz
 
 - https://developer.paciellogroup.com/blog/2013/12/using-aria-enhance-svg-accessibility/
