@@ -1,40 +1,40 @@
-# Breakpoints
+# Haltepunkte
 
-<p class="description">A breakpoint is the range of predetermined screen sizes that have specific layout requirements.</p>
+<p class="description">Ein Haltepunkt ist der Bereich vorbestimmter Bildschirmgrößen, für die bestimmte Layoutanforderungen gelten.</p>
 
-For optimal user experience, material design interfaces need to be able to adapt their layout at various breakpoints. Material-UI uses a **simplified** implementation of the original [specification](https://material.io/design/layout/responsive-layout-grid.html#breakpoints).
+Für eine optimale Benutzererfahrung müssen Materialdesign-Schnittstellen in der Lage sein, ihr Layout an verschiedenen Haltepunkten anzupassen. Material-UI verwendet eine **vereinfachte** Implementierung der ursprünglichen [Spezifikation](https://material.io/design/layout/responsive-layout-grid.html#breakpoints).
 
-Each breakpoint (a key) matches with a *fixed* screen width (a value):
+Jeder Haltepunkt (ein Schlüssel) stimmt mit einer *festen* Bildschirmbreite (ein Wert) überein:
 
-- **xs,** extra-small: 0px
-- **sm,** small: 600px
-- **md,** medium: 960px
-- **lg,** large: 1280px
-- **xl,** extra-large: 1920px
+- ** xs, ** extraklein: 0px
+- ** sm, ** klein: 600px
+- ** md, ** mittel: 960px
+- ** lg, ** groß: 1280px
+- ** xl ** extra groß: 1920px
 
-These [breakpoint values](/customization/default-theme/?expend-path=$.breakpoints.values) are used to determine breakpoint ranges. A range starts from the breakpoint value inclusive, to the next breakpoint value exclusive:
+Diese [ Haltepunktwerte](/customization/default-theme/?expend-path=$.breakpoints.values) werden zur Bestimmung von Haltepunktbereichen verwendet. Ein Bereich beginnt mit dem Haltepunktwert einschließlich bis zum nächsten Haltepunktwert:
 
 ```js
-value         |0px     600px    960px    1280px   1920px
-key           |xs      sm       md       lg       xl
-screen width  |--------|--------|--------|--------|-------->
-range         |   xs   |   sm   |   md   |   lg   |   xl
+Wert          |0px     600px    960px    1280px   1920px
+Schlüssel     |xs      sm       md       lg       xl
+Breite        |--------|--------|--------|--------|-------->
+Bereich       |   xs   |   sm   |   md   |   lg   |   xl
 ```
 
-Diese Werte können immer angepasst werden. You will find them in the theme, in the [`breakpoints.values`](/customization/default-theme/?expend-path=$.breakpoints.values) object.
+Diese Werte können immer angepasst werden. Sie finden sie im Theme unter dem [`breakpoints.values`](/customization/default-theme/?expend-path=$.breakpoints.values) Schlüssel.
 
-The breakpoints are used internally in various components to make them responsive, but you can also take advantage of them for controlling the layout of your application through the [Grid](/layout/grid/) and [Hidden](/layout/hidden/) components.
+Die Haltepunkte werden intern in verschiedenen Komponenten verwendet, um sie ansprechbar zu machen, Sie können sie jedoch auch benutzten, um das Layout Ihrer Anwendung über das [Grid](/layout/grid/) zu steuern und für [Hidden](/layout/hidden/) Komponenten.
 
-## CSS Media Queries
+## CSS-Medienabfragen
 
-CSS media queries is the idiomatic approach to make your UI responsive. We provide four styles helpers to do so:
+CSS-Medienabfragen sind der idiomatische Ansatz, um Ihre Benutzeroberfläche ansprechbar zu machen. Dafür bieten wir vier Stilhelfer an:
 
 - [theme.breakpoints.up(key)](#theme-breakpoints-up-key-media-query)
 - [theme.breakpoints.down(key)](#theme-breakpoints-down-key-media-query)
 - [theme.breakpoints.only(key)](#theme-breakpoints-only-key-media-query)
 - [theme.breakpoints.between(start, end)](#theme-breakpoints-between-start-end-media-query)
 
-In the following demo, we change the background color (red, blue & green) based on the screen width.
+In der folgenden Demo ändern wir die Hintergrundfarbe (rot, blau & grün) basierend auf der Bildschirmbreite.
 
 ```jsx
 const styles = theme => ({
@@ -55,17 +55,17 @@ const styles = theme => ({
 
 {{"demo": "pages/layout/breakpoints/MediaQuery.js"}}
 
-## JavaScript Media Queries
+## JavaScript-Medienabfragen
 
-Sometimes, using CSS isn't enough. You might want to change the React rendering tree based on the breakpoint value, in JavaScript.
+Manchmal reicht die Verwendung von CSS nicht aus. Möglicherweise möchten Sie die React-Rendering-Struktur basierend auf dem Haltepunktwert in JavaScript ändern.
 
 ### useMediaQuery hook
 
-You can learn more on the [useMediaQuery](/layout/use-media-query/) page.
+Weitere Informationen finden Sie auf der [ useMediaQuery](/layout/use-media-query/) Seite.
 
 ### withWidth()
 
-> ⚠️ This higher-order component will be deprecated for the [useMediaQuery](/layout/use-media-query/) hook when the React's hooks are released as stable.
+> ⚠️ Diese Komponente höherer Ordnung wird ist veraltet und wird durch den [useMediaQuery](/layout/use-media-query/) hook ersetzt, wenn die React hooks als stabil freigegeben werden.
 
 ```jsx
 import withWidth from '@material-ui/core/withWidth';
