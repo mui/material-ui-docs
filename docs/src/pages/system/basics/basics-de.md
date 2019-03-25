@@ -275,13 +275,13 @@ Wir unterstützen nicht alle CSS-Eigenschaften. Möglicherweise möchten Sie neu
 
 1. `Optionen` (*Object*): 
   - `options.pro ` (*String*): Die Eigenschaft, für die die Style-Funktion ausgelöst wird.
-  - `options.cssProperty ` (*String|Boolean* [optional]): Standardeinstellung ist `options.prop`. Die verwendete CSS-Eigenschaft. You can disabled this option by providing `false`. When disabled, the property value will handle as a style object on it's own. It can be used for [rendering variants](#variants).
-  - `options.themeKey` (*String* [optional]): The theme path prefix.
-  - `options.transform` (*Function* [optional]): Apply a transformation before outputing a CSS value.
+  - `options.cssProperty ` (*String|Boolean* [optional]): Standardeinstellung ist `options.prop`. Die verwendete CSS-Eigenschaft. Sie können diese Option deaktivieren, indem Sie `false` angeben. Wenn diese Eigenschaft deaktiviert ist, wird der Eigenschaftswert als eigenes Stilobjekt behandelt. Es kann für [Rendering-Varianten](#variants) verwendet werden.
+  - `options.themeKey` (*String* [optional]): Der Themepfadpräfix.
+  - `options.transform` (*Function* [optional]): Wenden Sie eine Umwandlung an, bevor Sie einen CSS-Wert ausgeben.
 
 #### Rückgabewerte
 
-`style function`: The style function created.
+`Style-Funktion`: Die erstellte Stilfunktion.
 
 #### Beispiele
 
@@ -298,11 +298,11 @@ const borderColor = style({
 
 ### `compose(...style functions) => style function`
 
-Merge multiple style functions into one.
+Mehrere Stilfunktionen in einer zusammenführen.
 
 #### Rückgabewerte
 
-`style function`: The style function created.
+`Style-Funktion`: Die erstellte Stilfunktion.
 
 #### Beispiele
 
@@ -323,9 +323,9 @@ export const bgcolor = style({
 const palette = compose(textColor, bgcolor);
 ```
 
-## Variants
+## Varianten
 
-The `style()` helper can also be used to maps properties to style objects in a theme. In this example, the `variant` property supports all the keys present in `theme.typography`.
+Der `style()` Helfer kann auch verwendet werden, um Eigenschaften Stilobjekten in einem Theme zuzuordnen. In diesem Beispiel unterstützt die `variant` Eigenschaft alle in ` theme.typography` vorhandenen Schlüssel.
 
 ```jsx
 import React from 'react';
@@ -338,7 +338,7 @@ const variant = style({
   themeKey: 'typography',
 });
 
-// ⚠ Text is already defined in the global context:
+// ⚠ Text ist schon definiert im globalen Context:
 // https://developer.mozilla.org/en-US/docs/Web/API/Text/Text.
 const Text = styled.span`
   font-family: Helvetica;
@@ -367,7 +367,7 @@ const theme = {
 
 ## CSS-Eigenschaft
 
-If you want to support custom CSS values, you can use our `css()` helper. It will process the `css` property.
+Wenn Sie benutzerdefinierte CSS-Werte unterstützen möchten, können Sie unseren `css()` Helfer verwenden. Dieser verarbeitet die `css ` Eigenshaften.
 
 ```jsx
 import { compose, spacing, palette, css } from '@material-ui/system';
@@ -391,19 +391,19 @@ const Box = styled.div`
 
 ## So funktioniert es
 
-styled-system has done a great job at [explaining how it works](https://github.com/jxnblk/styled-system/blob/master/docs/how-it-works.md#how-it-works). It can help building a mental model for this "style function" concept.
+styled-system hat hervorragende Arbeit geleistet im Erklären [wie es funktioniert](https://github.com/jxnblk/styled-system/blob/master/docs/how-it-works.md#how-it-works). Es kann dabei helfen, ein mentales Modell für dieses Konzept der "Stilfunktion" zu erstellen.
 
-## Real-world use case
+## Realer Anwendungsfall
 
-In practice, a Box component can save you a lot of time. In this example, we demonstrate how to reproduce a Banner component.
+In Praxis kann eine Box-Komponente viel Zeit sparen. In diesem Beispiel wird gezeigt, wie eine Bannerkomponente reproduziert wird.
 
 {{"demo": "pages/system/basics/RealWorld.js"}}
 
-## Prior art
+## Stand der Technik
 
-`@material-ui/system` synthesizes ideas & APIs from several different sources:
+`@material-ui/system` synthetisiert Ideen & APIs aus verschiedenen Quellen:
 
-- [Tachyons](https://tachyons.io/) was one of the first (2014) CSS libraries to promote the [Atomic CSS pattern](https://css-tricks.com/lets-define-exactly-atomic-css/) (or Functional CSS).
+- [Tachyons](https://tachyons.io/) war eine der ersten (2014) CSS-Bibliotheken, die das [Atomic CSS-Muster](https://css-tricks.com/lets-define-exactly-atomic-css/) förderten (oder funktionales CSS).
 - Tachyons was later on (2017) followed by [Tailwind CSS](https://tailwindcss.com/). They have made Atomic CSS more popular.
 - [Twitter Bootstrap](https://getbootstrap.com/docs/4.1/utilities/borders/) has slowly introduced atomic class names in v2, v3, and v4. We have used the way they group their "Helper classes" as inspiration.
 - In the React world, [Styled System](https://github.com/jxnblk/styled-system) was one of the first (2017) to promote the style functions. It can be used as a generic Box component replacing the atomic CSS helpers as well as helpers to write new components.
