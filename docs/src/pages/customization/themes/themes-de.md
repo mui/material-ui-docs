@@ -195,7 +195,7 @@ Have a look at the following example regarding changing the default values, such
 
 {{"demo": "pages/customization/themes/TypographyTheme.js"}}
 
-### Font family
+### Schriftfamilie
 
 You can use the system font instead of the default Roboto font.
 
