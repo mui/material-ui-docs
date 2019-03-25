@@ -1,17 +1,17 @@
 ---
-title: Media queries in React for responsive design
+title: Medienanfragen in React für Responsive Design
 ---
 # useMediaQuery
 
-<p class="description">This is a CSS media query hook for React. It listens for matches to a CSS media query. It allows the rendering of components based on whether the query matches or not.</p>
+<p class="description">Dies ist ein CSS-Media-Abfrage-Hook für React. Es wartet auf Übereinstimmungen mit einer CSS-Medienabfrage. Es ermöglicht das Rendern von Komponenten basierend darauf, ob die Abfrage übereinstimmt oder nicht.</p>
 
 Einige der wichtigsten Funktionen:
 
-- ⚛️ It has an idiomatic React API.
-- 🚀 It's performant, it observes the document to detect when its media queries change, instead of polling the values periodically.
-- 📦 [1 kB gzipped](/size-snapshot).
-- 💄 It's an alternative to react-responsive and react-media that aims for simplicity.
-- 🤖 It supports Server-side rendering.
+- ⚛️ Es verfügt über eine idiomatische React-API.
+- 🚀 Es ist performant. Es observiert das Dokument, welches erkennt, wenn sich die Medienabfragen ändern, anstatt die Werte regelmäßig abzufragen.
+- 📦 [ kB](/size-snapshot) gzipped.
+- 💄 Es ist eine Alternative zu react-responsive und react-media, die auf Einfachheit abzielen.
+- 🤖 Es unterstützt serverseitiges Rendering.
 
 ## Simple media query
 
