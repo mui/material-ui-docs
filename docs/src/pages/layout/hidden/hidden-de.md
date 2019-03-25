@@ -6,11 +6,11 @@ components: Hidden
 
 <p class="description">Wechseln Sie mit unseren versteckten Komponenten schnell und ansprechend den Sichtbarkeitswert von Komponenten und mehr.</p>
 
-Alle Elemente sind sichtbar, außer **sie explizit versteckt**. To ease integration with our [responsive breakpoints](/layout/basics/), this component can be used to hide any content, or you can use it in conjunction with our [`Grid`](/layout/grid/) component.
+Alle Elemente sind sichtbar, außer **sie explizit versteckt**. Um die Integration mit unseren [responsiven Haltepunkten](/layout/basics/) zu vereinfachen, können Sie mit dieser Komponente jeden Inhalt ausblenden oder Sie können ihn zusammen mit unserer [`Grid`](/layout/grid/) Komponente verwenden.
 
 ## So funktioniert es
 
-Hidden works with a range of breakpoints e.g. `xsUp` or `mdDown`, or one or more breakpoints e.g. `only='sm'` or `only={['md', 'xl']}`. Ranges and individual breakpoints can be used simultaneously to achieve very customized behavior. The ranges are inclusive of the specified breakpoints.
+Hidden funktioniert mit einem Bereich von Haltepunkten, z. B. `xsUp` oder `mdDown`, oder einem oder mehreren Haltepunkten, z. B. `only='sm'` oder `only {['md','xl']}`. Bereiche und individuelle Haltepunkte können gleichzeitig verwendet werden, um ein sehr benutzerdefiniertes Verhalten zu erreichen. Die Bereiche enthalten die angegebenen Haltepunkte.
 
 ```js
 innerWidth  |xs      sm       md       lg       xl
@@ -22,29 +22,29 @@ mdDown      |                     hide | show
 
 ```
 
-## Implementations
+## Implementierungen
 
 ### js
 
-By default, the `js` implementation is used, responsively hiding content based on using the [`withWidth()`](/layout/breakpoints/#withwidth-) higher-order component that watches screen size. This has the benefit of not rendering any content at all unless the breakpoint is met.
+Standardmäßig wird die `js` Implementierung verwendet, die den Inhalt basierend auf der [`withWidth()`](/layout/breakpoints/#withwidth-)-Komponente höherer Ordnung, die die Bildschirmgröße überwacht, ansprechend versteckt. Dies hat den Vorteil, dass überhaupt kein Inhalt dargestellt wird, wenn der Haltepunkt nicht erreicht wird.
 
 ### css
 
-If you are using server-side rendering, you can set `implementation="css"` if you don't want the browser to re-flow your content on the screen.
+Wenn Sie serverseitiges Rendering verwenden, können Sie `implementation="css"` festlegen, wenn der Browser Ihren Inhalt nicht erneut auf dem Bildschirm anzeigen soll.
 
-## Breakpoint up
+## Haltepunkte Up
 
-Using any breakpoint `up` property, the given *children* will be hidden *at or above* the breakpoint.
+Unter Verwendung einer beliebigen Haltepunkte `up` Eigenschaft, werden die angegebenen *Kinder* ausgeblendet *bei oder über* dem Haltepunkt.
 
 {{"demo": "pages/layout/hidden/BreakpointUp.js"}}
 
-## Breakpoint down
+## Haltepunkte Down
 
-Using any breakpoint `down` property, the given *children* will be hidden *at or below* the breakpoint.
+Unter Verwendung einer beliebigen Haltepunkte `down` Eigenschaft, werden die angegebenen *Kinder* ausgeblendet *bei oder unter* dem Haltepunkt.
 
 {{"demo": "pages/layout/hidden/BreakpointDown.js"}}
 
-## Breakpoint only
+## Haltepunkte einzeln
 
 Using the breakpoint `only` property, the given *children* will be hidden *at* the specified breakpoint(s).
 
