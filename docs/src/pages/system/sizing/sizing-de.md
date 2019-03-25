@@ -44,11 +44,11 @@ The sizing style functions support different property input type:
 import { sizing } from '@material-ui/system';
 ```
 
-| Import name | Eigenschaften | CSS property | Theme-Schlüssel |
-|:----------- |:------------- |:------------ |:--------------- |
-| `width`     | `width`       | `width`      | none            |
-| `maxWidth`  | `maxWidth`    | `max-width`  | none            |
-| `minWidth`  | `minWidth`    | `min-width`  | none            |
-| `height`    | `height`      | `height`     | none            |
-| `maxHeight` | `maxHeight`   | `max-height` | none            |
-| `minHeight` | `minHeight`   | `min-height` | none            |
+| Inportname  | Eigenschaften | CSS-Eigenschaft | Theme-Schlüssel |
+|:----------- |:------------- |:--------------- |:--------------- |
+| `width`     | `width`       | `width`         | none            |
+| `maxWidth`  | `maxWidth`    | `max-width`     | none            |
+| `minWidth`  | `minWidth`    | `min-width`     | none            |
+| `height`    | `height`      | `height`        | none            |
+| `maxHeight` | `maxHeight`   | `max-height`    | none            |
+| `minHeight` | `minHeight`   | `min-height`    | none            |
