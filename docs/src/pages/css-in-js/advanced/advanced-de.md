@@ -137,24 +137,24 @@ const useStyles = makeStyles({
 
 ## CSS-Injektionsreihenfolge
 
-By default, the styles are injected **last** in the `<head>` element of your page. They gain more specificity than any other style sheet on your page e.g. CSS modules, styled components.
+Standardmäßig werden die Stile **zuletzt** in das `<head>` -Element Ihrer Seite eingefügt. Sie erhalten mehr Details als jedes andere Stylesheet auf Ihrer Seite, z.B. CSS-Module oder StilKomponenten.
 
 ### injectFirst
 
-The `StylesProvider` component has a `injectFirst` prop to inject the styles **first**:
+Die ` StylesProvider ` Komponente hat eine `injectFirst` Eigenschaft, um die Styles **zuerst** zu injizieren:
 
 ```js
 import { StylesProvider } from '@material-ui/styles';
 
 <StylesProvider injectFirst>
-  {/* Your component tree.
-      Styled components can override Material-UI's styles. */}
+  {/* Dein Komponentenbaum.
+      Mit Stil versehene Komponenten können die Stile von Material-UI überschreiben. */}
 </StylesProvider>
 ```
 
 ### insertionPoint
 
-JSS [provides a mechanism](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-the-dom-insertion-point) to gain more control on this situation. Durch Anpassen der Platzierung des `Einfügepunkts` innerhalb Ihres HTML-Heads können Sie die [Reihenfolge steuern ](https://cssinjs.org/jss-api#attach-style-sheets-in-a-specific-order) sodass die CSS-Regeln auf Ihre Komponenten angewendet werden.
+JSS [bietet einen Mechanismus](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-the-dom-insertion-point) um mehr Kontrolle über diese Situation zu erlangen. Durch Anpassen der Platzierung des `Einfügepunkts` innerhalb Ihres HTML-Heads können Sie die [Reihenfolge steuern ](https://cssinjs.org/jss-api#attach-style-sheets-in-a-specific-order) sodass die CSS-Regeln auf Ihre Komponenten angewendet werden.
 
 #### HTML-Kommentar
 
@@ -295,23 +295,23 @@ Das [`jss-plugin-global`](#jss-plugins) Plugin ist in der Standardvoreinstellung
 
 ### Hybrid
 
-You can also combine JSS generated class names with global ones.
+Sie können auch JSS-generierte Klassennamen mit globalen Namen kombinieren.
 
 {{"demo": "pages/css-in-js/advanced/HybridGlobalCss.js"}}
 
-### Deterministic class names
+### Deterministische Klassennamen
 
-We provide an option to make the class names **deterministic** with the [`dangerouslyUseGlobalCSS`](/css-in-js/api/#creategenerateclassname-options-class-name-generator) option. When turned on, the class names will look like this:
+Wir bieten eine Option, um die Klassennamen **deterministisch zu machen** mit der [`dangerouslyUseGlobalCS`](/css-in-js/api/#creategenerateclassname-options-class-name-generator) Option. Wenn diese Option aktiviert ist, sehen die Klassennamen folgendermaßen aus:
 
-- development: `.AppBar-root`
-- production: `.AppBar-root`
+- entwicklung: `.AppBar-root`
+- produktion: `.AppBar-root`
 
-⚠️ **Be cautious when using `dangerouslyUseGlobalCSS`.** Relying on it for code running in production has the following implications:
+⚠️ **Seien Sie vorsichtig, wenn Sie `dangerouslyUseGlobalCSS `** verwenden. Das Verlassen auf diesen Code, der in der Produktion ausgeführt wird, hat folgende Auswirkungen:
 
-- It's harder to keep track of `classes` API changes between major releases.
-- Global CSS is inherently fragile.
+- Es ist schwieriger, die `Klassen` API-Änderungen zwischen Hauptversionen zu verfolgen.
+- Globales CSS ist von Natur aus fragil.
 
-⚠️ When using `dangerouslyUseGlobalCSS` standalone (without Material-UI), you should name your style sheets using the `options` parameter:
+⚠️ Bei gefährlicher Verwendung von `dangerouslyUseGlobalCSS` als Standalone (ohne Material-UI) sollten Sie Ihre Stylesheets mit dem `options` Parameter versehen:
 
 ```jsx
 // Hook
@@ -324,9 +324,9 @@ const Button = styled(styles, { name: 'button' })(ButtonBase);
 const Button = withStyles(styles, { name: 'button' })(ButtonBase);
 ```
 
-## CSS prefixes
+## CSS-Präfix
 
-JSS uses feature detection to apply the correct prefixes. [Don't be surprised](https://github.com/mui-org/material-ui/issues/9293) if you can't see a specific prefix in the latest version of Chrome. Your browser probably doesn't need it.
+JSS verwendet Featureerkennung, um die korrekten Präfixe anzuwenden. [Don't be surprised](https://github.com/mui-org/material-ui/issues/9293) if you can't see a specific prefix in the latest version of Chrome. Your browser probably doesn't need it.
 
 ## Content Security Policy (CSP)
 
