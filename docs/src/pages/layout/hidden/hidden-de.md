@@ -1,12 +1,12 @@
 ---
-title: Hidden React component
+title: Hidden React-Komponente
 components: Hidden
 ---
 # Hidden
 
-<p class="description">Quickly and responsively toggle the visibility value of components and more with our hidden utilities.</p>
+<p class="description">Wechseln Sie mit unseren versteckten Komponenten schnell und ansprechend den Sichtbarkeitswert von Komponenten und mehr.</p>
 
-All elements are visible unless **they are explicitly hidden**. To ease integration with our [responsive breakpoints](/layout/basics/), this component can be used to hide any content, or you can use it in conjunction with our [`Grid`](/layout/grid/) component.
+Alle Elemente sind sichtbar, außer **sie explizit versteckt**. To ease integration with our [responsive breakpoints](/layout/basics/), this component can be used to hide any content, or you can use it in conjunction with our [`Grid`](/layout/grid/) component.
 
 ## So funktioniert es
 
