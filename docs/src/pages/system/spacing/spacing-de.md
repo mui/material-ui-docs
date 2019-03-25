@@ -13,13 +13,13 @@ Die *Eigenschaften* ist eine von:
 
 Die *sides* ist eine von:
 
-- ` t ` - für Klassen, die * margin-top setzen * oder *padding-top*
-- `b` - for classes that set *margin-bottom* or *padding-bottom*
-- `l` - for classes that set *margin-left* or *padding-left*
-- `r` - for classes that set *margin-right* or *padding-right*
-- `x` - for classes that set both **-left* and **-right*
-- `y` - for classes that set both **-top* and **-bottom*
-- blank - for classes that set a margin or padding on all 4 sides of the element
+- ` t ` - für Klassen, die * margin-top* oder *padding-top* setzen
+- `b` - für Klassen, die * margin-bottom* oder *padding-bottom* setzen
+- ` l ` - für Klassen, die * margin-links* oder *padding-links* setzen
+- ` r ` - für Klassen, die * margin-rechts* oder *padding-rechts* setzen
+- ` x ` - für Klassen, die sowohl **-links* als auch **-rechts* setzen
+- ` y ` - für Klassen, die sowohl **-top* als auch **-bottom* setzen
+- leerzeichen - für Klassen, die auf allen vier Seiten des Elements ein margin oder ein padding festlegen
 
 ## Transformation
 
