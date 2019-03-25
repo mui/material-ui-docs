@@ -1,6 +1,6 @@
 # Palette
 
-<p class="description">Convey meaning through color with a handful of color utility classes. Includes support for styling links with hover states, too.</p>
+<p class="description">Vermitteln Sie Bedeutung durch Farbe mit einer Handvoll Farbgebrauchsklassen. Unterstützt auch die Gestaltung von Links mit Hover-Status.</p>
 
 ## Farbe
 
@@ -16,7 +16,7 @@
 
 {{"demo": "pages/system/palette/Color.js"}}
 
-## Background color
+## Hintergrundfarbe
 
 ```jsx
 <Box bgcolor="primary.main">…
