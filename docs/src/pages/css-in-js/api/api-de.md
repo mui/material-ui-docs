@@ -11,11 +11,11 @@ Eine Funktion, die eine [Klassennamengeneratorfunktion](http://cssinjs.org/jss-a
 1. `Optionen` (*Object* [optional]): 
     - `options.dangerouslyUseGlobalCSS ` (*Boolean* [optional]): Standardeinstellung ist `false`. Macht die Klassennamen der Material-UI deterministisch.
     - `options.productionPrefix` (*String* [optional]): Standardeinstellung ist ` 'jss' `. Ein String, der den Klassennamen in der Produktion vorangestellt wird.
-    - `options.seed` (*String* [optional]): Standardeinstellung ist `''`. The string used to uniquely identify the generator. It can be used to avoid class name collisions when using multiple generators.
+    - `options.seed` (*String* [optional]): Standardeinstellung ist `''`. Der String, mit der der Generator eindeutig identifiziert wird. Dies kann verwendet werden, um Klassennamenskollisionen bei Verwendung mehrerer Generatoren zu vermeiden.
 
 #### Rückgabewerte
 
-`class name generator`: The generator should be provided to JSS.
+`class name generator`: Der Generator der JSS zur Verfügung gestellt werden sollte.
 
 #### Beispiele
 
@@ -37,15 +37,15 @@ export default function App() {
 
 ## `createStyles(styles) => styles`
 
-This function doesn't really "do anything" at runtime, it's just the identity function. Sein einziger Zweck ist es, **TypeScript** Typverbreiterung zu verhindern, wenn Style-Regeln für `makeStyles`/`withStyles` bereitgestellt werden, welche eine Funktion des `Themes` sind.
+Diese Funktion "macht zur Laufzeit nicht wirklich etwas", es ist nur die Identität Funktion. Sein einziger Zweck ist es, **TypeScript** Typverbreiterung zu verhindern, wenn Style-Regeln für `makeStyles`/`withStyles` bereitgestellt werden, welche eine Funktion des `Themes` sind.
 
 #### Argumente
 
-1. `styles` (*Function | Object*): A function generating the styles or a styles object.
+1. `styles` (* Function | Object *): Eine Funktion, die die Stile oder ein Stilobjekt generiert.
 
 #### Rückgabewerte
 
-`styles`: A function generating the styles or a styles object.
+`styles`: Eine Funktion, die die Stile oder ein Stilobjekt generiert.
 
 #### Beispiele
 
@@ -68,11 +68,11 @@ export default MyComponent;
 
 ## `makeStyles(styles, [options]) => hook`
 
-Link a style sheet with a function component using the **hook** pattern.
+Verknüpfen Sie ein Stylesheet mit einer Funktionskomponente mit dem **Hook** Muster.
 
 #### Argumente
 
-1. `styles` (*Function | Object*): A function generating the styles or a styles object. It will be linked to the component. Use the function signature if you need to have access to the theme. It's provided as the first argument.
+1. `styles` (* Function | Object *): Eine Funktion, die die Stile oder ein Stilobjekt generiert. It will be linked to the component. Use the function signature if you need to have access to the theme. It's provided as the first argument.
 2. `Optionen` (*Object* [optional]): 
     - `options.defaultTheme` (*Object* [optional]): The default theme to use if a theme isn't supplied through a Theme Provider.
     - `options.withTheme ` (*Boolean* [optional]): Standardeinstellung ist `false`. Übergeben Sie das `Theme` Objekt als Eigenschaft an die Komponente.
@@ -109,7 +109,7 @@ Link a style sheet with a function component using the **styled components** pat
 #### Argumente
 
 1. `Component`: The component that will be wrapped.
-2. `styles` (*Function | Object*): A function generating the styles or a styles object. It will be linked to the component. Use the function signature if you need to have access to the theme. It's provided as the first argument.
+2. `styles` (* Function | Object *): Eine Funktion, die die Stile oder ein Stilobjekt generiert. It will be linked to the component. Use the function signature if you need to have access to the theme. It's provided as the first argument.
 3. `Optionen` (*Object* [optional]): 
     - `options.defaultTheme` (*Object* [optional]): The default theme to use if a theme isn't supplied through a Theme Provider.
     - `options.withTheme ` (*Boolean* [optional]): Standardeinstellung ist `false`. Übergeben Sie das `Theme` Objekt als Eigenschaft an die Komponente.
@@ -332,7 +332,7 @@ export default function MyComponent() {
   
   <ol start="1">
     <li>
-      <code>styles</code> (<em>Function | Object</em>): A function generating the styles or a styles object. It will be linked to the component. Use the function signature if you need to have access to the theme. It's provided as the first argument.
+      <code>styles</code> (<em> Function | Object </em>): Eine Funktion, die die Stile oder ein Stilobjekt generiert. It will be linked to the component. Use the function signature if you need to have access to the theme. It's provided as the first argument.
     </li>
     
     <li>
@@ -432,7 +432,7 @@ export default MyComponent
   </h4>
   
   <p>
-    <code>Component</code>: The new component created. Does forward refs to the inner component.
+    <code>Component</code>: Die neu erstellte Komponente. Does forward refs to the inner component.
   </p>
   
   <h4>
