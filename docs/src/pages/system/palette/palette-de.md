@@ -36,7 +36,7 @@
 import { palette } from '@material-ui/system';
 ```
 
-| Import name | Eigenschaften | CSS property      | Theme-Schlüssel                                                  |
-|:----------- |:------------- |:----------------- |:---------------------------------------------------------------- |
-| `color`     | `color`       | `color`           | [`palette`](/customization/default-theme/?expend-path=$.palette) |
-| `bgcolor`   | `bgcolor`     | `backgroundColor` | [`palette`](/customization/default-theme/?expend-path=$.palette) |
+| Inportname | Eigenschaften | CSS-Eigenschaft   | Theme-Schlüssel                                                  |
+|:---------- |:------------- |:----------------- |:---------------------------------------------------------------- |
+| `color`    | `color`       | `color`           | [`palette`](/customization/default-theme/?expend-path=$.palette) |
+| `bgcolor`  | `bgcolor`     | `backgroundColor` | [`palette`](/customization/default-theme/?expend-path=$.palette) |
