@@ -49,13 +49,13 @@ function MyComponent() {
 
 ## Server-Rendering
 
-An implementation of [matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) is required on the server, we recommend using [css-mediaquery](https://github.com/ericf/css-mediaquery). We also encourage the usage of the `useMediaQueryTheme` version of the hook that fetches properties from the theme. This way, you can provide a `ssrMatchMedia` option once for all your React tree.
+Auf dem Server ist eine Implementierung von [matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) erforderlich. Wir empfehlen die Verwendung von [css-mediaquery](https://github.com/ericf/css-mediaquery). Wir empfehlen außerdem die Verwendung der `useMediaQueryTheme` Version des Hooks, die Eigenschaften aus dem Design abruft. Auf diese Weise können Sie einmal eine `ssrMatchMedia` Option für Ihren gesamten React-Baum angeben.
 
 {{"demo": "pages/layout/use-media-query/ServerSide.js"}}
 
-## Migrating from `withWidth()`
+## Migration von `withWidth()`
 
-The `withWidth()` higher-order component injects the screen width of the page. You can reproduce the same behavior as follow:
+Die Komponente höherer Ordnung `withWidth()` fügt die Bildschirmbreite der Seite ein. Sie können das gleiche Verhalten wie folgt reproduzieren:
 
 ```jsx
 function MyComponent() {
@@ -77,17 +77,17 @@ function MyComponent() {
 
 ### `useMediaQuery(query, [options]) => matches`
 
-#### Arguments
+#### Argumente
 
-1. `query` (*String*): A string representing the media query to handle.
+1. `query` (*String*): Eine string Representation der Medienabfrage.
 2. `Optionen` (*Object* [optional]): 
-    - `options.defaultMatches` (*Boolean* [optional]): As `window.matchMedia()` is unavailable on the server, we return a default matches during the first mount. The default value is `false`.
-    - `options.noSsr` (*Boolean* [optional]): Defaults to `false`. Um den serverseitigen Renderingabgleich durchzuführen, muss er zweimal gerendert werden. Ein erstes Mal mit nichts und ein zweites Mal mit den Kind-Elementen. Dieser Zyklus mit zwei Durchgängen ist mit einem Nachteil verbunden. It's slower. You can set this flag to `true` if you are **not doing server-side rendering**.
-    - `options.ssrMatchMedia` (*Function* [optional]) You might want to use an heuristic to approximate the screen of the client browser. For instance, you could be using the user-agent or the client-hint https://caniuse.com/#search=client%20hint. You can provide a global ponyfill using [`custom properties`](/customization/themes/#properties) on the theme. Check the [server-side rendering example](#server-side-rendering).
+    - ` options.defaultMatches ` (*Boolean* [optional]): Da `window.matchMedia()` auf dem Server nicht verfügbar ist, wird ein Standard Match zurückgegeben. Der Standardwert ist `false`.
+    - `options.noSsr ` (*Boolean* [optional]): Standardeinstellung ist `false`. Um den serverseitigen Renderingabgleich durchzuführen, muss er zweimal gerendert werden. Ein erstes Mal mit nichts und ein zweites Mal mit den Kind-Elementen. Dieser Zyklus mit zwei Durchgängen ist mit einem Nachteil verbunden. Es ist langsamer. Sie können diese Flag auf `true` setzten, wenn Sie **nicht serverseitig** rendern.
+    - `options.ssrMatchMedia` (*Function* [optional]) Vielleicht möchten Sie eine Heuristik verwenden, um annähernd den Bildschirm des Client - Browser zu bestimmen. Sie könnten beispielsweise den Benutzeragenten oder den Client-Hinweis https://caniuse.com/#search=client%20hint verwenden. Sie können eine globale Ponyfill mit [`benutzerdefinierten Eigenschaften`](/customization/themes/#properties) für das Theme bereitstellen. Lesen Sie hier mehr dazu: [serverseitige Rendering Beispiel](#server-side-rendering).
 
 #### Rückgabewerte
 
-`matches`: Matches is `true` if the document currently matches the media query and `false` when it does not.
+`matches`: Match ist `true` wenn das Dokument aktuell mit der Medienabfrage übereinstimmt, und `false` wenn dies nicht der Fall ist.
 
 #### Beispiele
 
@@ -98,6 +98,6 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 export default function SimpleMediaQuery() {
   const matches = useMediaQuery('print');
 
-  return <span>{`@media (min-width:600px) matches: ${matches}`}</span>;
+  return <span>{`@media (min-width:600px) entspricht: ${matches}`}</span>;
 }
 ```
