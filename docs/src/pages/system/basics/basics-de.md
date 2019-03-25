@@ -172,7 +172,7 @@ const Box = styled.div`${palette}${spacing}`;
 
 ## Reaktionsfähig
 
-**All** the properties are responsive, we support 3 different APIs. It uses this default, but customizable, breakpoints theme structure:
+**Alle** Eigenschaften sind reagierend, wir unterstützen 3 verschiedene APIs. Es verwendet diese standardmäßige, aber anpassbare Struktur der Rasterpunkte:
 
 ```js
 const values = {
@@ -197,7 +197,7 @@ const theme = {
 <Box p={[2, 3, 4]} />
 
 /**
- * Outputs:
+ * Ausgaben:
  *
  * padding: 16px;
  * @media (min-width: 600px) {
@@ -215,7 +215,7 @@ const theme = {
 <Box p={{ xs: 2, sm: 3, md: 4 }} />
 
 /**
- * Outputs:
+ * Asugaben:
  *
  * padding: 16px;
  * @media (min-width: 600px) {
@@ -227,9 +227,9 @@ const theme = {
  */
 ```
 
-### Collocation
+### Kollokation
 
-If you want to group the breakpoint values, you can use our `breakpoints()` helper.
+Wenn Sie die Rasterpunktewerte gruppieren möchten, können Sie unsere ` breakpoints()` Helfer verwenden.
 
 ```jsx
 import { compose, spacing, palette, breakpoints } from '@material-ui/system';
@@ -251,7 +251,7 @@ const Box = styled.div`
 />
 
 /**
- * Saídas:
+ * Ausgaben:
  *
  * padding: 16px;
  * @media (min-width: 600px) {
@@ -263,11 +263,11 @@ const Box = styled.div`
  */
 ```
 
-## Custom style props
+## Individuelle Stileigenschaften
 
 ### `style(options) => style function`
 
-Use this helper to create your own style function.
+Verwenden Sie diesen Helfer, um Ihre eigene Style-Funktion zu erstellen.
 
 We don't support all the CSS properties. It's possible that you want to support new ones. It's also possible that you want to change the theme path prefix.
 
