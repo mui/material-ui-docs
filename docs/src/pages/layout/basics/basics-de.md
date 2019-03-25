@@ -1,13 +1,13 @@
 # Grundlegendes
 
-<p class="description">Material Design layouts encourage consistency across platforms, environments, and screen sizes by using uniform elements and spacing.</p>
+<p class="description">Layouts für Materialdesigns fördern die Konsistenz über Plattformen, Umgebungen und Bildschirmgrößen hinweg, indem einheitliche Elemente und Abstände verwendet werden.</p>
 
 ## Responsive UI
 
-[Responsive layouts](https://material.io/design/layout/responsive-layout-grid.html) in Material Design adapt to any possible screen size. We provide the following helpers to make the UI responsive:
+[Responsive Layouts](https://material.io/design/layout/responsive-layout-grid.html) passen sich in Material Design an jede mögliche Bildschirmgröße an. Wir bieten die folgenden Helfer, um die Benutzeroberfläche ansprechbar zu machen:
 
-- [Grid](/layout/grid/): The grid creates visual consistency between layouts while allowing flexibility across a wide variety of designs.
-- [Breakpoints](/layout/breakpoints/): We provide a low-level API that enables the use of breakpoints in a wide variety of contexts.
+- Das [Grid](/layout/grid/) sorgt für visuelle Konsistenz zwischen Layouts und ermöglicht Flexibilität bei einer Vielzahl von Designs.
+- [ Rasterpunkte ](/layout/breakpoints/): Wir bieten eine API auf niedriger Ebene, die die Verwendung von Rasterpunkten in einer Vielzahl von Kontexten ermöglicht.
 - [useMediaQuery](/layout/use-media-query/): This is a CSS media query hook for React.
 - [Hidden](/layout/hidden/): The hidden component can be used to change the visibility of the elements.
 
