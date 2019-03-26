@@ -16,7 +16,7 @@ Möglicherweise müssen Sie den Stil einer Komponente für eine bestimmte Implem
 
 Die erste Möglichkeit, den Stil einer Komponente zu überschreiben, besteht in der Verwendung von **Klassennamen**. Jede Komponente stellt eine `Klassennamen` Eigenschaft bereit, die immer auf das unterste Element angewendet wird.
 
-This example uses the [`withStyles()`](/css-in-js/basics/#higher-order-component-api) higher-order component to inject custom styles into the DOM, and to pass the class name to the `ClassNames` component via its `classes` property. You can choose [any other styling solution](/guides/interoperability/), or even plain CSS to create the styles, but be sure to consider the [CSS injection order](/css-in-js/advanced/#css-injection-order), as the CSS injected into the DOM by Material-UI to style a component has the highest specificity possible, since the `<link>` is injected at the bottom of the `<head />` to ensure the components always render correctly.
+In diesem Beispiel wird die [`withStyles()`](/css-in-js/basics/#higher-order-component-api) höherer Ordnung Komponente verwendet um benutzerdefinierte Stile in den DOM einzufügen und den Klassennamen mittels ihre `classes` Eigenschaftan die ` ClassNames` Komponente zu übergeben. You can choose [any other styling solution](/guides/interoperability/), or even plain CSS to create the styles, but be sure to consider the [CSS injection order](/css-in-js/advanced/#css-injection-order), as the CSS injected into the DOM by Material-UI to style a component has the highest specificity possible, since the `<link>` is injected at the bottom of the `<head />` to ensure the components always render correctly.
 
 {{"demo": "pages/customization/overrides/ClassNames.js"}}
 
