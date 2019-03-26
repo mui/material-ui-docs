@@ -1,16 +1,16 @@
-# Material-UI Versions
+# Material-UI-Versionen
 
-<p class="description">You can come back to this page and switch the version of the docs you're reading at any time.</p>
+<p class="description">Sie können jederzeit zu dieser Seite zurückkehren und die Version der Dokumente, die Sie gerade lesen, wechseln.</p>
 
-## Stable versions
+## Stabile Versionen
 
-The most recent version is recommended in production.
+Die aktuellste Version wird in der Produktion empfohlen.
 
 {{"demo": "pages/versions/StableVersions.js", "hideHeader": true}}
 
-## Latest versions
+## Neueste Versionen
 
-Here you can find the latest unreleased documentation and code. You can use it to see what changes are coming and provide better feedback to Material-UI contributors.
+Hier finden Sie die neuesten unveröffentlichten Dokumentationen und Codes. Sie können damit feststellen, welche Änderungen bevorstehen, und den Mitwirkenden der Material-UI besseres Feedback geben.
 
 {{"demo": "pages/versions/LatestVersions.js", "hideHeader": true}}
 
