@@ -45,9 +45,9 @@ Wenn Sie mehr über Farbe erfahren möchten, können Sie sich im [Farbabschnitt]
 
 Sie können die Standardpalettenwerte überschreiben, indem Sie ein `Palette` Objekt als Teil Ihres Themas hinzufügen.
 
-If any of the [`palette.primary`](/customization/default-theme/?expend-path=$.palette.primary), [`palette.secondary`](/customization/default-theme/?expend-path=$.palette.secondary) or [`palette.error`](/customization/default-theme/?expend-path=$.palette.error) 'intention' objects are provided, they will replace the defaults.
+Wenn eine der [`palette.primary`](/customization/default-theme/?expend-path=$.palette.primary), [`palette.secondary`](/customization/default-theme/?expend-path=$.palette.secondary) oder [` palette.error`](/customization/default-theme/?expend-path=$.palette.error) 'Intent'-Objekte bereitgestellt ist, wird die Standardeinstellungen ersetzen.
 
-The intention value can either be a [color](/style/color/) object, or an object with one or more of the keys specified by the following TypeScript interface:
+Der Intentionswert kann entweder ein [ Farbobjekt ](/style/color/) sein oder ein Objekt mit einem oder mehreren der Schlüssel, die von der folgenden TypeScript-Schnittstelle angegeben werden:
 
 ```ts
 interface PaletteIntention {
@@ -58,9 +58,9 @@ interface PaletteIntention {
 };
 ```
 
-**Using a color object**
+**Verwenden eines Farbobjekts**
 
-The simplest way to customize an intention is to import one or more of the provided colors and apply them to a palette intention:
+Die einfachste Möglichkeit, eine Absicht anzupassen, besteht darin, eine oder mehrere der angegebenen Farben zu importieren und auf eine Palettenabsicht anzuwenden:
 
 ```js
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -73,7 +73,7 @@ const theme = createMuiTheme({
 });
 ```
 
-If the intention key receives a color object as in the example above, the following mapping is used to populate the required keys:
+Wenn die Absicht Schlüssel ein Farbobjekt wie im Beispiel empfängt, wird die folgende Abbildung verwendet, um die restlichen, erforderlichen Schlüssel zu füllen:
 
 ```js
 palette: {
@@ -98,7 +98,7 @@ palette: {
 },
 ```
 
-This example illustrates how you could recreate the default palette values:
+Dieses Beispiel zeigt, wie Sie die Standardpalettenwerte neu erstellen können:
 
 ```js
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -106,27 +106,27 @@ import indigo from '@material-ui/core/colors/indigo';
 import pink from '@material-ui/core/colors/pink';
 import red from '@material-ui/core/colors/red';
 
-// All the following keys are optional.
-// We try our best to provide a great default value.
+// Alle folgende Schlüssel sind optional.
+// Wir versuchen unser Bestes, um einen hervorragenden Standardwert bereitzustellen.
 const theme = createMuiTheme({
   palette: {
     primary: indigo,
     secondary: pink,
     error: red,
-    // Used by `getContrastText()` to maximize the contrast between the background and
-    // the text.
+    // Wird von `getContrastText()` benutzt, um den Kontrast zwischen Text und 
+    // Hintergrund zu maximieren.
     contrastThreshold: 3,
-    // Used to shift a color's luminance by approximately
-    // two indexes within its tonal palette.
-    // E.g., shift from Red 500 to Red 300 or Red 700.
+    // Wird verwendet, um die Luminanz einer Farbe um ungefähr
+    // zwei Indizes in der Tonpalette zu verschieben.
+    // Zum Beispiel von Red 500 zu Red 300 oder Red 700 zu wechseln.
     tonalOffset: 0.2,
   },
 });
 ```
 
-**Providing the colors directly**
+**Die Farben direkt zur Verfügung stellen**
 
-If you wish to provide more customized colors, you can either create your own color object, or directly supply colors to some or all of the intention's keys:
+Wenn Sie mehr benutzerdefinierte Farben bereitstellen möchten, können Sie entweder ein eigenes Farbobjekt erstellen oder Farben für einige oder alle Schlüssel der Absichten direkt angeben:
 
 ```js
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -134,18 +134,18 @@ import { createMuiTheme } from '@material-ui/core/styles';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      // light: will be calculated from palette.primary.main,
+      // light: wird von palette.primary.main berechnet,
       main: '#ff4400',
-      // dark: will be calculated from palette.primary.main,
-      // contrastText: will be calculated to contrast with palette.primary.main
+      // dark: wird von palette.primary.main berechnet,
+      // contrastText: wird von palette.primary.main berechnet,
     },
     secondary: {
       light: '#0066ff',
       main: '#0044ff',
-      // dark: will be calculated from palette.secondary.main,
+      // dark: wird von palette.primary.main berechnet,
       contrastText: '#ffcc00',
     },
-    // error: will use the default color
+    // error: wird die Standardfarbe benutzen
   },
 });
 ```
@@ -422,7 +422,7 @@ Das innere Theme ** überschreibt** das äußere Theme. Sie können das äußere
 
 {{"demo": "pages/customization/themes/ThemeNestingExtend.js"}}
 
-#### A note on performance
+#### Ein Hinweis zur Leistung
 
 The performance implications of nesting the `ThemeProvider` component are linked to JSS's work behind the scenes. The main point to understand is that we cache the injected CSS with the following tuple `(styles, theme)`.
 
@@ -433,15 +433,15 @@ The performance implications of nesting the `ThemeProvider` component are linked
 
 ### `createMuiTheme(options) => theme`
 
-Generate a theme base on the options received.
+Generieren Sie eine Themenbasis von den gegebenen Optionen.
 
 #### Argumente
 
-1. `options` (*Object*): Takes an incomplete theme object and adds the missing parts.
+1. `options` (*Object*): Nimmt ein unvollständiges Themeobjekt auf und fügt die fehlenden Teile hinzu.
 
 #### Rückgabewerte
 
-`theme` (*Object*): A complete, ready to use theme object.
+`theme` (*Object*): Ein vollständiges, gebrauchsfertiges Themeobjekt.
 
 #### Beispiele
 
