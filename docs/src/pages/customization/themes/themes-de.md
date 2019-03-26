@@ -347,9 +347,9 @@ const theme = createMuiTheme({
 theme.spacing(2) // = 0.5rem = 8px
 ```
 
-### Multiple arity
+### Mehrere Aritäten
 
-The `theme.spacing()` helper accepts up to 4 arguments. You can use the arguments to reduce the boilerplate:
+Der`theme.spacing ()` Helfer akzeptiert bis zu 4 Argumente. Sie können die Argumente verwenden, um den Boilerplate zu reduzieren:
 
 ```diff
 <br />-  padding: `${theme.spacing(1)}px ${theme.spacing(2)}px`,
@@ -358,7 +358,7 @@ The `theme.spacing()` helper accepts up to 4 arguments. You can use the argument
 
 ## Andere Variablen
 
-In addition to the palette, dark and light types, and typography, the theme normalizes implementation by providing many more default values, such as breakpoints, shadows, transitions, etc. You can check out the [default theme section](/customization/default-theme/) to view the default theme in full.
+Neben der Palette, den dunklen und den hellen Typen sowie der Typografie normalisiert das Theme die Implementierung, indem es viele weitere Standardwerte bereitstellt, wie zum Beispiel breakpoints, Schatten, Übergänge, etc. Sie können den [Standard-Themenbereich](/customization/default-theme/) auschecken, um das Standarddesign vollständig anzuzeigen.
 
 ## Benutzerdefinierte Variablen
 
