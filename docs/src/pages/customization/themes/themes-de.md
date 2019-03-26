@@ -314,7 +314,7 @@ html {
 
 ## Abstände
 
-We encourage you to use the `theme.spacing()` helper to create consistent spacing between the elements of your UI. Material-UI uses [a recommended 8px scaling factor by default](https://material.io/design/layout/understanding-layout.html).
+Wir empfehlen Ihnen, den `theme.spacing()` Helfer zu verwenden, um einen konsistenten Abstand zwischen den Elementen Ihrer Benutzeroberfläche zu erstellen. Die Material-UI verwendet standardmäßig den [empfohlenen 8px-Skalierungsfaktor](https://material.io/design/layout/understanding-layout.html).
 
 ```js
 const styles = theme => ({
@@ -370,14 +370,14 @@ Wenn Sie das Material-UI-Theme mit unserer [Styling-Lösung](/css-in-js/basics) 
 
 ### CSS
 
-When the configuration variables aren't powerful enough, you can take advantage of the `overrides` key of the `theme` to potentially change every single **style** injected by Material-UI into the DOM. That's a really powerful feature.
+Wenn die Konfigurationsvariablen nicht ausreichen, können Sie die Vorteile der `overrides` Schlüssel des `Theme` verwenden, um potenziell jeden einzelnen von Material-UI in den DOM eingefügten **Stil** zu ändern. Das ist eine sehr mächtige Funktion.
 
 ```js
 const theme = createMuiTheme({
   overrides: {
-    MuiButton: { // Name of the component ⚛️ / style sheet
-      text: { // Name of the rule
-        color: 'white', // Some CSS
+    MuiButton: { // Name der Komponente ⚛️ / Style-Sheet
+      text: { // Name der Regel
+        color: 'white', // Einige CSS
       },
     },
   },
@@ -386,11 +386,11 @@ const theme = createMuiTheme({
 
 {{"demo": "pages/customization/themes/OverridesCss.js"}}
 
-The list of these customization points for each component is documented under the **Component API** section. For instance, you can have a look at the [Button](/api/button/#css). Alternatively, you can always have a look at the [implementation](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/Button/Button.js).
+Die Liste dieser Anpassungspunkte für jede Komponente ist unter der **Komponenten-API** Sektion dokumentiert. Zum Beispiel können Sie sich den [Button](/api/button/#css) anschauen. Alternativ können Sie sich immer die [Implementierung](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/Button/Button.js) ansehen.
 
 ### Eigenschaften
 
-You can also apply properties on all the instances of a component type. We expose a `props` key in the `theme` for this use case.
+Sie können auch Eigenschaften auf alle Instanzen eines Komponententyps anwenden. Wir stellen einen `props` Schlüssel im `Theme` für diesen Anwendungsfall zur Verfügung.
 
 ```js
 const theme = createMuiTheme({
@@ -427,7 +427,7 @@ Das innere Theme ** überschreibt** das äußere Theme. Sie können das äußere
 Die Auswirkungen der Verschachtelung der `ThemeProviders` Komponente auf die Performanz sind mit der Arbeit von JSS hinter den Kulissen verbunden. Der wichtigste Punkt zu verstehen ist, dass wir das injizierte CSS mit dem folgenden Tupel `(styles, theme)` zwischenspeichern.
 
 - `Theme`: Wenn Sie bei jedem Rendering ein neues Themebereitstellen, wird ein neues CSS-Objekt berechnet und eingefügt. Sowohl für die Konsistenz der Benutzeroberfläche als auch für die Leistung ist es besser, eine begrenzte Anzahl von Themeobjekten wiederzugeben.
-- `styles`: The larger the styles object is, the more work is needed.
+- `styles`: Je größer das Styles-Objekt ist, desto mehr Arbeit ist erforderlich.
 
 ## API
 
