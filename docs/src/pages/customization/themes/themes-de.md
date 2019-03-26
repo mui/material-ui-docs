@@ -150,15 +150,15 @@ const theme = createMuiTheme({
 });
 ```
 
-As in the example above, if the intention object contains custom colors using any of the `main`, `light`, `dark` or `contrastText` keys, these map as follows:
+Wie im obigen Beispiel, wenn das Absichtsobjekt benutzerdefinierte Farben mit einem der Hauptbereiche `main`, `light`, `dark` or `contrastText` Schlüssel enthält, ist die Zuordnung wie folgt:
 
-- If the `dark` and / or `light` keys are omitted, their value(s) will be calculated from `main`, according to the `tonalOffset` value.
+- Wenn der `dark` und / oder `light` Schlüssel weggelassen wird, werden ihre Werte von `main` berechnet, gemäß dem `tonalOffset` Wert.
 
-- If `contrastText` is omitted, its value will be calculated to contrast with `main`, according to the`contrastThreshold` value.
+- Wenn `contrastText` weggelassen wird, wird sein Wert so berechnet, dass er mit `main` kontrastiert, gemäß dem `contrastThreshold` Wert.
 
-Both the `tonalOffset` and `contrastThreshold` values may be customized as needed. A higher value for `tonalOffset` will make calculated values for `light` lighter, and `dark` darker. A higher value for `contrastThreshold` increases the point at which a background color is considered light, and given a dark `contrastText`.
+Sowohl `tonalOffset` als auch`contrastThreshold` können nach Bedarf angepasst werden. Ein höherer Wert für `tonalOffset` berechnet für `light` hellere und für `dark` dunklere Töne. Ein höherer Wert für `contrastThreshold` erhöht den Punkt ab wann eine Hintergrundfarbe als hell angesehen und einen dunklen `contrastText` gegeben wird.
 
-Note that `contrastThreshold` follows a non-linear curve.
+Beachten Sie, dass `contrastThreshold` einer nichtlinearen Kurve folgt.
 
 ### Beispiel
 
@@ -166,11 +166,11 @@ Note that `contrastThreshold` follows a non-linear curve.
 
 ### Farbwerkzeug
 
-Need inspiration? The Material Design team has built an awesome [palette configuration tool](/style/color/#color-tool) to help you.
+Etwas Inspiration gefällig? Das Material-Design-Team hat ein fantastisches [Konfigurationstool](/style/color/#color-tool) entwickelt, um dir zu helfen.
 
-## Type (light /dark theme)
+## Typ (helles/dunkles Theme)
 
-You can make the theme dark by setting `type` to `dark`. While it's only a single property value change, internally it modifies the value of the following keys:
+Sie können das Theme dunkel machen, indem Sie `type` auf `dark` setzen. Während es sich nur um eine einzelne Eigenschaftswertänderung handelt, ändert es intern den Wert der folgenden Schlüssel:
 
 - `palette.text`
 - `palette.divider`
@@ -189,9 +189,9 @@ const theme = createMuiTheme({
 
 ## Typografie
 
-Too many type sizes and styles at once can spoil any layout. The theme provides a **limited set of type sizes** that work well together along with the layout grid. These sizes are used across the components.
+Zu viele Schriftgrößen und -stile gleichzeitig können jedes Layout beeinträchtigen. Das Theme bietet eine **begrenzte Anzahl von Schriftgrößen** die gut zusammen mit dem Layoutraster funktionieren. Diese Größen werden für die Komponenten verwendet.
 
-Have a look at the following example regarding changing the default values, such as the font family. If you want to learn more about typography, you can check out [the typography section](/style/typography/).
+Sehen Sie sich das folgende Beispiel zum Ändern der Standardwerte an, z. B. der Schriftfamilie an. If you want to learn more about typography, you can check out [the typography section](/style/typography/).
 
 {{"demo": "pages/customization/themes/TypographyTheme.js"}}
 
