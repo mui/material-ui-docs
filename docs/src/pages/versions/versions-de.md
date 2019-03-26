@@ -16,11 +16,11 @@ Hier finden Sie die neuesten unveröffentlichten Dokumentationen und Codes. Sie 
 
 ## Versionierungsstrategie
 
-Wir erkennen an, dass Sie **Stabilität** aus der Material-UI-Bibliothek benötigen. Stabilität stellt sicher, dass wiederverwendbare Komponenten und Bibliotheken, Lernprogramme, Tools und erlernte Methoden nicht unerwartet veraltet werden. Stability is essential for the ecosystem around Material-UI to thrive.
+Wir erkennen an, dass Sie **Stabilität** aus der Material-UI-Bibliothek benötigen. Stabilität stellt sicher, dass wiederverwendbare Komponenten und Bibliotheken, Lernprogramme, Tools und erlernte Methoden nicht unerwartet veraltet werden. Stabilität ist wichtig für das Gedeihen des Ökosystems um Material-UI.
 
-This document contains **the practices that we follow** to provide you with a leading-edge UI library, balanced with stability. We strive to ensure that future changes are always introduced in a predictable way. We want everyone who depends on Material-UI to know when and how new features are added, and to be well-prepared when obsolete ones are removed.
+Dieses Dokument enthält ** die Praktiken, die wir befolgen ** um Ihnen eine hochmoderne UI-Bibliothek mit ausgewogener Stabilität zu bieten. Wir bemühen uns sicherzustellen, dass zukünftige Änderungen immer auf vorhersehbare Weise eingeführt werden. Wir möchten, dass alle, die auf die Material-UI angewiesen sind, wissen, wann und wie neue Funktionen hinzugefügt werden, und dass sie gut vorbereitet sind, wenn veraltete Funktionen entfernt werden.
 
-Material-UI strictly follows [Semantic Versioning 2.0.0](https://semver.org/). Material-UI version numbers have three parts: `major.minor.patch`. The version number is incremented based on the level of change included in the release.
+Die Material-UI folgt strikt der [ Semantic Versioning 2.0.0](https://semver.org/). Die Versionsnummern der Material-UI bestehen aus drei Teilen: `major.minor.patch`. Die Versionsnummer wird basierend auf dem in der Version enthaltenen Änderungsstand erhöht.
 
 - **Major releases** contain significant new features, some but minimal developer assistance is expected during the update. When updating to a new major release, you may need to run update scripts, refactor code, run additional tests, and learn new APIs.
 - **Minor releases** contain important new features. Minor releases are fully backward-compatible; no developer assistance is expected during update, but you can optionally modify your apps and libraries to begin using new APIs, features, and capabilities that were added in the release.
