@@ -222,7 +222,7 @@ const theme = createMuiTheme({
 
 Um Schriftarten selbst zu hosten, laden Sie diese als ` ttf`, ` woff ` und/oder ` woff2 ` herunter und importieren Sie diese in Ihren Code.
 
-⚠️ This requires that you have a plugin or loader in your build process that can handle loading `ttf`, `woff`, and `woff2` files. Fonts will *not* be embedded within your bundle. They will be loaded from your webserver instead of a CDN.
+⚠️ Voraussetzung dafür ist, dass Sie in Ihrem Build-Prozess ein Plugin oder Loader haben, dass das Laden von `ttf`, `woff` und `woff2` Datein ermöglicht. Schriftarten werden *nicht * in deinen Bundle eingebettet sein. Sie werden von Ihrem Webserver anstelle von CDN geladen.
 
 ```js
 import RalewayWoff2 from './fonts/Raleway-Regular.woff2';
@@ -241,7 +241,7 @@ const raleway = {
 };
 ```
 
-Then, you can change the theme to use this new font. It requires use of the [`CssBaseline`](/style/css-baseline/) component to globally define Raleway as a font family.
+Dann können Sie das Theme ändern, um diese neue Schriftart zu verwenden. Es erfordert die Verwendung von einer [` CssBaseline `](/style/css-baseline/) Komponente, um Raleway global als Schriftfamilie zu definieren.
 
 ```js
 const theme = createMuiTheme({
@@ -319,15 +319,15 @@ We encourage you to use the `theme.spacing()` helper to create consistent spacin
 ```js
 const styles = theme => ({
   root: {
-    // JSS uses px as the default units for this CSS property.
-    padding: theme.spacing(2), // Outputs 8 * 2
+    // JSS verwendet px als Standardeinheiten für diese CSS-Eigenschaft.
+    auffüllen: theme.spacing (2), // Ergibt 8 * 2
   },
 });
 ```
 
-You can change the spacing transformation by providing:
+Sie können die Abstandstransformation ändern, indem Sie Folgendes angeben:
 
-- a number
+- eine Zahl
 
 ```js
 const theme = createMuiTheme({
@@ -337,11 +337,11 @@ const theme = createMuiTheme({
 theme.spacing(2) // = 4 * 2
 ```
 
-- or a function
+- oder eine Funktion
 
 ```js
 const theme = createMuiTheme({
-  spacing: factor => `${0.25 * factor}rem`, // (Bootstrap strategy)
+  spacing: factor => `${0.25 * factor}rem`, // (Bootstrap Strategie)
 });
 
 theme.spacing(2) // = 0.5rem = 8px
