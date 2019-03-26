@@ -1,6 +1,6 @@
 # Themes
 
-<p class="description">Customize Material-UI with your theme. You can change the colors, the typography and much more.</p>
+<p class="description">Passen Sie die Material-UI an Ihrem Design an. Sie können die Farben, die Typografie und vieles mehr ändern.</p>
 
 The theme specifies the color of the components, darkness of the surfaces, level of shadow, appropriate opacity of ink elements, etc.
 
@@ -19,11 +19,11 @@ If you wish to customize the theme, you need to use the `ThemeProvider` componen
 Changing the theme configuration variables is the most effective way to match Material-UI to your needs. The following sections cover the most important theme variables:
 
 - [Palette](#palette)
-- [Type (light / dark theme)](#type-light-dark-theme)
+- [Typ (helles/dunkles Theme)](#type-light-dark-theme)
 - [Typografie](#typography)
 - [Abstände](#spacing)
-- [Other variables](#other-variables)
-- [Custom variables](#other-variables)
+- [Andere Variablen](#other-variables)
+- [Benutzerdefinierte Variablen](#other-variables)
 
 ## Palette
 
@@ -356,11 +356,11 @@ The `theme.spacing()` helper accepts up to 4 arguments. You can use the argument
 +  padding: theme.spacing(1, 2), // '8px 16px'
 ```
 
-## Other variables
+## Andere Variablen
 
 In addition to the palette, dark and light types, and typography, the theme normalizes implementation by providing many more default values, such as breakpoints, shadows, transitions, etc. You can check out the [default theme section](/customization/default-theme/) to view the default theme in full.
 
-## Custom variables
+## Benutzerdefinierte Variablen
 
 When using Material-UI's theme with our [styling solution](/css-in-js/basics) or [any others](/guides/interoperability/#themeprovider). It can be convenient to add additional variables to the theme so you can use them everywhere. For instance:
 
