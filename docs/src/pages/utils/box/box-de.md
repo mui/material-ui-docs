@@ -13,7 +13,7 @@ Die Style-Funktion der [Palette](/system/palette/).
 
 ## Material-UI-Komponenten überschreiben
 
-Die Box-Komponente umschließt Ihre Komponente. Es erstellt ein neues DOM-Element, standardmäßig `<div>`, das mit der Eigenschaft `component` geändert werden kann. Let's say you want to use a `<span>` instead:
+Die Box-Komponente umschließt Ihre Komponente. Es erstellt ein neues DOM-Element, standardmäßig `<div>`, das mit der Eigenschaft `component` geändert werden kann. Angenommen, Sie möchten stattdessen ein `<span>` verwenden:
 
 ```jsx
 <Box component="span" m={1}>
@@ -21,13 +21,13 @@ Die Box-Komponente umschließt Ihre Komponente. Es erstellt ein neues DOM-Elemen
 </Box>
 ```
 
-This works great when the changes can be isolated to a new DOM element. For instance, you can change the margin this way.
+Dies funktioniert hervorragend, wenn die Änderungen für ein neues DOM-Element isoliert werden können. Zum Beispiel können Sie den Rand auf diese Weise ändern.
 
-However, sometimes you have to target the underlying DOM element. For instance, you want to change the text color of the button. The Button component defines its own color. CSS inheritance doesn't help. To workaround the problem, you have two options:
+Manchmal müssen Sie jedoch das zugrunde liegende DOM-Element als Ziel festlegen. Sie möchten beispielsweise die Textfarbe des Buttons ändern. Die Button-Komponente definiert ihre eigene Farbe. CSS-Vererbung hilft hier nicht. Um das Problem zu umgehen, haben Sie zwei Möglichkeiten:
 
-1. Use [`React.cloneElement()`](https://reactjs.org/docs/react-api.html#cloneelement)
+1. Verwenden Sie [`React.cloneElement()`](https://reactjs.org/docs/react-api.html#cloneelement)
 
-The Box component has a `clone` property to enable the usage of the clone element method of React.
+Die Box-Komponente verfügt über eine `clone`-Eigenschaft, um die Verwendung der Klonelementmethode von React zu ermöglichen.
 
 ```jsx
 <Box color="text.primary" clone>
@@ -35,9 +35,9 @@ The Box component has a `clone` property to enable the usage of the clone elemen
 </Box>
 ```
 
-1. Use render props
+1. Verwenden Sie Render Eigenschaften
 
-The Box children accepts a render props function. You can pull out the `className`.
+Die Box-Kinder akzeptieren eine Render-Funktion als Eigenschaft. Sie können den `className` herausziehen.
 
 ```jsx
 <Box color="text.primary">
@@ -45,7 +45,7 @@ The Box children accepts a render props function. You can pull out the `classNam
 </Box>
 ```
 
-> ⚠️ The CSS specificity relies on the import order. If you want the guarantee that the wrapped component's style will be overridden, you need to import the Box last.
+> ⚠️ Die CSS-Spezifität hängt von der Importreihenfolge ab. Wenn Sie die Garantie haben möchten, dass der Stil der umschlossenen Komponente überschrieben wird, müssen Sie die Box als letztes importieren.
 
 ## API
 
