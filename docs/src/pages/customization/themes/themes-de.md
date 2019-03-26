@@ -191,13 +191,13 @@ const theme = createMuiTheme({
 
 Zu viele Schriftgrößen und -stile gleichzeitig können jedes Layout beeinträchtigen. Das Theme bietet eine **begrenzte Anzahl von Schriftgrößen** die gut zusammen mit dem Layoutraster funktionieren. Diese Größen werden für die Komponenten verwendet.
 
-Sehen Sie sich das folgende Beispiel zum Ändern der Standardwerte an, z. B. der Schriftfamilie an. If you want to learn more about typography, you can check out [the typography section](/style/typography/).
+Sehen Sie sich das folgende Beispiel zum Ändern der Standardwerte an, z. B. der Schriftfamilie an. Wenn Sie mehr über Typografie erfahren möchten, können Sie sich im [Typografie ](/style/typography/) informeiren.
 
 {{"demo": "pages/customization/themes/TypographyTheme.js"}}
 
 ### Schriftfamilie
 
-You can use the system font instead of the default Roboto font.
+Sie können die Systemschriftart anstelle der Standardschriftart Roboto verwenden.
 
 ```js
 const theme = createMuiTheme({
@@ -218,9 +218,9 @@ const theme = createMuiTheme({
 });
 ```
 
-### Self-host fonts
+### Bereitstellen von eigenen Schriftarten
 
-To self-host fonts, download the font files in `ttf`, `woff`, and/or `woff2` formats and import them into your code.
+Um Schriftarten selbst zu hosten, laden Sie diese als ` ttf`, ` woff ` und/oder ` woff2 ` herunter und importieren Sie diese in Ihren Code.
 
 ⚠️ This requires that you have a plugin or loader in your build process that can handle loading `ttf`, `woff`, and `woff2` files. Fonts will *not* be embedded within your bundle. They will be loaded from your webserver instead of a CDN.
 
