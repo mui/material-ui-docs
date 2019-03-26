@@ -272,9 +272,9 @@ const theme = createMuiTheme({
 
 ### Schriftgröße
 
-Material-UI uses `rem` units for the font size. The browser `<html>` element default font size is `16px`, but browsers have an option to change this value, so `rem` units allow us to accommodate the user's settings, resulting in a much better user experience. Users change font size settings for all kinds of reasons, from poor eyesight to choosing optimum settings for devices that can be vastly different in size and viewing distance.
+Material-UI verwendet `rem` Einheiten für die Schriftgröße. Die Standardschriftgröße des Browsers `<html>` ist `16px`, aber Browser haben eine Option, um diesen Wert zu ändern, deshalb ermöglichen es uns `rem` Einheiten, die Einstellungen des Benutzers anzupassen, was zu einer viel besseren Benutzererfahrung führt. Benutzer ändern Schriftgröße aus alle Arten von Gründen, von Sehschwäche bis zu optimalen Einstellungen für Geräte, die sehr unterschiedlich in Größe und Betrachtungsabstand sein können.
 
-To change the font-size of Material-UI you can provide a `fontSize` property. The default value is `14px`.
+Um die Schriftgröße der Material-UI zu ändern, können Sie eine `fontSize` Eigenschaft angeben. Der Standardwert ist `14px`.
 
 ```js
 const theme = createMuiTheme ({
@@ -285,13 +285,13 @@ const theme = createMuiTheme ({
 });
 ```
 
-The computed font size by the browser follows this mathematical equation:
+Die vom Browser berechnete Schriftgröße folgt dieser mathematischen Gleichung:
 
 ![font-size](/static/images/font-size.gif) <!-- https://latex.codecogs.com/gif.latex?computed&space;=&space;specification&space;\frac{typography.fontSize}{14}&space;\frac{html&space;font&space;size}{typography.htmlFontSize} -->
 
-### HTML font size
+### HTML-Schriftgröße
 
-You might want to change the `<html>` element default font size. For instance, when using the [10px simplification](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/). We provide a `htmlFontSize` theme property for this use case. It's telling Material-UI what's the font-size on the `<html>` element is. It's used to adjust the `rem` value so the calculated font-size always match the specification.
+Möglicherweise möchten Sie die Standardschriftgröße des `<html>` Elements ändern. Zum Beispiel bei der Verwendung der [10px-Vereinfachung](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/). Wir bieten eine `htmlFontSize` Theme-Eigenschaft für diesen Anwendungsfall an. Es sagt dem Material-UI, was die Schriftgröße des `<html>`-Elements ist. Es wird verwendet, um den `rem` Wert einzustellen, damit die berechnete Schriftgröße immer der Spezifikation entspricht.
 
 ```js
 const theme = createMuiTheme({
@@ -308,7 +308,7 @@ html {
 }
 ```
 
-*You need to apply the above CSS on the html element of this page to see the below demo rendered correctly*
+*Sie müssen das obige CSS auf das HTML-Element dieser Seite anwenden, um die unten stehende Demo korrekt anzuzeigen*
 
 {{"demo": "pages/customization/themes/FontSizeTheme.js"}}
 
@@ -426,7 +426,7 @@ Das innere Theme ** überschreibt** das äußere Theme. Sie können das äußere
 
 Die Auswirkungen der Verschachtelung der `ThemeProviders` Komponente auf die Performanz sind mit der Arbeit von JSS hinter den Kulissen verbunden. Der wichtigste Punkt zu verstehen ist, dass wir das injizierte CSS mit dem folgenden Tupel `(styles, theme)` zwischenspeichern.
 
-- `Theme`: Wenn Sie bei jedem Rendering ein neues Themebereitstellen, wird ein neues CSS-Objekt berechnet und eingefügt. Both for UI consistency and performance, it's better to render a limited number of theme objects.
+- `Theme`: Wenn Sie bei jedem Rendering ein neues Themebereitstellen, wird ein neues CSS-Objekt berechnet und eingefügt. Sowohl für die Konsistenz der Benutzeroberfläche als auch für die Leistung ist es besser, eine begrenzte Anzahl von Themeobjekten wiederzugeben.
 - `styles`: The larger the styles object is, the more work is needed.
 
 ## API
