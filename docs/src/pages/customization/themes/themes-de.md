@@ -29,21 +29,21 @@ Das Ändern der Konfigurationsvariablen für das Theme ist der effektivste Weg, 
 
 ### Intentionen
 
-Eine Farbabsicht ist eine Zuordnung einer Palette zu einer bestimmten Absicht in Ihrer Anwendung.
+Eine Farbintention ist eine Zuordnung einer Palette zu einer bestimmten Intention in Ihrer Anwendung.
 
-Das Theme stellt die folgenden Farbabsichten zur Verfügung:
+Das Theme stellt die folgenden FarbIntentionen zur Verfügung:
 
 - primary - wird verwendet, um primäre Oberflächenelemente für einen Benutzer darzustellen.
 - secondary - wird verwendet, um sekundäre Oberflächenelemente für einen Benutzer darzustellen.
 - error- wird verwendet, um Oberflächenelemente darzustellen, auf die der Benutzer aufmerksam gemacht werden sollte.
 
-The default palette uses the shades prefixed with `A` (`A200`, etc.) for the secondary intention, and the un-prefixed shades for the other intentions.
+Die Standardpalette verwendet die mit `A` (`A200` usw.) gekennzeichneten Schattierungen für die sekundäre Intention, und die nicht vorangestellten Farben für die anderen Intentionen.
 
-If you want to learn more about color, you can check out [the color section](/style/color/).
+Wenn Sie mehr über Farbe erfahren möchten, können Sie sich im [Farbabschnitt](/style/color/) informeiren.
 
-### Custom palette
+### Benutzerdefinierte Palette
 
-You may override the default palette values by including a `palette` object as part of your theme.
+Sie können die Standardpalettenwerte überschreiben, indem Sie ein `Palette` Objekt als Teil Ihres Themas hinzufügen.
 
 If any of the [`palette.primary`](/customization/default-theme/?expend-path=$.palette.primary), [`palette.secondary`](/customization/default-theme/?expend-path=$.palette.secondary) or [`palette.error`](/customization/default-theme/?expend-path=$.palette.error) 'intention' objects are provided, they will replace the defaults.
 
