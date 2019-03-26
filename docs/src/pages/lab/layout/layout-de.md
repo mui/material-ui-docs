@@ -4,11 +4,11 @@ components: Container
 ---
 # Layout
 
-<p class="description">Components and options for laying out your project, including wrapping containers, a powerful grid system, a flexible media object, and responsive utility classes.</p>
+<p class="description">Komponenten und Optionen für das Planen Ihres Projekts, einschließlich Umschließen von Containern, eines leistungsstarken Rastersystems, eines flexiblen Medienobjekts und reaktionsschneller Dienstprogrammklassen.</p>
 
 ## CssBasline
 
-The [`CssBasline` component](/getting-started/usage/#cssbaseline) removes the default browser margin on the `<body>` element. Use it, or make sure the margin is removed:
+Die [`CssBasline` Komponente](/getting-started/usage/#cssbaseline) entfernt den Standardbrowserrand des `<body>`-Elements. Verwenden Sie es oder stellen Sie sicher, dass der Rand entfernt wird:
 
 ```css
 body {
@@ -18,11 +18,11 @@ body {
 
 ## Container
 
-The container centers your content horizontally. It's the most basic layout element. While containers can be nested, most layouts do not require a nested container.
+Der Container zentriert Ihren Inhalt horizontal. Es ist das grundlegendste Layoutelement. Während Container geschachtelt werden können, benötigen die meisten Layouts keinen verschachtelten Container.
 
 ### Flexibel
 
-A fluid container width is bounded by that `maxWidth` property value.
+Eine Breite des Fluidcontainers wird durch den Wert `maxWidth` begrenzt.
 
 ```jsx
 <Container maxWidth="sm">
@@ -32,7 +32,7 @@ A fluid container width is bounded by that `maxWidth` property value.
 
 ### Fixiert
 
-If you prefer to design for a fixed set of sizes instead of trying to accommodate a fully fluid viewport, you can set the `fixed` property. The max-width matches the min-width of the current breakpoint.
+Wenn Sie es vorziehen, für einen festen Satz von Größen zu entwerfen, anstatt zu versuchen, ein vollständig fließendes Ansichtsfenster unterzubringen, können Sie die Eigenschaft `fixed` festlegen. Die maximale Breite stimmt mit der minimalen Breite des aktuellen Haltepunkts überein.
 
 ```jsx
 <Container fixed>
