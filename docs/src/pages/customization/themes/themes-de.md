@@ -10,13 +10,13 @@ Um die Konsistenz zwischen Apps zu erhöhen, stehen helle und dunkle Themenarten
 
 ## Theme provider
 
-If you wish to customize the theme, you need to use the `ThemeProvider` component in order to inject a theme into your application. However, this is optional; Material-UI components come with a default theme.
+Wenn Sie das Design anpassen möchten, müssen Sie die `ThemeProvider` Komponente verwenden, um ein Theme in Ihre Anwendung einzufügen. Dies ist jedoch optional. Material-UI-Komponenten werden mit einem Standarddesign geliefert.
 
-`ThemeProvider` relies on the context feature of React to pass the theme down to the components, so you need to make sure that `ThemeProvider` is a parent of the components you are trying to customize. You can learn more about this in [the API section](/css-in-js/api/#themeprovider).
+`ThemeProvider` stützt sich auf die Kontext - Funktion von React um das Theme an die Komponenten zu übergeben. Deswegen müssen Sie den `ThemeProvider` als ein übergeordnetes Element der Komponenten, die Sie anpassen möchten, setzen. Mehr darüber erfahren Sie im [API](/css-in-js/api/#themeprovider) Abschnitt.
 
-## Theme configuration variables
+## Theme-Konfigurationsvariablen
 
-Changing the theme configuration variables is the most effective way to match Material-UI to your needs. The following sections cover the most important theme variables:
+Das Ändern der Konfigurationsvariablen für das Theme ist der effektivste Weg, um die Material-UI an Ihre Bedürfnisse anzupassen. Die folgenden Abschnitte behandeln die wichtigsten Theme-Variablen:
 
 - [Palette](#palette)
 - [Typ (helles/dunkles Theme)](#type-light-dark-theme)
@@ -29,13 +29,13 @@ Changing the theme configuration variables is the most effective way to match Ma
 
 ### Intentionen
 
-A color intention is a mapping of a palette to a given intention within your application.
+Eine Farbabsicht ist eine Zuordnung einer Palette zu einer bestimmten Absicht in Ihrer Anwendung.
 
-The theme exposes the following color intentions:
+Das Theme stellt die folgenden Farbabsichten zur Verfügung:
 
-- primary - used to represent primary interface elements for a user.
-- secondary - used to represent secondary interface elements for a user.
-- error - used to represent interface elements that the user should be made aware of.
+- primary - wird verwendet, um primäre Oberflächenelemente für einen Benutzer darzustellen.
+- secondary - wird verwendet, um sekundäre Oberflächenelemente für einen Benutzer darzustellen.
+- error- wird verwendet, um Oberflächenelemente darzustellen, auf die der Benutzer aufmerksam gemacht werden sollte.
 
 The default palette uses the shades prefixed with `A` (`A200`, etc.) for the secondary intention, and the un-prefixed shades for the other intentions.
 
