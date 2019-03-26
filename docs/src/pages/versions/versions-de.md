@@ -14,9 +14,9 @@ Hier finden Sie die neuesten unveröffentlichten Dokumentationen und Codes. Sie 
 
 {{"demo": "pages/versions/LatestVersions.js", "hideHeader": true}}
 
-## Versioning strategy
+## Versionierungsstrategie
 
-We recognize that you need **stability** from the Material-UI library. Stability ensures that reusable components and libraries, tutorials, tools, and learned practices don't become obsolete unexpectedly. Stability is essential for the ecosystem around Material-UI to thrive.
+Wir erkennen an, dass Sie **Stabilität** aus der Material-UI-Bibliothek benötigen. Stabilität stellt sicher, dass wiederverwendbare Komponenten und Bibliotheken, Lernprogramme, Tools und erlernte Methoden nicht unerwartet veraltet werden. Stability is essential for the ecosystem around Material-UI to thrive.
 
 This document contains **the practices that we follow** to provide you with a leading-edge UI library, balanced with stability. We strive to ensure that future changes are always introduced in a predictable way. We want everyone who depends on Material-UI to know when and how new features are added, and to be well-prepared when obsolete ones are removed.
 
