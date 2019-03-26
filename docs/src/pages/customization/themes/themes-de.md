@@ -277,9 +277,9 @@ Material-UI uses `rem` units for the font size. The browser `<html>` element def
 To change the font-size of Material-UI you can provide a `fontSize` property. The default value is `14px`.
 
 ```js
-const theme = createMuiTheme({
-  typography: {
-    // In Japanese the characters are usually larger.
+const theme = createMuiTheme ({
+  Typografie: {
+    // Auf Japanisch sind die Zeichen normalerweise größer.
     fontSize: 12,
   },
 });
@@ -296,7 +296,7 @@ You might want to change the `<html>` element default font size. For instance, w
 ```js
 const theme = createMuiTheme({
   typography: {
-    // Tell Material-UI what's the font-size on the html element is.
+    // Informiere die Material-UI über die Schriftgröße des HTML-Elements.
     htmlFontSize: 10,
   },
 });
@@ -362,11 +362,11 @@ Neben der Palette, den dunklen und den hellen Typen sowie der Typografie normali
 
 ## Benutzerdefinierte Variablen
 
-When using Material-UI's theme with our [styling solution](/css-in-js/basics) or [any others](/guides/interoperability/#themeprovider). It can be convenient to add additional variables to the theme so you can use them everywhere. For instance:
+Wenn Sie das Material-UI-Theme mit unserer [Styling-Lösung](/css-in-js/basics) oder einer [beliebige andere](/guides/interoperability/#themeprovider) verwenden, kann praktisch sein, dem Theme weitere Variablen hinzuzufügen, damit Sie sie überall verwenden können. Zum Beispiel:
 
 {{"demo": "pages/customization/themes/CustomStyles.js"}}
 
-## Customizing all instances of a component type
+## Anpassen aller Instanzen eines Komponententyps
 
 ### CSS
 
@@ -397,8 +397,8 @@ const theme = createMuiTheme({
   props: {
     // Name of the component ⚛️
     MuiButtonBase: {
-      // The properties to apply
-      disableRipple: true, // No more ripple, on the whole application 
+      // Die Eigenschaft, die angewendet werden soll
+      disableRipple: true, // Kein Ripple-Effekt in der ganzen Applikation mehr 
     },
   },
 });
@@ -408,13 +408,13 @@ const theme = createMuiTheme({
 
 ## Zugriff auf das Theme in einer Komponente
 
-Möglicherweise müssen Sie auf die Themevariablen in Ihren React-Komponenten zugreifen. Let's say you want to display the value of the primary color, you can use the `withTheme` higher-order component to do so. Here is an example:
+Möglicherweise müssen Sie auf die Themevariablen in Ihren React-Komponenten zugreifen. Angenommen, Sie möchten den Wert der Primärfarbe anzeigen, können Sie die `withTheme` Komponente höherer Ordnung dazu verwenden. Hier ist ein Beispiel:
 
 {{"demo": "pages/customization/themes/WithTheme.js"}}
 
-## Nesting the theme
+## Schachteln des Themes
 
-The theming solution is very flexible, as [you can nest](/css-in-js/advanced/#theme-nesting) multiple theme providers. Dies kann sehr nützlich sein, wenn Sie sich mit unterschiedlichen Bereichen Ihrer Anwendung befassen, die sich voneinander unterscheiden.
+Die Theming-Lösung ist sehr flexibel, da Sie mehrere Theme-anbieter [verschachteln können](/css-in-js/advanced/#theme-nesting). Dies kann sehr nützlich sein, wenn Sie sich mit unterschiedlichen Bereichen Ihrer Anwendung befassen, die sich voneinander unterscheiden.
 
 {{"demo": "pages/customization/themes/ThemeNesting.js"}}
 
@@ -424,9 +424,9 @@ Das innere Theme ** überschreibt** das äußere Theme. Sie können das äußere
 
 #### Ein Hinweis zur Leistung
 
-The performance implications of nesting the `ThemeProvider` component are linked to JSS's work behind the scenes. The main point to understand is that we cache the injected CSS with the following tuple `(styles, theme)`.
+Die Auswirkungen der Verschachtelung der `ThemeProviders` Komponente auf die Performanz sind mit der Arbeit von JSS hinter den Kulissen verbunden. Der wichtigste Punkt zu verstehen ist, dass wir das injizierte CSS mit dem folgenden Tupel `(styles, theme)` zwischenspeichern.
 
-- `theme`: If you provide a new theme at each render, a new CSS object will be computed and injected. Both for UI consistency and performance, it's better to render a limited number of theme objects.
+- `Theme`: Wenn Sie bei jedem Rendering ein neues Themebereitstellen, wird ein neues CSS-Objekt berechnet und eingefügt. Both for UI consistency and performance, it's better to render a limited number of theme objects.
 - `styles`: The larger the styles object is, the more work is needed.
 
 ## API
