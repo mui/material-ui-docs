@@ -156,23 +156,23 @@ Sie müssen sich keine Gedanken über die CSS-Spezifität machen, da der Inline-
 
 ## 2. Dynamische Variation für eine einmalige Situation
 
-Sie haben gelernt, wie Sie den Stil der Material-UI-Komponenten in den vorherigen Abschnitten überschreiben. Now, let's see how we can make these overrides dynamic. We demonstrate 5 alternatives, each has it's pros and cons.
+In den vorherigen Abschnitten haben Sie gelernt, wie Sie den Stil der Material-UI-Komponenten überschreiben. Nun wollen wir mal sehen, wie wir diese Überschreibungen dynamisch machen können. Wir zeigen 5 Alternativen, von denen jede ihre Vor- und Nachteile hat.
 
-### Dynamic CSS
+### Dynamisches CSS
 
 {{"demo": "pages/customization/overrides/DynamicCSS.js"}}
 
-⚠️ This demo relies on the [`@material-ui/styles`](/css-in-js/basics/) package. It doesn't work with the stable version.
+Dem Diese Demo basiert auf dem [`@material-ui/styles`](/css-in-js/basics/) Paket. Es funktioniert nicht mit der stabilen Version.
 
-### Class name branch
+### Klassenname Branch
 
 {{"demo": "pages/customization/overrides/DynamicClassName.js"}}
 
-### CSS variables
+### CSS-Variablen
 
 {{"demo": "pages/customization/overrides/DynamicCSSVariables.js"}}
 
-### Inline-style
+### Inline-Stil
 
 {{"demo": "pages/customization/overrides/DynamicInlineStyle.js"}}
 
@@ -180,32 +180,32 @@ Sie haben gelernt, wie Sie den Stil der Material-UI-Komponenten in den vorherige
 
 {{"demo": "pages/customization/overrides/DynamicThemeNesting.js"}}
 
-## 3. Specific variation of a component
+## 3. Spezifische Variation einer Komponente
 
-You might need to create a variation of a component and use it in different contexts, for instance a colorful button on your product page, however you probably want to keep your code [*DRY*](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
+Möglicherweise müssen Sie eine Variation einer Komponente erstellen und in verschiedenen Kontexten verwenden, beispielsweise auf einer farbigen Button auf Ihrer Produktseite. Allerdings möchten Sie wahrscheinlich, dass Ihr Code [*DRY*](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) bleibt.
 
-The best approach is to follow option 1 and then take advantage of the composition power of React by exporting your customized component to use wherever you need it.
+Der beste Ansatz ist, Option 1 zu folgen und dann die Kompositionskraft von React zu nutzen, indem Sie Ihre benutzerdefinierte Komponente exportieren, um sie dort zu verwenden, wo Sie sie benötigen.
 
 {{"demo": "pages/customization/overrides/Component.js", "hideEditButton": true}}
 
-## 4. Material Design variations
+## 4. Material Design Variationen
 
-The Material Design specification documents different variations of certain components, such as how buttons come in different shapes: [text](https://material.io/design/components/buttons.html#text-button) (formerly "flat"), [contained](https://material.io/design/components/buttons.html#contained-button) (formerly "raised"), [FAB](https://material.io/design/components/buttons-floating-action-button.html) and more.
+In der Material Design-Spezifikation werden verschiedene Variationen bestimmter Komponenten dokumentiert, z. B. wie Buttons in unterschiedlichen Formen erscheinen:[text](https://material.io/design/components/buttons.html#text-button) (früher "flat"), [contained](https://material.io/design/components/buttons.html#contained-button) (früher "raised"), [FAB](https://material.io/design/components/buttons-floating-action-button.html) und mehr.
 
-Material-UI attempts to implement all of these variations. Please refer to the [Supported Components](/getting-started/supported-components/) documentation to find out the current status of all supported Material Design components.
+Die Material-UI versucht, alle diese Variationen zu implementieren. Bitte beachten Sie die [Unterstützte Komponente ](/getting-started/supported-components/) Dokumentation, um den aktuellen Status aller unterstützten Material Design-Komponenten herauszufinden.
 
 ## 5. Global theme variation
 
-### Theme variables
+### Theme-Variablen
 
-In order to promote consistency between components, and manage the user interface appearance as a whole, Material-UI provides a mechanism to apply global changes by adjusting the [theme configuration variables](/customization/themes/#theme-configuration-variables).
+Um die Konsistenz zwischen den Komponenten zu verbessern und das Erscheinungsbild der Benutzeroberfläche insgesamt zu verwalten, bietet die Material-UI einen Mechanismus zum Anwenden globaler Änderungen durch Anpassen der [Theme Konfigurationsvariablen](/customization/themes/#theme-configuration-variables) an.
 
-### Global theme override
+### Globales Theme überschreiben
 
-Do you want to customize **all the instances** of a component type?
+Möchten Sie **alle Instanzen** eines Komponententyps anpassen?
 
-When the configuration variables aren't powerful enough, you can take advantage of the `overrides` key of the `theme` to potentially change every single style injected by Material-UI into the DOM. Learn more about it in the [themes section](/customization/themes/#customizing-all-instances-of-a-component-type) of the documentation.
+Wenn die Konfigurationsvariablen nicht ausreichen, können Sie die Vorteile der `overrides` Schlüssel des `Theme` verwenden, um potenziell jeden einzelnen von Material-UI in den DOM eingefügten Stil zu ändern. Weitere Informationen dazu finden Sie im [Themen](/customization/themes/#customizing-all-instances-of-a-component-type) Abschnitt der Dokumentation.
 
-### Global CSS override
+### Globales CSS überschreiben
 
-You can also customize all instances of a component with CSS. We expose a `dangerouslyUseGlobalCSS` option to do so. Learn more about it in the [styles section](/css-in-js/advanced/#deterministic-class-names) of the documentation. It's very similar to how you would customize Bootstrap.
+Sie können auch alle Instanzen einer Komponente mit CSS anpassen. Wir stellen dazu die `dangerouslyUseGlobalCSS` Option zur Verfügung. Weitere Informationen dazu finden Sie im [Style](/css-in-js/advanced/#deterministic-class-names) Abschnitt der Dokumentation. Es ist sehr ähnlich, wie Sie Bootstrap anpassen würden.
