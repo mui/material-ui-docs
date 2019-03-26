@@ -1,5 +1,5 @@
 ---
-title: Layout React component
+title: Layout React Komponente
 components: Container
 ---
 # Layout
