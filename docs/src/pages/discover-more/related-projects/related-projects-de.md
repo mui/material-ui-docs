@@ -20,13 +20,13 @@ Da der Umfang der Probleme, die Material-UI löst, begrenzt ist, versuchen wir, 
 - [material-ui-autosuggest](https://github.com/plan-three/material-ui-autosuggest) Eine Fuzzy-Suchkomponente für React und Material-UI.
 - [material-ui-next-pickers](https://github.com/chingyawhao/material-ui-next-pickers) Ein Datepicker oder Timepicker in Material UI Next, kann auch als Uhr- oder Kalenderkomponente importiert werden.
 - [material-ui-pickers](https://github.com/dmtrKovalenko/material-ui-pickers) Komponenten, die Datums- und Zeitaufnehmer für Material Design für Material-UI implementieren.
-- [material-ui-popup-state](https://github.com/jcoreio/material-ui-popup-state) Render props component that manages state for menus, popovers, and poppers, cutting down on boilerplate significantly.
-- [material-ui-rating](https://github.com/TeamWertarbyte/material-ui-rating) Rate something with style.
+- [material-ui-popup-state](https://github.com/jcoreio/material-ui-popup-state) Rendern Sie die Eigenschaft-Komponente, die den Status für Menüs, Popovers und Poppers verwaltet, wodurch der Boilerplate erheblich reduziert wird.
+- [material-ui-rating](https://github.com/TeamWertarbyte/material-ui-rating) Bewerten Sie etwas mit Stil.
 - [material-ui-theme-editor](https://in-your-saas.github.io/material-ui-theme-editor/) Ein Tool zum Erstellen von Designs für Ihre Material-UI-Anwendungen, indem Sie einfach die Farben auswählen und eine Live-Vorschau angezeigt bekommen.
-- [material-ui-time-picker](https://github.com/TeamWertarbyte/material-ui-time-picker) A TimePicker for Material-UI.
+- [material-ui-time-picker](https://github.com/TeamWertarbyte/material-ui-time-picker) Ein TimePicker für die Material-UI.
 - [mui-datatables](https://github.com/gregnb/mui-datatables) Responsive Datentabellen für Material-UI mit Filterung, Sortierung, Suche und mehr.
-- [mui-downshift](https://github.com/techniq/mui-downshift) Thin layer over paypal's downshift to use Material-UI visual components.
-- [mui-tables](https://parkerself.gitbook.io/mui-table/) Customizable table for managing complex data. Features a summary row, de-duplication & merging, as well as filtering, search, etc.
+- [mui-downshift](https://github.com/techniq/mui-downshift) Dünne Schicht über dem Herunterschalten von Paypal, um visuelle Komponenten von Material-UI zu verwenden.
+- [mui-tables](https://parkerself.gitbook.io/mui-table/) Anpassbare Tabelle zur Verwaltung komplexer Daten. Enthält eine Zusammenfassungszeile, eine Deduplizierung & Merging, sowie eine Filterung, Suche usw.
 - [notistack](https://github.com/iamhosseindhv/notistack) Highly customisable notification snackbars that can be stacked on top of each other.
 - [react-basket](https://github.com/mbrn/react-basket) A shopping basket components library based on material-ui components.
 - [react-material-ui-typescript](https://github.com/goemen/react-material-ui-typescript) A boilerplate for React using Typescript, Material UI and Redux, React Router.
