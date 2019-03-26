@@ -1,20 +1,20 @@
-# Overrides
+# Überschreibungen
 
-<p class="description">As components can be used in different contexts, Material-UI supports different types of customization requirements going from the most specific to the most generic.</p>
+<p class="description">Da Komponenten in verschiedenen Kontexten verwendet werden können, unterstützt Material-UI verschiedene Arten von Anpassungsanforderungen, die von den spezifischsten bis zu den allgemeinsten reichen.</p>
 
-1. [Specific variation for a one-time situation](#1-specific-variation-for-a-one-time-situation)
-2. [Dynamic variation for a one-time situation](#2-dynamic-variation-for-a-one-time-situation)
-3. [Specific variation of a component](#3-specific-variation-of-a-component) re-used in different contexts
-4. [Material Design variations](#4-material-design-variations) such as with the button component
+1. [Spezifische Abweichung für eine einmalige Situation](#1-specific-variation-for-a-one-time-situation)
+2. [Dynamische Variation für eine einmalige Situation](#2-dynamic-variation-for-a-one-time-situation)
+3. [ Spezifische Variation einer Komponente ](#3-specific-variation-of-a-component) wiederverwendet in verschiedenen Kontexten
+4. [ Variationen des Materialdesigns ](#4-material-design-variations) wie mit der Button-Komponente
 5. [Global theme variation](#5-global-theme-variation)
 
-## 1. Specific variation for a one-time situation
+## 1. Spezifische Abweichung für eine einmalige Situation
 
-You might need to change the style of a component for a specific implementation, for which you have the following solutions available:
+Möglicherweise müssen Sie den Stil einer Komponente für eine bestimmte Implementierung ändern, für die Sie die folgenden Lösungen zur Verfügung haben:
 
-### Overriding with class names
+### Überschreiben mit Klassennamen
 
-The first way to override the style of a component is to use **class names**. Every component provides a `className` property which is always applied to the root element.
+Die erste Möglichkeit, den Stil einer Komponente zu überschreiben, besteht in der Verwendung von **Klassennamen**. Jede Komponente stellt eine `Klassennamen` Eigenschaft bereit, die immer auf das unterste Element angewendet wird.
 
 This example uses the [`withStyles()`](/css-in-js/basics/#higher-order-component-api) higher-order component to inject custom styles into the DOM, and to pass the class name to the `ClassNames` component via its `classes` property. You can choose [any other styling solution](/guides/interoperability/), or even plain CSS to create the styles, but be sure to consider the [CSS injection order](/css-in-js/advanced/#css-injection-order), as the CSS injected into the DOM by Material-UI to style a component has the highest specificity possible, since the `<link>` is injected at the bottom of the `<head />` to ensure the components always render correctly.
 
@@ -154,7 +154,7 @@ You don't have to worry about CSS specificity as the inline-style takes preceden
 
 [When should I use inline-style vs classes?](/getting-started/faq/#when-should-i-use-inline-style-vs-classes-)
 
-## 2. Dynamic variation for a one-time situation
+## 2. Dynamische Variation für eine einmalige Situation
 
 You have learned how to override the style of the Material-UI components in the previous sections. Now, let's see how we can make these overrides dynamic. We demonstrate 5 alternatives, each has it's pros and cons.
 
