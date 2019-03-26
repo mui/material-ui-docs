@@ -12,8 +12,8 @@ Einige wichtige Funktionen der `Popper` Komponente:
 - 
 - 
 - Das untergeordnete Element des Hauptteils des Dokuments ist ein [`Portal`](/utils/portal/), um Probleme beim Rendern zu vermeiden. Sie können dieses Verhalten mit `disablePortal` deaktivieren.
-- The scroll isn't blocked like with the [`Popover`](/utils/popover/) component. The placement of the popper updates with the available area in the viewport.
-- Clicking away does not hide the `Popper` component. If you need this behavior, you can use [`ClickAwayListener`](utils/click-away-listener/) - see the example in the [menu documentation section](/demos/menus/#menulist-composition).
+- Bildlauf wird nicht wie bei der Komponente [`Popover`](/utils/popover/) blockiert. Die Platzierung des Popper wird mit dem verfügbaren Bereich im Ansichtsfenster aktualisiert.
+- Durch Wegklicken wird die `Popper` Komponente ausgeblendet. Wenn Sie dieses Verhalten benötigen, können Sie den [`ClickAwayListener`](utils/click-away-listener/) verwenden - siehe das Beispiel im [Menü Dokumentation Abschnitt](/demos/menus/#menulist-composition).
 - Die `anchorEl` Komponente wird als Referenzobjekt übergeben, um eine neue Instanz von `Popper.js` zu erstellen.
 
 ## Einfacher Popper
