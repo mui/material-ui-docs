@@ -1,11 +1,11 @@
 ---
-title: Box React component
+title: Box React Komponente
 ---
 # Box
 
-<p class="description">The Box component serves as a wrapper component for most of the CSS utility needs.</p>
+<p class="description">Die Box-Komponente dient als Wrapper-Komponente für die meisten Anforderungen des CSS-Dienstprogramms.</p>
 
-The Box component packages [all the style functions](/system/basics/#all-inclusive) that are exposed in `@material-ui/system`. It's created using the [`styled()`](/css-in-js/api/#styled-style-function-component) function of `@material-ui/styles`.
+Die Box-Komponenten packt [alle Stilfunktionen](/system/basics/#all-inclusive), die in `@material-ui/system` verfügbar sind. It's created using the [`styled()`](/css-in-js/api/#styled-style-function-component) function of `@material-ui/styles`.
 
 ## Beispiel
 
