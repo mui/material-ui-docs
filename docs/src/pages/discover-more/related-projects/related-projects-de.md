@@ -1,4 +1,4 @@
-# Related projects
+# Verwandte Projekte
 
 <p class="description">We have carefully curated a list of libraries that are worth having a look at.</p>
 
