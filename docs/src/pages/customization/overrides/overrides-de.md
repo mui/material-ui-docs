@@ -122,7 +122,7 @@ const styles = {
 };
 ```
 
-compiles to:
+kompiliert zu:
 
 ```css
 .root-x.disable-x {
@@ -130,7 +130,7 @@ compiles to:
 }
 ```
 
-⚠️ You need to apply the two generated class names (`root` & `disabled`) to the DOM to make it work.
+⚠️ Sie müssen die beiden generierten Klassennamen (`root` & `disabled`) an das DOM übergeben, damit es funktioniert.
 
 ```jsx
 <Button
@@ -144,19 +144,19 @@ compiles to:
 
 {{"demo": "pages/customization/overrides/ClassesState.js"}}
 
-### Overriding with inline-style
+### Überschreiben mit Inline-Style
 
-The second way to override the style of a component is to use the **inline-style** approach. Every component provides a `style` property. These properties are always applied to the root element.
+Die zweite Möglichkeit, den Stil einer Komponente zu überschreiben, ist die Verwendung des **Inline-Stils** Ansatzes. Jede Komponente bietet eine `style` Eigenschaft. Diese Eigenschaft werden immer auf das unterste Element angewendet.
 
-You don't have to worry about CSS specificity as the inline-style takes precedence over the regular CSS.
+Sie müssen sich keine Gedanken über die CSS-Spezifität machen, da der Inline-Stil Vorrang vor dem regulären CSS hat.
 
 {{"demo": "pages/customization/overrides/InlineStyle.js"}}
 
-[When should I use inline-style vs classes?](/getting-started/faq/#when-should-i-use-inline-style-vs-classes-)
+[Wann sollte ich Inline-Styles und wann Klassen verwenden?](/getting-started/faq/#when-should-i-use-inline-style-vs-classes-)
 
 ## 2. Dynamische Variation für eine einmalige Situation
 
-You have learned how to override the style of the Material-UI components in the previous sections. Now, let's see how we can make these overrides dynamic. We demonstrate 5 alternatives, each has it's pros and cons.
+Sie haben gelernt, wie Sie den Stil der Material-UI-Komponenten in den vorherigen Abschnitten überschreiben. Now, let's see how we can make these overrides dynamic. We demonstrate 5 alternatives, each has it's pros and cons.
 
 ### Dynamic CSS
 
