@@ -14,30 +14,30 @@ Schieberegler können an beiden Enden der Leiste Symbole enthalten, die einen We
 
 Mit Schiebereglern vorgenommene Änderungen sind sofort wirksam, sodass ein Benutzer Anpassungen vornehmen kann, bis er seine Präferenz findet. Sie sollten nicht mit Einstellungen gepaart werden, bei denen die Rückmeldungen von Benutzern nur geringfügig verzögert werden.
 
-#### Current state
+#### Aktueller Zustand
 
-Sliders reflect the current state of the settings they control.
+Schieberegler zeigen den aktuellen Status der Einstellungen an, die sie steuern.
 
-## Simple slider
+## Einfacher Schieberegler
 
 {{"demo": "pages/lab/slider/SimpleSlider.js"}}
 
-## Slider with steps
+## Schieberegler mit Stufen
 
 {{"demo": "pages/lab/slider/StepSlider.js"}}
 
-## Disabled slider
+## Deaktivierter Schieberegler
 
 {{"demo": "pages/lab/slider/DisabledSlider.js"}}
 
-## Vertical slider
+## Vertikaler Schieberegler
 
 {{"demo": "pages/lab/slider/VerticalSlider.js"}}
 
-## Custom thumb
+## Benutzerdefinierter Anzeigepunkte
 
 {{"demo": "pages/lab/slider/CustomIconSlider.js"}}
 
-## Custom value reducer
+## Benutzerdefinierte Wertreduzierer
 
 {{"demo": "pages/lab/slider/CustomValueReducerSlider.js"}}
