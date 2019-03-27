@@ -97,7 +97,7 @@ Text Buttons（文本按钮），Contained Buttons（实心按钮），Floating 
 
 ## Third-party routing library（第三方路由库）
 
-一个常见的用例是使用按钮来触发导航到新页面。 `ButtonBase` 组件提供了一个处理此用例的属性：`component`。 However for certain focus polyfills `ButtonBase` requires the DOM node of the provided component. This is achieved by attaching a ref to the component and expecting that the component forwards this ref to the underlying DOM node. 鉴于我们的许多交互式组件都依赖于 `ButtonBase`，你几乎可以在任何地方使用它：
+一个常见的用例是使用按钮来触发导航到新页面。 `ButtonBase` 组件提供了一个处理此用例的属性：`component`。 然而，一些特定`ButtonBase`的代码需要所给组件的 DOM 节点。 在组件上附加一个 ref，并且预期此组件能够将这个 ref 传递到下层 DOM 节点，通过这样的方法可以实现。 鉴于我们的许多交互式组件都依赖于 `ButtonBase`，你几乎可以在任何地方使用它：
 
 ```jsx
 import React from 'react';
