@@ -54,9 +54,9 @@ Als Erstes müssen wir bei jeder Anfrage ein neues `ServerStyleSheets` erstellen
 
 Beim Rendern wickeln wir die `App`, unsere Wurzelkomponente, in einem [`StylesProvider`](/css-in-js/api/#stylesprovider) und [`ThemeProvider`](/css-in-js/api/#themeprovider) ein, um die Stilkonfiguration und das `Theme` für alle Komponenten im Komponentenbaum verfügbar zu machen.
 
-The key step in server-side rendering is to render the initial HTML of our component **before** we send it to the client side. To do this, we use [ReactDOMServer.renderToString()](https://reactjs.org/docs/react-dom-server.html).
+Der wichtigste Schritt beim serverseitigen Rendern ist das Rendern des ursprünglichen HTM-Codes unserer Komponente **bevor** wir es an den Kunden senden. Dazu verwenden wir [ReactDOMServer.renderToString()](https://reactjs.org/docs/react-dom-server.html).
 
-We then get the CSS from our `sheets` using `sheets.toString()`. We will see how this is passed along in our `renderFullPage` function.
+Wir erhalten dann das CSS aus unsere `Sheets` mit `sheets.toString()`. Wir werden sehen, wie dies in unserer ` enderFullPage`-Funktion weitergegeben wird.
 
 ```jsx
 import ReactDOMServer from 'react-dom/server';
@@ -65,7 +65,7 @@ import { ServerStyleSheets, ThemeProvider } from '@material-ui/styles';
 import green from '@material-ui/core/colors/green';
 import red from '@material-ui/core/colors/red';
 
-// Create a theme object.
+// Erstellen des Theme Objekts.
 const theme = createMuiTheme({
   palette: {
     primary: green,
@@ -76,7 +76,7 @@ const theme = createMuiTheme({
 function handleRender(req, res) {
   const sheets = new ServerStyleSheets();
 
-  // Render the component to a string.
+  // Rednern des Komponenten als String.
   const html = ReactDOMServer.renderToString(
     sheets.collect(
       <ThemeProvider theme={theme}>
@@ -85,10 +85,10 @@ function handleRender(req, res) {
     ),
   );
 
-  // Grab the CSS from our sheets.
+  // Entnahme des CSS aus dem Sheet.
   const css = sheets.toString();
 
-  // Send the rendered page back to the client.
+  // Zurücksenden der gerenderten Seite an den Client.
   res.send(renderFullPage(html, css));
 }
 ```
