@@ -119,7 +119,7 @@ const Link = React.forwardRef((props, ref) => <RouterLink {...props} innerRef={r
 import { Link } from 'react-router-dom'
 import Button from '@material-ui/core/Button';
 
-// use `ref` instead of `innerRef` with react-router-dom@^5.0.0
+// 在 react-router-dom@^5.0.0 中使用 `ref` 而不是 `innerRef`
 const MyLink = React.forwardRef((props, ref) => <Link to="/open-collective" {...props} innerRef={ref} />);
 
 <Button component={MyLink}>
