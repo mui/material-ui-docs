@@ -14,16 +14,16 @@ Die schwebende Aktionstaste kann verwandte Aktionen anzeigen.
 
 {{"demo": "pages/lab/speed-dial/SpeedDials.js"}}
 
-## Custom close icon
+## Kundenspezifisches Schließsymbol
 
-You can provide an alternate icon for the closed and open states using the `icon` and `openIcon` props of the `SpeedDialIcon` component.
+Sie können ein alternatives Symbol für den geschlossenen und den geöffneten Zustand mit den `icon` und `openIcon` Eigenschaften der Komponente `SpeedDialIcon` bereitstellen.
 
 {{"demo": "pages/lab/speed-dial/OpenIconSpeedDial.js"}}
 
-## Persistent action tooltips
+## Anhaltenden Aktion Tooltips
 
-The SpeedDialActions tooltips can be be displayed persistently so that users don't have to long-press in order to see the tooltip on touch devices.
+Die SpeedDialActions-Tooltips können dauerhaft angezeigt werden, sodass Benutzer nicht lange drücken müssen, um den Tooltip auf Touch-Geräten anzuzeigen.
 
-It is enabled here across all devices for demo purposes, but in production it could use the `isTouch` logic to conditionally set the property.
+Sie ist hier für alle Geräte zu Demonstrationszwecken aktiviert, in der Produktion jedoch kann durch die `isTouch` Logik die Eigenschaft bedingt festgelegt werden.
 
 {{"demo": "pages/lab/speed-dial/SpeedDialTooltipOpen.js"}}
