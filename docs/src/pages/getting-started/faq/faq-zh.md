@@ -16,21 +16,22 @@
 - 对于你的React Tree（React树控件）而言，你在使用`StylesProvider`构建**subset（分支）**。
 - You are using a bundler and it is splitting code in a way that causes multiple class name generator instances to be created.
 
-> If you are using webpack with the [SplitChunksPlugin](https://webpack.js.org/plugins/split-chunks-plugin/), try configuring the [`runtimeChunk` setting under `optimizations`](https://webpack.js.org/configuration/optimization/#optimization-runtimechunk).
+> >如果你正使用带有[SplitChunksPlugin](https://webpack.js.org/plugins/split-chunks-plugin/) 的webpack，请尝试在[`优化项(optimizations)`下</code>配置 `runtimeChunk</2></a> 。</p>
+</blockquote>
 
-总的来说，通过在其组件树顶部的[`StylesProvider`](/css-in-js/api/#stylesprovider)来包装每个 Material-UI 应用程序，**并且在他们之间使用单个类名称生成器**，能够简单地解决这个问题。
-
-⚠️ If you are in a hurry, we provide an option to make the class names **deterministic** as a quick escape hatch: [`dangerouslyUseGlobalCSS`](/css-in-js/advanced/#deterministic-class-names).
-
-## 为什么当打开Modal（模态框）时，fixed positioned（位置固定的）元素会移动？
-
-一旦打开模态框，我们就会禁用滚动。 而模态框是应该是唯一的交互式内容时，这可以防止与背景交互，但是，删除滚动条可以恢复**fixed positioned(固定位置的)元素**的移动。 在这种情况下，您可以应用全局`.mui-fixed`类名称来告知 Material-UI 来处理这些元素。
-
-## 如何在全局禁用 ripple effect（涟漪效果）？
-
-涟漪效应完全来自` BaseButton `零件。 您可以通过在您的主题中提供以下内容，来全局地禁用涟漪效果：
-
-```js
+<p>总的来说，通过在其组件树顶部的<a href="/css-in-js/api/#stylesprovider"><code>StylesProvider`](https://webpack.js.org/configuration/optimization/#optimization-runtimechunk)来包装每个 Material-UI 应用程序，**并且在他们之间使用单个类名称生成器**，能够简单地解决这个问题。
+> 
+> ⚠️ 放心，我们提供了[`dangerouslyUseGlobalCSS`](/css-in-js/advanced/#deterministic-class-names)这个选项，以使类名称的**确定性**成为一个快速的解决方案：.
+> 
+> ## 为什么当打开Modal（模态框）时，fixed positioned（位置固定的）元素会移动？
+> 
+> 一旦打开模态框，我们就会禁用滚动。 而模态框是应该是唯一的交互式内容时，这可以防止与背景交互，但是，删除滚动条可以恢复**fixed positioned(固定位置的)元素**的移动。 在这种情况下，您可以应用全局`.mui-fixed`类名称来告知 Material-UI 来处理这些元素。
+> 
+> ## 如何在全局禁用 ripple effect（涟漪效果）？
+> 
+> 涟漪效果完全来自` BaseButton `零件。 您可以通过在您的主题中提供以下内容，来全局地禁用涟漪效果：
+> 
+> ```js
 import { createMuiTheme } from '@material-ui/core';
 
 const theme = createMuiTheme({
@@ -131,4 +132,4 @@ export default withTheme(withStyles(styles)(Modal));
 
 如果您在商业项目中使用了Material-UI，并希望通过成为我们的**赞助商</0 >来支持我们的持续发展，或者您一个业余项目或者爱好项目，并想成为我们的支持者， 您都可以通过[OpenCollective](https://opencollective.com/material-ui)实现。</p> 
 
-我们队所有筹集的资金都是透明化管理的，而赞助商在 README 和 Material-UI 主页上都会获得认可。
+筹集的所有资金都是透明管理的，赞助商在README和Material-UI主页上获得认可。
