@@ -2,7 +2,7 @@
 title: Auswahl React-Komponente
 components: Select, NativeSelect
 ---
-# Auswählen
+# Auswähler (Selects)
 
 <p class="description">Auswahllkomponenten werden zum Sammeln von vom Benutzer bereitgestellten Informationen aus einer Liste von Optionen verwendet.</p>
 
