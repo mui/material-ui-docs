@@ -240,7 +240,7 @@ export default App;
 
 ## Server-Rendering
 
-This example returns a string of html and inlines the critical css required right before it’s used:
+In diesem Beispiel wird ein Html-String zurückgegeben und die erforderliche kritische Css direkt vor ihrer Verwendung eingebettet:
 
 ```jsx
 import ReactDOMServer from 'react-dom/server';
@@ -266,19 +266,19 @@ function render() {
 }
 ```
 
-You can [follow our server side guide](/guides/server-rendering/) for a more detailed example or read the [`ServerStyleSheets`](/css-in-js/api/#serverstylesheets) API documentation.
+Sie können [unserer serverseitigen Anleitung](/guides/server-rendering/) für ein detaillierteres Beispiel folgen oder lesen Sie die [`ServerStyleSheets`](/css-in-js/api/#serverstylesheets) API-Dokumentation.
 
 ### Gatsby
 
-We have [an official plugin that](https://github.com/hupe1980/gatsby-plugin-material-ui) enables server-side rendering for @material-ui/styles. Refer to the plugin's page for setup and usage instructions.
+Wir haben [ein offizielles Plugin](https://github.com/hupe1980/gatsby-plugin-material-ui), welches serverseitiges Rendering für @material-ui/styles ermöglicht. Anleitungen zur Einrichtung und Verwendung finden Sie auf der Seite des Plugins.
 
-Refer to [our example](https://github.com/mui-org/material-ui/blob/next/examples/gatsby-next/pages/_document.js) for an up-to-date usage example.
+Siehe [unsere Beispiel](https://github.com/mui-org/material-ui/blob/next/examples/gatsby-next/pages/_document.js) für ein aktuelles Verwendungsbeispiel.
 
 ### Next.js
 
-You need to have a custom `pages/_document.js`. Then [copy the logic](https://github.com/mui-org/material-ui/blob/next/examples/nextjs-next/pages/_document.js) to inject the server-side rendered styles into the `<head>` element.
+Sie müssen eine benutzerdefinierte `pages/_document.js` haben. Dann [kopiere die Logik](https://github.com/mui-org/material-ui/blob/next/examples/nextjs-next/pages/_document.js), um die serverseitigen gerenderten Stile in das `<head>`-Element einzufügen.
 
-Refer to [our example](https://github.com/mui-org/material-ui/blob/next/examples/nextjs-next/pages/_document.js) for an up-to-date usage example.
+Siehe [unsere Beispiel](https://github.com/mui-org/material-ui/blob/next/examples/nextjs-next/pages/_document.js) für ein aktuelles Verwendungsbeispiel.
 
 ## Klassennamen
 
@@ -294,7 +294,7 @@ const useStyles = makeStyles({
 });
 ```
 
-It will generate a `AppBar-root-123` class name. Das folgende CSS wird nicht funktionieren:
+Es wird ein `AppBar-root-123` Klassenname generiert. Das folgende CSS wird nicht funktionieren:
 
 ```css
 .AppBar-root-123 {
@@ -304,7 +304,7 @@ It will generate a `AppBar-root-123` class name. Das folgende CSS wird nicht fun
 
 Sie müssen die `Klassen` Eigenschaft einer Komponente verwenden, um sie zu überschreiben. Dank der nicht-deterministische Natur der Klassennamen, können wir Optimierungen für Entwicklung und Produktion implementieren. Sie sind in der Entwicklung einfach zu debuggen und in der Produktion so kurz wie möglich:
 
-- In **development**, the class name will be: `.AppBar-root-123`, following this logic:
+- In der **Entwicklung** lauten der Klassenname: `.AppBar-root-123` nach dieser Logik:
 
 ```js
 const sheetName = 'AppBar';
@@ -314,7 +314,7 @@ const identifier = 123;
 const className = `${sheetName}-${ruleName}-${identifier}`;
 ```
 
-- In **production**, the class name will be: `.jss123`, following this logic:
+- In der **Produktion** lauten der Klassenname: `.jss123` nach dieser Logik:
 
 ```js
 const productionPrefix = 'jss';
@@ -402,7 +402,7 @@ header('Content-Security-Policy')
   .set(`default-src 'self'; style-src: 'self' 'nonce-${nonce}';`);
 ```
 
-If you are using Server-Side Rendering (SSR), you should pass the nonce in the `<style>` tag on the server.
+Wenn Sie Server Side-Rendering (SSR) verwenden, sollten Sie die Nonce im `<style>`-Tag des Servers übergeben.
 
 ```jsx
 <style
