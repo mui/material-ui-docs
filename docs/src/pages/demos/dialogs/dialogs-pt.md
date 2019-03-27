@@ -49,9 +49,9 @@ Os fórmulas de diálogo permite que os usuários preencham os campos de um fór
 
 {{"demo": "pages/demos/dialogs/FormDialog.js"}}
 
-## Customized dialog
+## Diálogo personalizado
 
-If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here is one example of how you can customize the `DialogTitle` to support a close button.
+Se você leu a página [documentação de sobreposição (Overrides)](/customization/overrides/), mas você não está confiante em como utilizar, aqui está um exemplo de como você pode personalizar o `DialogTitle` para ter um botão de fechar.
 
 ⚠️ Embora a especificação do design do material incentive o tema, este exemplo está fora do caminho comum.
 
