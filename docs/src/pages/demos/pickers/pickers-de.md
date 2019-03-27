@@ -1,8 +1,8 @@
 ---
-title: Datums-Auswahl, Zeit-Auswahl React Komponenten
+title: Date Picker, Time Picker React-Komponenten
 components: TextField
 ---
-# Picker
+# Auswähler (Picker)
 
 <p class="description">Pickers bieten eine einfache Möglichkeit, um einen einzelnen Wert aus einem vorher festgelegten Satz auszuwählen.</p>
 
