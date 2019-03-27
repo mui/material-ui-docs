@@ -1,6 +1,6 @@
 # Haltepunkte
 
-<p class="description">Ein Haltepunkt ist der Bereich vorbestimmter Bildschirmgrößen, für die bestimmte Layoutanforderungen gelten.</p>
+<p class="description">API that enables the use of breakpoints in a wide variety of contexts.</p>
 
 Für eine optimale Benutzererfahrung müssen Materialdesign-Schnittstellen in der Lage sein, ihr Layout an verschiedenen Haltepunkten anzupassen. Material-UI verwendet eine **vereinfachte** Implementierung der ursprünglichen [Spezifikation](https://material.io/design/layout/responsive-layout-grid.html#breakpoints).
 
@@ -209,10 +209,10 @@ Einige Implementierungsdetails, die interessant sein könnten:
 ```js
 const theme = createMuiTheme({
   props: {
-    // withWidth Komponente ⚛️
+    // withWidth component ⚛️
     MuiWithWidth: {
-      // Initiale Breite
-      initialWidth: 'lg', // Haltepunkte ist global gesetzt 
+      // Initial width property
+      initialWidth: 'lg', // Breakpoint being globally set 
     },
   },
 });
