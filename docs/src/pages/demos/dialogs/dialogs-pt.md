@@ -63,7 +63,7 @@ Se você leu a página [documentação de sobreposição (Overrides)](/customiza
 
 ## Tamanhos opcionais
 
-You can set a dialog maximum width by using the `maxWidth` enumerable in combination with the `fullWidth` boolean. When the `fullWidth` property is true, the dialog will adapt based on the `maxWidth` value.
+Você pode definir uma largura máxima usando `maxWidth` enumerável combinado com o booleano `fullWidth`. Quando a propriedade `fullWidth` for verdadeira, a caixa de diálogo será adaptada com base no valor definido em `maxWidth`.
 
 {{"demo": "pages/demos/dialogs/MaxWidthDialog.js"}}
 
@@ -73,17 +73,17 @@ You may make a dialog responsively full screen the dialog using `withMobileDialo
 
 {{"demo": "pages/demos/dialogs/ResponsiveDialog.js"}}
 
-## Confirmation dialogs
+## Diálogos de confirmação
 
-Confirmation dialogs require users to explicitly confirm their choice before an option is committed. For example, users can listen to multiple ringtones but only make a final selection upon touching “OK”.
+As caixas de diálogo de confirmação exigem que os usuários confirmem explicitamente suas escolhas antes que uma opção seja confirmada. Por exemplo, os usuários podem ouvir vários toques, mas apenas fazer uma seleção final ao tocar em "OK".
 
-Touching “Cancel” in a confirmation dialog, or pressing Back, cancels the action, discards any changes, and closes the dialog.
+Tocar em “Cancelar” em uma caixa de diálogo de confirmação ou pressionar Voltar, cancela a ação, descarta todas as alterações e fecha a caixa de diálogo.
 
 {{"demo": "pages/demos/dialogs/ConfirmationDialog.js"}}
 
-## Accessibility
+## Acessibilidade
 
-Follow the [Modal accessibility section](/utils/modal/#accessibility).
+Siga a seção [Acessibilidade Modal](/utils/modal/#accessibility).
 
 ## Scrolling long content
 
