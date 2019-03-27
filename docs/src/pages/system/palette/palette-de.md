@@ -2,7 +2,7 @@
 
 <p class="description">Vermitteln Sie Bedeutung durch Farbe mit einer Handvoll Farbgebrauchsklassen. Unterstützt auch die Gestaltung von Links mit Hover-Status.</p>
 
-## Farbe
+## Farbe (Color)
 
 ```jsx
 <Box color="primary.main">…
