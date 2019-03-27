@@ -1,4 +1,4 @@
-# Breakpoints
+# ブレイクポイント
 
 <p class="description">API that enables the use of breakpoints in a wide variety of contexts.</p>
 
