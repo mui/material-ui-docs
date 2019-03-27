@@ -1,27 +1,27 @@
 # Server-Rendering
 
-<p class="description">The most common use case for server-side rendering is to handle the initial render when a user (or search engine crawler) first requests your app.</p>
+<p class="description">Der gebräuchlichste Anwendungsfall für das serverseitige Rendern ist das anfängliche Rendern, wenn ein Benutzer (oder Suchmaschinen-Crawler) Ihre App zum ersten Mal anfordert.</p>
 
-When the server receives the request, it renders the required component(s) into an HTML string, and then sends it as a response to the client. From that point on, the client takes over rendering duties.
+Wenn der Server die Anforderung empfängt, stellt er die erforderlichen Komponenten in einem HTML-String dar und sendet sie als Antwort an den Client. Ab diesem Zeitpunkt übernimmt der Client die Rendering-Aufgaben.
 
-## Material-UI on the server
+## Material-UI auf dem Server
 
-Material-UI was designed from the ground-up with the constraint of rendering on the server, but it's up to you to make sure it's correctly integrated. It's important to provide the page with the required CSS, otherwise the page will render with just the HTML then wait for the CSS to be injected by the client, causing it to flicker (FOUC). To inject the style down to the client, we need to:
+Die Material-UI wurde von Grund auf mit der Möglichkeit des Renderns auf dem Server entwickelt. Sie müssen jedoch sicherstellen, dass sie korrekt integriert ist. Es ist wichtig, die Seite mit dem erforderlichen CSS zu versehen, andernfalls wird die Seite nur mit HTM-Code gerendert und dann darauf gewartet, dass der Client das CSS einfügt was zu flackern führt (FOUC). Um den Stil in den Client zu injizieren, müssen wir:
 
-1. Create a fresh, new [`ServerStyleSheets`](/css-in-js/api/#serverstylesheets) instance on every request.
-2. Render the React tree with the server-side collector.
-3. Pull the CSS out.
-4. Pass the CSS along to the client.
+1. Eine neue [`ServerStyleSheets`](/css-in-js/api/#serverstylesheets) Instanz bei jede Anfrage erstellen.
+2. Den React-Baum mit dem serverseitigen Collector rendern.
+3. Das CSS herausziehen.
+4. Das CSS zum Client weiterleiten.
 
-On the client side, the CSS will be injected a second time before removing the server-side injected CSS.
+Auf der Clientseite wird das CSS ein zweites Mal eingefügt, bevor das serverseitige injizierte CSS entfernt wird.
 
 ## Installation
 
-In the following recipe, we are going to look at how to set up server-side rendering.
+Im folgenden Rezept wird beschrieben, wie das serverseitige Rendering eingerichtet wird.
 
-### The server-side
+### Die Server-Seite
 
-The following is the outline for what our server-side is going to look like. We are going to set up an [Express middleware](http://expressjs.com/en/guide/using-middleware.html) using [app.use](http://expressjs.com/en/api.html) to handle all requests that come in to our server. If you're unfamiliar with Express or middleware, just know that our handleRender function will be called every time the server receives a request.
+Im Folgenden wird beschrieben, wie unsere Serverseite aussehen wird. Wir werden eine[ Express-Middleware](http://expressjs.com/en/guide/using-middleware.html) mit [ app.use ](http://expressjs.com/en/api.html) einrichten, um alle Anfragen zu bearbeiten, die auf unserem Server eingehen. Wenn Sie mit Express oder Middleware nicht vertraut sind, sollten Sie wissen, dass unsere handleRender-Funktion jedes Mal aufgerufen wird, wenn der Server eine Anfrage erhält.
 
 `server.js`
 
@@ -30,7 +30,7 @@ import express from 'express';
 import React from 'react';
 import App from './App';
 
-// We are going to fill these out in the sections to follow.
+// Diese werden in den folgenden Abschnitten gefüllt.
 function renderFullPage(html, css) {
   /* ... */
 }
@@ -48,11 +48,11 @@ const port = 3000;
 app.listen(port);
 ```
 
-### Handling the Request
+### Verarbeiten der Anfrage
 
-The first thing that we need to do on every request is create a new `ServerStyleSheets`.
+Als Erstes müssen wir bei jeder Anfrage ein neues `ServerStyleSheets` erstellen.
 
-When rendering, we will wrap `App`, our root component, inside a [`StylesProvider`](/css-in-js/api/#stylesprovider) and [`ThemeProvider`](/css-in-js/api/#themeprovider) to make the style configuration and the `theme` available to all components in the component tree.
+Beim Rendern wickeln wir die `App`, unsere Wurzelkomponente, in einem [`StylesProvider`](/css-in-js/api/#stylesprovider) und [`ThemeProvider`](/css-in-js/api/#themeprovider) ein, um die Stilkonfiguration und das `Theme` für alle Komponenten im Komponentenbaum verfügbar zu machen.
 
 The key step in server-side rendering is to render the initial HTML of our component **before** we send it to the client side. To do this, we use [ReactDOMServer.renderToString()](https://reactjs.org/docs/react-dom-server.html).
 
@@ -139,7 +139,7 @@ function Main() {
   return <App />;
 }
 
-// Create a theme object.
+// Ein Theme Objekt wird erstellt.
 const theme = createMuiTheme({
   palette: {
     primary: green,
@@ -223,7 +223,7 @@ function handleRender(req, res) {
     
     You can also ensure the same version in different environments by specifying a specific MUI version in the dependencies of your package.json.
 
-*example of fix (package.json):*
+*beispiel für fix (package.json):*
 
 ```diff
   "dependencies": {
@@ -235,4 +235,4 @@ function handleRender(req, res) {
   },
 ```
 
-- You need to make sure that the server and the client share the same `process.env.NODE_ENV` value.
+- Sie müssen sicherstellen, dass Server und Client denselben `process.env.NODE_ENV verwenden` Wert haben.
