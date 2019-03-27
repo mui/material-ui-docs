@@ -21,7 +21,7 @@ Mecanismo de Toque:
 
 {{"demo": "pages/demos/dialogs/SimpleDialog.js"}}
 
-## Alerts
+## Alerts (Alertas)
 
 Alertas são interrupções urgentes, requerendo confirmação que informou ao usuário a situação.
 
@@ -57,11 +57,11 @@ If you have been reading the [overrides documentation page](/customization/overr
 
 {{"demo": "pages/demos/dialogs/CustomizedDialog.js"}}
 
-## Full-screen dialogs
+## Diálogos em tela cheia
 
 {{"demo": "pages/demos/dialogs/FullScreenDialog.js"}}
 
-## Optional sizes
+## Tamanhos opcionais
 
 You can set a dialog maximum width by using the `maxWidth` enumerable in combination with the `fullWidth` boolean. When the `fullWidth` property is true, the dialog will adapt based on the `maxWidth` value.
 
