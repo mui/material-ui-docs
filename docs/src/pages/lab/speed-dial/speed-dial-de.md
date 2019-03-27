@@ -1,16 +1,16 @@
 ---
-title: Speed Dial React component
+title: Schnellwahl React Komponente
 components: SpeedDial, SpeedDialAction, SpeedDialIcon
 ---
 # Schnellwahl
 
-<p class="description">When pressed, a floating action button can display three to six related actions in the form of a speed dial.</p>
+<p class="description">Wenn gedrückt, kann eine schwebende Aktionstaste drei bis sechs verwandte Aktionen in Form einer Kurzwahl anzeigen.</p>
 
-If more than six actions are needed, something other than a FAB should be used to present them.
+Wenn mehr als sechs Aktionen erforderlich sind, sollten andere als FAB verwendet werden, um sie zu präsentieren.
 
-## Simple Speed Dial
+## Einfache Schnellwahl
 
-The floating action button can display related actions.
+Die schwebende Aktionstaste kann verwandte Aktionen anzeigen.
 
 {{"demo": "pages/lab/speed-dial/SpeedDials.js"}}
 
