@@ -46,6 +46,6 @@ Während es von der Material Design-Spezifikation nicht empfohlen wird, können 
 
 {{"demo": "pages/demos/selects/DialogSelect.js"}}
 
-## Text Felder
+## Text Felder (Text Fields)
 
 Die `TextField` Wrapper-Komponente ist ein vollständiges Formularsteuerelement, das eine Beschriftung, Eingabe und Hilfetext enthält. Ein Beispiel für den Auswahlmodus [in diesem Abschnitt](/demos/text-fields/#textfield).
