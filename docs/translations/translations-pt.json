@@ -159,7 +159,7 @@
     "/guides": "Guias",
     "/guides/typescript": "TypeScript",
     "/guides/interoperability": "Style Library Interoperability",
-    "/guides/minimizing-bundle-size": "Minimizing Bundle Size",
+    "/guides/minimizing-bundle-size": "Minimizando o tamanho do pacote",
     "/guides/composition": "Composição",
     "/guides/server-rendering": "Server Rendering",
     "/guides/migration-v3": "Migrando da v3",
