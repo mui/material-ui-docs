@@ -1,6 +1,6 @@
 # Haltepunkte
 
-<p class="description">API that enables the use of breakpoints in a wide variety of contexts.</p>
+<p class="description">API, die die Verwendung von Rasterpunkten in einer Vielzahl von Kontexten ermöglicht.</p>
 
 Für eine optimale Benutzererfahrung müssen Materialdesign-Schnittstellen in der Lage sein, ihr Layout an verschiedenen Haltepunkten anzupassen. Material-UI verwendet eine **vereinfachte** Implementierung der ursprünglichen [Spezifikation](https://material.io/design/layout/responsive-layout-grid.html#breakpoints).
 
