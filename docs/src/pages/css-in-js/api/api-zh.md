@@ -102,9 +102,68 @@ export default function MyComponent() {
 }
 ```
 
+## `ServerStyleSheets`
+
+This is a class helper to handle server-side rendering. The instance offers the following API.
+
+```js
+import { ServerStyleSheets } from '@material-ui/styles';
+
+const sheets = new ServerStyleSheets();
+```
+
+### `sheets.collect(node) => void`
+
+The method wraps your node in a provider element.
+
+```jsx
+import ReactDOMServer from 'react-dom/server';
+
+const html = ReactDOMServer.renderToString(sheets.collect(<App />));
+```
+
+### `sheets.toString() => CSS string`
+
+The method returns the collected styles. It's a CSS string.
+
+```js
+const css = sheets.toString();
+
+const response = `
+<!doctype html>
+<html>
+  <head>
+    <style id="jss-server-side">${css}</style>
+  </head>
+  <body>
+    ...
+  </body>
+</html>
+`;
+```
+
+### `sheets.getStyleElement() => CSS React node`
+
+The method is an alternative to `toString()` when you are rendering the whole page with React.
+
+```jsx
+const style = sheets.getStyleElement();
+
+const response = (
+  <html lang="en" dir="ltr">
+    <Head>
+      {style}
+    </Head>
+    <body>
+      <Main />
+    </body>
+  </html>
+);
+```
+
 ## `styled(Component)(styles, [options]) => Component`
 
-链路的样式表中有一个功能组件的使用**styled components**的模式。
+Link a style sheet with a function component using the **styled components** pattern.
 
 #### 参数
 
@@ -119,7 +178,7 @@ export default function MyComponent() {
 
 #### 返回结果
 
-`Component` ：创建新组件。
+`Component`: The new component created.
 
 #### 例子
 
@@ -138,9 +197,9 @@ export default function StyledComponents() {
 
 ## `StylesProvider`
 
-此组件允许您更改样式解决方案的行为。 It makes the options available down the React tree thanks to the context.
+This component allows you to change the behavior of the styling solution. It makes the options available down the React tree thanks to the context.
 
-它最好应在**组件树的根目录中使用** 。
+It should preferably be used at **the root of your component tree**.
 
 #### PropsBy default, the styles are injected last in the 
 
@@ -187,7 +246,7 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
   </h2>
   
   <p>
-    This component takes a <code>theme</code> property, and makes it available down the React tree thanks to the context. 它最好应在<strong>组件树的根目录中使用</strong> 。
+    This component takes a <code>theme</code> property, and makes it available down the React tree thanks to the context. It should preferably be used at <strong>the root of your component tree</strong>.
   </p>
   
   <h4>
@@ -274,7 +333,7 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
   </h2>
   
   <p>
-    该钩子返回<code>theme</code>对象因此可以在函数组件中使用。
+    This hook returns the <code>theme</code> object so it can be used inside a function component.
   </p>
   
   <h4>
@@ -304,7 +363,7 @@ export default function MyComponent() {
   </h2>
   
   <p>
-    链路的样式表有分量利用<strong>higher-order component</strong>的模式。 它不会修改传递给它的组件；相反，它返回一个具有<code>classes</code>属性的新组件。 这个<code>classes</code>对象包含DOM中注入的class名称。
+    Link a style sheet with a component using the <strong>higher-order component</strong> pattern. It does not modify the component passed to it; instead, it returns a new component with a <code>classes</code> property. This <code>classes</code> object contains the name of the class names injected in the DOM.
   </p>
   
   <p>
@@ -387,7 +446,7 @@ export default withStyles(styles)(MyComponent);
 </code></pre>
   
   <p>
-    此外, 还可以像这样使用 <a href="https://babeljs.io/docs/en/babel-plugin-proposal-decorators">修饰器</a>:
+    Also, you can use as <a href="https://babeljs.io/docs/en/babel-plugin-proposal-decorators">decorators</a> like so:
   </p>
   
   <pre><code class="jsx">import React from 'react';
@@ -414,7 +473,7 @@ export default MyComponent
   </h2>
   
   <p>
-    提供<code>theme</code> object作为输入组件的属性，因此可以在render方法中使用 。
+    Provide the <code>theme</code> object as a property of the input component so it can be used in the render method.
   </p>
   
   <h4>
@@ -432,7 +491,7 @@ export default MyComponent
   </h4>
   
   <p>
-    <code>Component</code> ：创建新组件。 Does forward refs to the inner component.
+    <code>Component</code>: The new component created. Does forward refs to the inner component.
   </p>
   
   <h4>
