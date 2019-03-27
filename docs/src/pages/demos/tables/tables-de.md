@@ -1,8 +1,8 @@
 ---
-title: Tabellen React-Komponente
+title: Table React-Komponente
 components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination, TableRow, TableSortLabel
 ---
-# Tabellen
+# Tabellen (Tables)
 
 <p class="description">Daten-Tabellen zeigen Listen von Daten an. Diese können vollständig benutzerdefiniert gestaltet werden.</p>
 
