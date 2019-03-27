@@ -124,7 +124,7 @@ const html = ReactDOMServer.renderToString(sheets.collect(<App />));
 
 ### `sheets.toString() => CSS string`
 
-The method returns the collected styles. It's a CSS string.
+The method returns the collected styles. Es ist ein CSS-String.
 
 ```js
 const css = sheets.toString();
