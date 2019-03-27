@@ -163,7 +163,7 @@ const response = (
 
 ## `styled(Component)(styles, [options]) => Component`
 
-Link a style sheet with a function component using the **styled components** pattern.
+链路的样式表中有一个功能组件的使用**styled components**的模式。
 
 #### 参数
 
@@ -178,7 +178,7 @@ Link a style sheet with a function component using the **styled components** pat
 
 #### 返回结果
 
-`Component`: The new component created.
+`Component` ：创建新组件。
 
 #### 例子
 
@@ -197,9 +197,9 @@ export default function StyledComponents() {
 
 ## `StylesProvider`
 
-This component allows you to change the behavior of the styling solution. It makes the options available down the React tree thanks to the context.
+此组件允许您更改样式解决方案的行为。 It makes the options available down the React tree thanks to the context.
 
-It should preferably be used at **the root of your component tree**.
+它最好应在**组件树的根目录中使用** 。
 
 #### PropsBy default, the styles are injected last in the 
 
@@ -246,7 +246,7 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
   </h2>
   
   <p>
-    This component takes a <code>theme</code> property, and makes it available down the React tree thanks to the context. It should preferably be used at <strong>the root of your component tree</strong>.
+    This component takes a <code>theme</code> property, and makes it available down the React tree thanks to the context. 它最好应在<strong>组件树的根目录中使用</strong> 。
   </p>
   
   <h4>
@@ -333,7 +333,7 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
   </h2>
   
   <p>
-    This hook returns the <code>theme</code> object so it can be used inside a function component.
+    该钩子返回<code>theme</code>对象因此可以在函数组件中使用。
   </p>
   
   <h4>
@@ -363,7 +363,7 @@ export default function MyComponent() {
   </h2>
   
   <p>
-    Link a style sheet with a component using the <strong>higher-order component</strong> pattern. It does not modify the component passed to it; instead, it returns a new component with a <code>classes</code> property. This <code>classes</code> object contains the name of the class names injected in the DOM.
+    链路的样式表有分量利用<strong>higher-order component</strong>的模式。 它不会修改传递给它的组件；相反，它返回一个具有<code>classes</code>属性的新组件。 这个<code>classes</code>对象包含DOM中注入的class名称。
   </p>
   
   <p>
@@ -446,7 +446,7 @@ export default withStyles(styles)(MyComponent);
 </code></pre>
   
   <p>
-    Also, you can use as <a href="https://babeljs.io/docs/en/babel-plugin-proposal-decorators">decorators</a> like so:
+    此外, 还可以像这样使用 <a href="https://babeljs.io/docs/en/babel-plugin-proposal-decorators">修饰器</a>:
   </p>
   
   <pre><code class="jsx">import React from 'react';
@@ -473,7 +473,7 @@ export default MyComponent
   </h2>
   
   <p>
-    Provide the <code>theme</code> object as a property of the input component so it can be used in the render method.
+    提供<code>theme</code> object作为输入组件的属性，因此可以在render方法中使用 。
   </p>
   
   <h4>
@@ -491,7 +491,7 @@ export default MyComponent
   </h4>
   
   <p>
-    <code>Component</code>: The new component created. Does forward refs to the inner component.
+    <code>Component</code> ：创建新组件。 Does forward refs to the inner component.
   </p>
   
   <h4>
