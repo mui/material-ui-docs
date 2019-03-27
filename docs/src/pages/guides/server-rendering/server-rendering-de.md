@@ -93,9 +93,9 @@ function handleRender(req, res) {
 }
 ```
 
-### Inject Initial Component HTML and CSS
+### Injizieren der ursprüngliche HTML Komponente und CSS
 
-The final step on the server-side is to inject our initial component HTML and CSS into a template to be rendered on the client side.
+Der letzte Schritt auf der Serverseite ist das Einfügen unserer ursprünglichen HTML Komponente und CSS in eine Vorlage, die auf der Clientseite gerendert werden soll.
 
 ```js
 function renderFullPage(html, css) {
@@ -113,9 +113,9 @@ function renderFullPage(html, css) {
 }
 ```
 
-### The Client Side
+### Die Client-Seite
 
-The client side is straightforward. All we need to do is remove the server-side generated CSS. Let's take a look at our client file:
+Die Client-Seite ist unkompliziert. Wir müssen nur das serverseitig erzeugte CSS entfernen. Werfen wir einen Blick auf unsere Client Datei:
 
 `client.js`
 
@@ -155,73 +155,73 @@ ReactDOM.hydrate(
 );
 ```
 
-## Reference implementations
+## Referenzimplementierungen
 
-We host different reference implementations which you can find in the [GitHub repository](https://github.com/mui-org/material-ui) under the [`/examples`](https://github.com/mui-org/material-ui/tree/next/examples) folder:
+Wir bieten verschiedene Referenzimplementierungen an, die Sie im [GitHub-Repository](https://github.com/mui-org/material-ui) finden können unter dem [`/examples`](https://github.com/mui-org/material-ui/tree/next/examples) Ordner:
 
-- [The reference implementation of this tutorial](https://github.com/mui-org/material-ui/tree/next/examples/ssr-next)
+- [Die Referenzimplementierung dieses Tutorials](https://github.com/mui-org/material-ui/tree/next/examples/ssr-next)
 - [Gatsby](https://github.com/mui-org/material-ui/tree/next/examples/gatsby-next)
 - [Next.js](https://github.com/mui-org/material-ui/tree/next/examples/nextjs-next)
 
-## Troubleshooting
+## Problemlösungen
 
-If it doesn't work, in 99% of cases it's a configuration issue. A missing property, a wrong call order, or a missing component. We are very strict about configuration, and the best way to find out what's wrong is to compare your project to an already working setup, check out our [reference implementations](#reference-implementations), bit by bit.
+Wenn dies nicht funktioniert, handelt es sich in 99% der Fälle um ein Konfigurationsproblem. Eine fehlende Eigenschaft, eine falsche Aufrufreihenfolge oder eine fehlende Komponente. Bei der Konfiguration sind wir sehr streng. Um herauszufinden, was falsch ist, können Sie am besten Ihr Projekt mit einem bereits funktionierenden Setup vergleichen. Schauen Sie sich unsere [Referenzimplementierungen](#reference-implementations) an, Stück für Stück.
 
-### CSS works only on first load then is missing
+### CSS funktioniert nur beim ersten Laden, dann fehlt es
 
-The CSS is only generated on the first load of the page. Then, the CSS is missing on the server for consecutive requests.
+Das CSS wird nur beim ersten Laden der Seite generiert. Auf dem Server fehlt dann das CSS bei aufeinanderfolgende Anfragen.
 
-#### Action to Take
+#### Zu ergreifende Maßnahmen
 
-We rely on a cache, the sheets manager, to only inject the CSS once per component type (if you use two buttons, you only need the CSS of the button one time). You need to create **a new `sheets` for each request**.
+Wir setzen auf einen Cache, den Sheets-Manager, um das CSS nur einmal pro Komponententyp (wenn Sie zwei Schaltflächen verwenden, benötigen Sie nur einmal das CSS der Schaltfläche) zu injizieren. Sie müssen **für jede Anfrage ein neues `sheet`** erstellen.
 
-*example of fix:*
+*beispiel für fix:*
 
 ```diff
--// Create a sheets instance.
+- // Eine Sheet Instanz erstellen.
 -const sheets = new ServerStyleSheets();
 
 function handleRender(req, res) {
 
-+ // Create a sheets instance.
++ // Eine Sheet Instanz erstellen.
 + const sheets = new ServerStyleSheets();
 
   //…
 
-  // Render the component to a string.
+  // Rendern des Komponenten als String.
   const html = ReactDOMServer.renderToString(
 ```
 
-### React class name hydration mismatch
+### React Klassenname Hydratation Nichtübereinstimmung
 
-There is a class name mismatch between the client and the server. It might work for the first request. Another symptom is that the styling changes between initial page load and the downloading of the client scripts.
+Es gibt eine Nichtübereinstimmung der Klassennamen zwischen Client und Server. Es könnte für die erste Anfrage funktionieren. Ein anderes Symptom ist, dass sich das Styling zwischen dem Laden der ersten Seite und dem Herunterladen der Clientskripte ändert.
 
-#### Action to Take
+#### Zu ergreifende Maßnahmen
 
-The class names value relies on the concept of [class name generator](/css-in-js/advanced/#class-names). The whole page needs to be rendered with **a single generator**. This generator needs to behave identically on the server and on the client. Zum Beispiel:
+Der Klassennamenwert basiert auf dem Konzept des [Klassennamensgenerators](/css-in-js/advanced/#class-names). Die gesamte Seite muss mit **einem einzigen Generator** gerendert werden. Dieser Generator muss sich auf dem Server und auf dem Client identisch verhalten. Zum Beispiel:
 
-- You need to provide a new class name generator for each request. But you might share a `createGenerateClassName()` between different requests:
+- Sie müssen für jede Anforderung einen neuen Klassennamengenerator bereitstellen. Sie können jedoch einen `createGenerateClassName()` Funktion zwischen verschiedenen Anfragen teilen:
 
-*example of fix:*
+*beispiel für fix:*
 
 ```diff
--// Create a new class name generator.
+- // Erstellen Sie einen neuen Klassennamengenerator.
 -const generateClassName = createGenerateClassName();
 
 function handleRender(req, res) {
 
-+ // Create a new class name generator.
++ // Erstellt einen neuen Klassennamengenerator.
 + const generateClassName = createGenerateClassName();
 
   //…
 
-  // Render the component to a string.
+  // Render der Komponente als String.
   const html = ReactDOMServer.renderToString(
 ```
 
-- You need to verify that your client and server are running the **exactly the same version** of Material-UI. It is possible that a mismatch of even minor versions can cause styling problems. To check version numbers, run `npm list @material-ui/core` in the environment where you build your application and also in your deployment environment.
+- Sie müssen sicherstellen, dass auf Ihrem Client und Server die **exakt dieselbe Version** von Material-UI ausführen. Es kann vorkommen, dass eine Nichtübereinstimmung von selbst kleinerer Versionen zu Stilproblemen führen kann. Um die Versionsnummern zu überprüfen, führen Sie `npm list@material-ui/core` in der Umgebung aus, in der Sie Ihre Anwendung erstellen, und in Ihrer Implementierungsumgebung.
     
-    You can also ensure the same version in different environments by specifying a specific MUI version in the dependencies of your package.json.
+    Sie können die gleiche Version in verschiedenen Umgebungen festlegen, indem Sie in den Abhängigkeiten Ihrer package.json eine bestimmte MUI-Version angeben.
 
 *beispiel für fix (package.json):*
 
