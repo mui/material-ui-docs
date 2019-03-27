@@ -104,7 +104,7 @@ export default function MyComponent() {
 
 ## `ServerStyleSheets`
 
-This is a class helper to handle server-side rendering. The instance offers the following API.
+Dies ist ein Klassenhelfer für das serverseitige Rendering. Die Instanz bietet die folgende API.
 
 ```js
 import { ServerStyleSheets } from '@material-ui/styles';
@@ -114,7 +114,7 @@ const sheets = new ServerStyleSheets();
 
 ### `sheets.collect(node) => void`
 
-The method wraps your node in a provider element.
+Die Methode schließt Ihren Knoten in ein Provider-Element ein.
 
 ```jsx
 import ReactDOMServer from 'react-dom/server';
@@ -124,7 +124,7 @@ const html = ReactDOMServer.renderToString(sheets.collect(<App />));
 
 ### `sheets.toString() => CSS string`
 
-The method returns the collected styles. Es ist ein CSS-String.
+Die Methode gibt die gesammelten Stile zurück. Es ist ein CSS-String.
 
 ```js
 const css = sheets.toString();
@@ -144,7 +144,7 @@ const response = `
 
 ### `sheets.getStyleElement() => CSS React node`
 
-The method is an alternative to `toString()` when you are rendering the whole page with React.
+Die Methode ist eine Alternative zu `toString()`, wenn Sie die gesamte Seite mit React rendern.
 
 ```jsx
 const style = sheets.getStyleElement();
