@@ -4,11 +4,11 @@
 
 When the server receives the request, it renders the required component(s) into an HTML string, and then sends it as a response to the client. From that point on, the client takes over rendering duties.
 
-## Material-UI on the server
+## Material-UI no servidor
 
-Material-UI was designed from the ground-up with the constraint of rendering on the server, but it's up to you to make sure it's correctly integrated. It's important to provide the page with the required CSS, otherwise the page will render with just the HTML then wait for the CSS to be injected by the client, causing it to flicker (FOUC). To inject the style down to the client, we need to:
+O Material-UI foi desenhado da base com as limitações de renderizar no servidor, mas você pode se certificar que será integrado corretamente. É importante fornecer a página com o CSS necessário, caso contrário a página irá renderizar somente o HTML até o CSS ser injetado pelo cliente, causando uma tremulação (FOUC). To inject the style down to the client, we need to:
 
-1. Create a fresh, new [`ServerStyleSheets`](/css-in-js/api/#serverstylesheets) instance on every request.
+1. Cria uma instância nova e fresca do [`ServerStyleSheets`](/css-in-js/api/#serverstylesheets) em cada requisição.
 2. Render the React tree with the server-side collector.
 3. Pull the CSS out.
 4. Pass the CSS along to the client.
