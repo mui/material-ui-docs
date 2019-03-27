@@ -51,6 +51,7 @@
   "traffic": "Tráfego",
   "newest": "Mais recentes",
   "stars": "Estrelas GitHub",
+  "visit": "Visit the website",
   "dashboardTitle": "Painel de controle",
   "dashboardDescr": "Um painel mínimo com barra de tarefas e mini variante. O gráfico é cortesia do Recharts, mas é simples substituir por um alternativo.",
   "signInTitle": "Entrar",
