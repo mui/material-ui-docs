@@ -240,6 +240,46 @@ export default App;
 
 ## Server-Rendering
 
+This example returns a string of html and inlines the critical css required right before it’s used:
+
+```jsx
+import ReactDOMServer from 'react-dom/server';
+import { ServerStyleSheets } from '@material-ui/styles';
+
+function render() {
+  const sheets = new ServerStyleSheets();
+
+  const html = ReactDOMServer.renderToString(sheets.collect(<App />));
+  const css = sheets.toString();
+
+  return `
+<!doctype html>
+<html>
+  <head>
+    <style id="jss-server-side">${css}</style>
+  </head>
+  <body>
+    <div id="root">${html}</div>
+  </body>
+</html>
+  `;
+}
+```
+
+You can [follow our server side guide](/guides/server-rendering/) for a more detailed example or read the [`ServerStyleSheets`](/css-in-js/api/#serverstylesheets) API documentation.
+
+### Gatsby
+
+We have [an official plugin that](https://github.com/hupe1980/gatsby-plugin-material-ui) enables server-side rendering for @material-ui/styles. Refer to the plugin's page for setup and usage instructions.
+
+Refer to [our example](https://github.com/mui-org/material-ui/blob/next/examples/gatsby-next/pages/_document.js) for an up-to-date usage example.
+
+### Next.js
+
+You need to have a custom `pages/_document.js`. Then [copy the logic](https://github.com/mui-org/material-ui/blob/next/examples/nextjs-next/pages/_document.js) to inject the server-side rendered styles into the `<head>` element.
+
+Refer to [our example](https://github.com/mui-org/material-ui/blob/next/examples/nextjs-next/pages/_document.js) for an up-to-date usage example.
+
 ## Klassennamen
 
 Möglicherweise haben Sie festgestellt, dass die Klassennamen, die von unserer Styling-Lösung generiert werden, **nicht deterministisch sind**. Sie können sich also nicht darauf verlassen, dass sie gleich bleiben. Die Klassennamen werden von [unserem Klassennamengenerator generiert](/css-in-js/api/#creategenerateclassname-options-class-name-generator). Nehmen wir den folgenden Stil als Beispiel:
@@ -254,31 +294,31 @@ const useStyles = makeStyles({
 });
 ```
 
-Es wird ein `AppBar-root-5pbwdt` Klassenname generiert. Das folgende CSS wird nicht funktionieren:
+It will generate a `AppBar-root-123` class name. Das folgende CSS wird nicht funktionieren:
 
 ```css
-.AppBar-root-5pbwdt {
+.AppBar-root-123 {
   opacity: 0.6;
 }
 ```
 
 Sie müssen die `Klassen` Eigenschaft einer Komponente verwenden, um sie zu überschreiben. Dank der nicht-deterministische Natur der Klassennamen, können wir Optimierungen für Entwicklung und Produktion implementieren. Sie sind in der Entwicklung einfach zu debuggen und in der Produktion so kurz wie möglich:
 
-- In der **Entwicklung** lauten der Klassenname: `.AppBar-root-5pbwdt` nach dieser Logik:
+- In **development**, the class name will be: `.AppBar-root-123`, following this logic:
 
 ```js
 const sheetName = 'AppBar';
 const ruleName = 'root';
-const identifier = 5pbwdt;
+const identifier = 123;
 
 const className = `${sheetName}-${ruleName}-${identifier}`;
 ```
 
-- In der **Produktion** lauten der Klassenname: `.jss5pbwdt` nach dieser Logik:
+- In **production**, the class name will be: `.jss123`, following this logic:
 
 ```js
 const productionPrefix = 'jss';
-const identifier = 5pbwdt;
+const identifier = 123;
 
 const className = `${productionPrefix}-${identifier}`;
 ```
@@ -362,13 +402,13 @@ header('Content-Security-Policy')
   .set(`default-src 'self'; style-src: 'self' 'nonce-${nonce}';`);
 ```
 
-Wenn Sie Server Side Rendering (SSR) verwenden, sollten Sie die Nonce im `<style>`-Tag des Servers übergeben.
+If you are using Server-Side Rendering (SSR), you should pass the nonce in the `<style>` tag on the server.
 
 ```jsx
 <style
   id="jss-server-side"
   nonce={nonce}
-  dangerouslySetInnerHTML={{ __html: sheetsRegistry.toString() } }
+  dangerouslySetInnerHTML={{ __html: sheets.toString() } }
 />
 ```
 
