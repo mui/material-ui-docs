@@ -1,4 +1,4 @@
-# Farbe
+# Farbe (Color)
 
 <p class="description">Vermitteln Sie Bedeutung durch Farbe. Im Auslieferungszustand haben Sie Zugriff auf alle Farben in der Material Design-Spezifikation.</p>
 
