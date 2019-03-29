@@ -1,5 +1,5 @@
 ---
-title: Composant React Bouton
+title: Composant React Button
 components: Button, Fab, IconButton, ButtonBase, Zoom
 ---
 # Boutons (Buttons)
