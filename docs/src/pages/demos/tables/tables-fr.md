@@ -1,8 +1,8 @@
 ---
-title: Composant React Tableau
+title: Composant React Table
 components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination, TableRow, TableSortLabel
 ---
-# Tableaux (Table)
+# Tables
 
 <p class="description">Les tableaux de données affichent des ensembles de données. Ils peuvent être entièrement personnalisés.</p>
 
