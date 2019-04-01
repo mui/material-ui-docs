@@ -32,18 +32,18 @@ Material-UI предоставляет два компонента для ото
 - [`delete`](https://material.io/tools/icons/?icon=delete&style=baseline) представлена как `@material-ui/icons/Delete`
 - [`delete forever`](https://material.io/tools/icons/?icon=delete_forever&style=baseline) представлена как `@material-ui/icons/DeleteForever`
 
-Для *"тематических"* иконок, добавьте имя темы к названию иконки. Например
+Для *"тематических"* иконок к названию иконки добавляется имя темы. Например
 
 - The Outlined [`delete`](https://material.io/tools/icons/?icon=delete&style=outline) icon is exposed as `@material-ui/icons/DeleteOutlined`
 - The Rounded [`delete`](https://material.io/tools/icons/?icon=delete&style=rounded) icon is exposed as `@material-ui/icons/DeleteRounded`
 - The Two Tone [`delete`](https://material.io/tools/icons/?icon=delete&style=twotone) icon is exposed as `@material-ui/icons/DeleteTwoTone`
 - The Sharp [`delete`](https://material.io/tools/icons/?icon=delete&style=sharp) icon is exposed as `@material-ui/icons/DeleteSharp`
 
-Существует три исключения из данного правила:
+Из данного правила существует три исключения:
 
-- [`3d_rotation`](https://material.io/tools/icons/?icon=3d_rotation&style=baseline) is exposed as `@material-ui/icons/ThreeDRotation`
-- [`4k`](https://material.io/tools/icons/?icon=4k&style=baseline) is exposed as `@material-ui/icons/FourK`
-- [`360`](https://material.io/tools/icons/?icon=360&style=baseline) is exposed as `@material-ui/icons/ThreeSixty`
+- [`3d_rotation`](https://material.io/tools/icons/?icon=3d_rotation&style=baseline) представлена как `@material-ui/icons/ThreeDRotation`
+- [`4k`](https://material.io/tools/icons/?icon=4k&style=baseline) представлена как `@material-ui/icons/FourK`
+- [`4k`](https://material.io/tools/icons/?icon=4k&style=baseline) представлена как `@material-ui/icons/FourK`
 
 {{"demo": "pages/style/icons/SvgMaterialIcons.js"}}
 
