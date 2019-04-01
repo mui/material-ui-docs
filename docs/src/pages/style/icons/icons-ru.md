@@ -27,19 +27,19 @@ Material-UI предоставляет два компонента для ото
 
 #### Использование
 
-Найти конкретную иконку можно на сайте Material: [material.io/tools/icons](https://material.io/tools/icons/?style=baseline). When importing an icon, keep in mind that the names of the icons are `PascalCase`, for instance:
+Найти конкретную иконку можно на сайте Material: [material.io/tools/icons](https://material.io/tools/icons/?style=baseline). При импорте имейте в виду, что для названий иконок используется написание `PascalCase`, например:
 
-- [`delete`](https://material.io/tools/icons/?icon=delete&style=baseline) is exposed as `@material-ui/icons/Delete`
-- [`delete forever`](https://material.io/tools/icons/?icon=delete_forever&style=baseline) is exposed as `@material-ui/icons/DeleteForever`
+- [`delete`](https://material.io/tools/icons/?icon=delete&style=baseline) представлена как `@material-ui/icons/Delete`
+- [`delete forever`](https://material.io/tools/icons/?icon=delete_forever&style=baseline) представлена как `@material-ui/icons/DeleteForever`
 
-For *"themed"* icons, append the theme name to the icon name. For instance with the
+Для *"тематических"* иконок, добавьте имя темы к названию иконки. Например
 
 - The Outlined [`delete`](https://material.io/tools/icons/?icon=delete&style=outline) icon is exposed as `@material-ui/icons/DeleteOutlined`
 - The Rounded [`delete`](https://material.io/tools/icons/?icon=delete&style=rounded) icon is exposed as `@material-ui/icons/DeleteRounded`
 - The Two Tone [`delete`](https://material.io/tools/icons/?icon=delete&style=twotone) icon is exposed as `@material-ui/icons/DeleteTwoTone`
 - The Sharp [`delete`](https://material.io/tools/icons/?icon=delete&style=sharp) icon is exposed as `@material-ui/icons/DeleteSharp`
 
-There are three exceptions to this rule:
+Существует три исключения из данного правила:
 
 - [`3d_rotation`](https://material.io/tools/icons/?icon=3d_rotation&style=baseline) is exposed as `@material-ui/icons/ThreeDRotation`
 - [`4k`](https://material.io/tools/icons/?icon=4k&style=baseline) is exposed as `@material-ui/icons/FourK`
