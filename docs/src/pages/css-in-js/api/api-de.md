@@ -168,7 +168,7 @@ Verknüpfen Sie ein Stylesheet mit einer Funktionskomponente mit dem **styled co
 #### Argumente
 
 1. `Component`: Die Komponente, die verpackt wird.
-2. `styles` (* Function | Object *): Eine Funktion, die die Stile oder ein Stilobjekt generiert. Es wird mit der Komponente verknüpft. Verwenden Sie die Funktionssignatur, wenn Sie Zugriff auf das Theme benötigen. Es ist das erste Argument.
+2. `styles` (* Function | Object *): Eine Funktion, die die Stile oder ein Stilobjekt generiert. Es wird mit der Komponente verknüpft. Verwenden Sie die Funktionssignatur, wenn Sie Zugriff auf das Theme benötigen. It's provided as property of the first argument.
 3. `Optionen` (*Object* [optional]): 
     - `options.defaultTheme` (*Object* [optional]): Das Standarddesign, das verwendet werden soll, wenn ein Theme nicht über einen Theme Provider bereitgestellt wird.
     - `options.withTheme ` (*Boolean* [optional]): Standardeinstellung ist `false`. Übergeben Sie das `Theme` Objekt als Eigenschaft an die Komponente.
@@ -190,8 +190,18 @@ const MyComponent = styled('div')({
   backgroundColor: 'red',
 });
 
+const MyThemeComponent = styled('div')(({
+  theme
+}) => ({
+  padding: theme.spacing(1),
+}));
+
 export default function StyledComponents() {
-  return <MyComponent />;
+  return (
+    <MyThemeComponent>
+      <MyComponent />
+    </MyThemeComponent>
+  );
 }
 ```
 
