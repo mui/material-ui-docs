@@ -137,7 +137,7 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 
 ### Семантические шрифтовые иконки
 
-If your icons have semantic meaning, you need to provide a text alternative only visible to assistive technologies.
+Если у ваших иконок есть семантическое значение, необходимо предоставить текстовую альтернативу, видимую только для вспомогательных технологий.
 
 ```jsx
 import Icon from '@material-ui/core/Icon';
@@ -146,9 +146,9 @@ import Typography from '@material-ui/core/Typography';
 // ...
 
 <Icon>add_circle</Icon>
-<Typography variant="srOnly">Create a user</Typography>
+<Typography variant="srOnly">Создать пользователя</Typography>
 ```
 
-### Reference
+### Справка
 
 - https://developer.paciellogroup.com/blog/2013/12/using-aria-enhance-svg-accessibility/
