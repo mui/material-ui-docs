@@ -56,7 +56,7 @@ import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
 import ThreeDRotation from '@material-ui/icons/ThreeDRotation';
 ```
 
-- If your environment support tree-shaking you can also import the icons this way:
+- Если же у вас настроено tree-shaking, импорт иконок можно осуществлять так:
 
 ```jsx
 import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
@@ -64,21 +64,21 @@ import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 
 Примечание: такой способ импорта именованных экспортов приведет к тому, что *каждая иконка* будет включена в проект, поэтому не рекомендуется его использовать без настройки [tree-shaking](https://webpack.js.org/guides/tree-shaking/). Кроме того, это может повлиять на производительность горячей замены модулей.
 
-### More SVG icons
+### Больше SVG-иконок
 
-Looking for even more SVG icons? There are a lot of projects out there, but [https://materialdesignicons.com](https://materialdesignicons.com/) provides over 2,000 official and community provided icons. [mdi-material-ui](https://github.com/TeamWertarbyte/mdi-material-ui) packages these icons as Material-UI SvgIcons in much the same way as [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) does for the official icons.
+Нужно еще больше SVG-иконок? Проектов существует множество, но, например, [https://materialdesignicons.com](https://materialdesignicons.com/) предоставляет более 2000 иконок, как официальных, так и созданных сообществом. [mdi-material-ui](https://github.com/TeamWertarbyte/mdi-material-ui) запаковывает эти иконки в виде компонентов Material-UI SvgIcons таким же образом, как [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) делает это для официальных иконок.
 
 ## Иконочный шрифт
 
-The `Icon` component will display an icon from any icon font that supports ligatures. As a prerequisite, you must include one, such as the [Material icon font](http://google.github.io/material-design-icons/#icon-font-for-the-web) in your project, for instance, via Google Web Fonts:
+Компонент `Icon` отображает иконку из любого иконочного шрифта с поддержкой лигатур. Предварительно необходимо включить в проект шрифт, такой как [Material icon font](http://google.github.io/material-design-icons/#icon-font-for-the-web), с помощью, например, Google Web Fonts:
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 ```
 
-`Icon` will set the correct class name for the Material icon font. For other fonts, you must supply the class name using the Icon component's `className` property.
+`Icon` корректно установит имя класса для иконочного шрифта Material. Для прочих шрифтов необходимо предоставить имя класса с помощью свойства `className` компонента Icon.
 
-To use an icon simply wrap the icon name (font ligature) with the `Icon` component, for example:
+Чтобы использовать иконку, просто оберните её имя (лигатуру шрифта) в компонент `Icon`, например:
 
 ```jsx
 import Icon from '@material-ui/core/Icon';
