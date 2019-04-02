@@ -111,6 +111,10 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
   +<Typography variantMapping={variantMapping}>
   ```
 
+- [Typography] Change the default variant from `body2` to `body1`. A font size of 16px is a better default than 14px. Bootstrap, material.io or even our documentation use 16px as a default font size. 14px like Ant Design is understandable as Chinese users have a different alphabet. We document 12px as the default font size for Japanese.
+- [Typography] Remove the default color from the typography variants. The color should inherit most of the time. It's the default behavior of the web.
+- [Typography] Rename `color="default"` to `color="initial"` following the logic of #13028. The usage of *default* should be avoided, it lakes semantic.
+
 ### Button
 
 - [Button] Remove the deprecated button variants (flat, raised and fab):
@@ -144,6 +148,14 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
     Foo
   </InputLabel>
   ```
+
+- [InputBase] Change the default box sizing model. It uses the following CSS now:
+  
+  ```css
+  box-sizing: border-box;
+  ```
+  
+  It solves issues with the `fullWidth` prop.
 
 ### レイアウト
 
@@ -235,3 +247,9 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
   - material-ui => MaterialUI
   - react-dom => ReactDOM
   - prop-types => PropTypes
+
+### Modal
+
+- [Modal] Ignore event.defaultPrevented (#14991) @oliviertassinari
+  
+  The new logic closes the Modal even if `event.preventDefault()` is called on the key down escape event. `event.preventDefault()` is meant to stop default behaviors like clicking a checkbox to check it, hitting a button to submit a form, and hitting left arrow to move the cursor in a text input etc. Only special HTML elements have these default behaviors. People should use `event.stopPropagation()` if they don't want to trigger a `onClose` event on the modal.
