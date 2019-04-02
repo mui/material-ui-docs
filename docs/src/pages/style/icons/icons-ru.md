@@ -47,9 +47,9 @@ Material-UI предоставляет два компонента для ото
 
 {{"demo": "pages/style/icons/SvgMaterialIcons.js"}}
 
-#### Imports
+#### Импорт
 
-- If your environment doesn't support tree-shaking, the **recommended** way to import the icons is the following:
+- Если ваша среда не поддерживает tree-shaking, **рекомендуется** импортировать иконки следующим образом:
 
 ```jsx
 import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
@@ -62,7 +62,7 @@ import ThreeDRotation from '@material-ui/icons/ThreeDRotation';
 import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 ```
 
-Note: Importing named exports in this way will result in the code for *every icon* being included in your project, so is not recommended unless you configure [tree-shaking](https://webpack.js.org/guides/tree-shaking/). It may also impact Hot Module Reload performance.
+Примечание: такой способ импорта именованных экспортов приведет к тому, что *каждая иконка* будет включена в проект, поэтому не рекомендуется его использовать без настройки [tree-shaking](https://webpack.js.org/guides/tree-shaking/). Кроме того, это может повлиять на производительность горячей замены модулей.
 
 ### More SVG icons
 
