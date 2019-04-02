@@ -168,7 +168,7 @@ const response = (
 #### 参数
 
 1. `Component` ：将被包装的组件。
-2. ` styles `(* Function | Object *): 生成样式或样式对象的函数。 它将链接到组件。 如果需要访问主题, 请使用函数签名。 它作为第一个参数提供。
+2. ` styles `(* Function | Object *): 生成样式或样式对象的函数。 它将链接到组件。 如果需要访问主题, 请使用函数签名。 It's provided as property of the first argument.
 3. `选项` (*Object* [optional]): 
     - `options.defaultTheme`（*Object* [optional]）：如果未通过主题提供者提供主题，则使用默认主题。
     - ` options.withTheme ` (*Boolean* [optional]): 默认值为 `false`。 将 ` theme ` 对象作为属性提供给组件。
@@ -190,8 +190,18 @@ const MyComponent = styled('div')({
   backgroundColor: 'red',
 });
 
+const MyThemeComponent = styled('div')(({
+  theme
+}) => ({
+  padding: theme.spacing(1),
+}));
+
 export default function StyledComponents() {
-  return <MyComponent />;
+  return (
+    <MyThemeComponent>
+      <MyComponent />
+    </MyThemeComponent>
+  );
 }
 ```
 
