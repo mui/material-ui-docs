@@ -94,29 +94,29 @@ import Icon from '@material-ui/core/Icon';
 
 ### Font Awesome
 
-[Font Awesome](https://fontawesome.com/icons) can be used with the `Icon` component as follow:
+[Font Awesome](https://fontawesome.com/icons) можно использовать с компонентом `Icon` следующим образом:
 
 {{"demo": "pages/style/icons/FontAwesome.js", "hideEditButton": true}}
 
-## Font vs SVG. Which approach to use?
+## Шрифт или SVG. Какой подход использовать?
 
 Both approaches work fine, however, there are some subtle differences, especially in terms of performance and rendering quality. Whenever possible SVG is preferred as it allows code splitting, supports more icons, renders faster and better.
 
-For more details, you can check out [why GitHub migrated](https://blog.github.com/2016-02-22-delivering-octicons-with-svg/) from font icons to SVG icons.
+За более подробной информацией по данному вопросу можно обратиться к статье GitHub [о причинах их перехода](https://blog.github.com/2016-02-22-delivering-octicons-with-svg/) от шрифтовых иконок к SVG.
 
-## Accessibility
+## Доступность
 
-Icons can convey all sorts of meaningful information, so it’s important that they reach the largest amount of people possible. There are two use cases you’ll want to consider: - **Decorative Icons** are only being used for visual or branding reinforcement. If they were removed from the page, users would still understand and be able to use your page. - **Semantic Icons** are ones that you’re using to convey meaning, rather than just pure decoration. This includes icons without text next to them used as interactive controls — buttons, form elements, toggles, etc.
+Icons can convey all sorts of meaningful information, so it’s important that they reach the largest amount of people possible. Существует два варианта использования, которые необходимо учесть: - **Декоративные иконки** используются только для визуального подкрепления или брендинга. Если удалить их со страницы, пользователи всё равно смогут её использовать, им всё будет понятно. - **Семантические иконки** – это те, которые используются для передачи смысла, а не только для украшения. В данную группу входят иконки без текста, используемые в качестве интерактивных элементов управления – кнопки, элементы форм, переключатели, и так далее.
 
-### Decorative SVG Icons
+### Декоративные SVG-иконки
 
-If your icons are purely decorative, you’re already done! We add the `aria-hidden=true` attribute so that your icons are properly accessible (invisible).
+Если у вас чисто декоративные иконки, почти всё уже готово! Добавим атрибут `aria-hidden=true` для правильной настройки их доступности (невидимость).
 
-### Semantic SVG Icons
+### Семантические SVG-иконки
 
-If your icon has semantic meaning, all you need to do is throw in a `titleAccess="meaning"` property. We add the `role="img"` attribute and the `<title>` element so that your icons are properly accessible.
+Если у вашей иконки есть семантическое значение, необходимо только добавить свойство `titleAccess="значение"`. Для правильной настройки доступности добавим атрибут `role="img"` и элемент `<title>`.
 
-In the case of focusable interactive elements, like when used with an icon button, you can use the `aria-label` property:
+В случае фокусируемых интерактивных элементов, например, кнопки с иконкой, можно использовать свойство `aria-label`:
 
 ```jsx
 import IconButton from '@material-ui/core/IconButton';
@@ -131,11 +131,11 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 </IconButton>
 ```
 
-### Decorative Font Icons
+### Декоративные шрифтовые иконки
 
-If your icons are purely decorative, you’re already done! We add the `aria-hidden=true` attribute so that your icons are properly accessible (invisible).
+Если у вас чисто декоративные иконки, почти всё уже готово! Добавим атрибут `aria-hidden=true` для правильной настройки их доступности (невидимость).
 
-### Semantic Font Icons
+### Семантические шрифтовые иконки
 
 If your icons have semantic meaning, you need to provide a text alternative only visible to assistive technologies.
 
