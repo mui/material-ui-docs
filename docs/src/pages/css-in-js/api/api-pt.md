@@ -168,7 +168,7 @@ Link a style sheet with a function component using the **styled components** pat
 #### Argumentos
 
 1. `Component`: The component that will be wrapped.
-2. `styles` (*Function | Object*): Uma função que gera os estilos ou um objeto de estilos. Ele será vinculado ao componente. Use a assinatura da função se você precisar ter acesso ao tema. É fornecido como o primeiro argumento.
+2. `styles` (*Function | Object*): Uma função que gera os estilos ou um objeto de estilos. Ele será vinculado ao componente. Use a assinatura da função se você precisar ter acesso ao tema. It's provided as property of the first argument.
 3. `options` (*Object* [optional]): 
     - `options.defaultTheme` (*Object* [optional]): The default theme to use if a theme isn't supplied through a Theme Provider.
     - `options.withTheme` (*Boolean* [optional]): Defaults to `false`. Provide the `theme` object to the component as a property.
@@ -190,8 +190,18 @@ const MyComponent = styled('div')({
   backgroundColor: 'red',
 });
 
+const MyThemeComponent = styled('div')(({
+  theme
+}) => ({
+  padding: theme.spacing(1),
+}));
+
 export default function StyledComponents() {
-  return <MyComponent />;
+  return (
+    <MyThemeComponent>
+      <MyComponent />
+    </MyThemeComponent>
+  );
 }
 ```
 
