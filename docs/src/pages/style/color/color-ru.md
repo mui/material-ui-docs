@@ -45,7 +45,7 @@ const color = HUE[SHADE];
 
 ## Инструменты для работы с цветом
 
-Используйте палитру и слайдеры, расположенные ниже, чтобы опробовать цветовую схему [material.io/design/color](https://material.io/design/color/) на документации Material-UI. Alternatively, you can enter hex values in the Primary and Secondary text fields.
+Используйте палитру и слайдеры, расположенные ниже, чтобы опробовать цветовую схему [material.io/design/color](https://material.io/design/color/) на документации Material-UI. Либо можете ввести шестнадцатеричные значения в текстовые поля Primary и Secondary.
 
 {{"demo": "pages/style/color/ColorTool.js", "hideHeader": true}}
 
