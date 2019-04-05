@@ -26,7 +26,7 @@ mdDown      |                     hide | show
 
 ### js
 
-Standardmäßig wird die `js` Implementierung verwendet, die den Inhalt basierend auf der [`withWidth()`](/layout/breakpoints/#withwidth-)-Komponente höherer Ordnung, die die Bildschirmgröße überwacht, ansprechend versteckt. Dies hat den Vorteil, dass überhaupt kein Inhalt dargestellt wird, wenn der Haltepunkt nicht erreicht wird.
+By default, the `js` implementation is used, responsively hiding content based on using the [`withWidth()`](/layout/breakpoints/#withwidth) higher-order component that watches screen size. Dies hat den Vorteil, dass überhaupt kein Inhalt dargestellt wird, wenn der Haltepunkt nicht erreicht wird.
 
 ### css
 
