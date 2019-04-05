@@ -44,27 +44,27 @@ Einige Snackbars mit unterschiedlicher Nachrichtenlänge.
 
 ### Aufeinanderfolgende Snackbars
 
-Nach den [Richtlinien Googles](https://material.io/design/components/snackbars.html#snackbars-toasts-usage), wenn eine zweite Snackbar ausgelöst wird, während die erste angezeigt wird, sollte die erste eine Kontraktionsbewegung nach unten beginnen, bevor die zweite nach oben animiert wird.
+When multiple snackbar updates are necessary, they should appear one at a time.
 
 {{"demo": "pages/demos/snackbars/ConsecutiveSnackbars.js"}}
 
-### Blockieren Sie nicht die Floating Action Buttons
+### Snackbars and floating action buttons (FABs)
 
-Bewegen Sie den floating action button vertikal, um die Höhe der Snackbar anzupassen.
+Snackbars should appear above FABs (on mobile).
 
-{{"demo": "pages/demos/snackbars/FabIntegrationSnackbar.js"}}
-
-### Steuerungsrichtung
-
-Ändern Sie die Richtung des Übergangs. Gleiten ist der Standardübergang.
-
-{{"demo": "pages/demos/snackbars/DirectionSnackbar.js"}}
+{{"demo": "pages/demos/snackbars/FabIntegrationSnackbar.js", "iframe": true, "maxWidth": 500}}
 
 ### Übergang ändern
 
-Verwenden Sie einen anderen Übergang.
+[Grow](/utils/transitions/#grow) is the default transition but you can use a different one.
 
-{{"demo": "pages/demos/snackbars/FadeSnackbar.js"}}
+{{"demo": "pages/demos/snackbars/TransitionsSnackbar.js"}}
+
+### Control Slide direction
+
+You can change the direction of the [Slide](/utils/transitions/#slide) transition.
+
+{{"demo": "pages/demos/snackbars/DirectionSnackbar.js"}}
 
 ## Ergänzende Projekte
 
@@ -74,6 +74,6 @@ Für fortgeschrittenere Anwendungsfälle können Ihnen folgende Projekte helfen:
 
 ![stars](https://img.shields.io/github/stars/iamhosseindhv/notistack.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/notistack.svg)
 
-Im folgenden Beispiel demonstrieren wir, wie man [notistack](https://github.com/iamhosseindhv/notistack) benutzt. Notistack macht es einfach, Snackbars anzuzeigen (damit Sie sich nicht mit dem Öffnen / Schließen-Status befassen müssen). Außerdem können Sie sie übereinander stapeln.
+Im folgenden Beispiel demonstrieren wir, wie man [notistack](https://github.com/iamhosseindhv/notistack) benutzt. Notistack macht es einfach, Snackbars anzuzeigen (damit Sie sich nicht mit dem Öffnen / Schließen-Status befassen müssen). It also enables you to stack them on top of one another (but discouraged by the specification).
 
 {{"demo": "pages/demos/snackbars/IntegrationNotistack.js"}}
