@@ -15,7 +15,7 @@ components: TextField
 
 ### 日期选择器
 
-一个原生的 `type="date"` 日期选择器示例 ，它也可以用作日历：
+A native date picker example with `type="date"`.
 
 {{"demo": "pages/demos/pickers/DatePickers.js"}}
 
