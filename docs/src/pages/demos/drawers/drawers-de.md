@@ -31,7 +31,7 @@ Wir verwenden auf dieser Dokumentations-Website die folgenden Eigenschaften, um 
 ```jsx
 const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
-<SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} />
+<SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} />
 ```
 
 ## Responsive Navigationsleiste
