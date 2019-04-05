@@ -152,7 +152,7 @@ Sie müssen sich keine Gedanken über die CSS-Spezifität machen, da der Inline-
 
 {{"demo": "pages/customization/overrides/InlineStyle.js"}}
 
-[Wann sollte ich Inline-Styles und wann Klassen verwenden?](/getting-started/faq/#when-should-i-use-inline-style-vs-classes-)
+[Wann sollte ich Inline-Styles und wann Klassen verwenden?](/getting-started/faq/#when-should-i-use-inline-style-vs-classes)
 
 ## 2. Dynamische Variation für eine einmalige Situation
 
