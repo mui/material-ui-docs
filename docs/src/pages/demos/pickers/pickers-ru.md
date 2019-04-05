@@ -15,7 +15,7 @@ components: TextField
 
 ### Поля выбора даты
 
-Пример нативного поля выбора даты с помощью `type="date"`, можно использовать как календарь.
+A native date picker example with `type="date"`.
 
 {{"demo": "pages/demos/pickers/DatePickers.js"}}
 
