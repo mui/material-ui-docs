@@ -17,5 +17,5 @@ Se você quiser aprender mais sobre como o tema é montado, dê uma olhada em [`
 Os estilos do Material-UI são fornecidos pelo pacote npm [@material-ui/styles](/css-in-js/basics/). É uma solução de estilo para o React. Esta solução é [isolada](https://bundlephobia.com/result?p=@material-ui/styles), não tem conhecimento do tema padrão do Material-UI. Para remover a necessidade de injetar um tema no contexto do React **sistematicamente**, estamos envolvendo os módulos de estilo (`makeStyles`, `withStyles` e `styled`) com o tema padrão Material-UI:
 
 - `@material-ui/core/styles/makeStyles` encapsula `@material-ui/styles/makeStyles`.
-- `@material-ui/core/styles/withStyles` wraps `@material-ui/styles/withStyles`.
-- `@material-ui/core/styles/styled` wraps `@material-ui/styles/styled`.
+- `@material-ui/core/styles/makeStyles` encapsula `@material-ui/styles/makeStyles`.
+- `@material-ui/core/styles/styled` encapsula `@material-ui/styles/styled`.
