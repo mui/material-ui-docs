@@ -4,7 +4,7 @@
 
 1. [Variação específica para uma situação única](#1-specific-variation-for-a-one-time-situation)
 2. [Variação dinâmica para uma situação única](#2-dynamic-variation-for-a-one-time-situation)
-3. [Specific variation of a component](#3-specific-variation-of-a-component) re-used in different contexts
+3. [Variação específica de um componente](#3-specific-variation-of-a-component) reutilizado em contextos diferentes
 4. [Material Design variations](#4-material-design-variations) such as with the button component
 5. [Global theme variation](#5-global-theme-variation)
 
