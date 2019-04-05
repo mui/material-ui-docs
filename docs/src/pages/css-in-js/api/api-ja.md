@@ -284,7 +284,7 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
     
     <tr>
       <td align="left">
-        <span class="prop-name required">children *</span>
+        <span class="prop-name required">children&nbsp;*</span>
       </td>
       
       <td align="left">
@@ -292,7 +292,7 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
       </td>
       
       <td align="left">
-         
+        
       </td>
       
       <td align="left">
@@ -302,7 +302,7 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
     
     <tr>
       <td align="left">
-        <span class="prop-name required">theme *</span>
+        <span class="prop-name required">theme&nbsp;*</span>
       </td>
       
       <td align="left">
