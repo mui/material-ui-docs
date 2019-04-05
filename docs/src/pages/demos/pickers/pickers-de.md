@@ -15,7 +15,7 @@ components: TextField
 
 ### Datums-Auswahl
 
-Ein natives Datumsauswahlbeispiel mit `type="date"`, es kann auch als Kalender verwendet werden.
+A native date picker example with `type="date"`.
 
 {{"demo": "pages/demos/pickers/DatePickers.js"}}
 
