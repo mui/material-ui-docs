@@ -79,7 +79,7 @@ Die meiste Zeit möchten Sie sich jedoch auf die Werte eines Themas verlassen, u
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 
-const theme = {
+const theme = {
   spacing: 4,
   palette: {
     primary: '#007bff',
