@@ -15,7 +15,7 @@ components: TextField
 
 ### Date pickers
 
-A native date picker example with `type="date"`, it can be used as a calendar too.
+A native date picker example with `type="date"`.
 
 {{"demo": "pages/demos/pickers/DatePickers.js"}}
 
