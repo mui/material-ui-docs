@@ -32,6 +32,8 @@ Standardmäßig verwenden wir die Kombination aus einem `<div>`-Element und eine
 
 {{"demo": "pages/demos/cards/ImgMediaCard.js"}}
 
+> ⚠️ When `component="img"`, CardMedia relies on `object-fit` for centering the image. It's not supported by IE 11.
+
 ## Steuerelemente der Benutzeroberfläche
 
 Ergänzende Aktionen innerhalb der Karte werden explizit mit Symbolen, Text und UI-Steuerelementen aufgerufen, die sich normalerweise unten auf der Karte befinden.
