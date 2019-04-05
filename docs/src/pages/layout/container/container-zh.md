@@ -1,10 +1,10 @@
 ---
-title: Container React component
+title: React 容器组件
 components: Container
 ---
-# Container
+# 容器
 
-<p class="description">The container centers your content horizontally. It's the most basic layout element.</p>
+<p class="description">容器会将其内容水平居中。 这是最基本的布局元素。</p>
 
 While containers can be nested, most layouts do not require a nested container.
 
