@@ -2,7 +2,7 @@
 title: 弹出器 React 组件
 components: Popper
 ---
-# Popper（弹出提示）
+# 弹出提示 (Popper)
 
 <p class="description">Popper 可以用来在其他元素之上显示一些内容。它是 react-popper 的替代品。</p>
 
