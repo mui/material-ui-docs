@@ -16,11 +16,11 @@ npm install @material-ui/core@next
 yarn add @material-ui/core@next
 ```
 
-请注意 [react](https://www.npmjs.com/package/react) >= 16.3.0版和[ react-dom](https://www.npmjs.com/package/react-dom) >= 16.3.0版是同版本依赖。
+请注意，需要依赖 [react](https://www.npmjs.com/package/react) >= 16.3.0 版和 [react-dom](https://www.npmjs.com/package/react-dom) >= 16.3.0 版。
 
 ## Roboto 字体
 
-在设计 Material-UI 时我们使用了[Roboto](https://fonts.google.com/specimen/Roboto)字体。 因此，请务必遵循这些说明。 例如，通过 Google Web Fonts 引入：
+Material-UI 的设计与 [Roboto](https://fonts.google.com/specimen/Roboto) 字体相配。 因此，请务必遵循这些说明。 例如，通过 Google Web Fonts 引入：
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
