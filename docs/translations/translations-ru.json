@@ -156,7 +156,7 @@
     "/customization": "Customization",
     "/customization/themes": "Themes",
     "/customization/overrides": "Overrides",
-    "/customization/default-theme": "Default Theme",
+    "/customization/default-theme": "Тема по умолчанию",
     "/guides": "Guides",
     "/guides/typescript": "TypeScript",
     "/guides/interoperability": "Style Library Interoperability",
