@@ -30,11 +30,11 @@ Notice that in addition to the button styling, the button label's capitalization
 
 {{"demo": "pages/customization/overrides/ClassesNesting.js"}}
 
-### Using the dev tools
+### Использование инструментов разработчика
 
-The browser dev tools can save you a lot of time. Material-UI's class names [follow a simple pattern](/css-in-js/advanced/#class-names) in development mode: `Mui[component name]-[style rule name]-[UUID]`.
+Инструменты разработчика браузера могут сэкономить вам много времени. Material-UI's class names [follow a simple pattern](/css-in-js/advanced/#class-names) in development mode: `Mui[component name]-[style rule name]-[UUID]`.
 
-Let's go back to the above demo. How can you override the button label?
+Let's go back to the above demo. Как вы можете переопределить метку кнопки?
 
 ![dev-tools](/static/images/customization/dev-tools.png)
 
