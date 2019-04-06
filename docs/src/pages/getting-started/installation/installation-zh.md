@@ -1,18 +1,18 @@
 # 安装
 
-<p class="description">安装 Material-UI -- 这个世界上最受欢迎的 React UI 框架.</p>
+<p class="description">安装 Material-UI —— 世界上最受欢迎的 React UI 框架。</p>
 
-Material-UI 可通过 [npm](https://www.npmjs.com/package/@material-ui/core) 包的形式进行安装。
+Material-UI 可以通过 [npm 包](https://www.npmjs.com/package/@material-ui/core)来安装。
 
 ## npm
 
-将 Material-UI 下载并保存到你的 `package.json` 依赖文件里，请运行:
+安装 Material-UI 并写入 `package.json` 依赖文件：
 
 ```sh
-// with npm
+// 使用 npm
 npm install @material-ui/core@next
 
-// with yarn
+// 使用 yarn
 yarn add @material-ui/core@next
 ```
 
