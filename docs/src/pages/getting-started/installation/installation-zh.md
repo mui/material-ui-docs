@@ -20,13 +20,13 @@ yarn add @material-ui/core@next
 
 ## Roboto 字体
 
-Material-UI 的设计与 [Roboto](https://fonts.google.com/specimen/Roboto) 字体相配。 因此，请务必遵循这些说明。 例如，通过 Google Web Fonts 引入：
+Material-UI 的设计与 [Roboto](https://fonts.google.com/specimen/Roboto) 字体相配。 因此，请按照[此说明](/style/typography/#general)载入字体。 例如，使用 Google Web Fonts：
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
 ```
 
-或者，如果您使用 JSX 而不是 HTML 来渲染页头：
+如果要使用 JSX 嵌套 HTML 来渲染页面头部，可以使用：
 
 ```jsx
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
