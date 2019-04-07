@@ -70,7 +70,7 @@ Nuestra visión es proporcionar una implementación elegante de las pautas de Ma
 
 We want to see businesses succeeding in taking advantage of Material-UI to ship an awesome UI to their users while having it match their brand, so we have invested a lot in the customization capabilities of Material-UI.
 
-Единственная цель MDC-Web - реализация Material Design для веб-платформы. **Nothing more, nothing less**. They will not consider making changes to the components - especially UX changes - that would facilitate additional flexibility at the cost of breaking with the core Material Design system, as that is a non-goal of the project. *[source](https://github.com/mui-org/material-ui/issues/6799#issuecomment-299925174)*
+Единственная цель MDC-Web - реализация Material Design для веб-платформы. ** Ни больше, ни меньше **,. They will not consider making changes to the components - especially UX changes - that would facilitate additional flexibility at the cost of breaking with the core Material Design system, as that is a non-goal of the project. *[ источник ](https://github.com/mui-org/material-ui/issues/6799#issuecomment-299925174)*
 
 ### Тесты
 
