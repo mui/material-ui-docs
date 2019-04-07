@@ -70,7 +70,7 @@ function handleRender(req, res) {
 
 const app = express();
 
-// This is fired every time the server-side receives a request.
+// Isso é acionado toda vez que o servidor recebe uma solicitação.
 app.use(handleRender);
 
 const port = 3000;
@@ -146,7 +146,7 @@ function renderFullPage(html, css) {
 }
 ```
 
-### The Client Side
+### Le côté client
 
 The client side is straightforward. All we need to do is remove the server-side generated CSS. Let's take a look at our client file:
 
