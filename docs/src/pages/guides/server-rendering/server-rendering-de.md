@@ -19,6 +19,37 @@ Auf der Clientseite wird das CSS ein zweites Mal eingefügt, bevor das serversei
 
 Im folgenden Rezept wird beschrieben, wie das serverseitige Rendering eingerichtet wird.
 
+### The theme
+
+We create a theme that will be shared between the client and the server.
+
+`theme.js`
+
+```js
+import { createMuiTheme } from '@material-ui/core/styles';
+import red from '@material-ui/core/colors/red';
+
+// Create a theme instance.
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#556cd6',
+    },
+    secondary: {
+      main: '#19857b',
+    },
+    error: {
+      main: red.A400,
+    },
+    background: {
+      default: '#fff',
+    },
+  },
+});
+
+export default theme;
+```
+
 ### Die Server-Seite
 
 Im Folgenden wird beschrieben, wie unsere Serverseite aussehen wird. Wir werden eine[ Express-Middleware](http://expressjs.com/en/guide/using-middleware.html) mit [ app.use ](http://expressjs.com/en/api.html) einrichten, um alle Anfragen zu bearbeiten, die auf unserem Server eingehen. Wenn Sie mit Express oder Middleware nicht vertraut sind, sollten Sie wissen, dass unsere handleRender-Funktion jedes Mal aufgerufen wird, wenn der Server eine Anfrage erhält.
@@ -27,10 +58,8 @@ Im Folgenden wird beschrieben, wie unsere Serverseite aussehen wird. Wir werden 
 
 ```js
 import express from 'express';
-import React from 'react';
-import App from './App';
 
-// Diese werden in den folgenden Abschnitten gefüllt.
+// We are going to fill these out in the sections to follow.
 function renderFullPage(html, css) {
   /* ... */
 }
@@ -59,24 +88,17 @@ Der wichtigste Schritt beim serverseitigen Rendern ist das Rendern des ursprüng
 Wir erhalten dann das CSS aus unsere `Sheets` mit `sheets.toString()`. Wir werden sehen, wie dies in unserer ` enderFullPage`-Funktion weitergegeben wird.
 
 ```jsx
+import express from 'express';
+import React from 'react';
 import ReactDOMServer from 'react-dom/server';
-import { createMuiTheme } from '@material-ui/core/styles';
 import { ServerStyleSheets, ThemeProvider } from '@material-ui/styles';
-import green from '@material-ui/core/colors/green';
-import red from '@material-ui/core/colors/red';
-
-// Erstellen des Theme Objekts.
-const theme = createMuiTheme({
-  palette: {
-    primary: green,
-    accent: red,
-  },
-});
+import App from './App';
+import theme from './theme';
 
 function handleRender(req, res) {
   const sheets = new ServerStyleSheets();
 
-  // Rednern des Komponenten als String.
+  // Render the component to a string.
   const html = ReactDOMServer.renderToString(
     sheets.collect(
       <ThemeProvider theme={theme}>
@@ -91,6 +113,16 @@ function handleRender(req, res) {
   // Zurücksenden der gerenderten Seite an den Client.
   res.send(renderFullPage(html, css));
 }
+
+const app = express();
+
+app.use('/build', express.static('build'));
+
+// This is fired every time the server-side receives a request.
+app.use(handleRender);
+
+const port = 3000;
+app.listen(port);
 ```
 
 ### Injizieren der ursprüngliche HTML Komponente und CSS
@@ -100,9 +132,10 @@ Der letzte Schritt auf der Serverseite ist das Einfügen unserer ursprünglichen
 ```js
 function renderFullPage(html, css) {
   return `
-    <!doctype html>
+    <!DOCTYPE html>
     <html>
       <head>
+        <title>My page</title>
         <style id="jss-server-side">${css}</style>
       </head>
       <body>
@@ -122,11 +155,9 @@ Die Client-Seite ist unkompliziert. Wir müssen nur das serverseitig erzeugte CS
 ```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import green from '@material-ui/core/colors/green';
-import red from '@material-ui/core/colors/red';
 import App from './App';
+import theme from './theme';
 
 function Main() {
   React.useEffect(() => {
@@ -136,23 +167,14 @@ function Main() {
     }
   }, []);
 
-  return <App />;
+  return (
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
+  );
 }
 
-// Ein Theme Objekt wird erstellt.
-const theme = createMuiTheme({
-  palette: {
-    primary: green,
-    accent: red,
-  },
-});
-
-ReactDOM.hydrate(
-  <ThemeProvider theme={theme}>
-    <Main />
-  </ThemeProvider>,
-  document.querySelector('#root'),
-);
+ReactDOM.hydrate(<Main />, document.querySelector('#root'));
 ```
 
 ## Referenzimplementierungen
