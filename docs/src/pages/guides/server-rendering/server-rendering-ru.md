@@ -19,6 +19,37 @@ Material-UI was designed from the ground-up with the constraint of rendering on 
 
 В следующем рецепте мы рассмотрим, как настроить серверную отрисовку.
 
+### The theme
+
+We create a theme that will be shared between the client and the server.
+
+`theme.js`
+
+```js
+import { createMuiTheme } from '@material-ui/core/styles';
+import red from '@material-ui/core/colors/red';
+
+// Create a theme instance.
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#556cd6',
+    },
+    secondary: {
+      main: '#19857b',
+    },
+    error: {
+      main: red.A400,
+    },
+    background: {
+      default: '#fff',
+    },
+  },
+});
+
+export default theme;
+```
+
 ### The server-side
 
 Ниже приведено описание того, как наша сторона сервера будет выглядеть. Мы настраиваем [Express middleware](http://expressjs.com/en/guide/using-middleware.html), используя [app.use](http://expressjs.com/en/api.html), чтобы обработать все запросы, которые приходят на наш сервер. Если вы не знакомы с Express или middleware, просто знайте, что наша функция handleRender будет вызвана каждый раз, когда сервер получает запрос.
@@ -27,10 +58,8 @@ Material-UI was designed from the ground-up with the constraint of rendering on 
 
 ```js
 import express from 'express';
-import React from 'react';
-import App from './App';
 
-// Мы заполним их в следующих разделах.
+// We are going to fill these out in the sections to follow.
 function renderFullPage(html, css) {
   /* ... */
 }
@@ -59,19 +88,12 @@ The key step in server-side rendering is to render the initial HTML of our compo
 We then get the CSS from our `sheets` using `sheets.toString()`. We will see how this is passed along in our `renderFullPage` function.
 
 ```jsx
+import express from 'express';
+import React from 'react';
 import ReactDOMServer from 'react-dom/server';
-import { createMuiTheme } from '@material-ui/core/styles';
 import { ServerStyleSheets, ThemeProvider } from '@material-ui/styles';
-import green from '@material-ui/core/colors/green';
-import red from '@material-ui/core/colors/red';
-
-// Create a theme object.
-const theme = createMuiTheme({
-  palette: {
-    primary: green,
-    accent: red,
-  },
-});
+import App from './App';
+import theme from './theme';
 
 function handleRender(req, res) {
   const sheets = new ServerStyleSheets();
@@ -91,6 +113,16 @@ function handleRender(req, res) {
   // Send the rendered page back to the client.
   res.send(renderFullPage(html, css));
 }
+
+const app = express();
+
+app.use('/build', express.static('build'));
+
+// This is fired every time the server-side receives a request.
+app.use(handleRender);
+
+const port = 3000;
+app.listen(port);
 ```
 
 ### Inject Initial Component HTML and CSS
@@ -100,9 +132,10 @@ The final step on the server-side is to inject our initial component HTML and CS
 ```js
 function renderFullPage(html, css) {
   return `
-    <!doctype html>
+    <!DOCTYPE html>
     <html>
       <head>
+        <title>My page</title>
         <style id="jss-server-side">${css}</style>
       </head>
       <body>
@@ -122,11 +155,9 @@ The client side is straightforward. All we need to do is remove the server-side 
 ```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import green from '@material-ui/core/colors/green';
-import red from '@material-ui/core/colors/red';
 import App from './App';
+import theme from './theme';
 
 function Main() {
   React.useEffect(() => {
@@ -136,23 +167,14 @@ function Main() {
     }
   }, []);
 
-  return <App />;
+  return (
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
+  );
 }
 
-// Create a theme object.
-const theme = createMuiTheme({
-  palette: {
-    primary: green,
-    accent: red,
-  },
-});
-
-ReactDOM.hydrate(
-  <ThemeProvider theme={theme}>
-    <Main />
-  </ThemeProvider>,
-  document.querySelector('#root'),
-);
+ReactDOM.hydrate(<Main />, document.querySelector('#root'));
 ```
 
 ## Reference implementations
