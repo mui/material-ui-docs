@@ -49,16 +49,16 @@ MDC-web was designed from the ground up to be fully compatible with 3rd party JS
 
 ### Стилевое решение
 
-[Material-UI несет тяжелое наследие со стилями](https://github.com/oliviertassinari/a-journey-toward-better-style). Our very first release was using LESS, but seeing the limitation of this solution, we quickly started looking into alternatives. Our first migration was towards using an inline-style solution. This was promising:
+[Material-UI несет тяжелое наследие со стилями](https://github.com/oliviertassinari/a-journey-toward-better-style). Our very first release was using LESS, but seeing the limitation of this solution, we quickly started looking into alternatives. Our first migration was towards using an inline-style solution. Это было многообещающе:
 
 - It allowed us to remove the dependency on the LESS toolchain for our users. We removed one important friction in the installation process. (**simpler**)
-- We were able to change the theme at runtime, nest different themes, and have dynamic styles. (**more powerful**)
+- We were able to change the theme at runtime, nest different themes, and have dynamic styles. (** более мощный **)
 - We reduced the loading time by breaking the big monolithic CSS file in order to enable code splitting. (**faster**)
 - The style override story became more intuitive, as we were free of CSS specificity issues. (**simpler**)
 
-Eventually, we reached the limitations of inline-styles and moved toward a CSS-in-JS solution. This transition was made without losing the enhancements the first migration introduced **We strongly think that CSS-in-JS is the future of the web platform**. You can [learn more about our new styling solution](/customization/css-in-js/) in the documentation.
+Eventually, we reached the limitations of inline-styles and moved toward a CSS-in-JS solution. Этот переход был сделан без потери улучшений, внесенных первой миграцией ** Мы твердо убеждены, что CSS-in-JS - это будущее веб-платформы **. Вы можете [ узнать больше о нашем новом решении для стилизации ](/customization/css-in-js/) в документации.
 
-MDC-web relies on SCSS as Bootstrap v4. The SCSS architecture is pretty close to LESS - a technology we replaced for its limitations.
+MDC-web основан на SCSS как и Bootstrap v4. Архитектура SCSS очень близка к LESS - технологии, которую мы заменили из-за ее ограничений.
 
 ### Видение
 
@@ -70,7 +70,7 @@ MDC-web relies on SCSS as Bootstrap v4. The SCSS architecture is pretty close to
 
 We want to see businesses succeeding in taking advantage of Material-UI to ship an awesome UI to their users while having it match their brand, so we have invested a lot in the customization capabilities of Material-UI.
 
-Единственная цель MDC-Web - реализация Material Design для веб-платформы. **Nothing more, nothing less**. They will not consider making changes to the components - especially UX changes - that would facilitate additional flexibility at the cost of breaking with the core Material Design system, as that is a non-goal of the project. *[source](https://github.com/mui-org/material-ui/issues/6799#issuecomment-299925174)*
+Единственная цель MDC-Web - реализация Material Design для веб-платформы. ** Ни больше, ни меньше **,. They will not consider making changes to the components - especially UX changes - that would facilitate additional flexibility at the cost of breaking with the core Material Design system, as that is a non-goal of the project. *[ источник ](https://github.com/mui-org/material-ui/issues/6799#issuecomment-299925174)*
 
 ### Тесты
 
