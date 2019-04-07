@@ -64,7 +64,7 @@ MDC-web 作为 Bootstrap v4 依赖于 SCSS。 The SCSS architecture is pretty cl
 
 我们的愿景是提供一份关于实施 Material Design 的优雅的指南，以及**和更多**。
 
-> Material Design指导下的设计原则让Material-UI起航，但一款软件往往有着各式各样、方方面面的问题或诉求，这些原则就可能不会为我们的所有问题给出答案。 除遵循指南精心打造各类组件以外，我们还希望 Material-UI 秉着 Material Design 的设计精神，努力成为那个软件UI开发的‘百宝箱’。
+> Material Design 的设计原则是一个很棒的出发点，但是它并没有由为一款应用的不同诉求给出完整的答案。 除遵循指南精心打造各类组件以外，我们还希望 Material-UI 秉着 Material Design 的设计精神，努力成为那个软件UI开发的‘百宝箱’。
 > 
 > *[从文档的[远景部分](/discover-more/vision/)摘录。]*
 
