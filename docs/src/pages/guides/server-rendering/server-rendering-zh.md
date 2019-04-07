@@ -70,7 +70,7 @@ function handleRender(req, res) {
 
 const app = express();
 
-// This is fired every time the server-side receives a request.
+// 每次服务器端收到请求时都会触发此操作。
 app.use(handleRender);
 
 const port = 3000;
@@ -179,7 +179,7 @@ ReactDOM.hydrate(<Main />, document.querySelector('#root'));
 
 ## 参考实现
 
-We host different reference implementations which you can find in the [GitHub repository](https://github.com/mui-org/material-ui) under the [`/examples`](https://github.com/mui-org/material-ui/tree/next/examples) folder:
+我们托管不同的参考实现，您可以在 [`/examples`](https://github.com/mui-org/material-ui/tree/next/examples) 文件夹下的 [GitHub存储库](https://github.com/mui-org/material-ui) 找到它们：
 
 - [本教程的参考实现](https://github.com/mui-org/material-ui/tree/next/examples/ssr-next)
 - [Gatsby](https://github.com/mui-org/material-ui/tree/next/examples/gatsby-next)
@@ -227,17 +227,17 @@ The class names value relies on the concept of [class name generator](/css-in-js
 *example of fix:*
 
 ```diff
--// Create a new class name generator.
+-  //创建一个新的类名生成器。
 -const generateClassName = createGenerateClassName();
 
 function handleRender(req, res) {
 
-+ // Create a new class name generator.
++ // 创建一个新的类名生成器。
 + const generateClassName = createGenerateClassName();
 
   //…
 
-  // Render the component to a string.
+  // 将组件渲染为字符串。
   const html = ReactDOMServer.renderToString(
 ```
 
@@ -245,7 +245,7 @@ function handleRender(req, res) {
     
     您还可以通过在package.json的依赖项中指定特定的MUI版本来确保不同环境中的相同版本。
 
-*example of fix (package.json):*
+*修复示例 (package.json）：*
 
 ```diff
   "dependencies": {
