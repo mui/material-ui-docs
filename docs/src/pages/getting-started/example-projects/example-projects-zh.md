@@ -7,8 +7,10 @@
 - [Create React App](https://github.com/mui-org/material-ui/tree/next/examples/create-react-app-next)
 - [Gatsby](https://github.com/mui-org/material-ui/tree/next/examples/gatsby-next)
 - [Next.js](https://github.com/mui-org/material-ui/tree/next/examples/nextjs-next)
+- [Parcel](https://github.com/mui-org/material-ui/tree/next/examples/parcel-next)
 - [CDN](https://github.com/mui-org/material-ui/tree/next/examples/cdn-next)
-- 以及更多
+- [Plain server-side](https://github.com/mui-org/material-ui/tree/next/examples/ssr-next)
+- And more
 
 Create React App 是一个很棒的学习 React 的项目。 请看一下这些[可用的替代方案](https://github.com/facebook/create-react-app/blob/master/README.md#popular-alternatives) ，看看哪个项目最符合您的需求。
 
