@@ -14,11 +14,11 @@ If while using these examples you make changes or enhancements that could improv
 
 So far we have demos for:
 
-- A dashboard
-- A Sign In page
-- A Sign Up page
-- A blog page
+- Панель управления
+- Страница входа
+- Страница регистрации
+- Страница блога
 - A checkout flow
-- An album page
-- A pricing page
+- Альбомная страница
+- Страница с ценами
 - A sticky footer page
