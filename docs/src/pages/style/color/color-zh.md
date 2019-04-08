@@ -10,7 +10,7 @@ Material Design [颜色系统](https://material.io/design/color/) 可用于创�
 
 #### "调色板"
 
-调色板是颜色的集合, 即色调和它们的阴影. Material-UI 提供Material Design 指南中的所有颜色. [此调色板](#color-palette) 设计为彼此协调工作。
+调色板是颜色的集合, 即色调和它们的阴影. Material-UI 提供Material Design 指南中的所有颜色. [This color palette](#color-palette) has been designed with colors that work harmoniously with each other.
 
 #### “色彩”和“阴影”
 
