@@ -84,8 +84,8 @@ Diese Funktion basiert auf der CSS-Sticky-Positionierung. Leider ist es [ nicht 
 
 {{"demo": "pages/demos/lists/InsetList.js"}}
 
-## Virtualized List
+## Virtualisierte Liste
 
-In the following example, we demonstrate how to use [react-window](https://github.com/bvaughn/react-window) with the `List` component. Sie zeigt 200 Zeilen an und kann auch einfach mehr verwalten. Virtualisierung hilft bei Leistungsproblemen.
+Im folgenden Beispiel zeigen wir wie Sie [react-window](https://github.com/bvaughn/react-window) mit der `Listen<` Komponente nutzen können. Sie zeigt 200 Zeilen an und kann auch einfach mehr verwalten. Virtualisierung hilft bei Leistungsproblemen.
 
 {{"demo": "pages/demos/lists/VirtualizedList.js"}}
