@@ -74,6 +74,6 @@ components: Snackbar, SnackbarContent
 
 ![stars](https://img.shields.io/github/stars/iamhosseindhv/notistack.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/notistack.svg)
 
-在下面的示例中, 我们演示如何使用 [notistack](https://github.com/iamhosseindhv/notistack)。 notistack可以很容易地显示零食栏（因此您不必处理它们的打开/关闭状态）。 It also enables you to stack them on top of one another (but discouraged by the specification).
+在下面的示例中, 我们演示如何使用 [notistack](https://github.com/iamhosseindhv/notistack)。 notistack可以很容易地显示零食栏（因此您不必处理它们的打开/关闭状态）。 它还使您能够将它们堆叠在彼此之上 (但规范不鼓励这样做)。
 
 {{"demo": "pages/demos/snackbars/IntegrationNotistack.js"}}
