@@ -10,15 +10,15 @@ Für mehrteilige Beispiele, beschreibt eine Tabelle in der README im verknüpfte
 
 {{"demo": "pages/getting-started/page-layout-examples/PageLayoutExamples.js", "hideHeader": true}}
 
-If while using these examples you make changes or enhancements that could improve the developer experience, or you would like to contribute an additional example, please consider creating a [pull request on GitHub](https://github.com/mui-org/material-ui/pulls).
+Wenn Sie während Sie die Beispiele verwenden Änderungen oder Verbesserungen vornehmen, die die Entwickler Erfahrung verbessern könnte, oder Sie mögen ein weiteres Beispiel dazu beitragen, denken Sie doch über einen [ Pull-Request auf GitHub](https://github.com/mui-org/material-ui/pulls) nach.
 
-So far we have demos for:
+Bisher haben wir Demos für:
 
-- A dashboard
-- A Sign In page
-- A Sign Up page
-- A blog page
-- A checkout flow
-- An album page
-- A pricing page
-- A sticky footer page
+- Ein Dashboard
+- Eine Einlogseite
+- Eine Anmeldeseite
+- Eine Blogseite
+- Ein Check-out-Ablauf
+- Eine Albumseite
+- Eine Preisseite
+- Eine klebrige Fußzeile
