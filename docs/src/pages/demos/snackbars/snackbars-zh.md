@@ -56,7 +56,7 @@ components: Snackbar, SnackbarContent
 
 ### 更改过渡动画
 
-[Grow](/utils/transitions/#grow) 是默认的过渡动画，但你也可以使用不同的过渡动画。
+[Grow](/utils/transitions/#grow) is the default transition but you can use a different one.
 
 {{"demo": "pages/demos/snackbars/TransitionsSnackbar.js"}}
 
