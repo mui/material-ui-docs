@@ -1,4 +1,4 @@
-# Color
+# カラー
 
 <p class="description">Convey meaning through color. Out of the box you get access to all colors in the Material Design spec.</p>
 
@@ -10,7 +10,7 @@ The Material Design [color system](https://material.io/design/color/) can be use
 
 #### "Palette"
 
-A palette is a collection of colors, i.e. hues and their shades. Material-UI provides all colors from the Material Design guidelines. [This color palette](#color-palette) have been designed to work harmoniously with each other.
+A palette is a collection of colors, i.e. hues and their shades. Material-UI provides all colors from the Material Design guidelines. [This color palette](#color-palette) has been designed with colors that work harmoniously with each other.
 
 #### "Hue" & "Shade"
 
