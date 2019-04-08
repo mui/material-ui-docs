@@ -34,7 +34,7 @@ Notice that in addition to the button styling, the button label's capitalization
 
 As ferramentas de desenvolvimento do navegador podem poupar muito tempo. Material-UI's class names [follow a simple pattern](/css-in-js/advanced/#class-names) in development mode: `Mui[component name]-[style rule name]-[UUID]`.
 
-Let's go back to the above demo. Como você pode substituir o rótulo do botão?
+Vamos voltar para a demonstração acima. Como você pode substituir o rótulo do botão?
 
 ![dev-tools](/static/images/customization/dev-tools.png)
 
