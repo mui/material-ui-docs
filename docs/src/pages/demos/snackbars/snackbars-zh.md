@@ -44,11 +44,11 @@ components: Snackbar, SnackbarContent
 
 ### 连续的消息条(Snackbar)
 
-When multiple snackbar updates are necessary, they should appear one at a time.
+当多个snackbar需要显示的时候，它们应当在同一时间显示一个。
 
 {{"demo": "pages/demos/snackbars/ConsecutiveSnackbars.js"}}
 
-### Snackbars和floating action buttons (FABs)
+### 消息条（Snackbars）和悬浮按钮（FABs）
 
 Snackbars should appear above FABs (on mobile).
 
