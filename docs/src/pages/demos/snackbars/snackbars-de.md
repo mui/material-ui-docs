@@ -44,25 +44,25 @@ Einige Snackbars mit unterschiedlicher Nachrichtenlänge.
 
 ### Aufeinanderfolgende Snackbars
 
-When multiple snackbar updates are necessary, they should appear one at a time.
+Wenn mehrere Snackbar-Aktualisierungen erforderlich sind, sollten diese einzeln und nacheinander angezeigt werden.
 
 {{"demo": "pages/demos/snackbars/ConsecutiveSnackbars.js"}}
 
-### Snackbars and floating action buttons (FABs)
+### Snackbars und schwebende Aktionsschaltflächen (FABs)
 
-Snackbars should appear above FABs (on mobile).
+Snackbars sollten (auf dem Handy) über FABs angezeigt werden.
 
 {{"demo": "pages/demos/snackbars/FabIntegrationSnackbar.js", "iframe": true, "maxWidth": 500}}
 
 ### Übergang ändern
 
-[Grow](/utils/transitions/#grow) is the default transition but you can use a different one.
+[Grow](/utils/transitions/#grow) ist der Standardübergang, Sie können jedoch einen anderen verwenden.
 
 {{"demo": "pages/demos/snackbars/TransitionsSnackbar.js"}}
 
-### Control Slide direction
+### Schieberegler Richtung
 
-You can change the direction of the [Slide](/utils/transitions/#slide) transition.
+Sie können die Richtung des [Gleiten](/utils/transitions/#slide) Übergangs ändern.
 
 {{"demo": "pages/demos/snackbars/DirectionSnackbar.js"}}
 
@@ -74,6 +74,6 @@ Für fortgeschrittenere Anwendungsfälle können Ihnen folgende Projekte helfen:
 
 ![stars](https://img.shields.io/github/stars/iamhosseindhv/notistack.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/notistack.svg)
 
-Im folgenden Beispiel demonstrieren wir, wie man [notistack](https://github.com/iamhosseindhv/notistack) benutzt. Notistack macht es einfach, Snackbars anzuzeigen (damit Sie sich nicht mit dem Öffnen / Schließen-Status befassen müssen). It also enables you to stack them on top of one another (but discouraged by the specification).
+Im folgenden Beispiel demonstrieren wir, wie man [notistack](https://github.com/iamhosseindhv/notistack) benutzt. Notistack macht es einfach, Snackbars anzuzeigen (damit Sie sich nicht mit dem Öffnen / Schließen-Status befassen müssen). Außerdem können Sie sie übereinander stapeln (wird jedoch von der Spezifikation nicht empfohlen).
 
 {{"demo": "pages/demos/snackbars/IntegrationNotistack.js"}}
