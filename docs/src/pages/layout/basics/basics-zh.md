@@ -6,8 +6,8 @@
 
 Material Design中的[响应式布局](https://material.io/design/layout/responsive-layout-grid.html)可适配任何可能的屏幕尺寸。 我们提供以下工具以实现响应式UI：
 
-- [Grid](/layout/grid/): The Material Design responsive layout grid adapts to screen size and orientation, ensuring consistency across layouts.
-- [Container](/layout/container/): The container centers your content horizontally. It's the most basic layout element.
+- [Grid](/layout/grid/): Material Design的响应式网格布局可以适应屏幕的尺寸和方向，确保布局之间的一致性。
+- [Container](/layout/container/): 容器可以将你的内容水平居中。 它是最基本的布局元素。
 - [Breakpoints](/layout/breakpoints/): API that enables the use of breakpoints in a wide variety of contexts.
 - [useMediaQuery](/layout/use-media-query/): This is a CSS media query hook for React. 它侦听与CSS媒体查询的匹配。
 - [Hidden](/layout/hidden/): Quickly and responsively toggle the visibility value of components and more with our hidden utilities.
