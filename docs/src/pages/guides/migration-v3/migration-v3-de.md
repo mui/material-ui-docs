@@ -113,7 +113,7 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 
 - [Typography] Ändern der Standardvariante von `body2` auf `body1`. Eine Schriftgröße von 16px ist eine bessere Standardeinstellung als 14px. Bootstrap, material.io oder sogar unsere Dokumentation verwenden 16px als Standardschriftgröße. 14px wie Ant Design ist verständlich, da chinesische Benutzer ein anderes Alphabet haben. Wir dokumentieren 12px als Standardschriftgröße für Japanisch.
 - [Typography] Entfernen der Standardfarbe aus den Typografievarianten. Die Farbe sollte die meiste Zeit erben. Dies ist das Standardverhalten des Webs.
-- [Typography] Rename `color="default"` to `color="initial"` following the logic of #13028. Die Verwendung von *default* sollte vermieden werden, da es nicht semantisch ist.
+- [Typography] Umbennenung von `color="default"` auf `color="initial ` der Logik von #13028 folgend. Die Verwendung von *default* sollte vermieden werden, da es nicht semantisch ist.
 
 ### Button
 
@@ -252,4 +252,4 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 
 - [Modal] Ignorierung von event.defaultPrevented (# 14991) @oliviertassinari
   
-  The new logic closes the Modal even if `event.preventDefault()` is called on the key down escape event. `event.preventDefault()` is meant to stop default behaviors like clicking a checkbox to check it, hitting a button to submit a form, and hitting left arrow to move the cursor in a text input etc. Nur spezielle HTML-Elemente weisen dieses Standardverhalten auf. People should use `event.stopPropagation()` if they don't want to trigger a `onClose` event on the modal.
+  Die neue Logik schließt das Modal, auch wenn `event.preventDefault()` beim Ereignis "key down escape" aufgerufen wird. `event.preventDefault()` soll Standardverhalten stoppen, z. B. das Aktivieren eines Kontrollkästchens, das Klicken auf eine Schaltfläche zum Senden eines Formulars und das Drücken des linken Pfeils, um den Cursor in einer Texteingabe zu bewegen usw. Nur spezielle HTML-Elemente weisen dieses Standardverhalten auf. Sie sollten `event.stopPropagation()` verwenden, wenn sie nicht ein ` onClose` Ereignis auf dem Modal auslösen wollen.
