@@ -123,7 +123,8 @@ Wenn Sie die CSS-Syntax bevorzugen, können Sie das [Jss-Plugin-Vorlage ](https:
 const useStyles = makeStyles({
   root: `
     background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
-    border-radius: 3;
+    border-radius: 3px;
+    font-size: 16px;
     border: 0;
     color: white;
     height: 48px;
@@ -137,13 +138,15 @@ const useStyles = makeStyles({
 
 ## CSS-Injektionsreihenfolge
 
-Standardmäßig werden die Stile **zuletzt** in das `<head>` -Element Ihrer Seite eingefügt. Sie erhalten mehr Details als jedes andere Stylesheet auf Ihrer Seite, z.B. CSS-Module oder StilKomponenten.
+> It's **really important** to understand how the CSS specificity is calculated by the browser. It's one of the key elements to know when overriding styles. We **encourage** you to read this MDN paragraph: [How is specificity calculated?](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#How_is_specificity_calculated)
+
+By default, the style tags are injected **last** in the `<head>` element of the page. They gain more specificity than any other style tags on your page e.g. CSS modules, styled components.
 
 ### injectFirst
 
-Die ` StylesProvider ` Komponente hat eine `injectFirst` Eigenschaft, um die Styles **zuerst** zu injizieren:
+The `StylesProvider` component has an `injectFirst` prop to inject the style tags **first** in the head (less priority):
 
-```js
+```jsx
 import { StylesProvider } from '@material-ui/styles';
 
 <StylesProvider injectFirst>
@@ -151,6 +154,41 @@ import { StylesProvider } from '@material-ui/styles';
       Mit Stil versehene Komponenten können die Stile von Material-UI überschreiben. */}
 </StylesProvider>
 ```
+
+### makeStyles / withStyles / styled
+
+The injection of style tags happens in the **same order** as the makeStyles / withStyles / styled invocations. For instance the color red wins in this case:
+
+```jsx
+import clsx from 'clsx';
+import { makeStyles } from '@material-ui/styles';
+
+const useStyleBase = makeStyles({
+  root: {
+    color: 'blue', // 🔵
+  },
+});
+
+const useStyle = makeStyles({
+  root: {
+    color: 'red', // 🔴
+  },
+});
+
+export default function MyComponent() {
+  // Order doesn't matter
+  const classes = useStyles();
+  const classesBase = useStyleBase();
+
+  // Order doesn't matter
+  const className = clsx(classes.root, useStyleBase.root)
+
+  // color: red 🔴 wins.
+  return <div className={className} />;
+}
+```
+
+The hook call order or the class name concatenation orders **don't matter**.
 
 ### insertionPoint
 
@@ -160,10 +198,10 @@ JSS [bietet einen Mechanismus](https://github.com/cssinjs/jss/blob/master/docs/s
 
 Am einfachsten ist es, einen HTML-Kommentar hinzuzufügen, der bestimmt, wo JSS die Stile einfügt:
 
-```jsx
+```html
 <head>
   <!-- jss-insertion-point -->
-  <link href="..." />
+  <link href="...">
 </head>
 ```
 
