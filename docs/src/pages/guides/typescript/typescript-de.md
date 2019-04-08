@@ -24,8 +24,10 @@ const styles = {
 
 withStyles(styles);
 //         ^^^^^^
-//         Types of property 'flexDirection' are incompatible.
-//           Type 'string' is not assignable to type '"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "column" | "column-reverse" | "row"...'.
+//         Typen der Eigenschaft  'flexDirection' sind nicht kompatibel.
+// Der Typ 'string' kann dem Typ '"-moz-initial" | "inherit" | "initial" |
+// "revert" | "unset" | "column" | "column-reverse" | "row"...'
+// nicht zugewiesen werden.
 ```
 
 The problem is that the type of the `flexDirection` property is inferred as `string`, which is too arbitrary. To fix this, you can pass the styles object directly to `withStyles`:
@@ -254,7 +256,7 @@ Material-UI allows you to replace a component's root node via a `component` prop
 ```jsx
 import { Link } from 'react-router-dom';
 
-<Button component={Link} to="/">Go Home</Button>
+<Button component={Link} to="/">Nach Hause</Button>
 ```
 
 However, TypeScript will complain about it, because `to` is not part of the `ButtonProps` interface, and with the current type declarations it has no way of inferring what props can be passed to `component`.
@@ -274,8 +276,8 @@ const LinkButton = (props: LinkButtonProps) => (
   <Button {...props} component={Link as any} />
 )
 
-// usage:
-<LinkButton color="primary" to="/">Go Home</LinkButton>
+// Benutzung:
+<LinkButton color="primary" to="/">Nach Hause</LinkButton>
 ```
 
 Material-UI components pass some basic event handler props (`onClick`, `onDoubleClick`, etc.) to their root nodes. These handlers have a signature of:
@@ -304,6 +306,6 @@ import Button from '@material-ui/core/Button';
 
 const MyLink = (props: any) => <Link to="/" {...props} />;
 
-// usage:
-<Button color="primary" component={MyLink}>Go Home</Button>
+// Benutzung:
+<Button color="primary" component={MyLink}>Nach Hause</Button>
 ```
