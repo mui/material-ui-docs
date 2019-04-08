@@ -56,13 +56,13 @@ components: Snackbar, SnackbarContent
 
 ### 更改过渡动画
 
-[Grow](/utils/transitions/#grow) is the default transition but you can use a different one.
+[Grow](/utils/transitions/#grow)是默认的过渡动画但你可以使用不同的过渡动画。
 
 {{"demo": "pages/demos/snackbars/TransitionsSnackbar.js"}}
 
 ### 控制滑动的方向
 
-You can change the direction of the [Slide](/utils/transitions/#slide) transition.
+你可以修改[滑动效果](/utils/transitions/#slide)的方向 。
 
 {{"demo": "pages/demos/snackbars/DirectionSnackbar.js"}}
 
