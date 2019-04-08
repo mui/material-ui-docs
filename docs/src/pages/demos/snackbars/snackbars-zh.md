@@ -60,7 +60,7 @@ components: Snackbar, SnackbarContent
 
 {{"demo": "pages/demos/snackbars/TransitionsSnackbar.js"}}
 
-### Control Slide direction
+### 控制滑动的方向
 
 You can change the direction of the [Slide](/utils/transitions/#slide) transition.
 
