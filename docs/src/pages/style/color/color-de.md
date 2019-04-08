@@ -10,7 +10,7 @@ Das Material Design [Farbsystem](https://material.io/design/color/) kann verwend
 
 #### "Palette"
 
-Eine Palette ist eine Sammlung von Farben, d.h. Farbtönen und deren Nuancen. Die Material-UI stellt alle Farben aus den Richtlinien für Material Design zur Verfügung. [Diese Farbpalette](#color-palette) wurden entwickelt, um harmonisch miteinander zu arbeiten.
+Eine Palette ist eine Sammlung von Farben, d.h. Farbtönen und deren Nuancen. Die Material-UI stellt alle Farben aus den Richtlinien für Material Design zur Verfügung. [This color palette](#color-palette) has been designed with colors that work harmoniously with each other.
 
 #### "Farbton" & "Schatten"
 
