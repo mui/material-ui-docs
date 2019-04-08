@@ -38,9 +38,9 @@ Das Erstellen von React-Elementen ist jedoch ebenfalls mit Kosten verbunden. Bet
   <Table>
     <TableHead>
       <TableRow>
-        <TableCell>Dessert (100g serving)</TableCell>
-        <TableCell align="right">Calories</TableCell>
-        <TableCell align="right">Fat&nbsp;(g)</TableCell>
+        <TableCell>Nachtisch (100g Portion)</TableCell>
+        <TableCell align="right">Kalorien</TableCell>
+        <TableCell align="right">Fettt&nbsp;(g)</TableCell>
       </TableRow>
     </TableHead>
     <TableBody>
@@ -58,7 +58,7 @@ Das Erstellen von React-Elementen ist jedoch ebenfalls mit Kosten verbunden. Bet
 </Modal>
 ```
 
-We create a lot of React elements that will never be mounted. It's wasteful 
+Wir erstellen viele React-Elemente, die niemals gemounted werden. Es ist verschwenderisch 
 
 ```jsx
 <Modal open={false}>
