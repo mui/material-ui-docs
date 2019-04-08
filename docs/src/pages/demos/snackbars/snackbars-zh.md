@@ -50,13 +50,13 @@ components: Snackbar, SnackbarContent
 
 ### 消息条（Snackbars）和悬浮按钮（FABs）
 
-Snackbars should appear above FABs (on mobile).
+消息条（Snackbars）应当显示在悬浮按钮（FABs）的上方（在移动设备上）。
 
 {{"demo": "pages/demos/snackbars/FabIntegrationSnackbar.js", "iframe": true, "maxWidth": 500}}
 
 ### 更改过渡动画
 
-[Grow](/utils/transitions/#grow) is the default transition but you can use a different one.
+[Grow](/utils/transitions/#grow) 是默认的过渡动画，但你也可以使用不同的过渡动画。
 
 {{"demo": "pages/demos/snackbars/TransitionsSnackbar.js"}}
 
