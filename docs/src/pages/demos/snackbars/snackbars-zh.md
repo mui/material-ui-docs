@@ -48,7 +48,7 @@ When multiple snackbar updates are necessary, they should appear one at a time.
 
 {{"demo": "pages/demos/snackbars/ConsecutiveSnackbars.js"}}
 
-### Snackbars and floating action buttons (FABs)
+### Snackbars和floating action buttons (FABs)
 
 Snackbars should appear above FABs (on mobile).
 
