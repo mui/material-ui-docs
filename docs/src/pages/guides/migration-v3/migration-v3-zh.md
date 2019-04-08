@@ -157,6 +157,8 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
   
   It solves issues with the `fullWidth` prop.
 
+- [InputBase] Remove the `inputType` class from `InputBase`.
+
 ### 布局
 
 - [Grid] In order to support arbitrary spacing values and to remove the need to mentally county by 8, we are changing the spacing API:
@@ -206,6 +208,19 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 - [DialogActions] `action` CSS class is applied to root element instead of children if `disableActionSpacing={false}`.
 - [DialogContentText] Use typography variant `body1` instead of `subtitle1`.
 
+### Selection controls
+
+- \[Switch\]\[Radio\][Checkbox] Improve specification compliance.
+  
+  Refactore the implementation to make it easier to override the styles. Rename the class names to match the specification wording:
+  
+  ```diff
+  -icon
+  -bar
+  +thumb
+  +track
+  ```
+
 ### Divider
 
 - [Divider] Remove the deprecated inset prop.
@@ -214,6 +229,13 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
   -<Divider inset />
   +<Divider variant="inset" />
   ```
+
+### Snackbar
+
+- [Snackbar] Match the new specification.
+  
+  - Change the dimensions
+  - Change the default transition to from `Slide` to `Grow`.
 
 ### SvgIcon
 
