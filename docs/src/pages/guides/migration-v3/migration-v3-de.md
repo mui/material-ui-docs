@@ -111,9 +111,9 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
   +<Typography variantMapping={variantMapping}>
   ```
 
-- [Typography] Change the default variant from `body2` to `body1`. A font size of 16px is a better default than 14px. Bootstrap, material.io or even our documentation use 16px as a default font size. 14px like Ant Design is understandable as Chinese users have a different alphabet. We document 12px as the default font size for Japanese.
-- [Typography] Remove the default color from the typography variants. The color should inherit most of the time. It's the default behavior of the web.
-- [Typography] Rename `color="default"` to `color="initial"` following the logic of #13028. The usage of *default* should be avoided, it lakes semantic.
+- [Typography] Ändern der Standardvariante von `body2` auf `body1`. Eine Schriftgröße von 16px ist eine bessere Standardeinstellung als 14px. Bootstrap, material.io oder sogar unsere Dokumentation verwenden 16px als Standardschriftgröße. 14px wie Ant Design ist verständlich, da chinesische Benutzer ein anderes Alphabet haben. Wir dokumentieren 12px als Standardschriftgröße für Japanisch.
+- [Typography] Entfernen der Standardfarbe aus den Typografievarianten. Die Farbe sollte die meiste Zeit erben. Dies ist das Standardverhalten des Webs.
+- [Typography] Rename `color="default"` to `color="initial"` following the logic of #13028. Die Verwendung von *default* sollte vermieden werden, da es nicht semantisch ist.
 
 ### Button
 
@@ -149,13 +149,13 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
   </InputLabel>
   ```
 
-- [InputBase] Change the default box sizing model. It uses the following CSS now:
+- [InputBase] Ändern Sie die Standard Boxgröße. Es verwendet jetzt das folgende CSS:
   
   ```css
   box-sizing: border-box;
   ```
   
-  It solves issues with the `fullWidth` prop.
+  Es löst Probleme mit der `fullWidth` Eigenschaft.
 
 ### Layout
 
@@ -250,6 +250,6 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 
 ### Modal
 
-- [Modal] Ignore event.defaultPrevented (#14991) @oliviertassinari
+- [Modal] Ignorierung von event.defaultPrevented (# 14991) @oliviertassinari
   
-  The new logic closes the Modal even if `event.preventDefault()` is called on the key down escape event. `event.preventDefault()` is meant to stop default behaviors like clicking a checkbox to check it, hitting a button to submit a form, and hitting left arrow to move the cursor in a text input etc. Only special HTML elements have these default behaviors. People should use `event.stopPropagation()` if they don't want to trigger a `onClose` event on the modal.
+  The new logic closes the Modal even if `event.preventDefault()` is called on the key down escape event. `event.preventDefault()` is meant to stop default behaviors like clicking a checkbox to check it, hitting a button to submit a form, and hitting left arrow to move the cursor in a text input etc. Nur spezielle HTML-Elemente weisen dieses Standardverhalten auf. People should use `event.stopPropagation()` if they don't want to trigger a `onClose` event on the modal.
