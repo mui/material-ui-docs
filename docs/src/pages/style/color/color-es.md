@@ -10,7 +10,7 @@ El [sistema de color](https://material.io/design/color/) Material Design se pued
 
 #### "Pallette" (Paleta)
 
-Una paleta es una colección de colores, es decir, su matiz (color) y sus tonos. Material-UI proporciona todos los colores incluidos en las pautas de Material Design. [Esta paleta de colores](#color-palette) ha sido diseñada para que funcionen en armonía unos con otros.
+Una paleta es una colección de colores, es decir, su matiz (color) y sus tonos. Material-UI proporciona todos los colores incluidos en las pautas de Material Design. [This color palette](#color-palette) has been designed with colors that work harmoniously with each other.
 
 #### "Hue" & "Shade" (Matiz y tono)
 
