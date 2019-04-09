@@ -8,7 +8,7 @@ Examples in this guide use [global methods from Mocha](https://mochajs.org/api/g
 
 We take tests seriously. We have written and maintain **a wide range** of tests so we can iterate with confidence on the components, for instance, the visual regression tests provided by [Argos-CI](https://www.argos-ci.com/mui-org/material-ui) have proven to be really helpful. To learn more about our internal tests, you can have a look at the [README](https://github.com/mui-org/material-ui/blob/next/test/README.md).
 
-While we have reached the 100% test coverage achievement, we don't encourage our users to do the same. [![Coverage Status](https://img.shields.io/codecov/c/github/mui-org/material-ui/next.svg)](https://codecov.io/gh/mui-org/material-ui/branch/next)
+While we have reached the 100% test coverage achievement, we don't encourage our users to do the same. [![Abdeckungsstatus](https://img.shields.io/codecov/c/github/mui-org/material-ui/next.svg)](https://codecov.io/gh/mui-org/material-ui/branch/next)
 
 ## Userspace
 
@@ -53,17 +53,17 @@ Generate an enhanced shallow function with the needed context. Please refer to t
 #### Beispiele
 
 ```jsx
-import { createShallow } from '@material-ui/core/test-utils';
+importiere { createShallow } aus '@ material-ui / core / test-utils';
 
-describe('<MyComponent />', () => {
-  let shallow;
+beschreiben ('<0 />', () =&gt; {
+  sei flach;
 
-  before(() => {  // This is Mocha; in Jest, use beforeAll
-    shallow = createShallow();
+  vor (()) =&gt; {// Dies ist Mocha; in Jest verwende beforeAll
+    shallow = createShallow ();
   });
 
-  it('should work', () => {
-    const wrapper = shallow(<MyComponent />);
+  es ('sollte funktionieren', () =&gt; {
+    const wrapper = shallow (<0 />);
   });
 });
 ```
