@@ -251,7 +251,7 @@ const theme = createMyTheme({ appDrawer: { breakpoint: 'md' }});
 
 ## Verwendung der `component` Eigenschaft
 
-Mit der Material-UI können Sie die root Komponente einer Komponente durch die `component` Eigenschaft ersetzen. For example, a `Button`'s root node can be replaced with a React Router `Link`, and any additional props that are passed to `Button`, such as `to`, will be spread to the `Link` component, meaning you can do this:
+Mit der Material-UI können Sie die root Komponente einer Komponente durch die `component` Eigenschaft ersetzen. Zum Beispiel ist die Stamm Komponente eines `Button` durch einen React Router `Link` ersetzt werden und alle zusätzlichen Eigenschaften, die an den `Button` übergeben werden, wie `to`, wird auf die `Link` Komponente verteilt, was bedeutet, dass Sie dies tun können:
 
 ```jsx
 import { Link } from 'react-router-dom';
@@ -259,9 +259,9 @@ import { Link } from 'react-router-dom';
 <Button component={Link} to="/">Nach Hause</Button>
 ```
 
-However, TypeScript will complain about it, because `to` is not part of the `ButtonProps` interface, and with the current type declarations it has no way of inferring what props can be passed to `component`.
+TypeScript wird sich jedoch darüber beschweren, weil `to` nicht Teil der `Button` Eigenschaften ist, und mit den aktuellen Typdeklarationen kann nicht abgeleitet werden, welche Eigenschaften an die `Komponente` übergeben werden können.
 
-The current workaround is to cast Link to `any`:
+Die aktuelle Problemumgehung besteht darin, Link in `any` umzuwandeln:
 
 ```tsx
 import { Link } from 'react-router-dom';
@@ -280,25 +280,25 @@ const LinkButton = (props: LinkButtonProps) => (
 <LinkButton color="primary" to="/">Nach Hause</LinkButton>
 ```
 
-Material-UI components pass some basic event handler props (`onClick`, `onDoubleClick`, etc.) to their root nodes. These handlers have a signature of:
+Komponenten der Material-UI geben grundlegende Event Handler Eigenschaften (`onClick`, `onDoubleClick`, etc.) an ihre Stamm Komponenten. Diese Handler haben eine Signatur von:
 
 ```ts
 (event: MouseEvent<HTMLElement, MouseEvent>) => void
 ```
 
-which is incompatible with the event handler signatures that `Link` expects, which are:
+was mit den Event Handler-Signaturen von `Link` nicht kompatibel ist, welche sind:
 
 ```ts
 (event: MouseEvent<AnchorElement>) => void
 ```
 
-Any element or component that you pass into `component` will have this problem if the signatures of their event handler props don't match.
+Jedes Element oder jede Komponente, die Sie an die `component` übergeben, wird dieses Problem haben, wenn die Signaturen der Eventhandler-Eigenschaften nicht übereinstimmen.
 
-There is an ongoing effort to fix this by making component props generic.
+Es besteht ein ständiger Aufwand, um dies zu beheben, indem Komponentenstützen generisch gemacht werden.
 
-### Avoiding properties collision
+### Vermeiden Sie die Kollision von Eigenschaften
 
-The previous strategy suffers from a little limitation: properties collision. The component providing the `component` property might not forward all its properties to the root element. To workaround this issue, you can create a custom component:
+Die bisherige Strategie weist eine kleine Einschränkung auf: die Kollision der Eigenschaften. Die Komponente, die die `component` Eigenschaft bereitstellt, leitet möglicherweise nicht alle Eigenschaften an das Stammelement weiter. Um dieses Problem zu umgehen, können Sie eine benutzerdefinierte Komponente erstellen:
 
 ```tsx
 import { Link } from 'react-router-dom';
