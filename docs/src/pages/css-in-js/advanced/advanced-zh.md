@@ -87,8 +87,8 @@ JSS uses plugins to extend its core, allowing you to cherry-pick the features yo
 
 Not all the plugins are available in Material-UI by default. The following (which is a subset of [jss-preset-default](https://cssinjs.org/jss-preset-default/)) are included:
 
-- [JSS-插件规则价值功能](https://cssinjs.org/jss-plugin-rule-value-function/)
-- [JSS-插件全局](https://cssinjs.org/jss-plugin-global/)
+- [jss-plugin-rule-value-function](https://cssinjs.org/jss-plugin-rule-value-function/)
+- [jss-plugin-global](https://cssinjs.org/jss-plugin-global/)
 - [jss-plugin-nested](https://cssinjs.org/jss-plugin-nested/)
 - [jss-plugin-camel-case](https://cssinjs.org/jss-plugin-camel-case/)
 - [jss-plugin-default-unit](https://cssinjs.org/jss-plugin-default-unit/)
@@ -369,7 +369,7 @@ const className = `${productionPrefix}-${identifier}`;
 
 ## 全局CSS
 
-### `JSS-插件全局`
+### `jss-plugin-global`
 
 The [`jss-plugin-global`](#jss-plugins) plugin is installed in the default preset. You can use it to define global class names.
 
