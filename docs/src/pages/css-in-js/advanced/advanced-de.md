@@ -138,9 +138,9 @@ const useStyles = makeStyles({
 
 ## CSS-Injektionsreihenfolge
 
-> It's **really important** to understand how the CSS specificity is calculated by the browser. It's one of the key elements to know when overriding styles. We **encourage** you to read this MDN paragraph: [How is specificity calculated?](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#How_is_specificity_calculated)
+> Es ist **wirklich wichtig** um zu verstehen, wie die CSS-Spezifität vom Browser berechnet wird. Dies ist eines der Schlüsselelemente, die beim Überschreiben von Stilen zu beachten sind. Wir **ermutigen** Sie diesen MDN-Absatz: [How is specificity calculated?](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#How_is_specificity_calculated) zu lesen
 
-By default, the style tags are injected **last** in the `<head>` element of the page. They gain more specificity than any other style tags on your page e.g. CSS modules, styled components.
+Standardmäßig werden die Style-Tags **zuletzt** im `<head>` -Element der Seite eingefügt. Sie erhalten mehr Details als jedes andere Styletag auf Ihrer Seite, z.B. CSS-Module oder StilKomponenten.
 
 ### injectFirst
 
