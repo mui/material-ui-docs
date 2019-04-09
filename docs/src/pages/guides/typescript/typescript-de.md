@@ -30,7 +30,7 @@ withStyles(styles);
 // nicht zugewiesen werden.
 ```
 
-The problem is that the type of the `flexDirection` property is inferred as `string`, which is too arbitrary. To fix this, you can pass the styles object directly to `withStyles`:
+Das Problem ist, dass der Typ der `flexDirection` als `string` interpretiert wird, was zu ungenau ist. Um dies zu beheben, können Sie das Styles-Objekt direkt an `withStyles`: übergeben:
 
 ```ts
 withStyles({
@@ -41,7 +41,7 @@ withStyles({
 });
 ```
 
-However type widening rears its ugly head once more if you try to make the styles depend on the theme:
+Wenn Sie jedoch versuchen, die Stile von dem Thema abhängig zu machen, macht Ihnen die Typenerweiterung wieder eine Strich durch die Rechnung:
 
 ```ts
 withStyles(({ palette, spacing }) => ({
@@ -55,9 +55,9 @@ withStyles(({ palette, spacing }) => ({
 }));
 ```
 
-This is because TypeScript [widens the return types of function expressions](https://github.com/Microsoft/TypeScript/issues/241).
+Dies liegt daran, dass TypeScript [die Rückgabetypen von Funktionsausdrücken ](https://github.com/Microsoft/TypeScript/issues/241) erweitert.
 
-Because of this, we recommend using our `createStyles` helper function to construct your style rules object:
+Aus diesem Grund empfehlen wir die Verwendung unserer `createStyles` Hilfsfunktion zum Erstellen Ihres Stilregelobjekts:
 
 ```ts
 // Non-dependent styles
@@ -80,11 +80,11 @@ const styles = ({ palette, spacing }: Theme) => createStyles({
 });
 ```
 
-`createStyles` is just the identity function; it doesn't "do anything" at runtime, just helps guide type inference at compile time.
+`createStyles` ist nur die Identitätsfunktion; es "tut" nichts zur Laufzeit, es hilft nur die Typen zur Kompilierzeit festzulegen.
 
-### Media queries
+### Media-Anfragen
 
-`withStyles` allows a styles object with top level media-queries like so:
+`withStyles` erlaubt ein Styles-Objekt mit Top-Level-Media-Abfragen wie:
 
 ```ts
 const styles = createStyles({
@@ -99,11 +99,11 @@ const styles = createStyles({
 });
 ```
 
-However to allow these styles to pass TypeScript the definitions have to be ambiguous concerning names for CSS classes and actual CSS property names. Due to this class names that are equal to CSS properties should be avoided.
+Damit diese Stile an TypeScript übergeben werden können, müssen die Definitionen hinsichtlich der Namen der CSS-Klassen und der tatsächlichen CSS-Eigenschaftsnamen mehrdeutig sein. Aus diesem Grund sollten Klassennamen, die den CSS-Eigenschaften entsprechen, vermieden werden.
 
 ```ts
-// error because TypeScript thinks `@media (min-width: 960px)` is a class name
-// and `content` is the css property
+// Fehler, da TypeScript denkte, dass `@media (min-width: 960px)` ein Klassen-
+// name und `content` eine css Eigenschaft ist
 const ambiguousStyles = createStyles({
   content: {
     minHeight: '100vh',
@@ -115,7 +115,7 @@ const ambiguousStyles = createStyles({
   },
 });
 
-// works just fine
+// Dies funktioniert
 const ambiguousStyles = createStyles({
   contentClass: {
     minHeight: '100vh',
@@ -128,9 +128,9 @@ const ambiguousStyles = createStyles({
 });
 ```
 
-### Augmenting your props using `WithStyles`
+### Erweitern Sie Ihre Eigenschaften mit `WithStyles`
 
-Since a component decorated with `withStyles(styles)` gets a special `classes` prop injected, you will want to define its props accordingly:
+Da, wenn eine Komponente mit `withStyles(styles)` dekoriert ist, eine spezielle `classes` Eigenschaft injiziert bekommt, möchten Sie die Eigenschaften entsprechend definieren:
 
 ```ts
 const styles = (theme: Theme) => createStyles({
@@ -140,10 +140,10 @@ const styles = (theme: Theme) => createStyles({
 });
 
 interface Props {
-  // non-style props
+  // Nicht style Eigenschaften
   foo: number;
   bar: boolean;
-  // injected style props
+  // Injizierte Style Eigenschaften
   classes: {
     root: string;
     paper: string;
@@ -152,7 +152,7 @@ interface Props {
 }
 ```
 
-However this isn't very [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) because it requires you to maintain the class names (`'root'`, `'paper'`, `'button'`, ...) in two different places. We provide a type operator `WithStyles` to help with this, so that you can just write
+Dies ist jedoch nicht sehr [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) weil Sie die Klassennamen (`'root'`, `'paper'`, `'button'`, ...) an zwei verschiedenen Stellen pflegen müssen. Wir stellen einen Typoperator `WithStyles` bereit, um damit zu helfen. So kannst du einfach schreiben
 
 ```ts
 import { WithStyles, createStyles } from '@material-ui/core';
