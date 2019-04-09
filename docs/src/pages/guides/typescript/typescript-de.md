@@ -8,11 +8,11 @@ Unsere Type Definitionen werden mit der folgenden [tsconfig.json](https://github
 
 ## Verwendung von `withStyles`
 
-Using `withStyles` in TypeScript can be a little tricky, but there are some utilities to make the experience as painless as possible.
+Verwenden von `withStyles` in TypeScript kann es etwas kniffelig sein, aber es gibt einige Hilfsprogramme, um die Erfahrung so schmerzlos wie möglich zu gestalten.
 
-### Using `createStyles` to defeat type widening
+### Verwenden von `CreateStyles`, um die Typerweiterung zu besiegen
 
-A frequent source of confusion is TypeScript's [type widening](https://blog.mariusschulz.com/2017/02/04/typescript-2-1-literal-type-widening), which causes this example not to work as expected:
+Eine häufige Quelle der Verwirrung ist die [Erweiterung der Typen](https://blog.mariusschulz.com/2017/02/04/typescript-2-1-literal-type-widening) von TypeScript, was dazu führt, dass dieses Beispiel nicht wie erwartet funktioniert:
 
 ```ts
 const styles = {
