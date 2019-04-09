@@ -1,12 +1,12 @@
 # TypeScript
 
-<p class="description">You can add static typing to JavaScript to improve developer productivity and code quality thanks to TypeScript.</p>
+<p class="description">Sie können statische Typisierung zu JavaScript hinzufügen, um die Produktivität und die Codequalität dank TypeScript zu verbessern.</p>
 
-Have a look at the [Create React App with TypeScript](https://github.com/mui-org/material-ui/tree/next/examples/create-react-app-with-typescript) example. A minimum version of TypeScript 2.8 is required.
+Schauen Sie sich das [Create React App mit TypeScript](https://github.com/mui-org/material-ui/tree/next/examples/create-react-app-with-typescript) Beispiel an. Eine Mindestversion von TypeScript 2.8 ist erforderlich.
 
-Our definitions are tested with the following [tsconfig.json](https://github.com/mui-org/material-ui/tree/next/tsconfig.json). Using a less strict `tsconfig.json` or omitting some of the libraries might cause errors.
+Unsere Type Definitionen werden mit der folgenden [tsconfig.json](https://github.com/mui-org/material-ui/tree/next/tsconfig.json) getestet. Verwendung einer weniger strengen `tsconfig.json` oder das Weglassen einiger Bibliotheken kann zu Fehlern führen.
 
-## Usage of `withStyles`
+## Verwendung von `withStyles`
 
 Using `withStyles` in TypeScript can be a little tricky, but there are some utilities to make the experience as painless as possible.
 
