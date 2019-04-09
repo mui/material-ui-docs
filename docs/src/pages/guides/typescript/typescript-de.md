@@ -169,9 +169,9 @@ interface Props extends WithStyles<typeof styles> {
 }
 ```
 
-### Decorating components
+### Komponenten dekorieren
 
-Applying `withStyles(styles)` as a function works as expected:
+Anwenden von `withStyles(styles)` als Funktion funktioniert wie erwartet:
 
 ```tsx
 const DecoratedSFC = withStyles(styles)(({ text, type, color, classes }: Props) => (
@@ -194,13 +194,13 @@ const DecoratedClass = withStyles(styles)(
 );
 ```
 
-Unfortunately due to a [current limitation of TypeScript decorators](https://github.com/Microsoft/TypeScript/issues/4881), `withStyles(styles)` can't be used as a decorator in TypeScript.
+Aufgrund einer [aktuellen Einschränkung der TypeScript-Dekorateure](https://github.com/Microsoft/TypeScript/issues/4881), kann `withStyles(styles)` leider nicht als Dekorator in TypeScript verwendet werden.
 
-## Customization of `Theme`
+## Anpassung des `Theme`
 
-When adding custom properties to the `Theme`, you may continue to use it in a strongly typed way by exploiting [TypeScript's module augmentation](https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation).
+Beim Hinzufügen benutzerdefinierter Eigenschaften zum `Theme` können Sie es weiterhin in stark typisierter Weise verwenden, indem Sie die [Modulerweiterung von TypeScript](https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation) nutzen.
 
-The following example adds an `appDrawer` property that is merged into the one exported by `material-ui`:
+Im folgenden Beispiel wird eine `appDrawer` Eigenschaft hinzugefügt, welche in das von `material-ui` exportierte Theme eingefügt wird:
 
 ```ts
 import { Theme } from '@material-ui/core/styles/createMuiTheme';
@@ -223,7 +223,7 @@ declare module '@material-ui/core/styles/createMuiTheme' {
 }
 ```
 
-And a custom theme factory with additional defaulted options:
+Und eine benutzerdefinierte Theme Generierung mit zusätzlichen Standardoptionen:
 
 **./styles/createMyTheme**:
 
@@ -241,7 +241,7 @@ export default function createMyTheme(options: ThemeOptions) {
 }
 ```
 
-This could be used like:
+Dies könnte wie folgt verwendet werden:
 
 ```ts
 import createMyTheme from './styles/createMyTheme';
@@ -249,9 +249,9 @@ import createMyTheme from './styles/createMyTheme';
 const theme = createMyTheme({ appDrawer: { breakpoint: 'md' }});
 ```
 
-## Usage of `component` property
+## Verwendung der `component` Eigenschaft
 
-Material-UI allows you to replace a component's root node via a `component` property. For example, a `Button`'s root node can be replaced with a React Router `Link`, and any additional props that are passed to `Button`, such as `to`, will be spread to the `Link` component, meaning you can do this:
+Mit der Material-UI können Sie den Wurzelknoten einer Komponente durch die `component` Eigenschaft ersetzen. For example, a `Button`'s root node can be replaced with a React Router `Link`, and any additional props that are passed to `Button`, such as `to`, will be spread to the `Link` component, meaning you can do this:
 
 ```jsx
 import { Link } from 'react-router-dom';
