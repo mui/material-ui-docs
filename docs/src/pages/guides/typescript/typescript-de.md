@@ -251,7 +251,7 @@ const theme = createMyTheme({ appDrawer: { breakpoint: 'md' }});
 
 ## Verwendung der `component` Eigenschaft
 
-Mit der Material-UI können Sie den Wurzelknoten einer Komponente durch die `component` Eigenschaft ersetzen. For example, a `Button`'s root node can be replaced with a React Router `Link`, and any additional props that are passed to `Button`, such as `to`, will be spread to the `Link` component, meaning you can do this:
+Mit der Material-UI können Sie die root Komponente einer Komponente durch die `component` Eigenschaft ersetzen. For example, a `Button`'s root node can be replaced with a React Router `Link`, and any additional props that are passed to `Button`, such as `to`, will be spread to the `Link` component, meaning you can do this:
 
 ```jsx
 import { Link } from 'react-router-dom';
