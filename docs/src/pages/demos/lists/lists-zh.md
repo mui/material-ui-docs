@@ -86,6 +86,6 @@ function ListItemLink(props) {
 
 ## 大型列表渲染（Virtualized Table）
 
-在下面的示例中，我们演示了如何将 [react-window](https://github.com/bvaughn/react-window)与`List` 组件一起使用 它渲染了200行，可以轻松处理更多行。 可视化优化了一些性能问题。
+在下面的示例中，我们演示了如何将 [react-window](https://github.com/bvaughn/react-window)与`List` 组件一起使用 它渲染了200行，可以轻松处理更多行。 可视化优化了整体的性能。
 
 {{"demo": "pages/demos/lists/SimpleList.js"}}
