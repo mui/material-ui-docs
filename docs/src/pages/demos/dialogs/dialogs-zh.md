@@ -4,9 +4,9 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 ---
 # Dialogs（对话框组件）
 
-<p class="description">对话框用来给用户一个任务，可以提示关键信息、可以让用户进行确认、或者包含多个任务。</p>
+<p class="description">对话框将一个任务告知给用户，它包含了一些关键信息，需要用户进行确认，或者包含了多个任务。</p>
 
-[对话框](https://material.io/design/components/dialogs.html) 是 [模态](/utils/modal/) 窗体的一种类型, 通过显示在应用程序内容的前面，来提供关键信息的显示，或者要求用户进行确认和判断。 对话框在出现时会禁用应用程序的所有功能, 并在屏幕上保持固定, 直到被确认、被取消或已采取其他必要的操作。
+[对话框](https://material.io/design/components/dialogs.html)是[模态](/utils/modal/) 窗体的一种类型，通过显示在应用程序内容之前，来显示关键信息，或者要求用户的决策。 对话框在出现时会禁用应用程序的所有功能, 并在屏幕上保持固定, 直到被确认、被取消或已采取其他必要的操作。
 
 对话框会带有目的性地中断用户体验，请谨慎使用。
 
