@@ -73,7 +73,7 @@ import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 `Icon` 组件通过任一支持连字的图标字体显示为一个图标。 作为先决条件, 您必须在项目中包括一个, 例如通过 Google Web Fonts 引入 [Material icon font](http://google.github.io/material-design-icons/#icon-font-for-the-web) ：
 
 ```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
 
 `Icon` 将为 Material icon font 设置正确的类名。对于其他的字体，你必须通过 Icon 组件的 `className` 属性设置类名。
