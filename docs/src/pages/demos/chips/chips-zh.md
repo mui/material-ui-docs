@@ -1,10 +1,10 @@
 ---
-title: React纸片组件
+title: React Chip（纸片）组件
 components: Chip
 ---
-# 纸片
+# Chips（纸片）
 
-<p class="description">纸片视图是用来表示输入框、属性或操作的紧凑元素。</p>
+<p class="description">纸片组件是用来表示输入框、属性或操作的紧凑元素。</p>
 
 [纸片](https://material.io/design/components/chips.html) 允许用户输入信息、进行选择、筛选内容或触发操作。
 
