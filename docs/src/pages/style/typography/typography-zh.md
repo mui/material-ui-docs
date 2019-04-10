@@ -13,17 +13,9 @@ components: Typography
 
 ## Roboto 字体 CDN
 
-下面显示的是用于从 CDN 加载Roboto字体的示例链接标记。
-
-*HTML*
+Shown below is a sample link markup used to load the Roboto font from a CDN:
 
 ```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
-```
-
-*JSX*
-
-```jsx
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
 ```
 
