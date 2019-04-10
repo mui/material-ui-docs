@@ -41,7 +41,8 @@ Material-UIは最初にモバイルで開発されました。最初にモバイ
 ```html
 <meta
   name="viewport"
-  content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no">
+  content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
+/>
 ```
 
 ### CssBaseline
