@@ -23,14 +23,8 @@ a través de [OpenCollective](https://opencollective.com/material-ui)
   <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="localize" href="https://localizejs.com" rel="noopener" target="_blank" style="margin-right: 16px;">
     <img src="https://images.opencollective.com/proxy/images?src=https%3A%2F%2Fopencollective-production.s3-us-west-1.amazonaws.com%2F629dea80-f1ae-11e8-b356-a5942970e22b.png&height=65" alt="localizar" title="Traducción de aplicación y plataforma de localización">
   </a>
-  <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="yakaz" href="https://yakaz.com" rel="noopener" target="_blank" style="margin-right: 16px;">
-    <img src="https://images.opencollective.com/proxy/images?src=https%3A%2F%2Fopencollective-production.s3-us-west-1.amazonaws.com%2Fb47b9630-1586-11e9-a4d4-47c0a7133bdc.png&height=80" alt="yakaz" title="Buscar anuncios clasificados">
-  </a>
-  <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="zinggrid" href="https://www.zinggrid.com/" rel="noopener" target="_blank" style="margin-right: 16px;">
-    <img src="https://images.opencollective.com/proxy/images?src=https%3A%2F%2Fopencollective-production.s3-us-west-1.amazonaws.com%2F453226e0-258a-11e9-ac89-996ff9caccb7.png&height=45" alt="zinggrid" title="Hace poderosas grids fácilmente">
-  </a>
 </p>
 
-### ¡Y aún hay más!
+### There are more!
 
 Revise la lista de todos [nuestros patrocinadores](/discover-more/backers/).
