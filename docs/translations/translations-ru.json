@@ -18,6 +18,10 @@
   "themes": "Премиум темы",
   "themesDescr": "Поднимите Material-UI на следующий уровень с премиум темами из нашего официального магазина - всё построено с использованием Material-UI.",
   "themesButton": "Смотреть темы",
+  "whosUsing": "Who's using Material-UI?",
+  "joinThese": "Join these and other great organisations!",
+  "usingMui": "Are you using Material-UI?",
+  "letUsKnow": "Let us know!",
   "quickLinks": "Быстрые ссылки",
   "examples": "Примеры",
   "icons": "Иконки",
@@ -79,7 +83,6 @@
   "copySource": "Копировать исходник",
   "stackblitz": "Редактировать в StackBlitz (только JS)",
   "headTitle": "Самый популярный в мире React UI фреймворк - Material-UI",
-  "headDescription": "React компоненты для быстрой и легкой веб-разработки. Создайте свой собственный дизайн или начните с Material Design.",
   "pages": {
     "/getting-started": "Getting Started",
     "/getting-started/installation": "Инструкция по установке",
