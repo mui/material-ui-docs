@@ -18,6 +18,10 @@
   "themes": "Temas Premium",
   "themesDescr": "Lleve Material-UI al siguiente nivel con los temas premium de nuestro marketplace oficial - todo hecho con Material-UI.",
   "themesButton": "Examinar temas",
+  "whosUsing": "Who's using Material-UI?",
+  "joinThese": "Join these and other great organisations!",
+  "usingMui": "Are you using Material-UI?",
+  "letUsKnow": "Let us know!",
   "quickLinks": "Enlaces Rápidos",
   "examples": "Ejemplos",
   "icons": "Iconos",
@@ -79,7 +83,6 @@
   "copySource": "Copiar la fuente",
   "stackblitz": "Editar en StackBlitz (solo JS)",
   "headTitle": "El sistema de interfaz de usuarios con React más popular del mundo - Material-UI",
-  "headDescription": "Componentes de React para un desarrollo web más rápido y sencillo. Construya su propio sistema de diseño, o empiece con Material Design.",
   "pages": {
     "/getting-started": "Primeros pasos",
     "/getting-started/installation": "Instalación",
