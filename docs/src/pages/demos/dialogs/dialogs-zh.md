@@ -2,7 +2,7 @@
 title: React Dialog（对话框）组件
 components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Slide
 ---
-# 对话框
+# Dialogs（对话框组件）
 
 <p class="description">对话框用来给用户一个任务，可以提示关键信息、可以让用户进行确认、或者包含多个任务。</p>
 
