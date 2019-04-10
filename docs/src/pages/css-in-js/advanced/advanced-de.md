@@ -1,10 +1,10 @@
 # Erweitert
 
-<p class="description">This section covers more advanced usage of @material-ui/styles.</p>
+<p class="description">Diese Sektion behandelt mehr der fortgeschrittenen Nutzung von @material-ui/styles.</p>
 
 ## Theming
 
-Add a `ThemeProvider` to the top level of your app to pass the theme down the React component tree. Then, you can access the theme object in style functions.
+Fügen Sie auf der oberste Ebene Ihrer App einen ` ThemeProvider` hinzu, um auf das Theme im Komponentenbaum von React zuzugreifen. Then, you can access the theme object in style functions.
 
 ```jsx
 import { ThemeProvider } from '@material-ui/styles';
@@ -83,7 +83,7 @@ Das innere Theme ** überschreibt** das äußere Theme. Sie können das äußere
 
 ## JSS-Plugins
 
-JSS uses plugins to extend its core, allowing you to cherry-pick the features you need, and only pay the performance overhead for what you are using.
+JSS nutzt Plugins um seinen Kern zu erweitern, sodass Sie die Funktionen, die Sie benötigen auswählen können. Sie bezahlen nur für den Leistungsaufwand, den Sie verwenden.
 
 Not all the plugins are available in Material-UI by default. The following (which is a subset of [jss-preset-default](https://cssinjs.org/jss-preset-default/)) are included:
 
