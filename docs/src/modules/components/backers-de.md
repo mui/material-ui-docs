@@ -25,6 +25,6 @@ Gold-Sponsoren sind diejenigen, die $500 pro Monat und mehr für Material-UI ges
   </a>
 </p>
 
-### There are more!
+### Es gibt noch mehr!
 
 Sehen Sie sich die vollständige Liste [unserer Unterstützer](/discover-more/backers/) an.
