@@ -18,6 +18,10 @@
   "themes": "高级版主题",
   "themesDescr": "使用我们官方市场中的高级主题将 Material-UI 升级到新的一层 - 所有这些都建立在 Material-UI 之上。",
   "themesButton": "浏览主题",
+  "whosUsing": "Who's using Material-UI?",
+  "joinThese": "Join these and other great organisations!",
+  "usingMui": "Are you using Material-UI?",
+  "letUsKnow": "Let us know!",
   "quickLinks": "快速链接",
   "examples": "例子",
   "icons": "图标",
@@ -79,7 +83,6 @@
   "copySource": "复制源代码",
   "stackblitz": "在 StackBlitz 中编辑（仅限JS）",
   "headTitle": "世界上最受欢迎的 React UI 框架 -  Material-UI",
-  "headDescription": "React 组件用于更快速、更简便的 web 开发。您也可以自行建立设计系统，或者从 Material Design 开始。",
   "pages": {
     "/getting-started": "入门教程",
     "/getting-started/installation": "安装",
