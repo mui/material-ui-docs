@@ -12,7 +12,7 @@ Material-UI不提供任何高级 API 来解决此问题。我们鼓励大家参�
 
 ![stars](https://img.shields.io/github/stars/paypal/downshift.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/downshift.svg)
 
-在下面的示例中, 我们演示如何使用 [downshift](https://github.com/paypal/downshift)。
+在下面的示例中, 我们演示了如何使用 [downshift](https://github.com/paypal/downshift)。
 
 The last demo allow to clear the input and show a number of options on focus.
 
