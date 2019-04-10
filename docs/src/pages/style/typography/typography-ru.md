@@ -1,7 +1,7 @@
 ---
-components: Typography
+components: Оформление текста
 ---
-# Typography
+# Оформление текста
 
 <p class="description">Use typography to present your design and content as clearly and efficiently as possible.</p>
 
@@ -13,17 +13,9 @@ The *Roboto* font will **not** be automatically loaded by Material-UI. The devel
 
 ## Roboto Font CDN
 
-Shown below is a sample link markup used to load the Roboto font from a CDN.
-
-*HTML*
+Shown below is a sample link markup used to load the Roboto font from a CDN:
 
 ```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
-```
-
-*JSX*
-
-```jsx
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
 ```
 
