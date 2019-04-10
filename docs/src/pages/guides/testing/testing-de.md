@@ -6,9 +6,9 @@ Die Beispiele in diesem Abschnitt verwenden [globale Methoden von Mocha](https:/
 
 ## Intern
 
-Wir nehmen Tests ernst. We have written and maintain **a wide range** of tests so we can iterate with confidence on the components, for instance, the visual regression tests provided by [Argos-CI](https://www.argos-ci.com/mui-org/material-ui) have proven to be really helpful. To learn more about our internal tests, you can have a look at the [README](https://github.com/mui-org/material-ui/blob/next/test/README.md).
+Wir nehmen Tests ernst. Wir haben **eine breite Palette** von Tests geschrieben und halten diese aktuell, sodass wir mit Vertrauen auf den Komponenten iterieren können, zum Beispiel haben sich die, von [Argos-CI](https://www.argos-ci.com/mui-org/material-ui) zur Verfügung gestellten, visuellen Regressionstests als sehr hilfreich erwiesen. Weitere Informationen zu unseren internen Tests finden Sie in der [README](https://github.com/mui-org/material-ui/blob/next/test/README.md).
 
-While we have reached the 100% test coverage achievement, we don't encourage our users to do the same. [![Abdeckungsstatus](https://img.shields.io/codecov/c/github/mui-org/material-ui/next.svg)](https://codecov.io/gh/mui-org/material-ui/branch/next)
+Obwohl wir eine 100%ige Testabdeckung erreicht haben, empfehlen wir unseren Benutzern nicht, dasselbe zu tun. [![Abdeckungsstatus](https://img.shields.io/codecov/c/github/mui-org/material-ui/next.svg)](https://codecov.io/gh/mui-org/material-ui/branch/next)
 
 ## Userspace
 
@@ -108,15 +108,15 @@ describe('<MyComponent />', () => {
 
 Generate a render to string function with the needed context. Please refer to the [enzyme API documentation](https://airbnb.io/enzyme/docs/api/render.html) for further details on the `render` function.
 
-#### Arguments
+#### Argumente
 
 1. `Optionen` (*Object* [optional]) 
-    - `options.render` (*Function* [optional]): The render function to enhance, it uses **enzyme by default**.
-    - The other keys are forwarded to the options argument of `enzyme.render()`.
+    - `options.render` (*Function* [optional]): Die Renderfunktion, die verbessert werden soll, verwendet **standardmäßig Enzym**.
+    - Die anderen Schlüssel werden an das Optionsargument von `enzyme.render()` weitergeleitet.
 
 #### Rückgabewerte
 
-`render` (*Function*): A render to string function.
+`render` (*Funktion*): Eine Render-zu-String-Funktion.
 
 #### Beispiele
 
