@@ -18,6 +18,10 @@
   "themes": "Premium Themes",
   "themesDescr": "Material-UIだけで構築された公式マーケットプレイスのプレミアムテーマでMaterial-UIを次のレベルに進化させます。",
   "themesButton": "テーマを見る",
+  "whosUsing": "Who's using Material-UI?",
+  "joinThese": "Join these and other great organisations!",
+  "usingMui": "Are you using Material-UI?",
+  "letUsKnow": "Let us know!",
   "quickLinks": "関連サイト",
   "examples": "例",
   "icons": "アイコン",
@@ -79,7 +83,6 @@
   "copySource": "ソースコードをコピーする",
   "stackblitz": "StackBlitz(JS only) で編集する",
   "headTitle": "世界で最も人気のあるReact UIフレームワーク - Material-UI",
-  "headDescription": "ウェブ開発をより高速かつ簡単なものにするReactコンポーネントです。あなたのデザインシステムを構築するかMaterial Designで始めましょう。",
   "pages": {
     "/getting-started": "はじめに",
     "/getting-started/installation": "インストール",
