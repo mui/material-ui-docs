@@ -23,21 +23,15 @@ Veuillez noter que [react](https://www.npmjs.com/package/react) >= 16.3.0 et [re
 Materiel-UI a été conçu avec la police [Roboto](https://fonts.google.com/specimen/Roboto) à l’esprit. Veillez donc à suivre [ces instructions](/style/typography/#general) . Par exemple, via Google Web Fonts:
 
 ```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
-```
-
-Sinon, si vous utilisez JSX à la place du HTML pour générer le header:
-
-```jsx
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
 ```
 
 ## Polices d'icônes
 
-Pour utiliser le composant de police `Icon`, vous devez d’abord ajouter la police d'icônes [Material](https://material.io/tools/icons/). Voici [quelques instructions](/style/icons/#font-icons) sur la façon de le faire. Par exemple, via Google Web Fonts :
+Pour utiliser le composant de police `Icon`, vous devez d’abord ajouter la police d'icônes [Material](https://material.io/tools/icons/). Voici [quelques instructions](/style/icons/#font-icons) sur la façon de le faire. Par exemple, via Google Web Fonts:
 
 ```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
 
 Sinon, si vous utilisez JSX à la place du HTML pour générer le header:
