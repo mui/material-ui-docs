@@ -30,7 +30,7 @@ Se você leu a [página de abertura da documentação](/customization/overrides/
 
 {{"demo": "pages/demos/breadcrumbs/CustomizedBreadcrumbs.js"}}
 
-## Accessibility
+## Acessibilidade
 
 Esteja certo de adicionar uma descrição `aria-label` no componente `Breadcrumbs`.
 
