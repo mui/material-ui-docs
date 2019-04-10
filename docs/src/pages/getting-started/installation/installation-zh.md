@@ -23,24 +23,18 @@ yarn add @material-ui/core@next
 Material-UI 的设计与 [Roboto](https://fonts.google.com/specimen/Roboto) 字体相配。 因此，请按照[此说明](/style/typography/#general)载入字体。 例如，使用 Google Web Fonts：
 
 ```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
-```
-
-如果要使用 JSX 嵌套 HTML 来渲染页面头部，可以使用：
-
-```jsx
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
 ```
 
 ## 字体图标
 
-为了使用字体`Icon` 组件, 首先您必须添加[Material icons](https://material.io/tools/icons/)字体. 这是如何添加的[一些说明](/style/icons/#font-icons)。 例如，通过 Google Web Fonts 引入：
+为了使用字体`Icon` 组件, 你必须添加[Material icons](https://material.io/tools/icons/)字体. 这是如何去做的 [一些说明](/style/icons/#font-icons) 例如，使用 Google Web Fonts：
 
 ```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
 
-或者，如果您使用 JSX 而不是 HTML 来渲染页头：
+如果要使用 JSX 嵌套 HTML 来渲染页面头部，可以使用：
 
 ```jsx
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -60,11 +54,11 @@ yarn add @material-ui/icons@next
 
 ## CDN
 
-您可以开始在最简版的前端架构中使用 Material-UI，而这对原型开发很有帮助。 我们不鼓励在生产环境中中使用这种方法 - 不管实际使用哪些组件, 客户端必须下载整个库, 这会影响到整体性能和流量使用率。
+您可以使用最少的前端基础架构开始使用Material-UI，这对于原型设计很有用 我们不鼓励在生产中使用这种方法, 客户端必须下载整个库, 而不管实际使用哪些组件, 影响性能和带宽利用率。
 
 #### UMD 版本
 
-我们提供了两个通用模块定义 (UMD) 文件:
+我们提供两个通用模块定义 (UMD) 文件:
 
 - 一个用于开发: https://unpkg.com/@material-ui/core@next/umd/material-ui.development.js
 - 一个用于生产: https://unpkg.com/@material-ui/core@next/umd/material-ui.production.min.js
