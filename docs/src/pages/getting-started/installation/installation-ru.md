@@ -23,12 +23,6 @@ yarn add @material-ui/core@next
 Material-UI был разработан на основе шрифта [Roboto](https://fonts.google.com/specimen/Roboto). Поэтому обязательно следуйте [этим инструкциям](/style/typography/#general). Например, через Google Web Fonts:
 
 ```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
-```
-
-В качестве альтернативы, если вы используете JSX поверх HTML для отрисовки head:
-
-```jsx
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
 ```
 
@@ -37,7 +31,7 @@ Material-UI был разработан на основе шрифта [Roboto](
 Для того, чтобы использовать компонент `Icon`, вы должны сначала добавить [Material icons](https://material.io/tools/icons/) шрифт. Вот [некоторые инструкции](/style/icons/#font-icons) как это сделать. Например, через Google Web Fonts:
 
 ```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
 
 В качестве альтернативы, если вы используете JSX поверх HTML для отрисовки head:
