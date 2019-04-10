@@ -73,7 +73,7 @@ Nota: Importar exports nombrados de este modo dará lugar a que el código para 
 El componente `Icon` mostrará iconos de cualquier fuente compatible con ligaduras. Como requisito previo, se debe incluir una, como la [fuente de iconos Material](http://google.github.io/material-design-icons/#icon-font-for-the-web) en el proyecto, por ejemplo, vía Google Web Fonts:
 
 ```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
 
 `icono` establecerá el nombre de clase correcto para la fuente de icono de Material. Para otras fuentes, debe proporcionar el nombre de la clase utilizando la propiedad `className` del componente Icon.
