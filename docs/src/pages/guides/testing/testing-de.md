@@ -1,8 +1,8 @@
 # Testen
 
-<p class="description">Write tests to prevent regressions and write better code.</p>
+<p class="description">Schreiben Sie Tests, um Regressionen zu verhindern und besseren Code zu schreiben.</p>
 
-Examples in this guide use [global methods from Mocha](https://mochajs.org/api/global.html), not [Jest](https://jestjs.io/docs/en/api).
+Die Beispiele in diesem Abschnitt verwenden [globale Methoden von Mocha](https://mochajs.org/api/global.html), nicht [Jest](https://jestjs.io/docs/en/api).
 
 ## Intern
 
