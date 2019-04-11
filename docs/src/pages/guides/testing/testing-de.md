@@ -48,7 +48,7 @@ Generate an enhanced shallow function with the needed context. Please refer to t
 
 #### Rückgabewerte
 
-`shallow` (*shallow*): A shallow function.
+`shallow` (*shallow*): Eine shallow-Funktion.
 
 #### Beispiele
 
@@ -70,17 +70,17 @@ beschreiben ('<0 />', () =&gt; {
 
 ### `createMount([options]) => mount`
 
-Generate an enhanced mount function with the needed context. Please refer to the [enzyme API documentation](https://airbnb.io/enzyme/docs/api/mount.html) for further details on the `mount` function.
+Generieren Sie eine erweiterte Mount-Funktion mit dem erforderlichen Kontext. Bitte beachten Sie die [Enzyme API-Dokumentation](https://airbnb.io/enzyme/docs/api/mount.html) für weitere Informationen zur `mount` Funktion.
 
-#### Arguments
+#### Argumente
 
 1. `Optionen` (*Object* [optional]) 
-    - `options.mount` (*Function* [optional]): The mount function to enhance, it uses **enzyme by default**.
-    - The other keys are forwarded to the options argument of `enzyme.mount()`.
+    - `options.mount` (*Function* [optional]): Die Mount-Funktion, die verbessert werden soll, verwendet **standardmäßig Enzym**.
+    - Die anderen Schlüssel werden an das Optionsargument von `enzyme.mount()` weitergeleitet.
 
 #### Rückgabewerte
 
-`mount` (*mount*): A mount function.
+`mount` (*mount*): Die mount-Funktion.
 
 #### Beispiele
 
