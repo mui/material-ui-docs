@@ -45,11 +45,11 @@ Como alternativa, se você estiver utilizando o JSX, use:
 Para utilizar os ícones Material em SVG, como os encontrados nas [demonstrações de componentes](/demos/app-bar/) você precisa primeiro instalar o pacote [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons):
 
 ```sh
-// with npm
-npm install @material-ui/icons@next
+// usando npm
+npm install @material-ui/core
 
-// with yarn
-yarn add @material-ui/icons@next
+// usando yarn
+yarn add @material-ui/core
 ```
 
 ## CDN
