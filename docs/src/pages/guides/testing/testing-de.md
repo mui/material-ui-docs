@@ -106,7 +106,7 @@ describe('<MyComponent />', () => {
 
 ### `createRender([options]) => render`
 
-Generate a render to string function with the needed context. Please refer to the [enzyme API documentation](https://airbnb.io/enzyme/docs/api/render.html) for further details on the `render` function.
+Generieren Sie eine Render-zu-String-Funktion mit dem erforderlichen Kontext. Bitte beachten Sie die [Enzyme API-Dokumentation](https://airbnb.io/enzyme/docs/api/render.html) für weitere Informationen zur `render` Funktion.
 
 #### Argumente
 
