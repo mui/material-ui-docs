@@ -4,7 +4,7 @@
 
 ## Theming
 
-Fügen Sie auf der oberste Ebene Ihrer App einen ` ThemeProvider` hinzu, um auf das Theme im Komponentenbaum von React zuzugreifen. Then, you can access the theme object in style functions.
+Fügen Sie auf der oberste Ebene Ihrer App einen ` ThemeProvider` hinzu, um auf das Theme im Komponentenbaum von React zuzugreifen. Anschließend können Sie in den Stilfunktionen auf das Designobjekt zugreifen.
 
 ```jsx
 import { ThemeProvider } from '@material-ui/styles';
@@ -85,7 +85,7 @@ Das innere Theme ** überschreibt** das äußere Theme. Sie können das äußere
 
 JSS nutzt Plugins um seinen Kern zu erweitern, sodass Sie die Funktionen, die Sie benötigen auswählen können. Sie bezahlen nur für den Leistungsaufwand, den Sie verwenden.
 
-Not all the plugins are available in Material-UI by default. The following (which is a subset of [jss-preset-default](https://cssinjs.org/jss-preset-default/)) are included:
+Nicht alle Plugins sind standardmäßig in der Material-UI verfügbar. Folgende (die eine Teilmenge von [jss-preset-default](https://cssinjs.org/jss-preset-default/) sind) sind inklusive:
 
 - [jss-plugin-rule-value-function](https://cssinjs.org/jss-plugin-rule-value-function/)
 - [jss-plugin-global](https://cssinjs.org/jss-plugin-global/)
@@ -95,7 +95,7 @@ Not all the plugins are available in Material-UI by default. The following (whic
 - [jss-plugin-vendor-prefixer](https://cssinjs.org/jss-plugin-default-unit/)
 - [jss-plugin-props-sort](https://cssinjs.org/jss-plugin-vendor-prefixer/)
 
-Of course, you are free to use additional plugins. Hier ist ein Beispiel mit dem [ jss-rtl ](https://github.com/alitaheri/jss-rtl) Plugin.
+Selbstverständlich können Sie weitere Plugins benutzen. Hier ist ein Beispiel mit dem [ jss-rtl ](https://github.com/alitaheri/jss-rtl) Plugin.
 
 ```jsx
 import { create } from 'jss';
@@ -119,7 +119,7 @@ export default App;
 
 ## String-Vorlagen
 
-If you prefer CSS syntax over JSS, you can use the [jss-plugin-template](https://cssinjs.org/jss-plugin-template) plugin.
+Wenn Sie die CSS-Syntax gegenüber JSS bevorzugen, können Sie das [jss-plugin-template](https://cssinjs.org/jss-plugin-template) Plugin verwenden.
 
 ```jsx
 const useStyles = makeStyles({
@@ -136,7 +136,7 @@ const useStyles = makeStyles({
 });
 ```
 
-Note that this doesn't support selectors, or nested rules.
+Beachten Sie, dass dies keine Selektoren oder verschachtelten Regeln unterstützt.
 
 {{"demo": "pages/css-in-js/advanced/StringTemplates.js"}}
 
@@ -161,7 +161,7 @@ import { StylesProvider } from '@material-ui/styles';
 
 ### `makeStyles` / `withStyles` / `styled`
 
-The injection of style tags happens in the **same order** as the `makeStyles` / `withStyles` / `styled` invocations. Zum Beispiel gewinnt die Farbe Rot in diesem Fall:
+Das Einfügen von Style-Tags erfolgt in der **gleichen Reihenfolge** wie die `makeStyles`/`withStyles`/`styled` Aufrufe. Zum Beispiel gewinnt die Farbe Rot in diesem Fall:
 
 ```jsx
 import clsx from 'clsx';
