@@ -13,7 +13,7 @@ The *Roboto* font will **not** be automatically loaded by Material-UI. The devel
 
 ## Roboto Font CDN
 
-Shown below is a sample link markup used to load the Roboto font from a CDN:
+Temos abaixo um exemplo de markup de link usado para carregar a fonte Roboto de um CDN:
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
