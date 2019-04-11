@@ -25,6 +25,6 @@ via [OpenCollective](https://opencollective.com/material-ui)
   </a>
 </p>
 
-### There are more!
+### E tem mais!
 
 Veja a lista completa de [nossos apoiadores](/discover-more/backers/).
