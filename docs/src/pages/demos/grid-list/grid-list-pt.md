@@ -16,7 +16,7 @@ A simple example of a scrollable image `GridList`.
 
 ## Lista de grade com barras de título
 
-This example demonstrates the use of the `GridListTileBar` to add an overlay to each `GridListTile`. The overlay can accommodate a `title`, `subtitle` and secondary action - in this example an `IconButton`.
+Este exemplo demonstra o uso do `GridListTileBar` para adicionar uma sobreposição a cada `GridListTile`. The overlay can accommodate a `title`, `subtitle` and secondary action - in this example an `IconButton`.
 
 {{"demo": "pages/demos/grid-list/TitlebarGridList.js", "hideEditButton": true}}
 
