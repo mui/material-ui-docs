@@ -69,7 +69,7 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 
 ## 响应式全屏
 
-您可以使用 `withMobileDialog`以对话方式全屏显示对话框。 默认情况下, `withMobileDialog() (Dialog)` 在 [屏幕大小](/layout/basics/)*小于等于* `sm`时响应式全屏。 你可以通过传递 `breakpoint`参数来选择你自己的全屏切换点，比如 `xs`：`withMobileDialog({breakpoint: 'xs'})(Dialog)`。
+您可以使用 `withMobileDialog`全屏显示对话框。 默认情况下, `withMobileDialog() (Dialog)` 在 [屏幕大小](/layout/basics/)*小于等于* `sm`时响应式全屏。 你可以通过传递 `breakpoint`参数来选择你自己的全屏切换点，比如 `xs`：`withMobileDialog({breakpoint: 'xs'})(Dialog)`。
 
 {{"demo": "pages/demos/dialogs/ResponsiveDialog.js"}}
 
