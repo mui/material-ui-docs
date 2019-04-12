@@ -45,15 +45,15 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 
 ## 表单对话框
 
-表单对话框允许用户通过一个弹出的对话框，对表单进行填写。 比如说，如果您的网站提示潜在订阅者填写他们的电子邮件地址，他们可以填写电子邮件字段然后点击“提交”。
+表单对话框允许用户在对话框内填写表单。 比如说，如果您的网站提示潜在订阅者填写他们的电子邮件地址，他们可以填写电子邮件字段然后点击“提交”。
 
 {{"demo": "pages/demos/dialogs/FormDialog.js"}}
 
 ## 自定义对话框
 
-如果您已经阅读了 [覆盖文档页面](/customization/overrides/) 但是您没有信心进入， 这里是一个如何自定义 `DialogTitle` 以支持关闭按钮的示例。
+如果你一直在阅读 [重写文档页面](/customization/overrides/)，但是你不确定如何开始，以下的例子演示了如何通过自定义`DialogTitle`来支持关闭按钮。
 
-⚠️虽然 Material Design 规范鼓励主题，但这个例子是不合适的。
+⚠️虽然 Material design 规范鼓励样式化，但这些例子是不合适的。
 
 {{"demo": "pages/demos/dialogs/CustomizedDialog.js"}}
 
@@ -61,9 +61,9 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 
 {{"demo": "pages/demos/dialogs/FullScreenDialog.js"}}
 
-## 可选尺码
+## 大小选择项
 
-您可以使用 `maxWidth` enumerable和 `fullWidth` boolean来设置对话框的最大宽度。 当 `fullWidth` 属性为true时，对话框将根据 `maxWidth` 值进行调整。
+您可以使用 `maxWidth`的 enumerable 和 `fullWidth`的 boolean 来设定对话框的最大宽度。 当 `fullWidth` 属性为true时，对话框将根据 `maxWidth` 的值进行自我调整。
 
 {{"demo": "pages/demos/dialogs/MaxWidthDialog.js"}}
 
