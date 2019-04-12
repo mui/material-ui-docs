@@ -192,15 +192,15 @@ export default function MyComponent() {
 }
 ```
 
-The hook call order and the class name concatenation order **don't matter**.
+Die Hook-Aufrufreihenfolge und die Klassennamensverkettungsreihenfolge **spielen keine Rolle**.
 
 ### insertionPoint
 
-JSS [provides a mechanism](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-the-dom-insertion-point) to control this situation. By adding an `insertionPoint` within the HTML you can [control the order](https://cssinjs.org/jss-api#attach-style-sheets-in-a-specific-order) that the CSS rules are applied to your components.
+JSS [bietet einen Mechanismus](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-the-dom-insertion-point) um diese Situation zu kontrollieren. Durch Hinzufügen der Platzierung des `Einfügepunkts` innerhalb Ihres HTML-Heads können Sie die [Reihenfolge steuern](https://cssinjs.org/jss-api#attach-style-sheets-in-a-specific-order), sodass die CSS-Regeln auf Ihre Komponenten angewendet werden.
 
 #### HTML-Kommentar
 
-The simplest approach is to add an HTML comment to the `<head>` that determines where JSS will inject the styles:
+Am einfachsten ist es, einen HTML-Kommentar zum `<head>` hinzuzufügen, der bestimmt, wo JSS die Stile einfügt:
 
 ```html
 <head>
@@ -215,7 +215,7 @@ import { StylesProvider, jssPreset } from '@material-ui/styles';
 
 const jss = create({
   ...jssPreset(),
-  // Define a custom insertion point that JSS will look for when injecting the styles into the DOM.
+  //  Wir definieren einen individuellen insertion point, welcher von JSS benutzt wird, um die Stile in den DOM einzufügen.
   insertionPoint: 'jss-insertion-point',
 });
 
@@ -228,7 +228,7 @@ export default App;
 
 #### Andere HTML-Elemente
 
-[Create React App](https://github.com/facebook/create-react-app) entfernt HTML-Kommentare beim Erstellen des Produktions-Builds. To get around this issue, you can provide a DOM element (other than a comment) as the JSS insertion point, for example, a `<noscript>` element:
+[Create React App](https://github.com/facebook/create-react-app) entfernt HTML-Kommentare beim Erstellen des Produktions-Builds. Um dieses Problem zu umgehen, können Sie ein DOM-Element (nicht einen Kommentar) als JSS-Einfügepunkt angeben, z. B. `<noscript>`:
 
 ```jsx
 <head>
@@ -243,7 +243,7 @@ import { StylesProvider, jssPreset } from '@material-ui/styles';
 
 const jss = create({
   ...jssPreset(),
-  // Define a custom insertion point that JSS will look for when injecting the styles into the DOM.
+  //  Wir definieren einen individuellen insertion point, welcher von JSS benutzt wird, um die Stile in den DOM einzufügen.
   insertionPoint: document.getElementById('jss-insertion-point'),
 });
 
@@ -365,13 +365,13 @@ const identifier = 123;
 const className = `${productionPrefix}-${identifier}`;
 ```
 
-Wenn Sie dieses Standardverhalten nicht mögen, können Sie es ändern. JSS allows you to supply a [custom class name generator](https://cssinjs.org/jss-api/#generate-your-class-names).
+Wenn Sie dieses Standardverhalten nicht mögen, können Sie es ändern. Mit JSS können Sie einen [benutzerdefinierten Klassennamensgenerator](https://cssinjs.org/jss-api/#generate-your-class-names) bereitstellen.
 
 ## Globales CSS
 
 ### `jss-plugin-global`
 
-The [`jss-plugin-global`](#jss-plugins) plugin is installed in the default preset. You can use it to define global class names.
+Das [`jss-plugin-global`](#jss-plugins) Plugin ist in der Standardvoreinstellung installiert. Sie können es verwenden, um globale Klassennamen zu definieren.
 
 {{"demo": "pages/css-in-js/advanced/GlobalCss.js"}}
 
@@ -427,7 +427,7 @@ Weitere Informationen zu CSP finden Sie in den [MDN Web Docs](https://developer.
 
 ### Wie kann man CSP implementieren?
 
-Um CSP mit Material-UI (und JSS) verwenden zu können, müssen Sie eine Nonce verwenden. A nonce is a randomly generated string that is only used once, therefore you need to add server middleware to generate one on each request. JSS hat ein [tolles Tutorial](https://github.com/cssinjs/jss/blob/next/docs/csp.md) wie man dies mit Express und React Helmet erreichen kann. Lesen Sie für einen grundlegenden Überblick weiter.
+Um CSP mit Material-UI (und JSS) verwenden zu können, müssen Sie eine Nonce verwenden. Eine Nonce ist eine zufällig generierte Zeichenfolge, die nur einmal verwendet wird. Daher müssen Sie eine Server-Middleware hinzufügen, um für jede Anforderung eine zu generieren. JSS hat ein [tolles Tutorial](https://github.com/cssinjs/jss/blob/next/docs/csp.md) wie man dies mit Express und React Helmet erreichen kann. Lesen Sie für einen grundlegenden Überblick weiter.
 
 Eine CSP-Nonce ist eine Base 64-codierte Zeichenfolge. Sie können so erstellen:
 
@@ -437,7 +437,7 @@ import uuidv4 from 'uuid/v4';
 const nonce = new Buffer(uuidv4()).toString('base64');
 ```
 
-It is very important that you use UUID version 4, as it generates an **unpredictable** string. Sie wenden dann dieses Nonce auf den CSP-Header an. Ein CSP-Header könnte mit der angewendeten Nonce so aussehen:
+Es ist sehr wichtig, dass Sie die UUID Version 4 verwenden, da es einen **unvorhersehbaren** String generiert. Sie wenden dann dieses Nonce auf den CSP-Header an. Ein CSP-Header könnte mit der angewendeten Nonce so aussehen:
 
 ```js
 header('Content-Security-Policy')
