@@ -35,11 +35,11 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 如果需要加上标题请:
 
 - 使用明确的问题或声明，并在内容区域对其做出解释，例如：“是否要清除 USB 上的内容？”。
-- 避免道歉、模棱两可或问题, 例如 "警告！" 或 "你确定吗？“
+- 避免道歉、模棱两可或问一些问题，例如：“警告！” 或 “你确定吗?”
 
 {{"demo": "pages/demos/dialogs/AlertDialog.js"}}
 
-当然你也可以换掉过渡效果, 下面的示例使用了 `幻灯片`。
+当然你也可以换掉过渡效果，下面的示例使用了 ` Slide（幻灯片）`。
 
 {{"demo": "pages/demos/dialogs/AlertDialogSlide.js"}}
 
