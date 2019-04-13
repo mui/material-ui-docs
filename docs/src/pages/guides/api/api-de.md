@@ -24,17 +24,17 @@ Abgesehen von den oben genannten Kompensationsregeln setzen wir die folgenden Re
 
 Nicht dokumentierte Eigenschaften werden auf das Stammelement verteilt. zum Beispiel wird die `className`Eigenschaft auf die Wurzel angewendet.
 
-Now, let's say you want to disable the ripples on the `MenuItem`. You can take advantage of the spread behavior:
+Angenommen, Sie möchten die Wellen im `Menüelement` deaktivieren. Sie können das Ausbreitungsverhalten nutzen:
 
 ```jsx
 <MenuItem disableRipple />
 ```
 
-The `disableRipple` property will flow this way: [`MenuItem`](/api/menu-item/) > [`ListItem`](/api/list-item/) > [`ButtonBase`](/api/button-base/).
+Die Eigenschaft `disableRipple` wird folgendermaßen weitergegeben: [`MenuItem`](/api/menu-item/) > [`ListItem`](/api/list-item/) > [`ButtonBase`](/api/button-base/).
 
-### Native properties
+### Native Eigenschaften
 
-We avoid documenting native properties supported by the DOM like [`className`](/customization/overrides/#overriding-with-class-names).
+Wir vermeiden, die vom DOM unterstützten nativen Eigenschaften wie [`className`](/customization/overrides/#overriding-with-class-names) zu dokumentieren.
 
 ### CSS Classes
 
