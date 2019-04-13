@@ -62,9 +62,9 @@ const styles = {
 
 ### Verschachtelte Komponenten
 
-Nested components inside a component have:
+Verschachtelte Komponenten in einer Komponente haben:
 
-- their own flattened properties when these are key to the top level component abstraction, for instance and `id` property for the `Input` component.
+- ihre eigenen abgeflachten Eigenschaften, wenn diese der Schlüssel für die Abstraktion der Komponenten der obersten Ebene sind, eine Instanz und eine `id` Eigenschaft für die `Input` Komponente.
 - their own `xxxProps` property when users might need to tweak the internal render method's sub-components, for instance, exposing the `inputProps` and `InputProps` properties on components that use `Input` internally.
 - their own `xxxComponent` property for performing component injection.
 - their own `xxxRef` property when user might need to perform imperative actions, for instance, exposing a `inputRef` property to access the native `input` on the `Input` component. This helps answer the question ["How can I access the DOM element?"](/getting-started/faq/#how-can-i-access-the-dom-element)
