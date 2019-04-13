@@ -19,9 +19,9 @@ Auf der Clientseite wird das CSS ein zweites Mal eingefügt, bevor das serversei
 
 Im folgenden Rezept wird beschrieben, wie das serverseitige Rendering eingerichtet wird.
 
-### The theme
+### Das Theme
 
-We create a theme that will be shared between the client and the server.
+Wir erstellen ein Theme, das vom Client und vom Server gemeinsam genutzt wird.
 
 `theme.js`
 
@@ -59,7 +59,7 @@ Im Folgenden wird beschrieben, wie unsere Serverseite aussehen wird. Wir werden 
 ```js
 import express from 'express';
 
-// We are going to fill these out in the sections to follow.
+// Diese werden wir in den folgenden Abschnitten ausfüllen.
 function renderFullPage(html, css) {
   /* ... */
 }
@@ -98,7 +98,7 @@ import theme from './theme';
 function handleRender(req, res) {
   const sheets = new ServerStyleSheets();
 
-  // Render the component to a string.
+  // Rendern Sie die Komponente in einen String.
   const html = ReactDOMServer.renderToString(
     sheets.collect(
       <ThemeProvider theme={theme}>
@@ -118,7 +118,7 @@ const app = express();
 
 app.use('/build', express.static('build'));
 
-// This is fired every time the server-side receives a request.
+// Dies wird jedes Mal ausgelöst, wenn der Server eine Anfrage erhält.
 app.use(handleRender);
 
 const port = 3000;
