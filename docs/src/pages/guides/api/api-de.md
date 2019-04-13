@@ -45,8 +45,8 @@ Alle Komponenten akzeptieren die [`classes`](/customization/overrides/#overridin
 - Die auf Nicht-Root-Elemente angewendeten Klassen wird der Name des Elements vorangestellt, z. B. `paperWidthXs` in der Dialogkomponente.
 - Die von einer booleschen Eigenschaft angewendeten Varianten sind **nicht** vorangestellt, zB die `rounded` Klasse wird durch die `rounded` Eigenschaft angewendet.
 - Die von einer Enumeneigenschaft angewendeten Varianten **sind** vorangestellt, z. B. die `colorPrimary` Klasse wird von der Farbe `color= "primary" ` Eigenschaft angewendet.
-- Eine Variante hat **eine Spezifitätsebene**. The `color` and `variant` properties are considered a variant. The lower the style specificity is, the simpler it is to override.
-- We increase the specificity for a variant modifier. We already **have to do it** for the pseudo-classes (`:hover`, `:focus`, etc.). It allows much more control at the cost of more boilerplate. Hopefully, it's also more intuitive.
+- Eine Variante hat **eine Spezifitätsebene**. Die `color` und `variant` Eigenscahft werden als Variant betrachtet. Je geringer die Stilspezifität ist, desto einfacher ist es, sie zu überschreiben.
+- Wir erhöhen die Spezifität für einen Variantenmodifikator. Wir ** müssen es schon ** für die Pseudoklassen (`:hover`, `:focus`, usw.) anwenden. Es ermöglicht viel mehr Kontrolle auf Kosten von mehr Boilerplate. Hoffentlich ist es auch intuitiver.
 
 ```js
 const styles = {
@@ -60,7 +60,7 @@ const styles = {
 };
 ```
 
-### Nested components
+### Verschachtelte Komponenten
 
 Nested components inside a component have:
 
