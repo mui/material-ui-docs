@@ -42,10 +42,10 @@ Alle Komponenten akzeptieren die [`classes`](/customization/overrides/#overridin
 
 - Die auf das Wurzelelement angewendete Klasse wird immer als `root` bezeichnet.
 - Alle Standardstile sind in einer einzigen Klasse zusammengefasst.
-- The classes applied to non-root elements are prefixed with the name of the element, e.g. `paperWidthXs` in the Dialog component.
-- The variants applied by a boolean property **aren't** prefixed, e.g. the `rounded` class applied by the `rounded` property.
-- The variants applied by an enum property **are** prefixed, e.g. the `colorPrimary` class applied by the `color="primary"` property.
-- A variant has **one level of specificity**. The `color` and `variant` properties are considered a variant. The lower the style specificity is, the simpler it is to override.
+- Die auf Nicht-Root-Elemente angewendeten Klassen wird der Name des Elements vorangestellt, z. B. `paperWidthXs` in der Dialogkomponente.
+- Die von einer booleschen Eigenschaft angewendeten Varianten sind **nicht** vorangestellt, zB die `rounded` Klasse wird durch die `rounded` Eigenschaft angewendet.
+- Die von einer Enumeneigenschaft angewendeten Varianten **sind** vorangestellt, z. B. die `colorPrimary` Klasse wird von der Farbe `color= "primary" ` Eigenschaft angewendet.
+- Eine Variante hat **eine Spezifitätsebene**. The `color` and `variant` properties are considered a variant. The lower the style specificity is, the simpler it is to override.
 - We increase the specificity for a variant modifier. We already **have to do it** for the pseudo-classes (`:hover`, `:focus`, etc.). It allows much more control at the cost of more boilerplate. Hopefully, it's also more intuitive.
 
 ```js
