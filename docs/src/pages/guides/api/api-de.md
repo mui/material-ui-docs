@@ -36,12 +36,12 @@ Die Eigenschaft `disableRipple` wird folgendermaßen weitergegeben: [`MenuItem`]
 
 Wir vermeiden, die vom DOM unterstützten nativen Eigenschaften wie [`className`](/customization/overrides/#overriding-with-class-names) zu dokumentieren.
 
-### CSS Classes
+### CSS-Klassen
 
-All the components accept a [`classes`](/customization/overrides/#overriding-with-classes) property to customize the styles. The classes design answers two constraints: to make the classes structure as simple as possible, while sufficient to implement the Material Design specification.
+Alle Komponenten akzeptieren die [`classes`](/customization/overrides/#overriding-with-classes) Eigenschaft zum Anpassen der Stile. Das Design der classes beantwortet zwei Bedingungen: Die Klassenstruktur so einfach wie möglich zu gestalten, aber trotzdem ausreichend, um die Material Design-Spezifikation zu implementieren.
 
-- The class applied to the root element is always called `root`.
-- All the default styles are grouped in a single class.
+- Die auf das Wurzelelement angewendete Klasse wird immer als `root` bezeichnet.
+- Alle Standardstile sind in einer einzigen Klasse zusammengefasst.
 - The classes applied to non-root elements are prefixed with the name of the element, e.g. `paperWidthXs` in the Dialog component.
 - The variants applied by a boolean property **aren't** prefixed, e.g. the `rounded` class applied by the `rounded` property.
 - The variants applied by an enum property **are** prefixed, e.g. the `colorPrimary` class applied by the `color="primary"` property.
