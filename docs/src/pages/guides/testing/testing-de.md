@@ -10,41 +10,41 @@ Wir nehmen Tests ernst. Wir haben **eine breite Palette** von Tests geschrieben 
 
 Obwohl wir eine 100%ige Testabdeckung erreicht haben, empfehlen wir unseren Benutzern nicht, dasselbe zu tun. [![Abdeckungsstatus](https://img.shields.io/codecov/c/github/mui-org/material-ui/next.svg)](https://codecov.io/gh/mui-org/material-ui/branch/next)
 
-## Userspace
+## Benutzerraum
 
-What about writing tests in userspace? The Material-UI styling infrastructure uses some helper functions built on top of [enzyme](https://github.com/airbnb/enzyme) to make the process easier, which we are exposing. You can take advantage of them if you so choose.
+Was ist mit Tests im Benutzerraum? Die Material-UI-Styling-Infrastruktur verwendet einige Hilfsfunktionen, die auf dem [enzym ](https://github.com/airbnb/enzyme) basieren, um den Prozess zu erleichtern, den wir offenlegen. Sie können sie nutzen, wenn Sie dies wünschen.
 
-### Shallow rendering
+### Flaches Rendering (Shallow)
 
-Shallow rendering is useful to constrain your testing to a component as a unit. This also ensures that your tests aren't indirectly asserting behavior of child components. Shallow rendering was created to test components in isolation. This means without leaking child implementation details such as the context.
+Flaches Rendering ist nützlich, um Ihre Tests auf eine Komponente als Einheit zu beschränken. Dadurch wird auch sichergestellt, dass Ihre Tests das Verhalten untergeordneter Komponenten nicht indirekt durchsetzen. Es wurde ein flaches Rendering erstellt, um Komponenten isoliert zu testen. Dies bedeutet, dass untergeordnete Implementierungsdetails wie der Kontext nicht verloren gehen.
 
-The `createShallow()` function can be used for this situation. Aside from wrapping the enzyme API, it provides a `dive` and `untilSelector` option.
+Die `createShallow()` Funktion kann für diese Situation verwendet werden. Neben dem Einwickeln der Enzym-API bietet es eine `dive` und `untilSelector` Möglichkeit.
 
-### Full DOM rendering
+### Volles DOM-Rendering
 
-Full DOM rendering is ideal for use cases where you have components that may interact with DOM APIs or may require the full lifecycle in order to fully test the component (e.g., `componentDidMount` etc.).
+Das vollständige DOM-Rendering ist ideal für Anwendungsfälle, in denen Komponenten vorhanden sind, die mit DOM-APIs interagieren oder den gesamten Lebenszyklus erfordern, um die Komponente vollständig zu testen (z. B. `componentDidMount` usw.).
 
-The `createMount()` function is provided for this situation. Aside from wrapping the enzyme API, it provides a `cleanUp` function.
+Die `createMount()` Funktion kann für diese Situation verwendet werden. Neben dem Einwickeln der Enzym-API bietet es eine `cleanUp` Möglichkeit.
 
-### Render to string
+### Als string rendern
 
-Rendering to a string is useful to test the behavior of the components that are used on the server. You can take advantage of this to assert the generated HTML string.
+Das Rendern in einen String ist hilfreich, um das Verhalten der auf dem Server verwendeten Komponenten zu testen. Sie können dies nutzen, um die generierte HTML-Zeichenfolge zu bestätigen.
 
-The `createRender()` function is ideal for this. This is just an alias for the enzyme API, which is only exposed for consistency.
+Die `createRender()` Funktion ist dafür ideal. Dies ist nur ein Alias für die Enzym-API, die nur wegen der Konsistenz sichtbar ist.
 
 ## API
 
 ### `createShallow([options]) => shallow`
 
-Generate an enhanced shallow function with the needed context. Please refer to the [enzyme API documentation](https://airbnb.io/enzyme/docs/api/shallow.html) for further details on the `shallow` function.
+Generieren Sie eine erweiterte Shallow-Funktion mit dem erforderlichen Kontext. Bitte beachten Sie die [Enzyme API-Dokumentation](https://airbnb.io/enzyme/docs/api/shallow.html) für weitere Informationen zur `shallow` Funktion.
 
-#### Arguments
+#### Argumente
 
 1. `Optionen` (*Object* [optional]) 
-    - `options.shallow` (*Function* [optional]): The shallow function to enhance, it uses **enzyme by default**.
-    - `options.untilSelector` (*String* [optional]): Recursively shallow renders the children until it can find the provided selector. It's useful to drill down higher-order components.
-    - `options.dive` (*Boolean* [optional]): Shallow render the one non-DOM child of the current wrapper, and return a wrapper around the result.
-    - The other keys are forwarded to the options argument of `enzyme.shallow()`.
+    - `options.shallow` (*Function* [optional]): Die Shallow-Funktion, die verbessert werden soll, verwendet **standardmäßig Enzym**.
+    - `options.untilSelector` (*String* [optional]): Rendert rekursiv die Kinder flach, so lange, bis sie den bereitgestellten Selektor finden können. Es ist hilfreich, Komponenten höherer Ordnung aufzuschlüsseln.
+    - `options.dive` (*Boolean* [optional]): Rednern flach das erste nicht-DOM-Child des aktuellen Wrappers und einen Wrapper um das Ergebnis zurückgeben.
+    - Die anderen Schlüssel werden an das Optionsargument von `enzyme.shallow()` weitergeleitet.
 
 #### Rückgabewerte
 
