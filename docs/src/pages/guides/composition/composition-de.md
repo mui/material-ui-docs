@@ -4,13 +4,13 @@
 
 ## Komponenten verpacken
 
-In order to provide the maximum flexibility and performance, we need a way to know the nature of the child elements a component receives. To solve this problem we tag some of our components when needed with a `muiName` static property.
+Um maximale Flexibilität und Leistung zu gewährleisten, benötigen wir einen Weg, um die Art der untergeordneten Elemente einer Komponente zu kennen. Zur Lösung dieses Problems haben wir einige unserer Komponenten, wenn nötig, mit der statische Eigenschaft ` muiName ` markiert.
 
-You may, however, need to wrap a component in order to enhance it, which can conflict with the `muiName` solution. If you wrap a component verify if that component has this static property set.
+Möglicherweise müssen Sie jedoch eine Komponente umhüllen, um sie zu verbessern, was mit der `muiName` Lösung in Konflikt geraten kann. Wenn Sie eine Komponente umschließen, überprüfen Sie, ob für diese Komponente diese statische Eigenschaft festgelegt ist.
 
-If you encounter this issue, you need to use the same tag for your wrapping component that is used with the wrapped component. In addition, you should forward the properties, as the parent component may need to control the wrapped components props.
+Wenn dieses Problem auftritt, müssen Sie dasselbe Tag für die Umwickelkomponente, das mit der umwickelten Komponente verwendet wird. Außerdem sollten Sie die Eigenschaften weiterleiten, da die übergeordnete Komponente möglicherweise die übergeordneten Komponentenstützen steuern muss.
 
-Let's see an example:
+Sehen wir uns ein Beispiel an:
 
 ```jsx
 const WrappedIcon = props => <Icon {...props} />;
@@ -19,7 +19,7 @@ WrappedIcon.muiName = Icon.muiName;
 
 {{"demo": "pages/guides/composition/Composition.js"}}
 
-## Component property
+## Komponenteneigenschaft
 
 Material-UI allows you to change the root node that will be rendered via a property called `component`.
 
