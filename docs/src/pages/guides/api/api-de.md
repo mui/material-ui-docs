@@ -67,24 +67,24 @@ Verschachtelte Komponenten in einer Komponente haben:
 - ihre eigenen abgeflachten Eigenschaften, wenn diese der Schlüssel für die Abstraktion der Komponenten der obersten Ebene sind, eine Instanz und eine `id` Eigenschaft für die `Input` Komponente.
 - ihre eigenen `xxxProps ` Eigenschaft, falls Benutzer möglicherweise die Unterkomponenten der internen Render-Methode anpassen müssen, z. B. die `inputProps` und `InputProps` Eigenschaften für Komponenten, die `Input` intern verwenden.
 - ihre eigene `xxxComponent` Eigenschaft zum Durchführen der Komponenteninjektion.
-- their own `xxxRef` property when user might need to perform imperative actions, for instance, exposing a `inputRef` property to access the native `input` on the `Input` component. This helps answer the question ["How can I access the DOM element?"](/getting-started/faq/#how-can-i-access-the-dom-element)
+- ihre eigene `xxxRef` Eigenschaft, falls der Benutzer möglicherweise zwingende Aktionen ausführen muss, z. B. eine `inputRef` Eigenschaft verfügbar machen, um auf ein natives `input` Element der `Input` Komponente zuzugreifen. Dies hilft bei der Beantwortung der Frage ["Wie kann ich auf das DOM-Element zugreifen?"](/getting-started/faq/#how-can-i-access-the-dom-element)
 
-### Property naming
+### Benennung der Eigenschaften
 
-The name of a boolean property should be chosen based on the **default value**. For example, the `disabled` attribute on an input element, if supplied, defaults to `true`. This choice allows the shorthand notation:
+Der Name einer booleschen Eigenschaft sollte basierend auf dem **Standardwert** ausgewählt werden. Zum Beispiel ist das `disabled` Attribut für ein Eingabeelement, sofern angegeben, standardmäßig auf `true` gesetzt. Diese Wahl erlaubt die Kurzschreibweise:
 
 ```diff
 -<Input enabled={false} />
 +<Input disabled />
 ```
 
-### Controlled components
+### Kontrollierte Komponenten
 
-Most of the controlled component are controlled via the `value` and the `onChange` properties, however, the `open` / `onClose` / `onOpen` combination is used for display related state.
+Der überwiegende Teil der kontrollierten Komponente wird über die `value` und `onChange` Eigenschaften gesteuert, jedoch werden die `open` / `onClose` / `onOpen` Kombination wird für den Anzeigezustand verwendet.
 
 ### boolean vs enum
 
-There are two options to design the API for the variations of a component: with a *boolean*; or with an *enum*. For example, let's take a button that has different types. Each option has its pros and cons:
+Es gibt zwei Möglichkeiten, die API für die Variationen einer Komponente zu entwerfen: mit einem * Booleschen Wert*; oder mit einer *Aufzählung (enum)*. Nehmen wir zum Beispiel einen Button, die verschiedene Typen hat. Jede Option hat ihre Vor- und Nachteile:
 
 - Option 1 *boolean*:
     
@@ -95,7 +95,7 @@ There are two options to design the API for the variations of a component: with 
     };
     ```
     
-    This API enabled the shorthand notation: `<Button>`, `<Button contained />`, `<Button fab />`.
+    Diese API hat die Kurzschreibweise aktiviert: `<Button>`, `<Button contained />`, `<Button fab />`.
 
 - Option 2 *enum*:
     
@@ -105,13 +105,13 @@ There are two options to design the API for the variations of a component: with 
     }
     ```
     
-    This API is more verbose: `<Button>`, `<Button variant="contained">`, `<Button variant="fab">`.
+    Diese API ist ausführlicher: `<Button>`, `<Button variant="contained">`, `<Button variant="fab">`.
     
-    However it prevents an invalid combination from being used, bounds the number of properties exposed, and can easily support new values in the future.
+    Es verhindert jedoch, dass eine ungültige Kombination verwendet wird, begrenzt die Anzahl der offengelegten Eigenschaften, und kann neue Werte in Zukunft leicht unterstützen.
 
-The Material-UI components use a combination of the two approaches according to the following rules:
+Die Komponenten der Material-UI verwenden eine Kombination der beiden Ansätze gemäß den folgenden Regeln:
 
-- A *boolean* is used when **2** degrees of freedom are required.
-- An *enum* is used when **> 2** degrees of freedom are required, or if there is the possibility that additional degrees of freedom may be required in the future.
+- Ein *boolean* wird verwendet, wenn **2** Freiheitsgrade erforderlich sind.
+- Eine *Aufzählung* wird verwendet, wenn **> 2** Freiheitsgrade erforderlich sind, oder wenn die Möglichkeit besteht, dass in Zukunft zusätzliche Freiheitsgrade erforderlich sind.
 
-Going back to the previous button example; since it requires 3 degrees of freedom, we use an *enum*.
+Zurück zum vorherigen Beispiel des Buttons; Da 3 Freiheitsgrade erforderlich sind, verwenden wir eine *Aufzählung*.
