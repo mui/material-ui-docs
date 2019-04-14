@@ -65,7 +65,7 @@ const ListItemLink = ({ icon, primary, secondary, to }) => (
 
 ⚠️ Da wir jedoch eine Inline-Funktion verwenden, um die gerenderte Komponente zu ändern, wird die Verknüpfung von React bei jedem Rendern des `ListItemLink ` aufgehoben. React aktualisiert nicht nur das DOM unnötig, sondern die Wellenvisualisierung des `ListItem` funktioniert auch nicht richtig.
 
-The solution is simple: **avoid inline functions and pass a static component to the `component` property** instead. Let's change our `ListItemLink` to the following:
+Die Lösung ist einfach: ** vermeiden von Inline-Funktionen und stattdessen übergeben eine statische Komponente an die `component` Eigenschaft. Lassen Sie uns unser `ListItemLink` zu dem Folgendem ändern:</p> 
 
 ```jsx
 import { Link } from 'react-router-dom';
@@ -90,11 +90,11 @@ class ListItemLink extends React.Component {
 }
 ```
 
-`renderLink` will now always reference the same component.
+`renderLink` wird jetzt immer auf dieselbe Komponente verweisen.
 
-### Caveat with shorthand
+### Vorbehalt mit der Abkürzung
 
-You can take advantage of the properties forwarding to simplify the code. In this example, we don't create any intermediary component:
+Sie können die Weiterleitung von Eigenschaften nutzen, um den Code zu vereinfachen. In diesem Beispiel erstellen wir keine Zwischenkomponente:
 
 ```jsx
 import { Link } from 'react-router-dom';
@@ -102,7 +102,7 @@ import { Link } from 'react-router-dom';
 <ListItem button component={Link} to="/">
 ```
 
-⚠️ However, this strategy suffers from a little limitation: properties collision. The component providing the `component` property (e.g. ListItem) might not forward all its properties to the root element (e.g. dense).
+⚠️ Jedoch weist diese Strategie eine kleine Einschränkung auf: die Kollision der Eigenschaften. Die Komponente, die die `component` Eigenschaft bereitstellt (z.B. ListItem), leitet möglicherweise nicht alle Eigenschaften an das Stammelement weiter(z.B. dense).
 
 ### React Router Demo
 
