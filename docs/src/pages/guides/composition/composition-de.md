@@ -106,7 +106,7 @@ import { Link } from 'react-router-dom';
 
 ### React Router Demo
 
-Here is a demo with [React Router DOM](https://github.com/ReactTraining/react-router):
+Hier ist eine Demo mit [React Router DOM](https://github.com/ReactTraining/react-router):
 
 {{"demo": "pages/guides/composition/ComponentProperty.js"}}
 
