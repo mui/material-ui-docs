@@ -1,12 +1,12 @@
-# Right-to-left
+# Rechts nach links
 
-<p class="description">To change the direction of Material-UI components you must follow the following steps. UIs for languages that are read from right-to-left (RTL), such as Arabic and Hebrew, should be mirrored.</p>
+<p class="description">Um die Richtung der Material-UI-Komponenten zu ändern, müssen Sie die folgenden Schritte ausführen. Benutzeroberflächen für Sprachen, die von rechts nach links (RTL) gelesen werden, wie Arabisch und Hebräisch, sollten gespiegelt werden.</p>
 
 ## Schritte
 
 ### 1. HTML
 
-Make sure the `dir` attribute is set on the body, otherwise native components will break:
+Stellen Sie sicher, dass das `dir` Attribut in body gesetzt wird, sonst werden native Komponenten beschädigt:
 
 ```html
 <body dir="rtl">
@@ -14,7 +14,7 @@ Make sure the `dir` attribute is set on the body, otherwise native components wi
 
 ### 2. Theme
 
-Set the direction in your custom theme:
+Legen Sie die Richtung in Ihrem benutzerdefinierten Theme fest:
 
 ```js
 const theme = createMuiTheme({
@@ -24,7 +24,7 @@ const theme = createMuiTheme({
 
 ### 3. jss-rtl
 
-You need this JSS plugin to flip the styles: [jss-rtl](https://github.com/alitaheri/jss-rtl).
+Sie benötigen dieses JSS-Plugin, um die Styles umzudrehen: [jss-rtl](https://github.com/alitaheri/jss-rtl).
 
 ```sh
 npm install jss-rtl
@@ -39,7 +39,7 @@ import { create } from 'jss';
 import rtl from 'jss-rtl';
 import { StylesProvider, jssPreset } from '@material-ui/styles';
 
-// Configure JSS
+// Konfiguriere JSS
 const jss = create({ plugins: [...jssPreset().plugins, rtl()] });
 
 function RTL(props) {
