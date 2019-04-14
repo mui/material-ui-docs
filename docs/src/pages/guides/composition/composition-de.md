@@ -21,17 +21,17 @@ WrappedIcon.muiName = Icon.muiName;
 
 ## Komponenteneigenschaft
 
-Material-UI allows you to change the root node that will be rendered via a property called `component`.
+Mit der Material-UI können Sie den Stammknoten der gerendert wird mit der `component` Eigenschaft ändern.
 
-### How does it work?
+### Wie funktioniert das?
 
-The component will render like this:
+Die Komponente wird wie folgt gerendert:
 
 ```js
 return React.createElement(this.props.component, props)
 ```
 
-For example, by default a `List` component will render a `<ul>` element. This can be changed by passing a [React component](https://reactjs.org/docs/components-and-props.html#function-and-class-components) to the `component` property. The following example will render the `List` component with a `<nav>` element as root node instead:
+Beispielsweise wird die `List` Komponente mit einem `<ul>`-Element gerendert. Dies kann durch übergeben der [React component](https://reactjs.org/docs/components-and-props.html#function-and-class-components) als `component` Eigenschaft geändert werden. Im folgenden Beispiel wird die Komponente `List` stattdessen mit einem `<nav>` Element als Wurzelknoten gerendert:
 
 ```jsx
 <List component="nav">
