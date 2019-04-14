@@ -65,8 +65,8 @@ const styles = {
 Verschachtelte Komponenten in einer Komponente haben:
 
 - ihre eigenen abgeflachten Eigenschaften, wenn diese der Schlüssel für die Abstraktion der Komponenten der obersten Ebene sind, eine Instanz und eine `id` Eigenschaft für die `Input` Komponente.
-- their own `xxxProps` property when users might need to tweak the internal render method's sub-components, for instance, exposing the `inputProps` and `InputProps` properties on components that use `Input` internally.
-- their own `xxxComponent` property for performing component injection.
+- ihre eigenen `xxxProps ` Eigenschaft, falls Benutzer möglicherweise die Unterkomponenten der internen Render-Methode anpassen müssen, z. B. die `inputProps` und `InputProps` Eigenschaften für Komponenten, die `Input` intern verwenden.
+- ihre eigene `xxxComponent` Eigenschaft zum Durchführen der Komponenteninjektion.
 - their own `xxxRef` property when user might need to perform imperative actions, for instance, exposing a `inputRef` property to access the native `input` on the `Input` component. This helps answer the question ["How can I access the DOM element?"](/getting-started/faq/#how-can-i-access-the-dom-element)
 
 ### Property naming
