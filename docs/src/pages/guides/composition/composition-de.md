@@ -44,11 +44,11 @@ Beispielsweise wird die `List` Komponente mit einem `<ul>`-Element gerendert. Di
 </List>
 ```
 
-This pattern is very powerful and allows for great flexibility, as well as a way to interoperate with other libraries, such as [`react-router`](#react-router-demo) or your favorite forms library. But it also **comes with a small caveat!**
+Dieses Muster ist sehr leistungsfähig und ermöglicht eine große Flexibilität sowie die Möglichkeit, mit anderen Bibliotheken wie dem [`React-Router`](#react-router-demo) oder Ihre Lieblingsformularbibliothek zu arbeiten. Aber es gibt auch eine **kleine Einschränkung!**
 
-### Caveat with inlining
+### Vorbehalt beim Inlining
 
-Using an inline function as an argument for the `component` property may result in **unexpected unmounting**, since you pass a new component to the `component` property every time React renders. For instance, if you want to create a custom `ListItem` that acts as a link, you could do the following:
+Verwenden einer Inline-Funktion als Argument für die `component` Eigenschaft kann dazu führen, dass **unerwartetes unmounting** passiert, da Sie jedes mal eine neue Komponente an die `component` Eigenschaft übergeben, wenn React rendert. Zum Beispiel, wenn Sie ein benutzerdefiniertes `ListItem` erstellen möchten, das als Link fungiert, können Sie Folgendes tun:
 
 ```jsx
 import { Link } from 'react-router-dom';
@@ -63,7 +63,7 @@ const ListItemLink = ({ icon, primary, secondary, to }) => (
 );
 ```
 
-⚠️ However, since we are using an inline function to change the rendered component, React will unmount the link every time `ListItemLink` is rendered. Not only will React update the DOM unnecessarily, the ripple effect of the `ListItem` will also not work correctly.
+⚠️ Da wir jedoch eine Inline-Funktion verwenden, um die gerenderte Komponente zu ändern, wird die Verknüpfung von React bei jedem Rendern des `ListItemLink ` aufgehoben. React aktualisiert nicht nur das DOM unnötig, sondern die Wellenvisualisierung des `ListItem` funktioniert auch nicht richtig.
 
 The solution is simple: **avoid inline functions and pass a static component to the `component` property** instead. Let's change our `ListItemLink` to the following:
 
