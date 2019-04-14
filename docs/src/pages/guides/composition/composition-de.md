@@ -2,7 +2,7 @@
 
 <p class="description">Die Material-UI versucht die Komposition so einfach wie möglich zu gestalten.</p>
 
-## Wrapping components
+## Komponenten verpacken
 
 In order to provide the maximum flexibility and performance, we need a way to know the nature of the child elements a component receives. To solve this problem we tag some of our components when needed with a `muiName` static property.
 
@@ -110,9 +110,9 @@ Here is a demo with [React Router DOM](https://github.com/ReactTraining/react-ro
 
 {{"demo": "pages/guides/composition/ComponentProperty.js"}}
 
-### With TypeScript
+### Mit TypeScript
 
-You can find the details in the [TypeScript guide](/guides/typescript#usage-of-component-property).
+Die Details finden Sie im [TypeScript-Handbuch](/guides/typescript#usage-of-component-property).
 
 ### Vorbehalt bei Refs
 
@@ -126,7 +126,7 @@ Es ist daher erforderlich, dass die Komponente, die Sie an die `Komponente` Eige
 
 Ist dies nicht der Fall, geben wir eine Warnung ähnlich der folgenden aus:
 
-> Invalid prop `component` supplied to `ComponentName`. Es wurde ein Elementtyp erwartet, der eine Referenz enthalten kann.
+> Ungültige `component` Eigenschaft an `ComponentName` übergeben. Es wurde ein Elementtyp erwartet, der eine Referenz enthalten kann.
 
 Zusätzlich gibt React eine Warnung aus.
 
