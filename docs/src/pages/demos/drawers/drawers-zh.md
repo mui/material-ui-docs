@@ -8,7 +8,7 @@ components: Drawer, SwipeableDrawer
 
 [Navigation drawers](https://material.io/design/components/navigation-drawer.html) 使得用户能够访问目标地址和一些应用功能，例如切换帐户。 它们既可以永久在屏幕上，也可以由一个导航菜单图标控制。
 
-[Side sheets](https://material.io/design/components/sheets-side.html) 主要用于平板电脑和台式机的辅助平面。
+[Side sheets](https://material.io/design/components/sheets-side.html)主要在平板和桌面上作为辅助的平面使用。
 
 ## 临时抽屉
 
