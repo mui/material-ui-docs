@@ -8,7 +8,7 @@ Si aún no encuentras lo que está buscando, puedes preguntar a la comunidad en 
 
 Esto es probablemente un problema n°1 que ocurre debido a conflictos de nombre de clase una vez que su código está en un paquete de producción. Para que Material-UI funcione, los valores de `className` de todos los componentes en una página deben ser generados por una sola instancia del [generador de nombre de clase](/css-in-js/advanced/#class-names).
 
-To correct this issue, all components on the page need to be initialized such that there is only ever **one class name generator** between them.
+Para corregir este problema, todos los componentes en la página necesitan ser inicializado tal que solo hay **un generador de nombre de clase** entre ellos.
 
 You could end up accidentally using two class name generators in a variety of scenarios:
 
