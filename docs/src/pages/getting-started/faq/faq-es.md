@@ -10,9 +10,9 @@ Esto es probablemente un problema n°1 que ocurre debido a conflictos de nombre 
 
 Para corregir este problema, todos los componentes en la página necesitan ser inicializado tal que solo hay **un generador de nombre de clase** entre ellos.
 
-You could end up accidentally using two class name generators in a variety of scenarios:
+Usted podría terminar usando accidentalmente dos generadores de nombre de clase en una variedad de escenarios:
 
-- You accidentally **bundle** two versions of Material-UI. You might have a dependency not correctly setting Material-UI as a peer dependency.
+- Usted accidentalmente **ata** dos versiones de Material-UI. You might have a dependency not correctly setting Material-UI as a peer dependency.
 - You are using `StylesProvider` for a **subset** of your React Tree.
 - You are using a bundler and it is splitting code in a way that causes multiple class name generator instances to be created.
 
