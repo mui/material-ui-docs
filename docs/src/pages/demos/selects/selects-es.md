@@ -18,9 +18,9 @@ Dado que la experiencia del usuario puede mejorarse en móvil usando la selecci�
 
 {{"demo": "pages/demos/selects/NativeSelects.js"}}
 
-## Customized selects
+## Selecciones personalizadas
 
-Si has estado leyendo la [página de documentación sobre overrides](/customization/overrides/) pero aun no tienes la confianza suficiente para usarlos acá hay un ejemplo de su uso para el cambio de color de un input.
+Si has estado leyendo la [página de documentación sobre overrides](/customization/overrides/) pero aun no tienes la confianza suficiente para usarlos aquí se encuentra un ejemplo de su uso para el cambio de color de un input.
 
 The first step is to style the `InputBase` component. Once it's styled, you can either use it directly as a text field or provide it to the select `input` property to have a select field.
 
