@@ -104,4 +104,4 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 
 ## 性能
 
-按照 [模态性能部分](/utils/modal/#performance)。
+参考[模态性能部分](/utils/modal/#performance)。
