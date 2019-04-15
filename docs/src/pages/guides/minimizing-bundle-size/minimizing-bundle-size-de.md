@@ -8,7 +8,7 @@ Die Paketgröße der Material-UI wird sehr ernst genommen. Bei jedem Commit werd
 
 ## Wie kann ich die Packetgröße reduzieren?
 
-Der Einfachheit halber stellt Material-UI seine vollständige API auf der oberste Ebene des `material-ui` Imports zur Verfügung. Using this is fine if you have tree shaking working, however, in the case where tree shaking is not supported or configured in your build chain, **this causes the entire library and its dependencies to be included** in your client bundle.
+Der Einfachheit halber stellt Material-UI seine vollständige API auf der oberste Ebene des `material-ui` Imports zur Verfügung. Dies ist in Ordnung, wenn Sie mit Tree Shaking arbeiten, wenn Tree Shaking jedoch in Ihrer Build-Kette nicht unterstützt oder konfiguriert ist, kann dadurch **die gesamte Bibliothek und ihre Abhängigkeiten** in Ihrem Packet eingeschlossen werden.
 
 Sie haben mehrere Möglichkeiten, um diese Situation zu überwinden:
 
