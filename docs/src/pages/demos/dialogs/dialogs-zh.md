@@ -69,28 +69,28 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 
 ## 响应式全屏
 
-您可以使用 `withMobileDialog`全屏显示对话框。 默认情况下, `withMobileDialog() (Dialog)` 在 [屏幕大小](/layout/basics/)*小于等于* `sm`时响应式全屏。 你可以通过传递 `breakpoint`参数来选择你自己的全屏切换点，比如 `xs`：`withMobileDialog({breakpoint: 'xs'})(Dialog)`。
+您可以使用 `withMobileDialog`全屏显示对话框。 默认情况下, `withMobileDialog() (Dialog)` 在 [屏幕大小](/layout/basics/)*小于等于* `sm`时响应式全屏。 通过传递 `breakpoint`参数，您可以自主选择全屏切换点，比如使用`xs`：`withMobileDialog({breakpoint: 'xs'})(Dialog)`。
 
 {{"demo": "pages/demos/dialogs/ResponsiveDialog.js"}}
 
-## 确认对话框
+## 确认型对话框
 
-确认对话框要求用户在提交选项之前显式确认他们的选择。 比如说，用户可以听到多种铃声，但只有在点击 “OK” 后才进行最终确定。
+确认型对话框明确要求用户在提交选项之前确认他们的选择。 比如说，用户可以听到多种铃声，但只有在点击 “OK” 后才意味着做出了选择。
 
-在确认对话框中触摸 "取消", 或按后退, 将会取消当前操作, 放弃任何更改, 并关闭对话框。
+在确认对话框中触摸 "取消"，或按后退，将会导致当前操作的取消，放弃任何更改， 并关闭对话框。
 
 {{"demo": "pages/demos/dialogs/ConfirmationDialog.js"}}
 
-## 可访问性
+## 可及性
 
-参考 [模态框可访问性部分](/utils/modal/#accessibility)
+参考 [模态框可及性的部分](/utils/modal/#accessibility)。
 
-## 长内容滚动
+## 冗长内容的滚动
 
-当对话框根据用户不同的设备和视图大小变得很长时，可以让他们进行滚动。
+由于用户设备的不同或视图的大小，对话框会变得很长，此时对话框是可以滚动的。
 
-- - `scroll=paper` 可以使对话框的内容在paper元素中滚动。
-- - `scroll=body`可以使对话框的内容在body元素内滚动。
+- `scroll=paper` 可以使对话框的内容在 paper 元素中滚动。
+- `scroll=body`可以使对话框的内容在 body 元素内滚动。
 
 请尝试下面的例子来加深理解：
 
@@ -98,7 +98,7 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 
 ## 可拖动的对话框
 
-您可以使用 [react-draggable](https://github.com/mzabriskie/react-draggable)创建可拖动的对话框。 为此，您可以将导入的 `Draggable` 组件作为 `Dialog` 组件的 `PaperComponent` 传递。 这将使整个对话框可拖动。
+您可以使用 [react-draggable](https://github.com/mzabriskie/react-draggable)创建可拖动的对话框。 为此，您可以将导入的 `Draggable` 组件作为 `Dialog` 组件的 `PaperComponent` 传递。 这将使整个对话框变成可拖动的。
 
 {{"demo": "pages/demos/dialogs/DraggableDialog.js"}}
 
