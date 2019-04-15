@@ -4,17 +4,17 @@ components: Select, NativeSelect
 ---
 # Selecciones
 
-<p class="description">Select components are used for collecting user provided information from a list of options.</p>
+<p class="description">Los componentes seleccionados se utilizan para recopilar información relegado por el usuario de una lista de opciones.</p>
 
-## Simple Select
+## Selección simple
 
-Menus are positioned over their emitting elements such that the currently selected menu item appears on top of the emitting element.
+Los menús son colocados sobre sus emisores de elementos tales que el elemento de menú seleccionado actualmente aparece arriba de la emisión de elemento.
 
 {{"demo": "pages/demos/selects/SimpleSelect.js"}}
 
-## Native Select
+## Selección nativa
 
-As the user experience can be improved on mobile using the native select of the platform, we allow such pattern.
+Dado que la experiencia del usuario puede mejorarse en móvil usando la selección nativa de la plataforma, permitimos ese patrón.
 
 {{"demo": "pages/demos/selects/NativeSelects.js"}}
 
