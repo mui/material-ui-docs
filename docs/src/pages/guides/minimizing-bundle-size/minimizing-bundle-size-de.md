@@ -1,16 +1,16 @@
-# Minimizing Bundle Size
+# Packetgröße minimieren
 
-<p class="description">Learn more about the tools you can leverage to reduce the bundle size.</p>
+<p class="description">Erfahren Sie mehr über die Tools, mit denen Sie die Paketgröße reduzieren können.</p>
 
-## Bundle size matters
+## Packetgröße zählt
 
-The bundle size of Material-UI is taken very seriously. We take size snapshots on every commit for every package and critical parts of those packages ([view latest snapshot](/size-snapshot)). Combined with [dangerJS](https://danger.systems/js/) we can inspect [detailed bundle size changes]((https://github.com/mui-org/material-ui/pull/14638#issuecomment-466658459)) on every Pull Request.
+Die Paketgröße der Material-UI wird sehr ernst genommen. Bei jedem Commit werden für jedes Paket und für kritische Teile dieser Pakete Größen-Snapshots erstellt ([siehe letzten Snapshot](/size-snapshot)). Wir können, kombiniert mit [dangerJS](https://danger.systems/js/), [detaillierte Änderungen der Bündelgröße]((https://github.com/mui-org/material-ui/pull/14638#issuecomment-466658459)) bei jedem Pull Request prüfen.
 
-## How to reduce the bundle size?
+## Wie kann ich die Packetgröße reduzieren?
 
-For convenience, Material-UI exposes its full API on the top-level `material-ui` import. Using this is fine if you have tree shaking working, however, in the case where tree shaking is not supported or configured in your build chain, **this causes the entire library and its dependencies to be included** in your client bundle.
+Der Einfachheit halber stellt Material-UI seine vollständige API auf der oberste Ebene des `material-ui` Imports zur Verfügung. Using this is fine if you have tree shaking working, however, in the case where tree shaking is not supported or configured in your build chain, **this causes the entire library and its dependencies to be included** in your client bundle.
 
-You have couple of options to overcome this situation:
+Sie haben mehrere Möglichkeiten, um diese Situation zu überwinden:
 
 ### Option 1
 
