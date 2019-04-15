@@ -1,12 +1,12 @@
 ---
-title: React抽屉组件
+title: React Drawer（抽屉）组件
 components: Drawer, SwipeableDrawer
 ---
-# 抽屉
+# Drawer（抽屉）
 
-<p class="description">导航抽屉可以访问您应用中的地址。侧栏是包含附加内容的平面，它固定在屏幕的左侧或右侧。</p>
+<p class="description">导航抽屉可以访问您应用中的目标地址。侧边栏包含了补充的内容，而它被固定在屏幕的左侧或右侧。</p>
 
-[Navigation drawers](https://material.io/design/components/navigation-drawer.html) 提供对目标和应用功能如「切换帐户」的访问。 它们可以是永久在屏幕上或由导航菜单图标控制。
+[Navigation drawers](https://material.io/design/components/navigation-drawer.html) 使得用户能够访问目标地址和一些应用功能，例如切换帐户。 它们既可以永久在屏幕上，也可以由一个导航菜单图标控制。
 
 [Side sheets](https://material.io/design/components/sheets-side.html) 主要用于平板电脑和台式机的辅助平面。
 
