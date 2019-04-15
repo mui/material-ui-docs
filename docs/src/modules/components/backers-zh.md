@@ -25,6 +25,6 @@ Material-UI 是一个使用 MIT 许可证的开源项目。 可能完全因为�
   </a>
 </p>
 
-### There are more!
+### 其实还有更多！
 
 查看[我们赞助商](/discover-more/backers/)的完整名单。
