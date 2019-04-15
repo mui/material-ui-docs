@@ -32,7 +32,7 @@ npm install jss-rtl
 
 Nachdem Sie das Plugin in Ihrem Projekt installiert haben, müssen die Komponenten der Material-UI weiterhin von der jss-Instanz geladen werden, wie im Folgenden beschrieben. Intern verwendet withStyles dieses JSS-Plugin wenn `direction: 'rtl'` im Theme gesetzt ist. Schaue in die [plugin README](https://github.com/alitaheri/jss-rtl), um mehr zu erfahren.
 
-Once you have created a new JSS instance with the plugin, you need to make it available to all the components in the component tree. We have a [`StylesProvider`](/css-in-js/api/#stylesprovider) component for this:
+Nachdem Sie eine neue JSS-Instanz mit dem Plugin erstellt haben, müssen Sie diese für alle Komponenten in der Komponentenstruktur verfügbar machen. Wir haben eine [`StylesProvider`](/css-in-js/api/#stylesprovider) Komponente dafür:
 
 ```jsx
 import { create } from 'jss';
@@ -53,14 +53,14 @@ function RTL(props) {
 
 ## Demo
 
-*Use the direction toggle button on the top right corner to flip the whole documentation*
+*Verwenden Sie den Richtungsumschaltknopf in der oberen rechten Ecke, um die gesamte Dokumentation zu spiegeln*
 
 {{"demo": "pages/guides/right-to-left/Direction.js"}}
 
-## Opting out of rtl transformation
+## RTL-Umwandlung deaktivieren
 
-If you want to prevent a specific rule-set from being affected by the `rtl` transformation you can add `flip: false` at the beginning:
+Wenn Sie verhindern möchten, dass ein bestimmter Regelsatz von der `Rtl` Transformation beeinflusst wird, können Sie `flip: false` am Anfang hinzufügen:
 
-*Use the direction toggle button on the top right corner to see the effect*
+*Verwenden Sie den Richtungsumschaltknopf in der oberen rechten Ecke, um den Effekt zu sehen*
 
 {{"demo": "pages/guides/right-to-left/RtlOptOut.js", "hideEditButton": true}}
