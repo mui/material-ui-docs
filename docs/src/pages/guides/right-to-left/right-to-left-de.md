@@ -30,7 +30,7 @@ Sie benötigen dieses JSS-Plugin, um die Styles umzudrehen: [jss-rtl](https://gi
 npm install jss-rtl
 ```
 
-Having installed the plugin in your project, Material-UI components still require it to be loaded by the jss instance, as described below. Internally, withStyles is using this JSS plugin when `direction: 'rtl'` is set on the theme. Head to the [plugin README](https://github.com/alitaheri/jss-rtl) to learn more about it.
+Nachdem Sie das Plugin in Ihrem Projekt installiert haben, müssen die Komponenten der Material-UI weiterhin von der jss-Instanz geladen werden, wie im Folgenden beschrieben. Intern verwendet withStyles dieses JSS-Plugin wenn `direction: 'rtl'` im Theme gesetzt ist. Schaue in die [plugin README](https://github.com/alitaheri/jss-rtl), um mehr zu erfahren.
 
 Once you have created a new JSS instance with the plugin, you need to make it available to all the components in the component tree. We have a [`StylesProvider`](/css-in-js/api/#stylesprovider) component for this:
 
