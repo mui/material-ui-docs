@@ -18,7 +18,7 @@ components: 栅格(Grid)
 - 项目具有填充以创建单个项目之间的间距。
 - 有五个网格断点：xs，sm，md，lg和xl。
 
-If you are **new to or unfamiliar with flexbox**, we encourage you to read this [CSS-Tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) guide.
+如果你**对flexbox不熟悉**，我们建议你阅读：[CSS-Tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)手册。
 
 ## 间距
 
@@ -118,4 +118,4 @@ Flex 项目的初始设置为 `min-width: auto`。当子级使用 `white-space: 
 
 ### direction: column | column-reverse
 
-Though the `Grid` component has a `direction` property that allows values of `row`, `row-reverse`, `column`, and `column-reverse`, there are some features that are not supported within `column` and `column-reverse` containers. The properties which define the number of grids the component will use for a given breakpoint (`xs`, `sm`, `md`, `lg`, and `xl`) are focused on controlling width and do **not** have similar effects on height within `column` and `column-reverse` containers. If used within `column` or `column-reverse` containers, these properties may have undesirable effects on the width of the `Grid` elements.
+虽然`Grid`组件有`direction`属性，此属性有`row`，`row-reverse`，`column`，和`column-reverse`选项，但是有些功能是不支持`column`和`column-reverse`容器的。 The properties which define the number of grids the component will use for a given breakpoint (`xs`, `sm`, `md`, `lg`, and `xl`) are focused on controlling width and do **not** have similar effects on height within `column` and `column-reverse` containers. If used within `column` or `column-reverse` containers, these properties may have undesirable effects on the width of the `Grid` elements.
