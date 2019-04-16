@@ -26,7 +26,7 @@ components: Drawer, SwipeableDrawer
 
 {{"demo": "pages/demos/drawers/SwipeableTemporaryDrawer.js"}}
 
-我们网站上的文档使用以下属性来获得组件的最佳可用性: - iOS 托管于高端设备上。 我们可以在不丢帧的情况下启用背景转换。 它的表现将十分优秀。 - iOS 有一个"滑动返回"的功能，它与组件冲突。 我们必须禁用它。
+在本文档中，我们使用以下一系列属性来最大化展示组件的功能: - iOS 在高端设备上托管。 我们可以在不丢帧的情况下启用背景转换。 这样展示令人足够满意了。 - iOS 有一个"滑动返回"的功能，它与 discovery（发现功能）冲突。 我们必须禁用它。
 
 ```jsx
 const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
@@ -34,9 +34,9 @@ const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
 <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} />
 ```
 
-## 响应抽屉
+## 响应式抽屉
 
-`Hidden`响应式帮助程序组件允许根据屏幕宽度显示不同类型的抽屉。 显示小屏幕的`temporary`抽屉，而更宽屏幕显示`permanent`抽屉。
+利用` Hidden `组件，可以根据屏幕宽度显示不同类型的抽屉。 显示小屏幕的`temporary`抽屉，而更宽屏幕显示`permanent`抽屉。
 
 {{"demo": "pages/demos/drawers/ResponsiveDrawer.js", "iframe": true}}
 
