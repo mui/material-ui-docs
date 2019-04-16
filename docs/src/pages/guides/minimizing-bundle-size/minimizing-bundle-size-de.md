@@ -14,7 +14,7 @@ Sie haben mehrere Möglichkeiten, um diese Situation zu überwinden:
 
 ### Option 1
 
-You can import directly from `material-ui/` to avoid pulling in unused modules. For instance, instead of:
+Sie können direkt aus `material-ui/` importieren, um zu vermeiden, ungenutzte Module zu laden. Zum Beispiel anstelle von:
 
 ```js
 import { Button, TextField } from '@material-ui/core';
