@@ -20,9 +20,9 @@ components: Drawer, SwipeableDrawer
 
 ## 可滑动的临时抽屉
 
-您可以使用 `SwipeableDrawer` 组件滑动抽屉。
+您可以使用 `SwipeableDrawer` 组件来实现滑动抽屉。
 
-此组件附带 2 kB gzip 的负载开销。 一些低端移动设备无法以 60 FPS 的速度跟随手指。 您可以使用 `disableBackdropTransition` 属性来提供帮助。
+此组件附带 2 kB gzip 的负载开销。 一些低端移动设备无法以60 FPS 的速度跟随手指的移动。 您可以使用`disableBackdropTransition`属性来解决这个问题。
 
 {{"demo": "pages/demos/drawers/SwipeableTemporaryDrawer.js"}}
 
