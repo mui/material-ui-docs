@@ -14,7 +14,7 @@ Usted podría terminar usando accidentalmente dos generadores de nombre de clase
 
 - Usted accidentalmente **ata** dos versiones de Material-UI. Es posible que usted tenga una dependencia que no establece correctamente Material-UI como una dependencia en par.
 - Usted está usando `StylesProvider` para un **subconjunto** de su Árbol de React.
-- You are using a bundler and it is splitting code in a way that causes multiple class name generator instances to be created.
+- Usted está utilizando un agrupador que está dividiendo el código en una manera que crea múltiples instancias de generador de nombre de clase.
 
 > If you are using webpack with the [SplitChunksPlugin](https://webpack.js.org/plugins/split-chunks-plugin/), try configuring the [`runtimeChunk` setting under `optimizations`](https://webpack.js.org/configuration/optimization/#optimization-runtimechunk).
 
