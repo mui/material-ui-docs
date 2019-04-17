@@ -32,7 +32,7 @@ components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, Expans
 
 ## 性能
 
-即使在扩展面板没被展开的情况下, 扩展面板的内容默认也会被插入到页面中, 此默认行为是因为有服务端渲染(SSR) 和搜索引擎优化(SEO) 方面的考量. 如果你要在扩展面板中渲染开销很大的组件树或者只是单纯要渲染很多扩展面板,覆盖掉插入到页面的默认行为或许是个好主意,你可以通过在`TransitionProps`设置`unmountOnExit`为true来达到此目的: `<ExpansionPanel TransitionProps={{ unmountOnExit: true }} />` 这并不会对所有的性能优化都是灵丹妙药 Be sure to identify bottlenecks first and then try out these optimization strategies.
+即使在扩展面板没被展开的情况下, 扩展面板的内容默认也会被插入到页面中, 此默认行为是因为有服务端渲染(SSR) 和搜索引擎优化(SEO) 方面的考量. 但如果你要在扩展面板中渲染开销很大的组件树或者只是单纯要渲染很多扩展面板,覆盖掉插入到页面的默认行为或许是个好主意.你可以通过在`TransitionProps`设置`unmountOnExit`为true来达到此目的: `<ExpansionPanel TransitionProps={{ unmountOnExit: true }} />`. 不过这并不是对所有情况下的性能优化来说都是灵丹妙药. 务必先确定性能的瓶颈所在再考虑这些优化策略.
 
 ## 定制扩展面板
 
