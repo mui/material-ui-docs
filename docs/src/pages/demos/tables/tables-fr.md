@@ -66,7 +66,7 @@ Un exemple simple avec des colonnes couvrant & lignes.
 
 ## Table virtualisée
 
-Dans l'exemple suivant, nous montrons comment utiliser [react-virtualized](https://github.com/bvaughn/react-virtualized) avec le composant `Table`. Il affiche 200 lignes et peut facilement gérer plus. Virtualization helps with performance issues.
+Dans l'exemple suivant, nous montrons comment utiliser [react-virtualized](https://github.com/bvaughn/react-virtualized) avec le composant `Table`. Il affiche 200 lignes et peut facilement gérer plus. La virtualisation aide à résoudre les problèmes de performances.
 
 {{"demo": "pages/demos/tables/ReactVirtualizedTable.js"}}
 
