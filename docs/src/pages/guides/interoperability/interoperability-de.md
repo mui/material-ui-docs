@@ -106,17 +106,17 @@ export default StyledComponents;
 
 Sowohl styled-components als auch JSS fügen ihre Stile unten im `<head>` ein. Um sicherzustellen, dass styled-components-Stile zuletzt geladen werden, ändern Sie die [CSS-Injektionsreihenfolge](/css-in-js/advanced/#css-injection-order) wie in der Demo.
 
-Ein anderer Ansatz ist die Verwendung von `&&` Zeichen in Stilkomponenten, um, durch Wiederholen des Klassennamens, die [Spezifität zu erhöhen ](https://www.styled-components.com/docs/advanced#issues-with-specificity). Use this to ensure styled-components styles are applied before JSS styles. An example of this solution:
+Ein anderer Ansatz ist die Verwendung von `&&` Zeichen in Stilkomponenten, um, durch Wiederholen des Klassennamens, die [Spezifität zu erhöhen ](https://www.styled-components.com/docs/advanced#issues-with-specificity). Verwenden Sie diese Option, um sicherzustellen, dass styled-components Stile vor JSS-Stilen angewendet werden. Ein Beispiel für diese Lösung:
 
 {{"demo": "pages/guides/interoperability/StyledComponentsPriority.js"}}
 
-### Deeper elements
+### Tiefere Elemente
 
-In some cases, the approaches above will not work. For example, if you attempt to style a [Drawer](/demos/drawers/) with variant `permanent`, you will likely need to affect the Drawer's child `paper` element.
+In einigen Fällen funktionieren die oben genannten Ansätze nicht. Zum Beispiel, wenn Sie versuchen, eine [Drawer](/demos/drawers/) Komponente mit der `permanent` Variante zu verwenden. Dafür müssen Sie wahrscheinlich das untergeordnete `paper` Element des Drawers anpassen.
 
-However, this is not the root element of `Drawer` and therefore styled-components customization as above will not work. You can workaround this by using [stable JSS class names](/css-in-js/advanced#deterministic-class-names), but the most reliable approach is to use the `classes` property to introduce an override style, and then style it with higher specificity via `&`.
+Dies ist jedoch nicht das Wurzelelement von `Drawer`, sodass die Anpassung der gestalteten Komponenten wie oben daher nicht funktioniert. Sie können dies umgehen, indem Sie [stabile JSS Klassennamen](/css-in-js/advanced#deterministic-class-names) verwenden, aber der zuverlässigste Ansatz ist die Verwendung der `classes` Eigenschaft, um einen Überschreibungsstil einzuführen und ihn dann mit höherer Spezifität mittels `&` zu gestalten.
 
-The following example overrides the `label` style of `Button` in addition to the custom styles on the button itself. It also works around [this styled-components issue](https://github.com/styled-components/styled-components/issues/439) by "consuming" properties that should not be passed on to the underlying component.
+Im folgenden Beispiel wird der `label` Stil der `Button` Komponente zusätzlich zu den benutzerdefinierten Stilen auf dem Button selbst überschrieben. Es funktioniert auch um das [styled-components Problem](https://github.com/styled-components/styled-components/issues/439) durch "verbrauchen" der Eigenschaften, die nicht an die zugrunde liegende Komponente weitergegeben werden sollten, zu beheben.
 
 ```jsx
 import React from 'react';
@@ -156,15 +156,15 @@ export default StyledComponentsDeep;
 
 ### ThemeProvider
 
-Material-UI has a rich theme structure that you can leverage for the color manipulations, the transitions, the media queries, and more.
+Material-UI hat eine reiche Themenstruktur, die Sie für Farbmanipulationen, Übergänge, die Medien - Anfragen und mehr nutzen können,.
 
 {{"demo": "pages/guides/interoperability/StyledComponentsTheme.js"}}
 
 ### Portale
 
-The [Portal](/utils/portal/) provides a first-class way to render children into a DOM node that exists outside the DOM hierarchy of the parent component. Because of the way styled-components scopes its CSS, you may run into issues where styling is not applied.
+Das [Portal](/utils/portal/) bietet eine erstklassige Möglichkeit, Kinder in einen DOM-Knoten zu rendern, der sich außerhalb der DOM-Hierarchie der übergeordneten Komponente befindet. Aufgrund der Art und Weise, in der styled-components das CSS erfasst, können Probleme auftreten, bei denen das Styling nicht angewendet wird.
 
-For example, if you attempt to style the [Menu](/demos/menus/) of a [Select](/demos/selects/) component using the property `MenuProps`, you will need to pass along the `className` property to the element being rendered outside of it's DOM hierarchy. The following example shows a workaround:
+Beispielsweise, wenn Sie versuchen, das [Menu](/demos/menus/) einer [Select](/demos/selects/) Komponente mit der Eigenschaft `MenuProps` zu stylen. Dafür müssen Sie die `className` Eigenschaft für das Element, das außerhalb der DOM-Hierarchie gerendert wird, mit übergeben. Das folgende Beispiel zeigt eine Problemumgehung:
 
 ```jsx
 import React from 'react';
@@ -190,7 +190,7 @@ const StyledMenu = styled(({ className, ...props }) => (
 
 ![stars](https://img.shields.io/github/stars/css-modules/css-modules.svg?style=social&label=Star)
 
-It's hard to know the market share of [this styling solution](https://github.com/css-modules/css-modules) as it's dependent on the bundling solution people are using.
+Es ist schwer zu wissen, welchen Marktanteil [diese Styling-Lösung](https://github.com/css-modules/css-modules) hat, da es von der Bündelungslösung, die die Leute verwenden abhängig ist.
 
 **CssModulesButton.css**
 
@@ -238,9 +238,9 @@ export default CssModulesButton;
 
 ![stars](https://img.shields.io/github/stars/emotion-js/emotion.svg?style=social&label=Star) ![npm](https://img.shields.io/npm/dm/emotion.svg?)
 
-### The css Prop
+### Die Css-Eigenschaft
 
-Emotion's **css()** method works seamlessly with Material-UI.
+Die Emotion **css()** Methode funktioniert nahtlos mit der Material-UI.
 
 ```jsx
 /** @jsx jsx */
@@ -317,13 +317,13 @@ export default EmotionStyled;
 
 **Hinweis:** JSS fügt seine Styles am unteren Rand von `<head>` ein. Wenn Sie Stilattribute nicht mit **!important** markieren möchten, ist das wichtig, dass Sie die [ CSS-Injektionsreihenfolge ](/css-in-js/advanced/#css-injection-order) wie in der Demo ändern.
 
-### Deeper elements
+### Tiefere Elemente
 
-In some cases, the approaches above will not work. For example, if you attempt to style a [Drawer](/demos/drawers/) with variant `permanent`, you will likely need to affect the Drawer's child `paper` element.
+In einigen Fällen funktionieren die oben genannten Ansätze nicht. Zum Beispiel, wenn Sie versuchen, eine [Drawer](/demos/drawers/) Komponente mit der `permanent` Variante zu verwenden. Dafür müssen Sie wahrscheinlich das untergeordnete `paper` Element des Drawers anpassen.
 
-However, this is not the root element of `Drawer` and therefore styled-components customization as above will not work. You can workaround this by using [stable JSS class names](/css-in-js/advanced#deterministic-class-names), but the most reliable approach is to use the `classes` property to introduce an override style, and then style it with higher specificity via `&`.
+Dies ist jedoch nicht das Wurzelelement von `Drawer`, sodass die Anpassung der gestalteten Komponenten wie oben daher nicht funktioniert. Sie können dies umgehen, indem Sie [stabile JSS Klassennamen](/css-in-js/advanced#deterministic-class-names) verwenden, aber der zuverlässigste Ansatz ist die Verwendung der `classes` Eigenschaft, um einen Überschreibungsstil einzuführen und ihn dann mit höherer Spezifität mittels `&` zu gestalten.
 
-The following example overrides the `label` style of `Button` in addition to the custom styles on the button itself.
+Im folgenden Beispiel wird der `label` Stil der `Button` Komponente zusätzlich zu den benutzerdefinierten Stilen auf dem Button selbst überschrieben.
 
 ```jsx
 import React from 'react';
