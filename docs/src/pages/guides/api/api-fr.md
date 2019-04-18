@@ -13,24 +13,24 @@ Comme Sebastian Markbage [ l'a souligné ](https://2014.jsconf.eu/speakers/sebas
 Vous avez peut-être remarqué des incohérences dans l'API par rapport à la composition des composants. Pour fournir une certaine transparence, nous avons utilisé les règles suivantes lors de la conception de l'API :
 
 1. L'utilisation de la propriété `children` est le moyen idiomatique pour faire la composition avec React.
-2. Par fois, on a juste besoin d'une composition limite par enfants, par example lorsque qu'on n'a pas besoin d'autoriser la permutation d'ordre par enfant. In this case, providing explicit properties makes the implementation simpler and more performant; for example, the `Tab` takes an `icon` and a `label` property.
-3. API consistency matters.
+2. Par fois, on a juste besoin d'une composition limite par enfants, par example lorsque qu'on n'a pas besoin d'autoriser la permutation d'ordre par enfant. Dans ce cas, fournir des propriétés explicites rend l'implémentation plus simple et plus performante; par example, `Tab` prend `icon` et une propriété `label`.
+3. La cohérence des API est importante.
 
 ## Règles
 
-Aside from the above composition trade-off, we enforce the following rules:
+Outre le compromis de composition ci-dessus, nous appliquons les règles suivantes:
 
-### Spread
+### La propagation
 
-Undocumented properties supplied are spread to the root element; for instance, the `className` property is applied to the root.
+Les propriétés non documentées fournies sont propagées à l'élément racine. par exemple, la propriété ` className ` est appliquée à la racine.
 
-Now, let's say you want to disable the ripples on the `MenuItem`. You can take advantage of the spread behavior:
+Maintenant, supposons que vous vouliez désactiver les ondulations sur le `MenuItem`. Vous pouvez tirer parti du comportement de propagation :
 
 ```jsx
 <MenuItem disableRipple />
 ```
 
-The `disableRipple` property will flow this way: [`MenuItem`](/api/menu-item/) > [`ListItem`](/api/list-item/) > [`ButtonBase`](/api/button-base/).
+La propriété `disableRipple` va suivre de cette façon : [`MenuItem`](/api/menu-item/) > [`ListItem`](/api/list-item/) > [`ButtonBase`](/api/button-base/).
 
 ### Native properties
 
