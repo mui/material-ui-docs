@@ -32,13 +32,13 @@ Maintenant, supposons que vous vouliez désactiver les ondulations sur le `MenuI
 
 La propriété `disableRipple` va suivre de cette façon : [`MenuItem`](/api/menu-item/) > [`ListItem`](/api/list-item/) > [`ButtonBase`](/api/button-base/).
 
-### Native properties
+### Les Propriétés natives
 
-We avoid documenting native properties supported by the DOM like [`className`](/customization/overrides/#overriding-with-class-names).
+Nous évitons de documenter les propriétés natives supportées par le DOM, comme [` className `](/customization/overrides/#overriding-with-class-names) .
 
-### CSS Classes
+### Les Classes CSS
 
-All the components accept a [`classes`](/customization/overrides/#overriding-with-classes) property to customize the styles. The classes design answers two constraints: to make the classes structure as simple as possible, while sufficient to implement the Material Design specification.
+Tous les composants acceptent une propriété [` classes `](/customization/overrides/#overriding-with-classes) pour personnaliser les styles. The classes design answers two constraints: to make the classes structure as simple as possible, while sufficient to implement the Material Design specification.
 
 - The class applied to the root element is always called `root`.
 - All the default styles are grouped in a single class.
