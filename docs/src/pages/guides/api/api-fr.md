@@ -10,10 +10,10 @@ Comme Sebastian Markbage [ l'a souligné ](https://2014.jsconf.eu/speakers/sebas
 
 ## Composition
 
-Vous avez peut-être remarqué des incohérences dans l'API par rapport à la composition des composants. To provide some transparency, we have been using the following rules when designing the API:
+Vous avez peut-être remarqué des incohérences dans l'API par rapport à la composition des composants. Pour fournir une certaine transparence, nous avons utilisé les règles suivantes lors de la conception de l'API :
 
-1. Using the `children` property is the idiomatic way to do composition with React.
-2. Sometimes we only need limited child composition, for instance when we don't need to allow child order permutations. In this case, providing explicit properties makes the implementation simpler and more performant; for example, the `Tab` takes an `icon` and a `label` property.
+1. L'utilisation de la propriété `children` est le moyen idiomatique pour faire la composition avec React.
+2. Par fois, on a juste besoin d'une composition limite par enfants, par example lorsque qu'on n'a pas besoin d'autoriser la permutation d'ordre par enfant. In this case, providing explicit properties makes the implementation simpler and more performant; for example, the `Tab` takes an `icon` and a `label` property.
 3. API consistency matters.
 
 ## Règles
