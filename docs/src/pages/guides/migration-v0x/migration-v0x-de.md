@@ -15,9 +15,9 @@ Die Material-UI wurde vor [4 Jahren gestartet](https://github.com/mui-org/materi
 - Neue Styling-Lösung mit CSS-in-JS (bessere[ Anpassungsmöglichkeiten](/customization/overrides/), bessere Leistung)
 - Neues [Theming](/customization/themes/) (Schachteln, selbsttragend usw.)
 - Schnelle Dokumentation dank [Next.js](https://github.com/zeit/next.js)
-- Way better [test coverage](/guides/testing/) (99%+, run on all the major browsers, [visual regression tests](https://www.argos-ci.com/mui-org/material-ui))
-- Full [server-side rendering](/guides/server-rendering/) support
-- Wide range of [supported browsers](/getting-started/supported-platforms/)
+- Viel bessere [Testabdeckung](/guides/testing/) (99%+, läuft auf allen gängigen Browsern, [visuelle Regressionstests](https://www.argos-ci.com/mui-org/material-ui))
+- Vollständige [serverseitiges Rendern](/guides/server-rendering/) Unterstützung
+- Große Auswahl an [ unterstützten Browsern](/getting-started/supported-platforms/)
 
 ### Wo soll ich bei einer Migration anfangen?
 
