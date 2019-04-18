@@ -1,16 +1,16 @@
-# Migration From v0.x to v1
+# Migration von v0.x zu v1
 
-<p class="description">Yeah, v1 has been released! Take advantage of 2 years worth of effort.</p>
+<p class="description">Ja, v1 wurde veröffentlicht! Profitieren Sie von 2 Jahren Arbeit.</p>
 
-## FAQ
+## Häufig gestellte Fragen
 
-### Woah - the API is way different! Does that mean 1.0 is completely different, I’ll have to learn the basics all over again, and migrating will be practically impossible?
+### Woah - die API ist anders! Bedeutet das, dass 1.0 völlig anders ist und ich die Grundlagen noch einmal erlernen muss, und eine Migration wird praktisch unmöglich sein?
 
-I’m glad you asked! The answer is no. The core concepts haven’t changed. You will notice that the API provides more flexibility, but this has a cost. We have been making lower-level components, abstracting less complexity.
+Gute Frage! Die Antwort ist nein. Die Kernkonzepte haben sich nicht geändert. Sie werden feststellen, dass die API mehr Flexibilität bietet, dies ist jedoch mit Kosten verbunden. Wir haben untergeordnete Komponenten hergestellt und weniger Komplexität abstrahiert.
 
-### What motivated such a large change?
+### Was hat zu einer so großen Veränderung geführt?
 
-Material-UI was started [4 years ago](https://github.com/mui-org/material-ui/commit/28b768913b75752ecf9b6bb32766e27c241dbc46). The ecosystem has evolved a lot since then, we have also learned a lot. [@nathanmarks](https://github.com/nathanmarks/) started an ambitious task, rebuilding Material-UI from the **ground-up** taking advantage of this knowledge to address long-standing issues. To name some of the major changes:
+Die Material-UI wurde vor [4 Jahren gestartet](https://github.com/mui-org/material-ui/commit/28b768913b75752ecf9b6bb32766e27c241dbc46). The ecosystem has evolved a lot since then, we have also learned a lot. [@nathanmarks](https://github.com/nathanmarks/) started an ambitious task, rebuilding Material-UI from the **ground-up** taking advantage of this knowledge to address long-standing issues. To name some of the major changes:
 
 - New styling solution using CSS-in-JS (better [customization](/customization/overrides/) power, better performance)
 - New [theme handling](/customization/themes/) (nesting, self-supporting, etc.)
