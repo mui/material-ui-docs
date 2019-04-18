@@ -86,6 +86,6 @@ Cette fonctionnalité repose sur le positionnement persistant (sticky) de CSS. M
 
 ## Virtualized List
 
-In the following example, we demonstrate how to use [react-window](https://github.com/bvaughn/react-window) with the `List` component. Il affiche 200 lignes et peut facilement gérer plus. Virtualization helps with performance issues.
+In the following example, we demonstrate how to use [react-window](https://github.com/bvaughn/react-window) with the `List` component. Il affiche 200 lignes et peut facilement gérer plus. La virtualisation aide à résoudre les problèmes de performances.
 
 {{"demo": "pages/demos/lists/VirtualizedList.js"}}
