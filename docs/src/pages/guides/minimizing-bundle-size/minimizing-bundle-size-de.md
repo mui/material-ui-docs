@@ -10,7 +10,7 @@ Die Paketgröße der Material-UI wird sehr ernst genommen. Bei jedem Commit werd
 
 Der Einfachheit halber stellt Material-UI seine vollständige API auf der oberste Ebene des `material-ui` Imports zur Verfügung. Dies ist in Ordnung, wenn Sie mit Tree Shaking arbeiten, wenn Tree Shaking jedoch in Ihrer Build-Kette nicht unterstützt oder konfiguriert ist, kann dadurch **die gesamte Bibliothek und ihre Abhängigkeiten** in Ihrem Packet eingeschlossen werden.
 
-Sie haben mehrere Möglichkeiten, um diese Situation zu überwinden:
+Sie haben mehrere Möglichkeiten, um dies zu vermeiden:
 
 ### Option 1
 
