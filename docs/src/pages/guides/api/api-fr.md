@@ -2,15 +2,15 @@
 
 <p class="description">Nós aprendemos bastante como o Material-UI é usado e o refatoramento da v1 permitiu-nos repensar completamente o componente de API.</p>
 
-> API design is hard because you can make it seem simple but it's actually deceptively complex, or make it actually simple but seem complex.
+> Le design de l'API est difficile car vous pouvez le rendre simple mais il est en fait trompeur complexe, ou le rendre vraiment simple mais semble complexe.
 
 [@sebmarkbage](https://twitter.com/sebmarkbage/status/728433349337841665)
 
-As Sebastian Markbage [pointed out](https://2014.jsconf.eu/speakers/sebastian-markbage-minimal-api-surface-area-learning-patterns-instead-of-frameworks.html), no abstraction is superior to wrong abstractions. We are providing low-level components to maximize composition capabilities.
+Comme Sebastian Markbage [ l'a souligné ](https://2014.jsconf.eu/speakers/sebastian-markbage-minimal-api-surface-area-learning-patterns-instead-of-frameworks.html) , aucune abstraction n'est supérieure aux mauvaises abstractions. Nous fournissons des composants de bas niveau pour optimiser les capacités de composition.
 
 ## Composition
 
-You may have noticed some inconsistency in the API regarding composing components. To provide some transparency, we have been using the following rules when designing the API:
+Vous avez peut-être remarqué des incohérences dans l'API par rapport à la composition des composants. To provide some transparency, we have been using the following rules when designing the API:
 
 1. Using the `children` property is the idiomatic way to do composition with React.
 2. Sometimes we only need limited child composition, for instance when we don't need to allow child order permutations. In this case, providing explicit properties makes the implementation simpler and more performant; for example, the `Tab` takes an `icon` and a `label` property.
