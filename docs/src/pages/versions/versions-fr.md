@@ -18,11 +18,11 @@ Ici vous pouvez trouver la dernière documentation non publiée et le code. Vous
 
 Nous sommes conscients que vous avez besoin de **stabilité** pour la librairie Material-UI. La stabilité garantit des composants réutilisables et les librairies, tutoriels, outils ainsi que les pratiques acquises ne deviennes pas soudainement obsolètes. La stabilité est essentielle au développement de l’écosystème Material-UI.
 
-This document contains **the practices that we follow** to provide you with a leading-edge UI library, balanced with stability. We strive to ensure that future changes are always introduced in a predictable way. We want everyone who depends on Material-UI to know when and how new features are added, and to be well-prepared when obsolete ones are removed.
+Ce document contient ** les pratiques que nous suivons ** pour vous fournir une bibliothèque d'interface utilisateur de pointe, équilibrée avec stabilité. Nous nous efforçons de faire en sorte que les futurs changements soient toujours introduits de manière prévisible. Nous voulons que tous ceux qui dépendent de Material-UI sachent quand et comment les nouvelles fonctionnalités sont ajoutées, et bien préparés lorsque celles qui sont obsolètes sont supprimées.
 
-Material-UI strictly follows [Semantic Versioning 2.0.0](https://semver.org/). Material-UI version numbers have three parts: `major.minor.patch`. The version number is incremented based on the level of change included in the release.
+Matériel-UI suit strictement [la gestion sémantique des versions 2.0.0](https://semver.org/). Les numéros de version Material-UI ont trois parties : `majeur.mineur.patch`. Le numéro de version est incrémenté en fonction du niveau de changement inclus dans la version.
 
-- **Major releases** contain significant new features, some but minimal developer assistance is expected during the update. When updating to a new major release, you may need to run update scripts, refactor code, run additional tests, and learn new APIs.
+- Les ** Releases majeures ** contiennent de nouvelles fonctionnalités significatives, mais une aide minimale aux développeurs est attendue durant la mise à jour. Lors de la mise à jour vers une nouvelle version majeure, vous devrez peut-être exécuter des scripts de mise à jour, de la refactorisation du code, exécuter des tests supplémentaires et apprendre de nouvelles API.
 - **Minor releases** contain important new features. Minor releases are fully backward-compatible; no developer assistance is expected during update, but you can optionally modify your apps and libraries to begin using new APIs, features, and capabilities that were added in the release.
 - **Patch releases** are low risk, contain bug fixes and small new features. No developer assistance is expected during update.
 
