@@ -102,9 +102,9 @@ export default StyledComponents;
 
 **Hinweis:** JSS fügt seine Styles am unteren Rand von `<head>` ein. Wenn Sie Stilattribute nicht mit **!important** markieren möchten, ist das wichtig, dass Sie die [ CSS-Injektionsreihenfolge ](/css-in-js/advanced/#css-injection-order) wie in der Demo ändern.
 
-### Controlling Priority
+### Priorität kontrollieren
 
-Both styled-components and JSS inject their styles at the bottom of the `<head>`. One approach to ensuring styled-components styles are loaded last is to change [the CSS injection order](/css-in-js/advanced/#css-injection-order), as in the demo.
+Sowohl styled-components als auch JSS fügen ihre Stile unten im `<head>` ein. One approach to ensuring styled-components styles are loaded last is to change [the CSS injection order](/css-in-js/advanced/#css-injection-order), as in the demo.
 
 Another approach is to use the `&&` characters in styled-components to [bump up specificity](https://www.styled-components.com/docs/advanced#issues-with-specificity) by repeating the class name. Use this to ensure styled-components styles are applied before JSS styles. An example of this solution:
 
