@@ -6,19 +6,19 @@ components: FormControl, FormGroup, FormLabel, FormControlLabel, RadioGroup, Che
 
 <p class="description">Les contrôles de sélection permettent à l'utilisateur de sélectionner des options.</p>
 
-[Selection controls](https://material.io/design/components/selection-controls.html) allow users to complete tasks that involve making choices such as selecting options, or switching settings on or off. Selection controls are found on screens that ask users to make decisions or declare preferences such as settings or dialogs.
+[Les contrôles de sélection](https://material.io/design/components/selection-controls.html) permettent aux utilisateur d'effectuer des tâches qui impliquent de faire des choix tels que la sélection des options, ou l'activation ou la désactivation de paramètres. Les contrôles de sélection se trouvent sur des écrans qui demandent aux utilisateurs de prendre des décisions ou de déclarer des préférences telles que des paramètres ou des boîtes de dialogue.
 
-Three types of selection controls are covered in this section:
+Cette section porte sur trois types de contrôles de sélection :
 
-- **[Radio Buttons](#radio-buttons)** allow the selection of a single option from a set.
-- **[Checkboxes](#checkboxes)** allow the selection of multiple options from a set.
-- **[Switches](#switches)** allow a selection to be turned on or off.
+- **[Cases d'option](#radio-buttons)** permettent de sélectionner une seule option parmi un ensemble.
+- **[Cases à cocher](#checkboxes)** permettre la sélection de plusieurs options à partir d'un ensemble.
+- **[Interrupteurs](#switches)** permettent d'activer ou désactiver une sélection.
 
-## Radio Buttons
+## Cases d’option
 
-[Radio buttons](https://material.io/design/components/selection-controls.html#radio-buttons) allow the user to select one option from a set. Use radio buttons when the user needs to see all available options. If available options can be collapsed, consider using a dropdown menu because it uses less space.
+[](https://material.io/design/components/selection-controls.html#radio-buttons)Cases d'option permettent de sélectionner une seule option parmi un ensemble. Utilisez les cases d’option lorsque l’utilisateur a besoin de voir toutes les options disponibles. Si les options disponibles peuvent être réduites, envisagez d'utiliser un menu déroulant, car il utilise moins d'espace.
 
-Radio buttons should have the most commonly used option selected by default.
+Généralement, les cases d'option doivent avoir l'option la plus utilisée sélectionnée par défaut.
 
 `RadioGroup` is a helpful wrapper used to group `Radio` components that provides an easier API, and proper keyboard accessibility to the group.
 
