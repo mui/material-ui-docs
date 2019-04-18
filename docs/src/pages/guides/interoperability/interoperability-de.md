@@ -104,9 +104,9 @@ export default StyledComponents;
 
 ### Priorität kontrollieren
 
-Sowohl styled-components als auch JSS fügen ihre Stile unten im `<head>` ein. One approach to ensuring styled-components styles are loaded last is to change [the CSS injection order](/css-in-js/advanced/#css-injection-order), as in the demo.
+Sowohl styled-components als auch JSS fügen ihre Stile unten im `<head>` ein. Um sicherzustellen, dass styled-components-Stile zuletzt geladen werden, ändern Sie die [CSS-Injektionsreihenfolge](/css-in-js/advanced/#css-injection-order) wie in der Demo.
 
-Another approach is to use the `&&` characters in styled-components to [bump up specificity](https://www.styled-components.com/docs/advanced#issues-with-specificity) by repeating the class name. Use this to ensure styled-components styles are applied before JSS styles. An example of this solution:
+Ein anderer Ansatz ist die Verwendung von `&&` Zeichen in Stilkomponenten, um, durch Wiederholen des Klassennamens, die [Spezifität zu erhöhen ](https://www.styled-components.com/docs/advanced#issues-with-specificity). Use this to ensure styled-components styles are applied before JSS styles. An example of this solution:
 
 {{"demo": "pages/guides/interoperability/StyledComponentsPriority.js"}}
 
@@ -363,13 +363,13 @@ export default EmotionDeep;
 
 ### ThemeProvider
 
-Material-UI has a rich theme structure that you can leverage for the color manipulations, the transitions, the media queries, and more.
+Material-UI hat eine reiche Themenstruktur, die Sie für Farbmanipulationen, Übergänge, die Medien - Anfragen und mehr nutzen können,.
 
 {{"demo": "pages/guides/interoperability/EmotionTheme.js"}}
 
 ## Globales CSS
 
-Explicitly providing the class names to the component is too much effort? Rest assured, we provide an option to make the class names **deterministic** for quick prototyping: [`dangerouslyUseGlobalCSS`](/css-in-js/advanced#deterministic-class-names).
+Ist es zu viel Aufwand, die Klassennamen explizit für die Komponente bereitzustellen? Seien Sie versichert, wir bieten eine Option, um die Klassennamen **deterministisch** fürs schnell Prototyping zu machen: [`dangerouslyUseGlobalCSS`](/css-in-js/advanced#deterministic-class-names).
 
 **GlobalCssButton.css**
 
@@ -412,7 +412,7 @@ export default GlobalCssButton;
 
 ![stars](https://img.shields.io/github/stars/cssinjs/jss.svg?style=social&label=Star) ![npm](https://img.shields.io/npm/dm/react-jss.svg?)
 
-Material-UI's styling solution shares many building blocks with [react-jss](https://github.com/cssinjs/react-jss). We went ahead and forked the project in order to handle our unique needs, but we're working to merge the changes and fixes from Material-UI back to react-jss.
+Die Styling-Lösung von Material-UI teilt viele Bausteine mit [react-jss](https://github.com/cssinjs/react-jss). Wir haben das Projekt für uns entwickelt, um unsere individuellen Anforderungen zu erfüllen, aber wir arbeiten daran, die Änderungen und Korrekturen von der Material-UI wieder in React-Jss zu integrieren.
 
 ```jsx
 import React from 'react';
@@ -454,7 +454,7 @@ export default injectSheet(styles)(ReactJssButton);
 
 ![stars](https://img.shields.io/github/stars/threepointone/glamor.svg?style=social&label=Star) ![npm](https://img.shields.io/npm/dm/glamor.svg?)
 
-A good way to apply styles with Glamor is using the **css()** function and then **classnames** to get them as strings:
+Eine gute Möglichkeit, Stile mit Glamour anzuwenden, ist die Verwendung von der **css()** Funktion und dann **classnames** um sie als String zu bekommen:
 
 ```jsx
 import React from "react";
@@ -486,4 +486,4 @@ export default GlamorButton;
 
 [![Edit Button](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vp2znmj40)
 
-**Note:** Both Glamor and JSS inject their styles at the bottom of the `<head>`. Wenn Sie Stilattribute nicht mit **!important** markieren möchten, ist das wichtig, dass Sie die [ CSS-Injektionsreihenfolge ](/css-in-js/advanced/#css-injection-order) wie in der Demo ändern.
+**Hinweis:** Sowohl Glamour als auch JSS fügen ihre Stile unten in `<head>` ein. Wenn Sie Stilattribute nicht mit **!important** markieren möchten, ist das wichtig, dass Sie die [ CSS-Injektionsreihenfolge ](/css-in-js/advanced/#css-injection-order) wie in der Demo ändern.
