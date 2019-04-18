@@ -1,6 +1,6 @@
 # Interoperabilität der Stilbibliothek
 
-<p class="description">While it is simple to use the JSS based styling solution provided by Material-UI to style your application, it is possible to use any styling solution you prefer, from plain CSS to any number of CSS-in-JS libraries.</p>
+<p class="description">Zwar ist die Verwendung der JSS-basierten Styling-Lösung, die von Material-UI zur Verfügung gestellt wird, einfach, um Ihre Anwendung zu stylen. Es ist jedoch möglich, eine beliebige Styling-Lösung zu verwenden, von einfachem CSS bis zu einer beliebigen Anzahl von CSS-in-JS-Bibliotheken.</p>
 
 This guide aims to document the most popular alternatives, but you should find that the principals applied here can be adapted to other libraries.
 
@@ -46,7 +46,7 @@ function PlainCssButton() {
         Material-UI
       </Button>
       <Button className="button">
-        Plain CSS
+        Einfaches CSS
       </Button>
     </div>
   );
@@ -247,7 +247,7 @@ Emotion's **css()** method works seamlessly with Material-UI.
 import { jsx, css } from "@emotion/core";
 import Button from "@material-ui/core/Button";
 
-// We just assign them the Button's className attribute
+// Hier setzten wir das className Attribute des Buttons
 function EmotionButton() {
   return (
     <div>
@@ -471,7 +471,7 @@ const buttonStyles = {
   boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .30)"
 };
 
-// Then we just assign them the Button's className attribute
+// Dann setzten wir einfach das className Attribute der Button Komponente
 function GlamorButton() {
   return (
     <div>
