@@ -2,9 +2,9 @@
 
 <p class="description">Zwar ist die Verwendung der JSS-basierten Styling-Lösung, die von Material-UI zur Verfügung gestellt wird, einfach, um Ihre Anwendung zu stylen. Es ist jedoch möglich, eine beliebige Styling-Lösung zu verwenden, von einfachem CSS bis zu einer beliebigen Anzahl von CSS-in-JS-Bibliotheken.</p>
 
-This guide aims to document the most popular alternatives, but you should find that the principals applied here can be adapted to other libraries.
+In diesem Handbuch sollen die beliebtesten Alternativen dokumentiert werden, aber Sie sollten sich merken, dass die hier vorgestellten Anwendungen an andere Bibliotheken angepasst werden können.
 
-We have provided examples for the following styling solutions:
+Wir haben Beispiele für folgende Styling-Lösungen bereitgestellt:
 
 - [Einfaches CSS](#plain-css)
 - [Styled Components](#styled-components)
@@ -17,7 +17,7 @@ We have provided examples for the following styling solutions:
 
 ## Einfaches CSS
 
-Nothing fancy, just plain old CSS. Why reinvent the wheel when it has been working for decades?
+Nichts Besonderes, einfach nur altes CSS. Warum das Rad neu erfinden, wenn es seit Jahrzehnten funktioniert?
 
 **PlainCssButton.css**
 
@@ -57,13 +57,13 @@ export default PlainCssButton;
 
 [![Edit Button](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/l5qv4y57vl)
 
-**Note:** JSS injects its styles at the bottom of the `<head>`. If you don't want to mark style attributes with **!important**, you need to change [the CSS injection order](/css-in-js/advanced/#css-injection-order), as in the demo.
+**Hinweis:** JSS fügt seine Styles am unteren Rand von `<head>` ein. Wenn Sie Stilattribute nicht mit **!important** markieren möchten, ist das wichtig, dass Sie die [ CSS-Injektionsreihenfolge ](/css-in-js/advanced/#css-injection-order) wie in der Demo ändern.
 
 ## Styled Components
 
 ![stars](https://img.shields.io/github/stars/styled-components/styled-components.svg?style=social&label=Star) ![npm](https://img.shields.io/npm/dm/styled-components.svg?)
 
-The `styled()` method works perfectly on all of our components.
+Die `styled()` Methode funktioniert perfekt für alle unsere Komponenten.
 
 ```jsx
 import React from 'react';
@@ -100,7 +100,7 @@ export default StyledComponents;
 
 [![Edit Button](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/k553lz1qrv)
 
-**Note:** JSS injects its styles at the bottom of the `<head>`. If you don't want to mark style attributes with **!important**, you need to change [the CSS injection order](/css-in-js/advanced/#css-injection-order), as in the demo.
+**Hinweis:** JSS fügt seine Styles am unteren Rand von `<head>` ein. Wenn Sie Stilattribute nicht mit **!important** markieren möchten, ist das wichtig, dass Sie die [ CSS-Injektionsreihenfolge ](/css-in-js/advanced/#css-injection-order) wie in der Demo ändern.
 
 ### Controlling Priority
 
@@ -152,7 +152,7 @@ export default StyledComponentsDeep;
 
 {{"demo": "pages/guides/interoperability/StyledComponentsDeep.js", "hideHeader": true}}
 
-**Note:** JSS injects its styles at the bottom of the `<head>`. If you don't want to mark style attributes with **!important**, you need to change [the CSS injection order](/css-in-js/advanced/#css-injection-order), as in the demo.
+**Hinweis:** JSS fügt seine Styles am unteren Rand von `<head>` ein. Wenn Sie Stilattribute nicht mit **!important** markieren möchten, ist das wichtig, dass Sie die [ CSS-Injektionsreihenfolge ](/css-in-js/advanced/#css-injection-order) wie in der Demo ändern.
 
 ### ThemeProvider
 
@@ -232,7 +232,7 @@ export default CssModulesButton;
 
 [![Edit Button](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/5km241l9xn)
 
-**Note:** JSS injects its styles at the bottom of the `<head>`. If you don't want to mark style attributes with **!important**, you need to change [the CSS injection order](/css-in-js/advanced/#css-injection-order), as in the demo.
+**Hinweis:** JSS fügt seine Styles am unteren Rand von `<head>` ein. Wenn Sie Stilattribute nicht mit **!important** markieren möchten, ist das wichtig, dass Sie die [ CSS-Injektionsreihenfolge ](/css-in-js/advanced/#css-injection-order) wie in der Demo ändern.
 
 ## Emotion
 
@@ -276,11 +276,11 @@ export default EmotionButton;
 
 [![Edit Button](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/yw93kl7y0j)
 
-**Note:** JSS injects its styles at the bottom of the `<head>`. If you don't want to mark style attributes with **!important**, you need to change [the CSS injection order](/css-in-js/advanced/#css-injection-order), as in the demo.
+**Hinweis:** JSS fügt seine Styles am unteren Rand von `<head>` ein. Wenn Sie Stilattribute nicht mit **!important** markieren möchten, ist das wichtig, dass Sie die [ CSS-Injektionsreihenfolge ](/css-in-js/advanced/#css-injection-order) wie in der Demo ändern.
 
 ### Styled Components
 
-The `styled()` method works perfectly on all of our components.
+Die `styled()` Methode funktioniert perfekt für alle unsere Komponenten.
 
 ```jsx
 import React from 'react';
@@ -315,7 +315,7 @@ export default EmotionStyled;
 
 {{"demo": "pages/guides/interoperability/EmotionStyled.js", "hideHeader": true}}
 
-**Note:** JSS injects its styles at the bottom of the `<head>`. If you don't want to mark style attributes with **!important**, you need to change [the CSS injection order](/css-in-js/advanced/#css-injection-order), as in the demo.
+**Hinweis:** JSS fügt seine Styles am unteren Rand von `<head>` ein. Wenn Sie Stilattribute nicht mit **!important** markieren möchten, ist das wichtig, dass Sie die [ CSS-Injektionsreihenfolge ](/css-in-js/advanced/#css-injection-order) wie in der Demo ändern.
 
 ### Deeper elements
 
@@ -359,7 +359,7 @@ export default EmotionDeep;
 
 {{"demo": "pages/guides/interoperability/EmotionDeep.js", "hideHeader": true}}
 
-**Note:** JSS injects its styles at the bottom of the `<head>`. If you don't want to mark style attributes with **!important**, you need to change [the CSS injection order](/css-in-js/advanced/#css-injection-order), as in the demo.
+**Hinweis:** JSS fügt seine Styles am unteren Rand von `<head>` ein. Wenn Sie Stilattribute nicht mit **!important** markieren möchten, ist das wichtig, dass Sie die [ CSS-Injektionsreihenfolge ](/css-in-js/advanced/#css-injection-order) wie in der Demo ändern.
 
 ### ThemeProvider
 
@@ -406,7 +406,7 @@ export default GlobalCssButton;
 
 [![Edit Button](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/9yxopv4vmp)
 
-**Note:** JSS injects its styles at the bottom of the `<head>`. If you don't want to mark style attributes with **!important**, you need to change [the CSS injection order](/css-in-js/advanced/#css-injection-order), as in the demo.
+**Hinweis:** JSS fügt seine Styles am unteren Rand von `<head>` ein. Wenn Sie Stilattribute nicht mit **!important** markieren möchten, ist das wichtig, dass Sie die [ CSS-Injektionsreihenfolge ](/css-in-js/advanced/#css-injection-order) wie in der Demo ändern.
 
 ## React JSS
 
@@ -486,4 +486,4 @@ export default GlamorButton;
 
 [![Edit Button](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vp2znmj40)
 
-**Note:** Both Glamor and JSS inject their styles at the bottom of the `<head>`. If you don't want to mark style attributes with **!important**, you need to change [the CSS injection order](/css-in-js/advanced/#css-injection-order), as in the demo.
+**Note:** Both Glamor and JSS inject their styles at the bottom of the `<head>`. Wenn Sie Stilattribute nicht mit **!important** markieren möchten, ist das wichtig, dass Sie die [ CSS-Injektionsreihenfolge ](/css-in-js/advanced/#css-injection-order) wie in der Demo ändern.
