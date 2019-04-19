@@ -42,8 +42,3 @@ components: TextField
 [material-ui-pickers](https://material-ui-pickers.firebaseapp.com/) 提供遵循Material Design规范的日期和时间控件。
 
 {{"demo": "pages/demos/pickers/MaterialUIPickers.js"}}
-
-### 其他
-
-- [material-ui-time-picker](https://github.com/TeamWertarbyte/material-ui-time-picker)：时间选择器。
-- [material-ui-next-pickers](https://github.com/chingyawhao/material-ui-next-pickers)：日期和时间选择器。
