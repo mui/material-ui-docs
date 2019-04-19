@@ -42,8 +42,3 @@ Für fortgeschrittenere Anwendungsfälle können Ihnen folgende Projekte helfen.
 [material-ui-pickers](https://material-ui-pickers.firebaseapp.com/) enthält Steuerelemente für Datum und Uhrzeit, die der Material Design-Spezifikation entsprechen.
 
 {{"demo": "pages/demos/pickers/MaterialUIPickers.js"}}
-
-### Sonstiges
-
-- [material-ui-time-picker](https://github.com/TeamWertarbyte/material-ui-time-picker): Zeitauswahl.
-- [material-ui-next-pickers](https://github.com/chingyawhao/material-ui-next-pickers): Datums- und Zeitauswahl.
