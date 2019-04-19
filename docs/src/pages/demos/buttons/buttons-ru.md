@@ -99,32 +99,6 @@ components: Button, Fab, IconButton, ButtonBase, Zoom
 
 Одним из распространенных вариантов использования кнопки является переход на новую страницу. `ButtonBase` компонент предоставляет свойство для обработки этого варианта использования: `component`. However for certain focus polyfills `ButtonBase` requires the DOM node of the provided component. This is achieved by attaching a ref to the component and expecting that the component forwards this ref to the underlying DOM node. Учитывая, что многие наши интерактивные компоненты используют `ButtonBase`, у вас есть возможность воспользоваться этим:
 
-```jsx
-import React from 'react';
-import { Link as RouterLink } from 'react-router-dom'
-import Button from '@material-ui/core/Button';
+{{"demo": "pages/demos/buttons/ButtonRouter.js", "defaultCodeOpen": true}}
 
-// required for react-router-dom < 5.0.0 
-// see https://github.com/ReactTraining/react-router/issues/6056#issuecomment-435524678
-const Link = React.forwardRef((props, ref) => <RouterLink {...props} innerRef={ref} />)
-
-<Button component={Link} to="/open-collective">
-  Link
-</Button>
-```
-
-или если вы хотите избежать столкновения свойств:
-
-```jsx
-import { Link } from 'react-router-dom'
-import Button from '@material-ui/core/Button';
-
-// use `ref` instead of `innerRef` with react-router-dom@^5.0.0
-const MyLink = React.forwardRef((props, ref) => <Link to="/open-collective" {...props} innerRef={ref} />);
-
-<Button component={MyLink}>
-  Link
-</Button>
-```
-
-*Примечание: Создание `MyLink` необходимо для предотвращения неожиданного отключения. Вы можете прочитать больше об этом в нашем [руководстве по свойствам компонента](/guides/composition/#component-property).*
+*Note: Creating the Button components is necessary to prevent unexpected unmounting. You can read more about it in our [component property guide](/guides/composition/#component-property).*
