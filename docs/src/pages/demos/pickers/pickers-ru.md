@@ -42,8 +42,3 @@ A native date picker example with `type="date"`.
 [material-ui-pickers](https://material-ui-pickers.firebaseapp.com/) предоставляет поля ввода даты и времени, в соответствии c Material Design спецификацией.
 
 {{"demo": "pages/demos/pickers/MaterialUIPickers.js"}}
-
-### Прочее
-
-- [material-ui-time-picker](https://github.com/TeamWertarbyte/material-ui-time-picker): поле выбора времени.
-- [material-ui-next-pickers](https://github.com/chingyawhao/material-ui-next-pickers): поле выбора даты и времени.
