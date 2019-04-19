@@ -42,8 +42,3 @@ Pour des cas d'utilisation plus avancés, vous pourrez peut-être tirer parti de
 [Material-ui-pickers](https://material-ui-pickers.firebaseapp.com/) fournit des sélecteurs de date et d'heure conformes à la spécification Material Design.
 
 {{"demo": "pages/demos/pickers/MaterialUIPickers.js"}}
-
-### Autres
-
-- [material-ui-time-picker](https://github.com/TeamWertarbyte/material-ui-time-picker): time pickers.
-- [material-ui-next-pickers](https://github.com/chingyawhao/material-ui-next-pickers): date pickers and time pickers.
