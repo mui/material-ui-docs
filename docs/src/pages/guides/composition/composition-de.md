@@ -114,32 +114,58 @@ Hier ist eine Demo mit [React Router DOM](https://github.com/ReactTraining/react
 
 Die Details finden Sie im [TypeScript-Handbuch](/guides/typescript#usage-of-component-property).
 
-### Vorbehalt bei Refs
+## Vorbehalt bei Refs
 
-Einige Komponenten wie `ButtonBase` (und daher `Button`) benötigen Zugriff auf den darunterliegenden DOM-Knoten. Dies wurde zuvor mit `ReactDOM.findDOMNode(this)` durchgeführt. `FindDOMNode` ist jedoch veraltet (wodurch es im React Concurrent Modus nicht anwendbar ist), zugunsten der Komponenten Refs und ref - Forwarding.
+This section covers caveats when using a custom component as `children` or for the `component` prop.
 
-Es ist daher erforderlich, dass die Komponente, die Sie an die `Komponente` Eigenschaft übergeben, einen Ref halten kann. Dazu gehören:
+Some of the components need access to the DOM node. This was previously possible by using `ReactDOM.findDOMNode`. This function is deprecated in favor of `ref` and ref forwarding. However, only the following component types can be given a `ref`:
 
-- Klassen-Komponenten
-- ref Weiterleitungskomponenten (`React.forwardRef`)
-- eingebaute Komponenten zB `div` oder `a`
+* Any Material-UI component
+* class components i.e. `React.Component` or `React.PureComponent`
+* DOM (or host) components e.g. `div` or `button`
+* [React.forwardRef components](https://reactjs.org/docs/react-api.html#reactforwardref)
+* [React.lazy components](https://reactjs.org/docs/react-api.html#reactlazy)
+* [React.memo components](https://reactjs.org/docs/react-api.html#reactmemo)
 
-Ist dies nicht der Fall, geben wir eine Warnung ähnlich der folgenden aus:
+If you don't use one of the above types when using your components in conjunction with Material-UI, you might see a warning from React in your console similar to:
+
+> Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?
+
+Be aware that you will still get this warning for `lazy` and `memo` components if their wrapped component can't hold a ref.
+
+In some instances we issue an additional warning to help debugging, similar to:
 
 > Ungültige `component` Eigenschaft an `ComponentName` übergeben. Es wurde ein Elementtyp erwartet, der eine Referenz enthalten kann.
 
-Zusätzlich gibt React eine Warnung aus.
+We will only cover the two most common use cases. For more information see [this section in the official React docs](https://reactjs.org/docs/forwarding-refs.html).
 
-Sie können diese Warnung beheben, indem Sie `React.forwardRef` verwenden. Weitere Informationen dazu finden Sie in [dieser Sektion in den offiziellen React-Dokumenten](https://reactjs.org/docs/forwarding-refs.html).
+```diff
+- const MyButton = props => <div role="button" {...props} />
++ const MyButton = React.forwardRef((props, ref) => <div role="button" {...props} ref={ref} />)
+<Button component={MyButton} />
+```
+
+```diff
+- const SomeContent = props => <div {...props}>Hello, World!</div>
++ const SomeContent = React.forwardRef((props, ref) => <div {...props} ref={ref}>Hello, World!</div>)
+<Tooltip title="Hello, again.">
+```
 
 Um herauszufinden, ob die Material-UI - Komponente, die Sie verwenden, diese Anforderung hat, überprüfen Sie API - Dokumentation für diese Komponente. Wenn Sie Refs weiterleiten müssen, wird die Beschreibung mit diesem Abschnitt verknüpft.
 
 ### Vorsicht bei StrictMode oder unstable_ConcurrentMode
 
-Wenn Sie Klassenkomponenten an die `Komponente` Eigenschaft übergeben und nicht im strikten Modus laufen, Sie müssen nichts ändern, da wir `ReactDOM.findDOMNode` sicher verwenden können. Bei Funktionskomponenten müssen Sie jedoch Ihre Komponente in `React.forwardRef` einhüllen:
+If you use class components for the cases described above you will still see warnings in `React.StrictMode` and `React.unstable_ConcurrentMode`. We use `ReactDOM.findDOMNode` internally for backwards compatibility. You can use `React.forwardRef` and a designated prop in your class component to forward the `ref` to a DOM component. Doing so should not trigger any more warnings related to the deprecation of `ReactDOM.findDOMNode`.
 
 ```diff
-- const MyButton = props => <div {...props} />
-+ const MyButton = React.forwardRef((props, ref) => <div {...props} ref={ref} />)
-<Button component={MyButton} />
+class Component extends React.Component {
+  render() {
+-   const { props } = this;
++   const { forwardedRef, ...props } = this.props;
+    return <div {...props} ref={forwardedRef} />;
+  }
+}
+
+-export default Component;
++export default React.forwardRef((props, ref) => <Component {...props} forwardedRef={ref} />);
 ```
