@@ -74,8 +74,15 @@ En el siguiente ejemplo, demostramos como usar [react-virtualized](https://githu
 
 Para usos más avanzados tal vez puedas aprovercharte de:
 
+### material-table
+
+![estrellas](https://img.shields.io/github/stars/mbrn/material-table.svg?style=social&label=Stars) ![descargas npm](https://img.shields.io/npm/dm/material-table.svg)
+
+[material-table](https://github.com/mbrn/material-table) is a simple and powerful Datatable for React based on Material-UI Table with some additional features. They support many different use cases (editable, filtering, grouping, sorting, selection, i18n, tree data and more). You should check it out.
+
+{{"demo": "pages/demos/tables/MaterialTableDemo.js"}}
+
+### Otros
+
 - [dx-react-grid-material-ui](https://devexpress.github.io/devextreme-reactive/react/grid/) Una tabla de datos para Material-UI con herramientas de paginación, ordenación, filtración, agrupación y revisión ([licencia customizada](https://js.devexpress.com/licensing/)).
 - [mui-datatables](https://github.com/gregnb/mui-datatables) Tablas de datos responsivas para Material-UI con filtración, ordenación, búsqueda y más.
-- [material-table](https://github.com/mbrn/material-table) DataTable basada en el componente de tabla con herramientas adicionales como búsqueda, filtración, ordenación y mucho más.
-- [mui-virtualized-table](https://github.com/techniq/mui-virtualized-table) Tabla de Material-UI virtualizado.
-- [mui-tablas](https://parkerself.gitbook.io/mui-table/) Tabla personalizable para la gestión de datos complejos. Cuenta con una fila de resumen, deduplicación & fusión (merge), así como el filtrado, búsqueda, etc.
