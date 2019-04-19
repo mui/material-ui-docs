@@ -203,10 +203,38 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 
 - [MenuItem] Remove the fixed height of the MenuItem. The padding and line-height are used by the browser to compute the height.
 
+### List
+
+- [List] Rework the list components to match the specification:
+  
+  - The usage of the `ListItemAvatar` component is required when using an avatar
+  - The usage of the `ListItemIcon` component is required when using a left checkbox
+  - The `edge` property should be set on the icon buttons.
+
+### Paper
+
+- [Paper] Reduce the default elevation. Change the default Paper elevation to match the Card and the Expansion Panel:
+  
+  ```diff
+  -<Paper />
+  +<Paper elevation={2} />
+  ```
+
 ### Dialog
 
-- [DialogActions] `action` CSS class is applied to root element instead of children if `disableActionSpacing={false}`.
+- [DialogActions] Rename the `disableActionSpacing` prop `disableSpacing`.
+- [DialogActions] Rename the `action` CSS class `spacing`.
 - [DialogContentText] Use typography variant `body1` instead of `subtitle1`.
+
+### Card
+
+- [CardActions] Rename the `disableActionSpacing` prop `disableSpacing`.
+- [CardActions] Remove the `disableActionSpacing` CSS class.
+- [CardActions] Rename the `action` CSS class `spacing`.
+
+### ExpansionPanel
+
+- [ExpansionPanelActions] Rename the `action` CSS class `spacing`.
 
 ### Selection controls
 
@@ -272,6 +300,23 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 
 ### Modal
 
-- [Modal] Ignorierung von event.defaultPrevented (# 14991) @oliviertassinari
+- [Modal] event.defaultPrevented is now ignored.
   
   Die neue Logik schließt das Modal, auch wenn `event.preventDefault()` beim Ereignis "key down escape" aufgerufen wird. `event.preventDefault()` soll Standardverhalten stoppen, z. B. das Aktivieren eines Kontrollkästchens, das Klicken auf eine Schaltfläche zum Senden eines Formulars und das Drücken des linken Pfeils, um den Cursor in einer Texteingabe zu bewegen usw. Nur spezielle HTML-Elemente weisen dieses Standardverhalten auf. Sie sollten `event.stopPropagation()` verwenden, wenn sie nicht ein ` onClose` Ereignis auf dem Modal auslösen wollen.
+
+### Tooltip
+
+- [Tooltip] The child needs to be able to hold a ref.
+  
+  ```diff
+  class Component extends React.Component {
+    render() {
+      return <div />
+    }
+  }
+  -const MyComponent = props => <div {...props} />
+  +const MyComponent = React.forwardRef((props, ref) => <div ref={ref} {...props} />);
+  <Tooltip><Component /></Tooltip>
+  <Tooltip><MyComponent /></Tooltip>
+  <Tooltip><div /></Tooltip>
+  ```
