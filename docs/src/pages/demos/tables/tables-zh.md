@@ -74,8 +74,15 @@ components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination
 
 对于更高级的用例，您可以利用：
 
+### material-table
+
+![stars](https://img.shields.io/github/stars/mbrn/material-table.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/material-table.svg)
+
+[material-table](https://github.com/mbrn/material-table) is a simple and powerful Datatable for React based on Material-UI Table with some additional features. They support many different use cases (editable, filtering, grouping, sorting, selection, i18n, tree data and more). You should check it out.
+
+{{"demo": "pages/demos/tables/MaterialTableDemo.js"}}
+
+### 其他
+
 - [ dx-react-grid-material-ui ](https://devexpress.github.io/devextreme-reactive/react/grid/)：Material-UI 的一种网格数据, 具有分页，排序功能，过滤，分组和编辑功能([自定义许可证](https://js.devexpress.com/licensing/))。
 - [mui-datatables](https://github.com/gregnb/mui-datatables)：Material-UI 的响应式数据表格，包括过滤，排序，搜索等功能。
-- [material-table](https://github.com/mbrn/material-table)：DataTable 基于表格组件，它具有搜索，过滤，排序等附加功能。
-- [mui-virtualized-table](https://github.com/techniq/mui-virtualized-table)：虚拟化的Material-UI表格。
-- [mui-tables](https://parkerself. gitbook. io/mui-table/)：自定义表，用于管理复杂数据。具有摘要行，重复数据删除 & 合并，以及过滤，搜索等。
