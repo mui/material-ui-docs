@@ -20,7 +20,7 @@ Changing the theme configuration variables is the most effective way to match Ma
 
 - [Палитра](#palette)
 - [Type (light / dark theme)](#type-light-dark-theme)
-- [Typography](#typography)
+- [Оформление текста](#typography)
 - [Интервал](#spacing)
 - [Другие переменные](#other-variables)
 - [Пользовательские переменные](#custom-variables)
@@ -320,7 +320,7 @@ We encourage you to use the `theme.spacing()` helper to create consistent spacin
 const styles = theme => ({
   root: {
     // JSS использует пиксели в качестве дефолтных единиц измерения для этого CSS свойства.
-    padding: theme.spacing (2), // Выведет 8 * 2
+    padding: theme.spacing(2), // = 8 * 2
   },
 });
 ```
@@ -337,14 +337,24 @@ const theme = createMuiTheme ({
 theme.spacing (2) // = 4 * 2
 ```
 
-- или функция
+- a function
 
 ```js
-const theme = createMuiTheme ({
-  spacing: factor => `$ {0.25 * factor} rem`, // (стратегия Bootstrap)
+const theme = createMuiTheme({
+  spacing: factor => `${0.25 * factor}rem`, // (Bootstrap strategy)
 });
 
-theme.spacing (2) // = 0.5rem = 8px
+theme.spacing(2); // = 0.25 * 2rem = 0.5rem = 8px
+```
+
+- an array
+
+```js
+const theme = createMuiTheme({
+  spacing: factor => [0, 4, 8, 16, 32, 64][factor],
+});
+
+theme.spacing(2); // = 8
 ```
 
 ### Multiple arity
