@@ -85,7 +85,7 @@ Botões de ícones são comumente encontrados em barras de aplicativos e barras 
 
 Se você leu a [a pagina de documentação de sobescrita](/customization/overrides/), mas você não está confiante, para seguir em frente aqui tem exemplos de como você pode alterar a cor principal de um botão usando classes, e usando um tema; e um exemplo de botão utilizando Bootstrap.
 
-⚠️ Embora a especificação do design do material incentive o tema, esses exemplos estão fora do caminho comum.
+⚠️ Uma vez que a especificação do material design incentiva customização, estes exemplos diferem do design usual.
 
 {{"demo": "pages/demos/buttons/CustomizedButtons.js"}}
 
