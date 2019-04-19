@@ -1,5 +1,5 @@
 {
-  "topBanner": "⚠️ ({{versionNumber}}) Esta é a documentação para a `próxima` release.",
+  "topBanner": "⚠️ ({{versionNumber}}) Esta é a documentação para a versão `next`.",
   "homeQuickWord": "Uma palavra rápida de nossos patrocinadores:",
   "editWebsiteColors": "Editar cores do site",
   "toggleTheme": "Alternar tema claro / escuro",
@@ -162,7 +162,7 @@
     "/customization/default-theme": "Tema Padrão",
     "/guides": "Guias",
     "/guides/typescript": "TypeScript",
-    "/guides/interoperability": "Style Library Interoperability",
+    "/guides/interoperability": "Interoperabilidade da Biblioteca de Estilo",
     "/guides/minimizing-bundle-size": "Minimizando o tamanho do pacote",
     "/guides/composition": "Composição",
     "/guides/server-rendering": "Renderização no servidor",
