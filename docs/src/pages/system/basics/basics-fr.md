@@ -25,10 +25,10 @@ In the rest of this *Getting Started* section we are using **styled-components**
 ### Installation
 
 ```jsx
-// with npm
+// usando npm
 npm install @material-ui/system
 
-// with yarn
+// usando yarn
 yarn add @material-ui/system
 ```
 
@@ -212,7 +212,7 @@ const Box = styled.div`
 />
 
 /**
- * Outputs:
+ * Saídas:
  *
  * padding: 16px;
  * @media (min-width: 600px) {
