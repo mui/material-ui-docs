@@ -24,7 +24,7 @@ Se você leu a [página de abertura da documentação](/customization/overrides/
 
 The first step is to style the `InputBase` component. Once it's styled, you can either use it directly as a text field or provide it to the select `input` property to have a select field.
 
-⚠️ Embora a especificação do design do material incentive o tema, esses exemplos estão fora do caminho comum.
+⚠️ Uma vez que a especificação do material design incentiva customização, estes exemplos diferem do design usual.
 
 {{"demo": "pages/demos/selects/CustomizedSelects.js"}}
 
