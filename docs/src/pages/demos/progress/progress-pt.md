@@ -84,7 +84,7 @@ function Progress(props) {
 
 If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here is one example of how you can customize the components. The last demo demonstrates how you can build a Facebook like spinner.
 
-⚠️ Embora a especificação do design do material incentive o tema, esses exemplos estão fora do caminho comum.
+⚠️ Uma vez que a especificação do material design incentiva customização, estes exemplos diferem do design usual.
 
 {{"demo": "pages/demos/progress/CustomizedProgress.js"}}
 
