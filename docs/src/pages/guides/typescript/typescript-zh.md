@@ -251,4 +251,4 @@ const theme = createMyTheme({ appDrawer: { breakpoint: 'md' }});
 
 Material-UI允许您通过`组件替换组件的根节点`属性。 For example, a `Button`'s root node can be replaced with a React Router `Link`, and any additional props that are passed to `Button`, such as `to`, will be spread to the `Link` component. For a code example concerning `Button` and `react-router-dom` checkout [this Button demo](/demos/buttons/#third-party-routing-library)
 
-Not every component fully supports any component type you pass in. If you encounter a component that rejects its `component` props in TypeScript please open an issue. There is an ongoing effort to fix this by making component props generic.
+Not every component fully supports any component type you pass in. If you encounter a component that rejects its `component` props in TypeScript please open an issue. 通过使组件道具具有通用性，一直在努力解决这个问题。
