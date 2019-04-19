@@ -18,7 +18,7 @@ While containers can be nested, most layouts do not require a nested container.
 
 {{"demo": "pages/layout/container/SimpleContainer.js", "iframe": true}}
 
-## Fixed
+## 固定大小
 
 If you prefer to design for a fixed set of sizes instead of trying to accommodate a fully fluid viewport, you can set the `fixed` property. The max-width matches the min-width of the current breakpoint.
 
