@@ -320,7 +320,7 @@ Wir empfehlen Ihnen, den `theme.spacing()` Helfer zu verwenden, um einen konsist
 const styles = theme => ({
   root: {
     // JSS verwendet px als Standardeinheiten für diese CSS-Eigenschaft.
-    auffüllen: theme.spacing (2), // Ergibt 8 * 2
+    padding: theme.spacing(2), // = 8 * 2
   },
 });
 ```
@@ -337,14 +337,24 @@ const theme = createMuiTheme({
 theme.spacing(2) // = 4 * 2
 ```
 
-- oder eine Funktion
+- a function
 
 ```js
 const theme = createMuiTheme({
-  spacing: factor => `${0.25 * factor}rem`, // (Bootstrap Strategie)
+  spacing: factor => `${0.25 * factor}rem`, // (Bootstrap strategy)
 });
 
-theme.spacing(2) // = 0.5rem = 8px
+theme.spacing(2); // = 0.25 * 2rem = 0.5rem = 8px
+```
+
+- an array
+
+```js
+const theme = createMuiTheme({
+  spacing: factor => [0, 4, 8, 16, 32, 64][factor],
+});
+
+theme.spacing(2); // = 8
 ```
 
 ### Mehrere Aritäten
@@ -397,8 +407,8 @@ const theme = createMuiTheme({
   props: {
     // Name of the component ⚛️
     MuiButtonBase: {
-      // Die Eigenschaft, die angewendet werden soll
-      disableRipple: true, // Kein Ripple-Effekt in der ganzen Applikation mehr 
+      // The properties to apply
+      disableRipple: true, // No more ripple, on the whole application 
     },
   },
 });
