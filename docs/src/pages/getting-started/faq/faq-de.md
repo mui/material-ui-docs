@@ -44,9 +44,9 @@ const theme = createMuiTheme({
 });
 ```
 
-## Wie kann ich Animationen global deaktivieren?
+## How can I disable transitions globally?
 
-Sie können Animationen global deaktivieren, indem Sie in Ihrem Theme folgendes angeben:
+You can disable transitions globally by providing the following in your theme:
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
@@ -60,6 +60,38 @@ const theme = createMuiTheme({
 ```
 
 Manchmal wollen Sie dieses Verhalten bedingt ermöglichen, zum Beispiel während der Prüfung oder auf Low-End-Geräten, in diesen Fällen können Sie dynamisch den Wert des Themes ändern.
+
+You can go one step further by disabling all the transitions, animations and the ripple effect:
+
+```js
+import { createMuiTheme } from '@material-ui/core';
+
+const theme = createMuiTheme({
+  transitions: {
+    // So we have `transition: none;` everywhere
+    create: () => 'none',
+  },
+  overrides: {
+    // Name of the component ⚛️
+    CssBasline: {
+      // Name of the rule
+      '@global': {
+        '*, *::before, *::after': {
+          transition: 'none !important',
+          animation: 'none !important',
+        },
+      },
+    },
+  },
+  props: {
+    // Name of the component ⚛️
+    MuiButtonBase: {
+      // The properties to apply
+      disableRipple: true, // No more ripple, on the whole application!
+    },
+  },
+});
+```
 
 ## Muss ich JSS verwenden, um meine App zu stylen?
 
@@ -114,7 +146,22 @@ export default withTheme(withStyles(styles)(Modal));
 
 ## Wie kann ich auf das DOM-Element zugreifen?
 
-Wickeln Sie die Komponente mit dem [`RootRef`](/api/root-ref/) Helfer ein.
+All Material-UI components that should render something in the DOM forward their ref to the underlying DOM component. This means that you can get DOM elements by reading the ref attached to Material-UI components:
+
+```jsx
+// or a ref setter function
+const ref = React.createRef();
+// render
+<Button ref={ref} />;
+// usage
+const element = ref.current;
+```
+
+If you're not sure if the Material-UI component in question forwards its ref you can check the API documentation under "Props" e.g. the [/api/button/#props](Button API) includes
+
+> The ref is forwarded to the root element.
+
+indicating that you can access the DOM element with a ref.
 
 ## Warum unterscheiden sich die Farben, die ich sehe, von denen, die ich hier sehe?
 
