@@ -45,9 +45,9 @@ const theme = createMuiTheme({
 });
 ```
 
-## 如何禁用全局动画？
+## How can I disable transitions globally?
 
-您可以通过在主题中提供以下内容来禁用全局动画：
+You can disable transitions globally by providing the following in your theme:
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
@@ -61,6 +61,38 @@ const theme = createMuiTheme({
 ```
 
 有时您会在某些情况下才使用这种行为，例如在测试期间或者在一些低端设备上，在这些情况下，您可以动态地更改主题的值。
+
+You can go one step further by disabling all the transitions, animations and the ripple effect:
+
+```js
+import { createMuiTheme } from '@material-ui/core';
+
+const theme = createMuiTheme({
+  transitions: {
+    // So we have `transition: none;` everywhere
+    create: () => 'none',
+  },
+  overrides: {
+    // Name of the component ⚛️
+    CssBasline: {
+      // Name of the rule
+      '@global': {
+        '*, *::before, *::after': {
+          transition: 'none !important',
+          animation: 'none !important',
+        },
+      },
+    },
+  },
+  props: {
+    // Name of the component ⚛️
+    MuiButtonBase: {
+      // The properties to apply
+      disableRipple: true, // No more ripple, on the whole application!
+    },
+  },
+});
+```
 
 ## 是否必须使用 JSS 给我的 app 添加样式？
 
@@ -115,7 +147,22 @@ export default withTheme(withStyles(styles)(Modal));
 
 ## 如何访问 DOM 元素？
 
-使用 [`RootRef`](/api/root-ref/) 帮助程序来包装组件。
+All Material-UI components that should render something in the DOM forward their ref to the underlying DOM component. This means that you can get DOM elements by reading the ref attached to Material-UI components:
+
+```jsx
+// or a ref setter function
+const ref = React.createRef();
+// render
+<Button ref={ref} />;
+// usage
+const element = ref.current;
+```
+
+If you're not sure if the Material-UI component in question forwards its ref you can check the API documentation under "Props" e.g. the [/api/button/#props](Button API) includes
+
+> The ref is forwarded to the root element.
+
+indicating that you can access the DOM element with a ref.
 
 ## 为什么我的应用程序看到的颜色和文档里的颜色大相径庭？
 
@@ -132,4 +179,4 @@ export default withTheme(withStyles(styles)(Modal));
 
 如果您在商业项目中使用了Material-UI，并希望通过成为我们的**赞助商</0 >来支持我们的持续发展，或者您一个业余项目或者爱好项目，并想成为我们的支持者， 您都可以通过[OpenCollective](https://opencollective.com/material-ui)实现。</p> 
 
-筹集的所有资金都是透明管理的，赞助商在README和Material-UI主页上获得认可。
+我们队所有筹集的资金都是透明化管理的，而赞助商在 README 和 Material-UI 主页上都会获得认可。
