@@ -74,8 +74,15 @@ components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination
 
 Для более сложных вариантов использования вы можете воспользоваться:
 
+### material-table
+
+![stars](https://img.shields.io/github/stars/mbrn/material-table.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/material-table.svg)
+
+[material-table](https://github.com/mbrn/material-table) is a simple and powerful Datatable for React based on Material-UI Table with some additional features. They support many different use cases (editable, filtering, grouping, sorting, selection, i18n, tree data and more). You should check it out.
+
+{{"demo": "pages/demos/tables/MaterialTableDemo.js"}}
+
+### Прочее
+
 - [dx-react-grid-material-ui<](https://devexpress.github.io/devextreme-reactive/react/grid/) Сетка данных для Material-UI с функциями навигации, сортировки, фильтрации, группировки и редактирования ([пользовательское соглашение](https://js.devexpress.com/licensing/)).
 - [mui-datatables](https://github.com/gregnb/mui-datatables) Адаптируемые таблицы данных для Material-UI с фильтрацией, сортировкой, поиском и многим другим.
-- [material-table](https://github.com/mbrn/material-table) Таблицы данных основанные на компоненте таблицы, с дополнительной функциональностью, такой как: поиск, фильтрация, сортировка и многое другое.
-- [mui-virtualized-table](https://github.com/techniq/mui-virtualized-table) Виртуализированная таблица для Material-UI.
-- [mui-tables](https://parkerself.gitbook.io/mui-table/) Настраиваемая таблица для управления сложными данными. Содержит строки для итогов, де-дупликацию & слияние одинаковых строк, также как фильтрацию, поиск, и многое другое.
