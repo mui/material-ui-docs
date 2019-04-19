@@ -8,9 +8,9 @@ components: Container
 
 While containers can be nested, most layouts do not require a nested container.
 
-## Fluid
+## 自适应
 
-A fluid container width is bounded by that `maxWidth` property value.
+自适应容器的最大宽度可以通过设置 `maxWidth` 属性来限制
 
 ```jsx
 <Container maxWidth="sm">
