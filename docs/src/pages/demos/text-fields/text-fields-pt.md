@@ -44,7 +44,7 @@ Você também pode ter notado que algumas propriedades de entrada nativas do HTM
 
 Se você leu a [página de abertura da documentação](/customization/overrides/) mas não está confiante, aqui vai um exemplo de como trocar a cor principal do Input.
 
-⚠️ Embora a especificação do design do material incentive o tema, esses exemplos estão fora do caminho comum.
+⚠️ Uma vez que a especificação do material design incentiva customização, estes exemplos diferem do design usual.
 
 {{"demo": "pages/demos/text-fields/CustomizedInputs.js"}}
 
