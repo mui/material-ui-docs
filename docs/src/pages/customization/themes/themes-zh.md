@@ -320,7 +320,7 @@ html {
 const styles = theme => ({
   root: {
     // JSS使用px作为此CSS属性的默认单位。
-    padding: theme.spacing(2), // Outputs 8 * 2
+    padding: theme.spacing(2), // = 8 * 2
   },
 });
 ```
@@ -337,14 +337,24 @@ const theme = createMuiTheme({
 theme.spacing(2) // = 4 * 2
 ```
 
-- 或一个函数
+- a function
 
 ```js
 const theme = createMuiTheme({
-  spacing: factor => `${0.25 * factor}rem`, // (Bootstrap 策略)
+  spacing: factor => `${0.25 * factor}rem`, // (Bootstrap strategy)
 });
 
-theme.spacing(2) // = 0.5rem = 8px
+theme.spacing(2); // = 0.25 * 2rem = 0.5rem = 8px
+```
+
+- an array
+
+```js
+const theme = createMuiTheme({
+  spacing: factor => [0, 4, 8, 16, 32, 64][factor],
+});
+
+theme.spacing(2); // = 8
 ```
 
 ### 多个参数
