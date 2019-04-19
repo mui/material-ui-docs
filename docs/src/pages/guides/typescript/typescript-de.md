@@ -251,61 +251,6 @@ const theme = createMyTheme({ appDrawer: { breakpoint: 'md' }});
 
 ## Verwendung der `component` Eigenschaft
 
-Mit der Material-UI können Sie die root Komponente einer Komponente durch die `component` Eigenschaft ersetzen. Zum Beispiel ist die Stamm Komponente eines `Button` durch einen React Router `Link` ersetzt werden und alle zusätzlichen Eigenschaften, die an den `Button` übergeben werden, wie `to`, wird auf die `Link` Komponente verteilt, was bedeutet, dass Sie dies tun können:
+Mit der Material-UI können Sie die root Komponente einer Komponente durch die `component` Eigenschaft ersetzen. For example, a `Button`'s root node can be replaced with a React Router `Link`, and any additional props that are passed to `Button`, such as `to`, will be spread to the `Link` component. For a code example concerning `Button` and `react-router-dom` checkout [this Button demo](/demos/buttons/#third-party-routing-library)
 
-```jsx
-import { Link } from 'react-router-dom';
-
-<Button component={Link} to="/">Nach Hause</Button>
-```
-
-TypeScript wird sich jedoch darüber beschweren, weil `to` nicht Teil der `Button` Eigenschaften ist, und mit den aktuellen Typdeklarationen kann nicht abgeleitet werden, welche Eigenschaften an die `Komponente` übergeben werden können.
-
-Die aktuelle Problemumgehung besteht darin, Link in `any` umzuwandeln:
-
-```tsx
-import { Link } from 'react-router-dom';
-import Button, { ButtonProps } from '@material-ui/core/Button';
-
-interface LinkButtonProps extends ButtonProps {
-  to: string;
-  replace?: boolean;
-}
-
-const LinkButton = (props: LinkButtonProps) => (
-  <Button {...props} component={Link as any} />
-)
-
-// Benutzung:
-<LinkButton color="primary" to="/">Nach Hause</LinkButton>
-```
-
-Komponenten der Material-UI geben grundlegende Event Handler Eigenschaften (`onClick`, `onDoubleClick`, etc.) an ihre Stamm Komponenten. Diese Handler haben eine Signatur von:
-
-```ts
-(event: MouseEvent<HTMLElement, MouseEvent>) => void
-```
-
-was mit den Event Handler-Signaturen von `Link` nicht kompatibel ist, welche sind:
-
-```ts
-(event: MouseEvent<AnchorElement>) => void
-```
-
-Jedes Element oder jede Komponente, die Sie an die `component` übergeben, wird dieses Problem haben, wenn die Signaturen der Eventhandler-Eigenschaften nicht übereinstimmen.
-
-Es besteht ein ständiger Aufwand, um dies zu beheben, indem Komponentenstützen generisch gemacht werden.
-
-### Vermeiden Sie die Kollision von Eigenschaften
-
-Die bisherige Strategie weist eine kleine Einschränkung auf: die Kollision der Eigenschaften. Die Komponente, die die `component` Eigenschaft bereitstellt, leitet möglicherweise nicht alle Eigenschaften an das Stammelement weiter. Um dieses Problem zu umgehen, können Sie eine benutzerdefinierte Komponente erstellen:
-
-```tsx
-import { Link } from 'react-router-dom';
-import Button from '@material-ui/core/Button';
-
-const MyLink = (props: any) => <Link to="/" {...props} />;
-
-// Benutzung:
-<Button color="primary" component={MyLink}>Nach Hause</Button>
-```
+Not every component fully supports any component type you pass in. If you encounter a component that rejects its `component` props in TypeScript please open an issue. Es besteht ein ständiger Aufwand, um dies zu beheben, indem Komponentenstützen generisch gemacht werden.
