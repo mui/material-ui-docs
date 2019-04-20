@@ -101,4 +101,4 @@ Ein häufiger Anwendungsfall ist die Verwendung eines Buttons, um eine Navigatio
 
 {{"demo": "pages/demos/buttons/ButtonRouter.js", "defaultCodeOpen": true}}
 
-*Note: Creating the Button components is necessary to prevent unexpected unmounting. You can read more about it in our [component property guide](/guides/composition/#component-property).*
+*Hinweis: Das Erstellen von Button Komponenten ist erforderlich, um ein unerwartetes Aushängen zu verhindern. Weitere Informationen dazu finden Sie in unserem [Guide über Komponenten-Eigenschaften ](/guides/composition/#component-property).*
