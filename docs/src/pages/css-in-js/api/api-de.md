@@ -104,7 +104,7 @@ export default function MyComponent() {
 
 ## `ServerStyleSheets`
 
-Dies ist ein Klassenhelfer für das serverseitige Rendering. [You can follow our guide for a practical approach](/guides/server-rendering/).
+Dies ist ein Klassenhelfer für das serverseitige Rendering. [ Sie können unserem Leitfaden für einen praktischen Ansatz folgen](/guides/server-rendering/).
 
 ```jsx
 import ReactDOMServer from 'react-dom/server';
@@ -125,15 +125,15 @@ const response = `
 `;
 ```
 
-### `new ServerStyleSheets([options])`
+### `neue ServerStyleSheets ([options])`
 
-The instantiation accepts an options object as a first argument.
+Die Instantiierung akzeptiert ein Optionsobjekt als erstes Argument.
 
-1. `options` (*Object* [optional]): The options are spread as props to the [`StylesProvider`](#stylesprovider) component.
+1. `options` (*Objekt * [optional]): Die Optionen werden als Eigenschaften an die [`StylesProvider`](#stylesprovider) Komponente verteilt.
 
 ### `sheets.collect(node) => React element`
 
-The method wraps your React node in a provider element. It collects the style sheets during the rendering so they can be later sent to the client.
+Die Methode schließt Ihre React Knoten in ein Provider-Element ein. It collects the style sheets during the rendering so they can be later sent to the client.
 
 ### `sheets.toString() => CSS string`
 
