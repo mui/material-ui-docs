@@ -35,18 +35,18 @@ import { createMuiTheme } from '@material-ui/core';
 
 const theme = createMuiTheme({
   props: {
-    // Name of the component ⚛️
+    // Name der Komponenete⚛️
     MuiButtonBase: {
       // The properties to apply
-      disableRipple: true, // No more ripple, on the whole application 
+      disableRipple: true, // Keine Welleneffekte für die ganze Applikation 
     },
   },
 });
 ```
 
-## How can I disable transitions globally?
+## Wie kann ich Übergänge global deaktivieren?
 
-You can disable transitions globally by providing the following in your theme:
+Sie können Übergänge global deaktivieren, indem Sie in Ihrem Theme folgendes angeben:
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
@@ -61,7 +61,7 @@ const theme = createMuiTheme({
 
 Manchmal wollen Sie dieses Verhalten bedingt ermöglichen, zum Beispiel während der Prüfung oder auf Low-End-Geräten, in diesen Fällen können Sie dynamisch den Wert des Themes ändern.
 
-You can go one step further by disabling all the transitions, animations and the ripple effect:
+Sie können noch einen Schritt weiter gehen, indem Sie alle Übergänge, Animationen und den Welleneffekt deaktivieren:
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
