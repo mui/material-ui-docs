@@ -68,13 +68,13 @@ import { createMuiTheme } from '@material-ui/core';
 
 const theme = createMuiTheme({
   transitions: {
-    // So we have `transition: none;` everywhere
+    // Jetzt haben wir überall 'transition: none'
     create: () => 'none',
   },
   overrides: {
-    // Name of the component ⚛️
+    // Name der Komponente ⚛️
     CssBasline: {
-      // Name of the rule
+      // Name der Regel
       '@global': {
         '*, *::before, *::after': {
           transition: 'none !important',
@@ -84,10 +84,10 @@ const theme = createMuiTheme({
     },
   },
   props: {
-    // Name of the component ⚛️
+    // Name der Komponente ⚛️
     MuiButtonBase: {
-      // The properties to apply
-      disableRipple: true, // No more ripple, on the whole application!
+      // Die Eigenschaften, die angewandt werden sollen
+      disableRipple: true, // Keine Welleneffekte in der ganzen Applikation!
     },
   },
 });
@@ -146,22 +146,22 @@ export default withTheme(withStyles(styles)(Modal));
 
 ## Wie kann ich auf das DOM-Element zugreifen?
 
-All Material-UI components that should render something in the DOM forward their ref to the underlying DOM component. This means that you can get DOM elements by reading the ref attached to Material-UI components:
+Alle Material-UI-Komponenten, die etwas im DOM darstellen sollen, leiten ihre an die zugrunde liegende DOM-Komponente weiter. Dies bedeutet, dass Sie die DOM-Elemente, indem Sie den ref lesen, der an die Komponenten der Material-UI angehängt ist:
 
 ```jsx
-// or a ref setter function
-const ref = React.createRef();
-// render
-<Button ref={ref} />;
-// usage
-const element = ref.current;
+// oder eine Ref-Setter-Funktion
+const ref = React.createRef ();
+// Rendern
+<0 />;
+// Verwendung
+const Element = ref.current;
 ```
 
-If you're not sure if the Material-UI component in question forwards its ref you can check the API documentation under "Props" e.g. the [/api/button/#props](Button API) includes
+Wenn Sie nicht sicher sind, ob die Material-UI-Komponente in Frage sein ref weiterleitet, können Sie die Dokumentation API überprüfen unter „Props“ zB die the [/api/button/#props](Button API) enthält
 
-> The ref is forwarded to the root element.
+> Der ref wird an das Wurzelelement weitergeleitet.
 
-indicating that you can access the DOM element with a ref.
+was anzeigt, dass Sie mit einem ref auf das DOM-Element zugreifen können.
 
 ## Warum unterscheiden sich die Farben, die ich sehe, von denen, die ich hier sehe?
 
