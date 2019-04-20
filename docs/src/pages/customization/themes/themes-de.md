@@ -337,17 +337,17 @@ const theme = createMuiTheme({
 theme.spacing(2) // = 4 * 2
 ```
 
-- a function
+- eine Funktion
 
 ```js
 const theme = createMuiTheme({
-  spacing: factor => `${0.25 * factor}rem`, // (Bootstrap strategy)
+  spacing: factor => `${0.25 * factor}rem`, // (Bootstrap Strategie)
 });
 
 theme.spacing(2); // = 0.25 * 2rem = 0.5rem = 8px
 ```
 
-- an array
+- eine Array
 
 ```js
 const theme = createMuiTheme({
@@ -405,10 +405,10 @@ Sie können auch Eigenschaften auf alle Instanzen eines Komponententyps anwenden
 ```js
 const theme = createMuiTheme({
   props: {
-    // Name of the component ⚛️
+    // Name der Komponente ⚛️
     MuiButtonBase: {
-      // The properties to apply
-      disableRipple: true, // No more ripple, on the whole application 
+      // Die Eigenschaft, die angewandt werden soll
+      disableRipple: true, // Keine Welleneffekte in der ganzen Applikation 
     },
   },
 });
