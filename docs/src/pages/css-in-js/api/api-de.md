@@ -133,19 +133,19 @@ Die Instantiierung akzeptiert ein Optionsobjekt als erstes Argument.
 
 ### `sheets.collect(node) => React element`
 
-Die Methode schließt Ihre React Knoten in ein Provider-Element ein. It collects the style sheets during the rendering so they can be later sent to the client.
+Die Methode schließt Ihre React Knoten in ein Provider-Element ein. Es sammelt die Stylesheets während des Renderns, um sie später an den Client zu senden.
 
 ### `sheets.toString() => CSS string`
 
 Die Methode gibt die gesammelten Stile zurück.
 
-⚠️ You must call `.collect()` before using this method.
+⚠️ Sie müssen `.collect()` aufrufen, bevor Sie diese Methode verwenden.
 
 ### `sheets.getStyleElement() => CSS React element`
 
-The method is an alternative to `.toString()` when you are rendering the whole page with React.
+Die Methode ist eine Alternative zu `.toString()`, wenn Sie die gesamte Seite mit React rendern.
 
-⚠️ You must call `.collect()` before using this method.
+⚠️ Sie müssen `.collect()` aufrufen, bevor Sie diese Methode verwenden.
 
 ## `styled(Component)(styles, [options]) => Component`
 
