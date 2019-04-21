@@ -337,7 +337,7 @@ const theme = createMuiTheme ({
 theme.spacing (2) // = 4 * 2
 ```
 
-- a function
+- функция
 
 ```js
 const theme = createMuiTheme({
@@ -347,7 +347,7 @@ const theme = createMuiTheme({
 theme.spacing(2); // = 0.25 * 2rem = 0.5rem = 8px
 ```
 
-- an array
+- массив
 
 ```js
 const theme = createMuiTheme({
