@@ -44,7 +44,7 @@ const theme = createMuiTheme({
 });
 ```
 
-## How can I disable transitions globally?
+## Как я могу отключить transitions глобально?
 
 You can disable transitions globally by providing the following in your theme:
 
