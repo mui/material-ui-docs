@@ -67,9 +67,9 @@ Você pode definir uma largura máxima usando `maxWidth` enumerável combinado c
 
 {{"demo": "pages/demos/dialogs/MaxWidthDialog.js"}}
 
-## Responsive full-screen
+## Tela cheia responsiva
 
-You may make a dialog responsively full screen the dialog using `withMobileDialog`. By default, `withMobileDialog()(Dialog)` responsively full screens *at or below* the `sm` [screen size](/layout/basics/). You can choose your own breakpoint for example `xs` by passing the `breakpoint` argument: `withMobileDialog({breakpoint: 'xs'})(Dialog)`.
+Você pode fazer uma caixa de diálogo responsiva de tela cheia a caixa de diálogo usando `withMobileDialog`. Por padrão, `withMobileDialog () (Dialog)` responda em tela cheia *a ou abaixo de* a `sm` [tamanho da tela](/layout/basics/). You can choose your own breakpoint for example `xs` by passing the `breakpoint` argument: `withMobileDialog({breakpoint: 'xs'})(Dialog)`.
 
 {{"demo": "pages/demos/dialogs/ResponsiveDialog.js"}}
 
