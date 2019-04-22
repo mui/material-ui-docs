@@ -118,7 +118,7 @@ Zurück zum vorherigen Beispiel des Buttons; Da 3 Freiheitsgrade erforderlich si
 
 ### Ref
 
-The `ref` is forwarded to the root element. This means that, without changing the rendered root element via the `component` prop, it is forwarded to the outermost DOM element that which component renders. If you pass a different component via the `component` prop the ref will be attached to that component instead.
+Der `ref` Element wird an das Wurzelelement weitergeleitet. This means that, without changing the rendered root element via the `component` prop, it is forwarded to the outermost DOM element that which component renders. If you pass a different component via the `component` prop the ref will be attached to that component instead.
 
 ## Glossary
 
