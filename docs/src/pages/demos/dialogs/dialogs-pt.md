@@ -8,7 +8,7 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 
 Uma caixa de [Diálogo](https://material.io/design/components/dialogs.html) é um tipo de janela [modal](/utils/modal/) que aparece na frente do conteúdo do aplicativo para fornecer informações críticas ou solicitar uma decisão. A caixa de diálogo desabilita as funcionalidades do aplicativo enquanto aparece e permanece em tela até confirmado, negado ou a ação requerida seja passada.
 
-As caixas de diálogo são intencionalmente interruptivas, portanto devem ser usadas com moderação.
+As caixas de diálogo são intencionalmente interruptivas, então eles devem ser usados com moderação.
 
 ## Caixas de diálogo simples
 
@@ -27,7 +27,7 @@ Alertas são interrupções urgentes, requerendo confirmação que informou ao u
 
 Maioria dos alertas não precisam de títulos. Eles resumem uma decisão em uma sentença ou duas por:
 
-- Fazendo uma pergunta(Exemplo: "Apagar esta conversa?")
+- Fazendo uma pergunta (Exemplo: "Apagar esta conversa?")
 - Fazendo uma declaração relacionada aos botões de ação
 
 Use a barra de título somente para situações de alto risco, como perda de conexão potencial. Os usuários devem ser capaz de entender as escolhas baseando-se apenas no título e texto do botão.
@@ -39,7 +39,7 @@ Se um título é necessário:
 
 {{"demo": "pages/demos/dialogs/AlertDialog.js"}}
 
-You can also swap out the transition, the next example uses `Slide`.
+Você também pode trocar a transição, o próximo exemplo utiliza `Slide`.
 
 {{"demo": "pages/demos/dialogs/AlertDialogSlide.js"}}
 
