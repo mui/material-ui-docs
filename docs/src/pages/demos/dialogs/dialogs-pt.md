@@ -69,7 +69,7 @@ Você pode definir uma largura máxima usando `maxWidth` enumerável combinado c
 
 ## Tela cheia responsiva
 
-Você pode fazer uma caixa de diálogo responsiva de tela cheia a caixa de diálogo usando `withMobileDialog`. Por padrão, `withMobileDialog () (Dialog)` responda em tela cheia *a ou abaixo de* a `sm` [tamanho da tela](/layout/basics/). You can choose your own breakpoint for example `xs` by passing the `breakpoint` argument: `withMobileDialog({breakpoint: 'xs'})(Dialog)`.
+Você pode fazer uma caixa de diálogo responsiva de tela cheia a caixa de diálogo usando `withMobileDialog`. Por padrão, `withMobileDialog () (Dialog)` responda em tela cheia *a ou abaixo de* a `sm` [tamanho da tela](/layout/basics/). Você pode escolher seu próprio ponto de interrupção, por exemplo, `xs` passando o `argumento` do ponto de interrupção: `withMobileDialog ({breakpoint: 'xs'}) (Dialog)`.
 
 {{"demo": "pages/demos/dialogs/ResponsiveDialog.js"}}
 
@@ -85,12 +85,12 @@ Tocar em “Cancelar” em uma caixa de diálogo de confirmação ou pressionar 
 
 Siga a seção [Acessibilidade Modal](/utils/modal/#accessibility).
 
-## Scrolling long content
+## Rolagem de conteúdo longo
 
-When dialogs become too long for the user’s viewport or device, they scroll.
+Quando os diálogos se tornam muito longos para a porta de visualização ou dispositivo do usuário, eles rolam.
 
-- `scroll=paper` the content of the dialog scrolls within the paper element.
-- `scroll=body` the content of the dialog scrolls within the body element.
+- `rolagem=papel` o conteúdo da caixa de diálogo rola dentro do elemento de papel.
+- `rolagem=corpo` o conteúdo da caixa de diálogo rola dentro do elemento corpo.
 
 Try the demo below to see what we mean:
 
