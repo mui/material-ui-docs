@@ -92,13 +92,13 @@ Quando os diálogos se tornam muito longos para a porta de visualização ou dis
 - `rolagem=papel` o conteúdo da caixa de diálogo rola dentro do elemento de papel.
 - `rolagem=corpo` o conteúdo da caixa de diálogo rola dentro do elemento corpo.
 
-Try the demo below to see what we mean:
+Experimente a demonstração abaixo para ver o que queremos dizer:
 
 {{"demo": "pages/demos/dialogs/ScrollDialog.js"}}
 
 ## Diálogo arrastável
 
-Você pode criar uma caixa de diálogo arrastável usando [react-draggable](https://github.com/mzabriskie/react-draggable). To do so, you can pass the the imported `Draggable` component as the `PaperComponent` of the `Dialog` component. This will make the entire dialog draggable.
+Você pode criar uma caixa de diálogo arrastável usando [react-draggable](https://github.com/mzabriskie/react-draggable). Para fazer isso, você pode passar o importado `Draggable` componente como o `PaperComponent` do `de Diálogo` componente. Isso fará com que toda a caixa de diálogo seja arrastável.
 
 {{"demo": "pages/demos/dialogs/DraggableDialog.js"}}
 
