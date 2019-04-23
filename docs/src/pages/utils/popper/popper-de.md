@@ -2,6 +2,7 @@
 title: Popper React-Komponente
 components: Popper
 ---
+
 # Popper
 
 <p class="description">Mit einem Popper können Inhalte übereinander angezeigt werden. Es ist eine Alternative zum React-Popper.</p>
