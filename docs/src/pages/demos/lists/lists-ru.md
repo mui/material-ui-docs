@@ -2,6 +2,7 @@
 title: Список, компонент React
 components: Collapse, Divider, List, ListItem, ListItemAvatar, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader
 ---
+
 # Списки
 
 <p class="description">Списки представляют собой непрерывные вертикальные массивы данных из текста или изображений.</p>
