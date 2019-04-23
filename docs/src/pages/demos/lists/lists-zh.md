@@ -2,6 +2,7 @@
 title: React List（列表）组件
 components: Collapse, Divider, List, ListItem, ListItemAvatar, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader
 ---
+
 # Lists（列表）
 
 <p class="description">列表是对文本或图像的连续、垂直的索引。</p>
