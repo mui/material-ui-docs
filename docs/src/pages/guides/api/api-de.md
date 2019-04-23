@@ -123,7 +123,7 @@ Das `ref` Element wird an das Wurzelelement weitergeleitet. Das bedeutet, ohne d
 ## Glossar
 
 - **host component**: ein DOM-Knotentype im Kontext von `react-dom`, z.B. ein `'div'`. Siehe auch [React Implementation Notes](https://reactjs.org/docs/implementation-notes.html#mounting-host-elements).
-- **host element**: a DOM node in the context of `react-dom`, e.g. an instance of `window.HTMLDivElement`.
-- **outermost**: The first component when reading the component tree from top to bottom i.e. breadth-first search.
-- **root component**: the outermost component that renders a host component.
-- **root element**: the outermost element that renders a host component.
+- **host element**: in DOM-Knoten im Kontext von `react-dom` z.B. eine Instanz von `window.HTMLDivElement`.
+- **outermost**: Die erste Komponente, wenn der Komponentenbaum von oben nach unten gelesen wird, dh die Breitensuche.
+- ** Wurzelkomponente**: Die äußerste Komponente, die eine Hostkomponente darstellt.
+- ** Wurzelelement**: Das äußerste Element, das eine Hostkomponente darstellt.
