@@ -102,4 +102,4 @@ Text Buttons（文本按钮），Contained Buttons（实心按钮），Floating 
 
 {{"demo": "pages/demos/buttons/ButtonRouter.js", "defaultCodeOpen": true}}
 
-*Note: Creating the Button components is necessary to prevent unexpected unmounting. You can read more about it in our [component property guide](/guides/composition/#component-property).*
+*请注意：为了防止组件被意外地移除，创建一个 Button 组件是有必要的。您可以在我们的[组件属性指南](/guides/composition/#component-property)中阅读更多相关信息。*
