@@ -2,6 +2,7 @@
 title: React 环形、线装进度组件
 components: CircularProgress, LinearProgress
 ---
+
 # 进度
 
 <p class="description">进度指示器用以表示一个不确定的等待时间或显示一个处理过程的时间长短。</p>
