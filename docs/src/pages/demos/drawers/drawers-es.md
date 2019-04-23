@@ -2,6 +2,7 @@
 title: Componente React Cajón
 components: Drawer, SwipeableDrawer
 ---
+
 # Cajón
 
 <p class="description">Los cajones de navegación brindan acceso a los destinos en su aplicación. Las hojas laterales son superficies que contienen contenido complementario que están ancladas al borde izquierdo o derecho de la pantalla.</p>
