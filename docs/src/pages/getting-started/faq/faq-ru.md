@@ -2,7 +2,7 @@
 
 <p class="description">Столкнулись с особой проблемой? Сначала посмотрите наиболее распространенные ошибки в нашем FAQ.</p>
 
-If you still can't find what you're looking for, you can ask the community in [Spectrum](https://spectrum.chat/material-ui). Для практических и других вопросов, пожалуйста, используйте [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) вместо вопросов на Github. На StackOverflow существует тег `material-ui`, который вы можете использовать для ваших вопросов.
+Если вы все еще не можете найти то, что ищете, вы можете задать вопрос сообществу в [Spectrum](https://spectrum.chat/material-ui). Для практических и других вопросов, пожалуйста, используйте [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) вместо вопросов на Github. На StackOverflow существует тег `material-ui`, который вы можете использовать для ваших вопросов.
 
 ## Why aren't my components rendering correctly in production builds?
 
@@ -142,9 +142,9 @@ If you are seeing a warning message in the console like the one below, you proba
 
 > It looks like there are several instances of `@material-ui/styles` initialized in this application. This may cause theme propagation issues, broken class names and makes your application bigger without a good reason.
 
-### Possible reasons
+### Возможные причины
 
-There are several common reasons for this to happen:
+Существует несколько распространенных причин для этого:
 
 - You have another `@material-ui/styles` library somewhere in your dependencies.
 - You have a monorepo structure for your project (e.g, lerna, yarn workspaces) and `@material-ui/styles` module is a dependency in more than one package (this one is more or less the same as the previous one).
