@@ -1,6 +1,7 @@
 ---
 title: Medienanfragen in React für Responsive Design
 ---
+
 # useMediaQuery
 
 <p class="description">Dies ist ein CSS-Media-Abfrage-Hook für React. Es wartet auf Übereinstimmungen mit einer CSS-Medienabfrage. Es ermöglicht das Rendern von Komponenten basierend darauf, ob die Abfrage übereinstimmt oder nicht.</p>
