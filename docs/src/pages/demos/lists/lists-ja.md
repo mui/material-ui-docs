@@ -2,6 +2,7 @@
 title: List React component
 components: Collapse, Divider, List, ListItem, ListItemAvatar, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader
 ---
+
 # List
 
 <p class="description">Listは、テキストまたは画像が連続する垂直方向の索引です。</p>
