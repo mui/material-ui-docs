@@ -2,6 +2,7 @@
 title: Circular Progress, Linear Progress React component
 components: CircularProgress, LinearProgress
 ---
+
 # Progress
 
 <p class="description">Progress indicators express an unspecified wait time or display the length of a process.</p>
