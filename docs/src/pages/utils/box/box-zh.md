@@ -1,6 +1,7 @@
 ---
 title: Box React组件
 ---
+
 # Box（盒子）
 
 <p class="description">Box组件充当大多数CSS实用程序需求的包装器组件。</p>
