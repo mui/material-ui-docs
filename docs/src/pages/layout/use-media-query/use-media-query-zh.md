@@ -1,6 +1,7 @@
 ---
 title: React中的媒体查询用于响应式设计
 ---
+
 # useMediaQuery
 
 <p class="description">这是React的CSS媒体查询钩子。 它侦听与CSS媒体查询的匹配。 它允许根据查询是否匹配来呈现组件。</p>
