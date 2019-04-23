@@ -2,6 +2,7 @@
 title: Progresso
 components: CircularProgress, LinearProgress
 ---
+
 # Progress (Progresso)
 
 <p class="description">Os indicadores de progresso expressam um tempo de espera não especificado ou exibem a duração de um processo.</p>
