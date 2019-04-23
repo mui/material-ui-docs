@@ -1,6 +1,7 @@
 ---
 title: Box React Komponente
 ---
+
 # Box
 
 <p class="description">Die Box-Komponente dient als Wrapper-Komponente für die meisten Anforderungen des CSS-Dienstprogramms.</p>
