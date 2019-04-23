@@ -50,6 +50,7 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 
 ### Stile
 
+- ⚠️ Material-UI depends on JSS v10. JSS v10 is not backward compatible with v9. Make sure JSS v9 is not installed in your environment. Removing `react-jss` from your package.json can help.
 - Isolation of the styling solution of the core components in a dedicated package. Remove the `MuiThemeProvider` component:
   
   ```diff
@@ -303,6 +304,27 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 - [Modal] event.defaultPrevented is now ignored.
   
   Die neue Logik schließt das Modal, auch wenn `event.preventDefault()` beim Ereignis "key down escape" aufgerufen wird. `event.preventDefault()` soll Standardverhalten stoppen, z. B. das Aktivieren eines Kontrollkästchens, das Klicken auf eine Schaltfläche zum Senden eines Formulars und das Drücken des linken Pfeils, um den Cursor in einer Texteingabe zu bewegen usw. Nur spezielle HTML-Elemente weisen dieses Standardverhalten auf. Sie sollten `event.stopPropagation()` verwenden, wenn sie nicht ein ` onClose` Ereignis auf dem Modal auslösen wollen.
+
+### Slide
+
+- [Slide] The child needs to be able to hold a ref.
+  
+  ```diff class Component extends React.Component { render() { return
+  
+  <div />
+  
+      }
+      
+  
+  } -const MyComponent = props =><div {...props} /> 
+  
+  +const MyComponent = React.forwardRef((props, ref) =><div ref={ref} {...props} /> 
+  
+  ); <slide><component /></slide> <slide><mycomponent /></slide> <slide>
+  
+  <div />
+  
+  </Slide>
 
 ### Tooltip
 
