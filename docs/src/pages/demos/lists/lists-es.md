@@ -2,6 +2,7 @@
 title: Componente List React
 components: Collapse, Divider, List, ListItem, ListItemAvatar, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader
 ---
+
 # Listas
 
 <p class="description">Las listas son índices contínuos y verticales de texto o imágenes.</p>
