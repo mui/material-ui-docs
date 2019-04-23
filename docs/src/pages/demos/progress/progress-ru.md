@@ -2,6 +2,7 @@
 title: Circular Progress, Linear Progress React component
 components: CircularProgress, LinearProgress
 ---
+
 # Прогресс
 
 <p class="description">Индикаторы прогресса указывают на неопределенное время ожидания или отображают продолжительность процесса.</p>
