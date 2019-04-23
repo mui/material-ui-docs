@@ -2,6 +2,7 @@
 title: React Table（表格）组件
 components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination, TableRow, TableSortLabel
 ---
+
 # Table（表格）
 
 <p class="description">Data tables（数据表格）用于展示一系列的数据集。表格可以完全自定义开发。</p>
