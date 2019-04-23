@@ -2,6 +2,7 @@
 title: Grid React Komponente
 components: Grid
 ---
+
 # Grid
 
 <p class="description">Das responsive Layoutraster von Material Design passt sich der Bildschirmgröße und -ausrichtung an und sorgt für Konsistenz über alle Layouts hinweg.</p>
