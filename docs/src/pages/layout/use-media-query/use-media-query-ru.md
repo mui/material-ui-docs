@@ -1,6 +1,7 @@
 ---
 title: Consulta de mídia no React para design responsivo
 ---
+
 # useMediaQuery
 
 <p class="description">Это хук медиа-запроса CSS для React. Он ожидает(слушает) совпадения с медиа-запросом CSS. Он позволяет отображать компоненты в зависимости от того, соответствует запрос или нет.</p>
