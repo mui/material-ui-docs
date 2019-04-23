@@ -2,6 +2,7 @@
 title: Hidden React component
 components: Hidden
 ---
+
 # Hidden
 
 <p class="description">Quickly and responsively toggle the visibility value of components and more with our hidden utilities.</p>
