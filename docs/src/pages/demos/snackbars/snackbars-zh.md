@@ -2,6 +2,7 @@
 title: React 消息条(Snackbar) 组件
 components: Snackbar, SnackbarContent
 ---
+
 # 消息条(Snackbar)
 
 <p class="description">消息条(Snackbar)通过一条消息来提供有关应用进程的简短信息-通常在屏幕底部</p>
