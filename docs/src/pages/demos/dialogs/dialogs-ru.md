@@ -2,6 +2,7 @@
 title: Диалог, компонент React
 components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Slide
 ---
+
 # Диалоги
 
 <p class="description">Диалоги информируют пользователей о задаче и могут содержать критическую информацию, требовать решения или включать несколько задач.</p>
