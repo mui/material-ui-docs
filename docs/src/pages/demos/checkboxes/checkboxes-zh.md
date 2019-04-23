@@ -1,9 +1,9 @@
 ---
-title: Checkbox React component
+title: React Checkbox（复选框）组件
 components: Checkbox, FormControl, FormGroup, FormLabel, FormControlLabel
 ---
 
-# 复选框
+# Checkboxes（复选框）
 
 <p class="description">Checkboxes allow the user to select one or more items from a set.</p>
 
