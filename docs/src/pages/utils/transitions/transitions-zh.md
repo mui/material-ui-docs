@@ -2,6 +2,7 @@
 title: React过渡动画组件
 components: 折叠(Collapse), 淡入淡出(Fade), 增长(Grow), 滑动(Slide), 缩放(Zoom)
 ---
+
 # 过渡(Transitions)
 
 <p class="description">过渡动画使UI更富有表现力并且易于使用。</p>
