@@ -2,6 +2,7 @@
 title: Hidden React-Komponente
 components: Hidden
 ---
+
 # Hidden
 
 <p class="description">Wechseln Sie mit unseren versteckten Komponenten schnell und ansprechend den Sichtbarkeitswert von Komponenten und mehr.</p>
