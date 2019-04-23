@@ -2,6 +2,7 @@
 title: React Divider（分隔线）组件
 components: Divider
 ---
+
 # Dividers（分隔线）
 
 <p class="description">分隔线是对列表和布局中的内容进行分组的一条细线。</p>
