@@ -29,9 +29,9 @@ components: Radio, RadioGroup, FormControl, FormLabel, FormControlLabel
 
 ## 无障碍功能
 
-所有表单控件都应该有标签，这包括单选按钮，复选框和开关。 在大多数情况下，这是通过使用 `<label>` 元素（[FormControlLabel](/api/form-control-label/)）完成的。
+所有表单控件都应该带有标签，而这包括了单选按钮，复选框和开关。 在大多数情况下，这是通过使用一个`<label>`元素（[FormControlLabel](/api/form-control-label/)）实现的。
 
-如果无法使用标签，则必须直接向输入组件添加属性。 在这种情况下，可以应用附加的属性（例如 `arial-label`， `aria-labelledby`， `title`）经由 `inputProps` 属性。
+如果无法使用标签，则必须直接在输入组件中添加属性。 在这种情况下，可以应用附加的属性（例如 `arial-label`， `aria-labelledby`， `title`）经由 `inputProps` 属性。
 
 ```jsx
 <RadioButton
@@ -40,6 +40,6 @@ components: Radio, RadioGroup, FormControl, FormLabel, FormControlLabel
 />
 ```
 
-## Guidance
+## 指导
 
-- [Checkboxes vs. 单选按钮](https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/)
+- [复选框 对比 单选按钮](https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/)
