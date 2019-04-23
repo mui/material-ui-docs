@@ -90,7 +90,7 @@
     "/getting-started/example-projects": "Exemplos de Projetos",
     "/getting-started/page-layout-examples": "Exemplos de layout de página",
     "/getting-started/learn": "Aprenda",
-    "/getting-started/faq": "Perguntas Frequentes",
+    "/getting-started/faq": "FAQs",
     "/getting-started/supported-components": "Componentes Suportados",
     "/getting-started/supported-platforms": "Plataformas Suportadas",
     "/style": "Conteúdo",
@@ -189,6 +189,8 @@
     "/discover-more/changelog": "Histórico de Mudanças",
     "/discover-more/governance": "Gestão",
     "/versions": "Versões",
-    "/discover-more/languages": "Idiomas"
+    "/discover-more/languages": "Idiomas",
+    "/layout/container": "Container",
+    "/demos/transfer-list": "Transfer List"
   }
 }
