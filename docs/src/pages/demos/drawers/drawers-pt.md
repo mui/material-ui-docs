@@ -2,6 +2,7 @@
 title: Drawer React component
 components: Drawer, SwipeableDrawer
 ---
+
 # Drawer
 
 <p class="description">A navegação por drawers dão acesso para lugares dentro de sua aplicação. Elas são fragmentos de sua aplicação que contém conteúdo suplementar que são colocados na borda da esquerda ou da direita da tela.</p>
