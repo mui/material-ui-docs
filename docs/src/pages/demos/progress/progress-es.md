@@ -2,6 +2,7 @@
 title: Componente React Progreso circular, Progreso lineal
 components: CircularProgress, LinearProgress
 ---
+
 # Progreso
 
 <p class="description">Los indicadores de progreso expresan un tiempo de espera indeterminado o despliegan la duración de un proceso.</p>
