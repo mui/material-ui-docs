@@ -2,6 +2,7 @@
 title: Componente Grid React
 components: Grid
 ---
+
 # Grid
 
 <p class="description">El grid responsive de Material Design se adapta al tamaño y orientación de la pantalla, garantizando la consistencia en todos los diseños.</p>
