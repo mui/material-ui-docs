@@ -2,6 +2,7 @@
 title: 隐藏的React组件
 components: Hidden
 ---
+
 # Hidden
 
 <p class="description">使用我们的Hidden组件快速并响应式地切换元素的显隐。</p>
