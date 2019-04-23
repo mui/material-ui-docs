@@ -2,6 +2,7 @@
 title: Popper React component
 components: Popper
 ---
+
 # Popper
 
 <p class="description">A Popper can be used to display some content on top of another. It's an alternative to react-popper.</p>
