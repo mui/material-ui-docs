@@ -2,6 +2,7 @@
 title: Übergang React Komponente
 components: Collapse, Fade, Grow, Slide, Zoom
 ---
+
 # Übergänge
 
 <p class="description">Übergänge helfen, eine Oberfläche ausdrucksvoll und einfach zu benutzen zu gestalten.</p>
