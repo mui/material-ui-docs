@@ -2,6 +2,7 @@
 title: Transferliste (Transfer List)
 components: List, ListItem, Checkbox, Switch
 ---
+
 # Transferliste (Transfer List)
 
 <p class="description">Eine Transferliste (oder "Shuttle") ermöglicht dem Benutzer, ein oder mehrere Listenelemente zwischen Listen zu verschieben.</p>
