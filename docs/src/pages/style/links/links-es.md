@@ -1,7 +1,8 @@
 ---
 components: Link
 ---
-# Links
+
+# Enlaces
 
 <p class="description">The Link component allows you to easily customize anchor elements with your theme colors and typography styles.</p>
 
@@ -11,7 +12,10 @@ The Link component is built on top of the [Typography](/api/typography/) compone
 
 {{"demo": "pages/style/links/Links.js"}}
 
-However, the Link has different default properties than the Typography: - `color="primary"` as the link needs to stand out. - `variant="inherit"` as the link will, most of the time, be used as a child of a Typograpy component.
+However, the Link has different default properties than the Typography:
+
+- `color="primary"` as the link needs to stand out.
+- `variant="inherit"` as the link will, most of the time, be used as a child of a Typograpy component.
 
 ## Accesibilidad
 
@@ -32,26 +36,6 @@ When you use `target="_blank"` with Links it is [recommended](https://developers
 
 One common use case is to perform the navigation on the client only, without doing a .html round-trip with the server. The `Link` component provides a property to handle this use case: `component`.
 
-```jsx
-import { Link as RouterLink } from 'react-router-dom'
-import Link from '@material-ui/core/Link';
+{{"demo": "pages/style/links/LinkRouter.js", "defaultCodeOpen": true}}
 
-<Link component={RouterLink} to="/open-collective">
-  Link
-</Link>
-```
-
-o si quieres evitar un choque de propiedades:
-
-```jsx
-import { Link as RouterLink } from 'react-router-dom'
-import Link from '@material-ui/core/Link';
-
-const MyLink = props => <RouterLink to="/open-collective" {...props} />
-
-<Link component={MyLink}>
-  Link
-</Link>
-```
-
-*Note: Creating `MyLink` is necessary to prevent unexpected unmounting. You can read more about it in our [component property guide](/guides/composition/#component-property).*
+*Note: Creating the Link components is necessary to prevent unexpected unmounting. You can read more about it in our [component property guide](/guides/composition/#component-property).*
