@@ -2,7 +2,7 @@
 
 <p class="description">您在一个特定的问题上停滞不前吗？ 您可以先在我们的常见 FAQ (问题解答) 中检索一下常见问题。</p>
 
-如果您仍然无法找到您想要的内容, 您可以在[ gitter ](https://gitter.im/mui-org/material-ui) 社区中发起咨询。 对于如何提问，和其他并非功能性问题的，请使用[StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) 提问，请不要使用 Github 的 issues板块。 在 StackOverflow 里面有一个 ` material-ui `的标签， 您可以用它来标记你的问题。
+If you still can't find what you're looking for, you can ask the community in [Spectrum](https://spectrum.chat/material-ui). 对于如何提问，和其他并非功能性问题的，请使用[StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) 提问，请不要使用 Github 的 issues板块。 在 StackOverflow 里面有一个 ` material-ui `的标签， 您可以用它来标记你的问题。
 
 ## 为什么我的组件在生产版本中没有正确地渲染？
 
@@ -96,16 +96,16 @@ const theme = createMuiTheme({
 
 ## 是否必须使用 JSS 给我的 app 添加样式？
 
-我们强烈推荐这种方式，原因如下：
+It's recommended:
 
 - JSS 是已经内置的插件，所以它不会产生额外的应用包体尺寸。
 - 它速度很快 & 内存占用率更低。
-- 它的 [API](https://cssinjs.org/json-api/)干净并且前后一致。
-- 它支持大量的进阶功能，可以通过自身和 [插件](https://cssinjs.org/plugins/)实现。
+- 它的 API干净并且前后一致。
+- 它支持大量的进阶功能，可以通过自身和 插件实现。
 
 然而，您可能已经在你的应用程序上添加了一些使用其他样式的Material-UI组件，或者已经熟悉了一个完全不同的API而不想学习新的？ 在这种情况下，请转到[Style Library Interoperability（样式库互用）](/guides/interoperability/) 部分，在哪里你可以找到我们提供的用其他样式库来替换 Material-UI 组件样式的简单方法。
 
-## 我到底应该使用 inline-style 还是 classes 呢?
+## When should I use inline-style vs CSS?
 
 根据经验，仅对动态样式属性使用内联样式。 CSS 替代方案也有更多优势，例如：
 
@@ -116,34 +116,7 @@ const theme = createMuiTheme({
 
 ## 如何使用 react-router？
 
-我们在`ButtonBase` 组件里面解析了如何使用带有[第三方routing的库](/demos/buttons/#third-party-routing-library)。 大量我们的交互式组件的内部也使用了它：如`Button`，`MenuItem`，`<ListItem button />` ，`Tab`等。 您可以使用相同的解决方案。
-
-## 如何组合`withStyles()`和`withTheme`的 HOCs（高阶组件）呢?
-
-其实有许多不同的选择可以实现：
-
-**`withTheme`选项：**
-
-```js
-export default withStyles(styles, { withTheme: true })(Modal);
-```
-
-**`compose()` 辅助功能:**
-
-```js
-import { compose } from 'recompose';
-
-export default compose(
-  withTheme,
-  withStyles(styles)
-)(Modal);
-```
-
-**原始功能链：**
-
-```js
-export default withTheme(withStyles(styles)(Modal));
-```
+我们在`ButtonBase` 组件里面解析了如何使用带有[第三方routing的库](/demos/buttons/#third-party-routing-library)。 A lot of our interactive components use it internally: `Link`, `Button`, `MenuItem`, `<ListItem button />`, `Tab`, etc. 您可以使用相同的解决方案。
 
 ## 如何访问 DOM 元素？
 
@@ -163,6 +136,164 @@ If you're not sure if the Material-UI component in question forwards its ref you
 > The ref is forwarded to the root element.
 
 indicating that you can access the DOM element with a ref.
+
+## I have several instances of styles on the page
+
+If you are seeing a warning message in the console like the one below, you probably have several instances of `@material-ui/styles` initialized on the page.
+
+> It looks like there are several instances of `@material-ui/styles` initialized in this application. This may cause theme propagation issues, broken class names and makes your application bigger without a good reason.
+
+### Possible reasons
+
+There are several common reasons for this to happen:
+
+- You have another `@material-ui/styles` library somewhere in your dependencies.
+- You have a monorepo structure for your project (e.g, lerna, yarn workspaces) and `@material-ui/styles` module is a dependency in more than one package (this one is more or less the same as the previous one).
+- You have several applications that are using `@material-ui/styles` running on the same page (e.g., several entry points in webpack are loaded on the same page).
+
+### Duplicated module in node_modules
+
+If you think that the issue is in duplicated @material-ui/styles module somewhere in your dependencies, there are several ways to check this. You can use `npm ls @material-ui/styles`, `yarn list @material-ui/styles` or `find -L ./node_modules | grep /@material-ui/styles/package.json` commands in your application folder.
+
+If none of these commands identified the duplication, try analyzing your bundle for multiple instances of @material-ui/styles. You can just check your bundle source, or use a tool like [source-map-explorer](https://github.com/danvk/source-map-explorer) or [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer).
+
+If you identified that duplication is the issue that you are encountering there are several things you can try to solve it:
+
+If you are using npm you can try running `npm dedupe`. This command searches the local dependencies and tries to simplify the structure by moving common dependencies further up the tree.
+
+If you are using webpack, you can change the way it will [resolve](https://webpack.js.org/configuration/resolve/#resolve-modules) the @material-ui/styles module. You can overwrite the default order in which webpack will look for your dependencies and make your application node_modules more prioritized than default node module resolution order:
+
+```diff
+  resolve: {
++   alias: {
++     "@material-ui/styles": path.resolve(appFolder, "node_modules", "@material-ui/styles"),
++   }
+  }
+```
+
+### Usage with Lerna
+
+One possible fix to get @material-ui/styles to run in a Lerna monorepo across packages, is to [hoist](https://github.com/lerna/lerna/blob/master/doc/hoist.md) shared dependencies to the root of your monorepo file. Try running the bootstrap option with the --hoist flag.
+
+```sh
+lerna bootstrap --hoist
+```
+
+Alternatively, you can remove @material-ui/styles from your package.json file and hoist it manually to your top-level package.json file.
+
+Example of a package.json file in a Lerna root folder
+
+```json
+{
+  "name": "my-monorepo",
+  "devDependencies": {
+    "lerna": "latest"
+  },
+  "dependencies": {
+    "@material-ui/styles": "^4.0.0"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean",
+    "start": "lerna run start",
+    "build": "lerna run build"
+  }
+}
+```
+
+### Running multiple applications on one page
+
+If you have several applications running on one page, consider using one @material-ui/styles module for all of them. If you are using webpack, you can use [CommonsChunkPlugin](https://webpack.js.org/plugins/commons-chunk-plugin/) to create an explicit [vendor chunk](https://webpack.js.org/plugins/commons-chunk-plugin/#explicit-vendor-chunk), that will contain the @material-ui/styles module:
+
+```diff
+  module.exports = {
+    entry: {
++     vendor: ["@material-ui/styles"],
+      app1: "./src/app.1.js",
+      app2: "./src/app.2.js",
+    },
+    plugins: [
++     new webpack.optimize.CommonsChunkPlugin({
++       name: "vendor",
++       minChunks: Infinity,
++     }),
+    ]
+  }
+```
+
+## My App doesn't render correctly on the server
+
+If it doesn't work, in 99% of cases it's a configuration issue. A missing property, a wrong call order, or a missing component. We are very strict about configuration, and the best way to find out what's wrong is to compare your project to an already working setup, check out our [reference implementations](/guides/server-rendering/#reference-implementations), bit by bit.
+
+### CSS works only on first load then is missing
+
+The CSS is only generated on the first load of the page. Then, the CSS is missing on the server for consecutive requests.
+
+#### 要采取的行动
+
+We rely on a cache, the sheets manager, to only inject the CSS once per component type (if you use two buttons, you only need the CSS of the button one time). You need to create **a new `sheets` instance for each request**.
+
+*example of fix:*
+
+```diff
+-// Create a sheets instance.
+-const sheets = new ServerStyleSheets();
+
+function handleRender(req, res) {
+
++ // Create a sheets instance.
++ const sheets = new ServerStyleSheets();
+
+  //…
+
+  // Render the component to a string.
+  const html = ReactDOMServer.renderToString(
+```
+
+### React class name hydration mismatch
+
+There is a class name mismatch between the client and the server. It might work for the first request. Another symptom is that the styling changes between initial page load and the downloading of the client scripts.
+
+#### 要采取的行动
+
+The class names value relies on the concept of [class name generator](/css-in-js/advanced/#class-names). The whole page needs to be rendered with **a single generator**. This generator needs to behave identically on the server and on the client. 例如：
+
+- 您需要为每个请求提供一个新的类名生成器。 But you shouldn't share a `createGenerateClassName()` between different requests:
+
+*example of fix:*
+
+```diff
+-  //创建一个新的类名生成器。
+-const generateClassName = createGenerateClassName();
+
+function handleRender(req, res) {
+
++ // 创建一个新的类名生成器。
++ const generateClassName = createGenerateClassName();
+
+  //…
+
+  // 将组件渲染为字符串。
+  const html = ReactDOMServer.renderToString(
+```
+
+- 您需要验证您的客户端和服务器是否正在运行 **与Material-UI完全相同的版本**。 即使是次要版本的不匹配也可能导致样式问题。 要检查版本号，请在构建应用程序的环境中以及部署环境中运行 `npm list @material-ui/core`。
+    
+    您还可以通过在package.json的依赖项中指定特定的MUI版本来确保不同环境中的相同版本。
+
+*修复示例 (package.json）：*
+
+```diff
+  "dependencies": {
+    ...
+
+-   "@material-ui/core": "^4.0.0",
++   "@material-ui/core": "4.0.0",
+    ...
+  },
+```
+
+- 您需要确保服务器和客户端共享相同的 `process.env.NODE_ENV` 值。
 
 ## 为什么我的应用程序看到的颜色和文档里的颜色大相径庭？
 
