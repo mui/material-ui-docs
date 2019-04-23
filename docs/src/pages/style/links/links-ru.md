@@ -1,6 +1,7 @@
 ---
 components: Link
 ---
+
 # Ссылки
 
 <p class="description">Компонент Link позволяет легко кастомизировать анкерные элементы в соответствии с цветами и стилями типографики вашей темы.</p>
@@ -11,7 +12,10 @@ The Link component is built on top of the [Typography](/api/typography/) compone
 
 {{"demo": "pages/style/links/Links.js"}}
 
-However, the Link has different default properties than the Typography: - `color="primary"` as the link needs to stand out. - `variant="inherit"` as the link will, most of the time, be used as a child of a Typograpy component.
+However, the Link has different default properties than the Typography:
+
+- `color="primary"` as the link needs to stand out.
+- `variant="inherit"` as the link will, most of the time, be used as a child of a Typograpy component.
 
 ## Доступность
 
@@ -32,26 +36,6 @@ When you use `target="_blank"` with Links it is [recommended](https://developers
 
 One common use case is to perform the navigation on the client only, without doing a .html round-trip with the server. The `Link` component provides a property to handle this use case: `component`.
 
-```jsx
-import { Link as RouterLink } from 'react-router-dom'
-import Link from '@material-ui/core/Link';
+{{"demo": "pages/style/links/LinkRouter.js", "defaultCodeOpen": true}}
 
-<Link component={RouterLink} to="/open-collective">
-  Link
-</Link>
-```
-
-или если вы хотите избежать столкновения свойств:
-
-```jsx
-import { Link as RouterLink } from 'react-router-dom'
-import Link from '@material-ui/core/Link';
-
-const MyLink = props => <RouterLink to="/open-collective" {...props} />
-
-<Link component={MyLink}>
-  Link
-</Link>
-```
-
-*Note: Creating `MyLink` is necessary to prevent unexpected unmounting. You can read more about it in our [component property guide](/guides/composition/#component-property).*
+*Note: Creating the Link components is necessary to prevent unexpected unmounting. You can read more about it in our [component property guide](/guides/composition/#component-property).*
