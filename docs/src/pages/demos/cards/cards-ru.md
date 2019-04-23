@@ -2,6 +2,7 @@
 title: Card компонент из React
 components: Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Collapse, Paper
 ---
+
 # Карточки
 
 <p class="description">Карточки содержат контент и действия, относящиеся к одной теме.</p>
