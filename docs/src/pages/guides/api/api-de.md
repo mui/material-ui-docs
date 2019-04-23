@@ -118,11 +118,11 @@ Zurück zum vorherigen Beispiel des Buttons; Da 3 Freiheitsgrade erforderlich si
 
 ### Ref
 
-Das `ref` Element wird an das Wurzelelement weitergeleitet. This means that, without changing the rendered root element via the `component` prop, it is forwarded to the outermost DOM element that which component renders. If you pass a different component via the `component` prop the ref will be attached to that component instead.
+Das `ref` Element wird an das Wurzelelement weitergeleitet. Das bedeutet, ohne das gerenderte Wurzelelement über die `component` Eigenschaft zu ändern, wird an das äußerste DOM-Element weitergeleitet, welche Komponente rendert. Wenn Sie eine andere Komponente über die `compnent` Eigenschaft wird der Ref stattdessen an diese Komponente angehängt.
 
-## Glossary
+## Glossar
 
-- **host component**: a DOM node type in the context of `react-dom`, e.g. a `'div'`. See also [React Implementation Notes](https://reactjs.org/docs/implementation-notes.html#mounting-host-elements).
+- **host component**: ein DOM-Knotentype im Kontext von `react-dom`, z.B. ein `'div'`. Siehe auch [React Implementation Notes](https://reactjs.org/docs/implementation-notes.html#mounting-host-elements).
 - **host element**: a DOM node in the context of `react-dom`, e.g. an instance of `window.HTMLDivElement`.
 - **outermost**: The first component when reading the component tree from top to bottom i.e. breadth-first search.
 - **root component**: the outermost component that renders a host component.
