@@ -90,7 +90,7 @@
     "/getting-started/example-projects": "Примеры проектов",
     "/getting-started/page-layout-examples": "Page Layout Examples",
     "/getting-started/learn": "Learn",
-    "/getting-started/faq": "Часто задаваемые вопросы (FAQ)",
+    "/getting-started/faq": "FAQs",
     "/getting-started/supported-components": "Поддерживаемые компоненты",
     "/getting-started/supported-platforms": "Поддерживаемые платформы",
     "/style": "Content",
@@ -189,6 +189,8 @@
     "/discover-more/changelog": "Журнал изменений",
     "/discover-more/governance": "Governance",
     "/versions": "Версии",
-    "/discover-more/languages": "Languages"
+    "/discover-more/languages": "Languages",
+    "/layout/container": "Container",
+    "/demos/transfer-list": "Transfer List"
   }
 }
