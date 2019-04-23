@@ -2,6 +2,7 @@
 title: Card React component
 components: Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Collapse, Paper
 ---
+
 # Card
 
 <p class="description">Cardはコンテンツと一つの主題に関するアクションを含みます。</p>
