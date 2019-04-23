@@ -2,6 +2,7 @@
 title: Composant React Button
 components: Button, Fab, IconButton, ButtonBase, Zoom
 ---
+
 # Buttons (Boutons)
 
 <p class="description">Les boutons permettent aux utilisateurs de prendre des mesures et de faire des choix en un seul clic.</p>
