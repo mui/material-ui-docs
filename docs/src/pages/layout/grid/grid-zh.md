@@ -2,6 +2,7 @@
 title: React 栅格(Grid)组件
 components: 栅格(Grid)
 ---
+
 # 栅格(Grid)
 
 <p class="description">Material Design 响应式布局的栅格可适应屏幕大小和方向，确保布局之间的一致性。</p>
