@@ -2,6 +2,7 @@
 title: Modal React component
 components: Modal
 ---
+
 # Modal
 
 <p class="description">Le composant modal fournit une base solide pour la création de boîtes de dialogue, de popovers, de lightboxes ou autres.</p>
