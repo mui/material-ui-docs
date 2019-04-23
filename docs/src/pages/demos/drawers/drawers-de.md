@@ -2,6 +2,7 @@
 title: Drawer React-Komponente
 components: Drawer, SwipeableDrawer
 ---
+
 # Seitliches Menü (Drawer)
 
 <p class="description">Navigationsfächer bieten Zugriff auf Ziele in Ihrer App. Seitenblätter sind Flächen, die zusätzlichen Inhalt enthalten, der am linken oder rechten Rand des Bildschirms verankert ist.</p>
