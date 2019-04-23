@@ -1,9 +1,9 @@
 ---
-title: Radio buttons React component
+title: React Radio buttons（单选按钮）组件
 components: Radio, RadioGroup, FormControl, FormLabel, FormControlLabel
 ---
 
-# Radio buttons
+# Radio buttons（单选按钮）
 
 <p class="description">Radio buttons allow the user to select one option from a set.</p>
 
