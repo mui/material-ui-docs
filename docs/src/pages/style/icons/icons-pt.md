@@ -1,6 +1,7 @@
 ---
 components: Icon, SvgIcon
 ---
+
 # Ícones
 
 <p class="description">Guidance and suggestions for using icons with Material-UI.</p>
