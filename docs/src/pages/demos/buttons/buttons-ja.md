@@ -2,6 +2,7 @@
 title: Button React component
 components: Button, Fab, IconButton, ButtonBase, Zoom
 ---
+
 # ボタン
 
 <p class="description">Buttonを使用すると、ユーザーは1回のタップでアクションを実行したり選択したりできます。</p>
