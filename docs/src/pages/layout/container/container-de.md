@@ -2,6 +2,7 @@
 title: Container React Komponente
 components: Container
 ---
+
 # Container
 
 <p class="description">Der Container zentriert Ihren Inhalt horizontal. Es ist das grundlegendste Layoutelement.</p>
