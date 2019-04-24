@@ -12,9 +12,9 @@ Die Link-Komponente wird auf der [Typography](/api/typography/) Komponente aufge
 
 {{"demo": "pages/style/links/Links.js"}}
 
-However, the Link has different default properties than the Typography:
+Der Link hat jedoch andere Standardeigenschaften als die Typografie:
 
-- `color="primary"` as the link needs to stand out.
+- `color="primary"` da der Link hervorstechen muss.
 - `variant = "inherit"` da ein Link meistens als untergeordnetes Element einer Typograpy-Komponente verwendet wird.
 
 ## Barrierefreiheit
@@ -38,4 +38,4 @@ Ein häufiger Anwendungsfall besteht darin, die Navigation nur clientseitig durc
 
 {{"demo": "pages/style/links/LinkRouter.js", "defaultCodeOpen": true}}
 
-*Note: Creating the Link components is necessary to prevent unexpected unmounting. Weitere Informationen dazu finden Sie in unserem [Komponenten-Guide](/guides/composition/#component-property).*
+*Merke: Das Erstellen einer Link Komponente ist notwendig um unerwünschtes Unmounting zu verhindern. Weitere Informationen dazu finden Sie in unserem [Komponenten-Guide](/guides/composition/#component-property).*
