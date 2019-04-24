@@ -1,5 +1,5 @@
 ---
-title: 网格列表 React 组件
+title: React Grid List（网格列表）组件
 components: GridList, GridListTile, GridListTileBar, ListSubheader, IconButton
 ---
 
@@ -29,6 +29,6 @@ components: GridList, GridListTile, GridListTileBar, ListSubheader, IconButton
 
 ## 高级网格列表
 
-此示例演示了“精选”磁贴，使用` rows `和` cols ` props 来调整磁贴的大小，并使用` padding ` prop 来调整间距。 磁贴有一个自定义标题栏，位于顶部，并带有自定义渐变` titleBackground `。 辅助操作` IconButton `位于左侧。
+此示例演示了“精选的”瓷砖效果 ，使用`rows`和`cols` props 来调整磁贴的大小，并使用` padding ` 属性来调整间距。 瓷砖有一个位于顶部的自定义标题栏，并带有自定义渐变的 `titleBackground `。 而辅助操作得`IconButton`则位于左侧。
 
 {{"demo": "pages/demos/grid-list/AdvancedGridList.js", "hideEditButton": true}}
