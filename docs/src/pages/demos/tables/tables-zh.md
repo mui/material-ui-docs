@@ -77,9 +77,9 @@ components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination
 
 ### material-table
 
-![stars](https://img.shields.io/github/stars/mbrn/material-table.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/material-table.svg)
+![评星](https://img.shields.io/github/stars/mbrn/material-table.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/material-table.svg)
 
-[material-table](https://github.com/mbrn/material-table) is a simple and powerful Datatable for React based on Material-UI Table with some additional features. They support many different use cases (editable, filtering, grouping, sorting, selection, i18n, tree data and more). You should check it out.
+[material-table](https://github.com/mbrn/material-table) 是一款 React 的简单且强大的数据库。它基于 Material-UI Table 并且添加了一些额外的功能。 它们支持了不同的用户案例（可编辑，筛选，分组，排序，选择，国际化，树形数据等等）。 您应该看一下。
 
 {{"demo": "pages/demos/tables/MaterialTableDemo.js"}}
 
