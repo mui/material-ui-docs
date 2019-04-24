@@ -73,7 +73,7 @@ components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination
 
 ## 补充项目
 
-对于更高级的用例，您可以利用：
+对于更高级的用例，您可以使用这些：
 
 ### material-table
 
