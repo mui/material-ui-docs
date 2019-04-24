@@ -5,13 +5,13 @@ components: Radio, RadioGroup, FormControl, FormLabel, FormControlLabel
 
 # Radio buttons（单选按钮）
 
-<p class="description">Radio buttons allow the user to select one option from a set.</p>
+<p class="description">用户可以通过单选按钮从一组中选择一个选项。</p>
 
-当用户需要查看所有可用选项时, 请使用单选按钮。 如果可用选项可以折叠，请考虑使用占用空间更少的下拉菜单。
+当用户需要查看所有可用选项时, 请使用单选按钮。 如果可用选项可以折叠，请您考虑使用占用空间更少的下拉菜单。
 
-单选按钮在一般默认选中最常用的选项。
+默认情况下，单选按钮应该选择了最常用的选项。
 
-`RadioGroup `适用于一组` Radio `，它提供相对简单的 API 并且能够使用键盘对该RadioGroup进行控制。
+`RadioGroup`适用于一组` Radio `，它提供相对简单的 API 并且能够使用键盘对该RadioGroup进行控制。
 
 {{"demo": "pages/demos/radio-buttons/RadioButtonsGroup.js"}}
 
@@ -21,22 +21,22 @@ components: Radio, RadioGroup, FormControl, FormLabel, FormControlLabel
 
 {{"demo": "pages/demos/radio-buttons/RadioButtons.js"}}
 
-## 标签放置
+## 放置标签
 
 你可以更改标签放置的位置:
 
 {{"demo": "pages/demos/radio-buttons/FormControlLabelPosition.js"}}
 
-## 无障碍功能
+## 可及性
 
 所有表单控件都应该带有标签，而这包括了单选按钮，复选框和开关。 在大多数情况下，这是通过使用一个`<label>`元素（[FormControlLabel](/api/form-control-label/)）实现的。
 
-如果无法使用标签，则必须直接在输入组件中添加属性。 在这种情况下，可以应用附加的属性（例如 `arial-label`， `aria-labelledby`， `title`）经由 `inputProps` 属性。
+如果无法使用标签，则必须直接在输入组件中添加属性。 在这种情况下，您可以经由 `inputProps`属性，来附着一些额外的属性（例如 `arial-label`，`aria-labelledby`，`title`）。
 
 ```jsx
 <RadioButton
   value="radioA"
-  inputProps={{ 'aria-label': 'Radio A' } }
+  inputProps={{ 'aria-label': '单选按钮 A' } }
 />
 ```
 
