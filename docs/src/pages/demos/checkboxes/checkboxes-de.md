@@ -1,11 +1,11 @@
 ---
-title: Checkbox React component
+title: Checkbox React-Komponente
 components: Checkbox, FormControl, FormGroup, FormLabel, FormControlLabel
 ---
 
 # Kontrollkästchen
 
-<p class="description">Checkboxes allow the user to select one or more items from a set.</p>
+<p class="description">Kontrollkästchen ermöglichen dem Benutzer die Auswahl eines oder mehrerer Elemente aus einem Satz.</p>
 
 Kontrollkästchen können verwendet werden, um eine Option ein- oder auszuschalten.
 
@@ -44,4 +44,4 @@ Wenn ein Label nicht verwendet werden kann, muss der Eingabekomponente ein Attri
 
 ## Anleitung
 
-- [Checkboxes vs. Optionsfeld (Radio Buttons)](https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/)
+- [Kontrollkästchen vs. Optionsfeld (Radio Buttons)](https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/)
