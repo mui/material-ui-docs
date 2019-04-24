@@ -90,7 +90,7 @@
     "/getting-started/example-projects": "范例项目",
     "/getting-started/page-layout-examples": "页面布局示例",
     "/getting-started/learn": "学习",
-    "/getting-started/faq": "FAQs",
+    "/getting-started/faq": "常见问题解答",
     "/getting-started/supported-components": "支持的组件",
     "/getting-started/supported-platforms": "支持的平台",
     "/style": "内容",
@@ -191,6 +191,6 @@
     "/versions": "版本",
     "/discover-more/languages": "语言",
     "/layout/container": "容器",
-    "/demos/transfer-list": "Transfer List"
+    "/demos/transfer-list": "传输列表"
   }
 }
