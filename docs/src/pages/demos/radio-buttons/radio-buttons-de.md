@@ -1,11 +1,11 @@
 ---
-title: Radio buttons React component
+title: Radio Button React-Komponente
 components: Radio, RadioGroup, FormControl, FormLabel, FormControlLabel
 ---
 
-# Radio buttons
+# Optionsfelder (Radio Buttons)
 
-<p class="description">Radio buttons allow the user to select one option from a set.</p>
+<p class="description">Optionsfelder ermöglichen die Auswahl einer einzelnen Option aus einem Set.</p>
 
 Verwenden Sie Optionsfelder, wenn dem Benutzer alle verfügbaren Optionen anzeigen werden müssen. Wenn verfügbare Optionen reduziert werden können, sollten Sie ein Dropdown-Menü in Betracht ziehen, da so weniger Platz benötigt wird.
 
@@ -42,4 +42,4 @@ Wenn ein Label nicht verwendet werden kann, muss der Eingabekomponente ein Attri
 
 ## Anleitung
 
-- [Checkboxes vs. Optionsfeld (Radio Buttons)](https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/)
+- [Kontrollkästchen vs. Optionsfeld (Radio Buttons)](https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/)
