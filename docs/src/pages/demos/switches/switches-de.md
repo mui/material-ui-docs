@@ -1,13 +1,13 @@
 ---
-title: Switch React component
+title: Switch React Komponente
 components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
 ---
 
-# Schalter
+# Schalter (Switch)
 
-<p class="description">Switches toggle the state of a single setting on or off.</p>
+<p class="description">Schalter ändern den Status einer einzelnen Einstellung ein oder aus.</p>
 
-They are the preferred way to adjust settings on mobile.
+Sie sind die bevorzugte Methode, um Einstellungen auf dem Handy anzupassen.
 
 Die Option, die der Schalter steuert, sowie der Status, in dem er sich befindet, sollte aus dem entsprechenden Inline-Label hervorgehen.
 
@@ -21,7 +21,7 @@ Ein `Schalter` kann dank der `FormControlLabel` Komponente auch mit einer Etiket
 
 ## Schalter mit FormGroup
 
-`FormGroup` ist ein hilfreicher Wrapper zum Gruppieren von Auswahlsteuerungskomponenten, welcher eine einfachere API bietet. However, we encourage you to use a [Checkbox](#checkboxes) instead.
+`FormGroup` ist ein hilfreicher Wrapper zum Gruppieren von Auswahlsteuerungskomponenten, welcher eine einfachere API bietet. Wir empfehlen Ihnen jedoch, stattdessen ein [Kontrollkästchen](#checkboxes) zu verwenden.
 
 {{"demo": "pages/demos/switches/SwitchesGroup.js"}}
 
