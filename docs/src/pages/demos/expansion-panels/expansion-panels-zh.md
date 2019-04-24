@@ -33,11 +33,11 @@ components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, Expans
 
 ## 性能
 
-默认情况下，即使在面板没被展开的情况下，扩展面板的内容也会被注入到页面中。 这样的默认情况是是考虑到了 server-side rendering（服务端渲染）和 SEO（搜索引擎优化）。 但如果你要在扩展面板中渲染开销很大的组件树或者只是单纯要渲染很多扩展面板,覆盖掉插入到页面的默认行为或许是个好主意.你可以通过在`TransitionProps`设置`unmountOnExit`为true来达到此目的: `<ExpansionPanel TransitionProps={{ unmountOnExit: true }} />`. 不过这并不是对所有情况下的性能优化来说都是灵丹妙药. 务必先确定性能的瓶颈所在再考虑这些优化策略.
+默认情况下，即使在面板没被展开的情况下，扩展面板的内容也会被注入到页面中。 这样的默认情况是是考虑到了 server-side rendering（服务端渲染）和 SEO（搜索引擎优化）。 但如果你您要在扩展面板中渲染开销很大的树组件，或者只是单纯想要渲染很多扩展面板，我们建议变更一些默认的行为。你可以通过在开启`TransitionProps`中的`unmountOnExit`属性：`<ExpansionPanel TransitionProps={{ unmountOnExit: true }} />`。 不过对所有情况下的性能优化，这并不是灵丹妙药。 请您务必先确定性能的瓶颈所在，再考虑这些优化策略。
 
-## 定制扩展面板
+## 自定义扩展面板
 
-如果您已经在阅读 [组件覆写文档页面](/customization/overrides/) 但是您没有信心进入， 这里是一个关于如何自定义`ExpansionPanelSummary`组件背景自然色和给`ExpansionPanelDetails`组件添加填充的示例。
+如果你一直在阅读 [重写文档页面](/customization/overrides/)，但是你不确定如何开始，以下的例子演示了如何在`ExpansionPanelSummary`中自定义背景颜色，以及调整`ExpansionPanelDetails`的间距。
 
 ⚠️虽然 Material design 规范鼓励样式化，但这些例子是不合适的。
 
