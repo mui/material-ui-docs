@@ -2,7 +2,7 @@
 
 <p class="description">Preso em um determinado problema? Confira algumas dessas dicas recorrentes em nosso FAQ.</p>
 
-If you still can't find what you're looking for, you can ask the community in [Spectrum](https://spectrum.chat/material-ui). For how-to questions and other non-issues, please use [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) instead of Github issues. There is a StackOverflow tag called `material-ui` that you can use to tag your questions.
+Se você não encontrou o que procurava, você pode perguntar para a comunidade no [Spectrum](https://spectrum.chat/material-ui). For how-to questions and other non-issues, please use [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) instead of Github issues. There is a StackOverflow tag called `material-ui` that you can use to tag your questions.
 
 ## Why aren't my components rendering correctly in production builds?
 
@@ -95,11 +95,11 @@ const theme = createMuiTheme({
 
 ## Do I have to use JSS to style my app?
 
-It's recommended:
+É recomendado:
 
 - It comes built in, so carries no additional bundle size overhead.
 - It's fast & memory efficient.
-- It has a clean, consistent API.
+- Possui uma API limpa e consistente.
 - It supports a number of advanced features, either natively, or through plugins.
 
 However perhaps you're adding some Material-UI components to an app that already uses another styling solution, or are already familiar with a different API, and don't want to learn a new one? In that case, head over to the [Style Library Interoperability](/guides/interoperability/) section, where we show how simple it is to restyle Material-UI components with alternative style libraries.
