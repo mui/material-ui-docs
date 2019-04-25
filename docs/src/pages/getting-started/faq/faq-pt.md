@@ -44,7 +44,7 @@ const theme = createMuiTheme({
 });
 ```
 
-## How can I disable transitions globally?
+## Como posso desativar as transições globalmente?
 
 Você pode desativar as transições globalmente fornecendo em seu tema:
 
@@ -115,7 +115,7 @@ As a rule of thumb, only use inline-style for dynamic style properties. The CSS 
 
 ## Como usar react-router?
 
-We have documented how to use a [third-party routing library](/demos/buttons/#third-party-routing-library) with the `ButtonBase` component. A lot of our interactive components use it internally: `Link`, `Button`, `MenuItem`, `<ListItem button />`, `Tab`, etc. You can use the same solution with them.
+Documentamos como usar uma [biblioteca de roteamento de terceiros ](/demos/buttons/#third-party-routing-library) com o `ButtonBase ` componente. Muitos de nossos componentes interativos usam internamente: `Link`, `Button`, `MenuItem`, `<ListItem button />`, `Tab`, etc. Você pode usar a mesma solução com eles.
 
 ## How can I access the DOM element?
 
