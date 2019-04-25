@@ -46,7 +46,7 @@ const theme = createMuiTheme({
 
 ## How can I disable transitions globally?
 
-You can disable transitions globally by providing the following in your theme:
+Você pode desativar as transições globalmente fornecendo em seu tema:
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
@@ -59,7 +59,7 @@ const theme = createMuiTheme({
 });
 ```
 
-Sometimes you will want to enable this behavior conditionally, for instance during testing or on low-end devices, in these cases, you can dynamically change the theme value.
+Às vezes, você desejará ativar esse comportamento condicionalmente, por exemplo, durante o teste ou em dispositivos de baixo custo, nesses casos, você pode alterar dinamicamente o valor do tema.
 
 You can go one step further by disabling all the transitions, animations and the ripple effect:
 
@@ -100,7 +100,7 @@ const theme = createMuiTheme({
 - It comes built in, so carries no additional bundle size overhead.
 - It's fast & memory efficient.
 - Possui uma API limpa e consistente.
-- It supports a number of advanced features, either natively, or through plugins.
+- Ele suporta vários recursos avançados, seja nativamente ou por meio de plug-ins.
 
 However perhaps you're adding some Material-UI components to an app that already uses another styling solution, or are already familiar with a different API, and don't want to learn a new one? In that case, head over to the [Style Library Interoperability](/guides/interoperability/) section, where we show how simple it is to restyle Material-UI components with alternative style libraries.
 
@@ -113,7 +113,7 @@ As a rule of thumb, only use inline-style for dynamic style properties. The CSS 
 - media queries
 - keyframes
 
-## How do I use react-router?
+## Como usar react-router?
 
 We have documented how to use a [third-party routing library](/demos/buttons/#third-party-routing-library) with the `ButtonBase` component. A lot of our interactive components use it internally: `Link`, `Button`, `MenuItem`, `<ListItem button />`, `Tab`, etc. You can use the same solution with them.
 
