@@ -16,7 +16,7 @@
 
 Некоторые компоненты Material-UI используют `z-индекс`, свойство CSS, которое помогает управлять компоновкой, предоставляя третью ось для упорядочения содержимого. Мы используем стандартную шкалу z-индекс в Material-UI, которая была разработана для правильного наложения навигационных панелей, модальных элементов, панелей инструментов, подсказок и многого другого.
 
-[These values](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/styles/zIndex.js) start at an arbitrary number, high and specific enough to ideally avoid conflicts.
+[Эти значения](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/styles/zIndex.js) начинаются с произвольного числа, достаточно высокого, чтобы в идеале избежать конфликтов.
 
 - mobile stepper: 1000
 - app bar: 1100
@@ -25,4 +25,4 @@
 - snackbar: 1400
 - tooltip: 1500
 
-Эти значения всегда можно изменить. You will find them in the theme under the [`zIndex`](/customization/default-theme/?expend-path=$.zIndex) key. We don’t encourage customization of individual values; should you change one, you likely need to change them all.
+Эти значения всегда можно изменить. Вы найдете их в теме под ключом [`zIndex`](/customization/default-theme/?expend-path=$.zIndex). We don’t encourage customization of individual values; should you change one, you likely need to change them all.
