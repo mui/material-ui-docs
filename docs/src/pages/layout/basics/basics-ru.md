@@ -10,7 +10,7 @@
 - [Container](/layout/container/): Контейнер центрирует ваш контент по горизонтали. Это базовый элемент всех макетов.
 - [Breakpoints](/layout/breakpoints/): API, позволяющий использовать контрольные точки в широком диапазоне контекстов.
 - [useMediaQuery](/layout/use-media-query/): Это хук медиа-запроса для React. Он отслеживает совпадения с медиа-запросом CSS.
-- [Hidden](/layout/hidden/): Quickly and responsively toggle the visibility value of components and more with our hidden utilities.
+- [Hidden](/layout/hidden/): Быстро и оперативно управляет видимостью компонентов.
 
 ## z-index
 
