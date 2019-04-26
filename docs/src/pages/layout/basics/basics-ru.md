@@ -14,7 +14,7 @@
 
 ## z-index
 
-Некоторые компоненты Material-UI используют `z-индекс`, свойство CSS, которое помогает управлять компоновкой, предоставляя третью ось для упорядочения содержимого. We utilize a default z-index scale in Material-UI that's been designed to properly layer drawers, modals, snackbars, tooltips, and more.
+Некоторые компоненты Material-UI используют `z-индекс`, свойство CSS, которое помогает управлять компоновкой, предоставляя третью ось для упорядочения содержимого. Мы используем стандартную шкалу z-индекс в Material-UI, которая была разработана для правильного наложения навигационных панелей, модальных элементов, панелей инструментов, подсказок и многого другого.
 
 [These values](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/styles/zIndex.js) start at an arbitrary number, high and specific enough to ideally avoid conflicts.
 
