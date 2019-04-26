@@ -39,6 +39,6 @@ For optimal accessibility we recommend setting `id` and `aria-controls` on the `
 
 Если Вы читали [страницу документации переопределение стилей](/customization/overrides/), но недостаточно уверены в себе, чтобы попробовать самостоятельно, посмотрите на пример того, как можно изменить цвет фона компонента `ExpansionPanelSummary` и отступы `ExpansionPanelDetails`.
 
-⚠️ Хотя спецификации материал дизайна поощряют использование тем, эти примеры не соответствуют требованиям.
+⚠️ Хотя спецификация material design поощряет использование тем, эти примеры не соответствуют требованиям.
 
 {{"demo": "pages/demos/expansion-panels/CustomizedExpansionPanel.js"}}
