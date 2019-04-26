@@ -9,7 +9,7 @@
 - [Grid](/layout/grid/): The Material Design responsive layout grid adapts to screen size and orientation, ensuring consistency across layouts.
 - [Container](/layout/container/): The container centers your content horizontally. It's the most basic layout element.
 - [Breakpoints](/layout/breakpoints/): API that enables the use of breakpoints in a wide variety of contexts.
-- [useMediaQuery](/layout/use-media-query/): This is a CSS media query hook for React. Он ожидает(слушает) совпадения с медиа-запросом CSS.
+- [useMediaQuery](/layout/use-media-query/): Это хук медиа-запроса для React. Он отслеживает совпадения с медиа-запросом CSS.
 - [Hidden](/layout/hidden/): Quickly and responsively toggle the visibility value of components and more with our hidden utilities.
 
 ## z-index
