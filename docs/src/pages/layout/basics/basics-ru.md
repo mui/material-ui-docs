@@ -25,4 +25,4 @@
 - snackbar: 1400
 - tooltip: 1500
 
-Эти значения всегда можно изменить. Вы найдете их в теме под ключом [`zIndex`](/customization/default-theme/?expend-path=$.zIndex). We don’t encourage customization of individual values; should you change one, you likely need to change them all.
+Эти значения всегда можно изменить. Вы найдете их в теме под ключом [`zIndex`](/customization/default-theme/?expend-path=$.zIndex). Мы не рекомендуем изменять отдельное значение; если вы измените одно из них, то вам, вероятно, придется изменить и остальные.
