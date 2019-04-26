@@ -19,7 +19,7 @@ For optimal accessibility we recommend setting `id` and `aria-controls` on the `
 
 {{"demo": "pages/demos/expansion-panels/SimpleExpansionPanel.js"}}
 
-## Контролируемый "Аккордеон"
+## Управляемый "Аккордеон"
 
 Используя компонент `ExpansionPanel`, расширив его поведение по умолчанию, можно получить "аккордеон".
 
@@ -33,7 +33,7 @@ For optimal accessibility we recommend setting `id` and `aria-controls` on the `
 
 ## Производительность
 
-The content of ExpansionPanels is mounted by default even if the panel is not expanded. This default behavior has server-side rendering and SEO in mind. If you render expensive component trees inside your panels or simply render many panels it might be a good idea to change this default behavior by enabling the `unmountOnExit` in `TransitionProps`: `<ExpansionPanel TransitionProps={{ unmountOnExit: true }} />`. As with any performance optimization this is not a silver bullet. Be sure to identify bottlenecks first and then try out these optimization strategies.
+Содержимое ExpansionPanels монтируется по умолчанию, даже если панель не развернута. Это поведение по умолчанию подразумевает рендеринг на стороне сервера и SEO. If you render expensive component trees inside your panels or simply render many panels it might be a good idea to change this default behavior by enabling the `unmountOnExit` in `TransitionProps`: `<ExpansionPanel TransitionProps={{ unmountOnExit: true }} />`. As with any performance optimization this is not a silver bullet. Be sure to identify bottlenecks first and then try out these optimization strategies.
 
 ## Изменение стилей Expansion Panel
 
