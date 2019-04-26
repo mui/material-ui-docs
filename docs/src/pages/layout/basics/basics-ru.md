@@ -4,7 +4,7 @@
 
 ## Адаптивный пользовательский интерфейс
 
-[Responsive layouts](https://material.io/design/layout/responsive-layout-grid.html) in Material Design adapt to any possible screen size. We provide the following helpers to make the UI responsive:
+[ Адаптивные макеты ](https://material.io/design/layout/responsive-layout-grid.html) в Material Design адаптируются к любому возможному размеру экрана. Для обеспечения адаптивности пользовательского интерфейса мы предоставляем следующие средства:
 
 - [Grid](/layout/grid/): The Material Design responsive layout grid adapts to screen size and orientation, ensuring consistency across layouts.
 - [Container](/layout/container/): The container centers your content horizontally. It's the most basic layout element.
