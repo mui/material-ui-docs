@@ -13,7 +13,7 @@ components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, Expans
 
 ## Доступность
 
-For optimal accessibility we recommend setting `id` and `aria-controls` on the `ExpansionPanelSummary`. The `ExpansionPanel` will derive the necessary `aria-labelledby` and `id` for the content region of the panel.
+Для оптимальной доступности мы рекомендуем установить `id` и `aria-controls` на `ExpansionPanelSummary`. `ExpansionPanel` унаследует необходимые `aria-labelbyby` и `id` для области содержимого панели.
 
 ## Простая Expansion Panel
 
