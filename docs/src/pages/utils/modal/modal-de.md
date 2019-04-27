@@ -14,6 +14,7 @@ Die Komponente rendered seine `Kinder` - Knoten vor einer Hintergrund - Komponen
 - Es deaktiviert das Blättern des Seiteninhalts, während es geöffnet ist.
 - ♿️ Der Fokus wird richtig verwaltet. Wechseln des Fokus zum modalen Inhalt und diesen halten belassen, bis der Modal geschlossen ist.
 - ♿️ Fügt die entsprechenden ARIA-Rollen automatisch hinzu.
+- 
 
 > **Terminologieanmerkung**. Der Begriff "modal" bedeutet manchmal "Dialog", aber das ist eine Fehlbezeichnung. Ein modales Fenster beschreibt Teile einer Benutzeroberfläche. Ein Element wird als modal betrachtet, wenn es [die Interaktion mit dem Rest der Anwendung blockiert](https://en.wikipedia.org/wiki/Modal_window).
 
@@ -59,7 +60,7 @@ Das Erstellen von React-Elementen ist jedoch ebenfalls mit Kosten verbunden. Bet
 </Modal>
 ```
 
-Wir erstellen viele React-Elemente, die niemals gemounted werden. Es ist verschwenderisch 
+We create a lot of React elements that will never be mounted. It's wasteful 
 
 ```jsx
 <Modal open={false}>
