@@ -168,7 +168,7 @@ const theme = createMuiTheme({
 
 需要灵感？ Material Design团队已经构建了一个非常棒的 [调色板配置工具](/style/color/#color-tool) 来帮助您。
 
-## Type (light /dark theme)
+### Type (light /dark theme)
 
 您可以通过将 `type` 设置为 `dark`来使主题变暗。 虽然它只是一个属性值更改，但在内部它会修改以下键的值：
 
@@ -187,7 +187,7 @@ const theme = createMuiTheme({
 
 {{"demo": "pages/customization/themes/DarkTheme.js", "hideEditButton": true}}
 
-## Typography
+## 排版
 
 太多类型的尺寸和样式会破坏任何布局。 样式提供了 **有限集合型尺寸的** 可以与布局网格一起很好地工作。 这些尺寸用于各个组件。
 
@@ -357,7 +357,7 @@ const theme = createMuiTheme({
 theme.spacing(2); // = 8
 ```
 
-### 多个参数
+### Multiple arity
 
 ` theme.spacing() ` 最多接受4个参数。 您可以使用参数来减少样板：
 
@@ -372,7 +372,7 @@ theme.spacing(2); // = 8
 
 ## 自定义变量
 
-When using Material-UI's theme with our [styling solution](/css-in-js/basics) or [any others](/guides/interoperability/#themeprovider). 可以方便地向样式添加其他变量，以便您可以在任何地方使用它们。 例如：
+When using Material-UI's theme with our [styling solution](/css-in-js/basics/) or [any others](/guides/interoperability/#themeprovider). 可以方便地向样式添加其他变量，以便您可以在任何地方使用它们。 例如：
 
 {{"demo": "pages/customization/themes/CustomStyles.js"}}
 
@@ -398,33 +398,31 @@ const theme = createMuiTheme({
 
 每个组件可自定义的部分列在文档的**Component API**部分。 例如，你可以看一下[Button](/api/button/#css)， 而且你总可以查阅 [implementation](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/Button/Button.js)。
 
-### 属性
+### Default props
 
-你也可以在一个类型的组件都所有实例上指明属性， 在`theme`上有一个键值`props`是用来作这个用途的。
+You can change the default props of all the Material-UI components. 在`theme`上有一个键值`props`是用来作这个用途的。
 
 ```js
 const theme = createMuiTheme({
   props: {
     // Name of the component ⚛️
     MuiButtonBase: {
-      // The properties to apply
+      // The default props to change
       disableRipple: true, // No more ripple, on the whole application 
     },
   },
 });
 ```
 
-{{"demo": "pages/customization/themes/OverridesProperties.js"}}
+{{"demo": "pages/customization/themes/OverridesProps.js"}}
 
 ## 访问组件中的主题
 
-您可能需要访问React组件中的主题变量。 好比说你想要显示原色变量的值。你可以使用 `withTheme`高阶组件来实现。 下面是一个示例：
-
-{{"demo": "pages/customization/themes/WithTheme.js"}}
+You [can access](/css-in-js/advanced/#accessing-the-theme-in-a-component) the theme variables inside your React components.
 
 ## Nesting the theme
 
-这样的主题方式非常灵活，比如 [你可以嵌套](/css-in-js/advanced/#theme-nesting)多个主题提供器 在处理具有彼此明显外观的应用程序的不同区域时，这非常有用。
+[You can nest](/css-in-js/advanced/#theme-nesting) multiple theme providers.
 
 {{"demo": "pages/customization/themes/ThemeNesting.js"}}
 
@@ -434,7 +432,7 @@ const theme = createMuiTheme({
 
 #### 关于性能
 
-The performance implications of nesting the `ThemeProvider` component are linked to JSS's work behind the scenes. 一句话来讲，我们以 `(styles, theme)`为键值缓存了注入的CSS。
+The performance implications of nesting the `ThemeProvider` component are linked to JSS's work behind the scenes. The main point to understand is that we cache the injected CSS with the following tuple `(styles, theme)`.
 
 - `theme`: 每次渲染时，如果你提供了一个新的主题，一个新的CSS对象将会被生成并注入。 不管是为了更统一的UI风格还是性能，都应该尽量不要每次生成新的主题 object。
 - `styles`: 样式 object 越大，需要的运算越多。
@@ -443,7 +441,7 @@ The performance implications of nesting the `ThemeProvider` component are linked
 
 ### `createMuiTheme(options) => theme`
 
-根据接收的选项生成样式。
+Generate a theme base on the options received.
 
 #### 参数
 
@@ -451,7 +449,7 @@ The performance implications of nesting the `ThemeProvider` component are linked
 
 #### 返回结果
 
-`theme` （*Object*）：一个完整的，随时可用的主题对象。
+`theme` (*Object*): A complete, ready to use theme object.
 
 #### 例子
 
