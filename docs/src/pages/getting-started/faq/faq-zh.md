@@ -21,15 +21,13 @@ If you still can't find what you're looking for, you can ask the community in [S
 
 <p>总的来说，通过在其组件树顶部的<a href="/css-in-js/api/#stylesprovider"><code>StylesProvider`](https://webpack.js.org/configuration/optimization/#optimization-runtimechunk)来包装每个 Material-UI 应用程序，**并且在他们之间使用单个类名称生成器**，能够简单地解决这个问题。
 > 
-> ⚠️ 放心，我们提供了[`dangerouslyUseGlobalCSS`](/css-in-js/advanced/#deterministic-class-names)这个选项，以使类名称的**确定性**成为一个快速的解决方案：.
-> 
 > ## 为什么当打开Modal（模态框）时，fixed positioned（位置固定的）元素会移动？
 > 
 > 一旦打开模态框，我们就会禁用滚动。 而模态框是应该是唯一的交互式内容时，这可以防止与背景交互，但是，删除滚动条可以恢复**fixed positioned(固定位置的)元素**的移动。 在这种情况下，您可以应用全局`.mui-fixed`类名称来告知 Material-UI 来处理这些元素。
 > 
 > ## 如何在全局禁用 ripple effect（涟漪效果）？
 > 
-> 涟漪效果完全来自` BaseButton `零件。 您可以通过在您的主题中提供以下内容，来全局地禁用涟漪效果：
+> 涟漪效应完全来自` BaseButton `零件。 您可以通过在您的主题中提供以下内容，来全局地禁用涟漪效果：
 > 
 > ```js
 import { createMuiTheme } from '@material-ui/core';
@@ -311,3 +309,59 @@ function handleRender(req, res) {
 如果您在商业项目中使用了Material-UI，并希望通过成为我们的**赞助商</0 >来支持我们的持续发展，或者您一个业余项目或者爱好项目，并想成为我们的支持者， 您都可以通过[OpenCollective](https://opencollective.com/material-ui)实现。</p> 
 
 我们队所有筹集的资金都是透明化管理的，而赞助商在 README 和 Material-UI 主页上都会获得认可。
+
+## Why does component X require a DOM node in a prop instead of a ref object?
+
+Components like the [Portal](/api/Portal/#props) or [Popper](/api/Popper/#props) require a DOM node in the `container` or `anchorEl` prop respectively. It seems convenient to simply pass a ref object in those props and let Material-UI access the current value. This works in a simple scenario:
+
+```jsx
+function App() {
+  const container = React.useRef(null);
+
+  return (
+    <div className="App">
+      <Portal container={container}>
+        <span>portaled children</span>
+      </Portal>
+      <div ref={container} />
+    </div>
+  );
+}
+```
+
+where `Portal` would only mount the children into the container when `container.current` is available. Here is a naive implementation of Portal:
+
+```jsx
+function Portal({ children, container }) {
+  const [node, setNode] = React.useState(null);
+
+  React.useEffect(() => {
+    setNode(container.current);
+  }, [container]);
+
+  if (node === null) {
+    return null;
+  }
+  return ReactDOM.createPortal(children, node);
+}
+```
+
+With this simple heuristic `Portal` might re-render after it mounts because refs are up-to-date before any effects run. However, just because a ref is up-to-date doesn't mean it points to a defined instance. If the ref is attached to a ref forwarding component it is not clear when the DOM node will be available. In the above example the `Portal` would run run an effect once but might not re-render because `ref.current` is still `null`. This is especially apparent for React.lazy components in Suspense. The above implementation could also not account for a change in the DOM node.
+
+This is why we require a prop with the actual DOM node so that React can take care of determining when the `Portal` should re-render:
+
+```jsx
+function App() {
+  const [container, setContainer] = React.useState(null);
+  const handleRef = React.useCallback(instance => setContainer(instance), [setContainer])
+
+  return (
+    <div className="App">
+      <Portal container={container}>
+        <span>Portaled</span>
+      </Portal>
+      <div ref={handleRef} />
+    </div>
+  );
+}
+```
