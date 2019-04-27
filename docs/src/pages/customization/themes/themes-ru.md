@@ -168,7 +168,7 @@ Note that `contrastThreshold` follows a non-linear curve.
 
 Need inspiration? The Material Design team has built an awesome [palette configuration tool](/style/color/#color-tool) to help you.
 
-## Тип (светлая / темная тема)
+### Тип (светлая / темная тема)
 
 You can make the theme dark by setting `type` to `dark`. While it's only a single property value change, internally it modifies the value of the following keys:
 
@@ -372,7 +372,7 @@ theme.spacing(2); // = 8
 
 ## Пользовательские переменные
 
-When using Material-UI's theme with our [styling solution](/css-in-js/basics) or [any others](/guides/interoperability/#themeprovider). It can be convenient to add additional variables to the theme so you can use them everywhere. For instance:
+When using Material-UI's theme with our [styling solution](/css-in-js/basics/) or [any others](/guides/interoperability/#themeprovider). It can be convenient to add additional variables to the theme so you can use them everywhere. For instance:
 
 {{"demo": "pages/customization/themes/CustomStyles.js"}}
 
@@ -398,33 +398,31 @@ const theme = createMuiTheme({
 
 The list of these customization points for each component is documented under the **Component API** section. For instance, you can have a look at the [Button](/api/button/#css). Alternatively, you can always have a look at the [implementation](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/Button/Button.js).
 
-### Свойства
+### Default props
 
-Вы также можете применять свойства ко всем экземплярам типа компонента. We expose a `props` key in the `theme` for this use case.
+You can change the default props of all the Material-UI components. We expose a `props` key in the `theme` for this use case.
 
 ```js
 const theme = createMuiTheme({
   props: {
     // Name of the component ⚛️
     MuiButtonBase: {
-      // The properties to apply
+      // The default props to change
       disableRipple: true, // No more ripple, on the whole application 
     },
   },
 });
 ```
 
-{{"demo": "pages/customization/themes/OverridesProperties.js"}}
+{{"demo": "pages/customization/themes/OverridesProps.js"}}
 
 ## Accessing the theme in a component
 
-You might need to access the theme variables inside your React components. Допустим, вы хотите отобразить значение основного цвета. В этом может помочь компонент высшего порядка `withTheme `. Here is an example:
-
-{{"demo": "pages/customization/themes/WithTheme.js"}}
+You [can access](/css-in-js/advanced/#accessing-the-theme-in-a-component) the theme variables inside your React components.
 
 ## Nesting the theme
 
-The theming solution is very flexible, as [you can nest](/css-in-js/advanced/#theme-nesting) multiple theme providers. This can be really useful when dealing with different area of your application that have distinct appearance from each other.
+[You can nest](/css-in-js/advanced/#theme-nesting) multiple theme providers.
 
 {{"demo": "pages/customization/themes/ThemeNesting.js"}}
 
