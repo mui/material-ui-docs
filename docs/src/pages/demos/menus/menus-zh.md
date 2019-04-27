@@ -7,7 +7,7 @@ components: Menu, MenuItem, MenuList, ClickAwayListener, Popover, Popper
 
 <p class="description">菜单在临时出现的位置上展示一系列的选项列表。</p>
 
-一个[菜单](https://material.io/design/components/menus.html)在临时出现的位置上展示一系列的选项列表。通常情况下，当用户与按钮，操作或其他控件交互时它会出现。
+A [Menu](https://material.io/design/components/menus.html) displays a list of choices on a temporary surface. It appears when the user interacts with a button, or other control.
 
 ## 简单菜单
 
@@ -21,7 +21,7 @@ components: Menu, MenuItem, MenuList, ClickAwayListener, Popover, Popper
 
 ## 选择菜单
 
-如果用于项目选择, 则在打开时, 基本菜单会尝试将当前选定的菜单项与定位元素垂直对齐。 使用` selected `属性将菜单项设置为当前选中（从[ListItem](/api/list-item/))。
+If used for item selection, when opened, simple menus attempt to vertically align the currently selected menu item with the anchor element, and the initial focus will be placed on the selected menu item. 使用` selected `属性将菜单项设置为当前选中（从[ListItem](/api/list-item/))。 To use a selected menu item without impacting the initial focus or the vertical positioning of the menu, set the `variant` property to `menu`.
 
 {{"demo": "pages/demos/menus/SimpleListMenu.js"}}
 
