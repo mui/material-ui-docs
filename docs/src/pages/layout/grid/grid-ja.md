@@ -63,14 +63,6 @@ The following demo doesn't follow the Material Design specification, but illustr
 
 {{"demo": "pages/layout/grid/ComplexGrid.js"}}
 
-## CSS Grid Layout
-
-**CSS Grid Layout** excels at dividing a page into major regions, or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives.
-
-⚠️ Unfortunately, CSS grid is only supported by the most recent browsers.
-
-{{"demo": "pages/layout/grid/CSSGrid.js"}}
-
 ## Nested Grid
 
 The `container` and `item` properties are two independent booleans. They can be combined.
@@ -120,3 +112,9 @@ In order for the item to stay within the container you need to set `min-width: 0
 ### direction: column | column-reverse
 
 Though the `Grid` component has a `direction` property that allows values of `row`, `row-reverse`, `column`, and `column-reverse`, there are some features that are not supported within `column` and `column-reverse` containers. The properties which define the number of grids the component will use for a given breakpoint (`xs`, `sm`, `md`, `lg`, and `xl`) are focused on controlling width and do **not** have similar effects on height within `column` and `column-reverse` containers. If used within `column` or `column-reverse` containers, these properties may have undesirable effects on the width of the `Grid` elements.
+
+## CSS Grid Layout
+
+Material-UI doesn't provide any CSS Grid functionality itself, but as seen below you can easily use CSS Grid to layout your pages.
+
+{{"demo": "pages/layout/grid/CSSGrid.js"}}
