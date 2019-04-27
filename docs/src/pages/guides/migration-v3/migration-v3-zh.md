@@ -237,11 +237,9 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 
 - [ExpansionPanelActions] Rename the `action` CSS class `spacing`.
 
-### Selection controls
+### Switch （开关）
 
-- \[Switch\]\[Radio\][Checkbox] Improve specification compliance.
-  
-  Refactore the implementation to make it easier to override the styles. Rename the class names to match the specification wording:
+- [Switch] Refactor the implementation to make it easier to override the styles. Rename the class names to match the specification wording:
   
   ```diff
   -icon
