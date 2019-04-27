@@ -7,7 +7,7 @@ components: Radio, RadioGroup, FormControl, FormLabel, FormControlLabel
 
 <p class="description">Radio buttons allow the user to select one option from a set.</p>
 
-Utilisez les cases d’option lorsque l’utilisateur a besoin de voir toutes les options disponibles. Si les options disponibles peuvent être réduites, envisagez d'utiliser un menu déroulant, car il utilise moins d'espace.
+Use [radio buttons](https://material.io/design/components/selection-controls.html#radio-buttons) when the user needs to see all available options. Si les options disponibles peuvent être réduites, envisagez d'utiliser un menu déroulant, car il utilise moins d'espace.
 
 Généralement, les cases d'option doivent avoir l'option la plus utilisée sélectionnée par défaut.
 
