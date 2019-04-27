@@ -14,6 +14,7 @@ Le composant affiche ses nœuds `children` devant un composant d'arrière-plan. 
 - It disables scrolling of the page content while open.
 - ♿️ It properly manages focus; moving to the modal content, and keeping it there until the modal is closed.
 - ♿️ Adds the appropriate ARIA roles automatically.
+- 
 
 > **Note de terminologie**. Le terme "modal" est parfois utilisé pour signifier "dialogue", mais c'est un terme impropre. Une fenêtre modale décrit des parties d'une interface utilisateur. Un élément est considéré modal si [il bloque l'interaction avec le reste de l'application](https://en.wikipedia.org/wiki/Modal_window).
 
