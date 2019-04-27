@@ -20,15 +20,13 @@ If you still can't find what you're looking for, you can ask the community in [S
 
 全体として、各Material-UIアプリケーションをコンポーネントツリーの最上部にある[`StylesProvider`](/css-in-js/api/#stylesprovider)コンポーネントでWrapし、**コンポーネントツリー間で共有される単一のクラス名ジェネレータを使用することで**、この問題を簡単に解決できます。
 
-⚠️ If you are in a hurry, we provide an option to make the class names **deterministic** as a quick escape hatch: [`dangerouslyUseGlobalCSS`](/css-in-js/advanced/#deterministic-class-names).
-
 ## モーダルを開くと、fixed positionされたDOMが移動するのはなぜですか？
 
-モーダルが開かれるとすぐにスクロールをブロックします。 モーダルが唯一のインタラクティブなコンテンツであるべき場合、backgroundとの連動を防ぎます。しかし、スクロールバーを取り除くことで**fixed positionされたDOM**を動かすことができます。 この場合、Material-UIにこれらのDOMを処理するように伝えるために、グローバルな `.mui-fixed`クラス名を適用することができます。
+We block the scroll as soon as a modal is opened. This prevents interacting with the background when the modal should be the only interactive content, however, removing the scrollbar can make your **fixed positioned elements** move. In this situation, you can apply a global `.mui-fixed` class name to tell Material-UI to handle those elements.
 
 ## 波紋アニメーションをグローバルに無効にする方法は？
 
-波紋アニメーションは、BaseButtonコンポーネントからのみ発生しています。 テーマに次のように指定することで、波紋アニメーションをグローバルに無効にすることができます。
+The ripple effect is exclusively coming from the `BaseButton` component. You can disable the ripple effect globally by providing the following in your theme:
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
@@ -59,7 +57,7 @@ const theme = createMuiTheme({
 });
 ```
 
-テスト中やローエンドデバイスなどで、条件付きでこの動作を有効にしたい場合があります。この場合は、テーマの値を動的に変更できます。
+Sometimes you will want to enable this behavior conditionally, for instance during testing or on low-end devices, in these cases, you can dynamically change the theme value.
 
 You can go one step further by disabling all the transitions, animations and the ripple effect:
 
@@ -102,11 +100,11 @@ It's recommended:
 - 明瞭で一貫性のあるAPI
 - ネイティブでもプラグインでも、多くの高度な機能をサポートします。
 
-しかし、おそらくすでに別のスタイルライブラリを使用してアプリケーションにいくつかのMaterial-UIコンポーネントを追加している、 またはすでに別のAPIを使用している場合には、新しいものを学びたくはないでしょう？ その場合は、[スタイルライブラリの相互運用](/guides/interoperability/)セクションで、Material-UIコンポーネントを別のスタイルのライブラリでスタイル変更することがいかに簡単であるかを示します。
+However perhaps you're adding some Material-UI components to an app that already uses another styling solution, or are already familiar with a different API, and don't want to learn a new one? In that case, head over to the [Style Library Interoperability](/guides/interoperability/) section, where we show how simple it is to restyle Material-UI components with alternative style libraries.
 
 ## When should I use inline-style vs CSS?
 
-経験則として、動的styleプロパティにはinline-styleのみを使用してください。 CSSの代替手段は、次のようなより多くの利点を提供します。
+As a rule of thumb, only use inline-style for dynamic style properties. The CSS alternative provides more advantages, such as:
 
 - auto-prefixing
 - デバックのしやすさ
@@ -115,7 +113,7 @@ It's recommended:
 
 ## react-routerの使い方は？
 
-私達は[サードパーティ製ルーティングライブラリ](/demos/buttons/#third-party-routing-library)で`ButtonBase`コンポーネントの使い方をドキュメント化しました。 A lot of our interactive components use it internally: `Link`, `Button`, `MenuItem`, `<ListItem button />`, `Tab`, etc. それらの例を参考にしてください。
+We have documented how to use a [third-party routing library](/demos/buttons/#third-party-routing-library) with the `ButtonBase` component. A lot of our interactive components use it internally: `Link`, `Button`, `MenuItem`, `<ListItem button />`, `Tab`, etc. You can use the same solution with them.
 
 ## どうやってDOM要素にアクセスできますか？
 
@@ -296,17 +294,73 @@ function handleRender(req, res) {
 
 ## 私が見ている色とこのサイトで見ている色が違うのはなぜですか？
 
-ドキュメントサイトはカスタムテーマを使用しています。 したがって、カラーパレットがあるMaterial-UIが提供しているデフォルトのテーマは異なります。 テーマのカスタマイズについて学ぶには、この[ページ](/customization/themes/)を参照してください。
+The documentation site is using a custom theme. Hence, the color palette is different from the default theme that Material-UI ships. Please refer to [this page](/customization/themes/) to learn about theme customization.
 
 ## Material-UIは最高です。 プロジェクトを支援するにはどのようにできますか？
 
-Material-UIをサポートする方法はたくさんあります。
+There are many ways to support Material-UI:
 
 - [ドキュメント](https://github.com/mui-org/material-ui/tree/next/docs)を改善する 
 - 他の人が始めるのを手伝う
 - [ライブラリを布教する](https://twitter.com/MaterialUI) 
 - [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui)や[Spectrum](https://spectrum.chat/material-ui)で質問に答える
 
-商用プロジェクトでMaterial-UIを使用していて、スポンサーになることによってその継続的な開発を支援したい場合は、 あるいはサブや趣味のプロジェクトで**スポンサー**になりたい場合は、[OpenCollective](https://opencollective.com/material-ui)を使って行うことができます。
+If you use Material-UI in a commercial project and would like to support its continued development by becoming a **Sponsor**, or in a side or hobby project and would like to become a backer, you can do so through [OpenCollective](https://opencollective.com/material-ui).
 
-集められた資金はすべて透過的に管理され、スポンサーはREADMEとMaterial-UIのホームページで表彰されます。
+All funds raised are managed transparently, and Sponsors receive recognition in the README and on the Material-UI home page.
+
+## Why does component X require a DOM node in a prop instead of a ref object?
+
+Components like the [Portal](/api/Portal/#props) or [Popper](/api/Popper/#props) require a DOM node in the `container` or `anchorEl` prop respectively. It seems convenient to simply pass a ref object in those props and let Material-UI access the current value. This works in a simple scenario:
+
+```jsx
+function App() {
+  const container = React.useRef(null);
+
+  return (
+    <div className="App">
+      <Portal container={container}>
+        <span>portaled children</span>
+      </Portal>
+      <div ref={container} />
+    </div>
+  );
+}
+```
+
+where `Portal` would only mount the children into the container when `container.current` is available. Here is a naive implementation of Portal:
+
+```jsx
+function Portal({ children, container }) {
+  const [node, setNode] = React.useState(null);
+
+  React.useEffect(() => {
+    setNode(container.current);
+  }, [container]);
+
+  if (node === null) {
+    return null;
+  }
+  return ReactDOM.createPortal(children, node);
+}
+```
+
+With this simple heuristic `Portal` might re-render after it mounts because refs are up-to-date before any effects run. However, just because a ref is up-to-date doesn't mean it points to a defined instance. If the ref is attached to a ref forwarding component it is not clear when the DOM node will be available. In the above example the `Portal` would run run an effect once but might not re-render because `ref.current` is still `null`. This is especially apparent for React.lazy components in Suspense. The above implementation could also not account for a change in the DOM node.
+
+This is why we require a prop with the actual DOM node so that React can take care of determining when the `Portal` should re-render:
+
+```jsx
+function App() {
+  const [container, setContainer] = React.useState(null);
+  const handleRef = React.useCallback(instance => setContainer(instance), [setContainer])
+
+  return (
+    <div className="App">
+      <Portal container={container}>
+        <span>Portaled</span>
+      </Portal>
+      <div ref={handleRef} />
+    </div>
+  );
+}
+```
