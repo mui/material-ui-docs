@@ -74,36 +74,36 @@ Die internen Zustände der Komponenten, z. B. *hover*, *focus*, *disabled* und *
 Um die internen Zustände der Komponenten außer Kraft zu setzen, **müssen Sie die Spezifität erhöhen **. Hier ist ein Beispiel mit dem *disable* Zustand und einer Button Komponente mittels einer **pseudo-class** (`:disabled`):
 
 ```css
-.button {
+.MuiButton {
   color: black;
 }
-/* Wir erhöhen die Spezifität */
-.button:disabled {
+/* We increase the specificity */
+.MuiButton:disabled {
   color: white;
 }
 ```
 
 ```jsx
-<Button disabled className="button">
+<Button disabled className="MuiButton">
 ```
 
 Manchmal können Sie keine **Pseudoklasse** verwenden, da der Zustand nicht in der Plattform existiert. Nehmen wir die Menüpunkt Komponente und den *selected* Zustand als Beispiel. Abgesehen vom Zugriff auf verschachtelte Elemente kann die `classes` Eigenschaft verwendet werden, um die internen Zustände von Material-UI-Komponenten anzupassen:
 
 ```css
-.menu-item {
+.MuiMenuItem {
   color: black;
 }
-/* Wir erhöhen die Spezifität */
-.menu-item.selected {
+/* We increase the specificity */
+.MuiMenuItem.selected {
   color: blue;
 }
 ```
 
 ```jsx
-<MenuItem selected classes={{ root: 'menu-item', selected: 'selected' }}>
+<MenuItem selected classes={{ root: 'MuiMenuItem', selected: 'selected' }}>
 ```
 
-##### Warum muss ich die Spezifität erhöhen, um einen Komponentenzustand außer Kraft zu setzen?
+#### Warum muss ich die Spezifität erhöhen, um einen Komponentenzustand außer Kraft zu setzen?
 
 Die CSS-Spezifikation bewirkt, dass die Pseudoklassen die Spezifität erhöhen. Aus Gründen der Konsistenz erhöht die Material-UI die Spezifität ihrer benutzerdefinierten Zustände. Dies hat einen wichtigen Vorteil: Sie können den Zustand auswählen, den Sie anpassen möchten.
 
@@ -162,8 +162,6 @@ In den vorherigen Abschnitten haben Sie gelernt, wie Sie den Stil der Material-U
 
 {{"demo": "pages/customization/overrides/DynamicCSS.js"}}
 
-Dem Diese Demo basiert auf dem [`@material-ui/styles`](/css-in-js/basics/) Paket. Es funktioniert nicht mit der stabilen Version.
-
 ### Klassenname Branch
 
 {{"demo": "pages/customization/overrides/DynamicClassName.js"}}
@@ -200,12 +198,10 @@ Die Material-UI versucht, alle diese Variationen zu implementieren. Bitte beacht
 
 Um die Konsistenz zwischen den Komponenten zu verbessern und das Erscheinungsbild der Benutzeroberfläche insgesamt zu verwalten, bietet die Material-UI einen Mechanismus zum Anwenden globaler Änderungen durch Anpassen der [Theme Konfigurationsvariablen](/customization/themes/#theme-configuration-variables) an.
 
-### Globales Theme überschreiben
-
-Möchten Sie **alle Instanzen** eines Komponententyps anpassen?
-
-Wenn die Konfigurationsvariablen nicht ausreichen, können Sie die Vorteile der `overrides` Schlüssel des `Theme` verwenden, um potenziell jeden einzelnen von Material-UI in den DOM eingefügten Stil zu ändern. Weitere Informationen dazu finden Sie im [Themen](/customization/themes/#customizing-all-instances-of-a-component-type) Abschnitt der Dokumentation.
-
 ### Globales CSS überschreiben
 
-Sie können auch alle Instanzen einer Komponente mit CSS anpassen. Wir stellen dazu die `dangerouslyUseGlobalCSS` Option zur Verfügung. Weitere Informationen dazu finden Sie im [Style](/css-in-js/advanced/#deterministic-class-names) Abschnitt der Dokumentation. Es ist sehr ähnlich, wie Sie Bootstrap anpassen würden.
+Sie können auch alle Instanzen einer Komponente mit CSS anpassen. We expose [global class names](/css-in-js/advanced/#with-material-ui-core) to do so. Es ist sehr ähnlich, wie Sie Bootstrap anpassen würden.
+
+### Globales Theme überschreiben
+
+You can take advantage of the `overrides` key of the `theme` to potentially change every single style injected by Material-UI into the DOM. Weitere Informationen dazu finden Sie im [Themen](/customization/themes/#customizing-all-instances-of-a-component-type) Abschnitt der Dokumentation.
