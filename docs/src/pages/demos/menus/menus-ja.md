@@ -7,7 +7,7 @@ components: Menu, MenuItem, MenuList, ClickAwayListener, Popover, Popper
 
 <p class="description">Menus display a list of choices on temporary surfaces.</p>
 
-A [Menu](https://material.io/design/components/menus.html) displays a list of choices on a temporary surface. They appear when users interact with a button, action, or other control.
+A [Menu](https://material.io/design/components/menus.html) displays a list of choices on a temporary surface. It appears when the user interacts with a button, or other control.
 
 ## Simple Menu
 
@@ -21,7 +21,7 @@ Choosing an option should immediately ideally commit the option and close the me
 
 ## Selected menus
 
-If used for item selection, when opened, simple menus attempt to vertically align the currently selected menu item with the anchor element. The currently selected menu item is set using the `selected` property (from [ListItem](/api/list-item/)).
+If used for item selection, when opened, simple menus attempt to vertically align the currently selected menu item with the anchor element, and the initial focus will be placed on the selected menu item. The currently selected menu item is set using the `selected` property (from [ListItem](/api/list-item/)). To use a selected menu item without impacting the initial focus or the vertical positioning of the menu, set the `variant` property to `menu`.
 
 {{"demo": "pages/demos/menus/SimpleListMenu.js"}}
 
