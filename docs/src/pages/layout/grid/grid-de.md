@@ -63,14 +63,6 @@ Die folgende Demo folgt nicht der Material Design-Spezifikation, sondern zeigt, 
 
 {{"demo": "pages/layout/grid/ComplexGrid.js"}}
 
-## CSS-Raster Layout
-
-**CSS Grid Layout** eignet sich hervorragend zum Unterteilen einer Seite in Hauptregionen oder zum Definieren der Beziehung in Bezug auf Größe, Position und Ebene zwischen Teilen eines Steuerelements, das aus HTML-Grundelementen erstellt wird.
-
-⚠️ Leider wird das CSS-Raster nur von den neuesten Browsern unterstützt.
-
-{{"demo": "pages/layout/grid/CSSGrid.js"}}
-
 ## Verschachteltes Raster
 
 Die Eigenschaften von `container` und `item` sind zwei unabhängige Booleans. Sie können kombiniert werden.
@@ -120,3 +112,9 @@ Damit der Artikel im Container bleibt, müssen Sie `min-width: 0` setzten. In de
 ### direction: column | column-reverse
 
 Obwohl die `Grid-` Komponente eine `direction-` Eigenschaft hat, die Werte von `row`, `row-reverse`, `column`und `column-reverse` zulässt, gibt es einige Funktionen, die in `column` und `column-reverse` Containern nicht unterstützt werden. Die Eigenschaften, die die Anzahl der Gitter definieren, die die Komponente für einen bestimmten Rasterpunkt (`xs`, `sm`, `md`, `lg` und `xl`) hat, konzentrieren sich auf die Steuerung der Breite und **nicht** auf die Höhe innerhalb der `column` und `column-reverse` Container. Wenn innerhalb `column` oder `column-reverse` - Container verwendete, können diese Eigenschaften unerwünschte Nebenwirkungen auf die Breite der `Grid` Elemente haben.
+
+## CSS-Raster Layout
+
+Material-UI doesn't provide any CSS Grid functionality itself, but as seen below you can easily use CSS Grid to layout your pages.
+
+{{"demo": "pages/layout/grid/CSSGrid.js"}}
