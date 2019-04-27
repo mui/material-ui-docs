@@ -7,7 +7,7 @@ components: Radio, RadioGroup, FormControl, FormLabel, FormControlLabel
 
 <p class="description">用户可以通过单选按钮从一组中选择一个选项。</p>
 
-当用户需要查看所有可用选项时, 请使用单选按钮。 如果可用选项可以折叠，请您考虑使用占用空间更少的下拉菜单。
+Use [radio buttons](https://material.io/design/components/selection-controls.html#radio-buttons) when the user needs to see all available options. 如果可用选项可以折叠，请您考虑使用占用空间更少的下拉菜单。
 
 默认情况下，单选按钮应该选择了最常用的选项。
 
