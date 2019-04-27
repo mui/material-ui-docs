@@ -168,7 +168,7 @@ Beachten Sie, dass `contrastThreshold` einer nichtlinearen Kurve folgt.
 
 Etwas Inspiration gefällig? Das Material-Design-Team hat ein fantastisches [Konfigurationstool](/style/color/#color-tool) entwickelt, um dir zu helfen.
 
-## Typ (helles/dunkles Theme)
+### Typ (helles/dunkles Theme)
 
 Sie können das Theme dunkel machen, indem Sie `type` auf `dark` setzen. Während es sich nur um eine einzelne Eigenschaftswertänderung handelt, ändert es intern den Wert der folgenden Schlüssel:
 
@@ -372,7 +372,7 @@ Neben der Palette, den dunklen und den hellen Typen sowie der Typografie normali
 
 ## Benutzerdefinierte Variablen
 
-Wenn Sie das Material-UI-Theme mit unserer [Styling-Lösung](/css-in-js/basics) oder einer [beliebige andere](/guides/interoperability/#themeprovider) verwenden, kann praktisch sein, dem Theme weitere Variablen hinzuzufügen, damit Sie sie überall verwenden können. Zum Beispiel:
+Wenn Sie das Material-UI-Theme mit unserer [Styling-Lösung](/css-in-js/basics/) oder einer [beliebige andere](/guides/interoperability/#themeprovider) verwenden, kann praktisch sein, dem Theme weitere Variablen hinzuzufügen, damit Sie sie überall verwenden können. Zum Beispiel:
 
 {{"demo": "pages/customization/themes/CustomStyles.js"}}
 
@@ -398,33 +398,31 @@ const theme = createMuiTheme({
 
 Die Liste dieser Anpassungspunkte für jede Komponente ist unter der **Komponenten-API** Sektion dokumentiert. Zum Beispiel können Sie sich den [Button](/api/button/#css) anschauen. Alternativ können Sie sich immer die [Implementierung](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/Button/Button.js) ansehen.
 
-### Eigenschaften
+### Default props
 
-Sie können auch Eigenschaften auf alle Instanzen eines Komponententyps anwenden. Wir stellen einen `props` Schlüssel im `Theme` für diesen Anwendungsfall zur Verfügung.
+You can change the default props of all the Material-UI components. Wir stellen einen `props` Schlüssel im `Theme` für diesen Anwendungsfall zur Verfügung.
 
 ```js
 const theme = createMuiTheme({
   props: {
-    // Name der Komponente ⚛️
+    // Name of the component ⚛️
     MuiButtonBase: {
-      // Die Eigenschaft, die angewandt werden soll
-      disableRipple: true, // Keine Welleneffekte in der ganzen Applikation 
+      // The default props to change
+      disableRipple: true, // No more ripple, on the whole application 
     },
   },
 });
 ```
 
-{{"demo": "pages/customization/themes/OverridesProperties.js"}}
+{{"demo": "pages/customization/themes/OverridesProps.js"}}
 
 ## Zugriff auf das Theme in einer Komponente
 
-Möglicherweise müssen Sie auf die Themevariablen in Ihren React-Komponenten zugreifen. Angenommen, Sie möchten den Wert der Primärfarbe anzeigen, können Sie die `withTheme` Komponente höherer Ordnung dazu verwenden. Hier ist ein Beispiel:
-
-{{"demo": "pages/customization/themes/WithTheme.js"}}
+You [can access](/css-in-js/advanced/#accessing-the-theme-in-a-component) the theme variables inside your React components.
 
 ## Schachteln des Themes
 
-Die Theming-Lösung ist sehr flexibel, da Sie mehrere Theme-anbieter [verschachteln können](/css-in-js/advanced/#theme-nesting). Dies kann sehr nützlich sein, wenn Sie sich mit unterschiedlichen Bereichen Ihrer Anwendung befassen, die sich voneinander unterscheiden.
+[You can nest](/css-in-js/advanced/#theme-nesting) multiple theme providers.
 
 {{"demo": "pages/customization/themes/ThemeNesting.js"}}
 
