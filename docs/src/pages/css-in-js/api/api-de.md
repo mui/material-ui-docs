@@ -9,9 +9,9 @@ Eine Funktion, die eine [Klassennamengeneratorfunktion](http://cssinjs.org/jss-a
 #### Argumente
 
 1. `Optionen` (*Object* [optional]): 
-    - `options.dangerouslyUseGlobalCSS ` (*Boolean* [optional]): Standardeinstellung ist `false`. Macht die Klassennamen der Material-UI deterministisch.
+    - `options.disableGlobal` (*Boolan* [optional]): Defaults to `false`. Disable the generation of deterministic class names.
     - `options.productionPrefix` (*String* [optional]): Standardeinstellung ist ` 'jss' `. Ein String, der den Klassennamen in der Produktion vorangestellt wird.
-    - `options.seed` (*String* [optional]): Standardeinstellung ist `''`. Der String, mit der der Generator eindeutig identifiziert wird. Dies kann verwendet werden, um Klassennamenskollisionen bei Verwendung mehrerer Generatoren zu vermeiden.
+    - `options.seed` (*String* [optional]): Standardeinstellung ist `''`. Der String, mit der der Generator eindeutig identifiziert wird. It can be used to avoid class name collisions when using multiple generators in the same document.
 
 #### Rückgabewerte
 
@@ -24,7 +24,6 @@ import React from 'react';
 import { StylesProvider, createGenerateClassName } from '@material-ui/styles';
 
 const generateClassName = createGenerateClassName({
-  dangerouslyUseGlobalCSS: true,
   productionPrefix: 'c',
 });
 
@@ -200,15 +199,15 @@ Es sollte vorzugsweise an der **Wurzel Ihres Komponentenbaums** verwendet werden
 #### EigenschaftenStandardmäßig werden die Stile zuletzt eingefügt 
 
 <head>
-  element of your page. Sie erhalten mehr Details als jedes andere Stylesheet auf Ihrer Seite, z.B. CSS-Module oder StilKomponenten. Wenn Sie die Stile der Material-UI überschreiben möchten, setzen Sie diese Option.</td> </tr> 
+  element of the page. As a result, they gain more specificity than any other style sheet. If you want to override Material-UI's styles, set this prop.</td> </tr> 
   
   <tr>
     <td align="left">
-      <span class="prop-name">jss</span>
+      jss
     </td>
     
     <td align="left">
-      <span class="prop-type">object</span>
+      object
     </td>
     
     <td align="left">
@@ -270,11 +269,11 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
     
     <tr>
       <td align="left">
-        <span class="prop-name required">children&nbsp;*</span>
+        children&nbsp;*
       </td>
       
       <td align="left">
-        <span class="prop-type">node</span>
+        node
       </td>
       
       <td align="left">
@@ -288,11 +287,11 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
     
     <tr>
       <td align="left">
-        <span class="prop-name required">theme&nbsp;*</span>
+        theme&nbsp;*
       </td>
       
       <td align="left">
-        <span class="prop-type">union:&nbsp;object&nbsp;&#124;&nbsp;func</span>
+        union:&nbsp;object&nbsp;&#124;&nbsp;func
       </td>
       
       <td align="left">
