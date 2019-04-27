@@ -7,7 +7,7 @@ components: Checkbox, FormControl, FormGroup, FormLabel, FormControlLabel
 
 <p class="description">在一个集合内，用户可以通过复选框来选择一个或者多个选项。</p>
 
-复选框可用于打开或关闭选项。
+[Checkboxes](https://material.io/design/components/selection-controls.html#checkboxes) can be used to turn an option on or off.
 
 如果列表中有多个选择项，则可以使用复选框替代开关控件来节省空间。 如果您只需要一个选择项，请避免使用复选框，而改用开关控件。
 
