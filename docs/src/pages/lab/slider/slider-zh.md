@@ -35,7 +35,11 @@ components: Slider
 
 {{"demo": "pages/lab/slider/VerticalSlider.js"}}
 
-## 自定义拇指
+## Customized Slider
+
+{{"demo": "pages/lab/slider/CustomizedSlider.js"}}
+
+## Custom thumb
 
 {{"demo": "pages/lab/slider/CustomIconSlider.js"}}
 
