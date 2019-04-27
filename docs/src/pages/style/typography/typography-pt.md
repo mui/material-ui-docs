@@ -59,7 +59,7 @@ O componente de Tipografia (Typography) usa a propriedade `variantMapping` para 
 </Typography>
 ```
 
-- You can change the mapping [globally using the theme](/customization/themes/#properties):
+- You can change the mapping [globally using the theme](/customization/themes/#default-props):
 
 ```js
 const theme = createMuiTheme({
