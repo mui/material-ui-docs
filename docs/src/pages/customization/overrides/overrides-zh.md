@@ -74,36 +74,36 @@ const StyledButton = withStyles({
 为了覆盖组件内部状态， **需要增加特异性**。 下面是一个示例，其中 *disabled* 状态，按钮组件使用 **伪类** （`disabled`）：
 
 ```css
-.button {
+.MuiButton {
   color: black;
 }
-/* 我们增加了特异性 */
-.button:disabled {
+/* We increase the specificity */
+.MuiButton:disabled {
   color: white;
 }
 ```
 
 ```jsx
-<Button disabled className="button">
+<Button disabled className="MuiButton">
 ```
 
 有时，您不能使用 **伪类** 因为平台中不存在状态。 我们以菜单项组件和 *selected* 状态为例。 除了访问嵌套元素之外， `classes` 属性还可用于自定义Material-UI组件的内部状态：
 
 ```css
-.menu-item {
+.MuiMenuItem {
   color: black;
 }
-/* 我们增加了特异性 */
-.menu-item.selected {
+/* We increase the specificity */
+.MuiMenuItem.selected {
   color: blue;
 }
 ```
 
 ```jsx
-<MenuItem selected classes={{ root: 'menu-item', selected: 'selected' }}>
+<MenuItem selected classes={{ root: 'MuiMenuItem', selected: 'selected' }}>
 ```
 
-##### 为什么我需要增加特异性以覆盖一个组件状态？
+#### Why do I need to increase specificity to override one component state?
 
 通过设计，CSS规范使伪类增加了特异性。 为了保持一致性，Material-UI增加了其自定义状态的特异性。 这有一个重要的优点，它允许您挑选您想要自定义的状态。
 
@@ -162,8 +162,6 @@ const styles = {
 
 {{"demo": "pages/customization/overrides/DynamicCSS.js"}}
 
-⚠️这个演示依赖于[`@material-ui/styles`](/css-in-js/basics/)包。 它不适用于稳定版本。
-
 ### Class name branch
 
 {{"demo": "pages/customization/overrides/DynamicClassName.js"}}
@@ -182,30 +180,28 @@ const styles = {
 
 ## 3。 组件的具体变化
 
-您可能需要创建组件的变体并在不同的上下文中使用它，例如产品页面上的彩色按钮，但是您可能希望保留代码 [*DRY*](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)。
+You might need to create a variation of a component and use it in different contexts, for instance a colorful button on your product page, however you probably want to keep your code [*DRY*](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
 
-最好的方法是遵循选项1，然后通过导出自定义组件来利用React的组合功能，以便在任何需要的地方使用。
+The best approach is to follow option 1 and then take advantage of the composition power of React by exporting your customized component to use wherever you need it.
 
 {{"demo": "pages/customization/overrides/Component.js", "hideEditButton": true}}
 
 ## 4。 材料设计变化
 
-材料设计规范记录了某些组件的不同变化，例如按钮如何形成不同的形状： [文本](https://material.io/design/components/buttons.html#text-button) （以前称为“平面”）， [包含](https://material.io/design/components/buttons.html#contained-button) （以前称为“凸起”）， [FAB](https://material.io/design/components/buttons-floating-action-button.html) 及更多。
+The Material Design specification documents different variations of certain components, such as how buttons come in different shapes: [text](https://material.io/design/components/buttons.html#text-button) (formerly "flat"), [contained](https://material.io/design/components/buttons.html#contained-button) (formerly "raised"), [FAB](https://material.io/design/components/buttons-floating-action-button.html) and more.
 
-Material-UI尝试实现所有这些变体。 请参阅 [支持的组件](/getting-started/supported-components/) 文档，以了解所有支持的Material Design组件的当前状态。
+Material-UI attempts to implement all of these variations. Please refer to the [Supported Components](/getting-started/supported-components/) documentation to find out the current status of all supported Material Design components.
 
 ## 5。 全球主题变化
 
 ### 主题变量
 
-为了提高组件之间的一致性，并整体管理用户界面外观，Material-UI提供了一种通过调整 [主题配置变量来应用全局更改的机制](/customization/themes/#theme-configuration-variables)。
+In order to promote consistency between components, and manage the user interface appearance as a whole, Material-UI provides a mechanism to apply global changes by adjusting the [theme configuration variables](/customization/themes/#theme-configuration-variables).
 
-### 全局主题覆盖
+### Global CSS override
 
-是否要自定义 **组件类型的所有实例**？
+You can also customize all instances of a component with CSS. We expose [global class names](/css-in-js/advanced/#with-material-ui-core) to do so. It's very similar to how you would customize Bootstrap.
 
-当配置变量不够强大时， 可以利用 `overrides` 的 `theme` 键来潜在地将Material-UI注入的每个样式更改为DOM。 在文档的 [主题部分](/customization/themes/#customizing-all-instances-of-a-component-type) 中了解有关它的更多信息。
+### Global theme override
 
-### 全局CSS覆盖
-
-您还可以使用CSS自定义组件的所有实例。 我们公开了一个 `dangerouslyUseGlobalCSS` 选项来执行此操作。 Learn more about it in the [styles section](/css-in-js/advanced/#deterministic-class-names) of the documentation. 它与您自定义Bootstrap的方式非常相似。
+You can take advantage of the `overrides` key of the `theme` to potentially change every single style injected by Material-UI into the DOM. Learn more about it in the [themes section](/customization/themes/#customizing-all-instances-of-a-component-type) of the documentation.
