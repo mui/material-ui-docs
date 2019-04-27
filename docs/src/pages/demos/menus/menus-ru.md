@@ -7,7 +7,7 @@ components: Menu, MenuItem, MenuList, ClickAwayListener, Popover, Popper
 
 <p class="description">Меню временно отображают список вариантов.</p>
 
-[Меню](https://material.io/design/components/menus.html) отображает список вариантов на временно видимом элементе интерфейса. Этот элемент появляется, когда пользователи взаимодействуют с кнопкой, действием или другим элементом управления.
+A [Menu](https://material.io/design/components/menus.html) displays a list of choices on a temporary surface. It appears when the user interacts with a button, or other control.
 
 ## Простое меню
 
@@ -21,7 +21,7 @@ components: Menu, MenuItem, MenuList, ClickAwayListener, Popover, Popper
 
 ## Выбранные меню
 
-If used for item selection, when opened, simple menus attempt to vertically align the currently selected menu item with the anchor element. The currently selected menu item is set using the `selected` property (from [ListItem](/api/list-item/)).
+If used for item selection, when opened, simple menus attempt to vertically align the currently selected menu item with the anchor element, and the initial focus will be placed on the selected menu item. The currently selected menu item is set using the `selected` property (from [ListItem](/api/list-item/)). To use a selected menu item without impacting the initial focus or the vertical positioning of the menu, set the `variant` property to `menu`.
 
 {{"demo": "pages/demos/menus/SimpleListMenu.js"}}
 
