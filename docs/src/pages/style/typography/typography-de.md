@@ -59,7 +59,7 @@ Die Komponente Typografie verwendet die Eigenschaft `variantMapping` um eine UI-
 </Typography>
 ```
 
-- Sie können das Mapping [global mit dem Theme](/customization/themes/#properties) ändern:
+- You can change the mapping [globally using the theme](/customization/themes/#default-props):
 
 ```js
 const theme = createMuiTheme({
