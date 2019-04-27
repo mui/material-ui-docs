@@ -59,7 +59,7 @@ The Typography component uses the `variantMapping` property to associate a UI va
 </Typography>
 ```
 
-- You can change the mapping [globally using the theme](/customization/themes/#properties):
+- You can change the mapping [globally using the theme](/customization/themes/#default-props):
 
 ```js
 const theme = createMuiTheme({
