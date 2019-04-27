@@ -35,6 +35,10 @@ Schieberegler zeigen den aktuellen Status der Einstellungen an, die sie steuern.
 
 {{"demo": "pages/lab/slider/VerticalSlider.js"}}
 
+## Customized Slider
+
+{{"demo": "pages/lab/slider/CustomizedSlider.js"}}
+
 ## Benutzerdefinierter Anzeigepunkte
 
 {{"demo": "pages/lab/slider/CustomIconSlider.js"}}
