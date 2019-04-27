@@ -63,14 +63,6 @@ components: 栅格(Grid)
 
 {{"demo": "pages/layout/grid/ComplexGrid.js"}}
 
-## CSS栅格布局
-
-** CSS栅格布局**擅长将页面划分为主要区域，或者在从HTML基元构建的控件的各个部分之间定义大小，位置和图层之间的关系。
-
-⚠️遗憾的是，CSS网格仅受最新浏览器的支持。
-
-{{"demo": "pages/layout/grid/CSSGrid.js"}}
-
 ## 嵌套栅格
 
 `container`和` item `属性是两个独立的布尔值，它们可以结合使用。
@@ -120,3 +112,9 @@ Flex 项目的初始设置为 `min-width: auto`。当子级使用 `white-space: 
 ### direction: column | column-reverse
 
 虽然`Grid`组件有`direction`属性，此属性有`row`，`row-reverse`，`column`，和`column-reverse`选项，但是有些功能是不支持`column`和`column-reverse`容器的。 The properties which define the number of grids the component will use for a given breakpoint (`xs`, `sm`, `md`, `lg`, and `xl`) are focused on controlling width and do **not** have similar effects on height within `column` and `column-reverse` containers. If used within `column` or `column-reverse` containers, these properties may have undesirable effects on the width of the `Grid` elements.
+
+## CSS栅格布局
+
+Material-UI doesn't provide any CSS Grid functionality itself, but as seen below you can easily use CSS Grid to layout your pages.
+
+{{"demo": "pages/layout/grid/CSSGrid.js"}}
