@@ -14,6 +14,7 @@ O componente renderiza o conteúdo de seu `children` sobre um backdrop. O `Modal
 - Quando aberto, desabilita o scroll da página.
 - ♿️ It properly manages focus; moving to the modal content, and keeping it there until the modal is closed.
 - ♿️ Adds the appropriate ARIA roles automatically.
+- 
 
 > **Nota sobre a terminologia**. O termo "modal" algumas vezes é usado com o sentido de "diálogo", mas isto é um equívoco. Uma janela Modal descreve partes de uma UI. Um elemento é considerado modal se [ele bloqueia interações com o resto da aplicação](https://en.wikipedia.org/wiki/Modal_window).
 
