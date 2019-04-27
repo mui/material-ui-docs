@@ -21,7 +21,7 @@ The grid system is implemented with the `Grid` component:
 
 If you are **new to or unfamiliar with flexbox**, we encourage you to read this [CSS-Tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) guide.
 
-## Spacing
+## Espaçamento
 
 The responsive grid focuses on consistent spacing widths, rather than column width. Material Design margins and columns follow an **8px** square baseline grid. The spacing property is an integer between 0 and 10 inclusive. By default, the spacing between two grid items follows a linear function: `output(spacing) = spacing * 8px`, e.g. `spacing={2}` creates a 16px wide gap.
 
@@ -62,14 +62,6 @@ The Auto-layout makes the *items* equitably share the available space. That also
 The following demo doesn't follow the Material Design specification, but illustrates how the grid can be used to build complex layouts.
 
 {{"demo": "pages/layout/grid/ComplexGrid.js"}}
-
-## CSS Grid Layout
-
-**CSS Grid Layout** excels at dividing a page into major regions, or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives.
-
-⚠️ Unfortunately, CSS grid is only supported by the most recent browsers.
-
-{{"demo": "pages/layout/grid/CSSGrid.js"}}
 
 ## Nested Grid
 
@@ -120,3 +112,9 @@ In order for the item to stay within the container you need to set `min-width: 0
 ### direction: column | column-reverse
 
 Though the `Grid` component has a `direction` property that allows values of `row`, `row-reverse`, `column`, and `column-reverse`, there are some features that are not supported within `column` and `column-reverse` containers. The properties which define the number of grids the component will use for a given breakpoint (`xs`, `sm`, `md`, `lg`, and `xl`) are focused on controlling width and do **not** have similar effects on height within `column` and `column-reverse` containers. If used within `column` or `column-reverse` containers, these properties may have undesirable effects on the width of the `Grid` elements.
+
+## CSS Grid Layout
+
+Material-UI doesn't provide any CSS Grid functionality itself, but as seen below you can easily use CSS Grid to layout your pages.
+
+{{"demo": "pages/layout/grid/CSSGrid.js"}}
