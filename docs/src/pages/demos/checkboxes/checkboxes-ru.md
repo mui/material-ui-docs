@@ -7,7 +7,7 @@ components: Checkbox, FormControl, FormGroup, FormLabel, FormControlLabel
 
 <p class="description">Checkboxes allow the user to select one or more items from a set.</p>
 
-Также они используются чтобы включить или выключить опцию.
+[Checkboxes](https://material.io/design/components/selection-controls.html#checkboxes) can be used to turn an option on or off.
 
 Если у вас есть несколько опций, отображаемых в списке, вы можете сохранить пространство, используя чекбоксы вместо переключателей. Если у вас есть только один вариант, лучше не использовать чекбокс, вместо него используйте переключатель включения / выключения.
 
