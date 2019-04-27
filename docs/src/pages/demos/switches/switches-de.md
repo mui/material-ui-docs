@@ -7,27 +7,25 @@ components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
 
 <p class="description">Schalter ändern den Status einer einzelnen Einstellung ein oder aus.</p>
 
-Sie sind die bevorzugte Methode, um Einstellungen auf dem Handy anzupassen.
-
-Die Option, die der Schalter steuert, sowie der Status, in dem er sich befindet, sollte aus dem entsprechenden Inline-Label hervorgehen.
+[Switches](https://material.io/design/components/selection-controls.html#switches) are the preferred way to adjust settings on mobile. The option that the switch controls, as well as the state it’s in, should be made clear from the corresponding inline label.
 
 {{"demo": "pages/demos/switches/Switches.js"}}
 
 ## Schalter mit FormControlLabel
 
-Ein `Schalter` kann dank der `FormControlLabel` Komponente auch mit einer Etikettenbeschreibung verwendet werden.
+`Switch` can also be used with a label description thanks to the `FormControlLabel` component.
 
 {{"demo": "pages/demos/switches/SwitchLabels.js"}}
 
 ## Schalter mit FormGroup
 
-`FormGroup` ist ein hilfreicher Wrapper zum Gruppieren von Auswahlsteuerungskomponenten, welcher eine einfachere API bietet. Wir empfehlen Ihnen jedoch, stattdessen ein [Kontrollkästchen](#checkboxes) zu verwenden.
+`FormGroup` ist ein hilfreicher Wrapper zum Gruppieren von Auswahlsteuerungskomponenten, welcher eine einfachere API bietet. However, we encourage you to use a [Checkbox](#checkboxes) instead.
 
 {{"demo": "pages/demos/switches/SwitchesGroup.js"}}
 
 ## Anpasster Schalter
 
-Wenn du die [Überschreibungs Dokumentationsseite](/customization/overrides/) gelesen hast, aber dich noch nicht sicher genug fühlst, um direkt loszulegen, ist hier noch ein Beispiel, wie du die Farbe des Schalters ändern kannst, und ein iOS Schalter.
+If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here's an example of how you can change the color of a Switch, and an iOS style Switch.
 
 ⚠️ Auch wenn die material design Spezifikation zur Verwendung von Themes ermutigt, liegen diese Beispiele außerhalb der üblichen Pfade.
 
