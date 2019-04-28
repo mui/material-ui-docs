@@ -84,7 +84,7 @@ function MyComponent() {
 2. `Optionen` (*Object* [optional]): 
     - ` options.defaultMatches ` (*Boolean* [optional]): Da `window.matchMedia()` auf dem Server nicht verfügbar ist, wird ein Standard Match zurückgegeben. Der Standardwert ist `false`.
     - `options.noSsr ` (*Boolean* [optional]): Standardeinstellung ist `false`. Um den serverseitigen Renderingabgleich durchzuführen, muss er zweimal gerendert werden. Ein erstes Mal mit nichts und ein zweites Mal mit den Kind-Elementen. Dieser Zyklus mit zwei Durchgängen ist mit einem Nachteil verbunden. Es ist langsamer. Sie können diese Flag auf `true` setzten, wenn Sie **nicht serverseitig** rendern.
-    - `options.ssrMatchMedia` (*Function* [optional]) Vielleicht möchten Sie eine Heuristik verwenden, um annähernd den Bildschirm des Client - Browser zu bestimmen. Sie könnten beispielsweise den Benutzeragenten oder den Client-Hinweis https://caniuse.com/#search=client%20hint verwenden. You can provide a global ponyfill using [`custom properties`](/customization/themes/#default-props) on the theme. Lesen Sie hier mehr dazu: [serverseitige Rendering Beispiel](#server-side-rendering).
+    - `options.ssrMatchMedia` (*Function* [optional]) Vielleicht möchten Sie eine Heuristik verwenden, um annähernd den Bildschirm des Client - Browser zu bestimmen. Sie könnten beispielsweise den Benutzeragenten oder den Client-Hinweis https://caniuse.com/#search=client%20hint verwenden. Sie können eine globale Ponyfill mit [`benutzerdefinierten Eigenschaften`](/customization/themes/#default-props) für das Theme bereitstellen. Lesen Sie hier mehr dazu: [serverseitige Rendering Beispiel](#server-side-rendering).
 
 #### Rückgabewerte
 
