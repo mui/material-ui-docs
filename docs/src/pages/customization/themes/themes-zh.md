@@ -10,9 +10,9 @@
 
 ## ThemeProvider
 
-如果你想要自定义样式，则需要使用 `MuiThemeProvider` 组件才能将样式注入到你的应用中。 但是，这是可选的; Material-UI组件带有默认样式。
+如果你想要自定义样式，则需要使用 `MuiThemeProvider` 组件才能将样式注入到你的应用中。 但是，这是可选的，因为 Material-UI 组件带有默认主题。
 
-`MuiThemeProvider` 依赖于React的Context上下文将样式传递给组件， 因此您需要确保 `MuiThemeProvider` 是您想要自定义的组件的父级元素。 您可以在[ API ](/css-in-js/api/#themeprovider)中了解有关此内容的更多信息 。
+`MuiThemeProvider` 依赖于React的Context上下文将样式传递给组件， 因此您需要确保 `MuiThemeProvider` 是您想要自定义的组件的父级元素。 您可以在 [API 章节](/css-in-js/api/#themeprovider) 中了解有关此内容的更多信息 。
 
 ## 主题配置变量
 
@@ -187,7 +187,7 @@ const theme = createMuiTheme({
 
 {{"demo": "pages/customization/themes/DarkTheme.js", "hideEditButton": true}}
 
-## 排版
+## Typography
 
 太多类型的尺寸和样式会破坏任何布局。 样式提供了 **有限集合型尺寸的** 可以与布局网格一起很好地工作。 这些尺寸用于各个组件。
 
@@ -357,7 +357,7 @@ const theme = createMuiTheme({
 theme.spacing(2); // = 8
 ```
 
-### Multiple arity
+### 多个参数
 
 ` theme.spacing() ` 最多接受4个参数。 您可以使用参数来减少样板：
 
@@ -432,7 +432,7 @@ You [can access](/css-in-js/advanced/#accessing-the-theme-in-a-component) the th
 
 #### 关于性能
 
-The performance implications of nesting the `ThemeProvider` component are linked to JSS's work behind the scenes. The main point to understand is that we cache the injected CSS with the following tuple `(styles, theme)`.
+The performance implications of nesting the `ThemeProvider` component are linked to JSS's work behind the scenes. 一句话来讲，我们以 `(styles, theme)`为键值缓存了注入的CSS。
 
 - `theme`: 每次渲染时，如果你提供了一个新的主题，一个新的CSS对象将会被生成并注入。 不管是为了更统一的UI风格还是性能，都应该尽量不要每次生成新的主题 object。
 - `styles`: 样式 object 越大，需要的运算越多。
@@ -441,7 +441,7 @@ The performance implications of nesting the `ThemeProvider` component are linked
 
 ### `createMuiTheme(options) => theme`
 
-Generate a theme base on the options received.
+根据接收的选项生成样式。
 
 #### 参数
 
@@ -449,7 +449,7 @@ Generate a theme base on the options received.
 
 #### 返回结果
 
-`theme` (*Object*): A complete, ready to use theme object.
+`theme` （*Object*）：一个完整的，随时可用的主题对象。
 
 #### 例子
 
