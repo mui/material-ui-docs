@@ -22,11 +22,11 @@ If you still can't find what you're looking for, you can ask the community in [S
 
 ## モーダルを開くと、fixed positionされたDOMが移動するのはなぜですか？
 
-We block the scroll as soon as a modal is opened. This prevents interacting with the background when the modal should be the only interactive content, however, removing the scrollbar can make your **fixed positioned elements** move. In this situation, you can apply a global `.mui-fixed` class name to tell Material-UI to handle those elements.
+モーダルが開かれるとすぐにスクロールをブロックします。 モーダルが唯一のインタラクティブなコンテンツであるべき場合、backgroundとの連動を防ぎます。しかし、スクロールバーを取り除くことで**fixed positionされたDOM**を動かすことができます。 この場合、Material-UIにこれらのDOMを処理するように伝えるために、グローバルな `.mui-fixed`クラス名を適用することができます。
 
 ## 波紋アニメーションをグローバルに無効にする方法は？
 
-The ripple effect is exclusively coming from the `BaseButton` component. You can disable the ripple effect globally by providing the following in your theme:
+波紋アニメーションは、BaseButtonコンポーネントからのみ発生しています。 テーマに次のように指定することで、波紋アニメーションをグローバルに無効にすることができます。
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
@@ -57,7 +57,7 @@ const theme = createMuiTheme({
 });
 ```
 
-Sometimes you will want to enable this behavior conditionally, for instance during testing or on low-end devices, in these cases, you can dynamically change the theme value.
+テスト中やローエンドデバイスなどで、条件付きでこの動作を有効にしたい場合があります。この場合は、テーマの値を動的に変更できます。
 
 You can go one step further by disabling all the transitions, animations and the ripple effect:
 
@@ -100,11 +100,11 @@ It's recommended:
 - 明瞭で一貫性のあるAPI
 - ネイティブでもプラグインでも、多くの高度な機能をサポートします。
 
-However perhaps you're adding some Material-UI components to an app that already uses another styling solution, or are already familiar with a different API, and don't want to learn a new one? In that case, head over to the [Style Library Interoperability](/guides/interoperability/) section, where we show how simple it is to restyle Material-UI components with alternative style libraries.
+しかし、おそらくすでに別のスタイルライブラリを使用してアプリケーションにいくつかのMaterial-UIコンポーネントを追加している、 またはすでに別のAPIを使用している場合には、新しいものを学びたくはないでしょう？ その場合は、[スタイルライブラリの相互運用](/guides/interoperability/)セクションで、Material-UIコンポーネントを別のスタイルのライブラリでスタイル変更することがいかに簡単であるかを示します。
 
 ## When should I use inline-style vs CSS?
 
-As a rule of thumb, only use inline-style for dynamic style properties. The CSS alternative provides more advantages, such as:
+経験則として、動的styleプロパティにはinline-styleのみを使用してください。 CSSの代替手段は、次のようなより多くの利点を提供します。
 
 - auto-prefixing
 - デバックのしやすさ
@@ -113,7 +113,7 @@ As a rule of thumb, only use inline-style for dynamic style properties. The CSS 
 
 ## react-routerの使い方は？
 
-We have documented how to use a [third-party routing library](/demos/buttons/#third-party-routing-library) with the `ButtonBase` component. A lot of our interactive components use it internally: `Link`, `Button`, `MenuItem`, `<ListItem button />`, `Tab`, etc. You can use the same solution with them.
+私達は[サードパーティ製ルーティングライブラリ](/demos/buttons/#third-party-routing-library)で`ButtonBase`コンポーネントの使い方をドキュメント化しました。 A lot of our interactive components use it internally: `Link`, `Button`, `MenuItem`, `<ListItem button />`, `Tab`, etc. それらの例を参考にしてください。
 
 ## どうやってDOM要素にアクセスできますか？
 
@@ -294,20 +294,20 @@ function handleRender(req, res) {
 
 ## 私が見ている色とこのサイトで見ている色が違うのはなぜですか？
 
-The documentation site is using a custom theme. Hence, the color palette is different from the default theme that Material-UI ships. Please refer to [this page](/customization/themes/) to learn about theme customization.
+ドキュメントサイトはカスタムテーマを使用しています。 したがって、カラーパレットがあるMaterial-UIが提供しているデフォルトのテーマは異なります。 テーマのカスタマイズについて学ぶには、この[ページ](/customization/themes/)を参照してください。
 
 ## Material-UIは最高です。 プロジェクトを支援するにはどのようにできますか？
 
-There are many ways to support Material-UI:
+Material-UIをサポートする方法はたくさんあります。
 
 - [ドキュメント](https://github.com/mui-org/material-ui/tree/next/docs)を改善する 
 - 他の人が始めるのを手伝う
 - [ライブラリを布教する](https://twitter.com/MaterialUI) 
 - [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui)や[Spectrum](https://spectrum.chat/material-ui)で質問に答える
 
-If you use Material-UI in a commercial project and would like to support its continued development by becoming a **Sponsor**, or in a side or hobby project and would like to become a backer, you can do so through [OpenCollective](https://opencollective.com/material-ui).
+商用プロジェクトでMaterial-UIを使用していて、スポンサーになることによってその継続的な開発を支援したい場合は、 あるいはサブや趣味のプロジェクトで**スポンサー**になりたい場合は、[OpenCollective](https://opencollective.com/material-ui)を使って行うことができます。
 
-All funds raised are managed transparently, and Sponsors receive recognition in the README and on the Material-UI home page.
+集められた資金はすべて透過的に管理され、スポンサーはREADMEとMaterial-UIのホームページで表彰されます。
 
 ## Why does component X require a DOM node in a prop instead of a ref object?
 
