@@ -22,11 +22,11 @@ Im Allgemeinen ist es einfach, dieses Problem zu beheben, indem jede Material-UI
 
 ## Warum bewegen sich die fest positionierten Elemente, wenn ein Modal geöffnet wird?
 
-We block the scroll as soon as a modal is opened. This prevents interacting with the background when the modal should be the only interactive content, however, removing the scrollbar can make your **fixed positioned elements** move. In this situation, you can apply a global `.mui-fixed` class name to tell Material-UI to handle those elements.
+Wir blockieren die Blättern, sobald eine Modalität geöffnet ist. Dies verhindert die Interaktion mit dem Hintergrund, wenn der Modal der einzige interaktive Inhalt sein sollte. Wenn Sie jedoch die Bildlaufleiste entfernen, können Sie Ihre **fest positionierten Elemente ** bewegen. In dieser Situation können Sie einen globalen `.mui-fixed` Klassennamen anwenden, damit Material-UI mit diesen Elementen umgehen kann.
 
 ## Wie kann ich den Ripple-Effekt global deaktivieren?
 
-The ripple effect is exclusively coming from the `BaseButton` component. You can disable the ripple effect globally by providing the following in your theme:
+Der Ripple-Effekt kommt ausschließlich von der `BaseButton` Komponente. Sie können den Ripple-Effekt global deaktivieren, indem Sie in Ihrem Theme folgendes angeben:
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
@@ -44,7 +44,7 @@ const theme = createMuiTheme({
 
 ## Wie kann ich Übergänge global deaktivieren?
 
-You can disable transitions globally by providing the following in your theme:
+Sie können Übergänge global deaktivieren, indem Sie in Ihrem Theme folgendes angeben:
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
@@ -57,9 +57,9 @@ const theme = createMuiTheme({
 });
 ```
 
-Sometimes you will want to enable this behavior conditionally, for instance during testing or on low-end devices, in these cases, you can dynamically change the theme value.
+Manchmal wollen Sie dieses Verhalten bedingt ermöglichen, zum Beispiel während der Prüfung oder auf Low-End-Geräten, in diesen Fällen können Sie dynamisch den Wert des Themes ändern.
 
-You can go one step further by disabling all the transitions, animations and the ripple effect:
+Sie können noch einen Schritt weiter gehen, indem Sie alle Übergänge, Animationen und den Welleneffekt deaktivieren:
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
@@ -100,11 +100,11 @@ It's recommended:
 - Es verfügt über eine saubere, konsistente API.
 - Es unterstützt eine Reihe von erweiterten Funktionen, entweder nativ oder durch Plugins.
 
-However perhaps you're adding some Material-UI components to an app that already uses another styling solution, or are already familiar with a different API, and don't want to learn a new one? In that case, head over to the [Style Library Interoperability](/guides/interoperability/) section, where we show how simple it is to restyle Material-UI components with alternative style libraries.
+Vielleicht fügen Sie jedoch einer App einige Material-UI-Komponenten hinzu, die bereits eine andere Styling-Lösung verwendet, oder Sie sind bereits mit einer anderen API vertraut und wollen keine neue lernen? In diesem Fall gehen Sie zum [Zusammenführen von Style Libraries](/guides/interoperability/) Abschnitt in dem wir zeigen, wie einfach es ist, Material-UI-Komponenten mit alternativen Stilbibliotheken umzustrukturieren.
 
 ## When should I use inline-style vs CSS?
 
-As a rule of thumb, only use inline-style for dynamic style properties. The CSS alternative provides more advantages, such as:
+Verwenden Sie als Faustregel Inline-Style nur für dynamische Stileigenschaften. Die CSS-Alternative bietet weitere Vorteile, z.B.:
 
 - Auto-Präfixe
 - Besseres debuggen
@@ -113,11 +113,11 @@ As a rule of thumb, only use inline-style for dynamic style properties. The CSS 
 
 ## Wie verwende ich den react-router?
 
-We have documented how to use a [third-party routing library](/demos/buttons/#third-party-routing-library) with the `ButtonBase` component. A lot of our interactive components use it internally: `Link`, `Button`, `MenuItem`, `<ListItem button />`, `Tab`, etc. You can use the same solution with them.
+Wir haben dokumentiert, wie Sie eine [Routing-Bibliothek von Drittanbietern](/demos/buttons/#third-party-routing-library) mit der `ButtonBase` Komponente verwenden. A lot of our interactive components use it internally: `Link`, `Button`, `MenuItem`, `<ListItem button />`, `Tab`, etc. Sie können dieselbe Lösung mit ihnen verwenden.
 
 ## Wie kann ich auf das DOM-Element zugreifen?
 
-All Material-UI components that should render something in the DOM forward their ref to the underlying DOM component. This means that you can get DOM elements by reading the ref attached to Material-UI components:
+Alle Material-UI-Komponenten, die etwas im DOM darstellen sollen, leiten ihre an die zugrunde liegende DOM-Komponente weiter. Dies bedeutet, dass Sie die DOM-Elemente, indem Sie den ref lesen, der an die Komponenten der Material-UI angehängt ist:
 
 ```jsx
 // oder eine Ref-Setter-Funktion
@@ -128,11 +128,11 @@ const ref = React.createRef ();
 const Element = ref.current;
 ```
 
-If you're not sure if the Material-UI component in question forwards its ref you can check the API documentation under "Props" e.g. the [/api/button/#props](Button API) includes
+Wenn Sie nicht sicher sind, ob die Material-UI-Komponente in Frage sein ref weiterleitet, können Sie die Dokumentation API überprüfen unter „Props“ zB die the [/api/button/#props](Button API) enthält
 
 > Der ref wird an das Wurzelelement weitergeleitet.
 
-indicating that you can access the DOM element with a ref.
+was anzeigt, dass Sie mit einem ref auf das DOM-Element zugreifen können.
 
 ## I have several instances of styles on the page
 
@@ -220,17 +220,17 @@ If you have several applications running on one page, consider using one @materi
 
 ## My App doesn't render correctly on the server
 
-If it doesn't work, in 99% of cases it's a configuration issue. A missing property, a wrong call order, or a missing component. We are very strict about configuration, and the best way to find out what's wrong is to compare your project to an already working setup, check out our [reference implementations](/guides/server-rendering/#reference-implementations), bit by bit.
+Wenn dies nicht funktioniert, handelt es sich in 99% der Fälle um ein Konfigurationsproblem. Eine fehlende Eigenschaft, eine falsche Aufrufreihenfolge oder eine fehlende Komponente. We are very strict about configuration, and the best way to find out what's wrong is to compare your project to an already working setup, check out our [reference implementations](/guides/server-rendering/#reference-implementations), bit by bit.
 
 ### CSS funktioniert nur beim ersten Laden, dann fehlt es
 
-The CSS is only generated on the first load of the page. Then, the CSS is missing on the server for consecutive requests.
+Das CSS wird nur beim ersten Laden der Seite generiert. Auf dem Server fehlt dann das CSS bei aufeinanderfolgende Anfragen.
 
 #### Zu ergreifende Maßnahmen
 
-We rely on a cache, the sheets manager, to only inject the CSS once per component type (if you use two buttons, you only need the CSS of the button one time). You need to create **a new `sheets` instance for each request**.
+Wir setzen auf einen Cache, den Sheets-Manager, um das CSS nur einmal pro Komponententyp (wenn Sie zwei Schaltflächen verwenden, benötigen Sie nur einmal das CSS der Schaltfläche) zu injizieren. You need to create **a new `sheets` instance for each request**.
 
-*example of fix:*
+*beispiel für fix:*
 
 ```diff
 - // Eine Sheet Instanz erstellen.
@@ -249,15 +249,15 @@ function handleRender(req, res) {
 
 ### React Klassenname Hydratation Nichtübereinstimmung
 
-There is a class name mismatch between the client and the server. It might work for the first request. Another symptom is that the styling changes between initial page load and the downloading of the client scripts.
+Es gibt eine Nichtübereinstimmung der Klassennamen zwischen Client und Server. Es könnte für die erste Anfrage funktionieren. Ein anderes Symptom ist, dass sich das Styling zwischen dem Laden der ersten Seite und dem Herunterladen der Clientskripte ändert.
 
 #### Zu ergreifende Maßnahmen
 
-The class names value relies on the concept of [class name generator](/css-in-js/advanced/#class-names). The whole page needs to be rendered with **a single generator**. This generator needs to behave identically on the server and on the client. Zum Beispiel:
+Der Klassennamenwert basiert auf dem Konzept des [Klassennamensgenerators](/css-in-js/advanced/#class-names). Die gesamte Seite muss mit **einem einzigen Generator** gerendert werden. Dieser Generator muss sich auf dem Server und auf dem Client identisch verhalten. Zum Beispiel:
 
 - Sie müssen für jede Anforderung einen neuen Klassennamengenerator bereitstellen. But you shouldn't share a `createGenerateClassName()` between different requests:
 
-*example of fix:*
+*beispiel für fix:*
 
 ```diff
 - // Erstellen Sie einen neuen Klassennamengenerator.
@@ -278,7 +278,7 @@ function handleRender(req, res) {
     
     Sie können die gleiche Version in verschiedenen Umgebungen festlegen, indem Sie in den Abhängigkeiten Ihrer package.json eine bestimmte MUI-Version angeben.
 
-*example of fix (package.json):*
+*beispiel für fix (package.json):*
 
 ```diff
   "dependencies": {
@@ -294,20 +294,20 @@ function handleRender(req, res) {
 
 ## Warum unterscheiden sich die Farben, die ich sehe, von denen, die ich hier sehe?
 
-The documentation site is using a custom theme. Hence, the color palette is different from the default theme that Material-UI ships. Please refer to [this page](/customization/themes/) to learn about theme customization.
+Die Dokumentationssite verwendet ein benutzerdefiniertes Theme. Daher unterscheidet sich die Farbpalette vom Standarddesign der Material-UI. Siehe [diese Seite](/customization/themes/), um Informationen zum Anpassen von Motiven zu erhalten.
 
 ## Material-UI ist großartig. Wie kann ich das Projekt unterstützen?
 
-There are many ways to support Material-UI:
+Es gibt viele Möglichkeiten, die Material-UI zu unterstützen:
 
 - Verbessern Sie [die Dokumentation](https://github.com/mui-org/material-ui/tree/next/docs).
 - Helfen Sie anderen, loszulegen.
 - [Verbreiten Sie Material-Ui](https://twitter.com/MaterialUI).
 - Beantworten Sie die Fragen auf [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) oder auf [Spectrum](https://spectrum.chat/material-ui).
 
-If you use Material-UI in a commercial project and would like to support its continued development by becoming a **Sponsor**, or in a side or hobby project and would like to become a backer, you can do so through [OpenCollective](https://opencollective.com/material-ui).
+Wenn Sie die Material-UI in einem kommerziellen Projekt verwenden und ihre weitere Entwicklung unterstützen möchten, indem Sie ein **Sponsor** werden, oder in einem Seiten- oder Hobbyprojekt und möchten ein Geldgeber werden, können Sie dies durch [OpenCollective](https://opencollective.com/material-ui) tun.
 
-All funds raised are managed transparently, and Sponsors receive recognition in the README and on the Material-UI home page.
+Alle erhaltenen Mittel werden transparent verwaltet, und die Sponsoren werden in der README-Datei und auf der Material-UI-Startseite anerkannt.
 
 ## Why does component X require a DOM node in a prop instead of a ref object?
 
