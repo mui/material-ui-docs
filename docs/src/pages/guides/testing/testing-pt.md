@@ -1,18 +1,18 @@
-# Testing
+# Testando
 
-<p class="description">Write tests to prevent regressions and write better code.</p>
+<p class="description">Escrever os testes para impedir retrocessos e escrever um código melhor.</p>
 
-Examples in this guide use [global methods from Mocha](https://mochajs.org/api/global.html), not [Jest](https://jestjs.io/docs/en/api).
+Exemplos neste guia de uso [métodos globais de Mocha](https://mochajs.org/api/global.html), não [Jest](https://jestjs.io/docs/en/api).
 
-## Internal
+## Interno
 
-We take tests seriously. We have written and maintain **a wide range** of tests so we can iterate with confidence on the components, for instance, the visual regression tests provided by [Argos-CI](https://www.argos-ci.com/mui-org/material-ui) have proven to be really helpful. To learn more about our internal tests, you can have a look at the [README](https://github.com/mui-org/material-ui/blob/next/test/README.md).
+Nós levamos os testes a sério. Nós escrevemos e mantemos ** uma vasta gama ** de testes para que possamos iterar os componentes com confiança, por exemplo, os testes de regressão visual fornecidos por [ Argos-CI ](https://www.argos-ci.com/mui-org/material-ui) provaram ser realmente úteis. Para saber mais sobre nossos testes internos, você pode dar uma olhada no [ LEIA-ME ](https://github.com/mui-org/material-ui/blob/next/test/README.md).
 
-While we have reached the 100% test coverage achievement, we don't encourage our users to do the same. [![Coverage Status](https://img.shields.io/codecov/c/github/mui-org/material-ui/next.svg)](https://codecov.io/gh/mui-org/material-ui/branch/next)
+Embora tenhamos atingido a conquista de 100% de cobertura de teste, não incentivamos nossos usuários a fazer o mesmo. [![Coverage Status](https://img.shields.io/codecov/c/github/mui-org/material-ui/next.svg)](https://codecov.io/gh/mui-org/material-ui/branch/next)
 
 ## Userspace
 
-What about writing tests in userspace? The Material-UI styling infrastructure uses some helper functions built on top of [enzyme](https://github.com/airbnb/enzyme) to make the process easier, which we are exposing. You can take advantage of them if you so choose.
+Que tal escrever testes no userspace? The Material-UI styling infrastructure uses some helper functions built on top of [enzyme](https://github.com/airbnb/enzyme) to make the process easier, which we are exposing. Você pode aproveitá-los, se assim preferir.
 
 ### Shallow rendering
 
