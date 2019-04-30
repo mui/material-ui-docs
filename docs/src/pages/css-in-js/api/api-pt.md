@@ -13,7 +13,7 @@ A function which returns [a class name generator function](http://cssinjs.org/js
     - `options.productionPrefix` (*String* [optional]): Defaults to `'jss'`. The string used to prefix the class names in production.
     - `options.seed` (*String* [optional]): Defaults to `''`. The string used to uniquely identify the generator. It can be used to avoid class name collisions when using multiple generators in the same document.
 
-#### Returns
+#### Retornos
 
 `class name generator`: The generator should be provided to JSS.
 
@@ -42,7 +42,7 @@ This function doesn't really "do anything" at runtime, it's just the identity fu
 
 1. `styles` (*Function | Object*): Uma função que gera os estilos ou um objeto de estilos.
 
-#### Returns
+#### Retornos
 
 `styles`: A function generating the styles or a styles object.
 
@@ -79,7 +79,7 @@ Link a style sheet with a function component using the **hook** pattern.
     - `options.flip` (*Boolean* [optional]): When set to `false`, this sheet will opt-out the `rtl` transformation. Quando definido para `true`, os estilos são invertidos. Quando definido para `null`, segue `theme.direction`.
     - The other keys are forwarded to the options argument of [jss.createStyleSheet([styles], [options])](http://cssinjs.org/jss-api/#create-style-sheet).
 
-#### Returns
+#### Retornos
 
 `hook`: A hook. This hook can be used in a function component. It accepts one argument: the properties that will be used for "interpolation" in the style sheet.
 
@@ -161,7 +161,7 @@ Link a style sheet with a function component using the **styled components** pat
     - `options.flip` (*Boolean* [optional]): When set to `false`, this sheet will opt-out the `rtl` transformation. Quando definido para `true`, os estilos são invertidos. Quando definido para `null`, segue `theme.direction`.
     - The other keys are forwarded to the options argument of [jss.createStyleSheet([styles], [options])](http://cssinjs.org/jss-api/#create-style-sheet).
 
-#### Returns
+#### Retornos
 
 `Component`: The new component created.
 
@@ -332,7 +332,7 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
   </p>
   
   <h4>
-    Returns
+    Retornos
   </h4>
   
   <p>
@@ -411,7 +411,7 @@ export default function MyComponent() {
   </ol>
   
   <h4>
-    Returns
+    Retornos
   </h4>
   
   <p>
@@ -482,7 +482,7 @@ export default MyComponent
   </ol>
   
   <h4>
-    Returns
+    Retornos
   </h4>
   
   <p>
