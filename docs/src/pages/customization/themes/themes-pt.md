@@ -447,7 +447,7 @@ Generate a theme base on the options received.
 
 1. `options` (*Object*): Takes an incomplete theme object and adds the missing parts.
 
-#### Returns
+#### Retornos
 
 `theme` (*Object*): A complete, ready to use theme object.
 
