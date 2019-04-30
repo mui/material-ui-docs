@@ -89,7 +89,7 @@ In the following demo, we change the rendered DOM element (*em*, <u>u</u>, ~~del
 
 1. `key` (*String* | *Number*): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in pixels.
 
-#### Returns
+#### Retornos
 
 `media query`: A media query string ready to be used with JSS.
 
@@ -114,7 +114,7 @@ const styles = theme => ({
 
 1. `key` (*String* | *Number*): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in pixels.
 
-#### Returns
+#### Retornos
 
 `media query`: A media query string ready to be used with JSS, which matches screen widths less than and including the screen size given by the breakpoint key.
 
@@ -140,7 +140,7 @@ const styles = theme => ({
 
 1. `key` (*String*): A breakpoint key (`xs`, `sm`, etc.).
 
-#### Returns
+#### Retornos
 
 `media query`: A media query string ready to be used with JSS, which matches screen widths greater than and including the screen size given by the breakpoint key.
 
@@ -167,7 +167,7 @@ const styles = theme => ({
 1. `start` (*String*): A breakpoint key (`xs`, `sm`, etc.).
 2. `end` (*String*): A breakpoint key (`xs`, `sm`, etc.).
 
-#### Returns
+#### Retornos
 
 `media query`: A media query string ready to be used with JSS, which matches screen widths greater than the screen size given by the breakpoint key in the first argument and less than the the screen size given by the breakpoint key in the second argument.
 
@@ -220,7 +220,7 @@ const theme = createMuiTheme({
 
 - `options.resizeInterval` (*Number* [optional]): Defaults to 166, corresponds to 10 frames at 60 Hz. Number of milliseconds to wait before responding to a screen resize event.
 
-#### Returns
+#### Retornos
 
 `higher-order component`: Should be used to wrap a component.
 
