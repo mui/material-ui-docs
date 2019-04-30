@@ -18,19 +18,19 @@ Que tal escrever testes no userspace? The Material-UI styling infrastructure use
 
 Shallow rendering is useful to constrain your testing to a component as a unit. This also ensures that your tests aren't indirectly asserting behavior of child components. Shallow rendering was created to test components in isolation. This means without leaking child implementation details such as the context.
 
-The `createShallow()` function can be used for this situation. Aside from wrapping the enzyme API, it provides a `dive` and `untilSelector` option.
+A função `createShallow()` pode ser utilizada para esta situação. Aside from wrapping the enzyme API, it provides a `dive` and `untilSelector` option.
 
 ### Full DOM rendering
 
 Full DOM rendering is ideal for use cases where you have components that may interact with DOM APIs or may require the full lifecycle in order to fully test the component (e.g., `componentDidMount` etc.).
 
-The `createMount()` function is provided for this situation. Aside from wrapping the enzyme API, it provides a `cleanUp` function.
+A função `createMount ()` é fornecida para esta situação. Além de envolver enzyme API, ela fornece uma função chamada `cleanUp`.
 
 ### Render to string
 
 Rendering to a string is useful to test the behavior of the components that are used on the server. You can take advantage of this to assert the generated HTML string.
 
-The `createRender()` function is ideal for this. This is just an alias for the enzyme API, which is only exposed for consistency.
+A função `createRender()` é ideal para isso. Isso é apenas um alias para enzyme API, que é apenas exposta para consistência.
 
 ## API
 
@@ -46,9 +46,9 @@ Generate an enhanced shallow function with the needed context. Please refer to t
     - `options.dive` (*Boolean* [optional]): Shallow render the one non-DOM child of the current wrapper, and return a wrapper around the result.
     - The other keys are forwarded to the options argument of `enzyme.shallow()`.
 
-#### Returns
+#### Retornos
 
-`shallow` (*shallow*): A shallow function.
+`shallow` (*shallow*): A função shallow.
 
 #### Exemplos
 
@@ -70,7 +70,7 @@ describe('<MyComponent />', () => {
 
 ### `createMount([options]) => mount`
 
-Generate an enhanced mount function with the needed context. Please refer to the [enzyme API documentation](https://airbnb.io/enzyme/docs/api/mount.html) for further details on the `mount` function.
+Generate an enhanced mount function with the needed context. Por favor, consulte [enzyme API documentation](https://airbnb.io/enzyme/docs/api/mount.html) para mais detalhes sobre o `suporte ` função.
 
 #### Argumentos
 
@@ -78,9 +78,9 @@ Generate an enhanced mount function with the needed context. Please refer to the
     - `options.mount` (*Function* [optional]): The mount function to enhance, it uses **enzyme by default**.
     - The other keys are forwarded to the options argument of `enzyme.mount()`.
 
-#### Returns
+#### Retornos
 
-`mount` (*mount*): A mount function.
+`mount` (*mount*): A função mount.
 
 #### Exemplos
 
@@ -114,7 +114,7 @@ Generate a render to string function with the needed context. Please refer to th
     - `options.render` (*Function* [optional]): The render function to enhance, it uses **enzyme by default**.
     - The other keys are forwarded to the options argument of `enzyme.render()`.
 
-#### Returns
+#### Retornos
 
 `render` (*Function*): A render to string function.
 
