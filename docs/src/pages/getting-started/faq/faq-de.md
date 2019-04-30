@@ -93,7 +93,7 @@ const theme = createMuiTheme({
 
 ## Muss ich JSS verwenden, um meine App zu stylen?
 
-It's recommended:
+Es wird empfohlen:
 
 - Es wird eingebaut geliefert, so dass keine zusätzlichen Paketgrößen anfallen.
 - Es ist schnell & speichereffizient.
@@ -102,7 +102,7 @@ It's recommended:
 
 Vielleicht fügen Sie jedoch einer App einige Material-UI-Komponenten hinzu, die bereits eine andere Styling-Lösung verwendet, oder Sie sind bereits mit einer anderen API vertraut und wollen keine neue lernen? In diesem Fall gehen Sie zum [Zusammenführen von Style Libraries](/guides/interoperability/) Abschnitt in dem wir zeigen, wie einfach es ist, Material-UI-Komponenten mit alternativen Stilbibliotheken umzustrukturieren.
 
-## When should I use inline-style vs CSS?
+## Wann verwende ich inline-style vs CSS?
 
 Verwenden Sie als Faustregel Inline-Style nur für dynamische Stileigenschaften. Die CSS-Alternative bietet weitere Vorteile, z.B.:
 
@@ -113,7 +113,7 @@ Verwenden Sie als Faustregel Inline-Style nur für dynamische Stileigenschaften.
 
 ## Wie verwende ich den react-router?
 
-Wir haben dokumentiert, wie Sie eine [Routing-Bibliothek von Drittanbietern](/demos/buttons/#third-party-routing-library) mit der `ButtonBase` Komponente verwenden. A lot of our interactive components use it internally: `Link`, `Button`, `MenuItem`, `<ListItem button />`, `Tab`, etc. Sie können dieselbe Lösung mit ihnen verwenden.
+Wir haben dokumentiert, wie Sie eine [Routing-Bibliothek von Drittanbietern](/demos/buttons/#third-party-routing-library) mit der `ButtonBase` Komponente verwenden. Viele interaktive Komponenten verwenden dies intern: `Link`, `Button`, `MenuItem`, `<ListItem button />`, `Tab`, usw. Sie können dieselbe Lösung mit ihnen verwenden.
 
 ## Wie kann ich auf das DOM-Element zugreifen?
 
