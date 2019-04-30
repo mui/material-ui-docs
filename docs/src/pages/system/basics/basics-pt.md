@@ -240,7 +240,7 @@ We don't support all the CSS properties. It's possible that you want to support 
   - `options.themeKey` (*String* [optional]): The theme path prefix.
   - `options.transform` (*Function* [optional]): Apply a transformation before outputing a CSS value.
 
-#### Returns
+#### Retornos
 
 `style function`: The style function created.
 
@@ -261,7 +261,7 @@ const borderColor = style({
 
 Merge multiple style functions into one.
 
-#### Returns
+#### Retornos
 
 `style function`: The style function created.
 
