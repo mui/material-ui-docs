@@ -11,7 +11,7 @@ components: Divider
 
 ## 列表分隔线
 
-分隔线默认渲染为 `<hr>`。您可以使用`ListItem`组件的`divider`属性来渲染 DOM 元素。
+分隔线默认渲染为 `<hr>`。您可以使用 `ListItem` 组件的 `divider` 属性来渲染 DOM 元素。
 
 {{"demo": "pages/demos/dividers/ListDividers.js"}}
 
