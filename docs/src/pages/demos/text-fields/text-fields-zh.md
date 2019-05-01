@@ -75,7 +75,7 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 ## 布局
 
-`TextField`, `FormControl` 通过制定不同的 `margin` 来改变输入的垂直间距。 使用`none` （默认选项）将不会在`FormControl`添加间距， 相对的 `dense`和`normal`也会改变其他样式以符合规范.
+`TextField`, `FormControl` 通过制定不同的 `margin` 来改变输入的垂直间距。 使用 `none` （默认选项）将不会在 `FormControl` 添加间距， 相对的 `dense` 和 `normal` 也会改变其他样式以符合规范.
 
 {{"demo": "pages/demos/text-fields/TextFieldMargins.js"}}
 
@@ -99,7 +99,7 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 ## 格式化输入
 
-您可以使用第三方库来格式化输入。 您必须提供一个带有`inputComponent`属性的`<input>`元素的自定义实现。 提供的输入组件应该处理 `inputRef` 属性。 而调用该属性时，必须使用[`HTMLInputElement`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement) 接口提供的值。
+您可以使用第三方库来格式化输入。 您必须提供一个带有 `inputComponent` 属性的 `<input>` 元素的自定义实现。 提供的输入组件应该处理 `inputRef` 属性。 而调用该属性时，必须使用[`HTMLInputElement`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement) 接口提供的值。
 
 下面的演示使用了[react-text-mask](https://github.com/text-mask/text-mask)和 [react-number-format](https://github.com/s-yadav/react-number-format) 库。
 
