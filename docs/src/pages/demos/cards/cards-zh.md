@@ -33,7 +33,7 @@ components: Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedi
 
 {{"demo": "pages/demos/cards/ImgMediaCard.js"}}
 
-> 当`component="img"时`，CardMedia依靠`object-fit`进行图像居中。而IE11不支持此功能。
+> 当 `component="img"` 时，CardMedia依靠 `object-fit` 进行图像居中。而 IE11 不支持此功能。
 
 ## UI 控件
 
