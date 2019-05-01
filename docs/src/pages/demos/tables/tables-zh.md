@@ -7,7 +7,7 @@ components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination
 
 <p class="description">Data tables（数据表格）用于展示一系列的数据集。表格可以完全自定义开发。</p>
 
-[数据表格](https://material.io/design/components/data-tables.html)以一种一目了然地方式显示信息，这便于用户寻找一些规律和深入的见解。 表格可以被内嵌在主要内容中，如cards（卡片）。
+[数据表格](https://material.io/design/components/data-tables.html)以一种一目了然地方式显示信息，这便于用户寻找一些规律和深入的见解。 表格可以被内嵌在主要内容中，如 cards（卡片）。
 
 数据表格可以包括:
 
