@@ -7,7 +7,7 @@ components: Menu, MenuItem, MenuList, ClickAwayListener, Popover, Popper
 
 <p class="description">菜单在临时出现的位置上展示一系列的选项列表。</p>
 
-A [Menu](https://material.io/design/components/menus.html) displays a list of choices on a temporary surface. It appears when the user interacts with a button, or other control.
+一个[菜单](https://material.io/design/components/menus.html)在临时的界面上列出了一系列的选项。当用户和按钮，或其他控件交互的时候，菜单会再次出现。
 
 ## 简单菜单
 
