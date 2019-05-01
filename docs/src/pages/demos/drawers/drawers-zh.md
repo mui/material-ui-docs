@@ -15,7 +15,7 @@ components: Drawer, SwipeableDrawer
 
 临时抽屉可以在打开和关闭之间切换。默认的情况是关闭，直到选择一个节之前，抽屉会暂时在所有其他内容之上保持打开的状态。
 
-单击 overlay 或者按Esc键可以关闭抽屉。通过操作 `open` 属性，选择抽屉中的一项也会关闭抽屉。
+单击 overlay 或者按 Esc 键可以关闭抽屉。通过操作 `open` 属性，选择抽屉中的一项也会关闭抽屉。
 
 {{"demo": "pages/demos/drawers/TemporaryDrawer.js"}}
 
@@ -23,7 +23,7 @@ components: Drawer, SwipeableDrawer
 
 您可以使用 `SwipeableDrawer` 组件来实现滑动抽屉。
 
-此组件附带 2 kB gzip 的负载开销。 一些低端移动设备无法以60 FPS 的速度跟随手指的移动。 您可以使用`disableBackdropTransition`属性来解决这个问题。
+此组件附带 2 kB gzip 的负载开销。 一些低端移动设备无法以60 FPS 的速度跟随手指的移动。 您可以使用 `disableBackdropTransition` 属性来解决这个问题。
 
 {{"demo": "pages/demos/drawers/SwipeableTemporaryDrawer.js"}}
 
@@ -37,7 +37,7 @@ const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
 ## 响应式抽屉
 
-利用` Hidden `组件，可以根据屏幕宽度显示不同类型的抽屉。 显示小屏幕的`temporary`抽屉，而更宽屏幕显示`permanent`抽屉。
+利用` Hidden `组件，可以根据屏幕宽度显示不同类型的抽屉。 显示小屏幕的 `temporary` 抽屉，而更宽屏幕显示 `permanent` 抽屉。
 
 {{"demo": "pages/demos/drawers/ResponsiveDrawer.js", "iframe": true}}
 
