@@ -13,7 +13,7 @@ components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, Expans
 
 ## 可及性
 
-如果想要得到最佳辅助，我们建议您在`ExpansionPanelSummary`中配置 `id` 和 `aria-controls` 。 `ExpansionPanel` 将为面板的内容区域导出必要的 `aria-labelledby`和`id`。
+如果想要得到最佳辅助，我们建议您在 `ExpansionPanelSummary` 中配置 `id` 和 `aria-controls` 。 `ExpansionPanel` 将为面板的内容区域导出必要的 `aria-labelledby` 和 `id`。
 
 ## 简单的扩展面板
 
@@ -21,7 +21,7 @@ components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, Expans
 
 ## 可控制的折叠面板
 
-默认情况下，面板会使用`ExpansionPanel`组件创建一个折叠面板。
+默认情况下，面板会使用 `ExpansionPanel` 组件创建一个折叠面板。
 
 {{"demo": "pages/demos/expansion-panels/ControlledExpansionPanels.js"}}
 
@@ -33,7 +33,7 @@ components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, Expans
 
 ## 性能
 
-默认情况下，即使在面板没被展开的情况下，扩展面板的内容也会被注入到页面中。 这样的默认情况是是考虑到了 server-side rendering（服务端渲染）和 SEO（搜索引擎优化）。 但如果你您要在扩展面板中渲染开销很大的树组件，或者只是单纯想要渲染很多扩展面板，我们建议变更一些默认的行为。你可以通过在开启`TransitionProps`中的`unmountOnExit`属性：`<ExpansionPanel TransitionProps={{ unmountOnExit: true }} />`。 不过对所有情况下的性能优化，这并不是灵丹妙药。 请您务必先确定性能的瓶颈所在，再考虑这些优化策略。
+默认情况下，即使在面板没被展开的情况下，扩展面板的内容也会被注入到页面中。 这样的默认情况是是考虑到了 server-side rendering（服务端渲染）和 SEO（搜索引擎优化）。 但如果你您要在扩展面板中渲染开销很大的树组件，或者只是单纯想要渲染很多扩展面板，我们建议变更一些默认的行为。你可以通过在开启 `TransitionProps` 中的 `unmountOnExit` 属性：`<ExpansionPanel TransitionProps={{ unmountOnExit: true }} />`。 不过对所有情况下的性能优化，这并不是灵丹妙药。 请您务必先确定性能的瓶颈所在，再考虑这些优化策略。
 
 ## 自定义扩展面板
 
