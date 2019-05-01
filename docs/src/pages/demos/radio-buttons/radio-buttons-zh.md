@@ -11,7 +11,7 @@ components: Radio, RadioGroup, FormControl, FormLabel, FormControlLabel
 
 默认情况下，单选按钮应该选择了最常用的选项。
 
-`RadioGroup` 适用于一组 `Radio`，它提供相对简单的 API 并且能够使用键盘对该 RadioGroup进行控制。
+`RadioGroup`适用于一组` Radio `，它提供相对简单的 API 并且能够使用键盘对该RadioGroup 进行控制。
 
 {{"demo": "pages/demos/radio-buttons/RadioButtonsGroup.js"}}
 
