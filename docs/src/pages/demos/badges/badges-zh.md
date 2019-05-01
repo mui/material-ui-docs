@@ -27,7 +27,7 @@ components: Badge
 
 ## 徽章的可见性
 
-徽章的可见性是可以通过`invisible`属性来控制。
+徽章的可见性是可以通过 `invisible` 属性来控制。
 
 带有 badgeContent 属性的徽章会在计数为0的时候自动隐藏。您可以使用 `showZero` 属性强制显示。
 
