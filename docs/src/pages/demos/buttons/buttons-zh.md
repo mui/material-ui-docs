@@ -92,13 +92,13 @@ components: Button, Fab, IconButton, ButtonBase, Zoom
 
 ## Complex Buttons（复杂按钮）
 
-Text Buttons（文本按钮），Contained Buttons（实心按钮），Floating Action Buttons（浮动操作按钮）和 Icon Buttons（图标按钮）是根据同一个组件`ButtonBase`构建的。 您可以利用此较底层的组件来构建自定义的交互。
+Text Buttons（文本按钮），Contained Buttons（实心按钮），Floating Action Buttons（浮动操作按钮）和 Icon Buttons（图标按钮）是根据同一个组件 `ButtonBase` 构建的。 您可以利用此较底层的组件来构建自定义的交互。
 
 {{"demo": "pages/demos/buttons/ButtonBases.js"}}
 
 ## Third-party routing library（第三方路由库）
 
-一个常见的用例是使用按钮来触发导航到新页面。 `ButtonBase` 组件提供了一个处理此用例的属性：`component`。 然而，一些特定`ButtonBase`的代码需要所给组件的 DOM 节点。 在组件上附加一个 ref，并且预期此组件能够将这个 ref 传递到下层 DOM 节点，通过这样的方法可以实现。 鉴于我们的许多交互式组件都依赖于 `ButtonBase`，你几乎可以在任何地方使用它：
+一个常见的用例是使用按钮来触发导航到新页面。 `ButtonBase` 组件提供了一个处理此用例的属性：`component`。 然而，一些特定 `ButtonBase` 的代码需要所给组件的 DOM 节点。 在组件上附加一个 ref，并且预期此组件能够将这个 ref 传递到下层 DOM 节点，通过这样的方法可以实现。 鉴于我们的许多交互式组件都依赖于 `ButtonBase`，你几乎可以在任何地方使用它：
 
 {{"demo": "pages/demos/buttons/ButtonRouter.js", "defaultCodeOpen": true}}
 
