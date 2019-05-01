@@ -25,33 +25,33 @@ components: Menu, MenuItem, MenuList, ClickAwayListener, Popover, Popper
 
 {{"demo": "pages/demos/menus/SimpleListMenu.js"}}
 
-## MenuList 组件
+## MenuList 组合
 
-`Menu`组件内部使用`Popver`组件 但是，您可能想药使用不同的定位策略，或者你不想禁止滚动。 为了满足这些需求，我们公开了一个`MenuList`组件，让你可以像下面例子中这样组合`Popper`来编写自己的菜单组件。
+`菜单`组件在其内部使用`Popover`组件。 但是，您可能想要使用不同的元素定位的方式，或者您不想禁止页面的滚动。 为了满足这些需求，我们公开了一个`MenuList`组件，您可以像下面例子中这样组合`Popper`来编写自己的菜单组件。
 
-`MenuList`组件的主要职责是处理焦点。
+`MenuList`组件的主要任务是处理焦点。
 
 {{"demo": "pages/demos/menus/MenuListComposition.js"}}
 
-## 定制菜单项
+## 自定义菜单选项
 
-如果您一直在阅读 [覆盖文档页面](/customization/overrides/) 但是您没有信心跳入， 这里是一个如何自定义 `MenuItem`示例。
+如果你一直在阅读[重写文档页面](/customization/overrides/)，但是你不确定如何开始，以下的例子演示了如何自定义 `MenuItem`。
 
-⚠️虽然材料设计规范鼓励主题，但这个例子是不合适的。
+⚠️虽然 Material design 规范鼓励样式化，但这些例子是不合适的。
 
 {{"demo": "pages/demos/menus/ListItemComposition.js"}}
 
-`MenuItem`实际上是在`ListItem`之上增加了一些样式的封装。 所以你可以靠`MenuItem`来使用相同的列表组合特性：
+`MenuItem`实际上是在`ListItem`之上增加了一些样式的封装。 所以你可以使用和`MenuItem`组件相同的列表组合特性：
 
 ## 限高菜单
 
-如果菜单的最大高度仍无法显示所有菜单项，则菜单可以在内部滚动。
+如果菜单的最大高度仍无法显示所有菜单项，则菜单可以在内部无限滚动。
 
 {{"demo": "pages/demos/menus/LongMenu.js"}}
 
 ## 局限性
 
-有 [一个 flexbox 的 bug](https://bugs.chromium.org/p/chromium/issues/detail?id=327437)，使 `text-overflow: ellipsis` 在 Flexbox 布局中不工作。 您可以使用 `Typography` 组件和 `noWrap` 来解决此问题：
+有[一个flexbox 的 错误](https://bugs.chromium.org/p/chromium/issues/detail?id=327437)，它导致了`text-overflow: ellipsis` 在 flexbox 的布局中无法正常使用。 您可以使用 `Typography` 组件和 `noWrap` 来解决此问题：
 
 {{"demo": "pages/demos/menus/TypographyMenu.js"}}
 
@@ -63,7 +63,7 @@ components: Menu, MenuItem, MenuList, ClickAwayListener, Popover, Popper
 
 ## 补充项目
 
-对于更高级的用例，您可以利用：
+对于更高级的用例，您可以使用这些：
 
 ### PopupState helper
 
