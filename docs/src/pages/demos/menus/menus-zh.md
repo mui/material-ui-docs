@@ -21,13 +21,13 @@ components: Menu, MenuItem, MenuList, ClickAwayListener, Popover, Popper
 
 ## 选择菜单
 
-若用于选项的选择，当打开简单菜单的时候，它会通过一个锚元素来尝试与当前被选择的菜单的选择项垂直对齐，而初始的焦点将放置于此被选项。 通过`selected`属性（在[ListItem](/api/list-item/)中），我们设置当前的被选项。 若想要使用一个被选菜单项且不影响初始的焦点或者菜单的垂直位置，您可以设置一下`菜单`的`variant`属性。
+若用于选项的选择，当打开简单菜单的时候，它会通过一个锚元素来尝试与当前被选择的菜单的选择项垂直对齐，而初始的焦点将放置于此被选项。 通过 `selected` 属性（在[ListItem](/api/list-item/)中），我们设置当前的被选项。 若想要使用一个被选菜单项且不影响初始的焦点或者菜单的垂直位置，您可以设置一下`菜单`的 `variant` 属性。
 
 {{"demo": "pages/demos/menus/SimpleListMenu.js"}}
 
 ## MenuList 组合
 
-`菜单`组件在其内部使用`Popover`组件。 但是，您可能想要使用不同的元素定位的方式，或者您不想禁止页面的滚动。 为了满足这些需求，我们公开了一个`MenuList`组件，您可以像下面例子中这样组合`Popper`来编写自己的菜单组件。
+`菜单`组件在其内部使用 `Popover` 组件。 但是，您可能想要使用不同的元素定位的方式，或者您不想禁止页面的滚动。 为了满足这些需求，我们公开了一个 `MenuList` 组件，您可以像下面例子中这样结合 `Popper` 来编写自己的菜单组件。
 
 `MenuList`组件的主要任务是处理焦点。
 
@@ -41,7 +41,7 @@ components: Menu, MenuItem, MenuList, ClickAwayListener, Popover, Popper
 
 {{"demo": "pages/demos/menus/ListItemComposition.js"}}
 
-`MenuItem`实际上是在`ListItem`之上增加了一些样式的封装。 所以你可以使用和`MenuItem`组件相同的列表组合特性：
+`MenuItem` 实际上是在 `ListItem` 之上增加了一些样式的封装。 所以你可以使用和 `MenuItem` 组件相同的列表组合特性：
 
 ## 限高菜单
 
