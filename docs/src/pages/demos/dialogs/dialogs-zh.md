@@ -52,7 +52,7 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 
 ## 自定义对话框
 
-如果你一直在阅读 [重写文档页面](/customization/overrides/)，但是你不确定如何开始，以下的例子演示了如何通过自定义`DialogTitle`来支持关闭按钮。
+如果你一直在阅读 [重写文档页面](/customization/overrides/)，但是你不确定如何开始，以下的例子演示了如何通过自定义 `DialogTitle` 来支持关闭按钮。
 
 ⚠️虽然 Material design 规范鼓励样式化，但这些例子是不合适的。
 
@@ -70,7 +70,7 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 
 ## 响应式全屏
 
-您可以使用 `withMobileDialog`全屏显示对话框。 默认情况下, `withMobileDialog() (Dialog)` 在 [屏幕大小](/layout/basics/)*小于等于* `sm`时响应式全屏。 通过传递 `breakpoint`参数，您可以自主选择全屏切换点，比如使用`xs`：`withMobileDialog({breakpoint: 'xs'})(Dialog)`。
+您可以使用 `withMobileDialog`全屏显示对话框。 默认情况下，`withMobileDialog() (Dialog)` 在 [屏幕大小](/layout/basics/)*小于等于* `sm` 时会切换到响应式全屏。 通过传递 `breakpoint`参数，您可以自主选择全屏切换点，比如使用`xs`：`withMobileDialog({breakpoint: 'xs'})(Dialog)`。
 
 {{"demo": "pages/demos/dialogs/ResponsiveDialog.js"}}
 
@@ -91,7 +91,7 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 由于用户设备的不同或视图的大小，对话框会变得很长，此时对话框是可以滚动的。
 
 - `scroll=paper` 可以使对话框的内容在 paper 元素中滚动。
-- `scroll=body`可以使对话框的内容在 body 元素内滚动。
+- `scroll=body` 可以使对话框的内容在 body 元素内滚动。
 
 请尝试下面的例子来加深理解：
 
@@ -99,7 +99,7 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 
 ## 可拖动的对话框
 
-您可以使用 [react-draggable](https://github.com/mzabriskie/react-draggable)创建可拖动的对话框。 为此，您可以将导入的 `Draggable` 组件作为 `Dialog` 组件的 `PaperComponent` 传递。 这将使整个对话框变成可拖动的。
+您可以使用 [react-draggable](https://github.com/mzabriskie/react-draggable) 创建可拖动的对话框。 为此，您可以将导入的 `Draggable` 组件作为 `Dialog` 组件的 `PaperComponent` 传递。 这将使整个对话框变成可拖动的。
 
 {{"demo": "pages/demos/dialogs/DraggableDialog.js"}}
 
