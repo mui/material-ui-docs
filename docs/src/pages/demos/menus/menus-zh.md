@@ -67,6 +67,6 @@ components: Menu, MenuItem, MenuList, ClickAwayListener, Popover, Popper
 
 ### PopupState helper
 
-这里有一个第三方包 [`material-ui-popup-state`](https://github.com/jcoreio/material-ui-popup-state) 在大部分情况下，它都能帮你处理好菜单状态
+这是一个[`material-ui-popup-state`](https://github.com/jcoreio/material-ui-popup-state) 的第三方包，它在大部分情况下都能帮你处理好菜单的状态。
 
 {{"demo": "pages/demos/menus/MenuPopupState.js"}}
