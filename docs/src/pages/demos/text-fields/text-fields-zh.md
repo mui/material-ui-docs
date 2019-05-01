@@ -19,13 +19,13 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 ## Outlined（轮廓）
 
-` TextField`支持轮廓的样式。
+`TextField` 支持轮廓的样式。
 
 {{"demo": "pages/demos/text-fields/OutlinedTextFields.js"}}
 
 ## Filled（填充）
 
-`TextField`支持轮廓的样式。
+`TextField` 支持轮廓的样式。
 
 {{"demo": "pages/demos/text-fields/FilledTextFields.js"}}
 
@@ -33,7 +33,7 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 `TextField` 是由以下较小的组件组成的 ( [`FormControl`](/api/form-control/), [`Input`](/api/input/), [`FilledInput`](/api/filled-input/), [`InputLabel`](/api/input-label/), [`OutlinedInput`](/api/outlined-input/), and [`FormHelperText`](/api/form-helper-text/) )， 你可以直接利用这一点来自定义你的表单输入.
 
-您可能注意到了， 和原生的 HTML input 组件相比，`TextField`组件缺缺失了一些属性。 这是故意而为之的。 该组件只负责处理最常用的一些属性，如果有其他需求，用户可以自行使用下面 Demo 中演示的基础组件。 但是同时, 为了避免过于模版化，您仍然可以使用 `inputProps` (和 `inputProps`, `InputLabelProps` 属性) 来控制原生组件的属性。
+您可能注意到了， 和原生的 HTML input 组件相比，`TextField` 组件缺缺失了一些属性。 这是故意而为之的。 该组件只负责处理最常用的一些属性，如果有其他需求，用户可以自行使用下面 Demo 中演示的基础组件。 但是同时, 为了避免过于模版化，您仍然可以使用 `inputProps` (和 `inputProps`, `InputLabelProps` 属性) 来控制原生组件的属性。
 
 {{"demo": "pages/demos/text-fields/ComposedTextField.js"}}
 
@@ -55,7 +55,7 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 ## 修饰输入
 
-`Input` 允许提供`InputAdornment`. 这些可用于向输入添加前缀、后缀或动作。 例如，您可以使用 icon button（图标按钮）来隐藏或显示密码。
+`Input` 允许提供 `InputAdornment`. 这些可用于向输入添加前缀、后缀或动作。 例如，您可以使用 icon button（图标按钮）来隐藏或显示密码。
 
 {{"demo": "pages/demos/text-fields/InputAdornments.js"}}
 
@@ -75,7 +75,7 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 ## 布局
 
-`TextField`, `FormControl` 通过制定不同的`margin`来改变输入的垂直间距。 使用`none` （默认选项）将不会在`FormControl`添加间距， 相对的 `dense`和`normal`也会改变其他样式以符合规范.
+`TextField`, `FormControl` 通过制定不同的 `margin` 来改变输入的垂直间距。 使用`none` （默认选项）将不会在`FormControl`添加间距， 相对的 `dense`和`normal`也会改变其他样式以符合规范.
 
 {{"demo": "pages/demos/text-fields/TextFieldMargins.js"}}
 
