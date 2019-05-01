@@ -11,7 +11,7 @@ components: Radio, RadioGroup, FormControl, FormLabel, FormControlLabel
 
 默认情况下，单选按钮应该选择了最常用的选项。
 
-`RadioGroup`适用于一组` Radio `，它提供相对简单的 API 并且能够使用键盘对该RadioGroup进行控制。
+`RadioGroup` 适用于一组 `Radio`，它提供相对简单的 API 并且能够使用键盘对该 RadioGroup进行控制。
 
 {{"demo": "pages/demos/radio-buttons/RadioButtonsGroup.js"}}
 
@@ -29,9 +29,9 @@ components: Radio, RadioGroup, FormControl, FormLabel, FormControlLabel
 
 ## 可及性
 
-所有表单控件都应该带有标签，而这包括了单选按钮，复选框和开关。 在大多数情况下，这是通过使用一个`<label>`元素（[FormControlLabel](/api/form-control-label/)）实现的。
+所有表单控件都应该带有标签，而这包括了单选按钮，复选框和开关。 在大多数情况下，这是通过使用一个 `<label>` 元素（[FormControlLabel](/api/form-control-label/)）实现的。
 
-如果无法使用标签，则必须直接在输入组件中添加属性。 在这种情况下，您可以经由 `inputProps`属性，来附着一些额外的属性（例如 `arial-label`，`aria-labelledby`，`title`）。
+如果无法使用标签，则必须直接在输入组件中添加属性。 在这种情况下，您可以经由 `inputProps` 属性，来附着一些额外的属性（例如 `arial-label`，`aria-labelledby`，`title`）。
 
 ```jsx
 <RadioButton
