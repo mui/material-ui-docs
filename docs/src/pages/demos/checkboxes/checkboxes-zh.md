@@ -13,13 +13,13 @@ components: Checkbox, FormControl, FormGroup, FormLabel, FormControlLabel
 
 {{"demo": "pages/demos/checkboxes/Checkboxes.js"}}
 
-通过`FormControlLabel` 组件，`复选框` 也可与标签描述一起使用。
+通过 `FormControlLabel` 组件，`复选框` 也可与标签描述一起使用。
 
 {{"demo": "pages/demos/checkboxes/CheckboxLabels.js"}}
 
 ## 使用 FormGroup（表单组）控制多个复选框
 
-`FormGroup`提供相对简单的 API 对选择控件进行分组。
+`FormGroup` 会提供相对简单的 API 对选择控件进行分组。
 
 {{"demo": "pages/demos/checkboxes/CheckboxesGroup.js"}}
 
