@@ -21,7 +21,7 @@ components: Menu, MenuItem, MenuList, ClickAwayListener, Popover, Popper
 
 ## 选择菜单
 
-If used for item selection, when opened, simple menus attempt to vertically align the currently selected menu item with the anchor element, and the initial focus will be placed on the selected menu item. 使用` selected `属性将菜单项设置为当前选中（从[ListItem](/api/list-item/))。 To use a selected menu item without impacting the initial focus or the vertical positioning of the menu, set the `variant` property to `menu`.
+若用于选项的选择，当打开简单菜单的时候，它会通过一个锚元素来尝试与当前被选择的菜单的选择项垂直对齐，而初始的焦点将放置于此被选项。 通过`selected`属性（在[ListItem](/api/list-item/)中），我们设置当前的被选项。 若想要使用一个被选菜单项且不影响初始的焦点或者菜单的垂直位置，您可以设置一下`菜单`的`variant`属性。
 
 {{"demo": "pages/demos/menus/SimpleListMenu.js"}}
 
