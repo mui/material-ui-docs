@@ -17,6 +17,6 @@ components: BottomNavigation,BottomNavigationAction
 
 ## 无标签的底部导航栏
 
-如果有 **四个** 或 **五个** 导航项，那些未被选中的导航项会以图标的样式显示。
+如果有**四个**或**五个**导航项，那些未被选中的导航项会以图标的样式显示。
 
 {{"demo": "pages/demos/bottom-navigation/LabelBottomNavigation.js"}}
