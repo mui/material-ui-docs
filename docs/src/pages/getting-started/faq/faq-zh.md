@@ -2,7 +2,7 @@
 
 <p class="description">您在一个特定的问题上停滞不前吗？ 您可以先在我们的常见 FAQ (问题解答) 中检索一下常见问题。</p>
 
-If you still can't find what you're looking for, you can ask the community in [Spectrum](https://spectrum.chat/material-ui). 对于如何提问，和其他并非功能性问题的，请使用[StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) 提问，请不要使用 Github 的 issues板块。 在 StackOverflow 里面有一个 ` material-ui `的标签， 您可以用它来标记你的问题。
+当遇到一些无法解决的问题，您可以在[Spectrum](https://spectrum.chat/material-ui)社区中进行提问。 对于如何提问，和其他并非功能性问题的，请使用[StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) 提问，请不要使用 Github 的 issues板块。 在 StackOverflow 里面有一个 ` material-ui `的标签， 您可以用它来标记你的问题。
 
 ## 为什么我的组件在生产版本中没有正确地渲染？
 
