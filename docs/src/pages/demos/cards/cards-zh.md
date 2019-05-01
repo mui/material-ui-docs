@@ -29,7 +29,7 @@ components: Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedi
 
 {{"demo": "pages/demos/cards/MediaCard.js"}}
 
-默认情况下，我们使用混合`<div>` 元素和 *背景图片* 来显示多媒体元素。 在某些情况下可能会产生一些问题。 例如, 您可能希望显示一个视频或一张响应式的图片。 对于这些用例, 请使用 `component` 属性:
+默认情况下，我们使用混合 `<div>`元素和*背景图片*来显示多媒体元素。 在某些情况下可能会产生一些问题。 例如, 您可能希望显示一个视频或一张响应式的图片。 对于这些用例, 请使用 `component` 属性:
 
 {{"demo": "pages/demos/cards/ImgMediaCard.js"}}
 
