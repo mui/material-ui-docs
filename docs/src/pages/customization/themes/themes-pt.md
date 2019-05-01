@@ -1,20 +1,20 @@
 # Temas
 
-<p class="description">Customize Material-UI with your theme. You can change the colors, the typography and much more.</p>
+<p class="description">Personalize Material-UI com seu tema. Você pode mudar as cores, a tipografia e muito mais.</p>
 
-The theme specifies the color of the components, darkness of the surfaces, level of shadow, appropriate opacity of ink elements, etc.
+O tema especifica a cor dos componentes, o escurecimento das superfícies, o nível de sombra, a opacidade apropriada dos elementos de tinta, etc.
 
 Themes let you apply a consistent tone to your app. It allows you to **customize all design aspects** of your project in order to meet the specific needs of your business or brand.
 
-To promote greater consistency between apps, light and dark theme types are available to choose from. By default, components use the light theme type.
+Para promover uma maior consistência entre os aplicativos, os temas claro e escuro estão disponíveis para escolha. Por padrão, os componentes usam o tema claro.
 
-## Theme provider
+## Provedor de Temas
 
-If you wish to customize the theme, you need to use the `ThemeProvider` component in order to inject a theme into your application. However, this is optional; Material-UI components come with a default theme.
+Se você deseja personalizar o tema, você precisa usar o ` ThemeProvider ` componente para injetar um tema em sua aplicação. No entanto, isso é opcional; Material-UI componentes vêm com um tema padrão.
 
-`ThemeProvider` relies on the context feature of React to pass the theme down to the components, so you need to make sure that `ThemeProvider` is a parent of the components you are trying to customize. You can learn more about this in [the API section](/css-in-js/api/#themeprovider).
+`ThemeProvider` relies on the context feature of React to pass the theme down to the components, so you need to make sure that `ThemeProvider` is a parent of the components you are trying to customize. Você pode aprender mais sobre isso na [ seção da API ](/css-in-js/api/#themeprovider).
 
-## Theme configuration variables
+## Variáveis de configuração do tema
 
 Changing the theme configuration variables is the most effective way to match Material-UI to your needs. The following sections cover the most important theme variables:
 
@@ -27,11 +27,11 @@ Changing the theme configuration variables is the most effective way to match Ma
 
 ## Paleta de Cores
 
-### Intentions
+### Intenções
 
 A color intention is a mapping of a palette to a given intention within your application.
 
-The theme exposes the following color intentions:
+O tema expõe as seguintes intenções de cores:
 
 - primary - used to represent primary interface elements for a user.
 - secondary - used to represent secondary interface elements for a user.
