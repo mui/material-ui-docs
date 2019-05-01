@@ -7,13 +7,13 @@ components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
 
 <p class="description">Switches alternam o estado de uma única configuração ligado ou desligado.</p>
 
-[Switches](https://material.io/design/components/selection-controls.html#switches) são a forma preferida de adjustes de configuração em mobile. The option that the switch controls, as well as the state it’s in, should be made clear from the corresponding inline label.
+[Switches](https://material.io/design/components/selection-controls.html#switches) são a forma preferida de ajustes de configuração em mobile. A opção que o switch controla, juntamente com o estado atual, deve ser claramente explícita na label correspondente.
 
 {{"demo": "pages/demos/switches/Switches.js"}}
 
-## Switches with FormControlLabel
+## Switches com FormControlLabel
 
-`Switch` can also be used with a label description thanks to the `FormControlLabel` component.
+`Switch` também pode ser utilizado com uma descrição de label graças ao componente `FormControlLabel`.
 
 {{"demo": "pages/demos/switches/SwitchLabels.js"}}
 
