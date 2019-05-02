@@ -114,7 +114,7 @@
     "/utils/no-ssr": "没有 SSR",
     "/utils/click-away-listener": "他处点击监听器",
     "/utils/box": "Box（盒子）",
-    "/demos": "组件的演示",
+    "/demos": "组件",
     "/demos/app-bar": "App Bar（应用栏）",
     "/demos/autocomplete": "Autocomplete（自动补全）",
     "/demos/avatars": "Avatars（头像）",
