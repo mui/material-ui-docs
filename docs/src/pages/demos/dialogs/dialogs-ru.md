@@ -50,13 +50,13 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 
 {{"demo": "pages/demos/dialogs/FormDialog.js"}}
 
-## Кастомизированные диалоги
+## Customized dialogs
 
-Если вы уже читали страницу документации [о переопределении](/customization/overrides/) но не уверены, что готовы это применить, вот один из примеров того, как можно настроить `DialogTitle` для поддержки кнопки закрытия.
+Here is example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️ Хотя спецификации материал дизайна поощряют использование тем, эти примеры не соответствуют требованиям.
+The dialog has a close button added to aide usability.
 
-{{"demo": "pages/demos/dialogs/CustomizedDialog.js"}}
+{{"demo": "pages/demos/dialogs/CustomizedDialogs.js"}}
 
 ## Полноэкранные диалоги
 
