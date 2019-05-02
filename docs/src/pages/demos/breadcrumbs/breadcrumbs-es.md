@@ -27,7 +27,7 @@ En los siguientes ejemplos, estamos usando dos cadenas como separadores, y un í
 
 ## Migas de pan personalizadas
 
-Si has estado leyendo la [página de documentación de anulaciones](/customization/overrides/) pero no estás con la confianza de abordarla, aquí hay un ejemplo de cómo puedes cambiar el diseño del vínculo de las migas de pan.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/breadcrumbs/CustomizedBreadcrumbs.js"}}
 
