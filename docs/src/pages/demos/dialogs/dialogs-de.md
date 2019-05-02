@@ -50,13 +50,13 @@ Formulardialoge ermöglichen Benutzern das Ausfüllen von Formularfeldern innerh
 
 {{"demo": "pages/demos/dialogs/FormDialog.js"}}
 
-## Benutzerdefinierter Dialog
+## Customized dialogs
 
-Wenn du die [Overrides Dokumentationsseite](/customization/overrides/) gelesen hast, aber dich noch nicht sicher genug fühlst, um direkt loszulegen, ist hier noch ein Beispiel, wie du den `DialogTitle` anpassen könntest.
+Here is example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️ Auch wenn die Material-Design Spezifikation zur Verwendung von Themes ermutigt, liegen diese Beispiele außerhalb der üblichen Pfade.
+The dialog has a close button added to aide usability.
 
-{{"demo": "pages/demos/dialogs/CustomizedDialog.js"}}
+{{"demo": "pages/demos/dialogs/CustomizedDialogs.js"}}
 
 ## Vollbild-Dialoge
 
