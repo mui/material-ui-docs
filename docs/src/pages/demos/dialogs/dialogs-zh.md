@@ -50,13 +50,13 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 
 {{"demo": "pages/demos/dialogs/FormDialog.js"}}
 
-## 自定义对话框
+## Customized dialogs
 
-如果你一直在阅读 [重写文档页面](/customization/overrides/)，但是你不确定如何开始，以下的例子演示了如何通过自定义 `DialogTitle` 来支持关闭按钮。
+Here is example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️虽然 Material design 规范鼓励样式化，但这些例子是不合适的。
+The dialog has a close button added to aide usability.
 
-{{"demo": "pages/demos/dialogs/CustomizedDialog.js"}}
+{{"demo": "pages/demos/dialogs/CustomizedDialogs.js"}}
 
 ## 全屏对话框
 
