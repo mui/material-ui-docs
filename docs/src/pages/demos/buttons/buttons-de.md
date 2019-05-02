@@ -82,13 +82,13 @@ Icons eignen sich auch für Umschaltflächen, mit denen eine einzelne Auswahl au
 
 {{"demo": "pages/demos/buttons/IconButtons.js"}}
 
-## Customized Buttons
+## Customized buttons
 
-Wenn Sie die Seite [overrides documentation page](/customization/overrides/) gelesen haben, aber Sie sich nicht sicher sind, dann finden Sie hier Beispiele dafür wie Sie die Hauptfarbe eines Buttons mit Klassen ändern können und für die Verwendung eines Themes.
-
-⚠️ Auch wenn die material design Spezifikation zur Verwendung von Themes ermutigt, liegen diese Beispiele außerhalb der üblichen Pfade.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/buttons/CustomizedButtons.js"}}
+
+
 
 ## Complex Buttons
 
