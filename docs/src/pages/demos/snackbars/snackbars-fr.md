@@ -21,11 +21,9 @@ A basic snackbar that aims to reproduce Google Keep's snackbar behavior.
 
 {{"demo": "pages/demos/snackbars/SimpleSnackbar.js"}}
 
-## Customized Snackbars
+## Customized snackbars
 
-If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here are examples of how you can change the look of a Snackbar.
-
-⚠️ Bien que les spécifications de conception des matériaux encouragent la thématisation, ces exemples sortent des sentiers battus.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/snackbars/CustomizedSnackbars.js"}}
 
@@ -69,7 +67,7 @@ You can change the direction of the [Slide](/utils/transitions/#slide) transitio
 
 ## Projets complémentaires
 
-Pour des cas d'utilisation plus avancés, vous pourrez peut-être tirer parti des projects suivants:
+Pour des cas d'utilisation plus avancés, vous pourrez peut-être tirer parti des avantages suivants:
 
 ### notistack
 
