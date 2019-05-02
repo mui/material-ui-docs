@@ -63,13 +63,13 @@ Botões de rolagem para esquerda e direita nunca serão exibidos. Toda e qualque
 
 {{"demo": "pages/demos/tabs/ScrollableTabsButtonPrevent.js"}}
 
-## Guias Personalizadas
+## Customized tabs
 
-Se você leu a [página de abertura da documentação](/customization/overrides/) mas não está confiante para cair dentro, aqui vai um exemplo de como trocar a cor principal das Guias.
-
-⚠️ Embora a especificação do design do material incentive o tema, este exemplo está fora do caminho comum.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/tabs/CustomizedTabs.js"}}
+
+
 
 ## Guias Nav
 
