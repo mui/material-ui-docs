@@ -63,13 +63,11 @@ Beschriftungen können unterhalb des Schrittsymbols platziert werden, indem Sie 
 
 ## Anpasster Stepper
 
-Wenn du die [Überschreibungs Dokumentationsseite](/customization/overrides/) gelesen hast, aber dich noch nicht sicher genug fühlst, um direkt loszulegen, ist hier noch ein Beispiel, wie du das Design des Steppers anpassen könntest.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 Diese Komponente verwendet ein benutzerdefiniertes `StepConnector` Element, das die Randfarbe basierend auf dem Status `active` und `completed` ändert.
 
-⚠️ Auch wenn die material design Spezifikation zur Verwendung von Themes ermutigt, liegen diese Beispiele außerhalb der üblichen Pfade.
-
-{{"demo": "pages/demos/steppers/CustomizedStepper.js"}}
+{{"demo": "pages/demos/steppers/CustomizedSteppers.js"}}
 
 ## Mobile Stepper
 
