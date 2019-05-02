@@ -45,13 +45,11 @@ Der Tabelle wurde eine feste Breite zugewiesen, um das horizontale Scrollen zu v
 
 {{"demo": "pages/demos/tables/EnhancedTable.js"}}
 
-## Benutzerdefinierte Tabellen
+## Customized tables
 
-Wenn du die [Überschreibungs Dokumentationsseite](/customization/overrides/) gelesen hast, aber dich noch nicht sicher genug fühlst, um direkt loszulegen, ist hier noch ein Beispiel, wie du das Design der `Zellen` anpassen könntest.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️ Auch wenn die Material-Design Spezifikation zur Verwendung von Themes ermutigt, liegen diese Beispiele außerhalb der üblichen Pfade.
-
-{{"demo": "pages/demos/tables/CustomizedTable.js"}}
+{{"demo": "pages/demos/tables/CustomizedTables.js"}}
 
 ## Benutzerdefinierte Tabellen-Seitennummerierung
 
