@@ -16,7 +16,7 @@ npm install @material-ui/core@next
 yarn add @material-ui/core@next
 ```
 
-Ten en cuenta que [ react ](https://www.npmjs.com/package/react) > = 16.3.0 y [ react-dom ](https://www.npmjs.com/package/react-dom) > = 16.3.0 son dependencias tipo "peer".
+Ten en cuenta que [ react ](https://www.npmjs.com/package/react) > = 16.8.0 y [ react-dom ](https://www.npmjs.com/package/react-dom) > = 16.8.0 son dependencias tipo "peer".
 
 ## Fuente Roboto
 
