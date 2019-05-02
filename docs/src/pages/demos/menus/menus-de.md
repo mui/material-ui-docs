@@ -33,13 +33,11 @@ Die Hauptaufgabe der `MenuList` Komponente besteht darin, den Fokus festzulegen.
 
 {{"demo": "pages/demos/menus/MenuListComposition.js"}}
 
-## Angepasstes MenuItem
+## Customized menus
 
-Wenn du die [Overrides Dokumentationsseite](/customization/overrides/) gelesen hast, aber dich noch nicht sicher genug fühlst, um direkt loszulegen, ist hier noch ein Beispiel, wie du das `MenuItem` anpassen könntest.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️ Auch wenn die Material-Design Spezifikation zur Verwendung von Themes ermutigt, liegen diese Beispiele außerhalb der üblichen Pfade.
-
-{{"demo": "pages/demos/menus/ListItemComposition.js"}}
+{{"demo": "pages/demos/menus/CustomizedMenus.js"}}
 
 Das `MenuItem` ist ein Wrapper um ein `ListItem` mit einigen zusätzlichen Stilen. Sie können dieselben Listenkompositionsfunktionen mit der `MenuItem` Komponente verwenden:
 
@@ -55,7 +53,7 @@ Es gibt [einen FlexBox bug](https://bugs.chromium.org/p/chromium/issues/detail?i
 
 {{"demo": "pages/demos/menus/TypographyMenu.js"}}
 
-## Übergang ändern
+## Change transition
 
 Verwenden Sie einen anderen Übergang.
 
