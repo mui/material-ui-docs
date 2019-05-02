@@ -33,10 +33,8 @@ O emblema auto-esconde com badgeContent é zero. Você pode substituir isso com 
 
 {{"demo": "pages/demos/badges/BadgeVisibility.js"}}
 
-## Emblema personalizado
+## Customized badges
 
-Se você tiver sido ler o [substitui a página de documentação do](/customization/overrides/) mas você não está confiante de saltar, aqui está um exemplo de como você pode mudar o emblema posição.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️ Embora a especificação do design do material incentive o tema, este exemplo está fora do caminho comum.
-
-{{"demo": "pages/demos/badges/CustomizedBadge.js"}}
+{{"demo": "pages/demos/badges/CustomizedBadges.js"}}
