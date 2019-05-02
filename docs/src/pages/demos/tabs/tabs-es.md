@@ -3,7 +3,7 @@ title: Tabs React component
 components: Tabs, Tab
 ---
 
-# Tabs
+# Pestañas
 
 <p class="description">Tabs make it easy to explore and switch between different views.</p>
 
@@ -63,13 +63,13 @@ Left and right scroll buttons will never be presented. All scrolling must be ini
 
 {{"demo": "pages/demos/tabs/ScrollableTabsButtonPrevent.js"}}
 
-## Customized Tabs
+## Customized tabs
 
-If you have read the [overrides documentation page](/customization/overrides/) but aren't confident jumping in, here's an example of how you can change the main color of the Tabs.
-
-⚠️ A pesar de que la especificación de material design anima a usar temas, este ejemplo no es común.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/tabs/CustomizedTabs.js"}}
+
+
 
 ## Nav Tabs
 
