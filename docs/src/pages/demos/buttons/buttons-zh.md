@@ -82,13 +82,13 @@ components: Button, Fab, IconButton, ButtonBase, Zoom
 
 {{"demo": "pages/demos/buttons/IconButtons.js"}}
 
-## Customized Buttons（自定义按钮）
+## Customized buttons
 
-如果您有阅读[“重写”文档](/customization/overrides/)，但你还不是很自信得完全掌握，我们提供了以下的例子，包括使用 classes 属性和 theme（主题）来更改 Button 的主要颜色；以及使用 Bootstrap 样式按钮。
-
-⚠️虽然 Material design 规范鼓励样式化，但这些例子是不合适的。
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/buttons/CustomizedButtons.js"}}
+
+
 
 ## Complex Buttons（复杂按钮）
 
