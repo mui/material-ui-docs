@@ -43,9 +43,7 @@ Möglicherweise haben Sie auch festgestellt, dass einige native HTML-Eingabeeige
 
 ## Benutzerdefinierte Eingabe
 
-Wenn du die [Überschreibungs Dokumentationsseite](/customization/overrides/) gelesen hast, aber dich noch nicht sicher genug fühlst, um direkt loszulegen, ist hier noch ein Beispiel, wie du die Farbe der Eingabe ändern kannst.
-
-⚠️ Auch wenn die material design Spezifikation zur Verwendung von Themes ermutigt, liegen diese Beispiele außerhalb der üblichen Pfade.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/text-fields/CustomizedInputs.js"}}
 
@@ -135,4 +133,3 @@ Für fortgeschrittenere Anwendungsfälle können Ihnen folgende Projekte helfen:
 - [redux-form-material-ui](https://github.com/erikras/redux-form-material-ui) Eine Reihe von Wrapper-Komponenten, die die Verwendung der Material-Benutzeroberfläche mit Redux-Formular erleichtern.
 - [formik-material-ui](https://github.com/stackworx/formik-material-ui) Bindungen zur Verwendung von Material-UI mit formik.
 - [final-form-material-ui](https://github.com/Deadly0/final-form-material-ui) Eine Reihe von Wrapper-Komponenten, die die Verwendung der Material-Benutzeroberfläche mit Final Form erleichtern.
-- [Uniformen-Material](https://github.com/vazco/uniforms/tree/master/packages/uniforms-material) Material-UI-Wrapper-Komponenten für Uniformen, eine Reihe von React-Bibliotheken zum Erstellen von Formularen.
