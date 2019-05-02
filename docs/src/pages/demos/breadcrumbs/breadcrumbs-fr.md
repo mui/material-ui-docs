@@ -27,7 +27,7 @@ Dans les exemples qui suivent, nous utilisons deux chaînes de caractère et une
 
 ## Fil d'Ariane personnalisé
 
-Si vous avez lu la [page de documentation sur la personnalisation](/customization/overrides/), mais que vous ne vous sentez pas prêt à faire le saut, alors voici un exemple montrant comment changer l'apparence des liens du fil d'Ariane.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/breadcrumbs/CustomizedBreadcrumbs.js"}}
 
