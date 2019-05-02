@@ -19,11 +19,9 @@ components: Tooltip
 
 {{"demo": "pages/demos/tooltips/PositionedTooltips.js"}}
 
-## 自定义文字提示
+## Customized tooltips
 
-如果您一直在阅读 [覆盖文档页面](/customization/overrides/) 但是您没有信心进入，这里有一个如何为主题提供工具提示的示例。
-
-⚠️虽然 Material design 规范鼓励样式化，但这些例子是不合适的。
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/tooltips/CustomizedTooltips.js"}}
 
@@ -76,7 +74,7 @@ function MyComponent(props) {
 
 {{"demo": "pages/demos/tooltips/DisabledTooltips.js"}}
 
-## 过渡(Transitions)
+## 过渡动画
 
 使用不同的过渡动画。
 
