@@ -24,7 +24,7 @@ You need to update your `package.json` to use the latest version of Material-UI.
 
 ```json
 "dependencies": {
-  "@material-ui/core": "^4.0.0-alpha.0"
+  "@material-ui/core": "^4.0.0-beta.0"
 }
 ```
 
@@ -40,9 +40,29 @@ yarn add @material-ui/core@next
 
 ### Update React version
 
-The minimum required version of React was increased from `react@^16.3.0` to `react@^16.8.0`. This allows us to rely on [Hooks](https://reactjs.org/docs/hooks-intro.html).
+The minimum required version of React was increased from `react@^16.3.0` to `react@^16.8.0`. This allows us to rely on [Hooks](https://reactjs.org/docs/hooks-intro.html) (we no longer use the class API).
 
-## Handling Breaking Changes
+### Update Material-UI Styles version
+
+If you are previously using `@material-ui/styles` with v3 you need to update your `package.json` to use the latest version of Material-UI Styles
+
+```json
+"dependencies": {
+  "@material-ui/styles": "^4.0.0-beta.0"
+}
+```
+
+Oder führe aus
+
+```sh
+npm install @material-ui/styles@next
+
+or
+
+yarn add @material-ui/styles@next
+```
+
+## Handling breaking changes
 
 ### Grundlegendes
 
@@ -65,12 +85,23 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
   +const DeepChild = withTheme(DeepChildRaw);
   ```
 
-- Richten Sie die Keyframes-API ein. Sie sollten die folgenden Änderungen in Ihrer Codebase anwenden. Es hilft, die Animationslogik zu isolieren:
+- Scope the [keyframes API](https://cssinjs.org/jss-syntax/#keyframes-animation). Sie sollten die folgenden Änderungen in Ihrer Codebase anwenden. Es hilft, die Animationslogik zu isolieren:
   
-  ```diff rippleVisible: { opacity: 0.3,
-
-- animation: 'mui-ripple-enter 100ms cubic-bezier(0.4, 0, 0.2, 1)',
-- animation: `$mui-ripple-enter 100ms cubic-bezier(0.4, 0, 0.2, 1)`, }, '@keyframes mui-ripple-enter': { '0%': { opacity: 0.1, }, '100%': { opacity: 0.3, }, }, ```
+  ```diff
+    rippleVisible: {
+      opacity: 0.3,
+  -   animation: 'mui-ripple-enter 100ms cubic-bezier(0.4, 0, 0.2, 1)',
+  +   animation: '$mui-ripple-enter 100ms cubic-bezier(0.4, 0, 0.2, 1)',
+    },
+    '@keyframes mui-ripple-enter': {
+      '0%': {
+        opacity: 0.1,
+      },
+      '100%': {
+        opacity: 0.3,
+      },
+    },
+  ```
 
 ### Theme
 
@@ -137,7 +168,7 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
   +<Fab />
   ```
 
-### TextField
+### Textfeld
 
 - [InputLabel] You should be able to override all the styles of the FormLabel component using the CSS API of the InputLabel component. The `FormLabelClasses` property has been removed.
   
@@ -194,7 +225,7 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 
 - [TablePagination] The component no longer tries to fix invalid (`page`, `count`, `rowsPerPage`) property combinations. It raises a warning instead.
 
-### Reiter
+### Tabs
 
 - [Tab] Remove the `labelContainer`, `label` and `labelWrapped` class keys for simplicity. This has allowed us to removed 2 intermediary DOM elements. You should be able to move the custom styles to the root class key.
   
@@ -212,6 +243,8 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
   - The usage of the `ListItemIcon` component is required when using a left checkbox
   - The `edge` property should be set on the icon buttons.
 
+- [ListItem] Increase the CSS specificity of the `disabled` and `focusVisible` style rules.
+
 ### Paper
 
 - [Paper] Reduce the default elevation. Change the default Paper elevation to match the Card and the Expansion Panel:
@@ -226,6 +259,20 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 - [DialogActions] Rename the `disableActionSpacing` prop `disableSpacing`.
 - [DialogActions] Rename the `action` CSS class `spacing`.
 - [DialogContentText] Use typography variant `body1` instead of `subtitle1`.
+- [Dialog] The child needs to be able to hold a ref.
+  
+  ```diff
+  class Component extends React.Component {
+    render() {
+      return <div />
+    }
+  }
+  -const MyComponent = props => <div {...props} />
+  +const MyComponent = React.forwardRef((props, ref) => <div ref={ref} {...props} />);
+  <Dialog><Component /></Dialog>
+  <Dialog><MyComponent /></Dialog>
+  <Dialog><div /></Dialog>
+  ```
 
 ### Card
 
@@ -233,9 +280,14 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 - [CardActions] Remove the `disableActionSpacing` CSS class.
 - [CardActions] Rename the `action` CSS class `spacing`.
 
+### ClickAwayListener
+
+- [ClickAwayListener] Hide react-event-listener.
+
 ### ExpansionPanel
 
 - [ExpansionPanelActions] Rename the `action` CSS class `spacing`.
+- [ExpansionPanel] Increase the CSS specificity of the `disabled` style rule.
 
 ### Switch
 
@@ -266,9 +318,7 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 
 ### SvgIcon
 
-- [SvgIcon] Umbenennung nativeColor -> htmlColor.
-  
-  React löst dasselbe Problem mit dem`for` HTML-Attribut. Sie haben beschlossen, die Eigenschaft `htmlFor` zu nennen. Diese Änderung folgt den gleichen Überlegungen.
+- [SvgIcon] Umbenennung nativeColor -> htmlColor. React löst dasselbe Problem mit dem`for` HTML-Attribut. Sie haben beschlossen, die Eigenschaft `htmlFor` zu nennen. Diese Änderung folgt den gleichen Überlegungen.
   
   ```diff
   -<0 />
@@ -299,30 +349,58 @@ The minimum required version of React was increased from `react@^16.3.0` to `rea
 
 ### Modal
 
-- [Modal] event.defaultPrevented is now ignored.
+- [Modal] The child needs to be able to hold a ref.
   
-  Die neue Logik schließt das Modal, auch wenn `event.preventDefault()` beim Ereignis "key down escape" aufgerufen wird. `event.preventDefault()` soll Standardverhalten stoppen, z. B. das Aktivieren eines Kontrollkästchens, das Klicken auf eine Schaltfläche zum Senden eines Formulars und das Drücken des linken Pfeils, um den Cursor in einer Texteingabe zu bewegen usw. Nur spezielle HTML-Elemente weisen dieses Standardverhalten auf. Sie sollten `event.stopPropagation()` verwenden, wenn sie nicht ein ` onClose` Ereignis auf dem Modal auslösen wollen.
+  ```diff
+  class Component extends React.Component {
+    render() {
+      return <div />
+    }
+  }
+  -const MyComponent = props => <div {...props} />
+  +const MyComponent = React.forwardRef((props, ref) => <div ref={ref} {...props} />);
+  <Modal><Component /></Modal>
+  <Modal><MyComponent /></Modal>
+  <Modal><div /></Modal>
+  ```
+
+- [Modal] Remove the classes customization API for the Modal component. (-74% bundle size reduction when used standalone)
+
+- [Modal] event.defaultPrevented is now ignored. Die neue Logik schließt das Modal, auch wenn `event.preventDefault()` beim Ereignis "key down escape" aufgerufen wird. `event.preventDefault()` soll Standardverhalten stoppen, z. B. das Aktivieren eines Kontrollkästchens, das Klicken auf eine Schaltfläche zum Senden eines Formulars und das Drücken des linken Pfeils, um den Cursor in einer Texteingabe zu bewegen usw. Nur spezielle HTML-Elemente weisen dieses Standardverhalten auf. Sie sollten `event.stopPropagation()` verwenden, wenn sie nicht ein ` onClose` Ereignis auf dem Modal auslösen wollen.
+
+### Portal
+
+- [Portal] The child needs to be able to hold a ref when `disablePortal` is used.
+  
+  ```diff
+  class Component extends React.Component {
+    render() {
+      return <div />
+    }
+  }
+  -const MyComponent = props => <div {...props} />
+  +const MyComponent = React.forwardRef((props, ref) => <div ref={ref} {...props} />);
+  <Portal><Component /></Portal>
+  <Portal><MyComponent /></Portal>
+  <Portal><div /></Portal>
+  ```
 
 ### Slide
 
 - [Slide] The child needs to be able to hold a ref.
   
-  ```diff class Component extends React.Component { render() { return
-  
-  <div />
-  
-      }
-      
-  
-  } -const MyComponent = props =><div {...props} /> 
-  
-  +const MyComponent = React.forwardRef((props, ref) =><div ref={ref} {...props} /> 
-  
-  ); <slide><component /></slide> <slide><mycomponent /></slide> <slide>
-  
-  <div />
-  
-  </Slide>
+  ```diff
+  class Component extends React.Component {
+    render() {
+      return <div />
+    }
+  }
+  -const MyComponent = props => <div {...props} />
+  +const MyComponent = React.forwardRef((props, ref) => <div ref={ref} {...props} />);
+  <Slide><Component /></Slide>
+  <Slide><MyComponent /></Slide>
+  <Slide><div /></Slide>
+  ```
 
 ### Tooltip
 
