@@ -82,13 +82,13 @@ components: Button, Fab, IconButton, ButtonBase, Zoom
 
 {{"demo": "pages/demos/buttons/IconButtons.js"}}
 
-## Индивидуальные кнопки
+## Customized buttons
 
-Если вы читали [документацию по переопределению стилей(Overrides)](/customization/overrides/) но вы не уверены, вот примеры того, как вы можете изменить основной цвет кнопки, используя классы, и используя тему; и кнопки в стиле Bootstrap.
-
-⚠️ Хотя спецификации материал дизайна поощряют использование тем, эти примеры не соответствуют требованиям.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/buttons/CustomizedButtons.js"}}
+
+
 
 ## Сложные кнопки
 
