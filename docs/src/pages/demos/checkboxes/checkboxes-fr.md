@@ -5,7 +5,7 @@ components: Checkbox, FormControl, FormGroup, FormLabel, FormControlLabel
 
 # Cases à cocher
 
-<p class="description">Checkboxes allow the user to select one or more items from a set.</p>
+<p class="description">Les cases à cocher permettent à l'utilisateur de sélectionner un ou plusieurs objets d'un ensembe.</p>
 
 [Checkboxes](https://material.io/design/components/selection-controls.html#checkboxes) can be used to turn an option on or off.
 
