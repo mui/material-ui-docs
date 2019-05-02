@@ -21,11 +21,9 @@ Da die Benutzererfahrung auf mobilen Geräten durch die native Auswahl der Platt
 
 ## Benutzerdefinierte Auswahl
 
-Wenn du die [Überschreibungs Dokumentationsseite](/customization/overrides/) gelesen hast, aber dich noch nicht sicher genug fühlst, um direkt loszulegen, ist hier noch ein Beispiel, wie du die Farbe der Eingabe ändern kannst.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 Der erste Schritt besteht darin, die `InputBase` Komponente zu formatieren. Anschließend können Sie es entweder direkt als Textfeld verwenden oder der Auswahlkomponente mit der Eigenschaft `input` geben, um ein Auswahl-Feld zu erhalten.
-
-⚠️ Auch wenn die material design Spezifikation zur Verwendung von Themes ermutigt, liegen diese Beispiele außerhalb der üblichen Pfade.
 
 {{"demo": "pages/demos/selects/CustomizedSelects.js"}}
 
