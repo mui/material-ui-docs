@@ -19,11 +19,9 @@ The `Tooltip` has 12 **placements** choice. They don’t have directional arrows
 
 {{"demo": "pages/demos/tooltips/PositionedTooltips.js"}}
 
-## Customized Tooltips
+## Customized tooltips
 
-If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here's an example of how you can theme a tooltip.
-
-⚠️ Uma vez que a especificação do material design incentiva customização, estes exemplos diferem do design usual.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/tooltips/CustomizedTooltips.js"}}
 
