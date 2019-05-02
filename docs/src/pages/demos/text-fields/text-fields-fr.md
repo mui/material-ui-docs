@@ -43,9 +43,7 @@ Vous avez peut-être également remarqué que certaines propriétés d'entrée H
 
 ## Inputs personnalisées
 
-Si vous avez lu [la page de documentation sur la personnalisation](/customization/overrides/) mais que vous n'êtes pas prêt pour vous lancer, voici un exemple de la façon dont vous pouvez changer la couleur principale d'un input.
-
-⚠️ Bien que les spécifications Material Design encouragent la thématisation, ces exemples sortent des sentiers battus.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/text-fields/CustomizedInputs.js"}}
 
@@ -130,9 +128,8 @@ Pour que le champ de texte soit accessible, **le champ de texte doit être lié 
 
 ## Projets complémentaires
 
-Pour des cas d'utilisation plus avancés, vous pourrez peut-être tirer parti des projects suivants:
+Pour des cas d'utilisation plus avancés, vous pourrez peut-être tirer parti des avantages suivants:
 
 - [redux-form-material-ui](https://github.com/erikras/redux-form-material-ui) A set of wrapper components to facilitate using Material UI with Redux Form.
 - [formik-material-ui](https://github.com/stackworx/formik-material-ui) Bindings for using Material-UI with formik.
 - [final-form-material-ui](https://github.com/Deadly0/final-form-material-ui) A set of wrapper components to facilitate using Material UI with Final Form.
-- [uniforms-material](https://github.com/vazco/uniforms/tree/master/packages/uniforms-material) Material-UI wrapper components for Uniforms, a set of React libraries for building forms.
