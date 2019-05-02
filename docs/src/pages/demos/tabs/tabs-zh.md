@@ -63,13 +63,13 @@ components: Tabs, Tab
 
 {{"demo": "pages/demos/tabs/ScrollableTabsButtonPrevent.js"}}
 
-## 定制选项卡
+## Customized tabs
 
-如果您已阅读[覆盖文档页面](/customization/overrides/) 但是不自信地跳进来，这里是一个如何改变 Tabs 主色的例子。
-
-⚠️虽然 material design 规范鼓励创建主题，但这个例子是不合适的。
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/tabs/CustomizedTabs.js"}}
+
+
 
 ## 导航选项卡
 
