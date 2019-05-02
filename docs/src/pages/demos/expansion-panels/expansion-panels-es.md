@@ -35,10 +35,8 @@ Múltiples columnas pueden ser usadas para estructurar el contenido, y un texto 
 
 The content of ExpansionPanels is mounted by default even if the panel is not expanded. This default behavior has server-side rendering and SEO in mind. If you render expensive component trees inside your panels or simply render many panels it might be a good idea to change this default behavior by enabling the `unmountOnExit` in `TransitionProps`: `<ExpansionPanel TransitionProps={{ unmountOnExit: true }} />`. As with any performance optimization this is not a silver bullet. Be sure to identify bottlenecks first and then try out these optimization strategies.
 
-## Panel de expansión personalizado
+## Customized expansion panels
 
-Si has estado leyendo la [página de documentación de sobreescritura](/customization/overrides/) pero aún no te sientes seguro, aquí hay un ejemplo de cómo puedes personalizar el color de fondo del `ExpansionPanelSummary` y el padding de `ExpansionPanelDetails`.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️ A pesar de que la especificación de material design anima a usar temas, estos ejemplos no son comunes.
-
-{{"demo": "pages/demos/expansion-panels/CustomizedExpansionPanel.js"}}
+{{"demo": "pages/demos/expansion-panels/CustomizedExpansionPanels.js"}}
