@@ -21,11 +21,9 @@ As the user experience can be improved on mobile using the native select of the 
 
 ## Customized selects
 
-Si vous avez lu [la page de documentation sur la personnalisation](/customization/overrides/) mais que vous n'êtes pas prêt pour vous lancer, voici un exemple de la façon dont vous pouvez changer la couleur principale d'un input.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 The first step is to style the `InputBase` component. Once it's styled, you can either use it directly as a text field or provide it to the select `input` property to have a select field.
-
-⚠️ Bien que les spécifications Material Design encouragent la thématisation, ces exemples sortent des sentiers battus.
 
 {{"demo": "pages/demos/selects/CustomizedSelects.js"}}
 
