@@ -82,13 +82,13 @@ Botões de ícones são comumente encontrados em barras de aplicativos e barras 
 
 {{"demo": "pages/demos/buttons/IconButtons.js"}}
 
-## Botões custumizados
+## Customized buttons
 
-Se você leu a [a pagina de documentação de sobescrita](/customization/overrides/), mas você não está confiante, para seguir em frente aqui tem exemplos de como você pode alterar a cor principal de um botão usando classes, e usando um tema; e um exemplo de botão utilizando Bootstrap.
-
-⚠️ Uma vez que a especificação do material design incentiva customização, estes exemplos diferem do design usual.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/buttons/CustomizedButtons.js"}}
+
+
 
 ## Botões complexos
 
