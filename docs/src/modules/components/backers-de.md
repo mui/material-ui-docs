@@ -1,4 +1,4 @@
-## Material-UI unterstützen
+<h2 align="center">Material-UI unterstützen</h2>
 
 Material-UI ist ein MIT-lizenziertes quelloffenes Projekt. Dieses unabhängige Projekt unterliegt dank dieser großartigen [backers](/discover-more/backers/) und ihrer Unterstützung einer kontinuierlichen Entwicklung.
 
@@ -12,6 +12,7 @@ Gold-Sponsoren sind diejenigen, die $500 pro Monat und mehr für Material-UI ges
   <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="creative-tim" href="https://www.creative-tim.com/?partner=104080" rel="noopener" target="_blank" style="margin-right: 16px;"><img width="126" src="https://avatars1.githubusercontent.com/u/20172349?s=378" alt="creative-tim" title="Premium-Themes"></a>
   <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="tidelift" href="https://tidelift.com/subscription/pkg/npm-material-ui?utm_source=material_ui&utm_medium=referral&utm_campaign=homepage" rel="noopener" target="_blank" style="margin-right: 16px;"><img width="96" src="https://avatars2.githubusercontent.com/u/30204434?s=192" alt="tidelift" title="Holen Sie sich professionell unterstütztes Material-UI"></a>
   <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="bitsrc" href="https://bit.dev" rel="noopener" target="_blank" style="margin-right: 16px;"><img width="96" src="https://avatars1.githubusercontent.com/u/24789812?s=192" alt="bitsrc" title="Die schnellste Art, Code zu teilen"></a>
+  <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="blokt" href="https://blokt.com/" rel="noopener" target="_blank" style="margin-right: 16px;"><img width="96" src="https://pbs.twimg.com/profile_images/927547020134502405/zY3QPxmz_200x200.jpg" alt="blokt" title="Leading Cryptocurrency News"></a>
 </p>
 
 über [OpenCollective](https://opencollective.com/material-ui)
