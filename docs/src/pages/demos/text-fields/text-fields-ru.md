@@ -43,9 +43,7 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 ## Кастомизированные поля ввода
 
-Если вы читали [переписанную страницу документации](/customization/overrides/), но все еще не до конца уверены как будет выглядеть компонент, вот пример того, как изменить основной цвет Input-а.
-
-⚠️ Хотя спецификации материал дизайна поощряют использование тем, эти примеры не соответствуют требованиям.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/text-fields/CustomizedInputs.js"}}
 
@@ -130,9 +128,8 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 ## Дополнительные проекты
 
-Для более сложных решений вы можете применить следующие пакеты:
+Для более сложных вариантов использования вы можете воспользоваться:
 
 - [redux-form-material-ui](https://github.com/erikras/redux-form-material-ui) Набор компонентов-оберток для облегчения работы с Material UI в связке с Redux Form.
 - [formik-material-ui](https://github.com/stackworx/formik-material-ui) Привязки для использования Material-UI с formik.
 - [final-form-material-ui](https://github.com/Deadly0/final-form-material-ui) Набор компонентов-оберток для облегчения работы с Material UI в связке с Final Form.
-- [uniforms-material](https://github.com/vazco/uniforms/tree/master/packages/uniforms-material) компоненты оболочки Material-UI для Uniforms, набор библиотек React для создания форм.
