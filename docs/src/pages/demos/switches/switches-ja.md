@@ -23,11 +23,9 @@ components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
 
 {{"demo": "pages/demos/switches/SwitchesGroup.js"}}
 
-## Customized Switches
+## Customized switches
 
-If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here's an example of how you can change the color of a Switch, and an iOS style Switch.
-
-⚠️ While the material design specification encourages theming, these examples are off the beaten path.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/switches/CustomizedSwitches.js"}}
 
