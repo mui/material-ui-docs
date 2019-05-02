@@ -45,13 +45,11 @@ La Tabla tiene un ancho fijo para demostrar el desplazamiento horizontal. Para e
 
 {{"demo": "pages/demos/tables/EnhancedTable.js"}}
 
-## Tablas personalizadas
+## Customized tables
 
-Si has estado leyendo la [página de documentación sobre overrides](/customization/overrides/) pero aún no tienes la confianza suficiente para usarlos, a continuación hay ejemplos de su uso para cambiar el estilo de un `TableCell`.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️ A pesar de que la especificación de material design anima a usar temas, este ejemplo no es común.
-
-{{"demo": "pages/demos/tables/CustomizedTable.js"}}
+{{"demo": "pages/demos/tables/CustomizedTables.js"}}
 
 ## Acción de paginación de tabla personalizada
 
