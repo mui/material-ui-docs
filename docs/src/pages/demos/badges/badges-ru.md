@@ -33,10 +33,8 @@ components: Badge
 
 {{"demo": "pages/demos/badges/BadgeVisibility.js"}}
 
-## Кастомизированный значок
+## Customized badges
 
-Если вы читали [страницу документации о переопределениях](/customization/overrides/) но не уверены, что можете войти в курс этого, вот один из примеров того, как вы можете изменить положение значка.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️ Хотя спецификации материал дизайна поощряют использование тем, эти примеры не соответствуют требованиям.
-
-{{"demo": "pages/demos/badges/CustomizedBadge.js"}}
+{{"demo": "pages/demos/badges/CustomizedBadges.js"}}
