@@ -43,9 +43,7 @@ Você também pode ter notado que algumas propriedades de entrada nativas do HTM
 
 ## Inputs Costumizados
 
-Se você leu a [página de abertura da documentação](/customization/overrides/) mas não está confiante, aqui vai um exemplo de como trocar a cor principal do Input.
-
-⚠️ Uma vez que a especificação do material design incentiva customização, estes exemplos diferem do design usual.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/text-fields/CustomizedInputs.js"}}
 
@@ -130,9 +128,8 @@ Para que o campo de texto seja acessível, **a entrada deve estar vinculada ao l
 
 ## Projetos Complementares
 
-Para os usos mais avançados, você é capaz de aproveita:
+Para caso de usos mais avançados, você é capaz de aproveitar de:
 
 - [redux-form-material-ui](https://github.com/erikras/redux-form-material-ui) Um conjunto de componentes do wrapper para facilitar o uso do Material UI com Redux Form.
 - [formik-material-ui](https://github.com/stackworx/formik-material-ui) Ligações para usar Mateiral-UI com formik.
 - [final-form-material-ui](https://github.com/Deadly0/final-form-material-ui) Um conjunto de componentes wrapper para facilitar o uso do Material UI com Final Form.
-- [uniformes-material](https://github.com/vazco/uniforms/tree/master/packages/uniforms-material) Componentes Material-UI para Uniforms, um conjunto de bibliotecas React para construção de formulários.
