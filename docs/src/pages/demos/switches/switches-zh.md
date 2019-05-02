@@ -23,11 +23,9 @@ components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
 
 {{"demo": "pages/demos/switches/SwitchesGroup.js"}}
 
-## 自定义 Switch
+## Customized switches
 
-如果您有阅读[覆盖样式文档](/customization/overrides/)，但你还没有完全掌握方法，可以查看以下这个更改一个输入的主要颜色的示例，包括如何更改 Switch 的样式和自定义出一个 iOS 风格的 Switch
-
-⚠️虽然 Material design 规范鼓励样式化，但这些例子是不合适的。
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/switches/CustomizedSwitches.js"}}
 
@@ -39,7 +37,7 @@ components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
 
 ## 无障碍功能
 
-所有表单控件都应该带有标签，而这包括了单选按钮，复选框和开关。 在大多数情况下，这是通过使用一个`<label>`元素（[FormControlLabel](/api/form-control-label/)）实现的。
+所有表单控件都应该带有标签，而这包括了单选按钮，复选框和开关。 在大多数情况下，这是通过使用一个 `<label>` 元素（[FormControlLabel](/api/form-control-label/)）实现的。
 
 如果无法使用标签，则必须直接在输入组件中添加属性。 在这种情况下，可以应用附加的属性（例如 `arial-label`， `aria-labelledby`， `title`）经由 `inputProps` 属性。
 
