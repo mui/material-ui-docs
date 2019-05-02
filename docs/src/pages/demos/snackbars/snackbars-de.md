@@ -21,11 +21,9 @@ Eine einfache Snackbar, die das Verhalten der Snackbar von Google Keep reproduzi
 
 {{"demo": "pages/demos/snackbars/SimpleSnackbar.js"}}
 
-## Benutzerdefinierte Snackbars
+## Customized snackbars
 
-Wenn du die [Überschreibungs Dokumentationsseite](/customization/overrides/) gelesen hast, aber dich noch nicht sicher genug fühlst, um direkt loszulegen, ist hier noch ein Beispiel, wie du das Design der Snackbar anpassen könntest.
-
-⚠️ Auch wenn die material design Spezifikation zur Verwendung von Themes ermutigt, liegen diese Beispiele außerhalb der üblichen Pfade.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/snackbars/CustomizedSnackbars.js"}}
 
