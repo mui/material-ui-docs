@@ -21,11 +21,9 @@ components: Snackbar, SnackbarContent
 
 {{"demo": "pages/demos/snackbars/SimpleSnackbar.js"}}
 
-## 自定义的消息条(Snackbar)
+## Customized snackbars
 
-如果您有阅读[重写样式文档页面](/customization/overrides/) 但你还不是很自信能够完全掌握， 以下是如何更改一个消息条(Snackbar)的主要颜色的示例
-
-⚠️虽然 Material design 规范鼓励样式化，但这些例子是不合适的。
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/snackbars/CustomizedSnackbars.js"}}
 
