@@ -45,13 +45,11 @@ A tabela recebeu uma largura fixa para demonstrar a rolagem horizontal. Para imp
 
 {{"demo": "pages/demos/tables/EnhancedTable.js"}}
 
-## Tabelas Customizadas
+## Customized tables
 
-Se você já leu a página de [documentação de sobreposição (Overrides)](/customization/overrides/) mas não se sente confiante em como utilizar, seguem alguns exemplos em como você pode mudar a aparência de uma `TableCell`.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️ Embora a especificação do design do material incentive o tema, este exemplo está fora do caminho comum.
-
-{{"demo": "pages/demos/tables/CustomizedTable.js"}}
+{{"demo": "pages/demos/tables/CustomizedTables.js"}}
 
 ## Ação de paginação de tabela personalizada
 
