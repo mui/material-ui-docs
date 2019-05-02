@@ -19,11 +19,9 @@ La `Tooltip` comporte 12 **placements** choix. Ils n'ont pas de flèches directi
 
 {{"demo": "pages/demos/tooltips/PositionedTooltips.js"}}
 
-## Info-bulles personnalisées
+## Customized tooltips
 
-Si vous avez lu le [remplace la page de documentation](/customization/overrides/) mais que vous n'êtes pas sûr de le faire, voici un exemple de la façon dont vous pouvez thématiser une info-bulle.
-
-⚠️ Bien que les spécifications de conception des matériaux encouragent la thématisation, ces exemples sortent des sentiers battus.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/tooltips/CustomizedTooltips.js"}}
 
