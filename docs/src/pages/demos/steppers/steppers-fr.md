@@ -3,7 +3,7 @@ title: Stepper React component
 components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIcon, StepLabel, Stepper
 ---
 
-# Steppers
+# Steppers (Étapes)
 
 <p class="description">Steppers convey progress through numbered steps. It provides a wizard-like workflow.</p>
 
@@ -63,13 +63,11 @@ Labels can be placed below the step icon by setting the `alternativeLabel` prope
 
 ## Customized Stepper
 
-If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here are examples of how you can change the look of a stepper.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 This component uses a customized `StepConnector` element that changes border color based on the `active` and `completed` state.
 
-⚠️ Bien que les spécifications de conception des matériaux encouragent la thématisation, ces exemples sortent des sentiers battus.
-
-{{"demo": "pages/demos/steppers/CustomizedStepper.js"}}
+{{"demo": "pages/demos/steppers/CustomizedSteppers.js"}}
 
 ## Mobile Stepper
 
