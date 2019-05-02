@@ -50,13 +50,13 @@ Les boîtes de dialogue de formulaire permettent aux utilisateurs de remplir des
 
 {{"demo": "pages/demos/dialogs/FormDialog.js"}}
 
-## Dialogue personnalisé
+## Customized dialogs
 
-Si vous avez lu la page de documentation [sur les personnalisation](/customization/overrides/) mais que vous n'êtes pas prêt à vous lancer, voici un exemple de la façon dont vous pouvez personnaliser le `DialogTitle` pour ajouter un bouton de fermeture.
+Here is example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️ Bien que la spécification material encouragent la thématisation, cet exemple sort des sentiers battus.
+The dialog has a close button added to aide usability.
 
-{{"demo": "pages/demos/dialogs/CustomizedDialog.js"}}
+{{"demo": "pages/demos/dialogs/CustomizedDialogs.js"}}
 
 ## Dialogues plein écran
 
