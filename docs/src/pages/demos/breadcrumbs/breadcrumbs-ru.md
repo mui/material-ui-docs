@@ -27,7 +27,7 @@ components: Breadcrumbs, Link, Typography
 
 ## Пользовательские хлебные крошки
 
-Если вы читали [страницу документации по переопределению стилей](/customization/overrides/), но все еще не до конца уверены как будет выглядеть компонент, вот пример того, как изменить дизайн хлебной крошки.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/breadcrumbs/CustomizedBreadcrumbs.js"}}
 
