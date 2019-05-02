@@ -19,11 +19,9 @@ The `Tooltip` has 12 **placements** choice. They don’t have directional arrows
 
 {{"demo": "pages/demos/tooltips/PositionedTooltips.js"}}
 
-## Настраиваемые подсказки
+## Customized tooltips
 
-If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here's an example of how you can theme a tooltip.
-
-⚠️ Хотя спецификации материал дизайна поощряют использование тем, эти примеры не соответствуют требованиям.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/tooltips/CustomizedTooltips.js"}}
 
@@ -76,9 +74,9 @@ By default disabled elements like `<button>` do not trigger user interactions so
 
 {{"demo": "pages/demos/tooltips/DisabledTooltips.js"}}
 
-## Transitions
+## Transições
 
-Use a different transition.
+Используйте другой transition.
 
 {{"demo": "pages/demos/tooltips/TransitionsTooltips.js"}}
 
