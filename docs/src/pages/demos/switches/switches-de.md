@@ -23,11 +23,9 @@ Ein `Schalter` kann dank der `FormControlLabel` Komponente auch mit einer Etiket
 
 {{"demo": "pages/demos/switches/SwitchesGroup.js"}}
 
-## Anpasster Schalter
+## Customized switches
 
-Wenn du die [Überschreibungs Dokumentationsseite](/customization/overrides/) gelesen hast, aber dich noch nicht sicher genug fühlst, um direkt loszulegen, ist hier noch ein Beispiel, wie du die Farbe des Schalters ändern kannst, und ein iOS Schalter.
-
-⚠️ Auch wenn die material design Spezifikation zur Verwendung von Themes ermutigt, liegen diese Beispiele außerhalb der üblichen Pfade.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/switches/CustomizedSwitches.js"}}
 
