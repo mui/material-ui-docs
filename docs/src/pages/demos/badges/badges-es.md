@@ -33,10 +33,8 @@ El badge se auto oculta usando la propiedad `badgeContent={0}`. Puedes sobreescr
 
 {{"demo": "pages/demos/badges/BadgeVisibility.js"}}
 
-## Badge Personalizado
+## Customized badges
 
-Si has leído la [documentación sobre cómo sobreescribir](/customization/overrides/) pero no te sientes seguro de como hacerlo, aquí hay un ejemplo de como cambiar la posición del badge.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️ A pesar de que la especificación de material design anima a usar temas, este ejemplo no es común.
-
-{{"demo": "pages/demos/badges/CustomizedBadge.js"}}
+{{"demo": "pages/demos/badges/CustomizedBadges.js"}}
