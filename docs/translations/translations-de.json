@@ -114,7 +114,7 @@
     "/utils/no-ssr": "NoSSR",
     "/utils/click-away-listener": "Außerhalb Klick Ereignisbehandlungsroutine",
     "/utils/box": "Box",
-    "/demos": "Komponentendemos",
+    "/demos": "Komponenten",
     "/demos/app-bar": "App Bar",
     "/demos/autocomplete": "Autovervollständigung",
     "/demos/avatars": "Avatare",
