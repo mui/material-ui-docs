@@ -2,7 +2,7 @@
 
 <p class="description">使用TypeScript，你可以为JavaScript添加类型接口，从而提高代码质量及工作效率</p>
 
-查看 [Create React App with TypeScript](https://github.com/mui-org/material-ui/tree/next/examples/create-react-app-with-typescript) 样例， TypeScript版本大于2.8
+查看 [Create React App with TypeScript](https://github.com/mui-org/material-ui/tree/next/examples/create-react-app-with-typescript) 样例， 要求 TypeScript 版本大于 2.8。
 
 Our definitions are tested with the following [tsconfig.json](https://github.com/mui-org/material-ui/tree/next/tsconfig.json). 使用不太严格的 `tsconfig.json` 或省略某些库可能会导致错误。
 
