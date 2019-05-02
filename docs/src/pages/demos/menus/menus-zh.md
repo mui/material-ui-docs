@@ -33,29 +33,27 @@ components: Menu, MenuItem, MenuList, ClickAwayListener, Popover, Popper
 
 {{"demo": "pages/demos/menus/MenuListComposition.js"}}
 
-## 自定义菜单选项
+## Customized menus
 
-如果你一直在阅读[重写文档页面](/customization/overrides/)，但是你不确定如何开始，以下的例子演示了如何自定义 `MenuItem`。
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️虽然 Material design 规范鼓励样式化，但这些例子是不合适的。
-
-{{"demo": "pages/demos/menus/ListItemComposition.js"}}
+{{"demo": "pages/demos/menus/CustomizedMenus.js"}}
 
 `MenuItem` 实际上是在 `ListItem` 之上增加了一些样式的封装。 所以你可以使用和 `MenuItem` 组件相同的列表组合特性：
 
 ## 限高菜单
 
-如果菜单的最大高度仍无法显示所有菜单项，则菜单可以在内部无限滚动。
+如果菜单的最大高度仍无法显示所有菜单项，则菜单可以在内部滚动。
 
 {{"demo": "pages/demos/menus/LongMenu.js"}}
 
 ## 局限性
 
-有[一个flexbox 的 错误](https://bugs.chromium.org/p/chromium/issues/detail?id=327437)，它导致了`text-overflow: ellipsis` 在 flexbox 的布局中无法正常使用。 您可以使用 `Typography` 组件和 `noWrap` 来解决此问题：
+有 [一个 flexbox 的 bug](https://bugs.chromium.org/p/chromium/issues/detail?id=327437)，使 `text-overflow: ellipsis` 在 Flexbox 布局中不工作。 您可以使用 `Typography` 组件和 `noWrap` 来解决此问题：
 
 {{"demo": "pages/demos/menus/TypographyMenu.js"}}
 
-## 更改过渡动画
+## Change transition
 
 使用不同的过渡动画。
 
@@ -63,10 +61,10 @@ components: Menu, MenuItem, MenuList, ClickAwayListener, Popover, Popper
 
 ## 补充项目
 
-对于更高级的用例，您可以使用这些：
+对于更高级的用例，您可以利用：
 
 ### PopupState helper
 
-这是一个[`material-ui-popup-state`](https://github.com/jcoreio/material-ui-popup-state) 的第三方包，它在大部分情况下都能帮你处理好菜单的状态。
+这里有一个第三方包 [`material-ui-popup-state`](https://github.com/jcoreio/material-ui-popup-state) 在大部分情况下，它都能帮你处理好菜单状态
 
 {{"demo": "pages/demos/menus/MenuPopupState.js"}}
