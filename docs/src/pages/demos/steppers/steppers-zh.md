@@ -63,13 +63,11 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 
 ## 定制步进器
 
-如果您有阅读[重写样式文档页面](/customization/overrides/) 但你还不是很自信能够完全掌握， 以下是如何更改一个消息条(Stepperr)的主要颜色的示例
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 此组件使用自定义的 `StepConnector` 元素, 它根据 `active` 更改边框颜色, 并 ` completed ` 状态。
 
-⚠️虽然 Material design 规范鼓励样式化，但这些例子是不合适的。
-
-{{"demo": "pages/demos/steppers/CustomizedStepper.js"}}
+{{"demo": "pages/demos/steppers/CustomizedSteppers.js"}}
 
 ## 移动设备上的步进器
 
