@@ -1,10 +1,10 @@
-# Supported Platforms
+# Plataformas Suportadas
 
-<p class="description">Learn about the platforms, from modern to old, that are supported by Material-UI.</p>
+<p class="description">Aprenda sobre as plataformas, do moderno ao antigo, que são suportadas pelo Material-UI.</p>
 
-## Browser
+## Navegador
 
-Material-UI supports the latest, stable releases of all major browsers and platforms. We also support Internet Explorer 11. You don't need to provide any JavaScript polyfill as we manage unsupported browser features internally and in isolation.
+O Material-UI suporta as versões mais recentes e estáveis de todos os principais navegadores e plataformas. Também suportamos o Internet Explorer 11. Você não precisa fornecer nenhum JavaScript polyfill, pois gerenciamos recursos de navegador não suportados internamente e isoladamente.
 
 | IE | Edge  | Firefox | Chrome | Safari | Googlebot |
 |:-- |:----- |:------- |:------ |:------ |:--------- |
