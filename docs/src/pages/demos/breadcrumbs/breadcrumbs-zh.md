@@ -27,7 +27,7 @@ components: Breadcrumbs, Link, Typography
 
 ## 自定义的面包屑导航
 
-如果你一直在阅读 [重写文档页面](/customization/overrides/)，但是你不确定如何开始，以下的例子演示了如何改变面包屑导航的链接设计。
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/breadcrumbs/CustomizedBreadcrumbs.js"}}
 
