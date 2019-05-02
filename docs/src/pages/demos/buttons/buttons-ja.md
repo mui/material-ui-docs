@@ -82,13 +82,13 @@ Icons are also appropriate for toggle buttons that allow a single choice to be s
 
 {{"demo": "pages/demos/buttons/IconButtons.js"}}
 
-## Customized Buttons
+## Customized buttons
 
-If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here are examples of how you can change the main color of a Button using classes, and using a theme; and of a Bootstrap style Button.
-
-⚠️ While the material design specification encourages theming, these examples are off the beaten path.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/buttons/CustomizedButtons.js"}}
+
+
 
 ## Complex Buttons
 
