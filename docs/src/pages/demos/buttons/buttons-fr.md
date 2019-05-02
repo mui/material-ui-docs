@@ -82,13 +82,13 @@ Les icônes sont également appropriés pour les boutons à bascule qui permette
 
 {{"demo": "pages/demos/buttons/IconButtons.js"}}
 
-## Boutons personnalisés
+## Customized buttons
 
-Si vous avez lu [la page de la documentation sur les personnalisation](/customization/overrides/) mais que vous n'êtes pas prêt pour vous lancer, voici des exemples pour changer la couleur principale d'un bouton en utilisant des classes, et en utilisant un thème; et d'un bouton de style Bootstrap.
-
-⚠️ Bien que les spécifications Material Design encouragent la thématisation, ces exemples sortent des sentiers battus.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/buttons/CustomizedButtons.js"}}
+
+
 
 ## Boutons complexes
 
