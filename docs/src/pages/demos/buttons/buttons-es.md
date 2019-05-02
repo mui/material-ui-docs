@@ -82,13 +82,13 @@ Los iconos son también apropiados para botones toggle que permiten marcar o des
 
 {{"demo": "pages/demos/buttons/IconButtons.js"}}
 
-## Botones Personalizados
+## Customized buttons
 
-Si has estado leyendo la [página de documentación sobre overrides](/customization/overrides/) pero aún no te sientes cómodo intentándolo, a continuación hay ejemplos de como cambiar el color principal de un Botón usando clases, y usando un tema; y de un Botón estilo Bootstrap.
-
-⚠️ A pesar de que la especificación de material design anima a usar temas, estos ejemplos no son comunes.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/buttons/CustomizedButtons.js"}}
+
+
 
 ## Botones Complejos
 
