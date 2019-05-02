@@ -33,10 +33,8 @@ Das Badge versteckt sich automatisch, wenn `badgeContent` null ist. Dies kann mi
 
 {{"demo": "pages/demos/badges/BadgeVisibility.js"}}
 
-## Benutzerdefinierte Badges
+## Customized badges
 
-Wenn du die [Overrides Dokumentationsseite](/customization/overrides/) gelesen hast, aber dich noch nicht sicher genug fühlst, um direkt loszulegen, ist hier noch ein Beispiel, wie du die Position der Badges anpassen könntest.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️ Auch wenn die Material-Design Spezifikation zur Verwendung von Themes ermutigt, liegen diese Beispiele außerhalb der üblichen Pfade.
-
-{{"demo": "pages/demos/badges/CustomizedBadge.js"}}
+{{"demo": "pages/demos/badges/CustomizedBadges.js"}}
