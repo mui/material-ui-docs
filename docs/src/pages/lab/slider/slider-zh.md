@@ -35,7 +35,9 @@ components: Slider
 
 {{"demo": "pages/lab/slider/VerticalSlider.js"}}
 
-## Customized Slider
+## Customized sliders
+
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/lab/slider/CustomizedSlider.js"}}
 
