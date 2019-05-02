@@ -27,7 +27,7 @@ In den folgenden Beispielen werden zwei textbasierte Trennzeichen und ein SVG Ic
 
 ## Benutzerdefinierte Breadcrumbs
 
-Wenn du die [Overrides Dokumentationsseite](/customization/overrides/) gelesen hast, aber dich noch nicht sicher genug fühlst, um direkt loszulegen, ist hier noch ein Beispiel, wie du das Design der Breadcrumb-Links anpassen könntest.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/breadcrumbs/CustomizedBreadcrumbs.js"}}
 
