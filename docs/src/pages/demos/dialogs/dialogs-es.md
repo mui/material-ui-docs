@@ -50,13 +50,13 @@ Los diálogos de formulario permiten a los usuarios llenar campos dentro de un c
 
 {{"demo": "pages/demos/dialogs/FormDialog.js"}}
 
-## Diálogo personalizado
+## Customized dialogs
 
-Si ha estado leyendo la [página de documentación de anulaciones](/customization/overrides/) pero no se siente seguro de cómo hacerlo, aquí hay un ejemplo de cómo puede personalizar el componente `DialogTitle` para soportar un botón de cerrado.
+Here is example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️ A pesar de que la especificación de material design anima a usar temas, este ejemplo no es común.
+The dialog has a close button added to aide usability.
 
-{{"demo": "pages/demos/dialogs/CustomizedDialog.js"}}
+{{"demo": "pages/demos/dialogs/CustomizedDialogs.js"}}
 
 ## Diálogos de pantalla completa
 
