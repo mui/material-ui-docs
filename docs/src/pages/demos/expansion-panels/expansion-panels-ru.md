@@ -35,10 +35,8 @@ components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, Expans
 
 Содержимое ExpansionPanels монтируется по умолчанию, даже если панель не развернута. Это предопределенное поведение подразумевает рендеринг на стороне сервера и SEO. Если вы отображаете обширные деревья компонентов внутри ваших панелей или просто отображаете много панелей, было бы неплохо изменить это поведение по умолчанию, включив `unmountOnExit` в `TransitionProps`: `<ExpansionPanel TransitionProps={{ unmountOnExit: true }} />`. Как и при любой оптимизации производительности, не стоит переоценивать её. Сначала идентифицируйте узкие места и лишь затем пытайтесь применить эти стратегии.
 
-## Изменение стилей Expansion Panel
+## Customized expansion panels
 
-Если Вы читали [страницу документации переопределение стилей](/customization/overrides/), но недостаточно уверены в себе, чтобы попробовать самостоятельно, посмотрите на пример того, как можно изменить цвет фона компонента `ExpansionPanelSummary` и отступы `ExpansionPanelDetails`.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️ Хотя спецификация material design поощряет использование тем, эти примеры не соответствуют требованиям.
-
-{{"demo": "pages/demos/expansion-panels/CustomizedExpansionPanel.js"}}
+{{"demo": "pages/demos/expansion-panels/CustomizedExpansionPanels.js"}}
