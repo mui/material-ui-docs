@@ -16,7 +16,7 @@ npm install @material-ui/core@next
 yarn add @material-ui/core@next
 ```
 
-Veuillez noter que [react](https://www.npmjs.com/package/react) >= 16.3.0 et [react-dom](https://www.npmjs.com/package/react-dom) >= 16.3.0 sont des dépendances.
+Veuillez noter que [react](https://www.npmjs.com/package/react) >= 16.8.0 et [react-dom](https://www.npmjs.com/package/react-dom) >= 16.8.0 sont des dépendances.
 
 ## La police Roboto
 
