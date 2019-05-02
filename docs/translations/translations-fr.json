@@ -114,7 +114,7 @@
     "/utils/no-ssr": "Pas de SSR",
     "/utils/click-away-listener": "Click Away Listener",
     "/utils/box": "Box (Boite)",
-    "/demos": "Démo des composants",
+    "/demos": "Composants",
     "/demos/app-bar": "Barre d'application (App Bar)",
     "/demos/autocomplete": "Auto-complétion",
     "/demos/avatars": "Avatars",
