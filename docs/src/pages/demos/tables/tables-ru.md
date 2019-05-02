@@ -45,13 +45,11 @@ components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination
 
 {{"demo": "pages/demos/tables/EnhancedTable.js"}}
 
-## Индивидуальное изменение таблицы
+## Customized tables
 
-Если вы читали [страницу документации о переопределениях](/customization/overrides/), но все еще не до конца уверены как будет выглядеть компонент, вот примеры того, как вы можете изменить отображение `TableCell`.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️ Хотя спецификации материал дизайна поощряют использование тем, эти примеры не соответствуют требованиям.
-
-{{"demo": "pages/demos/tables/CustomizedTable.js"}}
+{{"demo": "pages/demos/tables/CustomizedTables.js"}}
 
 ## Настройка постраничной навигации
 
