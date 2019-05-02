@@ -33,13 +33,11 @@ The primary responsibility of the `MenuList` component is to handle the focus.
 
 {{"demo": "pages/demos/menus/MenuListComposition.js"}}
 
-## Customized MenuItem
+## Customized menus
 
-If you have been reading the [overrides documentation page](/customization/overrides/) but you are not confident jumping in, here is one example of how you can customize the `MenuItem`.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️ Хотя спецификации материал дизайна поощряют использование тем, эти примеры не соответствуют требованиям.
-
-{{"demo": "pages/demos/menus/ListItemComposition.js"}}
+{{"demo": "pages/demos/menus/CustomizedMenus.js"}}
 
 `MenuItem` является оберткой `ListItem` с некоторыми дополнительными стилями. С компонентом `MenuItem` можно использовать те же приемы композиции списка:
 
@@ -55,7 +53,7 @@ If you have been reading the [overrides documentation page](/customization/overr
 
 {{"demo": "pages/demos/menus/TypographyMenu.js"}}
 
-## Изменить Transition
+## Change transition
 
 Используйте другой transition.
 
