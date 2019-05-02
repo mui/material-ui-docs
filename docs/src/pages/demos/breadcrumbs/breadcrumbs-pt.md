@@ -27,7 +27,7 @@ No exemplo a seguir, nós usamos duas strings separadoras, e um ícone SVG.
 
 ## Breadcrumbs personalizado
 
-Se você leu a [página de abertura da documentação](/customization/overrides/) mas não está confiante de cair dentro, aqui está um exemplo de como você pode alterar o link de desenho do breadcrumb.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/breadcrumbs/CustomizedBreadcrumbs.js"}}
 
