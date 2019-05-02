@@ -16,7 +16,7 @@ npm install @material-ui/core@next
 yarn add @material-ui/core@next
 ```
 
-Обратите внимание, что [react](https://www.npmjs.com/package/react) > = 16.3.0 и [react-dom](https://www.npmjs.com/package/react-dom) > = 16.3.0 являются одноранговыми зависимостями.
+Обратите внимание, что [react](https://www.npmjs.com/package/react) > = 16.8.0 и [react-dom](https://www.npmjs.com/package/react-dom) > = 16.8.0 являются одноранговыми зависимостями.
 
 ## Шрифт Roboto
 
