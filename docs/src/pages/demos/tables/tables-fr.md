@@ -45,13 +45,11 @@ La table a reçu une largeur fixe pour illustrer le défilement horizontal. Afin
 
 {{"demo": "pages/demos/tables/EnhancedTable.js"}}
 
-## Tableaux Personnalisés
+## Customized tables
 
-Si vous avez lu [la page de documentation sur la personnalisation](/customization/overrides/) mais que vous n'êtes pas prêt pour vous lancer, voici un exemple de la façon dont vous pouvez changer l'interface d'un `TableCell`.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️ Bien que la spécification material encouragent la thématisation, cet exemple sort des sentiers battus.
-
-{{"demo": "pages/demos/tables/CustomizedTable.js"}}
+{{"demo": "pages/demos/tables/CustomizedTables.js"}}
 
 ## Action de pagination de table personnalisée
 
@@ -73,7 +71,7 @@ Dans l'exemple suivant, nous montrons comment utiliser [react-virtualized](https
 
 ## Projets complémentaires
 
-Pour un usage plus avancé cas, vous pourriez être en mesure de prendre avantage de:
+Pour des cas d'utilisation plus avancés, vous pourrez peut-être tirer parti des avantages suivants:
 
 ### material-table
 
