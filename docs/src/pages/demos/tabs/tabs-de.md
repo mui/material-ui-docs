@@ -63,13 +63,13 @@ Linke und rechte Bildlauftasten werden niemals angezeigt. Der gesamte Bildlauf m
 
 {{"demo": "pages/demos/tabs/ScrollableTabsButtonPrevent.js"}}
 
-## Benutzerdefinierte Tabs
+## Customized tabs
 
-Wenn du die [Überschreibungs Dokumentationsseite](/customization/overrides/) gelesen hast, aber dich noch nicht sicher genug fühlst, um direkt loszulegen, ist hier noch ein Beispiel, wie du die Farbe der Tabs ändern kannst.
-
-⚠️ Auch wenn die Material-Design Spezifikation zur Verwendung von Themes ermutigt, liegen diese Beispiele außerhalb der üblichen Pfade.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/tabs/CustomizedTabs.js"}}
+
+
 
 ## Nav-Tabs
 
