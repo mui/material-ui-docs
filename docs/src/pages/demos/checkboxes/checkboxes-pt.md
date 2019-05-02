@@ -3,13 +3,13 @@ title: Checkbox React component
 components: Checkbox, FormControl, FormGroup, FormLabel, FormControlLabel
 ---
 
-# Caixas de Seleção
+# Checkbox
 
 <p class="description">Checkboxes allow the user to select one or more items from a set.</p>
 
 [Checkboxes](https://material.io/design/components/selection-controls.html#checkboxes) can be used to turn an option on or off.
 
-If you have multiple options appearing in a list, you can preserve space by using checkboxes instead of on/off switches. If you have a single option, avoid using a checkbox and use an on/off switch instead.
+Se você tem várias opções aparecendo na lista, você pode economizar espaço usando checkbox ao invés de on/off switches. Se você tem uma única opção, evite usar um checkbox e use um on/off switch.
 
 {{"demo": "pages/demos/checkboxes/Checkboxes.js"}}
 
