@@ -33,10 +33,8 @@ Le badge se cache automatiquement avec badgeContent est zéro. Vous pouvez rempl
 
 {{"demo": "pages/demos/badges/BadgeVisibility.js"}}
 
-## Badge personnalisé
+## Customized badges
 
-Si vous avez lu le [overrides page de documentation](/customization/overrides/) mais vous n'êtes pas sûr de vous lancer, ici est un exemple de la façon dont vous pouvez changer la position de badge.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️ Bien que la spécification material encouragent la thématisation, cet exemple sort des sentiers battus.
-
-{{"demo": "pages/demos/badges/CustomizedBadge.js"}}
+{{"demo": "pages/demos/badges/CustomizedBadges.js"}}
