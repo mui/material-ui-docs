@@ -43,9 +43,7 @@ Puede que también hayas notado que algunas propiedades nativas de input HTML no
 
 ## Inputs personalizados
 
-Si has estado leyendo la [página de documentación sobre overrides](/customization/overrides/) pero aun no tienes la confianza suficiente para usarlos acá hay un ejemplo de su uso para el cambio de color de un input.
-
-⚠️ A pesar de que la especificación de material design anima a usar temas, estos ejemplos no son comunes.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/text-fields/CustomizedInputs.js"}}
 
@@ -130,9 +128,8 @@ Para facilitar la accesibilidad, ** el campo debe estar vinculado a la etiqueta 
 
 ## Proyectos relacionados
 
-Para usos más avanzados tal vez puedas sacarle partido a:
+Para usos más avanzados tal vez puedas aprovercharte de:
 
 - [redux-form-material-ui](https://github.com/erikras/redux-form-material-ui) Un conjunto de componentes contenedor para facilitar el uso de Material-UI junto a Redux Form.
 - [formik-material-ui](https://github.com/stackworx/formik-material-ui) Enlaces para utilizar Material-UI con formik.
 - [final-form-material-u](https://github.com/Deadly0/final-form-material-ui) Un conjunto de componentes contenedor para facilitar el uso de Material-UI junto a Final Form.
-- [uniforms-material](https://github.com/vazco/uniforms/tree/master/packages/uniforms-material) Componentes contenedor de Material-UI para Uniforms, un conjunto de bibliotecas React para crear formularios.
