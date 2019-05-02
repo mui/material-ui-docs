@@ -81,13 +81,11 @@ function Progress(props) {
 }
 ```
 
-## Individueller Fortschritt
+## Customized progress bars
 
-Wenn du die [Overrides Dokumentationsseite](/customization/overrides/) gelesen hast, aber dich noch nicht sicher genug fühlst, um direkt loszulegen, ist hier noch ein Beispiel, wie du die Komponenten anpassen könntest. Die letzte Demo zeigt, wie Sie einen Facebook-ähnlichen Spinner erstellen können.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️ Auch wenn die material design Spezifikation zur Verwendung von Themes ermutigt, liegen diese Beispiele außerhalb der üblichen Pfade.
-
-{{"demo": "pages/demos/progress/CustomizedProgress.js"}}
+{{"demo": "pages/demos/progress/CustomizedProgressBars.js"}}
 
 ## Erscheinung verzögern
 
