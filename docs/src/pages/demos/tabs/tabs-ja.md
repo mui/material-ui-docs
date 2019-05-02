@@ -63,13 +63,13 @@ Left and right scroll buttons will never be presented. All scrolling must be ini
 
 {{"demo": "pages/demos/tabs/ScrollableTabsButtonPrevent.js"}}
 
-## Customized Tabs
+## Customized tabs
 
-If you have read the [overrides documentation page](/customization/overrides/) but aren't confident jumping in, here's an example of how you can change the main color of the Tabs.
-
-⚠️ While the material design specification encourages theming, this example is off the beaten path.
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 {{"demo": "pages/demos/tabs/CustomizedTabs.js"}}
+
+
 
 ## Nav Tabs
 
