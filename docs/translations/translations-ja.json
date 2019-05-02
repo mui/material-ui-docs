@@ -114,7 +114,7 @@
     "/utils/no-ssr": "No SSR",
     "/utils/click-away-listener": "クリックリスナー",
     "/utils/box": "Box",
-    "/demos": "コンポーネントのデモ",
+    "/demos": "コンポーネント",
     "/demos/app-bar": "App Bar",
     "/demos/autocomplete": "Autocomplete",
     "/demos/avatars": "Avatars",
