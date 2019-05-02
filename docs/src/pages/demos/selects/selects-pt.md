@@ -21,11 +21,9 @@ As the user experience can be improved on mobile using the native select of the 
 
 ## Customized selects
 
-Se você leu a [página de abertura da documentação](/customization/overrides/) mas não está confiante, aqui vai um exemplo de como trocar a cor principal do Input.
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
 The first step is to style the `InputBase` component. Once it's styled, you can either use it directly as a text field or provide it to the select `input` property to have a select field.
-
-⚠️ Uma vez que a especificação do material design incentiva customização, estes exemplos diferem do design usual.
 
 {{"demo": "pages/demos/selects/CustomizedSelects.js"}}
 
@@ -47,6 +45,6 @@ While it's discouraged by the Material Design specification, you can use a selec
 
 {{"demo": "pages/demos/selects/DialogSelect.js"}}
 
-## Text Fields (Campos de Texto)
+## Campos de Texto
 
 O componente wrapper `TextField` é um controle de formulário completo, incluindo um rótulo, entrada e texto de ajuda. You can find an example with the select mode [in this section](/demos/text-fields/#textfield).
