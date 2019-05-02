@@ -81,13 +81,11 @@ function Progress(props) {
 }
 ```
 
-## 自定义进度
+## Customized progress bars
 
-如果您一直在阅读 [覆盖文档页面](/customization/overrides/) 但是您没有信心进入， 这里是一个如何自定义组件的示例。 最后一个演示将给你示范如何构建类似 Facebook 的 spinner。
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️虽然 Material design 规范鼓励样式化，但这些例子是不合适的。
-
-{{"demo": "pages/demos/progress/CustomizedProgress.js"}}
+{{"demo": "pages/demos/progress/CustomizedProgressBars.js"}}
 
 ## 延迟展现
 
