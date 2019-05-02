@@ -45,23 +45,21 @@ components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination
 
 {{"demo": "pages/demos/tables/EnhancedTable.js"}}
 
-## 自定义表格
+## Customized tables
 
-如果您有阅读[重写样式文档页面](/customization/overrides/)，但你还不是很自信能够完全掌握，希望以下关于如何更改一个 Tablecell 的主要颜色的示例能够给你提供一些帮助。
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️虽然 material design 规范鼓励创建主题，但这个例子是不合适的。
-
-{{"demo": "pages/demos/tables/CustomizedTable.js"}}
+{{"demo": "pages/demos/tables/CustomizedTables.js"}}
 
 ## 自定义表格的分页操作
 
-`TablePagination` 组件的 `Action` 属性允许实现自定义操作。
+`TablePagination` 组件的 `Action` 属性允许实现自定义行为。
 
 {{"demo": "pages/demos/tables/CustomPaginationActionsTable.js"}}
 
 ## Spanning Table（合并的表格）
 
-一个简单的合并行 & 列的例子
+一个行 & 列跨越的简单例子
 
 {{"demo": "pages/demos/tables/SpanningTable.js"}}
 
@@ -73,11 +71,11 @@ components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination
 
 ## 补充项目
 
-对于更高级的用例，您可以使用这些：
+对于更高级的用例，您可以利用：
 
 ### material-table
 
-![评星](https://img.shields.io/github/stars/mbrn/material-table.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/material-table.svg)
+![stars](https://img.shields.io/github/stars/mbrn/material-table.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/material-table.svg)
 
 [material-table](https://github.com/mbrn/material-table) 是一款 React 的简单且强大的数据库。它基于 Material-UI Table 并且添加了一些额外的功能。 它们支持了不同的用户案例（可编辑，筛选，分组，排序，选择，国际化，树形数据等等）。 您应该看一下。
 
