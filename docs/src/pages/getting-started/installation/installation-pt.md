@@ -16,7 +16,7 @@ npm install @material-ui/core@next
 yarn add @material-ui/core@next
 ```
 
-Note que o pacote possui 2 dependências obrigatórias: [react](https://www.npmjs.com/package/react) >= 16.3.0 e [react-dom](https://www.npmjs.com/package/react-dom) >= 16.3.0.
+Note que o pacote possui 2 dependências obrigatórias: [react](https://www.npmjs.com/package/react) >= 16.8.0 e [react-dom](https://www.npmjs.com/package/react-dom) >= 16.8.0.
 
 ## Fonte Roboto
 
