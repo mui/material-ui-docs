@@ -33,10 +33,8 @@ components: Badge
 
 {{"demo": "pages/demos/badges/BadgeVisibility.js"}}
 
-## 自定义徽章
+## Customized badges
 
-如果你一直在阅读 [重写文档页面](/customization/overrides/)，但是你不确定如何开始，以下的例子演示了如何改变徽章在文档中的位置。
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-⚠️虽然 material design 规范鼓励创建主题，但这个例子是不合适的。
-
-{{"demo": "pages/demos/badges/CustomizedBadge.js"}}
+{{"demo": "pages/demos/badges/CustomizedBadges.js"}}
