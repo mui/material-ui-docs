@@ -21,17 +21,17 @@ Radio buttons should have the most commonly used option selected by default.
 
 {{"demo": "pages/demos/radio-buttons/RadioButtons.js"}}
 
-## Label placement
+## Posicionamento do Label
 
-You can change the placement of the label:
+Você pode alterar o posicionamento do label:
 
 {{"demo": "pages/demos/radio-buttons/FormControlLabelPosition.js"}}
 
 ## Acessibilidade
 
-All form controls should have labels, and this includes radio buttons, checkboxes, and switches. In most cases, this is done by using the `<label>` element ([FormControlLabel](/api/form-control-label/)).
+Todos os form controls devem ter labels, e isso inclui radio buttons, checkboxes e switches. Na maioria dos casos, isso é feito usando `<label>` ([FormControlLabel](/api/form-control-label/)).
 
-When a label can't be used, it's necessary to add an attribute directly to the input component. In this case, you can apply the additional attribute (e.g. `aria-label`, `aria-labelledby`, `title`) via the `inputProps` property.
+Quando uma label não pode ser usada, é necessário adicionar um atributo diretamente no componente de input. Nesse caso você pode aplicar um atributo adicional (e.g.`aria-label`,`aria-labelledby`, `title`) através do `inputProps`.
 
 ```jsx
 <RadioButton
