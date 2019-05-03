@@ -5,21 +5,21 @@ components: Checkbox, FormControl, FormGroup, FormLabel, FormControlLabel
 
 # Checkbox
 
-<p class="description">Checkboxes allow the user to select one or more items from a set.</p>
+<p class="description">Checkboxes permitem o usuário selecionar um ou mais itens de um conjunto.</p>
 
-[Checkboxes](https://material.io/design/components/selection-controls.html#checkboxes) can be used to turn an option on or off.
+[Checkboxes](https://material.io/design/components/selection-controls.html#checkboxes) podem ser usados para deixar uma opção disponível ou indisponível.
 
 Se você tem várias opções aparecendo na lista, você pode economizar espaço usando checkbox ao invés de on/off switches. Se você tem uma única opção, evite usar um checkbox e use um on/off switch.
 
 {{"demo": "pages/demos/checkboxes/Checkboxes.js"}}
 
-`Checkbox` can also be used with a label description thanks to the `FormControlLabel` component.
+`Checkbox` também podem ser usadas com uma `label` graças ao `FormControlLabel` componente.
 
 {{"demo": "pages/demos/checkboxes/CheckboxLabels.js"}}
 
 ## Checkboxes with FormGroup
 
-`FormGroup` is a helpful wrapper used to group selection controls components that provides an easier API.
+`FormGroup` é usado para agrupar componentes seletores para facilitar o uso da API.
 
 {{"demo": "pages/demos/checkboxes/CheckboxesGroup.js"}}
 
