@@ -4,7 +4,7 @@ title: Box React component
 
 # Box
 
-<p class="description">The Box component serves as a wrapper component for most of the CSS utility needs.</p>
+<p class="description">O componente Box (Caixa) serve como um componente wrapper (invólucro) para a maioria das necessidades do utilitário CSS.</p>
 
 The Box component packages [all the style functions](/system/basics/#all-inclusive) that are exposed in `@material-ui/system`. It's created using the [`styled()`](/css-in-js/api/#styled-style-function-component) function of `@material-ui/styles`.
 
