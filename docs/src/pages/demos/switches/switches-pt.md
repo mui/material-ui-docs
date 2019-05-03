@@ -19,7 +19,7 @@ components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
 
 ## Switches with FormGroup
 
-`FormGroup` is a helpful wrapper used to group selection controls components that provides an easier API. However, we encourage you to use a [Checkbox](#checkboxes) instead.
+`FormGroup` é usado para agrupar componentes seletores para facilitar o uso da API. However, we encourage you to use a [Checkbox](#checkboxes) instead.
 
 {{"demo": "pages/demos/switches/SwitchesGroup.js"}}
 
