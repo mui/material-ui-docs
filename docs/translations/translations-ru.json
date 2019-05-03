@@ -73,7 +73,7 @@
   "pricingTitle": "Цены",
   "pricingDescr": "Быстро создайте эффективную таблицу цен для ваших потенциальных покупателей с использованием этого макета страницы.",
   "stickyFooterTitle": "Липкий футер",
-  "stickyFooterDescr": "Attach a footer to the bottom of the viewport when page content is short.",
+  "stickyFooterDescr": "Крепите футер к нижней части окна, когда высота содержимого небольшая.",
   "expandAll": "Развернуть все",
   "showSource": "Показать исходник",
   "hideSource": "Скрыть исходник",
@@ -84,7 +84,7 @@
   "stackblitz": "Редактировать в StackBlitz (только JS)",
   "headTitle": "Самый популярный в мире React UI фреймворк - Material-UI",
   "pages": {
-    "/getting-started": "Getting Started",
+    "/getting-started": "Приступая к работе",
     "/getting-started/installation": "Инструкция по установке",
     "/getting-started/usage": "Использование",
     "/getting-started/example-projects": "Примеры проектов",
