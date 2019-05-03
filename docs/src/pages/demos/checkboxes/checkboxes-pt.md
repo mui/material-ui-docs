@@ -17,7 +17,7 @@ Se você tem várias opções aparecendo na lista, você pode economizar espaço
 
 {{"demo": "pages/demos/checkboxes/CheckboxLabels.js"}}
 
-## Checkboxes with FormGroup
+## Checkboxes com FormGroup
 
 `FormGroup` é usado para agrupar componentes seletores para facilitar o uso da API.
 
@@ -44,4 +44,4 @@ Quando uma label não pode ser usada, é necessário adicionar um atributo diret
 
 ## Guia
 
-- [Checkboxes vs. Butões de Rádio](https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/)
+- [Checkboxes vs. Botões de Rádio](https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/)
