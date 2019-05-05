@@ -95,10 +95,10 @@ function Progress(props) {
 
 ## 局限性
 
-在加载的特别慢时，您可能丢失stroke dash的动画或看到环形进度会有一些半径随机的情况。 为了不阻塞主渲染进程，应该在web worker中或批处理中执行密集操作的处理器。
+在加载的特别慢时，您可能丢失stroke dash的动画或看到环形进度会有一些半径随机的情况。 为了不阻碍主渲染进程，您应该在web worker中或批处理中运行密集操作的处理器。
 
-![慢加载](/static/images/progress/heavy-load.gif)
+![高负载](/static/images/progress/heavy-load.gif)
 
-当不能这样做的时候，你可以借助 `disableShrink` 特性来减轻这个问题。 见 https://github.com/mui-org/material-ui/issues/10327
+若这样不可行，您还可以借助 `disableShrink` 属性来缓解这个问题。详情请见 https://github.com/mui-org/material-ui/issues/10327。
 
 {{"demo": "pages/demos/progress/CircularUnderLoad.js"}}
