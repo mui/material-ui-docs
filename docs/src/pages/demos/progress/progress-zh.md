@@ -5,15 +5,15 @@ components: CircularProgress, LinearProgress
 
 # Progress（进度条）
 
-<p class="description">进度指示器用以表示一个不确定的等待时间或显示一个处理过程的时间长短。</p>
+<p class="description">Progress indicators（进度指示器）能够表示一个不明确的等待时间，或者能显示处理过程的时间长短。</p>
 
-[进度指示器](https://material.io/design/components/progress-indicators.html) 通知用户当前处理过程的状态，例如加载一个应用，提交一个表单或保存一些更新。 它们与应用程序状态进行通信并指示可用的操作，例如用户是否可从当前页面离开。
+[进度指示器](https://material.io/design/components/progress-indicators.html)能够将当前处理过程的状态通知用户，例如加载一个应用，提交一个表单或保存一些更新。 它们与应用程序状态进行通信并指示可用的操作，例如用户是否可从当前页面离开。
 
-**确定的** 指示器显示一个操作消耗多长时间。
+**确定的**指示器显示一个操作消耗多长时间。
 
-**未确定**指示器可视化一个不确定的操作等待时间。
+**未确定的**指示器可视化了一个不确定的操作等待时间。
 
-#### 进度指示器组
+#### 一组进度条
 
 当显示一系列过程的进度时，表示全部的过程而不是每个单独活动的进度。
 
