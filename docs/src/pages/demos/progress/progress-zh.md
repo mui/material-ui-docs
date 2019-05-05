@@ -9,9 +9,9 @@ components: CircularProgress, LinearProgress
 
 [进度指示器](https://material.io/design/components/progress-indicators.html)能够将当前处理过程的状态通知用户，例如加载一个应用，提交一个表单或保存一些更新。 它们与应用程序状态进行通信并指示可用的操作，例如用户是否可从当前页面离开。
 
-**确定的**指示器显示一个操作消耗多长时间。
+**定量**指示器显示一个操作消耗多长时间。
 
-**未确定的**指示器可视化了一个不确定的操作等待时间。
+**不定量**指示器可视化了一个不确定的操作等待时间。
 
 #### 一组进度条
 
@@ -21,10 +21,10 @@ components: CircularProgress, LinearProgress
 
 [Circular progress（环状进度条）](https://material.io/design/components/progress-indicators.html#circular-progress-indicators)同时支持了确定的和不确定的过程。
 
-- **确定的**环形指示器填充了不可见区域，指示器从0到360度推进，并用颜色来进行环形追踪。
-- **不确定** 环形指示器在沿着不可见轨道移动时，随之变大变小。
+- **定量**环形指示器填充了不可见区域，指示器从0到360度推进，并用颜色来进行环形追踪。
+- **不定量**环形指示器在沿着隐形的轨道移动时，随之变大变小。
 
-### 不确定环形
+### 不定量的环形进度条
 
 {{"demo": "pages/demos/progress/CircularIndeterminate.js"}}
 
@@ -32,27 +32,27 @@ components: CircularProgress, LinearProgress
 
 {{"demo": "pages/demos/progress/CircularIntegration.js"}}
 
-### 确定环形
+### 定量的环形进度条
 
 {{"demo": "pages/demos/progress/CircularDeterminate.js"}}
 
-### 静态环形
+### 静态的环形进度条
 
 {{"demo": "pages/demos/progress/CircularStatic.js"}}
 
-## 线状
+## 线性进度条
 
-[线状进度](https://material.io/design/components/progress-indicators.html#linear-progress-indicators) 指示器.
+[线性进度条](https://material.io/design/components/progress-indicators.html#linear-progress-indicators)指示器.
 
-### 不确定线状
+### 不定量的线性进度条
 
 {{"demo": "pages/demos/progress/LinearIndeterminate.js"}}
 
-### 确定线状
+### 定量的线性进度条
 
 {{"demo": "pages/demos/progress/LinearDeterminate.js"}}
 
-### 缓冲线状
+### 线性缓冲条
 
 {{"demo": "pages/demos/progress/LinearBuffer.js"}}
 
