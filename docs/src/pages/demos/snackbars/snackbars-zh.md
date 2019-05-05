@@ -23,7 +23,7 @@ components: Snackbar, SnackbarContent
 
 ## Customized snackbars
 
-Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
+以下是自定义组件的一些示例。您可以在[重写文档页面](/customization/overrides/)中了解有关此内容的更多信息。
 
 {{"demo": "pages/demos/snackbars/CustomizedSnackbars.js"}}
 
