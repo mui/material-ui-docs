@@ -63,7 +63,7 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 
 ## 定制步进器
 
-Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
+以下是自定义组件的一个示例。您可以在[重写文档页面](/customization/overrides/)中了解有关此内容的更多信息。
 
 此组件使用自定义的 `StepConnector` 元素, 它根据 `active` 更改边框颜色, 并 ` completed ` 状态。
 
