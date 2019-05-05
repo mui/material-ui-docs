@@ -1,13 +1,13 @@
 ---
-title: React 选择器组件
+title: React Select（选择器）组件
 components: Select, NativeSelect
 ---
 
-# 选择器
+# Selects（选择器）
 
-<p class="description">选择器组件用于从选项列表中去获得用户所提供的信息。</p>
+<p class="description">选择器组件能从一个选项列表中去获得用户所提供的信息。</p>
 
-## 简单选择器
+## 简单的选择器
 
 菜单位于其所点击的元素上, 使得当前选定的菜单项显示在点击元素上。
 
