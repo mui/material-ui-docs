@@ -21,7 +21,7 @@ components: CircularProgress, LinearProgress
 
 [Circular progress（环状进度条）](https://material.io/design/components/progress-indicators.html#circular-progress-indicators)同时支持了确定的和不确定的过程。
 
-- **确定的** 环形指示器填充不可见区域，以颜色环形追踪，作为指示器从0至360度移动。
+- **确定的**环形指示器填充了不可见区域，指示器从0到360度推进，并用颜色来进行环形追踪。
 - **不确定** 环形指示器在沿着不可见轨道移动时，随之变大变小。
 
 ### 不确定环形
