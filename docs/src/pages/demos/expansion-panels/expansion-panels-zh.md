@@ -35,8 +35,8 @@ components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, Expans
 
 默认情况下，即使在面板没被展开的情况下，扩展面板的内容也会被注入到页面中。 这样的默认情况是是考虑到了 server-side rendering（服务端渲染）和 SEO（搜索引擎优化）。 但如果你您要在扩展面板中渲染开销很大的树组件，或者只是单纯想要渲染很多扩展面板，我们建议变更一些默认的行为。你可以通过在开启 `TransitionProps` 中的 `unmountOnExit` 属性：`<ExpansionPanel TransitionProps={{ unmountOnExit: true }} />`。 不过对所有情况下的性能优化，这并不是灵丹妙药。 请您务必先确定性能的瓶颈所在，再考虑这些优化策略。
 
-## Customized expansion panels
+## 定制扩展面板
 
-Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
+以下是自定义组件的一个示例。您可以在[重写文档页面](/customization/overrides/)中了解有关此内容的更多信息。
 
 {{"demo": "pages/demos/expansion-panels/CustomizedExpansionPanels.js"}}
