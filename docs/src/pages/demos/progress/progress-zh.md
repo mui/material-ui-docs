@@ -60,9 +60,9 @@ components: CircularProgress, LinearProgress
 
 {{"demo": "pages/demos/progress/LinearQuery.js"}}
 
-## 非标准范围
+## 非标准区间
 
-进度条组件采用一个在0—100间的值。 作为默认的最小/最大值，这简化了屏幕阅读用户的使用。 但是有时，你可能会使用值超出这个范围的数据源。 这里告诉您如何轻松的将一个任意范围的值转换为0 - 100区间的值。
+进度条组件采用一个在0—100区间内的值。 作为默认的最小/最大值，屏幕阅读用户能够更便利地阅读。 但是有时，您可能会使用一些值超出这个范围的数据源。 通过这个例子，您可以轻松地将一个任意区间的值转换为0—100区间的值：
 
 ```jsx
 // MIN = 最小值
@@ -70,7 +70,7 @@ components: CircularProgress, LinearProgress
 // 正常化值的函数（MIN / MAX 可相互协调）
 const normalise = value => (value - MIN) * 100 / (MAX - MIN);
 
-// 在 render 函数中，利用`正常化`函数的示例组件
+// 示例组件展示了在 render 函数中，利用`normalise`这个函数
 function Progress(props) {
   return (
     <React.Fragment>
@@ -81,15 +81,15 @@ function Progress(props) {
 }
 ```
 
-## Customized progress bars
+## 自定义进度条
 
-Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
+以下是自定义组件的一些示例。您可以在[重写文档页面](/customization/overrides/)中了解有关此内容的更多信息。
 
 {{"demo": "pages/demos/progress/CustomizedProgressBars.js"}}
 
-## 延迟展现
+## 延时的出现
 
-关于响应时间，有 [3个重要限制](https://www.nngroup.com/articles/response-times-3-important-limits/)。 `ButtonBase`组件的波纹效果确保用户感受到系统是实时反馈的。 通常情况下，在多余0.1秒且小于1.0秒期间不需要特殊的反馈。 在1.0秒后，你可以显示一个加载器来保持用户的思考流程不被打断。
+关于的响应时间，您需要知道这[3个重要的限制](https://www.nngroup.com/articles/response-times-3-important-limits/)。 `ButtonBase`组件的波纹效果，能够保证用户体验到实时反馈的系统。 通常情况下，在多余0.1秒且小于1.0秒期间不需要特殊的反馈。 在1.0秒后，你可以显示一个加载器来保持用户的思考流程不被打断。
 
 {{"demo": "pages/demos/progress/DelayingAppearance.js"}}
 
