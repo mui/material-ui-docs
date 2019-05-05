@@ -43,11 +43,11 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 ## 自定义输入
 
-Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
+以下是自定义组件的一些示例。您可以在[重写文档页面](/customization/overrides/)中了解有关此内容的更多信息。
 
 {{"demo": "pages/demos/text-fields/CustomizedInputs.js"}}
 
-自定义不会停留在CSS，您可以使用组合来构建自定义组件并为您的应用程序提供独特的感觉。 以下是使用受Google地图启发的 [`InputBase`](/api/input-base/) 组件的示例。
+自定义不止于CSS，您可以使用组合来构建自定义组件，并给您的应用程序提供一种独特的感觉。 以下是使用受Google地图启发的 [`InputBase`](/api/input-base/) 组件的示例。
 
 {{"demo": "pages/demos/text-fields/CustomizedInputBase.js"}}
 
