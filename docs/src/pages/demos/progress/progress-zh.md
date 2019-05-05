@@ -89,13 +89,13 @@ function Progress(props) {
 
 ## 延时的出现
 
-关于的响应时间，您需要知道这[3个重要的限制](https://www.nngroup.com/articles/response-times-3-important-limits/)。 `ButtonBase`组件的波纹效果，能够保证用户体验到实时反馈的系统。 通常情况下，在多余0.1秒且小于1.0秒期间不需要特殊的反馈。 在1.0秒后，你可以显示一个加载器来保持用户的思考流程不被打断。
+关于的响应时间，您需要知道这[3个重要的限制](https://www.nngroup.com/articles/response-times-3-important-limits/)。 `ButtonBase`组件的波纹效果，能够保证用户体验到实时反馈的系统。 通常情况下，在大于0.1秒且小于1.0秒间的延时不需要给与特殊的反馈。 但是在1.0秒后，您可以显示一个加载器来保证用户的思考流程不被打断。
 
 {{"demo": "pages/demos/progress/DelayingAppearance.js"}}
 
 ## 局限性
 
-在特别慢的加载时，可能丢失stroke dash动画或看到环形进度的半径随机的情况。 为了不阻塞主渲染进程，应该在web worker中或批处理中执行密集操作的处理器。
+在加载的特别慢时，您可能丢失stroke dash的动画或看到环形进度会有一些半径随机的情况。 为了不阻塞主渲染进程，应该在web worker中或批处理中执行密集操作的处理器。
 
 ![慢加载](/static/images/progress/heavy-load.gif)
 
