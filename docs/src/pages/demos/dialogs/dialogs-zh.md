@@ -50,11 +50,11 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 
 {{"demo": "pages/demos/dialogs/FormDialog.js"}}
 
-## Customized dialogs
+## 自定义对话框
 
-Here is example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
+以下是自定义组件的一个示例。您可以在[重写文档页面](/customization/overrides/)中了解有关此内容的更多信息。
 
-The dialog has a close button added to aide usability.
+该对话框加上了一个关闭按钮来辅助可用性。
 
 {{"demo": "pages/demos/dialogs/CustomizedDialogs.js"}}
 
