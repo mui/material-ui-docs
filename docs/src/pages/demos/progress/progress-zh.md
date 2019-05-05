@@ -17,9 +17,9 @@ components: CircularProgress, LinearProgress
 
 当显示一系列过程的进度时，与其显示每个单独活动的进度，进度条会展示整体的过程。
 
-## 环形
+## 环状进度条
 
-[圆形进度指示器](https://material.io/design/components/progress-indicators.html#circular-progress-indicators)支持确定过程和不确定过程。
+[Circular progress（环状进度条）](https://material.io/design/components/progress-indicators.html#circular-progress-indicators)同时支持了确定的和不确定的过程。
 
 - **确定的** 环形指示器填充不可见区域，以颜色环形追踪，作为指示器从0至360度移动。
 - **不确定** 环形指示器在沿着不可见轨道移动时，随之变大变小。
