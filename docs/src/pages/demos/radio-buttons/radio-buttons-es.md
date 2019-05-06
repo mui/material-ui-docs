@@ -3,9 +3,9 @@ title: Radio buttons React component
 components: Radio, RadioGroup, FormControl, FormLabel, FormControlLabel
 ---
 
-# Radio buttons
+# Botones de radio
 
-<p class="description">Radio buttons allow the user to select one option from a set.</p>
+<p class="description">Botones de radio permiten al usuario seleccionar una opción de un conjunto.</p>
 
 Use [radio buttons](https://material.io/design/components/selection-controls.html#radio-buttons) when the user needs to see all available options. If available options can be collapsed, consider using a dropdown menu because it uses less space.
 
