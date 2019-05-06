@@ -1,8 +1,8 @@
-# Related projects
+# Projetos Relacionados
 
-<p class="description">We have carefully curated a list of libraries that are worth having a look at.</p>
+<p class="description">Temos cuidadosamente organizado uma lista de bibliotecas que vale a pena dar uma olhada.</p>
 
-Because the scope of problems Material-UI solves is limited, we try to play nicely with other libraries. Feel free to submit a pull request to add more projects; we will accept them if they match our criteria.
+Como o escopo dos problemas que o Material-UI resolve é limitado, tentamos interagir bem com outras bibliotecas. Feel free to submit a pull request to add more projects; we will accept them if they match our criteria.
 
 ## Design resources
 
