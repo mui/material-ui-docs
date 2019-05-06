@@ -9,7 +9,7 @@ components: Select, NativeSelect
 
 ## 简单的选择器
 
-菜单位于其所点击的元素上, 使得当前选定的菜单项显示在点击元素上。
+菜单位于其所点击的元素上，这样能够保证当前选定的菜单项在点击元素之上显示。
 
 {{"demo": "pages/demos/selects/SimpleSelect.js"}}
 
