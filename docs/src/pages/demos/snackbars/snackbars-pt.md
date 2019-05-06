@@ -7,7 +7,7 @@ components: Snackbar, SnackbarContent
 
 <p class="description">Snackbars fornecem mensagens breves sobre processos de aplicativos por meio de uma mensagem - normalmente na parte inferior da tela</p>
 
-[Snackbars](https://material.io/design/components/snackbars.html) inform users of a process that an app has performed or will perform. Eles aparecem temporariamente, na parte inferior da tela. Eles não devem interromper a experiência do usuário e não exigem ação do usuário para que desapareça.
+[Snackbars](https://material.io/design/components/snackbars.html) informa os usuários de um processo que um aplicativo realizou ou irá executar. Eles aparecem temporariamente, na parte inferior da tela. Eles não devem interromper a experiência do usuário e não exigem ação do usuário para que desapareça.
 
 Snackbars contêm uma única linha de texto diretamente relacionada à operação realizada. Eles podem conter uma ação de texto, mas não ícones. Você pode usá-los para exibir notificações.
 
@@ -27,9 +27,9 @@ Aqui estão alguns exemplos de personalização do componente. Você pode aprend
 
 {{"demo": "pages/demos/snackbars/CustomizedSnackbars.js"}}
 
-## Positioned
+## Posições
 
-There may be circumstances when the placement of the snackbar needs to be more flexible.
+Pode haver circunstâncias em que vão ser necessárias maior flexibilidade na colocação da snackbar.
 
 {{"demo": "pages/demos/snackbars/PositionedSnackbar.js"}}
 
@@ -43,7 +43,7 @@ Alguns snackbars com tamanho variável de mensagem.
 
 ### Snackbars Consecutivos
 
-When multiple snackbar updates are necessary, they should appear one at a time.
+Quando várias atualizações de snackbar são necessárias, elas devem aparecer uma por vez.
 
 {{"demo": "pages/demos/snackbars/ConsecutiveSnackbars.js"}}
 
@@ -55,13 +55,13 @@ Snackbars should appear above FABs (on mobile).
 
 ### Change Transition
 
-[Grow](/utils/transitions/#grow) is the default transition but you can use a different one.
+[Grow](/utils/transitions/#grow) é a transição padrão, mas você pode usar uma diferente.
 
 {{"demo": "pages/demos/snackbars/TransitionsSnackbar.js"}}
 
-### Control Slide direction
+### Controle de direção do Slide
 
-You can change the direction of the [Slide](/utils/transitions/#slide) transition.
+Você pode alterar a direção da transição do [Slide](/utils/transitions/#slide).
 
 {{"demo": "pages/demos/snackbars/DirectionSnackbar.js"}}
 
