@@ -11,7 +11,7 @@ Ici [buttons radio](https://material.io/design/components/selection-controls.htm
 
 Généralement, les cases d'option doivent avoir l'option la plus utilisée sélectionnée par défaut.
 
-`RadioGroup` is a helpful wrapper used to group `Radio` components that provides an easier API, and proper keyboard accessibility to the group.
+`RadioGroup` est un gestionnaire utile pour regrouper des composants `Radio` qui fournit une API plus facile et une accessibilité adéquate au clavier.
 
 {{"demo": "pages/demos/radio-buttons/RadioButtonsGroup.js"}}
 
