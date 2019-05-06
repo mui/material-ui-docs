@@ -7,23 +7,23 @@ components: Snackbar, SnackbarContent
 
 <p class="description">Snackbars fornecem mensagens breves sobre processos de aplicativos por meio de uma mensagem - normalmente na parte inferior da tela</p>
 
-[Snackbars](https://material.io/design/components/snackbars.html) inform users of a process that an app has performed or will perform. Eles aparecem temporariamente, na parte inferior da tela. They shouldn’t interrupt the user experience, and they don’t require user input to disappear.
+[Snackbars](https://material.io/design/components/snackbars.html) inform users of a process that an app has performed or will perform. Eles aparecem temporariamente, na parte inferior da tela. Eles não devem interromper a experiência do usuário e não exigem ação do usuário para que desapareça.
 
-Snackbars contain a single line of text directly related to the operation performed. They may contain a text action, but no icons. You can use them to display notifications.
+Snackbars contêm uma única linha de texto diretamente relacionada à operação realizada. Eles podem conter uma ação de texto, mas não ícones. Você pode usá-los para exibir notificações.
 
-#### Frequency
+#### Frequência
 
-Only one snackbar may be displayed at a time.
+Apenas um snackbar pode ser exibido por vez.
 
-## Simple
+## Simples
 
-A basic snackbar that aims to reproduce Google Keep's snackbar behavior.
+Um snackbar básico que tem como objetivo reproduzir o comportamento do Google Keep's snackbar.
 
 {{"demo": "pages/demos/snackbars/SimpleSnackbar.js"}}
 
-## Customized snackbars
+## Snackbars personalizados
 
-Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
+Aqui estão alguns exemplos de personalização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/overrides/).
 
 {{"demo": "pages/demos/snackbars/CustomizedSnackbars.js"}}
 
@@ -33,15 +33,15 @@ There may be circumstances when the placement of the snackbar needs to be more f
 
 {{"demo": "pages/demos/snackbars/PositionedSnackbar.js"}}
 
-## Message Length
+## Comprimento da Mensagem
 
-Some snackbars with varying message length.
+Alguns snackbars com tamanho variável de mensagem.
 
 {{"demo": "pages/demos/snackbars/LongTextSnackbar.js"}}
 
 ## Transições
 
-### Consecutive Snackbars
+### Snackbars Consecutivos
 
 When multiple snackbar updates are necessary, they should appear one at a time.
 
@@ -73,6 +73,6 @@ Para caso de usos mais avançados, você é capaz de aproveitar de:
 
 ![estrelas](https://img.shields.io/github/stars/iamhosseindhv/notistack.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/notistack.svg)
 
-In the following example, we demonstrate how to use [notistack](https://github.com/iamhosseindhv/notistack). notistack makes it easy to display snackbars (so you don't have to deal with open/close state of them). It also enables you to stack them on top of one another (but discouraged by the specification).
+No exemplo a seguir, demonstramos como usar [downshift](https://github.com/iamhosseindhv/notistack). o notistack facilita a exibição das barras de snackbars (para que você não tenha que lidar com o estado de abertura / fechamento delas). Também permite empilhá-los uns sobre os outros (mas desencorajados pela especificação).
 
 {{"demo": "pages/demos/snackbars/IntegrationNotistack.js"}}
