@@ -2,13 +2,13 @@
 
 <p class="description">Temos cuidadosamente organizado uma lista de bibliotecas que vale a pena dar uma olhada.</p>
 
-Como o escopo dos problemas que o Material-UI resolve é limitado, tentamos interagir bem com outras bibliotecas. Feel free to submit a pull request to add more projects; we will accept them if they match our criteria.
+Como o escopo dos problemas que o Material-UI resolve é limitado, tentamos interagir bem com outras bibliotecas. Sinta-se à vontade para enviar um Pull Request e adicionar mais projetos; vamos aceitá-los se corresponderem aos nossos critérios.
 
-## Design resources
+## Recursos de Design
 
 - [Figma UI Kit](https://material.5ly.co/) for Material-UI.
 
-## Material-UI Specific Projects
+## Material-UI Projetos Específicos
 
 - [Advanced Filter Builder](https://github.com/logipro/logi-filter-builder) Component will help your users create powerful filter criterias.
 - [create-mui-theme](https://react-theming.github.io/create-mui-theme/) Online tool for creating Material-UI themes via Material Design Color Tool
@@ -35,7 +35,7 @@ Como o escopo dos problemas que o Material-UI resolve é limitado, tentamos inte
 - [uniforms-material](https://github.com/vazco/uniforms/tree/master/packages/uniforms-material) Material-UI wrapper components for Uniforms.
 - [Wertarbyte](https://mui.wertarbyte.com/) Wertarbyte are using Material-UI for many of their projects. This is a collection of complementary components they have built.
 
-## Complementary Projects
+## Projetos Complementares
 
 - [downshift](https://github.com/paypal/downshift) Primitive to build simple, flexible, WAI-ARIA compliant enhanced input React components
 - [react-admin](https://github.com/marmelab/react-admin) An admin framework combining material-ui with Redux, redux-form, redux-saga, and recompose
