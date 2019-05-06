@@ -1,8 +1,8 @@
 # Avançado
 
-<p class="description">This section covers more advanced usage of @material-ui/styles.</p>
+<p class="description">Esta seção aborda o uso mais avançado de @material-ui/styles.</p>
 
-## Theming
+## Temas
 
 Add a `ThemeProvider` to the top level of your app to pass the theme down the React component tree. Then, you can access the theme object in style functions.
 
@@ -24,9 +24,9 @@ function Theming() {
 
 {{"demo": "pages/css-in-js/advanced/Theming.js"}}
 
-### Accessing the theme in a component
+### Acessando o tema em um componente
 
-You might need to access the theme variables inside your React components.
+Você pode precisar acessar as variáveis de tema dentro de seus componentes React.
 
 #### `useTheme` hook
 
@@ -171,7 +171,7 @@ Not all the plugins are available in Material-UI by default. The following (whic
 - [jss-plugin-vendor-prefixer](https://cssinjs.org/jss-plugin-vendor-prefixer/)
 - [jss-plugin-props-sort](https://cssinjs.org/jss-plugin-props-sort/)
 
-Of course, you are free to use additional plugins. Here is an example with the [jss-rtl](https://github.com/alitaheri/jss-rtl) plugin.
+Claro, você está livre para adicionar um novo plugin. Here is an example with the [jss-rtl](https://github.com/alitaheri/jss-rtl) plugin.
 
 ```jsx
 import { create } from 'jss';
@@ -356,7 +356,7 @@ export default App;
 
 ## Server-side rendering
 
-This example returns a string of HTML and inlines the critical CSS required, right before it’s used:
+Este exemplo retorna uma string de HTML e insere o CSS crítico necessário, logo antes de ser usado:
 
 ```jsx
 import ReactDOMServer from 'react-dom/server';
