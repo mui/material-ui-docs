@@ -47,4 +47,4 @@ components: Select, NativeSelect
 
 ## 文本输入框
 
-`TextField` 包装器组件是一个完整的表单控件，它包括了标签、输入和帮助文本。 您可以在本节中找到具有[select模式](/demos/text-fields/#textfield)的示例
+`TextField` 包装器组件是一个完整的表单控件，它包括了标签、输入和帮助文本。 您可以[在此章节中](/demos/text-fields/#textfield)找到一个使用 select 模式的示例。
