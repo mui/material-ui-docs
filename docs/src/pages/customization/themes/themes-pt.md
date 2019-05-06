@@ -416,7 +416,7 @@ const theme = createMuiTheme({
 
 {{"demo": "pages/customization/themes/OverridesProps.js"}}
 
-## Accessing the theme in a component
+## Acessando o tema em um componente
 
 You [can access](/css-in-js/advanced/#accessing-the-theme-in-a-component) the theme variables inside your React components.
 
