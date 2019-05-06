@@ -7,7 +7,7 @@ components: Radio, RadioGroup, FormControl, FormLabel, FormControlLabel
 
 <p class="description">Botones de radio permiten al usuario seleccionar una opción de un conjunto.</p>
 
-Use [radio buttons](https://material.io/design/components/selection-controls.html#radio-buttons) when the user needs to see all available options. If available options can be collapsed, consider using a dropdown menu because it uses less space.
+Usa [botones de radio](https://material.io/design/components/selection-controls.html#radio-buttons) cuando el usuario necesita ver todas las opciones disponibles. Si las opciones disponibles se pueden colapsar, considere usar un menú desplegable porque utiliza menos espacio.
 
 Radio buttons should have the most commonly used option selected by default.
 
