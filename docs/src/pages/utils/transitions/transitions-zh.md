@@ -59,10 +59,10 @@ export default Main() {
 
 {{"demo": "pages/utils/transitions/SimpleSlide.js"}}
 
-## 放大
+## Zoom（放大）
 
 从子元素的中心向外扩展。
 
-此示例还演示了如何延迟开始过渡。
+此示例还演示了如何延迟过渡的开始。
 
 {{"demo": "pages/utils/transitions/SimpleZoom.js"}}
