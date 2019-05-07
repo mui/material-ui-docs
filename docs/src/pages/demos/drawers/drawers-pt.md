@@ -7,11 +7,11 @@ components: Drawer, SwipeableDrawer
 
 <p class="description">A navegação por drawers dão acesso para lugares dentro de sua aplicação. Elas são fragmentos de sua aplicação que contém conteúdo suplementar que são colocados na borda da esquerda ou da direita da tela.</p>
 
-[Navegação por drawers](https://material.io/design/components/navigation-drawer.html) dá acesso a destinos e funcionalidades do aplicativo, como por exemplo, a mudança de usuário. They can either be permanently on-screen or controlled by a navigation menu icon.
+[Navegação por drawers](https://material.io/design/components/navigation-drawer.html) dá acesso a destinos e funcionalidades do aplicativo, como por exemplo, a mudança de usuário. Elas podem estar permanentemente na tela ou controlados por um ícone de menu de navegação.
 
 [Side sheets](https://material.io/design/components/sheets-side.html) are supplementary surfaces primarily used on tablet and desktop.
 
-## Temporary drawer
+## Drawer temporário
 
 Temporary navigation drawers can toggle open or closed. Closed by default, the drawer opens temporarily above all other content until a section is selected.
 
