@@ -9,7 +9,7 @@ title: Box React component
 O componente Box empacota [ todas as funções de estilo](/system/basics/#all-inclusive) que estão expostas em `@material-ui/system</ code>.
 Ele é criado usando a função <a href="/css-in-js/api/#styled-style-function-component"> <code>styled()`</a> de `@material-ui/styles `.
 
-## Example
+## Exemplo
 
 [The palette](/system/palette/) style function.
 
