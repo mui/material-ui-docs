@@ -7,19 +7,19 @@ components: Menu, MenuItem, MenuList, ClickAwayListener, Popover, Popper
 
 <p class="description">Os menus exibem uma lista de opções em superfícies temporárias.</p>
 
-A [Menu](https://material.io/design/components/menus.html) displays a list of choices on a temporary surface. It appears when the user interacts with a button, or other control.
+Um [Menu](https://material.io/design/components/menus.html) exibe uma lista de opções em uma superfície temporária. Elas aparecem quando os usuários interagem com um botão, action, ou outro controle.
 
 ## Menu simples
 
 Menus simples abrem sobre o elemento âncora por padrão (esta opção pode ser alterada via props). Quando estão perto de uma borda da tela, menus simples realinham verticalmente para garantir que todos os itens do menu fiquem completamente visíveis.
 
-Choosing an option should immediately ideally commit the option and close the menu.
+Escolhendo imediadamente uma opção confirmando a opção e fechando o menu.
 
 **Disambiguation**: In contrast to simple menus, simple dialogs can present additional detail related to the options available for a list item or provide navigational or orthogonal actions related to the primary task. Although they can display the same content, simple menus are preferred over simple dialogs because simple menus are less disruptive to the user’s current context.
 
 {{"demo": "pages/demos/menus/SimpleMenu.js"}}
 
-## Menus Seleccionados
+## Menus Selecionados
 
 If used for item selection, when opened, simple menus attempt to vertically align the currently selected menu item with the anchor element, and the initial focus will be placed on the selected menu item. The currently selected menu item is set using the `selected` property (from [ListItem](/api/list-item/)). To use a selected menu item without impacting the initial focus or the vertical positioning of the menu, set the `variant` property to `menu`.
 
@@ -33,9 +33,9 @@ The primary responsibility of the `MenuList` component is to handle the focus.
 
 {{"demo": "pages/demos/menus/MenuListComposition.js"}}
 
-## Customized menus
+## Menus Customizados
 
-Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
+Aqui está um exemplo de personalização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/overrides/).
 
 {{"demo": "pages/demos/menus/CustomizedMenus.js"}}
 
@@ -55,7 +55,7 @@ There is [a flexbox bug](https://bugs.chromium.org/p/chromium/issues/detail?id=3
 
 ## Change transition
 
-Use a different transition.
+Use uma transição diferente.
 
 {{"demo": "pages/demos/menus/FadeMenu.js"}}
 
