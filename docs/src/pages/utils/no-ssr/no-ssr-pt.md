@@ -1,5 +1,5 @@
 ---
-title: No SSR React component
+title: Componente React Sem SSR
 components: NoSsr
 ---
 
