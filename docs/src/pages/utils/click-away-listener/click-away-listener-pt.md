@@ -9,8 +9,8 @@ components: ClickAwayListener
 
 ## Simple menu
 
-For instance, if you need to hide a menu when people click anywhere else on your page:
+Por exemplo, se você precisar ocultar um menu quando as pessoas clicarem em qualquer outro lugar da sua página:
 
 {{"demo": "pages/utils/click-away-listener/ClickAway.js"}}
 
-You can find a more advanced demo on the [menu documentation section](/demos/menus/#menulist-composition).
+Você pode encontrar mais avançadas de demonstração na [seção documentação de menu](/demos/menus/#menulist-composition).
