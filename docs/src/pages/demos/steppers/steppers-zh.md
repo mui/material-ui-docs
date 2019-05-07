@@ -1,31 +1,31 @@
 ---
-title: 步进器React组件
+title: React Stepper（步骤条）组件
 components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIcon, StepLabel, Stepper
 ---
 
-# 步骤条
+# Steppers（步骤条）
 
-<p class="description">步进器通过编号步骤传达进度。它提供了类似向导的工作流程。</p>
+<p class="description">步骤条通过编号的步骤来表示流程。它提供了类似向导的工作流程。</p>
 
-[步进器](https://material.io/archive/guidelines/components/steppers.html) 通过一系列逻辑和编号步骤显示当前操作的进度。 它们也可用于导航。 在保存状态后，步进器可能会显示短暂的反馈信息。
+[步骤条](https://material.io/archive/guidelines/components/steppers.html) 通过一系列逻辑和编号的步骤来显示当前操作的进度。 它们也可用于导航。 在保存一个步骤后，步骤条可能会显示短暂的反馈信息。
 
-**步骤类型**
+**步骤的类型**
 
-- 可编辑
-- 不可编辑
-- Mobile
+- 可编辑的
+- 不可编辑的
+- 移动端支持的
 - 可选的
 
-**步进器类型**
+**步骤条的类型**
 
-- 水平的
-- 垂直的
-- 线状
-- 非线性的
+- 水平的步骤条
+- 垂直的步骤条
+- 线性的步骤条
+- 非线性的步骤条
 
-> **注意：材料设计文档中不再记录** 步进器。
+> **请注意：** Material Design 文档中不再记录步骤条。
 
-## 水平的步进器
+## 水平的线性步骤条
 
 可以通过更改一个初始值为0的当前步骤值`activeStep`来控制`Stepper` 使用`orientation`属性设置` Stepper </ code>方向。</p>
 
