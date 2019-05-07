@@ -27,13 +27,13 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 
 ## 水平的线性步骤条
 
-可以通过更改一个初始值为0的当前步骤值`activeStep`来控制`Stepper` 使用`orientation`属性设置` Stepper </ code>方向。</p>
+您可以在 `activeStep` 属性中传入一个初始值为0的当前步骤值来控制 `步骤条`。 您也可以借助 `orientation` 属性来设置 `步骤条</ code> 的方向。</p>
 
-<p>使用<code> orientation `属性设置`Step`组件方向。 请注意，您可以在跳过可选步骤时进行管理。 一旦为特定步骤确定了这一点，就必须设置` completed = {false} `以表示即使活动步骤索引超出了可选步骤，它也不会实际完成。
+<p>这个例子把<code>optional` 属性放在第二个 `步骤` 的组件上，它展示了如何使用一个可选的步骤条。 请注意，您可以自行选择管理跳过一个可选的步骤。 一旦决定将一个特定步骤设置为可选的，您就必须配置这个属性 `completed={false}` 以表示即使激活的步骤索引超出了可选的步骤，步骤条并没有完成。
 
 {{"demo": "pages/demos/steppers/HorizontalLinearStepper.js"}}
 
-## 水平非线性的步进器
+## 水平的非线性步进器
 
 非线性步进器允许用户在任何点输入多步流程。
 
