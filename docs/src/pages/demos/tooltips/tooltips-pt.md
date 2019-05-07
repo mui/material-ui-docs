@@ -76,7 +76,7 @@ By default disabled elements like `<button>` do not trigger user interactions so
 
 ## Transições
 
-Use a different transition.
+Use uma transição diferente.
 
 {{"demo": "pages/demos/tooltips/TransitionsTooltips.js"}}
 
