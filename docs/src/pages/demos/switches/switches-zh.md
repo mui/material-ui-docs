@@ -7,7 +7,7 @@ components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
 
 <p class="description">Switches toggle the state of a single setting on or off.</p>
 
-[Switches](https://material.io/design/components/selection-controls.html#switches) are the preferred way to adjust settings on mobile. 开关控制的选项，以及它当前所处的状态都应该从相应的描述标签中明确说明。
+[开关控件](https://material.io/design/components/selection-controls.html#switches) 是在移动设备上调整设置的首选方式。 开关控制的选项，以及它当前所处的状态都应该从相应的描述标签中明确说明。
 
 {{"demo": "pages/demos/switches/Switches.js"}}
 
