@@ -5,7 +5,7 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 
 # 步骤条
 
-<p class="description">Steppers convey progress through numbered steps. It provides a wizard-like workflow.</p>
+<p class="description">步进器通过编号步骤传达进度。它提供了类似向导的工作流程。</p>
 
 [步进器](https://material.io/archive/guidelines/components/steppers.html) 通过一系列逻辑和编号步骤显示当前操作的进度。 它们也可用于导航。 在保存状态后，步进器可能会显示短暂的反馈信息。
 
