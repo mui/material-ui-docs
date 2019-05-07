@@ -5,7 +5,7 @@ components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
 
 # 开关控件
 
-<p class="description">Switches toggle the state of a single setting on or off.</p>
+<p class="description">开关控制是改变单个设置状态打开或关闭的控件。</p>
 
 [开关控件](https://material.io/design/components/selection-controls.html#switches) 是在移动设备上调整设置的首选方式。 开关控制的选项，以及它当前所处的状态都应该从相应的描述标签中明确说明。
 
@@ -19,7 +19,7 @@ components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
 
 ## 多个 Switch 情况下使用 FormGroup
 
-`FormGroup`提供相对简单的 API 对选择控件进行分组。 However, we encourage you to use a [Checkbox](#checkboxes) instead.
+`FormGroup`提供相对简单的 API 对选择控件进行分组。 但在这种情况下我们更建议您使用 [复选框](#checkboxes)。
 
 {{"demo": "pages/demos/switches/SwitchesGroup.js"}}
 
