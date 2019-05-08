@@ -9,7 +9,7 @@ components: Badge
 
 ## Einfache Badges
 
-Examples of badges containing text, using primary and secondary colors. The badge is applied to its children.
+Beispiele für Badges, die Text enthalten, mit Primär- und Sekundärfarben. Das Abzeichen wird an seinen Kindern angebracht.
 
 {{"demo": "pages/components/badges/SimpleBadge.js"}}
 
@@ -21,7 +21,7 @@ Sie können die Eigenschaft `max` verwenden, um den Wert des Badge-Inhalts zu be
 
 ## Punkt-Badge
 
-The `dot` property changes a badge into a small dot. This can be used as a notification that something has changed without giving a count.
+Die Eigenschaft `dot` verwandelt ein Badge in einen kleinen Punkt. Dies kann als Benachrichtigung verwendet werden, dass sich etwas geändert hat, ohne eine Zählung vorzunehmen.
 
 {{"demo": "pages/components/badges/DotBadge.js"}}
 
@@ -29,7 +29,7 @@ The `dot` property changes a badge into a small dot. This can be used as a notif
 
 Die Sichtbarkeit von Badges kann über die Eigenschaft `invisible` gesteuert werden.
 
-The badge auto hides with badgeContent is zero. You can override this with the `showZero` property.
+Das Badge versteckt sich automatisch, wenn `badgeContent` null ist. Dies kann mit der Eigenschaft `showZero` überschrieben werden.
 
 {{"demo": "pages/components/badges/BadgeVisibility.js"}}
 
