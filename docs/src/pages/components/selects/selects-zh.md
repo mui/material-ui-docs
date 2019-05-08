@@ -21,7 +21,7 @@ components: Select, NativeSelect
 
 ## 自定义选择器
 
-Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/components/).
+以下是自定义组件的一些示例。您可以在[重写文档页面](/customization/components/)中了解有关此内容的更多信息。
 
 第一步是设置 `InputBase` 组件的样式。 一旦设置好样式，您就可以直接将其用作文本字段，也可以将其提供给 select 组件的 `input` 属性作为一个可选项。
 
@@ -29,9 +29,9 @@ Here are some examples of customizing the component. You can learn more about th
 
 ## 多选
 
-The `Select` component can handle multiple selections. It's enabled with the `multiple` property.
+`Select` 组件可以处理多个选项。这可以通过启用 `multiple` 属性来实现。
 
-Like with the single selection, you can pull out the new value by accessing `event.target.value` in the `onChange` callback. It's always an array.
+与单项选择一样，您可以通过访问 `onChange` 属性中的回调的 ` event.target.value ` 来提取一个新的值。并且它总是一个数组。
 
 {{"demo": "pages/components/selects/MultipleSelect.js"}}
 
