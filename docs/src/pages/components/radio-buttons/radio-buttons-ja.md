@@ -13,19 +13,19 @@ Radio buttons should have the most commonly used option selected by default.
 
 `RadioGroup` is a helpful wrapper used to group `Radio` components that provides an easier API, and proper keyboard accessibility to the group.
 
-{{"demo": "pages/components/radio-buttons/RadioButtonsGroup.js"}}
+{{"demo": "pages/demos/radio-buttons/RadioButtonsGroup.js"}}
 
 ## Standalone Radio Buttons
 
 `Radio` can also be used standalone, without the wrapper.
 
-{{"demo": "pages/components/radio-buttons/RadioButtons.js"}}
+{{"demo": "pages/demos/radio-buttons/RadioButtons.js"}}
 
 ## Label placement
 
 You can change the placement of the label:
 
-{{"demo": "pages/components/radio-buttons/FormControlLabelPosition.js"}}
+{{"demo": "pages/demos/radio-buttons/FormControlLabelPosition.js"}}
 
 ## Accessibility
 
