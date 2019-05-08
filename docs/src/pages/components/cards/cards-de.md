@@ -9,7 +9,7 @@ components: Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedi
 
 [Karten](https://material.io/design/components/cards.html) sind Oberflächen, auf denen Inhalte und Aktionen zu einem einzelnen Thema angezeigt werden.
 
-They should be easy to scan for relevant and actionable information. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy.
+Sie sollten leicht nach relevanten und umsetzbaren Informationen durchsucht werden können. Elemente wie Text und Bilder sollten so platziert werden, dass die Hierarchie deutlich erkennbar ist.
 
 ## Einfache Karte
 
@@ -33,7 +33,7 @@ Standardmäßig verwenden wir die Kombination aus einem `<div>`-Element und eine
 
 {{"demo": "pages/components/cards/ImgMediaCard.js"}}
 
-> ⚠️ When `component="img"`, CardMedia relies on `object-fit` for centering the image. It's not supported by IE 11.
+> ⚠️ Wenn `component="img"` gesetzt ist, verlässt sich CardMedia auf `object-fit` zum Zentrieren des Bildes. Es wird nicht von IE 11 unterstützt.
 
 ## Steuerelemente der Benutzeroberfläche
 
