@@ -77,10 +77,7 @@ https://www.w3.org/TR/css-flexbox-1/#box-model
 
 ### Marge négative
 
-There is one limitation with the negative margin we use to implement the spacing between items. A horizontal scroll will appear if a negative margin goes beyond the `<body>`. There are 3 available workarounds:
-
-1. Not using the spacing feature and implementing it in user space `spacing={0}` (default).
-2. Applying padding to the parent with at least half the spacing value applied to the child:
+There is one limitation with the negative margin we use to implement the spacing between items. A horizontal scroll will appear if a negative margin goes beyond the `<body>`. There are 3 available workarounds: 1. Not using the spacing feature and implementing it in user space `spacing={0}` (default). 2. Applying padding to the parent with at least half the spacing value applied to the child:
 
 ```jsx
   <body>
@@ -92,7 +89,7 @@ There is one limitation with the negative margin we use to implement the spacing
   </body>
 ```
 
-3. Adding `overflow-x: hidden;` to the parent.
+1. Adding `overflow-x: hidden;` to the parent.
 
 ### white-space: nowrap;
 
