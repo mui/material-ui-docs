@@ -99,6 +99,6 @@ Bajo cargas pesadas, puede perder la animación del trazo o ver anchos de anillo
 
 ![carga pesada](/static/images/progress/heavy-load.gif)
 
-When it's not possible, you can leverage the `disableShrink` property to mitigate the issue. See https://github.com/mui-org/material-ui/issues/10327
+Cuando no es posible, puede aprovechar la propiedad `disableShrink` para mitigar el problema. Ver https://github.com/mui-org/material-ui/issues/10327
 
 {{"demo": "pages/components/progress/CircularUnderLoad.js"}}
