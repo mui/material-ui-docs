@@ -53,9 +53,9 @@ Die Komponente Typografie verwendet die Eigenschaft `variantMapping` um eine UI-
 - Sie können das zugrunde liegende Element einmalig mit der Eigenschaft `component` ändern:
 
 ```jsx
-{/* We already have an h1 in the page, let's not duplicate it. */}
+{/ * Wir haben bereits eine h1 auf der Seite, wir wollen diese nicht kopieren. * /}
 <Typography variant="h1" component="h2">
-  h1. Heading
+  h1. Überschrift
 </Typography>
 ```
 
