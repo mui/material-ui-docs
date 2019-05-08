@@ -4,7 +4,7 @@
 
 ## CSS
 
-When the configuration variables aren't powerful enough, you can take advantage of the `overrides` key of the `theme` to potentially change **every single style** injected by Material-UI into the DOM. That's a really powerful feature.
+When the configuration variables aren't powerful enough, you can take advantage of the `overrides` key of the `theme` to potentially change **every single style** injected by Material-UI into the DOM. Это действительно мощная штука.
 
 ```js
 const theme = createMuiTheme({
