@@ -19,7 +19,7 @@ components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
 
 ## 多个 Switch 情况下使用 FormGroup
 
-`FormGroup` 会提供相对简单的 API 对选择控件进行分组。 但在这种情况下我们更建议您使用 [复选框](#checkboxes)。
+`FormGroup`提供相对简单的 API 对选择控件进行分组。 但在这种情况下我们更建议您使用 [复选框](#checkboxes)。
 
 {{"demo": "pages/components/switches/SwitchesGroup.js"}}
 
@@ -29,9 +29,9 @@ Here are some examples of customizing the component. You can learn more about th
 
 {{"demo": "pages/components/switches/CustomizedSwitches.js"}}
 
-## 放置标签
+## 标签放置
 
-你可以更改标签的位置:
+你可以更改标签放置的位置:
 
 {{"demo": "pages/components/switches/FormControlLabelPosition.js"}}
 
@@ -39,7 +39,7 @@ Here are some examples of customizing the component. You can learn more about th
 
 所有表单控件都应该带有标签，而这包括了单选按钮，复选框和开关。 在大多数情况下，这是通过使用一个`<label>`元素（[FormControlLabel](/api/form-control-label/)）实现的。
 
-如果无法使用标签，则必须直接在输入组件中添加属性。 在这种情况下，您可以通过`inputProps` 属性，来附着一些附加的属性（例如 `arial-label`，`aria-labelledby`，`title`）。
+如果无法使用标签，则必须直接在输入组件中添加属性。 在这种情况下，可以应用附加的属性（例如 `arial-label`， `aria-labelledby`， `title`）经由 `inputProps` 属性。
 
 ```jsx
 <Switch
