@@ -1,8 +1,8 @@
 ---
-components: 活版印刷
+components: Typography
 ---
 
-# 活版印刷
+# Typography
 
 <p class="description">使用活版印刷可以尽可能清晰、高效地呈现您的设计和内容。</p>
 
@@ -40,7 +40,7 @@ import 'typeface-roboto';
 
 {{"demo": "pages/components/typography/Types.js"}}
 
-## Theme
+## 主题
 
 在某些情况下，您可能无法使用 `Typography` 组件。 希望您可以利用主题的 [`排版`](/customization/default-theme/?expend-path=$.typography) 键。
 
