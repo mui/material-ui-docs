@@ -1,4 +1,4 @@
-# 调色板
+# Palette（调色）
 
 <p class="description">The palette enebles you to modify the color of the components to suit your brand.</p>
 
@@ -18,7 +18,7 @@ If you want to learn more about color, you can check out [the color section](/cu
 
 ## Custom palette
 
-You may override the default palette values by including a `palette` object as part of your theme.
+您可以通过在主题中包含 `palette` 对象来覆盖默认调色板值。
 
 If any of the [`palette.primary`](/customization/default-theme/?expend-path=$.palette.primary), [`palette.secondary`](/customization/default-theme/?expend-path=$.palette.secondary) or [`palette.error`](/customization/default-theme/?expend-path=$.palette.error) 'intention' objects are provided, they will replace the defaults.
 
@@ -125,11 +125,11 @@ const theme = createMuiTheme({
 });
 ```
 
-As in the example above, if the intention object contains custom colors using any of the `main`, `light`, `dark` or `contrastText` keys, these map as follows:
+如在上面的示例中，如果意图对象使用任何的包含自定义颜色 `main`， `light`， `dark` 或 `contrastText` 键，这些地图如下：
 
 - If the `dark` and / or `light` keys are omitted, their value(s) will be calculated from `main`, according to the `tonalOffset` value.
 
-- If `contrastText` is omitted, its value will be calculated to contrast with `main`, according to the`contrastThreshold` value.
+- 如果 `contrastText` 被省略了，它的值将被计算同对比 `main`， 根据`contrastThreshold` 值。
 
 Both the `tonalOffset` and `contrastThreshold` values may be customized as needed. A higher value for `tonalOffset` will make calculated values for `light` lighter, and `dark` darker. A higher value for `contrastThreshold` increases the point at which a background color is considered light, and given a dark `contrastText`.
 
@@ -147,7 +147,7 @@ Need inspiration? The Material Design team has built an awesome [palette configu
 
 Material-UI comes with two theme variants, light (the default) and dark.
 
-You can make the theme dark by setting `type` to `dark`. While it's only a single property value change, internally it modifies the value of the following keys:
+您可以通过将 `type` 设置为 `dark`来使主题变暗。 While it's only a single property value change, internally it modifies the value of the following keys:
 
 - `palette.text`
 - `palette.divider`
