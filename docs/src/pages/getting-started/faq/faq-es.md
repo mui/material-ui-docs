@@ -6,7 +6,7 @@ If you still can't find what you're looking for, you can ask the community in [S
 
 ## ¿Por qué mis componentes no se están renderizando correctamente en las compilaciones de producción?
 
-Esto es probablemente un problema n°1 que ocurre debido a conflictos de nombre de clase una vez que su código está en un paquete de producción. Para que Material-UI funcione, los valores de `className` de todos los componentes en una página deben ser generados por una sola instancia del [generador de nombre de clase](/css-in-js/advanced/#class-names).
+Esto es probablemente un problema n°1 que ocurre debido a conflictos de nombre de clase una vez que su código está en un paquete de producción. Para que Material-UI funcione, los valores de `className` de todos los componentes en una página deben ser generados por una sola instancia del [generador de nombre de clase](/styles/advanced/#class-names).
 
 Para corregir este problema, todos los componentes en la página necesitan ser inicializado tal que solo hay **un generador de nombre de clase** entre ellos.
 
@@ -18,7 +18,7 @@ Usted podría terminar usando accidentalmente dos generadores de nombre de clase
 
 > If you are using webpack with the [SplitChunksPlugin](https://webpack.js.org/plugins/split-chunks-plugin/), try configuring the [`runtimeChunk` setting under `optimizations`](https://webpack.js.org/configuration/optimization/#optimization-runtimechunk).
 
-Overall, it's simple to recover from this problem by wrapping each Material-UI application with [`StylesProvider`](/css-in-js/api/#stylesprovider) components at the top of their component trees **and using a single class name generator shared between them**.
+Overall, it's simple to recover from this problem by wrapping each Material-UI application with [`StylesProvider`](/styles/api/#stylesprovider) components at the top of their component trees **and using a single class name generator shared between them**.
 
 ## Why do the fixed positioned elements move when a modal is opened?
 
@@ -113,7 +113,7 @@ As a rule of thumb, only use inline-style for dynamic style properties. The CSS 
 
 ## How do I use react-router?
 
-We have documented how to use a [third-party routing library](/demos/buttons/#third-party-routing-library) with the `ButtonBase` component. A lot of our interactive components use it internally: `Link`, `Button`, `MenuItem`, `<ListItem button />`, `Tab`, etc. You can use the same solution with them.
+We have documented how to use a [third-party routing library](/components/buttons/#third-party-routing-library) with the `ButtonBase` component. A lot of our interactive components use it internally: `Link`, `Button`, `MenuItem`, `<ListItem button />`, `Tab`, etc. You can use the same solution with them.
 
 ## How can I access the DOM element?
 
@@ -253,7 +253,7 @@ There is a class name mismatch between the client and the server. It might work 
 
 #### Action to Take
 
-The class names value relies on the concept of [class name generator](/css-in-js/advanced/#class-names). The whole page needs to be rendered with **a single generator**. This generator needs to behave identically on the server and on the client. For instance:
+The class names value relies on the concept of [class name generator](/styles/advanced/#class-names). The whole page needs to be rendered with **a single generator**. This generator needs to behave identically on the server and on the client. For instance:
 
 - You need to provide a new class name generator for each request. But you shouldn't share a `createGenerateClassName()` between different requests:
 
@@ -311,7 +311,7 @@ All funds raised are managed transparently, and Sponsors receive recognition in 
 
 ## Why does component X require a DOM node in a prop instead of a ref object?
 
-Components like the [Portal](/api/Portal/#props) or [Popper](/api/Popper/#props) require a DOM node in the `container` or `anchorEl` prop respectively. It seems convenient to simply pass a ref object in those props and let Material-UI access the current value. This works in a simple scenario:
+Components like the [Portal](/api/portal/#props) or [Popper](/api/popper/#props) require a DOM node in the `container` or `anchorEl` prop respectively. It seems convenient to simply pass a ref object in those props and let Material-UI access the current value. This works in a simple scenario:
 
 ```jsx
 function App() {
