@@ -19,25 +19,25 @@ Only one snackbar may be displayed at a time.
 
 A basic snackbar that aims to reproduce Google Keep's snackbar behavior.
 
-{{"demo": "pages/demos/snackbars/SimpleSnackbar.js"}}
+{{"demo": "pages/components/snackbars/SimpleSnackbar.js"}}
 
 ## Customized snackbars
 
-Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/components/).
 
-{{"demo": "pages/demos/snackbars/CustomizedSnackbars.js"}}
+{{"demo": "pages/components/snackbars/CustomizedSnackbars.js"}}
 
 ## Positioned
 
 There may be circumstances when the placement of the snackbar needs to be more flexible.
 
-{{"demo": "pages/demos/snackbars/PositionedSnackbar.js"}}
+{{"demo": "pages/components/snackbars/PositionedSnackbar.js"}}
 
 ## Message Length
 
 Some snackbars with varying message length.
 
-{{"demo": "pages/demos/snackbars/LongTextSnackbar.js"}}
+{{"demo": "pages/components/snackbars/LongTextSnackbar.js"}}
 
 ## Transições
 
@@ -45,25 +45,25 @@ Some snackbars with varying message length.
 
 When multiple snackbar updates are necessary, they should appear one at a time.
 
-{{"demo": "pages/demos/snackbars/ConsecutiveSnackbars.js"}}
+{{"demo": "pages/components/snackbars/ConsecutiveSnackbars.js"}}
 
 ### Snackbars and floating action buttons (FABs)
 
 Snackbars should appear above FABs (on mobile).
 
-{{"demo": "pages/demos/snackbars/FabIntegrationSnackbar.js", "iframe": true, "maxWidth": 500}}
+{{"demo": "pages/components/snackbars/FabIntegrationSnackbar.js", "iframe": true, "maxWidth": 500}}
 
 ### Change Transition
 
-[Grow](/utils/transitions/#grow) is the default transition but you can use a different one.
+[Grow](/components/transitions/#grow) is the default transition but you can use a different one.
 
-{{"demo": "pages/demos/snackbars/TransitionsSnackbar.js"}}
+{{"demo": "pages/components/snackbars/TransitionsSnackbar.js"}}
 
 ### Control Slide direction
 
-You can change the direction of the [Slide](/utils/transitions/#slide) transition.
+You can change the direction of the [Slide](/components/transitions/#slide) transition.
 
-{{"demo": "pages/demos/snackbars/DirectionSnackbar.js"}}
+{{"demo": "pages/components/snackbars/DirectionSnackbar.js"}}
 
 ## Complementary projects
 
@@ -75,4 +75,4 @@ For more advanced use cases you might be able to take advantage of:
 
 In the following example, we demonstrate how to use [notistack](https://github.com/iamhosseindhv/notistack). notistack makes it easy to display snackbars (so you don't have to deal with open/close state of them). It also enables you to stack them on top of one another (but discouraged by the specification).
 
-{{"demo": "pages/demos/snackbars/IntegrationNotistack.js"}}
+{{"demo": "pages/components/snackbars/IntegrationNotistack.js"}}
