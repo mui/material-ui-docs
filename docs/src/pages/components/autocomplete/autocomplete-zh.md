@@ -1,13 +1,13 @@
 ---
-title: 自动补全React组件
+title: React Autocomplete（自动补全）组件
 components: TextField, Paper, MenuItem, Popper
 ---
 
-# 自动补全
+# Autocomplete（自动补全）
 
-<p class="description">自动补全是一个普通文本输入框, 通过一组建议选项来帮助用户输入。</p>
+<p class="description">自动补全是一个通过一组建议选项来帮助用户输入的普通文本输入框。</p>
 
-Material-UI doesn't provide any high-level API for solving this problem. We encourage people relying on the solutions the React community has built.
+Material-UI不提供任何高级 API 来解决此问题。我们鼓励大家参考那些 React 社区已有的解决方案。
 
 ## downshift
 
