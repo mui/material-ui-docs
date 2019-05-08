@@ -1,0 +1,50 @@
+---
+title: Auswahl React-Komponente
+components: Select, NativeSelect
+---
+
+# Auswähler (Selects)
+
+<p class="description">Auswahllkomponenten werden zum Sammeln von vom Benutzer bereitgestellten Informationen aus einer Liste von Optionen verwendet.</p>
+
+## Einfache Auswahl
+
+Menüs werden über ihren Referenzelementen so positioniert, dass der aktuell ausgewählte Menüpunkt über dem Referenzelement angezeigt wird.
+
+{{"demo": "pages/components/selects/SimpleSelect.js"}}
+
+## Native Auswahl
+
+Da die Benutzererfahrung auf mobilen Geräten durch die native Auswahl der Plattform verbessert werden kann, erlauben wir ein solches Muster.
+
+{{"demo": "pages/components/selects/NativeSelects.js"}}
+
+## Benutzerdefinierte Auswahl
+
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/components/).
+
+Der erste Schritt besteht darin, die `InputBase` Komponente zu formatieren. Anschließend können Sie es entweder direkt als Textfeld verwenden oder der Auswahlkomponente mit der Eigenschaft `input` geben, um ein Auswahl-Feld zu erhalten.
+
+{{"demo": "pages/components/selects/CustomizedSelects.js"}}
+
+## Mehrfach Auswahl
+
+The `Select` component can handle multiple selections. It's enabled with the `multiple` property.
+
+Like with the single selection, you can pull out the new value by accessing `event.target.value` in the `onChange` callback. It's always an array.
+
+{{"demo": "pages/components/selects/MultipleSelect.js"}}
+
+## Kontrollierte Auswahl
+
+{{"demo": "pages/components/selects/ControlledOpenSelect.js"}}
+
+## Mit einem Dialog
+
+Während es von der Material Design-Spezifikation nicht empfohlen wird, können Sie eine Auswahl innerhalb eines Dialogfelds verwenden.
+
+{{"demo": "pages/components/selects/DialogSelect.js"}}
+
+## Text Felder (Text Fields)
+
+Die `TextField` Wrapper-Komponente ist ein vollständiges Formularsteuerelement, das eine Beschriftung, Eingabe und Hilfetext enthält. Ein Beispiel für den Auswahlmodus [in diesem Abschnitt](/components/text-fields/#textfield).
