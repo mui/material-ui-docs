@@ -13,9 +13,9 @@ components: Drawer, SwipeableDrawer
 
 ## Temporäre Navigationsleisten
 
-Temporary navigation drawers can toggle open or closed. Closed by default, the drawer opens temporarily above all other content until a section is selected.
+Temporäre Navigationsleisten können geöffnet oder geschlossen werden. Die Leiste ist standardmäßig geschlossen und öffnet sich vorübergehend über allen anderen Inhalten, bis ein Bereich ausgewählt wird.
 
-The Drawer can be cancelled by clicking the overlay or pressing the Esc key. It closes when an item is selected, handled by controlling the `open` prop.
+Die Leiste kann durch Klicken auf die Überlagerung oder Drücken der Esc-Taste abgebrochen werden. Sie wird geschlossen, wenn ein Element ausgewählt wird. Dies wird durch Steuern der `open` Eigenschaft gesteuert.
 
 {{"demo": "pages/components/drawers/TemporaryDrawer.js"}}
 
@@ -27,10 +27,7 @@ Diese Komponente ist mit einem 2-kB-gzipped -Overhead ausgestattet. Einige mobil
 
 {{"demo": "pages/components/drawers/SwipeableTemporaryDrawer.js"}}
 
-We are using the following set of properties on this documentation website for optimal usability of the component:
-
-- iOS is hosted on high-end devices. Wir können den Hintergrundübergang aktivieren, ohne einen Einbruch der Bilder pro Sekunde zu sehen. Die Leistung wird gut genug sein.
-- iOS hat eine „Swipe, um zurück zu gehen“ Feature, welches Chaos bei der Discovery-Funktion verursacht. Wir müssen es deaktivieren.
+Wir verwenden auf dieser Dokumentations-Website die folgenden Eigenschaften, um die Komponente optimal nutzen zu können: - iOS wird auf High-End-Geräten gehostet. Wir können den Hintergrundübergang aktivieren, ohne einen Einbruch der Bilder pro Sekunde zu sehen. Die Leistung wird gut genug sein. - iOS hat eine „Swipe, um zurück zu gehen“ Feature, welches Chaos bei der Discovery-Funktion verursacht. Wir müssen es deaktivieren.
 
 ```jsx
 const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
@@ -50,7 +47,7 @@ Andauernde Navigationsleisten können geöffnet oder geschlossen werden. Die Lei
 
 Wenn sich die Leiste außerhalb des Seitenrasters befindet und geöffnet wird, zwingt die Schublade andere Inhalte, ihre Größe zu ändern und sich an den kleineren Ansichtsfenster anzupassen.
 
-Persistent navigation drawers are acceptable for all sizes larger than mobile. They are not recommended for apps with multiple levels of hierarchy that require using an up arrow for navigation.
+Andauernde Navigationsleisten sind für alle Größen, die größer als mobile sind, zulässig. Sie werden nicht für Apps mit mehreren Hierarchieebenen empfohlen, für deren Navigation ein Aufwärtspfeil erforderlich ist.
 
 {{"demo": "pages/components/drawers/PersistentDrawerLeft.js", "iframe": true}}
 
@@ -66,7 +63,7 @@ Die Mini-Variante wird für Anwendungsbereiche empfohlen, die neben Inhalten ein
 
 ## Permanente Navigationsleiste
 
-Permanent navigation drawers are always visible and pinned to the left edge, at the same elevation as the content or background. They cannot be closed.
+Permanente Navigationsleisten sind immer sichtbar und am linken Rand auf derselben Höhe wie der Inhalt oder der Hintergrund fixiert. Sie können nicht geschlossen werden.
 
 Permanente Navigationsleisten sind die **empfohlene Standardeinstellung für Desktop**.
 
