@@ -8,7 +8,7 @@
 
 #### 参数
 
-1. `options` (*Object* [optional]): 
+1. `选项` (*Object* [optional]): 
     - `options.disableGlobal` (*Boolan* [optional]): Defaults to `false`. Disable the generation of deterministic class names.
     - `options.productionPrefix` (*String* [optional])：初始值为`'jss'`. 用于在生产中对类名称进行前缀的字符串。
     - `options.seed` (*String* [optional])：初始值为 `''`. 用于唯一标识生成器的字符串。 It can be used to avoid class name collisions when using multiple generators in the same document.
@@ -72,7 +72,7 @@ export default MyComponent;
 #### 参数
 
 1. ` styles `(* Function | Object *): 生成样式或样式对象的函数。 它将链接到组件。 如果需要访问主题, 请使用函数签名。 它作为第一个参数提供。
-2. `options` (*Object* [optional]): 
+2. `选项` (*Object* [optional]): 
     - `options.defaultTheme`（*Object* [optional]）：如果未通过主题提供者提供主题，则使用默认主题。
     - ` options.withTheme ` (*Boolean* [optional]): 默认值为 `false`。 将 ` theme ` 对象作为属性提供给组件。
     - ` options.name ` (*String* [optional]): 样式表的名称。 用于调试。 如果未提供该值, 它将尝试回退到组件的名称。
