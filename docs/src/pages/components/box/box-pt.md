@@ -37,7 +37,7 @@ The Box component has a `clone` property to enable the usage of the clone elemen
 </Box>
 ```
 
-2. Use render props
+1. Use render props
 
 The Box children accepts a render props function. You can pull out the `className`.
 
