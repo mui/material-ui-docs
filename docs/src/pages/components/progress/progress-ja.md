@@ -26,19 +26,19 @@ When displaying progress for a sequence of processes, indicate overall progress 
 
 ### Circular Indeterminate
 
-{{"demo": "pages/components/progress/CircularIndeterminate.js"}}
+{{"demo": "pages/demos/progress/CircularIndeterminate.js"}}
 
 ### Interactive Integration
 
-{{"demo": "pages/components/progress/CircularIntegration.js"}}
+{{"demo": "pages/demos/progress/CircularIntegration.js"}}
 
 ### Circular Determinate
 
-{{"demo": "pages/components/progress/CircularDeterminate.js"}}
+{{"demo": "pages/demos/progress/CircularDeterminate.js"}}
 
 ### Circular Static
 
-{{"demo": "pages/components/progress/CircularStatic.js"}}
+{{"demo": "pages/demos/progress/CircularStatic.js"}}
 
 ## Linear
 
@@ -46,19 +46,19 @@ When displaying progress for a sequence of processes, indicate overall progress 
 
 ### Linear Indeterminate
 
-{{"demo": "pages/components/progress/LinearIndeterminate.js"}}
+{{"demo": "pages/demos/progress/LinearIndeterminate.js"}}
 
 ### Linear Determinate
 
-{{"demo": "pages/components/progress/LinearDeterminate.js"}}
+{{"demo": "pages/demos/progress/LinearDeterminate.js"}}
 
 ### Linear Buffer
 
-{{"demo": "pages/components/progress/LinearBuffer.js"}}
+{{"demo": "pages/demos/progress/LinearBuffer.js"}}
 
 ### Linear Query
 
-{{"demo": "pages/components/progress/LinearQuery.js"}}
+{{"demo": "pages/demos/progress/LinearQuery.js"}}
 
 ## Non-standard ranges
 
@@ -83,15 +83,15 @@ function Progress(props) {
 
 ## Customized progress bars
 
-Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/components/).
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-{{"demo": "pages/components/progress/CustomizedProgressBars.js"}}
+{{"demo": "pages/demos/progress/CustomizedProgressBars.js"}}
 
 ## Delaying appearance
 
 There are [3 important limits](https://www.nngroup.com/articles/response-times-3-important-limits/) to know around response time. The ripple effect of the `ButtonBase` component ensures that the user feels that the system is reacting instantaneously. Normally, no special feedback is necessary during delays of more than 0.1 but less than 1.0 second. After 1.0 second, you can display a loader to keep user's flow of thought uninterrupted.
 
-{{"demo": "pages/components/progress/DelayingAppearance.js"}}
+{{"demo": "pages/demos/progress/DelayingAppearance.js"}}
 
 ## Limitations
 
@@ -101,4 +101,4 @@ Under heavy load, you might lose the stroke dash animation or see random Circula
 
 When it's not possible, you can leverage the `disableShrink` property to mitigate the issue. See https://github.com/mui-org/material-ui/issues/10327
 
-{{"demo": "pages/components/progress/CircularUnderLoad.js"}}
+{{"demo": "pages/demos/progress/CircularUnderLoad.js"}}
