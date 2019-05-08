@@ -9,7 +9,7 @@ components: Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedi
 
 [cartes](https://material.io/design/components/cards.html) sont des surfaces qui affichent du contenu et des actions sur un seul sujet.
 
-They should be easy to scan for relevant and actionable information. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy.
+Ils devraient être faciles à analyser pour trouver des informations pertinentes et exploitables. Les éléments, comme le texte et les images, doivent être placés dessus de manière à indiquer clairement la hiérarchie.
 
 ## Carte simple
 
