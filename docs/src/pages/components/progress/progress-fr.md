@@ -99,6 +99,6 @@ Under heavy load, you might lose the stroke dash animation or see random Circula
 
 ![heavy load](/static/images/progress/heavy-load.gif)
 
-When it's not possible, you can leverage the `disableShrink` property to mitigate the issue. See https://github.com/mui-org/material-ui/issues/10327
+Lorsque ce n'est pas possible, vous pouvez utiliser la propriété `disableShrink` pour atténuer le problème. Voir https://github.com/mui-org/material-ui/issues/10327
 
 {{"demo": "pages/components/progress/CircularUnderLoad.js"}}
