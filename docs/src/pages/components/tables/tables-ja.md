@@ -29,13 +29,13 @@ For accessibility, the first column is set to be a `<th>` element, with a `scope
 
 A simple example with no frills.
 
-{{"demo": "pages/components/tables/SimpleTable.js"}}
+{{"demo": "pages/demos/tables/SimpleTable.js"}}
 
 ## Dense Table
 
 A simple example of a dense table with no frills.
 
-{{"demo": "pages/components/tables/DenseTable.js"}}
+{{"demo": "pages/demos/tables/DenseTable.js"}}
 
 ## Sorting & Selecting
 
@@ -43,31 +43,31 @@ This example demonstrates the use of `Checkbox` and clickable rows for selection
 
 The Table has been given a fixed width to demonstrate horizontal scrolling. In order to prevent the pagination controls from scrolling, the TablePagination component is used outside of the Table. (The ['Custom Table Pagination Action' example](#custom-table-pagination-action) below shows the pagination within the TableFooter.)
 
-{{"demo": "pages/components/tables/EnhancedTable.js"}}
+{{"demo": "pages/demos/tables/EnhancedTable.js"}}
 
 ## Customized tables
 
-Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/components/).
+Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-{{"demo": "pages/components/tables/CustomizedTables.js"}}
+{{"demo": "pages/demos/tables/CustomizedTables.js"}}
 
 ## Custom Table Pagination Action
 
 The `Action` property of the `TablePagination` component allows the implementation of custom actions.
 
-{{"demo": "pages/components/tables/CustomPaginationActionsTable.js"}}
+{{"demo": "pages/demos/tables/CustomPaginationActionsTable.js"}}
 
 ## Spanning Table
 
 A simple example with spanning rows & columns.
 
-{{"demo": "pages/components/tables/SpanningTable.js"}}
+{{"demo": "pages/demos/tables/SpanningTable.js"}}
 
 ## Virtualized Table
 
 In the following example, we demonstrate how to use [react-virtualized](https://github.com/bvaughn/react-virtualized) with the `Table` component. It renders 200 rows and can easily handle more. Virtualization helps with performance issues.
 
-{{"demo": "pages/components/tables/ReactVirtualizedTable.js"}}
+{{"demo": "pages/demos/tables/ReactVirtualizedTable.js"}}
 
 ## Complementary projects
 
@@ -79,7 +79,7 @@ For more advanced use cases you might be able to take advantage of:
 
 [material-table](https://github.com/mbrn/material-table) is a simple and powerful Datatable for React based on Material-UI Table with some additional features. They support many different use cases (editable, filtering, grouping, sorting, selection, i18n, tree data and more). You should check it out.
 
-{{"demo": "pages/components/tables/MaterialTableDemo.js"}}
+{{"demo": "pages/demos/tables/MaterialTableDemo.js"}}
 
 ### Other
 
