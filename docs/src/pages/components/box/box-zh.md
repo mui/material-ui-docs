@@ -36,7 +36,7 @@ Box组件具有 `clone` 属性，以允许使用React的clone元素方法。
 </Box>
 ```
 
-2. 使用渲染道具
+1. 使用渲染道具
 
 Box可以将函数作为子组件。 你可以拉出 `className`。
 
@@ -58,6 +58,6 @@ import Box from '@material-ui/core/Box';
 |:------------------------------------------------------- |:----------------------------------------------------------------------------------------------------------------- |:--------------------------------------- |:-------------------------------------------------------------------------------------- |
 | <span class="prop-name required">children&nbsp;*</span> | <span class="prop-type">union:&nbsp;node&nbsp;&#124;<br />&nbsp;func<br /></span>                                 |                                         | 框渲染功能或节点。                                                                              |
 | <span class="prop-name">clone</span>                    | <span class="prop-type">bool</span>                                                                               | <span class="prop-default">false</span> | If `true`, the box will recycle its children DOM element. 它在内部使用 `React.cloneElement`。 |
-| <span class="prop-name">component</span>                | <span class="prop-type">union:&nbsp;string&nbsp;&#124;<br />&nbsp;func&nbsp;&#124;<br />&nbsp;object<br /></span> | <span class="prop-default">'div'</span> | 用于根节点的组件。 要么是使用DOM元素的字符串，要么是组件。                                                        |
+| <span class="prop-name">组件</span>                       | <span class="prop-type">union:&nbsp;string&nbsp;&#124;<br />&nbsp;func&nbsp;&#124;<br />&nbsp;object<br /></span> | <span class="prop-default">'div'</span> | 用于根节点的组件。 要么是使用DOM元素的字符串，要么是组件。                                                        |
 
 所提供的任何其它性质将被使用 [的样式功能](/system/basics/#all-inclusive) 或扩散到根元素。
