@@ -59,7 +59,7 @@ Você deve alterar o alinhamento do item da lista ao exibir 3 linhas ou mais, de
 
 Uma caixa de seleção que pode ser tanto uma ação principal ou uma ação secundária.
 
-The checkbox is the primary action and the state indicator for the list item. The comment button is a secondary action and a separate target.
+O checkbox é a ação primária e o estado indicador para o item da lista. O botão comentário é a ação secundária e um destino separado.
 
 {{"demo": "pages/components/lists/CheckboxList.js"}}
 
