@@ -11,7 +11,7 @@ components: Collapse, Divider, List, ListItem, ListItemAvatar, ListItemIcon, Lis
 
 ## シンプルなList
 
-{{"demo": "pages/components/lists/SimpleList.js"}}
+{{"demo": "pages/demos/lists/SimpleList.js"}}
 
 上のデモの最後の項目は、リンクを表示方法を示しています。
 
@@ -31,27 +31,27 @@ function ListItemLink(props) {
 
 ## ネストしたList
 
-{{"demo": "pages/components/lists/NestedList.js"}}
+{{"demo": "pages/demos/lists/NestedList.js"}}
 
 ## フォルダのList
 
-{{"demo": "pages/components/lists/FolderList.js"}}
+{{"demo": "pages/demos/lists/FolderList.js"}}
 
 ## Interactive
 
 Below is an interactive demo that lets you explore the visual results of the different settings:
 
-{{"demo": "pages/components/lists/InteractiveList.js"}}
+{{"demo": "pages/demos/lists/InteractiveList.js"}}
 
 ## 選択されたListItem
 
-{{"demo": "pages/components/lists/SelectedListItem.js"}}
+{{"demo": "pages/demos/lists/SelectedListItem.js"}}
 
 ## Listの項目の整列
 
 3行以上を表示するときは、項目の配置を変更する必要があり、`alignItems="flex-start"`プロパティを設定してください。
 
-{{"demo": "pages/components/lists/AlignItemsList.js"}}
+{{"demo": "pages/demos/lists/AlignItemsList.js"}}
 
 ## Listの操作
 
@@ -59,19 +59,19 @@ Below is an interactive demo that lets you explore the visual results of the dif
 
 Checkboxは、主要なアクションまたは補助的なアクションのどちらかになります。
 
-The checkbox is the primary action and the state indicator for the list item. The comment button is a secondary action and a separate target.
+Checkboxは、Listの項目の主要なアクションであり状態を表します。コメントボタンは補助的なアクションであり別のターゲットになります。
 
-{{"demo": "pages/components/lists/CheckboxList.js"}}
+{{"demo": "pages/demos/lists/CheckboxList.js"}}
 
 Checkboxは、Listの項目と異なるターゲットに対する補助的なアクションです。
 
-{{"demo": "pages/components/lists/CheckboxListSecondary.js"}}
+{{"demo": "pages/demos/lists/CheckboxListSecondary.js"}}
 
 ### Switch
 
 Switchは補助的なアクションであり異なるターゲットです。
 
-{{"demo": "pages/components/lists/SwitchListSecondary.js"}}
+{{"demo": "pages/demos/lists/SwitchListSecondary.js"}}
 
 ## ピン止めされたサブヘッダー付きList
 
@@ -79,14 +79,14 @@ Switchは補助的なアクションであり異なるターゲットです。
 
 この機能はCSSのSticky positioningに依存しています。 残念ながら、私たちがサポートしている全てのブラウザで[実装されている訳ではありません](https://caniuse.com/#search=sticky)。 サポートされていない場合、デフォルトは `disableSticky` となります。
 
-{{"demo": "pages/components/lists/PinnedSubheaderList.js"}}
+{{"demo": "pages/demos/lists/PinnedSubheaderList.js"}}
 
 ## 差し込み
 
-{{"demo": "pages/components/lists/InsetList.js"}}
+{{"demo": "pages/demos/lists/InsetList.js"}}
 
 ## Virtualized List
 
 In the following example, we demonstrate how to use [react-window](https://github.com/bvaughn/react-window) with the `List` component. It renders 200 rows and can easily handle more. Virtualization helps with performance issues.
 
-{{"demo": "pages/components/lists/VirtualizedList.js"}}
+{{"demo": "pages/demos/lists/VirtualizedList.js"}}
