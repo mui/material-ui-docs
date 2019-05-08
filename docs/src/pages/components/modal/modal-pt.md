@@ -14,7 +14,7 @@ O componente renderiza o conteúdo de seu `children` sobre um backdrop. O `Modal
 - Quando aberto, desabilita o scroll da página.
 - ♿️ It properly manages focus; moving to the modal content, and keeping it there until the modal is closed.
 - ♿️ Adds the appropriate ARIA roles automatically.
-- 📦 [6.5 kB gzipped](/size-snapshot).
+- 
 
 > **Nota sobre a terminologia**. O termo "modal" algumas vezes é usado com o sentido de "diálogo", mas isto é um equívoco. Uma janela Modal descreve partes de uma UI. Um elemento é considerado modal se [ele bloqueia interações com o resto da aplicação](https://en.wikipedia.org/wiki/Modal_window).
 
@@ -31,9 +31,9 @@ Se você está criando um diálogo Modal, você provavelmente quer usar o compon
 
 ## Performance
 
-The content of the modal is **lazily mounted** into the DOM. It ensures that having many closed modal in your React tree won't slow down your page.
+O conteúdo dos modais são **montados lentamente** dentro do DOM. Isso garante que, mesmo tendo muitos modais fechados em sua árvore React, o carregamento da sua página não será afetado.
 
-However, creating React elements has a cost too. Consider the following case:
+Porém, criar elementos React tem um preço também. Considere o caso a seguir:
 
 ```jsx
 <Modal open={false}>
@@ -60,7 +60,7 @@ However, creating React elements has a cost too. Consider the following case:
 </Modal>
 ```
 
-We create a lot of React elements that will never be mounted. It's wasteful 🐢. You can **speed up** the rendering by moving the modal body into its own component.
+We create a lot of React elements that will never be mounted. It's wasteful 
 
 ```jsx
 <Modal open={false}>
