@@ -21,7 +21,7 @@ Material-UI's styling solution is inspired by many other styling libraries such 
 
 ## 安装
 
-安装 Material-UI 并写入 `package.json` 依赖文件：
+将 Material-UI 下载并保存到你的 `package.json` 依赖文件里，请运行:
 
 ```sh
 // 用npm安装
