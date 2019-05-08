@@ -13,7 +13,7 @@ Los diálogos están diseñados para interrumpir el usuario, por eso deben usars
 
 ## Diálogos simples
 
-Simple dialogs can provide additional details or actions about a list item. For example, they can display avatars, icons, clarifying subtext, or orthogonal actions (such as adding an account).
+Los diálogos simples pueden proveer detalles adicionales o acciones acerca de un elemento de lista. Por ejemplo, pueden desplegar avatares, íconos, subtexto aclarativo, o acciones ortogonales (como agregar una cuenta).
 
 Mecánica táctil:
 
@@ -26,12 +26,12 @@ Mecánica táctil:
 
 Las alertas son interrupciones urgentes, que requieren reconocimiento, que informan al usuario sobre una situación.
 
-Most alerts don't need titles. They summarize a decision in a sentence or two by either:
+La mayoría de las alertas no necesitan títulos. Ellas resumen una decisión en una oración o dos ya sea por:
 
 - Hacer una pregunta (por ejemplo, "¿Eliminar esta conversación?")
 - Hacer una declaración relacionada con los botones de acción
 
-Use title bar alerts only for high-risk situations, such as the potential loss of connectivity. Users should be able to understand the choices based on the title and button text alone.
+Utilice las alertas de la barra de título solo para situaciones de alto riesgo, como la posible pérdida de conectividad. Los usuarios deben poder entender las opciones basadas solo en el título y el texto del botón.
 
 Si se necesita un título:
 
