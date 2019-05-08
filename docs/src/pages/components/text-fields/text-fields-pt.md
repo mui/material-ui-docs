@@ -7,7 +7,7 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 <p class="description">Campos de texto permitem que os usuários digitem e editem texto.</p>
 
-[Text fields](https://material.io/design/components/text-fields.html) allow users to enter text into a UI. They typically appear in forms and dialogs.
+[Campos de Texto](https://material.io/design/components/text-fields.html) permitem que os usuários insiram texto em uma interface de usuário. Eles geralmente aparecem em formulários e diálogos.
 
 ## TextField
 
@@ -43,7 +43,7 @@ Você também pode ter notado que algumas propriedades de entrada nativas do HTM
 
 ## Inputs Costumizados
 
-Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/components/).
+Aqui estão alguns exemplos de personalização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
 
 {{"demo": "pages/components/text-fields/CustomizedInputs.js"}}
 
@@ -105,7 +105,7 @@ A seguinte demonstração usa as bibliotecas [react-text-mask](https://github.co
 
 ## Acessibilidade
 
-In order for the text field to be accessible, **the input should be linked to the label and the helper text**. The underlying DOM nodes should have this structure.
+Para que o campo de texto seja acessível, **a entrada deve estar vinculada ao label e ao texto auxiliar**. Os nós DOM subjacentes devem ter essa estrutura.
 
 ```jsx
 <div class="form-control">
