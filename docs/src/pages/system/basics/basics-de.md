@@ -107,7 +107,7 @@ Um die Box-Komponente noch nützlicher zu machen, haben wir eine Sammlung von St
 - [spacing](/system/spacing/#api)
 - [typography](/system/typography/#api)
 
-Wenn Sie bereits `@material-ui/core` verwenden, können Sie unsere [vorgefertigte Box](/utils/box/) Komponente verwenden (intern mit JSS):
+Wenn Sie bereits `@material-ui/core` verwenden, können Sie unsere [vorgefertigte Box](/components/box/) Komponente verwenden (intern mit JSS):
 
 ```jsx
 import Box from '@material-ui/core/Box';
