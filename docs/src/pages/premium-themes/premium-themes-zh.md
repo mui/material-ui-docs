@@ -4,7 +4,7 @@ title: React Themes built by or curated by the Material-UI's creators
 
 * * *
 
-# 高级主题
+# Premium Themes
 
 <p class="description">Our collection of templates include themes to build an admin, dashboard, landing page, e-commerce site, application, and more.</p>
 
