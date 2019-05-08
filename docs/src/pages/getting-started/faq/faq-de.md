@@ -6,7 +6,7 @@ If you still can't find what you're looking for, you can ask the community in [S
 
 ## Warum werden meine Komponenten in Produktions-Builds nicht richtig gerendert?
 
-Dies ist wahrscheinlich ein Problem, das aufgrund von Klassennamenskonflikten auftritt, wenn sich Ihr Code in einem Produktionspaket befindet. Damit die Material-UI funktioniert, muss der `Klassenname` die Werte aller Komponenten auf einer Seite von einer einzigen Instanz des [Klassennamensgenerators](/css-in-js/advanced/#class-names) generiert werden.
+Dies ist wahrscheinlich ein Problem, das aufgrund von Klassennamenskonflikten auftritt, wenn sich Ihr Code in einem Produktionspaket befindet. Damit die Material-UI funktioniert, muss der `Klassenname` die Werte aller Komponenten auf einer Seite von einer einzigen Instanz des [Klassennamensgenerators](/styles/advanced/#class-names) generiert werden.
 
 Um dieses Problem zu beheben, müssen alle Komponenten auf der Seite so initialisiert werden, dass es immer nur **einen Klassennamensgenerator gibt**.
 
@@ -18,7 +18,7 @@ In einer Reihe von Szenarien könnten Sie versehentlich zwei Klassennamengenerat
 
 > Wenn Sie Webpack mit dem [SplitChunksPlugin](https://webpack.js.org/plugins/split-chunks-plugin/) verwenden, versuchen Sie, den [`RuntimeChunk` Einstellung unter `Optimierungen`](https://webpack.js.org/configuration/optimization/#optimization-runtimechunk) zu konfigurieren.
 
-Im Allgemeinen ist es einfach, dieses Problem zu beheben, indem jede Material-UI-Anwendung mit [` StylesProvider`](/css-in-js/api/#stylesprovider) Komponenten oben in ihren Komponentenbäumen verpackt wird **und verwenden einen einzigen Klassennamengenerator, der von ihnen genutzt wird **.
+Im Allgemeinen ist es einfach, dieses Problem zu beheben, indem jede Material-UI-Anwendung mit [` StylesProvider`](/styles/api/#stylesprovider) Komponenten oben in ihren Komponentenbäumen verpackt wird **und verwenden einen einzigen Klassennamengenerator, der von ihnen genutzt wird **.
 
 ## Warum bewegen sich die fest positionierten Elemente, wenn ein Modal geöffnet wird?
 
@@ -113,7 +113,7 @@ Verwenden Sie als Faustregel Inline-Style nur für dynamische Stileigenschaften.
 
 ## Wie verwende ich den react-router?
 
-Wir haben dokumentiert, wie Sie eine [Routing-Bibliothek von Drittanbietern](/demos/buttons/#third-party-routing-library) mit der `ButtonBase` Komponente verwenden. Viele interaktive Komponenten verwenden dies intern: `Link`, `Button`, `MenuItem`, `<ListItem button />`, `Tab`, usw. Sie können dieselbe Lösung mit ihnen verwenden.
+Wir haben dokumentiert, wie Sie eine [Routing-Bibliothek von Drittanbietern](/components/buttons/#third-party-routing-library) mit der `ButtonBase` Komponente verwenden. Viele interaktive Komponenten verwenden dies intern: `Link`, `Button`, `MenuItem`, `<ListItem button />`, `Tab`, usw. Sie können dieselbe Lösung mit ihnen verwenden.
 
 ## Wie kann ich auf das DOM-Element zugreifen?
 
@@ -253,7 +253,7 @@ Es gibt eine Nichtübereinstimmung der Klassennamen zwischen Client und Server. 
 
 #### Zu ergreifende Maßnahmen
 
-Der Klassennamenwert basiert auf dem Konzept des [Klassennamensgenerators](/css-in-js/advanced/#class-names). Die gesamte Seite muss mit **einem einzigen Generator** gerendert werden. Dieser Generator muss sich auf dem Server und auf dem Client identisch verhalten. Zum Beispiel:
+Der Klassennamenwert basiert auf dem Konzept des [Klassennamensgenerators](/styles/advanced/#class-names). Die gesamte Seite muss mit **einem einzigen Generator** gerendert werden. Dieser Generator muss sich auf dem Server und auf dem Client identisch verhalten. Zum Beispiel:
 
 - Sie müssen für jede Anforderung einen neuen Klassennamengenerator bereitstellen. But you shouldn't share a `createGenerateClassName()` between different requests:
 
@@ -311,7 +311,7 @@ Alle erhaltenen Mittel werden transparent verwaltet, und die Sponsoren werden in
 
 ## Why does component X require a DOM node in a prop instead of a ref object?
 
-Components like the [Portal](/api/Portal/#props) or [Popper](/api/Popper/#props) require a DOM node in the `container` or `anchorEl` prop respectively. It seems convenient to simply pass a ref object in those props and let Material-UI access the current value. This works in a simple scenario:
+Components like the [Portal](/api/portal/#props) or [Popper](/api/popper/#props) require a DOM node in the `container` or `anchorEl` prop respectively. It seems convenient to simply pass a ref object in those props and let Material-UI access the current value. This works in a simple scenario:
 
 ```jsx
 function App() {
