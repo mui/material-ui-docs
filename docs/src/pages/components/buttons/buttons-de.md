@@ -7,12 +7,12 @@ components: Button, Fab, IconButton, ButtonBase, Zoom
 
 <p class="description">Mit den Schaltflächen können Benutzer mit einem einzigen Tastendruck Aktionen ausführen und Entscheidungen treffen.</p>
 
-[Buttons](https://material.io/design/components/buttons.html) communicate actions that users can take. They are typically placed throughout your UI, in places like:
+[Buttons](https://material.io/design/components/buttons.html) kommunizieren Aktionen, die Benutzer ausführen können. Sie werden normalerweise in der gesamten Benutzeroberfläche platziert, beispielsweise an folgenden Orten:
 
 - Dialoge
 - Modale Fenster
 - Formulare
-- Karten (Cards)
+- Cards
 - Toolbars
 
 ## Contained Buttons
@@ -64,7 +64,7 @@ Hierzu kann der Zoom-Übergang verwendet werden. Da sowohl die vorhandenen als a
 
 ## Größen
 
-Fancy larger or smaller buttons? Use the `size` property.
+Lust auf größere oder kleinere Schaltflächen? Verwenden Sie die Eigenschaft `size`.
 
 {{"demo": "pages/components/buttons/ButtonSizes.js"}}
 
@@ -88,7 +88,7 @@ Here are some examples of customizing the component. You can learn more about th
 
 {{"demo": "pages/components/buttons/CustomizedButtons.js"}}
 
-👑 If you are looking for inspiration, you can check [MUI Treasury's customization examples](https://mui-treasury.com/components/button).
+
 
 ## Complex Buttons
 
@@ -102,4 +102,4 @@ Ein häufiger Anwendungsfall ist die Verwendung eines Buttons, um eine Navigatio
 
 {{"demo": "pages/components/buttons/ButtonRouter.js", "defaultCodeOpen": true}}
 
-*Note: Creating the Button components is necessary to prevent unexpected unmounting. Weitere Informationen dazu finden Sie in unserem [Komponenten-Guide](/guides/composition/#component-property).*
+*Hinweis: Das Erstellen von Button Komponenten ist erforderlich, um ein unerwartetes Aushängen zu verhindern. Weitere Informationen dazu finden Sie in unserem [Guide über Komponenten-Eigenschaften ](/guides/composition/#component-property).*
