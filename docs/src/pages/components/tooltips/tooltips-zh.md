@@ -74,7 +74,7 @@ A tooltip can be interactive. It won't close when the user hovers over the toolt
 
 {{"demo": "pages/components/tooltips/DisabledTooltips.js"}}
 
-## Transitions（过渡动画）
+## 过渡动画
 
 使用不同的过渡动画。
 
