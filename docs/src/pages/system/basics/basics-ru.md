@@ -2,7 +2,7 @@
 
 <p class="description">Styled system & style functions for building powerful design systems.</p>
 
-## Getting Started
+## Приступая к работе
 
 `@material-ui/system` provides low-level utility functions called "*style functions*" for building powerful design systems. Some of the key features:
 
@@ -107,7 +107,7 @@ To make the Box component more useful, we have been building a collection of sty
 - [spacing](/system/spacing/#api)
 - [typography](/system/typography/#api)
 
-If you are already using `@material-ui/core`, you can use our [prepackaged Box](/utils/box/) component (using JSS internally):
+If you are already using `@material-ui/core`, you can use our [prepackaged Box](/components/box/) component (using JSS internally):
 
 ```jsx
 import Box from '@material-ui/core/Box';
