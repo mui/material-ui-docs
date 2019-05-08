@@ -1,6 +1,6 @@
 # Inhaltssicherheitsrichtlinie (Content Security Policy, CSP)
 
-<p class="description">Material-UI supports Content Security Policy headers.</p>
+<p class="description">Die Material-UI unterstützt Header für Inhaltssicherheitsrichtlinien.</p>
 
 ## Was ist CSP und warum ist es nützlich?
 
@@ -13,13 +13,13 @@ Grundsätzlich verringert CSP Cross-Site Scripting (XSS)-Angriffe, indem Entwick
 
 Diese Sicherheitsanfälligkeit ermöglicht es dem Angreifer, irgendetwas auszuführen. Mit einem sicheren CSP-Header lädt der Browser dieses Skript jedoch nicht.
 
-You can read more about CSP [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).
+Weitere Informationen zu CSP finden Sie [hier](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).
 
 ## Wie kann man CSP implementieren?
 
 Um CSP mit Material-UI (und JSS) verwenden zu können, müssen Sie eine Nonce verwenden. Eine Nonce ist eine zufällig generierte Zeichenfolge, die nur einmal verwendet wird. Daher müssen Sie eine Server-Middleware hinzufügen, um für jede Anforderung eine zu generieren. JSS hat ein [tolles Tutorial](https://github.com/cssinjs/jss/blob/master/docs/csp.md) wie man dies mit Express und React Helmet erreichen kann. Lesen Sie für einen grundlegenden Überblick weiter.
 
-Eine CSP-Nonce ist eine Base 64-codierte Zeichenfolge. Sie können so erstellen:
+Eine CSP-Nonce ist eine Base 64-codierte Zeichenfolge. Sie können diese so erstellen:
 
 ```js
 import uuidv4 from 'uuid/v4';
