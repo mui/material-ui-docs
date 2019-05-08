@@ -2,20 +2,20 @@
 
 <p class="description">Use the theme.spacing() helper to create consistent spacing between the elements of your UI.</p>
 
-Material-UI uses [a recommended 8px scaling factor by default](https://material.io/design/layout/understanding-layout.html).
+Die Material-UI verwendet standardmäßig den [empfohlenen 8px-Skalierungsfaktor](https://material.io/design/layout/understanding-layout.html).
 
 ```js
 const styles = theme => ({
   root: {
-    // JSS uses px as the default units for this CSS property.
+    // JSS verwendet px als Standardeinheiten für diese CSS-Eigenschaft.
     padding: theme.spacing(2), // = 8 * 2
   },
 });
 ```
 
-You can change the spacing transformation by providing:
+Sie können die Abstandstransformation ändern, indem Sie Folgendes angeben:
 
-- a number
+- eine Zahl
 
 ```js
 const theme = createMuiTheme({
@@ -25,17 +25,17 @@ const theme = createMuiTheme({
 theme.spacing(2) // = 4 * 2
 ```
 
-- a function
+- eine Funktion
 
 ```js
 const theme = createMuiTheme({
-  spacing: factor => `${0.25 * factor}rem`, // (Bootstrap strategy)
+  spacing: factor => `${0.25 * factor}rem`, // (Bootstrap Strategie)
 });
 
 theme.spacing(2); // = 0.25 * 2rem = 0.5rem = 8px
 ```
 
-- an array
+- eine Array
 
 ```js
 const theme = createMuiTheme({
@@ -45,9 +45,9 @@ const theme = createMuiTheme({
 theme.spacing(2); // = 8
 ```
 
-## Multiple arity
+## Mehrere Aritäten
 
-The `theme.spacing()` helper accepts up to 4 arguments. You can use the arguments to reduce the boilerplate:
+Der`theme.spacing ()` Helfer akzeptiert bis zu 4 Argumente. Sie können die Argumente verwenden, um den Boilerplate zu reduzieren:
 
 ```diff
 <br />-  padding: `${theme.spacing(1)}px ${theme.spacing(2)}px`,
