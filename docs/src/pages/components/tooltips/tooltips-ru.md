@@ -84,6 +84,6 @@ By default disabled elements like `<button>` do not trigger user interactions so
 
 Всплывающая подсказка обычно отображается сразу же, как пользователь наводит курсор на элемент, и сразу же скрывается, когда курсор уходит с элемента. Задержку в отображении или скрытии всплывающей подсказки можно добавить через свойства `enterDelay` и `leaveDelay`, как показано выше в демонстрационной версии «Контролируемые подсказки».
 
-On mobile, the tooltip is displayed when the user longpresses the element and hides after a delay of 1500ms. You can disable this feature with the `disableTouchListener` property.
+На мобильном телефоне всплывающая подсказка отображается, когда пользователь нажимает на элемент и скрывается после задержки в 1500 мс Вы можете отключить эту функцию с помощью свойства `disableTouchListener`.
 
 {{"demo": "pages/components/tooltips/DelayTooltips.js"}}
