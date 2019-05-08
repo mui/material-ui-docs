@@ -79,7 +79,7 @@ function ListItemLink(props) {
 
 此功能依赖于 CSS sticky 定位。 可惜, 这一功能并未在我们支持的所有浏览器中 [实现](https://caniuse.com/#search=sticky) 。 如果不支持, 则默认为 `disableSticky`。
 
-{{"demo": "pages/components/lists/PinnedSubheaderList.js"}}
+{{"demo": "pages/components/lists/PinnedSubheaderList.js"}
 
 ## Inset List（嵌入列表）
 
