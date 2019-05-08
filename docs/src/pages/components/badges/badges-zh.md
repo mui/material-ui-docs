@@ -1,5 +1,5 @@
 ---
-title: React 徽章组件
+title: React Badge（徽章）组件
 components: Badge
 ---
 
@@ -9,7 +9,7 @@ components: Badge
 
 ## 简单的徽章
 
-Examples of badges containing text, using primary and secondary colors. The badge is applied to its children.
+下面是一些含有文本的徽章的示例，他们使用了主要和次要颜色。 徽章会被应用于其子项组件上。
 
 {{"demo": "pages/components/badges/SimpleBadge.js"}}
 
@@ -21,7 +21,7 @@ Examples of badges containing text, using primary and secondary colors. The badg
 
 ## 圆点徽章
 
-The `dot` property changes a badge into a small dot. This can be used as a notification that something has changed without giving a count.
+`dot` 属性将徽章更改为圆形。您可以将此用于通知系统，来展示一些不计数的内容变化。
 
 {{"demo": "pages/components/badges/DotBadge.js"}}
 
@@ -29,12 +29,12 @@ The `dot` property changes a badge into a small dot. This can be used as a notif
 
 徽章的可见性是可以通过 `invisible` 属性来控制。
 
-The badge auto hides with badgeContent is zero. You can override this with the `showZero` property.
+带有 badgeContent 属性的徽章会在计数为0的时候自动隐藏。您可以使用 `showZero` 属性强制显示。
 
 {{"demo": "pages/components/badges/BadgeVisibility.js"}}
 
 ## 自定义徽章
 
-以下是自定义组件的一个示例。 You can learn more about this in the [overrides documentation page](/customization/components/).
+以下是自定义组件的一个示例。您可以在[重写文档页面](/customization/components/)中了解有关此内容的更多信息。
 
 {{"demo": "pages/components/badges/CustomizedBadges.js"}}
