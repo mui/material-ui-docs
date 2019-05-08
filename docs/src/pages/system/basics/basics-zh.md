@@ -107,7 +107,7 @@ export default App
 - [spacing](/system/spacing/#api)
 - [typography](/system/typography/#api)
 
-如果你已经在使用 `@material-ui/core`，你可以用我们 [预写好的 Box ](/utils/box/)组件 (内部使用了 JSS)：
+If you are already using `@material-ui/core`, you can use our [prepackaged Box](/components/box/) component (using JSS internally):
 
 ```jsx
 import Box from '@material-ui/core/Box';
