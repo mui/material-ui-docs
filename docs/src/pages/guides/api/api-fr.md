@@ -34,11 +34,11 @@ La propriété `disableRipple` va suivre de cette façon : [`MenuItem`](/api/me
 
 ### Les Propriétés natives
 
-Nous évitons de documenter les propriétés natives supportées par le DOM, comme [` className `](/customization/overrides/#overriding-with-class-names) .
+Nous évitons de documenter les propriétés natives supportées par le DOM, comme [` className `](/customization/components/#overriding-styles-with-class-names) .
 
 ### Les Classes CSS
 
-Tous les composants acceptent une propriété [` classes `](/customization/overrides/#overriding-with-classes) pour personnaliser les styles. The classes design answers two constraints: to make the classes structure as simple as possible, while sufficient to implement the Material Design specification.
+Tous les composants acceptent une propriété [` classes `](/customization/components/#overriding-styles-with-classes) pour personnaliser les styles. The classes design answers two constraints: to make the classes structure as simple as possible, while sufficient to implement the Material Design specification.
 
 - The class applied to the root element is always called `root`.
 - All the default styles are grouped in a single class.
