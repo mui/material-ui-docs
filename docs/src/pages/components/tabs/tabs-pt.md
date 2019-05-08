@@ -17,7 +17,7 @@ Um exemplo simples sem frescuras.
 
 ### Etiquetas embrulhadas
 
-Long labels will automatically wrap on tabs. If the label is too long for the tab, it will overflow and the text will not be visible.
+Os rótulos longos serão agrupados automaticamente nas guias. Se o marcador for muito longo para a guia, ele será excedido e o texto não ficará visível.
 
 {{"demo": "pages/components/tabs/TabsWrappedLabel.js"}}
 
@@ -47,7 +47,7 @@ A propriedade `centered` deve ser usada para views maiores.
 
 ### Botões de Rolagem Automática
 
-Left and right scroll buttons will automatically be presented on desktop and hidden on mobile. (based on viewport width)
+Botões de rolagem para esquerda e direita serão apresentados automaticamente em dispositivos desktop e ocultados em dispositivos mobile. (baseado na largura de exibição do dispositivo)
 
 {{"demo": "pages/components/tabs/ScrollableTabsButtonAuto.js"}}
 
@@ -59,21 +59,21 @@ Botões de rolagem para esquerda e direita serão apresentados independente da l
 
 ### Oculta Botões de Rolagem
 
-Left and right scroll buttons will never be presented. All scrolling must be initiated through user agent scrolling mechanisms (e.g. left/right swipe, shift-mousewheel, etc.)
+Botões de rolagem para esquerda e direita nunca serão exibidos. Toda e qualquer rolagem será iniciada através dos mecanismos do navegador do dispositivo (exemplo: arrastar para direita ou esquerda, roda do mouse + shipt, etc.)
 
 {{"demo": "pages/components/tabs/ScrollableTabsButtonPrevent.js"}}
 
 ## Customized tabs
 
-Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/components/).
+Aqui está um exemplo de personalização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
 
 {{"demo": "pages/components/tabs/CustomizedTabs.js"}}
 
-👑 If you are looking for inspiration, you can check [MUI Treasury's customization examples](https://mui-treasury.com/components/tabs).
+
 
 ## Guias Nav
 
-By default tabs use a `button` element, but you can provide your own custom tag or component. Here's an example of implementing tabbed navigation:
+Por padrão as guias usam um elemento `button`, mas você pode definir sua própria tag ou seu próprio componente. Aqui vai um exemplo de implementação de guia de navegação:
 
 {{"demo": "pages/components/tabs/NavTabs.js"}}
 
