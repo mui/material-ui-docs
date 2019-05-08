@@ -13,7 +13,7 @@ As caixas de diálogo são intencionalmente interruptivas, então eles devem ser
 
 ## Caixas de diálogo simples
 
-Simple dialogs can provide additional details or actions about a list item. For example, they can display avatars, icons, clarifying subtext, or orthogonal actions (such as adding an account).
+A caixa de diálogo simples pode providenciar detalhes adicionais ou ações sobre um item de lista. Por exemplo, ele podem mostrar um avatar, ícone, texto esclarecedor ou um ação paralela (Como adicionar uma conta.).
 
 Mecanismo de Toque:
 
@@ -26,12 +26,12 @@ Mecanismo de Toque:
 
 Alertas são interrupções urgentes, requerendo confirmação que informou ao usuário a situação.
 
-Most alerts don't need titles. They summarize a decision in a sentence or two by either:
+Maioria dos alertas não precisam de títulos. Eles resumem uma decisão em uma sentença ou duas por:
 
 - Fazendo uma pergunta (Exemplo: "Apagar esta conversa?")
 - Fazendo uma declaração relacionada aos botões de ação
 
-Use title bar alerts only for high-risk situations, such as the potential loss of connectivity. Users should be able to understand the choices based on the title and button text alone.
+Use a barra de título somente para situações de alto risco, como perda de conexão potencial. Os usuários devem ser capaz de entender as escolhas baseando-se apenas no título e texto do botão.
 
 Se um título é necessário:
 
