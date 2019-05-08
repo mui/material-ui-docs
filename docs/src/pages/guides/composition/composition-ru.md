@@ -8,7 +8,7 @@ In order to provide the maximum flexibility and performance, we need a way to kn
 
 You may, however, need to wrap a component in order to enhance it, which can conflict with the `muiName` solution. If you wrap a component verify if that component has this static property set.
 
-Если вы столкнулись с этой проблемой, вам нужно использовать тот же тег для вашего компонента-обертки что и в оборачиваемом компоненте. In addition, you should forward the properties, as the parent component may need to control the wrapped components props.
+If you encounter this issue, you need to use the same tag for your wrapping component that is used with the wrapped component. In addition, you should forward the properties, as the parent component may need to control the wrapped components props.
 
 Давайте рассмотрим пример:
 
@@ -111,7 +111,7 @@ import { Link } from 'react-router-dom';
 
 ### With TypeScript
 
-Вы можете найти подробности в [ руководстве по TypeScript ](/guides/typescript#usage-of-component-property).
+Вы можете найти подробности в [ руководстве по TypeScript ](/guides/typescript/#usage-of-component-property).
 
 ## Caveat with refs
 
@@ -119,12 +119,12 @@ This section covers caveats when using a custom component as `children` or for t
 
 Some of the components need access to the DOM node. This was previously possible by using `ReactDOM.findDOMNode`. This function is deprecated in favor of `ref` and ref forwarding. However, only the following component types can be given a `ref`:
 
-* Any Material-UI component
-* class components i.e. `React.Component` or `React.PureComponent`
-* DOM (or host) components e.g. `div` or `button`
-* [React.forwardRef components](https://reactjs.org/docs/react-api.html#reactforwardref)
-* [React.lazy components](https://reactjs.org/docs/react-api.html#reactlazy)
-* [React.memo components](https://reactjs.org/docs/react-api.html#reactmemo)
+- Any Material-UI component
+- class components i.e. `React.Component` or `React.PureComponent`
+- DOM (or host) components e.g. `div` or `button`
+- [React.forwardRef components](https://reactjs.org/docs/react-api.html#reactforwardref)
+- [React.lazy components](https://reactjs.org/docs/react-api.html#reactlazy)
+- [React.memo components](https://reactjs.org/docs/react-api.html#reactmemo)
 
 If you don't use one of the above types when using your components in conjunction with Material-UI, you might see a warning from React in your console similar to:
 
