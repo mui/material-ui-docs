@@ -33,7 +33,7 @@ Se puede usar [material.io/tools/icons](https://material.io/tools/icons/?style=b
 - [`delete`](https://material.io/tools/icons/?icon=delete&style=baseline) está disponible como `@material-ui/icons/Delete`
 - [`delete forever`](https://material.io/tools/icons/?icon=delete_forever&style=baseline) está disponible como `@material-ui/icons/DeleteForever`
 
-For *"themed"* icons, append the theme name to the icon name. For instance with the
+Para iconos con *"tema"*, adjunta el nombre del tema al nombre del icono. Por ejemplo
 
 - El icono [`delete`](https://material.io/tools/icons/?icon=delete&style=outline) Outlined (contorneado) está disponible como `@material-ui/icons/DeleteOutlined`
 - El icono [`delete`](https://material.io/tools/icons/?icon=delete&style=rounded) Rounded (redondeado) está disponible como `@material-ui/icons/DeleteRounded`
@@ -77,7 +77,7 @@ El componente `Icon` mostrará iconos de cualquier fuente compatible con ligadur
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
 
-`Icon` will set the correct class name for the Material icon font. For other fonts, you must supply the class name using the Icon component's `className` property.
+`icono` establecerá el nombre de clase correcto para la fuente de icono de Material. Para otras fuentes, debe proporcionar el nombre de la clase utilizando la propiedad `className` del componente Icon.
 
 Para usar un icono, simplemente se envuelve el nombre del icono (ligadura de la fuente) con el componente `Icono`, por ejemplo:
 
@@ -99,7 +99,7 @@ Por defecto, un Icono heredará el color del texto actual. Opcionalmente, se pue
 
 {{"demo": "pages/components/icons/FontAwesome.js", "hideEditButton": true}}
 
-## Font vs SVG. Which approach to use?
+## Fuente vs SVG. ¿Qué enfoque utilizar?
 
 Ambos enfoques funcionan bien, sin embargo, existen algunas diferencias sutiles, especialmente en términos de rendimiento y calidad de representación. Siempre que sea posible, se prefiere SVG, ya que permite la división de código, admite más iconos, se procesa más rápido y mejor.
 
@@ -107,14 +107,11 @@ Para más detalles, se puede consultar [por qué GitHub migró](https://blog.git
 
 ## Accesibilidad
 
-Los iconos pueden transmitir todo tipo de información significativa, por lo que es importante que alcancen a la mayor cantidad de personas posible. There are two use cases you’ll want to consider:
-
-- **Decorative Icons** are only being used for visual or branding reinforcement. Si se eliminaran de la página, los usuarios aún entenderían y podrían usar su página.
-- **Los Iconos Semánticos** son los que se usan para transmitir un significado, en lugar de una decoración pura. Esto incluye iconos, sin texto junto a ellos, utilizados como controles interactivos — botones, elementos de formularios, conmutadores, etc.
+Los iconos pueden transmitir todo tipo de información significativa, por lo que es importante que alcancen a la mayor cantidad de personas posible. Hay dos casos de uso que se podrían considerar: - **Los Iconos Decorativos** solo se usan para refuerzo visual o de marca. Si se eliminaran de la página, los usuarios aún entenderían y podrían usar su página. - **Los Iconos Semánticos** son los que se usan para transmitir un significado, en lugar de una decoración pura. Esto incluye iconos, sin texto junto a ellos, utilizados como controles interactivos — botones, elementos de formularios, conmutadores, etc.
 
 ### Iconos SVG Decorativos
 
-If your icons are purely decorative, you’re already done! We add the `aria-hidden=true` attribute so that your icons are properly accessible (invisible).
+Si los iconos necesitados son puramente decorativos, ¡ya está hecho! Agregamos el atributo `aria-hidden=true` para que los iconos sean debidamente accesibles (invisibles).
 
 ### Iconos SVG Semánticos
 
@@ -137,7 +134,7 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 
 ### Iconos de Fuente Decorativos
 
-If your icons are purely decorative, you’re already done! We add the `aria-hidden=true` attribute so that your icons are properly accessible (invisible).
+Si los iconos necesitados son puramente decorativos, ¡ya está hecho! Agregamos el atributo `aria-hidden=true` para que los iconos sean debidamente accesibles (invisibles).
 
 ### Iconos de Fuente Semánticos
 
