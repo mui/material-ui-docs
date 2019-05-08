@@ -7,7 +7,7 @@ components: Button, Fab, IconButton, ButtonBase, Zoom
 
 <p class="description">按钮允许用户只需轻按一下即可采取行动并做出选择。</p>
 
-[按钮](https://material.io/design/components/buttons.html) 传达用户可以执行的操作。 They are typically placed throughout your UI, in places like:
+[按钮](https://material.io/design/components/buttons.html)承载了用户可以触发的动作。通常他们被放置在界面中的以下位置：
 
 - Dialogs（对话框）
 - Modal windows（模态窗口）
@@ -64,7 +64,7 @@ components: Button, Fab, IconButton, ButtonBase, Zoom
 
 ## 大小
 
-Fancy larger or smaller buttons? Use the `size` property.
+您喜欢更大一点或更小一点的按钮？请使用 `size` 属性。
 
 {{"demo": "pages/components/buttons/ButtonSizes.js"}}
 
@@ -84,11 +84,11 @@ Fancy larger or smaller buttons? Use the `size` property.
 
 ## 自定义按钮
 
-Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/components/).
+以下是自定义组件的一些示例。您可以在[重写文档页面](/customization/components/)中了解有关此内容的更多信息。
 
 {{"demo": "pages/components/buttons/CustomizedButtons.js"}}
 
-👑 If you are looking for inspiration, you can check [MUI Treasury's customization examples](https://mui-treasury.com/components/button).
+
 
 ## Complex Buttons（复杂按钮）
 
@@ -102,4 +102,4 @@ Text Buttons（文本按钮），Contained Buttons（实心按钮），Floating 
 
 {{"demo": "pages/components/buttons/ButtonRouter.js", "defaultCodeOpen": true}}
 
-*Note: Creating the Button components is necessary to prevent unexpected unmounting. 您可以在我们的 [组件属性指南](/guides/composition/#component-property)阅读更多相关信息。*
+*请注意：为了防止组件被意外地移除，创建一个 Button 组件是有必要的。您可以在我们的[组件属性指南](/guides/composition/#component-property)中阅读更多相关信息。*
