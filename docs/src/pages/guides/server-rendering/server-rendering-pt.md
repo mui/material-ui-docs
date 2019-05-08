@@ -8,7 +8,7 @@ When the server receives the request, it renders the required component(s) into 
 
 O Material-UI foi desenhado da base com as limitações de renderizar no servidor, mas você pode se certificar que será integrado corretamente. É importante fornecer a página com o CSS necessário, caso contrário a página irá renderizar somente o HTML até o CSS ser injetado pelo cliente, causando uma tremulação (FOUC). To inject the style down to the client, we need to:
 
-1. Cria uma instância nova e fresca do [`ServerStyleSheets`](/css-in-js/api/#serverstylesheets) em cada requisição.
+1. Cria uma instância nova e fresca do [`ServerStyleSheets`](/styles/api/#serverstylesheets) em cada requisição.
 2. Render the React tree with the server-side collector.
 3. Pull the CSS out.
 4. Pass the CSS along to the client.
@@ -81,7 +81,7 @@ app.listen(port);
 
 The first thing that we need to do on every request is create a new `ServerStyleSheets`.
 
-When rendering, we will wrap `App`, our root component, inside a [`StylesProvider`](/css-in-js/api/#stylesprovider) and [`ThemeProvider`](/css-in-js/api/#themeprovider) to make the style configuration and the `theme` available to all components in the component tree.
+When rendering, we will wrap `App`, our root component, inside a [`StylesProvider`](/styles/api/#stylesprovider) and [`ThemeProvider`](/styles/api/#themeprovider) to make the style configuration and the `theme` available to all components in the component tree.
 
 The key step in server-side rendering is to render the initial HTML of our component **before** we send it to the client side. To do this, we use [ReactDOMServer.renderToString()](https://reactjs.org/docs/react-dom-server.html).
 
