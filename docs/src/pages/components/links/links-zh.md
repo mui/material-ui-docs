@@ -2,7 +2,7 @@
 components: Link
 ---
 
-# Links（链接）
+# 链接
 
 <p class="description">Link组件允许您使用主题颜色和排版样式轻松自定义锚元素。</p>
 
