@@ -5,7 +5,7 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 
 # Steppers（步骤条）
 
-<p class="description">步进器通过数字编号表示进度。 It provides a wizard-like workflow.</p>
+<p class="description">步骤条通过编号的步骤来表示流程。它提供了类似向导的工作流程。</p>
 
 [步骤条](https://material.io/archive/guidelines/components/steppers.html) 通过一系列逻辑和编号的步骤来显示当前操作的进度。 它们也可用于导航。 在保存一个步骤后，步骤条可能会显示短暂的反馈信息。
 
@@ -63,7 +63,7 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 
 ## 定制步进器
 
-以下是自定义组件的一个示例。 You can learn more about this in the [overrides documentation page](/customization/components/).
+以下是自定义组件的一个示例。您可以在[重写文档页面](/customization/components/)中了解有关此内容的更多信息。
 
 此组件使用自定义的 `StepConnector` 元素, 它根据 `active` 更改边框颜色, 并 ` completed ` 状态。
 
@@ -75,7 +75,7 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 
 ### 移动设备的步进器 - 文字
 
-This is essentially a back/next button positioned correctly. You must implement the textual description yourself, however, an example is provided below for reference.
+这本质上是被定位是一个后退/前进按钮。您必须自己实现文本描述，不过下面提供了一个示例供参考。
 
 {{"demo": "pages/components/steppers/TextMobileStepper.js"}}
 
