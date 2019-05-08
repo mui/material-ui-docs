@@ -8,7 +8,7 @@ Wenn der Server die Anforderung empfängt, stellt er die erforderlichen Komponen
 
 Die Material-UI wurde von Grund auf mit der Möglichkeit des Renderns auf dem Server entwickelt. Sie müssen jedoch sicherstellen, dass sie korrekt integriert ist. Es ist wichtig, die Seite mit dem erforderlichen CSS zu versehen, andernfalls wird die Seite nur mit HTM-Code gerendert und dann darauf gewartet, dass der Client das CSS einfügt was zu flackern führt (FOUC). Um den Stil in den Client zu injizieren, müssen wir:
 
-1. Eine neue [`ServerStyleSheets`](/css-in-js/api/#serverstylesheets) Instanz bei jede Anfrage erstellen.
+1. Eine neue [`ServerStyleSheets`](/styles/api/#serverstylesheets) Instanz bei jede Anfrage erstellen.
 2. Den React-Baum mit dem serverseitigen Collector rendern.
 3. Das CSS herausziehen.
 4. Das CSS zum Client weiterleiten.
@@ -81,7 +81,7 @@ app.listen(port);
 
 Als Erstes müssen wir bei jeder Anfrage ein neues `ServerStyleSheets` erstellen.
 
-Beim Rendern wickeln wir die `App`, unsere Wurzelkomponente, in einem [`StylesProvider`](/css-in-js/api/#stylesprovider) und [`ThemeProvider`](/css-in-js/api/#themeprovider) ein, um die Stilkonfiguration und das `Theme` für alle Komponenten im Komponentenbaum verfügbar zu machen.
+Beim Rendern wickeln wir die `App`, unsere Wurzelkomponente, in einem [`StylesProvider`](/styles/api/#stylesprovider) und [`ThemeProvider`](/styles/api/#themeprovider) ein, um die Stilkonfiguration und das `Theme` für alle Komponenten im Komponentenbaum verfügbar zu machen.
 
 Der wichtigste Schritt beim serverseitigen Rendern ist das Rendern des ursprünglichen HTM-Codes unserer Komponente **bevor** wir es an den Kunden senden. Dazu verwenden wir [ReactDOMServer.renderToString()](https://reactjs.org/docs/react-dom-server.html).
 
