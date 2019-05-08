@@ -1,4 +1,4 @@
-# 活版印刷
+# Typography
 
 <p class="description">The theme provides a set of type sizes that work well together, and also with the layout grid.</p>
 
@@ -108,7 +108,7 @@ You might want to change the `<html>` element default font size. For instance, w
 ```js
 const theme = createMuiTheme({
   typography: {
-    // Tell Material-UI what's the font-size on the html element is.
+    // 告诉Material-UI html元素的字体大小是什么。
     htmlFontSize: 10,
   },
 });
