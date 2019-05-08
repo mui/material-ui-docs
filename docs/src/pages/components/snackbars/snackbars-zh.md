@@ -39,7 +39,7 @@ Here are some examples of customizing the component. You can learn more about th
 
 {{"demo": "pages/components/snackbars/LongTextSnackbar.js"}}
 
-## Transitions（过渡动画）
+## 过渡动画
 
 ### 连续的消息条
 
@@ -55,13 +55,13 @@ Here are some examples of customizing the component. You can learn more about th
 
 ### 更改过渡动画
 
-[Grow](/components/transitions/#grow) is the default transition but you can use a different one.
+[Grow](/components/transitions/#grow) 是默认的过渡动画，但你可以选择使用不同的过渡动画。
 
 {{"demo": "pages/components/snackbars/TransitionsSnackbar.js"}}
 
 ### 控制滑动的方向
 
-You can change the direction of the [Slide](/components/transitions/#slide) transition.
+你可以修改 [Slide](/components/transitions/#slide) 过渡的方向 。
 
 {{"demo": "pages/components/snackbars/DirectionSnackbar.js"}}
 
