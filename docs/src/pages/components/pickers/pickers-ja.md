@@ -18,28 +18,28 @@ components: TextField
 
 A native date picker example with `type="date"`.
 
-{{"demo": "pages/components/pickers/DatePickers.js"}}
+{{"demo": "pages/demos/pickers/DatePickers.js"}}
 
 ### Date & Time pickers
 
 A native date & time picker example with `type="datetime-local"`.
 
-{{"demo": "pages/components/pickers/DateAndTimePickers.js"}}
+{{"demo": "pages/demos/pickers/DateAndTimePickers.js"}}
 
 ### Time pickers
 
 A native time picker example with `type="time"`.
 
-{{"demo": "pages/components/pickers/TimePickers.js"}}
+{{"demo": "pages/demos/pickers/TimePickers.js"}}
 
 ## Complementary projects
 
 For more advanced use cases you might be able to take advantage of.
 
-### @material-ui/pickers
+### material-ui-pickers
 
-![Stars](https://img.shields.io/github/stars/mui-org/material-ui-pickers.svg?style=social&label=Stars) ![npmダウンロード](https://img.shields.io/npm/dm/@material-ui/pickers.svg)
+![Stars](https://img.shields.io/github/stars/dmtrKovalenko/material-ui-pickers.svg?style=social&label=Stars) ![npmダウンロード](https://img.shields.io/npm/dm/material-ui-pickers.svg)
 
-[@material-ui/pickers](https://material-ui-pickers.dev/) provides date and time controls that follow the Material Design spec.
+[material-ui-pickers](https://material-ui-pickers.firebaseapp.com/) provides date and time controls that follow the Material Design spec.
 
-{{"demo": "pages/components/pickers/MaterialUIPickers.js"}}
+{{"demo": "pages/demos/pickers/MaterialUIPickers.js"}}
