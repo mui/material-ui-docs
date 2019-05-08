@@ -49,7 +49,7 @@ export default function PlainCssButton() {
 
 [![编辑按钮](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/l5qv4y57vl)
 
-**Note:** JSS injects its styles at the bottom of the `<head>`. If you don't want to mark style attributes with **!important**, you need to change [the CSS injection order](/styles/advanced/#css-injection-order), as in the demo.
+**Note:** JSS injects its styles at the bottom of the `<head>`. 如果您不想使用 **!important**标记样式属性，则需要更改 [CSS注入顺序](/styles/advanced/#css-injection-order)，如演示中所示。
 
 ## 全局CSS
 
@@ -86,7 +86,7 @@ export default function GlobalCssButton() {
 
 [![编辑按钮](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/9yxopv4vmp)
 
-**Note:** JSS injects its styles at the bottom of the `<head>`. If you don't want to mark style attributes with **!important**, you need to change [the CSS injection order](/styles/advanced/#css-injection-order), as in the demo.
+**Note:** JSS injects its styles at the bottom of the `<head>`. 如果您不想使用 **!important**标记样式属性，则需要更改 [CSS注入顺序](/styles/advanced/#css-injection-order)，如演示中所示。
 
 ## Styled Components
 
@@ -279,7 +279,7 @@ export default function CssModulesButton() {
 
 [![编辑按钮](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/5km241l9xn)
 
-**Note:** JSS injects its styles at the bottom of the `<head>`. If you don't want to mark style attributes with **!important**, you need to change [the CSS injection order](/styles/advanced/#css-injection-order), as in the demo.
+**Note:** JSS injects its styles at the bottom of the `<head>`. 如果您不想使用 **!important**标记样式属性，则需要更改 [CSS注入顺序](/styles/advanced/#css-injection-order)，如演示中所示。
 
 ## Emotion
 
@@ -321,7 +321,7 @@ export default function EmotionButton() {
 
 [![编辑按钮](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/yw93kl7y0j)
 
-**Note:** JSS injects its styles at the bottom of the `<head>`. If you don't want to mark style attributes with **!important**, you need to change [the CSS injection order](/styles/advanced/#css-injection-order), as in the demo.
+**Note:** JSS injects its styles at the bottom of the `<head>`. 如果您不想使用 **!important**标记样式属性，则需要更改 [CSS注入顺序](/styles/advanced/#css-injection-order)，如演示中所示。
 
 ### The `styled()` API
 
@@ -403,4 +403,4 @@ export default function GlamorButton() {
 
 [![编辑按钮](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vp2znmj40)
 
-**Note:** Both Glamor and JSS inject their styles at the bottom of the `<head>`. If you don't want to mark style attributes with **!important**, you need to change [the CSS injection order](/styles/advanced/#css-injection-order), as in the demo.
+**Note:** Both Glamor and JSS inject their styles at the bottom of the `<head>`. 如果您不想使用 **!important**标记样式属性，则需要更改 [CSS注入顺序](/styles/advanced/#css-injection-order)，如演示中所示。
