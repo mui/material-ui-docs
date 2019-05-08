@@ -43,17 +43,17 @@ components: AppBar, Toolbar, Menu
 
 {{"demo": "pages/components/app-bar/BottomAppBar.js", "iframe": true, "maxWidth": 500}}
 
-## Scrolling
+## 滚动
 
-### Hide App Bar
+### 隐藏应用栏
 
-An App Bar that hides on scroll.
+一个隐藏滚动条的应用栏。
 
 {{"demo": "pages/components/app-bar/HideAppBar.js", "iframe": "true", "maxWidth": 500}}
 
-### Elevate App Bar
+### 升高的应用栏
 
-An App Bar that elevates on scroll.
+一个在滚动式升高的应用栏。
 
 {{"demo": "pages/components/app-bar/ElevateAppBar.js", "iframe": "true", "maxWidth": 500}}
 
