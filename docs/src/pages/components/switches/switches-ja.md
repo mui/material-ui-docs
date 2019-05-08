@@ -9,31 +9,31 @@ components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
 
 [Switches](https://material.io/design/components/selection-controls.html#switches) are the preferred way to adjust settings on mobile. The option that the switch controls, as well as the state it’s in, should be made clear from the corresponding inline label.
 
-{{"demo": "pages/components/switches/Switches.js"}}
+{{"demo": "pages/demos/switches/Switches.js"}}
 
 ## Switches with FormControlLabel
 
 `Switch` can also be used with a label description thanks to the `FormControlLabel` component.
 
-{{"demo": "pages/components/switches/SwitchLabels.js"}}
+{{"demo": "pages/demos/switches/SwitchLabels.js"}}
 
 ## Switches with FormGroup
 
 `FormGroup` is a helpful wrapper used to group selection controls components that provides an easier API. However, we encourage you to use a [Checkbox](#checkboxes) instead.
 
-{{"demo": "pages/components/switches/SwitchesGroup.js"}}
+{{"demo": "pages/demos/switches/SwitchesGroup.js"}}
 
 ## Customized switches
 
-Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/components/).
+Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/overrides/).
 
-{{"demo": "pages/components/switches/CustomizedSwitches.js"}}
+{{"demo": "pages/demos/switches/CustomizedSwitches.js"}}
 
 ## Label placement
 
 You can change the placement of the label:
 
-{{"demo": "pages/components/switches/FormControlLabelPosition.js"}}
+{{"demo": "pages/demos/switches/FormControlLabelPosition.js"}}
 
 ## Accessibility
 
