@@ -7,7 +7,7 @@ components: Button, Fab, IconButton, ButtonBase, Zoom
 
 <p class="description">Buttonを使用すると、ユーザーは1回のタップでアクションを実行したり選択したりできます。</p>
 
-[Buttons](https://material.io/design/components/buttons.html) communicate actions that users can take. They are typically placed throughout your UI, in places like:
+[Button](https://material.io/design/components/buttons.html)は、ユーザが取りうるアクションを伝達します。一般的に次のようなUIのなかに配置されます。
 
 - Dialogs
 - Modal window
@@ -88,7 +88,7 @@ Here are some examples of customizing the component. You can learn more about th
 
 {{"demo": "pages/components/buttons/CustomizedButtons.js"}}
 
-👑 If you are looking for inspiration, you can check [MUI Treasury's customization examples](https://mui-treasury.com/components/button).
+
 
 ## Complex Buttons
 
