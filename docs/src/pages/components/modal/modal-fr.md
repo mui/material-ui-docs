@@ -21,7 +21,7 @@ Le composant affiche ses nœuds `children` devant un composant d'arrière-plan. 
 If you are creating a modal dialog, you probably want to use the [Dialog](/components/dialogs/) component rather than directly using Modal. Modal est un élément de construction de niveau faible exploitée par les composants suivants :
 
 - [Dialog](/components/dialogs/)
-- [Drawer (Tiroir)](/components/drawers/)
+- [Drawer](/components/drawers/)
 - [Menu](/components/menus/)
 - [Popover](/components/popover/)
 
