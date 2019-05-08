@@ -17,9 +17,9 @@ yarn add @material-ui/lab
 该实验室对核心组件具有对等依赖性。 如果你尚未在你的项目中使用Material-UI, 你可以按如下方式安装:
 
 ```sh
-// with npm
+// 用npm安装
 npm install @material-ui/core
 
-// with yarn
+// 用yarn安装
 yarn add @material-ui/core
 ```
