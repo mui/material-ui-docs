@@ -7,7 +7,7 @@ components: Menu, MenuItem, MenuList, ClickAwayListener, Popover, Popper
 
 <p class="description">Os menus exibem uma lista de opções em superfícies temporárias.</p>
 
-A [Menu](https://material.io/design/components/menus.html) displays a list of choices on a temporary surface. It appears when the user interacts with a button, or other control.
+Um [Menu](https://material.io/design/components/menus.html) exibe uma lista de opções em uma superfície temporária. Elas aparecem quando os usuários interagem com um botão, action, ou outro controle.
 
 ## Menu simples
 
@@ -35,7 +35,7 @@ The primary responsibility of the `MenuList` component is to handle the focus.
 
 ## Menus Customizados
 
-Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/components/).
+Aqui está um exemplo de personalização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
 
 {{"demo": "pages/components/menus/CustomizedMenus.js"}}
 
