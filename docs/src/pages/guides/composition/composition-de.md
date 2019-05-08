@@ -6,9 +6,9 @@
 
 Um maximale Flexibilität und Leistung zu gewährleisten, benötigen wir einen Weg, um die Art der untergeordneten Elemente einer Komponente zu kennen. Zur Lösung dieses Problems haben wir einige unserer Komponenten, wenn nötig, mit der statische Eigenschaft ` muiName ` markiert.
 
-Möglicherweise müssen Sie jedoch eine Komponente umhüllen, um sie zu verbessern, was mit der `muiName` Lösung in Konflikt geraten kann. Wenn Sie eine Komponente umschließen, überprüfen Sie, ob für diese Komponente diese statische Eigenschaft festgelegt ist.
+You may, however, need to wrap a component in order to enhance it, which can conflict with the `muiName` solution. Wenn Sie eine Komponente umschließen, überprüfen Sie, ob für diese Komponente diese statische Eigenschaft festgelegt ist.
 
-Wenn dieses Problem auftritt, müssen Sie dasselbe Tag für die Umwickelkomponente, das mit der umwickelten Komponente verwendet wird. Außerdem sollten Sie die Eigenschaften weiterleiten, da die übergeordnete Komponente möglicherweise die übergeordneten Komponentenstützen steuern muss.
+If you encounter this issue, you need to use the same tag for your wrapping component that is used with the wrapped component. In addition, you should forward the properties, as the parent component may need to control the wrapped components props.
 
 Sehen wir uns ein Beispiel an:
 
@@ -112,7 +112,7 @@ Hier ist eine Demo mit [React Router DOM](https://github.com/ReactTraining/react
 
 ### Mit TypeScript
 
-Die Details finden Sie im [TypeScript-Handbuch](/guides/typescript#usage-of-component-property).
+Die Details finden Sie im [TypeScript-Handbuch](/guides/typescript/#usage-of-component-property).
 
 ## Vorbehalt bei Refs
 
@@ -120,12 +120,12 @@ This section covers caveats when using a custom component as `children` or for t
 
 Some of the components need access to the DOM node. This was previously possible by using `ReactDOM.findDOMNode`. This function is deprecated in favor of `ref` and ref forwarding. However, only the following component types can be given a `ref`:
 
-* Any Material-UI component
-* class components i.e. `React.Component` or `React.PureComponent`
-* DOM (or host) components e.g. `div` or `button`
-* [React.forwardRef components](https://reactjs.org/docs/react-api.html#reactforwardref)
-* [React.lazy components](https://reactjs.org/docs/react-api.html#reactlazy)
-* [React.memo components](https://reactjs.org/docs/react-api.html#reactmemo)
+- Any Material-UI component
+- class components i.e. `React.Component` or `React.PureComponent`
+- DOM (or host) components e.g. `div` or `button`
+- [React.forwardRef components](https://reactjs.org/docs/react-api.html#reactforwardref)
+- [React.lazy components](https://reactjs.org/docs/react-api.html#reactlazy)
+- [React.memo components](https://reactjs.org/docs/react-api.html#reactmemo)
 
 If you don't use one of the above types when using your components in conjunction with Material-UI, you might see a warning from React in your console similar to:
 
