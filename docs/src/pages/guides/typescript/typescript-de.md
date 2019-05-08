@@ -251,6 +251,6 @@ const theme = createMyTheme({ appDrawer: { breakpoint: 'md' }});
 
 ## Verwendung der `component` Eigenschaft
 
-Mit der Material-UI können Sie die root Komponente einer Komponente durch die `component` Eigenschaft ersetzen. Zum Beispiel ist die Stamm Komponente eines `Button` durch einen React Router `Link` ersetzt werden und alle zusätzlichen Eigenschaften, die an den `Button` übergeben werden, wie `to`, wird auf die `Link` Komponente verteilt. Für ein Code Beispiel für den `Button ` und `react-router-dom` schau dir [diese Demo an](/demos/buttons/#third-party-routing-library)
+Mit der Material-UI können Sie die root Komponente einer Komponente durch die `component` Eigenschaft ersetzen. Zum Beispiel ist die Stamm Komponente eines `Button` durch einen React Router `Link` ersetzt werden und alle zusätzlichen Eigenschaften, die an den `Button` übergeben werden, wie `to`, wird auf die `Link` Komponente verteilt. Für ein Code Beispiel für den `Button ` und `react-router-dom` schau dir [diese Demo an](/components/buttons/#third-party-routing-library)
 
 Nicht jede Komponente unterstützt vollständig jeden übergebenen Komponententyp. Wenn Sie auf eine Komponente stoßen, die ihre `component` Eigenschaft ablehnt in TypeScript, öffnen Sie bitte eine Frage in Github. Es besteht ein ständiger Aufwand, um dies zu beheben, indem Komponentenstützen generisch gemacht werden.
