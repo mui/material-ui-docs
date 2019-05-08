@@ -15,7 +15,7 @@ Wenn aktiviert, zeigen [Tooltips](https://material.io/design/components/tooltips
 
 ## Positionierte Tooltips
 
-The `Tooltip` has 12 **placements** choice. They don’t have directional arrows; instead, they rely on motion emanating from the source to convey direction.
+Der `Tooltip` hat 12 mögliche **Platzierungen**. Sie haben keine Richtungspfeile; Stattdessen verlassen sie sich auf Bewegungen, die von der Quelle ausgehen, um die Richtung zu vermitteln.
 
 {{"demo": "pages/components/tooltips/PositionedTooltips.js"}}
 
@@ -27,7 +27,7 @@ Here are some examples of customizing the component. You can learn more about th
 
 ## Benutzerdefiniertes untergeordnetes Element
 
-The tooltip needs to apply DOM event listeners to its child element. If the child is a custom React element, you need to make sure that it spreads its properties to the underlying DOM element.
+Der Tooltip muss DOM-Ereignis-Listener auf das untergeordnete Element anwenden. Wenn das untergeordnete Element ein benutzerdefiniertes React-Element ist, müssen Sie sicherstellen, dass es seine Eigenschaften auf das zugrunde liegende DOM-Element weitergibt.
 
 ```jsx
 function MyComponent(props) {
@@ -64,7 +64,7 @@ Der `Tooltip` umhüllt standardmäßig lange Texte, um diese lesbar zu machen.
 
 ## Interaktiv
 
-A tooltip can be interactive. It won't close when the user hovers over the tooltip before the `leaveDelay` is expired.
+Ein Tooltip kann interaktiv sein. Er wird nicht geschlossen, wenn sich der Benutzer über dem Tooltip befindet, bevor die `leaveDelay` abgelaufen ist.
 
 {{"demo": "pages/components/tooltips/InteractiveTooltips.js"}}
 
@@ -84,6 +84,6 @@ Verwenden Sie einen anderen Übergang.
 
 Der Tooltip wird normalerweise sofort angezeigt, wenn sich die Maus des Benutzers über dem Element befindet und sofort ausgeblendet wird, wenn die Maus des Benutzers verlassen wird. Eine Verzögerung beim Anzeigen oder Ausblenden des Tooltips kann über die Eigenschaften `enterDelay` und `leaveDelay` hinzugefügt werden, wie in der Demo zum kontrollierten Tooltip oben gezeigt.
 
-On mobile, the tooltip is displayed when the user longpresses the element and hides after a delay of 1500ms. You can disable this feature with the `disableTouchListener` property.
+Bei mobilen Geräten wird der Tooltip angezeigt, wenn der Benutzer das Element lange gedrückt hält und versteckt sich nach einer Verzögerung von 1500 ms. Sie können diese Funktion mit der `disableTouchListener` Eigenschaft deaktivieren.
 
 {{"demo": "pages/components/tooltips/DelayTooltips.js"}}
