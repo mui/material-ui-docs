@@ -3,7 +3,7 @@ title: Snackbar React component
 components: Snackbar, SnackbarContent
 ---
 
-# Snackbars
+# Snackbars (Messages rapides)
 
 <p class="description">Snackbars provide brief messages about app processes through a message - typically at the bottom of the screen</p>
 
@@ -67,7 +67,7 @@ You can change the direction of the [Slide](/components/transitions/#slide) tran
 
 ## Projets complémentaires
 
-Pour des cas d'utilisation plus avancés, vous pourrez peut-être tirer parti des projects suivants:
+Pour des cas d'utilisation plus avancés, vous pourrez peut-être tirer parti des avantages suivants:
 
 ### notistack
 
