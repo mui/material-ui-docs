@@ -31,7 +31,7 @@ components: 栅格(Grid)
 
 ## 流体栅格
 
-Fluid grids use columns that scale and resize content. A fluid grid’s layout can use breakpoints to determine if the layout needs to change dramatically.
+流体栅格使用可缩放和调整内容大小的列。 流体栅格布局可以使用断点来确定布局是否需要显着更改。
 
 ### 基本栅格
 
@@ -45,7 +45,7 @@ Fluid grids use columns that scale and resize content. A fluid grid’s layout c
 
 {{"demo": "pages/components/grid/FullWidthGrid.js"}}
 
-## 交互
+## 交互式
 
 下面是一个交互式演示，可让您探索不同设置的可视结果：
 
@@ -53,7 +53,7 @@ Fluid grids use columns that scale and resize content. A fluid grid’s layout c
 
 ## 自动布局
 
-The Auto-layout makes the *items* equitably share the available space. That also means you can set the width of one *item* and the others will automatically resize around it.
+自动布局使每个*item*公平地共享可用空间。这也意味着您可以设置一个*item*，其他元素将自动调整其大小。
 
 {{"demo": "pages/components/grid/AutoGrid.js"}}
 
@@ -65,7 +65,7 @@ The Auto-layout makes the *items* equitably share the available space. That also
 
 ## 嵌套栅格
 
-The `container` and `item` properties are two independent booleans. They can be combined.
+`container`和` item `属性是两个独立的布尔值，它们可以结合使用。
 
 > flex **容器** 是由具有 `flex` 或 `inline-flex`的计算显示的元素生成的框。 Flex容器的流入子容器称为flex **items** 并使用flex布局模型进行布局。
 
@@ -77,10 +77,7 @@ https://www.w3.org/TR/css-flexbox-1/#box-model
 
 ### 负边距
 
-我们使用负边距来实现项目之间的间距有一个缺点。 如果负边距超出`<body>`元素，则会出现水平滚动。 There are 3 available workarounds:
-
-1. 不使用spacing特性并且设置成默认的`spacing={0}`
-2. 将填充应用于父级元素，并且至少将一半的间距值应用于子级元素：
+我们使用负边距来实现项目之间的间距有一个缺点。 如果负边距超出`<body>`元素，则会出现水平滚动。 有三种解决方法：1. 不使用spacing特性并且设置成默认的`spacing={0}` 2。 将填充应用于父级元素，并且至少将一半的间距值应用于子级元素：
 
 ```jsx
   <body>
@@ -92,18 +89,18 @@ https://www.w3.org/TR/css-flexbox-1/#box-model
   </body>
 ```
 
-3. 在父元素上设置`overflow-x: hidden;`
+1. 在父元素上设置`overflow-x: hidden;`
 
 ### white-space: nowrap;
 
-The initial setting on flex items is `min-width: auto`. It's causing a positioning conflict when the children is using `white-space: nowrap;`. You can experience the issue with:
+Flex 项目的初始设置为 `min-width: auto`。当子级使用 `white-space: nowrap;`时会导致冲突。 您可能遇到以下问题:
 
 ```jsx
 <Grid item xs>
   <Typography noWrap>
 ```
 
-In order for the item to stay within the container you need to set `min-width: 0`. In practice, you can set the `zeroMinWidth` property:
+为了使项目保持在容器内, 您需要设置 `min-width: 0`。在实践中, 您可以设置 `zeroMinWidth` 属性:
 
 ```jsx
 <Grid item xs zeroMinWidth>
