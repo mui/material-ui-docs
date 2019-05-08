@@ -1,21 +1,21 @@
 ---
-title: React Text Field（文本框）组件
+title: 文本框 React 组件
 components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, InputBase, InputLabel, OutlinedInput, TextField
 ---
 
-# Text Fields（文本框）
+# Text Fields
 
-<p class="description">用户可以在文本框内输入或编辑文字。</p>
+<p class="description">用户可以在文本框内输入或编辑文字</p>
 
 [Text fields](https://material.io/design/components/text-fields.html) allow users to enter text into a UI. They typically appear in forms and dialogs.
 
 ## TextField
 
-`TextField` wrapper 组件是一个完整的表单控件，包括标签，输入和帮助文本。
+` TextField `包装器组件是一个完整的表单控件，包括标签，输入和帮助文本。
 
 {{"demo": "pages/components/text-fields/TextFields.js"}}
 
-> **注意：** Material Design 文档中不再记录此版本的文本框。
+> **注意：** 材料设计文档中不再记录此版本的文本字段。
 
 ## Outlined（轮廓）
 
@@ -31,13 +31,13 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 ## 组件
 
-`TextField` 是由以下较小的组件组成的 ( [`FormControl`](/api/form-control/), [`Input`](/api/input/), [`FilledInput`](/api/filled-input/), [`InputLabel`](/api/input-label/), [`OutlinedInput`](/api/outlined-input/), and [`FormHelperText`](/api/form-helper-text/) )， 你可以直接利用这一点来自定义你的表单输入.
+`TextField` 是由较小的组件组成的 ( [`FormControl`](/api/form-control/), [`Input`](/api/input/), [`FilledInput`](/api/filled-input/), [`InputLabel`](/api/input-label/), [`OutlinedInput`](/api/outlined-input/), and [`FormHelperText`](/api/form-helper-text/) ) 你可以利用这一点来自定义你的表单输入.
 
-您可能注意到了， 和原生的 HTML input 组件相比，`TextField` 组件缺缺失了一些属性。 这是故意而为之的。 该组件只负责处理最常用的一些属性，如果有其他需求，用户可以自行使用下面 Demo 中演示的基础组件。 但是同时, 为了避免过于模版化，您仍然可以使用 `inputProps` (和 `inputProps`, `InputLabelProps` 属性) 来控制原生组件的属性。
+您可能注意到了， 和原生的 HTML input 组件相比，`TextField` 组件缺缺失了一些属性。 这是故意为之的， 该组件只负责处理最常用的一些属性，如果有需求，需要由用户自己使用下面 Demo 中演示的基础组件。 但是同时, 为了避免过于模版化，您仍然可以使用 `inputProps` (和 `inputProps`, `InputLabelProps` 属性) 来控制原生组件的属性。
 
 {{"demo": "pages/components/text-fields/ComposedTextField.js"}}
 
-## Inputs（输入）
+## 输入
 
 {{"demo": "pages/components/text-fields/Inputs.js"}}
 
@@ -67,7 +67,7 @@ Here are some examples of customizing the component. You can learn more about th
 
 {{"demo": "pages/components/text-fields/FilledInputAdornments.js"}}
 
-### 修饰输入框的轮廓
+### 修饰轮廓
 
 {{"demo": "pages/components/text-fields/OutlinedInputAdornments.js"}}
 
@@ -92,7 +92,7 @@ Here are some examples of customizing the component. You can learn more about th
 或者
 
 ```jsx
-<InputLabel shrink>计数</InputLabel>
+<InputLabel shrink>Count</InputLabel>
 ```
 
 ## 格式化输入
