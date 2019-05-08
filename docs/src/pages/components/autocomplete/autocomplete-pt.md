@@ -7,7 +7,7 @@ components: TextField, Paper, MenuItem, Popper
 
 <p class="description">O autocomplete é uma entrada de texto normal aprimorada por um painel de opções sugeridas.</p>
 
-Material-UI doesn't provide any high-level API for solving this problem. We encourage people relying on the solutions the React community has built.
+O Material-UI não fornece nenhuma API de alto nível para resolver esse problema. Encorajamos as pessoas a confiar nas soluções que a comunidade React construiu.
 
 ## downshift
 
