@@ -16,7 +16,7 @@ The default palette uses the shades prefixed with `A` (`A200`, etc.) for the sec
 
 If you want to learn more about color, you can check out [the color section](/customization/color/).
 
-## Custom palette
+## Настраиваемая палитра
 
 You may override the default palette values by including a `palette` object as part of your theme.
 
@@ -135,7 +135,7 @@ Both the `tonalOffset` and `contrastThreshold` values may be customized as neede
 
 Note that `contrastThreshold` follows a non-linear curve.
 
-## Example
+## Пример
 
 {{"demo": "pages/customization/palette/Palette.js"}}
 
@@ -143,7 +143,7 @@ Note that `contrastThreshold` follows a non-linear curve.
 
 Need inspiration? The Material Design team has built an awesome [palette configuration tool](/customization/color/#color-tool) to help you.
 
-## Type (light /dark theme)
+## Тип (светлая / темная тема)
 
 Material-UI comes with two theme variants, light (the default) and dark.
 
