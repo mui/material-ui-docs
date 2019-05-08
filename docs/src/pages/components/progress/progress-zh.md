@@ -99,6 +99,6 @@ Here are some examples of customizing the component. You can learn more about th
 
 ![高负载](/static/images/progress/heavy-load.gif)
 
-When it's not possible, you can leverage the `disableShrink` property to mitigate the issue. See https://github.com/mui-org/material-ui/issues/10327
+When it's not possible, you can leverage the `disableShrink` property to mitigate the issue. 见 https://github.com/mui-org/material-ui/issues/10327
 
 {{"demo": "pages/components/progress/CircularUnderLoad.js"}}
