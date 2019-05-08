@@ -4,14 +4,14 @@
 
 ## CSS
 
-When the configuration variables aren't powerful enough, you can take advantage of the `overrides` key of the `theme` to potentially change **every single style** injected by Material-UI into the DOM. That's a really powerful feature.
+When the configuration variables aren't powerful enough, you can take advantage of the `overrides` key of the `theme` to potentially change **every single style** injected by Material-UI into the DOM. 这是一个十分强有力的特点。
 
 ```js
 const theme = createMuiTheme({
   overrides: {
-    MuiButton: { // Name of the component ⚛️ / style sheet
-      text: { // Name of the rule
-        color: 'white', // Some CSS
+    MuiButton: { // 组件的名称 ⚛️ / 样式表
+      text: { // 规则的名称
+        color: 'white', // 一些CSS
       },
     },
   },
@@ -20,11 +20,11 @@ const theme = createMuiTheme({
 
 {{"demo": "pages/customization/globals/GlobalCss.js"}}
 
-The list of these customization points for each component is documented under the **Component API** section. For instance, you can have a look at the [Button](/api/button/#css). Alternatively, you can always have a look at the [implementation](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/Button/Button.js).
+每个组件可自定义的部分列在文档的**Component API**部分。 例如，你可以看一下[Button](/api/button/#css)， 而且你总可以查阅 [implementation](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/Button/Button.js)。
 
 ## Default props
 
-You can change the default props of all the Material-UI components. We expose a `props` key in the `theme` for this use case.
+You can change the default props of all the Material-UI components. 在`theme`上有一个键值`props`是用来作这个用途的。
 
 ```js
 const theme = createMuiTheme({
