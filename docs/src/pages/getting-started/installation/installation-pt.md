@@ -20,7 +20,7 @@ Note que o pacote possui 2 dependências obrigatórias: [react](https://www.npmj
 
 ## Fonte Roboto
 
-O Material-UI foi desenvolvido pensando na fonte [Roboto](https://fonts.google.com/specimen/Roboto). Portanto, certifique-se de seguir as [instruções](/style/typography/#general) para obtê-la. Por exemplo, instale-a através do Google Web Fonts:
+O Material-UI foi desenvolvido pensando na fonte [Roboto](https://fonts.google.com/specimen/Roboto). So be sure to follow [these instructions]/components/typography/#general). Por exemplo, instale-a através do Google Web Fonts:
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
@@ -28,7 +28,7 @@ O Material-UI foi desenvolvido pensando na fonte [Roboto](https://fonts.google.c
 
 ## Ícones
 
-Para utilizar o componente font `Icon`, você deve primeiro adicionar o pacote [Material icons](https://material.io/tools/icons/). Aqui estão [ algumas instruções ](/style/icons/#font-icons) sobre como fazer isso. Por exemplo, instale através do Google Web Fonts:
+Para utilizar o componente font `Icon`, você deve primeiro adicionar o pacote [Material icons](https://material.io/tools/icons/). Here are [some instructions]/components/icons/#font-icons) on how to do so. Por exemplo, instale através do Google Web Fonts:
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -42,7 +42,7 @@ Como alternativa, se você estiver utilizando JSX, use:
 
 ## Ícones SVG
 
-Para utilizar os Material Icons pré construídos em SVG, como os encontrados nas [demonstrações de componentes](/demos/app-bar/), você precisa primeiro instalar o pacote [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons):
+In order to use prebuilt SVG Material icons, such as those found in the [icons demos](/components/icons/) you must first install the [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) package:
 
 ```sh
 // usando npm
