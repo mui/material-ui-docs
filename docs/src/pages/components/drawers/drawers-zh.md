@@ -13,9 +13,9 @@ components: Drawer, SwipeableDrawer
 
 ## 临时抽屉
 
-Temporary navigation drawers can toggle open or closed. Closed by default, the drawer opens temporarily above all other content until a section is selected.
+临时抽屉可以在打开和关闭之间切换。默认的情况是关闭，直到选择一个节之前，抽屉会暂时在所有其他内容之上保持打开的状态。
 
-The Drawer can be cancelled by clicking the overlay or pressing the Esc key. It closes when an item is selected, handled by controlling the `open` prop.
+单击 overlay 或者按 Esc 键可以关闭抽屉。通过操作 `open` 属性，选择抽屉中的一项也会关闭抽屉。
 
 {{"demo": "pages/components/drawers/TemporaryDrawer.js"}}
 
@@ -27,10 +27,7 @@ The Drawer can be cancelled by clicking the overlay or pressing the Esc key. It 
 
 {{"demo": "pages/components/drawers/SwipeableTemporaryDrawer.js"}}
 
-We are using the following set of properties on this documentation website for optimal usability of the component:
-
-- iOS is hosted on high-end devices. 我们可以在不丢帧的情况下启用背景转换。 这样展示令人足够满意了。
-- iOS has a "swipe to go back" feature that mess with the discovery feature. 我们必须禁用它。
+在本文档中，我们使用以下一系列属性来最大化展示组件的功能: - iOS 在高端设备上托管。 我们可以在不丢帧的情况下启用背景转换。 这样展示令人足够满意了。 - iOS 有一个"滑动返回"的功能，它与 discovery（发现功能）冲突。 我们必须禁用它。
 
 ```jsx
 const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
@@ -50,7 +47,7 @@ const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
 当抽屉位于页面网格之外并打开时，抽屉会强制其他内容更改大小并适应较小的视口。
 
-Persistent navigation drawers are acceptable for all sizes larger than mobile. They are not recommended for apps with multiple levels of hierarchy that require using an up arrow for navigation.
+如果是比移动设备更大的尺寸，我们推荐使用持久性导航抽屉。而对于具有多级层次结构且需要使用向上箭头进行导航的应用，我们则不建议使用它们。
 
 {{"demo": "pages/components/drawers/PersistentDrawerLeft.js", "iframe": true}}
 
@@ -66,7 +63,7 @@ Persistent navigation drawers are acceptable for all sizes larger than mobile. T
 
 ## 固定的抽屉
 
-Permanent navigation drawers are always visible and pinned to the left edge, at the same elevation as the content or background. They cannot be closed.
+固定的抽屉始终可见并固定在左侧，与内容或背景位于同一高度。而他们无法被关闭。
 
 **在桌面情况下，我们推荐的默认值是**固定的抽屉。
 
