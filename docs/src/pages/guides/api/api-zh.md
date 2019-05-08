@@ -34,11 +34,11 @@
 
 ### 原生属性
 
-我们避免记录DOM支持的本机属性，如[` className `](/customization/overrides/#overriding-with-class-names)。
+We avoid documenting native properties supported by the DOM like [`className`](/customization/components/#overriding-styles-with-class-names).
 
 ### CSS classes
 
-所有组件都接受[`classes`](/customization/overrides/#overriding-with-classes)属性来自定义样式。 类设计回答了两个约束： 使类结构尽可能简单，同时足以实现Material Design规范。
+All the components accept a [`classes`](/customization/components/#overriding-styles-with-classes) property to customize the styles. 类设计回答了两个约束： 使类结构尽可能简单，同时足以实现Material Design规范。
 
 - 应用于根元素的类始终称为` root `。
 - 所有默认样式都分组在一个类中。
