@@ -9,7 +9,7 @@ components: Badge
 
 ## Простые значки
 
-Examples of badges containing text, using primary and secondary colors. The badge is applied to its children.
+Примеры значков, содержащих текст, с использованием основного и дополнительного цветов. Значок применяется к дочерним элементам.
 
 {{"demo": "pages/components/badges/SimpleBadge.js"}}
 
@@ -21,7 +21,7 @@ Examples of badges containing text, using primary and secondary colors. The badg
 
 ## Точечный значок
 
-The `dot` property changes a badge into a small dot. This can be used as a notification that something has changed without giving a count.
+Свойство `dot` превращает значок в маленькую точку. Это можно использовать как уведомление о том, что что-то изменилось без счетчика.
 
 {{"demo": "pages/components/badges/DotBadge.js"}}
 
@@ -29,7 +29,7 @@ The `dot` property changes a badge into a small dot. This can be used as a notif
 
 Видимость значков можно контролировать с помощью свойства `invisible`.
 
-The badge auto hides with badgeContent is zero. You can override this with the `showZero` property.
+Значок автоматически скрывается, если badgeContent равен нулю. Вы можете переопределить это с помощью свойства `showZero`.
 
 {{"demo": "pages/components/badges/BadgeVisibility.js"}}
 
