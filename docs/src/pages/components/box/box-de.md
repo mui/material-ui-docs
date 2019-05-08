@@ -36,7 +36,7 @@ Die Box-Komponente verfügt über eine `clone`-Eigenschaft, um die Verwendung de
 </Box>
 ```
 
-2. Verwenden Sie Render Eigenschaften
+1. Verwenden Sie Render Eigenschaften
 
 Die Box-Kinder akzeptieren eine Render-Funktion als Eigenschaft. Sie können den `className` herausziehen.
 
