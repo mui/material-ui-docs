@@ -65,7 +65,7 @@ const theme = createMuiTheme({
 });
 ```
 
-Only the `main` shades need be provided (unless you wish to further customize `light`, `dark` or `contrastText`), as the other colors will be calculated by `createMuiTheme()`, as described in the [Theme customization](/customization/palette/) section.
+Nur die `Haupttöne` müssen bereitgestellt werden (es sei denn, Sie möchten `light`, `dark` oder `contrastText` weiter anpassen), da die anderen Farben von `createMuiTheme()` berechnet werden, wie in der Sektion [ Designanpassung ](/customization/palette/) beschrieben.
 
 Wenn Sie die standardmäßigen primären und / oder sekundären Farbtöne verwenden, wird durch das Bereitstellen von dem Farbobjekt die entsprechenden Farbtöne der Materialfarbe für main, light und dark von `createMuiTheme()` berechnet.
 
