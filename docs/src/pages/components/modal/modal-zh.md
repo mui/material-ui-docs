@@ -14,7 +14,7 @@ components: Modal
 - 它会在打开时禁用页面内容的滚动。
 - ♿️它妥善管理焦点;移动到模态内容， 并保持它直到模态关闭。
 - ♿️自动添加适当的ARIA角色。
-- 📦 [6.5 kB gzipped](/size-snapshot).
+- 
 
 > **术语注释**。 “模态框”（Modal）这个词有时也被用来指代“对话框”，但是这种用法属于误用。 模态框的窗口可以描述用户界面的一部分。 如果一个元素[阻挡了用户与应用的其它部分的互动](https://en.wikipedia.org/wiki/Modal_window)，这个元素就是模态的。
 
@@ -31,9 +31,9 @@ components: Modal
 
 ## 性能
 
-The content of the modal is **lazily mounted** into the DOM. It ensures that having many closed modal in your React tree won't slow down your page.
+模态框的内容是用 **延迟加载**的方式加载到DOM中的。 以此确保即使你的React树中有许多关闭的模态框， 你的页面速度也不会减慢。
 
-However, creating React elements has a cost too. Consider the following case:
+然而， 创建一个React组件也会有成本。考虑一下以下的情况：
 
 ```jsx
 <Modal open={false}>
@@ -60,7 +60,7 @@ However, creating React elements has a cost too. Consider the following case:
 </Modal>
 ```
 
-We create a lot of React elements that will never be mounted. It's wasteful 🐢. You can **speed up** the rendering by moving the modal body into its own component.
+We create a lot of React elements that will never be mounted. It's wasteful 
 
 ```jsx
 <Modal open={false}>
