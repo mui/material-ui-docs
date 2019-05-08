@@ -40,6 +40,6 @@ Quando uma label não pode ser usada, é necessário adicionar um atributo diret
 />
 ```
 
-## Guia
+## Orientação
 
-- [Checkboxes vs. Botões de Rádio](https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/)
+- [Checkboxes vs. Butões de Rádio](https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/)
