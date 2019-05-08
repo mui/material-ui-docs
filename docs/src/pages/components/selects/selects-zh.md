@@ -45,6 +45,6 @@ Like with the single selection, you can pull out the new value by accessing `eve
 
 {{"demo": "pages/components/selects/DialogSelect.js"}}
 
-## Text Fields（文本框）
+## 文本输入框
 
-`TextField` wrapper 组件是一个完整的表单控件，包括标签，输入和帮助文本。 You can find an example with the select mode [in this section](/components/text-fields/#textfield).
+`TextField` 包装器组件是一个完整的表单控件，它包括了标签、输入和帮助文本。 您可以在本节中找到具有[select模式](/components/text-fields/#textfield)的示例
