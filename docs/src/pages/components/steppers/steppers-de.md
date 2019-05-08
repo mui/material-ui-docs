@@ -5,7 +5,7 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 
 # Stepper
 
-<p class="description">Steppers convey progress through numbered steps. It provides a wizard-like workflow.</p>
+<p class="description">Stepper vermitteln den Fortschritt durch nummerierte Schritte. Es bietet einen assistentenartigen Workflow.</p>
 
 [Stepper](https://material.io/archive/guidelines/components/steppers.html) zeigen den Fortschritt durch eine Folge logischer und nummerierter Schritte an. Sie können auch zur Navigation verwendet werden. Steppers können eine vorübergehende Rückmeldung anzeigen, nachdem ein Schritt gespeichert wurde.
 
@@ -75,7 +75,7 @@ Diese Komponente implementiert einen kompakten Stepper, der für ein mobiles Ger
 
 ### Mobile Stepper - Text
 
-This is essentially a back/next button positioned correctly. You must implement the textual description yourself, however, an example is provided below for reference.
+Dies ist im Wesentlichen eine Zurück / Nächste Schaltfläche, die richtig positioniert ist. Sie müssen die Textbeschreibung selbst implementieren. Nachfolgend finden Sie ein Beispiel.
 
 {{"demo": "pages/components/steppers/TextMobileStepper.js"}}
 
