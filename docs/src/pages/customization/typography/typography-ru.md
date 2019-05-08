@@ -6,7 +6,7 @@ The following example demonstrates how to change the typography default values �
 
 {{"demo": "pages/customization/typography/TypographyTheme.js"}}
 
-## Font family
+## Шрифт
 
 You can use the system font instead of the default Roboto font.
 
