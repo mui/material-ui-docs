@@ -4,7 +4,7 @@
 
 Material-UI 组件是独立工作的。 **它们是自我支持**的，并只要注入它们需要显示的样式。 他们不依赖任何全局的样式表, 如 [normalize.css](https://github.com/necolas/normalize.css/).
 
-您可以使用文档中演示的任何组件。 Please refer to each component's [demo page](/components/buttons/) to see how they should be imported.
+您可以使用文档中演示的任何组件。 请参阅每个组件的 [demo页](/components/buttons/), 以了解应如何导入它们。
 
 ## 快速开始
 
@@ -59,4 +59,4 @@ Material-UI provides an optional [CssBaseline]/components/css-baseline/) compone
 
 - How to provide [the Material Design font and typography]/components/typography/).
 - 如何利用 [主题解决方案](/customization/themes/)。
-- How to [override](/customization/components/) the look and feel of the components.
+- 如何 [覆盖](/customization/components/) 组件的呈现和观感。
