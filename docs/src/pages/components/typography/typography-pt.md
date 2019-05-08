@@ -2,7 +2,7 @@
 components: Typography
 ---
 
-# Typography
+# Tipografia
 
 <p class="description">Use typography to present your design and content as clearly and efficiently as possible.</p>
 
@@ -53,9 +53,9 @@ O componente de Tipografia (Typography) usa a propriedade `variantMapping` para 
 - You can change the underlying element for a one time occassion with the `component` property:
 
 ```jsx
-{/* We already have an h1 in the page, let's not duplicate it. */}
+{/* Já temos um h1 na página, não vamos duplicá-lo. */}
 <Typography variant="h1" component="h2">
-  h1. Heading
+  h1. Título (Heading)
 </Typography>
 ```
 
