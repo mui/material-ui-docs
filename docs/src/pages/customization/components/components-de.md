@@ -18,7 +18,7 @@ Möglicherweise müssen Sie den Stil einer Komponente für eine bestimmte Implem
 
 Die erste Möglichkeit, den Stil einer Komponente zu überschreiben, besteht in der Verwendung von **Klassennamen**. Jede Komponente stellt eine `Klassennamen` Eigenschaft bereit, die immer auf das unterste Element angewendet wird.
 
-In diesem Beispiel wird die [`withStyles()`](/styles/basics/#higher-order-component-api) höherer Ordnung Komponente verwendet um benutzerdefinierte Stile in den DOM einzufügen und den Klassennamen mittels ihre `classes` Eigenschaftan die ` ClassNames` Komponente zu übergeben. Sie können sich [für jede andere Styling-Lösung](/guides/interoperability/) entscheiden oder sogar Standard CSS benutzen, um die Stile zu schaffen. Stellen Sie aber sicher, die [CSS - Injektionsreihenfolge](/styles/advanced/#css-injection-order) zu prüfen, da das CSS, welches durch die Material UI-Komponente in den DOM injiziert wird, die höchste Spezifität hat, da der `<link>` am Ende des `<4 />` injiziert wird, um sicherzustellen, dass die Komponenten immer richtig gerendert werden.
+This example uses the [`withStyles()`](/styles/basics/#higher-order-component-api) higher-order component to inject custom styles into the DOM, and to pass the class name to the `ClassNames` component via its `classes` property. You can choose [any other styling solution](/guides/interoperability/), or even plain CSS to create the styles, but be sure to consider the [CSS injection order](/styles/advanced/#css-injection-order), as the CSS injected into the DOM by Material-UI to style a component has the highest specificity possible, since the `<link>` is injected at the bottom of the `<head />` to ensure the components always render correctly.
 
 {{"demo": "pages/customization/components/ClassNames.js"}}
 
@@ -34,7 +34,7 @@ Beachten Sie, dass zusätzlich zum Buttonstil die Großschreibung der Buttonbesc
 
 ### Verwenden der Dev-Tools
 
-Mit den Browser-Entwicklertools können Sie viel Zeit sparen. Die Klassennamen der Material-UI im Entwicklungsmodus [folgen einem einfachen Muster](/styles/advanced/#class-names): `Mui[Komponentenname]-[Stilregelname]-[UUID]`.
+Mit den Browser-Entwicklertools können Sie viel Zeit sparen. Material-UI's class names [follow a simple pattern](/styles/advanced/#class-names) in development mode: `Mui[component name]-[style rule name]-[UUID]`.
 
 Gehen wir zurück zur obigen Demo. Wie können Sie die Beschriftung des Buttons überschreiben?
 
@@ -232,4 +232,4 @@ Sie können auch alle Instanzen einer Komponente mit CSS anpassen. We expose [gl
 
 ### Globales Theme überschreiben
 
-You can take advantage of the `overrides` key of the `theme` to potentially change every single style injected by Material-UI into the DOM. Weitere Informationen dazu finden Sie im [Themen](/customization/globals/) Abschnitt der Dokumentation.
+You can take advantage of the `overrides` key of the `theme` to potentially change every single style injected by Material-UI into the DOM. Learn more about it in the [themes section](/customization/globals/) of the documentation.
