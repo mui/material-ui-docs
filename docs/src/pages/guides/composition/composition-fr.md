@@ -112,7 +112,7 @@ Here is a demo with [React Router DOM](https://github.com/ReactTraining/react-ro
 
 ### Avec TypeScript
 
-You can find the details in the [TypeScript guide](/guides/typescript#usage-of-component-property).
+You can find the details in the [TypeScript guide](/guides/typescript/#usage-of-component-property).
 
 ## Caveat with refs
 
@@ -120,12 +120,12 @@ This section covers caveats when using a custom component as `children` or for t
 
 Some of the components need access to the DOM node. This was previously possible by using `ReactDOM.findDOMNode`. This function is deprecated in favor of `ref` and ref forwarding. However, only the following component types can be given a `ref`:
 
-* Any Material-UI component
-* class components i.e. `React.Component` or `React.PureComponent`
-* DOM (or host) components e.g. `div` or `button`
-* [React.forwardRef components](https://reactjs.org/docs/react-api.html#reactforwardref)
-* [React.lazy components](https://reactjs.org/docs/react-api.html#reactlazy)
-* [React.memo components](https://reactjs.org/docs/react-api.html#reactmemo)
+- Any Material-UI component
+- class components i.e. `React.Component` or `React.PureComponent`
+- DOM (or host) components e.g. `div` or `button`
+- [React.forwardRef components](https://reactjs.org/docs/react-api.html#reactforwardref)
+- [React.lazy components](https://reactjs.org/docs/react-api.html#reactlazy)
+- [React.memo components](https://reactjs.org/docs/react-api.html#reactmemo)
 
 If you don't use one of the above types when using your components in conjunction with Material-UI, you might see a warning from React in your console similar to:
 
