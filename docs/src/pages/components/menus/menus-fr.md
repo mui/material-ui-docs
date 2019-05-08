@@ -61,7 +61,7 @@ Utilisez une transition différente.
 
 ## Projets complémentaires
 
-Pour des cas d'utilisation plus avancés, vous pourrez peut-être tirer parti des projects suivants:
+Pour des cas d'utilisation plus avancés, vous pourrez peut-être tirer parti des avantages suivants:
 
 ### Assistant PopupState
 
