@@ -5,7 +5,7 @@ components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination
 
 # Tables (Tabelas)
 
-<p class="description">Data tables display sets of data. They can be fully customized.</p>
+<p class="description">Tabelas de dados exibem conjuntos de dados. Eles podem ser totalmente personalizados.</p>
 
 [Tabelas de Dados](https://material.io/design/components/data-tables.html) apresentar as informações de uma forma fácil de verificar, de modo que os usuários podem procurar por padrões e insights. Elas podem ser incorporadas no conteúdo principal, como Cards.
 
@@ -47,7 +47,7 @@ A tabela recebeu uma largura fixa para demonstrar a rolagem horizontal. Para imp
 
 ## Customized tables
 
-Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/components/).
+Aqui está um exemplo de personalização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
 
 {{"demo": "pages/components/tables/CustomizedTables.js"}}
 
