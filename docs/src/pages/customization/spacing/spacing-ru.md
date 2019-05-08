@@ -7,25 +7,25 @@ Material-UI uses [a recommended 8px scaling factor by default](https://material.
 ```js
 const styles = theme => ({
   root: {
-    // JSS uses px as the default units for this CSS property.
+    // JSS использует пиксели в качестве дефолтных единиц измерения для этого CSS свойства.
     padding: theme.spacing(2), // = 8 * 2
   },
 });
 ```
 
-You can change the spacing transformation by providing:
+Вы можете изменить преобразование расстояния, передав:
 
-- a number
+- число
 
 ```js
-const theme = createMuiTheme({
+const theme = createMuiTheme ({
   spacing: 4,
 });
 
-theme.spacing(2) // = 4 * 2
+theme.spacing (2) // = 4 * 2
 ```
 
-- a function
+- функция
 
 ```js
 const theme = createMuiTheme({
@@ -35,7 +35,7 @@ const theme = createMuiTheme({
 theme.spacing(2); // = 0.25 * 2rem = 0.5rem = 8px
 ```
 
-- an array
+- массив
 
 ```js
 const theme = createMuiTheme({
@@ -47,9 +47,9 @@ theme.spacing(2); // = 8
 
 ## Multiple arity
 
-The `theme.spacing()` helper accepts up to 4 arguments. You can use the arguments to reduce the boilerplate:
+Вспомогательная функция ` theme.spacing () ` принимает до 4 аргументов. Вы можете использовать аргументы, чтобы уменьшить шаблон:
 
 ```diff
-<br />-  padding: `${theme.spacing(1)}px ${theme.spacing(2)}px`,
-+  padding: theme.spacing(1, 2), // '8px 16px'
+<br />- padding: `$ {theme.spacing (1)} px $ {theme.spacing (2)} px`,
++ padding: theme.spacing (1, 2), // '8px 16px'
 ```
