@@ -11,7 +11,7 @@ components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, Expans
 
 > **请注意：** Material Design 文档中不再记录扩展面板。
 
-## 无障碍功能
+## 可及性
 
 如果想要得到最佳辅助，我们建议您在 `ExpansionPanelSummary` 中配置 `id` 和 `aria-controls` 。 `ExpansionPanel` 将为面板的内容区域导出必要的 `aria-labelledby` 和 `id`。
 
@@ -37,6 +37,6 @@ components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, Expans
 
 ## 定制扩展面板
 
-以下是自定义组件的一个示例。 You can learn more about this in the [overrides documentation page](/customization/components/).
+以下是自定义组件的一个示例。您可以在[重写文档页面](/customization/components/)中了解有关此内容的更多信息。
 
 {{"demo": "pages/components/expansion-panels/CustomizedExpansionPanels.js"}}
