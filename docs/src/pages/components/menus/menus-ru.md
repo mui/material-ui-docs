@@ -39,7 +39,7 @@ Here is an example of customizing the component. You can learn more about this i
 
 {{"demo": "pages/components/menus/CustomizedMenus.js"}}
 
-The `MenuItem` is a wrapper around `ListItem` with some additional styles. You can use the same list composition features with the `MenuItem` component:
+`MenuItem` является оберткой `ListItem` с некоторыми дополнительными стилями. С компонентом `MenuItem` можно использовать те же приемы композиции списка:
 
 ## Max height menus
 
