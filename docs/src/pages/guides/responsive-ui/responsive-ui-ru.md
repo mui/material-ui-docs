@@ -4,8 +4,8 @@
 
 [ Адаптивные макеты ](https://material.io/design/layout/responsive-layout-grid.html) в Material Design подстраиваются под все возможные размеры экрана. Для обеспечения адаптивности пользовательского интерфейса мы предоставляем следующие средства:
 
-- [Grid](/components/grid/): The Material Design responsive layout grid adapts to screen size and orientation, ensuring consistency across layouts.
-- [Container](/components/container/): The container centers your content horizontally. Это базовый элемент всех макетов.
-- [Breakpoints](/customization/breakpoints/): API that enables the use of breakpoints in a wide variety of contexts.
-- [useMediaQuery](/components/use-media-query/): This is a CSS media query hook for React. Он ожидает(слушает) совпадения с медиа-запросом CSS.
-- [Hidden](/components/hidden/): Quickly and responsively toggle the visibility value of components and more with our hidden utilities.
+- [Grid](/components/grid/): Адаптивная сетка макетов Material Design подстраивается под размер и ориентацию экрана, обеспечивая согласованность макетов.
+- [Container](/components/container/): Контейнер центрирует ваш контент по горизонтали. Это базовый элемент всех макетов.
+- [Breakpoints](/customization/breakpoints/): API, позволяющий использовать контрольные точки в широком диапазоне контекстов.
+- [useMediaQuery](/components/use-media-query/): Это хук медиа-запроса для React. Он отслеживает совпадения с медиа-запросом CSS.
+- [Hidden](/components/hidden/): Быстро и оперативно управляет видимостью компонентов.
