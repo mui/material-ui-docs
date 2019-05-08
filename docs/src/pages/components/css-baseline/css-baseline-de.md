@@ -28,7 +28,7 @@ export default MyApp;
 
 ### Seite
 
-The `<html>` and `<body>` elements are updated to provide better page-wide defaults. More specifically:
+Die Elemente `<html>` und `<body>` werden aktualisiert, um bessere seitenweite Standardeinstellungen zu erhalten. Genauer:
 
 - Der Rand in allen Browsern wird entfernt.
 - Die Standardhintergrundfarbe des Materialdesigns wird angewendet. Es verwendet [`theme.palette.background.default`](/customization/default-theme/?expend-path=$.palette.background) für Standardgeräte und einen weißen Hintergrund für Druckgeräte.
