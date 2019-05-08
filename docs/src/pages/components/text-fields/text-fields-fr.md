@@ -7,7 +7,7 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 <p class="description">Les champs de texte permettent aux utilisateurs d'entrer et de modifier du texte.</p>
 
-[Text fields](https://material.io/design/components/text-fields.html) allow users to enter text into a UI. They typically appear in forms and dialogs.
+[Les champs de texte](https://material.io/design/components/text-fields.html) permettent aux utilisateurs de saisir du texte dans une interface utilisateur. Ils apparaissent généralement dans des formulaires et des boîtes de dialogue.
 
 ## TextField
 
@@ -105,7 +105,7 @@ The following demo uses the [react-text-mask](https://github.com/text-mask/text-
 
 ## Accessibilité
 
-In order for the text field to be accessible, **the input should be linked to the label and the helper text**. The underlying DOM nodes should have this structure.
+Pour que le champ de texte soit accessible, **le champ de texte doit être lié au label et au texte d'assistance**. Les nœuds DOM sous-jacents doivent avoir cette structure.
 
 ```jsx
 <div class="form-control">
