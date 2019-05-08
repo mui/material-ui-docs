@@ -27,7 +27,7 @@ components: Drawer, SwipeableDrawer
 
 {{"demo": "pages/components/drawers/SwipeableTemporaryDrawer.js"}}
 
-在本文档中，我们使用以下一系列属性来最大化展示组件的功能: - iOS 在高端设备上托管。 我们可以在不丢帧的情况下启用背景转换。 这样展示令人足够满意了。 - iOS 有一个"滑动返回"的功能，它与 discovery（发现功能）冲突。 我们必须禁用它。
+在本文档中，我们使用以下一系列属性来最大化展示组件的功能: - iOS 在高端设备上托管。 我们可以在不丢帧的情况下启用背景转换。 这样展示令人足够满意了。 — iOS 有一个"滑动返回"的功能，它与 discovery（发现功能）冲突。 我们必须禁用它。
 
 ```jsx
 const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
@@ -67,7 +67,7 @@ const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
 **在桌面情况下，我们推荐的默认值是**固定的抽屉。
 
-### 满高度的导航栏
+### 全高导航栏
 
 应用程序应该注重通过从左到右层次结构的布局的信息消费。
 
