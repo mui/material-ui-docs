@@ -71,7 +71,7 @@ Dans l'exemple suivant, nous montrons comment utiliser [react-virtualized](https
 
 ## Projets complémentaires
 
-Pour des cas d'utilisation plus avancés, vous pourrez peut-être tirer parti des projects suivants:
+Pour des cas d'utilisation plus avancés, vous pourrez peut-être tirer parti des avantages suivants:
 
 ### material-table
 
