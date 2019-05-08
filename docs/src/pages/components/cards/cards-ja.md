@@ -9,7 +9,7 @@ components: Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedi
 
 [Card](https://material.io/design/components/cards.html) は、1つのトピックに関するコンテンツとアクションを表示する面です。
 
-They should be easy to scan for relevant and actionable information. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy.
+関連性のある実用的な情報を探し易くあるべきです。テキストや画像などの要素は、階層を明確に示すように配置する必要があります。
 
 ## シンプルなCard
 
