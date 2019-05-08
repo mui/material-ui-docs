@@ -14,7 +14,7 @@ Die Komponente rendered seine `Kinder` - Knoten vor einer Hintergrund - Komponen
 - Es deaktiviert das Blättern des Seiteninhalts, während es geöffnet ist.
 - ♿️ Der Fokus wird richtig verwaltet. Wechseln des Fokus zum modalen Inhalt und diesen halten belassen, bis der Modal geschlossen ist.
 - ♿️ Fügt die entsprechenden ARIA-Rollen automatisch hinzu.
-- 📦 [6.5 kB gzipped](/size-snapshot).
+- 
 
 > **Terminologieanmerkung**. Der Begriff "modal" bedeutet manchmal "Dialog", aber das ist eine Fehlbezeichnung. Ein modales Fenster beschreibt Teile einer Benutzeroberfläche. Ein Element wird als modal betrachtet, wenn es [die Interaktion mit dem Rest der Anwendung blockiert](https://en.wikipedia.org/wiki/Modal_window).
 
@@ -31,9 +31,9 @@ Wenn Sie ein modales Dialogfeld erstellen, möchten Sie wahrscheinlich die [Dial
 
 ## Performance
 
-The content of the modal is **lazily mounted** into the DOM. It ensures that having many closed modal in your React tree won't slow down your page.
+Der Inhalt des Modals wird **lazily eingehangen** im DOM. Dadurch wird sichergestellt, dass viele geschlossene Modale in Ihrem React-Baum Ihre Seite nicht verlangsamen.
 
-However, creating React elements has a cost too. Consider the following case:
+Das Erstellen von React-Elementen ist jedoch ebenfalls mit Kosten verbunden. Betrachten Sie den folgenden Fall:
 
 ```jsx
 <Modal open={false}>
@@ -60,7 +60,7 @@ However, creating React elements has a cost too. Consider the following case:
 </Modal>
 ```
 
-We create a lot of React elements that will never be mounted. It's wasteful 🐢. You can **speed up** the rendering by moving the modal body into its own component.
+We create a lot of React elements that will never be mounted. It's wasteful 
 
 ```jsx
 <Modal open={false}>
