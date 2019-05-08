@@ -7,7 +7,7 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 <p class="description">Текстовые поля позволяют пользователям вводить и редактировать текст.</p>
 
-[Text fields](https://material.io/design/components/text-fields.html) allow users to enter text into a UI. They typically appear in forms and dialogs.
+[Текстовые поля](https://material.io/design/components/text-fields.html) позволяют пользователям вводить текст в интерфейсe. Они обычно появляются в формах и диалогах.
 
 ## Текстовое поля
 
@@ -105,7 +105,7 @@ Here are some examples of customizing the component. You can learn more about th
 
 ## Доступность
 
-In order for the text field to be accessible, **the input should be linked to the label and the helper text**. The underlying DOM nodes should have this structure.
+Для того, чтобы текстовое поле было доступно, **поле ввода должно быть связано с меткой и вспомогательным текстом**. Базовые узлы DOM должны иметь эту структуру.
 
 ```jsx
 <div class="form-control">
