@@ -376,7 +376,7 @@ export default function MyComponent() {
       The <code>innerRef</code> prop is deprecated. Use <code>ref</code> instead.
     </li>
     <li>
-      It does <strong>not</strong> copy over statics. Por exemplo, pode ser usado para definir um método estático (next.js) <code> getInitialProps () </code>.
+      It does <strong>not</strong> copy over statics. Por exemplo, pode ser usado para definir um método estático (next.js) <code>getInitialProps()</code>.
     </li>
   </ul>
   
