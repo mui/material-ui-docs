@@ -11,13 +11,13 @@ components: Tabs, Tab
 
 ## 简单选项卡
 
-一个没有多余装饰的简单例子。
+一个没有多余装饰的简单例子
 
 {{"demo": "pages/components/tabs/SimpleTabs.js"}}
 
 ### 包裹标签
 
-Long labels will automatically wrap on tabs. If the label is too long for the tab, it will overflow and the text will not be visible.
+长标签将自动换行标签。 如果标签的标签太长，它将溢出并且文本将不可见。
 
 {{"demo": "pages/components/tabs/TabsWrappedLabel.js"}}
 
@@ -47,7 +47,7 @@ Long labels will automatically wrap on tabs. If the label is too long for the ta
 
 ### 自动滚动按钮
 
-Left and right scroll buttons will automatically be presented on desktop and hidden on mobile. (based on viewport width)
+左右滚动按钮将自动显示在桌面上并隐藏在移动设备上。（基于视口宽度）
 
 {{"demo": "pages/components/tabs/ScrollableTabsButtonAuto.js"}}
 
@@ -59,21 +59,21 @@ Left and right scroll buttons will automatically be presented on desktop and hid
 
 ### 防止滚动按钮
 
-Left and right scroll buttons will never be presented. All scrolling must be initiated through user agent scrolling mechanisms (e.g. left/right swipe, shift-mousewheel, etc.)
+永远不会出现左右滚动按钮。 必须通过用户代理滚动机制（例如左/右滑动，移位 - 鼠标滚轮等）启动所有滚动
 
 {{"demo": "pages/components/tabs/ScrollableTabsButtonPrevent.js"}}
 
 ## Customized tabs
 
-以下是自定义组件的一个示例。 You can learn more about this in the [overrides documentation page](/customization/components/).
+以下是自定义组件的一个示例。您可以在[重写文档页面](/customization/components/)中了解有关此内容的更多信息。
 
 {{"demo": "pages/components/tabs/CustomizedTabs.js"}}
 
-👑 If you are looking for inspiration, you can check [MUI Treasury's customization examples](https://mui-treasury.com/components/tabs).
+
 
 ## 导航选项卡
 
-By default tabs use a `button` element, but you can provide your own custom tag or component. Here's an example of implementing tabbed navigation:
+默认情况下，选项卡使用`button`元素，但您可以提供自己的自定义标记或组件。 以下是实现选项卡式导航的示例：
 
 {{"demo": "pages/components/tabs/NavTabs.js"}}
 
