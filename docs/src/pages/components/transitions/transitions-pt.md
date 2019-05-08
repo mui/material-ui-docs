@@ -33,7 +33,7 @@ export default Main() {
 
 ## Collapse
 
-Expand vertically from the top of the child element. The `collapsedHeight` property can be used to set the minimum height when not expanded.
+Expanda verticalmente a partir do topo do elemento filho. A propriedade `collapsedHeight` pode ser usada para definir a altura mínima quando não expandida.
 
 {{"demo": "pages/components/transitions/SimpleCollapse.js"}}
 
