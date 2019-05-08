@@ -20,7 +20,7 @@ Veuillez noter que [react](https://www.npmjs.com/package/react) >= 16.8.0 et [re
 
 ## La police Roboto
 
-Materiel-UI a été conçu avec la police [Roboto](https://fonts.google.com/specimen/Roboto) à l’esprit. Veillez donc à suivre [ces instructions](/style/typography/#general) . Par exemple, via Google Web Fonts:
+Materiel-UI a été conçu avec la police [Roboto](https://fonts.google.com/specimen/Roboto) à l’esprit. So be sure to follow [these instructions]/components/typography/#general). Par exemple, via Google Web Fonts:
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
@@ -28,7 +28,7 @@ Materiel-UI a été conçu avec la police [Roboto](https://fonts.google.com/spec
 
 ## Polices d'icônes
 
-Pour utiliser le composant de police `Icon`, vous devez d’abord ajouter la police d'icônes [Material](https://material.io/tools/icons/). Voici [quelques instructions](/style/icons/#font-icons) sur la façon de le faire. Par exemple, via Google Web Fonts:
+Pour utiliser le composant de police `Icon`, vous devez d’abord ajouter la police d'icônes [Material](https://material.io/tools/icons/). Here are [some instructions]/components/icons/#font-icons) on how to do so. Par exemple, via Google Web Fonts:
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -42,7 +42,7 @@ Sinon, si vous utilisez JSX à la place du HTML pour générer le header:
 
 ## Icônes SVG
 
-Pour utiliser des icônes Material SVG prédéfinies, telles que celles trouvées dans [les démos de composants](/demos/app-bar/) vous devez d’abord installer le paquet [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons):
+In order to use prebuilt SVG Material icons, such as those found in the [icons demos](/components/icons/) you must first install the [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) package:
 
 ```sh
 // avec npm
