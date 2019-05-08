@@ -9,7 +9,7 @@ components: Badge
 
 ## Emblemas Simples
 
-Examples of badges containing text, using primary and secondary colors. The badge is applied to its children.
+Exemplos de emblemas contendo texto, usando cores primárias e secundárias. O crachá é aplicado aos seus filhos.
 
 {{"demo": "pages/components/badges/SimpleBadge.js"}}
 
@@ -21,7 +21,7 @@ Você pode usar a propriedade `max` para limitar o valor do conteúdo do selo.
 
 ## Ponto Emblema
 
-The `dot` property changes a badge into a small dot. This can be used as a notification that something has changed without giving a count.
+A propriedade `ponto` altera um distintivo para um pequeno ponto. Isso pode ser usado como uma notificação de que algo mudou sem dar uma conta.
 
 {{"demo": "pages/components/badges/DotBadge.js"}}
 
@@ -29,12 +29,12 @@ The `dot` property changes a badge into a small dot. This can be used as a notif
 
 A visibilidade dos emblemas pode ser controlada usando a propriedade `invisible`.
 
-The badge auto hides with badgeContent is zero. You can override this with the `showZero` property.
+O emblema auto-esconde com badgeContent é zero. Você pode substituir isso com a propriedade `showZero`.
 
 {{"demo": "pages/components/badges/BadgeVisibility.js"}}
 
 ## Customized badges
 
-Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/components/).
+Aqui está um exemplo de personalização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
 
 {{"demo": "pages/components/badges/CustomizedBadges.js"}}
