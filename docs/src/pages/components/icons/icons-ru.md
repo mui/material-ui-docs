@@ -33,7 +33,7 @@ Material-UI предоставляет два компонента для ото
 - [`delete`](https://material.io/tools/icons/?icon=delete&style=baseline) представлена как `@material-ui/icons/Delete`
 - [`delete forever`](https://material.io/tools/icons/?icon=delete_forever&style=baseline) представлена как `@material-ui/icons/DeleteForever`
 
-For *"themed"* icons, append the theme name to the icon name. For instance with the
+Для *"тематических"* иконок к названию иконки добавляется имя темы. Например
 
 - The Outlined [`delete`](https://material.io/tools/icons/?icon=delete&style=outline) icon is exposed as `@material-ui/icons/DeleteOutlined`
 - The Rounded [`delete`](https://material.io/tools/icons/?icon=delete&style=rounded) icon is exposed as `@material-ui/icons/DeleteRounded`
@@ -77,7 +77,7 @@ import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
 
-`Icon` will set the correct class name for the Material icon font. For other fonts, you must supply the class name using the Icon component's `className` property.
+`Icon` корректно установит имя класса для иконочного шрифта Material. Для прочих шрифтов необходимо предоставить имя класса с помощью свойства `className` компонента Icon.
 
 Чтобы использовать иконку, просто оберните её имя (лигатуру шрифта) в компонент `Icon`, например:
 
@@ -99,7 +99,7 @@ import Icon from '@material-ui/core/Icon';
 
 {{"demo": "pages/components/icons/FontAwesome.js", "hideEditButton": true}}
 
-## Font vs SVG. Which approach to use?
+## Шрифт или SVG. Какой подход использовать?
 
 Both approaches work fine, however, there are some subtle differences, especially in terms of performance and rendering quality. Whenever possible SVG is preferred as it allows code splitting, supports more icons, renders faster and better.
 
@@ -107,14 +107,11 @@ Both approaches work fine, however, there are some subtle differences, especiall
 
 ## Доступность
 
-Иконки могут передавать всевозможную значимую информацию, поэтому важно, чтобы они охватывали максимально возможное количество людей. There are two use cases you’ll want to consider:
-
-- **Decorative Icons** are only being used for visual or branding reinforcement. Если удалить их со страницы, пользователи всё равно смогут её использовать, им всё будет понятно.
-- **Семантические иконки** – это те, которые используются для передачи смысла, а не только для украшения. В данную группу входят иконки без текста, используемые в качестве интерактивных элементов управления – кнопки, элементы форм, переключатели, и так далее.
+Иконки могут передавать всевозможную значимую информацию, поэтому важно, чтобы они охватывали максимально возможное количество людей. Существует два варианта использования, которые необходимо учесть: - **Декоративные иконки** используются только для визуального подкрепления или брендинга. Если удалить их со страницы, пользователи всё равно смогут её использовать, им всё будет понятно. - **Семантические иконки** – это те, которые используются для передачи смысла, а не только для украшения. В данную группу входят иконки без текста, используемые в качестве интерактивных элементов управления – кнопки, элементы форм, переключатели, и так далее.
 
 ### Декоративные SVG-иконки
 
-If your icons are purely decorative, you’re already done! We add the `aria-hidden=true` attribute so that your icons are properly accessible (invisible).
+Если у вас чисто декоративные иконки, почти всё уже готово! Добавим атрибут `aria-hidden=true` для правильной настройки их доступности (невидимость).
 
 ### Семантические SVG-иконки
 
@@ -137,7 +134,7 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 
 ### Декоративные шрифтовые иконки
 
-If your icons are purely decorative, you’re already done! We add the `aria-hidden=true` attribute so that your icons are properly accessible (invisible).
+Если у вас чисто декоративные иконки, почти всё уже готово! Добавим атрибут `aria-hidden=true` для правильной настройки их доступности (невидимость).
 
 ### Семантические шрифтовые иконки
 
