@@ -23,11 +23,11 @@ Changing the theme configuration variables is the most effective way to match Ma
 - [Espaçamento](/customization/spacing/)
 - [Pontos de interrupção](/customization/breakpoints/)
 - [z-index](/customization/z-index/)
-- [Globals](/customization/globals/)
+- [Globais](/customization/globals/)
 
-You can check out the [default theme section](/customization/default-theme/) to view the default theme in full.
+Você pode conferir a [seção de tema padrão](/customization/default-theme/) para visualizar o tema padrão na íntegra.
 
-### Custom variables
+### Variáveis customizáveis
 
 When using Material-UI's theme with our [styling solution](/styles/basics/) or [any others](/guides/interoperability/#themeprovider). It can be convenient to add additional variables to the theme so you can use them everywhere. For instance:
 
