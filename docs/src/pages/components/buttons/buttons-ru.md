@@ -7,7 +7,7 @@ components: Button, Fab, IconButton, ButtonBase, Zoom
 
 <p class="description">Кнопки позволяют пользователям выполнять действия и делать выбор одним нажатием.</p>
 
-[Buttons](https://material.io/design/components/buttons.html) communicate actions that users can take. They are typically placed throughout your UI, in places like:
+[Кнопки](https://material.io/design/components/buttons.html) сообщают о действиях, которые могут выполнять пользователи. Они обычно размещаются в вашем интерфейсе, например:
 
 - Диалоги
 - Всплывающие окно
@@ -64,7 +64,7 @@ components: Button, Fab, IconButton, ButtonBase, Zoom
 
 ## Размеры
 
-Fancy larger or smaller buttons? Use the `size` property.
+Хотите изменить размеры? Используйте параметр `size`.
 
 {{"demo": "pages/components/buttons/ButtonSizes.js"}}
 
@@ -88,7 +88,7 @@ Here are some examples of customizing the component. You can learn more about th
 
 {{"demo": "pages/components/buttons/CustomizedButtons.js"}}
 
-👑 If you are looking for inspiration, you can check [MUI Treasury's customization examples](https://mui-treasury.com/components/button).
+
 
 ## Сложные кнопки
 
