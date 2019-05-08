@@ -59,7 +59,7 @@ Sie sollten die Ausrichtung der Listenelemente ändern, wenn Sie 3 Zeilen oder m
 
 Eine Checkbox kann entweder eine primäre oder eine sekundäre Aktion sein.
 
-The checkbox is the primary action and the state indicator for the list item. The comment button is a secondary action and a separate target.
+Die Checkbox ist die Hauptaktion und das Zustandskennzeichen für das Listenelement. Die Kommentarschaltfläche ist eine sekundäre Aktion und ein separates Ziel.
 
 {{"demo": "pages/components/lists/CheckboxList.js"}}
 
