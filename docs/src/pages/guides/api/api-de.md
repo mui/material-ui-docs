@@ -34,11 +34,11 @@ Die Eigenschaft `disableRipple` wird folgendermaßen weitergegeben: [`MenuItem`]
 
 ### Native Eigenschaften
 
-Wir vermeiden, die vom DOM unterstützten nativen Eigenschaften wie [`className`](/customization/overrides/#overriding-with-class-names) zu dokumentieren.
+Wir vermeiden, die vom DOM unterstützten nativen Eigenschaften wie [`className`](/customization/components/#overriding-styles-with-class-names) zu dokumentieren.
 
 ### CSS-Klassen
 
-Alle Komponenten akzeptieren die [`classes`](/customization/overrides/#overriding-with-classes) Eigenschaft zum Anpassen der Stile. Das Design der classes beantwortet zwei Bedingungen: Die Klassenstruktur so einfach wie möglich zu gestalten, aber trotzdem ausreichend, um die Material Design-Spezifikation zu implementieren.
+Alle Komponenten akzeptieren die [`classes`](/customization/components/#overriding-styles-with-classes) Eigenschaft zum Anpassen der Stile. Das Design der classes beantwortet zwei Bedingungen: Die Klassenstruktur so einfach wie möglich zu gestalten, aber trotzdem ausreichend, um die Material Design-Spezifikation zu implementieren.
 
 - Die auf das Wurzelelement angewendete Klasse wird immer als `root` bezeichnet.
 - Alle Standardstile sind in einer einzigen Klasse zusammengefasst.
