@@ -2,7 +2,7 @@
 components: Icon, SvgIcon
 ---
 
-# 图标
+# Icons
 
 <p class="description">在Material-UI中使用图标的建议和指导。</p>
 
@@ -33,7 +33,7 @@ Material-UI提供了两个组件来渲染系统图标：`SvgIcon` 用SVG路径�
 - [`delete`](https://material.io/tools/icons/?icon=delete&style=baseline) 暴露为 `@material-ui/icons/Delete`
 - [`delete forever`](https://material.io/tools/icons/?icon=delete_forever&style=baseline) 暴露为 `@material-ui/icons/DeleteForever`
 
-对于*“主题化”*图标，是将主题名附加到图标名称后面。 For instance with the
+对于 *"被主题修饰过"* 的图标，在图标名称后面添加主题名。 例如：
 
 - 描边的 [`delete`](https://material.io/tools/icons/?icon=delete&style=outline) 图标由 `@material-ui/icons/DeleteOutlined` 暴露
 - 圆角的 [`delete`](https://material.io/tools/icons/?icon=delete&style=rounded) 图标由 `@material-ui/icons/DeleteRounded` 暴露
@@ -77,7 +77,7 @@ import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
 
-`Icon` will set the correct class name for the Material icon font. For other fonts, you must supply the class name using the Icon component's `className` property.
+`Icon` 将为 Material icon font 设置正确的类名。对于其他的字体，你必须通过 Icon 组件的 `className` 属性设置类名。
 
 要使用图标只需将图标名（字体连字）包裹到 `Icon` 组件内即可，例如：
 
@@ -99,7 +99,7 @@ import Icon from '@material-ui/core/Icon';
 
 {{"demo": "pages/components/icons/FontAwesome.js", "hideEditButton": true}}
 
-## Font vs SVG. Which approach to use?
+## 字体 vs SVG 用哪个？
 
 两种方法都能很好的工作。然而，他们之间有着微妙的差异，特别是在性能和渲染质量上。 尽可能选择 SVG。 因为 SVG 允许代码分割、支持更多图标而且渲染的更快、更好。
 
@@ -107,14 +107,11 @@ import Icon from '@material-ui/core/Icon';
 
 ## 无障碍功能
 
-图标可以传达各种各样有意义的信息，所以将他们传递给尽可能多的人非常重要。 There are two use cases you’ll want to consider:
-
-- **Decorative Icons** are only being used for visual or branding reinforcement. 如果将它们从页面中删除，用户仍然可以理解并能够使用您的页面。
-- **Semantic Icons** are ones that you’re using to convey meaning, rather than just pure decoration. 这包括其旁边没有文本的图标，用作交互式控件 - 按钮，表单元素，切换等。
+图标可以传达各种各样有意义的信息，所以将他们传递给尽可能多的人非常重要。 您需要考虑两个用例： - **装饰图标** 仅用于视觉或品牌强化。 如果将它们从页面中删除，用户仍然可以理解并能够使用您的页面。 - **语义图标** 是您用来传达意义的，而不仅仅是纯粹的装饰。 这包括其旁边没有文本的图标，用作交互式控件 - 按钮，表单元素，切换等。
 
 ### 装饰SVG图标
 
-If your icons are purely decorative, you’re already done! We add the `aria-hidden=true` attribute so that your icons are properly accessible (invisible).
+如果您的图标纯粹是装饰性的，那么您已经完成了！ 我们添加 `aria-hidden=true` 属性，以便您的图标可以正常访问（不可见）。
 
 ### 语义SVG图标
 
@@ -137,7 +134,7 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 
 ### 装饰字体图标
 
-If your icons are purely decorative, you’re already done! We add the `aria-hidden=true` attribute so that your icons are properly accessible (invisible).
+如果您的图标纯粹是装饰性的，那么您已经完成了！ 我们添加 `aria-hidden=true` 属性，以便您的图标可以正常访问（不可见）。
 
 ### 语义字体图标
 
