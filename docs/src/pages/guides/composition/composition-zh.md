@@ -112,7 +112,7 @@ import { Link } from 'react-router-dom';
 
 ### 使用 TypeScript
 
-You can find the details in the [TypeScript guide](/guides/typescript/#usage-of-component-property).
+您可以在[ TypeScript指南中找到详细信息](/guides/typescript/#usage-of-component-property) 。
 
 ## Caveat with refs
 
