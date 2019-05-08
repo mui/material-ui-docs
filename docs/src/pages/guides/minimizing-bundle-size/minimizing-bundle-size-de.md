@@ -4,7 +4,7 @@
 
 ## Packetgröße zählt
 
-Die Paketgröße der Material-UI wird sehr ernst genommen. Bei jedem Commit werden für jedes Paket und für kritische Teile dieser Pakete Größen-Snapshots erstellt ([siehe letzten Snapshot](/size-snapshot)). Wir können, kombiniert mit [dangerJS](https://danger.systems/js/), [detaillierte Änderungen der Bündelgröße]((https://github.com/mui-org/material-ui/pull/14638#issuecomment-466658459)) bei jedem Pull Request prüfen.
+Die Paketgröße der Material-UI wird sehr ernst genommen. Bei jedem Commit werden für jedes Paket und für kritische Teile dieser Pakete Größen-Snapshots erstellt ([siehe letzten Snapshot](/size-snapshot)). Wir können, kombiniert mit [dangerJS](https://danger.systems/js/), [detaillierte Änderungen der Bündelgröße](https://github.com/mui-org/material-ui/pull/14638#issuecomment-466658459) bei jedem Pull Request prüfen.
 
 ## Wie kann ich die Packetgröße reduzieren?
 
