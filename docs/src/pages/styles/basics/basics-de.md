@@ -124,7 +124,7 @@ export default withStyles(styles)(HigherOrderComponent);
 
 ## Verschachteln von Selektoren
 
-Sie können Selektoren verschachteln, um Elemente innerhalb der aktuellen Klasse oder Komponente anzuvisieren. The following example uses the Hook API, but it works the same way with the other APIs.
+You can nest selectors to target elements inside the current class or component. The following example uses the Hook API, but it works the same way with the other APIs.
 
 ```js
 const useStyles = makeStyles({
@@ -169,7 +169,7 @@ function MyComponent() {
 }
 ```
 
-Diese Buttonkomponente hat eine Farbeigenschaft, die ihre Farbe ändert:
+This button component has a color property that changes its color:
 
 ### Adapting the hook API
 
@@ -185,7 +185,7 @@ Diese Buttonkomponente hat eine Farbeigenschaft, die ihre Farbe ändert:
 
 ## Stresstest
 
-Im folgenden Stresstest können Sie die *Themefarbe* und *background-color property* live aktualisieren:
+In the following stress test, you can update the *theme color* and the *background-color property* live:
 
 ```js
 const useStyles = makeStyles(theme => ({
