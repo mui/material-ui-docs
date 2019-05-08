@@ -7,7 +7,7 @@ components: Button, Fab, IconButton, ButtonBase, Zoom
 
 <p class="description">Los botones permiten a los usuarios ejecutar acciones, y tomar decisiones, con un simple toque.</p>
 
-[Buttons](https://material.io/design/components/buttons.html) communicate actions that users can take. They are typically placed throughout your UI, in places like:
+Los [botones](https://material.io/design/components/buttons.html) indican acciones que los usuarios pueden tomar. Suelen ponerse a lo largo de la interfaz, en lugares como:
 
 - Diálogos
 - Ventanas modal
@@ -64,7 +64,7 @@ La transición Zoom se puede usar para lograr esto. Ten en cuenta que ya que las
 
 ## Tamaños
 
-Fancy larger or smaller buttons? Use the `size` property.
+¿Te gustan botones más grandes o más pequeños? Usa el atributo `size`.
 
 {{"demo": "pages/components/buttons/ButtonSizes.js"}}
 
@@ -88,7 +88,7 @@ Here are some examples of customizing the component. You can learn more about th
 
 {{"demo": "pages/components/buttons/CustomizedButtons.js"}}
 
-👑 If you are looking for inspiration, you can check [MUI Treasury's customization examples](https://mui-treasury.com/components/button).
+
 
 ## Botones Complejos
 
