@@ -17,7 +17,7 @@ The divider renders as a `<hr>` by default. You can save rendering this DOM elem
 
 ## Especificação HTML5
 
-We need to make sure the `Divider` is rendered as a `li` to match the HTML5 specification. The examples below show two ways of achieving this.
+Precisamos garantir que o `Divider` seja renderizado como `li` para corresponder à especificação do HTML5. Os exemplos abaixo mostram duas maneiras de conseguir isso.
 
 ## Divisores de inserção
 
