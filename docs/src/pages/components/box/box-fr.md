@@ -2,7 +2,7 @@
 title: Box React component
 ---
 
-# Box (Boite)
+# Zone
 
 <p class="description">The Box component serves as a wrapper component for most of the CSS utility needs.</p>
 
@@ -36,7 +36,7 @@ The Box component has a `clone` property to enable the usage of the clone elemen
 </Box>
 ```
 
-2. Use render props
+1. Use render props
 
 The Box children accepts a render props function. You can pull out the `className`.
 
