@@ -51,9 +51,9 @@ components: AppBar, Toolbar, Menu
 
 {{"demo": "pages/components/app-bar/HideAppBar.js", "iframe": "true", "maxWidth": 500}}
 
-### 升高的应用栏
+### 变高的应用栏
 
-一个在滚动式升高的应用栏。
+一个在滚动时变高的应用栏。
 
 {{"demo": "pages/components/app-bar/ElevateAppBar.js", "iframe": "true", "maxWidth": 500}}
 
@@ -63,13 +63,13 @@ components: AppBar, Toolbar, Menu
 
 1. `options` (*Object* [optional]):
 
-- `options.disableHysteresis` (*Boolan* [optional]): Defaults to `false`. Disable the hysteresis. Ignore the scroll direction when determining the `trigger` value.
-- `options.target` (*Node* [optional]): Defaults to `window`.
-- `options.threshold` (*Number* [optional]): Defaults to `100`. Change the `trigger` value when the vertical scroll crosses this threshold.
+- `options.disableHysteresis`（*Boolan* [optional]）：默认值是 `false`。 禁用迟滞的效果。 在决定 `trigger` 的值时会忽略在滚动的方向。
+- `options.target` （*Node* [optional]）：默认值时 `window`。
+- `options.threshold` （*Number* [optional]）：默认值为 `100`。当垂直滚动超过此阈值时，则会更改 ` trigger ` 的值。
 
 #### 返回结果
 
-`trigger`: Does the scroll position match the criteria?
+`trigger` ：滚动位置是否符合标准？
 
 #### 例子
 
@@ -80,7 +80,7 @@ function HideOnScroll(props) {
   const trigger = useScrollTrigger();
   return (
     <Slide in={!trigger}>
-      <div>Hello</div>
+      <div>你好</div>
     </Slide>
   );
 }
