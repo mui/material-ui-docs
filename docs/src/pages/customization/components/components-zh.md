@@ -18,7 +18,7 @@ As components can be used in different contexts, the are several approaches to t
 
 覆盖组件样式的第一种方法是使用 **类名**。 每个组件都提供一个 `className` 属性，该属性始终应用于根元素。
 
-This example uses the [`withStyles()`](/styles/basics/#higher-order-component-api) higher-order component to inject custom styles into the DOM, and to pass the class name to the `ClassNames` component via its `classes` property. You can choose [any other styling solution](/guides/interoperability/), or even plain CSS to create the styles, but be sure to consider the [CSS injection order](/styles/advanced/#css-injection-order), as the CSS injected into the DOM by Material-UI to style a component has the highest specificity possible, since the `<link>` is injected at the bottom of the `<head />` to ensure the components always render correctly.
+This example uses the [`withStyles()`](/styles/basics/#higher-order-component-api) higher-order component to inject custom styles into the DOM, and to pass the class name to the `ClassNames` component via its `classes` property. 您可以选择[任何其他样式解决方案](/guides/interoperability/)或甚至简单的CSS创建的样式，但一定要 考虑[ CSS注入顺序](/styles/advanced/#css-injection-order) ，因为通过Material-UI注入DOM 以对组件进行样式化的CSS具有最高的优先级，因为`<link>`被注入到` <head />` 的底部以确保组件始终正确渲染。
 
 {{"demo": "pages/customization/components/ClassNames.js"}}
 
@@ -180,7 +180,7 @@ const styles = {
 
 {{"demo": "pages/customization/components/InlineStyle.js"}}
 
-[我什么时候应该使用 inline-style vs classes?](/getting-started/faq/#when-should-i-use-inline-style-vs-classes)
+[我什么时候应该使用内联式vs类？](/getting-started/faq/#when-should-i-use-inline-style-vs-classes)
 
 ## 2。 一次性情况的动态变化
 
