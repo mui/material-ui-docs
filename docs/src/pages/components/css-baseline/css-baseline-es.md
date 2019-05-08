@@ -28,7 +28,7 @@ export default MyApp;
 
 ### Página
 
-The `<html>` and `<body>` elements are updated to provide better page-wide defaults. More specifically:
+Los elementos `<html>` y `<body>` son actualizados para proveer mejores valores predeterminados en toda la página. Específicamente:
 
 - Se elimina el margen en todos los navegadores.
 - Se aplica el color de fondo predeterminado de Material Design. Utiliza [`theme.palette.background.default`](/customization/default-theme/?expend-path=$.palette.background) para dispositivos estándares y un fondo blanco para dispositivos de impresión.
