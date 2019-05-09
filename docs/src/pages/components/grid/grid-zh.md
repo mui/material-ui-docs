@@ -77,7 +77,7 @@ https://www.w3.org/TR/css-flexbox-1/#box-model
 
 ### 负边距
 
-当我们使用负边距来实现项目之间的间距的时候，会有一个限制。 如果负边距超出`<body>`元素，则会出现水平滚动。 有以下三种解决方法： 1. 不使用spacing特性并且设置成默认的`spacing={0}` 2。 将填充应用于父级元素，并且至少将一半的间距值应用于子级元素：
+当我们使用负边距来实现项目之间的间距的时候，会有一个限制。 如果负边距超出`<body>`元素，则会出现水平滚动。 有以下三种解决方法： 1。 不使用 spacing 的特性并且设置成默认的`spacing={0}` 2。 将填充应用于父级元素，并且将至少一半的间距值赋予子级元素：
 
 ```jsx
   <body>
@@ -89,18 +89,18 @@ https://www.w3.org/TR/css-flexbox-1/#box-model
   </body>
 ```
 
-1. 在父元素上设置`overflow-x: hidden;`
+1. 3。将父元素设置为 `overflow-x: hidden;`。
 
 ### white-space: nowrap;
 
-Flex 项目的初始设置为 `min-width: auto`。当子级使用 `white-space: nowrap;`时会导致冲突。 您可能遇到以下问题:
+Flex 项目的初始设置为 `min-width: auto`。当子级使用 `white-space: nowrap;` 时会导致冲突。 您可能遇到以下问题:
 
 ```jsx
 <Grid item xs>
   <Typography noWrap>
 ```
 
-为了使项目保持在容器内, 您需要设置 `min-width: 0`。在实践中, 您可以设置 `zeroMinWidth` 属性:
+为了使项目保持在容器内，您需要设置 `min-width: 0`。在实际操作中, 您可以设置 `zeroMinWidth` 属性:
 
 ```jsx
 <Grid item xs zeroMinWidth>
@@ -111,7 +111,7 @@ Flex 项目的初始设置为 `min-width: auto`。当子级使用 `white-space: 
 
 ### direction: column | column-reverse
 
-虽然`Grid`组件有`direction`属性，此属性有`row`，`row-reverse`，`column`，和`column-reverse`选项，但是有些功能是不支持`column`和`column-reverse`容器的。 The properties which define the number of grids the component will use for a given breakpoint (`xs`, `sm`, `md`, `lg`, and `xl`) are focused on controlling width and do **not** have similar effects on height within `column` and `column-reverse` containers. If used within `column` or `column-reverse` containers, these properties may have undesirable effects on the width of the `Grid` elements.
+虽然 `Grid` 组件有 `direction` 属性，所以组件能用这些的值：`row`，`row-reverse`，`column`，和`column-reverse`，但是有些功能是不被 `column` 和`column-reverse` 容器支持的。 The properties which define the number of grids the component will use for a given breakpoint (`xs`, `sm`, `md`, `lg`, and `xl`) are focused on controlling width and do **not** have similar effects on height within `column` and `column-reverse` containers. If used within `column` or `column-reverse` containers, these properties may have undesirable effects on the width of the `Grid` elements.
 
 ## CSS栅格布局
 
