@@ -31,43 +31,43 @@ components: Grid
 
 ## Fluid grids（流式格网）
 
-流体栅格使用可缩放和调整内容大小的列。 流体栅格布局可以使用断点来确定布局是否需要显着更改。
+流式格网使用了可缩放和调整内容大小的列。 使用 breakpoints（断点)，您可以来确定流式格网的布局是否需要大量的更改。
 
 ### 基本栅格
 
-列宽适用于所有断点（即` xs `及以上）。
+列宽适用于所有断点（即 `xs</code 及大于其的值）。</p>
 
-{{"demo": "pages/components/grid/CenteredGrid.js"}}
+<p>{{"demo": "pages/components/grid/CenteredGrid.js"}}</p>
 
-### 有断点的栅格
+<h3>有断点的栅格</h3>
 
-一些列定义有多种宽度，定义断点之后布局会根据不同宽度改变。
+<p>一些列会定义多种宽度，这会导致布局会根据定义的端点来改变其宽度。</p>
 
-{{"demo": "pages/components/grid/FullWidthGrid.js"}}
+<p>{{"demo": "pages/components/grid/FullWidthGrid.js"}}</p>
 
-## 交互式
+<h2>交互式</h2>
 
-下面是一个交互式演示，可让您探索不同设置的可视结果：
+<p>下面是一个交互式的演示，您可让探索不同设置下的视觉结果：</p>
 
-{{"demo": "pages/components/grid/InteractiveGrid.js", "hideHeader": true}}
+<p>{{"demo": "pages/components/grid/InteractiveGrid.js", "hideHeader": true}}</p>
 
-## 自动布局
+<h2>自动布局</h2>
 
-自动布局使每个*item*公平地共享可用空间。这也意味着您可以设置一个*item*，其他元素将自动调整其大小。
+<p>自动布局使每个 <em>item</em> 公平地共享可用空间。这也意味着您可以设置一个<em>item</em>的宽度，而其他元素将自动调整其大小。</p>
 
-{{"demo": "pages/components/grid/AutoGrid.js"}}
+<p>{{"demo": "pages/components/grid/AutoGrid.js"}}</p>
 
-## 复杂栅格
+<h2>复杂的栅格</h2>
 
-以下演示不遵循Material Design规范，但说明了如何使用栅格构建复杂的布局。
+<p>以下演示不遵循 Material Design 规范，但说明了如何使用栅格构建复杂的布局。</p>
 
-{{"demo": "pages/components/grid/ComplexGrid.js"}}
+<p>{{"demo": "pages/components/grid/ComplexGrid.js"}}</p>
 
-## 嵌套栅格
+<h2>嵌套栅格</h2>
 
-`container`和` item `属性是两个独立的布尔值，它们可以结合使用。
+<p><code>container` 和 `item` 属性是两个独立的 booleans（布尔值），而它们可以结合使用。
 
-> flex **容器** 是由具有 `flex` 或 `inline-flex`的计算显示的元素生成的框。 Flex容器的流入子容器称为flex **items** 并使用flex布局模型进行布局。
+> 一个 flex **容器** 是通过将 `flex` 或 `inline-flex`的计算显示赋予给一个元素而生成的。 Flex 容器的流入子容器称为 flex **items**， 它们使用 flex 布局模型进行布局。
 
 https://www.w3.org/TR/css-flexbox-1/#box-model
 
