@@ -2,11 +2,11 @@
 components: Icon, SvgIcon
 ---
 
-# Icons
+# Icons（图标）
 
-<p class="description">在Material-UI中使用图标的建议和指导。</p>
+<p class="description">一些在 Material-UI 中使用图标的建议和指导。</p>
 
-一个[系统图标](https://material.io/design/iconography/system-icons.html)或UI图标，可以用来代表一个命令、文件、或者目录。 系统图标还常在app bar、工具栏、按钮、和列表中用来表示一些常见操作，如删除、打印、和保存。 Google在该规范下提供了一套[Material icons](https://material.io/tools/icons/?style=baseline)。
+一个[系统图标](https://material.io/design/iconography/system-icons.html)或 UI图标，用符号表示了一个命令、一份文件、一台设备或者一个目录。 系统图标也用于在应用栏、工具栏、按钮、和列表中用来表示一些常见操作，如删除、打印、和保存。 Google在该规范下提供了一套[Material icons](https://material.io/tools/icons/?style=baseline)。
 
 Material-UI提供了两个组件来渲染系统图标：`SvgIcon` 用SVG路径来渲染，`Icon` 用字体来渲染。
 
