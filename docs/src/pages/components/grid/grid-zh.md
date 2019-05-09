@@ -2,6 +2,7 @@
 title: React 栅格(Grid)组件
 components: 栅格(Grid)
 ---
+
 # 栅格(Grid)
 
 <p class="description">Material Design 响应式布局的栅格可适应屏幕大小和方向，确保布局之间的一致性。</p>
@@ -18,15 +19,15 @@ components: 栅格(Grid)
 - 项目具有填充以创建单个项目之间的间距。
 - 有五个网格断点：xs，sm，md，lg和xl。
 
-If you are **new to or unfamiliar with flexbox**, we encourage you to read this [CSS-Tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) guide.
+如果你**对flexbox不熟悉**，我们建议你阅读：[CSS-Tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)手册。
 
 ## 间距
 
 响应式栅格侧重于一致的间距宽度，而不是列宽。 Material design 外边距和列遵循** 8dp **方形基线栅格。 spacing属性是0到10之间的整数，包括0和10。 默认情况下，两个网格项之间的间距遵循线性函数： `output(spacing) = spacing * 8px`，例如 `spacing = {2}` 创建16px宽间距。
 
-该输出变换函数可定制 [使用中的主题](/customization/themes/#spacing)。
+该输出变换函数可定制 [使用中的主题](/customization/spacing/)。
 
-{{"demo": "pages/layout/grid/SpacingGrid.js"}}
+{{"demo": "pages/components/grid/SpacingGrid.js"}}
 
 ## 流体栅格
 
@@ -36,39 +37,31 @@ If you are **new to or unfamiliar with flexbox**, we encourage you to read this 
 
 列宽适用于所有断点（即` xs `及以上）。
 
-{{"demo": "pages/layout/grid/CenteredGrid.js"}}
+{{"demo": "pages/components/grid/CenteredGrid.js"}}
 
 ### 有断点的栅格
 
 一些列定义有多种宽度，定义断点之后布局会根据不同宽度改变。
 
-{{"demo": "pages/layout/grid/FullWidthGrid.js"}}
+{{"demo": "pages/components/grid/FullWidthGrid.js"}}
 
 ## 交互式
 
 下面是一个交互式演示，可让您探索不同设置的可视结果：
 
-{{"demo": "pages/layout/grid/InteractiveGrid.js", "hideHeader": true}}
+{{"demo": "pages/components/grid/InteractiveGrid.js", "hideHeader": true}}
 
 ## 自动布局
 
 自动布局使每个*item*公平地共享可用空间。这也意味着您可以设置一个*item*，其他元素将自动调整其大小。
 
-{{"demo": "pages/layout/grid/AutoGrid.js"}}
+{{"demo": "pages/components/grid/AutoGrid.js"}}
 
 ## 复杂栅格
 
 以下演示不遵循Material Design规范，但说明了如何使用栅格构建复杂的布局。
 
-{{"demo": "pages/layout/grid/ComplexGrid.js"}}
-
-## CSS栅格布局
-
-** CSS栅格布局**擅长将页面划分为主要区域，或者在从HTML基元构建的控件的各个部分之间定义大小，位置和图层之间的关系。
-
-⚠️遗憾的是，CSS网格仅受最新浏览器的支持。
-
-{{"demo": "pages/layout/grid/CSSGrid.js"}}
+{{"demo": "pages/components/grid/ComplexGrid.js"}}
 
 ## 嵌套栅格
 
@@ -78,7 +71,7 @@ If you are **new to or unfamiliar with flexbox**, we encourage you to read this 
 
 https://www.w3.org/TR/css-flexbox-1/#box-model
 
-{{"demo": "pages/layout/grid/NestedGrid.js"}}
+{{"demo": "pages/components/grid/NestedGrid.js"}}
 
 ## 局限性
 
@@ -114,8 +107,14 @@ Flex 项目的初始设置为 `min-width: auto`。当子级使用 `white-space: 
   <Typography noWrap>
 ```
 
-{{"demo": "pages/layout/grid/AutoGridNoWrap.js"}}
+{{"demo": "pages/components/grid/AutoGridNoWrap.js"}}
 
 ### direction: column | column-reverse
 
-Though the `Grid` component has a `direction` property that allows values of `row`, `row-reverse`, `column`, and `column-reverse`, there are some features that are not supported within `column` and `column-reverse` containers. The properties which define the number of grids the component will use for a given breakpoint (`xs`, `sm`, `md`, `lg`, and `xl`) are focused on controlling width and do **not** have similar effects on height within `column` and `column-reverse` containers. If used within `column` or `column-reverse` containers, these properties may have undesirable effects on the width of the `Grid` elements.
+虽然`Grid`组件有`direction`属性，此属性有`row`，`row-reverse`，`column`，和`column-reverse`选项，但是有些功能是不支持`column`和`column-reverse`容器的。 The properties which define the number of grids the component will use for a given breakpoint (`xs`, `sm`, `md`, `lg`, and `xl`) are focused on controlling width and do **not** have similar effects on height within `column` and `column-reverse` containers. If used within `column` or `column-reverse` containers, these properties may have undesirable effects on the width of the `Grid` elements.
+
+## CSS栅格布局
+
+Material-UI doesn't provide any CSS Grid functionality itself, but as seen below you can easily use CSS Grid to layout your pages.
+
+{{"demo": "pages/components/grid/CSSGrid.js"}}
