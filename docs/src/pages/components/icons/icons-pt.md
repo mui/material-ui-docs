@@ -4,7 +4,7 @@ components: Icon, SvgIcon
 
 # Ícones
 
-<p class="description">Guidance and suggestions for using icons with Material-UI.</p>
+<p class="description">Orientação e sugestões para usar ícones com o Material-UI.</p>
 
 A [system icon](https://material.io/design/iconography/system-icons.html) or UI icon, symbolizes a command, file, device, or directory. System icons are also used to represent common actions like trash, print, and save, and are commonly found in app bars, toolbars, buttons, and lists. Google has provided a set of [Material icons](https://material.io/tools/icons/?style=baseline) that follow these guidelines.
 
