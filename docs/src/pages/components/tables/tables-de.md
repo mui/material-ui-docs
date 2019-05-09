@@ -65,7 +65,7 @@ Ein einfaches Beispiel mit überspannenden Zeilen & Spalten.
 
 ## Virtualisierte Tabelle
 
-Im folgenden Beispiel zeigen wir wie Sie [react-virtualized](https://github.com/bvaughn/react-virtualized) mit der `Table<` Komponente nutzen können. Sie zeigt 200 Zeilen an und kann auch einfach mehr verwalten. Virtualisierung hilft bei Leistungsproblemen.
+Im folgenden Beispiel zeigen wir wie Sie [react-virtualized](https://github.com/bvaughn/react-virtualized) mit der `Table<` Komponente nutzen können. Sie zeigt 200 Zeilen an und kann auch einfach mehr verwalten. Virtualization helps with performance issues.
 
 {{"demo": "pages/components/tables/ReactVirtualizedTable.js"}}
 
@@ -75,7 +75,7 @@ Für fortgeschrittenere Anwendungsfälle können Ihnen folgende Projekte helfen:
 
 ### material-table
 
-![stars](https://img.shields.io/github/stars/mbrn/material-table.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/material-table.svg)
+![stars](material-table) ![npm downloads](https://img.shields.io/npm/dm/material-table.svg)
 
 [Material-Table](https://github.com/mbrn/material-table) ist ein einfache und leistungsfähige Daten Tabelle für React basierend auf Material-UI Table mit einigen zusätzlichen Funktionen. Sie unterstützen viele verschiedene Anwendungsfälle (editierbar, filtern, gruppieren, sortieren, auswählen, i18n, Baumdaten und mehr). Sie sollten es sich mal angucken.
 
