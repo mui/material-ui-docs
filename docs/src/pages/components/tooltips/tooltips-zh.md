@@ -58,7 +58,7 @@ function MyComponent(props) {
 
 ## 可变的容器宽度
 
-`Tooltip` 为了保证较好的阅读星，会自动将较长的文字折行。
+`Tooltip` 为了保证较好的阅读性，会自动将较长的文字折行。
 
 {{"demo": "pages/components/tooltips/VariableWidth.js"}}
 
