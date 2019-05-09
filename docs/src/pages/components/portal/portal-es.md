@@ -5,7 +5,7 @@ components: Portal
 
 # Portal
 
-<p class="description">The portal component renders its children into a new "subtree" outside of current component hierarchy.</p>
+<p class="description">El componente del portal hace que sus hijos se conviertan en un nuevo "subtree" fuera de la jerarquía actual de componentes.</p>
 
 The children of the portal component will be appended to the `container` specified.
 
