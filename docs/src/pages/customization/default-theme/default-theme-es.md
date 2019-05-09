@@ -1,8 +1,8 @@
 # Tema predeterminado
 
-<p class="description">Here's what the theme object looks like with the default values.</p>
+<p class="description">Aquí es cómo se ve el objeto de tema con los valores predeterminados.</p>
 
-## Explore
+## Explorar
 
 Explore the documentation theme object:
 
