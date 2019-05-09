@@ -1,9 +1,9 @@
 ---
-title: React 栅格(Grid)组件
-components: 栅格(Grid)
+title: React Grid（栅格）组件
+components: Grid
 ---
 
-# 栅格(Grid)
+# Grid（栅格)
 
 <p class="description">Material Design 响应式布局的栅格可适应屏幕大小和方向，确保布局之间的一致性。</p>
 
@@ -15,21 +15,21 @@ components: 栅格(Grid)
 
 - 为了达到高度的灵活性，它运用了用 [CSS 的 Flexible Box 模块](https://www.w3.org/TR/css-flexbox-1/) 。
 - 它有两种类型的布局： *containers* ， *items*。
-- 项目宽度以百分比设置，因此它们总是相对于其父元素是流动的和大小的。
-- 项目具有填充以创建单个项目之间的间距。
-- 有五个网格断点：xs，sm，md，lg和xl。
+- 项目宽度以百分比设置，因此它们总是相对于其父元素是流动的和变换大小的。
+- 子项自带 padding 来和其他元素之间产生间距。
+- 有五个网格断点：xs，sm，md，lg 和 xl。
 
-如果你**对flexbox不熟悉**，我们建议你阅读：[CSS-Tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)手册。
+如果你**对 flexbox 不熟悉**，我们建议你阅读：[CSS-Tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) 手册。
 
-## 间距
+## Spacing（间距）
 
-响应式栅格侧重于一致的间距宽度，而不是列宽。 Material design 外边距和列遵循** 8dp **方形基线栅格。 spacing属性是0到10之间的整数，包括0和10。 默认情况下，两个网格项之间的间距遵循线性函数： `output(spacing) = spacing * 8px`，例如 `spacing = {2}` 创建16px宽间距。
+响应式栅格侧重于一致的间距宽度，而不是列宽。 Material design 外边距和列遵循** 8px **的方块形基线栅格。 spacing 属性设置为一个在0和10之间的整数，且并包括0和10。 默认情况下，两个网格项之间的间距遵循这样的线性函数： `output(spacing) = spacing * 8px`，例如 `spacing={2}` 会创建一个 16px 的宽间距。
 
-该输出变换函数可定制 [使用中的主题](/customization/spacing/)。
+通过[使用主题](/customization/spacing/)，该变换函数的输出是可定制的。
 
 {{"demo": "pages/components/grid/SpacingGrid.js"}}
 
-## 流体栅格
+## Fluid grids（流式格网）
 
 流体栅格使用可缩放和调整内容大小的列。 流体栅格布局可以使用断点来确定布局是否需要显着更改。
 
