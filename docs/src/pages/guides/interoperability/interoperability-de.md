@@ -7,9 +7,9 @@ In diesem Handbuch sollen die beliebtesten Alternativen dokumentiert werden, abe
 - [Einfaches CSS](#plain-css)
 - [Globales CSS](#global-css)
 - [Styled Components](#styled-components)
-- [CSS Modules](#css-modules)
-- [Emotion](#emotion)
-- [React JSS](#react-jss)
+- [CSS Modules](#styled-components)
+- [Emotion](#css-modules)
+- [React JSS](#emotion)
 - [CSS to MUI webpack Loader](#css-to-mui-webpack-loader)
 - [Glamor](#glamor)
 
@@ -401,6 +401,6 @@ export default function GlamorButton() {
 }
 ```
 
-[![Edit Button](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vp2znmj40)
+[![Edit Button](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/24kllqxvmp)
 
 **Hinweis:** Sowohl Glamour als auch JSS fügen ihre Stile unten in `<head>` ein. Wenn Sie Stilattribute nicht mit **!important** markieren möchten, ist das wichtig, dass Sie die [ CSS-Injektionsreihenfolge ](/styles/advanced/#css-injection-order) wie in der Demo ändern.
