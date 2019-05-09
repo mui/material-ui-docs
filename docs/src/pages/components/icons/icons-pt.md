@@ -35,8 +35,8 @@ Você pode usar [material.io/tools/icons](https://material.io/tools/icons/?style
 
 Para *"themed"* ícones, acrescente o nome do tema ao nome do ícone. Por exemplo, com o
 
-- The Outlined [`delete`](https://material.io/tools/icons/?icon=delete&style=outline) icon is exposed as `@material-ui/icons/DeleteOutlined`
-- The Rounded [`delete`](https://material.io/tools/icons/?icon=delete&style=rounded) icon is exposed as `@material-ui/icons/DeleteRounded`
+- The Outlined [`delete`](https://material.io/tools/icons/?icon=delete&style=outline) ícone é exposto como `@material-ui/icons/DeleteOutlined`
+- The Rounded [`delete`](https://material.io/tools/icons/?icon=delete&style=rounded) ícone é exposto como `@material-ui/icons/DeleteRounded`
 - The Two Tone [`delete`](https://material.io/tools/icons/?icon=delete&style=twotone) icon is exposed as `@material-ui/icons/DeleteTwoTone`
 - The Sharp [`delete`](https://material.io/tools/icons/?icon=delete&style=sharp) icon is exposed as `@material-ui/icons/DeleteSharp`
 
