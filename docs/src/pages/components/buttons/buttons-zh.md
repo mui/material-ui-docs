@@ -64,7 +64,7 @@ components: Button, Fab, IconButton, ButtonBase, Zoom
 
 ## 大小
 
-您喜欢更大一点或更小一点的按钮？请使用 `size` 属性。
+您喜欢更大一点或更小一点的按钮？使用 `size` 属性可以实现大小的控制。
 
 {{"demo": "pages/components/buttons/ButtonSizes.js"}}
 
