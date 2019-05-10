@@ -29,9 +29,9 @@ Puede cambiar la ubicación de la etiqueta:
 
 ## Accesibilidad
 
-Todos los controles de formulario deben tener etiquetas, y esto incluye radio buttons, checkboxes, and switches. In most cases, this is done by using the `<label>` element ([FormControlLabel](/api/form-control-label/)).
+Todos los controles de formulario deben tener etiquetas, y esto incluye radio buttons, checkboxes, and switches. En la mayoría de los casos, esto se hace usando el elemento `<label>` ([FormControlLabel](/api/form-control-label/)).
 
-When a label can't be used, it's necessary to add an attribute directly to the input component. In this case, you can apply the additional attribute (e.g. `aria-label`, `aria-labelledby`, `title`) via the `inputProps` property.
+Cuando no se puede usar una etiqueta, es necesario agregar un atributo directamente al componente de entrada. En este caso, puede aplicar el atributo adicional (por ejemplo, `aria-label`, `aria-labelledby`, `title`) a través de la propiedad `inputProps`.
 
 ```jsx
 <RadioButton
@@ -40,6 +40,6 @@ When a label can't be used, it's necessary to add an attribute directly to the i
 />
 ```
 
-## Guidance
+## Guía
 
 - [Checkboxes vs. Radio Buttons](https://www.nngroup.com/articles/checkboxes-vs-radio-buttons/)
