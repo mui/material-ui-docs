@@ -21,15 +21,15 @@ Radio buttons should have the most commonly used option selected by default.
 
 {{"demo": "pages/components/radio-buttons/RadioButtons.js"}}
 
-## Label placement
+## Ubicación de Etiqueta
 
-You can change the placement of the label:
+Puede cambiar la ubicación de la etiqueta:
 
 {{"demo": "pages/components/radio-buttons/FormControlLabelPosition.js"}}
 
 ## Accesibilidad
 
-All form controls should have labels, and this includes radio buttons, checkboxes, and switches. In most cases, this is done by using the `<label>` element ([FormControlLabel](/api/form-control-label/)).
+Todos los controles de formulario deben tener etiquetas, y esto incluye radio buttons, checkboxes, and switches. In most cases, this is done by using the `<label>` element ([FormControlLabel](/api/form-control-label/)).
 
 When a label can't be used, it's necessary to add an attribute directly to the input component. In this case, you can apply the additional attribute (e.g. `aria-label`, `aria-labelledby`, `title`) via the `inputProps` property.
 
