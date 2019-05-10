@@ -19,7 +19,7 @@ components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
 
 ## Switches with FormGroup
 
-`FormGroup` is a helpful wrapper used to group selection controls components that provides an easier API. However, we encourage you to use a [Checkbox](#checkboxes) instead.
+`FormGroup` es un contenedor muy útil usado para agrupar componentes de controles de selección que proporciona una API más sencilla. However, we encourage you to use a [Checkbox](#checkboxes) instead.
 
 {{"demo": "pages/components/switches/SwitchesGroup.js"}}
 
@@ -29,15 +29,15 @@ Here are some examples of customizing the component. You can learn more about th
 
 {{"demo": "pages/components/switches/CustomizedSwitches.js"}}
 
-## Label placement
+## Ubicación de Etiqueta
 
-You can change the placement of the label:
+Puede cambiar la ubicación de la etiqueta:
 
 {{"demo": "pages/components/switches/FormControlLabelPosition.js"}}
 
 ## Accesibilidad
 
-All form controls should have labels, and this includes radio buttons, checkboxes, and switches. In most cases, this is done by using the `<label>` element ([FormControlLabel](/api/form-control-label/)).
+Todos los controles de formulario deben tener etiquetas, y esto incluye radio buttons, checkboxes, and switches. In most cases, this is done by using the `<label>` element ([FormControlLabel](/api/form-control-label/)).
 
 When a label can't be used, it's necessary to add an attribute directly to the input component. In this case, you can apply the additional attribute (e.g. `aria-label`, `aria-labelledby`, `title`) via the `inputProps` property.
 
