@@ -15,17 +15,17 @@ components: Button, Fab, IconButton, ButtonBase, Zoom
 - Cartões
 - Barras de ferramentas
 
-## Botões contidos
+## Botões Contidos
 
-[Botões contidos](https://material.io/design/components/buttons.html#contained-button) tem alta ênfase, distinguem-se pelo uso de elevação e preenchimento. Eles contém as principais ações da sua aplicação.
+[Botões Contidos](https://material.io/design/components/buttons.html#contained-button) tem alta ênfase, distinguem-se pelo uso de elevação e preenchimento. Eles contém as principais ações da sua aplicação.
 
 O último exemplo desta demonstração mostra como usar um botão de upload.
 
 {{"demo": "pages/components/buttons/ContainedButtons.js"}}
 
-## Botões de texto
+## Botões de Texto
 
-[Botões de texto](https://material.io/design/components/buttons.html#text-button) são utilizados tipicamente para ações menos-pronunciadas, incluindo aquelas localizadas em:
+[Botões de Texto](https://material.io/design/components/buttons.html#text-button) são utilizados tipicamente para ações menos-pronunciadas, incluindo aquelas localizadas em:
 
 - Diálogos
 - Cartões
@@ -34,9 +34,9 @@ Em cartões, os botões de texto ajudam a manter a ênfase no conteúdo do cart�
 
 {{"demo": "pages/components/buttons/TextButtons.js"}}
 
-## Botões delineados
+## Botões Delineados
 
-[Botões delineados](https://material.io/design/components/buttons.html#outlined-button) são botões com ênfase média. Eles contém ações que são importantes, mas não são as ações primárias de um aplicativo.
+[Botões Delineados](https://material.io/design/components/buttons.html#outlined-button) são botões com ênfase média. Eles contém ações que são importantes, mas não são as ações primárias de um aplicativo.
 
 ### Alternativas
 
@@ -44,9 +44,9 @@ Botões delineados são uma alternativa de menor ênfase comparado com botões c
 
 {{"demo": "pages/components/buttons/OutlinedButtons.js"}}
 
-## Botões de ação flutuantes
+## Botões de Ação Flutuante
 
-Um [Botões de ação flutuantes](https://material.io/design/components/buttons-floating-action-button.html) (BAF) executa a ação principal, ou mais comum, em uma tela. Ele aparece na frente de todos os conteúdos da tela, normalmente como uma forma circular com um ícone em seu centro. BAFs vêm em dois tipos: regular e estendido.
+Um [Botões de Ação Flutuante](https://material.io/design/components/buttons-floating-action-button.html) (BAF) executa a ação principal, ou mais comum, em uma tela. Ele aparece na frente de todos os conteúdos da tela, normalmente como uma forma circular com um ícone em seu centro. BAFs vêm em dois tipos: regular e estendido.
 
 Use apenas um BAF se é a maneira mais adequada para apresentar a ação principal de uma tela.
 
@@ -78,19 +78,19 @@ Botões extravagantes ou menores? Use a propriedade `size`.
 
 Botões de ícones são comumente encontrados em barras de aplicativos e barras de ferramentas.
 
-Ícones são também adequadas para botões de alternância que permitem uma escolha única para ser selecionado ou desmarcada, como adicionar ou remover uma estrela para um item.
+Ícones são também adequados para botões de alternância que permitem uma escolha única para ser selecionado ou desselecionado, como adicionar ou remover uma estrela para um item.
 
 {{"demo": "pages/components/buttons/IconButtons.js"}}
 
-## Customized buttons
+## Botões Personalizados
 
-Aqui estão alguns exemplos de personalização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
+Aqui estão alguns exemplos de customização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
 
 {{"demo": "pages/components/buttons/CustomizedButtons.js"}}
 
 
 
-## Botões complexos
+## Botões Complexos
 
 O botões de texto, botões contidos, botões de ação flutuante e ícone botões são construídos em cima do mesmo componente: O componente `ButtonBase`. Você pode tirar vantagem deste componente de nível mais abastrato para construir interações personalizadas.
 
