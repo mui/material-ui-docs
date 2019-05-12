@@ -29,11 +29,11 @@ Exemplo de um cartão usando uma imagem para reforçar o conteúdo.
 
 {{"demo": "pages/components/cards/MediaCard.js"}}
 
-Por padrão, usamos a combinação de um elemento `<div>` e uma *imagem de fundo* para exibir a mídia. Isto pode ser problemático em algumas situações. Por exemplo, você pode querer exibir um vídeo ou uma imagem responsiva. Use a propriedade `component` para estes casos de uso:
+Por padrão, usamos a combinação de um elemento `<div>` e uma *imagem de fundo* para exibir a mídia. Isto pode ser problemático em algumas situações. Por exemplo, você pode querer exibir um vídeo ou uma imagem responsiva. Use a propriedade `component` para estas situações:
 
 {{"demo": "pages/components/cards/ImgMediaCard.js"}}
 
-> ⚠️ When `component="img"`, CardMedia relies on `object-fit` for centering the image. It's not supported by IE 11.
+> ⚠️ Qunado a propriedade `component="img"`, a mídia conta com a propriedade `object-fit` para centralizar a imagem. Estas configurações não são suportadas pelo IE 11.
 
 ## Controles da interface do usuário
 
