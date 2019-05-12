@@ -43,17 +43,17 @@ Uma barra de pesquisa na lateral.
 
 {{"demo": "pages/components/app-bar/BottomAppBar.js", "iframe": true, "maxWidth": 500}}
 
-## Scrolling
+## Rolagem
 
-### Hide App Bar
+### Ocultar a barra de aplicativos
 
-An App Bar that hides on scroll.
+Uma barra de aplicativos que se esconder ao rolar.
 
 {{"demo": "pages/components/app-bar/HideAppBar.js", "iframe": "true", "maxWidth": 500}}
 
-### Elevate App Bar
+### Barra de aplicativos elevada
 
-An App Bar that elevates on scroll.
+Uma barra de aplicativos que se mantém acima ao rolar.
 
 {{"demo": "pages/components/app-bar/ElevateAppBar.js", "iframe": "true", "maxWidth": 500}}
 
