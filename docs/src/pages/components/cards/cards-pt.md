@@ -9,17 +9,17 @@ components: Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedi
 
 [Cartões](https://material.io/design/components/cards.html) são componentes que exibem conteúdo e ações em um único tópico.
 
-Eles devem ser fáceis de procurar informações relevantes e acionáveis. Elementos, como texto e imagens, devem ser colocados neles de uma maneira que indique claramente a hierarquia.
+Eles devem facilitar a verificação de informações relevantes e acionáveis. Elementos, como texto e imagens, devem ser colocados neles de uma maneira que indique claramente a hierarquia.
 
 ## Cartão Simples
 
-Apesar dos componentes "Cards" poderem suportar múltiplas ações tais como: controles de UI, e overflow de menu, use-os com moderação e lembre-se que os cards são pontos de entrada de informações mais complexas e detalhadas.
+Apesar dos componentes cartões poderem suportar múltiplas ações tais como: controles de UI, e overflow de menu, use-os com moderação e lembre-se que cartões são pontos de entrada de informações mais complexas e detalhadas.
 
 {{"demo": "pages/components/cards/SimpleCard.js"}}
 
 ## Interação Complexa
 
-O conteúdo do Card pode ser expandido.
+O conteúdo do cartão pode ser expandido.
 
 {{"demo": "pages/components/cards/RecipeReviewCard.js"}}
 
