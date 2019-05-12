@@ -7,25 +7,25 @@ components: Checkbox, FormControl, FormGroup, FormLabel, FormControlLabel
 
 <p class="description">Caixas de Seleção permitem o usuário selecionar um ou mais itens de um conjunto.</p>
 
-[Caixas de Seleção](https://material.io/design/components/selection-controls.html#checkboxes) podem ser usadas para deixar uma opção disponível ou indisponível.
+[Caixas de Seleção](https://material.io/design/components/selection-controls.html#checkboxes) podem ser usadas para ativar ou desativar uma opção.
 
-Se você tem várias opções aparecendo na lista, você pode economizar espaço usando checkbox ao invés de on/off switches. Se você tem uma única opção, evite usar um checkbox e use um on/off switch.
+Se você tem várias opções aparecendo em uma lista, você pode economizar espaço usando caixas de seleção ao invés de seletores liga/desliga. Se você tem uma única opção, evite usar uma caixa de seleção e use um seletor de liga/desliga.
 
 {{"demo": "pages/components/checkboxes/Checkboxes.js"}}
 
-`Checkbox` também podem ser usadas com uma `label` graças ao `FormControlLabel` componente.
+Caixa de Seleção pode também ser usada com um rótulo graças ao componente `FormControlLabel`.
 
 {{"demo": "pages/components/checkboxes/CheckboxLabels.js"}}
 
-## Checkboxes com FormGroup
+## Caixas de Seleção com FormGroup
 
 `FormGroup` é usado para agrupar componentes seletores para facilitar o uso da API.
 
 {{"demo": "pages/components/checkboxes/CheckboxesGroup.js"}}
 
-## Posicionamento do Label
+## Posicionamento do Rótulo
 
-Você pode alterar o posicionamento do label:
+Você pode alterar o posicionamento do rótulo:
 
 {{"demo": "pages/components/checkboxes/FormControlLabelPosition.js"}}
 
