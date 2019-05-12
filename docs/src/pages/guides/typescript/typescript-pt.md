@@ -192,13 +192,13 @@ const DecoratedClass = withStyles(styles)(
 );
 ```
 
-Unfortunately due to a [current limitation of TypeScript decorators](https://github.com/Microsoft/TypeScript/issues/4881), `withStyles(styles)` can't be used as a decorator in TypeScript.
+Infelizmente devido a uma [limitação atual dos decoradores do TypeScript](https://github.com/Microsoft/TypeScript/issues/4881), `withStyles(styles)` não pode ser usado como decorador no TypeScript.
 
-## Customization of `Theme`
+## Customização de tema
 
-When adding custom properties to the `Theme`, you may continue to use it in a strongly typed way by exploiting [TypeScript's module augmentation](https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation).
+Ao adicionar propriedades customizadas ao `Theme`, você pode continuar a utilizá-lo de uma maneira fortemente tipada, explorando o conceito de extensão de módulos do TypeScript ([TypeScript's module augmentation](https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation)).
 
-The following example adds an `appDrawer` property that is merged into the one exported by `material-ui`:
+O exemplo a seguir adiciona uma propriedade `appDrawer` que é mesclada na que foi exportada pelo `material-ui`:
 
 ```ts
 import { Theme } from '@material-ui/core/styles/createMuiTheme';
@@ -221,7 +221,7 @@ declare module '@material-ui/core/styles/createMuiTheme' {
 }
 ```
 
-And a custom theme factory with additional defaulted options:
+E uma fábrica customizada de temas com opções padrão adicionais:
 
 **./styles/createMyTheme**:
 
@@ -239,7 +239,7 @@ export default function createMyTheme(options: ThemeOptions) {
 }
 ```
 
-This could be used like:
+Isso poderia ser usado como:
 
 ```ts
 import createMyTheme from './styles/createMyTheme';
