@@ -4,9 +4,9 @@
 
 Dê uma olhada no exemplo [Create React App com TypeScript](https://github.com/mui-org/material-ui/tree/next/examples/create-react-app-with-typescript). É necessário estar no mínimo com a versão 2.8 do TypeScript.
 
-Our definitions are tested with the following [tsconfig.json](https://github.com/mui-org/material-ui/tree/next/tsconfig.json). Using a less strict `tsconfig.json` or omitting some of the libraries might cause errors.
+Nossas definições são testadas com a seguinte configuração [tsconfig.json](https://github.com/mui-org/material-ui/tree/next/tsconfig.json). Usando uma `tsconfig.json` menos rigorosa ou omitindo algumas das bibliotecas podem causar erros.
 
-## Usage of `withStyles`
+## Uso do `withStyles`
 
 Using `withStyles` in TypeScript can be a little tricky, but there are some utilities to make the experience as painless as possible.
 
