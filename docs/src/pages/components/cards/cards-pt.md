@@ -5,9 +5,9 @@ components: Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedi
 
 # Card (Cartões)
 
-<p class="description">Os cards contêm conteúdo e ações sobre um único assunto.</p>
+<p class="description">Cartões contêm conteúdo e ações sobre um único assunto.</p>
 
-[Cards](https://material.io/design/components/cards.html) são interfaces que exibem conteúdo e ações em um único tópico.
+[Cartões](https://material.io/design/components/cards.html) são componentes que exibem conteúdo e ações em um único tópico.
 
 Eles devem ser fáceis de procurar informações relevantes e acionáveis. Elementos, como texto e imagens, devem ser colocados neles de uma maneira que indique claramente a hierarquia.
 
