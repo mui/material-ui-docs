@@ -68,13 +68,13 @@ Botões extravagantes ou menores? Use a propriedade `size`.
 
 {{"demo": "pages/components/buttons/ButtonSizes.js"}}
 
-## Botões com ícones e "Label"
+## Botões com ícones e rótulo
 
-Às vezes você pode querer ter ícones para determinados botão para melhorar o UX do aplicativo como reconhecemos logotipos mais facilmente do que o texto sem formatação. Por exemplo, se você tem um botão com a açõo de "deletar" você pode rotulá-lo com um ícone do caixote de lixo.
+Às vezes você pode querer ter ícones para determinado botão para melhorar o UX do aplicativo pois reconhecemos logotipos mais facilmente do que o texto sem formatação. Por exemplo, se você tem um botão deletar você pode rotulá-lo com um ícone de lixeira.
 
 {{"demo": "pages/components/buttons/IconLabelButtons.js"}}
 
-## Botões de Icone
+## Botões de ícone
 
 Botões de ícones são comumente encontrados em barras de aplicativos e barras de ferramentas.
 
