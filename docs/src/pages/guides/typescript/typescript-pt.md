@@ -2,7 +2,7 @@
 
 <p class="description">Você pode adicionar tipagem estática para o JavaScript para melhorar a produtividade do desenvolvimento e a qualidade do código graças ao TypeScript.</p>
 
-Dê uma olhada no exemplo [Create React App com TypeScript](https://github.com/mui-org/material-ui/tree/next/examples/create-react-app-with-typescript). A minimum version of TypeScript 2.8 is required.
+Dê uma olhada no exemplo [Create React App com TypeScript](https://github.com/mui-org/material-ui/tree/next/examples/create-react-app-with-typescript). É necessário estar no mínimo com a versão 2.8 do TypeScript.
 
 Our definitions are tested with the following [tsconfig.json](https://github.com/mui-org/material-ui/tree/next/tsconfig.json). Using a less strict `tsconfig.json` or omitting some of the libraries might cause errors.
 
