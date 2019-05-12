@@ -21,7 +21,7 @@ A largura de um container fluído é limitada pelo valor da propriedade `maxWidt
 
 ## Fixo
 
-If you prefer to design for a fixed set of sizes instead of trying to accommodate a fully fluid viewport, you can set the `fixed` property. The max-width matches the min-width of the current breakpoint.
+Se você preferir projetar um conjunto fixo de tamanhos em vez de tentar acomodar em uma visualização totalmente fluída, você pode definir a propriedade `fixed`. The max-width matches the min-width of the current breakpoint.
 
 ```jsx
 <Container fixed>
