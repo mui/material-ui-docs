@@ -46,7 +46,7 @@ Botões delineados são uma alternativa de menor ênfase comparado com botões c
 
 ## Botões de Ação Flutuante
 
-Um [Botões de Ação Flutuante](https://material.io/design/components/buttons-floating-action-button.html) (BAF) executa a ação principal, ou mais comum, em uma tela. Ele aparece na frente de todos os conteúdos da tela, normalmente como uma forma circular com um ícone em seu centro. BAFs vêm em dois tipos: regular e estendido.
+Um [Botão de Ação Flutuante](https://material.io/design/components/buttons-floating-action-button.html) (BAF) executa a ação principal, ou mais comum, em uma tela. Ele aparece na frente de todos os conteúdos da tela, normalmente como uma forma circular com um ícone em seu centro. BAFs vêm em dois tipos: regular e estendido.
 
 Use apenas um BAF se é a maneira mais adequada para apresentar a ação principal de uma tela.
 
@@ -74,9 +74,9 @@ Botões extravagantes ou menores? Use a propriedade `size`.
 
 {{"demo": "pages/components/buttons/IconLabelButtons.js"}}
 
-## Botões de ícone
+## Botões de Ícone
 
-Botões de ícones são comumente encontrados em barras de aplicativos e barras de ferramentas.
+Botões de Ícones são comumente encontrados em barras de aplicativos e barras de ferramentas.
 
 Ícones são também adequados para botões de alternância que permitem uma escolha única para ser selecionado ou desselecionado, como adicionar ou remover uma estrela para um item.
 
