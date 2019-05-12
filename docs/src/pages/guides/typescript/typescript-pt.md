@@ -6,13 +6,13 @@ Dê uma olhada no exemplo [Create React App com TypeScript](https://github.com/m
 
 Nossas definições são testadas com a seguinte configuração [tsconfig.json](https://github.com/mui-org/material-ui/tree/next/tsconfig.json). Usando uma `tsconfig.json` menos rigorosa ou omitindo algumas das bibliotecas podem causar erros.
 
-## Uso do `withStyles`
+## Uso de `withStyles`
 
 Utilizando `withStyles` no TypeScript pode ser um pouco complicado, mas há alguns utilitários que tornam a experiência menos dolorosa possível.
 
-### Using `createStyles` to defeat type widening
+### Utilizando `createStyles` para evitar a ampliação de tipo (type widening)
 
-A frequent source of confusion is TypeScript's [type widening](https://blog.mariusschulz.com/2017/02/04/typescript-2-1-literal-type-widening), which causes this example not to work as expected:
+Uma fonte frequente de confusão é a ampliação de tipos ([type widening](https://blog.mariusschulz.com/2017/02/04/typescript-2-1-literal-type-widening)) do TypeScript, que faz com que este exemplo não funcione como o esperado:
 
 ```ts
 const styles = {
