@@ -55,7 +55,7 @@ withStyles(({ palette, spacing }) => ({
 
 Isso ocorre pois o TypeScript [amplia o retorno de tipos de expressões de função](https://github.com/Microsoft/TypeScript/issues/241).
 
-Because of this, we recommend using our `createStyles` helper function to construct your style rules object:
+Por causa disto, nós recomendamos utilizar nossa função auxiliar `createStyles` para construir seu objeto de regras de estilo:
 
 ```ts
 // Non-dependent styles
@@ -78,9 +78,9 @@ const styles = ({ palette, spacing }: Theme) => createStyles({
 });
 ```
 
-`createStyles` is just the identity function; it doesn't "do anything" at runtime, just helps guide type inference at compile time.
+`createStyles` é apenas a identidade da função; ela não "faz nada" em tempo de execução, apenas auxilia a inferência de tipos em tempo de compilação.
 
-### Media queries
+### Consultas de Mídia (Media queries)
 
 `withStyles` allows a styles object with top level media-queries like so:
 
