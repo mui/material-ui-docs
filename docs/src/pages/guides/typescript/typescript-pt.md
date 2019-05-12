@@ -97,11 +97,11 @@ const styles = createStyles({
 });
 ```
 
-No entanto, para permitir que estes estilos passem pelo TypeScript, as definições devem ser ambíguas em relação aos nomes de classes CSS e nomes reais de propriedades CSS. Due to this class names that are equal to CSS properties should be avoided.
+No entanto, para permitir que estes estilos passem pelo TypeScript, as definições devem ser ambíguas em relação aos nomes de classes CSS e nomes reais de propriedades CSS. Devido a isso, evite utilizar nomes de classes iguais a propriedades do CSS.
 
 ```ts
-// erro porque o TypeScript acha que `@media (min-width: 960px)``é um nome de classe 
-// e` content` é a propriedade cs
+// erro porque TypeScript acha que `@media (min-width: 960px)` é o nome da classe
+// e `content` é a propriedade css
 const ambiguousStyles = createStyles({
   content: {
     minHeight: '100vh',
@@ -113,7 +113,7 @@ const ambiguousStyles = createStyles({
   },
 });
 
-// funciona bem
+// funciona corretamente
 const ambiguousStyles = createStyles({
   contentClass: {
     minHeight: '100vh',
@@ -126,9 +126,9 @@ const ambiguousStyles = createStyles({
 });
 ```
 
-### Augmenting your props using `WithStyles`
+### Estendendo suas propriedades utilizando `WithStyles`
 
-Since a component decorated with `withStyles(styles)` gets a special `classes` prop injected, you will want to define its props accordingly:
+Desde que um componente seja decorado com `withStyles(styles)`, ele recebe uma propriedade injetada `classes`, você pode querer definir estas propriedades de acordo com:
 
 ```ts
 const styles = (theme: Theme) => createStyles({
