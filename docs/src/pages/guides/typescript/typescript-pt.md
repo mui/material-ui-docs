@@ -150,7 +150,7 @@ interface Props {
 }
 ```
 
-However this isn't very [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) because it requires you to maintain the class names (`'root'`, `'paper'`, `'button'`, ...) in two different places. We provide a type operator `WithStyles` to help with this, so that you can just write
+No entanto isto não é muito elegante de acordo com o princípio de software [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), porque requer que você mantenha os nomes das classes (`'root'`, `'paper'`, `'button'`, ...) em dois locais diferentes. Nós fornecemos um operador de tipo `WithStyles` para ajudar com isso, assim você pode apenas escrever
 
 ```ts
 import { WithStyles, createStyles } from '@material-ui/core';
@@ -167,9 +167,9 @@ interface Props extends WithStyles<typeof styles> {
 }
 ```
 
-### Decorating components
+### Decorando componentes
 
-Applying `withStyles(styles)` as a function works as expected:
+Aplicando `withStyles(styles)` como uma função, nos dá o resultado como o esperado:
 
 ```tsx
 const DecoratedSFC = withStyles(styles)(({ text, type, color, classes }: Props) => (
