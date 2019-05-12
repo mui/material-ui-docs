@@ -1,6 +1,6 @@
-# Material-UI’s Vision
+# Material-UI - Nossa Visão
 
-<p class="description">Our vision is to provide an elegant React implementation of the Material Design guidelines that can be customized to fully match your brand.</p>
+<p class="description">Nossa visão é fornecer uma implementação elegante de React utilizando as diretrizes do Material Design que podem ser personalizadas para se adequarem totalmente à sua marca.</p>
 
 The Material Design guidelines are an incredible starting point, but they do not provide guidance on all aspects or needs of an application. In addition to the guidelines-specific implementation, we want Material-UI to become whatever is generally useful for application development, all in the spirit of the Material Design guidelines.
 
