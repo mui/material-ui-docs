@@ -25,11 +25,11 @@ O conteúdo do cartão pode ser expandido.
 
 ## Mídia
 
-Exemplo de um Card usando uma imagem para reforçar o conteúdo.
+Exemplo de um cartão usando uma imagem para reforçar o conteúdo.
 
 {{"demo": "pages/components/cards/MediaCard.js"}}
 
-Por padrão, usamos a combinação de um `<div>` elemento e um *background image* para exibir a mídia. Isto pode ser problemático em algumas situações. Por exemplo, você pode querer exibir um vídeo ou uma imagem responsiva. Use a propriedade `component` para estes casos de uso:
+Por padrão, usamos a combinação de um elemento `<div>` e uma *imagem de fundo* para exibir a mídia. Isto pode ser problemático em algumas situações. Por exemplo, você pode querer exibir um vídeo ou uma imagem responsiva. Use a propriedade `component` para estes casos de uso:
 
 {{"demo": "pages/components/cards/ImgMediaCard.js"}}
 
