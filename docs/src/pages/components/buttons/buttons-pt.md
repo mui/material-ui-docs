@@ -46,15 +46,15 @@ Botões delineados são uma alternativa de menor ênfase comparado com botões c
 
 ## Botões de ação flutuantes
 
-Um [Botões de ação flutuantes](https://material.io/design/components/buttons-floating-action-button.html) (BAF) executa a ação principal, ou mais comum, em uma tela. Ele aparece na frente de todos os conteúdos da tela, normalmente como uma forma circular com um ícone em seu centro. FABs vêm em dois tipos: regular e estendido.
+Um [Botões de ação flutuantes](https://material.io/design/components/buttons-floating-action-button.html) (BAF) executa a ação principal, ou mais comum, em uma tela. Ele aparece na frente de todos os conteúdos da tela, normalmente como uma forma circular com um ícone em seu centro. BAFs vêm em dois tipos: regular e estendido.
 
-Use apenas um FAB se é a maneira mais adequada para apresentar a ação principal de uma tela.
+Use apenas um BAF se é a maneira mais adequada para apresentar a ação principal de uma tela.
 
 É recomendado utilizar apenas um botão de ação flutuante por tela, esse botão deve representar a ação mais comum.
 
 {{"demo": "pages/components/buttons/FloatingActionButtons.js"}}
 
-O botão de ação flutuante é exibido na tela como uma peça de "material" em expansão, por padrão.
+O botão de ação flutuante anima na tela como uma parte expansiva do material, por padrão.
 
 Um botão de ação flutuante que abranja várias telas laterais (como telas com guias) deve desaparecer brevemente, então reapareça se sua ação mudar.
 
