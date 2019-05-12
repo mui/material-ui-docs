@@ -14,7 +14,7 @@ You might need to change the style of a component for a specific implementation,
 
 ### Sobrescrever usando nomes de classes
 
-The first way to override the style of a component is to use **class names**. Every component provides a `className` property which is always applied to the root element.
+The first way to override the style of a component is to use **class names**. Cada componente provê uma propriedade `className` no qual é sempre aplicada ao elemento raiz.
 
 Este exemplo usa o [`withStyles()`](/css-in-js/basics/#higher-order-component-api) high-order componente para injetar estilos customizados no DOM, e passar o nome da classe para o componente `ClassNames` através da propriedade `classes`. You can choose [any other styling solution](/guides/interoperability/), or even plain CSS to create the styles, but be sure to consider the [CSS injection order](/css-in-js/advanced/#css-injection-order), as the CSS injected into the DOM by Material-UI to style a component has the highest specificity possible, since the `<link>` is injected at the bottom of the `<head />` to ensure the components always render correctly.
 
