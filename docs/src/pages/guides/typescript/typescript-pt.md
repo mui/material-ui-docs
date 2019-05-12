@@ -82,7 +82,7 @@ const styles = ({ palette, spacing }: Theme) => createStyles({
 
 ### Consultas de Mídia (Media queries)
 
-`withStyles` allows a styles object with top level media-queries like so:
+`withStyles` permite utilizar um objeto de estilos de nível superior com consultas de mídia assim:
 
 ```ts
 const styles = createStyles({
