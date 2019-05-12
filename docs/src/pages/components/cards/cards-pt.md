@@ -33,12 +33,12 @@ Por padrão, usamos a combinação de um elemento `<div>` e uma *imagem de fundo
 
 {{"demo": "pages/components/cards/ImgMediaCard.js"}}
 
-> ⚠️ Qunado a propriedade `component="img"`, a mídia conta com a propriedade `object-fit` para centralizar a imagem. Estas configurações não são suportadas pelo IE 11.
+> ⚠️ Quando a propriedade `component="img"`, a mídia conta com a propriedade `object-fit` para centralizar a imagem. Não é suportado pelo IE 11.
 
-## Controles da interface do usuário
+## Controles de UI
 
 Ações suplementares dentro do cartão são explicitamente chamadas usando ícones, texto e controles de interface do usuário, normalmente colocados na parte inferior do cartão.
 
-Aqui está um exemplo de um controle do Mídia Card.
+Aqui está um exemplo de um controle de mídia do cartão.
 
 {{"demo": "pages/components/cards/MediaControlCard.js"}}
