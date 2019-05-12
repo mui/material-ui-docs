@@ -97,7 +97,7 @@ const styles = createStyles({
 });
 ```
 
-However to allow these styles to pass TypeScript the definitions have to be ambiguous concerning names for CSS classes and actual CSS property names. Due to this class names that are equal to CSS properties should be avoided.
+No entanto, para permitir que estes estilos passem pelo TypeScript, as definições devem ser ambíguas em relação aos nomes de classes CSS e nomes reais de propriedades CSS. Due to this class names that are equal to CSS properties should be avoided.
 
 ```ts
 // erro porque o TypeScript acha que `@media (min-width: 960px)``é um nome de classe 
