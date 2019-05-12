@@ -13,7 +13,7 @@ Embora incluído aqui como um componente independente, o uso mais comum será em
 
 ## Chip
 
-Exemplo do uso do Chips em Avatar, Avatar ícone SVG, "Carta" e (string) Avatar.
+Exemplo de Chips, usando uma imagem de Avatar, Ícone SVG, "Letra" e Avatar (texto).
 
 - Chips com propriedade `onClick` definida, mudará o foco da aparência, suspensão e clique.
 - Chips with the `onDelete` property defined will display a delete icon which changes appearance on hover.
