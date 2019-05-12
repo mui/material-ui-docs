@@ -64,7 +64,7 @@ A transição de zoom pode ser usada para conseguir isso. Observe que, como as a
 
 ## Tamanhos
 
-Fantasia maior ou menor botões? Use o `tamanho` propriedade.
+Botões extravagantes ou menores? Use a propriedade `size`.
 
 {{"demo": "pages/components/buttons/ButtonSizes.js"}}
 
