@@ -8,7 +8,7 @@ Nossas definições são testadas com a seguinte configuração [tsconfig.json](
 
 ## Uso do `withStyles`
 
-Using `withStyles` in TypeScript can be a little tricky, but there are some utilities to make the experience as painless as possible.
+Utilizando `withStyles` no TypeScript pode ser um pouco complicado, mas há alguns utilitários que tornam a experiência menos dolorosa possível.
 
 ### Using `createStyles` to defeat type widening
 
