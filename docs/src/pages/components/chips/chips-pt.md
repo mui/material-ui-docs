@@ -20,15 +20,15 @@ Exemplo de Chips, usando uma imagem de Avatar, Ícone SVG, "Letra" e Avatar (tex
 
 {{"demo": "pages/components/chips/Chips.js"}}
 
-### Outlined Chips
+### Chips Delineados
 
-Chips delineados oferecem uma alternativa de estilo.
+Chips Delineados oferecem um estilo alternativo.
 
 {{"demo": "pages/components/chips/OutlinedChips.js"}}
 
-## Chip array
+## Matriz de Chip (Array)
 
-Um exemplo de renderização de múltiplos Chips de uma matriz de valores. Deletando um chip removerá da matriz. Observe que uma vez nenhuma propriedade `onClick` definida, o Chip pode ser focado, mas não terá ganhos profundos quando clicado ou tocado.
+Um exemplo de renderização de vários Chips em uma matriz de valores. Deletando um chip irá remove-lo da matriz. Observe que uma vez nenhuma propriedade `onClick` definida, o Chip pode ser focado, mas não terá ganhos profundos quando clicado ou tocado.
 
 {{"demo": "pages/components/chips/ChipsArray.js"}}
 
