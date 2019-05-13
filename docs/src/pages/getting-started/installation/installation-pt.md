@@ -9,10 +9,10 @@ O Material-UI está disponível como um [pacote do npm](https://www.npmjs.com/pa
 Para instalar e salvar em suas dependências do `package.json`, execute:
 
 ```sh
-// with npm
+// usando npm
 npm install @material-ui/core@next
 
-// with yarn
+// usando yarn
 yarn add @material-ui/core@next
 ```
 
@@ -46,10 +46,10 @@ In order to use prebuilt SVG Material icons, such as those found in the [icons d
 
 ```sh
 // usando npm
-npm install @material-ui/core
+npm install @material-ui/icons@next
 
 // usando yarn
-yarn add @material-ui/core
+yarn add @material-ui/icons@next
 ```
 
 ## CDN
