@@ -300,7 +300,7 @@ yarn add @material-ui/styles@next
 - [ExpansionPanelActions] Rename the `action` CSS class `spacing`.
 - [ExpansionPanel] Increase the CSS specificity of the `disabled` style rule.
 
-### Switch
+### Seletor
 
 - [Switch] Refactor the implementation to make it easier to override the styles. Rename the class names to match the specification wording:
   
