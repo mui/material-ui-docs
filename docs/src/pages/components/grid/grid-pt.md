@@ -1,23 +1,23 @@
 ---
-title: Grid React component
+title: Componente React Grid
 components: Grid
 ---
 
 # Grid
 
-<p class="description">The Material Design responsive layout grid adapts to screen size and orientation, ensuring consistency across layouts.</p>
+<p class="description">A grid layout responsivo do Material Design se adapta ao tamanho e orientação da tela, garantindo a consistência nos layouts.</p>
 
-The [grid](https://material.io/design/layout/responsive-layout-grid.html) creates visual consistency between layouts while allowing flexibility across a wide variety of designs. Material Design’s responsive UI is based on a 12-column grid layout.
+A [gid](https://material.io/design/layout/responsive-layout-grid.html) cria coerência visual entre esquemas enquanto permitindo flexibilidade através de uma ampla variedade de modelos. A UI responsiva do Material Design é baseada em um grid layout de 12 colunas.
 
-## How it works
+## Como funciona
 
-The grid system is implemented with the `Grid` component:
+O sistema de grid é implementado com o componente `Grid`:
 
-- It uses [CSS’s Flexible Box module](https://www.w3.org/TR/css-flexbox-1/) for high flexibility.
-- There are two types of layout: *containers* and *items*.
-- Item widths are set in percentages, so they’re always fluid and sized relative to their parent element.
-- Items have padding to create the spacing between individual items.
-- There are five grid breakpoints: xs, sm, md, lg, and xl.
+- Ele usa [módulo CSS’s Flexible Box](https://www.w3.org/TR/css-flexbox-1/) para alta flexibilidade.
+- Existem dois tipos de layout: *containers* e *items*.
+- Larguras de itens são definidas em porcentagens, então elas são sempre fluidas e dimensionadas em relação ao elemento pai.
+- Itens têm preenchimento para criar o espaçamento entre itens individuais.
+- Existem cinco pontos de interrupção no companente grid: xs, sm, md, lg e xl.
 
 If you are **new to or unfamiliar with flexbox**, we encourage you to read this [CSS-Tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) guide.
 
