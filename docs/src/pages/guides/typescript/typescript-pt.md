@@ -58,7 +58,7 @@ Isso ocorre pois o TypeScript [amplia o retorno de tipos de expressões de funç
 Por causa disto, nós recomendamos utilizar nossa função auxiliar `createStyles` para construir seu objeto de regras de estilo:
 
 ```ts
-// Non-dependent styles
+// Estilos sem dependência
 const styles = createStyles({
   root: {
     display: 'flex',
@@ -66,7 +66,7 @@ const styles = createStyles({
   },
 });
 
-// Theme-dependent styles
+// Estilos com dependência do tema
 const styles = ({ palette, spacing }: Theme) => createStyles({
   root: {
     display: 'flex',
