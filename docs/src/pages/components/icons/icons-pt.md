@@ -107,7 +107,7 @@ For more details, you can check out [why GitHub migrated](https://blog.github.co
 
 ## Acessibilidade
 
-Icons can convey all sorts of meaningful information, so it’s important that they reach the largest amount of people possible. There are two use cases you’ll want to consider: - **Decorative Icons** are only being used for visual or branding reinforcement. If they were removed from the page, users would still understand and be able to use your page. - **Semantic Icons** are ones that you’re using to convey meaning, rather than just pure decoration. This includes icons without text next to them used as interactive controls — buttons, form elements, toggles, etc.
+Os ícones podem transmitir todos os tipos de informações significativas, por isso é importante que eles alcancem a maior quantidade possível de pessoas. There are two use cases you’ll want to consider: - **Decorative Icons** are only being used for visual or branding reinforcement. If they were removed from the page, users would still understand and be able to use your page. - **Semantic Icons** are ones that you’re using to convey meaning, rather than just pure decoration. This includes icons without text next to them used as interactive controls — buttons, form elements, toggles, etc.
 
 ### Decorative SVG Icons
 
@@ -138,7 +138,7 @@ If your icons are purely decorative, you’re already done! We add the `aria-hid
 
 ### Semantic Font Icons
 
-If your icons have semantic meaning, you need to provide a text alternative only visible to assistive technologies.
+Se os seus ícones tiverem significado semântico, você precisará fornecer uma alternativa em texto visível apenas para tecnologias assistivas.
 
 ```jsx
 import Icon from '@material-ui/core/Icon';
@@ -150,6 +150,6 @@ import Typography from '@material-ui/core/Typography';
 <Typography variant="srOnly">Crie um usuário</Typography>
 ```
 
-### Reference
+### Referência
 
 - https://developer.paciellogroup.com/blog/2013/12/using-aria-enhance-svg-accessibility/
