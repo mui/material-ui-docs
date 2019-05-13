@@ -5,11 +5,11 @@ components: Collapse, Divider, List, ListItem, ListItemAvatar, ListItemIcon, Lis
 
 # Listas
 
-<p class="description">As listas são índices verticais contínuos de texto ou imagens.</p>
+<p class="description">Listas são continuas, apresentam verticalmente texto ou imagens.</p>
 
-[Listas](https://material.io/design/components/lists.html) são um grupo contínuo de texto ou imagens. Eles são compostos por itens contendo ações primárias e complementares, que são representados por ícones e texto.
+[Listas](https://material.io/design/components/lists.html) são um grupo contínuo de texto ou imagens. Elas são compostas por itens contendo ações primárias e complementares, que são representados por ícones e texto.
 
-## Lista simples
+## Lista Simples
 
 {{"demo": "pages/components/lists/SimpleList.js"}}
 
@@ -27,13 +27,13 @@ function ListItemLink(props) {
 </ListItemLink>
 ```
 
-Você pode encontrar uma demonstração [com React Router seguindo esta seção](/guides/composition/#react-router) da documentação.
+Você pode encontrar uma [demonstração com React Router seguindo esta seção](/guides/composition/#react-router) da documentação.
 
-## Lista aninhada
+## Lista Aninhada
 
 {{"demo": "pages/components/lists/NestedList.js"}}
 
-## Lista de pastas
+## Lista de Pastas
 
 {{"demo": "pages/components/lists/FolderList.js"}}
 
@@ -43,19 +43,19 @@ Abaixo está uma demonstração interativa que permite explorar os resultados vi
 
 {{"demo": "pages/components/lists/InteractiveList.js"}}
 
-## ListItem Selecionado
+## Lista - Item Selecionado
 
 {{"demo": "pages/components/lists/SelectedListItem.js"}}
 
 ## Alinhar itens da lista
 
-Você deve alterar o alinhamento do item da lista ao exibir 3 linhas ou mais, defina a propriedade `alignItems = "flex-start"`.
+Você deve alterar o alinhamento do item da lista ao exibir 3 linhas ou mais, alterando a propriedade `alignItems = "flex-start"`.
 
 {{"demo": "pages/components/lists/AlignItemsList.js"}}
 
-## Controles de lista
+## Controles de Lista
 
-### Checkbox
+### Caixa de Seleção
 
 Uma caixa de seleção que pode ser tanto uma ação principal ou uma ação secundária.
 
