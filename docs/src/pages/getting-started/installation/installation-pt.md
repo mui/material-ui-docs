@@ -42,7 +42,7 @@ Como alternativa, se você estiver utilizando JSX, use:
 
 ## Ícones SVG
 
-In order to use prebuilt SVG Material icons, such as those found in the [icons demos](/components/icons/) you must first install the [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) package:
+Para usar os ícones SVG pré-definidos do Material, como os encontrados na [demonstração de ícones](/components/icons/) você deve primeiro instalar o pacote [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons):
 
 ```sh
 // usando npm
@@ -61,6 +61,6 @@ Você pode começar a utilizar o Material-UI com o mínimo de infraestrutura de 
 Nós estamos providenciando dois arquivos no Universal Module Definition (UMD):
 
 - um para desenvolvimento: https://unpkg.com/@material-ui/core@next/umd/material-ui.development.js
-- um para a produção: https://unpkg.com/@material-ui/core@next/umd/material-ui.production.min.js
+- um para produção: https://unpkg.com/@material-ui/core@next/umd/material-ui.production.min.js
 
 Você pode seguir [esse exemplo de CDN](https://github.com/mui-org/material-ui/tree/next/examples/cdn-next) para rapidamente começar.
