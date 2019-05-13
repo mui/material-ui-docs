@@ -14,13 +14,13 @@ Embora tenhamos atingido a conquista de 100% de cobertura de teste, não incenti
 
 Que tal escrever testes no espaço do usuário? A infraestrutura de estilos do Material-UI usa algumas funções auxiliares construídas sobre o [enzyme](https://github.com/airbnb/enzyme) para facilitar o processo, ao qual estamos expondo. Você pode aproveitá-los, se assim preferir.
 
-### Shallow rendering
+### Renderização Rasa (Shallow)
 
-Shallow rendering is useful to constrain your testing to a component as a unit. This also ensures that your tests aren't indirectly asserting behavior of child components. Shallow rendering was created to test components in isolation. This means without leaking child implementation details such as the context.
+A renderização rasa é útil para restringir seu teste a um componente como uma unidade. Isso também garante que seus testes não estão adquirindo indiretamente o comportamento de componentes filhos. A renderização rasa foi criada para testar componentes isoladamente. Isso significa sem vazar detalhes de implementação de filhos, como o contexto.
 
-A função `createShallow()` pode ser utilizada para esta situação. Aside from wrapping the enzyme API, it provides a `dive` and `untilSelector` option.
+A função `createShallow()` pode ser utilizada para esta situação. Além de encapsular a API do enzyme, ela fornece uma opção `dive` e `untilSelector`.
 
-### Full DOM rendering
+### Renderização completa do DOM (Full)
 
 Full DOM rendering is ideal for use cases where you have components that may interact with DOM APIs or may require the full lifecycle in order to fully test the component (e.g., `componentDidMount` etc.).
 
