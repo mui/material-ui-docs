@@ -247,8 +247,8 @@ import createMyTheme from './styles/createMyTheme';
 const theme = createMyTheme({ appDrawer: { breakpoint: 'md' }});
 ```
 
-## Usage of `component` property
+## Uso da propriedade `component`
 
-Material-UI allows you to replace a component's root node via a `component` property. For example, a `Button`'s root node can be replaced with a React Router `Link`, and any additional props that are passed to `Button`, such as `to`, will be spread to the `Link` component. For a code example concerning `Button` and `react-router-dom` checkout [this Button demo](/components/buttons/#third-party-routing-library)
+Material-UI permite que você substitua o nó raiz de um componente através de uma propriedade `component`. Por exemplo, a raiz de um componente `Button` pode ser substituída com um React Router `Link`, e quaisquer propriedades adicionais passadas para o `Button`, como `to`, será repassada para o componente `Link`. Para um exemplo de código relativo ao `Button` e `react-router-dom` verifique [esta demonstração](/components/buttons/#third-party-routing-library).
 
 Not every component fully supports any component type you pass in. If you encounter a component that rejects its `component` props in TypeScript please open an issue. There is an ongoing effort to fix this by making component props generic.
