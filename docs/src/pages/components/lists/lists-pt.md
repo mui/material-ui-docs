@@ -57,19 +57,19 @@ Você deve alterar o alinhamento do item da lista ao exibir 3 linhas ou mais, al
 
 ### Caixa de Seleção
 
-Uma caixa de seleção que pode ser tanto uma ação principal ou uma ação secundária.
+Uma caixa de seleção pode ser uma ação primária ou uma ação secundária.
 
-O checkbox é a ação primária e o estado indicador para o item da lista. O botão comentário é a ação secundária e um destino separado.
+A caixa de seleção é a ação primária e o indicador de estado para o item da lista. O botão comentário é uma ação secundária separada.
 
 {{"demo": "pages/components/lists/CheckboxList.js"}}
 
-O checkbox é a ação secundária para o item da lista e um destino separado.
+A caixa de seleção é uma ação secundária, sem interferir com o estado do item da lista.
 
 {{"demo": "pages/components/lists/CheckboxListSecondary.js"}}
 
-### Switch
+### Seletor
 
-O comutador é a ação secundária e um destino separado.
+O seletor é uma ação secundária, sem interferir com o estado do item da lista.
 
 {{"demo": "pages/components/lists/SwitchListSecondary.js"}}
 
