@@ -1,8 +1,8 @@
 # Testando
 
-<p class="description">Escrever os testes para impedir retrocessos e escrever um código melhor.</p>
+<p class="description">Escreva testes para evitar regressões e ter uma boa qualidade de código.</p>
 
-Exemplos neste guia de uso [métodos globais de Mocha](https://mochajs.org/api/global.html), não [Jest](https://jestjs.io/docs/en/api).
+Exemplos neste guia usam [métodos globais do Mocha](https://mochajs.org/api/global.html), ao invés do [Jest](https://jestjs.io/docs/en/api).
 
 ## Interno
 
