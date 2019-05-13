@@ -19,13 +19,13 @@ O sistema de grid é implementado com o componente `Grid`:
 - Itens têm preenchimento para criar o espaçamento entre itens individuais.
 - Existem cinco pontos de interrupção no companente grid: xs, sm, md, lg e xl.
 
-If you are **new to or unfamiliar with flexbox**, we encourage you to read this [CSS-Tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) guide.
+Se você é **novo ou não está familiarizado com o flexbox**, nós encorajamos você a ler este [guia do Flexbox CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
 ## Espaçamento
 
-The responsive grid focuses on consistent spacing widths, rather than column width. Material Design margins and columns follow an **8px** square baseline grid. The spacing property is an integer between 0 and 10 inclusive. By default, the spacing between two grid items follows a linear function: `output(spacing) = spacing * 8px`, e.g. `spacing={2}` creates a 16px wide gap.
+A grade responsiva se concentra em larguras de espaçamento consistentes, em vez de largura de coluna. As margens e colunas do Material Design seguem uma grade de linha de base quadrada de **8px**. A propriedade de espaçamento é um inteiro entre 0 e 10, inclusive. Por padrão, o espaçamento entre dois itens de grade segue uma função linear: `output (espaçamento) = espaçamento * 8px`, por exemplo, `espaçamento ={2}` cria um intervalo de 16px.
 
-This output transformation function can be customized [using the theme](/customization/spacing/).
+Esta função de transformação de saída pode ser personalizada [usando o tema](/customization/spacing/).
 
 {{"demo": "pages/components/grid/SpacingGrid.js"}}
 
@@ -33,15 +33,15 @@ This output transformation function can be customized [using the theme](/customi
 
 Fluid grids use columns that scale and resize content. A fluid grid’s layout can use breakpoints to determine if the layout needs to change dramatically.
 
-### Basic grid
+### Grid básica
 
 The column widths apply at all breakpoints (i.e. `xs` and up).
 
 {{"demo": "pages/components/grid/CenteredGrid.js"}}
 
-### Grid with breakpoints
+### Grid com pontos de interrupção
 
-Some columns have multiple widths defined, causing the layout to change at the defined breakpoint.
+Algumas colunas têm várias larguras definidas, fazendo com que o layout seja alterado no ponto de interrupção definido.
 
 {{"demo": "pages/components/grid/FullWidthGrid.js"}}
 
@@ -51,13 +51,13 @@ Abaixo está uma demonstração interativa que permite explorar os resultados vi
 
 {{"demo": "pages/components/grid/InteractiveGrid.js", "hideHeader": true}}
 
-## Auto-layout
+## Layout automático
 
 The Auto-layout makes the *items* equitably share the available space. That also means you can set the width of one *item* and the others will automatically resize around it.
 
 {{"demo": "pages/components/grid/AutoGrid.js"}}
 
-## Complex Grid
+## Grid Complexa
 
 The following demo doesn't follow the Material Design specification, but illustrates how the grid can be used to build complex layouts.
 
@@ -75,9 +75,9 @@ https://www.w3.org/TR/css-flexbox-1/#box-model
 
 ## Limitações
 
-### Negative margin
+### Margem negativa
 
-There is one limitation with the negative margin we use to implement the spacing between items. A horizontal scroll will appear if a negative margin goes beyond the `<body>`. There are 3 available workarounds: 1. Not using the spacing feature and implementing it in user space `spacing={0}` (default). 2. Applying padding to the parent with at least half the spacing value applied to the child:
+Há uma limitação com a margem negativa que usamos para implementar o espaçamento entre itens. A horizontal scroll will appear if a negative margin goes beyond the `<body>`. There are 3 available workarounds: 1. Not using the spacing feature and implementing it in user space `spacing={0}` (default). 2. Applying padding to the parent with at least half the spacing value applied to the child:
 
 ```jsx
   <body>
