@@ -56,9 +56,9 @@ yarn add @material-ui/icons@next
 
 Você pode começar a utilizar o Material-UI com o mínimo de infraestrutura de frontend, o que é bom para prototipagem. Nós, porém, desencorajamos utilizar esse método em produção - o cliente precisa baixar a biblioteca inteira, independente de quais componentes realmente são utilizados, afetando a performance e uso de banda.
 
-#### Lançamentos para UMD
+#### Versões UMD
 
-Nós estamos providenciando dois arquivos no Universal Module Definition (UMD):
+Nós estamos fornecendo dois arquivos no padrão UMD (Universal Module Definition):
 
 - um para desenvolvimento: https://unpkg.com/@material-ui/core@next/umd/material-ui.development.js
 - um para produção: https://unpkg.com/@material-ui/core@next/umd/material-ui.production.min.js
