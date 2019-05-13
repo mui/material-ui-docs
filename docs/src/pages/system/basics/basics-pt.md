@@ -296,7 +296,7 @@ If you want to support custom CSS values, you can use our `css()` helper. It wil
 
 {{"demo": "pages/system/basics/CssProp.js", "defaultCodeOpen": true}}
 
-## How it works
+## Como funciona
 
 styled-system has done a great job at [explaining how it works](https://github.com/jxnblk/styled-system/blob/master/docs/how-it-works.md#how-it-works). It can help building a mental model for this "style function" concept.
 
