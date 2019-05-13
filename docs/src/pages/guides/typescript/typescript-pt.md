@@ -126,7 +126,7 @@ const ambiguousStyles = createStyles({
 });
 ```
 
-### Estendendo suas propriedades utilizando `WithStyles`
+### Incrementando suas propriedades utilizando `WithStyles`
 
 Desde que um componente seja decorado com `withStyles(styles)`, ele recebe uma propriedade injetada `classes`, você pode querer definir estas propriedades de acordo com:
 
