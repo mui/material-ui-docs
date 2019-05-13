@@ -63,4 +63,4 @@ Nós estamos fornecendo dois arquivos no padrão UMD (Universal Module Definitio
 - um para desenvolvimento: https://unpkg.com/@material-ui/core@next/umd/material-ui.development.js
 - um para produção: https://unpkg.com/@material-ui/core@next/umd/material-ui.production.min.js
 
-Você pode começar imediatamente seguindo [esse exemplo de CDN](https://github.com/mui-org/material-ui/tree/next/examples/cdn-next).
+Você pode seguir [esse exemplo de CDN](https://github.com/mui-org/material-ui/tree/next/examples/cdn-next) para começar imediatamente.
