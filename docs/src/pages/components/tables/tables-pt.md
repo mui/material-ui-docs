@@ -65,7 +65,7 @@ Um exemplo simples com abrangência de linhas & colunas.
 
 ## Tabela Virtualizada
 
-No exemplo a seguir, nós demonstramos como usar [react-virtualized](https://github.com/bvaughn/react-virtualized) com o componente `Table`. São renderizadas 200 linhas e pode facilmente lidar com mais. Virtualization helps with performance issues.
+No exemplo a seguir, nós demonstramos como usar [react-virtualized](https://github.com/bvaughn/react-virtualized) com o componente `Table`. São renderizadas 200 linhas e pode facilmente lidar com mais. A virtualização ajuda a lidar com problemas de desempenho.
 
 {{"demo": "pages/components/tables/ReactVirtualizedTable.js"}}
 
