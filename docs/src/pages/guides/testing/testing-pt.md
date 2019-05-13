@@ -6,13 +6,13 @@ Exemplos neste guia usam [métodos globais do Mocha](https://mochajs.org/api/glo
 
 ## Interno
 
-Nós levamos os testes a sério. Nós escrevemos e mantemos ** uma vasta gama ** de testes para que possamos iterar os componentes com confiança, por exemplo, os testes de regressão visual fornecidos por [ Argos-CI ](https://www.argos-ci.com/mui-org/material-ui) provaram ser realmente úteis. Para saber mais sobre nossos testes internos, você pode dar uma olhada no [ LEIA-ME ](https://github.com/mui-org/material-ui/blob/next/test/README.md).
+Nós levamos os testes a sério. Nós escrevemos e mantemos **uma vasta gama** de testes para que possamos iterar os componentes com confiança, por exemplo, os testes de regressão visual fornecidos por [Argos-CI](https://www.argos-ci.com/mui-org/material-ui) provaram ser realmente úteis. Para saber mais sobre nossos testes internos, você pode dar uma olhada no [LEIA-ME](https://github.com/mui-org/material-ui/blob/next/test/README.md).
 
 Embora tenhamos atingido a conquista de 100% de cobertura de teste, não incentivamos nossos usuários a fazer o mesmo. [![Coverage Status](https://img.shields.io/codecov/c/github/mui-org/material-ui/next.svg)](https://codecov.io/gh/mui-org/material-ui/branch/next)
 
-## Userspace
+## Espaço do usuário
 
-Que tal escrever testes no userspace? The Material-UI styling infrastructure uses some helper functions built on top of [enzyme](https://github.com/airbnb/enzyme) to make the process easier, which we are exposing. Você pode aproveitá-los, se assim preferir.
+Que tal escrever testes no espaço do usuário? A infraestrutura de estilos do Material-UI usa algumas funções auxiliares construídas sobre o [enzyme](https://github.com/airbnb/enzyme) para facilitar o processo, ao qual estamos expondo. Você pode aproveitá-los, se assim preferir.
 
 ### Shallow rendering
 
