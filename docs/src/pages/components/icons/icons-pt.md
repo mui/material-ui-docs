@@ -71,15 +71,15 @@ Procurando ainda mais SVG ícones? Há muitos projetos por aí, mas [https://mat
 
 ## Ícones
 
-O componente `Icon` exibirá um ícone de qualquer fonte de ícone que suporte ligadura tipográfica (ligatures). As a prerequisite, you must include one, such as the [Material icon font](http://google.github.io/material-design-icons/#icon-font-for-the-web) in your project, for instance, via Google Web Fonts:
+O componente `Icon` exibirá um ícone de qualquer fonte de ícone que suporte ligadura tipográfica (ligatures). Como pré-requisito, você deve incluir a fonte [Material icon](http://google.github.io/material-design-icons/#icon-font-for-the-web) no seu projeto, por exemplo, via Google Web Fonts:
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
 
-`Icon` will set the correct class name for the Material icon font. For other fonts, you must supply the class name using the Icon component's `className` property.
+O componente `Icon` definirá o nome correto da classe para a fonte Material icon. Para outras fontes, você deve fornecer o nome da classe usando a propriedade `className` do componente Icon.
 
-To use an icon simply wrap the icon name (font ligature) with the `Icon` component, for example:
+Para usar um ícone, simplesmente coloque o nome do ícone (font ligature) com o componente `Icon`, por exemplo:
 
 ```jsx
 import Icon from '@material-ui/core/Icon';
@@ -89,7 +89,7 @@ import Icon from '@material-ui/core/Icon';
 
 Por padrão, um ícone herdará a cor do texto atual. Opcionalmente, você pode definir a cor do ícone usando uma das propriedades de cor do tema: `primary`, `secondary`, `action`, `erro` & `disabled`.
 
-### Font Material icons
+### Fonte Material icons
 
 {{"demo": "pages/components/icons/Icons.js"}}
 
