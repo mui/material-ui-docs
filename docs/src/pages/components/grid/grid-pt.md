@@ -3,15 +3,15 @@ title: Componente React Grade
 components: Grid
 ---
 
-# Grid
+# Grade
 
-<p class="description">A grid layout responsivo do Material Design se adapta ao tamanho e orientação da tela, garantindo a consistência nos layouts.</p>
+<p class="description">O leiaute responsivo da grade do Material Design se adapta ao tamanho e orientação da tela, garantindo a consistência entre leiautes.</p>
 
-A [gid](https://material.io/design/layout/responsive-layout-grid.html) cria coerência visual entre esquemas enquanto permitindo flexibilidade através de uma ampla variedade de modelos. A UI responsiva do Material Design é baseada em um grid layout de 12 colunas.
+Uma [grade](https://material.io/design/layout/responsive-layout-grid.html) cria consistência visual entre leiautes enquanto permite flexibilidade através de uma grande variedade de projetos. A UI responsiva do Material Design é baseada em um leiaute de grade com 12 colunas.
 
 ## Como funciona
 
-O sistema de grid é implementado com o componente `Grid`:
+O sistema de grade é implementado com o componente `Grid`:
 
 - Ele usa [módulo CSS’s Flexible Box](https://www.w3.org/TR/css-flexbox-1/) para alta flexibilidade.
 - Existem dois tipos de layout: *containers* e *items*.
