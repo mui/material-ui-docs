@@ -77,7 +77,7 @@ https://www.w3.org/TR/css-flexbox-1/#box-model
 
 ### Margem negativa
 
-Há uma limitação com a margem negativa que usamos para implementar o espaçamento entre itens. Uma barra de rolagem horizontal irá aparecer se uma margem negativa vai além do `<body>`. Existem 3 soluções alternativas disponíveis: 1. Não usar o recurso de espaçamento e implementá-lo no espaço do usuário `spacing={0}` (Padrão). 2. Applying padding to the parent with at least half the spacing value applied to the child:
+Há uma limitação com a margem negativa que usamos para implementar o espaçamento entre itens. Uma barra de rolagem horizontal irá aparecer se uma margem negativa vai além do `<body>`. Existem 3 soluções alternativas disponíveis: 1. Não usar o recurso de espaçamento e implementá-lo no espaço do usuário `spacing={0}` (Padrão). 2. Aplicando padding ao pai com pelo menos metade do valor de espaçamento aplicado ao filho:
 
 ```jsx
   <body>
@@ -89,18 +89,18 @@ Há uma limitação com a margem negativa que usamos para implementar o espaçam
   </body>
 ```
 
-1. Adding `overflow-x: hidden;` to the parent.
+1. Adicionando `overflow-x: hidden;` para o pai.
 
 ### white-space: nowrap;
 
-The initial setting on flex items is `min-width: auto`. It's causing a positioning conflict when the children is using `white-space: nowrap;`. You can experience the issue with:
+A configuração inicial em itens flexíveis é `min-width: auto`. Isto causa um conflito de posicionamento quando filhos estão usando `white-space: nowrap;`. Você pode enfrentar o problema com:
 
 ```jsx
 <Grid item xs>
   <Typography noWrap>
 ```
 
-In order for the item to stay within the container you need to set `min-width: 0`. In practice, you can set the `zeroMinWidth` property:
+Para que o item permaneça dentro do container, você precisa definir `min-width: 0`. Na prática, você pode definir a propriedade `zeroMinWidth`:
 
 ```jsx
 <Grid item xs zeroMinWidth>
@@ -111,7 +111,7 @@ In order for the item to stay within the container you need to set `min-width: 0
 
 ### direction: column | column-reverse
 
-Though the `Grid` component has a `direction` property that allows values of `row`, `row-reverse`, `column`, and `column-reverse`, there are some features that are not supported within `column` and `column-reverse` containers. The properties which define the number of grids the component will use for a given breakpoint (`xs`, `sm`, `md`, `lg`, and `xl`) are focused on controlling width and do **not** have similar effects on height within `column` and `column-reverse` containers. If used within `column` or `column-reverse` containers, these properties may have undesirable effects on the width of the `Grid` elements.
+Embora o componente `Grid` tenha uma propriedade `direction` que permite valores de `row`, `row-reverse`, `column`, e `column-reverse`, existem algumas funcionalidades que não são suportadas dentro de containers `column` e `column-reverse`. As propriedades que definem o número de grades que o componente usará para um determinado ponto de interrupção (`xs`, `sm`, `md`, `lg`, and `xl`) são focadas no controle da largura e **não** tem efeitos similares na altura dentro de containers `column` e `column-reverse`. If used within `column` or `column-reverse` containers, these properties may have undesirable effects on the width of the `Grid` elements.
 
 ## CSS Grid Layout
 
