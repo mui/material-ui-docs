@@ -77,7 +77,7 @@ https://www.w3.org/TR/css-flexbox-1/#box-model
 
 ### Margem negativa
 
-Há uma limitação com a margem negativa que usamos para implementar o espaçamento entre itens. A horizontal scroll will appear if a negative margin goes beyond the `<body>`. There are 3 available workarounds: 1. Not using the spacing feature and implementing it in user space `spacing={0}` (default). 2. Applying padding to the parent with at least half the spacing value applied to the child:
+Há uma limitação com a margem negativa que usamos para implementar o espaçamento entre itens. Uma barra de rolagem horizontal irá aparecer se uma margem negativa vai além do `<body>`. Existem 3 soluções alternativas disponíveis: 1. Não usar o recurso de espaçamento e implementá-lo no espaço do usuário `spacing={0}` (Padrão). 2. Applying padding to the parent with at least half the spacing value applied to the child:
 
 ```jsx
   <body>
