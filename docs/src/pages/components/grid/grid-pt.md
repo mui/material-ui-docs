@@ -39,9 +39,9 @@ As larguras de coluna se aplicam-se a todos os pontos de quebra (breakpoints) (i
 
 {{"demo": "pages/components/grid/CenteredGrid.js"}}
 
-### Grid com pontos de interrupção
+### Grade com pontos de interrupção (breakpoints)
 
-Algumas colunas têm várias larguras definidas, fazendo com que o layout seja alterado no ponto de interrupção definido.
+Algumas colunas têm várias larguras definidas, fazendo com que o leiaute seja alterado no ponto de interrupção definido.
 
 {{"demo": "pages/components/grid/FullWidthGrid.js"}}
 
@@ -51,19 +51,19 @@ Abaixo está uma demonstração interativa que permite explorar os resultados vi
 
 {{"demo": "pages/components/grid/InteractiveGrid.js", "hideHeader": true}}
 
-## Layout automático
+## Leiaute Automático
 
-The Auto-layout makes the *items* equitably share the available space. That also means you can set the width of one *item* and the others will automatically resize around it.
+O leiaute automático faz com que os *itens* compartilhem de forma equivalente o espaço disponível. Isso também significa que você pode definir a largura de um *item* e os outros serão redimensionados automaticamente em torno dele.
 
 {{"demo": "pages/components/grid/AutoGrid.js"}}
 
-## Grid Complexa
+## Grade Complexa
 
-The following demo doesn't follow the Material Design specification, but illustrates how the grid can be used to build complex layouts.
+A demonstração a seguir não segue a especificação do Material Design, mas ilustra como a grade pode ser usada para criar leiautes complexos.
 
 {{"demo": "pages/components/grid/ComplexGrid.js"}}
 
-## Nested Grid
+## Grade Aninhada
 
 The `container` and `item` properties are two independent booleans. They can be combined.
 
