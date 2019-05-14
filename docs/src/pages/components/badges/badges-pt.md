@@ -1,15 +1,15 @@
 ---
-title: Componente React Badge
+title: Componente React para Emblemas
 components: Badge
 ---
 
-# Badges (Emblemas)
+# Emblemas
 
-<p class="description">Emblema gera um pequeno emblema para o canto superior direito do seu filho(s).</p>
+<p class="description"><code>Badge</code> gera um pequeno emblema no canto superior direito de seu(s) filho(s).</p>
 
 ## Emblemas Simples
 
-Exemplos de emblemas contendo texto, usando cores primárias e secundárias. O crachá é aplicado aos seus filhos.
+Exemplos de emblemas contendo texto, usando cores primárias e secundárias. O emblema é aplicado em seus filhos.
 
 {{"demo": "pages/components/badges/SimpleBadge.js"}}
 
@@ -19,7 +19,7 @@ Você pode usar a propriedade `max` para limitar o valor do conteúdo do selo.
 
 {{"demo": "pages/components/badges/BadgeMax.js"}}
 
-## Ponto Emblema
+## Emblema com Ponto
 
 A propriedade `ponto` altera um distintivo para um pequeno ponto. Isso pode ser usado como uma notificação de que algo mudou sem dar uma conta.
 
