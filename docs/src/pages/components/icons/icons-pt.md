@@ -33,11 +33,11 @@ Você pode usar [material.io/tools/icons](https://material.io/tools/icons/?style
 - [`delete`](https://material.io/tools/icons/?icon=delete&style=baseline) é exposto como `@material-ui/icons/Delete`
 - [`delete forever`](https://material.io/tools/icons/?icon=delete_forever&style=baseline) é exposto como `@material-ui/icons/DeleteForever`
 
-Para *"themed"* ícones, acrescente o nome do tema ao nome do ícone. Por exemplo, com o
+Para ícones baseados em tema (*"themed"*), acrescente o nome do tema ao nome do ícone. Por exemplo, com o
 
-- The Outlined [`delete`](https://material.io/tools/icons/?icon=delete&style=outline) ícone é exposto como `@material-ui/icons/DeleteOutlined`
-- The Rounded [`delete`](https://material.io/tools/icons/?icon=delete&style=rounded) ícone é exposto como `@material-ui/icons/DeleteRounded`
-- The Two Tone [`delete`](https://material.io/tools/icons/?icon=delete&style=twotone) ícone é exposto como `@material-ui/icons/DeleteTwoTone`
+- O ícone [`delete`](https://material.io/tools/icons/?icon=delete&style=outline) delineado é exposto como `@material-ui/icons/DeleteOutlined`
+- O ícone [`delete`](https://material.io/tools/icons/?icon=delete&style=rounded) arredondado é exposto como `@material-ui/icons/DeleteRounded`
+- O ícone Com Dois Tons [`delete`](https://material.io/tools/icons/?icon=delete&style=twotone) ícone é exposto como `@material-ui/icons/DeleteTwoTone`
 - The Sharp [`delete`](https://material.io/tools/icons/?icon=delete&style=sharp) ícone é exposto como `@material-ui/icons/DeleteSharp`
 
 Há algumas exceções:
