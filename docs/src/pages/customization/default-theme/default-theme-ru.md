@@ -14,8 +14,8 @@
 
 ## Отличие @material-ui/core/styles от @material-ui/styles
 
-Стили в Material-UI работают на основе npm пакета [@material-ui/styles](/styles/basics/). Это стили для React-приложения. Они [изолированы](https://bundlephobia.com/result?p=@material-ui/styles) от стандартной Material-UI темы. To remove the need for injecting a theme in the React's context **systematically**, we are wrapping the style modules (`makeStyles`, `withStyles` and `styled`) with the default Material-UI theme:
+Стили в Material-UI работают на основе npm пакета [@material-ui/styles](/styles/basics/). Это стили для React-приложения. Они [изолированы](https://bundlephobia.com/result?p=@material-ui/styles) от стандартной Material-UI темы. Чтобы избавится он необходимости **систематически** внедрять тему в контекст, мы прячем модули стилей (`makeStyles`, `withStyles` and `styled`) внутри стандартной темы Material-UI:
 
-- `@material-ui/core/styles/makeStyles` wraps `@material-ui/styles/makeStyles`.
-- `@material-ui/core/styles/withStyles` wraps `@material-ui/styles/withStyles`.
-- `@material-ui/core/styles/styled` wraps `@material-ui/styles/styled`.
+- `@material-ui/core/styles/makeStyles` содержит `@material-ui/styles/makeStyles`.
+- `@material-ui/core/styles/withStyles` содержит `@material-ui/styles/withStyles`.
+- `@material-ui/core/styles/styled` содержит `@material-ui/styles/styled`.
