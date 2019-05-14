@@ -1,5 +1,5 @@
 ---
-title: Componente React Autocomplete
+title: Componente React para Auto Completar
 components: TextField, Paper, MenuItem, Popper
 ---
 
@@ -7,7 +7,7 @@ components: TextField, Paper, MenuItem, Popper
 
 <p class="description">O autocomplete é uma entrada de texto normal aprimorada por um painel de opções sugeridas.</p>
 
-O Material-UI não fornece nenhuma API de alto nível para resolver esse problema. Encorajamos as pessoas a confiar nas soluções que a comunidade React construiu.
+O Material-UI não fornece nenhuma API de alto nível para resolver esse problema. Recomendamos utilizarem soluções que a comunidade React construiu.
 
 ## downshift
 
