@@ -52,7 +52,7 @@ Os fórmulas de diálogo permite que os usuários preencham os campos de um fór
 
 ## Customized dialogs
 
-Here is example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/components/).
+Aqui está um exemplo de customização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
 
 The dialog has a close button added to aide usability.
 
