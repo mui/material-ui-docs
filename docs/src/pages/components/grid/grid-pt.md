@@ -111,10 +111,10 @@ Para que o item permaneça dentro do container, você precisa definir `min-width
 
 ### direction: column | column-reverse
 
-Embora o componente `Grid` tenha uma propriedade `direction` que permite valores de `row`, `row-reverse`, `column`, e `column-reverse`, existem algumas funcionalidades que não são suportadas dentro de containers `column` e `column-reverse`. As propriedades que definem o número de grades que o componente usará para um determinado ponto de interrupção (`xs`, `sm`, `md`, `lg`, and `xl`) são focadas no controle da largura e **não** tem efeitos similares na altura dentro de containers `column` e `column-reverse`. If used within `column` or `column-reverse` containers, these properties may have undesirable effects on the width of the `Grid` elements.
+Embora o componente `Grid` tenha uma propriedade `direction` que permite valores de `row`, `row-reverse`, `column`, e `column-reverse`, existem algumas funcionalidades que não são suportadas dentro de containers `column` e `column-reverse`. As propriedades que definem o número de grades que o componente usará para um determinado ponto de interrupção (`xs`, `sm`, `md`, `lg`, and `xl`) são focadas no controle da largura e **não** tem efeitos similares na altura dentro de containers `column` e `column-reverse`. Se usados dentro de containers `column` e `column-reverse`, estas propriedades apresentam efeitos indesejáveis na largura dos elementos do `Grid`.
 
-## CSS Grid Layout
+## Leiaute de Grade CSS
 
-Material-UI doesn't provide any CSS Grid functionality itself, but as seen below you can easily use CSS Grid to layout your pages.
+Material-UI não fornece nenhuma funcionalidade CSS de Grade, mas como pode ser visto abaixo, você pode facilmente usar leiaute de Grade CSS em suas páginas.
 
 {{"demo": "pages/components/grid/CSSGrid.js"}}
