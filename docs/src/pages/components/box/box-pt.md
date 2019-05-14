@@ -1,21 +1,21 @@
 ---
-title: Box React component
+title: Componente React Box
 ---
 
 # Box
 
-<p class="description">O componente Box serve como um componente wrapper (invólucro) para a maioria das necessidades do utilitário CSS.</p>
+<p class="description">O componente Box serve como um componente wrapper (invólucro) para a maioria das necessidades de uso com CSS.</p>
 
 O componente Box empacota [ todas as funções de estilo](/system/basics/#all-inclusive) que estão expostas em `@material-ui/system</ code>.
 Ele é criado usando a função <a href="/styles/api/#styled-style-function-component"> <code>styled()`</a> de `@material-ui/styles `.
 
 ## Exemplo
 
-[The palette](/system/palette/) style function.
+[A paleta](/system/palette/) de funções de estilo.
 
-## Overriding Material-UI components
+## Sobrescrevendo componentes do Material-UI
 
-The Box component wraps your component. It creates a new DOM element, a `<div>` by default that can be changed with the `component` property. Let's say you want to use a `<span>` instead:
+O componente Box envolve seu componente. It creates a new DOM element, a `<div>` by default that can be changed with the `component` property. Let's say you want to use a `<span>` instead:
 
 ```jsx
 <Box component="span" m={1}>
