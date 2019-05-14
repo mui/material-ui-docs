@@ -45,9 +45,9 @@ Uma barra de pesquisa na lateral.
 
 ## Rolagem
 
-### Ocultar a barra de aplicativos
+### Barra de Aplicativos oculta
 
-Uma barra de aplicativos que se esconder ao rolar.
+Uma barra de aplicativos que se esconde ao rolar.
 
 {{"demo": "pages/components/app-bar/HideAppBar.js", "iframe": "true", "maxWidth": 500}}
 
