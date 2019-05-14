@@ -10,9 +10,9 @@
 
 > Совет: вы можете поиграть с объектом темы документации в ** вашей консоли **. Мы выставляем переменную документации `тема` на всех страницах документации. Обратите внимание, что эта документация использует настраиваемую тему.
 
-If you want to learn more about how the theme is assembled, take a look at [`material-ui/style/createMuiTheme.js`](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/styles/createMuiTheme.js), and the related imports which `createMuiTheme` uses.
+Подробности о структуре темы изнутри можно посмотреть здесь [`material-ui/style/createMuiTheme.js`](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/styles/createMuiTheme.js), а также изучив зависимости, используемые `createMuiTheme`.
 
-## @material-ui/core/styles vs @material-ui/styles
+## Отличие @material-ui/core/styles от @material-ui/styles
 
 Material-UI styles are powered by the [@material-ui/styles](/styles/basics/) npm package. It's a styling solution for React. This solution is [isolated](https://bundlephobia.com/result?p=@material-ui/styles), it has has no knowledge of the default Material-UI theme. To remove the need for injecting a theme in the React's context **systematically**, we are wrapping the style modules (`makeStyles`, `withStyles` and `styled`) with the default Material-UI theme:
 
