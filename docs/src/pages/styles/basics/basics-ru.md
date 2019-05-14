@@ -169,9 +169,9 @@ function MyComponent() {
 }
 ```
 
-This button component has a color property that changes its color:
+Этот компонент кнопка имеет свойство цвет, которое меняет свой цвет:
 
-### Adapting the hook API
+### Адаптация хука API
 
 {{"demo": "pages/styles/basics/AdaptingHook.js", "react":"next"}}
 
