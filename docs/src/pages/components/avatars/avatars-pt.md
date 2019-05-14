@@ -15,12 +15,12 @@ Avatares com imagem podem ser criados utilizando as propriedades padrões `img`,
 
 ## Avatares com letras
 
-Avatares com letras podem ser criados passando sua string como valor do componente (`children`).
+Avatares com letras podem ser criados passando sua string como `children`.
 
 {{"demo": "pages/components/avatars/LetterAvatars.js"}}
 
 ## Avatares com ícones
 
-Os avatares de ícones são criados passando com o ícone `children`.
+Avatares com ícones são criados passando o ícone como `children`.
 
 {{"demo": "pages/components/avatars/IconAvatars.js"}}
