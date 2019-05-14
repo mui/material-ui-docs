@@ -1,13 +1,13 @@
 ---
-title: Componente React Table
+title: Componente React Tabelas
 components: Table, TableBody, TableCell, TableFooter, TableHead, TablePagination, TableRow, TableSortLabel
 ---
 
-# Tables (Tabelas)
+# Tabelas
 
-<p class="description">Tabelas de dados exibem conjuntos de dados. Eles podem ser totalmente personalizados.</p>
+<p class="description">Tabelas de dados exibem um conjuntos de dados. Eles podem ser totalmente personalizados.</p>
 
-[Tabelas de Dados](https://material.io/design/components/data-tables.html) apresentar as informações de uma forma fácil de verificar, de modo que os usuários podem procurar por padrões e insights. Elas podem ser incorporadas no conteúdo principal, como Cards.
+[Tabelas de dados](https://material.io/design/components/data-tables.html) apresentam informações de uma forma fácil de verificar, de modo que os usuários podem procurar por padrões e percepções. Elas podem ser incorporadas no conteúdo principal, assim como Cartões.
 
 Tabelas de dados podem incluir:
 
@@ -23,7 +23,7 @@ Uma tabela de dados contém uma linha de cabeçalho no topo que lista os nomes d
 
 Caixas de seleção devem acompanhar cada linha se o usuário precisar selecionar ou manipular dados.
 
-Para acessibilidade, a primeira coluna é ajustada para ser um `<th>` elemento, com um `âmbito` de `"linha"`. Isso permite que os leitores de tela identifiquem o valor de uma célula por seu nome de linha e coluna.
+Para acessibilidade, a primeira coluna é ajustada para ser um elemento `<th>`, com um `escopo` de `"linha"`. Isso permite que os leitores de tela identifiquem o valor de uma célula por seu nome de linha e coluna.
 
 ## Tabela Simples
 
@@ -31,23 +31,23 @@ Um exemplo simples sem frescuras.
 
 {{"demo": "pages/components/tables/SimpleTable.js"}}
 
-## Dense Table
+## Tabela Densa
 
-A simple example of a dense table with no frills.
+Um exemplo simples de uma tabela densa sem frescuras.
 
 {{"demo": "pages/components/tables/DenseTable.js"}}
 
 ## Classificando & Selecionando
 
-Este exemplo demonstra o uso de linhas clicáveis e `Checkbox` para a seleção, com uma barra de ferramentas personalizada ``. Ele usa o componente `TableSortLabel` para ajudar no estilo dos cabeçalhos das colunas.
+Este exemplo demonstra o uso de linhas clicáveis e `Checkbox` para a seleção, com uma barra de ferramentas personalizada `Toolbar`. Ele usa o componente `TableSortLabel` para ajudar no estilo dos cabeçalhos das colunas.
 
 A tabela recebeu uma largura fixa para demonstrar a rolagem horizontal. Para impedir que os controles de paginação rolem, o componente TablePagination é usado fora da tabela. (O [Exemplo 'da ação de paginação personalizada'](#custom-table-pagination-action) abaixo mostra a paginação dentro de TableFooter.)
 
 {{"demo": "pages/components/tables/EnhancedTable.js"}}
 
-## Customized tables
+## Tabelas Customizadas
 
-Aqui está um exemplo de personalização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
+Aqui está um exemplo de customização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
 
 {{"demo": "pages/components/tables/CustomizedTables.js"}}
 
