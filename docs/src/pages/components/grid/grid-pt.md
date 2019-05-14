@@ -1,5 +1,5 @@
 ---
-title: Componente React para Grade
+title: Componente React Grade
 components: Grid
 ---
 
