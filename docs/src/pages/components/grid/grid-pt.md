@@ -17,7 +17,7 @@ O sistema de grade é implementado com o componente `Grid`:
 - Existem dois tipos de leiautes: *containers* e *items*.
 - Larguras de itens são definidas em porcentagens, então elas são sempre fluidas e dimensionadas em relação ao elemento pai.
 - Itens têm preenchimento para criar o espaçamento entre itens individuais.
-- Existem cinco breakpoints na grade: xs, sm, md, lg e xl.
+- Existem cinco pontos de quebra (breakpoints) na grade: xs, sm, md, lg e xl.
 
 Se você é **novo ou não está familiarizado com o flexbox**, nós recomendamos você a ler este [guia do Flexbox CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
@@ -29,13 +29,13 @@ Esta função de transformação de saída pode ser customizada [usando o tema](
 
 {{"demo": "pages/components/grid/SpacingGrid.js"}}
 
-## Fluid grids
+## Grades Fluídas
 
-Fluid grids use columns that scale and resize content. A fluid grid’s layout can use breakpoints to determine if the layout needs to change dramatically.
+Grades fluídas usam colunas que escalam e redimensionam o conteúdo. O leiaute de uma grade fluída pode usar pontos de quebra (breakpoints) para determinar se o leiaute precisa mudar drasticamente.
 
-### Grid básica
+### Grade básica
 
-The column widths apply at all breakpoints (i.e. `xs` and up).
+As larguras de coluna se aplicam-se a todos os pontos de quebra (breakpoints) (i.e. `xs` e acima).
 
 {{"demo": "pages/components/grid/CenteredGrid.js"}}
 
