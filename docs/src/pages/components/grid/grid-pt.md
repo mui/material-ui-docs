@@ -17,15 +17,15 @@ O sistema de grade é implementado com o componente `Grid`:
 - Existem dois tipos de leiautes: *containers* e *items*.
 - Larguras de itens são definidas em porcentagens, então elas são sempre fluidas e dimensionadas em relação ao elemento pai.
 - Itens têm preenchimento para criar o espaçamento entre itens individuais.
-- Existem cinco pontos de interrupção no companente grid: xs, sm, md, lg e xl.
+- Existem cinco breakpoints na grade: xs, sm, md, lg e xl.
 
-Se você é **novo ou não está familiarizado com o flexbox**, nós encorajamos você a ler este [guia do Flexbox CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
+Se você é **novo ou não está familiarizado com o flexbox**, nós recomendamos você a ler este [guia do Flexbox CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
 ## Espaçamento
 
-A grade responsiva se concentra em larguras de espaçamento consistentes, em vez de largura de coluna. As margens e colunas do Material Design seguem uma grade de linha de base quadrada de **8px**. A propriedade de espaçamento é um inteiro entre 0 e 10, inclusive. Por padrão, o espaçamento entre dois itens de grade segue uma função linear: `output (espaçamento) = espaçamento * 8px`, por exemplo, `espaçamento ={2}` cria um intervalo de 16px.
+A grade responsiva se concentra em larguras de espaçamento consistentes, em vez de largura de coluna. As margens e colunas do Material Design seguem uma grade de linha de base quadrada de **8px**. A propriedade de espaçamento é um inteiro entre 0 e 10. Por padrão, o espaçamento entre dois itens de grade segue uma função linear: `output (espaçamento) = espaçamento * 8px`, por exemplo, `espaçamento ={2}` criando um intervalo de 16px.
 
-Esta função de transformação de saída pode ser personalizada [usando o tema](/customization/spacing/).
+Esta função de transformação de saída pode ser customizada [usando o tema](/customization/spacing/).
 
 {{"demo": "pages/components/grid/SpacingGrid.js"}}
 
