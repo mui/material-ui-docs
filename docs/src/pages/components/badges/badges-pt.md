@@ -21,20 +21,20 @@ Você pode usar a propriedade `max` para limitar o valor do conteúdo do selo.
 
 ## Emblema com Ponto
 
-A propriedade `ponto` altera um distintivo para um pequeno ponto. Isso pode ser usado como uma notificação de que algo mudou sem dar uma conta.
+A propriedade `dot` altera o emblema para um pequeno ponto. Isso pode ser usado como uma notificação de que algo mudou sem dar muita enfase.
 
 {{"demo": "pages/components/badges/DotBadge.js"}}
 
-## Emblema visibilidade
+## Visibilidade do Emblema
 
 A visibilidade dos emblemas pode ser controlada usando a propriedade `invisible`.
 
-O emblema auto-esconde com badgeContent é zero. Você pode substituir isso com a propriedade `showZero`.
+O emblema se esconde quando a propriedade `badgeContent` é zero. Caso queira que o emblema seja exibido mesmo quando `badgeContent` seja zero, utilize a propriedade `showZero`.
 
 {{"demo": "pages/components/badges/BadgeVisibility.js"}}
 
-## Customized badges
+## Emblemas Customizados
 
-Aqui está um exemplo de personalização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
+Aqui está um exemplo de customização do componente. Você pode aprender mais sobre isso na [página de documentação de sobrescritas](/customization/components/).
 
 {{"demo": "pages/components/badges/CustomizedBadges.js"}}
