@@ -50,20 +50,20 @@ Há três exceções para esta regra:
 
 #### Importações
 
-- If your environment doesn't support tree-shaking, the **recommended** way to import the icons is the following:
+- Se o seu ambiente de desenvolvimento não suporta a otimização de código (tree-shaking), a forma **recomendada** para importar ícones é a seguinte:
 
 ```jsx
 import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
 import ThreeDRotation from '@material-ui/icons/ThreeDRotation';
 ```
 
-- If your environment support tree-shaking you can also import the icons this way:
+- Se o seu ambiente de desenvolvimento suporta a otimização de código (tree-shaking) você pode importar ícones desta maneira:
 
 ```jsx
 import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 ```
 
-Note: Importing named exports in this way will result in the code for *every icon* being included in your project, so is not recommended unless you configure [tree-shaking](https://webpack.js.org/guides/tree-shaking/). It may also impact Hot Module Reload performance.
+Note: Importando exportações nomeadas dessa forma, irá resultar que o código de *cada ícone* seja incluído em seu projeto, portanto não é recomendado, a menos que você configure a otimização de código ([tree-shaking](https://webpack.js.org/guides/tree-shaking/)). It may also impact Hot Module Reload performance.
 
 ### More SVG icons
 
