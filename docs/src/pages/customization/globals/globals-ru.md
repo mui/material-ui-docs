@@ -29,13 +29,13 @@ const theme = createMuiTheme({
 ```js
 const theme = createMuiTheme({
   props: {
-    // Name of the component ⚛️
+    // Название компоненты
     MuiButtonBase: {
-      // The default props to change
-      disableRipple: true, // No more ripple, on the whole application 💣!
+      // Пример одного из стандартных свойств props
+      disableRipple: true, // Скажи НЕТ эффекту расходящихся волн 💣!
     },
   },
 });
 ```
 
-{{"demo": "pages/customization/globals/DefaultProps.js"}}
+{{"Демо": "pages/customization/globals/DefaultProps.js"}}
