@@ -23,7 +23,7 @@ O ícone resultante pode ser usado como está, ou incluído como filho para outr
 É interessante ter as ferramentas necessárias para implementar ícones customizados, mas com quais predefinições? Nós fornecemos um pacote npm separado, [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons), que inclui os mais de 1.000 ícones oficiais [Material icons](https://material.io/tools/icons/?style=baseline) convertidos para componentes `SvgIcon`.
 
 <a href="https://material.io/tools/icons/?icon=3d_rotation&style=baseline">
-  <img src="/static/images/icons/icons.png" alt="Official material icons" style="width: 566px" />
+  <img src="/static/images/icons/icons.png" alt="Material oficial de ícones" style="width: 566px" />
 </a>
 
 #### Uso
@@ -115,9 +115,9 @@ Se seus ícone são puramente decorativos, você já terminou! Adicionamos o atr
 
 ### Ícones SVG Semânticos
 
-Se o seu ícone tiver significado semântico, tudo o que você precisa fazer é configurar a propriedade `titleAccess="significado"`. We add the `role="img"` attribute and the `<title>` element so that your icons are properly accessible.
+Se o seu ícone tiver significado semântico, tudo o que você precisa fazer é configurar a propriedade `titleAccess="significado"`. Adicionamos o atributo `role="img"` e o elemento `<title>` para que seus ícones sejam acessados corretamente.
 
-In the case of focusable interactive elements, like when used with an icon button, you can use the `aria-label` property:
+No caso de elementos interativos focalizáveis, como quando usado com um botão de ícone, você pode usar a propriedade `aria-label`:
 
 ```jsx
 import IconButton from '@material-ui/core/IconButton';
@@ -132,13 +132,13 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 </IconButton>
 ```
 
-### Decorative Font Icons
+### Ícones de Fonte Decorativos
 
 Se seus ícone são puramente decorativos, você já terminou! Adicionamos o atributo `aria-hidden=true` para que seus ícones sejam devidamente acessíveis (invisíveis).
 
-### Semantic Font Icons
+### Ícones de Fonte Semânticos
 
-Se os seus ícones tiverem significado semântico, você precisará fornecer uma alternativa em texto visível apenas para tecnologias assistivas.
+Se os seus ícones tiverem significado semântico, você precisará fornecer uma alternativa em texto visível apenas para tecnologias visuais.
 
 ```jsx
 import Icon from '@material-ui/core/Icon';
