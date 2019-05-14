@@ -37,18 +37,18 @@ Para ícones baseados em tema (*"themed"*), acrescente o nome do tema ao nome do
 
 - O ícone [`delete`](https://material.io/tools/icons/?icon=delete&style=outline) delineado é exposto como `@material-ui/icons/DeleteOutlined`
 - O ícone [`delete`](https://material.io/tools/icons/?icon=delete&style=rounded) arredondado é exposto como `@material-ui/icons/DeleteRounded`
-- O ícone Com Dois Tons [`delete`](https://material.io/tools/icons/?icon=delete&style=twotone) ícone é exposto como `@material-ui/icons/DeleteTwoTone`
-- The Sharp [`delete`](https://material.io/tools/icons/?icon=delete&style=sharp) ícone é exposto como `@material-ui/icons/DeleteSharp`
+- O ícone [`delete`](https://material.io/tools/icons/?icon=delete&style=twotone) com tom de cor duplo é exposto como `@material-ui/icons/DeleteTwoTone`
+- O ícone [`delete`](https://material.io/tools/icons/?icon=delete&style=sharp) afiado é exposto como `@material-ui/icons/DeleteSharp`
 
-Há algumas exceções:
+Há três exceções para esta regra:
 
-- [`3d_rotation`](https://material.io/tools/icons/?icon=3d_rotation&style=baseline) is exposed as `@material-ui/icons/ThreeDRotation`
-- [`4k`](https://material.io/tools/icons/?icon=4k&style=baseline) is exposed as `@material-ui/icons/FourK`
-- [`360`](https://material.io/tools/icons/?icon=360&style=baseline) is exposed as `@material-ui/icons/ThreeSixty`
+- [`3d_rotation`](https://material.io/tools/icons/?icon=3d_rotation&style=baseline) é exposto como `@material-ui/icons/ThreeDRotation`
+- [`4k`](https://material.io/tools/icons/?icon=4k&style=baseline) é exposto como `@material-ui/icons/FourK`
+- [`360`](https://material.io/tools/icons/?icon=360&style=baseline) é exposto como `@material-ui/icons/ThreeSixty`
 
 {{"demo": "pages/components/icons/SvgMaterialIcons.js"}}
 
-#### Imports
+#### Importações
 
 - If your environment doesn't support tree-shaking, the **recommended** way to import the icons is the following:
 
