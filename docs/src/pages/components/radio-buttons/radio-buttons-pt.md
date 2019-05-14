@@ -1,5 +1,5 @@
 ---
-title: Botões de Radio React component
+title: Componente React Botões de Opção
 components: Radio, RadioGroup, FormControl, FormLabel, FormControlLabel
 ---
 
@@ -7,23 +7,23 @@ components: Radio, RadioGroup, FormControl, FormLabel, FormControlLabel
 
 <p class="description">Botões de opções permitem o usuário selecionar uma das opções de um conjunto.</p>
 
-Use [botões de opções](https://material.io/design/components/selection-controls.html#radio-buttons) quando um usuário precisar ver todas as opções disponíveis. Se várias opções podem ser retráteis, considere usar um dropdown menu, pois ele utiliza menos espaço.
+Use [botões de opções](https://material.io/design/components/selection-controls.html#radio-buttons) quando um usuário precisar ver todas as opções disponíveis. Se várias opções podem ser suprimidas da visualização, considere usar um menu suspenso (dropdown), pois ele utiliza menos espaço.
 
-Radio buttons should have the most commonly used option selected by default.
+Os botões de opção devem ter a opção mais comumente usada selecionada por padrão.
 
-`RadioGroup` is a helpful wrapper used to group `Radio` components that provides an easier API, and proper keyboard accessibility to the group.
+`RadioGroup` é um wrapper útil usado para agrupar componentes `Radio` fornecendo uma API mais fácil, e adequá a acessibilidade pelo teclado para o grupo.
 
 {{"demo": "pages/components/radio-buttons/RadioButtonsGroup.js"}}
 
-## Standalone Radio Buttons
+## Botões de Opção Independentes
 
-`Radio` can also be used standalone, without the wrapper.
+`Radio` também pode ser usado de forma independente, sem a necessidade de um wrapper.
 
 {{"demo": "pages/components/radio-buttons/RadioButtons.js"}}
 
-## Posicionamento do Label
+## Posicionamento do Rótulo
 
-Você pode alterar o posicionamento do label:
+Você pode alterar o posicionamento do rótulo:
 
 {{"demo": "pages/components/radio-buttons/FormControlLabelPosition.js"}}
 
