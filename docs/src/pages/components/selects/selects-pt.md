@@ -23,7 +23,7 @@ Como a experiência do usuário pode ser melhorada em dispositivos móveis usand
 
 Aqui estão alguns exemplos de personalização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
 
-O primeiro passo é modelar o componente `InputBase`. Once it's styled, you can either use it directly as a text field or provide it to the select `input` property to have a select field.
+O primeiro passo é modelar o componente `InputBase`. Once it's styled, you can either use it directly as a text field or provide it to the select `input` property to have a `select` field.
 
 {{"demo": "pages/components/selects/CustomizedSelects.js"}}
 
@@ -35,7 +35,7 @@ Como na seleção única, você pode extrair o novo valor acessando `event.targe
 
 {{"demo": "pages/components/selects/MultipleSelect.js"}}
 
-## Select Aberto Controlado
+## Controlled Open Select
 
 {{"demo": "pages/components/selects/ControlledOpenSelect.js"}}
 
