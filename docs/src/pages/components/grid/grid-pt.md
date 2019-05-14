@@ -13,8 +13,8 @@ Uma [grade](https://material.io/design/layout/responsive-layout-grid.html) cria 
 
 O sistema de grade é implementado com o componente `Grid`:
 
-- Ele usa [módulo CSS’s Flexible Box](https://www.w3.org/TR/css-flexbox-1/) para alta flexibilidade.
-- Existem dois tipos de layout: *containers* e *items*.
+- Ele usa [CSS’s Flexible Box](https://www.w3.org/TR/css-flexbox-1/) para alta flexibilidade.
+- Existem dois tipos de leiautes: *containers* e *items*.
 - Larguras de itens são definidas em porcentagens, então elas são sempre fluidas e dimensionadas em relação ao elemento pai.
 - Itens têm preenchimento para criar o espaçamento entre itens individuais.
 - Existem cinco pontos de interrupção no companente grid: xs, sm, md, lg e xl.
