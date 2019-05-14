@@ -1,4 +1,4 @@
-# Globals
+# Общая настройка
 
 <p class="description">The overrides key enables you to customize the appearance of all instances of a component type, while the `props` key enables you to change the default value(s) of a component's props.</p>
 
