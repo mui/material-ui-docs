@@ -43,7 +43,7 @@ Você também pode ter notado que algumas propriedades de entrada nativas do HTM
 
 ## Inputs Costumizados
 
-Aqui estão alguns exemplos de personalização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
+Aqui estão alguns exemplos de customização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
 
 {{"demo": "pages/components/text-fields/CustomizedInputs.js"}}
 
@@ -57,9 +57,9 @@ A customização não para no CSS, você pode usar composição para criar compo
 
 {{"demo": "pages/components/text-fields/InputAdornments.js"}}
 
-### Com icon
+### Com ícone
 
-Os ícones podem ser especificados como anexados ou anexados.
+Ícones podem ser especificados previamente ou anexados ao input.
 
 {{"demo": "pages/components/text-fields/InputWithIcon.js"}}
 
@@ -71,9 +71,9 @@ Os ícones podem ser especificados como anexados ou anexados.
 
 {{"demo": "pages/components/text-fields/OutlinedInputAdornments.js"}}
 
-## Layout
+## Leiaute
 
-`TextField`,`FormControl` permite a especificação de `margin` para alterar os espaços verticais do input. Usando `none` (default) não irá aplicar margens para o `FormControl`, enquanto que `dense` e `normal` irá também alterar outros estilos para atender as especificações.
+`TextField`,`FormControl` permite a especificação de `margin` para alterar os espaços verticais do input. Usando `none` (padrão) não irá aplicar margens para o `FormControl`, enquanto que `dense` e `normal` irá também alterar outros estilos para atender as especificações.
 
 {{"demo": "pages/components/text-fields/TextFieldMargins.js"}}
 
