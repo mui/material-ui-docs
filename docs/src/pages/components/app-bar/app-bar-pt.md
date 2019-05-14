@@ -61,11 +61,11 @@ Uma barra de aplicativos que se mantém acima ao rolar.
 
 #### Argumentos
 
-1. `options` (*Object* [optional]):
+1. `options` (*Object* [opcional]):
 
 - `options.disableHysteresis` (*Boolean* [opcional]): Padrão `false`. Desabilita a histerese. Ignora a direção de rolagem ao determinar o valor `trigger`.
 - `options.target` (*Node* [opcional]): Padrão `window`.
-- `options.threshold` (*Number* [optional]): Defaults to `100`. Change the `trigger` value when the vertical scroll strictly crosses this threshold (exclusive).
+- `options.threshold` (*Number* [opcional]): Padrão `100`. Modifica o valor de `trigger` quando a barra de rolagem vertical ultrapassar este limite.
 
 #### Retornos
 
