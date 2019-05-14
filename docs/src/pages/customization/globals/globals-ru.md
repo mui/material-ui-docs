@@ -1,30 +1,30 @@
-# Общая настройка
+# Глобальная настройка
 
 <p class="description">В то время как значение ключа 'overrides' позволяет вам переопределить внешний вид всех элементов определенного типа, значение ключа 'props' позволяет изменить их отдельные свойства.</p>
 
 ## CSS
 
-When the configuration variables aren't powerful enough, you can take advantage of the `overrides` key of the `theme` to potentially change **every single style** injected by Material-UI into the DOM. Это действительно мощная штука.
+Если настроек конфигурации недостаточно, можно использовать ключ `overrides` у объекта `theme`, чтобы изменить **абсолютно любой стиль**, который Material-UI вносит в DOM. Это действительно мощная штука.
 
 ```js
 const theme = createMuiTheme({
   overrides: {
-    MuiButton: { // Name of the component ⚛️ / style sheet
-      text: { // Name of the rule
-        color: 'white', // Some CSS
+    MuiButton: { // Название компонента
+      text: { // Название правила
+        color: 'white', // Изменение стилей
       },
     },
   },
 });
 ```
 
-{{"demo": "pages/customization/globals/GlobalCss.js"}}
+{{"Демо": "pages/customization/globals/GlobalCss.js"}}
 
-The list of these customization points for each component is documented under the **Component API** section. For instance, you can have a look at the [Button](/api/button/#css). Alternatively, you can always have a look at the [implementation](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/Button/Button.js).
+Список всех возможных кастомизаций для компонент задокументирован в разделе **Component API**. Например, вы можете взглянуть на кнопку [Button](/api/button/#css). Кроме того, вы всегда можете взглянуть на [реализацию](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/Button/Button.js).
 
-## Default props
+## Настройка props
 
-You can change the default props of all the Material-UI components. We expose a `props` key in the `theme` for this use case.
+Вы можете изменить свойство props любой из компонент Material-UI. Для этого мы предоставляем ключ `props` объекта `theme`.
 
 ```js
 const theme = createMuiTheme({
