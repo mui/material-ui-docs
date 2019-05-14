@@ -63,15 +63,15 @@ import ThreeDRotation from '@material-ui/icons/ThreeDRotation';
 import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 ```
 
-Note: Importando exportações nomeadas dessa forma, irá resultar que o código de *cada ícone* seja incluído em seu projeto, portanto não é recomendado, a menos que você configure a otimização de código ([tree-shaking](https://webpack.js.org/guides/tree-shaking/)). It may also impact Hot Module Reload performance.
+Note: Importando exportações nomeadas dessa forma, irá resultar que o código de *cada ícone* seja incluído em seu projeto, portanto não é recomendado, a menos que você configure a otimização de código ([tree-shaking](https://webpack.js.org/guides/tree-shaking/)). Isso também pode afetar o desempenho do Hot Module Reload.
 
-### More SVG icons
+### Mais ícones SVG
 
-Looking for even more SVG icons? There are a lot of projects out there, but [https://materialdesignicons.com](https://materialdesignicons.com/) provides over 2,000 official and community provided icons. [mdi-material-ui](https://github.com/TeamWertarbyte/mdi-material-ui) packages these icons as Material-UI SvgIcons in much the same way as [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) does for the official icons.
+Procurando ainda mais SVG ícones? Há muitos projetos por aí, mas [https://materialdesignicons.com](https://materialdesignicons.com/) oferece mais de 2.000 ícones oficiais e fornecidos pela comunidade. O [mdi-material-ui](https://github.com/TeamWertarbyte/mdi-material-ui) empacota estes ícones como SvgIcons de Material-UI da mesma maneira que [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) faz para os ícones oficiais.
 
 ## Ícones
 
-The `Icon` component will display an icon from any icon font that supports ligatures. As a prerequisite, you must include one, such as the [Material icon font](http://google.github.io/material-design-icons/#icon-font-for-the-web) in your project, for instance, via Google Web Fonts:
+O componente `Icon` exibirá um ícone de qualquer fonte de ícone que suporte ligadura tipográfica (ligatures). As a prerequisite, you must include one, such as the [Material icon font](http://google.github.io/material-design-icons/#icon-font-for-the-web) in your project, for instance, via Google Web Fonts:
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
