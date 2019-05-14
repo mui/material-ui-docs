@@ -5,7 +5,7 @@ components: Snackbar, SnackbarContent
 
 # Snackbar（消息条）
 
-<p class="description">Snackbar（消息条）通过一条消息来提供有关应用进程的简要信息—它通常位于屏幕的底部。</p>
+<p class="description">Snackbars provide brief messages about app processes - typically at the bottom of the screen.</p>
 
 [消息条](https://material.io/design/components/snackbars.html) 将应用程序已执行或即将执行的进程通知用户。 它们会从屏幕底部短暂地出现。 它们不应中断用户体验，也不要求任何用户的操作来关闭。
 
@@ -15,7 +15,7 @@ components: Snackbar, SnackbarContent
 
 我们规定一次只能显示一个消息条。
 
-## 简单的消息条
+## Simple snackbars
 
 一个简单的消息条旨在重现谷歌 Keep 消息条的行为。
 
@@ -27,7 +27,7 @@ components: Snackbar, SnackbarContent
 
 {{"demo": "pages/components/snackbars/CustomizedSnackbars.js"}}
 
-## 定位的消息条
+## Positioned snackbars
 
 有一些情况会需要消息条的位置更灵活些。
 
