@@ -8,7 +8,7 @@
 
 {{"demo": "pages/customization/default-theme/DefaultTheme.js", "hideEditButton": true}}
 
-> Совет: вы можете поиграть с объектом темы документации в ** вашей консоли **. We expose a documentation `theme` variable on all the documentation pages. Please note that the documentation site is using a custom theme.
+> Совет: вы можете поиграть с объектом темы документации в ** вашей консоли **. Мы выставляем переменную документации `тема` на всех страницах документации. Please note that the documentation site is using a custom theme.
 
 If you want to learn more about how the theme is assembled, take a look at [`material-ui/style/createMuiTheme.js`](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/styles/createMuiTheme.js), and the related imports which `createMuiTheme` uses.
 
