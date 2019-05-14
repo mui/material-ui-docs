@@ -15,7 +15,7 @@ Ele é criado usando a função <a href="/styles/api/#styled-style-function-comp
 
 ## Sobrescrevendo componentes do Material-UI
 
-O componente Box envolve seu componente. It creates a new DOM element, a `<div>` by default that can be changed with the `component` property. Let's say you want to use a `<span>` instead:
+O componente Box envolve seu componente. Ele cria um novo elemento DOM, uma `<div>` por padrão que pode ser modificada através da propriedade `component`. Digamos que você queira usar um `<span>`:
 
 ```jsx
 <Box component="span" m={1}>
@@ -23,7 +23,7 @@ O componente Box envolve seu componente. It creates a new DOM element, a `<div>`
 </Box>
 ```
 
-This works great when the changes can be isolated to a new DOM element. For instance, you can change the margin this way.
+Isso funciona muito bem quando as alterações precisam ser isoladas em um novo elemento DOM. Por exemplo, você pode alterar a margem dessa maneira.
 
 However, sometimes you have to target the underlying DOM element. For instance, you want to change the text color of the button. The Button component defines its own color. CSS inheritance doesn't help. To workaround the problem, you have two options:
 
