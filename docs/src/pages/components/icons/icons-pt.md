@@ -6,15 +6,15 @@ components: Icon, SvgIcon
 
 <p class="description">Orientação e sugestões para usar ícones com o Material-UI.</p>
 
-Um [system icon](https://material.io/design/iconography/system-icons.html) ou UI icon, simboliza um comando, arquivo, dispositivo ou diretório. Os ícones do sistema também são usados para representar ações comuns como lixo, imprimir e salvar, e são comumente encontrados em bares app, barras de ferramentas, botões e listas. O Google forneceu um conjunto de [Material icons](https://material.io/tools/icons/?style=baseline) que seguem essas diretrizes.
+Um ícone de sistema ([system icon](https://material.io/design/iconography/system-icons.html)) ou ícone UI, simboliza um comando, arquivo, dispositivo ou diretório. Os ícones do sistema também são usados para representar ações comuns como lixeira, imprimir e salvar, e são comumente encontrados em barras de aplicativos, barras de ferramentas, botões e listas. O Google forneceu um conjunto de [Material icons](https://material.io/tools/icons/?style=baseline) que seguem essas diretrizes.
 
-O Material-UI fornece dois componentes para renderizar ícones do sistema: `SvgIcon` para renderizar SVG paths e `Icon` para renderizar ícones de fontes.
+O Material-UI fornece dois componentes para renderizar ícones do sistema: `SvgIcon` para renderizar caminhos SVG e `Icon` para renderizar ícones de fontes.
 
 ## Ícones SVG
 
-O componente `SvgIcon` usa um elemento SVG `path` como filho e o converte em um componente React que exibe o path, e permite que o ícone seja estilizado e responda a eventos do mouse. Os elementos SVG devem ser dimensionados para uma viewport de 24x24px.
+O componente `SvgIcon` usa um elemento SVG `path` como filho e o converte em um componente React que renderiza o ícone, e permite que seja estilizado e responda a eventos do mouse. Os elementos SVG devem ser dimensionados para uma visualização de 24x24px.
 
-O ícone resultante pode ser usado como está, ou incluído como filho para outros componentes de Material-UI que usam ícones. Por padrão, um ícone herdará a cor do texto atual. Opcionalmente, você pode definir a cor do ícone usando uma das propriedades da cor do tema: `primary`, `secondary`, `action`, `erro` & `disabled`.
+O ícone resultante pode ser usado como está, ou incluído como filho para outros componentes de Material-UI que usam ícones. Por padrão, um ícone herdará a cor do texto atual. Opcionalmente, você pode definir a cor do ícone usando uma das propriedades de cor do tema: `primary`, `secondary`, `action`, `erro` & `disabled`.
 
 {{"demo": "pages/components/icons/SvgIcons.js"}}
 
@@ -87,7 +87,7 @@ import Icon from '@material-ui/core/Icon';
 <Icon>star</Icon>
 ```
 
-Por padrão, um ícone herdará a cor do texto atual. Opcionalmente, você pode definir a cor do ícone usando uma das propriedades da cor do tema: `primary`, `secondary`, `action`, `erro` & `disabled`.
+Por padrão, um ícone herdará a cor do texto atual. Opcionalmente, você pode definir a cor do ícone usando uma das propriedades de cor do tema: `primary`, `secondary`, `action`, `erro` & `disabled`.
 
 ### Font Material icons
 
