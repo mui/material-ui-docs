@@ -1,18 +1,18 @@
 # Палитра
 
-<p class="description">The palette enebles you to modify the color of the components to suit your brand.</p>
+<p class="description">Палитра позволяет задавать цветовую стилистику, подходящую конкретно вам.</p>
 
-## Intentions
+## Оттенки
 
-A color intention is a mapping of a palette to a given intention within your application.
+Вариация цвета - это разбиение палитры на несколько цветовых гамм.
 
-The theme exposes the following color intentions:
+Тема предоставляет следующие вариации:
 
-- primary - used to represent primary interface elements for a user.
-- secondary - used to represent secondary interface elements for a user.
-- error - used to represent interface elements that the user should be made aware of.
+- primary - основной, используется для основных элементов интерфейса.
+- secondary - вторичный, соответственно для второстепенных элементов.
+- error - используется для тех элементов интерфейса, которые должны зацепить внимание пользователя.
 
-The default palette uses the shades prefixed with `A` (`A200`, etc.) for the secondary intention, and the un-prefixed shades for the other intentions.
+Стандартная палитра использует оттенки с префиксом `A` (`A200`, и т. д.) для вторичного оттенка, и без префикса для остальных.
 
 If you want to learn more about color, you can check out [the color section](/customization/color/).
 
