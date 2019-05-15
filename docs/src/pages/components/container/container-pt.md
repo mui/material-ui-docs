@@ -1,5 +1,5 @@
 ---
-title: Componente React Container
+title: Componente React para Container
 components: Container
 ---
 
@@ -21,7 +21,7 @@ A largura de um container fluído é limitada pelo valor da propriedade `maxWidt
 
 ## Fixo
 
-Se você preferir projetar um conjunto fixo de tamanhos em vez de tentar acomodar em uma visualização totalmente fluída, você pode definir a propriedade `fixed`. The max-width matches the min-width of the current breakpoint.
+Se você preferir projetar um conjunto fixo de tamanhos em vez de tentar acomodar em uma visualização totalmente fluída, você pode definir a propriedade `fixed`. A largura máxima corresponde à largura mínima do ponto de interrupção atual.
 
 ```jsx
 <Container fixed>
