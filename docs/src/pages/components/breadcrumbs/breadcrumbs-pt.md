@@ -1,5 +1,5 @@
 ---
-title: Componente React Breadcrumbs
+title: Componente React para Breadcrumbs
 components: Breadcrumbs, Link, Typography
 ---
 
@@ -27,7 +27,7 @@ No exemplo a seguir, nós usamos duas strings separadoras, e um ícone SVG.
 
 ## Breadcrumbs personalizado
 
-Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/components/).
+Aqui esta um exemplo de customização do componente. You can learn more about this in the [overrides documentation page](/customization/components/).
 
 {{"demo": "pages/components/breadcrumbs/CustomizedBreadcrumbs.js"}}
 
