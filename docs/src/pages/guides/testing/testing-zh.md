@@ -6,9 +6,9 @@
 
 ## 内部
 
-我们十分注重测试问题。 我们已编写并且维护了**一系列的** 测试，这样一来我们可以非常自信地迭代开发组件，例如，由 [Argos-CI](https://www.argos-ci.com/mui-org/material-ui) 提供的可视化回归测试，亲测有效。 To learn more about our internal tests, you can have a look at the [README](https://github.com/mui-org/material-ui/blob/next/test/README.md).
+我们十分注重测试问题。 我们已编写并且维护了**一系列的** 测试，这样一来我们可以非常自信地迭代开发组件，例如，由 [Argos-CI](https://www.argos-ci.com/mui-org/material-ui) 提供的可视化回归测试，亲测有效。 若您想要进一步了解内部测试，您可以查看 [README](https://github.com/mui-org/material-ui/blob/next/test/README.md)。
 
-While we have reached the 100% test coverage achievement, we don't encourage our users to do the same. [![Coverage Status](https://img.shields.io/codecov/c/github/mui-org/material-ui/next.svg)](https://codecov.io/gh/mui-org/material-ui/branch/next)
+尽管我们已达到100％的测试覆盖率，但是我们不鼓励我们的用户也这样做。 [![Coverage Status](https://img.shields.io/codecov/c/github/mui-org/material-ui/next.svg)](https://codecov.io/gh/mui-org/material-ui/branch/next)
 
 ## 用户空间
 
