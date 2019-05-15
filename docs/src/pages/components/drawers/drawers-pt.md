@@ -19,15 +19,15 @@ O Drawer pode ser cancelado clicando fora de seu conteúdo ou pressionando a tec
 
 {{"demo": "pages/components/drawers/TemporaryDrawer.js"}}
 
-## Drawer temporário swipeable
+## Drawer temporário deslizável (Swipeable)
 
-Voê pode fazer um drawer swipeable com o componente `SwipeableDrawer`.
+Voê pode fazer um drawer deslizável (swipeable) com o componente `SwipeableDrawer`.
 
-Este componente vem sobrecarregado com 2 kB de carga útil gzipped. Alguns dispositivos móveis de baixo custo podem não ser capazes de seguir os dedos a 60 FPS. Você pode usar a propriedade `disableBackdropTransition` para ajudar.
+Este componente vem sobrecarregado com 2 kB gzipped de utilidades. Alguns dispositivos móveis de baixo custo podem não ser capazes de seguir os dedos a 60 FPS. Você pode usar a propriedade `disableBackdropTransition` para ajudar.
 
 {{"demo": "pages/components/drawers/SwipeableTemporaryDrawer.js"}}
 
-Estamos usando o seguinte conjunto de propriedades nesta documentação para otimizar a usabilidade do componente: - o iOS é hospedado em dispositivos de última geração. Podemos ativar a transição do plano de fundo sem perder quadros. O desempenho será suficientemente bom. - iOS tem um recurso "deslize para voltar" que bagunça com o recurso de descoberta. Tivemos que desativá-lo.
+Estamos usando o seguinte conjunto de propriedades nesta documentação para otimizar a usabilidade do componente: - o iOS é hospedado em dispositivos de última geração. Podemos ativar a transição backdrop sem perder quadros. O desempenho será suficientemente bom. - iOS tem um recurso "deslize para voltar" que bagunça com o recurso de descoberta. Tivemos que desativá-lo.
 
 ```jsx
 const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
@@ -35,7 +35,7 @@ const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
 <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} />
 ```
 
-## Responsive drawer
+## Drawer responsivo
 
 The `Hidden` responsive helper component allows showing different types of drawer depending on the screen width. A `temporary` drawer is shown for small screens while a `permanent` drawer is shown for wider screens.
 
