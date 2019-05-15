@@ -5,16 +5,16 @@ components: Grid
 
 # Grid
 
-<p class="description">The Material Design responsive layout grid adapts to screen size and orientation, ensuring consistency across layouts.</p>
+<p class="description">Le composant responsive Grid de Material Design s'adapte à la taille et à l'orientation de l'écran, garantissant ainsi la cohérence entre les différents agencements.</p>
 
-The [grid](https://material.io/design/layout/responsive-layout-grid.html) creates visual consistency between layouts while allowing flexibility across a wide variety of designs. Material Design’s responsive UI is based on a 12-column grid layout.
+[Grid](https://material.io/design/layout/responsive-layout-grid.html) créé une cohérence visuelle entre les agencements tout en permettant une certaine flexibilité à travers une grande variété de modèles. L’UI responsive de Material Design est basée sur une grille de 12 colonnes.
 
 ## Comment ça marche
 
 Le système de grille est implémenté avec le composant `Grid`:
 
-- It uses [CSS’s Flexible Box module](https://www.w3.org/TR/css-flexbox-1/) for high flexibility.
-- There are two types of layout: *containers* and *items*.
+- Il utilise le [module Flexible Box CSS](https://www.w3.org/TR/css-flexbox-1/) pour une grande flexibilité.
+- Il y a deux types de mise en page : *conteneurs* et *éléments*.
 - Item widths are set in percentages, so they’re always fluid and sized relative to their parent element.
 - Items have padding to create the spacing between individual items.
 - There are five grid breakpoints: xs, sm, md, lg, and xl.
