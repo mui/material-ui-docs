@@ -90,8 +90,8 @@ Siga a seção [Acessibilidade Modal](/components/modal/#accessibility).
 
 Quando os diálogos se tornam muito longos para a janela de visualização (viewport) ou dispositivo do usuário, eles rolam.
 
-- `rolagem=papel` o conteúdo da caixa de diálogo rola dentro do elemento de papel.
-- `rolagem=corpo` o conteúdo da caixa de diálogo rola dentro do elemento corpo.
+- `scroll=paper` o conteúdo da caixa de diálogo rola dentro do elemento.
+- `scroll=body` o conteúdo da caixa de diálogo rola dentro do corpo da página.
 
 Experimente a demonstração abaixo para ver o que queremos dizer:
 
@@ -99,10 +99,10 @@ Experimente a demonstração abaixo para ver o que queremos dizer:
 
 ## Diálogo arrastável
 
-Você pode criar uma caixa de diálogo arrastável usando [react-draggable](https://github.com/mzabriskie/react-draggable). Para fazer isso, você pode passar o importado `Draggable` componente como o `PaperComponent` do `de Diálogo` componente. Isso fará com que toda a caixa de diálogo seja arrastável.
+Você pode criar uma caixa de diálogo arrastável usando [react-draggable](https://github.com/mzabriskie/react-draggable). Para fazer isso, você deve passar o componente importado `Draggable` como `PaperComponent` do componente `Dialog`. Isso fará com que toda a caixa de diálogo seja arrastável.
 
 {{"demo": "pages/components/dialogs/DraggableDialog.js"}}
 
 ## Performance
 
-Follow the [Modal performance section](/components/modal/#performance).
+Siga a seção [Performance Modal](/components/modal/#performance).
