@@ -63,11 +63,11 @@ Une barre d’application qui s’élève au défilement.
 
 1. `options` (*Object* [optional]):
 
-- `options.disableHysteresis` (*Boolan* [optional]): Par défaut à `false`. Disable the hysteresis. Ignore the scroll direction when determining the `trigger` value.
-- `options.target` (*Node* [optional]): Defaults to `window`.
+- `options.disableHysteresis` (*Boolan* [optional]): Valeur par défaut `false`. Disable the hysteresis. Ignore the scroll direction when determining the `trigger` value.
+- `options.target` (*Node* [optional]): Valeur par défaut `window`.
 - `options.threshold` (*Number* [optional]): Defaults to `100`. Change the `trigger` value when the vertical scroll strictly crosses this threshold (exclusive).
 
-#### Returns
+#### Valeur de retour
 
 `trigger`: Does the scroll position match the criteria?
 
