@@ -1,9 +1,9 @@
 ---
-title: Dialog React component
+title: Componente React para Diálogos
 components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Slide
 ---
 
-# Dialogs (Diálogos)
+# Diálogos
 
 <p class="description">As caixas de diálogo informa aos usuários sobre uma tarefa e podem conter informações críticas, exigir decisões ou envolver várias tarefas.</p>
 
