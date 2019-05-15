@@ -150,7 +150,7 @@ interface Props {
 }
 ```
 
-然而，这是不是很 [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) ，因为它需要你保持类名（`'root'`， `'paper'`， `'button'`在两个不同的地方，...）。 我们提供了一个类型操作符 `WithStyles` 来帮助解决这个问题，以便您可以编写
+然而，这是不是很 [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) ，因为它需要你在两个不同的地方保持类名（`'root'`， `'paper'`， `'button'`，...）。 我们提供了一个类型操作符 `WithStyles` 来帮助解决这个问题，因此您可以直接写入：
 
 ```ts
 import { WithStyles, createStyles } from '@material-ui/core';
@@ -169,7 +169,7 @@ interface Props extends WithStyles<typeof styles> {
 
 ### 装饰组件
 
-应用 `withStyles(styles)` 作为函数按预期方式工作：
+将 `withStyles(styles)` 作为函数来如期使用：
 
 ```tsx
 const DecoratedSFC = withStyles(styles)(({ text, type, color, classes }: Props) => (
@@ -192,11 +192,11 @@ const DecoratedClass = withStyles(styles)(
 );
 ```
 
-不幸的是，由于TypeScript装饰器</a>的 当前限制， `withStyles(styles)` 不能用作TypeScript中的装饰器。</p> 
+不幸的是，由于[TypeScript 装饰器现有的限制 ](https://github.com/Microsoft/TypeScript/issues/4881)， `withStyles(styles)` 不能用在 TypeScript 中作为一个装饰器。
 
 ## 自定义 `主题`
 
-When adding custom properties to the `Theme`, you may continue to use it in a strongly typed way by exploiting [TypeScript's module augmentation](https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation).
+将自定义属性添加到`主题`中时，您可以通过以强类型的方式利用 [TypeScript 的模块扩充](https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation)继续使用它 。
 
 以下示例添加了一个 `appDrawer` 属性，该属性合并到由 `material-ui`导出的属性中：
 
