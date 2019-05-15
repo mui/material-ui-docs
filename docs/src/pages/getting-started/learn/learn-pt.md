@@ -1,6 +1,6 @@
-# Learn Material-UI
+# Aprenda Material-UI
 
-<p class="description">New to Material-UI? É fácil de aprender, se você souber por onde começar! Este guia irá ajudá-lo a começar rapidamente.</p>
+<p class="description">Novo no Material-UI? É fácil de aprender, se você souber por onde começar! Este guia irá ajudá-lo a começar rapidamente.</p>
 
 People come to Material-UI from different backgrounds and with different learning styles. Quer você prefira uma abordagem mais teórica ou prática, esperamos que você ache esta seção útil. Like any unfamiliar technology, Material-UI does have a learning curve. With practice and some patience, you will soon get the hang of it.
 
