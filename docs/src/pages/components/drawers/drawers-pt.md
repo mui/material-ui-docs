@@ -55,19 +55,19 @@ Drawers de navegação persistente são aceitáveis para todos os tamanhos maior
 
 ## Mini variant drawer
 
-Nesta variação, o drawer de navegação persistente muda sua largura. Its resting state is as a mini-drawer at the same elevation as the content, clipped by the app bar. When expanded, it appears as the standard persistent navigation drawer.
+Nesta variação, o drawer de navegação persistente muda sua largura. Seu estado de recolhido é como um mini-drawer no mesmo plano de elevação do conteúdo, recortado pela barra de aplicativos. Quando expandido, ele aparece da forma padrão de um drawer de navegação persistente.
 
-The mini variant is recommended for apps sections that need quick selection access alongside content.
+A mini variação é recomendada para seções de aplicativos que necessitam ser selecionadas por um acesso rápido ao lado do conteúdo.
 
 {{"demo": "pages/components/drawers/MiniDrawer.js", "iframe": true}}
 
-## Permanent drawer
+## Drawer permanente
 
-Permanent navigation drawers are always visible and pinned to the left edge, at the same elevation as the content or background. They cannot be closed.
+Drawers de navegação permanente são sempre visíveis e fixados na borda esquerda, no mesmo plano de elevação do conteúdo ou plano de fundo. Eles não podem ser fechados.
 
-Permanent navigation drawers are the **recommended default for desktop**.
+Drawers de navegação permanente são **recomendados por padrão para aplicações desktop**.
 
-### Full-height navigation
+### Navegação em altura cheia
 
 Apps focused on information consumption that use a left-to-right hierarchy.
 
