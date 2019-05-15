@@ -251,4 +251,4 @@ const theme = createMyTheme({ appDrawer: { breakpoint: 'md' }});
 
 在 Material-UI 中，您可以用`组件`的属性来替换一个组件的根节点。 譬如，一个 `Button` 的根节点可以用一个 React Router 的`Link`来替换，而且 `Button` 的其余属性，例如 `to`，也可以运用到 `Link` 组件当中。 关于 `Button` 和 `react-router-dom` 的例子，您可以查看[这个按钮的案例](/components/buttons/#third-party-routing-library)。
 
-但是，并不是每个组件都完全支持您传入的任何组件类型。 If you encounter a component that rejects its `component` props in TypeScript please open an issue. 通过使组件道具具有通用性，一直在努力解决这个问题。
+但是，并不是每个组件都完全支持您传入的任何组件类型。 如果您在 TypeScript 中遇到一个不接受其 `component` 属性的组件，请新建一个 issue。 我们也一直在努力实现组件属性的通用化， 这样能够帮助我们解决这个问题。
