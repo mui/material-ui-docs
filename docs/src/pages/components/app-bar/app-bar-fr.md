@@ -29,7 +29,7 @@ Une barre de recherche principale.
 
 {{"demo": "pages/components/app-bar/MenuAppBar.js"}}
 
-## Barre d'applications avec champ de recherche
+## Barre d'application avec champ de recherche
 
 Une barre de recherche latérale.
 
@@ -45,25 +45,25 @@ Une barre de recherche latérale.
 
 ## Défilement
 
-### Hide App Bar
+### Barre d'application masquable
 
 Une barre d'application qui se masque au défilement.
 
 {{"demo": "pages/components/app-bar/HideAppBar.js", "iframe": "true", "maxWidth": 500}}
 
-### Elevate App Bar
+### Barre d'application élevable
 
-An App Bar that elevates on scroll.
+Une barre d’application qui s’élève au défilement.
 
 {{"demo": "pages/components/app-bar/ElevateAppBar.js", "iframe": "true", "maxWidth": 500}}
 
 ### `useScrollTrigger([options]) => trigger`
 
-#### Arguments
+#### Paramètres
 
 1. `options` (*Object* [optional]):
 
-- `options.disableHysteresis` (*Boolan* [optional]): Defaults to `false`. Disable the hysteresis. Ignore the scroll direction when determining the `trigger` value.
+- `options.disableHysteresis` (*Boolan* [optional]): Par défaut à `false`. Disable the hysteresis. Ignore the scroll direction when determining the `trigger` value.
 - `options.target` (*Node* [optional]): Defaults to `window`.
 - `options.threshold` (*Number* [optional]): Defaults to `100`. Change the `trigger` value when the vertical scroll strictly crosses this threshold (exclusive).
 
