@@ -55,7 +55,7 @@ Drawers de navegação persistente são aceitáveis para todos os tamanhos maior
 
 ## Mini variant drawer
 
-In this variation, the persistent navigation drawer changes its width. Its resting state is as a mini-drawer at the same elevation as the content, clipped by the app bar. When expanded, it appears as the standard persistent navigation drawer.
+Nesta variação, o drawer de navegação persistente muda sua largura. Its resting state is as a mini-drawer at the same elevation as the content, clipped by the app bar. When expanded, it appears as the standard persistent navigation drawer.
 
 The mini variant is recommended for apps sections that need quick selection access alongside content.
 
