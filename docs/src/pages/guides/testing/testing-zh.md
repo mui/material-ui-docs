@@ -1,12 +1,12 @@
 # 测试
 
-<p class="description">编写测试以防止回归并编写更好的代码。</p>
+<p class="description">编写测试能够预防回归问题，并能够带来更好的代码。</p>
 
-Examples in this guide use [global methods from Mocha](https://mochajs.org/api/global.html), not [Jest](https://jestjs.io/docs/en/api).
+本指南使用[来自 Mocha 的全局方法](https://mochajs.org/api/global.html)，而不是使用 [Jest](https://jestjs.io/docs/en/api)。
 
 ## 内部
 
-We take tests seriously. We have written and maintain **a wide range** of tests so we can iterate with confidence on the components, for instance, the visual regression tests provided by [Argos-CI](https://www.argos-ci.com/mui-org/material-ui) have proven to be really helpful. To learn more about our internal tests, you can have a look at the [README](https://github.com/mui-org/material-ui/blob/next/test/README.md).
+我们十分注重测试问题。 我们已编写并且维护了**一系列的** 测试，这样一来我们可以非常自信地迭代开发组件，例如，由 [Argos-CI](https://www.argos-ci.com/mui-org/material-ui) 提供的可视化回归测试，亲测有效。 To learn more about our internal tests, you can have a look at the [README](https://github.com/mui-org/material-ui/blob/next/test/README.md).
 
 While we have reached the 100% test coverage achievement, we don't encourage our users to do the same. [![Coverage Status](https://img.shields.io/codecov/c/github/mui-org/material-ui/next.svg)](https://codecov.io/gh/mui-org/material-ui/branch/next)
 
