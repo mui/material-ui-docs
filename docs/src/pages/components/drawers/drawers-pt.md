@@ -43,11 +43,11 @@ O componente responsivo `Hidden` auxilia na exibição de diferentes tipos de dr
 
 ## Drawer persistente
 
-Drawers de navegação persistente podem alternar entre aberto ou fechado. O drawer, quando exibido, fica no mesmo plano (superfície) que o conteúdo. It is closed by default and opens by selecting the menu icon, and stays open until closed by the user. The state of the drawer is remembered from action to action and session to session.
+Drawers de navegação persistente podem alternar entre aberto ou fechado. O drawer, quando exibido, fica no mesmo plano (superfície) que o conteúdo. Ele é fechado por padrão e aberto quando selecionado por um ícone de menu e permanecendo aberto até ser fechado pelo usuário. O estado do drawer é lembrado de ação para ação e de sessão para sessão.
 
-When the drawer is outside of the page grid and opens, the drawer forces other content to change size and adapt to the smaller viewport.
+Quando o drawer está fora da grade da página e se abre, o drawer força o outro conteúdo a alterar o tamanho e a adaptar-se à janela de visualização (viewport).
 
-Persistent navigation drawers are acceptable for all sizes larger than mobile. They are not recommended for apps with multiple levels of hierarchy that require using an up arrow for navigation.
+Drawers de navegação persistente são aceitáveis para todos os tamanhos maiores que os móveis (mobile). Eles não são recomendados para aplicativos com vários níveis de hierarquia que exigem o uso de uma seta para navegação.
 
 {{"demo": "pages/components/drawers/PersistentDrawerLeft.js", "iframe": true}}
 
