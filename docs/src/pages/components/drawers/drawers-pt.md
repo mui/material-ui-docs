@@ -37,13 +37,13 @@ const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
 
 ## Drawer responsivo
 
-O componente responsivo `Hidden` auxilia na exibição de diferentes tipos de drawer, dependendo da largura da tela. A `temporary` drawer is shown for small screens while a `permanent` drawer is shown for wider screens.
+O componente responsivo `Hidden` auxilia na exibição de diferentes tipos de drawer, dependendo da largura da tela. Um drawer `temporary` é exibido para telas pequenas enquando um drawer `permanent` é exibido para telas maiores.
 
 {{"demo": "pages/components/drawers/ResponsiveDrawer.js", "iframe": true}}
 
-## Persistent drawer
+## Drawer persistente
 
-Persistent navigation drawers can toggle open or closed. The drawer sits on the same surface elevation as the content. It is closed by default and opens by selecting the menu icon, and stays open until closed by the user. The state of the drawer is remembered from action to action and session to session.
+Drawers de navegação persistente podem alternar entre aberto ou fechado. The drawer sits on the same surface elevation as the content. It is closed by default and opens by selecting the menu icon, and stays open until closed by the user. The state of the drawer is remembered from action to action and session to session.
 
 When the drawer is outside of the page grid and opens, the drawer forces other content to change size and adapt to the smaller viewport.
 
