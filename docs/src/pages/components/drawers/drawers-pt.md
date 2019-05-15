@@ -1,21 +1,21 @@
 ---
-title: Drawer React component
+title: Componente React para Drawer
 components: Drawer, SwipeableDrawer
 ---
 
 # Drawer
 
-<p class="description">A navegação por drawers dão acesso para lugares dentro de sua aplicação. Elas são fragmentos de sua aplicação que contém conteúdo suplementar que são colocados na borda da esquerda ou da direita da tela.</p>
+<p class="description">A navegação por drawers fornece acessos para destinos dentro de sua aplicação. As folhas laterais são locais contendo o conteúdo suplementar que é ancorado do lado esquerdo ou direito da tela.</p>
 
-[Navegação por drawers](https://material.io/design/components/navigation-drawer.html) dá acesso a destinos e funcionalidades do aplicativo, como por exemplo, a mudança de usuário. Elas podem estar permanentemente na tela ou controlados por um ícone de menu de navegação.
+[Navegação por drawers](https://material.io/design/components/navigation-drawer.html) dá acesso a destinos e funcionalidades do aplicativo, como por exemplo, a mudança de usuário. Eles podem estar permanentemente na tela ou controlados por um ícone de menu de navegação.
 
-[Side sheets](https://material.io/design/components/sheets-side.html) are supplementary surfaces primarily used on tablet and desktop.
+[Folhas laterais](https://material.io/design/components/sheets-side.html) são superfícies complementares usadas principalmente em tablets e computadores.
 
 ## Drawer temporário
 
-Temporary navigation drawers can toggle open or closed. Closed by default, the drawer opens temporarily above all other content until a section is selected.
+Drawers de navegação temporária podem alternar entre aberto ou fechado. Por padrão fechado, o drawer abre temporariamente acima de todo o conteúdo até que uma seção seja selecionada.
 
-The Drawer can be cancelled by clicking the overlay or pressing the Esc key. It closes when an item is selected, handled by controlling the `open` prop.
+O Drawer pode ser cancelado clicando fora de seu conteúdo ou pressionando a tecla Esc. Fecha quando um item é selecionado, ou manipulado pela propriedade `open`.
 
 {{"demo": "pages/components/drawers/TemporaryDrawer.js"}}
 
