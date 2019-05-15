@@ -64,13 +64,13 @@ A caixa de diálogo tem um botão de fechar para facilitar a utilização.
 
 ## Tamanhos opcionais
 
-Você pode definir uma largura máxima usando `maxWidth` enumerável combinado com o booleano `fullWidth`. Quando a propriedade `fullWidth` for verdadeira, a caixa de diálogo será adaptada com base no valor definido em `maxWidth`.
+Você pode definir uma largura máxima usando um enumerador na propriedade `maxWidth` combinando com a propriedade booleana `fullWidth`. Quando a propriedade `fullWidth` for verdadeira, a caixa de diálogo será adaptada com base no valor definido em `maxWidth`.
 
 {{"demo": "pages/components/dialogs/MaxWidthDialog.js"}}
 
 ## Tela cheia responsiva
 
-You may make a dialog responsively full screen using `withMobileDialog`. By default, `withMobileDialog()(Dialog)` responsively full screens *at or below* the `sm` [screen size](/customization/breakpoints/). Você pode escolher seu próprio ponto de interrupção, por exemplo, `xs` passando o `argumento` do ponto de interrupção: `withMobileDialog ({breakpoint: 'xs'}) (Dialog)`.
+Você pode fazer uma caixa de diálogo responsiva em tela cheia usando a propriedade `withMobileDialog`. By default, `withMobileDialog()(Dialog)` responsively full screens *at or below* the `sm` [screen size](/customization/breakpoints/). Você pode escolher seu próprio ponto de interrupção, por exemplo, `xs` passando o `argumento` do ponto de interrupção: `withMobileDialog ({breakpoint: 'xs'}) (Dialog)`.
 
 {{"demo": "pages/components/dialogs/ResponsiveDialog.js"}}
 
