@@ -42,7 +42,7 @@ Material-UI 的设计与 [Roboto](https://fonts.google.com/specimen/Roboto) 字�
 
 ## SVG 图标
 
-In order to use prebuilt SVG Material icons, such as those found in the [icons demos](/components/icons/) you must first install the [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) package:
+为了使用预先构建的 SVG Material 图标，例如这里的[演示图标](/components/icons/)，你必须先安装 [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons)包：
 
 ```sh
 // with npm
