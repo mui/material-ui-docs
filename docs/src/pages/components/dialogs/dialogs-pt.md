@@ -11,7 +11,7 @@ Uma caixa de [Diálogo](https://material.io/design/components/dialogs.html) é u
 
 As caixas de diálogo são intencionalmente interruptivas, então elas devem ser usados com moderação.
 
-## Caixas de diálogo simples
+## Diálogo simples
 
 A caixa de diálogo simples pode providenciar detalhes adicionais ou ações sobre um item de lista. Por exemplo, ele podem mostrar um avatar, ícone, texto esclarecedor ou um ação paralela (como adicionar uma conta).
 
@@ -70,7 +70,7 @@ Você pode definir uma largura máxima usando um enumerador na propriedade `maxW
 
 ## Tela cheia responsiva
 
-Você pode fazer uma caixa de diálogo responsiva em tela cheia usando a propriedade `withMobileDialog`. By default, `withMobileDialog()(Dialog)` responsively full screens *at or below* the `sm` [screen size](/customization/breakpoints/). Você pode escolher seu próprio ponto de interrupção, por exemplo, `xs` passando o `argumento` do ponto de interrupção: `withMobileDialog ({breakpoint: 'xs'}) (Dialog)`.
+Você pode fazer uma caixa de diálogo responsiva em tela cheia usando a propriedade `withMobileDialog`. Por padrão, `withMobileDialog()(Dialog)` responsivamente enche a tela *em ou abaixo* do ponto de interrupção (breakpoint) de [tamanhos de tela](/customization/breakpoints/) `sm`. Você pode escolher seu próprio ponto de interrupção, por exemplo, `xs` passando o `argumento` do ponto de interrupção: `withMobileDialog ({breakpoint: 'xs'}) (Dialog)`.
 
 {{"demo": "pages/components/dialogs/ResponsiveDialog.js"}}
 
