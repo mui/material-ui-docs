@@ -23,7 +23,7 @@ O Drawer pode ser cancelado clicando fora de seu conteúdo ou pressionando a tec
 
 Voê pode fazer um drawer swipeable com o componente `SwipeableDrawer`.
 
-Este componente vem sobrecarregado com 2 kB de carga útil gzipped. Alguns dispositivos móveis de baixo custo podem não ser capazes de seguir os dedos a 60 FPS. Voê pode usar a propriedade `disableBackdropTransition` para ajudar.
+Este componente vem sobrecarregado com 2 kB de carga útil gzipped. Alguns dispositivos móveis de baixo custo podem não ser capazes de seguir os dedos a 60 FPS. Você pode usar a propriedade `disableBackdropTransition` para ajudar.
 
 {{"demo": "pages/components/drawers/SwipeableTemporaryDrawer.js"}}
 
