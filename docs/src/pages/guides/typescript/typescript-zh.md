@@ -196,9 +196,9 @@ const DecoratedClass = withStyles(styles)(
 
 ## 自定义 `主题`
 
-将自定义属性添加到`主题`中时，您可以通过以强类型的方式利用 [TypeScript 的模块扩充](https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation)继续使用它 。
+将自定义属性添加到`主题`中时，您可以通过以强类型的方式实现 [TypeScript 的模块扩充](https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation)而继续使用它 。
 
-以下示例添加了一个 `appDrawer` 属性，该属性合并到由 `material-ui`导出的属性中：
+以下示例添加了一个 `appDrawer` 属性，并将其合并到由 `material-ui` 提供的属性中：
 
 ```ts
 import { Theme } from '@material-ui/core/styles/createMuiTheme';
@@ -211,7 +211,7 @@ declare module '@material-ui/core/styles/createMuiTheme' {
       breakpoint: Breakpoint
     }
   }
-  // allow configuration using `createMuiTheme`
+  // 使用 `createMuiTheme` 来配置
   interface ThemeOptions {
     appDrawer?: {
       width?: React.CSSProperties['width']
@@ -221,7 +221,7 @@ declare module '@material-ui/core/styles/createMuiTheme' {
 }
 ```
 
-以及带有其他默认选项的自定义主题工厂：
+以及一个带有其他默认选项的自定义主题仓库：
 
 **./styles/createMyTheme**:
 
@@ -239,7 +239,7 @@ export default function createMyTheme(options: ThemeOptions) {
 }
 ```
 
-这可以像：
+也可以这样使用：
 
 ```ts
 import createMyTheme from './styles/createMyTheme';
@@ -247,8 +247,8 @@ import createMyTheme from './styles/createMyTheme';
 const theme = createMyTheme({ appDrawer: { breakpoint: 'md' }});
 ```
 
-## `组件的用法`属性
+## `组件`属性的用法
 
-Material-UI允许您通过`组件替换组件的根节点`属性。 For example, a `Button`'s root node can be replaced with a React Router `Link`, and any additional props that are passed to `Button`, such as `to`, will be spread to the `Link` component. For a code example concerning `Button` and `react-router-dom` checkout [this Button demo](/components/buttons/#third-party-routing-library)
+在 Material-UI 中，您可以用`组件`的属性来替换一个组件的根节点。 譬如，一个 `Button` 的根节点可以用一个 React Router 的`Link`来替换，而且 `Button` 的其余属性，例如 `to`，也可以运用到 `Link` 组件当中。 关于 `Button` 和 `react-router-dom` 的例子，您可以查看[这个按钮的案例](/components/buttons/#third-party-routing-library)。
 
-Not every component fully supports any component type you pass in. If you encounter a component that rejects its `component` props in TypeScript please open an issue. 通过使组件道具具有通用性，一直在努力解决这个问题。
+但是，并不是每个组件都完全支持您传入的任何组件类型。 If you encounter a component that rejects its `component` props in TypeScript please open an issue. 通过使组件道具具有通用性，一直在努力解决这个问题。
