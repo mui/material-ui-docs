@@ -1,13 +1,13 @@
 ---
-title: Divider React component
+title: Componente React para Divisores
 components: Divider
 ---
 
-# Dividers (Divisores)
+# Divisores
 
-<p class="description">Um divisor é uma linha fina que agrupa conteúdo em listas e layouts.</p>
+<p class="description">Um divisor é uma linha fina que agrupa conteúdo em listas e leiautes.</p>
 
-[Dividers (Divisores)](https://material.io/design/components/dividers.html) separam grupos de conteúdos.
+[Divisores](https://material.io/design/components/dividers.html) separam grupos de conteúdos.
 
 ## Divisores de lista
 
