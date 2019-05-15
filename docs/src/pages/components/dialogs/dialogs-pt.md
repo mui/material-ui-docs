@@ -46,15 +46,15 @@ Você também pode trocar a transição, o próximo exemplo utiliza `Slide`.
 
 ## Formulário de Diálogo
 
-Os fórmulas de diálogo permite que os usuários preencham os campos de um fórmula em uma diálogo. Por exemplo, se seu site solicita aos inscritos preencham endereço de e-mail, eles poderão preencher o campo de e-mail e tocar em encaminhar.
+Os formulários de diálogo permitem que usuários preencham campos dentro de uma caixa de diálogo. Por exemplo, se seu site solicita aos inscritos para preencham endereço de e-mail, eles poderão preencher o campo de e-mail e tocar em "Enviar".
 
 {{"demo": "pages/components/dialogs/FormDialog.js"}}
 
-## Customized dialogs
+## Diálogos customizados
 
-Aqui está um exemplo de customização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
+Aqui está um exemplo de customização do componente. Você pode aprender mais sobre isso na [página de documentação de sobrescrita](/customization/components/).
 
-The dialog has a close button added to aide usability.
+A caixa de diálogo tem um botão de fechar para facilitar a utilização.
 
 {{"demo": "pages/components/dialogs/CustomizedDialogs.js"}}
 
