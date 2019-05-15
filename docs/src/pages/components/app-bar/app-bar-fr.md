@@ -43,7 +43,7 @@ Une barre de recherche latérale.
 
 {{"demo": "pages/components/app-bar/BottomAppBar.js", "iframe": true, "maxWidth": 500}}
 
-## Scrolling
+## Défilement
 
 ### Hide App Bar
 
