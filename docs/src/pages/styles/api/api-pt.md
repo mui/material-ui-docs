@@ -251,19 +251,19 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
   <table>
     <tr>
       <th align="left">
-        Name
+        Nome
       </th>
       
       <th align="left">
-        Type
+        Tipo
       </th>
       
       <th align="left">
-        Default
+        Padrão
       </th>
       
       <th align="left">
-        Description
+        Descrição
       </th>
     </tr>
     
