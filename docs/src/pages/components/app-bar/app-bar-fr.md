@@ -15,7 +15,7 @@ Il peut se transformer en une barre d’action contextuelle ou en tant que barre
 
 {{"demo": "pages/components/app-bar/ButtonAppBar.js"}}
 
-## Simple barre d'Application
+## Barre d'application simple
 
 {{"demo": "pages/components/app-bar/SimpleAppBar.js"}}
 
@@ -47,7 +47,7 @@ Une barre de recherche latérale.
 
 ### Hide App Bar
 
-An App Bar that hides on scroll.
+Une barre d'application qui se masque au défilement.
 
 {{"demo": "pages/components/app-bar/HideAppBar.js", "iframe": "true", "maxWidth": 500}}
 
