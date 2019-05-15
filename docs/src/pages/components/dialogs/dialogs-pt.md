@@ -7,13 +7,13 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 
 <p class="description">As caixas de diálogo informa aos usuários sobre uma tarefa e podem conter informações críticas, exigir decisões ou envolver várias tarefas.</p>
 
-Uma caixa de [Diálogo](https://material.io/design/components/dialogs.html) é um tipo de janela [modal](/components/modal/) que aparece na frente do conteúdo do aplicativo para fornecer informações críticas ou solicitar uma decisão. A caixa de diálogo desabilita as funcionalidades do aplicativo enquanto aparece e permanece em tela até confirmado, negado ou a ação requerida seja passada.
+Uma caixa de [Diálogo](https://material.io/design/components/dialogs.html) é um tipo de janela [modal](/components/modal/) que aparece na frente do conteúdo do aplicativo para fornecer informações críticas ou solicitar uma decisão. As caixas de diálogo desativam toda a funcionalidade do aplicativo quando elas são exibidas e permanecem na tela até que sejam confirmadas, rejeitadas ou que uma ação necessária tenha sido executada.
 
-As caixas de diálogo são intencionalmente interruptivas, então eles devem ser usados com moderação.
+As caixas de diálogo são intencionalmente interruptivas, então elas devem ser usados com moderação.
 
 ## Caixas de diálogo simples
 
-A caixa de diálogo simples pode providenciar detalhes adicionais ou ações sobre um item de lista. Por exemplo, ele podem mostrar um avatar, ícone, texto esclarecedor ou um ação paralela (Como adicionar uma conta.).
+A caixa de diálogo simples pode providenciar detalhes adicionais ou ações sobre um item de lista. Por exemplo, ele podem mostrar um avatar, ícone, texto esclarecedor ou um ação paralela (como adicionar uma conta).
 
 Mecanismo de Toque:
 
@@ -22,20 +22,20 @@ Mecanismo de Toque:
 
 {{"demo": "pages/components/dialogs/SimpleDialog.js"}}
 
-## Alerts (Alertas)
+## Alertas
 
-Alertas são interrupções urgentes, requerendo confirmação que informou ao usuário a situação.
+Alertas são interrupções urgentes, requerendo confirmação que o usuário esta ciente da situação.
 
-Maioria dos alertas não precisam de títulos. Eles resumem uma decisão em uma sentença ou duas por:
+Muitos dos alertas não precisam de títulos. Eles resumem uma decisão em uma sentença ou duas, bem como:
 
 - Fazendo uma pergunta (Exemplo: "Apagar esta conversa?")
 - Fazendo uma declaração relacionada aos botões de ação
 
-Use a barra de título somente para situações de alto risco, como perda de conexão potencial. Os usuários devem ser capaz de entender as escolhas baseando-se apenas no título e texto do botão.
+Use a barra de título somente para situações de alto risco, como perda de conexão potencial. Os usuários devem ser capazes de entender as escolhas baseando-se apenas no título e texto do botão.
 
 Se um título é necessário:
 
-- Use uma pergunta ou declaração clara com uma explicação na área de conteúdo, como um "Apagar dados do USB?".
+- Use uma pergunta ou declaração clara com uma explicação na área de conteúdo, como "Apagar dados do USB?".
 - Evite desculpas, ambiguidade ou perguntas, algo como "Atenção!" ou "Você tem certeza?"
 
 {{"demo": "pages/components/dialogs/AlertDialog.js"}}
