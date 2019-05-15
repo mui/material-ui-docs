@@ -25,11 +25,11 @@ O componente Box envolve seu componente. Ele cria um novo elemento DOM, uma `<di
 
 Isso funciona muito bem quando as alterações precisam ser isoladas em um novo elemento DOM. Por exemplo, a você pode alterar as margens da mesma maneira.
 
-However, sometimes you have to target the underlying DOM element. For instance, you want to change the text color of the button. The Button component defines its own color. CSS inheritance doesn't help. To workaround the problem, you have two options:
+No entanto, às vezes, você precisa modificar o elemento DOM subjacente. Por exemplo, você deseja alterar a cor do texto do botão. O componente `Button` define sua própria cor. A herança por CSS não nos ajuda nesse caso. Para contornar o problema, você tem duas opções:
 
-1. Use [`React.cloneElement()`](https://reactjs.org/docs/react-api.html#cloneelement)
+1. Usar [`React.cloneElement()`](https://reactjs.org/docs/react-api.html#cloneelement)
 
-The Box component has a `clone` property to enable the usage of the clone element method of React.
+O componente Box tem uma propriedade `clone` para permitir o uso do método de clonar elemento do React.
 
 ```jsx
 <Box color="text.primary" clone>
@@ -37,9 +37,9 @@ The Box component has a `clone` property to enable the usage of the clone elemen
 </Box>
 ```
 
-1. Use render props
+1. Use propriedades de renderização
 
-The Box children accepts a render props function. You can pull out the `className`.
+Os elementos filhos de Box aceitam uma função de renderização de propriedades. You can pull out the `className`.
 
 ```jsx
 <Box color="text.primary">
