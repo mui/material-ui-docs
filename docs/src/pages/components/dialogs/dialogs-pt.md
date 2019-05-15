@@ -88,7 +88,7 @@ Siga a seção [Acessibilidade Modal](/components/modal/#accessibility).
 
 ## Rolagem de conteúdo longo
 
-Quando os diálogos se tornam muito longos para a porta de visualização ou dispositivo do usuário, eles rolam.
+Quando os diálogos se tornam muito longos para a janela de visualização (viewport) ou dispositivo do usuário, eles rolam.
 
 - `rolagem=papel` o conteúdo da caixa de diálogo rola dentro do elemento de papel.
 - `rolagem=corpo` o conteúdo da caixa de diálogo rola dentro do elemento corpo.
