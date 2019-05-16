@@ -33,15 +33,15 @@ Por padrão, a implementação `js` é usada, responsivamente escondendo conteú
 
 Se você estiver usando a renderização do lado do servidor, poderá definir `implementation = "css"` se não quer que o navegador reprocesse seu conteúdo na tela.
 
-## Breakpoint up
+## Ponto de quebra acima
 
-Using any breakpoint `up` property, the given *children* will be hidden *at or above* the breakpoint.
+Usando qualquer propriedade de ponto de quebra com `up`, o componente *children* será ocultado *em ou acima* do ponto de quebra.
 
 {{"demo": "pages/components/hidden/BreakpointUp.js"}}
 
-## Breakpoint down
+## Ponto de quebra abaixo
 
-Using any breakpoint `down` property, the given *children* will be hidden *at or below* the breakpoint.
+Usando qualquer propriedade de ponto de quebra com `down`, o componente *children* será ocultado *em ou abaixo* do ponto de quebra.
 
 {{"demo": "pages/components/hidden/BreakpointDown.js"}}
 
