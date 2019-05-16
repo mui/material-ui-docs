@@ -8,7 +8,7 @@ Explora la documentación del objeto del tema:
 
 {{"demo": "pages/customization/default-theme/DefaultTheme.js", "hideEditButton": true}}
 
-> Sugerencia: puedes jugar con la documentación del objeto del tema en **tu consola**. We expose a documentation `theme` variable on all the documentation pages. Please note that the documentation site is using a custom theme.
+> Sugerencia: puedes jugar con la documentación del objeto del tema en **tu consola**. Se expone una variable `theme` en todas las páginas de documentación. Please note that the documentation site is using a custom theme.
 
 If you want to learn more about how the theme is assembled, take a look at [`material-ui/style/createMuiTheme.js`](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/styles/createMuiTheme.js), and the related imports which `createMuiTheme` uses.
 
