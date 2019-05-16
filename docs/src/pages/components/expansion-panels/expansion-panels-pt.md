@@ -1,5 +1,5 @@
 ---
-title: Expansion Panel React component
+title: Componente React para Painéis de Expansão
 components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, ExpansionPanelSummary
 ---
 
