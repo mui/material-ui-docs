@@ -1,12 +1,12 @@
 # Cor
 
-<p class="description">Convey meaning through color. Out of the box you get access to all colors in the Material Design spec.</p>
+<p class="description">Transmitir significado através da cor. De forma criativa, você obtém acesso a todas as cores da especificação do Material Design.</p>
 
-The Material Design [color system](https://material.io/design/color/) can be used to create a color theme that reflects your brand or style.
+O [sistema de cor](https://material.io/design/color/) do Material Design pode ser usado para criar tema de cores que refletem sua marca ou estilo.
 
-## Color system
+## Sistema de cor
 
-### Important Terms
+### Termos importantes
 
 #### "Paleta de Cores"
 
