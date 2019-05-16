@@ -5,19 +5,19 @@ components: GridList, GridListTile, GridListTileBar, ListSubheader, IconButton
 
 # Lista de grade
 
-<p class="description">As listas de grade exibem uma coleção de imagens em uma grade organizada.</p>
+<p class="description">As listas de grade exibem uma coleção de imagens em uma grade de forma organizada.</p>
 
-[Grid lists](https://material.io/design/components/image-lists.html) represent a collection of items in a repeated pattern. They help improve the visual comprehension of the content they hold.
+[Listas de Grade](https://material.io/design/components/image-lists.html) representam uma coleção de itens em um padrão repetido. Elas ajudam a melhorar a compreensão visual do conteúdo que elas contêm.
 
-## Lista de grade apenas de imagem
+## Lista de grade com imagens
 
-A simple example of a scrollable image `GridList`.
+Um exemplo simples de uma `GridList` com imagens.
 
 {{"demo": "pages/components/grid-list/ImageGridList.js", "hideEditButton": true}}
 
 ## Lista de grade com barras de título
 
-Este exemplo demonstra o uso do `GridListTileBar` para adicionar uma sobreposição a cada `GridListTile`. The overlay can accommodate a `title`, `subtitle` and secondary action - in this example an `IconButton`.
+Este exemplo demonstra o uso do `GridListTileBar` para adicionar uma sobreposição a cada `GridListTile`. A sobreposição pode acomodar um `title`, `subtitle` e ação secundária - neste exemplo utilizamos um `IconButton`.
 
 {{"demo": "pages/components/grid-list/TitlebarGridList.js", "hideEditButton": true}}
 
