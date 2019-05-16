@@ -7,7 +7,7 @@ components: Menu, MenuItem, MenuList, ClickAwayListener, Popover, Popper
 
 <p class="description">Os menus exibem uma lista de opções em superfícies temporárias.</p>
 
-Um [Menu](https://material.io/design/components/menus.html) exibe uma lista de opções em uma superfície temporária. Elas aparecem quando os usuários interagem com um botão, action, ou outro controle.
+Um [Menu](https://material.io/design/components/menus.html) exibe uma lista de opções em uma superfície temporária. Elas aparecem quando os usuários interagem com um botão, ou outro controle.
 
 ## Menu simples
 
