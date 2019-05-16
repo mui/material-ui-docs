@@ -10,17 +10,17 @@ O [sistema de cor](https://material.io/design/color/) do Material Design pode se
 
 #### "Paleta de Cores"
 
-A palette is a collection of colors, i.e. hues and their shades. Material-UI provides all colors from the Material Design guidelines. [This color palette](#color-palette) has been designed with colors that work harmoniously with each other.
+Uma paleta é uma coleção de cores, ou seja, matizes e seus tons. Material-UI fornece todas as cores das diretrizes do Material Design. [Esta paleta de cores](#color-palette) foi projetada com cores que funcionam harmoniosamente entre si.
 
-#### "Hue" & "Shade"
+#### "Matiz" & "Tonalidade"
 
-A single color within the palette is made up of a hue such as "red", and shade, such as "500". "red 50" is the lightest shade of red (*pink!*), while "red 900" is the darkest. In addition, most hues come with "accent" shades, prefixed with an `A`.
+Uma única cor dentro da paleta é composta de uma matiz como "red" e tonalidade, como "500". "red 50" é o tom mais claro de vermelho (*rosa!*), enquanto "red 900" é o mais escuro. Além disso, a maioria dos matizes vem com tons de "destaque" (acentuação), prefixados com um `A`.
 
 ### Exemplos
 
-The Material Design color palette comprises primary and accent colors that can be used for illustration or to develop your brand colors. They’ve been designed to work harmoniously with each other.
+A paleta de cores do Material Design inclui cores primárias e de destaque que podem ser usadas para ilustração ou para desenvolver as cores da sua marca. Elas foram projetados para trabalhar harmoniosamente umas com as outras.
 
-For instance, you can refer to complementary primary and accent colors (for example 'red 500' & 'purple A200'), like so:
+Por exemplo, você pode se referir a cores complementares primárias e de destaque (por exemplo, 'red 500' & 'purple A200'), da seguinte forma:
 
 ```js
 import purple from '@material-ui/core/colors/purple';
@@ -31,7 +31,7 @@ const accent = purple['A200']; // #E040FB
 const accent = purple.A200; // #E040FB (método alternativo)
 ```
 
-### Color palette
+### Paleta de cores
 
 Given a *HUE* (red, pink, etc.) and a *SHADE* (500, 600, etc.) you can import the color like this:
 
