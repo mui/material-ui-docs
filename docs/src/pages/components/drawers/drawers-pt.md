@@ -69,14 +69,14 @@ Drawers de navegação permanente são **recomendados por padrão para aplicaç�
 
 ### Navegação em altura cheia
 
-Apps focused on information consumption that use a left-to-right hierarchy.
+Aplicativos focados no consumo de informações que usam uma hierarquia da esquerda para a direita.
 
 {{"demo": "pages/components/drawers/PermanentDrawerLeft.js", "iframe": true}}
 
 {{"demo": "pages/components/drawers/PermanentDrawerRight.js", "iframe": true}}
 
-### Clipped under the app bar
+### Cortado sob a barra de aplicativos
 
-Apps focused on productivity that require balance across the screen.
+Aplicativos focados em produtividade que exigem consistência na tela.
 
 {{"demo": "pages/components/drawers/ClippedDrawer.js", "iframe": true}}
