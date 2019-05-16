@@ -11,7 +11,7 @@ Todos os elementos são visíveis a menos que **estejam explicitamente ocultos**
 
 ## Como funciona
 
-Hidden works with a range of breakpoints e.g. `xsUp` or `mdDown`, or one or more breakpoints e.g. `only='sm'` or `only={['md', 'xl']}`. Ranges and individual breakpoints can be used simultaneously to achieve very customized behavior. The ranges are inclusive of the specified breakpoints.
+Hidden trabalha com um intervalo de pontos de quebra (breakpoints), por exemplo, `xsUp` ou `mdDown`, ou com um ou mais pontos de quebra, por exemplo, `only='sm'` ou `only={['md', 'xl']}`. Intervalos e pontos de quebra individuais podem ser usados simultaneamente para obter um comportamento muito mais customizado. Os intervalos são inclusivos dos pontos de quebra especificados.
 
 ```js
 innerWidth  |xs      sm       md       lg       xl
@@ -23,15 +23,15 @@ mdDown      |                     hide | show
 
 ```
 
-## Implementations
+## Implementações
 
 ### js
 
-By default, the `js` implementation is used, responsively hiding content based on using the [`withWidth()`](/customization/breakpoints/#withwidth) higher-order component that watches screen size. This has the benefit of not rendering any content at all unless the breakpoint is met.
+Por padrão, a implementação `js` é usada, responsivamente escondendo conteúdo baseado no uso de [`withWidth()`](/customization/breakpoints/#withwidth), componente de ordem mais elevada (higher-order) que observa o tamanho da tela. Isso tem o benefício de não renderizar nenhum conteúdo, a menos que o ponto de quebra seja atingido.
 
 ### css
 
-If you are using server-side rendering, you can set `implementation="css"` if you don't want the browser to re-flow your content on the screen.
+Se você estiver usando a renderização do lado do servidor, poderá definir `implementation = "css"` se não quer que o navegador reprocesse seu conteúdo na tela.
 
 ## Breakpoint up
 
