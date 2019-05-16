@@ -33,7 +33,7 @@ const accent = purple.A200; // #E040FB (método alternativo)
 
 ### Paleta de cores
 
-Given a *HUE* (red, pink, etc.) and a *SHADE* (500, 600, etc.) you can import the color like this:
+Dado que *HUE* seja (red, pink, etc.) e *SHADE* (500, 600, etc.) você pode importar a cor assim:
 
 ```jsx
 import HUE from '@material-ui/core/colors/HUE';
@@ -43,13 +43,13 @@ const color = HUE[SHADE];
 
 {{"demo": "pages/customization/color/Color.js", "hideHeader": true}}
 
-## Color tool
+## Ferramenta de cor
 
-To test a [material.io/design/color](https://material.io/design/color/) color scheme with the Material-UI documentation, simply select colors using the palette and sliders below. Alternatively, you can enter hex values in the Primary and Secondary text fields.
+Para testar um esquema de cores do [material.io/design/color](https://material.io/design/color/) com a documentação do Material-UI, simplesmente selecione as cores usando a paleta e os controles deslizantes abaixo. Como alternativa, você pode inserir valores hexadecimais nos campos de texto Primário e Secundário.
 
 {{"demo": "pages/customization/color/ColorTool.js", "hideHeader": true}}
 
-The output shown in the color sample can be pasted directly into a [`createMuiTheme()`](/customization/themes/#createmuitheme-options-theme) function (to be used with [`MuiThemeProvider`](/customization/themes/#theme-provider)):
+A saída exibida na amostra de cores pode ser colada diretamente em uma função [`createMuiTheme()`](/customization/themes/#createmuitheme-options-theme) (para ser usada com [`MuiThemeProvider`](/customization/themes/#theme-provider)):
 
 ```jsx
 import { createMuiTheme } from '@material-ui/core/styles';
