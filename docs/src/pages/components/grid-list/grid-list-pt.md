@@ -29,6 +29,6 @@ Este exemplo demonstra uma lista de grade com imagens, em linha unica e rolável
 
 ## Lista de grade avançada
 
-This example demonstrates "featured" tiles, using the `rows` and `cols` props to adjust the size of the tile, and the `padding` prop to adjust the spacing. The tiles have a customized titlebar, positioned at the top and with a custom gradient `titleBackground`. The secondary action `IconButton` is positioned on the left.
+Este exemplo demonstra blocos "em destaque", usando as propriedades `rows` e `cols` para ajustar o tamanho do bloco, e a propriedade `padding` para ajustar o espaçamento. Os blocos tem uma barra de título customizada, posicionada no topo e com um gradiente personalizado `titleBackground`. A ação secundária `IconButton` está posicionada à esquerda.
 
 {{"demo": "pages/components/grid-list/AdvancedGridList.js", "hideEditButton": true}}
