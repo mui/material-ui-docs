@@ -1,6 +1,6 @@
 # Глобальная настройка
 
-<p class="description">В то время как значение ключа 'overrides' позволяет вам переопределить внешний вид всех элементов определенного типа, значение ключа 'props' позволяет изменить их отдельные свойства.</p>
+<p class="description">The overrides key enables you to customize the appearance of all instances of a component type, while the props key enables you to change the default value(s) of a component's props.</p>
 
 ## CSS
 
