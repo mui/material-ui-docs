@@ -5,7 +5,7 @@ components: Button, Fab, IconButton, ButtonBase, Zoom
 
 # Buttons (Boutons)
 
-<p class="description">Les boutons permettent aux utilisateurs de prendre des mesures et de faire des choix en un seul clic.</p>
+<p class="description">Les boutons permettent aux utilisateurs d'effectuer une action et de faire des choix en un seul clic.</p>
 
 [Buttons](https://material.io/design/components/buttons.html) communiquent les actions que les utilisateurs peuvent effectuer. Ils sont généralement placés dans votre interface utilisateur, dans des endroits tels que:
 
@@ -82,7 +82,7 @@ Les icônes sont également appropriés pour les boutons à bascule qui permette
 
 {{"demo": "pages/components/buttons/IconButtons.js"}}
 
-## Customized buttons
+## Boutons personnalisés
 
 Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/components/).
 
