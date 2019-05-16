@@ -23,7 +23,7 @@ Este exemplo demonstra o uso do `GridListTileBar` para adicionar uma sobreposiç
 
 ## Lista de grade de linha única
 
-This example demonstrates a horizontal scrollable single-line grid list of images. Horizontally scrolling grid lists are discouraged because the scrolling interferes with typical reading patterns, affecting comprehension. One notable exception is a horizontally-scrolling, single-line grid list of images, such as a gallery.
+Este exemplo demonstra uma lista de grade com imagens, em linha unica e rolável horizontalmente. As listas de grade de rolagem horizontal não são recomendadas porque a rolagem interfere nos padrões de leitura típicos, afetando a compreensão. Uma exceção notável para rolagem horizontal, seria uma lista de grade com imagens em linha única, como uma galeria.
 
 {{"demo": "pages/components/grid-list/SingleLineGridList.js", "hideEditButton": true}}
 
