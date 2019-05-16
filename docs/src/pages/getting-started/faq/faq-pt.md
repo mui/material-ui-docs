@@ -8,9 +8,9 @@ Se você não encontrou o que procurava, você pode perguntar para a comunidade 
 
 Este é provavelmente o problema n° 1 que acontece devido a conflitos de nome de classe quando seu código está em um pacote de produção. Para que o Material-UI funcione, os valores do `className` de todos os componentes de uma página, devem ser gerados por uma única instância do [gerador de nome de classes](/styles/advanced/#class-names).
 
-Para corrigir este problema, todos os componentes da página precisam ser inicializados, de modo que haja somente ** um gerador de nome de classe ** entre eles.
+Para corrigir este problema, todos os componentes da página precisam ser inicializados, de modo que haja somente **um gerador de nome de classe** entre eles.
 
-You could end up accidentally using two class name generators in a variety of scenarios:
+Você pode acabar usando acidentalmente dois geradores de nome de classe em vários cenários:
 
 - You accidentally **bundle** two versions of Material-UI. You might have a dependency not correctly setting Material-UI as a peer dependency.
 - You are using `StylesProvider` for a **subset** of your React Tree.
