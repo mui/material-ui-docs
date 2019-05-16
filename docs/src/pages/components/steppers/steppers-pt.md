@@ -7,7 +7,7 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 
 <p class="description">Steppers transmitem progresso através de etapas numeradas. Ele fornece um fluxo de trabalho semelhante a um assistente.</p>
 
-[Steppers](https://material.io/archive/guidelines/components/steppers.html) exibe o progresso através de uma sequência de etapas lógicas e numeradas. They may also be used for navigation. Steppers may display a transient feedback message after a step is saved.
+[Steppers](https://material.io/archive/guidelines/components/steppers.html) exibe o progresso através de uma sequência de etapas lógicas e numeradas. Eles também podem ser usados para navegação. Steppers podem exibir uma mensagem de feedback transiente depois que uma etapa é salva.
 
 **Types of Steps**
 
@@ -29,21 +29,21 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 
 The `Stepper` can be controlled by passing the current step index (zero-based) as the `activeStep` property. `Stepper` orientation is set using the `orientation` property.
 
-This example also shows the use of an optional step by placing the `optional` property on the second `Step` component. Note that it's up to you to manage when an optional step is skipped. Once you've determined this for a particular step you must set `completed={false}` to signify that even though the active step index has gone beyond the optional step, it's not actually complete.
+Este exemplo também mostra o uso de uma etapa opcional, colocando a propriedade `optional` no segundo componente de `Step`. Note that it's up to you to manage when an optional step is skipped. Once you've determined this for a particular step you must set `completed={false}` to signify that even though the active step index has gone beyond the optional step, it's not actually complete.
 
 {{"demo": "pages/components/steppers/HorizontalLinearStepper.js"}}
 
-## Horizontal Non-linear
+## Horizontal não linear
 
 Non-linear steppers allow users to enter a multi-step flow at any point.
 
 This example is similar to the regular horizontal stepper, except steps are no longer automatically set to `disabled={true}` based on the `activeStep` property.
 
-We've used the `StepButton` here to demonstrate clickable step labels as well as setting the `completed` flag however because steps can be accessed in a non-linear fashion it's up to your own implementation to determine when all steps are completed (or even if they need to be completed).
+Nós usamos a `StepButton` aqui para demonstrar etiquetas passo clicáveis, bem como definir a `copleted` bandeira no entanto, porque passos podem ser acessados de forma não-linear é até sua própria implementação para determinar quando todas as etapas forem concluídas (ou mesmo se eles precisam ser completados).
 
 {{"demo": "pages/components/steppers/HorizontalNonLinearStepper.js"}}
 
-## Horizontal Linear - Alternative Label
+## Horizontal Linear - Rótulo Alternativo
 
 Labels can be placed below the step icon by setting the `alternativeLabel` property on the `Stepper` component.
 
