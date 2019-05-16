@@ -5,9 +5,9 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 
 # Passo a Passo
 
-<p class="description">Steppers convey progress through numbered steps. It provides a wizard-like workflow.</p>
+<p class="description">Steppers transmitem progresso através de etapas numeradas. Ele fornece um fluxo de trabalho semelhante a um assistente.</p>
 
-[Steppers](https://material.io/archive/guidelines/components/steppers.html) display progress through a sequence of logical and numbered steps. They may also be used for navigation. Steppers may display a transient feedback message after a step is saved.
+[Steppers](https://material.io/archive/guidelines/components/steppers.html) exibe o progresso através de uma sequência de etapas lógicas e numeradas. They may also be used for navigation. Steppers may display a transient feedback message after a step is saved.
 
 **Types of Steps**
 
