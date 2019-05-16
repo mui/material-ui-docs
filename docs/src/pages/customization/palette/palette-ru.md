@@ -1,6 +1,6 @@
 # Палитра
 
-<p class="description">Палитра позволяет задавать цветовую стилистику, подходящую конкретно вам.</p>
+<p class="description">The palette enables you to modify the color of the components to suit your brand.</p>
 
 ## Оттенки
 
