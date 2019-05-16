@@ -12,11 +12,11 @@
 
 ## 用户空间
 
-What about writing tests in userspace? Material-UI样式基础架构使用构建在 [enzyme](https://github.com/airbnb/enzyme) 之上的一些辅助函数来使过程更容易，我们正在暴露。 You can take advantage of them if you so choose.
+在用户空间编写测试会如何呢？ Material-UI 的样式基础架构使用构建在 [enzyme](https://github.com/airbnb/enzyme) 的一些辅助函数之上来，这样一来整个流程会更简便，而这正是我们正在开源的。 若你愿意，你可以对它们加之利用。
 
-### 浅呈现
+### Shallow rendering
 
-Shallow rendering is useful to constrain your testing to a component as a unit. This also ensures that your tests aren't indirectly asserting behavior of child components. Shallow rendering was created to test components in isolation. This means without leaking child implementation details such as the context.
+当把测试的组件当做一个小的单元时，Shallow rendering 起到了很好的约束作用。 This also ensures that your tests aren't indirectly asserting behavior of child components. Shallow rendering was created to test components in isolation. This means without leaking child implementation details such as the context.
 
 `createShallow()` 函数可用于此情况。 除了包装酶API，它提供 `dive`untilSelector`直到选择` 选项。
 
