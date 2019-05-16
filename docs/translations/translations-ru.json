@@ -182,7 +182,7 @@
     "/customization/typography": "Оформление текста",
     "/customization/spacing": "Интервал",
     "/customization/z-index": "z-index",
-    "/customization/globals": "Globals",
+    "/customization/globals": "Глобальная настройка",
     "/customization/components": "Overrides",
     "/customization/default-theme": "Тема по умолчанию",
     "/guides": "Guides",
