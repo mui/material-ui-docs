@@ -139,7 +139,7 @@ Note that `contrastThreshold` follows a non-linear curve.
 
 {{"demo": "pages/customization/palette/Palette.js"}}
 
-## Color tool
+## Ferramenta de cor
 
 Need inspiration? The Material Design team has built an awesome [palette configuration tool](/customization/color/#color-tool) to help you.
 
