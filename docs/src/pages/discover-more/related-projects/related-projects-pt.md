@@ -21,7 +21,7 @@ Como o escopo dos problemas que o Material-UI resolve é limitado, tentamos inte
 - [material-ui-next-pickers](https://github.com/chingyawhao/material-ui-next-pickers) A datepicker or timepicker in Material UI Next or can be imported as a clock or calendar component.
 - [material-ui-popup-state](https://github.com/jcoreio/material-ui-popup-state) Render props component that manages state for menus, popovers, and poppers, cutting down on boilerplate significantly.
 - [material-ui-rating](https://github.com/TeamWertarbyte/material-ui-rating) Rate something with style.
-- [material-ui-theme-editor](https://in-your-saas.github.io/material-ui-theme-editor/) A tool to generate themes for your Material-UI applications by just selecting the colors and having a live preview.
+- [material-ui-tema-editor](https://in-your-saas.github.io/material-ui-theme-editor/) Uma ferramenta para gerar temas para seus aplicativos de Material-UI, basta selecionar as cores e ter uma visualização ao vivo.
 - [material-ui-time-picker](https://github.com/TeamWertarbyte/material-ui-time-picker) A TimePicker for Material-UI.
 - [mui-datatables](https://github.com/gregnb/mui-datatables) Tabelas de dados responsivos para Material-UI com filtro, ordenação, pesquisa e muito mais.
 - [mui-downshift](https://github.com/techniq/mui-downshift) Thin layer over paypal's downshift to use Material-UI visual components.
