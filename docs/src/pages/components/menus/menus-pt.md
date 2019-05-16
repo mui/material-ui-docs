@@ -21,15 +21,16 @@ Escolhendo imediadamente uma opção confirmando a opção e fechando o menu.
 
 ## Menus Selecionados
 
-If used for item selection, when opened, simple menus attempt to vertically align the currently selected menu item with the anchor element, and the initial focus will be placed on the selected menu item. The currently selected menu item is set using the `selected` property (from [ListItem](/api/list-item/)). To use a selected menu item without impacting the initial focus or the vertical positioning of the menu, set the `variant` property to `menu`.
+Se usado para a seleção de itens, quando abertos, menus simples tentam alinhar verticalmente o item de menu atualmente selecionado com o elemento de âncora, e o foco inicial será colocado no item de menu selecionado. O item de menu atualmente selecionado é definido usando a propriedade</code>selected`(de <a href="/api/list-item/">ListItem</a>).
+To use a selected menu item without impacting the initial focus or the vertical positioning of the menu, set the <code>variant` property to `menu`.
 
 {{"demo": "pages/components/menus/SimpleListMenu.js"}}
 
-## MenuList composition
+## Composição de MenuList
 
-The `Menu` component uses the `Popover` component internally. However, you might want to use a different positioning strategy, or not blocking the scroll. For answering those needs, we expose a `MenuList` component that you can compose, with `Popper` in this example.
+O componente `Menu` usa o componente `Popover` internamente. No entanto, você pode querer usar uma estratégia de posicionamento diferente ou não bloquear a rolagem. Para responder a essas necessidades, expomos um componente `MenuList` que você pode compor, com `Popper` neste exemplo.
 
-The primary responsibility of the `MenuList` component is to handle the focus.
+A principal responsabilidade do componente `MenuList` é manipular o foco.
 
 {{"demo": "pages/components/menus/MenuListComposition.js"}}
 
