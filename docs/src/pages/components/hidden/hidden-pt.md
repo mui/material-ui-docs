@@ -45,19 +45,19 @@ Usando qualquer propriedade de ponto de quebra com `down`, o componente *childre
 
 {{"demo": "pages/components/hidden/BreakpointDown.js"}}
 
-## Breakpoint only
+## Ponto de quebra somente
 
-Using the breakpoint `only` property, the given *children* will be hidden *at* the specified breakpoint(s).
+Usando a propriedade de ponto de quebra `only`, o componente *children* será ocultado *no(s) ponto(s) de quebra* especificado(s).
 
-The `only` property can be used in two ways:
+A propriedade `only` pode ser usada de duas maneiras:
 
-- list a single breakpoint
-- list an array of breakpoints
+- com um único ponto de quebra
+- com um array de pontos de quebra
 
 {{"demo": "pages/components/hidden/BreakpointOnly.js"}}
 
-## Integration with Grid
+## Integração com Grade
 
-It is quite common to alter `Grid` at different responsive breakpoints, and in many cases, you want to hide some of those elements.
+É bastante comum alterar um `Grid` em pontos de quebra responsivos diferentes e, em muitos casos, você deseja ocultar alguns desses elementos.
 
 {{"demo": "pages/components/hidden/GridIntegration.js"}}
