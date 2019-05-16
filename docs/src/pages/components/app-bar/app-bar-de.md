@@ -45,13 +45,13 @@ Ein seitliches Suchfeld.
 
 ## Scrollen
 
-### App Bar verstecken
+### App-Bar verstecken
 
 Eine App-Bar die sich beim Scrollen versteckt.
 
 {{"demo": "pages/components/app-bar/HideAppBar.js", "iframe": "true", "maxWidth": 500}}
 
-### App Bar anheben
+### App-Bar anheben
 
 Eine App-Bar die sich beim Scrollen anhebt.
 
@@ -59,7 +59,7 @@ Eine App-Bar die sich beim Scrollen anhebt.
 
 ### `useScrollTrigger([options]) => trigger`
 
-#### Argumente
+#### Parameter
 
 1. `options` (*Object* [optional]):
 
