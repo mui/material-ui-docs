@@ -2,17 +2,17 @@
 
 <p class="description">As components can be used in different contexts, Material-UI supports different types of customization requirements going from the most specific to the most generic.</p>
 
-1. [Specific variation for a one-time situation](#1-specific-variation-for-a-one-time-situation)
+1. [Variación específica para una situación única](#1-specific-variation-for-a-one-time-situation)
 2. [Dynamic variation for a one-time situation](#2-dynamic-variation-for-a-one-time-situation)
 3. [Specific variation of a component](#3-specific-variation-of-a-component) re-used in different contexts
 4. [Material Design variations](#4-material-design-variations) such as with the button component
-5. [Global theme variation](#5-global-theme-variation)
+5. [Variación global del tema](#5-global-theme-variation)
 
-## 1. Specific variation for a one-time situation
+## 1. Variación específica para una situación única
 
 You might need to change the style of a component for a specific implementation, for which you have the following solutions available:
 
-### Overriding with class names
+### Reemplazando con los nombres de clase
 
 The first way to override the style of a component is to use **class names**. Every component provides a `className` property which is always applied to the root element.
 
@@ -30,11 +30,11 @@ Notice that in addition to the button styling, the button label's capitalization
 
 {{"demo": "pages/customization/overrides/ClassesNesting.js"}}
 
-### Using the dev tools
+### Usando las herramientas de dev
 
 The browser dev tools can save you a lot of time. Material-UI's class names [follow a simple pattern](/css-in-js/advanced/#class-names) in development mode: `Mui[component name]-[style rule name]-[UUID]`.
 
-Let's go back to the above demo. How can you override the button label?
+Let's go back to the above demo. ¿Cómo puedes reemplazar la etiqueta del botón?
 
 ![dev-tools](/static/images/customization/dev-tools.png)
 
@@ -67,7 +67,7 @@ const StyledButton = withStyles({
 
 {{"demo": "pages/customization/overrides/ClassesShorthand.js"}}
 
-### Internal states
+### Estados internos
 
 The components internal states, like *hover*, *focus*, *disabled* and *selected*, are styled with a higher CSS specificity. [Specificity is a weight](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) that is applied to a given CSS declaration.
 
@@ -87,7 +87,7 @@ In order to override the components internal states, **you need to increase spec
 <Button disabled className="MuiButton">
 ```
 
-Sometimes, you can't use a **pseudo-class** as the state doesn't exist in the platform. Let's take the menu item component and the *selected* state as an example. Aside from accessing nested elements, the `classes` property can be used to customize the internal states of Material-UI components:
+A veces, no puedes usar **pseudo-class** ya que el estado no existe en la plataforma. Let's take the menu item component and the *selected* state as an example. Aside from accessing nested elements, the `classes` property can be used to customize the internal states of Material-UI components:
 
 ```css
 .MuiMenuItem {
@@ -192,7 +192,7 @@ The Material Design specification documents different variations of certain comp
 
 Material-UI attempts to implement all of these variations. Please refer to the [Supported Components](/getting-started/supported-components/) documentation to find out the current status of all supported Material Design components.
 
-## 5. Global theme variation
+## 5. Variación global del tema
 
 ### Theme variables
 
