@@ -8,14 +8,14 @@ components: Link
 
 ## Links simples
 
-O componente Link é construído sobre o componente de [Tipografia](/api/typography/). Você pode aproveitar suas propriedades.
+O componente Link é construído sobre o componente [Typography](/api/typography/). Você pode aproveitar suas propriedades.
 
 {{"demo": "pages/components/links/Links.js"}}
 
-However, the Link has different default properties than the Typography:
+No entanto, o Link possui propriedades padrão diferentes do componente Typography:
 
-- `color="primary"` as the link needs to stand out.
-- `variant="inherit"` as the link will, most of the time, be used as a child of a Typograpy component.
+- `color="primary"` como o link precisa se destacar.
+- `variant="inherit"` como o link será, na maioria das vezes, usado como filho de um componente Typography.
 
 ## Acessibilidade
 
