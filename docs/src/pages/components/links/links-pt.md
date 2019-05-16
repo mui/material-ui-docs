@@ -4,11 +4,11 @@ components: Link
 
 # Links
 
-<p class="description">The Link component allows you to easily customize anchor elements with your theme colors and typography styles.</p>
+<p class="description">O componente Link permite que você personalize facilmente elementos de âncora com suas cores de tema e estilos de tipografia.</p>
 
-## Simple links
+## Links simples
 
-The Link component is built on top of the [Typography](/api/typography/) component. You can leverage its properties.
+O componente Link é construído sobre o componente de [Tipografia](/api/typography/). Você pode aproveitar suas propriedades.
 
 {{"demo": "pages/components/links/Links.js"}}
 
