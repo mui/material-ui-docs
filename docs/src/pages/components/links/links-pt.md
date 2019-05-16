@@ -27,15 +27,15 @@ No entanto, o Link possui propriedades padrão diferentes do componente Typograp
 
 ## Segurança
 
-When you use `target="_blank"` with Links it is [recommended](https://developers.google.com/web/tools/lighthouse/audits/noopener) to always set `rel="noopener"` or `rel="noreferrer"` when linking to third party content.
+Quando você usa `target="_blank"` com Links é [recomendado](https://developers.google.com/web/tools/lighthouse/audits/noopener) sempre definir `rel="noopener"` ou `rel="noreferrer"` quando conectando a conteúdo de terceiros.
 
-- `rel="noopener"` prevents the new page from being able to access the window.opener property and ensures it runs in a separate process. Without this the target page can potentially redirect your page to a malicious URL.
-- `rel="noreferrer""` has the same effect, but also prevents the *Referer* header from being sent to the new page. ⚠️ Removing the referrer header will affect analytics.
+- `rel="noopener"` impede que a nova página possa acessar a propriedade window.opener e garante que ela seja executada em um processo separado. Sem isso, a página de destino pode potencialmente redirecionar sua página para uma URL mal-intencionada.
+- `rel="noreferrer""` tem o mesmo efeito, mas também impede que o cabeçalho *Referer* seja enviado para a nova página. ⚠️ A remoção do cabeçalho referrer afetará a análise.
 
 ## Biblioteca de roteamento de terceiros
 
-One common use case is to perform the navigation on the client only, without doing a .html round-trip with the server. The `Link` component provides a property to handle this use case: `component`.
+Um caso comum é executar a navegação apenas no cliente, sem fazer uma ida e volta para buscar .html do servidor. O componente `Link` fornece uma propriedade para lidar com este caso: `component`.
 
 {{"demo": "pages/components/links/LinkRouter.js", "defaultCodeOpen": true}}
 
-*Note: Creating the Link components is necessary to prevent unexpected unmounting. You can read more about it in our [component property guide](/guides/composition/#component-property).*
+*Nota: A criação de componentes de link é necessária para impedir a desmontagem inesperada. You can read more about it in our [component property guide](/guides/composition/#component-property).*
