@@ -5,14 +5,14 @@ components: Grow, Popover
 
 # Popover
 
-<p class="description">A Popover can be used to display some content on top of another.</p>
+<p class="description">Um Popover pode ser usado para exibir algum conteúdo em cima do outro.</p>
 
-Things to know when using the `Popover` component:
+Coisas para saber ao usar o componente `Popover`:
 
-- The component is built on top of the [`Modal`](/components/modal/) component.
+- O componente é construído sobre o componente [`Modal`](/components/modal/).
 - The scroll and click away are blocked unlike with the [`Popper`](/components/popper/) component.
 
-## Simple Popover
+## Simples Popover
 
 {{"demo": "pages/components/popover/SimplePopover.js" }}
 
@@ -22,9 +22,9 @@ Use the radio buttons to adjust the `anchorOrigin` and `transformOrigin` positio
 
 {{"demo": "pages/components/popover/AnchorPlayground.js", "hideHeader": true}}
 
-## Mouse over interaction
+## Interação sobre o mouse
 
-We demonstrate how to use the `Popover` component to implement a popover behavior based on the mouse over event.
+Demonstramos como usar o componente `Popover` para implementar um comportamento popover baseado no evento mouse over.
 
 {{"demo": "pages/components/popover/MouseOverPopover.js"}}
 
