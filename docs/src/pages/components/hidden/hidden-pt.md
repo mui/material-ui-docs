@@ -1,13 +1,13 @@
 ---
-title: Hidden React component
+title: Componente React Hidden
 components: Hidden
 ---
 
 # Hidden
 
-<p class="description">Quickly and responsively toggle the visibility value of components and more with our hidden utilities.</p>
+<p class="description">Modifique rapidamente e de forma responsiva a visibilidade dos componentes e muito mais com nosso utilitário hidden.</p>
 
-All elements are visible unless **they are explicitly hidden**. To ease integration with Material-UI's [responsive breakpoints](/customization/breakpoints/), this component can be used to hide any content, or you can use it in conjunction with our [`Grid`](/components/grid/) component.
+Todos os elementos são visíveis a menos que **estejam explicitamente ocultos**. To ease integration with Material-UI's [responsive breakpoints](/customization/breakpoints/), this component can be used to hide any content, or you can use it in conjunction with our [`Grid`](/components/grid/) component.
 
 ## Como funciona
 
