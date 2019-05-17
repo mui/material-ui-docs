@@ -1,6 +1,6 @@
-# Pontos de interrupção
+# Pontos de quebra (Breakpoints)
 
-<p class="description">API that enables the use of breakpoints in a wide variety of contexts.</p>
+<p class="description">API que permite o uso de pontos de quebra em uma ampla variedade de contextos.</p>
 
 For optimal user experience, material design interfaces need to be able to adapt their layout at various breakpoints. Material-UI uses a **simplified** implementation of the original [specification](https://material.io/design/layout/responsive-layout-grid.html#breakpoints).
 
