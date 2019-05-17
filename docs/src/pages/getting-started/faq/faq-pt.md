@@ -24,9 +24,9 @@ Overall, it's simple to recover from this problem by wrapping each Material-UI a
 
 We block the scroll as soon as a modal is opened. This prevents interacting with the background when the modal should be the only interactive content, however, removing the scrollbar can make your **fixed positioned elements** move. In this situation, you can apply a global `.mui-fixed` class name to tell Material-UI to handle those elements.
 
-## How can I disable the ripple effect globally?
+## Como posso desativar o efeito cascata globalmente?
 
-The ripple effect is exclusively coming from the `BaseButton` component. You can disable the ripple effect globally by providing the following in your theme:
+O efeito cascata é exclusivamente proveniente do componente `BaseButton`. Você pode desativar o efeito cascata globalmente fornecendo as seguintes configurações no seu tema:
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
