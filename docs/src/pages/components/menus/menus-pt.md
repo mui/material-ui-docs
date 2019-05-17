@@ -22,7 +22,7 @@ Escolhendo uma opção deve confirmar imediatamente a opção e fechar o menu.
 ## Menus Selecionados
 
 Se usado para a seleção de itens, quando abertos, menus simples tentam alinhar verticalmente o item de menu atualmente selecionado com o elemento de âncora, e o foco inicial será colocado no item de menu selecionado. O item de menu atualmente selecionado é definido usando a propriedade</code>selected`(de <a href="/api/list-item/">ListItem</a>).
-To use a selected menu item without impacting the initial focus or the vertical positioning of the menu, set the <code>variant` property to `menu`.
+Para usar um item de menu selecionado sem afetar o foco inicial ou o posicionamento vertical do menu, defina a propriedade <code>variant` como `menu`.
 
 {{"demo": "pages/components/menus/SimpleListMenu.js"}}
 
