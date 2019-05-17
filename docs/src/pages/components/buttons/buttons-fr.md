@@ -74,7 +74,7 @@ Parfois, vous voudrez peut-être avoir des icônes pour certains boutons afin d'
 
 {{"demo": "pages/components/buttons/IconLabelButtons.js"}}
 
-## Boutons d'icônes
+## Boutons avec icône
 
 Les boutons d'icône se trouvent généralement dans les barres d'applications et les barres d'outils.
 
@@ -84,7 +84,7 @@ Les icônes sont également appropriés pour les boutons à bascule qui permette
 
 ## Boutons personnalisés
 
-Here are some examples of customizing the component. You can learn more about this in the [overrides documentation page](/customization/components/).
+Voici quelques exemples de personnalisation du composant. Vous pouvez en apprendre plus sur [la page de documentation de personnalisation](/customization/components/).
 
 {{"demo": "pages/components/buttons/CustomizedButtons.js"}}
 
@@ -102,4 +102,4 @@ Un cas d'utilisation courant consiste à utiliser le bouton pour déclencher une
 
 {{"demo": "pages/components/buttons/ButtonRouter.js", "defaultCodeOpen": true}}
 
-*Note: Creating the Button components is necessary to prevent unexpected unmounting. You can read more about it in our [component property guide](/guides/composition/#component-property).*
+*Note : La création de composants Button est nécessaire pour éviter une erreur inattendu. Vous pouvez en lire plus dans notre [guide de propriété de composant](/guides/composition/#component-property).*
