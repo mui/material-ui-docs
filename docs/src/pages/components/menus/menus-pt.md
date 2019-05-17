@@ -13,7 +13,7 @@ Um [Menu](https://material.io/design/components/menus.html) exibe uma lista de o
 
 Menus simples abrem sobre o elemento âncora por padrão (esta opção pode ser alterada via props). Quando estão perto de uma borda da tela, menus simples realinham verticalmente para garantir que todos os itens do menu fiquem completamente visíveis.
 
-Escolhendo imediadamente uma opção confirmando a opção e fechando o menu.
+Escolhendo uma opção deve confirmar imediatamente a opção e fechar o menu.
 
 **Disambiguation**: In contrast to simple menus, simple dialogs can present additional detail related to the options available for a list item or provide navigational or orthogonal actions related to the primary task. Although they can display the same content, simple menus are preferred over simple dialogs because simple menus are less disruptive to the user’s current context.
 
