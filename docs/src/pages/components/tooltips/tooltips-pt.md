@@ -9,23 +9,23 @@ components: Tooltip
 
 When activated, [Tooltips](https://material.io/design/components/tooltips.html) display a text label identifying an element, such as a description of its function.
 
-## Simple Tooltips
+## Tooltips Simples
 
 {{"demo": "pages/components/tooltips/SimpleTooltips.js"}}
 
-## Positioned Tooltips
+## Posicionamento de Tooltips
 
 The `Tooltip` has 12 **placements** choice. They don’t have directional arrows; instead, they rely on motion emanating from the source to convey direction.
 
 {{"demo": "pages/components/tooltips/PositionedTooltips.js"}}
 
-## Customized tooltips
+## Tooltips Customizados
 
 Aqui estão alguns exemplos de personalização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
 
 {{"demo": "pages/components/tooltips/CustomizedTooltips.js"}}
 
-## Custom child element
+## Elemento filho customizado
 
 The tooltip needs to apply DOM event listeners to its child element. If the child is a custom React element, you need to make sure that it spreads its properties to the underlying DOM element.
 
@@ -44,19 +44,19 @@ function MyComponent (props) {
 
 You can find a similar concept in the [wrapping components](/guides/composition/#wrapping-components) guide.
 
-## Triggers
+## Gatilhos
 
 You can define the types of events that cause a tooltip to show.
 
 {{"demo": "pages/components/tooltips/TriggersTooltips.js"}}
 
-## Controlled Tooltips
+## Tooltips Controlados
 
 You can use the `open`, `onOpen` and `onClose` properties to control the behavior of the tooltip.
 
 {{"demo": "pages/components/tooltips/ControlledTooltips.js"}}
 
-## Variable Width
+## Largura Variável
 
 The `Tooltip` wraps long text by default to make it readable.
 
@@ -68,7 +68,7 @@ A tooltip can be interactive. It won't close when the user hovers over the toolt
 
 {{"demo": "pages/components/tooltips/InteractiveTooltips.js"}}
 
-## Disabled Elements
+## Elementos Desativados
 
 By default disabled elements like `<button>` do not trigger user interactions so a `Tooltip` will not activate on normal events like hover. To accommodate disabled elements, add a simple wrapper element like a `span`.
 
