@@ -72,7 +72,7 @@ Desta forma, você tem a vantagem do [React render laziness evaluation](https://
 
 ## Acessibilidade
 
-- Be sure to add `aria-labelledby="id..."`, referencing the modal title, to the `Modal`. Additionally, you may give a description of your modal with the `aria-describedby="id..."` property on the `Modal`.
+- Certifique-se de adicionar `aria-labelledby="id..."`, referenciando o título modal, ao `Modal`. Adicionalmente, você pode dar uma descrição do seu modal com a propriedade `aria-describedby = "id..."` no `Modal`.
 
 ```jsx
 <Modal
@@ -80,10 +80,10 @@ Desta forma, você tem a vantagem do [React render laziness evaluation](https://
   aria-describedby="simple-modal-description"
 >
   <Typography variant="h6" id="modal-title">
-    My Title
+    Meu título
   </Typography>
   <Typography variant="subtitle1" id="simple-modal-description">
-    My Description
+    Minha descrição
   </Typography>
 </Modal>
 ```
