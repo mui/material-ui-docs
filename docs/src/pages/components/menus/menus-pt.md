@@ -50,11 +50,11 @@ Se a altura de um menu impede que todos os itens de menu sejam exibidos, o menu 
 
 ## Limitações
 
-There is [a flexbox bug](https://bugs.chromium.org/p/chromium/issues/detail?id=327437) that prevents `text-overflow: ellipsis` from working in a flexbox layout. You can use the `Typography` component with `noWrap` to workaround this issue:
+Existe [um erro com flexbox](https://bugs.chromium.org/p/chromium/issues/detail?id=327437) que impede `text-overflow: ellipsis` de funcionar em um leiaute flexbox. Você pode usar o componente `Typography` com `noWrap` para solucionar esse problema:
 
 {{"demo": "pages/components/menus/TypographyMenu.js"}}
 
-## Change transition
+## Trocar transição
 
 Use uma transição diferente.
 
@@ -62,10 +62,10 @@ Use uma transição diferente.
 
 ## Projetos Complementares
 
-Para caso de usos mais avançados, você é capaz de aproveitar de:
+Para usos mais avançados, você pode tirar vantagem com:
 
 ### PopupState helper
 
-There is a 3rd party package [`material-ui-popup-state`](https://github.com/jcoreio/material-ui-popup-state) that takes care of menu state for you in most cases.
+Existe um pacote de terceiros [`material-ui-popup-state`](https://github.com/jcoreio/material-ui-popup-state) que cuida do estado do menu para você na maioria dos casos.
 
 {{"demo": "pages/components/menus/MenuPopupState.js"}}
