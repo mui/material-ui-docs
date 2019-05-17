@@ -8,9 +8,9 @@ A color intention is a mapping of a palette to a given intention within your app
 
 O tema expõe as seguintes intenções de cores:
 
-- primary - used to represent primary interface elements for a user.
-- secondary - used to represent secondary interface elements for a user.
-- error - used to represent interface elements that the user should be made aware of.
+- primário - usado para representar os elementos de interface primários para um usuário.
+- secundário - usado para representar os elementos de interface secundários para um usuário.
+- erro - usado para representar os elementos de interface dos quais o usuário deve estar ciente.
 
 The default palette uses the shades prefixed with `A` (`A200`, etc.) for the secondary intention, and the un-prefixed shades for the other intentions.
 
@@ -33,7 +33,7 @@ interface PaletteIntention {
 };
 ```
 
-**Using a color object**
+**Usando um objeto de cor**
 
 The simplest way to customize an intention is to import one or more of the provided colors and apply them to a palette intention:
 
@@ -73,7 +73,7 @@ palette: {
 },
 ```
 
-This example illustrates how you could recreate the default palette values:
+Este exemplo ilustra como você pode recriar os valores padrão da paleta:
 
 ```js
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -81,8 +81,8 @@ import indigo from '@material-ui/core/colors/indigo';
 import pink from '@material-ui/core/colors/pink';
 import red from '@material-ui/core/colors/red';
 
-// All the following keys are optional.
-// We try our best to provide a great default value.
+// Todas as chaves a seguir são opcionais.
+// Nós tentamos nosso melhor para fornecer um ótimo valor padrão.
 const theme = createMuiTheme({
   palette: {
     primary: indigo,
@@ -133,7 +133,7 @@ As in the example above, if the intention object contains custom colors using an
 
 Both the `tonalOffset` and `contrastThreshold` values may be customized as needed. A higher value for `tonalOffset` will make calculated values for `light` lighter, and `dark` darker. A higher value for `contrastThreshold` increases the point at which a background color is considered light, and given a dark `contrastText`.
 
-Note that `contrastThreshold` follows a non-linear curve.
+Observe que `contrastThreshold ` segue uma curva não linear.
 
 ## Exemplo
 
@@ -147,7 +147,7 @@ Precisa de inspiração? A equipe do Material Design construiu uma incrível [fe
 
 O Material-UI vem com duas variantes de temas, claro (padrão) e escuro.
 
-You can make the theme dark by setting `type` to `dark`. While it's only a single property value change, internally it modifies the value of the following keys:
+Você pode aplicar o tema escuro definindo `type` como `dark`. Embora seja apenas uma alteração no valor de uma única propriedade, internamente ela altera as seguintes chaves:
 
 - `palette.text`
 - `palette.divider`
