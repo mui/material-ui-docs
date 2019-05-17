@@ -1,5 +1,5 @@
 ---
-title: Tooltip React component
+title: Componente React para Tooltip
 components: Tooltip
 ---
 
@@ -80,7 +80,7 @@ Use uma transição diferente.
 
 {{"demo": "pages/components/tooltips/TransitionsTooltips.js"}}
 
-## Showing and hiding
+## Mostrando e ocultando
 
 The tooltip is normally shown immediately when the user's mouse hovers over the element, and hides immediately when the user's mouse leaves. A delay in showing or hiding the tooltip can be added through the properties `enterDelay` and `leaveDelay`, as shown in the Controlled Tooltips demo above.
 
