@@ -21,8 +21,8 @@ Esse componente pode ser útil em várias situações:
 
 ## Adiamento de quadros
 
-Em sua essência, o NoSsr componente tem a finalidade de **adiar o processamento**. Como é ilustrado na demonstração anterior, você pode usá-lo para adiar o processamento do servidor para o cliente.
+Em sua essência, o componente NoSsr tem a finalidade de **adiar a renderização**. Como é ilustrado na demonstração anterior, você pode usá-lo para adiar a renderização do servidor para o cliente.
 
-Mas você também pode usá-lo para adiar a renderização dentro do próprio cliente. Você pode **aguardar um quadro de tela** com a propriedade `defer` para renderizar o children. React does [2 commits](https://reactjs.org/docs/strict-mode.html#detecting-unexpected-side-effects) instead of 1.
+Mas você também pode usá-lo para adiar a renderização dentro do próprio cliente. Você pode **aguardar um quadro de tela** com a propriedade `defer` para renderizar o children. React faz [2 commits](https://reactjs.org/docs/strict-mode.html#detecting-unexpected-side-effects) em vez de 1.
 
 {{"demo": "pages/components/no-ssr/FrameDeferring.js"}}
