@@ -13,11 +13,11 @@ components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
 
 ## Interruptores com FormControlLabel
 
-`Switch` também pode ser utilizado com uma descrição de label graças ao componente `FormControlLabel`.
+`Switch` também pode ser utilizado com uma descrição de rótulo graças ao componente `FormControlLabel`.
 
 {{"demo": "pages/components/switches/SwitchLabels.js"}}
 
-## Switches with FormGroup
+## Interruptores com FormGroup
 
 `FormGroup` é usado para agrupar componentes seletores para facilitar o uso da API. However, we encourage you to use a [Checkbox](#checkboxes) instead.
 
