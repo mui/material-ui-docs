@@ -12,7 +12,7 @@ Para corrigir este problema, todos os componentes da página precisam ser inicia
 
 Você pode acabar usando acidentalmente dois geradores de nome de classe em vários cenários:
 
-- You accidentally **bundle** two versions of Material-UI. You might have a dependency not correctly setting Material-UI as a peer dependency.
+- Você acidentalmente **empacota** duas versões do Material-UI. Você pode ter nesse caso, uma dependência que não esta configurando corretamente o Material-UI.
 - You are using `StylesProvider` for a **subset** of your React Tree.
 - You are using a bundler and it is splitting code in a way that causes multiple class name generator instances to be created.
 
