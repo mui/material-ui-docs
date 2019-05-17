@@ -100,20 +100,20 @@ const theme = createMuiTheme({
 - Possui uma API limpa e consistente.
 - Ele suporta vários recursos avançados, seja nativamente ou por meio de plug-ins.
 
-However perhaps you're adding some Material-UI components to an app that already uses another styling solution, or are already familiar with a different API, and don't want to learn a new one? In that case, head over to the [Style Library Interoperability](/guides/interoperability/) section, where we show how simple it is to restyle Material-UI components with alternative style libraries.
+No entanto, talvez você esteja adicionando os componentes Material-UI para uma aplicação que já usa outra solução de estilos, ou já esta familiarizado com uma API diferente, e não quer aprender uma nova? Nesse caso, dirija-se à seção de [interoperabilidade da biblioteca de estilos](/guides/interoperability/), onde mostramos como é simples reestilizar os componentes do Material-UI com bibliotecas de estilos alternativas.
 
-## When should I use inline-style vs CSS?
+## Quando devo usar o estilo inline vs CSS?
 
-As a rule of thumb, only use inline-style for dynamic style properties. The CSS alternative provides more advantages, such as:
+Como regra geral, use apenas o estilo inline para propriedades de estilo dinâmicas. A alternativa de uso com CSS oferece mais vantagens, em:
 
-- auto-prefixing
-- better debugging
-- media queries
+- prefixação automática
+- melhor depuração
+- consultas de mídia (media queries)
 - keyframes
 
 ## Como usar react-router?
 
-Documentamos como usar uma [biblioteca de roteamento de terceiros ](/components/buttons/#third-party-routing-library) com o `ButtonBase ` componente. Muitos de nossos componentes interativos usam internamente: `Link`, `Button`, `MenuItem`, `<ListItem button />`, `Tab`, etc. Você pode usar a mesma solução com eles.
+Documentamos como usar uma [biblioteca de roteamento de terceiros ](/components/buttons/#third-party-routing-library) com o componente `ButtonBase`. Muitos de nossos componentes interativos usam internamente: `Link`, `Button`, `MenuItem`, `<ListItem button />`, `Tab`, etc. Você pode usar a mesma solução com eles.
 
 ## How can I access the DOM element?
 
