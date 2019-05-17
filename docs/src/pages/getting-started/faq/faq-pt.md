@@ -142,9 +142,9 @@ Se você está vendo uma mensagem de aviso no console como a abaixo, você prova
 
 ### Possíveis razões
 
-There are several common reasons for this to happen:
+Existem várias razões comuns para isso acontecer:
 
-- You have another `@material-ui/styles` library somewhere in your dependencies.
+- Você tem outra biblioteca `@material-ui/styles` em algum lugar das suas dependências.
 - You have a monorepo structure for your project (e.g, lerna, yarn workspaces) and `@material-ui/styles` module is a dependency in more than one package (this one is more or less the same as the previous one).
 - You have several applications that are using `@material-ui/styles` running on the same page (e.g., several entry points in webpack are loaded on the same page).
 
