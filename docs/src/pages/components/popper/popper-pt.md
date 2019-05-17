@@ -27,7 +27,7 @@ Você pode usar o componente sem dependências extras.
 
 {{"demo": "pages/components/popper/MinimalPopper.js" }}
 
-## Scroll playground
+## Rolagem - Exemplo interativo
 
 {{"demo": "pages/components/popper/ScrollPlayground.js", "hideHeader": true}}
 
@@ -43,13 +43,13 @@ Você pode usar o componente sem dependências extras.
 
 A propriedade `anchorEl` pode ser uma referência a um elemento DOM falso. Você só precisa criar um objeto com o formato [`ReferenceObject`](https://github.com/FezVrasta/popper.js/blob/0642ce0ddeffe3c7c033a412d4d60ce7ec8193c3/packages/popper/index.d.ts#L118-L123).
 
-Destaque parte do texto para ver o popper:
+Selecione parte do texto para ver o popper:
 
 {{"demo": "pages/components/popper/FakedReferencePopper.js"}}
 
 ## Projetos Complementares
 
-Para caso de usos mais avançados, você é capaz de aproveitar de:
+Para usos mais avançados, você pode tirar vantagem com:
 
 ### PopupState helper
 
