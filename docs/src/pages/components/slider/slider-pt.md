@@ -1,11 +1,11 @@
 ---
-title: Slider React component
+title: Componente React Slider
 components: Slider
 ---
 
 # Slider
 
-<p class="description">Sliders allow users to make selections from a range of values.</p>
+<p class="description">Sliders permitem que os usuários façam seleções a partir de um intervalo de valores.</p>
 
 [Sliders](https://material.io/design/components/sliders.html) reflect a range of values along a bar, from which users may select a single value. They are ideal for adjusting settings such as volume, brightness, or applying image filters.
 
