@@ -3,7 +3,7 @@ title: Switch React component
 components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
 ---
 
-# Opções
+# Interruptores (Switches)
 
 <p class="description">Switches alternam o estado de uma única configuração ligado ou desligado.</p>
 
