@@ -12,18 +12,18 @@ Algumas características importantes do componente `Popper`:
 - 
 - 
 - 
-- As crianças são [`Portal`](/components/portal/) para o corpo do documento para evitar problemas de renderização. Você pode desativar esse comportamento com `disablePortal`.
-- O deslocamento não é bloqueado como no componente [`Popover`](/components/popover/). O posicionamento do popper é atualizado com a área disponível na viewport.
-- Clicar fora não oculta o componente `Popper`. Se você precisar desse comportamento, você pode usar [`ClickAwayListener`](/components/click-away-listener/) - veja o exemplo na [seção documentação do menu](/components/menus/#menulist-composition).
+- O componente children para o corpo do documento é o [`Portal`](/components/portal/) para evitar problemas de renderização. Você pode desativar esse comportamento com `disablePortal`.
+- A rolagem não é bloqueada como no componente [`Popover`](/components/popover/). O posicionamento do popper é atualizado com a área disponível na janela de visualização (viewport).
+- Clicar fora não oculta o componente `Popper`. Se você precisar desse comportamento, você pode usar o componente [`ClickAwayListener`](/components/click-away-listener/) - veja o exemplo na [seção da documentação do menu](/components/menus/#menulist-composition).
 - O `anchorEl` é passado como o objeto de referência para criar uma nova instância `Popper.js`.
 
-## Simples Popper
+## Popper Simples
 
 {{"demo": "pages/components/popper/SimplePopper.js" }}
 
-## Minimalista Popper
+## Popper Minimalista
 
-Você pode usar o componente com zero dependências extras.
+Você pode usar o componente sem dependências extras.
 
 {{"demo": "pages/components/popper/MinimalPopper.js" }}
 
