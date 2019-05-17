@@ -13,16 +13,16 @@ Esse componente pode ser útil em várias situações:
 - Melhorar o tempo para a primeira pintura no cliente renderizando somente a primeira parte da página (above the fold).
 - Reduzir o tempo de renderização no servidor.
 - Sob carga de servidor muito pesada, você pode ativar a degradação do serviço.
-- Melhore o tempo de interação apenas processando o que é importante (com a propriedade `defer`).
+- Melhorar o tempo de interação apenas renderizando o que é importante (com a propriedade `defer`).
 
-## Client side deferring
+## Adiamento do lado do cliente
 
 {{"demo": "pages/components/no-ssr/SimpleNoSsr.js"}}
 
-## Frame deferring
+## Adiamento de quadros
 
-In it's core, the NoSsr component purpose is to **defer rendering**. As it's illustrated in the previous demo, you can use it to defer the rendering from the server to the client.
+Em sua essência, o NoSsr componente tem a finalidade de **adiar o processamento**. Como é ilustrado na demonstração anterior, você pode usá-lo para adiar o processamento do servidor para o cliente.
 
-But you can also use it to defer the rendering within the client itself. You can **wait a screen frame** with the `defer` property to render the children. React does [2 commits](https://reactjs.org/docs/strict-mode.html#detecting-unexpected-side-effects) instead of 1.
+Mas você também pode usá-lo para adiar a renderização dentro do próprio cliente. Você pode **aguardar um quadro de tela** com a propriedade `defer` para renderizar o children. React does [2 commits](https://reactjs.org/docs/strict-mode.html#detecting-unexpected-side-effects) instead of 1.
 
 {{"demo": "pages/components/no-ssr/FrameDeferring.js"}}
