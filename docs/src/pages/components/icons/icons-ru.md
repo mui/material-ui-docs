@@ -7,7 +7,7 @@ components: Icon, SvgIcon
 
 <p class="description">Руководство и рекомендации по использованию иконок в Material-UI.</p>
 
-[Системная иконка](https://material.io/design/iconography/system-icons.html), или иконка UI, обозначает команду, файл, устройство или каталог. Системные иконки также используются для представления частых операций, таких как удаление, печать или сохранение, и обычно размещаются в списках, на кнопках, панелях приложений и инструментов. Google has provided a set of [Material icons](https://material.io/tools/icons/?style=baseline) that follow these guidelines.
+[Системная иконка](https://material.io/design/iconography/system-icons.html), или иконка UI, обозначает команду, файл, устройство или каталог. Системные иконки также используются для представления частых операций, таких как удаление, печать или сохранение, и обычно размещаются в списках, на кнопках, панелях приложений и инструментов. Google предоставляет набор [иконок Material](https://material.io/tools/icons/?style=baseline), соответствующих рекомендациям.
 
 Material-UI предоставляет два компонента для отображения системных иконок: `SvgIcon` используется с форматом SVG, а `Icon` – с иконочными шрифтами.
 
@@ -47,7 +47,7 @@ Material-UI предоставляет два компонента для ото
 - [`4k`](https://material.io/tools/icons/?icon=4k&style=baseline) представлена как `@material-ui/icons/FourK`
 - [`4k`](https://material.io/tools/icons/?icon=4k&style=baseline) представлена как `@material-ui/icons/FourK`
 
-{{"demo": "pages/components/icons/SvgMaterialIcons.js"}}
+{{"Демо": "pages/components/icons/SvgMaterialIcons.js"}}
 
 #### Импорт
 
