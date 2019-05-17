@@ -10,8 +10,8 @@ components: NoSsr
 Esse componente pode ser útil em várias situações:
 
 - Válvula de escape para dependências quebradas que não suportam SSR.
-- Improve the time-to-first paint on the client by only rendering above the fold.
-- Reduza o tempo de renderização no servidor.
+- Melhorar o tempo para a primeira pintura no cliente renderizando somente a primeira parte da página (above the fold).
+- Reduzir o tempo de renderização no servidor.
 - Sob carga de servidor muito pesada, você pode ativar a degradação do serviço.
 - Melhore o tempo de interação apenas processando o que é importante (com a propriedade `defer`).
 
