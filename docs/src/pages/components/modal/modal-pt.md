@@ -68,7 +68,7 @@ Criamos muitos elementos React que nunca serão montados. Isto é um desperdíci
 </Modal>
 ```
 
-This way, you take advantage of [React render laziness evaluation](https://overreacted.io/react-as-a-ui-runtime/#lazy-evaluation). The `TableComponent` render method will only be evaluated when opening the modal.
+Desta forma, você tem a vantagem do [React render laziness evaluation](https://overreacted.io/react-as-a-ui-runtime/#lazy-evaluation). A renderização do `TableComponent` só irá ocorrer quando a janela modal for aberta.
 
 ## Acessibilidade
 
