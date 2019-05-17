@@ -16,7 +16,7 @@ The default palette uses the shades prefixed with `A` (`A200`, etc.) for the sec
 
 If you want to learn more about color, you can check out [the color section](/customization/color/).
 
-## Custom palette
+## Paleta personalizada
 
 You may override the default palette values by including a `palette` object as part of your theme.
 
@@ -99,7 +99,7 @@ const theme = createMuiTheme({
 });
 ```
 
-**Providing the colors directly**
+**Fornecendo as cores diretamente**
 
 If you wish to provide more customized colors, you can either create your own color object, or directly supply colors to some or all of the intention's keys:
 
@@ -141,11 +141,11 @@ Note that `contrastThreshold` follows a non-linear curve.
 
 ## Ferramenta de cor
 
-Need inspiration? The Material Design team has built an awesome [palette configuration tool](/customization/color/#color-tool) to help you.
+Precisa de inspiração? A equipe do Material Design construiu uma incrível [ferramenta de configuração de paleta](/customization/color/#color-tool) para te ajudar.
 
-## Type (light /dark theme)
+## Tipo (Tema claro / escuro)
 
-Material-UI comes with two theme variants, light (the default) and dark.
+O Material-UI vem com duas variantes de temas, claro (padrão) e escuro.
 
 You can make the theme dark by setting `type` to `dark`. While it's only a single property value change, internally it modifies the value of the following keys:
 
