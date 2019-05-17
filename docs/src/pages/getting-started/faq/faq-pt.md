@@ -26,17 +26,17 @@ We block the scroll as soon as a modal is opened. This prevents interacting with
 
 ## Como posso desativar o efeito cascata globalmente?
 
-O efeito cascata é exclusivamente proveniente do componente `BaseButton`. Você pode desativar o efeito cascata globalmente fornecendo as seguintes configurações no seu tema:
+O efeito cascata é exclusivamente proveniente do componente `BaseButton`. Você pode desativar o efeito cascata globalmente aplicando as seguintes configurações no seu tema:
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
 
 const theme = createMuiTheme({
   props: {
-    // Name of the component ⚛️
+    // Nome do componente ⚛️
     MuiButtonBase: {
-      // The properties to apply
-      disableRipple: true, // No more ripple, on the whole application 
+      // As propriedades para aplicar
+      disableRipple: true, // Sem efeito cascata, em toda aplicação!
     },
   },
 });
@@ -44,7 +44,7 @@ const theme = createMuiTheme({
 
 ## Como posso desativar as transições globalmente?
 
-Você pode desativar as transições globalmente fornecendo em seu tema:
+Você pode desativar as transições globalmente aplicando as seguintes configurações no seu tema:
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
@@ -59,7 +59,7 @@ const theme = createMuiTheme({
 
 Às vezes, você desejará ativar esse comportamento condicionalmente, por exemplo, durante o teste ou em dispositivos de baixo custo, nesses casos, você pode alterar dinamicamente o valor do tema.
 
-You can go one step further by disabling all the transitions, animations and the ripple effect:
+Você pode ir além, desabilitando todas as transições, animações e o efeito cascata:
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
