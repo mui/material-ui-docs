@@ -1,5 +1,5 @@
 ---
-title: React Icon Component
+title: React-компонент Icon
 components: Icon, SvgIcon
 ---
 
@@ -36,10 +36,10 @@ Material-UI предоставляет два компонента для ото
 
 Для *"тематических"* иконок к названию иконки добавляется имя темы. Например
 
-- The Outlined [`delete`](https://material.io/tools/icons/?icon=delete&style=outline) icon is exposed as `@material-ui/icons/DeleteOutlined`
-- The Rounded [`delete`](https://material.io/tools/icons/?icon=delete&style=rounded) icon is exposed as `@material-ui/icons/DeleteRounded`
-- The Two Tone [`delete`](https://material.io/tools/icons/?icon=delete&style=twotone) icon is exposed as `@material-ui/icons/DeleteTwoTone`
-- The Sharp [`delete`](https://material.io/tools/icons/?icon=delete&style=sharp) icon is exposed as `@material-ui/icons/DeleteSharp`
+- Иконка [`delete`](https://material.io/tools/icons/?icon=delete&style=outline) в теме Outlined представлена как `@material-ui/icons/DeleteOutlined`
+- Иконка [`delete`](https://material.io/tools/icons/?icon=delete&style=rounded) в теме Rounded представлена как `@material-ui/icons/DeleteRounded`
+- Иконка [`delete`](https://material.io/tools/icons/?icon=delete&style=twotone) в теме Two Tone представлена как `@material-ui/icons/DeleteTwoTone`
+- Иконка [`delete`](https://material.io/tools/icons/?icon=delete&style=sharp) в теме Sharp представлена как `@material-ui/icons/DeleteSharp`
 
 Из данного правила существует три исключения:
 
@@ -102,7 +102,7 @@ import Icon from '@material-ui/core/Icon';
 
 ## Шрифт или SVG. Какой подход использовать?
 
-Both approaches work fine, however, there are some subtle differences, especially in terms of performance and rendering quality. Whenever possible SVG is preferred as it allows code splitting, supports more icons, renders faster and better.
+Оба подхода работают нормально, однако есть некоторые тонкие различия, особенно с точки зрения производительности и качества отрисовки. Когда это возможно, использование SVG является более предпочтительным, так как в этом случае есть возможность разделения кода, поддерживается больше иконок, отрисовка происходит лучше и быстрее.
 
 За более подробной информацией по данному вопросу можно обратиться к статье GitHub [о причинах их перехода](https://blog.github.com/2016-02-22-delivering-octicons-with-svg/) от шрифтовых иконок к SVG.
 
