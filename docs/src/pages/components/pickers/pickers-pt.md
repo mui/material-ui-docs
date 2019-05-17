@@ -3,18 +3,18 @@ title: Date Picker, Time Picker React components
 components: TextField
 ---
 
-# Pickers
+# Seletores
 
 <p class="description">Seletores fornecem uma maneira simples de selecionar um único valor de um conjunto pré-determinado.</p>
 
 - Em dispositivos móveis, seletores são melhores aplicados quando mostrados em diálogos de confirmação.
 - For inline display, such as on a form, consider using compact controls such as segmented dropdown buttons.
 
-## Native pickers
+## Seletores nativos
 
 ⚠️ Native input controls support by browsers [isn't perfect](https://caniuse.com/#feat=input-datetime). Have a look at the [complementary projects](#complementary-projects) for a richer solution.
 
-### Date pickers
+### Seletores de data
 
 A native date picker example with `type="date"`.
 
@@ -26,7 +26,7 @@ A native date & time picker example with `type="datetime-local"`.
 
 {{"demo": "pages/components/pickers/DateAndTimePickers.js"}}
 
-### Time pickers
+### Seletores de hora
 
 A native time picker example with `type="time"`.
 
