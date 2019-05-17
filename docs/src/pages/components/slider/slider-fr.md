@@ -27,17 +27,17 @@ Sliders reflect the current state of the settings they control.
 
 {{"demo": "pages/components/slider/StepSlider.js"}}
 
-## Disabled slider
+## Curseur désactivé
 
 {{"demo": "pages/components/slider/DisabledSlider.js"}}
 
-## Vertical slider
+## Curseur vertical
 
 {{"demo": "pages/components/slider/VerticalSlider.js"}}
 
-## Customized sliders
+## Curseurs personnalisés
 
-Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/components/).
+Voici un exemple de personnalisation du composant. Vous pouvez en apprendre plus à ce sujet sur la [page de documentation de personnalisation](/customization/components/).
 
 {{"demo": "pages/components/slider/CustomizedSlider.js"}}
 
