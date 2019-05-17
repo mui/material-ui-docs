@@ -9,19 +9,19 @@ components: CircularProgress, LinearProgress
 
 [Indicadores de progresso](https://material.io/design/components/progress-indicators.html) informam aos usuários sobre o estado de processos em progresso, como o carregamento de um aplicativo, envio de um formulário, ou atualizações. Eles comunicam o estado do aplicativo e indicam ações disponíveis, tal como, se o usuário pode sair da página atual.
 
-O indicador **determinado** mostram quanto tempo uma operação vai demorar.
+Indicador **determinado** mostra quanto tempo uma operação vai demorar.
 
-**Indeterminate** indicators visualize an unspecified wait time.
+Indicador **indeterminado** demonstra um tempo de espera não especificado.
 
-#### Progress as a group
+#### Conjunto de progressos
 
-When displaying progress for a sequence of processes, indicate overall progress rather than the progress of each activity.
+Ao exibir o progresso de uma seqüência de processos, indique o progresso geral em vez do progresso de cada atividade.
 
 ## Circular
 
-[Circular progress](https://material.io/design/components/progress-indicators.html#circular-progress-indicators) support both determinate and indeterminate processes.
+[Progresso circular](https://material.io/design/components/progress-indicators.html#circular-progress-indicators) suporta ambos, processos determinados e indeterminados.
 
-- **Determinate** circular indicators fill the invisible, circular track with color, as the indicator moves from 0 to 360 degrees.
+- O indicador circular **determinado** preenche a faixa circular invisível com cor, a medida que o indicador se move de 0 a 360 graus.
 - **Indeterminate** circular indicators grow and shrink in size while moving along the invisible track.
 
 ### Circular Indeterminado
