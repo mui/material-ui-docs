@@ -1,15 +1,15 @@
 ---
-title: Componente React noSSR
+title: Componente React Sem SSR
 components: NoSsr
 ---
 
-# NoSSR
+# Sem SSR
 
-<p class="description">O NoSsr remove intencionalmente componentes do assunto do Server Side Rendering (SSR).</p>
+<p class="description">O NoSsr remove intencionalmente componentes do contexto de Server Side Rendering (SSR).</p>
 
 Esse componente pode ser útil em várias situações:
 
-- Escotilha de escape para dependências quebradas que não suportam SSR.
+- Válvula de escape para dependências quebradas que não suportam SSR.
 - Improve the time-to-first paint on the client by only rendering above the fold.
 - Reduza o tempo de renderização no servidor.
 - Sob carga de servidor muito pesada, você pode ativar a degradação do serviço.
