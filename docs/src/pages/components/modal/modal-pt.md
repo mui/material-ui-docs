@@ -9,16 +9,16 @@ components: Modal
 
 O componente renderiza o conteúdo de seu `children` sobre um componente backdrop. O `Modal` fornece alguns recursos úteis quando utilizado sobre um componente [`Portal`](/utils/portal/) e alguns estilos:
 
-- Gerencia o empilhamento de chamadas 'um a cada vez'.
+- Gerencia o empilhamento de chamadas um por vez não é suficiente.
 - Cria um backdrop para desabilitar a interação abaixo do modal.
-- Quando aberto, desabilita o scroll da página.
-- ♿️ It properly manages focus; moving to the modal content, and keeping it there until the modal is closed.
-- ♿️ Adds the appropriate ARIA roles automatically.
+- Quando aberto, desabilita a rolagem da página.
+- ♿️ Gerencia adequadamente o foco; movendo para o conteúdo modal, e mantendo-o lá até que o modal seja fechado.
+- ♿️ Adiciona as funções ARIA apropriadas automaticamente.
 - 
 
 > **Nota sobre a terminologia**. O termo "modal" algumas vezes é usado com o sentido de "diálogo", mas isto é um equívoco. Uma janela Modal descreve partes de uma UI. Um elemento é considerado modal se [ele bloqueia interações com o resto da aplicação](https://en.wikipedia.org/wiki/Modal_window).
 
-Se você está criando um diálogo Modal, você provavelmente quer usar o componente [Dialog](/components/dialogs/) em vez de diretamente um Modal. Modal uma estrutura de baixo-nível que é alavancada pelos seguintes componentes:
+Se você está criando um diálogo Modal, você provavelmente quer usar o componente [Dialog](/components/dialogs/) em vez de diretamente um Modal. Modal é uma estrutura de baixo-nível que é alavancada pelos seguintes componentes:
 
 - [Dialog](/components/dialogs/)
 - [Drawer](/components/drawers/)
@@ -60,7 +60,7 @@ Porém, criar elementos React tem um preço também. Considere o caso a seguir:
 </Modal>
 ```
 
-We create a lot of React elements that will never be mounted. It's wasteful 
+Criamos muitos elementos React que nunca serão montados. Isto é um desperdício 
 
 ```jsx
 <Modal open={false}>
