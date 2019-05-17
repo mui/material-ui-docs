@@ -15,7 +15,7 @@ Menus simples abrem sobre o elemento âncora por padrão (esta opção pode ser 
 
 Escolhendo uma opção deve confirmar imediatamente a opção e fechar o menu.
 
-**Disambiguation**: In contrast to simple menus, simple dialogs can present additional detail related to the options available for a list item or provide navigational or orthogonal actions related to the primary task. Although they can display the same content, simple menus are preferred over simple dialogs because simple menus are less disruptive to the user’s current context.
+**Desambiguação**: Em contraste com menus simples, uma caixa de diálogo simples pode apresentar detalhes adicionais relacionados às opções disponíveis para um item da lista ou fornecer navegação ou ações indiretas relacionada à tarefa principal. Embora possam exibir o mesmo conteúdo, menus simples são preferidos em relação a caixas de diálogos simples, pois menus simples são menos prejudiciais ao contexto atual do usuário.
 
 {{"demo": "pages/components/menus/SimpleMenu.js"}}
 
