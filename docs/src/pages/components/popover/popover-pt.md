@@ -1,5 +1,5 @@
 ---
-title: Popover React component
+title: Componente React Popover
 components: Grow, Popover
 ---
 
@@ -10,9 +10,9 @@ components: Grow, Popover
 Coisas para saber ao usar o componente `Popover`:
 
 - O componente é construído sobre o componente [`Modal`](/components/modal/).
-- The scroll and click away are blocked unlike with the [`Popper`](/components/popper/) component.
+- A rolagem e o clique fora são bloqueados, ao contrário do componente [`Popper`](/components/popper/).
 
-## Simples Popover
+## Popover Simples
 
 {{"demo": "pages/components/popover/SimplePopover.js" }}
 
