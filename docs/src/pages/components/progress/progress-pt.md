@@ -1,15 +1,15 @@
 ---
-title: Progresso
+title: Componente React Circular Progress, Linear Progress
 components: CircularProgress, LinearProgress
 ---
 
-# Progress (Progresso)
+# Progresso
 
 <p class="description">Os indicadores de progresso expressam um tempo de espera não especificado ou exibem a duração de um processo.</p>
 
-[Indicadores de progresso](https://material.io/design/components/progress-indicators.html) informam aos usuários sobre o estado de processos em progresso, como o carregamento de um app ou o envio de um formulário. They communicate an app’s state and indicate available actions, such as whether users can navigate away from the current screen.
+[Indicadores de progresso](https://material.io/design/components/progress-indicators.html) informam aos usuários sobre o estado de processos em progresso, como o carregamento de um aplicativo, envio de um formulário, ou atualizações. Eles comunicam o estado do aplicativo e indicam ações disponíveis, tal como, se o usuário pode sair da página atual.
 
-**Determinate** indicators display how long an operation will take.
+O indicador **determinado** mostram quanto tempo uma operação vai demorar.
 
 **Indeterminate** indicators visualize an unspecified wait time.
 
