@@ -1,11 +1,11 @@
 ---
-title: Popper React component
+title: Componente React Popper
 components: Popper
 ---
 
 # Popper
 
-<p class="description">O Popper pode ser usado para exibir algum conteúdo em cima do outro. É uma alternativa para react-popper.</p>
+<p class="description">O Popper pode ser usado para exibir algum conteúdo em cima do outro. É uma alternativa ao react-popper.</p>
 
 Algumas características importantes do componente `Popper`:
 
