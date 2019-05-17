@@ -7,7 +7,7 @@ components: Modal
 
 <p class="description">O componente modal fornece uma base sólida para criar diálogos, popovers, lightboxes ou qualquer outra coisa.</p>
 
-O componente renderiza o conteúdo de seu `children` sobre um backdrop. O `Modal` fornece alguns recursos úteis quando utilizado sobre um componente [`Portal`](/utils/portal/) e alguns estilos:
+O componente renderiza o conteúdo de seu `children` sobre um componente backdrop. O `Modal` fornece alguns recursos úteis quando utilizado sobre um componente [`Portal`](/utils/portal/) e alguns estilos:
 
 - Gerencia o empilhamento de chamadas 'um a cada vez'.
 - Cria um backdrop para desabilitar a interação abaixo do modal.
