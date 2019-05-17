@@ -1,5 +1,5 @@
 ---
-title: Toggle Button React component
+title: Componente React para Botões de Alternância
 components: ToggleButton, ToggleButtonGroup
 ---
 
