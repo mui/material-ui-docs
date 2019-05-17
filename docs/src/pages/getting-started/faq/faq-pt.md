@@ -120,27 +120,27 @@ Documentamos como usar uma [biblioteca de roteamento de terceiros ](/components/
 Todos os componentes do Material-UI que devem renderizar algo no DOM possuem referencia para o componente DOM subjacente. Isso significa que você pode obter elementos DOM lendo o ref anexado aos componentes do Material-UI:
 
 ```jsx
-// or a ref setter function
+// uma função setter ref
 const ref = React.createRef();
-// render
+// renderizando
 <Button ref={ref} />;
-// usage
+// uso
 const element = ref.current;
 ```
 
-If you're not sure if the Material-UI component in question forwards its ref you can check the API documentation under "Props" e.g. the [/api/button/#props](Button API) includes
+Se você não tem certeza se o componente do Material-UI em questão encaminha sua ref, você pode verificar a documentação da API em "Props" por exemplo, a API [/api/button/#props](Button API)
 
-> The ref is forwarded to the root element.
+> O ref é encaminhado para o elemento raiz.
 
-indicating that you can access the DOM element with a ref.
+indicando que você pode acessar o elemento DOM como uma referência.
 
-## I have several instances of styles on the page
+## Eu tenho várias instâncias de estilos na página
 
-If you are seeing a warning message in the console like the one below, you probably have several instances of `@material-ui/styles` initialized on the page.
+Se você está vendo uma mensagem de aviso no console como a abaixo, você provavelmente tem várias instâncias de `@material-ui/styles` inicializadas na página.
 
 > It looks like there are several instances of `@material-ui/styles` initialized in this application. This may cause theme propagation issues, broken class names and makes your application bigger without a good reason.
 
-### Possible reasons
+### Possíveis razões
 
 There are several common reasons for this to happen:
 
