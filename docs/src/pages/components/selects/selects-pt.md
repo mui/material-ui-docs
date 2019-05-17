@@ -1,5 +1,5 @@
 ---
-title: Select React component
+title: Componente React para Seleção
 components: Select, NativeSelect
 ---
 
@@ -21,7 +21,7 @@ Como a experiência do usuário pode ser melhorada em dispositivos móveis usand
 
 ## Selects Customizados
 
-Aqui estão alguns exemplos de personalização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
+Aqui estão alguns exemplos de customização do componente. Você pode aprender mais sobre isso na [página de documentação de sobrescrita](/customization/components/).
 
 O primeiro passo é modelar o componente `InputBase`. Once it's styled, you can either use it directly as a text field or provide it to the select `input` property to have a `select` field.
 
