@@ -6,13 +6,13 @@ components: Typography
 
 <p class="description">Use a tipografia para apresentar seu design e conteúdo da forma mais clara e eficiente possível.</p>
 
-O uso de diferentes tamanhos e estilos de uma só vez pode estragar qualquer layout. A [typographic scale](https://material.io/design/typography/#type-scale) has a limited set of type sizes that work well together along with the layout grid.
+O uso de diferentes tamanhos e estilos de uma só vez pode estragar qualquer layout. Uma [escala tipográfica](https://material.io/design/typography/#type-scale) tem um conjunto limitado de tamanhos de tipo que funcionam bem em conjunto com a grade de layout.
 
 ## Geral
 
-A fonte *Roboto* **não** será carregada automaticamente pelo Material-UI. O desenvolvedor é responsável por carregar todas as fontes usadas em sua aplicação. Roboto Font has a few easy ways to get started. Para configuração mais avançadas, dê uma olhada na [seção de personalização de temas](/customization/typography/).
+A fonte *Roboto* **não** será carregada automaticamente pelo Material-UI. O desenvolvedor é responsável por carregar todas as fontes usadas em sua aplicação. A fonte Roboto possui algumas maneiras fáceis de começar. Para configuração mais avançadas, dê uma olhada na [seção de personalização de temas](/customization/typography/).
 
-## Roboto Font CDN
+## CDN da fonte Roboto
 
 Temos abaixo um exemplo de markup de link usado para carregar a fonte Roboto de um CDN:
 
@@ -50,7 +50,7 @@ Em algumas situações, talvez você não consiga usar o componente `Tipografia`
 
 O componente de Tipografia (Typography) usa a propriedade `variantMapping` para associar a variação da UI com um elemento semântico. É importante ressaltar que o estilo de uma tipografia é independente do elemento semântico por baixo dela.
 
-- You can change the underlying element for a one time occassion with the `component` property:
+- Você pode alterar o elemento subjacente para uma ocasião única com a propriedade `component`:
 
 ```jsx
 {/* Já temos um h1 na página, não vamos duplicá-lo. */}
