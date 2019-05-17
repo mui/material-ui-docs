@@ -22,7 +22,7 @@ No geral, é simples livrar-se desse problema encapsulando cada aplicação Mate
 
 ## Por que os elementos posicionados como fixos se movem quando um modal é aberto?
 
-Nós bloqueamos a rolagem assim que um modal é aberto. This prevents interacting with the background when the modal should be the only interactive content, however, removing the scrollbar can make your **fixed positioned elements** move. In this situation, you can apply a global `.mui-fixed` class name to tell Material-UI to handle those elements.
+Nós bloqueamos a rolagem assim que um modal é aberto. Isso evita a interação com o segundo plano quando o modal deve ser o único conteúdo interativo, no entanto, remover a barra de rolagem pode fazer com que seus **elementos posicionados como fixos** se movam. Nesta situação, você pode aplicar um nome de classe global `.mui-fixed ` para informar ao Material-UI para manipular esses elementos.
 
 ## Como posso desativar o efeito cascata globalmente?
 
@@ -51,7 +51,7 @@ import { createMuiTheme } from '@material-ui/core';
 
 const theme = createMuiTheme({
   transitions: {
-    // Então temos `transition: none;` everywhere
+    // Então temos `transition: none;` em todo lugar
     create: () => 'none',
   },
 });
@@ -66,7 +66,7 @@ import { createMuiTheme } from '@material-ui/core';
 
 const theme = createMuiTheme({
   transitions: {
-    // So we have `transition: none;` everywhere
+    // Então temos `transition: none;` em todo lugar
     create: () => 'none',
   },
   overrides: {
@@ -82,21 +82,21 @@ const theme = createMuiTheme({
     },
   },
   props: {
-    // Name of the component ⚛️
+    // Nome do componente ⚛️
     MuiButtonBase: {
-      // The properties to apply
-      disableRipple: true, // No more ripple, on the whole application!
+      // As propriedades para aplicar
+      disableRipple: true, // Sem efeito cascata, em toda aplicação!
     },
   },
 });
 ```
 
-## Do I have to use JSS to style my app?
+## Preciso usar o JSS para estilizar minha aplicação?
 
 É recomendado:
 
-- It comes built in, so carries no additional bundle size overhead.
-- It's fast & memory efficient.
+- Ele vem embutido, portanto, não causa sobrecarga adicional no tamanho do pacote.
+- É rápido & tem um controle de memória eficiente.
 - Possui uma API limpa e consistente.
 - Ele suporta vários recursos avançados, seja nativamente ou por meio de plug-ins.
 
