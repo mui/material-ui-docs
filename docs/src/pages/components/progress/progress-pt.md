@@ -22,7 +22,7 @@ Ao exibir o progresso de uma seqüência de processos, indique o progresso geral
 [Progresso circular](https://material.io/design/components/progress-indicators.html#circular-progress-indicators) suporta ambos, processos determinados e indeterminados.
 
 - O indicador circular **determinado** preenche a faixa circular invisível com cor, a medida que o indicador se move de 0 a 360 graus.
-- **Indeterminate** circular indicators grow and shrink in size while moving along the invisible track.
+- O indicador circular **indeterminado** crescem e diminuem em tamanho enquanto se movem de forma circular na faixa invisível.
 
 ### Circular Indeterminado
 
@@ -32,19 +32,19 @@ Ao exibir o progresso de uma seqüência de processos, indique o progresso geral
 
 {{"demo": "pages/components/progress/CircularIntegration.js"}}
 
-### Determinado Circular
+### Circular Determinado
 
 {{"demo": "pages/components/progress/CircularDeterminate.js"}}
 
-### Fatia Circular
+### Circular estático
 
 {{"demo": "pages/components/progress/CircularStatic.js"}}
 
 ## Linear
 
-[Linear progress](https://material.io/design/components/progress-indicators.html#linear-progress-indicators) indicators.
+Indicadores de [progresso linear](https://material.io/design/components/progress-indicators.html#linear-progress-indicators).
 
-### Indeterminado Linear
+### Linear Indeterminado
 
 {{"demo": "pages/components/progress/LinearIndeterminate.js"}}
 
@@ -60,9 +60,9 @@ Ao exibir o progresso de uma seqüência de processos, indique o progresso geral
 
 {{"demo": "pages/components/progress/LinearQuery.js"}}
 
-## Gamas não padronizadas
+## Intervalo não-padrão
 
-The progress components accept a value in the range 0 - 100. This simplifies things for screen-reader users, where these are the default min / max values. Sometimes, however, you might be working with a data source where the values fall outside this range. Here's how you can easily transform a value in any range to a scale of 0 - 100:
+Os componentes de progresso aceitam um valor no intervalo de 0 a 100. Isso simplifica as coisas para os usuários de leitores de tela, onde estes são os valores padrão mínimos / máximos. Sometimes, however, you might be working with a data source where the values fall outside this range. Here's how you can easily transform a value in any range to a scale of 0 - 100:
 
 ```jsx
 // MIN = Valor mínimo esperado
