@@ -36,15 +36,15 @@ A principal responsabilidade do componente `MenuList` é manipular o foco.
 
 ## Menus Customizados
 
-Aqui está um exemplo de personalização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
+Aqui está um exemplo de customização do componente. Você pode aprender mais sobre isso na [página de documentação de sobrescrita](/customization/components/).
 
 {{"demo": "pages/components/menus/CustomizedMenus.js"}}
 
-The `MenuItem` is a wrapper around `ListItem` with some additional styles. You can use the same list composition features with the `MenuItem` component:
+O `MenuItem` é um wrapper em torno do `ListItem` com alguns estilos adicionais. Você pode usar os mesmos recursod de composição de lista com o componente `MenuItem`:
 
-## Max height menus
+## Altura máxima dos menus
 
-If the height of a menu prevents all menu items from being displayed, the menu can scroll internally.
+Se a altura de um menu impede que todos os itens de menu sejam exibidos, o menu terá internamente a opção de rolagem.
 
 {{"demo": "pages/components/menus/LongMenu.js"}}
 
