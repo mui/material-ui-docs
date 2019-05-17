@@ -62,11 +62,11 @@ Indicadores de [progresso linear](https://material.io/design/components/progress
 
 ## Intervalo não-padrão
 
-Os componentes de progresso aceitam um valor no intervalo de 0 a 100. Isso simplifica as coisas para os usuários de leitores de tela, onde estes são os valores padrão mínimos / máximos. Sometimes, however, you might be working with a data source where the values fall outside this range. Here's how you can easily transform a value in any range to a scale of 0 - 100:
+Os componentes de progresso aceitam um valor no intervalo de 0 a 100. Isso simplifica as coisas para os usuários de leitores de tela, onde estes são os valores padrão mínimos / máximos. Às vezes, no entanto, você pode estar trabalhando com uma fonte de dados onde os valores ficam de fora deste intervalo. Veja como você pode transformar facilmente um valor em qualquer intervalo em uma escala de 0 a 100:
 
 ```jsx
 // MIN = Valor mínimo esperado
-// MAX = Valor esperado Maximium
+// MAX = Valor máximo esperado
 // Função para normalizar os valores (MIN / MAX pode ser integrado)
 const normalise = value => (value - MIN) * 100 / (MAX - MIN);
 
@@ -81,15 +81,15 @@ function Progress(props) {
 }
 ```
 
-## Customized progress bars
+## Barra de progresso customizada
 
-Aqui estão alguns exemplos de personalização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
+Aqui está um exemplo de customização do componente. Você pode aprender mais sobre isso na [página de documentação de sobrescrita](/customization/components/).
 
 {{"demo": "pages/components/progress/CustomizedProgressBars.js"}}
 
-## Delaying appearance
+## Aparência atrasada
 
-There are [3 important limits](https://www.nngroup.com/articles/response-times-3-important-limits/) to know around response time. The ripple effect of the `ButtonBase` component ensures that the user feels that the system is reacting instantaneously. Normally, no special feedback is necessary during delays of more than 0.1 but less than 1.0 second. After 1.0 second, you can display a loader to keep user's flow of thought uninterrupted.
+Existem [3 limites importantes](https://www.nngroup.com/articles/response-times-3-important-limits/) para saber sobre o tempo de resposta. O efeito cascata do componente `ButtonBase` garante que o usuário experimente um sistema de feedback em tempo real. Normally, no special feedback is necessary during delays of more than 0.1 but less than 1.0 second. After 1.0 second, you can display a loader to keep user's flow of thought uninterrupted.
 
 {{"demo": "pages/components/progress/DelayingAppearance.js"}}
 
