@@ -16,21 +16,21 @@ Coisas para saber ao usar o componente `Popover`:
 
 {{"demo": "pages/components/popover/SimplePopover.js" }}
 
-## Anchor playground
+## Âncora - Exemplo interativo
 
-Use os botões de opção para ajustar as posições `anchorOrigin` e `transformOrigin`. Você também pode definir `anchorReference` para `anchorPosition` ou `anchorEl`. When it is `anchorPosition`, the component will, instead of `anchorEl`, refer to the `anchorPosition` prop which you can adjust to set the position of the popover.
+Use os botões de opção para ajustar as posições `anchorOrigin` e `transformOrigin`. Você também pode definir `anchorReference` para `anchorPosition` ou `anchorEl`. Quando configurado com `anchorPosition`, o componente irá, ao contrário de `anchorEl`, basear se nas propriedades do `anchorPosition`, na qual você pode ajustar para definir a posição do popover.
 
 {{"demo": "pages/components/popover/AnchorPlayground.js", "hideHeader": true}}
 
 ## Interação sobre o mouse
 
-Demonstramos como usar o componente `Popover` para implementar um comportamento popover baseado no evento mouse over.
+Demonstraremos como usar o componente `Popover` para implementar um comportamento popover baseado no evento mouse over.
 
 {{"demo": "pages/components/popover/MouseOverPopover.js"}}
 
 ## Projetos Complementares
 
-Para caso de usos mais avançados, você é capaz de aproveitar de:
+Para usos mais avançados, você pode tirar vantagem com:
 
 ### PopupState helper
 
