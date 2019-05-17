@@ -5,13 +5,13 @@ components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
 
 # Interruptores (Switches)
 
-<p class="description">Switches alternam o estado de uma única configuração ligado ou desligado.</p>
+<p class="description">Interruptores alternam o estado de uma única configuração ligado ou desligado.</p>
 
-[Switches](https://material.io/design/components/selection-controls.html#switches) são a forma preferida de ajustes de configuração em mobile. A opção que o switch controla, juntamente com o estado atual, deve ser claramente explícita na label correspondente.
+[Interruptores](https://material.io/design/components/selection-controls.html#switches) são a forma preferida de ajustes de configuração em mobile. A opção que o interruptor controla, juntamente com o estado atual, deve ser claramente explícita no rótulo(label) inline correspondente.
 
 {{"demo": "pages/components/switches/Switches.js"}}
 
-## Switches com FormControlLabel
+## Interruptores com FormControlLabel
 
 `Switch` também pode ser utilizado com uma descrição de label graças ao componente `FormControlLabel`.
 
