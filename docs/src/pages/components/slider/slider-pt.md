@@ -7,7 +7,7 @@ components: Slider
 
 <p class="description">Sliders permitem que os usuários façam seleções a partir de um intervalo de valores.</p>
 
-[Sliders](https://material.io/design/components/sliders.html) reflect a range of values along a bar, from which users may select a single value. They are ideal for adjusting settings such as volume, brightness, or applying image filters.
+[Sliders](https://material.io/design/components/sliders.html) descrevem um intervalo de valores ao longo de uma barra, a partir do qual os usuários podem selecionar um único valor. Eles são ideais para ajustar configurações como volume, brilho ou aplicação de filtros de imagem.
 
 Sliders can have icons on both ends of the bar that reflect a range of values.
 
