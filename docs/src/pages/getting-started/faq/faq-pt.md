@@ -176,9 +176,9 @@ Uma possível correção para que o @material-ui/styles seja executado em uma Le
 lerna bootstrap --hoist
 ```
 
-Alternatively, you can remove @material-ui/styles from your package.json file and hoist it manually to your top-level package.json file.
+Alternativamente, você pode remover a referência do @material-ui/styles do seu arquivo package.json e subir (hoist) ela manualmente para o arquivo package.json da pasta raiz do Lerna.
 
-Example of a package.json file in a Lerna root folder
+Exemplo de um arquivo package.json em uma pasta raiz do Lerna
 
 ```json
 {
@@ -198,9 +198,9 @@ Example of a package.json file in a Lerna root folder
 }
 ```
 
-### Running multiple applications on one page
+### Executando múltiplas aplicações em uma única página
 
-If you have several applications running on one page, consider using one @material-ui/styles module for all of them. If you are using webpack, you can use [CommonsChunkPlugin](https://webpack.js.org/plugins/commons-chunk-plugin/) to create an explicit [vendor chunk](https://webpack.js.org/plugins/commons-chunk-plugin/#explicit-vendor-chunk), that will contain the @material-ui/styles module:
+Se você tiver várias aplicações em execução em uma página, considere o uso de um único módulo @material-ui/styles para todas elas. Se você esta usando webpack, você pode usar [CommonsChunkPlugin](https://webpack.js.org/plugins/commons-chunk-plugin/) para criar de forma explícita um [vendor chunk](https://webpack.js.org/plugins/commons-chunk-plugin/#explicit-vendor-chunk), que conterá o módulo @material-ui/styles:
 
 ```diff
   module.exports = {
@@ -218,17 +218,17 @@ If you have several applications running on one page, consider using one @materi
   }
 ```
 
-## My App doesn't render correctly on the server
+## Minha aplicaçao não é renderizada corretamente no servidor
 
-If it doesn't work, in 99% of cases it's a configuration issue. A missing property, a wrong call order, or a missing component. We are very strict about configuration, and the best way to find out what's wrong is to compare your project to an already working setup, check out our [reference implementations](/guides/server-rendering/#reference-implementations), bit by bit.
+Se isso não funcionar, em 99% dos casos é um problema de configuração. Uma propriedade ausente, uma ordem de chamada incorreta ou um componente ausente. Somos muito rigorosos quanto à configuração, e a melhor maneira de descobrir o que está errado é comparar seu projeto com uma configuração já em funcionamento, confira nossas [implementações de referência](/guides/server-rendering/#reference-implementations), de ponto a ponto.
 
-### CSS works only on first load then is missing
+### O CSS funciona apenas no primeiro carregamento, em seguida, para de funcionar
 
-The CSS is only generated on the first load of the page. Then, the CSS is missing on the server for consecutive requests.
+O CSS é gerado apenas no primeiro carregamento da página. Em seguida, o CSS não retorna do servidor para solicitações consecutivas.
 
-#### Action to Take
+#### Ação a tomar
 
-We rely on a cache, the sheets manager, to only inject the CSS once per component type (if you use two buttons, you only need the CSS of the button one time). You need to create **a new `sheets` instance for each request**.
+Contamos com um cache, o gerenciador de folhas, para injetar apenas o CSS uma vez por tipo de componente (se você usa dois botões, você só precisa do CSS do botão uma vez). You need to create **a new `sheets` instance for each request**.
 
 *example of fix:*
 
@@ -251,7 +251,7 @@ function handleRender(req, res) {
 
 There is a class name mismatch between the client and the server. It might work for the first request. Another symptom is that the styling changes between initial page load and the downloading of the client scripts.
 
-#### Action to Take
+#### Ação a tomar
 
 The class names value relies on the concept of [class name generator](/styles/advanced/#class-names). The whole page needs to be rendered with **a single generator**. This generator needs to behave identically on the server and on the client. For instance:
 
