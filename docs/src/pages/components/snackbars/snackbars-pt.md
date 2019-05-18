@@ -15,7 +15,7 @@ Snackbars contêm uma única linha de texto diretamente relacionada à operaçã
 
 Apenas um snackbar pode ser exibido por vez.
 
-## Simple snackbars
+## Snackbars simples
 
 Um snackbar básico que tem como objetivo reproduzir o comportamento do Google Keep's snackbar.
 
