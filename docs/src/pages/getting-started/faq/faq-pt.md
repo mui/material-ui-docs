@@ -228,22 +228,22 @@ O CSS é gerado apenas no primeiro carregamento da página. Em seguida, o CSS n�
 
 #### Ação a tomar
 
-Contamos com um cache, o gerenciador de folhas, para injetar apenas o CSS uma vez por tipo de componente (se você usa dois botões, você só precisa do CSS do botão uma vez). You need to create **a new `sheets` instance for each request**.
+Contamos com um cache, o gerenciador de folhas (sheets), para injetar apenas o CSS uma vez por tipo de componente (se você usa dois botões, você só precisa do CSS do botão uma vez). Você precisa criar **uma nova instância de `sheets` para cada requisição **.
 
-*example of fix:*
+*exemplo de correção:*
 
 ```diff
--// Create a sheets instance.
+-// Crie uma instância de sheets.
 -const sheets = new ServerStyleSheets();
 
 function handleRender(req, res) {
 
-+ // Create a sheets instance.
++ // Crie uma instância de sheets.
 + const sheets = new ServerStyleSheets();
 
   //…
 
-  // Render the component to a string.
+  // Renderize o componente para uma string.
   const html = ReactDOMServer.renderToString(
 ```
 
@@ -257,7 +257,7 @@ The class names value relies on the concept of [class name generator](/styles/ad
 
 - You need to provide a new class name generator for each request. But you shouldn't share a `createGenerateClassName()` between different requests:
 
-*example of fix:*
+*exemplo de correção:*
 
 ```diff
 - // Cria um novo gerador de nome de classe.
