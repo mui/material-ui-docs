@@ -249,13 +249,13 @@ function handleRender(req, res) {
 
 ### React incompatibilidade de nome de classes na hidratação (React Hydrate)
 
-Há uma incompatibilidade de nome de classe entre o cliente e o servidor. Pode funcionar para a primeira requisição. Another symptom is that the styling changes between initial page load and the downloading of the client scripts.
+Há uma incompatibilidade de nome de classe entre o cliente e o servidor. Pode funcionar para a primeira requisição. Outro sintoma é que o estilo muda entre o carregamento inicial da página e o download dos scripts do cliente.
 
 #### Ação a tomar
 
-The class names value relies on the concept of [class name generator](/styles/advanced/#class-names). The whole page needs to be rendered with **a single generator**. This generator needs to behave identically on the server and on the client. For instance:
+O valor de nomes de classe depende da lógica empregada pelo [gerador de nome de classe](/styles/advanced/#class-names). A página inteira precisa ser renderizada com **um único gerador**. Este gerador precisa se comportar de forma idêntica no servidor e no cliente. Por exemplo:
 
-- You need to provide a new class name generator for each request. But you shouldn't share a `createGenerateClassName()` between different requests:
+- Você precisa fornecer um novo gerador de nome de classe para cada requisição. But you shouldn't share a `createGenerateClassName()` between different requests:
 
 *exemplo de correção:*
 
