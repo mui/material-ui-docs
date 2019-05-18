@@ -156,9 +156,9 @@ Se nenhum desses comandos identificou a duplicação, tente analisar seu pacote 
 
 Se você identificou que a duplicação é o problema que você esta enfrentando, há várias coisas que você pode tentar para resolvê-lo:
 
-Se você está usando npm você pode tentar executar `npm dedupe`. This command searches the local dependencies and tries to simplify the structure by moving common dependencies further up the tree.
+Se você está usando npm você pode tentar executar `npm dedupe`. Este comando pesquisa as dependências locais e tenta simplificar a estrutura movendo dependências comuns mais acima na árvore.
 
-If you are using webpack, you can change the way it will [resolve](https://webpack.js.org/configuration/resolve/#resolve-modules) the @material-ui/styles module. You can overwrite the default order in which webpack will look for your dependencies and make your application node_modules more prioritized than default node module resolution order:
+Se você estiver usando o webpack, você pode mudar a maneira como ele irá resolver ([resolve](https://webpack.js.org/configuration/resolve/#resolve-modules)) o módulo @material-ui/styles. Você pode sobrescrever a ordem padrão na qual o webpack irá procurar por suas dependências e tornar a pasta node_modules da sua aplicação, com maior prioridade do que a ordem de resolução de módulos padrão:
 
 ```diff
   resolve: {
@@ -168,9 +168,9 @@ If you are using webpack, you can change the way it will [resolve](https://webpa
   }
 ```
 
-### Usage with Lerna
+### Uso com Lerna
 
-One possible fix to get @material-ui/styles to run in a Lerna monorepo across packages, is to [hoist](https://github.com/lerna/lerna/blob/master/doc/hoist.md) shared dependencies to the root of your monorepo file. Try running the bootstrap option with the --hoist flag.
+Uma possível correção para que o @material-ui/styles seja executado em uma Lerna monorepo através de pacotes, é fazer [hoist](https://github.com/lerna/lerna/blob/master/doc/hoist.md) das dependências compartilhadas para a raiz do seu arquivo monorepo. Try running the bootstrap option with the --hoist flag.
 
 ```sh
 lerna bootstrap --hoist
