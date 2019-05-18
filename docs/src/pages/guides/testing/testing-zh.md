@@ -14,9 +14,9 @@
 
 在用户空间编写测试会如何呢？ Material-UI 的样式基础架构使用构建在 [enzyme](https://github.com/airbnb/enzyme) 的一些辅助函数之上来，这样一来整个流程会更简便，而这正是我们正在开源的。 若你愿意，你可以对它们加之利用。
 
-### Shallow rendering
+### Shallow rendering（浅层渲染）
 
-当把测试的组件当做一个小的单元时，Shallow rendering 起到了很好的约束作用。 This also ensures that your tests aren't indirectly asserting behavior of child components. Shallow rendering was created to test components in isolation. This means without leaking child implementation details such as the context.
+当把测试的组件当做一个小的单元时，浅层渲染起到了很好的约束作用。 这样也确保了你的测试不会间接地判断子组件的行为。 浅层渲染的目的是单独测试组件。 This means without leaking child implementation details such as the context.
 
 `createShallow()` 函数可用于此情况。 除了包装酶API，它提供 `dive`untilSelector`直到选择` 选项。
 
