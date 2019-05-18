@@ -255,17 +255,17 @@ Há uma incompatibilidade de nome de classe entre o cliente e o servidor. Pode f
 
 O valor de nomes de classe depende da lógica empregada pelo [gerador de nome de classe](/styles/advanced/#class-names). A página inteira precisa ser renderizada com **um único gerador**. Este gerador precisa se comportar de forma idêntica no servidor e no cliente. Por exemplo:
 
-- Você precisa fornecer um novo gerador de nome de classe para cada requisição. But you shouldn't share a `createGenerateClassName()` between different requests:
+- Você precisa fornecer um novo gerador de nome de classe para cada requisição. Mas você não deve compartilhar um `createGenerateClassName()` entre diferentes requisições:
 
 *exemplo de correção:*
 
 ```diff
-- // Cria um novo gerador de nome de classe.
+- // Crie um novo gerador de nome de classe.
 -const generateClassName = createGenerateClassName();
 
 function handleRender(req, res) {
 
-+ // Cria um novo gerador de nome de classe.
++ // Crie um novo gerador de nome de classe.
 + const generateClassName = createGenerateClassName();
 
   //…
@@ -274,7 +274,7 @@ function handleRender(req, res) {
   const html = ReactDOMServer.renderToString(
 ```
 
-- You need to verify that your client and server are running the **exactly the same version** of Material-UI. It is possible that a mismatch of even minor versions can cause styling problems. To check version numbers, run `npm list @material-ui/core` in the environment where you build your application and also in your deployment environment.
+- Você precisa verificar se seu cliente e servidor estão executando o **exatamente a mesma versão** do Material-UI. É possível que uma incompatibilidade de versões menores possa causar problemas de estilo. Para verificar números de versão, execute `npm list @material-ui/core` no ambiente em que você cria sua aplicação e também em seu ambiente de implementação.
     
     You can also ensure the same version in different environments by specifying a specific MUI version in the dependencies of your package.json.
 
