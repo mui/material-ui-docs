@@ -276,9 +276,9 @@ function handleRender(req, res) {
 
 - Você precisa verificar se seu cliente e servidor estão executando o **exatamente a mesma versão** do Material-UI. É possível que uma incompatibilidade de versões menores possa causar problemas de estilo. Para verificar números de versão, execute `npm list @material-ui/core` no ambiente em que você cria sua aplicação e também em seu ambiente de implementação.
     
-    You can also ensure the same version in different environments by specifying a specific MUI version in the dependencies of your package.json.
+    Você também pode garantir a mesma versão em diferentes ambientes, definindo uma versão específica do MUI nas dependências do seu package.json.
 
-*example of fix (package.json):*
+*exemplo de correção (package.json):*
 
 ```diff
   "dependencies": {
@@ -290,9 +290,9 @@ function handleRender(req, res) {
   },
 ```
 
-- You need to make sure that the server and the client share the same `process.env.NODE_ENV` value.
+- Você precisa ter certeza de que o servidor e o cliente compartilham o mesmo valor de `process.env.NODE_ENV`.
 
-## Why are the colors I am seeing different from what I see here?
+## Por que as cores que estou vendo são diferentes do que vejo aqui?
 
 The documentation site is using a custom theme. Hence, the color palette is different from the default theme that Material-UI ships. Please refer to [this page](/customization/themes/) to learn about theme customization.
 
