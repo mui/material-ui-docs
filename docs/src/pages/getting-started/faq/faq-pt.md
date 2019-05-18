@@ -170,7 +170,7 @@ Se você estiver usando o webpack, você pode mudar a maneira como ele irá reso
 
 ### Uso com Lerna
 
-Uma possível correção para que o @material-ui/styles seja executado em uma Lerna monorepo através de pacotes, é fazer [hoist](https://github.com/lerna/lerna/blob/master/doc/hoist.md) das dependências compartilhadas para a raiz do seu arquivo monorepo. Try running the bootstrap option with the --hoist flag.
+Uma possível correção para que o @material-ui/styles seja executado em uma Lerna monorepo através de pacotes, é fazer [hoist](https://github.com/lerna/lerna/blob/master/doc/hoist.md) das dependências compartilhadas para a raiz do seu arquivo monorepo. Tente executar a opção de auto inicialização com o parâmetro --hoist.
 
 ```sh
 lerna bootstrap --hoist
