@@ -247,9 +247,9 @@ function handleRender(req, res) {
   const html = ReactDOMServer.renderToString(
 ```
 
-### React class name hydration mismatch
+### React incompatibilidade de nome de classes na hidratação
 
-There is a class name mismatch between the client and the server. It might work for the first request. Another symptom is that the styling changes between initial page load and the downloading of the client scripts.
+Há uma incompatibilidade de nome de classe entre o cliente e o servidor. Pode funcionar para a primeira requisição. Another symptom is that the styling changes between initial page load and the downloading of the client scripts.
 
 #### Ação a tomar
 
