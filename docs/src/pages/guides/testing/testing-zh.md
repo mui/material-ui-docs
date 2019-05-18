@@ -16,11 +16,11 @@
 
 ### Shallow rendering（浅层渲染）
 
-当把测试的组件当做一个小的单元时，浅层渲染起到了很好的约束作用。 这样也确保了你的测试不会间接地判断子组件的行为。 浅层渲染的目的是单独测试组件。 This means without leaking child implementation details such as the context.
+当把测试的组件当做一个小的单元时，浅层渲染起到了很好的约束作用。 这样也确保了你的测试不会间接地判断子组件的行为。 浅层渲染的目的是单独测试组件。 也就是说子元素的具体实现，如上下文信息，不会被泄漏。
 
-`createShallow()` 函数可用于此情况。 除了包装酶API，它提供 `dive`untilSelector`直到选择` 选项。
+`createShallow()` 函数可用于此情况。 除了包装 enzyme 的 API，它提还供 `dive` 和 `untilSelector` 的选项。
 
-### 完整的DOM渲染
+### 完整的 DOM 渲染
 
 Full DOM rendering is ideal for use cases where you have components that may interact with DOM APIs or may require the full lifecycle in order to fully test the component (e.g., `componentDidMount` etc.).
 
