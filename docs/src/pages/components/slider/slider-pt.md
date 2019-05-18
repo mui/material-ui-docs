@@ -31,17 +31,17 @@ Os sliders refletem o estado atual das configurações que eles controlam.
 
 {{"demo": "pages/components/slider/DisabledSlider.js"}}
 
-## Vertical slider
+## Slider vertical
 
 {{"demo": "pages/components/slider/VerticalSlider.js"}}
 
-## Customized sliders
+## Sliders customizados
 
-Aqui está um exemplo de personalização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
+Aqui está um exemplo de customização do componente. Você pode aprender mais sobre isso na [página de documentação de sobrescrita](/customization/components/).
 
 {{"demo": "pages/components/slider/CustomizedSlider.js"}}
 
-## Custom thumb
+## Slider com miniatura customizada
 
 {{"demo": "pages/components/slider/CustomIconSlider.js"}}
 
