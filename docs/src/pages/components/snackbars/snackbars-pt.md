@@ -27,7 +27,7 @@ Aqui estão alguns exemplos de personalização do componente. Você pode aprend
 
 {{"demo": "pages/components/snackbars/CustomizedSnackbars.js"}}
 
-## Positioned snackbars
+## Snackbars posicionados
 
 Pode haver circunstâncias em que vão ser necessárias maior flexibilidade na colocação da snackbar.
 
