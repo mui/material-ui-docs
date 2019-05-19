@@ -23,8 +23,8 @@ Você pode fornecer um ícone alternativo para os estados de aberto e fechado us
 
 ## Sugestões de ação fixadas
 
-The SpeedDialActions tooltips can be be displayed persistently so that users don't have to long-press in order to see the tooltip on touch devices.
+Os SpeedDialActions podem exibir dicas de forma fixadas para que os usuários não precisem manter as ações pressionadas para ver a dica nos dispositivos de toque.
 
-It is enabled here across all devices for demo purposes, but in production it could use the `isTouch` logic to conditionally set the property.
+A dica é ativada aqui em todos os dispositivos para fins de demonstração, mas em produção pode se usar uma lógica para definir condicionalmente a propriedade `isTouch`.
 
 {{"demo": "pages/components/speed-dial/SpeedDialTooltipOpen.js"}}
