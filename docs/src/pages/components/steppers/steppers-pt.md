@@ -3,11 +3,11 @@ title: Componente React Stepper
 components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIcon, StepLabel, Stepper
 ---
 
-# Barra de etapas
+# Assistente
 
-<p class="description">Barra de etapas representam progresso através de etapas numeradas. Ela fornece um fluxo de trabalho semelhante a um assistente.</p>
+<p class="description">Assistentes representam progresso através de etapas numeradas. Ele fornece um fluxo de trabalho de passo a passo.</p>
 
-[Barra de etapas](https://material.io/archive/guidelines/components/steppers.html) exibem o progresso através de uma sequência de etapas lógicas e numeradas. Elas também podem ser usadas para navegação. Barra de etapas podem exibir uma mensagem de feedback transiente depois que uma etapa é salva.
+[Assistentes](https://material.io/archive/guidelines/components/steppers.html) exibem o progresso através de uma sequência de etapas lógicas e numeradas. Elas também podem ser usadas para navegação. Assistentes podem exibir uma mensagem de feedback transiente depois que uma etapa é salva.
 
 **Tipos de etapa**
 
@@ -16,26 +16,26 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 - Mobile
 - Opcional
 
-**Tipos de barra de etapas**
+**Tipos de assistentes**
 
 - Horizontal
 - Vertical
 - Linear
 - Não linear
 
-> **Nota:** As barras de etapas não estão documentadas na documentação do Material Design.
+> **Nota:** Os assistentes não estão documentados na documentação do Material Design.
 
 ## Horizontal Linear
 
-A barra de etapas (`Stepper`) pode ser controlada passando o índice da etapa atual (baseado em zero) com a propriedade `activeStep`. `Stepper` orientation is set using the `orientation` property.
+O assistente (`Stepper`) pode ser controlado passando o índice da etapa atual (baseado em zero) com a propriedade `activeStep`. A orientação do asisstente (`Stepper`) é definida usando a propriedade `orientation`.
 
-Este exemplo também mostra o uso de uma etapa opcional, colocando a propriedade `optional` no segundo componente de `Step`. Note that it's up to you to manage when an optional step is skipped. Once you've determined this for a particular step you must set `completed={false}` to signify that even though the active step index has gone beyond the optional step, it's not actually complete.
+Este exemplo também mostra o uso de uma etapa opcional, colocando a propriedade `optional` no segundo componente de `Step`. Observe que cabe a você gerenciar quando uma etapa opcional é ignorada. Depois de determinar isso para uma etapa específica, você deve definir `completed={false}` para indicar que, embora o índice da etapa ativa tenha ultrapassado a etapa opcional, ele não está realmente concluído.
 
 {{"demo": "pages/components/steppers/HorizontalLinearStepper.js"}}
 
 ## Horizontal não linear
 
-Non-linear steppers allow users to enter a multi-step flow at any point.
+Os assistentes não lineares permitem que os usuários insiram um fluxo de várias etapas a qualquer momento.
 
 This example is similar to the regular horizontal stepper, except steps are no longer automatically set to `disabled={true}` based on the `activeStep` property.
 
