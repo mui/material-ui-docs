@@ -1,9 +1,9 @@
 ---
-title: Stepper React component
+title: Componente React Stepper
 components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIcon, StepLabel, Stepper
 ---
 
-# Passo a Passo
+# Barra de etapas
 
 <p class="description">Steppers transmitem progresso através de etapas numeradas. Ele fornece um fluxo de trabalho semelhante a um assistente.</p>
 
