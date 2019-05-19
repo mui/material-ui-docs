@@ -15,19 +15,19 @@ Quando ativada, [dicas](https://material.io/design/components/tooltips.html) exi
 
 ## Posicionamento de dicas
 
-The `Tooltip` has 12 **placements** choice. They don’t have directional arrows; instead, they rely on motion emanating from the source to convey direction.
+A dica (`Tooltip`) tem 12 **locais de posicionamento** para escolha. Elas não têm setas direcionais; em vez disso, elas dependem do movimento sobre a fonte para se exibirem na posição configurada.
 
 {{"demo": "pages/components/tooltips/PositionedTooltips.js"}}
 
-## Tooltips Customizados
+## Dicas customizadas
 
-Aqui estão alguns exemplos de personalização do componente. Você pode aprender mais sobre isso na [página de documentação de substituições](/customization/components/).
+Aqui estão alguns exemplos de customização do componente. Você pode aprender mais sobre isso na [página de documentação de sobrescrita](/customization/components/).
 
 {{"demo": "pages/components/tooltips/CustomizedTooltips.js"}}
 
 ## Elemento filho customizado
 
-The tooltip needs to apply DOM event listeners to its child element. If the child is a custom React element, you need to make sure that it spreads its properties to the underlying DOM element.
+A dica precisa aplicar eventos DOM do tipo "listeners" para seu elemento filho. Se o filho for um elemento React customizado, você precisa garantir que ele estenda suas propriedades para o elemento DOM subjacente.
 
 ```jsx
 function MyComponent (props) {
@@ -42,15 +42,15 @@ function MyComponent (props) {
 </Tooltip>
 ```
 
-You can find a similar concept in the [wrapping components](/guides/composition/#wrapping-components) guide.
+Você pode encontrar um conceito similar no guia de [componentes de encapsulamento](/guides/composition/#wrapping-components).
 
 ## Gatilhos
 
-You can define the types of events that cause a tooltip to show.
+Você pode definir os tipos de eventos que fazem com que uma dica seja exibida.
 
 {{"demo": "pages/components/tooltips/TriggersTooltips.js"}}
 
-## Tooltips Controlados
+## Dicas Controladas
 
 You can use the `open`, `onOpen` and `onClose` properties to control the behavior of the tooltip.
 
