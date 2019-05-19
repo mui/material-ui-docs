@@ -17,11 +17,11 @@ O botão de ação flutuante pode exibir ações relacionadas.
 
 ## Ícone de fechamento customizado
 
-You can provide an alternate icon for the closed and open states using the `icon` and `openIcon` props of the `SpeedDialIcon` component.
+Você pode fornecer um ícone alternativo para os estados de aberto e fechado usando as propriedades `icon` e `openIcon` do componente `SpeedDialIcon`.
 
 {{"demo": "pages/components/speed-dial/OpenIconSpeedDial.js"}}
 
-## Persistent action tooltips
+## Sugestões de ação fixadas
 
 The SpeedDialActions tooltips can be be displayed persistently so that users don't have to long-press in order to see the tooltip on touch devices.
 
