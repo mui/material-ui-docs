@@ -52,25 +52,25 @@ Você pode definir os tipos de eventos que fazem com que uma dica seja exibida.
 
 ## Dicas Controladas
 
-You can use the `open`, `onOpen` and `onClose` properties to control the behavior of the tooltip.
+Você pode usas as propriedades `open`, `onOpen` e `onClose` para controlar o comportamento da dica.
 
 {{"demo": "pages/components/tooltips/ControlledTooltips.js"}}
 
 ## Largura Variável
 
-The `Tooltip` wraps long text by default to make it readable.
+A dica (`Tooltip`) quebra o texto longo por padrão para torná-lo legível.
 
 {{"demo": "pages/components/tooltips/VariableWidth.js"}}
 
-## Interativo
+## Interativa
 
-A tooltip can be interactive. It won't close when the user hovers over the tooltip before the `leaveDelay` is expired.
+Uma dia pode ser interativa. Ela não será fechada quando o usuário passar por cima da dica antes que `leaveDelay` expire.
 
 {{"demo": "pages/components/tooltips/InteractiveTooltips.js"}}
 
 ## Elementos Desativados
 
-By default disabled elements like `<button>` do not trigger user interactions so a `Tooltip` will not activate on normal events like hover. To accommodate disabled elements, add a simple wrapper element like a `span`.
+Por padrão os elementos desativados como `<button>` não disparam interações do usuário, então uma `Tooltip` não será ativada em eventos normais, omo passar o mouse. Para acomodar elementos desativados, adicione um elemento encapsulador simples como um `span`.
 
 {{"demo": "pages/components/tooltips/DisabledTooltips.js"}}
 
@@ -82,7 +82,7 @@ Use uma transição diferente.
 
 ## Mostrando e ocultando
 
-The tooltip is normally shown immediately when the user's mouse hovers over the element, and hides immediately when the user's mouse leaves. A delay in showing or hiding the tooltip can be added through the properties `enterDelay` and `leaveDelay`, as shown in the Controlled Tooltips demo above.
+A dica normalmente é mostrada imediatamente quando o mouse do usuário passa sobre o elemento e se oculta imediatamente quando o mouse do usuário sai. Um atraso na exibição ou ocultação da dica pode ser adicionado por meio das propriedades `enterDelay` e `leaveDelay`, conforme mostrado na demonstração de dicas controladas acima.
 
 On mobile, the tooltip is displayed when the user longpresses the element and hides after a delay of 1500ms. You can disable this feature with the `disableTouchListener` property.
 
