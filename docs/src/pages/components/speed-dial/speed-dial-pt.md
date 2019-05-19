@@ -1,21 +1,21 @@
 ---
-title: Componente React Discagem Rápida
+title: Componente React para Acesso Rápido
 components: SpeedDial, SpeedDialAction, SpeedDialIcon
 ---
 
-# Discagem Rápida
+# Acesso Rápido
 
-<p class="description">When pressed, a floating action button can display three to six related actions in the form of a speed dial.</p>
+<p class="description">Quando pressionado, um botão de ação flutuante pode exibir de três a seis ações relacionadas na forma de um acesso rápido.</p>
 
-If more than six actions are needed, something other than a FAB should be used to present them.
+Se mais de seis ações forem necessárias, algo diferente de um BAF deve ser usado para apresentá-las.
 
-## Discagem rápida simples
+## Acesso rápido simples
 
-The floating action button can display related actions.
+O botão de ação flutuante pode exibir ações relacionadas.
 
 {{"demo": "pages/components/speed-dial/SpeedDials.js"}}
 
-## Custom close icon
+## Ícone de fechamento customizado
 
 You can provide an alternate icon for the closed and open states using the `icon` and `openIcon` props of the `SpeedDialIcon` component.
 
