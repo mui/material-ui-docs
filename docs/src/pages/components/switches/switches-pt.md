@@ -19,25 +19,25 @@ components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
 
 ## Interruptores com FormGroup
 
-`FormGroup` é usado para agrupar componentes seletores para facilitar o uso da API. However, we encourage you to use a [Checkbox](#checkboxes) instead.
+`FormGroup` é um componente encapsulador usado para agrupar componentes de seleção para fornecer uma fácil API. No entanto, nós recomendamos que você use [Caixas de Seleção](#checkboxes).
 
 {{"demo": "pages/components/switches/SwitchesGroup.js"}}
 
-## Customized switches
+## Interruptores customizados
 
-Here are some examples of customizing the component. Você pode aprender mais sobre isso na [página de documentação de sobrescritas](/customization/components/).
+Aqui esta um exemplo de customização do componente. Você pode aprender mais sobre isso na [página de documentação de sobrescritas](/customization/components/).
 
 {{"demo": "pages/components/switches/CustomizedSwitches.js"}}
 
-## Posicionamento do Label
+## Posicionamento do rótulo
 
-Você pode alterar o posicionamento do label:
+Você pode alterar o posicionamento do rótulo:
 
 {{"demo": "pages/components/switches/FormControlLabelPosition.js"}}
 
 ## Acessibilidade
 
-Todos os form controls devem ter labels, e isso inclui radio buttons, checkboxes e switches. Na maioria dos casos, isso é feito usando `<label>` ([FormControlLabel](/api/form-control-label/)).
+Todos os controles de formulário devem ter rótulos, e isso inclui botões de opção, caixas de seleção e interruptores. Na maioria dos casos, isso é feito usando `<label>` ([FormControlLabel](/api/form-control-label/)).
 
 Quando uma label não pode ser usada, é necessário adicionar um atributo diretamente no componente de input. Nesse caso você pode aplicar um atributo adicional (e.g.`aria-label`,`aria-labelledby`, `title`) através do `inputProps`.
 
