@@ -47,13 +47,13 @@ Quando várias atualizações de snackbar são necessárias, elas devem aparecer
 
 {{"demo": "pages/components/snackbars/ConsecutiveSnackbars.js"}}
 
-### Snackbars and floating action buttons (FABs)
+### Snackbars e botões de ação flutuante (BAFs)
 
-Snackbars should appear above FABs (on mobile).
+Snackbars devem aparecer acima de BAFs (no mobile).
 
 {{"demo": "pages/components/snackbars/FabIntegrationSnackbar.js", "iframe": true, "maxWidth": 500}}
 
-### Change Transition
+### Modificando a transição
 
 [Grow](/components/transitions/#grow) é a transição padrão, mas você pode usar uma diferente.
 
