@@ -67,12 +67,12 @@ Você pode alterar a direção da transição do [Slide](/components/transitions
 
 ## Projetos Complementares
 
-Para caso de usos mais avançados, você é capaz de aproveitar de:
+Para usos mais avançados, você pode tirar vantagem com:
 
 ### notistack
 
 ![estrelas](https://img.shields.io/github/stars/iamhosseindhv/notistack.svg?style=social&label=Stars) ![npm downloads](https://img.shields.io/npm/dm/notistack.svg)
 
-No exemplo a seguir, demonstramos como usar [downshift](https://github.com/iamhosseindhv/notistack). o notistack facilita a exibição das barras de snackbars (para que você não tenha que lidar com o estado de abertura / fechamento delas). Também permite empilhá-los uns sobre os outros (mas desencorajados pela especificação).
+No exemplo a seguir, demonstramos como usar [notistack](https://github.com/iamhosseindhv/notistack). O notistack facilita a exibição de snackbars (para que você não tenha que lidar com o estado de abertura / fechamento delas). Também permite empilhá-los uns sobre os outros (mas não recomendamos devido a especificação).
 
 {{"demo": "pages/components/snackbars/IntegrationNotistack.js"}}
