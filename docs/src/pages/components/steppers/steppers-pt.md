@@ -37,7 +37,7 @@ Este exemplo também mostra o uso de uma etapa opcional, colocando a propriedade
 
 Os assistentes não lineares permitem que os usuários insiram um fluxo de várias etapas a qualquer momento.
 
-This example is similar to the regular horizontal stepper, except steps are no longer automatically set to `disabled={true}` based on the `activeStep` property.
+Este exemplo é semelhante ao não linear, porém as etapas não são mais automaticamente definidas `disabled={true}` com base na propriedade `activeStep`.
 
 Nós usamos a `StepButton` aqui para demonstrar etiquetas passo clicáveis, bem como definir a `copleted` bandeira no entanto, porque passos podem ser acessados de forma não-linear é até sua própria implementação para determinar quando todas as etapas forem concluídas (ou mesmo se eles precisam ser completados).
 
