@@ -5,29 +5,29 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 
 # Barra de etapas
 
-<p class="description">Steppers transmitem progresso através de etapas numeradas. Ele fornece um fluxo de trabalho semelhante a um assistente.</p>
+<p class="description">Barra de etapas representam progresso através de etapas numeradas. Ela fornece um fluxo de trabalho semelhante a um assistente.</p>
 
-[Steppers](https://material.io/archive/guidelines/components/steppers.html) exibe o progresso através de uma sequência de etapas lógicas e numeradas. Eles também podem ser usados para navegação. Steppers podem exibir uma mensagem de feedback transiente depois que uma etapa é salva.
+[Barra de etapas](https://material.io/archive/guidelines/components/steppers.html) exibem o progresso através de uma sequência de etapas lógicas e numeradas. Elas também podem ser usadas para navegação. Barra de etapas podem exibir uma mensagem de feedback transiente depois que uma etapa é salva.
 
-**Types of Steps**
+**Tipos de etapa**
 
-- Editable
-- Non-editable
+- Editável
+- Não editável
 - Mobile
-- Optional
+- Opcional
 
-**Types of Steppers**
+**Tipos de barra de etapas**
 
 - Horizontal
 - Vertical
 - Linear
-- Non-linear
+- Não linear
 
-> **Note:** Steppers are no longer documented in the Material Design documentation.
+> **Nota:** As barras de etapas não estão documentadas na documentação do Material Design.
 
 ## Horizontal Linear
 
-The `Stepper` can be controlled by passing the current step index (zero-based) as the `activeStep` property. `Stepper` orientation is set using the `orientation` property.
+A barra de etapas (`Stepper`) pode ser controlada passando o índice da etapa atual (baseado em zero) com a propriedade `activeStep`. `Stepper` orientation is set using the `orientation` property.
 
 Este exemplo também mostra o uso de uma etapa opcional, colocando a propriedade `optional` no segundo componente de `Step`. Note that it's up to you to manage when an optional step is skipped. Once you've determined this for a particular step you must set `completed={false}` to signify that even though the active step index has gone beyond the optional step, it's not actually complete.
 
