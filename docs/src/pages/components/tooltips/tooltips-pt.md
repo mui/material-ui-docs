@@ -1,19 +1,19 @@
 ---
-title: Componente React para Tooltip
+title: Componente React para Dicas
 components: Tooltip
 ---
 
-# Tooltips
+# Dicas
 
-<p class="description">Tooltips display informative text when users hover over, focus on, or tap an element.</p>
+<p class="description">Dicas exibem texto informativo quando os usuários passam o mouse, focalizam ou tocam em um elemento.</p>
 
-When activated, [Tooltips](https://material.io/design/components/tooltips.html) display a text label identifying an element, such as a description of its function.
+Quando ativada, [dicas](https://material.io/design/components/tooltips.html) exibem um rótulo de texto identificando o elemento, como uma descrição de sua função.
 
-## Tooltips Simples
+## Dicas simples
 
 {{"demo": "pages/components/tooltips/SimpleTooltips.js"}}
 
-## Posicionamento de Tooltips
+## Posicionamento de dicas
 
 The `Tooltip` has 12 **placements** choice. They don’t have directional arrows; instead, they rely on motion emanating from the source to convey direction.
 
