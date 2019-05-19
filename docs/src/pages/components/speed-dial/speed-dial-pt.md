@@ -1,5 +1,5 @@
 ---
-title: Speed Dial React component
+title: Componente React Discagem Rápida
 components: SpeedDial, SpeedDialAction, SpeedDialIcon
 ---
 
