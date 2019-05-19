@@ -22,7 +22,7 @@ This example uses the [`withStyles()`](/css-in-js/basics/#higher-order-component
 
 ### Overriding with classes
 
-When the `className` property isn't enough, and you need to access deeper elements, you can take advantage of the `classes` object property to customize all the CSS injected by Material-UI for a given component. The list of classes for each component is documented in the **Component API** section. For instance, you can have a look at the [Button CSS API](/api/button/#css). Alternatively, you can use the [browser dev tools](#using-the-dev-tools).
+When the `className` property isn't enough, and you need to access deeper elements, you can take advantage of the `classes` object property to customize all the CSS injected by Material-UI for a given component. La lista de clases para cada componente se documenta en la sección **API de Component**. Por ejemplo, puedes echar un vistazo a la [API CSS de Button](/api/button/#css). Como alternativa, puedes utilizar las [herramientas de desarrollo del navegador](#using-the-dev-tools).
 
 This example also uses `withStyles()` (see above), but here, `ClassesNesting` is using `Button`'s `classes` prop to provide an object that maps the **names of classes to override** (style rules) to the **CSS class names to apply** (values). The component's existing classes will continue to be injected, so it is only necessary to provide the specific styles you wish to add or override.
 
@@ -32,11 +32,11 @@ Notice that in addition to the button styling, the button label's capitalization
 
 ### Usando las herramientas de dev
 
-The browser dev tools can save you a lot of time. Material-UI's class names [follow a simple pattern](/css-in-js/advanced/#class-names) in development mode: `Mui[component name]-[style rule name]-[UUID]`.
+Las herramientas de desarrollo del navegador pueden ahorrarte mucho tiempo. Material-UI's class names [follow a simple pattern](/css-in-js/advanced/#class-names) in development mode: `Mui[component name]-[style rule name]-[UUID]`.
 
-Let's go back to the above demo. ¿Cómo puedes reemplazar la etiqueta del botón?
+Volvamos a la demo anterior. ¿Cómo puedes reemplazar la etiqueta del botón?
 
-![dev-tools](/static/images/customization/dev-tools.png)
+![herramientas de desarrollo](/static/images/customization/dev-tools.png)
 
 Using the dev tools, you know that you need to target the `Button` component and the `label` style rule:
 
