@@ -218,9 +218,9 @@ Note que isto não suporta seletores, ou regras aninhadas.
 
 ## Ordem de injeção de CSS
 
-> It's **really important** to understand how the CSS specificity is calculated by the browser. It's one of the key elements to know when overriding styles. We **encourage** you to read this MDN paragraph: [How is specificity calculated?](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#How_is_specificity_calculated)
+> É **muito importante** entender como a especificidade do CSS é calculada pelo navegador. É um dos elementos-chave para saber quando sobrescrever estilos. Nós **recomendamos** que leia este parágrafo do MDN: [Como a especificidade é calculada?](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#How_is_specificity_calculated)
 
-By default, the style tags are injected **last** in the `<head>` element of the page. They gain more specificity than any other style tags on your page e.g. CSS modules, styled components.
+Por padrão, os estilos são inseridos **por último** no elemento `<head>` da sua página. They gain more specificity than any other style tags on your page e.g. CSS modules, styled components.
 
 ### injectFirst
 
