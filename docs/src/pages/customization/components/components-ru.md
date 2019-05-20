@@ -192,7 +192,7 @@ The Material Design specification documents different variations of certain comp
 
 Material-UI attempts to implement all of these variations. Please refer to the [Supported Components](/getting-started/supported-components/) documentation to find out the current status of all supported Material Design components.
 
-## 5. Global theme variation
+## 5. Глобальное изменение темы
 
 ### Theme variables
 
