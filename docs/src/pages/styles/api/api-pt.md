@@ -241,7 +241,7 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
   </h2>
   
   <p>
-    This component takes a <code>theme</code> property, and makes it available down the React tree thanks to the context. Deve preferencialmente ser usado na <strong>raiz da sua árvore de componentes</strong>.
+    Este componente tem uma propriedade <code>theme</code>, e se torna disponível pela árvore React graças ao contexto. Deve preferencialmente ser usado na <strong>raiz da sua árvore de componentes</strong>.
   </p>
   
   <h4>
@@ -299,7 +299,7 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
       </td>
       
       <td align="left">
-        A theme object. You can provide a function to extend the outer theme.
+        Um objeto de tema. Você pode utilizar uma função para receber o tema externo.
       </td>
     </tr>
   </table>
