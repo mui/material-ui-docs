@@ -1,5 +1,5 @@
 ---
-title: Transfer List React component
+title: Componente React para Transferência de Lista
 components: List, ListItem, Checkbox, Switch
 ---
 
