@@ -43,7 +43,7 @@ You [can access](/styles/advanced/#accessing-the-theme-in-a-component) the theme
 
 {{"demo": "pages/customization/themes/ThemeNesting.js"}}
 
-The inner theme will **override** the outer theme. You can extend the outer theme by providing a function:
+O tema interno **sobrescreverá** o tema exterior. Você pode estender o tema externo fornecendo uma função:
 
 {{"demo": "pages/customization/themes/ThemeNestingExtend.js"}}
 
