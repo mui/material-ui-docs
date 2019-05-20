@@ -108,16 +108,16 @@ function Parent() {
 }
 ```
 
-However, the class names are often non-deterministic. How can a parent component override the style of a nested element?
+No entanto, os nomes das classes geralmente não são determinísticos. Como um componente pai pode substituir o estilo de um elemento aninhado?
 
 ### withStyles
 
-This is the simplest case. the wrapped component accepts a `classes` prop, it simply merges the class names provided with the style sheet.
+Este é o caso mais simples. O componente encapsulado aceita a propriedade `classes`, ele simplesmente mescla os nomes de classes fornecidos com a folha de estilo.
 
 ```jsx
 const Nested = withStyles({
-  root: {}, // a style rule
-  label: {}, // a nested style rule
+  root: {}, // uma regra de estilo
+  label: {}, // uma regra de estilo aninhada
 })({ classes }) => (
   <button className={classes.root}>
     <span className={classes.label}> // 'jss2 my-label'
@@ -133,12 +133,12 @@ function Parent() {
 
 ### makeStyles
 
-The hook API requires a bit more work. You have to forward the parent props to the hook as a first argument.
+A API hook requer um pouco mais de trabalho. Você tem que encaminhar as propriedades do pai para o hook como primeiro argumento.
 
 ```jsx
 const useStyles = makeStyles({
-  root: {}, // a style rule
-  label: {}, // a nested style rule
+  root: {}, // uma regra de estilo
+  label: {}, // uma regra de estilo aninhada
 });
 
 function Nested(props) {
@@ -157,9 +157,9 @@ function Parent() {
 }
 ```
 
-## JSS plugins
+## Plugins JSS
 
-JSS uses plugins to extend its core, allowing you to cherry-pick the features you need, and only pay the performance overhead for what you are using.
+JSS usa plugins para estender sua essência, permitindo que você escolha os recursos que você precisa, e somente pague pela sobrecarga de desempenho para o que você está usando.
 
 Not all the plugins are available in Material-UI by default. The following (which is a subset of [jss-preset-default](https://cssinjs.org/jss-preset-default/)) are included:
 
