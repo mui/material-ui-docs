@@ -309,9 +309,9 @@ Se você usa o Material-UI em um projeto comercial e gostaria de apoiar seu dese
 
 Todos os fundos conquistados são geridos de forma transparente e os Patrocinadores recebem reconhecimento no README e na página inicial da Material-UI.
 
-## Why does component X require a DOM node in a prop instead of a ref object?
+## Por que o componente X requer um nó DOM em um prop em vez de um objeto ref?
 
-Components like the [Portal](/api/portal/#props) or [Popper](/api/popper/#props) require a DOM node in the `container` or `anchorEl` prop respectively. It seems convenient to simply pass a ref object in those props and let Material-UI access the current value. This works in a simple scenario:
+Componentes como [Portal](/api/portal/#props) ou [Popper](/api/popper/#props) requer um nó DOM na propriedade `container` ou `anchorEl` respectivamente. It seems convenient to simply pass a ref object in those props and let Material-UI access the current value. This works in a simple scenario:
 
 ```jsx
 function App() {
