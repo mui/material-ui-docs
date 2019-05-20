@@ -10,7 +10,7 @@
 
 ## 1. Конкретное изменение для единичного случая
 
-You might need to change the style of a component for a specific implementation, for which you have the following solutions available:
+Возможно, вам придется изменить стиль компонента в конкретном месте. Для этого вам предоставляются следующие методы:
 
 ### Переопределение через имена классов
 
