@@ -5,16 +5,16 @@
 1. [Конкретное изменение для единичного случая](#1-specific-variation-for-a-one-time-situation)
 2. [Динамическое изменение для единичного случая](#2-dynamic-variation-for-a-one-time-situation)
 3. [Особый вариант компонента](#3-specific-variation-of-a-component) использумый в различных контекстах
-4. [Material Design variations](#4-material-design-variations) such as with the button component
-5. [Global theme variation](#5-global-theme-variation)
+4. [Material Design варианты](#4-material-design-variations) как у компонента кнопка
+5. [Глобальное изменение темы](#5-global-theme-variation)
 
 ## 1. Конкретное изменение для единичного случая
 
 You might need to change the style of a component for a specific implementation, for which you have the following solutions available:
 
-### Overriding with class names
+### Переопределение через имена классов
 
-The first way to override the style of a component is to use **class names**. Every component provides a `className` property which is always applied to the root element.
+Первый способ переопределения стиля компонента - использовать **имена классов**. Каждый компонент предоставляет свойство `className` которое всегда применяется к корневому элементу.
 
 This example uses the [`withStyles()`](/css-in-js/basics/#higher-order-component-api) higher-order component to inject custom styles into the DOM, and to pass the class name to the `ClassNames` component via its `classes` property. You can choose [any other styling solution](/guides/interoperability/), or even plain CSS to create the styles, but be sure to consider the [CSS injection order](/css-in-js/advanced/#css-injection-order), as the CSS injected into the DOM by Material-UI to style a component has the highest specificity possible, since the `<link>` is injected at the bottom of the `<head />` to ensure the components always render correctly.
 
@@ -178,7 +178,7 @@ You have learned how to override the style of the Material-UI components in the 
 
 {{"demo": "pages/customization/overrides/DynamicThemeNesting.js"}}
 
-## 3. Specific variation of a component
+## 3. Особый вариант компонента
 
 You might need to create a variation of a component and use it in different contexts, for instance a colorful button on your product page, however you probably want to keep your code [*DRY*](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
 
@@ -186,7 +186,7 @@ The best approach is to follow option 1 and then take advantage of the compositi
 
 {{"demo": "pages/customization/overrides/Component.js", "hideEditButton": true}}
 
-## 4. Material Design variations
+## 4. Material Design варианты
 
 The Material Design specification documents different variations of certain components, such as how buttons come in different shapes: [text](https://material.io/design/components/buttons.html#text-button) (formerly "flat"), [contained](https://material.io/design/components/buttons.html#contained-button) (formerly "raised"), [FAB](https://material.io/design/components/buttons-floating-action-button.html) and more.
 
