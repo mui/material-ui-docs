@@ -414,9 +414,9 @@ const useStyles = makeStyles({
 
 Isto irá gerar um nome de classe como `makeStyles-root-123`.
 
-You have to use the `classes` prop of a component to override the styles. The non-deterministic nature of the class names enables style isolation.
+Você tem que usar a propriedade `classes` de um componente para sobrescrever os estilos. A comportamento não determinístico dos nomes de classes permitem o isolamento de estilos.
 
-- In **development**, the class name is: `.makeStyles-root-123`, following this logic:
+- Em **desenvolvimento**, o nome da classe é: `.makeStyles-root-123` seguindo esta lógica:
 
 ```js
 const sheetName = 'makeStyles';
@@ -426,7 +426,7 @@ const identifier = 123;
 const className = `${sheetName}-${ruleName}-${identifier}`;
 ```
 
-- In **production**, the class name is: `.jss123`, following this logic:
+- Em **produção**, o nome da classe é: `.jss123 ` seguindo esta lógica:
 
 ```js
 const productionPrefix = 'jss';
@@ -435,13 +435,13 @@ const identifier = 123;
 const className = `${productionPrefix}-${identifier}`;
 ```
 
-### With `@material-ui/core`
+### Com `@material-ui/core`
 
-The generated class names of the `@material-ui/core` components behave differently. When the following conditions are met, the class names are **deterministic**:
+Os nomes de classe gerados dos componentes `@material-ui/core ` se comportam de maneira diferente. Quando as seguintes condições são atendidas, os nomes das classes são **determinísticos**:
 
-- Only one theme provider is used (**No theme nesting**)
-- The style sheet has a name that starts with `Mui`. (All Material-UI components)
-- The `disableGlobal` option of the [class name generator](/styles/api/#creategenerateclassname-options-class-name-generator) is `false`. (The default)
+- Apenas um provedor de tema é usado (**Sem aninhamento de tema **)
+- A folha de estilo tem um nome que começa com `Mui`. (Todos os componentes do Material-UI)
+- A opção `disableGlobal` do [gerador de nome de classe](/styles/api/#creategenerateclassname-options-class-name-generator) é `false`. (O padrão)
 
 These conditions are met with the most common use cases of `@material-ui/core`. For instance, this style sheet:
 
