@@ -303,11 +303,11 @@ Existem muitas maneiras de apoiar o Material-UI:
 - Melhore [a documentação](https://github.com/mui-org/material-ui/tree/next/docs).
 - Ajude os outros a começarem.
 - [Espalhe a palavra](https://twitter.com/MaterialUI).
-- Answer questions on [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) or on [Spectrum](https://spectrum.chat/material-ui).
+- Responda a perguntas no [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) ou no [Spectrum](https://spectrum.chat/material-ui).
 
-If you use Material-UI in a commercial project and would like to support its continued development by becoming a **Sponsor**, or in a side or hobby project and would like to become a backer, you can do so through [OpenCollective](https://opencollective.com/material-ui).
+Se você usa o Material-UI em um projeto comercial e gostaria de apoiar seu desenvolvimento contínuo tornando-se um **Patrocinador**, ou em um projeto paralelo ou passatempo e gostaria de se tornar um apoiador, você pode fazê-lo através do [OpenCollective](https://opencollective.com/material-ui).
 
-All funds raised are managed transparently, and Sponsors receive recognition in the README and on the Material-UI home page.
+Todos os fundos conquistados são geridos de forma transparente e os Patrocinadores recebem reconhecimento no README e na página inicial da Material-UI.
 
 ## Why does component X require a DOM node in a prop instead of a ref object?
 
