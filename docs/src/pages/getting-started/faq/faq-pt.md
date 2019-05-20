@@ -311,7 +311,7 @@ Todos os fundos conquistados são geridos de forma transparente e os Patrocinado
 
 ## Por que o componente X requer um nó DOM em um prop em vez de um objeto ref?
 
-Componentes como [Portal](/api/portal/#props) ou [Popper](/api/popper/#props) requer um nó DOM na propriedade `container` ou `anchorEl` respectivamente. It seems convenient to simply pass a ref object in those props and let Material-UI access the current value. Isso funciona em um cenário simples:
+Componentes como [Portal](/api/portal/#props) ou [Popper](/api/popper/#props) requer um nó DOM na propriedade `container` ou `anchorEl` respectivamente. Parece conveniente simplesmente passar um objeto ref nessas propriedades e deixar o Material-UI acessar o valor atual. Isso funciona em um cenário simples:
 
 ```jsx
 function App() {
@@ -328,7 +328,7 @@ function App() {
 }
 ```
 
-where `Portal` would only mount the children into the container when `container.current` is available. Aqui está uma implementação ingênua do Portal:
+onde `Portal` só montaria os filhos no container quando `container.current` estiver disponível. Aqui está uma implementação ingênua do Portal:
 
 ```jsx
 function Portal({ children, container }) {
@@ -345,9 +345,9 @@ function Portal({ children, container }) {
 }
 ```
 
-With this simple heuristic `Portal` might re-render after it mounts because refs are up-to-date before any effects run. No entanto, só porque um ref está atualizado não significa que ele aponta para uma instância definida. Se o ref estiver anexado a um componente de encaminhamento de ref não estará claro quando o nó DOM estará disponível. In the above example the `Portal` would run run an effect once but might not re-render because `ref.current` is still `null`. This is especially apparent for React.lazy components in Suspense. The above implementation could also not account for a change in the DOM node.
+Com esta simples heurística `Portal` pode renderizar novamente depois de montado porque os refs estão atualizados antes de qualquer efeito ser executado. No entanto, só porque um ref está atualizado não significa que ele aponta para uma instância definida. Se o ref estiver anexado a um componente de encaminhamento de ref não estará claro quando o nó DOM estará disponível. No exemplo acima, o `Portal` iria executar um efeito uma vez, mas não pode re-renderizar porque `ref.current` ainda esta `null`. Isso é especialmente aparente para componentes React.lazy no Suspense. A implementação acima também não poderia explicar uma alteração no nó DOM.
 
-This is why we require a prop with the actual DOM node so that React can take care of determining when the `Portal` should re-render:
+É por isso que precisamos de uma propriedade com o nó DOM real para que o React possa tomar cuidado ao determinar quando o `Portal` deve renderizar novamente:
 
 ```jsx
 function App() {
