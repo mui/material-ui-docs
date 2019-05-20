@@ -161,7 +161,7 @@ function Parent() {
 
 JSS usa plugins para estender sua essência, permitindo que você escolha os recursos que você precisa, e somente pague pela sobrecarga de desempenho para o que você está usando.
 
-Not all the plugins are available in Material-UI by default. The following (which is a subset of [jss-preset-default](https://cssinjs.org/jss-preset-default/)) are included:
+Nem todos os plugins estão disponíveis por padrão no Material-UI. O seguinte (que é um subconjunto de [jss-preset-default](https://cssinjs.org/jss-preset-default/)) estão incluídos:
 
 - [jss-plugin-rule-value-function](https://cssinjs.org/jss-plugin-rule-value-function/)
 - [jss-plugin-global](https://cssinjs.org/jss-plugin-global/)
@@ -171,7 +171,7 @@ Not all the plugins are available in Material-UI by default. The following (whic
 - [jss-plugin-vendor-prefixer](https://cssinjs.org/jss-plugin-vendor-prefixer/)
 - [jss-plugin-props-sort](https://cssinjs.org/jss-plugin-props-sort/)
 
-Claro, você está livre para adicionar um novo plugin. Here is an example with the [jss-rtl](https://github.com/alitaheri/jss-rtl) plugin.
+Claro, você é livre para usar plugins adicionais. Aqui está um exemplo com o plugin [jss-rtl](https://github.com/alitaheri/jss-rtl).
 
 ```jsx
 import { create } from 'jss';
@@ -195,7 +195,7 @@ export default App;
 
 ## String templates
 
-If you prefer CSS syntax over JSS, you can use the [jss-plugin-template](https://cssinjs.org/jss-plugin-template) plugin.
+Se você preferir a sintaxe CSS sobre o JSS, você pode usar o plugin [jss-plugin-template ](https://cssinjs.org/jss-plugin-template).
 
 ```jsx
 const useStyles = makeStyles({
@@ -212,7 +212,7 @@ const useStyles = makeStyles({
 });
 ```
 
-Note that this doesn't support selectors, or nested rules.
+Note que isto não suporta seletores, ou regras aninhadas.
 
 {{"demo": "pages/styles/advanced/StringTemplates.js"}}
 
@@ -354,7 +354,7 @@ function App() {
 export default App;
 ```
 
-## Server-side rendering
+## Renderização no servidor (Ssr)
 
 Este exemplo retorna uma string de HTML e insere o CSS crítico necessário, logo antes de ser usado:
 
