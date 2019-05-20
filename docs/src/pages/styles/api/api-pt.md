@@ -36,7 +36,7 @@ export default function App() {
 
 ## `createStyles(styles) => styles`
 
-This function doesn't really "do anything" at runtime, it's just the identity function. Its only purpose is to defeat **TypeScript**'s type widening when providing style rules to `makeStyles`/`withStyles` which are a function of the `Theme`.
+Esta função realmente não "faz nada" em tempo de execução, é apenas uma função de identidade. Sua única finalidade é prevenir a ampliação de tipos do **TypeScript**, ao fornecer regras de estilo para `makeStyles`/`withStyles` que são uma função do `Tema`.
 
 #### Argumentos
 
@@ -44,7 +44,7 @@ This function doesn't really "do anything" at runtime, it's just the identity fu
 
 #### Retornos
 
-`styles`: A function generating the styles or a styles object.
+`styles`: Uma função que gera os estilos ou um objeto de estilos.
 
 #### Exemplos
 
@@ -67,14 +67,14 @@ export default MyComponent;
 
 ## `makeStyles(styles, [options]) => hook`
 
-Link a style sheet with a function component using the **hook** pattern.
+Vincula uma folha de estilo a um componente de função usando o padrão **hook**.
 
 #### Argumentos
 
-1. `styles` (*Function | Object*): Uma função que gera os estilos ou um objeto de estilos. Ele será vinculado ao componente. Use a assinatura da função se você precisar ter acesso ao tema. É fornecido como o primeiro argumento.
-2. `options` (*Object* [optional]): 
-    - `options.defaultTheme` (*Object* [optional]): The default theme to use if a theme isn't supplied through a Theme Provider.
-    - `options.withTheme` (*Boolean* [optional]): Defaults to `false`. Provide the `theme` object to the component as a property.
+1. `styles` (*Function | Object*): Uma função que gera os estilos ou um objeto de estilos. Ela será vinculada ao componente. Use a assinatura da função se você precisar ter acesso ao tema. É fornecido como o primeiro argumento.
+2. `options` (*Object* [opcional]): 
+    - `options.defaultTheme` (*Object* [opcional]): O tema padrão a ser usado se um tema não for fornecido por meio de um provedor de temas.
+    - `options.withTheme` (*Boolean* [opcional]): Padrão `false`. Fornecer o objeto `theme` para o componente como uma propriedade.
     - `options.name` (*String* [optional]): The name of the style sheet. Útil para depuração. Se o valor não for fornecido, ele tentará usar o nome do componente.
     - `options.flip` (*Boolean* [optional]): When set to `false`, this sheet will opt-out the `rtl` transformation. Quando definido para `true`, os estilos são invertidos. Quando definido para `null`, segue `theme.direction`.
     - The other keys are forwarded to the options argument of [jss.createStyleSheet([styles], [options])](http://cssinjs.org/jss-api/#create-style-sheet).
@@ -155,8 +155,8 @@ Link a style sheet with a function component using the **styled components** pat
 1. `Component`: The component that will be wrapped.
 2. `styles` (*Function | Object*): Uma função que gera os estilos ou um objeto de estilos. Ele será vinculado ao componente. Use a assinatura da função se você precisar ter acesso ao tema. It's provided as property of the first argument.
 3. `options` (*Object* [optional]): 
-    - `options.defaultTheme` (*Object* [optional]): The default theme to use if a theme isn't supplied through a Theme Provider.
-    - `options.withTheme` (*Boolean* [optional]): Defaults to `false`. Provide the `theme` object to the component as a property.
+    - `options.defaultTheme` (*Object* [opcional]): O tema padrão a ser usado se um tema não for fornecido por meio de um provedor de temas.
+    - `options.withTheme` (*Boolean* [opcional]): Padrão `false`. Fornecer o objeto `theme` para o componente como uma propriedade.
     - `options.name` (*String* [optional]): The name of the style sheet. Útil para depuração. Se o valor não for fornecido, ele tentará usar o nome do componente.
     - `options.flip` (*Boolean* [optional]): When set to `false`, this sheet will opt-out the `rtl` transformation. Quando definido para `true`, os estilos são invertidos. Quando definido para `null`, segue `theme.direction`.
     - The other keys are forwarded to the options argument of [jss.createStyleSheet([styles], [options])](http://cssinjs.org/jss-api/#create-style-sheet).
@@ -392,10 +392,10 @@ export default function MyComponent() {
     <li>
       <code>options</code> (<em>Object</em> [optional]): <ul>
         <li>
-          <code>options.defaultTheme</code> (<em>Object</em> [optional]): The default theme to use if a theme isn't supplied through a Theme Provider.
+          <code>options.defaultTheme</code> (<em>Object</em> [opcional]): O tema padrão a ser usado se um tema não for fornecido por meio de um provedor de temas.
         </li>
         <li>
-          <code>options.withTheme</code> (<em>Boolean</em> [optional]): Defaults to <code>false</code>. Provide the <code>theme</code> object to the component as a property.
+          <code>options.withTheme</code> (<em>Boolean</em> [opcional]): Padrão <code>false</code>. Fornecer o objeto <code>theme</code> para o componente como uma propriedade.
         </li>
         <li>
           <code>options.name</code> (<em>String</em> [optional]): The name of the style sheet. Útil para depuração. Se o valor não for fornecido, ele tentará usar o nome do componente.
