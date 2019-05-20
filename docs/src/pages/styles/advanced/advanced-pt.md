@@ -4,7 +4,7 @@
 
 ## Temas
 
-Add a `ThemeProvider` to the top level of your app to pass the theme down the React component tree. Then, you can access the theme object in style functions.
+Adicione um `ThemeProvider` para o nível superior de sua aplicação para passar o tema pela árvore de componentes do React. Então, você pode acessar o objeto de tema em funções de estilo.
 
 ```jsx
 import { ThemeProvider } from '@material-ui/styles';
@@ -55,9 +55,9 @@ const DeepChild = withTheme(DeepChildRaw);
 
 {{"demo": "pages/styles/advanced/WithTheme.js"}}
 
-### Theme nesting
+### Aninhamento de tema
 
-You can nest multiple theme providers. This can be really useful when dealing with different areas of your application that have distinct appearance from each other.
+Você pode aninhar vários provedores de tema. Isso pode ser muito útil ao lidar com diferentes áreas da sua aplicação que têm aparência distinta entre si.
 
 ```jsx
 <ThemeProvider theme={outerTheme}>
@@ -70,7 +70,7 @@ You can nest multiple theme providers. This can be really useful when dealing wi
 
 {{"demo": "pages/styles/advanced/ThemeNesting.js"}}
 
-The inner theme will **override** the outer theme. You can extend the outer theme by providing a function:
+O tema interno **sobrescreverá** o tema exterior. Você pode estender o tema externo fornecendo uma função:
 
 ```jsx
 <ThemeProvider theme={…} >
@@ -81,15 +81,15 @@ The inner theme will **override** the outer theme. You can extend the outer them
 </ThemeProvider>
 ```
 
-## Overriding styles - `classes` prop
+## Sobrescrevendo estilos - Propriedade `classes`
 
-The `makeStyles` (hook generator) and `withStyles` (HOC) APIs allow the creation of multiple style rules per style sheet. Each style rule has its own class name. The class names are provided to the component with the `classes` variable. The is particularly useful when styling nested elements in a component.
+O `makeStyles` (hook generator) e `withStyles` (HOC) APIs permitem a criação de várias regras de estilos por folha de estilo. Cada regra de estilo tem seu próprio nome de classe. Os nomes das classes são fornecidos para o componente com a variável `classes`. Isso é particularmente útil ao estilizar elementos aninhados em um componente.
 
 ```jsx
-// A style sheet
+// Uma folha de estilo
 const useStyles = makeStyles({
-  root: {}, // a style rule
-  label: {}, // a nested style rule
+  root: {}, // uma regra de estilo
+  label: {}, // uma regra de estilo aninhada
 });
 
 function Nested(props) {
