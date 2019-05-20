@@ -224,7 +224,7 @@ Por padrão, os estilos são inseridos **por último** no elemento `<head>` da s
 
 ### injectFirst
 
-O componente `StylesProvider` tem uma propriedade `injectFirst` para injetar as folhas de estilo em **primeiro** no cabeçalho (menor prioridade):
+O componente `StylesProvider` tem uma propriedade `injectFirst` para injetar as tags de estilo em **primeiro** no cabeçalho (menor prioridade):
 
 ```jsx
 import { StylesProvider } from '@material-ui/styles';
@@ -237,7 +237,7 @@ import { StylesProvider } from '@material-ui/styles';
 
 ### `makeStyles` / `withStyles` / `styled`
 
-The injection of style tags happens in the **same order** as the `makeStyles` / `withStyles` / `styled` invocations. For instance the color red wins in this case:
+A injeção de tags de estilo acontece na **mesma ordem** com as invocações de `makeStyles` / `withStyles` / `styled`. Por exemplo, a cor vermelha ganha maior especificidade neste caso:
 
 ```jsx
 import clsx from 'clsx';
@@ -256,19 +256,19 @@ const useStyle = makeStyles({
 });
 
 export default function MyComponent() {
-  // Order doesn't matter
+  // Ordem não importa
   const classes = useStyles();
   const classesBase = useStyleBase();
 
-  // Order doesn't matter
+  // Ordem não importa
   const className = clsx(classes.root, useStyleBase.root)
 
-  // color: red 🔴 wins.
+  // color: vermelho🔴 ganha.
   return <div className={className} />;
 }
 ```
 
-The hook call order and the class name concatenation order **don't matter**.
+A ordem de chamada do hook e a ordem de concatenação da classe **não importam**.
 
 ### insertionPoint
 
