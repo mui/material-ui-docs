@@ -24,7 +24,7 @@ Material-UI 提供了两个组件来渲染系统图标：`SvgIcon` 来渲染 SVG
 拥有实现自定义图标所需的构建块很有意思，但如何实现预设图标呢？ 我们提供一个单独的 npm 包，[@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons)，其中包括 1000 + 已转换为`Svg 图标` 组件的官方 [Material图标](https://material.io/tools/icons/?style=baseline)
 
 <a href="https://material.io/tools/icons/?icon=3d_rotation&style=baseline">
-  <img src="/static/images/icons/icons.png" alt="官方材料图标" style="width: 566px" />
+  <img src="/static/images/icons/icons.png" alt="官方material图标" style="width: 566px" />
 </a>
 
 #### 使用
