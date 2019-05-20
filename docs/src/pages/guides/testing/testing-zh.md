@@ -28,7 +28,7 @@
 
 ### 渲染为字符串
 
-Rendering to a string is useful to test the behavior of the components that are used on the server. You can take advantage of this to assert the generated HTML string.
+渲染为字符串在测试服务器组件行为时是有用的。 你可以依此来断定所生成的HTML字符串
 
 `createRender()` 函数非常适合这种情况。 这只是enzyme API的别名，只是为了保持一致性而暴露。
 
@@ -36,7 +36,7 @@ Rendering to a string is useful to test the behavior of the components that are 
 
 ### `createShallow([options]) => shallow`
 
-Generate an enhanced shallow function with the needed context. 有关 `shallow`函数的更多详细信息, 请参考[enzyme API 文档 ](https://airbnb.io/enzyme/docs/api/shallow.html),
+在特定被需要的情景中，生成一个加强版的浅层函数 有关 `shallow`函数的更多详细信息, 请参考[enzyme API 文档 ](https://airbnb.io/enzyme/docs/api/shallow.html),
 
 #### 参数
 
@@ -70,7 +70,7 @@ describe('<MyComponent />', () => {
 
 ### `createMount([options]) => mount`
 
-Generate an enhanced mount function with the needed context. 有关 `mount` 功能的更多详细信息，请参阅 [enzyme API文档](https://airbnb.io/enzyme/docs/api/mount.html)。
+在特定被需要的情景中，生成一个加强版的浅层函数 有关 `mount` 功能的更多详细信息，请参阅 [enzyme API文档](https://airbnb.io/enzyme/docs/api/mount.html)。
 
 #### 参数
 
