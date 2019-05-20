@@ -75,13 +75,13 @@ Vincula uma folha de estilo a um componente de função usando o padrão **hook*
 2. `options` (*Object* [opcional]): 
     - `options.defaultTheme` (*Object* [opcional]): O tema padrão a ser usado se um tema não for fornecido por meio de um provedor de temas.
     - `options.withTheme` (*Boolean* [opcional]): Padrão `false`. Fornecer o objeto `theme` para o componente como uma propriedade.
-    - `options.name` (*String* [optional]): The name of the style sheet. Útil para depuração. Se o valor não for fornecido, ele tentará usar o nome do componente.
-    - `options.flip` (*Boolean* [optional]): When set to `false`, this sheet will opt-out the `rtl` transformation. Quando definido para `true`, os estilos são invertidos. Quando definido para `null`, segue `theme.direction`.
-    - The other keys are forwarded to the options argument of [jss.createStyleSheet([styles], [options])](http://cssinjs.org/jss-api/#create-style-sheet).
+    - `options.name` (*String* [opcional]): O nome da folha de estilo. Útil para depuração. Se o valor não for fornecido, ele tentará usar o nome do componente.
+    - `options.flip` (*Boolean* [opcional]): Quando definido como `false`, está folha irá cancelar a transformação `rtl`. Quando definido para `true`, os estilos são invertidos. Quando definido para `null`, segue `theme.direction`.
+    - As outras chaves são encaminhadas para o argumento de opções do [jss.createStyleSheet ([styles], [options])](http://cssinjs.org/jss-api/#create-style-sheet).
 
 #### Retornos
 
-`hook`: A hook. This hook can be used in a function component. It accepts one argument: the properties that will be used for "interpolation" in the style sheet.
+`hook`: Um hook. Este hook pode ser usado em uma função que retorna o componente. Aceita um argumento: as propriedades que serão usadas para "interpolação" na folha de estilo.
 
 #### Exemplos
 
@@ -103,7 +103,7 @@ export default function MyComponent() {
 
 ## `ServerStyleSheets`
 
-This is a class helper to handle server-side rendering. [You can follow our guide for a practical approach](/guides/server-rendering/).
+Esta é uma classe auxiliar para manipular a renderização do lado do servidor. [Você pode seguir nosso guia para uma abordagem prática](/guides/server-rendering/).
 
 ```jsx
 import ReactDOMServer from 'react-dom/server';
@@ -126,25 +126,25 @@ const response = `
 
 ### `new ServerStyleSheets([options])`
 
-The instantiation accepts an options object as a first argument.
+A instanciação aceita um objeto de opções como primeiro argumento.
 
-1. `options` (*Object* [optional]): The options are spread as props to the [`StylesProvider`](#stylesprovider) component.
+1. `options` (*Object* [opcional]): As opções são distribuídas como propriedades para o componente [`StylesProvider`](#stylesprovider).
 
-### `sheets.collect(node) => React element`
+### `sheets.collect(node) => Elemento React`
 
-The method wraps your React node in a provider element. It collects the style sheets during the rendering so they can be later sent to the client.
+O método envolve seu nó React em um elemento provider. Ele coleta as folhas de estilo durante a renderização para que elas possam ser enviadas posteriormente ao cliente.
 
 ### `sheets.toString() => CSS string`
 
-The method returns the collected styles.
+O método retorna os estilos coletados.
 
-⚠️ You must call `.collect()` before using this method.
+⚠️ Você deve chamar `.collect()` antes de usar este método.
 
-### `sheets.getStyleElement() => CSS React element`
+### `sheets.getStyleElement() => CSS do elemento React`
 
-The method is an alternative to `.toString()` when you are rendering the whole page with React.
+O método é uma alternativa para `.toString()` quando você esta renderizando a página inteira com React.
 
-⚠️ You must call `.collect()` before using this method.
+⚠️ Você deve chamar `.collect()` antes de usar este método.
 
 ## `styled(Component)(styles, [options]) => Component`
 
@@ -157,9 +157,9 @@ Link a style sheet with a function component using the **styled components** pat
 3. `options` (*Object* [optional]): 
     - `options.defaultTheme` (*Object* [opcional]): O tema padrão a ser usado se um tema não for fornecido por meio de um provedor de temas.
     - `options.withTheme` (*Boolean* [opcional]): Padrão `false`. Fornecer o objeto `theme` para o componente como uma propriedade.
-    - `options.name` (*String* [optional]): The name of the style sheet. Útil para depuração. Se o valor não for fornecido, ele tentará usar o nome do componente.
-    - `options.flip` (*Boolean* [optional]): When set to `false`, this sheet will opt-out the `rtl` transformation. Quando definido para `true`, os estilos são invertidos. Quando definido para `null`, segue `theme.direction`.
-    - The other keys are forwarded to the options argument of [jss.createStyleSheet([styles], [options])](http://cssinjs.org/jss-api/#create-style-sheet).
+    - `options.name` (*String* [opcional]): O nome da folha de estilo. Útil para depuração. Se o valor não for fornecido, ele tentará usar o nome do componente.
+    - `options.flip` (*Boolean* [opcional]): Quando definido como `false`, está folha irá cancelar a transformação `rtl`. Quando definido para `true`, os estilos são invertidos. Quando definido para `null`, segue `theme.direction`.
+    - As outras chaves são encaminhadas para o argumento de opções do [jss.createStyleSheet ([styles], [options])](http://cssinjs.org/jss-api/#create-style-sheet).
 
 #### Retornos
 
@@ -398,13 +398,13 @@ export default function MyComponent() {
           <code>options.withTheme</code> (<em>Boolean</em> [opcional]): Padrão <code>false</code>. Fornecer o objeto <code>theme</code> para o componente como uma propriedade.
         </li>
         <li>
-          <code>options.name</code> (<em>String</em> [optional]): The name of the style sheet. Útil para depuração. Se o valor não for fornecido, ele tentará usar o nome do componente.
+          <code>options.name</code> (<em>String</em> [opcional]): O nome da folha de estilo. Útil para depuração. Se o valor não for fornecido, ele tentará usar o nome do componente.
         </li>
         <li>
-          <code>options.flip</code> (<em>Boolean</em> [optional]): When set to <code>false</code>, this sheet will opt-out the <code>rtl</code> transformation. Quando definido para <code>true</code>, os estilos são invertidos. Quando definido para <code>null</code>, segue <code>theme.direction</code>.
+          <code>options.flip</code> (<em>Boolean</em> [opcional]): Quando definido como <code>false</code>, está folha irá cancelar a transformação <code>rtl</code>. Quando definido para <code>true</code>, os estilos são invertidos. Quando definido para <code>null</code>, segue <code>theme.direction</code>.
         </li>
         <li>
-          The other keys are forwarded to the options argument of <a href="http://cssinjs.org/jss-api/#create-style-sheet">jss.createStyleSheet([styles], [options])</a>.
+          As outras chaves são encaminhadas para o argumento de opções do <a href="http://cssinjs.org/jss-api/#create-style-sheet">jss.createStyleSheet ([styles], [options])</a>.
         </li>
       </ul>
     </li>
