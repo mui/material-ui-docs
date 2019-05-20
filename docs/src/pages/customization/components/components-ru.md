@@ -16,11 +16,11 @@
 
 Первый способ переопределения стиля компонента - использовать **имена классов**. Каждый компонент предоставляет свойство `className` которое всегда применяется к корневому элементу.
 
-Этот пример использует компонент высшего-порядка [`withStyles()`](/css-in-js/basics/#higher-order-component-api) для внедрения пользовательских стилей в DOM и передачи имени класса компоненту `ClassNames` через его свойство `classes`. Вы можете выбрать [любое другое стилевое решение](/guides/interoperability/), или даже обычный CSS для создания стилей, но вы обязаны принимать во внимание [порядок внедрения CSS](/css-in-js/advanced/#css-injection-order), ведь CSS внедренный в DOM через Material-UI имеет максимально возможную специфичность, так как `<link>` внедряется в конце раздела `<head />` для гарантии корректного отображения компонентов.
+Этот пример использует компонент высшего-порядка [`withStyles()`](/css-in-js/basics/#higher-order-component-api) для внедрения пользовательских стилей в DOM и передачи имени класса компоненту `ClassNames` через его свойство `classes`. Вы можете выбрать [любое другое стилевое решение](/guides/interoperability/), или даже обычный CSS для создания стилей, но вы обязаны принимать во внимание [порядок внедрения CSS](/css-in-js/advanced/#css-injection-order), поскольку CSS внедренный в DOM через Material-UI имеет максимально возможную специфичность, так как `<link>` внедряется в самом конце раздела `<head />` для гарантии корректного отображения компонентов.
 
 {{"demo": "pages/customization/overrides/ClassNames.js"}}
 
-### Overriding with classes
+### Переопределение через классы
 
 When the `className` property isn't enough, and you need to access deeper elements, you can take advantage of the `classes` object property to customize all the CSS injected by Material-UI for a given component. The list of classes for each component is documented in the **Component API** section. For instance, you can have a look at the [Button CSS API](/api/button/#css). Alternatively, you can use the [browser dev tools](#using-the-dev-tools).
 
