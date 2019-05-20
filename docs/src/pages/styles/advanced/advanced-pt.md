@@ -504,17 +504,17 @@ const StyledTextField = styled(TextField)`
 
 ### `jss-plugin-global`
 
-The [`jss-plugin-global`](#jss-plugins) plugin is installed in the default preset. You can use it to define global class names.
+O plugin [`jss-plugin-global`](#jss-plugins) é instalado na predefinição padrão. Você pode usá-lo para definir nomes de classes globais.
 
 {{"demo": "pages/styles/advanced/GlobalCss.js"}}
 
-### Hybrid
+### Híbrido
 
-You can also combine JSS generated class names with global ones.
+Você também pode combinar nomes de classe gerados pelo JSS com nomes globais.
 
 {{"demo": "pages/styles/advanced/HybridGlobalCss.js"}}
 
-## CSS prefixes
+## Prefixos CSS
 
 JSS uses feature detection to apply the correct prefixes. [Don't be surprised](https://github.com/mui-org/material-ui/issues/9293) if you can't see a specific prefix in the latest version of Chrome. Your browser probably doesn't need it.
 
