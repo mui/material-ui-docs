@@ -16,7 +16,7 @@
 
 Первый способ переопределения стиля компонента - использовать **имена классов**. Каждый компонент предоставляет свойство `className` которое всегда применяется к корневому элементу.
 
-This example uses the [`withStyles()`](/css-in-js/basics/#higher-order-component-api) higher-order component to inject custom styles into the DOM, and to pass the class name to the `ClassNames` component via its `classes` property. You can choose [any other styling solution](/guides/interoperability/), or even plain CSS to create the styles, but be sure to consider the [CSS injection order](/css-in-js/advanced/#css-injection-order), as the CSS injected into the DOM by Material-UI to style a component has the highest specificity possible, since the `<link>` is injected at the bottom of the `<head />` to ensure the components always render correctly.
+Этот пример использует компонент высшего-порядка [`withStyles()`](/css-in-js/basics/#higher-order-component-api) для внедрения пользовательских стилей в DOM и передачи имени класса компоненту `ClassNames` через его свойство `classes`. Вы можете выбрать [любое другое стилевое решение](/guides/interoperability/), или даже обычный CSS для создания стилей, но вы обязательно должны принимать во внимание [порядок внедрения CSS](/css-in-js/advanced/#css-injection-order), так как CSS внедренный в DOM через Material-UI имеет максимально возможную специфичность, так как `<link>` внедряется в конце раздела `<head />` для корректного отображения компонентов.
 
 {{"demo": "pages/customization/overrides/ClassNames.js"}}
 
