@@ -4,7 +4,7 @@ components: Link
 
 # 链接
 
-<p class="description">链接（Links）组件允许您使用主题颜色和排版样式轻松自定义锚元素。</p>
+<p class="description">链接（Links）组件允许您使用主题颜色和版面设计轻松自定义锚定元素。</p>
 
 ## 简单的链接
 
@@ -21,7 +21,7 @@ components: Link
 
 - 当提供链接对应的内容时，避免使用泛泛的描述，比如“点击这里”或“跳转”之类的词语 相反的，请使用 [具体详细的描述](https://developers.google.com/web/tools/lighthouse/audits/descriptive-link-text)说明.
 - 对于最佳用户体验的链接来说，应该凸显他在页面上的文字
-- If a link doesn't have a meaningful href, [it should be rendered using a `<button>` element](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md).
+- 如果一个链接没有赋予一个有意义的href值, [它应该用一个 `<按钮>` 元素](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md)表示
 
 {{"demo": "pages/components/links/ButtonLink.js"}}
 
