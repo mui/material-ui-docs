@@ -294,15 +294,15 @@ function handleRender(req, res) {
 
 ## Por que as cores que estou vendo são diferentes do que vejo aqui?
 
-The documentation site is using a custom theme. Hence, the color palette is different from the default theme that Material-UI ships. Please refer to [this page](/customization/themes/) to learn about theme customization.
+O site de documentação está usando um tema customizado. Assim, a paleta de cores é diferente do tema padrão que é fornecido pelo Material-UI. Por favor, consulte [esta página](/customization/themes/) para aprender sobre customização de temas.
 
-## Material-UI is awesome. How can I support the project?
+## Material-UI é incrível. Como posso apoiar o projeto?
 
-There are many ways to support Material-UI:
+Existem muitas maneiras de apoiar o Material-UI:
 
-- Improve [the documentation](https://github.com/mui-org/material-ui/tree/next/docs).
-- Help others to get started.
-- [Spread the word](https://twitter.com/MaterialUI).
+- Melhore [a documentação](https://github.com/mui-org/material-ui/tree/next/docs).
+- Ajude os outros a começarem.
+- [Espalhe a palavra](https://twitter.com/MaterialUI).
 - Answer questions on [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) or on [Spectrum](https://spectrum.chat/material-ui).
 
 If you use Material-UI in a commercial project and would like to support its continued development by becoming a **Sponsor**, or in a side or hobby project and would like to become a backer, you can do so through [OpenCollective](https://opencollective.com/material-ui).
