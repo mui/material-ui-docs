@@ -8,7 +8,7 @@ components: Link
 
 ## 简单的链接
 
-链接（Links）组件构建在 [Typography](/api/typography/) 组件之上。 您可以利用其属性。
+链接（Links）组件构建在 [版面设计（Typography）](/api/typography/) 组件之上。 您可以利用其属性。
 
 {{"demo": "pages/components/links/Links.js"}}
 
