@@ -1,14 +1,14 @@
-# Overrides
+# Переопределение
 
-<p class="description">As components can be used in different contexts, Material-UI supports different types of customization requirements going from the most specific to the most generic.</p>
+<p class="description">Поскольку компоненты могут использоваться в разных контекстах, Material-UI поддерживает различные способы настройки, от самых специфичных до самых обобщенных.</p>
 
-1. [Specific variation for a one-time situation](#1-specific-variation-for-a-one-time-situation)
+1. [Конкретное изменение для единичного случая](#1-specific-variation-for-a-one-time-situation)
 2. [Dynamic variation for a one-time situation](#2-dynamic-variation-for-a-one-time-situation)
 3. [Specific variation of a component](#3-specific-variation-of-a-component) re-used in different contexts
 4. [Material Design variations](#4-material-design-variations) such as with the button component
 5. [Global theme variation](#5-global-theme-variation)
 
-## 1. Specific variation for a one-time situation
+## 1. Конкретное изменение для единичного случая
 
 You might need to change the style of a component for a specific implementation, for which you have the following solutions available:
 
