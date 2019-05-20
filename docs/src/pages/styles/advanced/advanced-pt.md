@@ -270,13 +270,13 @@ export default function MyComponent() {
 
 A ordem de chamada do hook e a ordem de concatenação da classe **não importam**.
 
-### insertionPoint
+### Ponto de inserção (insertionPoint)
 
-JSS [provides a mechanism](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-the-dom-insertion-point) to control this situation. By adding an `insertionPoint` within the HTML you can [control the order](https://cssinjs.org/jss-api#attach-style-sheets-in-a-specific-order) that the CSS rules are applied to your components.
+JSS [fornece um mecanismo](https://github.com/cssinjs/jss/blob/master/docs/setup.md#specify-the-dom-insertion-point) para controlar esta situação. Adicionando um `ponto de inserção` dentro do HTML, você pode [ controlar a ordem](https://cssinjs.org/jss-api#attach-style-sheets-in-a-specific-order) que as regras CSS são aplicadas aos seus componentes.
 
 #### Comentário HTML
 
-The simplest approach is to add an HTML comment to the `<head>` that determines where JSS will inject the styles:
+A abordagem mais simples é adicionar um comentário HTML no `<head>` que determina onde o JSS vai injetar os estilos:
 
 ```html
 <head>
@@ -291,7 +291,7 @@ import { StylesProvider, jssPreset } from '@material-ui/styles';
 
 const jss = create({
   ...jssPreset(),
-  // Define a custom insertion point that JSS will look for when injecting the styles into the DOM.
+  // Defina um ponto de inserção customizado que o JSS irá procurar para injetar os estilos no DOM.
   insertionPoint: 'jss-insertion-point',
 });
 
@@ -304,7 +304,7 @@ export default App;
 
 #### Outro elemento HTML
 
-[Create React App](https://github.com/facebook/create-react-app) remove comentários em HTML ao criar a compilação de produção. To get around this issue, you can provide a DOM element (other than a comment) as the JSS insertion point, for example, a `<noscript>` element:
+[Create React App](https://github.com/facebook/create-react-app) remove comentários em HTML ao criar a compilação de produção. Para contornar esse comportamento, você pode fornecer um elemento DOM (diferente de um comentário) como o ponto de inserção do JSS, por exemplo, um elemento `<noscript>`:
 
 ```jsx
 <head>
@@ -319,7 +319,7 @@ import { StylesProvider, jssPreset } from '@material-ui/styles';
 
 const jss = create({
   ...jssPreset(),
-  // Define a custom insertion point that JSS will look for when injecting the styles into the DOM.
+  // Defina um ponto de inserção customizado que o JSS irá procurar para injetar os estilos no DOM.
   insertionPoint: document.getElementById('jss-insertion-point'),
 });
 
@@ -332,7 +332,7 @@ export default App;
 
 #### JS createComment
 
-codesandbox.io prevents access to the `<head>` element. To get around this issue, you can use the JavaScript `document.createComment()` API:
+codesandbox.io impede o acesso ao elemento `<head>`. Para contornar esse comportamento, você pode usar a API JavaScript `documento.createComment()`:
 
 ```jsx
 import { create } from 'jss';
@@ -343,7 +343,7 @@ document.head.insertBefore(styleNode, document.head.firstChild);
 
 const jss = create({
   ...jssPreset(),
-  // Define a custom insertion point that JSS will look for when injecting the styles into the DOM.
+  // Defina um ponto de inserção customizado que o JSS irá procurar para injetar os estilos no DOM.
   insertionPoint: 'jss-insertion-point',
 });
 
@@ -354,7 +354,7 @@ function App() {
 export default App;
 ```
 
-## Renderização no servidor (Ssr)
+## Renderização no servidor (Server-Side Rendering)
 
 Este exemplo retorna uma string de HTML e insere o CSS crítico necessário, logo antes de ser usado:
 
@@ -382,11 +382,11 @@ function render() {
 }
 ```
 
-You can [follow the server side guide](/guides/server-rendering/) for a more detailed example, or read the [`ServerStyleSheets`](/styles/api/#serverstylesheets) API documentation.
+Você pode [seguir o guia lado do servidor](/guides/server-rendering/) para um exemplo mais detalhado, ou leia o [`ServerStyleSheets`](/styles/api/#serverstylesheets) na documentação da API.
 
 ### Gatsby
 
-We have [an official plugin](https://github.com/hupe1980/gatsby-plugin-material-ui) that enables server-side rendering for `@material-ui/styles`. Refer to the plugin's page for setup and usage instructions.
+Nós temos [um plugin oficial](https://github.com/hupe1980/gatsby-plugin-material-ui) que permite a renderização do lado do servidor para `@material-ui/ styles`. Consulte a página do plugin para obter instruções de configuração e uso.
 
 Refer to [this example project](https://github.com/mui-org/material-ui/blob/next/examples/gatsby-next) for an up-to-date usage example.
 
