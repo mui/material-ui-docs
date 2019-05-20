@@ -4,18 +4,18 @@
 
 ## `createGenerateClassName([options]) => class name generator`
 
-A function which returns [a class name generator function](http://cssinjs.org/jss-api/#generate-your-class-names).
+Uma função que retorna [uma função geradora de nome de classe](http://cssinjs.org/jss-api/#generate-your-class-names).
 
 #### Argumentos
 
-1. `options` (*Object* [optional]): 
-    - `options.disableGlobal` (*Boolan* [optional]): Defaults to `false`. Disable the generation of deterministic class names.
-    - `options.productionPrefix` (*String* [optional]): Defaults to `'jss'`. The string used to prefix the class names in production.
-    - `options.seed` (*String* [optional]): Defaults to `''`. The string used to uniquely identify the generator. It can be used to avoid class name collisions when using multiple generators in the same document.
+1. `options` (*Object* [opcional]): 
+    - `options.disableGlobal` (*Boolean* [opcional]): Padrão `false`. Desabilita a geração de nomes de classes determinísticas.
+    - `options.productionPrefix` (*String* [opcional]): Padrão `'jss'`. A string usada para prefixar os nomes de classes em produção.
+    - `options.seed` (*String* [opcional]): Padrão `''`. A string u usada unicamente para identificar o gerador. Ela pode ser usada para evitar colisões de nomes de classes ao usar vários geradores no mesmo documento.
 
 #### Retornos
 
-`class name generator`: The generator should be provided to JSS.
+`class name generator`: O gerador que deve ser fornecido ao JSS.
 
 #### Exemplos
 
