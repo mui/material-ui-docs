@@ -12,10 +12,10 @@ components: Link
 
 {{"demo": "pages/components/links/Links.js"}}
 
-However, the Link has different default properties than the Typography:
+然而，链接（Link）组件有着不同于版面设计（Typography）的默认属性
 
-- `color="primary"` as the link needs to stand out.
-- `variant="inherit"` as the link will, most of the time, be used as a child of a Typograpy component.
+- 当链接需要突出显示，使用 `color="primary"`
+- `variant="inherit"`当链接在多数的情况下，被用于作为版面设计（Typograpy）的子组件
 
 ## 无障碍功能
 
