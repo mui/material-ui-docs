@@ -15,12 +15,12 @@ components: Link
 然而，链接（Link）组件有着不同于版面设计（Typography）的默认属性
 
 - 当链接需要突出显示，使用 `color="primary"`
-- `variant="inherit"`当链接在多数的情况下，被用于作为版面设计（Typograpy）的子组件
+- 链接在多数的情况下，将被用于作为版面设计（Typograpy）的子组件，这种情况使用`variant="inherit"`
 
 ## 无障碍功能
 
-- When providing the content for the link, avoid generic descriptions like "click here" or "go to". Instead, use [specific descriptions](https://developers.google.com/web/tools/lighthouse/audits/descriptive-link-text).
-- For the best user experience links should stand out from the text on the page.
+- 当提供链接对应的内容时，避免使用泛泛的描述，比如“点击这里”或“跳转”之类的词语 相反的，请使用 [具体详细的描述](https://developers.google.com/web/tools/lighthouse/audits/descriptive-link-text)说明.
+- 对于最佳用户体验的链接来说，应该凸显他在页面上的文字
 - If a link doesn't have a meaningful href, [it should be rendered using a `<button>` element](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md).
 
 {{"demo": "pages/components/links/ButtonLink.js"}}
