@@ -536,9 +536,9 @@ Você pode ler mais sobre o CSP no [MDN Web Docs](https://developer.mozilla.org/
 
 ### Como se implementa o CSP?
 
-In order to use CSP with Material-UI (and JSS), you need to use a nonce. A nonce is a randomly generated string that is only used once, therefore you need to add server middleware to generate one on each request. JSS has a [great tutorial](https://github.com/cssinjs/jss/blob/next/docs/csp.md) on how to achieve this with Express and React Helmet. For a basic rundown, continue reading.
+Para usar o CSP com Material-UI (e JSS), você precisa usar um nonce. Um nonce é uma string gerada aleatoriamente que é usada apenas uma vez, portanto, você precisa adicionar um middleware de servidor para gerar um em cada solicitação. JSS tem um [ótimo tutorial](https://github.com/cssinjs/jss/blob/next/docs/csp.md) sobre como conseguir isso com Express and React Helmet. Para um resumo básico, continue lendo.
 
-A CSP nonce is a Base 64 encoded string. You can generate one like this:
+Um nonce CSP é uma string codificada na Base 64. Você pode gerar um assim:
 
 ```js
 import uuidv4 from 'uuid/v4';
@@ -546,14 +546,14 @@ import uuidv4 from 'uuid/v4';
 const nonce = new Buffer(uuidv4()).toString('base64');
 ```
 
-It is very important that you use UUID version 4, as it generates an **unpredictable** string. You then apply this nonce to the CSP header. A CSP header might look like this with the nonce applied:
+É muito importante que você use o UUID versão 4, pois ele gera uma string **imprevisível**. Em seguida, você aplica esse nonce ao cabeçalho do CSP. Um cabeçalho CSP pode ser assim com o nonce aplicado:
 
 ```js
 header('Content-Security-Policy')
   .set(`default-src 'self'; style-src: 'self' 'nonce-${nonce}';`);
 ```
 
-If you are using Server-Side Rendering (SSR), you should pass the nonce in the `<style>` tag on the server.
+Se você estiver usando renderização do lado do servidor(Server-Side Rendering), deverá passar o nonce na tag `<style>` no servidor.
 
 ```jsx
 <style
@@ -563,7 +563,7 @@ If you are using Server-Side Rendering (SSR), you should pass the nonce in the `
 />
 ```
 
-Then, you must pass this nonce to JSS so it can add it to subsequent `<style>` tags. The client side gets the nonce from a header. You must include this header regardless of whether or not SSR is used.
+Então, você deve passar este nonce para o JSS para que ele possa adicioná-lo às tags `<style>` subsequentes. O lado do cliente obtém o nonce de um cabeçalho. Você deve incluir esse cabeçalho independentemente de o SSR ser usado ou não.
 
 ```jsx
 <meta property="csp-nonce" content={nonce} />
