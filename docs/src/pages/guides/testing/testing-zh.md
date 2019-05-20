@@ -22,9 +22,9 @@
 
 ### 完整的 DOM 渲染
 
-Full DOM rendering is ideal for use cases where you have components that may interact with DOM APIs or may require the full lifecycle in order to fully test the component (e.g., `componentDidMount` etc.).
+当你有组件可能会与DOM API产生交互或为了完整测试组件而要求完整的生命周期，此时，完整的DOM渲染对于用例来说将会是理想的。（例如，` componentDidMount `等等。）
 
-为这种情况提供了 `createMount()` 函数。 Aside from wrapping the enzyme API, it provides a `cleanUp` function.
+为了这种情况， `createMount()` 函数应运而生。 除了封装enzyme API，它也提供了 `cleanUp`函数。
 
 ### 渲染为字符串
 
