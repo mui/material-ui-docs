@@ -148,13 +148,13 @@ O método é uma alternativa para `.toString()` quando você esta renderizando a
 
 ## `styled(Component)(styles, [options]) => Component`
 
-Link a style sheet with a function component using the **styled components** pattern.
+Vincula uma folha de estilos, com uma função de componente, usando o padrão de **componentes estilizados (styled components)**.
 
 #### Argumentos
 
-1. `Component`: The component that will be wrapped.
-2. `styles` (*Function | Object*): Uma função que gera os estilos ou um objeto de estilos. Ele será vinculado ao componente. Use a assinatura da função se você precisar ter acesso ao tema. It's provided as property of the first argument.
-3. `options` (*Object* [optional]): 
+1. `Component`: O componente que será manipulado.
+2. `styles` (*Function | Object*): Uma função que gera os estilos ou um objeto de estilos. Ela será vinculada ao componente. Use a assinatura da função se você precisar ter acesso ao tema. É fornecido como propriedade do primeiro argumento.
+3. `options` (*Object* [opcional]): 
     - `options.defaultTheme` (*Object* [opcional]): O tema padrão a ser usado se um tema não for fornecido por meio de um provedor de temas.
     - `options.withTheme` (*Boolean* [opcional]): Padrão `false`. Fornecer o objeto `theme` para o componente como uma propriedade.
     - `options.name` (*String* [opcional]): O nome da folha de estilo. Útil para depuração. Se o valor não for fornecido, ele tentará usar o nome do componente.
@@ -477,7 +477,7 @@ export default MyComponent
   
   <ol start="1">
     <li>
-      <code>Component</code>: The component that will be wrapped.
+      <code>Component</code>: O componente que será manipulado.
     </li>
   </ol>
   
