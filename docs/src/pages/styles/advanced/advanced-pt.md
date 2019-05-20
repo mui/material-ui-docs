@@ -443,7 +443,7 @@ Os nomes de classe gerados dos componentes `@material-ui/core ` se comportam de 
 - A folha de estilo tem um nome que começa com `Mui`. (Todos os componentes do Material-UI)
 - A opção `disableGlobal` do [gerador de nome de classe](/styles/api/#creategenerateclassname-options-class-name-generator) é `false`. (O padrão)
 
-These conditions are met with the most common use cases of `@material-ui/core`. For instance, this style sheet:
+Essas condições são atendidas com a forma de uso mais comum de `@material-ui/core`. Por exemplo, esta folha de estilo:
 
 ```jsx
 const useStyles = makeStyles({
@@ -461,7 +461,7 @@ const useStyles = makeStyles({
 }, { name: 'MuiButton' });
 ```
 
-generates the following class names you that can override:
+gera os seguintes nomes de classe que você pode sobrescrever:
 
 ```css
 .MuiButton-root { /* … */ }
@@ -472,9 +472,9 @@ generates the following class names you that can override:
 .MuiButton-outlinedPrimary:hover { /* … */ }
 ```
 
-*This is a simplification of the `@material-ui/core/Button` component's style sheet.*
+*Esta é uma simplificação da folha de estilo do componente `@material-ui/core/Button`.*
 
-Customization of the TextField can be cumbersome with the [`classes` API](#overriding-styles-classes-prop), where you have to define the the classes prop. It's easier to use the default values, as described above. For example:
+A customização de campos de texto pode ser incômoda com a [API `classes`](#overriding-styles-classes-prop), onde você tem que definir a propriedade classes. É mais fácil usar os valores padrão, conforme descrito acima. Por exemplo:
 
 ```jsx
 import styled from 'styled-components';
