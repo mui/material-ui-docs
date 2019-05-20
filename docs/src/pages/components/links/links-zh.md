@@ -2,13 +2,13 @@
 components: Link
 ---
 
-# Link组件
+# 链接
 
-<p class="description">Link组件允许您使用主题颜色和排版样式轻松自定义锚元素。</p>
+<p class="description">链接（Links）组件允许您使用主题颜色和排版样式轻松自定义锚元素。</p>
 
 ## 简单的链接
 
-Link组件构建在 [Typography](/api/typography/) 组件之上。 您可以利用其属性。
+链接（Links）组件构建在 [Typography](/api/typography/) 组件之上。 您可以利用其属性。
 
 {{"demo": "pages/components/links/Links.js"}}
 
@@ -27,7 +27,7 @@ However, the Link has different default properties than the Typography:
 
 ## 安全
 
-当使用 `target="_blank"` 带链接的是 [推荐](https://developers.google.com/web/tools/lighthouse/audits/noopener) 总是设置 的`rel ="noopener"` 或 `的rel ="noreferrer"` 链接到第三方内容时。
+当你在使用Link组件下的 `target="_blank"`时 ，并同时在关联第三方内容的情况下， [推荐](https://developers. google. com/web/tools/lighthouse/audits/noopener) 始终配置 `rel ="noopener"` 或 `的rel ="noreferrer"` 。
 
 - `rel="noopener"` 阻止新页面访问window.opener属性并确保它分开在不同的进程中运行。 若不如此，目标页面有潜在可能性将你的页面重定向至一个恶意网址
 - `rel ="noreferrer"` 具有相同的效果，但同时也阻止了 *Referer* header被发送到新的页面。 ⚠️ 去除referrer header会影响分析统计
