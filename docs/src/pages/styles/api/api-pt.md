@@ -163,7 +163,7 @@ Vincula uma folha de estilos, com uma função de componente, usando o padrão d
 
 #### Retornos
 
-`Component`: The new component created.
+`Component`: O novo componente criado.
 
 #### Exemplos
 
@@ -192,11 +192,11 @@ export default function StyledComponents() {
 
 ## `StylesProvider`
 
-This component allows you to change the behavior of the styling solution. It makes the options available down the React tree thanks to the context.
+Este componente permite que você altere o comportamento da solução de estilo. Ele torna as opções disponíveis na árvore React graças ao contexto.
 
-It should preferably be used at **the root of your component tree**.
+Deve preferencialmente ser usado na **raiz da sua árvore de componentes**.
 
-#### PropsBy default, the styles are injected last in the 
+#### PropsPor padrão, os estilos são injetados por último 
 
 <head>
   element of the page. As a result, they gain more specificity than any other style sheet. If you want to override Material-UI's styles, set this prop.</td> </tr> 
@@ -215,7 +215,7 @@ It should preferably be used at **the root of your component tree**.
     </td>
     
     <td align="left">
-      JSS's instance.
+      Instância do JSS.
     </td>
   </tr></tbody> </table> 
   
@@ -241,7 +241,7 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
   </h2>
   
   <p>
-    This component takes a <code>theme</code> property, and makes it available down the React tree thanks to the context. It should preferably be used at <strong>the root of your component tree</strong>.
+    This component takes a <code>theme</code> property, and makes it available down the React tree thanks to the context. Deve preferencialmente ser usado na <strong>raiz da sua árvore de componentes</strong>.
   </p>
   
   <h4>
@@ -281,7 +281,7 @@ ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'));
       </td>
       
       <td align="left">
-        Your component tree.
+        Sua árvore de componentes.
       </td>
     </tr>
     
@@ -486,7 +486,7 @@ export default MyComponent
   </h4>
   
   <p>
-    <code>Component</code>: The new component created. Does forward refs to the inner component.
+    <code>Component</code>: O novo componente criado. Does forward refs to the inner component.
   </p>
   
   <h4>
