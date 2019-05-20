@@ -29,7 +29,7 @@ However, the Link has different default properties than the Typography:
 
 当使用 `target="_blank"` 带链接的是 [推荐](https://developers.google.com/web/tools/lighthouse/audits/noopener) 总是设置 的`rel ="noopener"` 或 `的rel ="noreferrer"` 链接到第三方内容时。
 
-- `rel="noopener"` 阻止新页面访问window.opener属性并确保它分开在不同的进程中运行 Without this the target page can potentially redirect your page to a malicious URL.
+- `rel="noopener"` 阻止新页面访问window.opener属性并确保它分开在不同的进程中运行。 若不如此，目标页面有潜在可能性将你的页面重定向至一个恶意网址
 - `rel ="noreferrer"` 具有相同的效果，但也阻止将 *Referer* 标头发送到新页面。 ⚠️ Removing the referrer header will affect analytics.
 
 ## 第三方路由库
