@@ -3,8 +3,8 @@
 <p class="description">Поскольку компоненты могут использоваться в разных контекстах, Material-UI поддерживает различные способы настройки, от самых специфичных до самых обобщенных.</p>
 
 1. [Конкретное изменение для единичного случая](#1-specific-variation-for-a-one-time-situation)
-2. [Dynamic variation for a one-time situation](#2-dynamic-variation-for-a-one-time-situation)
-3. [Specific variation of a component](#3-specific-variation-of-a-component) re-used in different contexts
+2. [Динамическое изменение для единичного случая](#2-dynamic-variation-for-a-one-time-situation)
+3. [Особый вариант компонента](#3-specific-variation-of-a-component) использумый в различных контекстах
 4. [Material Design variations](#4-material-design-variations) such as with the button component
 5. [Global theme variation](#5-global-theme-variation)
 
@@ -154,7 +154,7 @@ You don't have to worry about CSS specificity as the inline-style takes preceden
 
 [When should I use inline-style vs classes?](/getting-started/faq/#when-should-i-use-inline-style-vs-classes)
 
-## 2. Dynamic variation for a one-time situation
+## 2. Динамическое изменение для единичного случая
 
 You have learned how to override the style of the Material-UI components in the previous sections. Now, let's see how we can make these overrides dynamic. We demonstrate 5 alternatives, each has it's pros and cons.
 
