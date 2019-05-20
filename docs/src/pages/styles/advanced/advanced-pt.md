@@ -388,13 +388,13 @@ Você pode [seguir o guia lado do servidor](/guides/server-rendering/) para um e
 
 Nós temos [um plugin oficial](https://github.com/hupe1980/gatsby-plugin-material-ui) que permite a renderização do lado do servidor para `@material-ui/ styles`. Consulte a página do plugin para obter instruções de configuração e uso.
 
-Refer to [this example project](https://github.com/mui-org/material-ui/blob/next/examples/gatsby-next) for an up-to-date usage example.
+Para um exemplo de uso atualizado, consulte [este projeto de exemplo](https://github.com/mui-org/material-ui/blob/next/examples/gatsby-next).
 
 ### Next.js
 
-You need to have a custom `pages/_document.js`, then copy [this logic](https://github.com/mui-org/material-ui/blob/next/examples/nextjs-next/pages/_document.js) to inject the server-side rendered styles into the `<head>` element.
+Você precisa ter um `pages/_document.js` customizado, então copie [esta lógica](https://github.com/mui-org/material-ui/blob/next/examples/nextjs-next/pages/_document.js) para injetar os estilos renderizados no lado do servidor no elemento `<head>`.
 
-Refer to [this example project](https://github.com/mui-org/material-ui/blob/next/examples/nextjs-next) for an up-to-date usage example.
+Para um exemplo de uso atualizado, consulte [este projeto de exemplo](https://github.com/mui-org/material-ui/blob/next/examples/nextjs-next).
 
 ## Class names
 
