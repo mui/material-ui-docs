@@ -87,7 +87,7 @@ const StyledButton = withStyles({
 <Button disabled className="MuiButton">
 ```
 
-Sometimes, you can't use a **pseudo-class** as the state doesn't exist in the platform. Let's take the menu item component and the *selected* state as an example. Aside from accessing nested elements, the `classes` property can be used to customize the internal states of Material-UI components:
+Иногда вы не можете использовать **псевдо-класс**, так как это состояние в платформе отсутствует. В качестве примера можно привести компонент пункт меню и состояние *выбрано*. Aside from accessing nested elements, the `classes` property can be used to customize the internal states of Material-UI components:
 
 ```css
 .MuiMenuItem {
