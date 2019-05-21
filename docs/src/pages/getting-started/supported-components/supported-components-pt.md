@@ -6,13 +6,13 @@ Nós trabalhamos para seguir as orientações sempre que possível (aplicando se
 
 Se você deseja adicionar suporte a um componente ou recurso não destacado aqui, pesquise o problema relevante no [GitHub](https://github.com/mui-org/material-ui/issues) ou crie um novo para discutir a abordagem antes de enviar um pull request.
 
-- App bars 
-  - **[Top](https://material.io/design/components/app-bars-top.html) ✓**
-  - **[Bottom](https://material.io/design/components/app-bars-bottom.html) ✓**
+- Barra de Aplicativos 
+  - **[Superior](https://material.io/design/components/app-bars-top.html) ✓**
+  - **[Inferior](https://material.io/design/components/app-bars-bottom.html) ✓**
 - **[Banners](https://material.io/design/components/banners.html)** ([Pode ser composto](https://medium.com/material-ui/introducing-material-ui-design-system-93e921beb8df))
-- **[Bottom navigation](https://material.io/design/components/bottom-navigation.html) ✓**
-- **[Buttons](https://material.io/design/components/buttons.html) ✓** 
-  - **[Texto & contidas botões (Antigamente flat & raised)](https://material.io/design/components/buttons.html) ✓**
+- **[Navegação Inferior](https://material.io/design/components/bottom-navigation.html) ✓**
+- **[Botões](https://material.io/design/components/buttons.html) ✓** 
+  - **[Botões de Texto & Botões Contidos (Antigamente flat & raised)](https://material.io/design/components/buttons.html) ✓**
   - **[Toggle buttons](https://material.io/design/components/buttons.html#buttons-toggle-buttons) ~** ([Lab](/components/about-the-lab/))
   - **[Icon toggle buttons](https://material.io/design/components/buttons.html#toggle-button) ✓** (Custom Checkbox)
 - **[Buttons: Floating Action Button](https://material.io/design/components/buttons-floating-action-button.html) ✓** 
