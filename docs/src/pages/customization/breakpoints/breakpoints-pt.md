@@ -2,17 +2,17 @@
 
 <p class="description">API que permite o uso de pontos de quebra em uma ampla variedade de contextos.</p>
 
-Para uma experiência de usuário ideal, as interfaces do material design precisam adaptar seu layout em vários pontos de quebra. Material-UI uses a **simplified** implementation of the original [specification](https://material.io/design/layout/responsive-layout-grid.html#breakpoints).
+Para uma experiência de usuário ideal, as interfaces do material design precisam adaptar seu layout em vários pontos de quebra. Material-UI usa uma implementação **simplificada** da [especificação](https://material.io/design/layout/responsive-layout-grid.html#breakpoints) original.
 
-Each breakpoint (a key) matches with a *fixed* screen width (a value):
+Cada ponto de quebra (uma chave) corresponde a uma largura de tela *fixa* (um valor):
 
-- **xs,** extra-small: 0px
-- **sm,** small: 600px
-- **md,** medium: 960px
-- **lg,** large: 1280px
-- **xl,** extra-large: 1920px
+- **xs,** extra-pequeno: 0px
+- **sm,** pequeno: 600px
+- **md,** médio: 960px
+- **lg,** grande: 1280px
+- **xl,** extra-grande: 1920px
 
-These [breakpoint values](/customization/default-theme/?expend-path=$.breakpoints.values) are used to determine breakpoint ranges. A range starts from the breakpoint value inclusive, to the next breakpoint value exclusive:
+Estes [valores de ponto de quebra](/customization/default-theme/?expend-path=$.breakpoints.values) são usados para determinar intervalos de ponto de quebra. Um intervalo inicia a partir do valor do ponto de quebra, incluindo seu valor inicial, até o próximo valor de ponto de quebra menos um:
 
 ```js
 value         |0px     600px    960px    1280px   1920px
