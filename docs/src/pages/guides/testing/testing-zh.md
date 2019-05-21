@@ -22,21 +22,21 @@
 
 ### 完整的 DOM 渲染
 
-当你有组件可能会与DOM API产生交互或为了完整测试组件而要求完整的生命周期，此时，完整的DOM渲染对于用例来说将会是理想的。（例如，` componentDidMount `等等。）
+当你有组件可能会与 DOM API 产生交互，或者当为了完整测试组件而要求完整的生命周期时，用例会更趋向使用完整的 DOM 渲染（例如，`componentDidMount` 等等。）。
 
-为了这种情况， `createMount()` 函数应运而生。 除了封装enzyme API，它也提供了 `cleanUp`函数。
+函数 `createMount()` 据此而开发。 除了封装 enzyme 的 API，它还提供了一个 `cleanUp` 函数。
 
 ### 渲染为字符串
 
-渲染为字符串在测试服务器组件行为时是有用的。 你可以依此来断定所生成的HTML字符串
+当在测试服务器组件行为时，渲染为字符串会有帮助。 你可以依此来判断所生成的 HTML 字符串。
 
-`createRender()` 函数非常适合这种情况。 这只是enzyme API的别名，只是为了保持一致性而暴露。
+`createRender()` 函数非常适合这种情况。 这只是 enzyme API 的一个别名，为了保持一致性，用户也可以使用。
 
 ## API
 
 ### `createShallow([options]) => shallow`
 
-在特定被需要的情景中，生成一个加强版的浅层函数 有关 `shallow`函数的更多详细信息, 请参考[enzyme API 文档 ](https://airbnb.io/enzyme/docs/api/shallow.html),
+在特定的情况下，您能够生成一个加强版的浅层函数。 若您想获取更多有关 `shallow`函数的详细信息，请参考 [enzyme API 文档 ](https://airbnb.io/enzyme/docs/api/shallow.html)。
 
 #### 参数
 
