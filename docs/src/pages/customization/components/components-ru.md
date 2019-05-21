@@ -77,7 +77,7 @@ const StyledButton = withStyles({
 .MuiButton {
   color: black;
 }
-/* We increase the specificity */
+/* Повышаем специфичность */
 .MuiButton:disabled {
   color: white;
 }
