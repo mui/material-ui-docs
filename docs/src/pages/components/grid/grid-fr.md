@@ -111,10 +111,10 @@ Pour que l'élément reste dans le container, vous devez définir `min-width: 0`
 
 ### direction: column | column-reverse
 
-Bien que le composant `Grid` ait une propriété `direction` qui autorise les valeurs de `rows`, `row-reverse`, `column` et `column-reverse`, certaines fonctionnalités ne sont pas prises en charge dans les containers `rows` et `column-reverse`. The properties which define the number of grids the component will use for a given breakpoint (`xs`, `sm`, `md`, `lg`, and `xl`) are focused on controlling width and do **not** have similar effects on height within `column` and `column-reverse` containers. If used within `column` or `column-reverse` containers, these properties may have undesirable effects on the width of the `Grid` elements.
+Bien que le composant `Grid` ait une propriété `direction` qui autorise les valeurs de `rows`, `row-reverse`, `column` et `column-reverse`, certaines fonctionnalités ne sont pas prises en charge dans les containers `rows` et `column-reverse`. Les propriétés qui définissent le nombre de grilles que le composant utilisera pour un point d' arrêt donné (`xs`, `sm`, `md`, `lg`et `xl`) sont centrées sur le contrôle de la largeur et n'ont **pas** d'effets similaires sur la hauteur dans les conteneurs `column` et `column-reverse`. Si elle est utilisée à l'intérieur des containers `column` ou `column-reverse` , ces propriétés peuvent avoir des effets indésirables sur la largeur des éléments `Grid` .
 
 ## CSS Grid Layout
 
-Material-UI doesn't provide any CSS Grid functionality itself, but as seen below you can easily use CSS Grid to layout your pages.
+Material-UI ne fournit aucune fonctionnalité de grille CSS, mais comme illustré ci-dessous, vous pouvez facilement utiliser CSS Grid pour mettre en page vos pages.
 
 {{"demo": "pages/components/grid/CSSGrid.js"}}
