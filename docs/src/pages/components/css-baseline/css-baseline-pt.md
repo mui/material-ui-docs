@@ -16,7 +16,7 @@ function MyApp() {
   return (
     <React.Fragment>
       <CssBaseline />
-      {/* The rest of your application */}
+      {/* O resto de sua aplicação */}
     </React.Fragment>
   );
 }
@@ -24,18 +24,18 @@ function MyApp() {
 export default MyApp;
 ```
 
-## Approach
+## Abordagem
 
-### Page
+### Página
 
-The `<html>` and `<body>` elements are updated to provide better page-wide defaults. More specifically:
+Os elementos `<html>` e `<body>` são atualizados para fornecer melhores padrões para toda a página. Mais especificamente:
 
 - The margin in all browsers is removed.
-- The default Material Design background color is applied. It's using [`theme.palette.background.default`](/customization/default-theme/?expend-path=$.palette.background) for standard devices and a white background for print devices.
+- A cor de fundo padrão do material design é aplicada. Isto usando [`theme.palette.background.default`](/customization/default-theme/?expend-path=$.palette.background) para dispositivos padrão e um fundo branco para dispositivos de impressão.
 
-### Layout
+### Leiaute
 
-- `box-sizing` is set globally on the `<html>` element to `border-box`. Every element—including `*::before` and `*::after` are declared to inherit this property, which ensures that the declared width of the element is never exceeded due to padding or border.
+- `box-sizing` é definido globalmente no elemento `<html>` para `border-box`. Every element—including `*::before` and `*::after` are declared to inherit this property, which ensures that the declared width of the element is never exceeded due to padding or border.
 
 ### Typography
 
