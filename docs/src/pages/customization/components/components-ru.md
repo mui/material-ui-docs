@@ -130,7 +130,7 @@ const styles = {
 }
 ```
 
-⚠️ ️ Вам нужно применить два сгенерированных имени класса (`root` & `disabled`) к DOM, чтобы это сработало.
+⚠️ ️ Чтобы это сработало, вам нужно применить к DOM оба сгенерированных имени класса (`root` & `disabled`).
 
 ```jsx
 <Button
@@ -146,13 +146,13 @@ const styles = {
 
 ### Переопределение с помощью встраиваемого стиля
 
-The second way to override the style of a component is to use the **inline-style** approach. Every component provides a `style` property. These properties are always applied to the root element.
+Второй способ переопределить стиль компонента – использовать подход **встроенного стиля**. Каждый компонент предоставляет свойство `style`. Эти свойства всегда применяются к корневому элементу.
 
-You don't have to worry about CSS specificity as the inline-style takes precedence over the regular CSS.
+Вам не нужно беспокоиться о специфичности CSS, так как встроенный стиль имеет приоритет над обычным CSS.
 
 {{"demo": "pages/customization/overrides/InlineStyle.js"}}
 
-[When should I use inline-style vs classes?](/getting-started/faq/#when-should-i-use-inline-style-vs-classes)
+[Когда я должен использовать встраиваемый стиль, а когда классы?](/getting-started/faq/#when-should-i-use-inline-style-vs-classes)
 
 ## 2. Динамическое изменение для единичного случая
 
