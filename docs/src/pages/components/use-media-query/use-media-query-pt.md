@@ -9,14 +9,14 @@ title: Consulta de mídia no React para design responsivo
 Algumas das principais características:
 
 - ⚛️ Tem uma API React idiomática.
-- 🚀 It's performant, it observes the document to detect when its media queries change, instead of polling the values periodically.
+- 🚀 Com desempenho, ele observa o documento para detectar quando suas consultas de mídia mudam, em vez de pesquisar os valores periodicamente.
 - 📦 [1 kB gzipped](/size-snapshot).
-- 💄 It's an alternative to react-responsive and react-media that aims for simplicity.
-- 🤖 It supports Server-side rendering.
+- 💄 É uma alternativa para react-responsive e react-media que visa simplicidade.
+- 🤖 Ele suporta a renderização do lado do servidor.
 
-## Simple media query
+## Consulta de mídia simples
 
-You should provide a media query to the first argument of the hook. The media query string can by any valid CSS media query, e.g. `'print'`.
+Você deve fornecer uma consulta de mídia ao primeiro argumento do hook. A string de consulta de mídia pode ser feita por qualquer consulta de mídia CSS válida, por exemplo, `'print'`.
 
 ```jsx
 import useMediaQuery from '@material-ui/core/useMediaQuery';
@@ -30,7 +30,7 @@ function MyComponent() {
 
 {{"demo": "pages/components/use-media-query/SimpleMediaQuery.js"}}
 
-## Using Material-UI's breakpoint helpers
+## Usando helpers de ponto de quebra Material-UI
 
 You can use Material-UI's [breakpoint helpers](/customization/breakpoints/) as follows:
 
