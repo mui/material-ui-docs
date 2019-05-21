@@ -87,7 +87,7 @@ Na demonstração a seguir, alteramos o elemento DOM renderizado (*em*, <u>u</u>
 
 #### Argumentos
 
-1. `key` (*String* | *Number*): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in pixels.
+1. `key` (*String* | *Number*): Uma chave de ponto de quebra (`xs`, `sm`, etc.) ou um número de largura de tela em pixels.
 
 #### Retornos
 
@@ -112,11 +112,11 @@ const styles = theme => ({
 
 #### Argumentos
 
-1. `key` (*String* | *Number*): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in pixels.
+1. `key` (*String* | *Number*): Uma chave de ponto de quebra (`xs`, `sm`, etc.) ou um número de largura de tela em pixels.
 
 #### Retornos
 
-`media query`: A media query string ready to be used with JSS, which matches screen widths less than and including the screen size given by the breakpoint key.
+`media query`: Uma string de consulta de mídia pronta para ser usada com o JSS, que corresponde a largura de tela menores incluindo o tamanho da tela fornecido como chave do ponto de quebra.
 
 #### Exemplos
 
@@ -138,11 +138,11 @@ const styles = theme => ({
 
 #### Argumentos
 
-1. `key` (*String*): A breakpoint key (`xs`, `sm`, etc.).
+1. `key` (*String*): Uma chave de ponto de quebra (`xs`, `sm`, etc.).
 
 #### Retornos
 
-`media query`: A media query string ready to be used with JSS, which matches screen widths greater than and including the screen size given by the breakpoint key.
+`media query`: Uma string de consulta de mídia pronta para ser usada com o JSS, que corresponde a larguras de telas maiores e incluindo o tamanho de tela fornecido na chave do ponto de quebra.
 
 #### Exemplos
 
@@ -164,8 +164,8 @@ const styles = theme => ({
 
 #### Argumentos
 
-1. `start` (*String*): A breakpoint key (`xs`, `sm`, etc.).
-2. `end` (*String*): A breakpoint key (`xs`, `sm`, etc.).
+1. `start` (*String*): Uma chave de ponto de quebra (`xs`, `sm`, etc.).
+2. `end` (*String*): Uma chave de ponto de quebra (`xs`, `sm`, etc.).
 
 #### Retornos
 
