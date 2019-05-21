@@ -38,7 +38,7 @@
 
 ![dev-tools](/static/images/customization/dev-tools.png)
 
-Using the dev tools, you know that you need to target the `Button` component and the `label` style rule:
+Используя инструменты разработчика, вы знаете, что вам нужно нацелиться на компонент `Button` и стилевое правило `label`:
 
 ```jsx
 <Button classes={{ label: 'my-class-name' }} />
