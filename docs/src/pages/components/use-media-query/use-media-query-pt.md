@@ -4,11 +4,11 @@ title: Consulta de mídia no React para design responsivo
 
 # useMediaQuery
 
-<p class="description">This is a CSS media query hook for React. It listens for matches to a CSS media query. It allows the rendering of components based on whether the query matches or not.</p>
+<p class="description">Este é um hook de CSS media query para React. Ele ouve correspondências para uma consulta de mídia no CSS. Permite a renderização de componentes com base no fato de a consulta corresponder ou não.</p>
 
-Some of the key features:
+Algumas das principais características:
 
-- ⚛️ It has an idiomatic React API.
+- ⚛️ Tem uma API React idiomática.
 - 🚀 It's performant, it observes the document to detect when its media queries change, instead of polling the values periodically.
 - 📦 [1 kB gzipped](/size-snapshot).
 - 💄 It's an alternative to react-responsive and react-media that aims for simplicity.
