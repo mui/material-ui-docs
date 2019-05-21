@@ -26,7 +26,7 @@
 
 В этом примере также используется ` withStyles() ` (см. выше), но теперь ` ClassesNesting ` присваивает свойству `classes` компонета `Button` обьект сопоставляющий **имена переопределяемых классов** (стилевые правила) с **именам использумых классов CSS ** (значениями). Существующие классы компонента будут по прежнему внедряться, поэтому необходимо указать только те стили, которые вы хотите добавить или переопределить.
 
-Notice that in addition to the button styling, the button label's capitalization has been changed:
+Обратите внимание, что в дополнение к стилю кнопки, стиль текста кнопки был изменен на стиль с заглавными буквами:
 
 {{"demo": "pages/customization/overrides/ClassesNesting.js"}}
 
@@ -44,9 +44,9 @@ Using the dev tools, you know that you need to target the `Button` component and
 <Button classes={{ label: 'my-class-name' }} />
 ```
 
-### Shorthand
+### Краткая запись
 
-The above code example can be condensed by using **the same CSS API** as the child component. In this example, the `withStyles()` higher-order component is injecting a `classes` property that is used by the [`Button` component](/api/button/#css).
+Приведенный выше пример кода может быть сокращен за счет использования **того же CSS API ** в качестве дочернего компонента. In this example, the `withStyles()` higher-order component is injecting a `classes` property that is used by the [`Button` component](/api/button/#css).
 
 ```jsx
 const StyledButton = withStyles({
@@ -67,7 +67,7 @@ const StyledButton = withStyles({
 
 {{"demo": "pages/customization/overrides/ClassesShorthand.js"}}
 
-### Internal states
+### Внутренние состояния
 
 The components internal states, like *hover*, *focus*, *disabled* and *selected*, are styled with a higher CSS specificity. [Specificity is a weight](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) that is applied to a given CSS declaration.
 
@@ -144,7 +144,7 @@ compiles to:
 
 {{"demo": "pages/customization/overrides/ClassesState.js"}}
 
-### Overriding with inline-style
+### Переопределение с помощью встраиваемого стиля
 
 The second way to override the style of a component is to use the **inline-style** approach. Every component provides a `style` property. These properties are always applied to the root element.
 
