@@ -87,13 +87,13 @@ const StyledButton = withStyles({
 <Button disabled className="MuiButton">
 ```
 
-Иногда вы не можете использовать **псевдо-класс**, так как это состояние в платформе отсутствует. В качестве примера можно привести компонент пункт меню и состояние *выбрано*. Aside from accessing nested elements, the `classes` property can be used to customize the internal states of Material-UI components:
+Иногда вы не можете использовать **псевдо-класс**, так как это состояние в платформе отсутствует. В качестве примера можно привести компонент пункт меню и состояние *выбрано*. Помимо доступа к вложенным элементам свойство `classes` может использоваться для настройки внутренних состояний компонентов Material-UI:
 
 ```css
 .MuiMenuItem {
   color: black;
 }
-/* We increase the specificity */
+/* Повышаем специфичность */
 .MuiMenuItem.selected {
   color: blue;
 }
@@ -103,9 +103,9 @@ const StyledButton = withStyles({
 <MenuItem selected classes={{ root: 'MuiMenuItem', selected: 'selected' }}>
 ```
 
-#### Why do I need to increase specificity to override one component state?
+#### Почему я должен повышать специфичность для переопределения отдельного состояния компонента?
 
-By design, the CSS specification makes the pseudo-classes increase the specificity. For consistency, Material-UI increases the specificity of its custom states. This has one important advantage, it's allowing you to cherry-pick the state you want to customize.
+Спецификация CSS, по определению, обязывает псевдоклассы повышать специфичность. For consistency, Material-UI increases the specificity of its custom states. This has one important advantage, it's allowing you to cherry-pick the state you want to customize.
 
 ### Use `$ruleName` to reference a local rule within the same style sheet
 
