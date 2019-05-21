@@ -105,11 +105,11 @@ const StyledButton = withStyles({
 
 #### Почему я должен повышать специфичность для переопределения отдельного состояния компонента?
 
-Спецификация CSS, по определению, обязывает псевдоклассы повышать специфичность. For consistency, Material-UI increases the specificity of its custom states. This has one important advantage, it's allowing you to cherry-pick the state you want to customize.
+Спецификация CSS, по определению, обязывает псевдоклассы повышать специфичность. Следуя этому правилу, Material-UI увеличивает специфичность своих пользовательских состояний. Это имеет одно важное преимущество: оно позволяет вам выбирать состояние, которое вы хотите настроить.
 
-### Use `$ruleName` to reference a local rule within the same style sheet
+### Используйте `$ruleName` для ссылки на правило в той же таблице стилей
 
-The [jss-nested](https://github.com/cssinjs/jss-nested) plugin (available by default) can make the process of increasing specificity easier.
+Плагин [jss-nested](https://github.com/cssinjs/jss-nested) (доступен по умолчанию) может сделать процесс увеличения специфичности проще.
 
 ```js
 const styles = {
@@ -122,7 +122,7 @@ const styles = {
 };
 ```
 
-compiles to:
+компилируется в:
 
 ```css
 .root-x.disable-x {
@@ -130,7 +130,7 @@ compiles to:
 }
 ```
 
-⚠️ You need to apply the two generated class names (`root` & `disabled`) to the DOM to make it work.
+⚠️ ️ Вам нужно применить два сгенерированных имени класса (`root` & `disabled`) к DOM, чтобы это сработало.
 
 ```jsx
 <Button
