@@ -169,7 +169,7 @@ const styles = theme => ({
 
 #### Retornos
 
-`media query`: A media query string ready to be used with JSS, which matches screen widths greater than the screen size given by the breakpoint key in the first argument and less than the the screen size given by the breakpoint key in the second argument.
+`media query`: Uma string de consulta de mídia pronta para ser usada com o JSS, que corresponde a larguras de telas maiores que o tamanho da tela fornecido na chave de ponto de quebra no primeiro argumento e menor que o tamanho de tela fornecido pela chave de ponto de quebra no segundo argumento.
 
 #### Exemplos
 
