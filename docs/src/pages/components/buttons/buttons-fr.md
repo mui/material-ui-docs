@@ -15,9 +15,9 @@ components: Button, Fab, IconButton, ButtonBase, Zoom
 - Cartes
 - Barres d'outils
 
-## Boutons Contained
+## Contained Buttons (boutons contenus)
 
-[Contained buttons](https://material.io/design/components/buttons.html#contained-button) are high-emphasis, distinguished by their use of elevation and fill. Ils contiennent des actions qui sont essentielles à votre application.
+[Les boutons contenus](https://material.io/design/components/buttons.html#contained-button) sont très accentués, ils se distinguent par leur utilisation de l'élévation et du remplissage. Ils contiennent des actions qui sont essentielles à votre application.
 
 Le dernier exemple de cette démo montre comment utiliser un bouton de téléchargement.
 
@@ -98,7 +98,7 @@ Les boutons texte, les boutons contained, les bouton d'action flottante et les b
 
 ## Bibliothèque de routage tierce
 
-Un cas d'utilisation courant consiste à utiliser le bouton pour déclencher une navigation vers une nouvelle page. Le composant `ButtonBase` fournit une propriété pour traiter ce cas d'utilisation: `composant`. However for certain focus polyfills `ButtonBase` requires the DOM node of the provided component. This is achieved by attaching a ref to the component and expecting that the component forwards this ref to the underlying DOM node. Étant donné que beaucoup de nos composants interactifs comptent sur `ButtonBase`, vous devriez être en mesure de tirer profit de partout:
+Un cas d'utilisation courant consiste à utiliser le bouton pour déclencher une navigation vers une nouvelle page. Le composant `ButtonBase` fournit une propriété pour traiter ce cas d'utilisation: `composant`. Cependant, pour certains focus polyfills `ButtonBase` requiert le nœud DOM du composant fourni. Pour ce faire, associez une référence au composant et attendez-vous à ce que le composant transmette cette référence au noeud DOM sous-jacent. Étant donné que beaucoup de nos composants interactifs comptent sur `ButtonBase`, vous devriez être en mesure d'en tirer profit partout:
 
 {{"demo": "pages/components/buttons/ButtonRouter.js", "defaultCodeOpen": true}}
 
