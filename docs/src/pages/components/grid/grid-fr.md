@@ -15,33 +15,33 @@ Le système de grille est implémenté avec le composant `Grid`:
 
 - Il utilise le [module Flexible Box CSS](https://www.w3.org/TR/css-flexbox-1/) pour une grande flexibilité.
 - Il y a deux types de mise en page : *conteneurs* et *éléments*.
-- Item widths are set in percentages, so they’re always fluid and sized relative to their parent element.
-- Items have padding to create the spacing between individual items.
-- There are five grid breakpoints: xs, sm, md, lg, and xl.
+- La largeur des éléments est définie en pourcentage, ils sont donc toujours fluides et dimensionnés par rapport à leur élément parent.
+- Les éléments ont un rembourrage (padding) pour créer l'espacement entre les éléments individuels.
+- Il existe cinq points de rupture de grille: xs, sm, md, lg et xl.
 
-If you are **new to or unfamiliar with flexbox**, we encourage you to read this [CSS-Tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) guide.
+Si vous êtes **nouveau ou peu familiers avec FlexBox**, nous vous encourageons à lire ce guide [CSS-Tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
 ## Ecartement
 
-The responsive grid focuses on consistent spacing widths, rather than column width. Material Design margins and columns follow an **8px** square baseline grid. The spacing property is an integer between 0 and 10 inclusive. By default, the spacing between two grid items follows a linear function: `output(spacing) = spacing * 8px`, e.g. `spacing={2}` creates a 16px wide gap.
+La grille responsive se concentre sur les largeurs d'espacement cohérentes plutôt que sur la largeur des colonnes. Les marges du Material Design et les colonnes suivent un grille carrée de **8px**. La propriété spacing est un entier compris entre 0 et 10 inclus. Par défaut, l'espacement entre deux éléments de la grille suit une fonction linéaire: `sortie (espacement) = espacement * 8px`, par exemple `espacement ={2}` crée un intervalle large de 16px.
 
-This output transformation function can be customized [using the theme](/customization/spacing/).
+Cette fonction de transformation de sortie peut être personnalisée [à l'aide du thème](/customization/spacing/).
 
 {{"demo": "pages/components/grid/SpacingGrid.js"}}
 
 ## Les grilles fluides
 
-Fluid grids use columns that scale and resize content. A fluid grid’s layout can use breakpoints to determine if the layout needs to change dramatically.
+Les grilles fluides utilisent des colonnes qui redimensionnent le contenu. La mise en page d'une grille fluide peut utiliser des points d'arrêt pour déterminer si la mise en page doit être modifiée de manière significative.
 
 ### Grille de base
 
-The column widths apply at all breakpoints (i.e. `xs` and up).
+La largeur des colonnes s’applique à tous les points de rupture (c.-à-d. `xs` et plus).
 
 {{"demo": "pages/components/grid/CenteredGrid.js"}}
 
-### Grid with breakpoints
+### Grille avec points d'arrêt
 
-Some columns have multiple widths defined, causing the layout to change at the defined breakpoint.
+Plusieurs colonnes ont plusieurs largeurs définies, ce qui entraîne une modification de la présentation au point de rupture défini.
 
 {{"demo": "pages/components/grid/FullWidthGrid.js"}}
 
