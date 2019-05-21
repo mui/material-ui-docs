@@ -41,8 +41,8 @@
 #### 参数
 
 1. `options` (*Object* [optional]) 
-    - `options.shallow` （*Function* [optional]）：浅增强功能，默认使用 **酶**。
-    - `options.untilSelector` （*String* [optional]）：递归浅呈现子项，直到找到提供的选择器。 向下钻取高阶组件非常有用。
+    - `options.shallow` （*Function* [optional]）：用浅层函数来增强，它**默认使用 enzyme **。
+    - `options.untilSelector` （*String* [optional]）：递归地浅层渲染子项，直到找到提供的选择器。 进一步探索 higher-order components（高阶组件）是很有帮助的。
     - `options.dive` (*Boolean* [optional])：Shallow渲染当前包装器的一个非DOM子节点，并返回结果周围的包装器。
     - 其他键被转发到 `enzyme.shallow（）`的options参数。
 
