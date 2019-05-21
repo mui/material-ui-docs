@@ -46,7 +46,7 @@ Using the dev tools, you know that you need to target the `Button` component and
 
 ### Краткая запись
 
-Приведенный выше пример кода может быть сокращен за счет использования **того же CSS API ** в качестве дочернего компонента. In this example, the `withStyles()` higher-order component is injecting a `classes` property that is used by the [`Button` component](/api/button/#css).
+Приведенный выше пример кода может быть сокращен за счет использования **того же CSS API ** в качестве дочернего компонента. В этом примере компонент высшего порядка `withStyles()` внедряет свойство `classes`, используемое затем [компонентом `Button` ](/api/button/#css).
 
 ```jsx
 const StyledButton = withStyles({
