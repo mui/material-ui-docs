@@ -15,26 +15,26 @@ Cada ponto de quebra (uma chave) corresponde a uma largura de tela *fixa* (um va
 Estes [valores de ponto de quebra](/customization/default-theme/?expend-path=$.breakpoints.values) são usados para determinar intervalos de ponto de quebra. Um intervalo inicia a partir do valor do ponto de quebra, incluindo seu valor inicial, até o próximo valor de ponto de quebra menos um:
 
 ```js
-value         |0px     600px    960px    1280px   1920px
-key           |xs      sm       md       lg       xl
-screen width  |--------|--------|--------|--------|-------->
-range         |   xs   |   sm   |   md   |   lg   |   xl
+valor           |0px     600px    960px    1280px   1920px
+chave           |xs      sm       md       lg       xl
+largura da tela |--------|--------|--------|--------|-------->
+intervalo       |   xs   |   sm   |   md   |   lg   |   xl
 ```
 
-These values can always be customized. You will find them in the theme, in the [`breakpoints.values`](/customization/default-theme/?expend-path=$.breakpoints.values) object.
+Esses valores sempre podem ser customizados. Você os encontrará no tema, no objeto [`breakpoints.values`](/customization/default-theme/?expend-path=$.breakpoints.values).
 
 The breakpoints are used internally in various components to make them responsive, but you can also take advantage of them for controlling the layout of your application through the [Grid](/components/grid/) and [Hidden](/components/hidden/) components.
 
-## CSS Media Queries
+## Consultas de Mídia CSS
 
-CSS media queries is the idiomatic approach to make your UI responsive. We provide four styles helpers to do so:
+Consultas de mídia CSS é a abordagem idiomática para tornar sua interface de usuário responsiva. Nós fornecemos quatro ajudantes de estilos para fazer isso:
 
 - [theme.breakpoints.up(key)](#theme-breakpoints-up-key-media-query)
 - [theme.breakpoints.down(key)](#theme-breakpoints-down-key-media-query)
 - [theme.breakpoints.only(key)](#theme-breakpoints-only-key-media-query)
 - [theme.breakpoints.between(start, end)](#theme-breakpoints-between-start-end-media-query)
 
-In the following demo, we change the background color (red, blue & green) based on the screen width.
+Na demonstração a seguir, alteramos a cor do plano de fundo (vermelho, azul & verde) com base na largura da tela.
 
 ```jsx
 const styles = theme => ({
@@ -55,9 +55,9 @@ const styles = theme => ({
 
 {{"demo": "pages/customization/breakpoints/MediaQuery.js"}}
 
-## JavaScript Media Queries
+## Consultas de mídia JavaScript
 
-Sometimes, using CSS isn't enough. You might want to change the React rendering tree based on the breakpoint value, in JavaScript.
+Às vezes, usar CSS não é suficiente. Você pode querer alterar a árvore de renderização React com base no valor do ponto de quebra, em JavaScript.
 
 ### useMediaQuery hook
 
@@ -77,7 +77,7 @@ function MyComponent(props) {
 export default withWidth()(MyComponent);
 ```
 
-In the following demo, we change the rendered DOM element (*em*, <u>u</u>, ~~del~~ & span) based on the screen width.
+Na demonstração a seguir, alteramos o elemento DOM renderizado (*em*, <u>u</u>, ~~del~~ & span) com base na largura da tela.
 
 {{"demo": "pages/customization/breakpoints/WithWidth.js"}}
 
@@ -91,7 +91,7 @@ In the following demo, we change the rendered DOM element (*em*, <u>u</u>, ~~del
 
 #### Retornos
 
-`media query`: A media query string ready to be used with JSS.
+`media query`: Uma string de consulta de mídia pronta para ser usada com o JSS.
 
 #### Exemplos
 
