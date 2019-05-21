@@ -69,9 +69,9 @@ const StyledButton = withStyles({
 
 ### Внутренние состояния
 
-The components internal states, like *hover*, *focus*, *disabled* and *selected*, are styled with a higher CSS specificity. [Specificity is a weight](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) that is applied to a given CSS declaration.
+Внутренние состояния компонентов, такие как *наведение*, *фокус*, *отключено* и *выбрано*, стилизованы с более высокой CSS специфичностью. [Специфичность - это весовой коэффициент](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) применяемый к данной декларации CSS.
 
-In order to override the components internal states, **you need to increase specificity**. Here is an example with the *disable* state and the button component using a **pseudo-class** (`:disabled`):
+Для переопределения внутренних состояний компонентов **необходимо повысить специфичность**. Here is an example with the *disable* state and the button component using a **pseudo-class** (`:disabled`):
 
 ```css
 .MuiButton {
