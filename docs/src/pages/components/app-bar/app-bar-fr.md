@@ -69,7 +69,7 @@ Une barre d’application qui s’élève au défilement.
 
 #### Valeur de retour
 
-`trigger`: Does the scroll position match the criteria?
+`trigger`: Est-ce que la position de défilement respecte les critères ?
 
 #### Exemples
 
