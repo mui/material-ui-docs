@@ -3,7 +3,7 @@ title: Componente React para Botão
 components: Button, Fab, IconButton, ButtonBase, Zoom
 ---
 
-# Buttons (Botões)
+# Botões
 
 <p class="description">Botões permitem que os usuários tomem ações e decisões com um simples toque.</p>
 
