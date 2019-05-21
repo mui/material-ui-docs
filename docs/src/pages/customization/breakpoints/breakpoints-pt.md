@@ -2,7 +2,7 @@
 
 <p class="description">API que permite o uso de pontos de quebra em uma ampla variedade de contextos.</p>
 
-For optimal user experience, material design interfaces need to be able to adapt their layout at various breakpoints. Material-UI uses a **simplified** implementation of the original [specification](https://material.io/design/layout/responsive-layout-grid.html#breakpoints).
+Para uma experiência de usuário ideal, as interfaces do material design precisam adaptar seu layout em vários pontos de quebra. Material-UI uses a **simplified** implementation of the original [specification](https://material.io/design/layout/responsive-layout-grid.html#breakpoints).
 
 Each breakpoint (a key) matches with a *fixed* screen width (a value):
 
