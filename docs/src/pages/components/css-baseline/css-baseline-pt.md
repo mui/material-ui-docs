@@ -35,9 +35,9 @@ Os elementos `<html>` e `<body>` são atualizados para fornecer melhores padrõe
 
 ### Leiaute
 
-- `box-sizing` é definido globalmente no elemento `<html>` para `border-box`. Every element—including `*::before` and `*::after` are declared to inherit this property, which ensures that the declared width of the element is never exceeded due to padding or border.
+- `box-sizing` é definido globalmente no elemento `<html>` para `border-box`. Todos elementos —incluindo `*::before` e `*::after` são declarados para herdar essa propriedade, que garante que a largura declarada do elemento nunca seja excedida devido ao preenchimento da borda.
 
-### Typography
+### Tipografia
 
-- Font antialiasing is enabled for better display of the Roboto font.
-- No base font-size is declared on the `<html>`, but 16px is assumed (the browser default). You can learn more about the implications of changing the `<html>` default font size in [the theme documentation](/customization/typography/#typography-html-font-size) page.
+- O antialiasing de fonte é habilitado para melhorar a exibição da fonte Roboto.
+- Nenhum tamanho de fonte base é declarado no `<html>`, mas 16px é assumido (o padrão do navegador). Você pode aprender mais sobre as implicações da mudança do padrão de tamanho de fonte do `<html>` na página de [documentação de tema](/customization/typography/#typography-html-font-size).
