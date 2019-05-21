@@ -22,7 +22,7 @@
 
 ### Переопределение через классы
 
-Когда ` className ` свойства недостаточно, и вам нужен доступ к вложенным элементам, вы можете воспользоваться свойством объекта `classes` для настройки всех CSS, внедренных через Material-UI для данного компонента. Список классов для каждого компонента описан в разделе **Компонент API**. Например, вы можете посмотреть [Button CSS API](/api/button/#css). Alternatively, you can use the [browser dev tools](#using-the-dev-tools).
+Когда ` className ` свойства недостаточно, и вам нужен доступ ко вложенным элементам, вы можете воспользоваться свойством объекта `classes` для настройки всех CSS, внедренных через Material-UI для данного компонента. Список классов для каждого компонента описан в разделе **Компонент API**. Для примера можете взглянуть на [Button CSS API](/api/button/#css). Alternatively, you can use the [browser dev tools](#using-the-dev-tools).
 
 This example also uses `withStyles()` (see above), but here, `ClassesNesting` is using `Button`'s `classes` prop to provide an object that maps the **names of classes to override** (style rules) to the **CSS class names to apply** (values). The component's existing classes will continue to be injected, so it is only necessary to provide the specific styles you wish to add or override.
 
