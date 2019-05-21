@@ -32,7 +32,7 @@
 
 ### Использование инструментов разработчика
 
-Инструменты разработчика браузера могут сэкономить вам много времени. Material-UI's class names [follow a simple pattern](/css-in-js/advanced/#class-names) in development mode: `Mui[component name]-[style rule name]-[UUID]`.
+Инструменты разработчика браузера могут сэкономить вам много времени. В режиме разработки имена классов Material-UI [следуют простому шаблону](/css-in-js/advanced/#class-names): ` Mui[имя компонента]-[имя стилевого правила]-[UUID]`.
 
 Let's go back to the above demo. Как вы можете переопределить метку кнопки?
 
