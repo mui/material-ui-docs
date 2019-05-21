@@ -415,7 +415,7 @@ export default function MyComponent() {
   </h4>
   
   <p>
-    <code>higher-order component</code>: Should be used to wrap a component.
+    <code>higher-order component</code>: Deve ser usado para encapsular o componente.
   </p>
   
   <h4>
