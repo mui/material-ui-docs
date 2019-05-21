@@ -24,7 +24,7 @@
 
 Когда ` className ` свойства недостаточно, и вам нужен доступ ко вложенным элементам, вы можете воспользоваться свойством объекта `classes` для настройки всех CSS, внедренных через Material-UI для данного компонента. Список классов для каждого компонента описан в разделе **Компонент API**. Для примера можете взглянуть на [Button CSS API](/api/button/#css). Кроме того, вы можете воспользоваться [встроенными в браузер инструментами разработчика](#using-the-dev-tools).
 
-This example also uses `withStyles()` (see above), but here, `ClassesNesting` is using `Button`'s `classes` prop to provide an object that maps the **names of classes to override** (style rules) to the **CSS class names to apply** (values). The component's existing classes will continue to be injected, so it is only necessary to provide the specific styles you wish to add or override.
+В этом примере также используется ` withStyles () ` (см. выше), но теперь ` ClassesNesting ` присваивает свойству `classes` компонета `Button` обьект ** имена классов для переопределения ** (правила стиля) к ** именам классов CSS для применения ** (ценности). The component's existing classes will continue to be injected, so it is only necessary to provide the specific styles you wish to add or override.
 
 Notice that in addition to the button styling, the button label's capitalization has been changed:
 
