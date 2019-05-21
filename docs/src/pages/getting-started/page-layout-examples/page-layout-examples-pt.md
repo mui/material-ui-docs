@@ -1,12 +1,12 @@
-# Exemplos de layout de página
+# Exemplos de leiaute de página
 
-<p class="description">Uma seleção de layouts de página básicos para ajudá-lo a começar a construir sua aplicação.</p>
+<p class="description">Uma seleção de leiautes de página básicos para ajudá-lo a começar a construir sua aplicação.</p>
 
-Esses layouts podem ser combinados com uma das [aplicações de exemplo](https://github.com/mui-org/material-ui/tree/next/examples) para gerar um projeto inicial completo.
+Esses leiautes podem ser combinados com uma das [aplicações de exemplo](https://github.com/mui-org/material-ui/tree/next/examples) para gerar um projeto inicial completo.
 
-Sections of each layout are clearly defined either by comments or use of separate files, making it simple to extract parts of a page (such as a "hero unit", or footer, for example) for reuse in other pages.
+Seções de cada leiaute são claramente definidas por comentários ou uso de arquivos separados, tornando simples extrair partes de uma página (como uma "hero unit" ou rodapé, por exemplo) para reutilização em outras páginas.
 
-For multi-part examples, a table in the README at the linked source code location describes the purpose of each file.
+Para exemplos de várias partes, uma tabela no README no local do código-fonte vinculado descreve a finalidade de cada arquivo.
 
 {{"demo": "pages/getting-started/page-layout-examples/PageLayoutExamples.js", "hideHeader": true}}
 
