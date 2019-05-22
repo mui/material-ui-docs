@@ -83,7 +83,7 @@ app.listen(port);
 
 服务器渲染的关键步骤是在我们发送到客户端**之前**渲染我们组件的初始 HTML。 我们用 [ReactDOMServer.renderToString()](https://reactjs.org/docs/react-dom-server.html) 来实现此操作。
 
-接着，我们可以使用 `sheets.toString()` 来从我们的`表单`中得到 CSS。 We will see how this is passed along in our `renderFullPage` function.
+接着，我们可以使用 `sheets.toString()` 来从我们的`表单`中得到 CSS。 我们将会了解到这是如何在我们的 `renderFullPage` 函数中传递下去的。
 
 ```jsx
 import express from 'express';
@@ -96,7 +96,7 @@ import theme from './theme';
 function handleRender(req, res) {
   const sheets = new ServerStyleSheets();
 
-  // Render the component to a string.
+  // 将组件渲染成一个字符串。
   const html = ReactDOMServer.renderToString(
     sheets.collect(
       <ThemeProvider theme={theme}>
@@ -105,10 +105,10 @@ function handleRender(req, res) {
     ),
   );
 
-  // Grab the CSS from our sheets.
+  // 从我们的样式表中获取 CSS。
   const css = sheets.toString();
 
-  // Send the rendered page back to the client.
+  // 将渲染的页面送回到客户端。
   res.send(renderFullPage(html, css));
 }
 
@@ -116,16 +116,16 @@ const app = express();
 
 app.use('/build', express.static('build'));
 
-// This is fired every time the server-side receives a request.
+// 每次服务器端收到请求时都会触发此操作。
 app.use(handleRender);
 
 const port = 3000;
 app.listen(port);
 ```
 
-### Inject Initial Component HTML and CSS
+### 注入组件的初始 HTML 和 CSS
 
-The final step on the server-side is to inject our initial component HTML and CSS into a template to be rendered on the client side.
+服务器端最后一个步骤则是在我们的组件初始 HTML 和 CSS 中注入一个模板，从而在客户端渲染。
 
 ```js
 function renderFullPage(html, css) {
@@ -144,9 +144,9 @@ function renderFullPage(html, css) {
 }
 ```
 
-### The Client Side
+### 客户端
 
-The client side is straightforward. All we need to do is remove the server-side generated CSS. Let's take a look at our client file:
+客户端则是简单明了的。 我们只需要移除服务器端生成的 CSS。 让我们来看一看我们客户端的文件：
 
 `client.js`
 
