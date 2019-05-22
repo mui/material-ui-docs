@@ -190,7 +190,7 @@ const styles = {
 
 Спецификация Material Design допускает существование некоторых компонентов в различных вариантах. Так, например, кнопки реализованы в разных формах: [text](https://material.io/design/components/buttons.html#text-button) (прежде "flat"), [contained](https://material.io/design/components/buttons.html#contained-button) (прежде "raised"), [FAB](https://material.io/design/components/buttons-floating-action-button.html) и другие.
 
-Material-UI старается реализовать все эти варианты. Please refer to the [Supported Components](/getting-started/supported-components/) documentation to find out the current status of all supported Material Design components.
+Material-UI старается реализовать все эти варианты. Пожалуйста, обратитесь к разделу документации [Поддерживаемые компоненты](/getting-started/supported-components/), чтобы узнать текущее состояние реализации всех компонентов Material Design.
 
 ## 5. Глобальное изменение темы
 
