@@ -34,7 +34,7 @@ Material-UI 提供了两个组件来渲染系统图标：`SvgIcon` 来渲染 SVG
 - [`delete`](https://material.io/tools/icons/?icon=delete&style=baseline) 暴露为 `@material-ui/icons/Delete`
 - [`delete forever`](https://material.io/tools/icons/?icon=delete_forever&style=baseline) 暴露为 `@material-ui/icons/DeleteForever`
 
-对于 *"被主题修饰过"* 的图标，在图标名称后面添加主题名。 例如：
+对于那些 *"被主题修饰过"* 的图标，您在图标名称后面加上主题名。 例如：
 
 - 描边的 [`delete`](https://material.io/tools/icons/?icon=delete&style=outline) 图标由 `@material-ui/icons/DeleteOutlined` 暴露
 - 圆角的 [`delete`](https://material.io/tools/icons/?icon=delete&style=rounded) 图标由 `@material-ui/icons/DeleteRounded` 暴露
@@ -51,24 +51,24 @@ Material-UI 提供了两个组件来渲染系统图标：`SvgIcon` 来渲染 SVG
 
 #### 导入
 
-- 假如你的环境不支持 tree-shaking，**推荐** 方式是用下面的方法导入图标：
+- 假如您的开发环境不支持 tree-shaking，我们**推荐的**方式是用以下方法导入图标：
 
 ```jsx
 import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
 import ThreeDRotation from '@material-ui/icons/ThreeDRotation';
 ```
 
-- 如果你的环境支持 tree-shaking 你也可以这样导入图标：
+- 如果你的环境支持 tree-shaking，你也可以这样导入图标：
 
 ```jsx
 import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 ```
 
-注意：用这种名称导出的方式导入会造成 *每一个图标* 的代码都会被包含在你的项目里，所以不推荐你这样做除非你配置 [tree-shaking](https://webpack.js.org/guides/tree-shaking/). 这也可能会影响热模块重载的性能。
+注意：用这种名称导出的方式导入会造成 *每一个图标* 的代码都会被包含在你的项目里，所以除非你配置了[tree-shaking](https://webpack.js.org/guides/tree-shaking/)， 我们不推荐你采用这个方法。 这也可能会影响热模块重载的性能。
 
 ### 更多的 SVG 图标
 
-正在寻找更多SVG图标？ 或许已经有许多项目，不过 [https://materialdesignicons.com](https://materialdesignicons.com/) 提供了超过 2,000 多由官方和社区提供的图标。 [mdi-material-ui](https://github.com/TeamWertarbyte/mdi-material-ui) 以与 [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) 对官方图近乎相同的方式将这些图标打包为 Material-UI SvgIcons。
+您在寻找更多的 SVG 图标吗？ 事实上已经有大量的项目存在，不过 [https://materialdesignicons.com](https://materialdesignicons.com/) 提供了超过 2,000 多种由官方和我们的社区提供的图标。 [mdi-material-ui](https://github.com/TeamWertarbyte/mdi-material-ui) 以与 [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) 对官方图近乎相同的方式将这些图标打包为 Material-UI SvgIcons。
 
 ## 字体图标
 
