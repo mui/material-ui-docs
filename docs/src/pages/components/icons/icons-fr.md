@@ -32,11 +32,11 @@ Il est intéressant de disposer des éléments nécessaires à la mise en œuvre
 Vous pouvez utiliser [material.io/tools/icons](https://material.io/tools/icons/?style=baseline) pour rechercher une icône spécifique. Lors de l'importation d'une icône, n'oubliez pas que les noms des icônes sont `PascalCase`, par exemple:
 
 - [`delete`](https://material.io/tools/icons/?icon=delete&style=baseline) est exposé en tant que `@material-ui/icons/Delete`
-- [`delete forever`](https://material.io/tools/icons/?icon=delete_forever&style=baseline) is exposed as `@material-ui/icons/DeleteForever`
+- [`delete forever`](https://material.io/tools/icons/?icon=delete_forever&style=baseline) est exposé en tant que `@material-ui/icons/DeleteForever`
 
-For *"themed"* icons, append the theme name to the icon name. For instance with the
+Pour des icônes* "à thème"*, ajoutez le nom du thème au nom de l'icône. Par exemple avec le
 
-- The Outlined [`delete`](https://material.io/tools/icons/?icon=delete&style=outline) icon is exposed as `@material-ui/icons/DeleteOutlined`
+- L'icône avec contour [`Delete`](https://material.io/tools/icons/?icon=delete&style=outline) est exposée comme `@material-ui /icons/DeleteOutlined`
 - The Rounded [`delete`](https://material.io/tools/icons/?icon=delete&style=rounded) icon is exposed as `@material-ui/icons/DeleteRounded`
 - The Two Tone [`delete`](https://material.io/tools/icons/?icon=delete&style=twotone) icon is exposed as `@material-ui/icons/DeleteTwoTone`
 - The Sharp [`delete`](https://material.io/tools/icons/?icon=delete&style=sharp) icon is exposed as `@material-ui/icons/DeleteSharp`
