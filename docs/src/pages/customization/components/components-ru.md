@@ -156,7 +156,7 @@ const styles = {
 
 ## 2. Динамическое изменение для единичного случая
 
-You have learned how to override the style of the Material-UI components in the previous sections. Now, let's see how we can make these overrides dynamic. We demonstrate 5 alternatives, each has it's pros and cons.
+В предыдущих разделах вы узнали, как переопределить стиль Material-UI компонентов. Now, let's see how we can make these overrides dynamic. We demonstrate 5 alternatives, each has it's pros and cons.
 
 ### Dynamic CSS
 
