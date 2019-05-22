@@ -15,13 +15,13 @@ Material-UI 提供了两个组件来渲染系统图标：`SvgIcon` 来渲染 SVG
 
 `SvgIcon` 组件将 SVG 的 `path` 作为子元素，并将它转换为一个展示路径的 React 组件，而且用户可以自定义图标的样式和相应的鼠标事件。 应将 SVG 元素缩放来适应24x24像素的视图。
 
-您可以直接使用生成的图标，或者将其作为另一个 Material-UI 组件的子项来使用。 默认情况下，一个图标会继承使用当前的文本颜色。 或者，你可以使用以下主题色之一来设置颜色属性：`primary`, `secondary`, `action`, `error` & `disabled`。
+您可以直接使用生成的图标，或者将其作为另一个 Material-UI 组件的子项来使用。 默认情况下，一个图标会继承使用当前的文本颜色。 您也可以选择使用以下任何一个主题颜色属性来设置图标的颜色：`primary`，`secondary`，`action`，`error` 以及 `disabled`。
 
 {{"demo": "pages/components/icons/SvgIcons.js"}}
 
 ### SVG Material 图标
 
-拥有实现自定义图标所需的构建块很有意思，但如何实现预设图标呢？ 我们提供一个单独的 npm 包，[@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons)，其中包括 1000 + 已转换为`Svg 图标` 组件的官方 [Material图标](https://material.io/tools/icons/?style=baseline)
+拥有实现自定义图标所需的构成模块很令人感兴趣，但如何实现预设图标呢？ 我们提供[@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons)这样一个单独的 npm 包，其中包括1000多个已转换为 `Svg 图标` 组件的官方 [ Material 图标](https://material.io/tools/icons/?style=baseline)。
 
 <a href="https://material.io/tools/icons/?icon=3d_rotation&style=baseline">
   <img src="/static/images/icons/icons.png" alt="官方material图标" style="width: 566px" />
@@ -29,7 +29,7 @@ Material-UI 提供了两个组件来渲染系统图标：`SvgIcon` 来渲染 SVG
 
 #### 使用
 
-你可以通过 [material.io/tools/icons](https://material.io/tools/icons/?style=baseline) 找到某个特定的图标。 导入图标时, 请记住图标的名称是 `PascalCase` 风格，例如：
+你可以在 [material.io/tools/icons](https://material.io/tools/icons/style=baseline) 中找到某个特定的图标。 当您导入图标时, 请记住图标的名称使用了 `PascalCase（帕斯卡命名规则）`，例如：
 
 - [`delete`](https://material.io/tools/icons/?icon=delete&style=baseline) 暴露为 `@material-ui/icons/Delete`
 - [`delete forever`](https://material.io/tools/icons/?icon=delete_forever&style=baseline) 暴露为 `@material-ui/icons/DeleteForever`
