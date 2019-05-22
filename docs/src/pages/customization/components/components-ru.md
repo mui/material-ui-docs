@@ -109,7 +109,7 @@ const StyledButton = withStyles({
 
 ### Используйте `$ruleName` для ссылки на правило в той же таблице стилей
 
-Плагин [jss-nested](https://github.com/cssinjs/jss-nested) (доступен по умолчанию) может сделать процесс увеличения специфичности проще.
+Плагин [jss-nested](https://github.com/cssinjs/jss-nested) (доступный по умолчанию) позволяет упростить процесс повышения специфичности.
 
 ```js
 const styles = {
