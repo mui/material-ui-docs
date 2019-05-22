@@ -24,7 +24,7 @@ Material-UI 提供了两个组件来渲染系统图标：`SvgIcon` 来渲染 SVG
 拥有实现自定义图标所需的构成模块很令人感兴趣，但如何实现预设图标呢？ 我们提供[@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons)这样一个单独的 npm 包，其中包括1000多个已转换为 `Svg 图标` 组件的官方 [ Material 图标](https://material.io/tools/icons/?style=baseline)。
 
 <a href="https://material.io/tools/icons/?icon=3d_rotation&style=baseline">
-  <img src="/static/images/icons/icons.png" alt="官方material图标" style="width: 566px" />
+  <img src="/static/images/icons/icons.png" alt="官方 material 图标" style="width: 566px" />
 </a>
 
 #### 使用
@@ -139,7 +139,7 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 
 ### 语义字体图标
 
-如果您的图标具有语义含义，则需要提供仅对辅助技术可见的文本替代方法。
+如果您的图标具有语义含义，您则需要提供一个对协助的技术可见的文本替代方法。
 
 ```jsx
 import Icon from '@material-ui/core/Icon';
@@ -148,7 +148,7 @@ import Typography from '@material-ui/core/Typography';
 // ...
 
 <Icon>add_circle</Icon>
-<Typography variant="srOnly">创建用户</Typography>
+<Typography variant="srOnly">创建一个用户</Typography>
 ```
 
 ### 参考
