@@ -15,7 +15,7 @@ components: Snackbar, SnackbarContent
 
 我们规定一次只能显示一个消息条。
 
-## Simple snackbars
+## 简单的消息条
 
 一个简单的消息条旨在重现谷歌 Keep 消息条的行为。
 
