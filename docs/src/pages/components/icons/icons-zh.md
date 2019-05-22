@@ -13,9 +13,9 @@ Material-UI 提供了两个组件来渲染系统图标：`SvgIcon` 来渲染 SVG
 
 ## SVG 图标
 
-`SvgIcon` 组件将 SVG 的 `path` 作为子元素，并将它转换为一个展示路径的 React 组件，而且用户可以自定义图标的样式和相应的鼠标事件。 SVG 元素应该缩放为一个 24x24像素的视图。
+`SvgIcon` 组件将 SVG 的 `path` 作为子元素，并将它转换为一个展示路径的 React 组件，而且用户可以自定义图标的样式和相应的鼠标事件。 应将 SVG 元素缩放来适应24x24像素的视图。
 
-生成的图标可以当作另一个Material-UI组件的子组件来使用。 图标默认继承当前的文本颜色。 或者，你可以使用以下主题色之一来设置颜色属性：`primary`, `secondary`, `action`, `error` & `disabled`。
+您可以直接使用生成的图标，或者将其作为另一个 Material-UI 组件的子项来使用。 默认情况下，一个图标会继承使用当前的文本颜色。 或者，你可以使用以下主题色之一来设置颜色属性：`primary`, `secondary`, `action`, `error` & `disabled`。
 
 {{"demo": "pages/components/icons/SvgIcons.js"}}
 
