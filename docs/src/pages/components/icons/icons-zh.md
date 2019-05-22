@@ -80,7 +80,7 @@ import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 
 `Icon` 组件将为 Material icon font 设置正确的类名。而对于其他的字体，您必须通过 Icon 组件的 `className` 属性来设置类名。
 
-要使用图标只需将图标名（字体连字）包裹到 `Icon` 组件内即可，例如：
+若想要使用图标，您只需把图标名（字体连字）和 `Icon` 组件包装到一起，例如：
 
 ```jsx
 import Icon from '@material-ui/core/Icon';
