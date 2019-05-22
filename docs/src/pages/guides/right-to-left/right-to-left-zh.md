@@ -32,14 +32,14 @@ npm install jss-rtl
 
 如下所述，在项目中安装了插件后，Material-UI 组件仍然需要通过 jss 实例来加载。 在内部，若 `direction: 'rtl'` 上在主题设置了，withStyles 则会使用该 JSS 插件 。 请前往 [此插件的 README](https://github.com/alitaheri/jss-rtl) 来了解更多信息。
 
-Once you have created a new JSS instance with the plugin, you need to make it available to all the components in the component tree. We have a [`StylesProvider`](/styles/api/#stylesprovider) component for this:
+一旦您通过插件创建了一个新的 JSS 实例，您需要提给组件树中的所有组件。 我们有一个 [`StylesProvider`](/styles/api/#stylesprovider) 组件来服务这个需求：
 
 ```jsx
 import { create } from 'jss';
 import rtl from 'jss-rtl';
 import { StylesProvider, jssPreset } from '@material-ui/styles';
 
-// Configure JSS
+// 配置 JSS
 const jss = create({ plugins: [...jssPreset().plugins, rtl()] });
 
 function RTL(props) {
@@ -53,7 +53,7 @@ function RTL(props) {
 
 ## 演示
 
-*Use the direction toggle button on the top right corner to flip the whole documentation*
+*请使用右上角的方向切换按钮来翻转整个文档。*
 
 {{"demo": "pages/guides/right-to-left/Direction.js"}}
 
