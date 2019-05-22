@@ -180,9 +180,9 @@ const styles = {
 
 ## 3. Особый вариант компонента
 
-You might need to create a variation of a component and use it in different contexts, for instance a colorful button on your product page, however you probably want to keep your code [*DRY*](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
+Возможно вам потребуется создать вариант компонента и использовать его в разных контекстах, например раскрашенную кнопку на странице вашего товара, но вы, вероятно, захотите сохранить свой код [*компактным*](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
 
-The best approach is to follow option 1 and then take advantage of the composition power of React by exporting your customized component to use wherever you need it.
+Наилучший подход состоит в том, чтобы следовать варианту 1, а затем воспользоваться преимуществами композиции React, экспортируя настроенный компонент для использования там, где он вам нужен.
 
 {{"demo": "pages/customization/overrides/Component.js", "hideEditButton": true}}
 
