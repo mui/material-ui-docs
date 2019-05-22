@@ -43,22 +43,22 @@
 1. `options` (*Object* [optional]) 
     - `options.shallow` （*Function* [optional]）：用浅层函数来增强，它**默认使用 enzyme **。
     - `options.untilSelector` （*String* [optional]）：递归地浅层渲染子项，直到找到提供的选择器。 进一步探索 higher-order components（高阶组件）是很有帮助的。
-    - `options.dive` (*Boolean* [optional])：Shallow渲染当前包装器的一个非DOM子节点，并返回结果周围的包装器。
-    - 其他键被转发到 `enzyme.shallow（）`的options参数。
+    - `options.dive` (*Boolean* [optional])：浅层函数能够渲染当前包装器的一个非 DOM 的子节点，并返回一个含有结果的包装器。
+    - 其他的键则被转发到 `enzyme.shallow（）`的 options 参数当中。
 
 #### 返回结果
 
-`shallow` （*shallow*）：浅函数。
+`shallow` （*shallow*）：一个浅层函数。
 
-#### 例子
+#### 示例
 
 ```jsx
-import { createShallow } from '@material-ui/core/test-utils';
+mport { createShallow } from '@material-ui/core/test-utils';
 
 describe('<MyComponent />', () => {
   let shallow;
 
-  before(() => {  // This is Mocha; in Jest, use beforeAll
+  before(() => {  // 这个是 Mocha；而在 Jest 中, 请使用 beforeAll
     shallow = createShallow();
   });
 
@@ -70,7 +70,7 @@ describe('<MyComponent />', () => {
 
 ### `createMount([options]) => mount`
 
-在特定被需要的情景中，生成一个加强版的浅层函数 有关 `mount` 功能的更多详细信息，请参阅 [enzyme API文档](https://airbnb.io/enzyme/docs/api/mount.html)。
+在特定的情况下，您能够生成一个加强版的浅层函数。 有关 `mount` 功能的更多详细信息，请参阅 [enzyme API文档](https://airbnb.io/enzyme/docs/api/mount.html)。
 
 #### 参数
 
