@@ -188,9 +188,9 @@ const styles = {
 
 ## 4. Material Design варианты
 
-The Material Design specification documents different variations of certain components, such as how buttons come in different shapes: [text](https://material.io/design/components/buttons.html#text-button) (formerly "flat"), [contained](https://material.io/design/components/buttons.html#contained-button) (formerly "raised"), [FAB](https://material.io/design/components/buttons-floating-action-button.html) and more.
+Спецификация Material Design допускает существование некоторых компонентов в различных вариантах. Так, например, кнопки реализованы в разных формах: [text](https://material.io/design/components/buttons.html#text-button) (прежде "flat"), [contained](https://material.io/design/components/buttons.html#contained-button) (прежде "raised"), [FAB](https://material.io/design/components/buttons-floating-action-button.html) и другие.
 
-Material-UI attempts to implement all of these variations. Please refer to the [Supported Components](/getting-started/supported-components/) documentation to find out the current status of all supported Material Design components.
+Material-UI старается реализовать все эти варианты. Please refer to the [Supported Components](/getting-started/supported-components/) documentation to find out the current status of all supported Material Design components.
 
 ## 5. Глобальное изменение темы
 
