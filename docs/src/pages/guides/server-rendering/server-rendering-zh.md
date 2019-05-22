@@ -6,22 +6,22 @@
 
 ## 在服务器端的 Material-UI
 
-Material-UI was designed from the ground-up with the constraint of rendering on the server, but it's up to you to make sure it's correctly integrated. It's important to provide the page with the required CSS, otherwise the page will render with just the HTML then wait for the CSS to be injected by the client, causing it to flicker (FOUC). 要将样式注入客户端，我们需要：
+Material-UI 最初设计受到了在服务器端渲染的约束，但是您可以完全负责它的正确整合。 为页面提供所需的 CSS 是至关重要的，否则页面只会渲染 HTML 而等待客户端注入 CSS, 从而导致浏览器样式闪烁（FOUC）。 若想将样式注入客户端，我们需要：
 
-1. Create a fresh, new [`ServerStyleSheets`](/styles/api/#serverstylesheets) instance on every request.
-2. Render the React tree with the server-side collector.
-3. Pull the CSS out.
+1. 在每个请求上创建一个全新的 [`ServerStyleSheets`](/styles/api/#serverstylesheets) 实例。
+2. 用服务端收集器渲染 React 树组件。
+3. 拉出 CSS。
 4. 将CSS传递给客户端。
 
-在客户端，在删除服务器端注入的CSS之前，将第二次注入CSS。
+在删除服务器端注入的 CSS 之前，客户端将第二次注入 CSS。
 
 ## 配置
 
-在下面的配方中，我们将了解如何设置服务器端呈现。
+在下面的配置中，我们将了解如何设置服务器端的渲染。
 
-### The theme
+### 主题
 
-We create a theme that will be shared between the client and the server.
+我们创建了一个能在客户端和服务器端共享的主题。
 
 `theme.js`
 
@@ -29,7 +29,7 @@ We create a theme that will be shared between the client and the server.
 import { createMuiTheme } from '@material-ui/core/styles';
 import red from '@material-ui/core/colors/red';
 
-// Create a theme instance.
+// 创建一个主题的实例。
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -46,13 +46,11 @@ const theme = createMuiTheme({
     },
   },
 });
-
-export default theme;
 ```
 
-### The server-side
+### 服务器端
 
-The following is the outline for what our server-side is going to look like. We are going to set up an [Express middleware](http://expressjs.com/en/guide/using-middleware.html) using [app.use](http://expressjs.com/en/api.html) to handle all requests that come in to our server. If you're unfamiliar with Express or middleware, just know that our handleRender function will be called every time the server receives a request.
+下面的大纲可以大致展现一下我们的服务器端。 我们将使用 [app.use](http://expressjs.com/en/api.html) 来设置一个 [Express middleware](http://expressjs.com/en/guide/using-middleware.html) 从而处理来自我们服务器端的所有请求。 If you're unfamiliar with Express or middleware, just know that our handleRender function will be called every time the server receives a request.
 
 `server.js`
 
