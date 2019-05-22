@@ -194,14 +194,14 @@ Material-UI старается реализовать все эти вариан
 
 ## 5. Глобальное изменение темы
 
-### Theme variables
+### Настраиваемые параметры темы
 
-In order to promote consistency between components, and manage the user interface appearance as a whole, Material-UI provides a mechanism to apply global changes by adjusting the [theme configuration variables](/customization/themes/#theme-configuration-variables).
+Для обеспечения согласованности между компонентами и управления интерфейсом пользователя в целом, Material-UI предоставляет механизм глобальной настройки посредством изменения [настраиваемых параметров темы](/customization/themes/#theme-configuration-variables).
 
-### Global CSS override
+### Глобальное переопределение CSS
 
-You can also customize all instances of a component with CSS. We expose [global class names](/css-in-js/advanced/#with-material-ui-core) to do so. It's very similar to how you would customize Bootstrap.
+Вы также можете настроить все экземпляры компонента с помощью CSS. Для этого мы предоставляем [глобальные имена классов](/css-in-js/advanced/#with-material-ui-core). Это очень похоже на настройку Bootstrap.
 
-### Global theme override
+### Глобальное переопределение темы
 
-You can take advantage of the `overrides` key of the `theme` to potentially change every single style injected by Material-UI into the DOM. Learn more about it in the [themes section](/customization/themes/#customizing-all-instances-of-a-component-type) of the documentation.
+Вы можете воспользоваться `переопределением` ключевых параметров `темы`, чтобы потенциально изменить любой стиль, внедренный Material-UI в DOM. Дальнейшие подробности об этом в разделе документации [темы](/customization/themes/#customizing-all-instances-of-a-component-type).
