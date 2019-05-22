@@ -1,6 +1,6 @@
 # 从右到左读取
 
-<p class="description">要更改 Material-UI 组件的读取方向，您必须执行以下步骤。 应该镜像从右到左（RTL）读取的语言的UI，例如阿拉伯语和希伯来语。</p>
+<p class="description">要更改 Material-UI 组件的读取方向，您必须执行以下步骤。 对从右到左（RTL）读取的语言的 UI，例如阿拉伯语和希伯来语，应该被反射。</p>
 
 ## 脚步
 
