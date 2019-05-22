@@ -68,17 +68,17 @@ import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 
 ### 更多的 SVG 图标
 
-您在寻找更多的 SVG 图标吗？ 事实上已经有大量的项目存在，不过 [https://materialdesignicons.com](https://materialdesignicons.com/) 提供了超过 2,000 多种由官方和我们的社区提供的图标。 [mdi-material-ui](https://github.com/TeamWertarbyte/mdi-material-ui) 以与 [@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) 对官方图近乎相同的方式将这些图标打包为 Material-UI SvgIcons。
+您在寻找更多的 SVG 图标吗？ 事实上已经有大量的项目存在，不过 [https://materialdesignicons.com](https://materialdesignicons.com/) 提供了超过 2,000 多种由官方和我们的社区提供的图标。 与[@material-ui/icons](https://www.npmjs.com/package/@material-ui/icons) 将官方的图标打包方式类似，[mdi-material-ui](https://github.com/TeamWertarbyte/mdi-material-ui)将这些图标打包为 Material-UI SvgIcons。
 
 ## 字体图标
 
-`Icon` 组件通过任一支持连字的图标字体显示为一个图标。 作为先决条件, 您必须在项目中包括一个, 例如通过 Google Web Fonts 引入 [Material icon font](http://google.github.io/material-design-icons/#icon-font-for-the-web) ：
+对于支持连字的任何图标字体，`Icon` 组件能够将其显示为一个图标。 作为先决条件，您必须在项目中包括一个 [Material icon font](http://google.github.io/material-design-icons/#icon-font-for-the-web)，举例来说，您可以由 Google Web Fonts 引入：
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
 
-`Icon` 将为 Material icon font 设置正确的类名。对于其他的字体，你必须通过 Icon 组件的 `className` 属性设置类名。
+`Icon` 组件将为 Material icon font 设置正确的类名。而对于其他的字体，您必须通过 Icon 组件的 `className` 属性来设置类名。
 
 要使用图标只需将图标名（字体连字）包裹到 `Icon` 组件内即可，例如：
 
