@@ -114,11 +114,11 @@ import Icon from '@material-ui/core/Icon';
 
 如果您的图标纯粹是装饰性的，那么您已经完成了！我们添加 `aria-hidden=true` 这个属性，以便您的图标可以正常访问（隐藏的）。
 
-### 语义SVG图标
+### 语义 SVG 图标
 
-如果您的图标具有语义含义，那么您需要做的就是输入 `titleAccess =“含义”` 属性。 我们添加 `role="img"` 属性和 `<title>` 元素，以便您的图标可以正常访问。
+如果您的图标带有语义，您只需要包含 `titleAccess =“含义”` 属性。 我们添加了 `role="img"` 属性和 `<title>` 元素，这样一来您的图标可以正常被访问了。
 
-对于可聚焦的交互式元素，例如与图标按钮一起使用时，可以使用 `aria-label` 属性：
+对于那些可聚焦的交互式元素，譬如与一个图标按钮一起使用时，您可以使用 `aria-label` 属性：
 
 ```jsx
 import IconButton from '@material-ui/core/IconButton';
@@ -133,7 +133,7 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 </IconButton>
 ```
 
-### 装饰字体图标
+### 装饰形的字体图标
 
 如果您的图标纯粹是装饰性的，那么您已经完成了！ 我们添加 `aria-hidden=true` 属性，以便您的图标可以正常访问（不可见）。
 
