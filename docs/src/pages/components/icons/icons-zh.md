@@ -1,5 +1,5 @@
 ---
-title: React Icon Component
+title: React Icon（图标）组件
 components: Icon, SvgIcon
 ---
 
