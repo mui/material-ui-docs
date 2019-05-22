@@ -156,25 +156,25 @@ const styles = {
 
 ## 2. Динамическое изменение для единичного случая
 
-В предыдущих разделах вы узнали, как переопределить стиль Material-UI компонентов. Now, let's see how we can make these overrides dynamic. We demonstrate 5 alternatives, each has it's pros and cons.
+В предыдущих разделах вы узнали, как переопределить стиль Material-UI компонентов. Теперь давайте посмотрим, как мы можем сделать эти переопределения динамическими. Мы продемонстрируем 5 вариантов, каждый со своими плюсами и минусами.
 
-### Dynamic CSS
+### Динамический CSS
 
 {{"demo": "pages/customization/overrides/DynamicCSS.js"}}
 
-### Class name branch
+### Ответвление имени класса
 
 {{"demo": "pages/customization/overrides/DynamicClassName.js"}}
 
-### CSS variables
+### CSS переменные
 
 {{"demo": "pages/customization/overrides/DynamicCSSVariables.js"}}
 
-### Inline-style
+### Встраиваемый стиль
 
 {{"demo": "pages/customization/overrides/DynamicInlineStyle.js"}}
 
-### Theme nesting
+### Вложенные темы
 
 {{"demo": "pages/customization/overrides/DynamicThemeNesting.js"}}
 
