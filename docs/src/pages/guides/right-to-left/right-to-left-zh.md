@@ -14,7 +14,7 @@
 
 ### 2。 主题
 
-在自定义主题中设置方向：
+在您自定义的主题中设置方向：
 
 ```js
 const theme = createMuiTheme({
@@ -24,13 +24,13 @@ const theme = createMuiTheme({
 
 ### 3。 jss-rtl
 
-你需要这个JSS插件来翻转样式： [jss-rtl](https://github.com/alitaheri/jss-rtl)。
+你需要这个 JSS 插件来翻转样式： [jss-rtl](https://github.com/alitaheri/jss-rtl)。
 
 ```sh
 npm install jss-rtl
 ```
 
-在项目中安装了插件后，Material-UI组件仍然需要由jss实例加载，如下所述。 在内部，当withStyles使用该JSS插件 `direction: 'rtl'` 上设置的主题。 Head to the [plugin README](https://github.com/alitaheri/jss-rtl) to learn more about it.
+如下所述，在项目中安装了插件后，Material-UI 组件仍然需要通过 jss 实例来加载。 在内部，若 `direction: 'rtl'` 上在主题设置了，withStyles 则会使用该 JSS 插件 。 请前往 [此插件的 README](https://github.com/alitaheri/jss-rtl) 来了解更多信息。
 
 Once you have created a new JSS instance with the plugin, you need to make it available to all the components in the component tree. We have a [`StylesProvider`](/styles/api/#stylesprovider) component for this:
 
