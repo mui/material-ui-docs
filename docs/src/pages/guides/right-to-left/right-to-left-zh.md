@@ -57,7 +57,7 @@ function RTL(props) {
 
 {{"demo": "pages/guides/right-to-left/Direction.js"}}
 
-## 选择退出rtl转型
+## 选择退出 rtl 转换
 
 If you want to prevent a specific rule-set from being affected by the `rtl` transformation you can add `flip: false` at the beginning:
 
