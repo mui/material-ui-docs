@@ -88,7 +88,7 @@ import Icon from '@material-ui/core/Icon';
 <Icon>star</Icon>
 ```
 
-图标默认继承当前的文本颜色。 或者，你可以使用以下主题色之一来设置颜色属性：`primary`, `secondary`, `action`, `error` & `disabled`。
+默认情况下，一个图标会继承使用当前的文本颜色。 您也可以选择使用以下任何一个主题颜色属性来设置图标的颜色：`primary`，`secondary`，`action`，`error` 以及 `disabled`。
 
 ### Font Material 图标
 
@@ -96,13 +96,13 @@ import Icon from '@material-ui/core/Icon';
 
 ### Font Awesome
 
-[Font Awesome](https://fontawesome.com/icons) 与 `Icon` 一起使用的示例如下：
+如下是一个同时使用[Font Awesome](https://fontawesome.com/icons) 与 `Icon` 的示例：
 
 {{"demo": "pages/components/icons/FontAwesome.js", "hideEditButton": true}}
 
-## 字体 vs SVG 用哪个？
+## Font 与 SVG。到底使用哪个呢？
 
-两种方法都能很好的工作。然而，他们之间有着微妙的差异，特别是在性能和渲染质量上。 尽可能选择 SVG。 因为 SVG 允许代码分割、支持更多图标而且渲染的更快、更好。
+这两种方法都能管用，然而，它们之间还是有着一些微妙的差异，特别当涉及到整体性能和渲染质量。 我们推荐尽可能选择 SVG，因为它允许代码分割、支持更多图标、而且渲染得更快、更好。
 
 更多细节请查看 [ 为什么 GitHub 从字体图标迁移到 SVG 图标](https://blog.github.com/2016-02-22-delivering-octicons-with-svg/)
 
