@@ -50,14 +50,14 @@ const theme = createMuiTheme({
 
 ### 服务器端
 
-下面的大纲可以大致展现一下我们的服务器端。 我们将使用 [app.use](http://expressjs.com/en/api.html) 来设置一个 [Express middleware](http://expressjs.com/en/guide/using-middleware.html) 从而处理来自我们服务器端的所有请求。 If you're unfamiliar with Express or middleware, just know that our handleRender function will be called every time the server receives a request.
+下面的大纲可以大致展现一下我们的服务器端。 我们将使用 [app.use](http://expressjs.com/en/api.html) 来设置一个 [Express middleware](http://expressjs.com/en/guide/using-middleware.html) 从而处理来自我们服务器端的所有请求。 如果您对 Express 或者 middleware 不太熟悉，您只需要知道每次服务器收到了一个请求，都会调用我们的 handleRender 函数。
 
 `server.js`
 
 ```js
 import express from 'express';
 
-// We are going to fill these out in the sections to follow.
+// 我们将在章节中填写这些内容来遵守。
 function renderFullPage(html, css) {
   /* ... */
 }
@@ -75,15 +75,15 @@ const port = 3000;
 app.listen(port);
 ```
 
-### Handling the Request
+### 处理请求
 
-The first thing that we need to do on every request is create a new `ServerStyleSheets`.
+对于每次请求，我们首先需要做的是创建一个 `ServerStyleSheets`。
 
-When rendering, we will wrap `App`, our root component, inside a [`StylesProvider`](/styles/api/#stylesprovider) and [`ThemeProvider`](/styles/api/#themeprovider) to make the style configuration and the `theme` available to all components in the component tree.
+当渲染的时候，我们将我们的根部组件，`App`，包装在一个 [`StylesProvider`](/styles/api/#stylesprovider) 和 [`ThemeProvider`](/styles/api/#themeprovider) 中，这样组件树中的所有组件都可以使用撰写的样式设置和 `theme`。
 
-The key step in server-side rendering is to render the initial HTML of our component **before** we send it to the client side. To do this, we use [ReactDOMServer.renderToString()](https://reactjs.org/docs/react-dom-server.html).
+服务器渲染的关键步骤是在我们发送到客户端**之前**渲染我们组件的初始 HTML。 我们用 [ReactDOMServer.renderToString()](https://reactjs.org/docs/react-dom-server.html) 来实现此操作。
 
-We then get the CSS from our `sheets` using `sheets.toString()`. We will see how this is passed along in our `renderFullPage` function.
+接着，我们可以使用 `sheets.toString()` 来从我们的`表单`中得到 CSS。 We will see how this is passed along in our `renderFullPage` function.
 
 ```jsx
 import express from 'express';
