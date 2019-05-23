@@ -10,7 +10,7 @@
 
 ## 1. Variação específica para uma situação única
 
-You might need to change the style of a component for a specific implementation, for which you have the following solutions available:
+Pode ser necessário alterar o estilo de um componente em alguma implementação específica, para a qual você tem as seguintes soluções disponíveis:
 
 ### Sobrescrever usando nomes de classes
 
