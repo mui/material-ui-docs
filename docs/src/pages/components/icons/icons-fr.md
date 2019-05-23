@@ -51,14 +51,14 @@ There are three exceptions to this rule:
 
 #### Imports
 
-- If your environment doesn't support tree-shaking, the **recommended** way to import the icons is the following:
+- Si votre environnement ne prend pas en charge le tree-shaking, la façon **recommandée** d'importer les icônes est la suivante:
 
 ```jsx
 import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
 import ThreeDRotation from '@material-ui/icons/ThreeDRotation';
 ```
 
-- If your environment support tree-shaking you can also import the icons this way:
+- Si votre environnement prend en charge le tree-shaking, vous pouvez également importer les icônes de cette façon:
 
 ```jsx
 import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
