@@ -283,6 +283,13 @@ yarn add @material-ui/styles@next
   
   ![A simpler tab item DOM structure](https://user-images.githubusercontent.com/3165635/53287870-53a35500-3782-11e9-9431-2d1a14a41be0.png)
 
+- [Tabs] Remove deprecated fullWidth and scrollable props
+  
+  ```diff
+  -<Tabs fullWidth scrollable />
+  +<Tabs variant="scrollable" />
+  ```
+
 ### Table
 
 - [TableCell] Remove the deprecated `numeric` property.
