@@ -97,7 +97,7 @@ const styles = createStyles({
 });
 ```
 
-No entanto, para permitir que estes estilos passem pelo TypeScript, as definições devem ser ambíguas em relação aos nomes de classes CSS e nomes reais de propriedades CSS. Devido a isso, evite utilizar nomes de classes iguais a propriedades do CSS.
+However to allow these styles to pass TypeScript, the definitions have to be ambiguous concerning names for CSS classes and actual CSS property names. Devido a isso, evite utilizar nomes de classes iguais a propriedades do CSS.
 
 ```ts
 // erro porque TypeScript acha que `@media (min-width: 960px)` é o nome da classe
@@ -150,7 +150,7 @@ interface Props {
 }
 ```
 
-No entanto isto não é muito elegante de acordo com o princípio de software [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), porque requer que você mantenha os nomes das classes (`'root'`, `'paper'`, `'button'`, ...) em dois locais diferentes. Nós fornecemos um operador de tipo `WithStyles` para ajudar com isso, assim você pode apenas escrever
+No entanto isto não é muito elegante de acordo com o princípio de software [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), porque requer que você mantenha os nomes das classes (`'root'`, `'paper'`, `'button'`, ...) em dois locais diferentes. Nós fornecemos um operador de tipo `WithStyles` para ajudar com isso, assim você pode apenas escrever:
 
 ```ts
 import { WithStyles, createStyles } from '@material-ui/core';
@@ -249,6 +249,6 @@ const theme = createMyTheme({ appDrawer: { breakpoint: 'md' }});
 
 ## Uso da propriedade `component`
 
-Material-UI permite que você substitua o nó raiz de um componente através de uma propriedade `component`. Por exemplo, a raiz de um componente `Button` pode ser substituída com um React Router `Link`, e quaisquer propriedades adicionais passadas para o `Button`, como `to`, será repassada para o componente `Link`. Para um exemplo de código relativo ao `Button` e `react-router-dom` verifique [esta demonstração](/components/buttons/#third-party-routing-library).
+Material-UI permite que você substitua o nó raiz de um componente através de uma propriedade `component`. Por exemplo, a raiz de um componente `Button` pode ser substituída com um React Router `Link`, e quaisquer propriedades adicionais passadas para o `Button`, como `to`, será repassada para o componente `Link`. For a code example concerning `Button` and `react-router-dom` checkout [this Button demo](/components/buttons/#third-party-routing-library).
 
 Nem todos os componentes suportam totalmente qualquer tipo de componente que você passe. Se você encontrar algum componente que rejeita sua propriedade `component` no TypeScript por favor abra um issue. Há um esforço contínuo para corrigir isso fazendo com que a propriedade component seja genérica.
