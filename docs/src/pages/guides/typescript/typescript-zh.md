@@ -97,7 +97,7 @@ const styles = createStyles({
 });
 ```
 
-但是，为了允许这些样式传递 TypeScript，鉴于CSS 类的名称和实际的 CSS 属性名称不一致，定义必须是模糊的。 由于类名称应与 CSS 属性相同，因此应避免使用。
+However to allow these styles to pass TypeScript, the definitions have to be ambiguous concerning names for CSS classes and actual CSS property names. 由于类名称应与 CSS 属性相同，因此应避免使用。
 
 ```ts
 // 这样是错误的，由于 TypeScript 认为 `@media (min-width: 960px)` 是一个类名
@@ -150,7 +150,7 @@ interface Props {
 }
 ```
 
-然而，这是不是很 [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) ，因为它需要你在两个不同的地方保持类名（`'root'`， `'paper'`， `'button'`，...）。 我们提供了一个类型操作符 `WithStyles` 来帮助解决这个问题，因此您可以直接写入：
+然而，这是不是很 [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) ，因为它需要你在两个不同的地方保持类名（`'root'`， `'paper'`， `'button'`，...）。 我们提供了一个类型操作符 `WithStyles` 来帮助解决这个问题，因此您可以直接写入：:
 
 ```ts
 import { WithStyles, createStyles } from '@material-ui/core';
@@ -249,6 +249,6 @@ const theme = createMyTheme({ appDrawer: { breakpoint: 'md' }});
 
 ## `组件`属性的用法
 
-在 Material-UI 中，您可以用`组件`的属性来替换一个组件的根节点。 譬如，一个 `Button` 的根节点可以用一个 React Router 的`Link`来替换，而且 `Button` 的其余属性，例如 `to`，也可以运用到 `Link` 组件当中。 关于 `Button` 和 `react-router-dom` 的例子，您可以查看[这个按钮的案例](/components/buttons/#third-party-routing-library)。
+在 Material-UI 中，您可以用`组件`的属性来替换一个组件的根节点。 譬如，一个 `Button` 的根节点可以用一个 React Router 的`Link`来替换，而且 `Button` 的其余属性，例如 `to`，也可以运用到 `Link` 组件当中。 For a code example concerning `Button` and `react-router-dom` checkout [this Button demo](/components/buttons/#third-party-routing-library).
 
 但是，并不是每个组件都完全支持您传入的任何组件类型。 如果您在 TypeScript 中遇到一个不接受其 `component` 属性的组件，请新建一个 issue。 我们也一直在努力实现组件属性的通用化， 这样能够帮助我们解决这个问题。
