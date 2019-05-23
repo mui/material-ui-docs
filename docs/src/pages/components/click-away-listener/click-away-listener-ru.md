@@ -1,5 +1,5 @@
 ---
-title: Detect click outside React component
+title: Отлавливает щелчок за пределами React-компонента
 components: ClickAwayListener
 ---
 
@@ -15,4 +15,4 @@ components: ClickAwayListener
 
 {{"demo": "pages/components/click-away-listener/ClickAway.js"}}
 
-You can find a more advanced demo on the [menu documentation section](/components/menus/#menulist-composition).
+Более подробный пример вы можете найти в разделе документации [меню](/components/menus/#menulist-composition).
