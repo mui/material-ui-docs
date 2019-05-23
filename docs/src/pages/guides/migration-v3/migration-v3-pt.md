@@ -8,19 +8,19 @@ Procurando pelos documentos da v3? [Encontre-os aqui](https://material-ui.com/ve
 
 ## Introdução
 
-Esta é uma referência para atualizar seu site de Material-UI v3 para v4. Embora haja muita coisa coberta por aqui, você provavelmente não precisará fazer tudo no seu site. We'll do our best to keep things easy to follow, and as sequential as possible so you can quickly get rocking on v4!
+Esta é uma referência para atualizar seu site de Material-UI v3 para v4. Embora haja muita coisa coberta por aqui, você provavelmente não precisará fazer tudo no seu site. Faremos o nosso melhor para manter as coisas fáceis de seguir e tão sequenciais quanto possível, para que você possa rapidamente agitar na v4!
 
-## Why you should migrate
+## Por que você deve migrar
 
-This documentation page covers the *how* of migrating from v3 to v4. The *why* is covered in the release blog post: [*Work in progress, on Medium*](https://medium.com/material-ui).
+Esta página de documentação cobre o *como* migrar da v3 para a v4. O *por que* é coberto na postagem do blog de lançamento: [*Trabalho em andamento, no Medium*](https://medium.com/material-ui).
 
-## Updating Your Dependencies
+## Atualizando suas Dependências
 
-The very first thing you will need to do is update your dependencies.
+A primeira coisa que você precisa fazer é atualizar suas dependências.
 
-### Update Material-UI version
+### Atualize a versão do Material-UI
 
-You need to update your `package.json` to use the latest version of Material-UI.
+Você precisa atualizar seu `package.json` para usar a versão mais recente do Material-UI.
 
 ```json
 "dependencies": {
@@ -28,17 +28,17 @@ You need to update your `package.json` to use the latest version of Material-UI.
 }
 ```
 
-Or run
+Ou execute
 
 ```sh
 npm install @material-ui/core@next
 
-or
+ou
 
 yarn add @material-ui/core@next
 ```
 
-### Update React version
+### Atualize a versão do React
 
 The minimum required version of React was increased from `react@^16.3.0` to `react@^16.8.0`. This allows us to rely on [Hooks](https://reactjs.org/docs/hooks-intro.html) (we no longer use the class API).
 
@@ -52,7 +52,7 @@ If you are previously using `@material-ui/styles` with v3 you need to update you
 }
 ```
 
-Or run
+Ou execute
 
 ```sh
 npm install @material-ui/styles@next
