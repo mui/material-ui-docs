@@ -11,7 +11,7 @@ components: ClickAwayListener
 
 ## Simple menu dropdown
 
-For instance, if you need to hide a menu dropdown when people click anywhere else on your page:
+Например, если вам нужно скрыть выпадающее меню щелчком по странице за его пределами:
 
 {{"demo": "pages/components/click-away-listener/ClickAway.js"}}
 
