@@ -12,3 +12,9 @@ Para enfatizar grupos de [botões de alternância](https://material.io/design/co
 O `ToggleButtonGroup` controlará o selecionado de seus botões filhos quando receber sua propriedade `value`.
 
 {{"demo": "pages/components/toggle-button/ToggleButtons.js"}}
+
+## Tamanhos
+
+Botões extravagantes ou menores? Use a propriedade `size`.
+
+{{"demo": "pages/components/toggle-button/ToggleButtonSizes.js"}}
