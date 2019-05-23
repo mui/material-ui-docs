@@ -3,13 +3,13 @@ title: Detect click outside React component
 components: ClickAwayListener
 ---
 
-# Click away listener
+# Прослушиватель завершающего щелчка
 
-<p class="description">Detect if a click event happened outside of an element. It listens for clicks that occur somewhere in the document.</p>
+<p class="description">Отлавливает щелчок за пределами элемента. Он прослушивает щелчки, происходящие где-либо в документе.</p>
 
 - 
 
-## Simple menu dropdown
+## Простое выпадающее меню
 
 Например, если вам нужно скрыть выпадающее меню щелчком по странице за его пределами:
 
