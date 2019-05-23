@@ -1,14 +1,14 @@
 # Migrando da v3 para v4
 
-<p class="description">Yeah, v4 alpha has been released!</p>
+<p class="description">Sim, v4 alpha foi liberada!</p>
 
-Looking for the v3 docs? [Find them here](https://material-ui.com/versions/).
+Procurando pelos documentos da v3? [Encontre-os aqui](https://material-ui.com/versions/).
 
-> This document is a work in progress. Have you upgraded your site and run into something that's not covered here? [Add your changes on GitHub](https://github.com/mui-org/material-ui/blob/next/docs/src/pages/guides/migration-v3/migration-v3.md)
+> Este documento é um trabalho em progresso. Você atualizou seu site e encontrou algo que não é abordado aqui? [Adicione suas alterações no GitHub](https://github.com/mui-org/material-ui/blob/next/docs/src/pages/guides/migration-v3/migration-v3.md)
 
-## Introduction
+## Introdução
 
-This is a reference for upgrading your site from Material-UI v3 to v4. While there's a lot covered here, you probably won't need to do everything for your site. We'll do our best to keep things easy to follow, and as sequential as possible so you can quickly get rocking on v4!
+Esta é uma referência para atualizar seu site de Material-UI v3 para v4. Embora haja muita coisa coberta por aqui, você provavelmente não precisará fazer tudo no seu site. We'll do our best to keep things easy to follow, and as sequential as possible so you can quickly get rocking on v4!
 
 ## Why you should migrate
 
