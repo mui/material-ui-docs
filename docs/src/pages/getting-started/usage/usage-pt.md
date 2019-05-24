@@ -53,7 +53,7 @@ Material-UI provides an optional [CssBaseline](/components/css-baseline/) compon
 
 This documentation always reflects the latest stable version of Material-UI. You can find older versions of the documentation on a [separate page](/versions/).
 
-## Next steps
+## Próximos passos
 
 Now that you have an idea of the basic setup, it's time to learn more about:
 
