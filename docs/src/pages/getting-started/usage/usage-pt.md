@@ -1,6 +1,6 @@
 # Utilização
 
-<p class="description">Get started with React and Material-UI in no time.</p>
+<p class="description">Comece com React e Material-UI em pouco tempo.</p>
 
 Material-UI components work in isolation. **They are self-supporting**, and will only inject the styles they need to display. Eles não contam com qualquer folha de estilo global como [normalize.css](https://github.com/necolas/normalize.css/).
 
