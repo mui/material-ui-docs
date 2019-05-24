@@ -1,6 +1,6 @@
 # Tipografia
 
-<p class="description">Documentation and examples for common text utilities to control alignment, wrapping, weight, and more.</p>
+<p class="description">Documentação e exemplos de utilidade comum de texto para controlar o alinhamento, quebra, peso e muito mais.</p>
 
 ## Alinhamento do texto
 
