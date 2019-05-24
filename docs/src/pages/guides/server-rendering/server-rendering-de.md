@@ -179,7 +179,7 @@ ReactDOM.hydrate(<Main />, document.querySelector('#root'));
 
 ## Referenzimplementierungen
 
-We host different reference implementations which you can find in the [GitHub repository](https://github.com/mui-org/material-ui) under the [`/examples`](https://github.com/mui-org/material-ui/tree/master/examples) folder:
+Wir bieten verschiedene Referenzimplementierungen an, die Sie im [GitHub-Repository](https://github.com/mui-org/material-ui) finden können unter dem [`/examples`](https://github.com/mui-org/material-ui/tree/master/examples) Ordner:
 
 - [Die Referenzimplementierung dieses Tutorials](https://github.com/mui-org/material-ui/tree/master/examples/ssr)
 - [Gatsby](https://github.com/mui-org/material-ui/tree/master/examples/gatsby)
