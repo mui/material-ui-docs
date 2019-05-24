@@ -2,7 +2,7 @@
 
 <p class="description">最初のサンプルプロジェクトをお探しですか？</p>
 
-We host some example projects which you can find in the [GitHub repository](https://github.com/mui-org/material-ui) under the [`/examples`](https://github.com/mui-org/material-ui/tree/master/examples) folder:
+[GitHubリポジトリ](https://github.com/mui-org/material-ui)の下の[`/examples`](https://github.com/mui-org/material-ui/tree/master/examples)フォルダにいくつかのサンプルプロジェクトを用意しています。
 
 - [Create React App](https://github.com/mui-org/material-ui/tree/master/examples/create-react-app)
 - [Gatsby](https://github.com/mui-org/material-ui/tree/master/examples/gatsby)
@@ -14,7 +14,7 @@ We host some example projects which you can find in the [GitHub repository](http
 
 Create React AppはReactを学ぶのに良いプロジェクトです。 どのプロジェクトが自分のニーズに最も適しているか知る為に[利用可能な代替案](https://github.com/facebook/create-react-app/blob/master/README.md#popular-alternatives)をみてみてください。
 
-このドキュメントサイトのソースコードもリポジトリに含まれています。 少しだけ複雑なプロジェクトです。 Check out the [`/docs`](https://github.com/mui-org/material-ui/tree/master/docs) folder for build instructions.
+このドキュメントサイトのソースコードもリポジトリに含まれています。 少しだけ複雑なプロジェクトです。 [`/docs`](https://github.com/mui-org/material-ui/tree/master/docs)フォルダのビルド手順を確認してください。
 
 ## 更に高度なサンプルプロジェクト
 
