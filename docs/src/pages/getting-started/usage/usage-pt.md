@@ -2,11 +2,11 @@
 
 <p class="description">Comece com React e Material-UI em pouco tempo.</p>
 
-Material-UI components work in isolation. **They are self-supporting**, and will only inject the styles they need to display. Eles não contam com qualquer folha de estilo global como [normalize.css](https://github.com/necolas/normalize.css/).
+Componentes do Material-UI funcionam isoladamente. **Eles são auto-suficientes**, e só irão injetar os estilos que eles precisam para exibir. Eles não contam com qualquer folha de estilo global como [normalize.css](https://github.com/necolas/normalize.css/).
 
-You can use any of the components as demonstrated in the documentation. Please refer to each component's [demo page](/components/buttons/) to see how they should be imported.
+Você pode usar qualquer um dos componentes conforme demonstrado na documentação. Por favor, consulte a [página de demonstração](/components/buttons/) de cada componente para ver como eles devem ser importados.
 
-## Quick start
+## Inicio rápido
 
 Here's a quick example to get you started, **it's literally all you need**:
 
