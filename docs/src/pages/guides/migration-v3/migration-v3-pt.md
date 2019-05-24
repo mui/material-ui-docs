@@ -98,7 +98,7 @@ yarn add @material-ui/styles@next
 
 ### Tema
 
-- O método `theme.palette.augmentColor()` não executa mais um efeito colateral em sua cor de entrada. To use it correctly, you have to use the returned value.
+- O método `theme.palette.augmentColor()` não aplica mais o efeito por referência em sua cor de entrada. Para usá-lo corretamente, agora você precisa usar o valor retornado.
   
   ```diff
   -const background = { main: color };
@@ -108,7 +108,7 @@ yarn add @material-ui/styles@next
   console.log({ background });
   ```
 
-- You can safely remove the next variant from the theme creation:
+- Você pode remover com segurança a opção `useNextVariants` do tema:
   
   ```js
   typography: {
@@ -116,7 +116,7 @@ yarn add @material-ui/styles@next
   },
   ```
 
-- `theme.spacing.unit` usage is deprecated, you can use the new API:
+- O uso de `theme.spacing.unit` se tornou obsoleto, você pode usar a nova API:
   
   ```diff
   label: {
@@ -127,7 +127,7 @@ yarn add @material-ui/styles@next
   }
   ```
   
-  *Tip: you can provide more than 1 argument: theme.spacing(1, 2) // = '8px 16px'*
+  *Dica: você pode fornecer mais de 1 argumento: theme.spacing (1, 2) // = '8px 16px'*
 
 ### Leiaute
 
