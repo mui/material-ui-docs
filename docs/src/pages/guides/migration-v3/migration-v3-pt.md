@@ -71,14 +71,14 @@ yarn add @material-ui/styles@next
 ### Estilos
 
 - ⚠️ Material-UI depende do JSS v10. JSS v10 não é compatível com o v9. Certifique-se de que o JSS v9 não esteja instalado em seu ambiente. Remover `react-jss` do seu package.json pode ajudar.
-- Remove the first option argument of `withTheme()`. The first argument was a placeholder for a potential future option. We have never found a need for it. It's time to remove this argument. It matches the emotion and styled-components API.
+- Remova a primeira opção de argumento do `withTheme()`. O primeiro argumento era um espaço reservado para uma eventual opção futura. Nós não encontramos uma necessidade para ele. É hora de remover esse argumento. Ele correspondia à API do emotion e styled-components.
   
   ```diff
   -const DeepChild = withTheme()(DeepChildRaw);
   +const DeepChild = withTheme(DeepChildRaw);
   ```
 
-- Scope the [keyframes API](https://cssinjs.org/jss-syntax/#keyframes-animation). You should apply the following changes in your codebase. It helps isolating the animation logic:
+- Escopo da [API keyframes](https://cssinjs.org/jss-syntax/#keyframes-animation). Você deve aplicar as seguintes alterações na sua base de código. Isso ajuda a isolar a lógica da animação:
   
   ```diff
     rippleVisible: {
@@ -98,7 +98,7 @@ yarn add @material-ui/styles@next
 
 ### Tema
 
-- The `theme.palette.augmentColor()` method no longer performs a side effect on its input color. To use it correctly, you have to use the returned value.
+- O método `theme.palette.augmentColor()` não executa mais um efeito colateral em sua cor de entrada. To use it correctly, you have to use the returned value.
   
   ```diff
   -const background = { main: color };
