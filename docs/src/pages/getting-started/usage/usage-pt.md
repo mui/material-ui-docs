@@ -8,7 +8,7 @@ Você pode usar qualquer um dos componentes conforme demonstrado na documentaç�
 
 ## Inicio rápido
 
-Here's a quick example to get you started, **it's literally all you need**:
+Aqui está um exemplo rápido para você começar, **é literalmente tudo que você precisa**:
 
 ```jsx
 import React from 'react';
@@ -26,7 +26,7 @@ function App() {
 ReactDOM.render(<App />, document.querySelector('#app'));
 ```
 
-Yes, this really is all you need to get started, as you can see in this live and interactive demo:
+Sim, isso é tudo o que você precisa para começar, como você pode ver nesta demonstração ao vivo e interativa:
 
 {{"demo": "pages/getting-started/usage/Usage.js", "hideHeader": true}}
 
