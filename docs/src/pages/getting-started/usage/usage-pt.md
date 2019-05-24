@@ -47,16 +47,16 @@ O Material-UI é desenvolvido primeiro em dispositivos móveis, uma estratégia 
 
 ### CssBaseline
 
-Material-UI provides an optional [CssBaseline](/components/css-baseline/) component. It fixes some inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.
+Material-UI fornece um componente opcional [CssBaseline](/components/css-baseline/). Ele corrige algumas inconsistências nos navegadores e dispositivos, ao mesmo tempo em que fornece redefinições ligeiramente mais opinativas para elementos HTML comuns.
 
-## Versioned Documentation
+## Versões da documentação
 
-This documentation always reflects the latest stable version of Material-UI. You can find older versions of the documentation on a [separate page](/versions/).
+Esta documentação sempre reflete a última versão estável do Material-UI. Você pode encontrar versões mais antigas da documentação em uma [página separada](/versions/).
 
 ## Próximos passos
 
-Now that you have an idea of the basic setup, it's time to learn more about:
+Agora que você tem uma ideia da configuração básica, é hora de aprender mais sobre:
 
-- How to provide [the Material Design font and typography](/components/typography/).
-- How to take advantage of the [theming solution](/customization/themes/).
-- How to [override](/customization/components/) the look and feel of the components.
+- Como aplicar [a fonte e a tipografia do Material Design](/components/typography/).
+- Como tirar proveito da [solução de tema](/customization/themes/).
+- Como [sobrescrever](/customization/components/) o visual e a aparência dos componentes.
