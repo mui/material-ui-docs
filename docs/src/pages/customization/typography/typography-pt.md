@@ -6,7 +6,7 @@ The following example demonstrates how to change the typography default values ‚
 
 {{"demo": "pages/customization/typography/TypographyTheme.js"}}
 
-## Font family
+## Fam√≠lia da fonte
 
 You can use the system font instead of the default Roboto font.
 
@@ -81,7 +81,7 @@ const theme = createMuiTheme({
 });
 ```
 
-## Font size
+## Tamanho da fonte
 
 Material-UI uses `rem` units for the font size. The browser `<html>` element default font size is `16px`, but browsers have an option to change this value, so `rem` units allow us to accommodate the user's settings, resulting in a much better user experience. Users change font size settings for all kinds of reasons, from poor eyesight to choosing optimum settings for devices that can be vastly different in size and viewing distance.
 
