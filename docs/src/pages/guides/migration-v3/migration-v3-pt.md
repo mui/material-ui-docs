@@ -4,7 +4,7 @@
 
 Procurando pelos documentos da v3? [Encontre-os aqui](https://material-ui.com/versions/).
 
-> Este documento é um trabalho em progresso. Você atualizou seu site e encontrou algo que não é abordado aqui? [Adicione suas alterações no GitHub](https://github.com/mui-org/material-ui/blob/next/docs/src/pages/guides/migration-v3/migration-v3.md)
+> Este documento é um trabalho em progresso. Você atualizou seu site e encontrou algo que não é abordado aqui? [Adicione suas alterações no GitHub](https://github.com/mui-org/material-ui/blob/master/docs/src/pages/guides/migration-v3/migration-v3.md)
 
 ## Introdução
 
@@ -24,7 +24,7 @@ Você precisa atualizar seu `package.json` para usar a versão mais recente do M
 
 ```json
 "dependencies": {
-  "@material-ui/core": "^4.0.0-beta.0"
+  "@material-ui/core": "^4.0.0"
 }
 ```
 
@@ -48,7 +48,7 @@ Se você estiver usando `@material-ui/styles` com a v3, você precisa atualizar 
 
 ```json
 "dependencies": {
-  "@material-ui/styles": "^4.0.0-beta.0"
+  "@material-ui/styles": "^4.0.0"
 }
 ```
 
