@@ -87,13 +87,13 @@ Para sobrescrever os estados internos dos componentes, **você precisa aumentar 
 <Button disabled className="MuiButton">
 ```
 
-Sometimes, you can't use a **pseudo-class** as the state doesn't exist in the platform. Let's take the menu item component and the *selected* state as an example. Aside from accessing nested elements, the `classes` property can be used to customize the internal states of Material-UI components:
+Às vezes, você não pode usar uma **pseudo-classe** pois o estado não existe na plataforma. Vamos pegar o componente menu item e o estado *selected* como exemplo. Além de acesssar os elementos aninhados, a propriedade `classes` pode ser usada para personilizar os estados internos dos componentes de Material-UI:
 
 ```css
 .MuiMenuItem {
   color: black;
 }
-/* We increase the specificity */
+/* Aumentamos a especificidade */
 .MuiMenuItem.selected {
   color: blue;
 }
@@ -103,11 +103,11 @@ Sometimes, you can't use a **pseudo-class** as the state doesn't exist in the pl
 <MenuItem selected classes={{ root: 'MuiMenuItem', selected: 'selected' }}>
 ```
 
-#### Why do I need to increase specificity to override one component state?
+#### Por que preciso aumentar a especificidade para substituir um estado do componente?
 
-By design, the CSS specification makes the pseudo-classes increase the specificity. For consistency, Material-UI increases the specificity of its custom states. This has one important advantage, it's allowing you to cherry-pick the state you want to customize.
+Por padrão, a especificação CSS faz com que as pseudo-classes aumentem a especificidade. Para consistência, o Material-UI aumenta a especificidade de seus estados customizados. Isso tem uma vantagem importante, é permitir que você selecione o estado que deseja customizar.
 
-### Use `$ruleName` to reference a local rule within the same style sheet
+### Use `$ruleName` para referenciar uma regra local dentro da mesma folha de estilo
 
 The [jss-nested](https://github.com/cssinjs/jss-nested) plugin (available by default) can make the process of increasing specificity easier.
 
