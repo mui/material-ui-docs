@@ -127,11 +127,11 @@ const theme = createMuiTheme({
 
 Como no exemplo acima, se o objeto intenção contiver cores personalizadas usando qualquer uma das chaves `main`, `light`, `dark` e `contrastText`, esses valores se mapeiam da seguinte maneira:
 
-- If the `dark` and / or `light` keys are omitted, their value(s) will be calculated from `main`, according to the `tonalOffset` value.
+- Se a chave `dark` e / ou `light` são omitidas, seus valores serão calculados com base em `main`, de acordo com o valor de `tonalOffset`.
 
-- If `contrastText` is omitted, its value will be calculated to contrast with `main`, according to the`contrastThreshold` value.
+- Se `contrastText` é omitido, seu valor será calculado para contrastar com `main`, de acordo com o valor de `contrastThreshold`.
 
-Both the `tonalOffset` and `contrastThreshold` values may be customized as needed. A higher value for `tonalOffset` will make calculated values for `light` lighter, and `dark` darker. A higher value for `contrastThreshold` increases the point at which a background color is considered light, and given a dark `contrastText`.
+Tanto os valores de `tonalOffset` e `contrastThreshold` poderão ser customizados conforme o necessário. Um valor mais alto para `tonalOffset` fará valores calculados para `light` mais claro e `escuro` mais escuro. Um valor mais alto para `contrastThreshold` aumenta o ponto no qual uma cor de fundo é considerada clara, e recebe um `contrastText` escuro.
 
 Observe que `contrastThreshold ` segue uma curva não linear.
 
