@@ -150,6 +150,6 @@ Você pode ver isso em ação no exemplo abaixo. Ajuste o tamanho da janela do n
 
 {{"demo": "pages/customization/typography/ResponsiveFontSizes.js"}}
 
-## Fluid font sizes
+## Tamanhos da fonte fluido
 
-To be done: [#15251](https://github.com/mui-org/material-ui/issues/15251).
+Para ser feito: [#15251](https://github.com/mui-org/material-ui/issues/15251).
