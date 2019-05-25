@@ -46,7 +46,7 @@ Usando as ferramentas de desenvolvimento, você sabe que precisa direcionar a re
 
 ### Forma abreviada
 
-The above code example can be condensed by using **the same CSS API** as the child component. In this example, the `withStyles()` higher-order component is injecting a `classes` property that is used by the [`Button` component](/api/button/#css).
+O exemplo acima pode ser condensado usando **a mesma API CSS** com o componente filho. Neste exemplo, o componente de ordem superior `withStyles()` está injetando a propriedade `classes` que é usada pelo [componente `Button`](/api/button/#css).
 
 ```jsx
 const StyledButton = withStyles({
@@ -69,15 +69,15 @@ const StyledButton = withStyles({
 
 ### Estados internos
 
-The components internal states, like *hover*, *focus*, *disabled* and *selected*, are styled with a higher CSS specificity. [Specificity is a weight](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) that is applied to a given CSS declaration.
+Os estados internos dos componentes, como *hover*, *focus*, *disabled* e *selected*, são estilizados com uma especificidade CSS mais alta. [Especificidade é um peso](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) que é aplicado a uma determinada declaração CSS.
 
-In order to override the components internal states, **you need to increase specificity**. Here is an example with the *disable* state and the button component using a **pseudo-class** (`:disabled`):
+Para sobrescrever os estados internos dos componentes, **você precisa aumentar a especificidade**. Aqui está um exemplo com o estado *disable* e o componente botão está usando uma **pseudo-class** (`:disabled`):
 
 ```css
 .MuiButton {
   color: black;
 }
-/* We increase the specificity */
+/* Aumentamos a especificidade */
 .MuiButton:disabled {
   color: white;
 }
