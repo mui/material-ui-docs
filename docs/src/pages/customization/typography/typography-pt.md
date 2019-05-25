@@ -8,7 +8,7 @@ O exemplo a seguir demonstra como alterar os valores padrão da tipografia - nes
 
 ## Família da fonte
 
-You can use the system font instead of the default Roboto font.
+Você pode usar fonte do sistema em vez da fonte Roboto padrão.
 
 ```js
 const theme = createMuiTheme({
@@ -29,9 +29,9 @@ const theme = createMuiTheme({
 });
 ```
 
-## Self-host fonts
+## Fontes próprias
 
-To self-host fonts, download the font files in `ttf`, `woff`, and/or `woff2` formats and import them into your code.
+Para utilizar fontes próprias, baixe os arquivos de fonte em formatos `ttf`, `woff`, e/ou `woff2` e importe-os em seu código.
 
 ⚠️ This requires that you have a plugin or loader in your build process that can handle loading `ttf`, `woff`, and `woff2` files. Fonts will *not* be embedded within your bundle. They will be loaded from your webserver instead of a CDN.
 
