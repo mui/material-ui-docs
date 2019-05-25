@@ -199,7 +199,7 @@ Deve preferencialmente ser usado na **raiz da sua árvore de componentes**.
 #### PropsPor padrão, os estilos são injetados por último 
 
 <head>
-  element of the page. As a result, they gain more specificity than any other style sheet. If you want to override Material-UI's styles, set this prop.</td> </tr> 
+  elemento da página. Como resultado, eles ganham mais especificidade do que qualquer outra folha de estilo. Se você quiser sobrescrever estilos do Material-UI, defina esta propriedade.</td> </tr> 
   
   <tr>
     <td align="left">
@@ -486,7 +486,7 @@ export default MyComponent
   </h4>
   
   <p>
-    <code>Component</code>: O novo componente criado. Does forward refs to the inner component.
+    <code>Component</code>: O novo componente criado. Encaminha refs para o componente interno.
   </p>
   
   <h4>
