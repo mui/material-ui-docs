@@ -204,4 +204,4 @@ Você também pode customizar todas as instâncias de um componente com CSS. Nó
 
 ### Sobrescrita do tema Global
 
-You can take advantage of the `overrides` key of the `theme` to potentially change every single style injected by Material-UI into the DOM. Learn more about it in the [themes section](/customization/themes/#customizing-all-instances-of-a-component-type) of the documentation.
+Você pode aproveitar as vantagens de `sobrescrita` da chave do `tema` para potencialmente alterar cada estilo injetado pelo Material-UI no DOM. Saiba mais sobre isso na seção [de temas](/customization/themes/#customizing-all-instances-of-a-component-type) da documentação.
