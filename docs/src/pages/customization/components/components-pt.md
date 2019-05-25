@@ -180,28 +180,28 @@ Você aprendeu a substituir o estilo dos componentes do Material-UI nas seções
 
 ## 3. Variação específica de um componente
 
-You might need to create a variation of a component and use it in different contexts, for instance a colorful button on your product page, however you probably want to keep your code [*DRY*](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
+Pode ser necessário criar uma variação de um componente e usá-lo em diferentes contextos, por exemplo, um botão colorido na página do produto, no entanto, você provavelmente desejará manter seu código sem duplicações ([*DRY*](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)).
 
-The best approach is to follow option 1 and then take advantage of the composition power of React by exporting your customized component to use wherever you need it.
+A melhor abordagem é seguir a opção 1 e, em seguida, aproveitar o poder de composição do React exportando seu componente customizado para usar onde quer que você precise.
 
 {{"demo": "pages/customization/overrides/Component.js", "hideEditButton": true}}
 
-## 4. Variações de material design
+## 4. Variações do Material Design
 
-The Material Design specification documents different variations of certain components, such as how buttons come in different shapes: [text](https://material.io/design/components/buttons.html#text-button) (formerly "flat"), [contained](https://material.io/design/components/buttons.html#contained-button) (formerly "raised"), [FAB](https://material.io/design/components/buttons-floating-action-button.html) and more.
+A especificação do Material Design documenta diferentes variações de determinados componentes, como a forma na qual os botões são exibidos em diferentes formas: [texto](https://material.io/design/components/buttons.html#text-button) (anteriormente "flat"), [contido](https://material.io/design/components/buttons.html#contained-button) (anteriormente "raised"), [FAB](https://material.io/design/components/buttons-floating-action-button.html) e mais.
 
-Material-UI attempts to implement all of these variations. Please refer to the [Supported Components](/getting-started/supported-components/) documentation to find out the current status of all supported Material Design components.
+Material-UI tenta implementar todas essas variações. Por favor, consulte a documentação de [Componentes Suportados](/getting-started/supported-components/), para descobrir o status atual de todos os componentes de Material Design suportados.
 
 ## 5. Variação do tema global
 
-### Theme variables
+### Variáveis de tema
 
-In order to promote consistency between components, and manage the user interface appearance as a whole, Material-UI provides a mechanism to apply global changes by adjusting the [theme configuration variables](/customization/themes/#theme-configuration-variables).
+Para promover a consistência entre os componentes e gerenciar a aparência da interface com o usuário como um todo, Material-UI fornece um mecanismo para aplicar as alterações globais, ajustando as [variáveis de configuração do tema](/customization/themes/#theme-configuration-variables).
 
-### Global CSS override
+### Sobrescrita do CSS Global
 
-You can also customize all instances of a component with CSS. We expose [global class names](/css-in-js/advanced/#with-material-ui-core) to do so. It's very similar to how you would customize Bootstrap.
+Você também pode customizar todas as instâncias de um componente com CSS. Nós expomos [nomes de classes globais](/css-in-js/advanced/#with-material-ui-core) para fazer isso. É muito semelhante a como você customizaria o Bootstrap.
 
-### Global theme override
+### Sobrescrita do tema Global
 
 You can take advantage of the `overrides` key of the `theme` to potentially change every single style injected by Material-UI into the DOM. Learn more about it in the [themes section](/customization/themes/#customizing-all-instances-of-a-component-type) of the documentation.
