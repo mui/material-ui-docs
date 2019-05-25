@@ -1,10 +1,10 @@
 # Paleta de Cores
 
-<p class="description">The palette enables you to modify the color of the components to suit your brand.</p>
+<p class="description">A paleta permite modificar a cor dos componentes para se adequarem à sua marca.</p>
 
 ## Intenções
 
-A color intention is a mapping of a palette to a given intention within your application.
+Uma intenção de cor é um mapeamento de uma paleta para uma determinada intenção dentro da sua aplicação.
 
 O tema expõe as seguintes intenções de cores:
 
@@ -12,17 +12,17 @@ O tema expõe as seguintes intenções de cores:
 - secundário - usado para representar os elementos de interface secundários para um usuário.
 - erro - usado para representar os elementos de interface dos quais o usuário deve estar ciente.
 
-The default palette uses the shades prefixed with `A` (`A200`, etc.) for the secondary intention, and the un-prefixed shades for the other intentions.
+A paleta padrão usa as sombras prefixadas com `A` (`A200`, etc.) para a intenção secundária, e as cores não pré-fixadas para as outras intenções.
 
-If you want to learn more about color, you can check out [the color section](/customization/color/).
+Se você quiser aprender mais sobre cor, você pode conferir [a seção de cores](/customization/color/).
 
 ## Paleta personalizada
 
-You may override the default palette values by including a `palette` object as part of your theme.
+Você pode sobrescrever os valores padrão da paleta incluindo um objeto `palette` como parte do seu tema.
 
-If any of the [`palette.primary`](/customization/default-theme/?expend-path=$.palette.primary), [`palette.secondary`](/customization/default-theme/?expend-path=$.palette.secondary) or [`palette.error`](/customization/default-theme/?expend-path=$.palette.error) 'intention' objects are provided, they will replace the defaults.
+Se algum dos objetos de intenção [`palette.primary`](/customization/default-theme/?expend-path=$.palette.primary), [`palette.secondary`](/customization/default-theme/?expend-path=$.palette.secondary) ou [`palette.error`](/customization/default-theme/?expend-path=$.palette.error) forem fornecidos, eles sobrescreverão os padrões.
 
-The intention value can either be a [color](/customization/color/) object, or an object with one or more of the keys specified by the following TypeScript interface:
+O valor da intenção pode ser um objeto [cor](/customization/color/), ou um objeto com uma ou mais das chaves especificadas pela seguinte interface TypeScript:
 
 ```ts
 interface PaletteIntention {
