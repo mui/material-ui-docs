@@ -162,11 +162,11 @@ Você aprendeu a substituir o estilo dos componentes do Material-UI nas seções
 
 {{"demo": "pages/customization/overrides/DynamicCSS.js"}}
 
-### Class name branch
+### Nome de classe - branch
 
 {{"demo": "pages/customization/overrides/DynamicClassName.js"}}
 
-### CSS variables
+### Variáveis CSS
 
 {{"demo": "pages/customization/overrides/DynamicCSSVariables.js"}}
 
@@ -174,7 +174,7 @@ Você aprendeu a substituir o estilo dos componentes do Material-UI nas seções
 
 {{"demo": "pages/customization/overrides/DynamicInlineStyle.js"}}
 
-### Theme nesting
+### Aninhamento de tema
 
 {{"demo": "pages/customization/overrides/DynamicThemeNesting.js"}}
 
