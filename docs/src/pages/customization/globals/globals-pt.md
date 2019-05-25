@@ -24,15 +24,15 @@ A lista desses pontos de customização de cada componente está documentada na 
 
 ## Propriedades padrão
 
-Você pode alterar as propriedades padrão de todos os componentes de Material-UI. We expose a `props` key in the `theme` for this use case.
+Você pode alterar as propriedades padrão de todos os componentes de Material-UI. Nós expomos uma `props`, chave do `theme` para este caso de uso.
 
 ```js
 const theme = createMuiTheme({
   props: {
-    // Name of the component ⚛️
+    // Nome do componente ⚛️
     MuiButtonBase: {
-      // The default props to change
-      disableRipple: true, // No more ripple, on the whole application 💣!
+      // As propriedades padrão para mudar
+      disableRipple: true, // Sem efeito cascata, em toda a aplicação 💣!
     },
   },
 });
