@@ -143,43 +143,43 @@ const useStyles = makeStyles({
 
 {{"demo": "pages/styles/basics/NestedStylesHook.js"}}
 
-## Adaptando-se com base em props
+## Adaptando com base em propriedades
 
-You can pass a function to `makeStyles` ("interpolation") in order to adapt the generated value based on the component's props. The function can be provided at the style rule level, or at the CSS property level:
+Você pode passar uma função para `makeStyles` ("interpolação") a fim de adaptar o valor gerado com base nas propriedades do componente. A função pode ser fornecida no nível de regra de estilo ou no nível da propriedade CSS:
 
 ```jsx
 const useStyles = makeStyles({
-  // style rule
+  // regra de estilo
   foo: props => ({
     backgroundColor: props.backgroundColor,
   }),
   bar: {
-    // CSS property
+    // propriedade CSS
     color: props => props.color,
   },
 });
 
 function MyComponent() {
-  // Simulated props for the purpose of the example
+  // Propriedades simuladas para fins de exemplo
   const props = { backgroundColor: 'black', color: 'white' };
-  // Pass the props as the first argument of useStyles()
+  // Passe as propriedades como primeiro argumento do useStyles()
   const classes = useStyles(props);
 
   return <div className={`${classes.foo} ${classes.bar}`} />
 }
 ```
 
-This button component has a color property that changes its color:
+Este componente botão tem uma propriedade de cor que modifica sua cor:
 
-### Adapting the hook API
+### Adaptando a hook API
 
 {{"demo": "pages/styles/basics/AdaptingHook.js", "react":"next"}}
 
-### Adapting the styled components API
+### Adaptando a styled components API
 
 {{"demo": "pages/styles/basics/AdaptingStyledComponents.js"}}
 
-### Adapting the higher-order component API
+### Adaptando a higher-order component API
 
 {{"demo": "pages/styles/basics/AdaptingHOC.js"}}
 
