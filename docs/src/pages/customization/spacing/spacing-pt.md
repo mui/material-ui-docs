@@ -47,7 +47,7 @@ theme.spacing(2); // = 8
 
 ## Aridade múltipla
 
-The `theme.spacing()` helper accepts up to 4 arguments. You can use the arguments to reduce the boilerplate:
+O auxiliar ` theme.spacing()` aceita até 4 argumentos. Você pode usar os argumentos para reduzir o boilerplate:
 
 ```diff
 <br />-  padding: `${theme.spacing(1)}px ${theme.spacing(2)}px`,
