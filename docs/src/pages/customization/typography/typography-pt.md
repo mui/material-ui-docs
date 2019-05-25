@@ -120,13 +120,13 @@ html {
 }
 ```
 
-*You need to apply the above CSS on the html element of this page to see the below demo rendered correctly*
+*Você precisa aplicar o CSS acima no elemento html desta página para ver a demonstração abaixo renderizada corretamente*
 
 {{"demo": "pages/customization/typography/FontSizeTheme.js"}}
 
-## Responsive font sizes
+## Tamanhos da fonte responsivo
 
-The typography variants properties map directly to the generated CSS. You can use [media queries](/customization/breakpoints/#api) inside them:
+As propriedades de variações de tipografia são mapeadas diretamente para o CSS gerado. Você pode usar [consultas de mídia](/customization/breakpoints/#api) dentro delas:
 
 ```js
 const theme = createMuiTheme();
@@ -142,11 +142,11 @@ theme.typography.h1 = {
 };
 ```
 
-To automate this setup, you can use the [`responsiveFontSizes()`](/customization/themes/#responsivefontsizes-theme-options-theme) helper to make Typography font sizes in the theme responsive.
+Para automatizar estas configurações, você pode usar a função auxiliar [`responsiveFontSizes()`](/customization/themes/#responsivefontsizes-theme-options-theme), para fazer a tipografia de tamanhos da fonte no tema responsivo.
 
 {{"demo": "pages/customization/typography/ResponsiveFontSizesChart.js", "hideHeader": true}}
 
-You can see this in action in the example below. adjust your browser's window size, and notice how the font size changes as the width crosses the different [breakpoints](/customization/breakpoints/):
+Você pode ver isso em ação no exemplo abaixo. Ajuste o tamanho da janela do navegador e observe como o tamanho da fonte muda à medida que a largura cruza os diferentes [pontos de quebra](/customization/breakpoints/):
 
 {{"demo": "pages/customization/typography/ResponsiveFontSizes.js"}}
 
