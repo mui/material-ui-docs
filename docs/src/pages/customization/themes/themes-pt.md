@@ -16,12 +16,12 @@ O `ThemeProvider` depende do recurso de contexto do React para passar o tema par
 
 ## Variáveis de configuração do tema
 
-Changing the theme configuration variables is the most effective way to match Material-UI to your needs. The following sections cover the most important theme variables:
+Alterar as variáveis de configuração do tema é a maneira mais eficaz de combinar o Material-UI às suas necessidades. As seções a seguir abordam as variáveis mais importantes do tema:
 
 - [Paleta de Cores](/customization/palette/)
-- [Typography](/customization/typography/)
+- [Tipografia](/customization/typography/)
 - [Espaçamento](/customization/spacing/)
-- [Pontos de interrupção](/customization/breakpoints/)
+- [Pontos de quebra](/customization/breakpoints/)
 - [z-index](/customization/z-index/)
 - [Globais](/customization/globals/)
 
