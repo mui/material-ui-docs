@@ -90,25 +90,25 @@ Para alterar o tamanho da fonte do Material-UI, você pode definir a propriedade
 ```js
 const theme = createMuiTheme({
   typography: {
-    // In Chinese and Japanese the characters are usually larger,
-    // so a smaller fontsize may be appropriate.
+    // Em chinês e japonês os caracteres são geralmente maiores,
+    // então um tamanho de letra menor pode ser apropriado.
     fontSize: 12,
   },
 });
 ```
 
-The computed font size by the browser follows this mathematical equation:
+O tamanho da fonte computada pelo navegador segue esta equação matemática:
 
 ![font-size](/static/images/font-size.gif) <!-- https://latex.codecogs.com/gif.latex?computed&space;=&space;specification&space;\frac{typography.fontSize}{14}&space;\frac{html&space;font&space;size}{typography.htmlFontSize} -->
 
-## HTML font size
+## Tamanho da fonte no HTML
 
-You might want to change the `<html>` element default font size. For instance, when using the [10px simplification](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/). We provide a `htmlFontSize` theme property for this use case. It's telling Material-UI what's the font-size on the `<html>` element is. It's used to adjust the `rem` value so the calculated font-size always match the specification.
+Você pode querer alterar o tamanho da fonte padrão do elemento `<html>`. Por exemplo, quando usando a [simplificação de 10px](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/). Nós fornecemos uma propriedade `htmlFontSize` no tema, para estas necessidades. Ela diz ao Material-UI qual é o tamanho da fonte no elemento `<html>`. É usada para ajustar o valor `rem`, para que o tamanho da fonte calculado sempre corresponda à especificação.
 
 ```js
 const theme = createMuiTheme({
   typography: {
-    // Tell Material-UI what's the font-size on the html element is.
+    // Diz ao Material-UI qual é o font-size no elemento html.
     htmlFontSize: 10,
   },
 });
@@ -116,7 +116,7 @@ const theme = createMuiTheme({
 
 ```css
 html {
-  font-size: 62.5%; /* 62.5% of 16px = 10px */
+  font-size: 62.5%; /* 62.5% de 16px = 10px */
 }
 ```
 
