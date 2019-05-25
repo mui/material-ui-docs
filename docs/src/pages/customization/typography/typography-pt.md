@@ -83,7 +83,7 @@ const theme = createMuiTheme({
 
 ## Tamanho da fonte
 
-Material-UI uses `rem` units for the font size. The browser `<html>` element default font size is `16px`, but browsers have an option to change this value, so `rem` units allow us to accommodate the user's settings, resulting in a much better user experience. Users change font size settings for all kinds of reasons, from poor eyesight to choosing optimum settings for devices that can be vastly different in size and viewing distance.
+Material-UI usa a unidade `rem` para o tamanho da fonte. The browser `<html>` element default font size is `16px`, but browsers have an option to change this value, so `rem` units allow us to accommodate the user's settings, resulting in a much better user experience. Users change font size settings for all kinds of reasons, from poor eyesight to choosing optimum settings for devices that can be vastly different in size and viewing distance.
 
 To change the font-size of Material-UI you can provide a `fontSize` property. The default value is `14px`.
 
