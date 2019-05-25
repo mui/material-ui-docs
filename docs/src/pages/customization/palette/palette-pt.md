@@ -35,7 +35,7 @@ interface PaletteIntention {
 
 **Usando um objeto de cor**
 
-The simplest way to customize an intention is to import one or more of the provided colors and apply them to a palette intention:
+A maneira mais simples de customizar uma intenção é importar uma ou mais das cores fornecidas e aplicá-las a uma intenção da paleta:
 
 ```js
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -48,7 +48,7 @@ const theme = createMuiTheme({
 });
 ```
 
-If the intention key receives a color object as in the example above, the following mapping is used to populate the required keys:
+Se a chave de intenção receber um objeto de cor como no exemplo acima, o mapeamento a seguir será usado para preencher as chaves necessárias:
 
 ```js
 palette: {
@@ -88,12 +88,12 @@ const theme = createMuiTheme({
     primary: indigo,
     secondary: pink,
     error: red,
-    // Used by `getContrastText()` to maximize the contrast between the background and
-    // the text.
+    // Usado por `getContrastText ()` para maximizar o contraste entre o segundo plano e
+    // o texto.
     contrastThreshold: 3,
-    // Used to shift a color's luminance by approximately
-    // two indexes within its tonal palette.
-    // E.g., shift from Red 500 to Red 300 or Red 700.
+    // Usado para alterar a luminosidade de uma cor em aproximadamente
+    // dois índices em sua paleta de tons.
+    // Por exemplo, mude de Red 500 para Red 300 ou Red 700.
     tonalOffset: 0.2,
   },
 });
@@ -101,7 +101,7 @@ const theme = createMuiTheme({
 
 **Fornecendo as cores diretamente**
 
-If you wish to provide more customized colors, you can either create your own color object, or directly supply colors to some or all of the intention's keys:
+Se você deseja fornecer cores mais personalizadas, você pode criar seu próprio objeto de cor, ou fornecer cores diretamente para algumas ou todas as chaves da intenção:
 
 ```js
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -109,23 +109,23 @@ import { createMuiTheme } from '@material-ui/core/styles';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      // light: will be calculated from palette.primary.main,
+      // light: será calculada com base em palette.primary.main,
       main: '#ff4400',
-      // dark: will be calculated from palette.primary.main,
-      // contrastText: will be calculated to contrast with palette.primary.main
+      // dark: será calculada com base em palette.primary.main,
+      // contrastText: será calculada para contrastar com palette.primary.main
     },
     secondary: {
       light: '#0066ff',
       main: '#0044ff',
-      // dark: will be calculated from palette.secondary.main,
+      // dark: será calculada com base em palette.secondary.main,
       contrastText: '#ffcc00',
     },
-    // error: will use the default color
+    // error: irá usar a cor padrão
   },
 });
 ```
 
-As in the example above, if the intention object contains custom colors using any of the `main`, `light`, `dark` or `contrastText` keys, these map as follows:
+Como no exemplo acima, se o objeto intenção contiver cores personalizadas usando qualquer uma das chaves `main`, `light`, `dark` e `contrastText`, esses valores se mapeiam da seguinte maneira:
 
 - If the `dark` and / or `light` keys are omitted, their value(s) will be calculated from `main`, according to the `tonalOffset` value.
 
