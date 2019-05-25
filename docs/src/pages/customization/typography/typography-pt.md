@@ -33,7 +33,7 @@ const theme = createMuiTheme({
 
 Para utilizar fontes próprias, baixe os arquivos de fonte em formatos `ttf`, `woff`, e/ou `woff2` e importe-os em seu código.
 
-⚠️ This requires that you have a plugin or loader in your build process that can handle loading `ttf`, `woff`, and `woff2` files. Fonts will *not* be embedded within your bundle. They will be loaded from your webserver instead of a CDN.
+⚠️ Isso requer que você tenha um plugin ou loader em seu processo de compilação que possa manipular o carregamento de arquivos `ttf`, `woff` e `woff2`. Fontes *não* serão embutidas dentro do seu pacote. Elas serão carregadas de seu servidor da Web em vez de uma CDN.
 
 ```js
 import RalewayWoff2 from './fonts/Raleway-Regular.woff2';
@@ -52,7 +52,7 @@ const raleway = {
 };
 ```
 
-Then, you can change the theme to use this new font. It requires use of the [`CssBaseline`](/components/css-baseline/) component to globally define Raleway as a font family.
+Então, você pode alterar o tema para usar essa nova fonte. Isso requer o uso do componente [`CssBaseline`](/components/css-baseline/) para definir globalmente Raleway como a família da fonte.
 
 ```js
 const theme = createMuiTheme({
