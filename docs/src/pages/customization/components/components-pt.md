@@ -109,7 +109,7 @@ Por padrão, a especificação CSS faz com que as pseudo-classes aumentem a espe
 
 ### Use `$ruleName` para referenciar uma regra local dentro da mesma folha de estilo
 
-The [jss-nested](https://github.com/cssinjs/jss-nested) plugin (available by default) can make the process of increasing specificity easier.
+O plugin [jss-nested](https://github.com/cssinjs/jss-nested) (disponível por padrão) pode facilitar o processo de aumentar a especificidade.
 
 ```js
 const styles = {
@@ -122,7 +122,7 @@ const styles = {
 };
 ```
 
-compiles to:
+compila para:
 
 ```css
 .root-x.disable-x {
@@ -130,7 +130,7 @@ compiles to:
 }
 ```
 
-⚠️ You need to apply the two generated class names (`root` & `disabled`) to the DOM to make it work.
+⚠️ Você precisa aplicar os dois nomes de classes gerados (`root` & `disabled`) no DOM, para que funcione corretamente.
 
 ```jsx
 <Button
@@ -144,19 +144,19 @@ compiles to:
 
 {{"demo": "pages/customization/overrides/ClassesState.js"}}
 
-### Substituir usando estilos inline
+### Sobrescrevendo usando estilos inline
 
-The second way to override the style of a component is to use the **inline-style** approach. Every component provides a `style` property. These properties are always applied to the root element.
+A segunda maneira de sobrescrever o estilo de um componente é usar a abordagem de estilo **inline**. Cada componente fornece uma propriedade `style`. Essas propriedades são sempre aplicadas ao elemento raiz.
 
-You don't have to worry about CSS specificity as the inline-style takes precedence over the regular CSS.
+Você não precisa se preocupar com a especificidade do CSS, pois o estilo inline tem precedência sobre o CSS regular.
 
 {{"demo": "pages/customization/overrides/InlineStyle.js"}}
 
-[When should I use inline-style vs classes?](/getting-started/faq/#when-should-i-use-inline-style-vs-classes)
+[Quando devo usar o estilo inline vs classes?](/getting-started/faq/#when-should-i-use-inline-style-vs-classes)
 
 ## 2. Variação dinâmica para uma situação única
 
-Você aprendeu a substituir o estilo dos componentes do Material-UI nas seções anteriores. Now, let's see how we can make these overrides dynamic. We demonstrate 5 alternatives, each has it's pros and cons.
+Você aprendeu a substituir o estilo dos componentes do Material-UI nas seções anteriores. Agora, vamos ver como podemos tornar essas sobrescritas dinâmicas. Nós demonstraremos 5 alternativas, cada uma tem seus prós e contras.
 
 ### CSS Dinâmico
 
