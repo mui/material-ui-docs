@@ -1,10 +1,10 @@
 # Globais
 
-<p class="description">A sobrescrita de chaves permite que você customize a aparência de todas as instâncias de um tipo de componente, enquanto a propriedade chave permite que você altere os valores padrão das propriedades de um componente.</p>
+<p class="description">A chave <code>overrides</code> permite que você customize a aparência de todas as instâncias de um tipo de componente, enquanto a propriedade chave permite que você altere os valores padrão das propriedades de um componente.</p>
 
 ## CSS
 
-Quando as variáveis de configuração não são poderosas o suficiente, você pode tirar vantagem das `sobrescritas` da chave do `tema` para potencialmente alterar **cada estilo único** injetado por Material-UI no DOM. Esse é um recurso realmente poderoso.
+Quando as variáveis de configuração não são poderosas o suficiente, você pode tirar vantagem com o `overrides`, chave do `theme` para potencialmente alterar **cada estilo único** injetado por Material-UI no DOM. Esse é um recurso realmente poderoso.
 
 ```js
 const theme = createMuiTheme({
@@ -20,11 +20,11 @@ const theme = createMuiTheme({
 
 {{"demo": "pages/customization/globals/GlobalCss.js"}}
 
-The list of these customization points for each component is documented under the **Component API** section. For instance, you can have a look at the [Button](/api/button/#css). Alternatively, you can always have a look at the [implementation](https://github.com/mui-org/material-ui/blob/master/packages/material-ui/src/Button/Button.js).
+A lista desses pontos de customização de cada componente está documentada na seção **API do componente**. Por exemplo, você pode dar uma olhada no [Botão](/api/button/#css). Alternativamente, você pode sempre dar uma olhada na [implementação](https://github.com/mui-org/material-ui/blob/master/packages/material-ui/src/Button/Button.js).
 
 ## Propriedades padrão
 
-You can change the default props of all the Material-UI components. We expose a `props` key in the `theme` for this use case.
+Você pode alterar as propriedades padrão de todos os componentes de Material-UI. We expose a `props` key in the `theme` for this use case.
 
 ```js
 const theme = createMuiTheme({
