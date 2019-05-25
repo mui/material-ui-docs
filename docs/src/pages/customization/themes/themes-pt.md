@@ -29,7 +29,7 @@ Você pode conferir a [seção de tema padrão](/customization/default-theme/) p
 
 ### Variáveis customizáveis
 
-When using Material-UI's theme with our [styling solution](/styles/basics/) or [any others](/guides/interoperability/#themeprovider). It can be convenient to add additional variables to the theme so you can use them everywhere. Por exemplo:
+When using Material-UI's theme with our [styling solution](/styles/basics/) or [any others](/guides/interoperability/#themeprovider). Pode ser conveniente adicionar variáveis adicionais ao tema para que você possa usá-las em todos os lugares. Por exemplo:
 
 {{"demo": "pages/customization/themes/CustomStyles.js"}}
 
