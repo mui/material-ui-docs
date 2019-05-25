@@ -1,8 +1,8 @@
-# Typography
+# Tipografia
 
-<p class="description">The theme provides a set of type sizes that work well together, and also with the layout grid.</p>
+<p class="description">O tema fornece um conjunto de tamanhos de tipos que funcionam bem juntos e também com a grade de leiaute.</p>
 
-The following example demonstrates how to change the typography default values – in this case, the font family. If you want to learn more about typography, you can check out [the typography component](/components/typography/).
+O exemplo a seguir demonstra como alterar os valores padrão da tipografia - nesse caso, a família da fonte. Se você quiser aprender mais sobre tipografia, você pode conferir a seção do [componente tipografia](/components/typography/).
 
 {{"demo": "pages/customization/typography/TypographyTheme.js"}}
 
