@@ -29,17 +29,17 @@ Você pode conferir a [seção de tema padrão](/customization/default-theme/) p
 
 ### Variáveis customizáveis
 
-When using Material-UI's theme with our [styling solution](/styles/basics/) or [any others](/guides/interoperability/#themeprovider). Pode ser conveniente adicionar variáveis adicionais ao tema para que você possa usá-las em todos os lugares. Por exemplo:
+Quando usando o tema do Material-UI com nossa [solução de estilo](/styles/basics/) ou [quaisquer outras](/guides/interoperability/#themeprovider), surgem algumas necessidades de customização. Pode ser conveniente adicionar variáveis adicionais ao tema para que você possa usá-las em todos os lugares. Por exemplo:
 
 {{"demo": "pages/customization/themes/CustomStyles.js"}}
 
 ## Acessando o tema em um componente
 
-You [can access](/styles/advanced/#accessing-the-theme-in-a-component) the theme variables inside your React components.
+Você [pode acessar](/styles/advanced/#accessing-the-theme-in-a-component) as variáveis do tema dentro de seus componentes React.
 
-## Nesting the theme
+## Aninhando o tema
 
-[You can nest](/styles/advanced/#theme-nesting) multiple theme providers.
+[Você pode aninhar](/styles/advanced/#theme-nesting) vários provedores de tema.
 
 {{"demo": "pages/customization/themes/ThemeNesting.js"}}
 
@@ -47,9 +47,9 @@ O tema interno **sobrescreverá** o tema exterior. Você pode estender o tema ex
 
 {{"demo": "pages/customization/themes/ThemeNestingExtend.js"}}
 
-### A note on performance
+### Uma nota sobre desempenho
 
-The performance implications of nesting the `ThemeProvider` component are linked to JSS's work behind the scenes. The main point to understand is that the injected CSS is cached with the following tuple `(styles, theme)`.
+As implicações de desempenho de aninhamento do componente `ThemeProvider`, estão ligados a forma como o JSS trabalha nos bastidores. O principal ponto a ser entendido é que o CSS injetado é armazenado em cache com a seguinte tupla `(styles, theme)`.
 
 - `theme`: If you provide a new theme at each render, a new CSS object will be computed and injected. Both for UI consistency and performance, it's better to render a limited number of theme objects.
 - `styles`: The larger the styles object is, the more work is needed.
