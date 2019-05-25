@@ -51,22 +51,22 @@ O tema interno **sobrescreverá** o tema exterior. Você pode estender o tema ex
 
 As implicações de desempenho de aninhamento do componente `ThemeProvider`, estão ligados a forma como o JSS trabalha nos bastidores. O principal ponto a ser entendido é que o CSS injetado é armazenado em cache com a seguinte tupla `(styles, theme)`.
 
-- `theme`: If you provide a new theme at each render, a new CSS object will be computed and injected. Both for UI consistency and performance, it's better to render a limited number of theme objects.
-- `styles`: The larger the styles object is, the more work is needed.
+- `theme`: Se você fornecer um novo tema em cada renderização, um novo objeto CSS será computado e injetado. Tanto para consistência quanto desempenho da UI, é melhor renderizar um número limitado de objetos de tema.
+- `styles`: Quanto maior é o objeto de estilos, mais trabalho é necessário.
 
 ## API
 
 ### `createMuiTheme(options) => theme`
 
-Generate a theme base on the options received.
+Gere uma base de temas sobre as opções recebidas.
 
 #### Argumentos
 
-1. `options` (*Object*): Takes an incomplete theme object and adds the missing parts.
+1. `options` (*Object*): Recebe um objeto de tema incompleto e adiciona as partes ausentes.
 
 #### Retornos
 
-`theme` (*Object*): A complete, ready to use theme object.
+`theme` (*Object*): Um objeto de tema completo, pronto para uso.
 
 #### Exemplos
 
@@ -88,7 +88,7 @@ const theme = createMuiTheme({
 
 ### `responsiveFontSizes(theme, options) => theme`
 
-Generate responsive typography settings based on the options received.
+Gera configurações de tipografia responsivas com base nas opções recebidas.
 
 #### Argumentos
 
