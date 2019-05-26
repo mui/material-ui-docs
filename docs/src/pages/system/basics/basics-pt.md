@@ -292,7 +292,7 @@ A função auxiliar `style()` também pode ser usada para mapear propriedades pa
 
 ## Propriedade CSS
 
-If you want to support custom CSS values, you can use our `css()` helper. It will process the `css` property.
+Se você quiser suportar valores customizados de CSS, você pode usar nosso utilitário `css()`. Ele irá processar a propriedade `css`.
 
 {{"demo": "pages/system/basics/CssProp.js", "defaultCodeOpen": true}}
 
