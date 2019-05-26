@@ -216,7 +216,7 @@ Material-UI tem uma estrutura de tema rica, que você pode aproveitar para manip
 
 O [Portal](/components/portal/) fornece uma maneira de primeira classe para renderizar filhos em um nó DOM que existe fora da hierarquia DOM do componente pai. Devido a maneira como o escopo de CSS do styled-components funciona, você pode encontrar problemas nos quais o estilo não é aplicado.
 
-For example, if you attempt to style the [Menu](/components/menus/) of a [Select](/components/selects/) component using the property `MenuProps`, you will need to pass along the `className` property to the element being rendered outside of it's DOM hierarchy. The following example shows a workaround:
+Por exemplo, se você tentar estilizar o [Menu](/components/menus/) de um componente [Select](/components/selects/) usando a propriedade `MenuProps`, você precisará passar a propriedade `className` para o elemento que está sendo renderizado fora de sua hierarquia DOM. O exemplo a seguir mostra uma solução alternativa:
 
 ```jsx
 import React from 'react';
@@ -239,11 +239,11 @@ const StyledMenu = styled(({ className, ...props }) => (
 
 {{"demo": "pages/guides/interoperability/StyledComponentsPortal.js"}}
 
-## CSS Modules
+## Módulos CSS
 
 ![estrelas](https://img.shields.io/github/stars/css-modules/css-modules.svg?style=social&label=Star)
 
-It's hard to know the market share of [this styling solution](https://github.com/css-modules/css-modules) as it's dependent on the bundling solution people are using.
+É difícil saber a participação de mercado [nesta solução de estilo](https://github.com/css-modules/css-modules), pois é dependente da solução de empacotamento que as pessoas estão usando.
 
 **CssModulesButton.css**
 
@@ -285,9 +285,9 @@ export default function CssModulesButton() {
 
 ![estrelas](https://img.shields.io/github/stars/emotion-js/emotion.svg?style=social&label=Star) ![npm](https://img.shields.io/npm/dm/emotion.svg?)
 
-### The `css` prop
+### A propriedade `css`
 
-Emotion's **css()** method works seamlessly with Material-UI.
+O método **css()** do Emotion funciona perfeitamente com Material-UI.
 
 ```jsx
 /** @jsx jsx */
