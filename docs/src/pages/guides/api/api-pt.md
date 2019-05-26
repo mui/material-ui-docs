@@ -22,27 +22,27 @@ Além do trade-off da composição acima, aplicamos as seguintes regras:
 
 ### Propagar
 
-Undocumented properties supplied are spread to the root element; for instance, the `className` property is applied to the root.
+Propriedades não documentadas fornecidas são propagadas no elemento raiz; por exemplo, a propriedade `className` é aplicada à raiz.
 
-Now, let's say you want to disable the ripples on the `MenuItem`. You can take advantage of the spread behavior:
+Agora, digamos que você queira desabilitar o efeito cascata do `MenuItem`. Você pode aproveitar o comportamento de propagação:
 
 ```jsx
 <MenuItem disableRipple />
 ```
 
-The `disableRipple` property will flow this way: [`MenuItem`](/api/menu-item/) > [`ListItem`](/api/list-item/) > [`ButtonBase`](/api/button-base/).
+A propriedade `disableRipple` fluirá desta maneira: [`MenuItem`](/api/menu-item/) > [`ListItem`](/api/list-item/) > [`ButtonBase`](/api/button-base/).
 
 ### Propriedades nativas
 
 Evitamos documentar propriedades nativas suportadas pelo DOM como [`className`](/customization/components/#overriding-styles-with-class-names).
 
-### CSS Classes
+### Classes CSS
 
-All the components accept a [`classes`](/customization/components/#overriding-styles-with-classes) property to customize the styles. The classes design answers two constraints: to make the classes structure as simple as possible, while sufficient to implement the Material Design specification.
+Todos os componentes aceitam propriedades [`classes`](/customization/components/#overriding-styles-with-classes) para customizar os estilos. O design de classes responde a duas restrições: para tornar a estrutura das classes o mais simples possível, enquanto suficiente, implementa a especificação de Material Design.
 
-- The class applied to the root element is always called `root`.
-- All the default styles are grouped in a single class.
-- The classes applied to non-root elements are prefixed with the name of the element, e.g. `paperWidthXs` in the Dialog component.
+- A classe aplicada ao elemento raiz é sempre chamada de `root`.
+- Todos os estilos padrão são agrupados em uma única classe.
+- As classes aplicadas a elementos não-raiz são prefixadas com o nome do elemento, por exemplo, `paperWidthXs` no componente Dialog.
 - The variants applied by a boolean property **aren't** prefixed, e.g. the `rounded` class applied by the `rounded` property.
 - The variants applied by an enum property **are** prefixed, e.g. the `colorPrimary` class applied by the `color="primary"` property.
 - A variant has **one level of specificity**. The `color` and `variant` properties are considered a variant. The lower the style specificity is, the simpler it is to override.
