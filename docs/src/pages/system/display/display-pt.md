@@ -1,6 +1,6 @@
-# Display
+# Exibição
 
-<p class="description">Quickly and responsively toggle the display value of components and more with our display utilities. Includes support for some of the more common values, as well as some extras for controlling display when printing.</p>
+<p class="description">Rapidamente e responsivamente alterne o valor de exibição de componentes e muito mais com nossos utilitários de exibição. Inclui suporte para alguns dos valores mais comuns, bem como alguns extras para controlar a exibição durante a impressão.</p>
 
 ## Exemplos
 
@@ -18,9 +18,9 @@
 
 {{"demo": "pages/system/display/Block.js"}}
 
-## Hiding elements
+## Ocultando elementos
 
-For faster mobile-friendly development, use responsive display classes for showing and hiding elements by device. Avoid creating entirely different versions of the same site, instead hide element responsively for each screen size.
+Para um desenvolvimento mais rápido para dispositivos móveis, use classes de exibição responsivas para mostrar e ocultar elementos por dispositivo. Avoid creating entirely different versions of the same site, instead hide element responsively for each screen size.
 
 | Screen Size        | Class                                                |
 |:------------------ |:---------------------------------------------------- |
