@@ -107,17 +107,17 @@ Para tornar o componente Box mais útil, estamos construindo uma coleção de fu
 - [spacing](/system/sizing/#api)
 - [typography](/system/typography/#api)
 
-If you are already using `@material-ui/core`, you can use our [prepackaged Box](/components/box/) component (using JSS internally):
+Se você já estiver usando `@material-ui/core`, você pode usar nosso componente [pré-empacotado Box](/components/box/) (usando JSS internamente):
 
 ```jsx
 import Box from '@material-ui/core/Box';
 ```
 
-## Interoperability
+## Interoperabilidade
 
-`@material-ui/system` works with most CSS-in-JS libraries, including JSS, styled-components, and emotion.
+`@material-ui/system` funciona com a maioria das bibliotecas CSS-in-JS, incluindo JSS, styled-components, e emotion.
 
-If you are already using `@material-ui/core`, we encourage you to start with the **JSS** solution to minimize bundle size.
+Se você já estiver usando `@material-ui/core`, nós recomendamos você a começar com a solução **JSS**, para diminuir o tamanho do pacote.
 
 ### JSS
 
@@ -131,7 +131,7 @@ If you are already using `@material-ui/core`, we encourage you to start with the
 
 {{"demo": "pages/system/basics/Emotion.js", "defaultCodeOpen": true}}
 
-## Responsive
+## Responsivo
 
 **All** the properties are responsive, we support 3 different APIs. It uses this default, but customizable, breakpoints theme structure:
 
