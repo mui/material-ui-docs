@@ -92,7 +92,7 @@ class ListItemLink extends React.Component {
 
 `renderLink` agora sempre referenciará o mesmo componente.
 
-### Caveat with shorthand
+### Advertência com abreviações
 
 Você pode aproveitar o encaminhamento de propriedades para simplificar o código. Neste exemplo, não criamos nenhum componente intermediário:
 
