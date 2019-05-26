@@ -1,6 +1,6 @@
 # Composição
 
-<p class="description">Material-UI tries to make composition as easy as possible.</p>
+<p class="description">Material-UI tenta tornar a composição o mais fácil possível.</p>
 
 ## Wrapping components
 
@@ -23,7 +23,7 @@ WrappedIcon.muiName = Icon.muiName;
 
 Material-UI allows you to change the root node that will be rendered via a property called `component`.
 
-### How does it work?
+### Como é que funciona?
 
 The component will render like this:
 
@@ -72,7 +72,7 @@ import { Link } from 'react-router-dom';
 
 class ListItemLink extends React.Component {
   renderLink = React.forwardRef((itemProps, ref) => (
-    // with react-router-dom@^5.0.0 use `ref` instead of `innerRef`
+    // com react-router-dom@^5.0.0 use `ref` ao invés de `innerRef`
     <RouterLink to={this.props.to} {...itemProps} innerRef={ref} />
   ));
 
