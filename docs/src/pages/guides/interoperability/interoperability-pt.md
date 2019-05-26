@@ -138,7 +138,7 @@ import { StylesProvider } from '@material-ui/styles';
 
 Another approach is to use the `&&` characters in styled-components to [bump up specificity](https://www.styled-components.com/docs/advanced#issues-with-specificity) by repeating the class name. You should avoid the usage of `!imporant`.
 
-### Deeper elements
+### Elementos mais profundos
 
 If you attempt to style a Drawer with variant permanent, you will likely need to affect the Drawer's child paper element. However, the paper is not the root element of Drawer and therefore styled-components customization as above will not work. You need to use the [`classes`](/styles/advanced/#overriding-styles-classes-prop) API of Material-UI.
 
@@ -263,7 +263,7 @@ It's hard to know the market share of [this styling solution](https://github.com
 
 ```jsx
 import React from 'react';
-// webpack, parcel or else will inject the CSS into the page
+// webpack, parcel ou qualquer outro irá injetar o CSS na página
 import styles from './CssModulesButton.css';
 import { Button } from '@material-ui/core';
 
@@ -390,7 +390,7 @@ const buttonStyles = {
   boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .30)"
 };
 
-// Then we just assign them the Button's className attribute
+// Então apenas atribuímos o className do Botão
 export default function GlamorButton() {
   return (
     <div>
