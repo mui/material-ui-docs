@@ -133,7 +133,7 @@ Se você já estiver usando `@material-ui/core`, nós recomendamos você a come�
 
 ## Responsivo
 
-**All** the properties are responsive, we support 3 different APIs. It uses this default, but customizable, breakpoints theme structure:
+**Todas** as propriedades são responsivas, oferecemos suporte para 3 diferentes APIs. Ela usa essa estrutura de tema com pontos de quebra padrão, mas é customizável:
 
 ```js
 const values = {
@@ -188,9 +188,9 @@ const theme = {
  */
 ```
 
-### Collocation
+### Colocação
 
-If you want to group the breakpoint values, you can use our `breakpoints()` helper.
+Se você quiser agrupar valores de ponto de quebra, você pode usar nosso utilitário `breakpoints()`.
 
 ```jsx
 import { compose, spacing, palette, breakpoints } from '@material-ui/system';
@@ -224,7 +224,7 @@ const Box = styled.div`
  */
 ```
 
-## Custom style props
+## Propriedades de estilo customizadas
 
 ### `style(options) => style function`
 
