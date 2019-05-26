@@ -213,23 +213,23 @@ yarn add @material-ui/styles@next
   
   - O uso componente `ListItemAvatar` é necessário quando usando um avatar
   - O uso do componente `ListItemIcon` é necessário quando usando uma caixa de seleção à esquerda
-  - The `edge` property should be set on the icon buttons.
+  - A propriedade `edge` deve ser definida para botões de ícone.
 
-- [ListItem] Increase the CSS specificity of the `disabled` and `focusVisible` style rules.
+- [ListItem] Aumente a especificidade CSS das regras de estilo `disabled` e `focusVisible`.
 
 ### Menu
 
-- [MenuItem] Remove the fixed height of the MenuItem. The padding and line-height are used by the browser to compute the height.
+- [MenuItem] Remova a altura fixa do MenuItem. O preenchimento e a altura da linha são usados pelo navegador para calcular a altura.
 
 ### Modal
 
-- [Modal] The child needs to be able to hold a ref. O [guia de composição](/guides/composition/#caveat-with-refs) explica a estratégia de migração.
+- [Modal] O elemento filho precisa ser capaz de lidar com ref. O [guia de composição](/guides/composition/#caveat-with-refs) explica a estratégia de migração.
   
-  This also applies to `Dialog` and `Popover`.
+  Isso também se aplica aos componentes `Dialog` e `Popover`.
 
-- [Modal] Remove the classes customization API for the Modal component. (-74% bundle size reduction when used standalone)
+- [Modal] Remova a customização da API classes para o componente Modal. (-74% de redução no tamanho do pacote quando usado de forma independente)
 
-- [Modal] event.defaultPrevented is now ignored. The new logic closes the Modal even if `event.preventDefault()` is called on the key down escape event. `event.preventDefault()` is meant to stop default behaviors like clicking a checkbox to check it, hitting a button to submit a form, and hitting left arrow to move the cursor in a text input etc. Only special HTML elements have these default behaviors. You should use `event.stopPropagation()` if you don't want to trigger an `onClose` event on the modal.
+- [Modal] event.defaultPrevented é agora ignorado. A nova lógica fecha o Modal mesmo se `event.preventDefault()` é chamado no evento down da tecla escape (Esc). `event.preventDefault()` destina-se a impedir comportamentos padrão, como clicar em uma caixa de seleção para verificá-lo, apertar um botão para enviar um formulário e pressionar a seta para a esquerda para mover o cursor em uma entrada de texto, etc. Apenas elementos HTML especiais possuem esses comportamentos padrão. You should use `event.stopPropagation()` if you don't want to trigger an `onClose` event on the modal.
 
 ### Paper
 
