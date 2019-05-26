@@ -1,6 +1,6 @@
 # @material-ui/system
 
-<p class="description">Sistema estilizado & funções de estilo para a construção de sistemas de design poderosos.</p>
+<p class="description">Styled system & funções de estilo para a construção de sistemas de design poderosos.</p>
 
 ## Primeiros passos
 
