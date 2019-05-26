@@ -331,7 +331,7 @@ Funciona exatamente como styled components. Você pode [usar o mesmo guia](/guid
 
 ![estrelas](https://img.shields.io/github/stars/cssinjs/jss.svg?style=social&label=Star) ![npm](https://img.shields.io/npm/dm/react-jss.svg?)
 
-Material-UI's styling solution shares many building blocks with [react-jss](https://github.com/cssinjs/react-jss). We went ahead and forked the project in order to handle our unique needs, but we're working to merge the changes and fixes from Material-UI back to react-jss.
+A solução de estilo do Material-UI compartilha muitos blocos de construção com [react-jss](https://github.com/cssinjs/react-jss). Fomos em frente e bifurcamos o projeto para lidar com nossas necessidades exclusivas, mas estamos trabalhando para mesclar as mudanças e correções de Material-UI de volta para react-jss.
 
 ```jsx
 import React from 'react';
