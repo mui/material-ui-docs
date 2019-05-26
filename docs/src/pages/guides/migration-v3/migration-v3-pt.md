@@ -229,30 +229,30 @@ yarn add @material-ui/styles@next
 
 - [Modal] Remova a customização da API classes para o componente Modal. (-74% de redução no tamanho do pacote quando usado de forma independente)
 
-- [Modal] event.defaultPrevented é agora ignorado. A nova lógica fecha o Modal mesmo se `event.preventDefault()` é chamado no evento down da tecla escape (Esc). `event.preventDefault()` destina-se a impedir comportamentos padrão, como clicar em uma caixa de seleção para verificá-lo, apertar um botão para enviar um formulário e pressionar a seta para a esquerda para mover o cursor em uma entrada de texto, etc. Apenas elementos HTML especiais possuem esses comportamentos padrão. You should use `event.stopPropagation()` if you don't want to trigger an `onClose` event on the modal.
+- [Modal] event.defaultPrevented é agora ignorado. A nova lógica fecha o Modal mesmo se `event.preventDefault()` é chamado no evento down da tecla escape (Esc). `event.preventDefault()` destina-se a impedir comportamentos padrão, como clicar em uma caixa de seleção para verificá-lo, apertar um botão para enviar um formulário e pressionar a seta para a esquerda para mover o cursor em uma entrada de texto, etc. Apenas elementos HTML especiais possuem esses comportamentos padrão. Você deve usar `event.stopPropagation()` se você não quer acionar o evento `onClose` no modal.
 
-### Paper
+### Paper (Papel)
 
-- [Paper] Reduce the default elevation. Change the default Paper elevation to match the Card and the Expansion Panel:
+- [Paper] Reduza a elevação padrão. Altere a elevação padrão de Paper, para corresponder ao cartão e ao painel de expansão:
   
   ```diff
   -<Paper />
   +<Paper elevation={2} />
   ```
   
-  This affects the `ExpansionPanel` as well.
+  Isso afeta o componente `ExpansionPanel` também.
 
 ### Portal
 
-- [Portal] The child needs to be able to hold a ref when `disablePortal` is used. O [guia de composição](/guides/composition/#caveat-with-refs) explica a estratégia de migração.
+- [Portal] O elemento filho precisa ser capaz de lidar com ref, quando a propriedade `disablePortal` é usada. O [guia de composição](/guides/composition/#caveat-with-refs) explica a estratégia de migração.
 
 ### Slide
 
-- [Slide] The child needs to be able to hold a ref. O [guia de composição](/guides/composition/#caveat-with-refs) explica a estratégia de migração.
+- [Slide] O elemento filho precisa ser capaz de lidar com ref. O [guia de composição](/guides/composition/#caveat-with-refs) explica a estratégia de migração.
 
-### Seletor
+### Interruptor (Switch)
 
-- [Switch] Refactor the implementation to make it easier to override the styles. Rename the class names to match the specification wording:
+- [Switch] Refatore a implementação para torná-la mais fácil de sobrescrever os estilos. Renomeie os nomes das classes para corresponder ao texto da especificação:
   
   ```diff
   -icon
@@ -263,10 +263,10 @@ yarn add @material-ui/styles@next
 
 ### Snackbar
 
-- [Snackbar] Match the new specification.
+- [Snackbar] Compatibilize com a nova especificação.
   
-  - Change the dimensions
-  - Change the default transition from `Slide` to `Grow`.
+  - Altere as dimensões
+  - Modificado a transição padrão de `Slide` para `Grow`.
 
 ### SvgIcon
 
