@@ -294,7 +294,7 @@ O método **css()** do Emotion funciona perfeitamente com Material-UI.
 import { jsx, css } from '@emotion/core';
 import { Button } from '@material-ui/core';
 
-// We just assign them the Button's className attribute
+// Nós apenas atribuímos a eles o atributo className
 export default function EmotionButton() {
   return (
     <div>
@@ -323,9 +323,9 @@ export default function EmotionButton() {
 
 **Nota:** O JSS injeta seus estilos na parte inferior do `<head>`. Se você não quiser marcar atributos de estilo com **!important**, você precisa alterar [a ordem de injeção do CSS](/styles/advanced/#css-injection-order), como na demonstração.
 
-### The `styled()` API
+### A API `styled()`
 
-It works exactly like styled components. You can [use the same guide](/guides/interoperability/#styled-components).
+Funciona exatamente como styled components. Você pode [usar o mesmo guia](/guides/interoperability/#styled-components).
 
 ## React JSS
 
