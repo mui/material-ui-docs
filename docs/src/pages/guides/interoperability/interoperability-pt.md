@@ -92,7 +92,7 @@ export default function GlobalCssButton() {
 
 ![estrelas](https://img.shields.io/github/stars/styled-components/styled-components.svg?style=social&label=Star) ![npm](https://img.shields.io/npm/dm/styled-components.svg?)
 
-The `styled()` method works perfectly on all of our components.
+O método `styled()` funciona perfeitamente em todos os nossos componentes.
 
 ```jsx
 import React from 'react';
@@ -125,7 +125,7 @@ export default function StyledComponents() {
 
 ### Controlar Prioridade
 
-Both styled-components and JSS inject their styles at the bottom of the `<head>`. The best approach to ensuring styled-components styles are loaded last is to change [the CSS injection order](/styles/advanced/#css-injection-order), as in the demo:
+Ambos styled-components e JSS, injetam seus estilos na parte inferior `<head>`. A melhor abordagem para garantir que os estilos do styled-components sejam carregados por último, é alterar [a ordem de injeção do CSS](/styles/advanced/#css-injection-order), como na demonstração:
 
 ```jsx
 import { StylesProvider } from '@material-ui/styles';
@@ -136,11 +136,11 @@ import { StylesProvider } from '@material-ui/styles';
 </StylesProvider>
 ```
 
-Another approach is to use the `&&` characters in styled-components to [bump up specificity](https://www.styled-components.com/docs/advanced#issues-with-specificity) by repeating the class name. You should avoid the usage of `!imporant`.
+Outra abordagem é usar os caracteres `&&` em styled-components para [aumentar a especificidade](https://www.styled-components.com/docs/advanced#issues-with-specificity) repetindo o nome da classe. Você deve evitar o uso de `!imporant`.
 
 ### Elementos mais profundos
 
-If you attempt to style a Drawer with variant permanent, you will likely need to affect the Drawer's child paper element. However, the paper is not the root element of Drawer and therefore styled-components customization as above will not work. You need to use the [`classes`](/styles/advanced/#overriding-styles-classes-prop) API of Material-UI.
+Se você tentar estilizar um Drawer com variante permanente, provavelmente precisará afetar o elemento Paper, elemento filho do Drawer. However, the paper is not the root element of Drawer and therefore styled-components customization as above will not work. You need to use the [`classes`](/styles/advanced/#overriding-styles-classes-prop) API of Material-UI.
 
 The following example overrides the `label` style of `Button` in addition to the custom styles on the button itself. It also works around [this styled-components issue](https://github.com/styled-components/styled-components/issues/439) by "consuming" properties that should not be passed on to the underlying component.
 
