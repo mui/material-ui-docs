@@ -8,12 +8,12 @@ Como o escopo dos problemas que o Material-UI resolve é limitado, tentamos inte
 
 - [Figma UI Kit](https://material.5ly.co/) for Material-UI.
 
-## Libraries
+## Bibliotecas
 
-This is a collection of projects that we couldn't better contextualize in the documentation pages.
+Esta é uma coleção de projetos que não podemos contextualizar melhor nas páginas de documentação.
 
-- [Advanced Filter Builder](https://github.com/logipro/logi-filter-builder) Component will help your users create powerful filter criterias.
-- [create-mui-theme](https://react-theming.github.io/create-mui-theme/) Online tool for creating Material-UI themes via Material Design Color Tool
+- [Advanced Filter Builder](https://github.com/logipro/logi-filter-builder) O componente ajudará seus usuários a criar poderosos critérios de filtro.
+- [create-mui-theme](https://react-theming.github.io/create-mui-theme/) Ferramenta online para criação de temas de Material-UI por meio da ferramenta Material Design Color
 - [dx-react-chart-material-ui](https://devexpress.github.io/devextreme-reactive/react/chart/) A chart for Material-UI that visualizes data using a variety of series types, including bar, line, area, scatter, pie, and more ([custom license](https://js.devexpress.com/licensing/)).
 - [material-ui-autosuggest](https://github.com/plan-three/material-ui-autosuggest) A fuzzy-search component for React and Material-UI.
 - [material-ui-tema-editor](https://in-your-saas.github.io/material-ui-theme-editor/) Uma ferramenta para gerar temas para seus aplicativos de Material-UI, basta selecionar as cores e ter uma visualização ao vivo.
