@@ -191,28 +191,28 @@ yarn add @material-ui/styles@next
 - [DialogActions] Renomeie a propriedade `disableActionSpacing` para `disableSpacing`.
 - [DialogActions] Renomeie a classe CSS `action` para `spacing`.
 - [DialogContentText] Use a varante de tipografia `body1` em vez de `subtitle1`.
-- [Dialog] The child needs to be able to hold a ref. The [composition guide](/guides/composition/#caveat-with-refs) explains the migration strategy.
+- [Dialog] O elemento filho precisa ser capaz de lidar com ref. O [guia de composição](/guides/composition/#caveat-with-refs) explica a estratégia de migração.
 
-### Divider
+### Divisor
 
-- [Divider] Remove the deprecated inset prop.
+- [Divider] Remova a propriedade obsoleta inset.
   
   ```diff
   -<Divider inset />
   +<Divider variant="inset" />
   ```
 
-### ExpansionPanel
+### Painel de expansão
 
-- [ExpansionPanelActions] Rename the `action` CSS class `spacing`.
-- [ExpansionPanel] Increase the CSS specificity of the `disabled` style rule.
+- [ExpansionPanelActions] Renomeie a classe CSS `action` para `spacing`.
+- [ExpansionPanel] Aumente a especificidade CSS da regra de estilo `disabled`.
 
-### List
+### Lista
 
-- [List] Rework the list components to match the specification:
+- [List] Refaça a lista de componentes para coincidir com a especificação:
   
-  - The usage of the `ListItemAvatar` component is required when using an avatar
-  - The usage of the `ListItemIcon` component is required when using a left checkbox
+  - O uso componente `ListItemAvatar` é necessário quando usando um avatar
+  - O uso do componente `ListItemIcon` é necessário quando usando uma caixa de seleção à esquerda
   - The `edge` property should be set on the icon buttons.
 
 - [ListItem] Increase the CSS specificity of the `disabled` and `focusVisible` style rules.
@@ -223,7 +223,7 @@ yarn add @material-ui/styles@next
 
 ### Modal
 
-- [Modal] The child needs to be able to hold a ref. The [composition guide](/guides/composition/#caveat-with-refs) explains the migration strategy.
+- [Modal] The child needs to be able to hold a ref. O [guia de composição](/guides/composition/#caveat-with-refs) explica a estratégia de migração.
   
   This also applies to `Dialog` and `Popover`.
 
@@ -244,11 +244,11 @@ yarn add @material-ui/styles@next
 
 ### Portal
 
-- [Portal] The child needs to be able to hold a ref when `disablePortal` is used. The [composition guide](/guides/composition/#caveat-with-refs) explains the migration strategy.
+- [Portal] The child needs to be able to hold a ref when `disablePortal` is used. O [guia de composição](/guides/composition/#caveat-with-refs) explica a estratégia de migração.
 
 ### Slide
 
-- [Slide] The child needs to be able to hold a ref. The [composition guide](/guides/composition/#caveat-with-refs) explains the migration strategy.
+- [Slide] The child needs to be able to hold a ref. O [guia de composição](/guides/composition/#caveat-with-refs) explica a estratégia de migração.
 
 ### Seletor
 
@@ -334,7 +334,7 @@ yarn add @material-ui/styles@next
 
 ### Tooltip
 
-- [Tooltip] The child needs to be able to hold a ref. The [composition guide](/guides/composition/#caveat-with-refs) explains the migration strategy.
+- [Tooltip] The child needs to be able to hold a ref. O [guia de composição](/guides/composition/#caveat-with-refs) explica a estratégia de migração.
 - [Tooltip] Appears only after focus-visible focus instead of any focus.
 
 ### Typography
