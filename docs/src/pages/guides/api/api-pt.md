@@ -10,17 +10,17 @@ Como Sebastian Markbage [apontou](https://2014.jsconf.eu/speakers/sebastian-mark
 
 ## Composição
 
-You may have noticed some inconsistency in the API regarding composing components. To provide some transparency, we have been using the following rules when designing the API:
+Você deve ter notado alguma inconsistência na API em relação à composição de componentes. Para fornecer alguma transparência, usamos as seguintes regras ao projetar a API:
 
-1. Using the `children` property is the idiomatic way to do composition with React.
+1. Usando a propriedade `children` é a maneira idiomática de fazer composição com React.
 2. Sometimes we only need limited child composition, for instance when we don't need to allow child order permutations. In this case, providing explicit properties makes the implementation simpler and more performant; for example, the `Tab` takes an `icon` and a `label` property.
-3. API consistency matters.
+3. A consistência da API é importante.
 
 ## Regras
 
 Além do trade-off da composição acima, aplicamos as seguintes regras:
 
-### Spread
+### Propagar
 
 Undocumented properties supplied are spread to the root element; for instance, the `className` property is applied to the root.
 
@@ -32,9 +32,9 @@ Now, let's say you want to disable the ripples on the `MenuItem`. You can take a
 
 The `disableRipple` property will flow this way: [`MenuItem`](/api/menu-item/) > [`ListItem`](/api/list-item/) > [`ButtonBase`](/api/button-base/).
 
-### Native properties
+### Propriedades nativas
 
-We avoid documenting native properties supported by the DOM like [`className`](/customization/components/#overriding-styles-with-class-names).
+Evitamos documentar propriedades nativas suportadas pelo DOM como [`className`](/customization/components/#overriding-styles-with-class-names).
 
 ### CSS Classes
 
