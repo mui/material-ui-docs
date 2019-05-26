@@ -6,7 +6,7 @@ When the server receives the request, it renders the required component(s) into 
 
 ## Material-UI no servidor
 
-O Material-UI foi desenhado da base com as limitações de renderizar no servidor, mas você pode se certificar que será integrado corretamente. É importante fornecer a página com o CSS necessário, caso contrário a página irá renderizar somente o HTML até o CSS ser injetado pelo cliente, causando uma tremulação (FOUC). To inject the style down to the client, we need to:
+O Material-UI foi desenhado da base com as limitações de renderizar no servidor, mas você pode se certificar que será integrado corretamente. É importante fornecer a página com o CSS necessário, caso contrário a página irá renderizar somente o HTML até o CSS ser injetado pelo cliente, causando uma tremulação (FOUC). Para injetar o estilo no cliente, precisamos:
 
 1. Cria uma instância nova e fresca do [`ServerStyleSheets`](/styles/api/#serverstylesheets) em cada requisição.
 2. Render the React tree with the server-side collector.
@@ -19,7 +19,7 @@ On the client side, the CSS will be injected a second time before removing the s
 
 In the following recipe, we are going to look at how to set up server-side rendering.
 
-### The theme
+### O tema
 
 We create a theme that will be shared between the client and the server.
 
@@ -98,7 +98,7 @@ import theme from './theme';
 function handleRender(req, res) {
   const sheets = new ServerStyleSheets();
 
-  // Render the component to a string.
+  // Renderiza o componente para string.
   const html = ReactDOMServer.renderToString(
     sheets.collect(
       <ThemeProvider theme={theme}>
@@ -107,10 +107,10 @@ function handleRender(req, res) {
     ),
   );
 
-  // Grab the CSS from our sheets.
+  // Pega o CSS de nossas folhas.
   const css = sheets.toString();
 
-  // Send the rendered page back to the client.
+  // Envia a página renderizada de volta ao cliente.
   res.send(renderFullPage(html, css));
 }
 
@@ -118,7 +118,7 @@ const app = express();
 
 app.use('/build', express.static('build'));
 
-// This is fired every time the server-side receives a request.
+// Isso é acionado toda vez que o servidor recebe uma solicitação.
 app.use(handleRender);
 
 const port = 3000;
@@ -179,11 +179,11 @@ ReactDOM.hydrate(<Main />, document.querySelector('#root'));
 
 ## Reference implementations
 
-We host different reference implementations which you can find in the [GitHub repository](https://github.com/mui-org/material-ui) under the [`/examples`](https://github.com/mui-org/material-ui/tree/next/examples) folder:
+We host different reference implementations which you can find in the [GitHub repository](https://github.com/mui-org/material-ui) under the [`/examples`](https://github.com/mui-org/material-ui/tree/master/examples) folder:
 
-- [The reference implementation of this tutorial](https://github.com/mui-org/material-ui/tree/next/examples/ssr-next)
-- [Gatsby](https://github.com/mui-org/material-ui/tree/next/examples/gatsby-next)
-- [Next.js](https://github.com/mui-org/material-ui/tree/next/examples/nextjs-next)
+- [The reference implementation of this tutorial](https://github.com/mui-org/material-ui/tree/master/examples/ssr)
+- [Gatsby](https://github.com/mui-org/material-ui/tree/master/examples/gatsby)
+- [Next.js](https://github.com/mui-org/material-ui/tree/master/examples/nextjs)
 
 ## Troubleshooting
 
