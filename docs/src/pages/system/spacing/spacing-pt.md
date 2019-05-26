@@ -1,8 +1,8 @@
 # Espaçamento
 
-<p class="description">A wide range of shorthand responsive margin and padding utility classes to modify an element’s appearance.</p>
+<p class="description">Uma ampla variedade de classes de utilitário responsivos de preenchimento e margem, para modificar a aparência de um elemento.</p>
 
-## Notation
+## Notação
 
 The space utility converts shorthand margin and padding props to margin and padding CSS declarations. The props are named using the format `{property}{sides}`.
 
@@ -21,7 +21,7 @@ Where *sides* is one of:
 - `y` - for classes that set both **-top* and **-bottom*
 - blank - for classes that set a margin or padding on all 4 sides of the element
 
-## Transformation
+## Transformação
 
 Depending on the input and the theme configuration, the following transformation is applied:
 
