@@ -62,7 +62,7 @@ const styles = {
 
 ### Componentes aninhados
 
-Nested components inside a component have:
+Os componentes aninhados dentro de um componente possuem:
 
 - their own flattened properties when these are key to the top level component abstraction, for instance and `id` property for the `Input` component.
 - their own `xxxProps` property when users might need to tweak the internal render method's sub-components, for instance, exposing the `inputProps` and `InputProps` properties on components that use `Input` internally.
