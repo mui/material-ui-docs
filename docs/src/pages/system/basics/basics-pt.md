@@ -1,6 +1,6 @@
 # @material-ui/system
 
-<p class="description">Styled system & funções de estilo para a construção de sistemas de design poderosos.</p>
+<p class="description">Sistema de estilo & funções de estilo para a construção de sistemas de design poderosos.</p>
 
 ## Primeiros passos
 
@@ -298,17 +298,17 @@ Se você quiser suportar valores customizados de CSS, você pode usar nosso util
 
 ## Como funciona
 
-styled-system has done a great job at [explaining how it works](https://github.com/jxnblk/styled-system/blob/master/docs/how-it-works.md#how-it-works). It can help building a mental model for this "style function" concept.
+O styled-system fez um ótimo trabalho [explicando como ele funciona](https://github.com/jxnblk/styled-system/blob/master/docs/how-it-works.md#how-it-works). Ele pode ajudar a construir um modelo mental para esse conceito de "função de estilo".
 
-## Real-world use case
+## Caso de uso do mundo real
 
-In practice, a Box component can save you a lot of time. In this example, we demonstrate how to reproduce a Banner component.
+Na prática, um componente do Box pode poupar muito tempo. Neste exemplo, demonstramos como reproduzir um componente Banner.
 
 {{"demo": "pages/system/basics/RealWorld.js"}}
 
-## Prior art
+## Arte prévia
 
-`@material-ui/system` synthesizes ideas & APIs from several different sources:
+`@material-ui/system` sintetiza ideias & APIs de várias fontes diferentes:
 
 - [Tachyons](https://tachyons.io/) was one of the first (2014) CSS libraries to promote the [Atomic CSS pattern](https://css-tricks.com/lets-define-exactly-atomic-css/) (or Functional CSS).
 - Tachyons was later on (2017) followed by [Tailwind CSS](https://tailwindcss.com/). They have made Atomic CSS more popular.
