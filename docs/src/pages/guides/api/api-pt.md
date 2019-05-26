@@ -118,12 +118,12 @@ Voltando ao exemplo do botão anterior; ele requer 3 opções de configuração,
 
 ### Ref
 
-O `ref` é encaminhado para o elemento raiz. This means that, without changing the rendered root element via the `component` prop, it is forwarded to the outermost DOM element that which component renders. If you pass a different component via the `component` prop the ref will be attached to that component instead.
+O `ref` é encaminhado para o elemento raiz. Isso significa que, sem alterar o elemento raiz renderizado através da propriedade `component`, ele é encaminhado para o elemento DOM mais externo para que o componente renderize. Se você passar um componente diferente através da propriedade `component` o ref será anexado para esse componente.
 
-## Glossary
+## Glossário
 
-- **host component**: a DOM node type in the context of `react-dom`, e.g. a `'div'`. See also [React Implementation Notes](https://reactjs.org/docs/implementation-notes.html#mounting-host-elements).
-- **host element**: a DOM node in the context of `react-dom`, e.g. an instance of `window.HTMLDivElement`.
+- **componente hospedeiro**: um tipo de nó DOM no contexto de `react-dom`, por exemplo, um `'div'`. Veja também as [Notas de implementação do React](https://reactjs.org/docs/implementation-notes.html#mounting-host-elements).
+- **elemento hospedeiro**: um nó DOM no contexto de `react-dom`, por exemplo, uma instância de `window.HTMLDivElement`.
 - **outermost**: The first component when reading the component tree from top to bottom i.e. breadth-first search.
 - **root component**: the outermost component that renders a host component.
 - **root element**: the outermost element that renders a host component.
