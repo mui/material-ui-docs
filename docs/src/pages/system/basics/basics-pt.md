@@ -34,7 +34,7 @@ yarn add @material-ui/system
 
 ### Criar um componente
 
-Para usar o componente `Box`, você primeiro precisa criá-lo. To start with, add a `spacing` and `palette` function to the style argument.
+Para usar o componente `Box`, você primeiro precisa criá-lo. Para começar, adicione uma função de `espaçamento` e `paleta` para o argumento de estilo.
 
 ```jsx
 import styled from 'styled-components';
@@ -45,17 +45,17 @@ const Box = styled.div`${spacing}${palette}`;
 export default Box;
 ```
 
-This Box component now supports new [spacing properties](/system/spacing/#api) and [color properties](/system/palette/#api). For instance, you can provide a padding property: `p` and a color property: `color`.
+Este componente Box agora suporta novas [propriedades de espaçamento](/system/spacing/#api) e [propriedades de cor](/system/palette/#api). Por exemplo, você pode fornecer uma propriedade de preenchimedo (padding): `p` e uma propriedade de cor: `color`.
 
 ```jsx
-<Box p="1rem" color="grey">Give me some space!</Box>
+<Box p="1rem" color="grey">Me dê algum espaço!</Box>
 ```
 
-The component can be styled providing any valid CSS values.
+O componente pode ser estilizado, fornecendo quaisquer valores CSS válidos.
 
 ### Temas
 
-But most of the time, you want to rely on a theme's values to increase the UI consistency. It's preferable to have a predetermined set of padding and color values. Import the theme provider of your styling solution.
+Mas na maioria das vezes, você deseja depender dos valores de um tema, para aumentar a consistência da interface do usuário. É preferível ter um conjunto predeterminado de valores de preenchimento e cor. Import the theme provider of your styling solution.
 
 ```jsx
 import React from 'react'
