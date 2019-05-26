@@ -107,18 +107,18 @@ Existem duas opções para projetar a API para as variações de um componente: 
     
     Esta API é mais verbosa: `<Button>`, `<Button variant="contained">`, `<Button variant="fab">`.
     
-    However it prevents an invalid combination from being used, bounds the number of properties exposed, and can easily support new values in the future.
+    No entanto, isso impede que uma combinação inválida seja usada, limita o número de propriedades expostas, e pode facilmente suportar novos valores no futuro.
 
-The Material-UI components use a combination of the two approaches according to the following rules:
+Os componentes de Material-UI usam uma combinação das duas abordagens de acordo com as seguintes regras:
 
-- A *boolean* is used when **2** degrees of freedom are required.
-- An *enum* is used when **> 2** degrees of freedom are required, or if there is the possibility that additional degrees of freedom may be required in the future.
+- Um *boolean* é usado quando **2** opções de configuração são necessárias.
+- Um *enum* é usado quando **> 2** opções de configuração são necessárias, ou se houver a possibilidade de futuramente, ser necessários a adição de mais opções.
 
-Going back to the previous button example; since it requires 3 degrees of freedom, we use an *enum*.
+Voltando ao exemplo do botão anterior; ele requer 3 opções de configuração, nesse caso, usamos um *enum*.
 
 ### Ref
 
-The `ref` is forwarded to the root element. This means that, without changing the rendered root element via the `component` prop, it is forwarded to the outermost DOM element that which component renders. If you pass a different component via the `component` prop the ref will be attached to that component instead.
+O `ref` é encaminhado para o elemento raiz. This means that, without changing the rendered root element via the `component` prop, it is forwarded to the outermost DOM element that which component renders. If you pass a different component via the `component` prop the ref will be attached to that component instead.
 
 ## Glossary
 
