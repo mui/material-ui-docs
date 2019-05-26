@@ -263,34 +263,34 @@ yarn add @material-ui/styles@next
 
 ### Snackbar
 
-- [Snackbar] Compatibilize com a nova especificação.
+- [Snackbar] Coincide a nova especificação.
   
-  - Altere as dimensões
+  - Modificado as dimensões
   - Modificado a transição padrão de `Slide` para `Grow`.
 
-### SvgIcon
+### Ícones SVG
 
-- [SvgIcon] Rename nativeColor -> htmlColor. React solved the same problem with the `for` HTML attribute, they have decided to call the prop `htmlFor`. This change follows the same reasoning.
+- [SvgIcon] Renomeie nativeColor -> htmlColor. React resolveu o mesmo problema com o atributo HTML `for`, eles decidiram chamar um propriedade `htmlFor`. Essa mudança segue o mesmo raciocínio.
   
   ```diff
   -<AddIcon nativeColor="#fff" />
   +<AddIcon htmlColor="#fff" />
   ```
 
-### Tabs (Abas)
+### Guias
 
-- [Tab] Remove the `labelContainer`, `label` and `labelWrapped` class keys for simplicity. This has allowed us to remove 2 intermediary DOM elements. You should be able to move the custom styles to the `root` class key.
+- [Tab] Remova as chaves de classe `labelContainer`, `label` e `labelWrapped` para simplificar. Isso nos permitiu remover 2 elementos DOM intermediários. Você deve conseguir mover os estilos customizados para chave de classe `root`.
   
   ![A simpler tab item DOM structure](https://user-images.githubusercontent.com/3165635/53287870-53a35500-3782-11e9-9431-2d1a14a41be0.png)
 
-- [Tabs] Remove deprecated fullWidth and scrollable props
+- [Tabs] Remova as propriedades descontinuadas fullWidth e scrollable
   
   ```diff
   -<Tabs fullWidth scrollable />
   +<Tabs variant="scrollable" />
   ```
 
-### Table
+### Tabela
 
 - [TableCell] Remove the deprecated `numeric` property.
   
