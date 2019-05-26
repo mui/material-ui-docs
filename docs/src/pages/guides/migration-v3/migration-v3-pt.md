@@ -144,7 +144,7 @@ yarn add @material-ui/styles@next
   
   Going forward, you can use the theme to implement [a custom Grid spacing transformation function](https://material-ui.com/system/spacing/#transformation).
 
-- [Container] Moved from `@material-ui/lab` to `@material-ui/core`
+- [Container] Movido de `@material-ui/lab` para `@material-ui/core`
   
   ```diff
   -import Container from '@material-ui/lab/Container';
@@ -363,11 +363,11 @@ yarn add @material-ui/styles@next
 
 ### Node
 
-- [Drop node 6 support](https://github.com/nodejs/Release/blob/eb91c94681ea968a69bf4a4fe85c656ed44263b3/README.md#release-schedule), you should upgrade to node 8.
+- [Removemos suporte ao node 6](https://github.com/nodejs/Release/blob/eb91c94681ea968a69bf4a4fe85c656ed44263b3/README.md#release-schedule), você deve atualizar para o node 8.
 
 ### UMD
 
-- This change eases the use of Material-UI with a CDN:
+- Essa alteração facilita o uso de Material-UI com uma CDN:
   
   ```diff
   const {
@@ -377,7 +377,7 @@ yarn add @material-ui/styles@next
   +} = MaterialUI;
   ```
   
-  It's consistent with other React projects:
+  É consistente com outros projetos do React:
   
   - material-ui => MaterialUI
   - react-dom => ReactDOM
