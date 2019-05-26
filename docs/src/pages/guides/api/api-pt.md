@@ -67,11 +67,11 @@ Os componentes aninhados dentro de um componente possuem:
 - suas próprias propriedades niveladas quando estas são chaves para a abstração do componente de nível superior, por exemplo a propriedade `id` para o componente `input`.
 - suas próprias propriedades `xxxProps`, quando os usuários podem precisar ajustar os subcomponentes do método de renderização interno, por exemplo, expondo as propriedades `inputProps` e `InputProps` em componentes que usam `Input` internamente.
 - suas próprias propriedades `xxxComponent` para executar a injeção de componentes.
-- suas próprias propriedades `xxxRef`, quando o usuário precisar executar ações imperativas, por exemplo, expondo uma propriedade `inputRef` para acessar nativamente a `entrada` no componente `Input`. This helps answer the question ["How can I access the DOM element?"](/getting-started/faq/#how-can-i-access-the-dom-element)
+- suas próprias propriedades `xxxRef`, quando o usuário precisar executar ações imperativas, por exemplo, expondo uma propriedade `inputRef` para acessar nativamente a `entrada` no componente `Input`. Isso ajuda a responder a pergunta ["Como posso acessar o elemento DOM?"](/getting-started/faq/#how-can-i-access-the-dom-element)
 
-### Property naming
+### Nomeando propriedades
 
-The name of a boolean property should be chosen based on the **default value**. For example, the `disabled` attribute on an input element, if supplied, defaults to `true`. This choice allows the shorthand notation:
+O nome de uma propriedade booleana deve ser escolhido com base no **valor padrão**. Por exemplo, o atributo `disabled` em um elemento de entrada, se fornecido, é padronizado para `true`. Essa escolha permite a notação abreviada:
 
 ```diff
 -<Input enabled={false} />
@@ -80,13 +80,13 @@ The name of a boolean property should be chosen based on the **default value**. 
 
 ### Componentes controlados
 
-Most of the controlled component are controlled via the `value` and the `onChange` properties, however, the `open` / `onClose` / `onOpen` combination is used for display related state.
+A maior parte de componentes controlados, é controlado pelas propriedades `value` e `onChange`, no entanto, o `open` / `onClose` / `onOpen` é uma combinação usada para o estado relacionado à exibição.
 
 ### boolean vs enum
 
-There are two options to design the API for the variations of a component: with a *boolean*; or with an *enum*. For example, let's take a button that has different types. Each option has its pros and cons:
+Existem duas opções para projetar a API para as variações de um componente: com um *boolean*; ou com um *enum*. Por exemplo, vamos pegar um botão que tenha tipos diferentes. Cada opção tem seus prós e contras:
 
-- Option 1 *boolean*:
+- Opção 1 *boolean*:
     
     ```tsx
     type Props = {
@@ -95,9 +95,9 @@ There are two options to design the API for the variations of a component: with 
     };
     ```
     
-    This API enabled the shorthand notation: `<Button>`, `<Button contained />`, `<Button fab />`.
+    Esta API ativou a notação abreviada: `<Button>`, `<Button contained />`, `<Button fab />`.
 
-- Option 2 *enum*:
+- Opção 2 *enum*:
     
     ```tsx
     type Props = {
@@ -105,7 +105,7 @@ There are two options to design the API for the variations of a component: with 
     }
     ```
     
-    This API is more verbose: `<Button>`, `<Button variant="contained">`, `<Button variant="fab">`.
+    Esta API é mais verbosa: `<Button>`, `<Button variant="contained">`, `<Button variant="fab">`.
     
     However it prevents an invalid combination from being used, bounds the number of properties exposed, and can easily support new values in the future.
 
