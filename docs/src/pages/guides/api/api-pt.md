@@ -124,6 +124,6 @@ O `ref` é encaminhado para o elemento raiz. Isso significa que, sem alterar o e
 
 - **componente hospedeiro**: um tipo de nó DOM no contexto de `react-dom`, por exemplo, um `'div'`. Veja também as [Notas de implementação do React](https://reactjs.org/docs/implementation-notes.html#mounting-host-elements).
 - **elemento hospedeiro**: um nó DOM no contexto de `react-dom`, por exemplo, uma instância de `window.HTMLDivElement`.
-- **outermost**: The first component when reading the component tree from top to bottom i.e. breadth-first search.
-- **root component**: the outermost component that renders a host component.
+- **mais externo**: O primeiro componente ao ler a árvore de componentes de cima para baixo, ou seja, busca em largura (breadth-first search).
+- **componente raiz**: o componente mais externo que renderiza um componente do hospedeiro.
 - **root element**: the outermost element that renders a host component.
