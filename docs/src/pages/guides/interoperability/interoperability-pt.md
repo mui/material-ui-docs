@@ -1,19 +1,19 @@
 # Interoperabilidade da Biblioteca de Estilo
 
-<p class="description">While it is simple to use the JSS based styling solution provided by Material-UI to style your application, it is possible to use any styling solution you prefer, from plain CSS to any number of CSS-in-JS libraries.</p>
+<p class="description">Embora seja simples usar a solução de estilo baseada em JSS fornecida pelo Material-UI para estilizar sua aplicação, é possível usar qualquer solução de estilo que você preferir, do CSS puro a qualquer número de bibliotecas CSS-in-JS.</p>
 
-This guide aims to document the most popular alternatives, but you should find that the principals applied here can be adapted to other libraries. We have provided examples for the following styling solutions:
+Este guia tem como objetivo documentar as alternativas mais populares, mas você deve descobrir que os princípios aplicados aqui podem ser adaptados para outras bibliotecas. Nós fornecemos exemplos para as seguintes soluções de estilo:
 
-- [Plain CSS](#plain-css)
-- [Global CSS](#global-css)
+- [CSS puro](#plain-css)
+- [CSS global](#global-css)
 - [Styled Components](#global-css)
-- [CSS Modules](#styled-components)
+- [Módulos CSS](#styled-components)
 - [Emotion](#css-modules)
 - [React JSS](#react-jss)
 - [CSS to MUI webpack Loader](#css-to-mui-webpack-loader)
 - [Glamor](#glamor)
 
-## Plain CSS
+## CSS puro
 
 Nothing fancy, just plain old CSS. Why reinvent the wheel when it has been working for decades?
 
