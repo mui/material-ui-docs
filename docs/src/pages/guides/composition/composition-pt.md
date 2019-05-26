@@ -31,7 +31,7 @@ O componente será renderizado assim:
 return React.createElement(this.props.component, props)
 ```
 
-Por exemplo, por padrão um componente `List` irá renderizar um elemento `<ul>`. Isso pode ser alterado passando um [componente React](https://reactjs.org/docs/components-and-props.html#function-and-class-components) para a propriedade `component`. The following example will render the `List` component with a `<nav>` element as root node instead:
+Por exemplo, por padrão um componente `List` irá renderizar um elemento `<ul>`. Isso pode ser alterado passando um [componente React](https://reactjs.org/docs/components-and-props.html#function-and-class-components) para a propriedade `component`. O exemplo a seguir irá renderizar o componente `List` com um elemento `<nav>` como nó raiz:
 
 ```jsx
 <List component="nav">
@@ -44,9 +44,9 @@ Por exemplo, por padrão um componente `List` irá renderizar um elemento `<ul>`
 </List>
 ```
 
-This pattern is very powerful and allows for great flexibility, as well as a way to interoperate with other libraries, such as [`react-router`](#react-router-demo) or your favorite forms library. But it also **comes with a small caveat!**
+Esse padrão é muito poderoso e permite uma grande flexibilidade, bem como uma maneira de interoperar com outras bibliotecas, como [`react-router`](#react-router-demo) ou sua biblioteca de formulários favorita. Mas também **vem com uma pequena limitação!**
 
-### Caveat with inlining
+### Limitação com inlining
 
 Using an inline function as an argument for the `component` property may result in **unexpected unmounting**, since you pass a new component to the `component` property every time React renders. For instance, if you want to create a custom `ListItem` that acts as a link, you could do the following:
 
