@@ -8,9 +8,9 @@ Para fornecer o máximo de flexibilidade e desempenho, precisamos de uma maneira
 
 Você pode, no entanto, precisar encapsular um componente para melhorá-lo, que pode entrar em conflito com a solução `muiName`. Se você encapsular um componente, verifique se este tem um conjunto de propriedades estáticas.
 
-If you encounter this issue, you need to use the same tag for your wrapping component that is used with the wrapped component. Além disso, você deve encaminhar as propriedades, já que o componente pai pode precisar controlar as propriedades do componente encapsulado.
+Se você encontrar esse problema, precisará usar a mesma propriedade `muiName` do componente que será encapsulado no seu componente encapsulado. Além disso, você deve encaminhar as propriedades, já que o componente pai pode precisar controlar as propriedades do componente encapsulado.
 
-Let's see an example:
+Vamos ver um exemplo:
 
 ```jsx
 const WrappedIcon = props => <Icon {...props} />;
@@ -19,9 +19,9 @@ WrappedIcon.muiName = Icon.muiName;
 
 {{"demo": "pages/guides/composition/Composition.js"}}
 
-## Component property
+## Propriedade component
 
-Material-UI allows you to change the root node that will be rendered via a property called `component`.
+Material-UI permite que você altere o nó raiz que será renderizado por meio de uma propriedade chamada `component`.
 
 ### Como é que funciona?
 
