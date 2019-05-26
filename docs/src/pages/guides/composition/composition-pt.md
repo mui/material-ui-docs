@@ -110,17 +110,17 @@ Aqui está uma demonstração com [React Router DOM](https://github.com/ReactTra
 
 {{"demo": "pages/guides/composition/ComponentProperty.js"}}
 
-### With TypeScript
+### Usando TypeScript
 
-You can find the details in the [TypeScript guide](/guides/typescript/#usage-of-component-property).
+Você pode encontrar os detalhes no [guia TypeScript](/guides/typescript/#usage-of-component-property).
 
-## Caveat with refs
+## Advertência com refs
 
-This section covers caveats when using a custom component as `children` or for the `component` prop.
+Esta seção aborda advertências ao usar um componente customizado como `children` ou para a propriedade `component`.
 
-Some of the components need access to the DOM node. This was previously possible by using `ReactDOM.findDOMNode`. This function is deprecated in favor of `ref` and ref forwarding. However, only the following component types can be given a `ref`:
+Alguns dos componentes precisam acessar o nó DOM. Anteriormente, isso era possível usando `ReactDOM.findDOMNode`. Esta função está obsoleta em favor da utilização de `ref` e encaminhamento de ref. No entanto, apenas os seguintes tipos de componentes podem receber um `ref`:
 
-- Any Material-UI component
+- Qualquer componente do Material-UI
 - class components i.e. `React.Component` or `React.PureComponent`
 - DOM (or host) components e.g. `div` or `button`
 - [React.forwardRef components](https://reactjs.org/docs/react-api.html#reactforwardref)
