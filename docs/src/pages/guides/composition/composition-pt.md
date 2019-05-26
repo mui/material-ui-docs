@@ -90,11 +90,11 @@ class ListItemLink extends React.Component {
 }
 ```
 
-`renderLink` will now always reference the same component.
+`renderLink` agora sempre referenciará o mesmo componente.
 
 ### Caveat with shorthand
 
-You can take advantage of the properties forwarding to simplify the code. In this example, we don't create any intermediary component:
+Você pode aproveitar o encaminhamento de propriedades para simplificar o código. Neste exemplo, não criamos nenhum componente intermediário:
 
 ```jsx
 import { Link } from 'react-router-dom';
@@ -102,11 +102,11 @@ import { Link } from 'react-router-dom';
 <ListItem button component={Link} to="/">
 ```
 
-⚠️ However, this strategy suffers from a little limitation: properties collision. The component providing the `component` property (e.g. ListItem) might not forward all its properties to the root element (e.g. dense).
+⚠️ No entanto, esta estratégia sofre de uma pequena limitação: colisão de propriedades. The component providing the `component` property (e.g. ListItem) might not forward all its properties to the root element (e.g. dense).
 
-### React Router Demo
+### Demonstração com React Router
 
-Here is a demo with [React Router DOM](https://github.com/ReactTraining/react-router):
+Aqui está uma demonstração com [React Router DOM](https://github.com/ReactTraining/react-router):
 
 {{"demo": "pages/guides/composition/ComponentProperty.js"}}
 
