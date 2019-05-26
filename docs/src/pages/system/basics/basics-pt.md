@@ -55,7 +55,7 @@ O componente pode ser estilizado, fornecendo quaisquer valores CSS válidos.
 
 ### Temas
 
-Mas na maioria das vezes, você deseja depender dos valores de um tema, para aumentar a consistência da interface do usuário. É preferível ter um conjunto predeterminado de valores de preenchimento e cor. Import the theme provider of your styling solution.
+Mas na maioria das vezes, você deseja depender dos valores de um tema, para aumentar a consistência da interface do usuário. É preferível ter um conjunto predeterminado de valores de preenchimento e cor. Importe o provedor de temas de sua solução de estilo.
 
 ```jsx
 import React from 'react'
@@ -79,7 +79,7 @@ function App() {
 export default App
 ```
 
-Now, you can provide a spacing multiplier value:
+Agora, você pode fornecer um valor multiplicador de espaçamento:
 
 ```jsx
 <Box p={1}>4px</Box>
@@ -87,15 +87,15 @@ Now, you can provide a spacing multiplier value:
 <Box p={-1}>-4px</Box>
 ```
 
-and a primary color:
+e uma cor primária:
 
 ```jsx
-<Box color="primary">blue</Box>
+<Box color="primary">azul</Box>
 ```
 
-### All-inclusive
+### Tudo incluído
 
-To make the Box component more useful, we have been building a collection of style functions, here is the full list:
+Para tornar o componente Box mais útil, estamos construindo uma coleção de funções de estilo, aqui está a lista completa:
 
 - [borders](/system/borders/#api)
 - [display](/system/display/#api)
