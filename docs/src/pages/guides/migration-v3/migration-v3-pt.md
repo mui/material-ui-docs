@@ -174,11 +174,11 @@ yarn add @material-ui/styles@next
 
 - [ButtonBase] O componente passado para a propriedade `component` precisa ser capaz de lidar com ref. O [guia de composição](/guides/composition/#caveat-with-refs) explica a estratégia de migração.
   
-  This also applies to `BottomNavigationAction`, `Button`, `CardActionArea`, `Checkbox`, `ExpansionPanelSummary`, `Fab`, `IconButton`, `MenuItem`, `Radio`, `StepButton`, `Tab`, `TableSortLabel` as well as `ListItem` if the `button` prop is true
+  Isso também se aplica a `BottomNavigationAction`, `Button`, `CardActionArea`, `Checkbox`, `ExpansionPanelSummary`, `Fab`, `IconButton`, `MenuItem`, `Radio`, `StepButton`, `Tab`, `TableSortLabel` bem como `ListItem` se a propriedade `button` for `true`
 
-### Card
+### Cartão
 
-- [CardActions] Rename the `disableActionSpacing` prop `disableSpacing`.
+- [CardActions] Renomeie a propriedade `disableActionSpacing` para `disableSpacing`.
 - [CardActions] Remove the `disableActionSpacing` CSS class.
 - [CardActions] Rename the `action` CSS class `spacing`.
 
