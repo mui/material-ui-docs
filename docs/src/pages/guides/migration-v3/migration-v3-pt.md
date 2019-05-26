@@ -179,18 +179,18 @@ yarn add @material-ui/styles@next
 ### Cartão
 
 - [CardActions] Renomeie a propriedade `disableActionSpacing` para `disableSpacing`.
-- [CardActions] Remove the `disableActionSpacing` CSS class.
-- [CardActions] Rename the `action` CSS class `spacing`.
+- [CardActions] Remova a classe CSS `disableActionSpacing`.
+- [CardActions] Renomeie a classe CSS `action` para `spacing`.
 
 ### ClickAwayListener
 
-- [ClickAwayListener] Hide react-event-listener props.
+- [ClickAwayListener] Esconda propriedades react-event-listener.
 
-### Dialog
+### Caixa de diálogo
 
-- [DialogActions] Rename the `disableActionSpacing` prop `disableSpacing`.
-- [DialogActions] Rename the `action` CSS class `spacing`.
-- [DialogContentText] Use typography variant `body1` instead of `subtitle1`.
+- [DialogActions] Renomeie a propriedade `disableActionSpacing` para `disableSpacing`.
+- [DialogActions] Renomeie a classe CSS `action` para `spacing`.
+- [DialogContentText] Use a varante de tipografia `body1` em vez de `subtitle1`.
 - [Dialog] The child needs to be able to hold a ref. The [composition guide](/guides/composition/#caveat-with-refs) explains the migration strategy.
 
 ### Divider
