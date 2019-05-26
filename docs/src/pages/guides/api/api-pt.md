@@ -13,7 +13,7 @@ Como Sebastian Markbage [apontou](https://2014.jsconf.eu/speakers/sebastian-mark
 Você deve ter notado alguma inconsistência na API em relação à composição de componentes. Para fornecer alguma transparência, usamos as seguintes regras ao projetar a API:
 
 1. Usando a propriedade `children` é a maneira idiomática de fazer composição com React.
-2. Sometimes we only need limited child composition, for instance when we don't need to allow child order permutations. In this case, providing explicit properties makes the implementation simpler and more performant; for example, the `Tab` takes an `icon` and a `label` property.
+2. Às vezes, precisamos apenas de uma composição limitada com child, por exemplo, quando não precisamos permitir permutações de ordem com child. Nesse caso, fornecer propriedades explícitas torna a implementação mais simples e com maior desempenho; por exemplo, o componente `Tab` recebe uma propriedade `icon` e `label`.
 3. A consistência da API é importante.
 
 ## Regras
