@@ -102,7 +102,7 @@ import { Link } from 'react-router-dom';
 <ListItem button component={Link} to="/">
 ```
 
-⚠️ No entanto, esta estratégia sofre de uma pequena limitação: colisão de propriedades. The component providing the `component` property (e.g. ListItem) might not forward all its properties to the root element (e.g. dense).
+⚠️ No entanto, esta estratégia sofre de uma pequena limitação: colisão de propriedades. O componente que fornece a propriedade `component` (por exemplo, ListItem) pode não encaminhar todas as suas propriedades para o elemento raiz.
 
 ### Demonstração com React Router
 
