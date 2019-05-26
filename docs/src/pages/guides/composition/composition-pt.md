@@ -65,7 +65,7 @@ const ListItemLink = ({ icon, primary, secondary, to }) => (
 
 ⚠️ No entanto, como estamos usando uma função inline para alterar o componente renderizado, o React desmontará o link toda vez que o `ListItemLink` é renderizado. Não só irá o React atualizar o DOM desnecessariamente, como o efeito cascata do `ListItem` também não funcionará corretamente.
 
-The solution is simple: **avoid inline functions and pass a static component to the `component` property** instead. Let's change our `ListItemLink` to the following:
+A solução é simples: **evite funções inline e passe um componente estático para a propriedade `component`**. Vamos mudar nosso `ListItemLink` para o seguinte:
 
 ```jsx
 import { Link } from 'react-router-dom';
