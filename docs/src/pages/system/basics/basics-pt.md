@@ -4,17 +4,17 @@
 
 ## Primeiros passos
 
-`@material-ui/system` fornece funções utilitárias de baixo nível chamadas de "*funções de estilo*" para construir sistemas de design poderosos. Algumas das principais características:
+`@material-ui/system` fornece funções utilitárias de baixo nível, chamadas de "*funções de estilo*", para construir sistemas de design poderosos. Algumas das principais características:
 
-- ⚛️ Access the theme values directly from the component props.
-- 🦋 Encourage UI consistency.
-- 🌈 Write responsive style effortlessly.
-- 🦎 Work with any theme object.
-- 💅 Work with the most popular CSS-in-JS solutions.
-- 📦 Less than [4 KB gzipped](https://bundlephobia.com/result?p=@material-ui/system).
-- 🚀 [Fast enough](https://github.com/mui-org/material-ui/blob/master/packages/material-ui-benchmark/README.md#material-uisystem) not to be a bottleneck at runtime.
+- ⚛️ Acesso aos valores do tema diretamente nas propriedades do componente.
+- 🦋 Incentivo a consistência da UI.
+- 🌈 Escreva estilo responsivo sem esforço.
+- 🦎 Trabalhe com qualquer objeto de tema.
+- 💅 Trabalhe com as soluções CSS-in-JS mais populares.
+- 📦 Menos que [4 KB gzipped](https://bundlephobia.com/result?p=@material-ui/system).
+- 🚀 [Rápido o suficiente](https://github.com/mui-org/material-ui/blob/master/packages/material-ui-benchmark/README.md#material-uisystem) para não ser um gargalo em tempo de execução.
 
-It's important to understand that this package exposes pure (side-effect free) style functions with this signature: `({ theme, ...style }) => style`, **that's it**.
+É importante entender que este pacote expõe funções de estilo puro (sem efeitos colaterais) com esta assinatura: `({ theme, ...style }) => style`, **só isso**.
 
 ### Demonstração
 
