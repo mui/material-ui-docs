@@ -31,7 +31,7 @@ npm install @material-ui/styles
 yarn add @material-ui/styles
 ```
 
-## Como começar
+## Primeiros passos
 
 Fornecemos três APIs diferentes para gerar e aplicar estilos, mas todas compartilham a mesma lógica subjacente.
 
@@ -183,9 +183,9 @@ Este componente botão tem uma propriedade de cor que modifica sua cor:
 
 {{"demo": "pages/styles/basics/AdaptingHOC.js"}}
 
-## Stress test
+## Teste de estresse
 
-In the following stress test, you can update the *theme color* and the *background-color property* live:
+No teste de estresse a seguir, você pode atualizar *a cor do tema* e a *propriedade background-color* de forma interativa:
 
 ```js
 const useStyles = makeStyles(theme => ({
