@@ -121,7 +121,7 @@ Esta seção aborda advertências ao usar um componente customizado como `childr
 Alguns dos componentes precisam acessar o nó DOM. Anteriormente, isso era possível usando `ReactDOM.findDOMNode`. Esta função está obsoleta em favor da utilização de `ref` e encaminhamento de ref. No entanto, apenas os seguintes tipos de componentes podem receber um `ref`:
 
 - Qualquer componente do Material-UI
-- class components i.e. `React.Component` or `React.PureComponent`
+- componentes de classe, ou seja, `React.Component` ou `React.PureComponent`
 - DOM (or host) components e.g. `div` or `button`
 - [React.forwardRef components](https://reactjs.org/docs/react-api.html#reactforwardref)
 - [React.lazy components](https://reactjs.org/docs/react-api.html#reactlazy)
