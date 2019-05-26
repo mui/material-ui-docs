@@ -242,7 +242,7 @@ Nós não suportamos todas as propriedades CSS. É possível que você queira su
 
 #### Retornos
 
-`style function`: The style function created.
+`style function`: A função de estilo criada.
 
 #### Exemplos
 
@@ -259,11 +259,11 @@ const borderColor = style({
 
 ### `compose(...style functions) => style function`
 
-Merge multiple style functions into one.
+Mesclar várias funções de estilo em uma.
 
 #### Retornos
 
-`style function`: The style function created.
+`style function`: A função de estilo criada.
 
 #### Exemplos
 
@@ -284,9 +284,9 @@ export const bgcolor = style({
 const palette = compose(textColor, bgcolor);
 ```
 
-## Variants
+## Variantes
 
-The `style()` helper can also be used to maps properties to style objects in a theme. In this example, the `variant` property supports all the keys present in `theme.typography`.
+A função auxiliar `style()` também pode ser usada para mapear propriedades para objetos de estilo no tema. Neste exemplo, a propriedade `variant` suporta todas as chaves presentes em `theme.typography`.
 
 {{"demo": "pages/system/basics/Variant.js", "defaultCodeOpen": true}}
 
