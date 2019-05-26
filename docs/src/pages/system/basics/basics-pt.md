@@ -18,23 +18,23 @@
 
 ### Demonstração
 
-In the rest of this *Getting Started* section we are using **styled-components** as the reference example (to emphasize the universality of this package). Alternatively, you can [use JSS](#interoperability). The demos are also based on the **default** Material-UI [theme object](/customization/default-theme/).
+No restante desta seção de *Primeiros passos*, estamos usando **styled-components** como exemplo de referência (para enfatizar a universalidade deste pacote). Alternativamente, você pode [usar JSS](#interoperability). As demonstrações também são baseadas no valor **padrão** do [objeto de tema](/customization/default-theme/) do Material-UI.
 
 {{"demo": "pages/system/basics/Demo.js", "defaultCodeOpen": true}}
 
 ### Instalação
 
 ```jsx
-// usando npm
+// utilizando o npm
 npm install @material-ui/system
 
-// usando yarn
+// utilizando o yarn
 yarn add @material-ui/system
 ```
 
-### Create a component
+### Criar um componente
 
-In order to use the `Box` component, you first need to create it. To start with, add a `spacing` and `palette` function to the style argument.
+Para usar o componente `Box`, você primeiro precisa criá-lo. To start with, add a `spacing` and `palette` function to the style argument.
 
 ```jsx
 import styled from 'styled-components';
