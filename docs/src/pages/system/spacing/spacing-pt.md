@@ -78,7 +78,7 @@ const theme = {
 
 {{"demo": "pages/system/spacing/Demo.js"}}
 
-## Horizontal centering
+## Centralização horizontal
 
 ```jsx
 <Box mx="auto">…
@@ -109,7 +109,7 @@ import { spacing } from '@material-ui/system';
 | `spacing`          | `px` | `padding-left`, `padding-right` | [`spacing`](/customization/default-theme/?expend-path=$.spacing) |
 | `spacing`          | `py` | `padding-top`, `padding-bottom` | [`spacing`](/customization/default-theme/?expend-path=$.spacing) |
 
-*Some people find the property shorthand confusing, you can use the full version if you prefer:*
+*Algumas pessoas acham a propriedade abreviada confusa, você pode usar a versão completa se preferir:*
 
 ```diff
 -<Box pt={2} />
