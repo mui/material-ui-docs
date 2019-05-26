@@ -4,11 +4,11 @@
 
 ## Encapsulando componentes
 
-In order to provide the maximum flexibility and performance, we need a way to know the nature of the child elements a component receives. To solve this problem we tag some of our components when needed with a `muiName` static property.
+Para fornecer o máximo de flexibilidade e desempenho, precisamos de uma maneira de conhecer a natureza dos elementos filhos que um componente recebe. Para resolver este problema, marcamos alguns de nossos componentes, quando necessário com uma propriedade estática `muiName`.
 
-You may, however, need to wrap a component in order to enhance it, which can conflict with the `muiName` solution. Se você encapsular um componente, verifique se este tem um conjunto de propriedades estáticas.
+Você pode, no entanto, precisar encapsular um componente para melhorá-lo, que pode entrar em conflito com a solução `muiName`. Se você encapsular um componente, verifique se este tem um conjunto de propriedades estáticas.
 
-If you encounter this issue, you need to use the same tag for your wrapping component that is used with the wrapped component. In addition, you should forward the properties, as the parent component may need to control the wrapped components props.
+If you encounter this issue, you need to use the same tag for your wrapping component that is used with the wrapped component. Além disso, você deve encaminhar as propriedades, já que o componente pai pode precisar controlar as propriedades do componente encapsulado.
 
 Let's see an example:
 
