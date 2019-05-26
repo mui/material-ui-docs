@@ -25,13 +25,13 @@ Material-UI permite que você altere o nó raiz que será renderizado por meio d
 
 ### Como é que funciona?
 
-The component will render like this:
+O componente será renderizado assim:
 
 ```js
 return React.createElement(this.props.component, props)
 ```
 
-For example, by default a `List` component will render a `<ul>` element. This can be changed by passing a [React component](https://reactjs.org/docs/components-and-props.html#function-and-class-components) to the `component` property. The following example will render the `List` component with a `<nav>` element as root node instead:
+Por exemplo, por padrão um componente `List` irá renderizar um elemento `<ul>`. Isso pode ser alterado passando um [componente React](https://reactjs.org/docs/components-and-props.html#function-and-class-components) para a propriedade `component`. The following example will render the `List` component with a `<nav>` element as root node instead:
 
 ```jsx
 <List component="nav">
