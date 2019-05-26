@@ -131,18 +131,18 @@ yarn add @material-ui/styles@next
 
 ### Leiaute
 
-- [Grid] In order to support arbitrary spacing values and to remove the need to mentally count by 8, we are changing the spacing API:
+- [Grid] Para suportar valores de espaçamento arbitrários e para remover a necessidade de contar mentalmente por 8, estamos mudando a API de espaçamento:
   
   ```diff
-    /**
-     * Defines the space between the type `item` component.
-     * It can only be used on a type `container` component.
+    / **
+     * Define o espaço entre o componente do tipo `item`.
+     * Só pode ser usado em um componente do tipo 'container'.
      */
   -  spacing: PropTypes.oneOf([0, 8, 16, 24, 32, 40]),
   +  spacing: PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),
   ```
   
-  Going forward, you can use the theme to implement [a custom Grid spacing transformation function](https://material-ui.com/system/spacing/#transformation).
+  Indo além, você pode usar o tema para implementar [uma função de transformação de espaçamento de grade customizada](https://material-ui.com/system/spacing/#transformation).
 
 - [Container] Movido de `@material-ui/lab` para `@material-ui/core`
   
@@ -151,9 +151,9 @@ yarn add @material-ui/styles@next
   +import Container from '@material-ui/core/Container';
   ```
 
-### Button
+### Botão
 
-- [Button] Remove the deprecated button variants (flat, raised and fab):
+- [Button] Remova as variantes descontinuadas (flat, raised e fab):
   
   ```diff
   -<Button variant="raised" />
@@ -172,7 +172,7 @@ yarn add @material-ui/styles@next
   +<Fab />
   ```
 
-- [ButtonBase] The component passed to the `component` prop needs to be able to hold a ref. The [composition guide](/guides/composition/#caveat-with-refs) explains the migration strategy.
+- [ButtonBase] O componente passado para a propriedade `component` precisa ser capaz de lidar com ref. O [guia de composição](/guides/composition/#caveat-with-refs) explica a estratégia de migração.
   
   This also applies to `BottomNavigationAction`, `Button`, `CardActionArea`, `Checkbox`, `ExpansionPanelSummary`, `Fab`, `IconButton`, `MenuItem`, `Radio`, `StepButton`, `Tab`, `TableSortLabel` as well as `ListItem` if the `button` prop is true
 
