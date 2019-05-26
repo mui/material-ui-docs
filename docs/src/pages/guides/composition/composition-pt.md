@@ -155,7 +155,7 @@ Para descobrir se o componente de Material-UI que você está usando tem esse re
 
 ### Advertência com StrictMode ou unstable_ConcurrentMode
 
-If you use class components for the cases described above you will still see warnings in `React.StrictMode` and `React.unstable_ConcurrentMode`. We use `ReactDOM.findDOMNode` internally for backwards compatibility. You can use `React.forwardRef` and a designated prop in your class component to forward the `ref` to a DOM component. Doing so should not trigger any more warnings related to the deprecation of `ReactDOM.findDOMNode`.
+Se você usar componentes de classe para os casos descritos acima, ainda verá avisos em `React.StrictMode` e ` React.unstable_ConcurrentMode`. Nós usamos `ReactDOM.findDOMNode` internamente para manter compatibilidade com versões anteriores. You can use `React.forwardRef` and a designated prop in your class component to forward the `ref` to a DOM component. Doing so should not trigger any more warnings related to the deprecation of `ReactDOM.findDOMNode`.
 
 ```diff
 class Component extends React.Component {
