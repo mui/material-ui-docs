@@ -41,7 +41,7 @@ export default function PlainCssButton() {
   return (
     <div>
       <Button>Material-UI</Button>
-      <Button className="button">Plain CSS</Button>
+      <Button className="button">CSS puro</Button>
     </div>
   );
 }
@@ -123,7 +123,7 @@ export default function StyledComponents() {
 
 [![Edit Button](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/k553lz1qrv)
 
-### Controlling Priority
+### Controlar Prioridade
 
 Both styled-components and JSS inject their styles at the bottom of the `<head>`. The best approach to ensuring styled-components styles are loaded last is to change [the CSS injection order](/styles/advanced/#css-injection-order), as in the demo:
 
@@ -214,7 +214,7 @@ Material-UI has a rich theme structure that you can leverage for the color manip
 
 ### Portals
 
-The [Portal](/utils/portal/) provides a first-class way to render children into a DOM node that exists outside the DOM hierarchy of the parent component. Because of the way styled-components scopes its CSS, you may run into issues where styling is not applied.
+The [Portal](/components/portal/) provides a first-class way to render children into a DOM node that exists outside the DOM hierarchy of the parent component. Because of the way styled-components scopes its CSS, you may run into issues where styling is not applied.
 
 For example, if you attempt to style the [Menu](/components/menus/) of a [Select](/components/selects/) component using the property `MenuProps`, you will need to pass along the `className` property to the element being rendered outside of it's DOM hierarchy. The following example shows a workaround:
 
