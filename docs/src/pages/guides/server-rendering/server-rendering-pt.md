@@ -1,27 +1,27 @@
 # Renderização no servidor
 
-<p class="description">The most common use case for server-side rendering is to handle the initial render when a user (or search engine crawler) first requests your app.</p>
+<p class="description">O caso de uso mais comum para a renderização do lado do servidor, é manipular a renderização inicial quando um usuário (ou rastreador do mecanismo de pesquisa) solicita sua aplicação.</p>
 
-When the server receives the request, it renders the required component(s) into an HTML string, and then sends it as a response to the client. From that point on, the client takes over rendering duties.
+Quando o servidor recebe a solicitação, ele renderiza o componente(s) requerido em uma cadeia HTML e o envia como uma resposta ao cliente. A partir desse momento, o cliente assume as funções de renderização.
 
 ## Material-UI no servidor
 
 O Material-UI foi desenhado da base com as limitações de renderizar no servidor, mas você pode se certificar que será integrado corretamente. É importante fornecer a página com o CSS necessário, caso contrário a página irá renderizar somente o HTML até o CSS ser injetado pelo cliente, causando uma tremulação (FOUC). Para injetar o estilo no cliente, precisamos:
 
 1. Cria uma instância nova e fresca do [`ServerStyleSheets`](/styles/api/#serverstylesheets) em cada requisição.
-2. Render the React tree with the server-side collector.
-3. Pull the CSS out.
-4. Pass the CSS along to the client.
+2. Renderize a árvore React com o coletor do lado do servidor.
+3. Puxe o CSS para fora.
+4. Passe o CSS junto ao cliente.
 
-On the client side, the CSS will be injected a second time before removing the server-side injected CSS.
+No lado do cliente, o CSS será injetado uma segunda vez antes de remover o CSS injetado no lado do servidor.
 
-## Setting Up
+## Configurando
 
-In the following recipe, we are going to look at how to set up server-side rendering.
+Na receita a seguir, vamos ver como configurar a renderização do lado do servidor.
 
 ### O tema
 
-We create a theme that will be shared between the client and the server.
+Criamos um tema que será compartilhado entre o cliente e o servidor.
 
 `theme.js`
 
@@ -29,7 +29,7 @@ We create a theme that will be shared between the client and the server.
 import { createMuiTheme } from '@material-ui/core/styles';
 import red from '@material-ui/core/colors/red';
 
-// Create a theme instance.
+// Cria a instância do tema.
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -50,7 +50,7 @@ const theme = createMuiTheme({
 export default theme;
 ```
 
-### The server-side
+### O lado do servidor
 
 The following is the outline for what our server-side is going to look like. We are going to set up an [Express middleware](http://expressjs.com/en/guide/using-middleware.html) using [app.use](http://expressjs.com/en/api.html) to handle all requests that come in to our server. If you're unfamiliar with Express or middleware, just know that our handleRender function will be called every time the server receives a request.
 
