@@ -4,21 +4,21 @@
 
 ## Notação
 
-The space utility converts shorthand margin and padding props to margin and padding CSS declarations. The props are named using the format `{property}{sides}`.
+O utilitário de espaço converte margens e propriedades de preenchimento para margem e preenchimento de declarações CSS. As propriedades são nomeadas usando o formato `{property}{sides}`.
 
-Where *property* is one of:
+Onde a *propriedade* é um dos seguintes:
 
-- `m` - for classes that set *margin*
-- `p` - for classes that set *padding*
+- `m` - para classes que definem *margin*
+- `p` - para classes que definem *padding*
 
-Where *sides* is one of:
+Onde o *sides* é um dos seguintes:
 
-- `t` - for classes that set *margin-top* or *padding-top*
-- `b` - for classes that set *margin-bottom* or *padding-bottom*
-- `l` - for classes that set *margin-left* or *padding-left*
-- `r` - for classes that set *margin-right* or *padding-right*
-- `x` - for classes that set both **-left* and **-right*
-- `y` - for classes that set both **-top* and **-bottom*
+- `t` - para classes que configuram *margin-top* ou *padding-top*
+- `b` - para classes que configuram *margin-bottom* ou *padding-bottom*
+- `l` - para classes que configuram *margin-left* ou *padding-left*
+- `r` - para classes que configuram *margin-right* ou *padding-right*
+- `x` - para classes que configuram ambos **-left* e **-right*
+- `y` - para classes que configuram **-top* e **-bottom*
 - blank - for classes that set a margin or padding on all 4 sides of the element
 
 ## Transformação
