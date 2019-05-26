@@ -19,13 +19,13 @@ Onde o *sides* é um dos seguintes:
 - `r` - para classes que configuram *margin-right* ou *padding-right*
 - `x` - para classes que configuram ambos **-left* e **-right*
 - `y` - para classes que configuram **-top* e **-bottom*
-- blank - for classes that set a margin or padding on all 4 sides of the element
+- blank - para classes que configuram margin ou padding nos 4 lados do elemento
 
 ## Transformação
 
-Depending on the input and the theme configuration, the following transformation is applied:
+Dependendo da entrada e da configuração do tema, a seguinte transformação é aplicada:
 
-- input: `number` & theme: `number`: the property is multiplied by the theme value.
+- entrada: `number` & tema: `number`: a propriedade é multiplicada pelo valor do tema.
 
 ```jsx
 const theme = {
@@ -38,7 +38,7 @@ const theme = {
 <Box m={2} /> // margin: 16px;
 ```
 
-- input: `number` & theme: `array`: the property is value is used as the array index.
+- entrada: `number` & tema: `array`: a propriedade é o valor usado como o índice no array.
 
 ```jsx
 const theme = {
@@ -50,7 +50,7 @@ const theme = {
 <Box m={2} /> // margin: 3px;
 ```
 
-- input: `number` & theme: `function`: the function is called with the property value.
+- entrada: `number` & tema: `function`: a função é chamada com o valor da propriedade.
 
 ```jsx
 const theme = {
@@ -61,7 +61,7 @@ const theme = {
 <Box m={2} /> // margin: 4px;
 ```
 
-- input: `string`: the property is passed as raw CSS value.
+- entrada: `string`: a propriedade é passada como valor CSS bruto.
 
 ```jsx
 <Box m="2rem" /> // margin: 2rem;
