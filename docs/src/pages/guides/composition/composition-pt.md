@@ -122,12 +122,12 @@ Alguns dos componentes precisam acessar o nó DOM. Anteriormente, isso era poss�
 
 - Qualquer componente do Material-UI
 - componentes de classe, ou seja, `React.Component` ou `React.PureComponent`
-- DOM (or host) components e.g. `div` or `button`
-- [React.forwardRef components](https://reactjs.org/docs/react-api.html#reactforwardref)
-- [React.lazy components](https://reactjs.org/docs/react-api.html#reactlazy)
-- [React.memo components](https://reactjs.org/docs/react-api.html#reactmemo)
+- Componentes DOM (ou hospedeiro), por exemplo, `div` ou `button`
+- [Componentes React.forwardRef](https://reactjs.org/docs/react-api.html#reactforwardref)
+- [Componentes React.lazy](https://reactjs.org/docs/react-api.html#reactlazy)
+- [Componentes React.memo](https://reactjs.org/docs/react-api.html#reactmemo)
 
-If you don't use one of the above types when using your components in conjunction with Material-UI, you might see a warning from React in your console similar to:
+Se você não usar um dos tipos acima ao usar seus componentes em conjunto com o Material-UI, poderá ver um aviso do React no seu console semelhante a:
 
 > Function components cannot be given refs. Attempts to access this ref will fail. Did you mean to use React.forwardRef()?
 
