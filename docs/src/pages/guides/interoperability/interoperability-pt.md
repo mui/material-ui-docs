@@ -140,7 +140,7 @@ Outra abordagem é usar os caracteres `&&` em styled-components para [aumentar a
 
 ### Elementos mais profundos
 
-Se você tentar estilizar um Drawer com variante permanente, provavelmente precisará afetar o elemento Paper, elemento filho do Drawer. However, the paper is not the root element of Drawer and therefore styled-components customization as above will not work. You need to use the [`classes`](/styles/advanced/#overriding-styles-classes-prop) API of Material-UI.
+Se você tentar estilizar um Drawer com variante permanente, provavelmente precisará afetar o elemento Paper, elemento filho do Drawer. No entanto, o paper não é o elemento raiz do Drawer e, portanto, a customização de styled-components como acima não funcionará. Você precisa usar a API [`classes`](/styles/advanced/#overriding-styles-classes-prop) do Material-UI.
 
 The following example overrides the `label` style of `Button` in addition to the custom styles on the button itself. It also works around [this styled-components issue](https://github.com/styled-components/styled-components/issues/439) by "consuming" properties that should not be passed on to the underlying component.
 
@@ -174,7 +174,7 @@ export default function StyledComponentsDeep() {
 
 {{"demo": "pages/guides/interoperability/StyledComponentsDeep.js", "hideHeader": true}}
 
-The above demo relies on the [default `classes` values](/styles/advanced/#with-material-ui-core) but you can provide your own class name: `.label`.
+A demonstração acima depende [doa valores padrão de `classes`](/styles/advanced/#with-material-ui-core), mas você pode fornecer seu próprio nome de classe: `.label`.
 
 ```jsx
 import React from 'react';
