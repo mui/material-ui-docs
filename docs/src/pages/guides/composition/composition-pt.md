@@ -2,7 +2,7 @@
 
 <p class="description">Material-UI tenta tornar a composição o mais fácil possível.</p>
 
-## Wrapping components
+## Encapsulando componentes
 
 In order to provide the maximum flexibility and performance, we need a way to know the nature of the child elements a component receives. To solve this problem we tag some of our components when needed with a `muiName` static property.
 
