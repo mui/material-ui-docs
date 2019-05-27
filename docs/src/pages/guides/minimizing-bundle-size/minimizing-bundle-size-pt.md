@@ -35,33 +35,33 @@ import TextField from '@material-ui/core/TextField';
 
 Ao importar diretamente dessa maneira, não utiliza as exportações em [`@material-ui/core/index.js`](https://github.com/mui-org/material-ui/blob/master/packages/material-ui/src/index.js), esse arquivo pode servir como uma referência útil para quais módulos são públicos.
 
-Esteja ciente de que apoiamos apenas as importações de primeiro e segundo níveis. Qualquer coisa abaixo é considerada privada e pode causar duplicação de módulo no seu pacote.
+Esteja ciente de que apenas damos suporte para as importações de primeiro e segundo níveis. Qualquer coisa abaixo do segundo nível, é considerada privada e pode causar duplicação de módulo no seu pacote.
 
 ```js
 // OK
 import { Add as AddIcon } from '@material-ui/icons';
 import { Tabs } from '@material-ui/core';
-//                                 ^^^^ 1st or top-level
+//                                 ^^^^ 1º ou nível superior
 
 // OK
 import AddIcon from '@material-ui/icons/Add';
 import Tabs from '@material-ui/core/Tabs';
-//                                  ^^^^ 2nd level
+//                                  ^^^^ 2º nível
 
-// NOT OK
+// NÃO OK
 import TabIndicator from '@material-ui/core/Tabs/TabIndicator';
-//                                               ^^^^^^^^^^^^ 3rd level
+//                                               ^^^^^^^^^^^^ 3º nível
 ```
 
-### Option 2
+### Opção 2
 
-**Important note**: This is only supported for `@material-ui/icons`. We recommend this approach if you often restart your development build.
+**Nota importante**: Isso é suportado apenas por `@material-ui/icons`. Recomendamos essa abordagem se você frequentemente reiniciar sua compilação de desenvolvimento.
 
-Another option is to keep using named imports, but still have shorter start up times by using `babel` plugins.
+Outra opção é continuar usando importações nomeadas, podemos então melhorar o tempo de inicialização usando plugins `babel`.
 
-Pick one of the following plugins:
+Escolha um dos seguintes plugins:
 
-- [babel-plugin-import](https://github.com/ant-design/babel-plugin-import) with the following configuration: 
+- [babel-plugin-import](https://github.com/ant-design/babel-plugin-import) com a seguinte configuração: 
         js
         [
         'babel-plugin-import',
