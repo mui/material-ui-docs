@@ -292,22 +292,22 @@ yarn add @material-ui/styles@next
 
 ### Tabela
 
-- [TableCell] Remove the deprecated `numeric` property.
+- [TableCell] Remova a propriedade descontinuada `numeric`.
   
   ```diff
   -<TableCell numeric>{row.calories}</TableCell>
   +<TableCell align="right">{row.calories}</TableCell>
   ```
 
-- [TableRow] Remove the fixed height CSS property. The cell height is computed by the browser using the padding and line-height.
-- [TableCell] Move the `dense` mode to a different property:
+- [TableRow] Remova a propriedade CSS de altura fixa. A altura da célula é calculada pelo navegador usando o preenchimento e a altura da linha.
+- [TableCell] Movemos o modo `dense` para uma propriedade diferente:
   
   ```diff
   -<TableCell padding="dense" />
   +<TableCell size="small" />
   ```
 
-- [TablePagination] The component no longer tries to fix invalid (`page`, `count`, `rowsPerPage`) property combinations. It raises a warning instead.
+- [TablePagination] O componente já não tenta corrigir as combinações de propriedades inválidas (`page`, `count`, `rowsPerPage`). Em vez disso, emite um aviso.
 
 ### TextField
 
