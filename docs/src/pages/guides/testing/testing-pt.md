@@ -42,9 +42,9 @@ Gere uma função superficial aprimorada com o contexto necessário. Por favor, 
 
 1. `options` (*Object* [opcional]) 
     - `options.shallow` (*Function* [opcional]): A função superficial para melhorar, usa **enzyme por padrão**.
-    - `options.untilSelector` (*String* [optional]): Recursively shallow renders the children until it can find the provided selector. It's useful to drill down higher-order components.
-    - `options.dive` (*Boolean* [optional]): Shallow function renders the one non-DOM child of the current wrapper, and returns a wrapper around the result.
-    - The other keys are forwarded to the options argument of `enzyme.shallow()`.
+    - `options.untilSelector` (*String* [opcional]): Recursivamente, renderiza superficialmente o componente children até encontrar o seletor fornecido. É útil para detalhar os componentes de ordem mais alta.
+    - `options.dive` (*Boolean* [opcional]): A função superficial renderiza o filho não-DOM do wrapper atual e retorna um wrapper em torno do resultado.
+    - As outras chaves são encaminhadas para o argumento de opções de `enzyme.shallow()`.
 
 #### Retornos
 
@@ -58,11 +58,11 @@ import { createShallow } from '@material-ui/core/test-utils';
 describe('<MyComponent />', () => {
   let shallow;
 
-  before(() => {  // This is Mocha; in Jest, use beforeAll
+  before(() => {  // Isto é Mocha; em Jest, use beforeAll
     shallow = createShallow();
   });
 
-  it('should work', () => {
+  it('deve funcionar', () => {
     const wrapper = shallow(<MyComponent />);
   });
 });
@@ -70,13 +70,13 @@ describe('<MyComponent />', () => {
 
 ### `createMount([options]) => mount`
 
-Generate an enhanced mount function with the needed context. Por favor, consulte [enzyme API documentation](https://airbnb.io/enzyme/docs/api/mount.html) para mais detalhes sobre o `suporte ` função.
+Gere uma função de montagem aprimorada com o contexto necessário. Por favor, consulte [a documentação da API enzyme ](https://airbnb.io/enzyme/docs/api/mount.html) para mais detalhes sobre a função `mount`.
 
 #### Argumentos
 
-1. `options` (*Object* [optional]) 
-    - `options.mount` (*Function* [optional]): The mount function to enhance, it uses **enzyme by default**.
-    - The other keys are forwarded to the options argument of `enzyme.mount()`.
+1. `options` (*Object* [opcional]) 
+    - `options.mount` (*Function* [opcional]): A função de montagem para melhorar, usa **enzyme por padrão**.
+    - As outras chaves são encaminhadas para o argumento de opções de `enzyme.mount()`.
 
 #### Retornos
 
