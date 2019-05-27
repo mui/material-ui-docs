@@ -349,15 +349,15 @@ yarn add @material-ui/styles@next
   - subheading => subtitle1
   - body2 => body1
   - body1 (padrão) => body2 (padrão)
-- [Typography] Remove the opinionated `display: block` default typography style. You can use the new `display?: 'initial' | 'inline' | 'block';` property.
-- [Typography] Rename the `headlineMapping` property to `variantMapping` to better align with its purpose.
+- [Typography] Remova o padrão opinativo do estilo da tipografia `display: block`. Você pode usar a nova propriedade `display?: 'initial' | 'inline' | 'block';`.
+- [Typography] Renomeie a propriedade `headlineMapping` para `variantMapping`, se alinha melhor com a sua finalidade.
   
   ```diff
   -<Typography headlineMapping={headlineMapping}>
   +<Typography variantMapping={variantMapping}>
   ```
 
-- [Typography] Change the default variant from `body2` to `body1`. A font size of 16px is a better default than 14px. Bootstrap, material.io, and even our documentation use 16px as a default font size. 14px like Ant Design uses is understandable, as Chinese users have a different alphabet. We recommend 12px as the default font size for Japanese.
+- [Typography] Modifique a variante padrão de `body2` para `body1`. Um tamanho de fonte de 16px é um padrão melhor que 14px. Bootstrap, material.io e até nossa documentação usam 16px como tamanho de fonte padrão. 14px como o Ant Design usa, é compreensível, já que os usuários chineses têm um alfabeto diferente. Recomendamos 12px como o tamanho de fonte padrão para japonês.
 - [Typography] Remove the default color from the typography variants. The color should inherit most of the time. It's the default behavior of the web.
 - [Typography] Rename `color="default"` to `color="initial"` following the logic of #13028. The usage of *default* should be avoided, it lakes semantic.
 
