@@ -8,15 +8,15 @@ O tamanho do pacote de Material-UI é levado muito a sério. Tiramos snapshots d
 
 ## Como reduzir o tamanho do pacote?
 
-Por conveniência, o Material-UI expõe sua API completa em nível superior na importação de `material-ui`. If you're using ES 6 modules and a bundler that supports tree-shaking ([`webpack` >= 2.x](https://webpack.js.org/guides/tree-shaking/), [`parcel` with a flag](https://en.parceljs.org/cli.html#enable-experimental-scope-hoisting/tree-shaking-support)) you can safely use named imports and expect only a minimal set of Material-UI components in your bundle:
+Por conveniência, o Material-UI expõe sua API completa em nível superior na importação de `material-ui`. Se você estiver usando módulos ES 6 e um empacotador que suporte [tree-shaking](https://pt.stackoverflow.com/a/317844) ([`webpack` >= 2.x](https://webpack.js.org/guides/tree-shaking/), [`parcel` com a opção](https://en.parceljs.org/cli.html#enable-experimental-scope-hoisting/tree-shaking-support)), você pode seguramente usar importações nomeadas e ter apenas um conjunto mínimo de componentes do Material-UI em seu pacote:
 
 ```js
 import { Button, TextField } from '@material-ui/core';
 ```
 
-Be aware that tree-shaking is an optimization that is usually only applied to production bundles. Development bundles will contain the full library which can lead to slower startup times. This is especially noticeable if you import from `@material-ui/icons`. Startup times can be approximately 6x slower than without named imports from the top-level API.
+Esteja ciente que tree-shaking é uma otimização, que geralmente é aplicada somente aos pacotes de produção. Pacotes de desenvolvimento irá conter a biblioteca completa, que pode levar tempos de inicialização mais lentos. Isso é especialmente perceptível se você importar de `@material-ui/icons`. Os tempos de inicialização podem ser aproximadamente 6 vezes mais lentos do que sem importações nomeadas da API de nível superior.
 
-If this is an issue for you you have various options:
+Se isso é um problema para você, você tem várias opções:
 
 ### Option 1
 
