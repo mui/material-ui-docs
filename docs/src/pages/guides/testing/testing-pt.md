@@ -22,13 +22,13 @@ A função `createShallow()` pode ser utilizada para esta situação. Além de e
 
 ### Renderização completa do DOM (Full)
 
-Full DOM rendering is ideal for use cases where you have components that may interact with DOM APIs or may require the full lifecycle in order to fully test the component (e.g., `componentDidMount` etc.).
+A renderização total do DOM é ideal para casos em que você tem componentes que podem interagir com as APIs do DOM, ou podem exigir o ciclo de vida completo para testar completamente o componente (por exemplo, `componentDidMount` etc).
 
 A função `createMount ()` é fornecida para esta situação. Além de envolver enzyme API, ela fornece uma função chamada `cleanUp`.
 
-### Render to string
+### Renderizar para string
 
-Rendering to a string is useful to test the behavior of the components that are used on the server. You can take advantage of this to assert the generated HTML string.
+Renderizar em uma string é útil para testar o comportamento dos componentes usados no servidor. Você pode aproveitar isso para confirmar a sequência HTML gerada.
 
 A função `createRender()` é ideal para isso. Isso é apenas um alias para enzyme API, que é apenas exposta para consistência.
 
@@ -36,12 +36,12 @@ A função `createRender()` é ideal para isso. Isso é apenas um alias para enz
 
 ### `createShallow([options]) => shallow`
 
-Generate an enhanced shallow function with the needed context. Please refer to the [enzyme API documentation](https://airbnb.io/enzyme/docs/api/shallow.html) for further details on the `shallow` function.
+Gere uma função superficial aprimorada com o contexto necessário. Por favor, consulte [a documentação da API enzyme ](https://airbnb.io/enzyme/docs/api/shallow.html) para mais detalhes sobre a função `shallow`.
 
 #### Argumentos
 
-1. `options` (*Object* [optional]) 
-    - `options.shallow` (*Function* [optional]): The shallow function to enhance, it uses **enzyme by default**.
+1. `options` (*Object* [opcional]) 
+    - `options.shallow` (*Function* [opcional]): A função superficial para melhorar, usa **enzyme por padrão**.
     - `options.untilSelector` (*String* [optional]): Recursively shallow renders the children until it can find the provided selector. It's useful to drill down higher-order components.
     - `options.dive` (*Boolean* [optional]): Shallow function renders the one non-DOM child of the current wrapper, and returns a wrapper around the result.
     - The other keys are forwarded to the options argument of `enzyme.shallow()`.
