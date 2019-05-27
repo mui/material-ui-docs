@@ -59,7 +59,7 @@ O seguinte é o esboço para o aspecto que o nosso servidor deve olhar. Vamos mo
 ```js
 import express from 'express';
 
-// We are going to fill these out in the sections to follow.
+// Vamos preenchê-las nas seções a seguir.
 function renderFullPage(html, css) {
   /* ... */
 }
@@ -77,13 +77,13 @@ const port = 3000;
 app.listen(port);
 ```
 
-### Handling the Request
+### Manipulando a requisição
 
-The first thing that we need to do on every request is create a new `ServerStyleSheets`.
+A primeira coisa que precisamos fazer em cada solicitação é criar um novo `ServerStyleSheets`.
 
-When rendering, we will wrap `App`, our root component, inside a [`StylesProvider`](/styles/api/#stylesprovider) and [`ThemeProvider`](/styles/api/#themeprovider) to make the style configuration and the `theme` available to all components in the component tree.
+Quando renderizando, vamos encapsular `App`, nosso componente raiz, dentro de um [`StylesProvider`](/styles/api/#stylesprovider) e [` ThemeProvider`](/styles/api/#themeprovider) para tornar a configuração de estilo e o ` theme` disponíveis para todos os componentes na árvore de componentes.
 
-The key step in server-side rendering is to render the initial HTML of our component **before** we send it to the client side. To do this, we use [ReactDOMServer.renderToString()](https://reactjs.org/docs/react-dom-server.html).
+A etapa principal na renderização do lado do servidor, é renderizar o HTML inicial de nosso componente **antes** de nós enviarmos para o lado do cliente. Para fazer isso, usamos [ReactDOMServer.renderToString()](https://reactjs.org/docs/react-dom-server.html).
 
 We then get the CSS from our `sheets` using `sheets.toString()`. We will see how this is passed along in our `renderFullPage` function.
 
