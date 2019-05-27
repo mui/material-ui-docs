@@ -6,6 +6,6 @@
 
 - [Grade](/components/grid/): O leiaute responsivo da grade do Material Design se adapta ao tamanho e orientação da tela, garantindo a consistência entre leiautes.
 - [Container](/components/container/): O contêiner centraliza seu conteúdo horizontalmente. É o elemento de leiaute mais básico.
-- [Breakpoints](/customization/breakpoints/): API that enables the use of breakpoints in a wide variety of contexts.
-- [useMediaQuery](/components/use-media-query/): This is a CSS media query hook for React. Ele ouve correspondências para uma consulta de mídia no CSS.
-- [Hidden](/components/hidden/): Quickly and responsively toggle the visibility value of components and more with our hidden utilities.
+- [Pontos de quebra](/customization/breakpoints/): API que permite o uso de pontos de quebra em uma ampla variedade de contextos.
+- [useMediaQuery](/components/use-media-query/): Este é um hook CSS de consulta de mídia para React. Ele ouve correspondências para uma consulta de mídia no CSS.
+- [Hidden](/components/hidden/): Modifique rapidamente e de forma responsiva a visibilidade dos componentes e muito mais com nosso utilitário hidden.
