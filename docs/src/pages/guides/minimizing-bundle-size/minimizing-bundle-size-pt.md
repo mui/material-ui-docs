@@ -67,19 +67,19 @@ Escolha um dos seguintes plugins:
         'babel-plugin-import',
         {
           libraryName: '@material-ui/icons',
-          libraryDirectory: 'esm', // or '' if your bundler does not support ES modules
+          libraryDirectory: 'esm', // ou '' se o seu empacotador não suportar módulos ES
           camel2DashComponentName: false,
         },
         ];
 
-- [babel-plugin-transform-imports](https://www.npmjs.com/package/babel-plugin-transform-import) has a different api than `babel-plugin-import` but does same thing. 
+- [babel-plugin-transform-imports](https://www.npmjs.com/package/babel-plugin-transform-import) tem uma api diferente de `babel-plugin-import`, mas faz a mesma coisa. 
         js
         [
         'transform-imports',
         {
           '@material-ui/icons': {
             transform: '@material-ui/icons/esm/${member}',
-            // for bundlers not supporting ES modules use:
+            // para empacotador que não suporta módulos ES:
             // transform: '@material-ui/icons/${member}',
           },
         },
@@ -87,8 +87,8 @@ Escolha um dos seguintes plugins:
 
 ## ECMAScript
 
-The package published on npm is **transpiled**, with [Babel](https://github.com/babel/babel), to take into account the [supported platforms](/getting-started/supported-platforms/).
+O pacote publicado no npm é **transpilado**, com [Babel](https://github.com/babel/babel), para levar em consideração as [plataformas suportadas](/getting-started/supported-platforms/).
 
-We also publish a second version of the components. You can find this version under the [`/es` folder](https://unpkg.com/@material-ui/core@next/es/). All the non-official syntax is transpiled to the [ECMA-262 standard](https://www.ecma-international.org/publications/standards/Ecma-262.htm), nothing more. This can be used to make separate bundles targeting different browsers. Older browsers will require more JavaScript features to be transpiled, which increases the size of the bundle. No polyfills are included for ES2015 runtime features. IE11+ and evergreen browsers support all the necessary features. If you need support for other browsers, consider using [`@babel/polyfill`](https://www.npmjs.com/package/@babel/polyfill).
+Também publicamos uma segunda versão dos componentes. Você pode encontrar esta versão sob a [pasta `/es`](https://unpkg.com/@material-ui/core@next/es/). Toda a sintaxe não oficial é transpilada para o padrão [ECMA-262](https://www.ecma-international.org/publications/standards/Ecma-262.htm), nada mais. Isso pode ser usado para criar pacotes separados visando diferentes navegadores. Os navegadores mais antigos exigem mais recursos JavaScript para serem transpilados, o que aumenta o tamanho do pacote. No polyfills are included for ES2015 runtime features. IE11+ and evergreen browsers support all the necessary features. If you need support for other browsers, consider using [`@babel/polyfill`](https://www.npmjs.com/package/@babel/polyfill).
 
 ⚠️ In order to minimize duplication of code in users' bundles, we **strongly discourage** library authors from using the `/es` folder.
