@@ -1,10 +1,10 @@
-# 最小化捆绑包的大小
+# 最小化打包体积
 
-<p class="description">了解有关可用于减少捆绑包大小的工具的详细信息。</p>
+<p class="description">了解有关可用于减少打包体积的工具的详细信息。</p>
 
-## 捆绑尺寸很重要
+## 打包的体积是很重要的
 
-Material-UI的包大小非常重要。 We take size snapshots on every commit for every package and critical parts of those packages ([view latest snapshot](/size-snapshot)). Combined with [dangerJS](https://danger.systems/js/) we can inspect [detailed bundle size changes](https://github.com/mui-org/material-ui/pull/14638#issuecomment-466658459) on every Pull Request.
+Material-UI 的打包体积至关重要。 每次当我们有一个新的提交时，我们会为每个包以及那些包的至关重要的部分拍个快照（[查看最新的快照](/size-snapshot)）。 结合 [dangerJS](https://danger.systems/js/) 一起，我们可以在每个 Pull Request 中都可以查看[详细的捆绑包大小变化](https://github.com/mui-org/material-ui/pull/14638#issuecomment-466658459) 。
 
 ## 如何减少捆绑尺寸？
 
@@ -33,7 +33,7 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 ```
 
-While importing directly in this manner doesn't use the exports in [`@material-ui/core/index.js`](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/index.js), this file can serve as a handy reference as to which modules are public.
+While importing directly in this manner doesn't use the exports in [`@material-ui/core/index.js`](https://github.com/mui-org/material-ui/blob/master/packages/material-ui/src/index.js), this file can serve as a handy reference as to which modules are public.
 
 Be aware that we only support first and second leve imports. Anything below is considered private and can cause module duplication in your bundle.
 
