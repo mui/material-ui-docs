@@ -309,9 +309,9 @@ yarn add @material-ui/styles@next
 
 - [TablePagination] O componente já não tenta corrigir as combinações de propriedades inválidas (`page`, `count`, `rowsPerPage`). Em vez disso, emite um aviso.
 
-### TextField
+### Campo de texto
 
-- [InputLabel] You should be able to override all the styles of the FormLabel component using the CSS API of the InputLabel component. The `FormLabelClasses` property has been removed.
+- [InputLabel] Você deve conseguir sobrescrever todos os estilos do componente FormLabel usando a API CSS do componente InputLabel. A propriedade `FormLabelClasses` foi removida.
   
   ```diff
   <InputLabel
@@ -322,24 +322,24 @@ yarn add @material-ui/styles@next
   </InputLabel>
   ```
 
-- [InputBase] Change the default box sizing model. It uses the following CSS now:
+- [InputBase] Modificado o modelo padrão de box sizing. Ele usa o seguinte CSS agora:
   
   ```css
   box-sizing: border-box;
   ```
   
-  This solves issues with the `fullWidth` prop.
+  Isso resolve problemas com a propriedade `fullWidth`.
 
-- [InputBase] Remove the `inputType` class from `InputBase`.
+- [InputBase] Remova a classe `inputType` do `InputBase`.
 
-### Tooltip
+### Dica
 
-- [Tooltip] The child needs to be able to hold a ref. O [guia de composição](/guides/composition/#caveat-with-refs) explica a estratégia de migração.
-- [Tooltip] Appears only after focus-visible focus instead of any focus.
+- [Tooltip] O elemento filho precisa ser capaz de lidar com ref. O [guia de composição](/guides/composition/#caveat-with-refs) explica a estratégia de migração.
+- [Tooltip] Aparece somente após o foco ser "focus-visible" em vez de qualquer foco.
 
-### Typography
+### Tipografia
 
-- [Typography] Remove the deprecated typography variants. You can upgrade by performing the following replacements: 
+- [Typography] Remova as variantes de tipografia descontinuadas. Você pode atualizar executando as seguintes substituições: 
   - display4 => h1
   - display3 => h2
   - display2 => h3
@@ -348,7 +348,7 @@ yarn add @material-ui/styles@next
   - title => h6
   - subheading => subtitle1
   - body2 => body1
-  - body1 (default) => body2 (default)
+  - body1 (padrão) => body2 (padrão)
 - [Typography] Remove the opinionated `display: block` default typography style. You can use the new `display?: 'initial' | 'inline' | 'block';` property.
 - [Typography] Rename the `headlineMapping` property to `variantMapping` to better align with its purpose.
   
