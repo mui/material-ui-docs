@@ -1,14 +1,14 @@
-# 最小化打包体积
+# 最小化打包文件大小
 
-<p class="description">了解有关可用于减少打包体积的工具的详细信息。</p>
+<p class="description">了解有关可用于减少打包文件大小的工具的详细信息。</p>
 
-## 打包的体积是很重要的
+## 打包文件的大小是很重要的
 
-Material-UI 的打包体积至关重要。 每次当我们有一个新的提交时，我们会为每个包以及那些包的至关重要的部分拍个快照（[查看最新的快照](/size-snapshot)）。 结合 [dangerJS](https://danger.systems/js/) 一起，我们可以在每个 Pull Request 中都可以查看[详细的捆绑包大小变化](https://github.com/mui-org/material-ui/pull/14638#issuecomment-466658459) 。
+Material-UI 的打包文件大小至关重要。 每次当我们有一个新的提交时，我们会为每个包以及那些包的至关重要的部分拍个快照（[查看最新的快照](/size-snapshot)）。 结合 [dangerJS](https://danger.systems/js/) 一起，我们可以在每个 Pull Request 中都可以查看[详细的打包文件的大小变化](https://github.com/mui-org/material-ui/pull/14638#issuecomment-466658459) 。
 
-## 如何减少捆绑尺寸？
+## 如何减少打包文件的体积？
 
-为方便起见，Material-UI在顶级 `material-ui` 导入上公开其完整API。 If you're using ES 6 modules and a bundler that supports tree-shaking ([`webpack` >= 2.x](https://webpack.js.org/guides/tree-shaking/), [`parcel` with a flag](https://en.parceljs.org/cli.html#enable-experimental-scope-hoisting/tree-shaking-support)) you can safely use named imports and expect only a minimal set of Material-UI components in your bundle:
+为方便起见，Material-UI 在顶级 `material-ui` 导入上公开其完整 API。 If you're using ES 6 modules and a bundler that supports tree-shaking ([`webpack` >= 2.x](https://webpack.js.org/guides/tree-shaking/), [`parcel` with a flag](https://en.parceljs.org/cli.html#enable-experimental-scope-hoisting/tree-shaking-support)) you can safely use named imports and expect only a minimal set of Material-UI components in your bundle:
 
 ```js
 import { Button, TextField } from '@material-ui/core';
