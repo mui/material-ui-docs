@@ -14,13 +14,13 @@ Por conveniência, o Material-UI expõe sua API completa em nível superior na i
 import { Button, TextField } from '@material-ui/core';
 ```
 
-Esteja ciente que tree-shaking é uma otimização, que geralmente é aplicada somente aos pacotes de produção. Pacotes de desenvolvimento irá conter a biblioteca completa, que pode levar tempos de inicialização mais lentos. Isso é especialmente perceptível se você importar de `@material-ui/icons`. Os tempos de inicialização podem ser aproximadamente 6 vezes mais lentos do que sem importações nomeadas da API de nível superior.
+Esteja ciente que tree-shaking é uma otimização, que geralmente é aplicada somente aos pacotes de produção. Pacotes de desenvolvimento irá conter a biblioteca completa, que pode levar tempos de inicialização mais lentos. Isso é especialmente perceptível se você importar de `@material-ui/icons`. Os tempos de inicialização podem ser aproximadamente 6 vezes mais lentos do que sem utilizar importações nomeadas da API de nível superior.
 
 Se isso é um problema para você, você tem várias opções:
 
-### Option 1
+### Opção 1
 
-You can use path imports to avoid pulling in unused modules. For instance, instead of:
+Você pode usar as importações de caminho para evitar a extração de módulos não utilizados. Por exemplo, em vez de:
 
 ```js
 import { Button, TextField } from '@material-ui/core';
@@ -33,9 +33,9 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 ```
 
-While importing directly in this manner doesn't use the exports in [`@material-ui/core/index.js`](https://github.com/mui-org/material-ui/blob/master/packages/material-ui/src/index.js), this file can serve as a handy reference as to which modules are public.
+Ao importar diretamente dessa maneira, não utiliza as exportações em [`@material-ui/core/index.js`](https://github.com/mui-org/material-ui/blob/master/packages/material-ui/src/index.js), esse arquivo pode servir como uma referência útil para quais módulos são públicos.
 
-Be aware that we only support first and second leve imports. Anything below is considered private and can cause module duplication in your bundle.
+Esteja ciente de que apoiamos apenas as importações de primeiro e segundo níveis. Qualquer coisa abaixo é considerada privada e pode causar duplicação de módulo no seu pacote.
 
 ```js
 // OK
