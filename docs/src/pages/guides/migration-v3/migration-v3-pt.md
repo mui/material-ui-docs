@@ -281,7 +281,7 @@ yarn add @material-ui/styles@next
 
 - [Tab] Remova as chaves de classe `labelContainer`, `label` e `labelWrapped` para simplificar. Isso nos permitiu remover 2 elementos DOM intermediários. Você deve conseguir mover os estilos customizados para chave de classe `root`.
   
-  ![A simpler tab item DOM structure](https://user-images.githubusercontent.com/3165635/53287870-53a35500-3782-11e9-9431-2d1a14a41be0.png)
+  ![Uma estrutura DOM de item de guia mais simples](https://user-images.githubusercontent.com/3165635/53287870-53a35500-3782-11e9-9431-2d1a14a41be0.png)
 
 - [Tabs] Remova as propriedades descontinuadas fullWidth e scrollable
   
@@ -358,8 +358,8 @@ yarn add @material-ui/styles@next
   ```
 
 - [Typography] Modifique a variante padrão de `body2` para `body1`. Um tamanho de fonte de 16px é um padrão melhor que 14px. Bootstrap, material.io e até nossa documentação usam 16px como tamanho de fonte padrão. 14px como o Ant Design usa, é compreensível, já que os usuários chineses têm um alfabeto diferente. Recomendamos 12px como o tamanho de fonte padrão para japonês.
-- [Typography] Remove the default color from the typography variants. The color should inherit most of the time. It's the default behavior of the web.
-- [Typography] Rename `color="default"` to `color="initial"` following the logic of #13028. The usage of *default* should be avoided, it lakes semantic.
+- [Typography] Remova a cor padrão das variantes de tipografia. A cor deve herdar a maior parte do tempo. É o comportamento padrão da web.
+- [Typography] Renomeie `color="default"` para `color="initial"` seguindo a lógica de #13028. O uso de *default* deve ser evitado, isso perde semântica.
 
 ### Node
 
