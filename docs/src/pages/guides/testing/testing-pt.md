@@ -8,7 +8,7 @@ Exemplos neste guia usam [métodos globais do Mocha](https://mochajs.org/api/glo
 
 Nós levamos os testes a sério. Nós escrevemos e mantemos **uma vasta gama** de testes para que possamos iterar os componentes com confiança, por exemplo, os testes de regressão visual fornecidos por [Argos-CI](https://www.argos-ci.com/mui-org/material-ui) provaram ser realmente úteis. Para saber mais sobre nossos testes internos, você pode dar uma olhada no [LEIA-ME](https://github.com/mui-org/material-ui/blob/master/test/README.md).
 
-Embora tenhamos atingido a conquista de 100% de cobertura de teste, não incentivamos nossos usuários a fazer o mesmo. [![Coverage Status](https://img.shields.io/codecov/c/github/mui-org/material-ui/master.svg)](https://codecov.io/gh/mui-org/material-ui/branch/master)
+Embora tenhamos atingido a conquista de 100% de cobertura de teste, não incentivamos nossos usuários a fazer o mesmo. [![Taxa de Cobertura](https://img.shields.io/codecov/c/github/mui-org/material-ui/master.svg)](https://codecov.io/gh/mui-org/material-ui/branch/master)
 
 ## Espaço do usuário
 
@@ -106,17 +106,17 @@ describe('<MyComponent />', () => {
 
 ### `createRender([options]) => render`
 
-Generate a render to string function with the needed context. Please refer to the [enzyme API documentation](https://airbnb.io/enzyme/docs/api/render.html) for further details on the `render` function.
+Gere uma função de render para string com o contexto necessário. Por favor, consulte [a documentação da API enzyme ](https://airbnb.io/enzyme/docs/api/render.html) para mais detalhes sobre a função `render`.
 
 #### Argumentos
 
-1. `options` (*Object* [optional]) 
-    - `options.render` (*Function* [optional]): The render function to enhance, it uses **enzyme by default**.
-    - The other keys are forwarded to the options argument of `enzyme.render()`.
+1. `options` (*Object* [opcional]) 
+    - `options.render` (*Function* [opcional]): A função de renderização para melhorar, usa **enzyme por padrão**.
+    - As outras chaves são encaminhadas para o argumento de opções de `enzyme.render()`.
 
 #### Retornos
 
-`render` (*Function*): A render to string function.
+`render` (*Function*): Uma função render para string.
 
 #### Exemplos
 
@@ -130,7 +130,7 @@ describe('<MyComponent />', () => {
     render = createRender();
   });
 
-  it('should work', () => {
+  it('deve funionar', () => {
     const wrapper = render(<MyComponent />);
   });
 });
