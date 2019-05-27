@@ -4,11 +4,11 @@
 
 ## Tamanho do pacote importa
 
-O tamanho do pacote de Material-UI é levado muito a sério. Tiramos snapshots de tamanho em cada commit, para cada pacote e partes críticas desses pacotes ([veja o último snapshot](/size-snapshot)). Combined with [dangerJS](https://danger.systems/js/) we can inspect [detailed bundle size changes](https://github.com/mui-org/material-ui/pull/14638#issuecomment-466658459) on every Pull Request.
+O tamanho do pacote de Material-UI é levado muito a sério. Tiramos snapshots de tamanho em cada commit, para cada pacote e partes críticas desses pacotes ([veja o último snapshot](/size-snapshot)). Combinado com [dangerJS](https://danger.systems/js/) podemos inspecionar [alterações detalhadas no tamanho do pacote](https://github.com/mui-org/material-ui/pull/14638#issuecomment-466658459) em cada solicitação de Pull Request.
 
 ## Como reduzir o tamanho do pacote?
 
-For convenience, Material-UI exposes its full API on the top-level `material-ui` import. If you're using ES 6 modules and a bundler that supports tree-shaking ([`webpack` >= 2.x](https://webpack.js.org/guides/tree-shaking/), [`parcel` with a flag](https://en.parceljs.org/cli.html#enable-experimental-scope-hoisting/tree-shaking-support)) you can safely use named imports and expect only a minimal set of Material-UI components in your bundle:
+Por conveniência, o Material-UI expõe sua API completa em nível superior na importação de `material-ui`. If you're using ES 6 modules and a bundler that supports tree-shaking ([`webpack` >= 2.x](https://webpack.js.org/guides/tree-shaking/), [`parcel` with a flag](https://en.parceljs.org/cli.html#enable-experimental-scope-hoisting/tree-shaking-support)) you can safely use named imports and expect only a minimal set of Material-UI components in your bundle:
 
 ```js
 import { Button, TextField } from '@material-ui/core';
