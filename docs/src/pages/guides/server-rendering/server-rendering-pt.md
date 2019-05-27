@@ -85,7 +85,7 @@ Quando renderizando, vamos encapsular `App`, nosso componente raiz, dentro de um
 
 A etapa principal na renderização do lado do servidor, é renderizar o HTML inicial de nosso componente **antes** de nós enviarmos para o lado do cliente. Para fazer isso, usamos [ReactDOMServer.renderToString()](https://reactjs.org/docs/react-dom-server.html).
 
-We then get the CSS from our `sheets` using `sheets.toString()`. We will see how this is passed along in our `renderFullPage` function.
+Em seguida, obtemos o CSS de nossas `folhas` usando `sheets.toString()`. Vamos ver como isso é passado em nossa função `renderFullPage`.
 
 ```jsx
 import express from 'express';
@@ -125,9 +125,9 @@ const port = 3000;
 app.listen(port);
 ```
 
-### Inject Initial Component HTML and CSS
+### Injetar Componente Inicial HTML e CSS
 
-The final step on the server-side is to inject our initial component HTML and CSS into a template to be rendered on the client side.
+A etapa final no lado do servidor é injetar nosso componente HTML e CSS inicial em um modelo a ser renderizado no lado do cliente.
 
 ```js
 function renderFullPage(html, css) {
@@ -135,7 +135,7 @@ function renderFullPage(html, css) {
     <!DOCTYPE html>
     <html>
       <head>
-        <title>My page</title>
+        <title>Minha página</title>
         <style id="jss-server-side">${css}</style>
       </head>
       <body>
@@ -146,9 +146,9 @@ function renderFullPage(html, css) {
 }
 ```
 
-### The Client Side
+### O lado do cliente
 
-The client side is straightforward. All we need to do is remove the server-side generated CSS. Let's take a look at our client file:
+O lado do cliente é direto. Tudo o que precisamos fazer é remover o CSS gerado no lado do servidor. Vamos dar uma olhada no nosso arquivo de cliente:
 
 `client.js`
 
@@ -177,14 +177,14 @@ function Main() {
 ReactDOM.hydrate(<Main />, document.querySelector('#root'));
 ```
 
-## Reference implementations
+## Implementações de referência
 
-We host different reference implementations which you can find in the [GitHub repository](https://github.com/mui-org/material-ui) under the [`/examples`](https://github.com/mui-org/material-ui/tree/master/examples) folder:
+Nós hospedamos diferentes implementações de referência que você pode encontrar no [repositório GitHub](https://github.com/mui-org/material-ui) sob a pasta o [`/examples`](https://github.com/mui-org/material-ui/tree/master/examples):
 
-- [The reference implementation of this tutorial](https://github.com/mui-org/material-ui/tree/master/examples/ssr)
+- [A implementação de referência deste tutorial](https://github.com/mui-org/material-ui/tree/master/examples/ssr)
 - [Gatsby](https://github.com/mui-org/material-ui/tree/master/examples/gatsby)
 - [Next.js](https://github.com/mui-org/material-ui/tree/master/examples/nextjs)
 
-## Troubleshooting
+## Resolução de problemas
 
 Check out our FAQ answer: [My App doesn't render correctly on the server](/getting-started/faq/#my-app-doesnt-render-correctly-on-the-server).
