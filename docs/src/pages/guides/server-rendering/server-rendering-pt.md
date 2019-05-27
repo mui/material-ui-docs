@@ -187,4 +187,4 @@ Nós hospedamos diferentes implementações de referência que você pode encont
 
 ## Resolução de problemas
 
-Check out our FAQ answer: [My App doesn't render correctly on the server](/getting-started/faq/#my-app-doesnt-render-correctly-on-the-server).
+Confira nossa resposta FAQ: [Minha aplicação não é renderizada corretamente no servidor](/getting-started/faq/#my-app-doesnt-render-correctly-on-the-server).
