@@ -4,7 +4,7 @@
   "toggleTheme": "Alternar tema claro/escuro",
   "toggleRTL": "Alternar da direita para a esquerda/esquerda para a direita",
   "github": "Repositório no GitHub",
-  "strapline": "Componentes React para um desenvolvimento mais rápido e mais fácil. Construa seu próprio design, ou inicie com Material Design.",
+  "strapline": "Componentes React para um desenvolvimento mais rápido e fácil. Construa seu próprio design, ou comece com Material Design.",
   "getStarted": "Comece a Usar",
   "installation": "Instalação",
   "installDescr": "Instale o Material-UI via npm. Nós cuidamos de injetar o CSS necessário.",
