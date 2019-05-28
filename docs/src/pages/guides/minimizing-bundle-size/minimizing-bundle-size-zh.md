@@ -14,7 +14,7 @@ Material-UI 的打包文件大小至关重要。 每次当我们有一个新的�
 import { Button, TextField } from '@material-ui/core';
 ```
 
-Be aware that tree-shaking is an optimization that is usually only applied to production bundles. Development bundles will contain the full library which can lead to slower startup times. This is especially noticeable if you import from `@material-ui/icons`. Startup times can be approximately 6x slower than without named imports from the top-level API.
+请注意 tree-shaking 通常只运用于生产环境的打包优化。 开发环境的打包则涵盖了完整的库，因此加载时间会比较慢。 在当您导入 `@material-ui/icons` 的时候，这个情况特别显著。 Startup times can be approximately 6x slower than without named imports from the top-level API.
 
 If this is an issue for you you have various options:
 
