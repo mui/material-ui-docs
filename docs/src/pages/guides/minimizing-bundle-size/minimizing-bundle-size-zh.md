@@ -8,7 +8,7 @@ Material-UI 的打包文件大小至关重要。 每次当我们有一个新的�
 
 ## 如何减少打包文件的体积？
 
-为方便起见，Material-UI 在顶级 `material-ui` 的 import 上暴露其完整 API。 If you're using ES 6 modules and a bundler that supports tree-shaking ([`webpack` >= 2.x](https://webpack.js.org/guides/tree-shaking/), [`parcel` with a flag](https://en.parceljs.org/cli.html#enable-experimental-scope-hoisting/tree-shaking-support)) you can safely use named imports and expect only a minimal set of Material-UI components in your bundle:
+为方便起见，Material-UI 在顶级 `material-ui` 的 import 上暴露其完整 API。 如果您正在使用 ES 6 的模块，以及一个支持 tree-shaking 的 bundle（ 要求 [`webpack` >= 2.x](https://webpack.js.org/guides/tree-shaking/)，[带有 flag 的 `parcel 打包`](https://en.parceljs.org/cli.html#enable-experimental-scope-hoisting/tree-shaking-support)) ，那么您则可以安全的使用命名的 imports，并且在您的 bundle 文件里面，预期会产生一个的最小配置的 Material-UI 组件。
 
 ```js
 import { Button, TextField } from '@material-ui/core';
