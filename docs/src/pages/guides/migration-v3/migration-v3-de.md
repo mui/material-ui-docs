@@ -1,10 +1,10 @@
 # Migration From v3 to v4
 
-<p class="description">Yeah, v4 alpha has been released!</p>
+<p class="description">Ja, v4 wurde veröffentlicht!</p>
 
 Looking for the v3 docs? [Find them here](https://material-ui.com/versions/).
 
-> This document is a work in progress. Have you upgraded your site and run into something that's not covered here? [Add your changes on GitHub](https://github.com/mui-org/material-ui/blob/next/docs/src/pages/guides/migration-v3/migration-v3.md)
+> This document is a work in progress. Have you upgraded your site and run into something that's not covered here? [Add your changes on GitHub](https://github.com/mui-org/material-ui/blob/master/docs/src/pages/guides/migration-v3/migration-v3.md)
 
 ## Introduction
 
@@ -12,7 +12,7 @@ This is a reference for upgrading your site from Material-UI v3 to v4. While the
 
 ## Why you should migrate
 
-This documentation page covers the *how* of migrating from v3 to v4. The *why* is covered in the release blog post: [*Work in progress, on Medium*](https://medium.com/material-ui).
+This documentation page covers the *how* of migrating from v3 to v4. The *why* is covered in the [release blog post on Medium](https://medium.com/material-ui/material-ui-v4-is-out-4b7587d1e701).
 
 ## Updating Your Dependencies
 
@@ -24,7 +24,7 @@ You need to update your `package.json` to use the latest version of Material-UI.
 
 ```json
 "dependencies": {
-  "@material-ui/core": "^4.0.0-beta.0"
+  "@material-ui/core": "^4.0.0"
 }
 ```
 
@@ -48,7 +48,7 @@ If you are previously using `@material-ui/styles` with v3 you need to update you
 
 ```json
 "dependencies": {
-  "@material-ui/styles": "^4.0.0-beta.0"
+  "@material-ui/styles": "^4.0.0"
 }
 ```
 
@@ -110,9 +110,9 @@ yarn add @material-ui/styles@next
 
 - You can safely remove the next variant from the theme creation:
   
-  ```js
+  ```diff
   typography: {
-    useNextVariants: true,
+  - useNextVariants: true,
   },
   ```
 
@@ -127,7 +127,11 @@ yarn add @material-ui/styles@next
   }
   ```
   
+  You can use the `https://github.com/mui-org/material-ui/tree/master/packages/material-ui-codemod/README.md#theme-spacing-api` migration helper to make the migration process smoother.
+  
   *Tip: you can provide more than 1 argument: theme.spacing(1, 2) // = '8px 16px'*
+  
+  You can use [the migration helper](https://github.com/mui-org/material-ui/tree/master/packages/material-ui-codemod/README.md#theme-spacing-api) on your project to make this smoother.
 
 ### Layout
 
@@ -170,6 +174,13 @@ yarn add @material-ui/styles@next
   -<Button variant="fab" />
   +import Fab from '@material-ui/core/Fab';
   +<Fab />
+  ```
+  
+  ```diff
+  -import Button from '@material-ui/core/Button';
+  -<Button variant="extendedFab" />
+  +import Fab from '@material-ui/core/Fab';
+  +<Fab variant="extended />
   ```
 
 - [ButtonBase] The component passed to the `component` prop needs to be able to hold a ref. The [composition guide](/guides/composition/#caveat-with-refs) explains the migration strategy.
