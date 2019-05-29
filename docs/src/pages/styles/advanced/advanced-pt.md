@@ -83,7 +83,7 @@ O tema interno **sobrescreverá** o tema exterior. Você pode estender o tema ex
 
 ## Sobrescrevendo estilos - Propriedade `classes`
 
-O `makeStyles` (hook generator) e `withStyles` (HOC) APIs permitem a criação de várias regras de estilos por folha de estilo. Cada regra de estilo tem seu próprio nome de classe. Os nomes das classes são fornecidos para o componente com a variável `classes`. Isso é particularmente útil ao estilizar elementos aninhados em um componente.
+O `makeStyles` (hook generator) e `withStyles` (HOC) APIs permitem a criação de várias regras de estilos por folha de estilo. Cada regra de estilo tem seu próprio nome de classe. Os nomes das classes são fornecidos para o componente com a variável `classes`. This is particularly useful when styling nested elements in a component.
 
 ```jsx
 // Uma folha de estilo
