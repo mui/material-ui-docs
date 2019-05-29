@@ -52,7 +52,7 @@ const raleway = {
 };
 ```
 
-Então, você pode alterar o tema para usar essa nova fonte. Isso requer o uso do componente [`CssBaseline`](/components/css-baseline/) para definir globalmente Raleway como a família da fonte.
+Então, você pode alterar o tema para usar essa nova fonte. In order to globally define Raleway as a font face the [`CssBaseline`](/components/css-baseline/) component needs to be used.
 
 ```js
 const theme = createMuiTheme({
@@ -74,7 +74,7 @@ const theme = createMuiTheme({
   overrides: {
     MuiCssBaseline: {
       '@global': {
-        '@font-family': [raleway],
+        '@font-face': [raleway],
       },
     },
   },
