@@ -72,7 +72,7 @@ import { Link as RouterLink } from 'react-router-dom';
 
 class ListItemLink extends React.Component {
   renderLink = React.forwardRef((itemProps, ref) => (
-    // with react-router-dom@^5.0.0 use `ref` instead of `innerRef`
+    // com react-router-dom@^5.0.0 use `ref` ao invés de `innerRef`
     <RouterLink to={this.props.to} {...itemProps} innerRef={ref} />
   ));
 
