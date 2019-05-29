@@ -12,7 +12,7 @@ Esta é uma referência para atualizar seu site de Material-UI v3 para v4. Embor
 
 ## Por que você deve migrar
 
-Esta página de documentação cobre o *como* migrar da v3 para a v4. The *why* is covered in the [release blog post on Medium](https://medium.com/material-ui/material-ui-v4-is-out-4b7587d1e701).
+Esta página de documentação cobre o *como* migrar da v3 para a v4. O *por que* é abordado na [postagem no blog do Medium](https://medium.com/material-ui/material-ui-v4-is-out-4b7587d1e701).
 
 ## Atualizando suas Dependências
 
