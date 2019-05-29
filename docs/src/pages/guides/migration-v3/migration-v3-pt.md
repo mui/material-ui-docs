@@ -1,6 +1,6 @@
 # Migrando da v3 para v4
 
-<p class="description">Sim, v4 alpha foi liberada!</p>
+<p class="description">Sim, v4 foi lançada!</p>
 
 Procurando pelos documentos da v3? [Encontre-os aqui](https://material-ui.com/versions/).
 
@@ -12,7 +12,7 @@ Esta é uma referência para atualizar seu site de Material-UI v3 para v4. Embor
 
 ## Por que você deve migrar
 
-Esta página de documentação cobre o *como* migrar da v3 para a v4. O *por que* é coberto na postagem do blog de lançamento: [*Trabalho em andamento, no Medium*](https://medium.com/material-ui).
+Esta página de documentação cobre o *como* migrar da v3 para a v4. The *why* is covered in the [release blog post on Medium](https://medium.com/material-ui/material-ui-v4-is-out-4b7587d1e701).
 
 ## Atualizando suas Dependências
 
@@ -110,9 +110,9 @@ yarn add @material-ui/styles@next
 
 - Você pode remover com segurança a opção `useNextVariants` do tema:
   
-  ```js
+  ```diff
   typography: {
-    useNextVariants: true,
+  - useNextVariants: true,
   },
   ```
 
@@ -127,7 +127,11 @@ yarn add @material-ui/styles@next
   }
   ```
   
+  You can use the `https://github.com/mui-org/material-ui/tree/master/packages/material-ui-codemod/README.md#theme-spacing-api` migration helper to make the migration process smoother.
+  
   *Dica: você pode fornecer mais de 1 argumento: theme.spacing (1, 2) // = '8px 16px'*
+  
+  You can use [the migration helper](https://github.com/mui-org/material-ui/tree/master/packages/material-ui-codemod/README.md#theme-spacing-api) on your project to make this smoother.
 
 ### Leiaute
 
@@ -170,6 +174,13 @@ yarn add @material-ui/styles@next
   -<Button variant="fab" />
   +import Fab from '@material-ui/core/Fab';
   +<Fab />
+  ```
+  
+  ```diff
+  -import Button from '@material-ui/core/Button';
+  -<Button variant="extendedFab" />
+  +import Fab from '@material-ui/core/Fab';
+  +<Fab variant="extended />
   ```
 
 - [ButtonBase] O componente passado para a propriedade `component` precisa ser capaz de lidar com ref. O [guia de composição](/guides/composition/#caveat-with-refs) explica a estratégia de migração.
