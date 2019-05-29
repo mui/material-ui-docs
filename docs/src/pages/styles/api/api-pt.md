@@ -51,7 +51,7 @@ Esta função realmente não "faz nada" em tempo de execução, é apenas uma fu
 ```jsx
 import { makeStyles, createStyles } from '@material-ui/styles';
 
-const styles = makeStyles((theme: Theme) => createStyles({
+const useStyles = makeStyles((theme: Theme) => createStyles({
   root: {
     backgroundColor: theme.color.red,
   },
