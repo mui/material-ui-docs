@@ -1,6 +1,6 @@
 <h2 align="center">Apoiadores do Material-UI</h2>
 
-O Material-UI é um projeto open source de licença MIT. É um projeto independente em desenvolvimento possibilitado totalmente graças ao suporte desses maravilhosos [apoiadores](/discover-more/backers/).
+O Material-UI é um projeto open source de licença MIT. É um projeto independente com desenvolvimento contínuo, possibilitado totalmente graças ao suporte desses maravilhosos [apoiadores](/discover-more/backers/).
 
 ### Patrocinadores de Ouro
 
