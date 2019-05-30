@@ -24,7 +24,7 @@ L'icône résultante peut être utilisée telle quelle, ou incluse en tant qu'en
 Il est intéressant de disposer des éléments nécessaires à la mise en œuvre d'icônes personnalisées, mais qu'en est-il des préréglages? Nous fournissons un package npm séparé, [@ material-ui / icons](https://www.npmjs.com/package/@material-ui/icons), qui inclut les 1 000+ icônes de matériau [officielles](https://material.io/tools/icons/?style=baseline) converties en composants `SvgIcon`.
 
 <a href="https://material.io/tools/icons/?icon=3d_rotation&style=baseline">
-  <img src="/static/images/icons/icons.png" alt="Official material icons" style="width: 566px" />
+  <img src="/static/images/icons/icons.png" alt="Icônes matérielles officielles" style="width: 566px" />
 </a>
 
 #### Utilisation
@@ -116,9 +116,9 @@ Si vos icônes sont purement décoratives, vous avez déjà terminé! Nous ajout
 
 ### Icônes SVG sémantiques
 
-If your icon has semantic meaning, all you need to do is throw in a `titleAccess="meaning"` property. We add the `role="img"` attribute and the `<title>` element so that your icons are properly accessible.
+Si votre icône a une signification sémantique, il vous suffit d'ajouter une propriété `titleAccess = "meaning"` . Nous ajoutons l'attribut `role = "img"` et l'élément`<title>` afin que vos icônes soient correctement accessibles.
 
-In the case of focusable interactive elements, like when used with an icon button, you can use the `aria-label` property:
+Dans le cas d'éléments interactifs "focusable", comme avec un bouton icône, vous pouvez utiliser la propriété `aria-label`:
 
 ```jsx
 import IconButton from '@material-ui/core/IconButton';
@@ -133,13 +133,13 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 </IconButton>
 ```
 
-### Decorative Font Icons
+### Icônes de polices décoratives
 
 Si vos icônes sont purement décoratives, vous avez déjà terminé! Nous ajoutons l'attribut `aria-hidden = true` pour que vos icônes soient correctement accessibles (invisibles).
 
-### Semantic Font Icons
+### Icônes de polices sémantiques
 
-If your icons have semantic meaning, you need to provide a text alternative only visible to assistive technologies.
+Si vos icônes ont un sens sémantique, vous devez fournir une alternative textuelle uniquement visible aux technologies d'assistance.
 
 ```jsx
 import Icon from '@material-ui/core/Icon';
@@ -148,9 +148,9 @@ import Typography from '@material-ui/core/Typography';
 // ...
 
 <Icon>add_circle</Icon>
-<Typography variant="srOnly">Create a user</Typography>
+<Typography variant="srOnly">Créez un utilisateur</Typography>
 ```
 
-### Reference
+### Référence
 
 - https://developer.paciellogroup.com/blog/2013/12/using-aria-enhance-svg-accessibility/
