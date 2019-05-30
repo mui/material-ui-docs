@@ -102,19 +102,19 @@ Par défaut, une icône héritera de la couleur de texte actuelle. Vous pouvez �
 
 ## Police vs SVG. Quelle approche utiliser?
 
-Both approaches work fine, however, there are some subtle differences, especially in terms of performance and rendering quality. Whenever possible SVG is preferred as it allows code splitting, supports more icons, renders faster and better.
+Les deux approches fonctionnent bien, cependant, il existe quelques différences subtiles, notamment en termes de performances et de qualité de rendu. Lorsque cela est possible, Le SVG est préférable car il permet la division de code, prend en charge plus d'icônes, rend les rendus plus rapidement et mieux.
 
-For more details, you can check out [why GitHub migrated from font icons to SVG icons](https://github.blog/2016-02-22-delivering-octicons-with-svg/).
+Pour plus de détails, vous pouvez voir [pourquoi GitHub a migré d'icônes de police en icônes SVG](https://github.blog/2016-02-22-delivering-octicons-with-svg/).
 
 ## Accessibilité
 
-Icons can convey all sorts of meaningful information, so it’s important that they reach the largest amount of people possible. There are two use cases you’ll want to consider: - **Decorative Icons** are only being used for visual or branding reinforcement. If they were removed from the page, users would still understand and be able to use your page. - **Semantic Icons** are ones that you’re using to convey meaning, rather than just pure decoration. This includes icons without text next to them used as interactive controls — buttons, form elements, toggles, etc.
+Les icônes peuvent transmettre toutes sortes d'informations utiles. Il est donc important qu'elles atteignent le plus grand nombre de personnes possible. Il convient de prendre en compte deux cas d'utilisation: - **Les icônes décoratives** ne sont utilisées que pour le renforcement visuel ou le marquage. S'ils étaient supprimés de la page, les utilisateurs comprendraient toujours et pourraient utiliser votre page. - **Les Icônes sémantiques** sont celles que vous utilisez pour transmettre du sens, plutôt que de simples décorations. Cela inclut les icônes sans texte adjacentes utilisées comme commandes interactives - boutons, éléments de formulaire, bascules, etc.
 
-### Decorative SVG Icons
+### Icônes SVG décoratives
 
-If your icons are purely decorative, you’re already done! We add the `aria-hidden=true` attribute so that your icons are properly accessible (invisible).
+Si vos icônes sont purement décoratives, vous avez déjà terminé! Nous ajoutons l'attribut `aria-hidden = true` pour que vos icônes soient correctement accessibles (invisibles).
 
-### Semantic SVG Icons
+### Icônes SVG sémantiques
 
 If your icon has semantic meaning, all you need to do is throw in a `titleAccess="meaning"` property. We add the `role="img"` attribute and the `<title>` element so that your icons are properly accessible.
 
@@ -135,7 +135,7 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 
 ### Decorative Font Icons
 
-If your icons are purely decorative, you’re already done! We add the `aria-hidden=true` attribute so that your icons are properly accessible (invisible).
+Si vos icônes sont purement décoratives, vous avez déjà terminé! Nous ajoutons l'attribut `aria-hidden = true` pour que vos icônes soient correctement accessibles (invisibles).
 
 ### Semantic Font Icons
 
