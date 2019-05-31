@@ -26,7 +26,7 @@ If this is an issue for you you have various options:
 import { Button, TextField } from '@material-ui/core';
 ```
 
-use:
+现在我们根据需要引入部分组件
 
 ```js
 import Button from '@material-ui/core/Button';
