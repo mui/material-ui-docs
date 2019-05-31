@@ -20,7 +20,7 @@ If this is an issue for you you have various options:
 
 ### 选项1
 
-You can use path imports to avoid pulling in unused modules. For instance, instead of:
+你可以按需引入，以避免导入不需要用到的模块 全局导入是这样的
 
 ```js
 import { Button, TextField } from '@material-ui/core';
