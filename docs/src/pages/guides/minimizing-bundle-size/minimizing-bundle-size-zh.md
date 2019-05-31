@@ -16,7 +16,7 @@ import { Button, TextField } from '@material-ui/core';
 
 请注意 tree-shaking 通常只运用于生产环境的打包优化。 开发环境的打包则涵盖了完整的库，因此加载时间会比较慢。 在当您导入 `@material-ui/icons` 的时候，这个情况特别显著。 加载时间会大约比那些从顶层 API 的名字导入方式慢六倍。
 
-If this is an issue for you you have various options:
+如果你认为这将是一个问题，你可以有以下几种选择：
 
 ### 选项1
 
@@ -72,7 +72,7 @@ Pick one of the following plugins:
         },
         ];
 
-- [babel-plugin-transform-imports](https://www.npmjs.com/package/babel-plugin-transform-import) has a different api than `babel-plugin-import` but does same thing. 
+- [<0> babel-plugin-transform-imports </0>](https://www.npmjs.com/package/babel-plugin-transform-import) 和` babel-plugin-import `的api不同，但做了同样的事情。 
         js
         [
         'transform-imports',
