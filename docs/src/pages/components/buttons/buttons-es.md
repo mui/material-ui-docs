@@ -76,7 +76,7 @@ La transición Zoom se puede usar para lograr esto. Ten en cuenta que ya que las
 
 ## Tamaños
 
-Fancy larger or smaller buttons? Use the `size` property.
+Botones más grandes o más pequeños? Usa la propiedad `size`.
 
 {{"demo": "pages/components/buttons/ButtonSizes.js"}}
 
@@ -144,4 +144,4 @@ However:
 </span>
 ```
 
-This has the advantage of supporting any element, for instance, a link `<a>` element.
+Este tiene la ventaja de permitir cualquier elemento, por ejemplo un enlace `<a>`<a></0>.</p>
