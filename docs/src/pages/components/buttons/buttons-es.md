@@ -44,7 +44,7 @@ Los botones delineados también son una alternativa de menos énfasis que los bo
 
 {{"demo": "pages/components/buttons/OutlinedButtons.js"}}
 
-## Grouped Buttons
+## Botones Agrupados
 
 The ButtonGroup component can be used to group outlined (the default) or contained buttons.
 
