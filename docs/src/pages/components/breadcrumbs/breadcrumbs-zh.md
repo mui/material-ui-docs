@@ -31,11 +31,11 @@ components: Breadcrumbs, Link, Typography
 
 {{"demo": "pages/components/breadcrumbs/CustomizedBreadcrumbs.js"}}
 
-## Integration with react-router
+## 与 react-router 的交互
 
 {{"demo": "pages/components/breadcrumbs/RouterBreadcrumbs.js"}}
 
-## 可访问性
+## 可及性
 
 (WAI-ARIA: https://www.w3.org/TR/wai-aria-practices/#breadcrumb)
 
