@@ -112,13 +112,13 @@ ButtonGroup 也可用于创建分割按钮。 下拉列表可以用于更改按�
 
 One common use case is to use the button to trigger navigation to a new page. `ButtonBase` 组件提供了一个处理此用例的属性：`component`。 然而，对于一些特定的 `ButtonBase` 填补方案，我们则需提供组件的 DOM 节点。 在组件上附加一个 ref，并且预期此组件能够将这个 ref 传递到下层 DOM 节点，通过这样的方法可以实现。 鉴于我们的许多交互式组件都依赖于 `ButtonBase`，您可以在任何情况都能受益于它。
 
-Here is an [integration example with react-router](/guides/composition/#button).
+这有一个[与 react-router 交互的例子](/guides/composition/#button)。
 
 ## 局限性
 
-### Cursor not-allowed
+### Cursor（鼠标悬浮）禁用
 
-The ButtonBase component sets `pointer-events: none;` on disabled buttons. which prevents the appearance of a disabled cursor.
+ButtonBase 组件会在禁用按钮上将属性设置为 `pointer-events: none;`。 which prevents the appearance of a disabled cursor.
 
 If you wish to use `not-allowed`, you have two options:
 
