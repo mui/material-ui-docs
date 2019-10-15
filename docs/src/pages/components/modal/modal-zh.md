@@ -31,7 +31,7 @@ The component renders its `children` node in front of a backdrop component. The 
 
 Notice that you can disable the outline (often blue or gold) with the `outline: 0` CSS property.
 
-## 过渡动画
+## Transitions（过渡动画）
 
 The open/close state of the modal can be animated with a transition component. This component should respect the following conditions:
 
