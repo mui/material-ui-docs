@@ -31,7 +31,7 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 - 问一个问题（例如："是否删除此对话？”）
 - 发表一个和动作按钮相关的声明
 
-仅在高风险情况下使用标题栏警报，例如可能丢失连接。 用户应该能够仅根据标题和按钮文本来理解选择。
+请仅在高风险情况下使用标题栏警报，考虑到可能丢失连接。 用户应该能够单凭标题和按钮文本来理解所有的选项。
 
 如果需要加上标题请:
 
@@ -40,7 +40,7 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 
 {{"demo": "pages/components/dialogs/AlertDialog.js"}}
 
-## 过渡动画
+## Transitions（过渡动画）
 
 当然你也可以换掉过渡效果，下面的示例使用了 ` Slide（幻灯片）`。
 
@@ -97,7 +97,7 @@ function MyComponent() {
 
 ## 可拖动的对话框
 
-您可以通过 [react-draggable](https://github.com/mzabriskie/react-draggable) 来创建一个可拖动的对话框。 To do so, you can pass the the imported `Draggable` component as the `PaperComponent` of the `Dialog` component. 这样一来，您可以拖动整个对话框。
+您可以通过 [react-draggable](https://github.com/mzabriskie/react-draggable) 来创建一个可拖动的对话框。 您可以将需要导入的 `Draggable` 组件作为 `Dialog` 组件的 `PaperComponent` 来传入。 这样一来，您可以拖动整个对话框。
 
 {{"demo": "pages/components/dialogs/DraggableDialog.js"}}
 
