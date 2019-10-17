@@ -57,6 +57,6 @@ Two Universal Module Definition (**UMD**) files are provided:
 
 您可以按照[此CDN示例](https://github.com/mui-org/material-ui/tree/master/examples/cdn)快速开始。
 
-⚠️ Using this approach in **production** is **discouraged** though - the client has to download the entire library, regardless of which components are actually used, affecting performance and bandwidth utilization.
+⚠️在**生产环境**使用这种方式是**不推荐**的，因为客户端必须下载整个库，而不管实际上只使用哪些组件，这样的话会影响性能和带宽利用率。
 
 ⚠️ UMD 链接使用 `latest` 标签指向最新版本的库。 这个指向是**不稳定的**，它随着我们发布的新版本而改变。 You should consider pointing to a specific version, such as [v4.4.0](https://unpkg.com/@material-ui/core@4.4.0/umd/material-ui.development.js).
