@@ -59,4 +59,4 @@ yarn add @material-ui/icons
 
 ⚠️在**生产环境**使用这种方式是**不推荐**的，因为客户端必须下载整个库，而不管实际上只使用哪些组件，这样的话会影响性能和带宽利用率。
 
-⚠️ UMD 链接使用 `latest` 标签指向最新版本的库。 这个指向是**不稳定的**，它随着我们发布的新版本而改变。 You should consider pointing to a specific version, such as [v4.4.0](https://unpkg.com/@material-ui/core@4.4.0/umd/material-ui.development.js).
+⚠️ UMD 链接使用 `latest` 标签指向最新版本的库。 这个指向是**不稳定的**，它随着我们发布的新版本而改变。 您应该考虑指向一个具体的版本，如 [v4.4.0](https://unpkg.com/@material-ui/core@4.4.0/umd/material-ui.development.js)。
