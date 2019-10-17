@@ -12,7 +12,7 @@
 
 There are [some example projects](/getting-started/example-projects/) available, providing the infrastructure needed to develop and deploy websites in React.
 
-## Templates
+## 模板
 
 This [selection of basic templates](/getting-started/templates/) will help you get started building your app.
 
