@@ -2,9 +2,9 @@
 title: Free React Templates
 ---
 
-# React Templates
+# React 模板
 
-<p class="description">A selection of basic react templates to help you get started building your app. The collection contains react dashboard, admin, and more.</p>
+<p class="description">一系列基础的 React 模板可以帮助您开始构建应用程序。该集合包含 React 仪表板，后台等。</p>
 
 The templates can be combined with one of the [example applications](https://github.com/mui-org/material-ui/tree/master/examples) to form a complete starter.
 
@@ -18,6 +18,6 @@ So far we have demos for dashboard, sign in page, sign up page, blog page, check
 
 ## 高级版主题
 
-Looking for something more? You can find complete templates & themes in the <a href="https://themes.material-ui.com/" data-ga-event-category="premium-themes" data-ga-event-action="click" data-ga-event-label="templates-link">premium themes section</a>.
+寻找更多？ 您可以在 <a href="https://themes.material-ui.com/" data-ga-event-category="premium-themes" data-ga-event-action="click" data-ga-event-label="templates-link">高级主题部分</a>找到完整的模板 & 主题。
 
 <a href="https://themes.material-ui.com/" data-ga-event-category="premium-themes" data-ga-event-action="click" data-ga-event-label="templates-image"><img src="/static/images/themes-light.jpg" alt="react templates" /></a>
