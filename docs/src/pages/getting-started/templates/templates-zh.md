@@ -12,9 +12,9 @@ Sections of each layout are clearly defined either by comments or use of separat
 
 {{"demo": "pages/getting-started/templates/Templates.js", "hideHeader": true}}
 
-If while using these examples you make changes or enhancements that could improve the developer experience, or you would like to contribute an additional example, please consider creating a [pull request on GitHub](https://github.com/mui-org/material-ui/pulls).
+如果您在使用这些示例时进行了更改或增强以改善开发人员的体验，或者您想提供其他示例，请考虑在GitHub</a>上创建 pull 请求。</p> 
 
-So far we have demos for dashboard, sign in page, sign up page, blog page, checkout flow, album page, pricing page, and sticky footer page.
+到目前为止，我们提供了有关仪表板，登录页面，注册页面，博客页面，结帐流程，相册页面，定价页面和粘性页脚页面的演示。
 
 ## 高级版主题
 
