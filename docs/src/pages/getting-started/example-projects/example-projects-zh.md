@@ -1,8 +1,8 @@
 # 范例项目
 
-<p class="description">A selection of example projects to get started with.</p>
+<p class="description">一些入门示例项目。</p>
 
-## Official examples
+## 官方例子
 
 You can find some example projects in the [GitHub repository](https://github.com/mui-org/material-ui) under the [`/examples`](https://github.com/mui-org/material-ui/tree/master/examples) folder:
 
