@@ -50,7 +50,7 @@ yarn add @material-ui/icons
 
 您可以使用最少的前端基础架构开始使用Material-UI，这对于原型设计很有用
 
-Two Universal Module Definition (**UMD**) files are provided:
+提供两个通用模块定义（** UMD ** ）的文件：
 
 - 一个用于开发: https://unpkg.com/@material-ui/core@latest/umd/material-ui.development.js
 - 一个用于生产: https://unpkg.com/@material-ui/core@latest/umd/material-ui.production.min.js
