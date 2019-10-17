@@ -4,7 +4,7 @@
 
 ## 官方示例
 
-您可以在[ GitHub存储库](https://github.com/mui-org/material-ui)中的[`/ examples`](https://github.com/mui-org/material-ui/tree/master/examples)文件夹下找到一些示例项目：
+您可以在[ GitHub存储库](https://github.com/mui-org/material-ui)中的[`/examples`](https://github.com/mui-org/material-ui/tree/master/examples)文件夹下找到一些示例项目：
 
 - [Create React App](https://github.com/mui-org/material-ui/tree/master/examples/create-react-app)
 - [Gatsby](https://github.com/mui-org/material-ui/tree/master/examples/gatsby)
@@ -24,10 +24,10 @@ Create React App 是一个很棒的学习 React 的项目。 请看一下这些[
 
 - [React Most Wanted](https://github.com/TarikHuber/react-most-wanted)，包括：
     
-  - Created with Create React App
+  - 使用 Create React App 创建
   - Custom Create React App script to start a new project with just a single CLI command
-  - Build for Firebase including Authentication using the official Firebase Web Auth UI
-  - Routing with React Router including error handling (404) and lazy loading
+  - 使用官方的 Firebase Web Auth UI 进行 Firebase 的构建，包括身份验证
+  - 使用 React Router 进行路由，包括错误处理（404）和延迟加载
   - All PWA features included (SW, Notifications, deffered installation prompt and more)
   - Optimized and scalable performance (all ~100 points on Lighthouse)
 - [React + Material-UI + Firebase](https://github.com/Phoqe/react-material-ui-firebase)
@@ -41,4 +41,4 @@ Create React App 是一个很棒的学习 React 的项目。 请看一下这些[
   - 使用 recharts 的图表
   - 在导航示例中涵盖了 React Router
   - 一个具有用于生产环境创造的 Nginx 服务器的 Docker container(Docker 容器)。
-  - Created with Create React App
+  - 使用 Create React App 创建
