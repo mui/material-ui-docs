@@ -111,11 +111,11 @@ However perhaps you're adding some Material-UI components to an app that already
 
 ## When should I use inline-style vs CSS?
 
-As a rule of thumb, only use inline-style for dynamic style properties. The CSS alternative provides more advantages, such as:
+根据经验，仅对动态样式属性使用内联样式。 CSS 替代方案也有更多优势，例如：
 
-- auto-prefixing
-- better debugging
-- media queries
+- 自动前缀
+- 更好地调试
+- 媒体查询
 - keyframes
 
 ## How do I use react-router?
@@ -225,7 +225,7 @@ If you have several applications running on one page, consider using one @materi
   }
 ```
 
-## My App doesn't render correctly on the server
+## 我的应用程序在服务器上没有正确渲染
 
 If it doesn't work, in 99% of cases it's a configuration issue. A missing property, a wrong call order, or a missing component. Server side rendering is strict about configuration, and the best way to find out what's wrong is to compare your project to an already working setup, check out the [reference implementations](/guides/server-rendering/#reference-implementations), bit by bit.
 
@@ -299,11 +299,11 @@ function handleRender(req, res) {
 
 - You need to make sure that the server and the client share the same `process.env.NODE_ENV` value.
 
-## Why are the colors I am seeing different from what I see here?
+## 为什么我的应用程序看到的颜色和文档里的颜色大相径庭？
 
 The documentation site is using a custom theme. Hence, the color palette is different from the default theme that Material-UI ships. Please refer to [this page](/customization/theming/) to learn about theme customization.
 
-## Why does component X require a DOM node in a prop instead of a ref object?
+## 为什么组件X 需要一个 DOM 节点，而不是 ref 对象？
 
 Components like the [Portal](/api/portal/#props) or [Popper](/api/popper/#props) require a DOM node in the `container` or `anchorEl` prop respectively. It seems convenient to simply pass a ref object in those props and let Material-UI access the current value. This works in a simple scenario:
 
@@ -359,7 +359,7 @@ function App() {
 }
 ```
 
-## What's the clsx dependency for?
+## clsx 依赖什么？
 
 [clsx](https://github.com/lukeed/clsx) is a tiny utility for constructing `className` strings conditionally.
 
@@ -373,7 +373,7 @@ return (
 );
 ```
 
-you can do:
+你可以这样做：
 
 ```jsx
 import clsx from 'clsx';
