@@ -35,13 +35,13 @@ mdDown      |                     hide | show
 
 ## 断点 up
 
-使用任何断点 `up` 属性，给定 *子节点* 将被隐藏 *或高于* 的断点。
+使用任何断点 `up` 属性的元素，给定的 *子节点* 将在 *断点以及断点以上* 时被隐藏。
 
 {{"demo": "pages/components/hidden/BreakpointUp.js"}}
 
 ## 断点 down
 
-使用任何断点 `down` 属性，给定 *子节点* 将被隐藏 *或低于* 的断点。
+使用任何断点 `down` 属性的元素，给定 *子节点* 将在 *断点以及断点以下* 时被隐藏 。
 
 {{"demo": "pages/components/hidden/BreakpointDown.js"}}
 
