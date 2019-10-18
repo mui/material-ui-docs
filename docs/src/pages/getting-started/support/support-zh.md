@@ -129,8 +129,8 @@ The end result? All of the capabilities you expect from commercial-grade softwar
 
 调整Material-UI以满足特定要求。 给我们您的需求摘要；如果可以的话，我们会帮助您。 我们可能：
 
-- Give you an estimate of time and price if the work is straightforward
-- Suggest alternatives that might not require Material-UI
+- 如果工作简单明了，会给您估计时间和价格
+- 建议可能不需要 Material-UI 的替代方法
 - 由于时间或相关性而拒绝合作
 
 请注意，工作必须与 Material-UI 相关。 我们不接受一般的 React 开发工作。 我们的合同价格为 300美元/每小时或 2000美元/每天。
