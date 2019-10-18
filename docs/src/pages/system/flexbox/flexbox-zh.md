@@ -4,7 +4,7 @@
 
 如果你**对 flexbox 不熟悉**，我们建议你阅读：[CSS-Tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) 手册。
 
-## 父母的属性
+## 父元素的属性
 
 ### display
 
@@ -61,7 +61,7 @@
 
 {{"demo": "pages/system/flexbox/AlignContent.js"}}
 
-## 儿童的属性
+## 子元素的属性
 
 ### order
 
