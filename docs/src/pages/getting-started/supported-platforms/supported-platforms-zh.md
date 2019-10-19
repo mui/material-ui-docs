@@ -19,9 +19,9 @@ Material-UI支持所有主流浏览器和平台的最新稳定版本。 我们�
 
 ### CSS前缀
 
-请注意，某些CSS功能[需要](https://github.com/cssinjs/jss/issues/279)额外的一步后处理，目的是添加供应商特定的前缀。 在[`jss-plugin-vendor-prefixer`](https://www.npmjs.com/package/jss-plugin-vendor-prefixer)的帮助下，这些前缀会自动添加到客户端上。
+Be aware that some CSS features [require](https://github.com/cssinjs/jss/issues/279) an additional postprocessing step that adds vendor-specific prefixes. These prefixes are automatically added to the client thanks to [`jss-plugin-vendor-prefixer`](https://www.npmjs.com/package/jss-plugin-vendor-prefixer).
 
-本文档中提供的CSS由 [`autoprefixer`](https://www.npmjs.com/package/autoprefixer)处理。 您可以通过[文档实现](https://github.com/mui-org/material-ui/blob/47aa5aeaec1d4ac2c08fd0e84277d6b91e497557/pages/_document.js#L123)受到启发。 请注意，它对页面的性能会产生影响。 这对于静态页面来说是必须的，但是在这渲染动态页面的时候需要平衡一下。尽量不要做任何处理。
+本文档中提供的CSS由 [`autoprefixer`](https://www.npmjs.com/package/autoprefixer)处理。 您可以通过[文档实现](https://github.com/mui-org/material-ui/blob/47aa5aeaec1d4ac2c08fd0e84277d6b91e497557/pages/_document.js#L123)受到启发。 请注意，它对页面的性能会产生影响。 It's a must-do for static pages, but it needs to be put in balance with not doing anything when rendering dynamic pages.
 
 ## React
 
