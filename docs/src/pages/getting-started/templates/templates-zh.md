@@ -14,7 +14,7 @@ Sections of each layout are clearly defined either by comments or use of separat
 
 如果您在使用这些示例时进行了更改或增强以改善开发人员的体验，或者您想提供其他示例，请考虑在GitHub</a>上创建 pull 请求。</p> 
 
-到目前为止，我们提供了有关仪表板，登录页面，注册页面，博客页面，结帐流程，相册页面，定价页面和粘性页脚页面的演示。
+So far we have demos for a dashboard, sign in page, sign up page, blog page, checkout flow, album page, pricing page, and sticky footer page.
 
 ## 高级版主题
 
