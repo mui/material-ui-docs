@@ -98,7 +98,7 @@ ButtonGroup 也可用于创建分割按钮。 下拉列表可以用于更改按�
 
 以下是自定义组件的一些例子。 您可以在[重写文档页](/customization/components/)中了解有关此内容的更多信息。
 
-{{"demo": "pages/components/buttons/CustomizedButtons.js"}}
+{{"demo": "pages/components/buttons/CustomizedButtons.js", "defaultCodeOpen": false}}
 
 👑如果您还在寻找灵感，您可以看看 [MUI Treasury 特别定制的一些例子](https://mui-treasury.com/components/button)。
 
@@ -118,7 +118,7 @@ ButtonGroup 也可用于创建分割按钮。 下拉列表可以用于更改按�
 
 ### Cursor（鼠标悬浮）禁用
 
-ButtonBase 组件会在禁用按钮上将属性设置为 `pointer-events: none;`。 这样可以防止鼠标禁用的样式出现。
+The ButtonBase component sets `pointer-events: none;` on disabled buttons, which prevents the appearance of a disabled cursor.
 
 若您希望使用 `not-allowed`， 您有以下两种选择：
 
