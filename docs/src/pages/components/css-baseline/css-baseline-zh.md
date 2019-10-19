@@ -12,7 +12,7 @@ components: CssBaseline
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
-function MyApp() {
+export default function MyApp() {
   return (
     <React.Fragment>
       <CssBaseline />
@@ -20,8 +20,6 @@ function MyApp() {
     </React.Fragment>
   );
 }
-
-export default MyApp;
 ```
 
 ## 方法
