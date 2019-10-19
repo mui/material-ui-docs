@@ -15,4 +15,4 @@ components: ClickAwayListener
 
 {{"demo": "pages/components/click-away-listener/ClickAway.js"}}
 
-请注意，该组件仅接受一个子元素。 你可以在 [Menu 的文档中](/components/menus/#menulist-composition)找到更高级的样例。
+请注意，该组件仅接受一个子元素。 You can find a more advanced demo on the [Menu documentation section](/components/menus/#menulist-composition).
