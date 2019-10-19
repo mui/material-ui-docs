@@ -33,7 +33,7 @@ Vous pouvez changer l'emplacement du label:
 
 Voici un exemple de personnalisation du composant. Vous pouvez en savoir plus dans la [page de documentation des overrides](/customization/components/).
 
-{{"demo": "pages/components/checkboxes/CustomizedCheckbox.js"}}
+{{"demo": "pages/components/checkboxes/CustomizedCheckbox.js", "defaultCodeOpen": false}}
 
 ## When to use
 
