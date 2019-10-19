@@ -33,7 +33,7 @@ components: Checkbox, FormControl, FormGroup, FormLabel, FormControlLabel
 
 以下是自定义此组件的一个示例。 您可以在[重写文档页](/customization/components/)中了解有关此内容的更多信息。
 
-{{"demo": "pages/components/checkboxes/CustomizedCheckbox.js"}}
+{{"demo": "pages/components/checkboxes/CustomizedCheckbox.js", "defaultCodeOpen": false}}
 
 ## 什么时候使用
 
