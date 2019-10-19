@@ -57,6 +57,8 @@
   "expandAll": "展开全部",
   "showSource": "查看源代码",
   "hideSource": "隐藏源代码",
+  "showFullSource": "Show the full source",
+  "hideFullSource": "Hide the full source",
   "viewGitHub": "在 GitHub 中查看源代码",
   "codesandbox": "在 CodeSandbox 中编辑",
   "seeMore": "查看更多",
@@ -80,6 +82,7 @@
   "resetDensity": "重置密度",
   "increaseSpacing": "增加间距",
   "decreaseSpacing": "减少间距",
+  "getProfessionalSupport": "Get Professional Support",
   "pages": {
     "/getting-started": "入门教程",
     "/getting-started/installation": "安装",
