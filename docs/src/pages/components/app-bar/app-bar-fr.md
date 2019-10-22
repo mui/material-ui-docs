@@ -11,23 +11,23 @@ components: AppBar, Toolbar, Menu
 
 Il peut se transformer en une barre d’action contextuelle ou en tant que barre de navigation.
 
-## Simple App Bar
+## Barre d'application simple
 
 {{"demo": "pages/components/app-bar/ButtonAppBar.js"}}
 
-## App Bar with a primary search field
+## Barre d'application avec champ de recherche principal
 
-A primary searchbar.
+Une barre de recherche principale.
 
 {{"demo": "pages/components/app-bar/PrimarySearchAppBar.js"}}
 
-## App Bar with menu
+## Barre d'application avec menu
 
 {{"demo": "pages/components/app-bar/MenuAppBar.js"}}
 
-## App Bar with search field
+## Barre d'application avec champ de recherche
 
-A side searchbar.
+Une barre de recherche latérale.
 
 {{"demo": "pages/components/app-bar/SearchAppBar.js"}}
 
