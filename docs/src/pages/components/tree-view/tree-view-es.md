@@ -3,7 +3,7 @@ title: Tree View React component
 components: TreeView, TreeItem
 ---
 
-# Tree View
+# Vista de arbol
 
 <p class="description">A tree view widget presents a hierarchical list.</p>
 
