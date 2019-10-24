@@ -49,8 +49,8 @@ Un App Bar prominente.
 
 Cuando renderizas la posición del app bar fijo, la dimensión de los elementos no tiene impacto sobre el resto de la página. Esto puede causar que alguna parte de tu contenido no sea visible, detrás del app bar. Aquí hay 3 posibles soluciones:
 
-1. You can use `position="sticky"` instead of fixed. ⚠️ sticky is not supported by IE 11.
-2. You can render a second `<Toolbar />` component:
+1. Puedes usar `position = "sticky"` en lugar de fijo. ⚠️ sticky no es compatible con IE 11.
+2. Puedes renderizar un segundo componente `<Toolbar />`:
 
 ```jsx
 function App() {
@@ -65,7 +65,7 @@ function App() {
 }
 ```
 
-3. You can use `theme.mixins.toolbar` CSS:
+3. Puede usar `theme.mixins.toolbar` CSS:
 
 ```jsx
 const useStyles = makeStyles(theme => ({
@@ -85,25 +85,25 @@ function App() {
 };
 ```
 
-## Scrolling
+## Desplazamiento
 
-You can use the `useScrollTrigger()` hook to respond to user scroll actions.
+Puede usar el `useScrollTrigger ()` para responder a las acciones de desplazamiento del usuario.
 
 ### Ocultar App bar
 
-The app bar hides on scroll down to leave more space for reading.
+La barra de aplicaciones se oculta al desplazarse hacia abajo para dejar más espacio para leer.
 
 {{"demo": "pages/components/app-bar/HideAppBar.js", "iframe": true, "maxWidth": 500}}
 
 ### Elevar App Bar
 
-The app bar elevates on scroll to communicate that the user is not at the top of the page.
+La barra de la aplicación se eleva al desplazarse para comunicar que el usuario no está en la parte superior de la página.
 
 {{"demo": "pages/components/app-bar/ElevateAppBar.js", "iframe": true, "maxWidth": 500}}
 
-### Back to top
+### Ir arriba
 
-A floating action buttons appears on scroll to make it easy to get back to the top of the page.
+Aparece un botón de acción flotante al desplazarse para que sea fácil volver a la parte superior de la página.
 
 {{"demo": "pages/components/app-bar/BackToTop.js", "iframe": true, "maxWidth": 500}}
 
