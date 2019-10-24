@@ -35,21 +35,21 @@ Uma barra de pesquisa na lateral.
 
 {{"demo": "pages/components/app-bar/DenseAppBar.js"}}
 
-## Prominent
+## Proeminente
 
-A prominent app bar.
+Uma barra de aplicativos proeminente.
 
 {{"demo": "pages/components/app-bar/ProminentAppBar.js"}}
 
-## Bottom App Bar
+## Barra de Aplicativos Inferior
 
 {{"demo": "pages/components/app-bar/BottomAppBar.js", "iframe": true, "maxWidth": 500}}
 
-## Fixed placement
+## Local de filtros
 
-When you render the app bar position fixed, the dimension of the element doesn't impact the rest of the page. This can cause some part of your content to be invisible, behind the app bar. Here are 3 possible solutions:
+Quando você renderiza a posição da barra de apps fixa, a dimensão do elemento não afeta o resto da página. Isso pode fazer com que parte do seu conteúdo fique invisível, atrás da barra de aplicativos. Aqui estão 3 soluções possíveis:
 
-1. You can use `position="sticky"` instead of fixed. ⚠️ sticky is not supported by IE 11.
+1. Você pode usar `posição="sticky"` ao invés de fixed. ⚠️ sticky não é suportado pelo IE 11.
 2. You can render a second `<Toolbar />` component:
 
 ```jsx
