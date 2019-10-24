@@ -11,43 +11,43 @@ La [top App Bar](https://material.io/design/components/app-bars-top.html) provee
 
 Puede transformarse en una barra de acción contextual o ser usada como una barra de navegación.
 
-## Simple App Bar
+## App Bar Simple
 
 {{"demo": "pages/components/app-bar/ButtonAppBar.js"}}
 
-## App Bar with a primary search field
+## App Bar con un campo de búsqueda principal
 
-A primary searchbar.
+Un campo de búsqueda principal.
 
 {{"demo": "pages/components/app-bar/PrimarySearchAppBar.js"}}
 
-## App Bar with menu
+## App Bar con menú
 
 {{"demo": "pages/components/app-bar/MenuAppBar.js"}}
 
-## App Bar with search field
+## App Bar con campo de búsqueda
 
-A side searchbar.
+Un campo de búsqueda al costado.
 
 {{"demo": "pages/components/app-bar/SearchAppBar.js"}}
 
-## Dense (desktop only)
+## Denso (sólo escritorio)
 
 {{"demo": "pages/components/app-bar/DenseAppBar.js"}}
 
-## Prominent
+## Prominente
 
-A prominent app bar.
+Un App Bar prominente.
 
 {{"demo": "pages/components/app-bar/ProminentAppBar.js"}}
 
-## Bottom App Bar
+## App bar en pie de página
 
 {{"demo": "pages/components/app-bar/BottomAppBar.js", "iframe": true, "maxWidth": 500}}
 
 ## Fixed placement
 
-When you render the app bar position fixed, the dimension of the element doesn't impact the rest of the page. This can cause some part of your content to be invisible, behind the app bar. Here are 3 possible solutions:
+Cuando renderizas la posición del app bar fijo, la dimensión de los elementos no tiene impacto sobre el resto de la página. Esto puede causar que alguna parte de tu contenido no sea visible, detrás del app bar. Aquí hay 3 posibles soluciones:
 
 1. You can use `position="sticky"` instead of fixed. ⚠️ sticky is not supported by IE 11.
 2. You can render a second `<Toolbar />` component:
