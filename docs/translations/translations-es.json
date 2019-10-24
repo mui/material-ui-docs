@@ -69,11 +69,11 @@
   "headTitle": "Material-UI: A popular React UI framework",
   "emojiLove": "Love",
   "emoojiWarning": "Warning",
-  "mainNavigation": "Main navigation",
-  "skipToContent": "Skip to content",
-  "openDrawer": "Open main navigation",
+  "mainNavigation": "Navegación principal",
+  "skipToContent": "Saltar al contenido",
+  "openDrawer": "Abrir navegación principal",
   "changeLanguage": "Cambiar idioma",
-  "pageTOC": "Page table of contents",
+  "pageTOC": "Tabla de contenidos",
   "showJSSource": "Show JavaScript source",
   "showTSSource": "Show TypeScript source",
   "close": "Close",
@@ -219,7 +219,7 @@
     "/components/textarea-autosize": "Textarea Autosize",
     "/components/rating": "Rating",
     "/components/skeleton": "Skeleton",
-    "/components/tree-view": "Tree View",
+    "/components/tree-view": "Vista de arbol",
     "/customization/density": "Density"
   }
 }
