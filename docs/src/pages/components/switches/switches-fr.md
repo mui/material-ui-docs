@@ -41,9 +41,9 @@ Vous pouvez changer l'emplacement du label:
 
 {{"demo": "pages/components/switches/FormControlLabelPosition.js"}}
 
-## When to use
+## Quand les utiliser
 
-- [Checkboxes vs. Switches (interrupteurs)](https://uxplanet.org/checkbox-vs-toggle-switch-7fc6e83f10b8)
+- [Cases à cocher vs. Switches (interrupteurs)](https://uxplanet.org/checkbox-vs-toggle-switch-7fc6e83f10b8)
 
 ## Accessibilité
 
