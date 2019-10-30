@@ -25,4 +25,4 @@ components: TreeView, TreeItem
 
 (WAI-ARIA: https://www.w3.org/TR/wai-aria-practices/#TreeView)
 
-The component follows the WAI-ARIA best practices.
+The component follows the WAI-ARIA authoring practices.
