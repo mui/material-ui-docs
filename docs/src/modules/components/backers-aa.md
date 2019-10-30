@@ -18,9 +18,8 @@ crwdns89076:0crwdne89076:0
 crwdns89110:0crwdne89110:0
 
 <p style="display: flex; justify-content: center; flex-wrap: wrap;">
-  <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="callemall" href="crwdns89112:0crwdne89112:0" rel="noopener nofollow" target="_blank" style="margin-right: 16px;">
-    <img src="crwdns89114:0%3crwdnd89114:0%2Fcrwdnd89114:0%2Fcrwdnd89114:0%2Fcrwdne89114:0" alt="crwdns89116:0crwdne89116:0" title="crwdns89118:0crwdne89118:0" width=100 loading="lazy">
-  </a>
+  <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="callemall" href="crwdns89112:0crwdne89112:0" rel="noopener nofollow" target="_blank" style="margin-right: 16px;"><img src="crwdns89114:0%3crwdnd89114:0%2Fcrwdnd89114:0%2Fcrwdnd89114:0%2Fcrwdne89114:0" alt="crwdns89116:0crwdne89116:0" title="crwdns89118:0crwdne89118:0" width="100" loading="lazy"></a>
+  <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="callemall" href="crwdns104886:0crwdne104886:0" rel="noopener nofollow" target="_blank" style="margin-right: 16px;"><img src="crwdns104888:0crwdne104888:0" alt="crwdns104890:0crwdne104890:0" title="crwdns104892:0crwdne104892:0" width="100" loading="lazy"></a>
 </p>
 
 ### crwdns89120:0crwdne89120:0
