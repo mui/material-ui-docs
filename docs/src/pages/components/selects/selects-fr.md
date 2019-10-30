@@ -19,6 +19,10 @@ As the user experience can be improved on mobile using the native select of the 
 
 {{"demo": "pages/components/selects/NativeSelects.js"}}
 
+## Text Fields (Champs de texte)
+
+Le composant d'encapsulation `TextField` est un contrôle de formulaire complet comprenant une étiquette, une entrée et un texte d'aide. You can find an example with the select mode [in this section](/components/text-fields/#select).
+
 ## Customized selects
 
 Here are some examples of customizing the component. Vous pouvez en savoir plus dans la [page de documentation des overrides](/customization/components/).
@@ -39,15 +43,17 @@ Like with the single selection, you can pull out the new value by accessing `eve
 
 {{"demo": "pages/components/selects/ControlledOpenSelect.js"}}
 
-## Avec un dialogue
+## With a Dialog
 
-Bien que cela soit découragé par la spécification Material Design, vous pouvez utiliser une sélection dans une boîte de dialogue.
+While it's discouraged by the Material Design specification, you can use a select inside a dialog.
 
 {{"demo": "pages/components/selects/DialogSelect.js"}}
 
-## Text Fields (Champs de texte)
+## Grouping
 
-Le composant d'encapsulation `TextField` est un contrôle de formulaire complet comprenant une étiquette, une entrée et un texte d'aide. You can find an example with the select mode [in this section](/components/text-fields/#textfield).
+Display categories with the `ListSubheader` component or the native `<optgroup>` element.
+
+{{"demo": "pages/components/selects/GroupedSelect.js"}}
 
 ## Accessibilité
 
