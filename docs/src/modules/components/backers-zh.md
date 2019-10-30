@@ -18,9 +18,8 @@ Material-UI 是一个使用 MIT 许可证的开源项目。 可能完全因为�
 由[OpenCollective](https://opencollective.com/material-ui)
 
 <p style="display: flex; justify-content: center; flex-wrap: wrap;">
-  <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="callemall" href="https://www.call-em-all.com" rel="noopener nofollow" target="_blank" style="margin-right: 16px;">
-    <img src="https://images.opencollective.com/proxy/images?src=https%3A%2F%2Fopencollective-production.s3-us-west-1.amazonaws.com%2Ff4053300-e0ea-11e7-acf0-0fa7c0509f4e.png&height=100" alt="callemall" title="向群组发送消息的最简便的方法" width=100 loading="lazy">
-  </a>
+  <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="callemall" href="https://www.call-em-all.com" rel="noopener nofollow" target="_blank" style="margin-right: 16px;"><img src="https://images.opencollective.com/proxy/images?src=https%3A%2F%2Fopencollective-production.s3-us-west-1.amazonaws.com%2Ff4053300-e0ea-11e7-acf0-0fa7c0509f4e.png&height=100" alt="callemall" title="向群组发送消息的最简便的方法" width="100" loading="lazy"></a>
+  <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="callemall" href="https://www.crosswordsolver.com" rel="noopener nofollow" target="_blank" style="margin-right: 16px;"><img src="https://images.opencollective.com/crosswordsolver/avatar.png" alt="crosswordsolver" title="Crossword Puzzle Solver" width="100" loading="lazy"></a>
 </p>
 
 ### 其实还有更多！
