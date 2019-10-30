@@ -18,9 +18,8 @@ Material-UI — это проект с открытым исходным код�
 через [OpenCollective](https://opencollective.com/material-ui)
 
 <p style="display: flex; justify-content: center; flex-wrap: wrap;">
-  <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="callemall" href="https://www.call-em-all.com" rel="noopener nofollow" target="_blank" style="margin-right: 16px;">
-    <img src="https://images.opencollective.com/proxy/images?src=https%3A%2F%2Fopencollective-production.s3-us-west-1.amazonaws.com%2Ff4053300-e0ea-11e7-acf0-0fa7c0509f4e.png&height=100" alt="callemall" title="Простой способ отправить сообщение вашей группе" width=100 loading="lazy">
-  </a>
+  <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="callemall" href="https://www.call-em-all.com" rel="noopener nofollow" target="_blank" style="margin-right: 16px;"><img src="https://images.opencollective.com/proxy/images?src=https%3A%2F%2Fopencollective-production.s3-us-west-1.amazonaws.com%2Ff4053300-e0ea-11e7-acf0-0fa7c0509f4e.png&height=100" alt="callemall" title="Простой способ отправить сообщение вашей группе" width="100" loading="lazy"></a>
+  <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="callemall" href="https://www.crosswordsolver.com" rel="noopener nofollow" target="_blank" style="margin-right: 16px;"><img src="https://images.opencollective.com/crosswordsolver/avatar.png" alt="crosswordsolver" title="Crossword Puzzle Solver" width="100" loading="lazy"></a>
 </p>
 
 ### И это еще не все!
