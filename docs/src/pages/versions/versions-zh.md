@@ -38,12 +38,12 @@ A regular schedule of releases helps you plan and coordinate your updates with t
 
 ## 发布计划
 
-| 日期             | 版本     | Status   |
-|:-------------- |:------ | -------- |
-| May 2018       | v1.0.0 | Released |
-| Septembre 2018 | v3.0.0 | Released |
-| May 2019       | v4.0.0 | Released |
-| Q3 2020        | v5.0.0 | ⏳        |
+| 日期      | 版本     | 状态  |
+|:------- |:------ | --- |
+| 2018年5月 | v1.0.0 | 已发布 |
+| 2018年9月 | v3.0.0 | 已发布 |
+| 2019年5月 | v4.0.0 | 已发布 |
+| Q3 2020 | v5.0.0 | ⏳   |
 
 
 You can follow the [milestones](https://github.com/mui-org/material-ui/milestones) for a more detailed overview.
@@ -56,12 +56,12 @@ You can follow the [milestones](https://github.com/mui-org/material-ui/milestone
 
 ## 弃用做法
 
-有时， **“破坏更改”**，例如删除对选定API和功能的支持，是必要的。
+有时 **“破坏更改”**是必要的，例如删除对选定API和功能的支持。
 
 为了让过渡尽可能简单：
 
-- The number of breaking changes is minimized, and migration tools provided when possible.
-- The deprecation policy described below is followed, so that you have time to update your apps to the latest APIs and best practices.
+- 尽量减少破坏更改，并且尽可能提供迁移工具。
+- 遵循以下描述的弃用原则，以便您有时间用最新的API和最佳做法更新您的应用程序。
 
 ### 弃用原则
 
