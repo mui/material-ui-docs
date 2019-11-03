@@ -18,15 +18,15 @@ The value must be chosen from a predefined set of allowed values.
 
 {{"demo": "pages/components/autocomplete/ComboBox.js"}}
 
-### Playground
+### Песочница
 
 Each of the following examples demonstrate one feature of the Autocomplete component.
 
 {{"demo": "pages/components/autocomplete/Playground.js"}}
 
-### Country select
+### Выбор страны
 
-Choose one country between 248.
+Выберите одну страну из 248.
 
 {{"demo": "pages/components/autocomplete/CountrySelect.js"}}
 
@@ -40,7 +40,7 @@ Set `freeSolo` to true so the textbox can contain any arbitrary value.
 
 {{"demo": "pages/components/autocomplete/Grouped.js"}}
 
-## Disabled options
+## Отключенные опции
 
 {{"demo": "pages/components/autocomplete/DisabledOptions.js"}}
 
@@ -62,23 +62,23 @@ WIP: to implement [this design](https://www.behance.net/gallery/27997595/Multi-s
 
 Head to [Customized Autocomplete](#customized-autocomplete) for a customization example with the Autocomplete component instead of the hook.
 
-## Asynchronous requests
+## Асинхронные запросы
 
 {{"demo": "pages/components/autocomplete/Asynchronous.js"}}
 
-### Google Maps place
+### Места Google Maps
 
 A customized UI for Google Maps Places Autocomplete. For this demo, we need to load the [Google Maps JavaScript](https://developers.google.com/maps/documentation/javascript/tutorial) API.
 
 {{"demo": "pages/components/autocomplete/GoogleMaps.js"}}
 
-## Multiple values
+## Множественные значения
 
 Also knowned as tags, the user is allowed to enter more than 1 value.
 
 {{"demo": "pages/components/autocomplete/Tags.js"}}
 
-### Fixed options
+### Фиксированные опции
 
 In the event that you need to lock certain tag so that they can't be removed in the interface, you can set the chips disabled.
 
