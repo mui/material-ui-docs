@@ -13,7 +13,7 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 
 ## Простые диалоги
 
-Simple dialogs can provide additional details or actions about a list item. For example, they can display avatars, icons, clarifying subtext, or orthogonal actions (such as adding an account).
+Простые диалоговые окна могут предоставить дополнительные сведения или действия об элементе списка. For example, they can display avatars, icons, clarifying subtext, or orthogonal actions (such as adding an account).
 
 Особенности механики касаний:
 
