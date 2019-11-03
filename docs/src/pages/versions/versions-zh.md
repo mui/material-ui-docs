@@ -1,4 +1,4 @@
-# Material-UI 的不同版本
+# Material-UI 的版本
 
 <p class="description">你可以随时回到本页来切换不同版本的文档。</p>
 
@@ -10,7 +10,7 @@
 
 ## 最新版本
 
-在这里您可以找到尚未发布的最新文档和代码。 您可以使用它来查看即将实施的更新 , 并给 Material-UI 的贡献者提供更好的反馈。
+在这里您可以找到尚未发布的最新文档和代码。 您可以使用它来查看未来的更新，并给 Material-UI 的贡献者提供更好的反馈。
 
 {{"demo": "pages/versions/LatestVersions.js", "hideHeader": true}}
 
@@ -38,12 +38,12 @@ A regular schedule of releases helps you plan and coordinate your updates with t
 
 ## 发布计划
 
-| 日期      | 版本     | 状态  |
-|:------- |:------ | --- |
-| 2018年5月 | v1.0.0 | 已发布 |
-| 2018年9月 | v3.0.0 | 已发布 |
-| 2019年5月 | v4.0.0 | 已发布 |
-| Q3 2020 | v5.0.0 | ⏳   |
+| 日期       | 版本     | 状态  |
+|:-------- |:------ | --- |
+| 2018年5月  | v1.0.0 | 已发布 |
+| 2018年9月  | v3.0.0 | 已发布 |
+| 2019年5月  | v4.0.0 | 已发布 |
+| 2020第三季度 | v5.0.0 | ⏳   |
 
 
 You can follow the [milestones](https://github.com/mui-org/material-ui/milestones) for a more detailed overview.
