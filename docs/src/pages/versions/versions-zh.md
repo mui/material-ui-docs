@@ -32,7 +32,7 @@ A regular schedule of releases helps you plan and coordinate your updates with t
 
 通常情况下, 你可以根据以下的发布周期来预测:
 
-- A **major** release every 12 months.
+- 每12个月发布一个**主版本**。
 - 每个主版本会附带1-3个向下兼容的**次版本**。
 - 每周会进行**日常**更新 (如果有紧急的 bugfix，则任何时候都可发布)。
 
@@ -56,11 +56,11 @@ You can follow the [milestones](https://github.com/mui-org/material-ui/milestone
 
 ## 弃用做法
 
-有时 **“破坏更改”**是必要的，例如删除对选定API和功能的支持。
+**“不兼容变更”**有时是必要的，例如删除对选定API和功能的支持。
 
 为了让过渡尽可能简单：
 
-- 尽量减少破坏更改，并且尽可能提供迁移工具。
+- 尽量减少不兼容变更，并且尽可能提供迁移工具。
 - 遵循以下描述的弃用原则，以便您有时间用最新的API和最佳做法更新您的应用程序。
 
 ### 弃用原则
