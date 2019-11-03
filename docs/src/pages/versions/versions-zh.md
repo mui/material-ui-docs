@@ -52,13 +52,13 @@ You can follow the [milestones](https://github.com/mui-org/material-ui/milestone
 
 ## 支持政策
 
-Find details on the [supported versions](/getting-started/support/#supported-versions).
+查看[所支持版本](/getting-started/support/#supported-versions)的详情
 
 ## 弃用做法
 
 有时， **“破坏更改”**，例如删除对选定API和功能的支持，是必要的。
 
-To make these transitions as easy as possible:
+为了让过渡尽可能简单：
 
 - The number of breaking changes is minimized, and migration tools provided when possible.
 - The deprecation policy described below is followed, so that you have time to update your apps to the latest APIs and best practices.
