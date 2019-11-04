@@ -22,7 +22,7 @@
 
 Material-UI遵循[语义化版本2.0.0](https://semver.org/)。 Material-UI 的版本号由三部分组成：`主版本号.次版本号.修订版本号`。 版本号的递增是根据更新内容的级别而决定。
 
-- **主版本**包含重要的新功能，更新时需要一些少量开发人员的支持。 更新到新的主要版本时，您可能需要运行更新脚本，重构代码，运行其他测试以及学习新API。
+- **主版本**包含重要的新功能，更新时需要一些少量开发人员的支持。 更新到新的主版本时，您可能需要运行更新脚本，重构代码，运行其他测试以及学习新API。
 - **次版本**包含重要的新功能。 次版本完全向后兼容，更新时不需要开发人员的支持，但您可以选择修改应用程序和库，以开始使用新版本中添加的新API和功能。
 - **修订版本**的风险低，包含了对bug的修复和较小的新功能。 更新时不需要开发人员的支持。
 
@@ -66,6 +66,6 @@ Material-UI遵循[语义化版本2.0.0](https://semver.org/)。 Material-UI 的�
 ### 弃用政策
 
 - 弃用的功能会在更新日志中公布，并且尽可能在运行时发出警告。
-- When a deprecation is announced, recommended update path is provided.
-- Existing use of a stable API during the deprecation period is supported, so your code will keep working during that period.
-- Peer dependency updates (React) that require changes to your apps are only made in a major release.
+- 当公布弃用时，提供建议的更新办法。
+- 在弃用期间支持现有的稳定API，因此您的代码将在此期间继续工作。
+- 要求对您的应用进行修改的同版本依赖更新（React）只会在主版本进行。
