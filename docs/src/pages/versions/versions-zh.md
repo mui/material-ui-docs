@@ -16,7 +16,7 @@
 
 ## 版本控制方案
 
-Stability ensures that reusable components and libraries, tutorials, tools, and learned practices don't become obsolete unexpectedly. Stability is essential for the ecosystem around Material-UI to thrive.
+稳定性确保可重用组件、库、教程、工具和实践不会意外过时。 稳定性是Material-UI生态系统蓬勃发展的关键。
 
 This document contains the practices that are followed to provide you with a leading-edge UI library, balanced with stability, ensuring that future changes are always introduced in a predictable way.
 
@@ -34,7 +34,7 @@ A regular schedule of releases helps you plan and coordinate your updates with t
 
 - 每12个月发布一个**主版本**。
 - 每个主版本会附带1-3个向下兼容的**次版本**。
-- 每周会进行**日常**更新 (如果有紧急的 bugfix，则任何时候都可发布)。
+- 每周发布**修订**更新 (如果有紧急的问题修复，则任何时候都可发布)。
 
 ## 发布计划
 
