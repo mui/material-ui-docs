@@ -18,25 +18,25 @@
 
 稳定性确保可重用组件、库、教程、工具和实践不会意外过时。 稳定性是Material-UI生态系统蓬勃发展的关键。
 
-This document contains the practices that are followed to provide you with a leading-edge UI library, balanced with stability, ensuring that future changes are always introduced in a predictable way.
+本文档包括遵循为您提供前沿前段库以及权衡稳定性的实践，以确保未来的更新始终可以预测。
 
-Material-UI follows [Semantic Versioning 2.0.0](https://semver.org/). Material-UI 的版本号由三部分组成：`主版本号.次版本号.修订版本号`。 版本号的选择是根据更新内容的数量决定
+Material-UI遵循[语义化版本2.0.0](https://semver.org/)。 Material-UI 的版本号由三部分组成：`主版本号.次版本号.修订版本号`。 版本号的递增是根据更新内容的级别而决定。
 
-- **主要版本** 包含重要的新功能，有些但在更新期间预计会提供最少的开发人员帮助。 更新到新的主要版本时，您可能需要运行更新脚本，重构代码，运行其他测试以及学习新API。
-- **次版本**包含重要的新功能。 次要版本完全向后兼容;更新期间不需要开发人员协助，但您可以选择修改应用程序和库，以开始使用发行版中添加的新API，功能和功能。
-- **日常更新**的风险较低。它包含了对bug的修复和较小的新功能。 更新期间不需要开发人员协助。
+- **主版本**包含重要的新功能，更新时需要一些少量开发人员的支持。 更新到新的主要版本时，您可能需要运行更新脚本，重构代码，运行其他测试以及学习新API。
+- **次版本**包含重要的新功能。 次版本完全向后兼容，更新时不需要开发人员的支持，但您可以选择修改应用程序和库，以开始使用新版本中添加的新API和功能。
+- **修订版本**的风险低，包含了对bug的修复和较小的新功能。 更新时不需要开发人员的支持。
 
 ## 发布周期
 
-A regular schedule of releases helps you plan and coordinate your updates with the continuing evolution of Material-UI.
+定期的发布周期可以帮助您规划和协调Material-UI不断的更新。
 
-通常情况下, 你可以根据以下的发布周期来预测:
+通常情况下，你可以预期以下的发布周期：
 
 - 每12个月发布一个**主版本**。
-- 每个主版本会附带1-3个向下兼容的**次版本**。
-- 每周发布**修订**更新 (如果有紧急的问题修复，则任何时候都可发布)。
+- 每个主版本会包含1-3个**次版本**。
+- 每周发布**修订版本**更新（随时发布更新来修复紧急的bug）。
 
-## 发布计划
+## 发布时间表
 
 | 日期       | 版本     | 状态  |
 |:-------- |:------ | --- |
@@ -46,9 +46,9 @@ A regular schedule of releases helps you plan and coordinate your updates with t
 | 2020第三季度 | v5.0.0 | ⏳   |
 
 
-You can follow the [milestones](https://github.com/mui-org/material-ui/milestones) for a more detailed overview.
+您可以参考[里程碑](https://github.com/mui-org/material-ui/milestones)来获得更详细的概述。
 
-> ⚠️ **Disclaimer**: We operate in a dynamic environment, and things are subject to change. The information provided is intended to outline the general framework direction. It's intended for informational purposes only. We may decide to add/remove new items at any time depending on our capability to deliver while meeting our quality standards. The development, releases and timing of any features or functionality of Material-UI remains at the sole discretion of Material-UI. The roadmap does not represent a commitment, obligation or promise to deliver at any time.
+> ⚠️**免责声明** ：我们在动态的环境中运作，情况随时可能发生变化。 提供的信息旨在概述总体框架方向， 仅供参考。 We may decide to add/remove new items at any time depending on our capability to deliver while meeting our quality standards. The development, releases and timing of any features or functionality of Material-UI remains at the sole discretion of Material-UI. The roadmap does not represent a commitment, obligation or promise to deliver at any time.
 
 ## 支持政策
 
