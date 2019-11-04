@@ -48,24 +48,24 @@ Material-UI遵循[语义化版本2.0.0](https://semver.org/)。 Material-UI 的�
 
 您可以参考[里程碑](https://github.com/mui-org/material-ui/milestones)来获得更详细的概述。
 
-> ⚠️**免责声明** ：我们在动态的环境中运作，情况随时可能发生变化。 提供的信息旨在概述总体框架方向， 仅供参考。 We may decide to add/remove new items at any time depending on our capability to deliver while meeting our quality standards. The development, releases and timing of any features or functionality of Material-UI remains at the sole discretion of Material-UI. The roadmap does not represent a commitment, obligation or promise to deliver at any time.
+> ⚠️**免责声明** ：我们在动态的环境中运作，情况随时可能发生变化。 提供的信息旨在概述总体框架方向， 仅供参考。 我们可能会根据我们的交付能力来随时决定增加或删除新的项目来确保我们的质量标准。 Material-UI的任何功能的开发，发布和时间安排均由Material-UI自行决定。 指导方针不代表在任何时间交付的承诺和义务。
 
 ## 支持政策
 
 查看[所支持版本](/getting-started/support/#supported-versions)的详情
 
-## 弃用做法
+## 弃用实践
 
 **“不兼容变更”**有时是必要的，例如删除对选定API和功能的支持。
 
 为了让过渡尽可能简单：
 
 - 尽量减少不兼容变更，并且尽可能提供迁移工具。
-- 遵循以下描述的弃用原则，以便您有时间用最新的API和最佳做法更新您的应用程序。
+- 遵循以下描述的弃用政策，以便您有时间用最新的API和最佳做法更新您的应用程序。
 
-### 弃用原则
+### 弃用政策
 
-- Deprecated features are announced in the changelog, and when possible, with warnings at runtime.
+- 弃用的功能会在更新日志中公布，并且尽可能在运行时发出警告。
 - When a deprecation is announced, recommended update path is provided.
 - Existing use of a stable API during the deprecation period is supported, so your code will keep working during that period.
 - Peer dependency updates (React) that require changes to your apps are only made in a major release.
