@@ -7,7 +7,7 @@ components: TextField, Popper, Autocomplete
 
 <p class="description">Автодополнение - это обычный ввод текста, дополненный панелью предлагаемых опций.</p>
 
-The widget is useful for setting the value of a single-line textbox in one of two types of scenarios:
+Этот виджет используется для установки значения однострочного текстового поля. Он полезен в одном из двух случев:
 
 1. The value for the textbox must be chosen from a predefined set of allowed values, e.g., a location field must contain a valid location name: [combo box](#combobox).
 2. The textbox may contain any arbitrary value, but it is advantageous to suggest possible values to the user, e.g., a search field may suggest similar or previous searches to save the user time: [free solo](#free-solo).
