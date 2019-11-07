@@ -18,7 +18,7 @@ components: TextField, Popper, Autocomplete
 
 {{"演示": "pages/components/autocomplete/IntegrationAutosuggest.js"}}
 
-### Playground
+### 练习
 
 Each of the following examples demonstrate one feature of the Autocomplete component.
 
