@@ -9,14 +9,14 @@ components: TextField, Popper, Autocomplete
 
 该组件常用于以下两个场景中的单行文本框赋值：
 
-1. The value for the textbox must be chosen from a predefined set of allowed values, e.g., a location field must contain a valid location name: [combo box](#combobox).
-2. The textbox may contain any arbitrary value, but it is advantageous to suggest possible values to the user, e.g., a search field may suggest similar or previous searches to save the user time: [free solo](#free-solo).
+1. 文本框必须取值于某个预设值的集合，例如位置字段必须包含合理的位置： [组合框](#combobox)
+2. 文本框可以设置任何值，但是为用户提供可能的选项会更好，譬如搜索框可以提供近似的或者曾搜索过的选项以节省用户时间：[灵活的单文本框](#free-solo)
 
-## Combo box
+## 组合框
 
-The value must be chosen from a predefined set of allowed values.
+必须取值于一个预设的可选值集合
 
-{{"demo": "pages/components/autocomplete/ComboBox.js"}}
+{{"演示": "pages/components/autocomplete/IntegrationAutosuggest.js"}}
 
 ### Playground
 
