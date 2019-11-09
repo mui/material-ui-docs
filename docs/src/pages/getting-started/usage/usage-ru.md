@@ -60,7 +60,7 @@ Material-UI is developed mobile-first, a strategy in which we first write code f
   </h2>
   
   <p>
-    This documentation always reflects the latest stable version of Material-UI. You can find older versions of the documentation on a <a href="/versions/">separate page</a>.
+    This documentation always reflects the latest stable version of Material-UI. You can find older versions of the documentation on a <a href="https://material-ui.com/versions/">separate page</a>.
   </p>
   
   <h2>
