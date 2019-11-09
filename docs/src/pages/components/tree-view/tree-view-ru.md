@@ -17,9 +17,15 @@ components: TreeView, TreeItem
 
 {{"demo": "pages/components/tree-view/CustomizedTreeView.js"}
 
-### Gmail клон
+### Controlled
 
-{{"demo": "pages / components / tree-view / GmailTreeView.js"}}
+The tree view also offers a controlled API.
+
+{{"demo": "pages/components/tree-view/ControlledTreeView.js"}}
+
+### Gmail clone
+
+{{"demo": "pages/components/tree-view/GmailTreeView.js"}}
 
 ## Доступность
 
