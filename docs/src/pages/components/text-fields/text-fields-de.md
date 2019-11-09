@@ -81,6 +81,12 @@ You might also have noticed that some native HTML input properties are missing f
 
 {{"demo": "pages/components/text-fields/Inputs.js"}}
 
+## Farbe (Color)
+
+The `color` prop changes the highlight color of the text field when focused.
+
+{{"demo": "pages/components/text-fields/ColorTextFields.js"}}
+
 ## Customized inputs
 
 Hier sind einige Beispiele, wie man die Komponente anpassen kann. Mehr dazu erfahren Sie auf der [Überschreibungsdokumentationsseite](/customization/components/).
