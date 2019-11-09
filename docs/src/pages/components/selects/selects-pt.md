@@ -62,7 +62,7 @@ To properly label your `Select` input you need an extra element with an `id` tha
 ```jsx
 <InputLabel id="label">Age</InputLabel>
 <Select labelId="label" id="select" value="20">
-  <MenuItem value="10">Twenty</MenuItem>
+  <MenuItem value="10">Ten</MenuItem>
   <MenuItem value="20">Twenty</MenuItem>
 </Select>
 ```
@@ -71,7 +71,7 @@ Alternatively a `TextField` with an `id` and `label` creates the proper markup a
 
 ```jsx
 <TextField id="select" label="Age" value="20">
-  <MenuItem value="10">Twenty</MenuItem>
+  <MenuItem value="10">Ten</MenuItem>
   <MenuItem value="20">Twenty</MenuItem>
 </TextField>
 ```
