@@ -81,6 +81,12 @@ You might also have noticed that some native HTML input properties are missing f
 
 {{"demo": "pages/components/text-fields/Inputs.js"}}
 
+## カラー
+
+The `color` prop changes the highlight color of the text field when focused.
+
+{{"demo": "pages/components/text-fields/ColorTextFields.js"}}
+
 ## Customized inputs
 
 コンポーネントのカスタマイズの例を次に示します。 詳細については、 [オーバーライドのドキュメントページ](/customization/components/)を参照してください。
