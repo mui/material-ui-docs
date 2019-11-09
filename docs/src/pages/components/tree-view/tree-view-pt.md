@@ -17,7 +17,13 @@ As visualizações em árvore podem ser usadas para representar um navegador do 
 
 {{"demo": "pages/components/tree-view/CustomizedTreeView.js"}}
 
-### Clone do Gmail
+### Controlled
+
+The tree view also offers a controlled API.
+
+{{"demo": "pages/components/tree-view/ControlledTreeView.js"}}
+
+### Gmail clone
 
 {{"demo": "pages/components/tree-view/GmailTreeView.js"}}
 
