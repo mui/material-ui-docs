@@ -111,7 +111,7 @@ To workaround the issue, you can force the "shrink" state of the label.
 <TextField InputLabelProps={{ shrink: true }} />
 ```
 
-or
+或
 
 ```jsx
 <InputLabel shrink>计数</InputLabel>
