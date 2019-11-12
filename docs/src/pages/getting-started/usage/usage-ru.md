@@ -36,7 +36,7 @@ ReactDOM.render(<App />, document.querySelector('#app'));
 
 ### Responsive meta tag
 
-Material-UI is developed mobile-first, a strategy in which we first write code for mobile devices, and then scale up components as necessary using CSS media queries. Чтобы обеспечить правильный рендеринг и масштабирование касанием для всех устройств, добавьте метатег реагирующего окна просмотра в элемент 
+Material-UI разработан используя подход Mobile First, согласно которому мы сначала пишем код для мобильных устройств, затем мастштабируем компоненты по мере необходимости, используя медиа-запросы CSS. Чтобы обеспечить правильный рендеринг и масштабирование касанием для всех устройств, добавьте метатег реагирующего окна просмотра в элемент 
 
 <head>
   .</p> 
@@ -52,7 +52,7 @@ Material-UI is developed mobile-first, a strategy in which we first write code f
   </h3>
   
   <p>
-    Material-UI provides an optional <a href="/components/css-baseline/">CssBaseline</a> component. It fixes some inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.
+    Material-UI предоставляет опциональный компонент <a href="/components/css-baseline/">CssBaseline</a>. It fixes some inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.
   </p>
   
   <h2>
@@ -60,7 +60,7 @@ Material-UI is developed mobile-first, a strategy in which we first write code f
   </h2>
   
   <p>
-    This documentation always reflects the latest stable version of Material-UI. You can find older versions of the documentation on a <a href="https://material-ui.com/versions/">separate page</a>.
+    Данная документация всегда отражает последнюю стабильную версию Material-UI. You can find older versions of the documentation on a <a href="https://material-ui.com/versions/">separate page</a>.
   </p>
   
   <h2>
