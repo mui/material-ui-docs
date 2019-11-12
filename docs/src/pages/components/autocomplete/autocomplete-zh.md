@@ -20,19 +20,19 @@ components: TextField, Popper, Autocomplete
 
 ### 练习
 
-Each of the following examples demonstrate one feature of the Autocomplete component.
+下面的每个示例都是自动完成组件的一个功能点的演示。
 
-{{"demo": "pages/components/autocomplete/Playground.js"}}
+{{"演示":"pages/components/autocomplete/Playground.js"}}
 
-### Country select
+### 国家选择
 
-Choose one country between 248.
+在248个国家之中选一个。
 
-{{"demo": "pages/components/autocomplete/CountrySelect.js"}}
+{{"演示":"pages/components/autocomplete/CountrySelect.js"}}
 
-## Free solo
+## 自由独奏
 
-Set `freeSolo` to true so the textbox can contain any arbitrary value.
+将 `freeSolo` 设置为true，以便在文本框中输入任意值。
 
 {{"demo": "pages/components/autocomplete/FreeSolo.js"}}
 
