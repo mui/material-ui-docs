@@ -52,11 +52,11 @@ Material-UI разработан используя подход Mobile First, �
   </h3>
   
   <p>
-    Material-UI предоставляет опциональный компонент <a href="/components/css-baseline/">CssBaseline</a>. It fixes some inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.
+    Material-UI предоставляет опциональный компонент <a href="/components/css-baseline/">CssBaseline</a>. Он исправляет некоторые несоответствия между браузерами и устройствами, обеспечивая несколько более упорядоченный сброс стилей HTML элементов.
   </p>
   
   <h2>
-    Версионная Документация
+    Версионная документация
   </h2>
   
   <p>
@@ -73,12 +73,12 @@ Material-UI разработан используя подход Mobile First, �
   
   <ul spaces="0" level="0" marker="-">
     <li level="0">
-      How to provide <a href="/components/typography/">the Material Design font and typography</a>.
+      Как предоставить <a href="/components/typography/">шрифт и оформление Material Design</a>.
     </li>
     <li level="0">
-      How to take advantage of the <a href="/customization/theming/">theming solution</a>.
+      Как воспользоваться <a href="/customization/theming/">механизмом тем</a>.
     </li>
     <li level="0">
-      How to <a href="/customization/components/">override</a> the look and feel of the components.
+      Как <a href="/customization/components/">переопределить</a> внешний вид компонентов.
     </li>
   </ul>
