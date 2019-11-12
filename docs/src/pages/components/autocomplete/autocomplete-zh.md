@@ -16,19 +16,19 @@ components: TextField, Popper, Autocomplete
 
 必须取值于一个预设的可选值集合
 
-{{"演示": "pages/components/autocomplete/IntegrationAutosuggest.js"}}
+{{"demo": "pages/components/autocomplete/combox.js"}}
 
 ### 练习
 
 下面的每个示例都是自动完成组件的一个功能点的演示。
 
-{{"演示":"pages/components/autocomplete/Playground.js"}}
+{{"demo": "pages/components/autocomplete/Playground.js"}}
 
 ### 国家选择
 
 在248个国家之中选一个。
 
-{{"演示":"pages/components/autocomplete/CountrySelect.js"}}
+{{"demo": "pages/components/autocomplete/CountrySelect.js"}}
 
 ## 自由独奏
 
@@ -36,35 +36,35 @@ components: TextField, Popper, Autocomplete
 
 {{"demo": "pages/components/autocomplete/FreeSolo.js"}}
 
-## Grouped
+## 分组
 
 {{"demo": "pages/components/autocomplete/Grouped.js"}}
 
-## Disabled options
+## 已禁用的选项
 
-{{"demo": "pages/components/autocomplete/DisabledOptions.js"}}
+{{"demo": "pages/components/autocomplete/disabledOptions.js"}}
 
-## `useAutocomplete`
+## `使用自动完成`
 
-For advanced customization use cases, we expose a `useAutocomplete()` hook. It accepts almost the same options as the Autocomplete component minor all the props related to the rendering of JSX. The Autocomplete component uses this hook internally.
+作为一种高级定制方式，我们公开了一个 `useAutocomplete()` 钩子方法。 它接受几乎与Autocomplete组件相同的参数，辅以与JSX渲染有关的所有参数。 Autocomplete组件内部也是使用的此钩子方法。
 
 ```jsx
 import useAutocomplete from '@material-ui/lab/useAutocomplete';
 ```
 
-- 📦 [4 kB gzipped](/size-snapshot).
+- 📦 [4kB gzip包](/size-snapshot)。
 
 {{"demo": "pages/components/autocomplete/UseAutocomplete.js", "defaultCodeOpen": false}}
 
-### Customized hook
+### 自定义钩子
 
-{{"demo": "pages/components/autocomplete/CustomizedHook.js"}}
+{{"demo": "pages/components/autocomplete/ustomizedHook.js"}}
 
-Head to the [Customized Autocomplete](#customized-autocomplete) section for a customization example with the `Autocomplete` component instead of the hook.
+转到[自定义自动完成](#customized-autocomplete)部分，查看使用 `Autocomplete` 组件（而不是钩子）的例子。
 
-## Asynchronous requests
+## 异步请求
 
-{{"demo": "pages/components/autocomplete/Asynchronous.js"}}
+{{"demo": "pages/components/autocomplete/disabledOptions.js"}}
 
 ### Google Maps place
 
