@@ -46,7 +46,7 @@ components: TextField, Popper, Autocomplete
 
 ## `使用自动完成`
 
-作为一种高级定制方式，我们公开了一个 `useAutocomplete()` 钩子方法。 它接受几乎与Autocomplete组件相同的参数，辅以与JSX渲染有关的所有参数。 Autocomplete组件内部也是使用的此钩子方法。
+作为一种高级定制方式，我们公开了一个 `useAutocomplete()` 钩子方法。 It accepts almost the same options as the Autocomplete component minus all the props related to the rendering of JSX. Autocomplete组件内部也是使用的此钩子方法。
 
 ```jsx
 import useAutocomplete from '@material-ui/lab/useAutocomplete';
