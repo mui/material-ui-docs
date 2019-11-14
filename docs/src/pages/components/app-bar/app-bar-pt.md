@@ -57,7 +57,7 @@ function App() {
   return (
     <React.Fragment>
       <AppBar position="fixed">
-        <Toolbar>{/* content */}</Toolbar>
+        <Toolbar>{/* conteúdo */}</Toolbar>
       </AppBar>
       <Toolbar />
     </React.Fragment>
@@ -77,7 +77,7 @@ function App() {
   return (
     <React.Fragment>
       <AppBar position="fixed">
-        <Toolbar>{/* content */}</Toolbar>
+        <Toolbar>{/* conteúdo */}</Toolbar>
       </AppBar>
       <div className={classes.offset} />
     </React.Fragment>
