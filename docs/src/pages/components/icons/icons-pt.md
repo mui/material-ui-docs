@@ -68,7 +68,7 @@ Material Design padronizou mais de [1.000 ícones oficiais](#material-icons).
 
 Nota: [mdi-material-ui](https://github.com/TeamWertarbyte/mdi-material-ui) já agrupou cada um desses ícones SVG com o componente `SvgIcon`, para que você não precise fazer isso.
 
-## Icon (Font icons)
+## Ícone (ícones de fonte)
 
 O componente `Icon` exibirá um ícone de qualquer fonte de ícone que suporte ligadura tipográfica (ligatures). Como pré-requisito, você deve incluir a fonte [Material icon](https://google.github.io/material-design-icons/#icon-font-for-the-web) no seu projeto, por exemplo, via Google Web Fonts:
 
@@ -107,16 +107,16 @@ Para maiores detalhes, você pode conferir [porque o GitHub migrou ícones de fo
 ## Acessibilidade
 
 Os ícones podem transmitir todos os tipos de informações significativas, por isso é importante que eles alcancem a maior quantidade possível de pessoas. Há dois casos de uso que você deve considerar:
-- **Decorative Icons** are only being used for visual or branding reinforcement. If they were removed from the page, users would still understand and be able to use your page.
-- **Semantic Icons** are ones that you’re using to convey meaning, rather than just pure decoration. This includes icons without text next to them used as interactive controls — buttons, form elements, toggles, etc.
+- **Ícones decorativos** estão sendo usados apenas para reforço visual ou de marca. Se eles forem removidos da página, os usuários ainda entenderiam e poderiam usar sua página.
+- **Ícones Semânticos** são aqueles que você usa para transmitir significado, em vez de apenas pura decoração. Isso inclui ícones sem texto ao lado deles utilizados como controles interativos — botões, elementos de forma, toggles, etc.
 
 ### Ícones SVG Decorativos
 
-Se seus ícones são puramente decorativos, você já terminou! The `aria-hidden=true` attribute is added so that your icons are properly accessible (invisible).
+Se seus ícones são puramente decorativos, você já terminou! O atributo `aria-hidden=true` foi adicionado para que seus ícones estejam adequadamente acessíveis (invisíveis).
 
 ### Ícones SVG Semânticos
 
-Se o seu ícone tiver significado semântico, tudo o que você precisa fazer é configurar a propriedade `titleAccess="significado"`. The `role="img"` attribute and the `<title>` element are added so that your icons are properly accessible.
+Se o seu ícone tiver significado semântico, tudo o que você precisa fazer é configurar a propriedade `titleAccess="significado"`. O atributo `role="img"` e o elemento `<title>` foram adicionados para que seus ícones sejam acessados corretamente.
 
 No caso de elementos interativos focalizáveis, como quando usado com um botão de ícone, você pode usar a propriedade `aria-label`:
 
@@ -135,7 +135,7 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 
 ### Ícones de Fonte Decorativos
 
-Se seus ícones são puramente decorativos, você já terminou! The `aria-hidden=true` attribute is added so that your icons are properly accessible (invisible).
+Se seus ícones são puramente decorativos, você já terminou! O atributo `aria-hidden=true` foi adicionado para que seus ícones estejam adequadamente acessíveis (invisíveis).
 
 ### Ícones de Fonte Semânticos
 
