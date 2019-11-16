@@ -41,15 +41,15 @@ A prominent app bar.
 
 {{"demo": "pages/components/app-bar/ProminentAppBar.js"}}
 
-## Bottom App Bar
+## 下部アプリバー
 
 {{"demo": "pages/components/app-bar/BottomAppBar.js", "iframe": true, "maxWidth": 500}}
 
-## Fixed placement
+## ラベルの配置
 
-When you render the app bar position fixed, the dimension of the element doesn't impact the rest of the page. This can cause some part of your content to be invisible, behind the app bar. Here are 3 possible solutions:
+アプリバーの位置を固定してレンダリングすると、要素の寸法はページの残りの部分に影響しません。 これにより、コンテンツの一部がアプリバーの背後で見えなくなる可能性があります。 以下に3つの解決策を示します。
 
-1. You can use `position="sticky"` instead of fixed. ⚠️ sticky is not supported by IE 11.
+1. 固定の代わりに `position = "sticky"` を使用できます。 stickyはIE 11ではサポートされていません。
 2. You can render a second `<Toolbar />` component:
 
 ```jsx
@@ -119,7 +119,7 @@ A floating action buttons appears on scroll to make it easy to get back to the t
 
 #### 戻り値
 
-`trigger`: Does the scroll position match the criteria?
+` trigger `：スクロール位置が基準に合っていますか？
 
 #### 例
 
