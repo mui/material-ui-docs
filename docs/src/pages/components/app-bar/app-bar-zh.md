@@ -35,19 +35,19 @@ components: AppBar, Toolbar, Menu
 
 {{"demo": "pages/components/app-bar/DenseAppBar.js"}}
 
-## Prominent
+## 突出模式
 
-A prominent app bar.
+一个突出模式的应用栏。
 
 {{"demo": "pages/components/app-bar/ProminentAppBar.js"}}
 
-## Bottom App Bar
+## 底部应用栏
 
 {{"demo": "pages/components/app-bar/BottomAppBar.js", "iframe": true, "maxWidth": 500}}
 
-## Fixed placement
+## 固定放置
 
-When you render the app bar position fixed, the dimension of the element doesn't impact the rest of the page. This can cause some part of your content to be invisible, behind the app bar. Here are 3 possible solutions:
+当您固定放置应用栏时，元素的尺寸不会影响页面的其他部分。 This can cause some part of your content to be invisible, behind the app bar. Here are 3 possible solutions:
 
 1. You can use `position="sticky"` instead of fixed. ⚠️ sticky is not supported by IE 11.
 2. You can render a second `<Toolbar />` component:
