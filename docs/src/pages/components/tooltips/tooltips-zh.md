@@ -19,19 +19,19 @@ The `Tooltip` has 12 **placements** choice. They don’t have directional arrows
 
 {{"demo": "pages/components/tooltips/PositionedTooltips.js"}}
 
-## Customized tooltips
+## 自定义文字提示
 
 以下是自定义组件的一些例子。 您可以在[重写文档页](/customization/components/)中了解有关此内容的更多信息。
 
 {{"demo": "pages/components/tooltips/CustomizedTooltips.js"}}
 
-## Arrow Tooltips
+## 带箭头的提示
 
-You can use the `arrow` prop to give your tooltip an arrow indicating which element it refers to.
+您可以通过添加`arrow` 属性给你的提示标签增加箭头指示器，从而可以更突出所指示的元素
 
 {{"demo": "pages/components/tooltips/ArrowTooltips.js"}}
 
-## Custom child element
+## 自定义子元素
 
 The tooltip needs to apply DOM event listeners to its child element. If the child is a custom React element, you need to make sure that it spreads its properties to the underlying DOM element.
 
@@ -48,23 +48,23 @@ const MyComponent = React.forwardRef(function MyComponent(props, ref) {
 </Tooltip>
 ```
 
-You can find a similar concept in the [wrapping components](/guides/composition/#wrapping-components) guide.
+您可以在 [包装组件](/guides/composition/#wrapping-components) 指南中找到类似的概念。
 
-## Triggers
+## 触发器
 
-You can define the types of events that cause a tooltip to show.
+你可以定义各种类型的事件让一个文字提示显示。
 
 {{"demo": "pages/components/tooltips/TriggersTooltips.js"}}
 
-## Controlled Tooltips
+## 控制文字提示
 
-You can use the `open`, `onOpen` and `onClose` properties to control the behavior of the tooltip.
+你可以使用 `open`， `onOpen` 和`onClose` 属性来控制工具提示的行为。
 
 {{"demo": "pages/components/tooltips/ControlledTooltips.js"}}
 
-## Variable Width
+## 可变宽度
 
-The `Tooltip` wraps long text by default to make it readable.
+`Tooltip` 为了保证较好的阅读星，会自动将较长的文字折行。
 
 {{"demo": "pages/components/tooltips/VariableWidth.js"}}
 
@@ -74,7 +74,7 @@ A tooltip can be interactive. It won't close when the user hovers over the toolt
 
 {{"demo": "pages/components/tooltips/InteractiveTooltips.js"}}
 
-## Disabled Elements
+## 停用元素
 
 By default disabled elements like `<button>` do not trigger user interactions so a `Tooltip` will not activate on normal events like hover. To accommodate disabled elements, add a simple wrapper element, such as a `span`.
 
@@ -100,7 +100,7 @@ By default disabled elements like `<button>` do not trigger user interactions so
 
 {{"demo": "pages/components/tooltips/TransitionsTooltips.js"}}
 
-## Showing and hiding
+## 显示和隐藏
 
 The tooltip is normally shown immediately when the user's mouse hovers over the element, and hides immediately when the user's mouse leaves. A delay in showing or hiding the tooltip can be added through the properties `enterDelay` and `leaveDelay`, as shown in the Controlled Tooltips demo above.
 
