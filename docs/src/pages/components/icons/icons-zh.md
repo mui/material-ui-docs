@@ -7,7 +7,7 @@ components: Icon, SvgIcon
 
 <p class="description">一些在 Material-UI 中使用图标的建议和指导。</p>
 
-Material-UI provides icons support in three ways:
+Material-UI通过三种方式提供图标支持：
 
 1. Standardized [Material Design icons](#material-icons) exported as React components (SVG icons).
 1. With the [SvgIcon](#svgicon) component, a React wrapper for custom SVG icons.
@@ -15,7 +15,7 @@ Material-UI provides icons support in three ways:
 
 ## Material Icons
 
-Material Design has standardized over 1,000 official icons, each in five different "themes" (see below). For each SVG icon, we export the respective React component from the `@material-ui/icons` package. You can search the full list of these icons in our [built-in search page](/components/material-icons/).
+Material Design已经标准化了1,000多个官方图标，每个图标都有五个不同的“主题”(见下文)。 对于每个SVG图标，我们从 `@ material-ui/icons` 包中导出相应的React组件。 您可以在我们的 [内置搜索页面](/components/material-icons/)中搜索这些图标的完整列表。
 
 ### 使用
 
