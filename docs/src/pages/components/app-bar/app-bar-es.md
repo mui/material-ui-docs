@@ -9,37 +9,37 @@ components: AppBar, Toolbar, Menu
 
 La [top App Bar](https://material.io/design/components/app-bars-top.html) provee contenido y acciones relacionados a la pantalla actual. Es usada para mostrar logotipos de marcas, títulos de pantalla, navegación y acciones.
 
-Puede transformarse en una barra de acción contextual o ser usada como una barra de navegación.
+It can transform into a contextual action bar or be used as a navbar.
 
 ## App Bar Simple
 
-{{"demo": "pages/components/app-bar/ButtonAppBar.js"}}
+{{"demo": "pages/components/app-bar/ButtonAppBar.js", "bg": true}}
 
 ## App Bar con un campo de búsqueda principal
 
 Un campo de búsqueda principal.
 
-{{"demo": "pages/components/app-bar/PrimarySearchAppBar.js"}}
+{{"demo": "pages/components/app-bar/PrimarySearchAppBar.js", "bg": true}}
 
 ## App Bar con menú
 
-{{"demo": "pages/components/app-bar/MenuAppBar.js"}}
+{{"demo": "pages/components/app-bar/MenuAppBar.js", "bg": true}}
 
 ## App Bar con campo de búsqueda
 
 Un campo de búsqueda al costado.
 
-{{"demo": "pages/components/app-bar/SearchAppBar.js"}}
+{{"demo": "pages/components/app-bar/SearchAppBar.js", "bg": true}}
 
 ## Denso (sólo escritorio)
 
-{{"demo": "pages/components/app-bar/DenseAppBar.js"}}
+{{"demo": "pages/components/app-bar/DenseAppBar.js", "bg": true}}
 
 ## Prominente
 
 Un App Bar prominente.
 
-{{"demo": "pages/components/app-bar/ProminentAppBar.js"}}
+{{"demo": "pages/components/app-bar/ProminentAppBar.js", "bg": true}}
 
 ## App bar en pie de página
 
