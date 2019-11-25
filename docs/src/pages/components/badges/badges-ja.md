@@ -49,4 +49,4 @@ BadgeContentが0の場合、バッジは自動的に非表示になります。 
 
 `horizontalAlignment` および `verticalAlignment` プロパティを使用して、ラップされた要素の任意のコーナーにバッジを移動できます。
 
-{{"demo": "pages/components/badges/DotBadge.js"}}
+{{"demo": "pages/components/badges/BadgeAlignment.js"}}
