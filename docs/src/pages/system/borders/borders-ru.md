@@ -8,7 +8,7 @@
 
 ### Добавление
 
-{{"demo": "pages/system/borders/BorderAdditive.js", "defaultCodeOpen": false}}
+{{"demo": "pages/system/borders/BorderAdditive.js", "defaultCodeOpen": false, "bg": true}}
 
 ```jsx
 <Box border={1}>…
@@ -20,7 +20,7 @@
 
 ### Удаление
 
-{{"demo": "pages/system/borders/BorderSubtractive.js", "defaultCodeOpen": false}}
+{{"demo": "pages/system/borders/BorderSubtractive.js", "defaultCodeOpen": false, "bg": true}}
 
 ```jsx
 <Box border={0}>…
