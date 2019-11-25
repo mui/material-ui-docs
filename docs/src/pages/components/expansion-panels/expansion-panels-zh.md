@@ -13,13 +13,13 @@ components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, Expans
 
 ## 简单的扩展面板
 
-{{"demo": "pages/components/expansion-panels/SimpleExpansionPanel.js"}}
+{{"demo": "pages/components/expansion-panels/SimpleExpansionPanel.js", "bg": true}}
 
 ## 可控制的折叠面板
 
 使用` ExpansionPanel `组件创建自定义的扩展面板组件
 
-{{"demo": "pages/components/expansion-panels/ControlledExpansionPanels.js"}}
+{{"demo": "pages/components/expansion-panels/ControlledExpansionPanels.js", "bg": true}}
 
 ## 自定义扩展面板
 
@@ -31,7 +31,7 @@ components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, Expans
 
 In order to put an action such as a `Checkbox` or a button inside of the `ExpansionPanelSummary`, you need to stop the propagation of the focus and click events to prevent the panel from expanding/collapsing when using the action. You should also provide an `aria-label` for the action, otherwise the label of the nested action will be included in the label of the parent button that controls the panel expansion.
 
-{{"demo": "pages/components/expansion-panels/ActionsInExpansionPanelSummary.js"}}
+{{"demo": "pages/components/expansion-panels/ActionsInExpansionPanelSummary.js", "bg": true}}
 
 ## 性能
 
@@ -47,7 +47,7 @@ As with any performance optimization this is not a silver bullet. Be sure to ide
 
 Multiple columns can be used to structure the content, and a helper text may be added to the panel to assist the user.
 
-{{"demo": "pages/components/expansion-panels/DetailedExpansionPanel.js"}}
+{{"demo": "pages/components/expansion-panels/DetailedExpansionPanel.js", "bg": true}}
 
 ## 可访问性
 
