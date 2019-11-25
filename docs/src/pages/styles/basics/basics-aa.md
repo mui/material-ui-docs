@@ -59,12 +59,12 @@ crwdns97682:0crwdne97682:0
 crwdns97686:0crwdne97686:0 crwdns97688:0crwdne97688:0
 
 ```js
-crwdns97690:0{
+crwdns105871:0{
         color: 'blue'
-      }crwdne97690:0
+      }crwdne105871:0
 ```
 
-crwdns97692:0crwdne97692:0
+crwdns105873:0crwdne105873:0
 
 ## crwdns97694:0crwdne97694:0
 
