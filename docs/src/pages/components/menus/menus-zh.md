@@ -59,9 +59,9 @@ The `MenuItem` is a wrapper around `ListItem` with some additional styles. You c
 
 {{"demo": "pages/components/menus/FadeMenu.js"}}
 
-## Context menu
+## 快捷菜单
 
-Here is an example of a context menu. (Right click to open.)
+这是快捷菜单的示例。 （右键单击以打开。）
 
 {{"demo": "pages/components/menus/ContextMenu.js"}}
 
