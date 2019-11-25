@@ -126,7 +126,6 @@ Você pode aninhar seletores para segmentar elementos dentro da classe ou compon
 ```js
 const useStyles = makeStyles({
   root: {
-    padding: 16,
     color: 'red',
     '& p': {
       color: 'green',
@@ -138,7 +137,7 @@ const useStyles = makeStyles({
 });
 ```
 
-{{"demo": "pages/styles/basics/NestedStylesHook.js"}}
+{{"demo": "pages/styles/basics/NestedStylesHook.js", "defaultCodeOpen": false}}
 
 ## Adaptando com base em propriedades
 
