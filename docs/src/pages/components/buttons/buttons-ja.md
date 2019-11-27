@@ -92,9 +92,9 @@ FABを使用するのは、それが画面の主なアクションを提示す�
 
 ## Icon Buttons
 
-Icon buttons are commonly found in app bars and toolbars.
+アイコンだけのボタンは、App BarやToolbarでよく使われます。
 
-Icons are also appropriate for toggle buttons that allow a single choice to be selected or deselected, such as adding or removing a star to an item.
+アイコンは、アイテムを一つ選択したり、アイテムに星を追加または削除するなど選択/解除できるトグルボタンにも適しています。
 
 {{"demo": "pages/components/buttons/IconButtons.js"}}
 
