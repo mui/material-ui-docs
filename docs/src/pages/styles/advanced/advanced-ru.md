@@ -1,6 +1,6 @@
 # Advanced
 
-<p class="description">This section covers more advanced usage of @material-ui/core/styles.</p>
+<p class="description">В этом разделе описывается более сложное использование @material-ui/core/styles.</p>
 
 ## Темизация
 
@@ -29,11 +29,11 @@ function Theming() {
 
 ### Доступ к теме в компоненте
 
-You might need to access the theme variables inside your React components.
+Вы можете получить доступ к переменным темы внутри ваших React-компонент.
 
 #### `useTheme` hook
 
-For use in function components:
+Для использования в функциональных компонентах:
 
 ```jsx
 import { useTheme } from '@material-ui/core/styles';
@@ -48,7 +48,7 @@ function DeepChild() {
 
 #### `withTheme` HOC
 
-For use in class or function components:
+Для использования в классовых или функциональных компонентах:
 
 ```jsx
 import { withTheme } from '@material-ui/core/styles';
@@ -64,7 +64,7 @@ const DeepChild = withTheme(DeepChildRaw);
 
 ### Вложенные темы
 
-You can nest multiple theme providers. This can be really useful when dealing with different areas of your application that have distinct appearance from each other.
+Вы можете вкладывать несколько theme providers друг в друга. Это может быть очень полезно при работе с различными областями вашего приложения, которые отличаются друг от друга.
 
 ```jsx
 <ThemeProvider theme={outerTheme}>
@@ -88,7 +88,7 @@ You can nest multiple theme providers. This can be really useful when dealing wi
 </ThemeProvider>
 ```
 
-## Overriding styles - `classes` prop
+## Переопределение стилей - `classes` prop
 
 The `makeStyles` (hook generator) and `withStyles` (HOC) APIs allow the creation of multiple style rules per style sheet. Each style rule has its own class name. The class names are provided to the component with the `classes` variable. This is particularly useful when styling nested elements in a component.
 
@@ -166,9 +166,9 @@ function Parent() {
 
 ## JSS plugins
 
-JSS uses plugins to extend its core, allowing you to cherry-pick the features you need, and only pay the performance overhead for what you are using.
+JSS использует плагины для расширения своего ядра, позволяя вам выбирать нужные функции, и нести издержки производительности только за ту функциональность, которую вы используете.
 
-Not all the plugins are available in Material-UI by default. The following (which is a subset of [jss-preset-default](https://cssinjs.org/jss-preset-default/)) are included:
+Не все плагины доступны в Material-UI по умолчанию. The following (which is a subset of [jss-preset-default](https://cssinjs.org/jss-preset-default/)) are included:
 
 - [jss-plugin-rule-value-function](https://cssinjs.org/jss-plugin-rule-value-function/)
 - [jss-plugin-global](https://cssinjs.org/jss-plugin-global/)
