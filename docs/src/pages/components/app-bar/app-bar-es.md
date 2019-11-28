@@ -9,7 +9,7 @@ components: AppBar, Toolbar, Menu
 
 La [top App Bar](https://material.io/design/components/app-bars-top.html) provee contenido y acciones relacionados a la pantalla actual. Es usada para mostrar logotipos de marcas, títulos de pantalla, navegación y acciones.
 
-It can transform into a contextual action bar or be used as a navbar.
+Se puede transformar en una barra de acción contextual o usarse como una barra de navegación.
 
 ## App Bar Simple
 
@@ -113,13 +113,13 @@ Aparece un botón de acción flotante al desplazarse para que sea fácil volver 
 
 1. `options` (*Object* [optional]):
 
-- `options.disableHysteresis` (*Boolean* [optional]): Defaults to `false`. Disable the hysteresis. Ignore the scroll direction when determining the `trigger` value.
+- `options.disableHysteresis` (*Boolean* [optional]): Default `false`. Desactiva la histéresis. Ignore the scroll direction when determining the `trigger` value.
 - `options.target` (*Node* [optional]): Defaults to `window`.
 - `options.threshold` (*Number* [optional]): Defaults to `100`. Change the `trigger` value when the vertical scroll strictly crosses this threshold (exclusive).
 
 #### Devuelve
 
-`trigger`: Does the scroll position match the criteria?
+`trigger`: ¿La posición de desplazamiento coincide con los criterios?
 
 #### Ejemplos
 
