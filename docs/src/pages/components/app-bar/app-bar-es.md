@@ -45,9 +45,9 @@ Un App Bar prominente.
 
 {{"demo": "pages/components/app-bar/BottomAppBar.js", "iframe": true, "maxWidth": 500}}
 
-## Fixed placement
+## Posición Fija
 
-Cuando renderizas la posición del app bar fijo, la dimensión de los elementos no tiene impacto sobre el resto de la página. Esto puede causar que alguna parte de tu contenido no sea visible, detrás del app bar. Aquí hay 3 posibles soluciones:
+Cuando muestra la posición de la barra de App Bar fija, la dimensión de los elementos no tiene impacto sobre el resto de la página. Esto puede causar que alguna parte de su contenido no sea visible, detrás del App Bar. Aquí hay 3 posibles soluciones:
 
 1. Puedes usar `position = "sticky"` en lugar de fijo. ⚠️ sticky no es compatible con IE 11.
 2. Puedes renderizar un segundo componente `<Toolbar />`:
@@ -115,9 +115,9 @@ Aparece un botón de acción flotante al desplazarse para que sea fácil volver 
 
 - `options.disableHysteresis` (*Boolean* [optional]): Default `false`. Desactiva la histéresis. Ignora la dirección de desplazamiento cuando determina el valor del `trigger`.
 - `options.target` (*Node* [optional]): Default `window`.
-- `options.threshold` (*Number* [optional]): Default `100`. Change the `trigger` value when the vertical scroll strictly crosses this threshold (exclusive).
+- `options.threshold` (*Number* [optional]): Default `100`. Cambia el valor de `trigger` cuando el desplazamiento vertical cruza estrictamente este umbral (exclusivo).
 
-#### Devuelve
+#### Regresa
 
 `trigger`: ¿La posición de desplazamiento coincide con los criterios?
 
