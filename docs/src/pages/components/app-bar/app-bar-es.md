@@ -113,9 +113,9 @@ Aparece un botón de acción flotante al desplazarse para que sea fácil volver 
 
 1. `options` (*Object* [optional]):
 
-- `options.disableHysteresis` (*Boolean* [optional]): Default `false`. Desactiva la histéresis. Ignore the scroll direction when determining the `trigger` value.
-- `options.target` (*Node* [optional]): Defaults to `window`.
-- `options.threshold` (*Number* [optional]): Defaults to `100`. Change the `trigger` value when the vertical scroll strictly crosses this threshold (exclusive).
+- `options.disableHysteresis` (*Boolean* [optional]): Default `false`. Desactiva la histéresis. Ignora la dirección de desplazamiento cuando determina el valor del `trigger`.
+- `options.target` (*Node* [optional]): Default `window`.
+- `options.threshold` (*Number* [optional]): Default `100`. Change the `trigger` value when the vertical scroll strictly crosses this threshold (exclusive).
 
 #### Devuelve
 
