@@ -18,6 +18,8 @@ Material-UI's styling solution is inspired by many other styling libraries such 
 
 ## Installation
 
+> `@material-ui/styles` is re-exported as `@material-ui/core/styles` - you only need to install it if you wish to use it independently from Material-UI.
+
 Pour installer et enregistrer dans vos dépendances `package.json` , exécutez:
 
 ```sh
