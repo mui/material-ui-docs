@@ -20,7 +20,7 @@ components: TextField
 
 ## 原生的选择器
 
-⚠️ 浏览器原生输入控件[并不完美](https://caniuse.com/#feat=input-datetime)。 Have a look at [@material-ui/pickers](#material-ui-pickers) for a richer solution.
+⚠️ 浏览器原生输入控件[并不完美](https://caniuse.com/#feat=input-datetime)。 Have a look at [@material-ui/pickers](https://material-ui-pickers.dev/) for a richer solution.
 
 ### 日期选择器
 
