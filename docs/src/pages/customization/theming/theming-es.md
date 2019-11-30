@@ -101,7 +101,7 @@ Generate responsive typography settings based on the options received.
 - `factor` (*Number* [optional]): Default to `2`. This value determines the strength of font size resizing. The higher the value, the less difference there is between font sizes on small screens. The lower the value, the bigger font sizes for small screens. The value must be greater than 1.
 - `variants` (*Array\<String\>* [optional]): Default to all. The typography variants to handle.
 
-#### Devuelve
+#### Regresa
 
 `theme` (*Object*): The new theme with a responsive typography.
 
