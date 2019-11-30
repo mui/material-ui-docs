@@ -18,6 +18,8 @@ Material-UI的样式解决方案受到许多其他CSS-in-JS库的启发，例如
 
 ## 安装
 
+> `@material-ui/styles` is re-exported as `@material-ui/core/styles` - you only need to install it if you wish to use it independently from Material-UI.
+
 将 Material-UI 下载并保存到你的 `package.json` 依赖文件里，请运行:
 
 ```sh
