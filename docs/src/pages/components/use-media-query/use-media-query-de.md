@@ -15,7 +15,7 @@ Einige der wichtigsten Funktionen:
 
 ## Einfache Medienabfrage
 
-Sie sollten eine Medienabfrage für das erste Argument des Hooks bereitstellen. The media query string can by any valid CSS media query, e.g. [`'(prefers-color-scheme: dark)'`](/customization/palette/#user-preference).
+Sie sollten eine Medienabfrage für das erste Argument des Hooks bereitstellen. The media query string can be any valid CSS media query, e.g. [`'(prefers-color-scheme: dark)'`](/customization/palette/#user-preference).
 
 {{"demo": "pages/components/use-media-query/SimpleMediaQuery.js", "defaultCodeOpen": true}}
 
