@@ -18,6 +18,8 @@ Material-UI стремится обеспечить прочную основу 
 
 ## Инструкция по установке
 
+> `@material-ui/styles` is re-exported as `@material-ui/core/styles` - you only need to install it if you wish to use it independently from Material-UI.
+
 Для установки и сохранения в вашем ` package.json ` зависимости, запустите:
 
 ```sh
