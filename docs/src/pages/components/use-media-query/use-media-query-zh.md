@@ -15,7 +15,7 @@ title: React中的媒体查询用于响应式设计
 
 ## 简单的媒体查询
 
-您应该为挂钩的第一个参数提供媒体查询。 The media query string can by any valid CSS media query, e.g. [`'(prefers-color-scheme: dark)'`](/customization/palette/#user-preference).
+您应该为挂钩的第一个参数提供媒体查询。 The media query string can be any valid CSS media query, e.g. [`'(prefers-color-scheme: dark)'`](/customization/palette/#user-preference).
 
 {{"demo": "pages/components/use-media-query/SimpleMediaQuery.js", "defaultCodeOpen": true}}
 
