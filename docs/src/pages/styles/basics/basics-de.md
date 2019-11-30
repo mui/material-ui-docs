@@ -18,6 +18,8 @@ Die Styling-Lösung von Material-UI ist von vielen anderen Styling-Bibliotheken 
 
 ## Installation
 
+> `@material-ui/styles` is re-exported as `@material-ui/core/styles` - you only need to install it if you wish to use it independently from Material-UI.
+
 Um die Abhängigkeit zu ihrer `package.json` hinzuzufügen, führen Sie folgenden Befehl aus:
 
 ```sh
