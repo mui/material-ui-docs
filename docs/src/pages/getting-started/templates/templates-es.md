@@ -1,5 +1,5 @@
 ---
-title: Plantias React gratuitas
+title: +9 Free React Templates
 ---
 
 # Plantillas React
