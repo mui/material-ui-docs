@@ -3,7 +3,7 @@ title: Avatar React component
 components: Avatar
 ---
 
-# Avatars
+# Avatar
 
 <p class="description">Avatars(アバター) は、テーブルからダイアログメニューまで、あらゆる用途に使用されています。</p>
 
