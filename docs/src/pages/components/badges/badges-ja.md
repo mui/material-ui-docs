@@ -3,7 +3,7 @@ title: Badge React component
 components: Badge
 ---
 
-# Badges
+# Badge
 
 <p class="description">バッジは、その子供の右上に小さなバッジを生成します。</p>
 
