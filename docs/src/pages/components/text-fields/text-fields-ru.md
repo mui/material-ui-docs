@@ -3,7 +3,7 @@ title: Текстовое Поле, компонент React
 components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, InputBase, InputLabel, OutlinedInput, TextField
 ---
 
-# Текстовые поля
+# Text Field
 
 <p class="description">Текстовые поля позволяют пользователям вводить и редактировать текст.</p>
 
@@ -54,6 +54,12 @@ There are multiple ways to display an icon with a text field.
 The main way is with an `InputAdornment`. These can be used to add a prefix, a suffix or an action to an input. For instance, you can use an icon button to hide or reveal the password.
 
 {{"demo": "pages/components/text-fields/InputAdornments.js"}}
+
+## Размеры
+
+Fancy smaller inputs? Use the `size` prop.
+
+{{"demo": "pages/components/text-fields/TextFieldSizes.js"}}
 
 ## Расположение
 
