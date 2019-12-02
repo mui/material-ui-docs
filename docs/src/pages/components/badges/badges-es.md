@@ -3,7 +3,7 @@ title: Componente Badge
 components: Badge
 ---
 
-# Placas
+# Badge
 
 <p class="description">El componente Badge genera un pequeño badge en la esquina superior derecha de su(s) hijo(s).</p>
 
