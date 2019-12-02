@@ -3,7 +3,7 @@ title: Componente React para Emblemas
 components: Badge
 ---
 
-# Emblemas
+# Badge
 
 <p class="description"><code>Badge</code> gera um pequeno emblema no canto superior direito de seu(s) filho(s).</p>
 
