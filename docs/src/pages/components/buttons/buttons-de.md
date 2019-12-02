@@ -3,7 +3,7 @@ title: Button React Komponente
 components: Button, ButtonGroup, Fab, IconButton, ButtonBase, Zoom
 ---
 
-# Buttons
+# Button
 
 <p class="description">Mit den Schaltflächen können Benutzer mit einem einzigen Tastendruck Aktionen ausführen und Entscheidungen treffen.</p>
 
