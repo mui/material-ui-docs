@@ -3,7 +3,7 @@ title: Chip React component
 components: Chip
 ---
 
-# Chips
+# Chip
 
 <p class="description">Los Chips son elementos compactos que representan una entrada, atributo o acción.</p>
 
