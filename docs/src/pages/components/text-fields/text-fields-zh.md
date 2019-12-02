@@ -3,7 +3,7 @@ title: React Text Field（文本框）组件
 components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, InputBase, InputLabel, OutlinedInput, TextField
 ---
 
-# Text Fields（文本框）
+# Text Field
 
 <p class="description">用户可以在文本框内输入或编辑文字。</p>
 
@@ -54,6 +54,12 @@ There are multiple ways to display an icon with a text field.
 The main way is with an `InputAdornment`. These can be used to add a prefix, a suffix or an action to an input. For instance, you can use an icon button to hide or reveal the password.
 
 {{"demo": "pages/components/text-fields/InputAdornments.js"}}
+
+## 尺寸
+
+Fancy smaller inputs? Use the `size` prop.
+
+{{"demo": "pages/components/text-fields/TextFieldSizes.js"}}
 
 ## 布局
 
