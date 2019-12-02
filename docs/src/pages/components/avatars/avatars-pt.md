@@ -3,7 +3,7 @@ title: Componente React para Avatares
 components: Avatar
 ---
 
-# Avatares
+# Avatar
 
 <p class="description">Os avatares são encontrado ao longo do material design, com usos em tudo, desde tabelas até menus de diálogo.</p>
 
