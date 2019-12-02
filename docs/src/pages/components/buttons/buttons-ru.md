@@ -3,7 +3,7 @@ title: React-компонент Кнопка
 components: Button, ButtonGroup, Fab, IconButton, ButtonBase, Zoom
 ---
 
-# Кнопки
+# Button
 
 <p class="description">Кнопки позволяют пользователям выполнять действия и делать выбор одним нажатием.</p>
 
