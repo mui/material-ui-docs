@@ -3,7 +3,7 @@ title: React Button（按钮）组件
 components: Button, ButtonGroup, Fab, IconButton, ButtonBase, Zoom
 ---
 
-# Buttons（按钮）
+# Button（按钮）
 
 <p class="description">只需通过轻按一下按钮，用户即可采取行动并做出选择。</p>
 
@@ -84,13 +84,13 @@ ButtonGroup 也可用于创建分割按钮。 下拉列表可以用于更改按�
 
 {{"demo": "pages/components/buttons/ButtonSizes.js"}}
 
-## Buttons with icons and label
+## 带有icons（图标）和 label（标签）的按钮
 
 Sometimes you might want to have icons for certain button to enhance the UX of the application as we recognize logos more easily than plain text. For example, if you have a delete button you can label it with a dustbin icon.
 
 {{"demo": "pages/components/buttons/IconLabelButtons.js"}}
 
-## Icon Buttons
+## Icon Buttons（图标按钮）
 
 Icon buttons are commonly found in app bars and toolbars.
 
@@ -98,15 +98,15 @@ Icons are also appropriate for toggle buttons that allow a single choice to be s
 
 {{"demo": "pages/components/buttons/IconButtons.js"}}
 
-## Customized buttons
+## Customized Buttons（自定义按钮）
 
 以下是自定义组件的一些例子。 您可以在[重写文档页](/customization/components/)中了解有关此内容的更多信息。
 
 {{"demo": "pages/components/buttons/CustomizedButtons.js", "defaultCodeOpen": false}}
 
-👑 If you are looking for inspiration, you can check [MUI Treasury's customization examples](https://mui-treasury.com/components/button).
+👑如果您还在寻找灵感，您可以看看 [MUI Treasury 特别定制的一些例子](https://mui-treasury.com/components/button)。
 
-## Complex Buttons
+## Complex Buttons（复杂按钮）
 
 The Text Buttons, Contained Buttons, Floating Action Buttons and Icon Buttons are built on top of the same component: the `ButtonBase`. You can take advantage of this lower level component to build custom interactions.
 
