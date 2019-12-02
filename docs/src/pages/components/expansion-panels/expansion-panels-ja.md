@@ -3,7 +3,7 @@ title: Expansion Panel React component
 components: ExpansionPanel, ExpansionPanelActions, ExpansionPanelDetails, ExpansionPanelSummary
 ---
 
-# Expansion Panels
+# Expansion Panel
 
 <p class="description">Expansion panels(拡張パネル) には作成フローが含まれ、要素を簡単に編集できます。</p>
 
