@@ -1,5 +1,5 @@
 ---
-title: Modelos de React grátis
+title: +9 Free React Templates
 ---
 
 # Modelos React
