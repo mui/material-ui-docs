@@ -3,7 +3,7 @@ title: Composant React Badge
 components: Badge
 ---
 
-# Badges
+# Badge
 
 <p class="description">Emblema gera um pequeno emblema para o canto superior direito do seu filho(s).</p>
 
