@@ -46,7 +46,7 @@ components: TextField, Popper, автозаполнение
 
 ## `useAutocomplete`
 
-For advanced customization use cases, we expose a `useAutocomplete()` hook. It accepts almost the same options as the Autocomplete component minus all the props related to the rendering of JSX. The Autocomplete component uses this hook internally.
+Для продвинутой кастомизации используйте `useAutocomplete()` хук. It accepts almost the same options as the Autocomplete component minus all the props related to the rendering of JSX. The Autocomplete component uses this hook internally.
 
 ```jsx
 import useAutocomplete from '@material-ui/lab/useAutocomplete';
