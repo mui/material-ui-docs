@@ -63,7 +63,7 @@
   "codesandbox": "Editar en CodeSandbox",
   "seeMore": "Ver más",
   "copySource": "Copiar la fuente",
-  "copySourceLinkJS": "Copy link to JavaScript source",
+  "copySourceLinkJS": "Copiar enlace a fuente de JavaScript",
   "copySourceLinkTS": "Copy link to TypeScript source",
   "stackblitz": "Editar en StackBlitz (solo JS)",
   "headTitle": "Material-UI: A popular React UI framework",
