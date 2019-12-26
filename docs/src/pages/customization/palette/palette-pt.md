@@ -9,9 +9,9 @@ Uma intenção de cor é um mapeamento de uma paleta para uma determinada inten�
 - primário - usado para representar os elementos de interface primários para um usuário.
 - secundário - usado para representar os elementos de interface secundários para um usuário.
 - erro - usado para representar os elementos de interface dos quais o usuário deve estar ciente.
-- warning - used to represent potentially dangerous actions or important messages.
-- info - used to present information to the user that is neutral and not necessarily important.
-- success - used to indicate the successful completion of an action that user triggered.
+- aviso - usado para representar ações potencialmente perigosas ou mensagens importantes.
+- info - usado para apresentar ao usuário informações neutras e não necessariamente importantes.
+- success - usado para indicar a conclusão bem-sucedida de uma ação que o usuário acionou.
 
 A paleta padrão usa as sombras prefixadas com `A` (`A200`, etc.) para a intenção secundária, e as cores não pré-fixadas para as outras intenções.
 
@@ -23,7 +23,7 @@ Se você quiser aprender mais sobre cor, você pode conferir [a seção de cores
 
 Você pode sobrescrever os valores padrão da paleta incluindo um objeto palette como parte do seu tema.
 
-If any of the [`palette.primary`](/customization/default-theme/?expend-path=$.palette.primary), [`palette.secondary`](/customization/default-theme/?expend-path=$.palette.secondary), [`palette.error`](/customization/default-theme/?expend-path=$.palette.error), [`palette.warning`](/customization/default-theme/?expend-path=$.palette.warning), [`palette.info`](/customization/default-theme/?expend-path=$.palette.info) or [`palette.successs`](/customization/default-theme/?expend-path=$.palette.successs) 'intention' objects are provided, they will replace the defaults.
+Se algum dos [` palette.primary `](/customization/default-theme/?expend-path=$.palette.primary), [` palette.secondary `](/customization/default-theme/?expend-path=$.palette.secondary), [` palette.error `](/customization/default-theme/?expend-path=$.palette.error), [` palette.warning `](/customization/default-theme/?expend-path=$.palette.warning), [` palette.info `](/customization/default-theme/?expend-path=$.palette.info) ou [` palette.successs `](/customization/default-theme/?expend-path=$.palette.successs) objetos 'intenção' são fornecidos, eles substituirão os padrões.
 
 O valor da intenção pode ser um objeto [cor](/customization/color/), ou um objeto com uma ou mais das chaves especificadas pela seguinte interface TypeScript:
 
