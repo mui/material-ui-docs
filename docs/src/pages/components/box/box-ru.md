@@ -1,5 +1,5 @@
 ---
-title: Box React component
+title: React-компонент Box
 ---
 
 # Box
@@ -42,7 +42,7 @@ The Box children accepts a render props function. You can pull out the `classNam
 
 ```jsx
 <Box color="text.primary">
-  {props => <Button {...props} />}
+  {props => <Button {...props} />}
 </Box>
 ```
 
