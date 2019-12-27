@@ -112,7 +112,7 @@ The following demo relies on [autosuggest-highlight](https://github.com/moroshko
 
 {{"demo": "pages/components/autocomplete/Highlights.js"}}
 
-## Custom filter
+## Пользовательский фильтр
 
 The component exposes a factory to create a filter method that can provided to the `filerOption` prop. You can use it to change the default option filter behavior.
 
@@ -155,9 +155,9 @@ const filterOptions = (options, { inputValue }) =>
 <Autocomplete filterOptions={filterOptions} />
 ```
 
-## Virtualization
+## Виртуализация
 
-Search within 10,000 randomly generated options. The list is virtualized thanks to [react-window](https://github.com/bvaughn/react-window).
+Поиск в 10000 случайно сгенерированных опций. Список виртуализирован благодаря [реагирующему окну](https://github.com/bvaughn/react-window).
 
 {{"demo": "pages/components/autocomplete/Virtualize.js"}}
 
