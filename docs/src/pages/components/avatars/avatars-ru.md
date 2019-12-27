@@ -33,7 +33,7 @@ components: Avatar, AvatarGroup, Badge
 
 ## Variants
 
-Если вам нужны квадратные или округлые аватары, используйте опцию `variant`.
+Если вам нужны квадратные или округлые аватары, используйте проп `variant`.
 
 {{"demo": "pages/components/avatars/VariantAvatars.js"}}
 
