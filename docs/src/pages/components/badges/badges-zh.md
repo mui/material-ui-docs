@@ -47,6 +47,6 @@ components: Badge
 
 ## 徽章组件的校准
 
-您可以使用 `horizontalAlignment` 和 `verticalAlignment` 这两个属性，在封装的组件任意角落显示徽章组件。
+You can use the `anchorOrigin` prop to move the badge to any corner of the wrapped element.
 
 {{"demo": "pages/components/badges/BadgeAlignment.js", "hideHeader": true}}
