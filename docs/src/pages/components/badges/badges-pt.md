@@ -47,6 +47,6 @@ Você pode usar a propriedade `overlap` para colocar o emblema em relação ao c
 
 ## Alinhamento de emblema
 
-Você pode usar as propriedades `horizontalAlignment` e `verticalAlignment` para mover o emblema para qualquer canto do elemento agrupado.
+You can use the `anchorOrigin` prop to move the badge to any corner of the wrapped element.
 
 {{"demo": "pages/components/badges/BadgeAlignment.js", "hideHeader": true}}
