@@ -1,19 +1,19 @@
-<h2 align="center">Material-UI's sponsors</h2>
+<h2 align="center">Material-UI 的赞助商</h2>
 
-The core of Material-UI is a [crowd-funded](/discover-more/backers/) open-source project, licensed under the permissive MIT license. Sponsorship increases the rate of bug fixes, documentation improvements, and feature development.
+Material-UI 是一个[众筹](/discover-more/backers/)的开源项目，根据MIT协议进行许可。 赞助可用加快我们错误修复，文档改进和功能开发的速度。
 
-### Diamond 💎
+### 钻石级💎
 
-*3/3 slots available*
+*3/3 个位置可用*
 
-Diamond Sponsors are those who have pledged $2,000/month and more to Material-UI. Please contact us at diamond@material-ui.com to subscribe to this tier.
+钻石赞助商每月向 Material-UI 捐款至少 2,000美元。 请联系邮箱 diamond@material-ui.com 以订阅此级别。
 
-### Gold 🏆
+### 金杯级 🏆
 
 通过 [Patreon](https://www.patreon.com/oliviertassinari)
 
 <p style="display: flex; justify-content: center;">
-  <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="tidelift" href="https://tidelift.com/subscription/pkg/npm-material-ui?utm_source=material_ui&utm_medium=referral&utm_campaign=homepage" rel="noopener sponsored" target="_blank" style="margin-right: 16px;"><img width="96" src="https://github.com/tidelift.png?size=96" alt="tidelift" title="Enterprise-ready open source software" /></a>
+  <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="tidelift" href="https://tidelift.com/subscription/pkg/npm-material-ui?utm_source=material_ui&utm_medium=referral&utm_campaign=homepage" rel="noopener sponsored" target="_blank" style="margin-right: 16px;"><img width="96" src="https://github.com/tidelift.png?size=96" alt="tidelift" title="企业级开源软件" /></a>
   <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="bitsrc" href="https://bit.dev" rel="noopener sponsored" target="_blank" style="margin-right: 16px;"><img width="96" src="https://github.com/teambit.png?size=96" alt="bitsrc" title="分享你的代码最快的办法" /></a>
 </p>
 
