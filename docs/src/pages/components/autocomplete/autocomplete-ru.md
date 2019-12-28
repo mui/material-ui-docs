@@ -1,9 +1,9 @@
 ---
 title: React-компонент Автозаполнение
-components: TextField, Popper, автозаполнение
+components: TextField, Popper, Autocomplete
 ---
 
-# Автодополнение
+# Autocomplete (Автодополнение)
 
 <p class="description">Автодополнение - это обычный ввод текста, дополненный панелью предлагаемых опций.</p>
 
@@ -52,7 +52,7 @@ components: TextField, Popper, автозаполнение
 import useAutocomplete from '@material-ui/lab/useAutocomplete';
 ```
 
-- 4.5 [1 кБ в сжатом виде](/size-snapshot).
+- 4.5 [4,5 кБ в сжатом виде](/size-snapshot).
 
 {{"demo": "pages/components/autocomplete/UseAutocomplete.js", "defaultCodeOpen": false}}
 
