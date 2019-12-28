@@ -47,6 +47,6 @@ Puede usar la propiedad `overlap` para colocar la insignia relativa a la esquina
 
 ## Alineación de la insignia
 
-Puede usar las propiedades `horizontalAlignment` y `verticalAlignment` para mover la insignia a cualquier esquina del elemento envuelto.
+You can use the `anchorOrigin` prop to move the badge to any corner of the wrapped element.
 
 {{"demo": "pages/components/badges/BadgeAlignment.js", "hideHeader": true}}
