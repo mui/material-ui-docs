@@ -12,7 +12,7 @@ Each breakpoint (a key) matches with a *fixed* screen width (a value):
 - **lg,** large: 1280px
 - **xl,** extra-large: 1920px
 
-These [breakpoint values](/customization/default-theme/?expend-path=$.breakpoints.values) are used to determine breakpoint ranges. A range starts from the breakpoint value inclusive, to the next breakpoint value exclusive:
+These [breakpoint values](/customization/default-theme/?expand-path=$.breakpoints.values) are used to determine breakpoint ranges. A range starts from the breakpoint value inclusive, to the next breakpoint value exclusive:
 
 ```js
 value         |0px     600px    960px    1280px   1920px
@@ -21,7 +21,7 @@ screen width  |--------|--------|--------|--------|-------->
 range         |   xs   |   sm   |   md   |   lg   |   xl
 ```
 
-Ces valeurs peuvent être personnalisées. You will find them in the theme, in the [`breakpoints.values`](/customization/default-theme/?expend-path=$.breakpoints.values) object.
+Ces valeurs peuvent être personnalisées. You will find them in the theme, in the [`breakpoints.values`](/customization/default-theme/?expand-path=$.breakpoints.values) object.
 
 The breakpoints are used internally in various components to make them responsive, but you can also take advantage of them for controlling the layout of your application through the [Grid](/components/grid/) and [Hidden](/components/hidden/) components.
 
@@ -242,4 +242,4 @@ export default withWidth()(MyComponent);
 
 ## Default values
 
-You can explore the default values of the breakpoints using [the theme explorer](/customization/default-theme/?expend-path=$.breakpoints) or by opening the dev tools console on this page (`window.theme.breakpoints`).
+You can explore the default values of the breakpoints using [the theme explorer](/customization/default-theme/?expand-path=$.breakpoints) or by opening the dev tools console on this page (`window.theme.breakpoints`).
