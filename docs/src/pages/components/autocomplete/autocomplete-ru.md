@@ -78,7 +78,7 @@ For this demo, we need to load the [Google Maps JavaScript](https://developers.g
 
 ## Множественные значения
 
-Также известны как теги. Пользователь может ввести более 1 значения.
+Also known as tags, the user is allowed to enter more than one value.
 
 {{"demo": "pages/components/autocomplete/Tags.js"}}
 
