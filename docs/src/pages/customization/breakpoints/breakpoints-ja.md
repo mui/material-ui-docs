@@ -12,7 +12,7 @@
 - **lg,** large: 1280px
 - **xl,** extra-large: 1920px
 
-これらの[ブレークポイント値](/customization/default-theme/?expend-path=$.breakpoints.values)は、ブレークポイントの範囲を決定するために使用されます。 範囲は、ブレークポイント値を含む範囲から、次のブレークポイント値を除く範囲までです。
+These [breakpoint values](/customization/default-theme/?expand-path=$.breakpoints.values) are used to determine breakpoint ranges. 範囲は、ブレークポイント値を含む範囲から、次のブレークポイント値を除く範囲までです。
 
 ```js
 value         |0px     600px    960px    1280px   1920px
@@ -21,7 +21,7 @@ screen width  |--------|--------|--------|--------|-------->
 range         |   xs   |   sm   |   md   |   lg   |   xl
 ```
 
-これらの値はいつでもカスタマイズできます。 これらは、テーマの[`breakpoints.values`](/customization/default-theme/?expend-path=$.breakpoints.values)オブジェクトにあります。
+これらの値はいつでもカスタマイズできます。 You will find them in the theme, in the [`breakpoints.values`](/customization/default-theme/?expand-path=$.breakpoints.values) object.
 
 ブレークポイントは、さまざまなコンポーネントで応答性を高めるために内部的に使用されますが、[Grid](/components/grid/)および[Hidden](/components/hidden/)コンポーネントを使用してアプリケーションのレイアウトを制御する場合にも利用できます。
 
@@ -243,4 +243,4 @@ export default withWidth()(MyComponent);
 
 ## デフォルト値
 
-You can explore the default values of the breakpoints using [the theme explorer](/customization/default-theme/?expend-path=$.breakpoints) or by opening the dev tools console on this page (`window.theme.breakpoints`).
+You can explore the default values of the breakpoints using [the theme explorer](/customization/default-theme/?expand-path=$.breakpoints) or by opening the dev tools console on this page (`window.theme.breakpoints`).
