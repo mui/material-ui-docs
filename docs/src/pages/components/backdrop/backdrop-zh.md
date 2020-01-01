@@ -5,8 +5,8 @@ components: Backdrop
 
 # Backdrop
 
-<p class="description">The backdrop component is used to provide emphasis on a particular element or parts of it.</p>
+<p class="description">Backdrop 组件用于提供对特定元素或其部分的强调。</p>
 
-The overlay signals to the user of a state change within the application and can be used for creating loaders, dialogs and more. In its simplest form, the backdrop component will add a dimmed layer over your application.
+叠加层向用户发送应用程序内状态更改的标志，可用于创建加载器、对话框等。 在最简单的情况下，backdrop 组件将在您的应用程序上添加一个暗淡的图层。
 
 {{"demo": "pages/components/backdrop/SimpleBackdrop.js"}}
