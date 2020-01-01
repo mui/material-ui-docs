@@ -198,11 +198,11 @@ const useStyles = makeStyles(theme => ({
 
 ## @material-ui/core/styles 对比 @material-ui/styles
 
-Material-UI's styles are powered by the [@material-ui/styles](https://www.npmjs.com/package/@material-ui/styles) package, (built with JSS). This solution is [isolated](https://bundlephobia.com/result?p=@material-ui/styles). 它没有一个默认的主题，可以用于对不使用 Material-UI 组件的 React 应用程序设置样式。
+Material-UI's styles are powered by the [@material-ui/styles](https://www.npmjs.com/package/@material-ui/styles) package, (built with JSS). 这个解决方案是[独立](https://bundlephobia.com/result?p=@material-ui/styles)的。 它没有一个默认的主题，可以用于对不使用 Material-UI 组件的 React 应用程序设置样式。
 
-To reduce the number of packages to install when using Material-UI, and to simplify the imports, `@material-ui/styles` modules are re-exported from `@material-ui/core/styles`.
+为了减少在使用 Material-UI 时要安装的包的数量和简化导入，`@material-ui/styles` 模块从 `@material-ui/core/styles` 中被重新导出。
 
-To remove the need to systematically supply a theme, the default Material-UI theme is applied to the re-exported `makeStyles`, `styled`, `withTheme`, `useTheme`, and `withStyles` modules.
+为了无需系统地提供一个主题，默认的 Material-UI 主题被应用到重新导出的 `makeStyles`，`styled`，`withTheme`，`useTheme`，和 `withStyles` 模块。
 
 就像这样：
 
