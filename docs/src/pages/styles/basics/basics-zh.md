@@ -6,7 +6,7 @@ Material-UI 旨在为构建动态 UI 提供坚实的基础。 为了项目结构
 
 ## 为什么要使用 Material-UI 的样式解决方案？
 
-在以前的版本中，Material-UI 曾使用过 LESS，以及而后的自定义内嵌式来编写组件的样式。但是这些方法已被证明了其局限性。 [A *CSS-in-JS* solution](https://github.com/oliviertassinari/a-journey-toward-better-style) overcomes many of those limitations, and **unlocks many great features** (theme nesting, dynamic styles, self-support, etc.).
+在以前的版本中，Material-UI 曾使用过 LESS，以及而后的自定义内嵌式来编写组件的样式。但是这些方法已被证明了其局限性。 [*CSS-in-JS* solution](https://github.com/oliviertassinari/a-journey-toward-better-style) 克服了很多限制，并 **开启了很多强大的功能**（主题嵌套、动态样式、自举等等）。
 
 Material-UI的样式解决方案受到许多其他CSS-in-JS库的启发，例如 [styled-components](https://www.styled-components.com/) 和 [emotion](https://emotion.sh/)。
 
