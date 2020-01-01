@@ -61,7 +61,7 @@ export default function Hook() {
 
 {{"demo": "pages/styles/basics/Hook.js"}}
 
-### Styled components API
+### 样式化组件 API
 
 注意：这只适用于仍然使用JSS对象的调用语法样式定义（calling syntax – style definitions）。 你还可以带有一些局限性地[改变这种行为](/styles/advanced/#string-templates)。
 
@@ -121,7 +121,7 @@ export default withStyles(styles)(HigherOrderComponent);
 
 {{"demo": "pages/styles/basics/HigherOrderComponent.js"}}
 
-## Nesting selectors
+## 嵌套选择器
 
 您可以将选择器嵌套到当前类或组件内的目标元素。 以下示例使用Hook API，其他API的工作方式相同。
 
@@ -183,7 +183,7 @@ function MyComponent() {
 
 ### 压力测试
 
-在以下压力测试中，您可以更新*主题颜色*和*背景颜色属性*：
+在以下压力测试中，您可以实时更新*主题颜色*和*背景颜色属性*：
 
 ```js
 const useStyles = makeStyles(theme => ({
@@ -196,9 +196,9 @@ const useStyles = makeStyles(theme => ({
 
 {{"demo": "pages/styles/basics/StressTest.js"}}
 
-## @ material-ui / core / styles 对比 @ material-ui / styles
+## @material-ui/core/styles 对比 @material-ui/styles
 
-Material-UI's styles are powered by the [@material-ui/styles](https://www.npmjs.com/package/@material-ui/styles) package, (built with JSS). This solution is [isolated](https://bundlephobia.com/result?p=@material-ui/styles). It doesn't have a default theme, and can be used to style React applications that are not using Material-UI components.
+Material-UI's styles are powered by the [@material-ui/styles](https://www.npmjs.com/package/@material-ui/styles) package, (built with JSS). This solution is [isolated](https://bundlephobia.com/result?p=@material-ui/styles). 它没有一个默认的主题，可以用于对不使用 Material-UI 组件的 React 应用程序设置样式。
 
 To reduce the number of packages to install when using Material-UI, and to simplify the imports, `@material-ui/styles` modules are re-exported from `@material-ui/core/styles`.
 
