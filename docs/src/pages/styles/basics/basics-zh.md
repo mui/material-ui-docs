@@ -4,7 +4,7 @@
 
 Material-UI 旨在为构建动态 UI 提供坚实的基础。 为了项目结构更清晰简单，**我们将 Material-UI 组件中使用的样式解决方案**作为` @material-ui/styles `包单独发布。 @material-ui/styles并不是唯一的选择，Material-UI也可以与其他主流样式解决方案[互动](/guides/interoperability/)。
 
-## Why use Material-UI's styling solution?
+## 为什么要使用 Material-UI 的样式解决方案？
 
 在以前的版本中，Material-UI 曾使用过 LESS，以及而后的自定义内嵌式来编写组件的样式。但是这些方法已被证明了其局限性。 [A *CSS-in-JS* solution](https://github.com/oliviertassinari/a-journey-toward-better-style) overcomes many of those limitations, and **unlocks many great features** (theme nesting, dynamic styles, self-support, etc.).
 
@@ -18,7 +18,7 @@ Material-UI的样式解决方案受到许多其他CSS-in-JS库的启发，例如
 
 ## 安装
 
-> `@material-ui/styles` is re-exported as `@material-ui/core/styles` - you only need to install it if you wish to use it independently from Material-UI.
+> `@material-ui/styles` 被重新导出为 `@material-ui/core/styles` - 如果你想要独立于 Material-UI 使用它，只需要安装它。
 
 将 Material-UI 下载并保存到你的 `package.json` 依赖文件里，请运行:
 
