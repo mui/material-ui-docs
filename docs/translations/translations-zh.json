@@ -199,7 +199,7 @@
     "/guides/testing": "测试",
     "/guides/flow": "Flow",
     "/guides/right-to-left": "源文语言从右至左读",
-    "/guides/localization": "Localization",
+    "/guides/localization": "本地化",
     "/discover-more": "发现更多",
     "/discover-more/showcase": "展示",
     "/discover-more/related-projects": "相关的项目",
@@ -218,7 +218,7 @@
     "https://themes.material-ui.com/": "高级版主题",
     "/components/material-icons": "Material Icons (材料图标)",
     "/components/textarea-autosize": "Textarea自动调整大小",
-    "/components/rating": "Rating",
+    "/components/rating": "评价",
     "/components/skeleton": "骨架屏",
     "/components/tree-view": "树视图",
     "/customization/density": "间距(density)"
