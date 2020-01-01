@@ -14,7 +14,7 @@ Material-UI的样式解决方案受到许多其他CSS-in-JS库的启发，例如
 - 🚀[超 ](https://github.com/mui-org/material-ui/blob/master/packages/material-ui-benchmark/README.md#material-uistyles)快 。
 - 🧩可通过[插件](https://github.com/cssinjs/jss/blob/master/docs/plugins.md)API 扩展。
 - ⚡️它使用[ JSS ](https://github.com/cssinjs/jss)作为其核心 -- 一个 [高性能](https://github.com/cssinjs/jss/blob/master/docs/performance.md) JavaScript到CSS编译器，它在运行时和服务器端工作。
-- 📦 Less than [15 KB gzipped](https://bundlephobia.com/result?p=@material-ui/styles); and no bundle size increase if used alongside Material-UI.
+- 📦 小于 [15 KB gzipped](https://bundlephobia.com/result?p=@material-ui/styles)，且如果与 Material-UI 一起使用，包的大小不会增加。
 
 ## 安装
 
@@ -32,7 +32,7 @@ yarn add @material-ui/styles
 
 ## 入门
 
-There are 3 possible APIs you can use to generate and apply styles, however they all share the same underlying logic.
+您可以使用 3 种可能的 API 来生成和应用样式，但是它们都共享相同的底层逻辑。
 
 ### Hook API
 
@@ -63,7 +63,7 @@ export default function Hook() {
 
 ### Styled components API
 
-Note: this only applies to the calling syntax – style definitions still use a JSS object. You can also [change this behavior](/styles/advanced/#string-templates), with some limitations.
+注意：这只适用于仍然使用JSS对象的调用语法样式定义（calling syntax – style definitions）。 你还可以带有一些局限性地[改变这种行为](/styles/advanced/#string-templates)。
 
 ```jsx
 import React from 'react';
