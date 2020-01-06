@@ -91,7 +91,7 @@ In der folgenden Demo ändern wir das gerenderte DOM-Element (* em*, <u> u</u>, 
 
 #### Rückgabewerte
 
-`media query`: Eine Medienabfragezeichenfolge, die zur Verwendung mit JSS bereit ist.
+`media query`: A media query string ready to be used with most styling solutions, which matches screen widths greater than and including the screen size given by the breakpoint key.
 
 #### Beispiele
 
@@ -116,7 +116,7 @@ const styles = theme => ({
 
 #### Rückgabewerte
 
-`media query`: Eine Medienabfragezeichenfolge, die für die Verwendung mit JSS bereit ist und der Bildschirmbreiten unter und einschließlich der durch die Haltepunkttaste angegebenen Bildschirmgröße entspricht.
+`media query`: A media query string ready to be used with most styling solutions, which matches screen widths less than and including the screen size given by the breakpoint key.
 
 #### Beispiele
 
@@ -142,7 +142,7 @@ const styles = theme => ({
 
 #### Rückgabewerte
 
-`media query`: Eine Medienabfragezeichenfolge, die für die Verwendung mit JSS bereit ist und der Bildschirmbreiten über und einschließlich der durch die Haltepunkttaste angegebenen Bildschirmgröße entspricht.
+`media query`: A media query string ready to be used with most styling solutions, which matches screen widths including the screen size given by the breakpoint key.
 
 #### Beispiele
 
@@ -164,12 +164,12 @@ const styles = theme => ({
 
 #### Argumente
 
-1. `start` (*String*): Eine Haltepunktschlüssel (`xs`, `sm`, etc.).
-2. `end` (*String*): Eine Haltepunktschlüssel (`xs`, `sm`, etc.).
+1. `start` (*String*): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in pixels.
+2. `end` (*String*): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in pixels.
 
 #### Rückgabewerte
 
-`media query`: Eine Medienabfragezeichenfolge, die für die Verwendung mit JSS bereit ist und die Bildschirmbreiten größer als die im ersten Argument durch den Haltepunktschlüssel angegebene Bildschirmgröße und weniger als die im zweiten Argument durch den Haltepunktschlüssel angegebene Bildschirmgröße angleicht.
+`media query`: A media query string ready to be used with most styling solutions, which matches screen widths greater than the screen size given by the breakpoint key in the first argument and less than the the screen size given by the breakpoint key in the second argument.
 
 #### Beispiele
 
