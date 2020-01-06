@@ -91,7 +91,7 @@ Na demonstração a seguir, alteramos o elemento DOM renderizado (*em*, <u>u</u>
 
 #### Retornos
 
-`media query`: Uma string de consulta de mídia pronta para ser usada com o JSS.
+`media query`: A media query string ready to be used with most styling solutions, which matches screen widths greater than and including the screen size given by the breakpoint key.
 
 #### Exemplos
 
@@ -116,7 +116,7 @@ const styles = theme => ({
 
 #### Retornos
 
-`media query`: Uma string de consulta de mídia pronta para ser usada com o JSS, que corresponde a largura de tela menores incluindo o tamanho da tela fornecido como chave do ponto de quebra.
+`media query`: A media query string ready to be used with most styling solutions, which matches screen widths less than and including the screen size given by the breakpoint key.
 
 #### Exemplos
 
@@ -142,7 +142,7 @@ const styles = theme => ({
 
 #### Retornos
 
-`media query`: Uma string de consulta de mídia pronta para ser usada com o JSS, que corresponde a larguras de telas maiores e incluindo o tamanho de tela fornecido na chave do ponto de quebra.
+`media query`: A media query string ready to be used with most styling solutions, which matches screen widths including the screen size given by the breakpoint key.
 
 #### Exemplos
 
@@ -164,12 +164,12 @@ const styles = theme => ({
 
 #### Argumentos
 
-1. `start` (*String*): Uma chave de ponto de quebra (`xs`, `sm`, etc.).
-2. `end` (*String*): Uma chave de ponto de quebra (`xs`, `sm`, etc.).
+1. `start` (*String*): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in pixels.
+2. `end` (*String*): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in pixels.
 
 #### Retornos
 
-`media query`: Uma string de consulta de mídia pronta para ser usada com o JSS, que corresponde a larguras de telas maiores que o tamanho da tela fornecido na chave de ponto de quebra no primeiro argumento e menor que o tamanho de tela fornecido pela chave de ponto de quebra no segundo argumento.
+`media query`: A media query string ready to be used with most styling solutions, which matches screen widths greater than the screen size given by the breakpoint key in the first argument and less than the the screen size given by the breakpoint key in the second argument.
 
 #### Exemplos
 
