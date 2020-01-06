@@ -91,7 +91,7 @@ export default withWidth()(MyComponent);
 
 #### 返回结果
 
-`media query` ：准备与JSS一起使用的媒体查询字符串。
+`media query`: A media query string ready to be used with most styling solutions, which matches screen widths greater than and including the screen size given by the breakpoint key.
 
 #### 例子
 
@@ -116,7 +116,7 @@ const styles = theme => ({
 
 #### 返回结果
 
-`media query` ：媒体查询字符串已经可以与JSS一起使用，其匹配的屏幕宽度小于breakpoint key给出的屏幕大小。
+`media query`: A media query string ready to be used with most styling solutions, which matches screen widths less than and including the screen size given by the breakpoint key.
 
 #### 例子
 
@@ -142,7 +142,7 @@ const styles = theme => ({
 
 #### 返回结果
 
-`media query` ：媒体查询字符串已经可以与JSS一起使用，其匹配的屏幕宽度大于breakpoint key给出的屏幕大小。
+`media query`: A media query string ready to be used with most styling solutions, which matches screen widths including the screen size given by the breakpoint key.
 
 #### 例子
 
@@ -164,12 +164,12 @@ const styles = theme => ({
 
 #### 参数
 
-1. `start` （*String*）：断点键（`xs` ，`sm`等）。
-2. `end` （*String*）：断点键（`xs` ，`sm`等）。
+1. `start` (*String*): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in pixels.
+2. `end` (*String*): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in pixels.
 
 #### 返回结果
 
-`media query`: A media query string ready to be used with JSS, which matches screen widths greater than the screen size given by the breakpoint key in the first argument and less than the the screen size given by the breakpoint key in the second argument.
+`media query`: A media query string ready to be used with most styling solutions, which matches screen widths greater than the screen size given by the breakpoint key in the first argument and less than the the screen size given by the breakpoint key in the second argument.
 
 #### 例子
 
