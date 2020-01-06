@@ -91,7 +91,7 @@ export default withWidth()(MyComponent);
 
 #### 戻り値
 
-`media query`: ：JSSですぐに使用できるメディアクエリ文字列。
+`media query`: A media query string ready to be used with most styling solutions, which matches screen widths greater than and including the screen size given by the breakpoint key.
 
 #### 例
 
@@ -116,7 +116,7 @@ const styles = theme => ({
 
 #### 戻り値
 
-`media query`: A media query string ready to be used with JSS, which matches screen widths less than and including the screen size given by the breakpoint key.
+`media query`: A media query string ready to be used with most styling solutions, which matches screen widths less than and including the screen size given by the breakpoint key.
 
 #### 例
 
@@ -142,7 +142,7 @@ const styles = theme => ({
 
 #### 戻り値
 
-`media query`: A media query string ready to be used with JSS, which matches screen widths greater than and including the screen size given by the breakpoint key.
+`media query`: A media query string ready to be used with most styling solutions, which matches screen widths including the screen size given by the breakpoint key.
 
 #### 例
 
@@ -164,12 +164,12 @@ const styles = theme => ({
 
 #### 引数
 
-1. `start` (*String*): A breakpoint key (`xs`, `sm`, etc.).
-2. `end` (*String*): A breakpoint key (`xs`, `sm`, etc.).
+1. `start` (*String*): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in pixels.
+2. `end` (*String*): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in pixels.
 
 #### 戻り値
 
-`media query` ：JSSですぐに使用できるメディアクエリ文字列。最初の引数のブレークポイントキーで指定された画面サイズより大きく、2番目の引数のブレークポイントキーで指定された画面サイズより小さい画面幅に一致します。
+`media query`: A media query string ready to be used with most styling solutions, which matches screen widths greater than the screen size given by the breakpoint key in the first argument and less than the the screen size given by the breakpoint key in the second argument.
 
 #### 例
 
