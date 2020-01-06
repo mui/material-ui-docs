@@ -6,7 +6,7 @@ Material-UI 是一个[众筹](/discover-more/backers/)的开源项目，根据MI
 
 *3/3 个位置可用*
 
-钻石赞助商每月向 Material-UI 捐款至少 2,000美元。 请联系邮箱 diamond@material-ui.com 以订阅此级别。
+Diamond Sponsors are those who have pledged $2,000/month or more to Material-UI. 请联系邮箱 diamond@material-ui.com 以订阅此级别。
 
 ### 金杯级 🏆
 
@@ -23,7 +23,7 @@ Material-UI 是一个[众筹](/discover-more/backers/)的开源项目，根据MI
   <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="callemall" href="https://www.call-em-all.com" rel="noopener sponsored" target="_blank" style="margin-right: 16px;"><img src="https://images.opencollective.com/proxy/images?src=https%3A%2F%2Fopencollective-production.s3-us-west-1.amazonaws.com%2Ff4053300-e0ea-11e7-acf0-0fa7c0509f4e.png&height=100" alt="call-em-all" title="向群组发送消息的最简便的方法" width="100" loading="lazy"></a>
 </p>
 
-我们的金牌赞助商们每月向 Material-UI 至少捐赠500美元。
+Gold Sponsors are those who have pledged $500/month or more to Material-UI.
 
 ### 其实还有更多！
 
