@@ -4,7 +4,7 @@
 
 ## Exemples officiels
 
-You can find some example projects in the [GitHub repository](https://github.com/mui-org/material-ui) under the [`/examples`](https://github.com/mui-org/material-ui/tree/master/examples) folder:
+Vous pouvez trouver des exemples de projets dans le [dépôt GitHub](https://github.com/mui-org/material-ui) sous le dossier [`/examples`](https://github.com/mui-org/material-ui/tree/master/examples) :
 
 - [Create React App](https://github.com/mui-org/material-ui/tree/master/examples/create-react-app)
 - [Gatsby](https://github.com/mui-org/material-ui/tree/master/examples/gatsby)
