@@ -5,11 +5,11 @@ components: Alert
 
 # Alert
 
-<p class="description">An alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.</p>
+<p class="description">Une alerte affiche un message court et important d'une manière qui attire l'attention de l'utilisateur sans interrompre sa tâche.</p>
 
-## Simple alerts
+## Alertes simples
 
-The alert offers four severity levels that set a distinctive icon and color.
+L'alerte offre quatre niveaux de gravité qui définissent une icône et une couleur distinctes.
 
 {{"demo": "pages/components/alert/SimpleAlerts.js"}}
 
