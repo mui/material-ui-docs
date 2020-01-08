@@ -15,29 +15,29 @@ L'alerte offre quatre niveaux de gravité qui définissent une icône et une cou
 
 ## Description
 
-You can use the `AlertTitle` component to display a formatted title above the content.
+Vous pouvez utiliser le composant `AlertTitle` pour afficher un titre formaté au-dessus du contenu.
 
 {{"demo": "pages/components/alert/DescriptionAlerts.js"}}
 
 ## Actions
 
-An alert can have an action, such as a close or undo button. It is rendered after the message, at the end of the alert.
+Une alerte peut avoir une action, comme un bouton de fermeture ou d'annulation. Il est affiché après le message, à la fin de l'alerte.
 
-If an `onClose` callback is provided and no `action` prop is set, a close icon is displayed. The `action` prop can be used to provide an alternative action, for example using a Button or IconButton.
+Si une fonction de rappel `onClose` est fournie et qu'aucune propriété `action` n'est définie, une icône de fermeture est affichée. La propriété `action` peut être utilisée pour fournir une action alternative, par exemple en utilisant un Bouton ou un IconBouton.
 
 {{"demo": "pages/components/alert/ActionAlerts.js"}}
 
 ### Transition
 
-You can use a [transition component](/components/transitions/) such as `Collapse` to transition the appearance of the alert.
+Vous pouvez utiliser un [composant de transition](/components/transitions/) tel que ` Collapse` pour faire la transition de l'apparence de l'alerte.
 
 {{"demo": "pages/components/alert/TransitionAlerts.js"}}
 
 ## Icônes
 
-The `icon` prop allows you to add an icon to the beginning of the alert component. This will override the default icon for the specified severity.
+La propriété `icon` vous permet d'ajouter une icône au début du composant d'alerte. Cela remplacera l'icône par défaut pour la gravité spécifiée.
 
-You can change the default severity to icon mapping with the `iconMapping` prop. This can be defined globally using [theme customization](/customization/globals/#default-props).
+Vous pouvez changer la valeur par défaut de la gravité en mapping d'icône avec la propriété `iconMapping`. Cela peut être défini globalement en utilisant la [personnalisation du thème](/customization/globals/#default-props).
 
 Setting the icon prop to false will remove the icon altogether.
 
