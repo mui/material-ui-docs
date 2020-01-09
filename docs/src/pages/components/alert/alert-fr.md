@@ -7,45 +7,47 @@ components: Alert
 
 <p class="description">Une alerte affiche un message court et important d'une manière qui attire l'attention de l'utilisateur sans interrompre sa tâche.</p>
 
+**Note:** This component is not documented in the [Material Design guidelines](https://material.io/), but Material-UI supports it.
+
 ## Alertes simples
 
-L'alerte offre quatre niveaux de gravité qui définissent une icône et une couleur distinctes.
+The alert offers four severity levels that set a distinctive icon and color.
 
 {{"demo": "pages/components/alert/SimpleAlerts.js"}}
 
 ## Description
 
-Vous pouvez utiliser le composant `AlertTitle` pour afficher un titre formaté au-dessus du contenu.
+You can use the `AlertTitle` component to display a formatted title above the content.
 
 {{"demo": "pages/components/alert/DescriptionAlerts.js"}}
 
 ## Actions
 
-Une alerte peut avoir une action, comme un bouton de fermeture ou d'annulation. Il est affiché après le message, à la fin de l'alerte.
+An alert can have an action, such as a close or undo button. It is rendered after the message, at the end of the alert.
 
-Si une fonction de rappel `onClose` est fournie et qu'aucune propriété `action` n'est définie, une icône de fermeture est affichée. La propriété `action` peut être utilisée pour fournir une action alternative, par exemple en utilisant un Bouton ou un IconBouton.
+If an `onClose` callback is provided and no `action` prop is set, a close icon is displayed. The `action` prop can be used to provide an alternative action, for example using a Button or IconButton.
 
 {{"demo": "pages/components/alert/ActionAlerts.js"}}
 
 ### Transition
 
-Vous pouvez utiliser un [composant de transition](/components/transitions/) tel que ` Collapse` pour faire la transition de l'apparence de l'alerte.
+You can use a [transition component](/components/transitions/) such as `Collapse` to transition the appearance of the alert.
 
 {{"demo": "pages/components/alert/TransitionAlerts.js"}}
 
 ## Icônes
 
-La propriété `icon` vous permet d'ajouter une icône au début du composant d'alerte. Cela remplacera l'icône par défaut pour la gravité spécifiée.
+The `icon` prop allows you to add an icon to the beginning of the alert component. This will override the default icon for the specified severity.
 
-Vous pouvez changer la valeur par défaut de la gravité en mapping d'icône avec la propriété `iconMapping`. Cela peut être défini globalement en utilisant la [personnalisation du thème](/customization/globals/#default-props).
+You can change the default severity to icon mapping with the `iconMapping` prop. This can be defined globally using [theme customization](/customization/globals/#default-props).
 
-Définir la propriété `icon` à false supprimera complètement l'icône.
+Setting the icon prop to false will remove the icon altogether.
 
 {{"demo": "pages/components/alert/IconAlerts.js"}}
 
 ## Variants
 
-Deux variantes supplémentaires sont disponibles - outlined et filled:
+Two additional variants are available – outlined, and filled:
 
 ### Outlined
 
@@ -57,11 +59,11 @@ Deux variantes supplémentaires sont disponibles - outlined et filled:
 
 ## Toast
 
-Vous pouvez utiliser la Snackbar pour [afficher un toast](/components/snackbars/#customized-snackbars) avec l'alerte.
+You can use the Snackbar to [display a toast](/components/snackbars/#customized-snackbars) with the Alert.
 
 ## Couleur
 
-La propriété `color` remplacera la couleur par défaut pour la gravité spécifiée.
+The `color` prop will override the default color for the specified severity.
 
 {{"demo": "pages/components/alert/ColorAlerts.js"}}
 
@@ -69,8 +71,8 @@ La propriété `color` remplacera la couleur par défaut pour la gravité spéci
 
 (WAI-ARIA: https://www.w3.org/TR/wai-aria-practices/#alert)
 
-Lorsque le composant est affiché dynamiquement, le contenu est automatiquement annoncé par la plupart des lecteurs d'écran. À l'heure actuelle, les lecteurs d'écran n'informent pas les utilisateurs des alertes présentes lors du chargement de la page.
+When the component is dynamically displayed, the content is automatically announced by most screen readers. At this time, screen readers do not inform users of alerts that are present when the page loads.
 
-L'utilisation de la couleur pour ajouter de la signification ne fournit qu'une indication visuelle qui ne sera pas transmise aux utilisateurs de technologies d'assistance telles que les lecteurs d'écran. Assurez-vous que les informations indiquées par la couleur sont soit évidentes à partir du contenu lui-même (par exemple le texte visible), ou est inclus par d'autres moyens, tels que le texte caché supplémentaire.
+Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (for example the visible text), or is included through alternative means, such as additional hidden text.
 
-Les actions doivent avoir un index d'onglets de 0 afin qu'ils puissent être atteints par les utilisateurs du clavier uniquement.
+Actions must have a tab index of 0 so that they can be reached by keyboard-only users.
