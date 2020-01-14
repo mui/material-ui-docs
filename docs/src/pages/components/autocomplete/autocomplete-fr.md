@@ -7,7 +7,7 @@ components: TextField, Popper, Autocomplete
 
 <p class="description">La saisie semi-automatique est une entrée de texte normale améliorée par un panneau d'options suggérées.</p>
 
-The widget is useful for setting the value of a single-line textbox in one of two types of scenarios:
+Le widget est utile pour définir la valeur d'une zone de texte simple d'une seule ligne dans l'un des deux types de scénarios suivants:
 
 1. The value for the textbox must be chosen from a predefined set of allowed values, e.g., a location field must contain a valid location name: [combo box](#combo-box).
 2. The textbox may contain any arbitrary value, but it is advantageous to suggest possible values to the user, e.g., a search field may suggest similar or previous searches to save the user time: [free solo](#free-solo).
