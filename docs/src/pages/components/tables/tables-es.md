@@ -55,7 +55,7 @@ Here is an example of customizing the component. You can learn more about this i
 
 Es posible personalizar las opciones en el item "Filas por página" usando la propiedad `rowsPerPageOptions`. Debes proveer alguna de estas opciones de array:
 
-- **numbers**, each number will be used for the option's label and value.
+- **numbers**, cada número será usado para la etiqueta y el valor de la opción.
     
     ```jsx
     <TablePagination rowsPerPageOptions={[10, 50]} />
