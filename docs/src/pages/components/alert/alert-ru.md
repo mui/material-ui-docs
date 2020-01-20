@@ -1,11 +1,11 @@
 ---
-title: Alert React component
+title: Компонент Alert
 components: Alert
 ---
 
 # Alert
 
-<p class="description">An alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.</p>
+<p class="description">Alert показывает короткое и важное сообщение для того, чтобы привлечь внимание пользователя, не отвлекая его от задачи.</p>
 
 **Note:** This component is not documented in the [Material Design guidelines](https://material.io/), but Material-UI supports it.
 
