@@ -12,10 +12,10 @@
 
 ## Наши ценности
 
-Our core values include transparency (our work is public most of the time); creating a safe, high-trust team; building incredible developer experiences; maintaining a healthy working environment; and helping to deliver web experiences that feel amazing to use on every device and connection type.
+Наши основные ценности включают прозрачность(наша работа чаще всего открытая для всех); создание безопасной и надежной команды; накопление огромного опыта разработчиков; поддерживание качественной среды разработки и помощь в предоставлении лучшего опыта, которым можно с удовольствием пользоваться на любом устройстве и скорости сети.
 
-## Our Story
+## Наша история
 
-Material-UI started back in 2014 to unify React and Material Design.
+Material-UI был создан в 2014 году для объединения React и Material Design.
 
-Today, Material-UI has grown to become one of the world's most popular React UI libraries – backed by a vibrant community of more than 1M developers in over 180 countries.
+Сейчас Material-UI достиг уровня одной из самых популярных React-библиотек при поддержке более миллиона разработчиков более чем в 180 странах.
