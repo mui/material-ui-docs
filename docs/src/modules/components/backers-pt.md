@@ -13,7 +13,7 @@ Patrocinadores Diamante são aqueles que prometeram $2.000/mês ou mais para Mat
 via [Patreon](https://www.patreon.com/oliviertassinari)
 
 <p style="display: flex; justify-content: center;">
-  <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="tidelift" href="https://tidelift.com/subscription/pkg/npm-material-ui?utm_source=material_ui&utm_medium=referral&utm_campaign=homepage" rel="noopener sponsored" target="_blank" style="margin-right: 16px;"><img width="96" src="https://github.com/tidelift.png?size=96" alt="tidelift" title="Enterprise-ready open source software" /></a>
+  <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="tidelift" href="https://tidelift.com/subscription/pkg/npm-material-ui?utm_source=material_ui&utm_medium=referral&utm_campaign=homepage" rel="noopener sponsored" target="_blank" style="margin-right: 16px;"><img width="96" src="https://github.com/tidelift.png?size=96" alt="tidelift" title="Software de código aberto pronto para empresas" /></a>
   <a data-ga-event-category="sponsors" data-ga-event-action="logo" data-ga-event-label="bitsrc" href="https://bit.dev" rel="noopener sponsored" target="_blank" style="margin-right: 16px;"><img width="96" src="https://github.com/teambit.png?size=96" alt="bitsrc" title="O modo mais rápido de compartilhar código" /></a>
 </p>
 
