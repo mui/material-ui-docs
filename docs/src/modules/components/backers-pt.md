@@ -1,12 +1,12 @@
-<h2 align="center">Material-UI's sponsors</h2>
+<h2 align="center">Patrocinadores do Material-UI</h2>
 
-The core of Material-UI is a [crowd-funded](/discover-more/backers/) open-source project, licensed under the permissive MIT license. Sponsorship increases the rate of bug fixes, documentation improvements, and feature development.
+O núcleo do Material-UI é um projeto de código aberto com [financiamento coletivo](/discover-more/backers/), licenciado atráves da licença do MIT. Patrocínio aumenta a taxa de correções de bugs, melhorias na documentação, e o desenvolvimento de funcionalidades.
 
 ### Diamante 💎
 
-*3/3 slots available*
+*3/3 espaços disponíveis*
 
-Diamond Sponsors are those who have pledged $2,000/month or more to Material-UI. Please contact us at diamond@material-ui.com to subscribe to this tier.
+Patrocinadores Diamante são aqueles que prometeram $2.000/mês ou mais para Material-UI. Por favor, entre em contato conosco pelo diamond@material-ui.com para se inscrever nesse nível.
 
 ### Ouro 🏆
 
