@@ -57,11 +57,11 @@ Esta é uma coleção de projetos de terceiros que estendem Material-UI.
 
 - [material-ui-flat-pagination](https://github.com/szmslab/material-ui-flat-pagination): Um componente de paginação de design plano para Material-UI.
 
-### Schedulers/Calendars
+### Agendas/Calendários
 
-- [dx-react-scheduler-material-ui](https://devexpress.github.io/devextreme-reactive/react/scheduler/): Um componente planejador/calendário para Material-UI com múltiplas visualizações de calendário, edição, compromissos de recorrência e recursos de navegação por data ([licença paga](https://js.devexpress.com/licensing/)).
+- [dx-react-scheduler-material-ui](https://devexpress.github.io/devextreme-reactive/react/scheduler/): Um componente agenda/calendário para Material-UI com múltiplas visualizações de calendário, edição, compromissos de recorrência e recursos de navegação por data ([licença paga](https://js.devexpress.com/licensing/)).
 
-### Charts
+### Gráficos
 
 - [dx-react-chart-material-ui](https://devexpress.github.io/devextreme-reactive/react/chart/): Charts for Material-UI that visualizes data using a variety of series types, including bar, line, area, scatter, pie, and more ([paid license](https://js.devexpress.com/licensing/)).
 
