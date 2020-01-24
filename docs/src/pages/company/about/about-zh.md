@@ -1,10 +1,10 @@
-# About Us
+# 关于我们
 
-<p class="description">We’re on a mission to make building UIs with React fun.</p>
+<p class="description">我们的任务是让使用 React 进行 UI 开发充满乐趣。</p>
 
-## Our Mission
+## 我们的目标
 
-Our company is focused on making React UIs development easier, better, and accessible to more people. We build open source and commercial tools used by many hundreds of thousands of developers in production. We're proud not only of the products we make, but also the community and partnerships we've cultivated with other developers and companies.
+我们公司专注于让 React 的 UI 开发变容易，高效，且让更多人使用。 We build open source and commercial tools used by many hundreds of thousands of developers in production. We're proud not only of the products we make, but also the community and partnerships we've cultivated with other developers and companies.
 
 ## Our Vision
 
