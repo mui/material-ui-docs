@@ -4,13 +4,13 @@
 
 ## 我们的目标
 
-我们公司专注于让 React 的 UI 开发变容易，高效，且让更多人使用。 We build open source and commercial tools used by many hundreds of thousands of developers in production. We're proud not only of the products we make, but also the community and partnerships we've cultivated with other developers and companies.
+我们公司专注于让 React 的 UI 开发变容易，高效，且让更多人使用。 我们创造的开源和商业的生产工具，帮助成百上千的开发者更好的完成他们的工作。 我们不仅为我们创造的工具感到自豪，同时也为我们与开发者和商业公司们良好的社区交流与搭档关系而感到骄傲。
 
-## Our Vision
+## 我们的愿景
 
-Our vision is to provide React components for faster and easier web development. [Read more](/discover-more/vision/).
+我们致力于让 React 组件提供更快，更便捷的网页开发。 [阅读更多](/discover-more/vision/)
 
-## Our Values
+## 我们的价值观
 
 Our core values include transparency (our work is public most of the time); creating a safe, high-trust team; building incredible developer experiences; maintaining a healthy working environment; and helping to deliver web experiences that feel amazing to use on every device and connection type.
 
