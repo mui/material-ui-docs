@@ -10,7 +10,6 @@ In diesem Handbuch sollen die beliebtesten Alternativen dokumentiert werden, abe
 - [CSS Modules](#styled-components)
 - [Emotion](#css-modules)
 - [React JSS](#emotion)
-- [Glamor](#glamor)
 
 ## Einfaches CSS
 
