@@ -48,3 +48,7 @@ Ações suplementares dentro do cartão são explicitamente chamadas usando íco
 Aqui está um exemplo de um controle de mídia do cartão.
 
 {{"demo": "pages/components/cards/MediaControlCard.js", "bg": true}}
+
+## Customização
+
+👑 If you are looking for inspiration, you can check [MUI Treasury's customization examples](https://mui-treasury.com/components/card).
