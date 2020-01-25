@@ -23,7 +23,11 @@ You didn't find the design assets your team is looking for? Faites-nous savoir !
 
 This is a collection of third-party projects that extend Material-UI.
 
-### Table (Tableaux)
+### Disposition
+
+- [@mui-treasury/layout](https://mui-treasury.com/layout): Components to handle the overall layout of a page. You can find a couple of examples, e.g. [a reactjs.org clone](https://mui-treasury.com/layout/clones/reactjs).
+
+### Tables
 
 - [material-table](https://github.com/mbrn/material-table): A simple and powerful Datatable for React based on Material-UI Table with some additional features. Ils prennent en charge de nombreux cas d'utilisation différents (éditable, filtrage, regroupement, tri, sélection, i18n, données arborescentes, etc.). Vous devriez y jeter un coup d'oeil.
 - [dx-react-grid-material-ui](https://devexpress.github.io/devextreme-reactive/react/grid/): A data grid for Material-UI with paging, sorting, filtering, grouping and editing features ([paid license](https://js.devexpress.com/licensing/)).
@@ -64,6 +68,10 @@ This is a collection of third-party projects that extend Material-UI.
 ### Charts
 
 - [dx-react-chart-material-ui](https://devexpress.github.io/devextreme-reactive/react/chart/): Charts for Material-UI that visualizes data using a variety of series types, including bar, line, area, scatter, pie, and more ([paid license](https://js.devexpress.com/licensing/)).
+
+### Dialogues
+
+- [material-ui-confirm](https://github.com/jonatanklosko/material-ui-confirm): Provides easy to use confirmation dialogs to simplify confirming user actions without writing boilerplate code.
 
 ## Theming
 
