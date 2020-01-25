@@ -48,3 +48,7 @@ Ergänzende Aktionen innerhalb der Karte werden explizit mit Symbolen, Text und 
 Hier ist ein Beispiel für eine Mediensteuerungskarte.
 
 {{"demo": "pages/components/cards/MediaControlCard.js", "bg": true}}
+
+## Individuelle Anpassung
+
+👑 If you are looking for inspiration, you can check [MUI Treasury's customization examples](https://mui-treasury.com/components/card).
