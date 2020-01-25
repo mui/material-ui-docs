@@ -1,6 +1,6 @@
-# Contact Us
+# Contáctenos
 
-<p class="description">We’re all ears.</p>
+<p class="description">Nosotros somos todo oídos.</p>
 
 Please choose a topic below related to your inquiry:
 
