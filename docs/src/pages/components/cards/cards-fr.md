@@ -48,3 +48,7 @@ Les actions supplémentaires au sein de la carte sont explicitement appelées à
 Voici un exemple de carte de contrôle multimédia.
 
 {{"demo": "pages/components/cards/MediaControlCard.js", "bg": true}}
+
+## Personnalisation
+
+👑 If you are looking for inspiration, you can check [MUI Treasury's customization examples](https://mui-treasury.com/components/card).
