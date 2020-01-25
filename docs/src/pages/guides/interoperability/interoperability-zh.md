@@ -10,7 +10,6 @@
 - [CSS Modules](#css-modules)
 - [Emotion](#css-modules)
 - [React JSS](#emotion)
-- [Glamor](#glamor)
 
 ## 纯 CSS
 
