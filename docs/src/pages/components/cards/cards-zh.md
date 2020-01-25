@@ -48,3 +48,7 @@ Set `variant="outlined` to render an outlined card.
 下面是一个媒体控制卡片的例子。
 
 {{"demo": "pages/components/cards/MediaControlCard.js", "bg": true}}
+
+## 个性化
+
+👑 If you are looking for inspiration, you can check [MUI Treasury's customization examples](https://mui-treasury.com/components/card).
