@@ -2,9 +2,9 @@
 title: 9+ Free React Templates
 ---
 
-# React 模板
+# React 樣版
 
-<p class="description">A selection of free react templates to help you get started building your app. The collection contains react dashboard, react admin, and more.</p>
+<p class="description">選擇一個免費的react樣版來幫助你建立你的app</p>
 
 模板可以与 [示例应用程序](https://github. com/mui-org/material-ui/tree/master/examples) 组合形成一个完整的启动程序。
 
