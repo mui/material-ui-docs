@@ -19,8 +19,6 @@ components: Button, IconButton, ButtonBase
 
 [Contained buttons](https://material.io/design/components/buttons.html#contained-button) sind hervorgehoben und unterscheiden sich durch die Verwendung von Höhe und Füllung. Sie enthalten Aktionen, die für Ihre App vorrangig sind.
 
-Das letzte Beispiel dieser Demo zeigt, wie Sie eine Schaltfläche zum Hochladen verwenden.
-
 {{"demo": "pages/components/buttons/ContainedButtons.js"}}
 
 You can remove the elevation with the `disableElevation` prop.
@@ -29,20 +27,20 @@ You can remove the elevation with the `disableElevation` prop.
 
 ## Text Buttons
 
-[Text buttons](https://material.io/design/components/buttons.html#text-button) werden normalerweise für weniger ausgeprägte Aktionen verwendet, darunter auch solche, die Folgendes enthalten:
+[Text buttons](https://material.io/design/components/buttons.html#text-button) are typically used for less-pronounced actions, including those located:
 
 - In Dialogen
 - In Karten
 
-In Karten helfen Text Buttons dabei, den Karteninhalt hervorzuheben.
+In cards, text buttons help maintain an emphasis on card content.
 
 {{"demo": "pages/components/buttons/TextButtons.js"}}
 
 ## Outlined Buttons
 
-[Outlined Buttons](https://material.io/design/components/buttons.html#outlined-button) sind Buttons mit mittlerer Betonung. Sie enthalten wichtige Aktionen, aber nicht die primäre Aktion in einer App.
+[Outlined buttons](https://material.io/design/components/buttons.html#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
-Outlined Buttons sind auch eine Alternative mit geringerer Betonung als Contained Buttons, oder eine Alternative mit höherer Betonung als Text Buttons.
+Outlined buttons are also a lower emphasis alternative to contained buttons, or a higher emphasis alternative to text buttons.
 
 {{"demo": "pages/components/buttons/OutlinedButtons.js"}}
 
