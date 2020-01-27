@@ -105,7 +105,7 @@ If you wish to use `not-allowed`, you have two options:
   }
   ```
 
-However:
+Contudo:
 
 - Você deve adicionar `eventos-ponteiro: nenhum;` novamente quando você precisa exibir dicas [ ferramentas em elementos desabilitados](/components/tooltips/#disabled-elements)</li> 
     
