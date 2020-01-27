@@ -7,7 +7,7 @@ components: Badge
 
 <p class="description">El componente Badge genera un pequeño badge en la esquina superior derecha de su(s) hijo(s).</p>
 
-## Basic badges
+## Badges básicos
 
 Ejemplos de insignias que contienen texto, utilizando colores primarios y secundarios. La insignia se aplica a sus hijos.
 
@@ -19,17 +19,17 @@ Here is an example of customizing the component. You can learn more about this i
 
 {{"demo": "pages/demos/badges/CustomizedBadge.js"}}
 
-## Visibilidad de la placa
+## Visibilidad del Badge
 
 La visibilidad del badge puede ser controlada usando la propiedad `invisible`.
 
 {{"demo": "pages/components/badges/BadgeVisibility.js"}}
 
-The badge auto hides with badgeContent is zero. You can override this with the `showZero` property.
+El badge automáticamente se oculta con `badgeContent` igual a cero. Usted puede sobrescribir esto con la propiedad `showZero`.
 
 {{"demo": "pages/components/badges/ShowZeroBadge.js"}}
 
-## Maximum value
+## Valor máximo
 
 You can use the `max` property to cap the value of the badge content.
 
