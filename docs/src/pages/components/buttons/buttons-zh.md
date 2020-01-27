@@ -19,8 +19,6 @@ components: Button, IconButton, ButtonBase
 
 [实心按钮](https://material.io/design/components/buttons.html#contained-button)表示高度的强调, 根据他们的立体效果和填充颜色来区分彼此。 它们用于触发应用程序所具有的主要功能。
 
-以下演示的最后一个例子演示了如何使用上传按钮。
-
 {{"demo": "pages/components/buttons/ContainedButtons.js"}}
 
 You can remove the elevation with the `disableElevation` prop.
@@ -29,20 +27,20 @@ You can remove the elevation with the `disableElevation` prop.
 
 ## Text Buttons（文本按钮）
 
-[文本按钮](https://material.io/design/components/buttons.html#text-button) 通常用于不太明显的操作, 包括那些位于:
+[Text buttons](https://material.io/design/components/buttons.html#text-button) are typically used for less-pronounced actions, including those located:
 
 - dialogs（对话框）中的
 - cards（卡片）中的
 
-在卡片中，文本按钮有助于在卡片内容之上强调按钮的存在。
+In cards, text buttons help maintain an emphasis on card content.
 
 {{"demo": "pages/components/buttons/TextButtons.js"}}
 
 ## Outlined Buttons（描边按钮）
 
-[描边按钮](https://material.io/design/components/buttons.html#outlined-button) 是中等强调按钮。 它们包含重要的操作， 但不是应用程序中的主要操作。
+[Outlined buttons](https://material.io/design/components/buttons.html#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
-描边按钮也可以用来作为比实心按钮次要一点的按钮方案， 或者用来作为比文本按钮重要一点的按钮方案。
+Outlined buttons are also a lower emphasis alternative to contained buttons, or a higher emphasis alternative to text buttons.
 
 {{"demo": "pages/components/buttons/OutlinedButtons.js"}}
 
