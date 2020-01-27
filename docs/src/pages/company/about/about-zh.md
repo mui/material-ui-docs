@@ -12,10 +12,10 @@
 
 ## 我们的价值观
 
-Our core values include transparency (our work is public most of the time); creating a safe, high-trust team; building incredible developer experiences; maintaining a healthy working environment; and helping to deliver web experiences that feel amazing to use on every device and connection type.
+我们的核心价值观包括了透明度（我们绝大多数的工作都是公开的）；创建一支安全、可信赖的团队；促进优秀的开发者体验；保持健康的协作环境；助力于为每个设备及每种连接类型实现惊艳的网络体验。
 
-## Our Story
+## 我们的故事
 
-Material-UI started back in 2014 to unify React and Material Design.
+Material-UI 项目在2014年启动，旨在融合 React 和 Material Design。
 
 Today, Material-UI has grown to become one of the world's most popular React UI libraries – backed by a vibrant community of more than 1M developers in over 180 countries.
