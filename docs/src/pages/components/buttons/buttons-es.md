@@ -19,8 +19,6 @@ components: Button, IconButton, ButtonBase
 
 Los [Botones contenidos](https://material.io/design/components/buttons.html#contained-button) son de alto énfasis, distinguidos por el uso de elevación y relleno. Contienen acciones que son primarias para la aplicación.
 
-El último ejemplo de esta demostración muestra cómo usar un botón de subir archivos.
-
 {{"demo": "pages/components/buttons/ContainedButtons.js"}}
 
 You can remove the elevation with the `disableElevation` prop.
@@ -29,20 +27,20 @@ You can remove the elevation with the `disableElevation` prop.
 
 ## Botones de texto
 
-Los [Botones de texto](https://material.io/design/components/buttons.html#text-button) se suelen usar para acciones menos notables, incluyendo las que se encuentran:
+[Text buttons](https://material.io/design/components/buttons.html#text-button) are typically used for less-pronounced actions, including those located:
 
 - En diálogos
 - En tarjetas
 
-En las tarjetas, los botones de texto ayudan a mantener un énfasis en el contenido de la tarjeta.
+In cards, text buttons help maintain an emphasis on card content.
 
 {{"demo": "pages/components/buttons/TextButtons.js"}}
 
 ## Botones con Contorno
 
-[Los botones con contorno](https://material.io/design/components/buttons.html#outlined-button) son botones de énfasis intermedio. Estos contienen acciones que son importantes, sin ser primarias, dentro de una aplicación.
+[Outlined buttons](https://material.io/design/components/buttons.html#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
-Los botones con contorno tambien son una alternativa de énfasis más bajo que los botones contenidos, y de énfasis más alto que los botones de texto.
+Outlined buttons are also a lower emphasis alternative to contained buttons, or a higher emphasis alternative to text buttons.
 
 {{"demo": "pages/components/buttons/OutlinedButtons.js"}}
 
