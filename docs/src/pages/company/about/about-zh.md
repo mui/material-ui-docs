@@ -18,4 +18,4 @@
 
 Material-UI 项目在2014年启动，旨在融合 React 和 Material Design。
 
-Today, Material-UI has grown to become one of the world's most popular React UI libraries – backed by a vibrant community of more than 1M developers in over 180 countries.
+今天，Material-UI 已经成长为全世界最流行的 React UI 库之一——由来自180多个国家的超过1百万名的开发者组成的活跃社区所支持。
