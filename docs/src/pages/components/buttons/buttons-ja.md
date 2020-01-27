@@ -19,8 +19,6 @@ components: Button, IconButton, ButtonBase
 
 [Contained button](https://material.io/design/components/buttons.html#contained-button)は、力強く、強調と塗りつぶしによって区別されるようなボタンです。 アプリケーションの初歩的なアクションが含まれます。
 
-一番最後のデモは、アップロード用のボタンの例になっています。
-
 {{"demo": "pages/components/buttons/ContainedButtons.js"}}
 
 You can remove the elevation with the `disableElevation` prop.
@@ -29,20 +27,20 @@ You can remove the elevation with the `disableElevation` prop.
 
 ## Text Buttons
 
-[Text button](https://material.io/design/components/buttons.html#text-button)は、一般的にそれほど目立たせる必要のないアクションに対して用いられます。例えば、次のようなコンポーネントの中で用いられます。
+[Text buttons](https://material.io/design/components/buttons.html#text-button) are typically used for less-pronounced actions, including those located:
 
 - Dialog
 - Card
 
-Cardの中でText Buttonを用いることで、Cardの内容に重点を置くことができます。
+In cards, text buttons help maintain an emphasis on card content.
 
 {{"demo": "pages/components/buttons/TextButtons.js"}}
 
 ## Outlined Buttons
 
-[Outlined buttons](https://material.io/design/components/buttons.html#outlined-button) are medium-emphasis buttons. 重要なアクションを含みますが、アプリ内では最も重要ではない、といった場合に使われます。
+[Outlined buttons](https://material.io/design/components/buttons.html#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
-Outlined buttonは、Contained buttonと比べると強調が弱く、 Text buttonと比べると強調の強いボタンです。
+Outlined buttons are also a lower emphasis alternative to contained buttons, or a higher emphasis alternative to text buttons.
 
 {{"demo": "pages/components/buttons/OutlinedButtons.js"}}
 
