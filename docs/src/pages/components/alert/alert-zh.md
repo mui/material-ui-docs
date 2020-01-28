@@ -63,7 +63,7 @@ You can use the Snackbar to [display a toast](/components/snackbars/#customized-
 
 ## 颜色
 
-The `color` prop will override the default color for the specified severity.
+`color` 属性用来改变不同程度「提醒」的默认颜色。
 
 {{"demo": "pages/components/alert/ColorAlerts.js"}}
 
@@ -71,7 +71,7 @@ The `color` prop will override the default color for the specified severity.
 
 (WAI-ARIA: https://www.w3.org/TR/wai-aria-practices/#alert)
 
-When the component is dynamically displayed, the content is automatically announced by most screen readers. At this time, screen readers do not inform users of alerts that are present when the page loads.
+动态显示组件时，大部分屏幕都会自动显示其内容。 此时，屏幕不会将页面加载时出现的提醒通知给用户。
 
 Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (for example the visible text), or is included through alternative means, such as additional hidden text.
 
