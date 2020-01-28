@@ -39,21 +39,21 @@ components: 提醒
 
 `icon`是指可以在「提醒」组件的开始的地方加一个图标。 以此来改变不同程度「提醒」的默认图标。
 
-You can change the default severity to icon mapping with the `iconMapping` prop. This can be defined globally using [theme customization](/customization/globals/#default-props).
+通过使用 `iconMapping` 这种映射方法，可以改变不同程度的默认图标。 在[自定义主题](/customization/globals/#default-props)中可以进行全局设置。
 
-Setting the icon prop to false will remove the icon altogether.
+把图标属性设置为 false 将会把图标都移除了。
 
 {{"demo": "pages/components/alert/IconAlerts.js"}}
 
 ## 变种(Variants)
 
-Two additional variants are available – outlined, and filled:
+还可以实现「边框」和「填充」这两种变体。
 
-### Outlined
+### 边框
 
 {{"demo": "pages/components/alert/OutlinedAlerts.js"}}
 
-### Filled
+### 填充
 
 {{"demo": "pages/components/alert/FilledAlerts.js"}}
 
