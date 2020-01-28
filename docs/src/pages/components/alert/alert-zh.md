@@ -1,31 +1,31 @@
 ---
-title: Alert React component
-components: Alert
+title: 提醒组件
+components: 提醒
 ---
 
-# Alert
+# 提醒
 
-<p class="description">An alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.</p>
+<p class="description">「提醒」是简短且重要的信息，在不影响用户操作的同时能够吸引用户的注意力。</p>
 
-**Note:** This component is not documented in the [Material Design guidelines](https://material.io/), but Material-UI supports it.
+**注意：**这个组件不在[《Material Design 指南》](https://material.io/)中，但它是被 Material-UI 支持的。
 
-## Simple alerts
+## 简单的提醒
 
-The alert offers four severity levels that set a distinctive icon and color.
+一共有四种不同程度的「提醒」，每种都有自己独特的颜色和图标。
 
 {{"demo": "pages/components/alert/SimpleAlerts.js"}}
 
 ## 描述
 
-You can use the `AlertTitle` component to display a formatted title above the content.
+在提醒内容的上面使用 `AlertTitle` 可以实现标题的格式化。
 
 {{"demo": "pages/components/alert/DescriptionAlerts.js"}}
 
-## Actions
+## 行为
 
-An alert can have an action, such as a close or undo button. It is rendered after the message, at the end of the alert.
+一个「提醒」可以有一个行为，例如「关闭」或「撤销」按钮。 它在消息之后，「提醒」结束时被渲染。
 
-If an `onClose` callback is provided and no `action` prop is set, a close icon is displayed. The `action` prop can be used to provide an alternative action, for example using a Button or IconButton.
+如果提供了 `onClose` 回调且没有设置 `action` 属性的话，「关闭」图标就会显示。 The `action` prop can be used to provide an alternative action, for example using a Button or IconButton.
 
 {{"demo": "pages/components/alert/ActionAlerts.js"}}
 
