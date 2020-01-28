@@ -21,23 +21,23 @@ components: 提醒
 
 {{"demo": "pages/components/alert/DescriptionAlerts.js"}}
 
-## 行为
+## Actions（行为）
 
 一个「提醒」可以有一个行为，例如「关闭」或「撤销」按钮。 它在消息之后，「提醒」结束时被渲染。
 
-如果提供了 `onClose` 回调且没有设置 `action` 属性的话，「关闭」图标就会显示。 The `action` prop can be used to provide an alternative action, for example using a Button or IconButton.
+如果提供了 `onClose` 回调且没有设置 `action` 属性的话，「关闭」图标就会显示。 这个 `action` 行为可以用其他形式来完成，例如使用一个按钮或者图标按钮。
 
 {{"demo": "pages/components/alert/ActionAlerts.js"}}
 
-### Transition
+### 过渡效果
 
-You can use a [transition component](/components/transitions/) such as `Collapse` to transition the appearance of the alert.
+可以使用 [过渡组件](/components/transitions) ，如 `Collapse（展开）` 来实现「提醒」出现时的过渡效果。
 
 {{"demo": "pages/components/alert/TransitionAlerts.js"}}
 
 ## Icons（图标）
 
-The `icon` prop allows you to add an icon to the beginning of the alert component. This will override the default icon for the specified severity.
+`icon`是指可以在「提醒」组件的开始的地方加一个图标。 以此来改变不同程度「提醒」的默认图标。
 
 You can change the default severity to icon mapping with the `iconMapping` prop. This can be defined globally using [theme customization](/customization/globals/#default-props).
 
