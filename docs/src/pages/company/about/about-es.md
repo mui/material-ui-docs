@@ -1,4 +1,4 @@
-# About Us
+# Acerca de Nosotros
 
 <p class="description">We’re on a mission to make building UIs with React fun.</p>
 
