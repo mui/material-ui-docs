@@ -146,7 +146,7 @@ const filterOptions = createFilterOptions({
 
 ### Дополнительные параметры
 
-For richer filtering mechanisms, like fuzzy matching, it's recommended to look at [match-sorter](https://github.com/kentcdodds/match-sorter). For instance:
+For richer filtering mechanisms, like fuzzy matching, it's recommended to look at [match-sorter](https://github.com/kentcdodds/match-sorter). Например:
 
 ```jsx
 import matchSorter from 'match-sorter';
