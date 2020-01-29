@@ -31,7 +31,7 @@ Diese Ausgabetransformationsfunktion kann durch [Verwendung des Themes](/customi
 
 ## Fluides Raster
 
-Fluid grids use columns that scale and resize content. A fluid grid’s layout can use breakpoints to determine if the layout needs to change dramatically.
+Flüssige Raster verwenden Spalten, die den Inhalt skalieren und verkleinern. A fluid grid’s layout can use breakpoints to determine if the layout needs to change dramatically.
 
 ### Grundraster
 
