@@ -96,7 +96,7 @@ Falls Sie bestimmte Tags sperren müssen, damit sie nicht in der Schnittstelle e
 
 ## Größen
 
-Fancy smaller inputs? Use the `size` prop.
+Fancy smaller inputs? Verwenden Sie die `size` Prop.
 
 {{"demo": "pages/components/autocomplete/Sizes.js"}}
 
