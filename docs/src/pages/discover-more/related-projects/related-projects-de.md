@@ -2,7 +2,7 @@
 
 <p class="description">Eine sorgfältig kuratierte Liste von Bibliotheken, die einen Blick wert sind.</p>
 
-Da der Umfang der Probleme, die Material-UI löst, begrenzt ist, versuchen wir, mit anderen Bibliotheken gut zusammen zu arbeiten. Feel free to submit a pull request to add another project; it will be accepted if it is suitable.
+Da der Umfang der Probleme, die Material-UI löst, begrenzt ist, versuchen wir, mit anderen Bibliotheken gut zusammen zu arbeiten. Fühlen Sie sich frei, einen Pull-Request einzureichen, um ein anderes Projekt hinzuzufügen; er wird angenommen, wenn das Projekt geeignet ist.
 
 ## Design-Ressourcen
 
@@ -57,7 +57,7 @@ Dies ist eine Sammlung von Drittanbieterprojekten, die Material-UI erweitern.
 
 - [material-ui-image](https://mui.wertarbyte.com/#material-ui-image): Images are ugly until they're loaded. Materialize it with material image! It will fade in like the material image loading pattern suggests.
 
-### Pagination
+### Paginierung
 
 - [material-ui-flat-pagination](https://github.com/szmslab/material-ui-flat-pagination): A flat design pagination component for Material-UI.
 
