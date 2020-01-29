@@ -50,7 +50,7 @@ Outlined buttons are also a lower emphasis alternative to contained buttons, or 
 
 ## Größen
 
-Fancy larger or smaller buttons? Use the `size` property.
+Fancy larger or smaller buttons? Verwende die Eigenschaft `size`.
 
 {{"demo": "pages/components/buttons/ButtonSizes.js"}}
 
@@ -110,7 +110,7 @@ Aber:
 - You should add `pointer-events: none;` back when you need to display [tooltips on disabled elements](/components/tooltips/#disabled-elements)
 - The cursor won't change if you render something other than a button element, for instance, a link `<a>` element.
 
-2. **DOM change**. You can wrap the button:
+2. **DOM-Anderung**. You can wrap the button:
 
   ```jsx
   <span style={{ cursor: 'not-allowed' }}>
