@@ -49,6 +49,6 @@ components: Badge
 
 ## Выравнивание значка
 
-You can use the `anchorOrigin` prop to move the badge to any corner of the wrapped element.
+Вы можете использовать проп `anchorOrigin` для перемещения значка в любой угол элемента.
 
 {{"demo": "pages/components/badges/BadgeAlignment.js", "hideHeader": true}}
