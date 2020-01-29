@@ -12,10 +12,10 @@ Nuestra visión es proveer componentes React para un rápido y fácil desarrollo
 
 ## Nuestros Valores
 
-Our core values include transparency (our work is public most of the time); creating a safe, high-trust team; building incredible developer experiences; maintaining a healthy working environment; and helping to deliver web experiences that feel amazing to use on every device and connection type.
+Nuestros principales valores incluyen transparencia (nuestro trabajo es público la mayoría del tiempo); creando un equipo seguro y de alta confianza; construyendo una gran experiencia para los desarrolladores; manteniendo un saludable ambiente de trabajo; y ayudando a entregar experiencias web que se sientan especiales al usarlas en cada dispositivo y tipo de conexión.
 
-## Our Story
+## Nuestra Historia
 
-Material-UI started back in 2014 to unify React and Material Design.
+Material-UI inicio en el 2014 para unificar React y Material Design.
 
-Today, Material-UI has grown to become one of the world's most popular React UI libraries – backed by a vibrant community of more than 1M developers in over 180 countries.
+Ahora, Material-UI ha crecido para convertirse en la librería Reac UI mas popular del mundo - logrado por una vibrante comunidad de mas de 1M de desarrolladores en 180 países.
