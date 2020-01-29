@@ -31,7 +31,7 @@ Hier einige Beispiele zum Anpassen der Komponente. Mehr dazu erfahren Sie auf de
 
 ## Größen
 
-Fancy smaller switches? Use the `size` property.
+Fancy smaller switches? Verwende die Eigenschaft `size`.
 
 {{"demo": "pages/components/switches/SwitchesSize.js"}}
 
