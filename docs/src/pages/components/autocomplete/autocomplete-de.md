@@ -78,15 +78,15 @@ For this demo, we need to load the [Google Maps JavaScript](https://developers.g
 
 > ⚠️ Before you can start using the Google Maps JavaScript API, you must sign up and create a billing account.
 
-## Multiple values
+## Mehrere Werte
 
 Also known as tags, the user is allowed to enter more than one value.
 
 {{"demo": "pages/components/autocomplete/Tags.js"}}
 
-### Fixed options
+### Feste Optionen
 
-In the event that you need to lock certain tag so that they can't be removed in the interface, you can set the chips disabled.
+Falls Sie bestimmte Tags sperren müssen, damit sie nicht in der Schnittstelle entfernt werden können, können Sie die Chips deaktivieren.
 
 {{"demo": "pages/components/autocomplete/FixedTags.js"}}
 
@@ -100,9 +100,9 @@ Fancy smaller inputs? Use the `size` prop.
 
 {{"demo": "pages/components/autocomplete/Sizes.js"}}
 
-## Customized Autocomplete
+## Angepasste Autovervollständigung
 
-This demo reproduces the GitHub's label picker:
+Diese Demo reproduziert die Label-Auswahl von GitHub:
 
 {{"demo": "pages/components/autocomplete/GitHubLabel.js"}}
 
@@ -114,24 +114,24 @@ The following demo relies on [autosuggest-highlight](https://github.com/moroshko
 
 {{"demo": "pages/components/autocomplete/Highlights.js"}}
 
-## Custom filter
+## Benutzerderfinierter Filter
 
-The component exposes a factory to create a filter method that can provided to the `filerOption` prop. You can use it to change the default option filter behavior.
+The component exposes a factory to create a filter method that can provided to the `filerOption` prop. Sie können es verwenden, um das Standard-Filterverhalten der Option zu ändern.
 
 ```js
 import { createFilterOptions } from '@material-ui/lab/Autocomplete';
 ```
 
-It supports the following options:
+Es unterstützt die folgenden Optionen:
 
 1. `config` (*Object* [optional]): 
   - `config.ignoreAccents` (*Boolean* [optional]): Defaults to `true`. Remove diacritics.
-  - `config.ignoreCase` (*Boolean* [optional]): Defaults to `true`. Lowercase everything.
+  - `config.ignoreCase` (*Boolean* [optional]): Defaults to `true`. Alles in Kleinbuchstaben.
   - `config.matchFrom` (*'any' | 'start'* [optional]): Defaults to `'any'`.
   - `config.stringify` (*Func* [optional]): Defaults to `JSON.stringify`.
-  - `config.trim ` (*Boolean* [optional]): Standardeinstellung ist `false`. Remove trailing spaces.
+  - `config.trim ` (*Boolean* [optional]): Standardeinstellung ist `false`. Abschließende Leerzeichen entfernen.
 
-In the following demo, the options need to start with the query prefix:
+In der folgenden Demo müssen die Optionen mit dem Abfragepräfix beginnen:
 
 ```js
 const filterOptions = createFilterOptions({
@@ -157,9 +157,9 @@ const filterOptions = (options, { inputValue }) =>
 <Autocomplete filterOptions={filterOptions} />
 ```
 
-## Virtualization
+## Virtualisierung
 
-Search within 10,000 randomly generated options. The list is virtualized thanks to [react-window](https://github.com/bvaughn/react-window).
+Suche innerhalb von 10.000 zufällig generierten Optionen. Die Liste ist virtualisiert dank [react-window](https://github.com/bvaughn/react-window).
 
 {{"demo": "pages/components/autocomplete/Virtualize.js"}}
 
@@ -167,11 +167,11 @@ Search within 10,000 randomly generated options. The list is virtualized thanks 
 
 ### autocomplete/autofill
 
-The browsers have heuristics to help the users fill the form inputs. However, it can harm the UX of the component.
+Die Browser haben Heuristiken, um den Benutzern zu helfen, die Formulareingaben auszufüllen. Es kann jedoch die UX der Komponente negativ beeinflussen.
 
 By default, the component disable the **autocomplete** feature (remembering what the user has typed for a given field in a previous session) with the `autoComplete="off"` attribute.
 
-However, in addition to remembering past entered values, the browser might also propose **autofill** suggestions (saved login, address, or payment details). In the event you want the avoid autofill, you can try the following:
+However, in addition to remembering past entered values, the browser might also propose **autofill** suggestions (saved login, address, or payment details). Falls Sie die automatische Füllung vermeiden möchten, können Sie Folgendes versuchen:
 
 - Name the input without leaking any information the browser can use. e.g. `id="field1"` instead of `id="country"`. If you leave the id empty, the component uses a random id.
 - Set `autoComplete="new-password"`: 
