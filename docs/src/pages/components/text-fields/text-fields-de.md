@@ -25,13 +25,13 @@ Standard form attributes are supported e.g. `required`, `disabled`, `type`, etc.
 
 {{"demo": "pages/components/text-fields/FormPropsTextFields.js"}}
 
-## Validation
+## Validierung
 
 The `error` prop toggles the error state, the `helperText` prop can then be used to provide feedback to the user about the error.
 
 {{"demo": "pages/components/text-fields/ValidationTextFields.js"}}
 
-## Multiline
+## Mehrzeilig
 
 The `multiline` prop transforms the text field into a [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) or a [TextareaAutosize](/components/textarea-autosize/).
 
@@ -57,7 +57,7 @@ The main way is with an `InputAdornment`. Diese können verwendet werden, um ein
 
 ## Größen
 
-Fancy smaller inputs? Use the `size` prop.
+Fancy smaller inputs? Verwenden Sie die `size` Prop.
 
 {{"demo": "pages/components/text-fields/TextFieldSizes.js"}}
 
@@ -109,7 +109,7 @@ Die Anpassung endet nicht bei CSS. Sie können Komposition verwenden, um benutze
 
 ### Shrink
 
-The input label "shrink" state isn't always correct. The input label is supposed to shrink as soon as the input is displaying something. In some circumstances, we can't determine the "shrink" state (number input, datetime input, Stripe input). You might notice an overlap.
+The input label "shrink" state isn't always correct. The input label is supposed to shrink as soon as the input is displaying something. In some circumstances, we can't determine the "shrink" state (number input, datetime input, Stripe input). Sie könnten eine Überlappung bemerken.
 
 ![shrink](/static/images/text-fields/shrink.png)
 
