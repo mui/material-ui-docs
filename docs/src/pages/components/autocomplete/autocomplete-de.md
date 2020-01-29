@@ -173,8 +173,8 @@ By default, the component disable the **autocomplete** feature (remembering what
 
 However, in addition to remembering past entered values, the browser might also propose **autofill** suggestions (saved login, address, or payment details). Falls Sie die automatische Füllung vermeiden möchten, können Sie Folgendes versuchen:
 
-- Name the input without leaking any information the browser can use. e.g. `id="field1"` instead of `id="country"`. If you leave the id empty, the component uses a random id.
-- Set `autoComplete="new-password"`: 
+- Name the input without leaking any information the browser can use. e.g. `id="field1"` instead of `id="country"`. Wenn Sie die ID leer lassen, verwendet die Komponente eine zufällige ID.
+- Setze `autoComplete="neues Passwort"`: 
         jsx
         <TextField
         {...params}
@@ -186,7 +186,7 @@ However, in addition to remembering past entered values, the browser might also 
 
 ### iOS VoiceOver
 
-VoiceOver on iOS Safari doesn't support the `aria-owns` attribute very well. You can work around the issue with the `disablePortal` prop.
+VoiceOver auf iOS Safari unterstützt das `aria-owns` Attribut nicht sehr gut. You can work around the issue with the `disablePortal` prop.
 
 ### TypeScript
 
