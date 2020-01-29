@@ -7,7 +7,7 @@ components: TextField, Popper, Autocomplete
 
 <p class="description">Die Autovervollständigung ist eine normale Texteingabe, die durch ein Panel mit vorgeschlagenen Optionen ergänzt wird.</p>
 
-The widget is useful for setting the value of a single-line textbox in one of two types of scenarios:
+Das Widget ist nützlich, um den Wert eines einzeiligen Textfeldes in einem von zwei Arten von Szenarien zu setzen:
 
 1. The value for the textbox must be chosen from a predefined set of allowed values, e.g., a location field must contain a valid location name: [combo box](#combo-box).
 2. The textbox may contain any arbitrary value, but it is advantageous to suggest possible values to the user, e.g., a search field may suggest similar or previous searches to save the user time: [free solo](#free-solo).
@@ -18,15 +18,15 @@ The value must be chosen from a predefined set of allowed values.
 
 {{"demo": "pages/components/autocomplete/ComboBox.js"}}
 
-### Playground
+### Spielwiese
 
-Each of the following examples demonstrate one feature of the Autocomplete component.
+Die folgenden Beispiele demonstrieren je eine Funktion der Autocomplete-Komponente.
 
 {{"demo": "pages/components/autocomplete/Playground.js"}}
 
-### Country select
+### Länderauswahl
 
-Choose one country between 248.
+Wählen Sie ein Land aus 248.
 
 {{"demo": "pages/components/autocomplete/CountrySelect.js"}}
 
