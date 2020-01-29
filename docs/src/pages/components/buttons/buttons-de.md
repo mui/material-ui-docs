@@ -44,7 +44,7 @@ Outlined buttons are also a lower emphasis alternative to contained buttons, or 
 
 {{"demo": "pages/components/buttons/OutlinedButtons.js"}}
 
-## Upload button
+## Upload-Button
 
 {{"demo": "pages/components/buttons/UploadButtons.js"}}
 
@@ -84,7 +84,7 @@ The Text Buttons, Contained Buttons, Floating Action Buttons and Icon Buttons ar
 
 ## Drittanbieter-Routing Bibliothek
 
-One common use case is to use the button to trigger navigation to a new page. The `ButtonBase` component provides a property to handle this use case: `component`. However for certain focus polyfills `ButtonBase` requires the DOM node of the provided component. This is achieved by attaching a ref to the component and expecting that the component forwards this ref to the underlying DOM node. Given that many of the interactive components rely on `ButtonBase`, you should be able to take advantage of it everywhere.
+Ein häufiger Anwendungsfall ist die Verwendung eines Buttons, um eine Navigation zu einer neuen Seite auszulösen. The `ButtonBase` component provides a property to handle this use case: `component`. However for certain focus polyfills `ButtonBase` requires the DOM node of the provided component. This is achieved by attaching a ref to the component and expecting that the component forwards this ref to the underlying DOM node. Given that many of the interactive components rely on `ButtonBase`, you should be able to take advantage of it everywhere.
 
 Here is an [integration example with react-router](/guides/composition/#button).
 
@@ -105,7 +105,7 @@ If you wish to use `not-allowed`, you have two options:
   }
   ```
 
-However:
+Aber:
 
 - You should add `pointer-events: none;` back when you need to display [tooltips on disabled elements](/components/tooltips/#disabled-elements)
 - The cursor won't change if you render something other than a button element, for instance, a link `<a>` element.
