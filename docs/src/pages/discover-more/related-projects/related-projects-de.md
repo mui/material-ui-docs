@@ -1,8 +1,8 @@
 # Verwandte Projekte
 
-<p class="description">A carefully curated list of libraries that are worth having a look at.</p>
+<p class="description">Eine sorgfältig kuratierte Liste von Bibliotheken, die einen Blick wert sind.</p>
 
-Because the scope of problems Material-UI solves is bound, we try to play nicely with other libraries. Feel free to submit a pull request to add another project; it will be accepted if it is suitable.
+Da der Umfang der Probleme, die Material-UI löst, begrenzt ist, versuchen wir, mit anderen Bibliotheken gut zusammen zu arbeiten. Feel free to submit a pull request to add another project; it will be accepted if it is suitable.
 
 ## Design-Ressourcen
 
