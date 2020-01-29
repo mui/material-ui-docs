@@ -38,7 +38,7 @@ El componente Box tiene una propiedad `clone` para permitir el uso del método d
 
 2. Use props de render
 
-The Box children accepts a render props function. Puede extraer el `className`.
+Los elementos hijo de Box aceptan una función props de render. Puede extraer el `className`.
 
 ```jsx
 <Box color="text.primary">
