@@ -64,23 +64,23 @@ import useAutocomplete from '@material-ui/lab/useAutocomplete';
 
 Head to the [Customized Autocomplete](#customized-autocomplete) section for a customization example with the `Autocomplete` component instead of the hook.
 
-## Asynchronous requests
+## Asynchrone Anfragen
 
 {{"demo": "pages/components/autocomplete/Asynchronous.js"}}
 
-### Google Maps place
+### Google Maps Ort
 
-A customized UI for Google Maps Places Autocomplete.
+Eine angepasste Oberfläche für Google Maps Places Autovervollständigung.
 
 {{"demo": "pages/components/autocomplete/GoogleMaps.js"}}
 
-For this demo, we need to load the [Google Maps JavaScript](https://developers.google.com/maps/documentation/javascript/tutorial) API.
+Für diese Demo müssen wir die [Google Maps JavaScript](https://developers.google.com/maps/documentation/javascript/tutorial) API laden.
 
-> ⚠️ Before you can start using the Google Maps JavaScript API, you must sign up and create a billing account.
+> ⚠️ Bevor Sie die Google Maps JavaScript-API verwenden können, müssen Sie sich anmelden und ein Abrechnungskonto erstellen.
 
 ## Mehrere Werte
 
-Also known as tags, the user is allowed to enter more than one value.
+Auch als Tags bekannt, darf der Benutzer mehr als einen Wert eingeben.
 
 {{"demo": "pages/components/autocomplete/Tags.js"}}
 
@@ -171,7 +171,7 @@ Die Browser haben Heuristiken, um den Benutzern zu helfen, die Formulareingaben 
 
 By default, the component disable the **autocomplete** feature (remembering what the user has typed for a given field in a previous session) with the `autoComplete="off"` attribute.
 
-However, in addition to remembering past entered values, the browser might also propose **autofill** suggestions (saved login, address, or payment details). Falls Sie die automatische Füllung vermeiden möchten, können Sie Folgendes versuchen:
+Zusätzlich zur Speicherung der eingegebenen Werte kann der Browser aber auch **Autofill** Vorschläge vorschlagen (gespeichertes Login, Adresse oder Zahlungsinformationen). Falls Sie die automatische Füllung vermeiden möchten, können Sie Folgendes versuchen:
 
 - Name the input without leaking any information the browser can use. e.g. `id="field1"` instead of `id="country"`. Wenn Sie die ID leer lassen, verwendet die Komponente eine zufällige ID.
 - Setze `autoComplete="neues Passwort"`: 
@@ -190,10 +190,10 @@ VoiceOver auf iOS Safari unterstützt das `aria-owns` Attribut nicht sehr gut. Y
 
 ### TypeScript
 
-To fully take advantage of type inference, you need to set the `multiple` prop to `undefined`, `false` or `true`. See [this discussion](https://github.com/mui-org/material-ui/pull/18854#discussion_r364215153) for more details. TypeScript might solve this bug in the future.
+To fully take advantage of type inference, you need to set the `multiple` prop to `undefined`, `false` or `true`. See [this discussion](https://github.com/mui-org/material-ui/pull/18854#discussion_r364215153) for more details. TypeScript könnte diesen Fehler in Zukunft lösen.
 
 ## Barrierefreiheit
 
 (WAI-ARIA: https://www.w3.org/TR/wai-aria-practices/#combobox)
 
-We encourage the usage of a label for the textbox. The component implements the WAI-ARIA authoring practices.
+Wir empfehlen die Verwendung eines Labels für die Textbox. Die Komponente implementiert die WAI-ARIA Autorenpraktiken.
