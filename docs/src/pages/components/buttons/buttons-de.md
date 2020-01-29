@@ -76,9 +76,9 @@ Hier sind einige Beispiele, wie man die Komponente anpassen kann. Mehr dazu erfa
 
 👑 If you are looking for inspiration, you can check [MUI Treasury's customization examples](https://mui-treasury.com/components/button).
 
-## Complex Buttons
+## Komplexe Buttons
 
-The Text Buttons, Contained Buttons, Floating Action Buttons and Icon Buttons are built on top of the same component: the `ButtonBase`. You can take advantage of this lower level component to build custom interactions.
+The Text Buttons, Contained Buttons, Floating Action Buttons and Icon Buttons are built on top of the same component: the `ButtonBase`. Sie können diese Komponente der unteren Ebene nutzen, um benutzerdefinierte Interaktionen zu erstellen.
 
 {{"demo": "pages/components/buttons/ButtonBase.js"}}
 
@@ -90,13 +90,13 @@ Here is an [integration example with react-router](/guides/composition/#button).
 
 ## Einschränkungen
 
-### Cursor not-allowed
+### Cursor nicht erlaubt
 
 The ButtonBase component sets `pointer-events: none;` on disabled buttons, which prevents the appearance of a disabled cursor.
 
 If you wish to use `not-allowed`, you have two options:
 
-1. **CSS only**. You can remove the pointer events style on the disabled state of the `<button>` element:
+1. **Nur CSS**. You can remove the pointer events style on the disabled state of the `<button>` element:
 
   ```css
   .MuiButtonBase-root:disabled {
