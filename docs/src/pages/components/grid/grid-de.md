@@ -65,7 +65,7 @@ Die folgende Demo folgt nicht der Material Design-Spezifikation, sondern zeigt, 
 
 ## Verschachteltes Raster
 
-The `container` and `item` properties are two independent booleans. They can be combined.
+The `container` and `item` properties are two independent booleans. Sie können kombiniert werden.
 
 > Ein Flex **container** ist die Box, die von einem Element mit einer berechneten Anzeige von `flex` oder `Iinline-flex`. In-Flow-Kinder eines Flex-Containers heißen Flex **Elemente** und werden mit dem Flex-Layout-Modell angeordnet.
 
