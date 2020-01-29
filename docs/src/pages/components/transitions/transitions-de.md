@@ -69,7 +69,7 @@ In diesem Beispiel veranschaulicht, wie der Eintritts animation verzögert wird.
 
 ## TransitionComponent prop
 
-The components accept a `TransitionComponent` prop to customize the default transitions. You can use any of the above components or your own. It should respect the following conditions:
+The components accept a `TransitionComponent` prop to customize the default transitions. You can use any of the above components or your own. Es sollte folgende Bedingungen einhalten:
 
 - Accepts an `in` prop. This corresponds to the open/close state.
 - Call the `onEnter` callback prop when the enter transition starts.
