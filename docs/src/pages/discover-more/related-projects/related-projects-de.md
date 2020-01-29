@@ -6,41 +6,41 @@ Da der Umfang der Probleme, die Material-UI löst, begrenzt ist, versuchen wir, 
 
 ## Design-Ressourcen
 
-- **Sketch**: [Material Theme Editor](https://material.io/resources/theme-editor/) for Material Design made by Google.
+- **Sketch**: [Material Theme Editor](https://material.io/resources/theme-editor/) für Material Design von Google.
 - **Figma**: 
-  - https://material.5ly.co/ for Material-UI made by Fively Team.
-  - https://ui-kit.co/ a starter kit for your Material Design 2 project.
-- **Framer**: [Framer X Kit](https://packages.framer.com/package/material-ui/material-ui) for Material-UI.
+  - https://material.5ly.co/ für Material-UI von Fively Team.
+  - https://ui-kit.co/ ein Starter Kit für Ihr Material Design 2 Projekt.
+- **Framer**: [Framer X Kit](https://packages.framer.com/package/material-ui/material-ui) für Material-UI.
 
-You didn't find the design assets your team is looking for? Lassen Sie es uns wissen!
+Sie haben nicht die Design-Assets gefunden, die Ihr Team sucht? Lassen Sie es uns wissen!
 
-## Images and illustrations
+## Bilder und Illustrationen
 
-- [Unsplash](https://unsplash.com): 📷 A great resource for finding beautiful, high-resolution, free photos that you can use in your projects.
-- [unDraw](https://undraw.co/): 📐 Like Unsplash but for amazing vector illustrations.
+- [Unsplash](https://unsplash.com): 📷 Eine großartige Ressource, um schöne, hochauflösende, kostenlose Fotos zu finden, die du in deinen Projekten verwenden kannst.
+- [unDraw](https://undraw.co/): 📐 Wie Unsplash, aber für großartige Vektor-Illustrationen.
 
 ## Komponenten
 
-This is a collection of third-party projects that extend Material-UI.
+Dies ist eine Sammlung von Drittanbieterprojekten, die Material-UI erweitern.
 
 ### Layout
 
-- [@mui-treasury/layout](https://mui-treasury.com/layout): Components to handle the overall layout of a page. You can find a couple of examples, e.g. [a reactjs.org clone](https://mui-treasury.com/layout/clones/reactjs).
+- [@mui-treasury/layout](https://mui-treasury.com/layout): Komponenten für das grundlegende Layout einer Seite. Sie können ein paar Beispiele finden, z. B. [ein reactjs.org-Klon](https://mui-treasury.com/layout/clones/reactjs).
 
-### Tables
+### Tabellen
 
-- [material-table](https://github.com/mbrn/material-table): A simple and powerful Datatable for React based on Material-UI Table with some additional features. Sie unterstützen viele verschiedene Anwendungsfälle (editierbar, filtern, gruppieren, sortieren, auswählen, i18n, Baumdaten und mehr). Sie sollten es sich mal angucken.
+- [material-table](https://github.com/mbrn/material-table): Eine einfache und leistungsstarke Datatable für React, basierend auf der Material-UI-Tabelle mit einigen zusätzlichen Funktionen. Sie unterstützen viele verschiedene Anwendungsfälle (editierbar, filtern, gruppieren, sortieren, auswählen, i18n, Baumdaten und mehr). Sie sollten es sich mal angucken.
 - [dx-react-grid-material-ui](https://devexpress.github.io/devextreme-reactive/react/grid/): A data grid for Material-UI with paging, sorting, filtering, grouping and editing features ([paid license](https://js.devexpress.com/licensing/)).
 - [mui-datatables](https://github.com/gregnb/mui-datatables): Responsive data tables for Material-UI with filtering, sorting, search and more.
 - [tubular-react](https://github.com/unosquare/tubular-react): A Material-UI table with local or remote data-source. Featuring filtering, sorting, free-text search, export to CSV locally, and aggregations.
 
-### Notifications
+### Benachrichtigungen
 
-- [notistack](https://github.com/iamhosseindhv/notistack): Makes it easy to display snackbars (so you don't have to deal with open/close state of them).
+- [notistack](https://github.com/iamhosseindhv/notistack): Ermöglicht die einfache Anzeige von Snackbars (damit Sie sich nicht mit dem Öffnen/Schließen von Snackbars herumschlagen müssen).
 
 ### Upload
 
-- [material-ui-dropzone](https://github.com/Yuvaleros/material-ui-dropzone): Built on top of react-dropzone.
+- [material-ui-dropzone](https://github.com/Yuvaleros/material-ui-dropzone): Gebaut auf Basis der React-Dropzone.
 
 ### Formulare
 
@@ -51,7 +51,7 @@ This is a collection of third-party projects that extend Material-UI.
 
 ### Carousel
 
-- [material-auto-rotating-carousel](https://mui.wertarbyte.com/#material-auto-rotating-carousel): Introduce new users to your app.
+- [material-auto-rotating-carousel](https://mui.wertarbyte.com/#material-auto-rotating-carousel): Neue Benutzer in Ihre App einführen.
 
 ### Image
 
