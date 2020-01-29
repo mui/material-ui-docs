@@ -73,7 +73,7 @@ You can use the `scale` prop to represent the `value` on a different scale. For 
 
 (WAI-ARIA: https://www.w3.org/TR/wai-aria-practices/#slider)
 
-The component handles most of the work necessary to make it accessible. However, you need to make sure that:
+The component handles most of the work necessary to make it accessible. Sie müssen jedoch sicherstellen, dass:
 
 - Each thumb has a user-friendly label (`aria-label`, `aria-labelledby` or `getAriaLabel` prop).
 - Each thumb has a user-friendly text for its current value. This is not required if the value matches the semantics of the label. You can change the name with the `getAriaValueText` or `aria-valuetext` prop.
