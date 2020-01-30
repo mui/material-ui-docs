@@ -11,19 +11,19 @@ components: Alert
 
 ## Alert simples
 
-The alert offers four severity levels that set a distinctive icon and color.
+El componente Alert ofrece cuatro niveles de gravedad que establecen un icono y un color distintivos.
 
 {{"demo": "pages/components/alert/SimpleAlerts.js"}}
 
 ## Descripción
 
-You can use the `AlertTitle` component to display a formatted title above the content.
+Puede utilizar el componente `AlertTitle` para mostrar un título formateado por encima del contenido.
 
 {{"demo": "pages/components/alert/DescriptionAlerts.js"}}
 
-## Actions
+## Acciones
 
-An alert can have an action, such as a close or undo button. It is rendered after the message, at the end of the alert.
+El componente Alert puede tener una acción, como un botón cerrar o deshacer. Es rendereado después del mensaje, al final del Alert.
 
 If an `onClose` callback is provided and no `action` prop is set, a close icon is displayed. The `action` prop can be used to provide an alternative action, for example using a Button or IconButton.
 
