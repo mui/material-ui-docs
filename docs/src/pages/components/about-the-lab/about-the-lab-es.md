@@ -4,7 +4,7 @@
 
 ## Instalación
 
-Instale el paquete directamente en el directorio de su proyecto con:
+Instala el paquete en el directorio de su proyecto con:
 
 ```sh
 // con npm
