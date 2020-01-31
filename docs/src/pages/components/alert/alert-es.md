@@ -31,13 +31,13 @@ Si se proporciona una devolución de llamada `onClose` y no se establece ningún
 
 ### Transición
 
-You can use a [transition component](/components/transitions/) such as `Collapse` to transition the appearance of the alert.
+Puede utilizar el componente de [ transition ](/components/transitions/) como `Colapse` para la transición del componente Alert.
 
 {{"demo": "pages/components/alert/TransitionAlerts.js"}}
 
 ## Iconos
 
-The `icon` prop allows you to add an icon to the beginning of the alert component. This will override the default icon for the specified severity.
+El `icon` prop permite añadir un icono para el inicio del componente Alert. This will override the default icon for the specified severity.
 
 You can change the default severity to icon mapping with the `iconMapping` prop. This can be defined globally using [theme customization](/customization/globals/#default-props).
 
