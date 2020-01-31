@@ -25,11 +25,11 @@ Puede utilizar el componente `AlertTitle` para mostrar un título formateado por
 
 El componente Alert puede tener una acción, como un botón cerrar o deshacer. Es rendereado después del mensaje, al final del Alert.
 
-If an `onClose` callback is provided and no `action` prop is set, a close icon is displayed. The `action` prop can be used to provide an alternative action, for example using a Button or IconButton.
+Si se proporciona una devolución de llamada `onClose` y no se establece ningún accesorio de `action`, se muestra un icono de cierre. El accesorio de `action` se puede usar para proporcionar una acción alternativa, por ejemplo, usando un Button o un IconButton.
 
 {{"demo": "pages/components/alert/ActionAlerts.js"}}
 
-### Transition
+### Transición
 
 You can use a [transition component](/components/transitions/) such as `Collapse` to transition the appearance of the alert.
 
