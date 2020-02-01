@@ -6,7 +6,7 @@ Da der Umfang der Probleme, die Material-UI löst, begrenzt ist, versuchen wir, 
 
 ## Design-Ressourcen
 
-- **Sketch**: [Material Theme Editor](https://material.io/resources/theme-editor/) für Material Design von Google.
+- **Sketch**: [Sketch for Material-UI](https://themes.material-ui.com/themes/sketch-react/) — A large UI kit with over 1,500 handcrafted Material-UI's symbols 💎.
 - **Figma**: 
   - https://material.5ly.co/ für Material-UI von Fively Team.
   - https://ui-kit.co/ ein Starter Kit für Ihr Material Design 2 Projekt.
