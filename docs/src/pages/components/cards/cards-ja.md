@@ -19,7 +19,7 @@ Cardは複数のアクション、UIコントロール、およびオーバー�
 
 ### Outlined Card
 
-Set `variant="outlined` to render an outlined card.
+Set `variant="outlined"` to render an outlined card.
 
 {{"demo": "pages/components/cards/OutlinedCard.js", "bg": true}}
 
