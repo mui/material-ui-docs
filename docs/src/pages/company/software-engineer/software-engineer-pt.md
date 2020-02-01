@@ -2,7 +2,7 @@
 
 <p class="description">We are looking for a software engineer to help support our open source team, assist the Material-UI community and grow our premium products. Join us in our mission to make React application development fun by making it simple.</p>
 
-## About Us
+## Sobre Nós
 
 Material-UI is a community and developer focused team that makes it easy to build amazing user interfaces, for any device, with React.
 
