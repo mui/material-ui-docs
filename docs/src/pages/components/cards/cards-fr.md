@@ -19,7 +19,7 @@ Bien que les cartes puissent prendre en charge plusieurs actions, des contrôles
 
 ### Outlined Card
 
-Set `variant="outlined` to render an outlined card.
+Set `variant="outlined"` to render an outlined card.
 
 {{"demo": "pages/components/cards/OutlinedCard.js", "bg": true}}
 
