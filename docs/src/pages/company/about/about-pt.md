@@ -4,13 +4,13 @@
 
 ## Nossa Missão
 
-Our company is focused on making React UIs development easier, better, and accessible to more people. We build open source and commercial tools used by many hundreds of thousands of developers in production. We're proud not only of the products we make, but also the community and partnerships we've cultivated with other developers and companies.
+Nossa empresa está focada em fazer o desenvolvimento de UIs com React mais fácil, melhor e acessível para mais pessoas. Construímos ferramentas comerciais e de código aberto utilizadas por centenas de milhares de desenvolvedores em produção. Não temos orgulho apenas dos produtos que fazemos, mas também da comunidade e das parcerias que cultivamos com outros desenvolvedores e empresas.
 
-## Our Vision
+## Nossa Visão
 
-Our vision is to provide React components for faster and easier web development. [Read more](/discover-more/vision/).
+Nossa visão é fornecer componentes do React para um desenvolvimento web mais rápido e mais fácil. [Leia mais](/discover-more/vision/).
 
-## Our Values
+## Nossos Valores
 
 Our core values include transparency (our work is public most of the time); creating a safe, high-trust team; building incredible developer experiences; maintaining a healthy working environment; and helping to deliver web experiences that feel amazing to use on every device and connection type.
 
