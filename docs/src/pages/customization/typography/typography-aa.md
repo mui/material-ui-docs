@@ -24,11 +24,11 @@ crwdns107933:0${RalewayWoff2}crwdne107933:0
 
 crwdns100992:0crwdne100992:0 crwdns100994:0crwdne100994:0
 
-```js
+```jsx
 crwdns107935:0{
     fontFamily: 'Raleway, Arial',
   }crwdnd107935:0[raleway]crwdne107935:0
-crwdns107937:0{theme}crwdnd107937:0{children}crwdne107937:0
+crwdns108769:0{theme}crwdnd108769:0{children}crwdne108769:0
 ```
 
 ## crwdns100998:0crwdne100998:0
