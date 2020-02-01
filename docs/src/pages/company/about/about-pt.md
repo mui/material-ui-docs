@@ -1,8 +1,8 @@
-# About Us
+# Sobre Nós
 
-<p class="description">We’re on a mission to make building UIs with React fun.</p>
+<p class="description">Temos a missão de tornar o desenvolvimento de UI com React divertido.</p>
 
-## Our Mission
+## Nossa Missão
 
 Our company is focused on making React UIs development easier, better, and accessible to more people. We build open source and commercial tools used by many hundreds of thousands of developers in production. We're proud not only of the products we make, but also the community and partnerships we've cultivated with other developers and companies.
 
