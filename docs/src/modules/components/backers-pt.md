@@ -1,6 +1,6 @@
 <h2 align="center">Patrocinadores do Material-UI</h2>
 
-The continued development and maintenance of Material-UI is made possible by these generous sponsors:
+O desenvolvimento contínuo e manutenção do Material-UI possível por causa destes generosos patrocinadores:
 
 ### Diamante 💎
 
@@ -19,4 +19,4 @@ The continued development and maintenance of Material-UI is made possible by the
 
 ### E tem mais!
 
-See the full list of [our sponsors](/discover-more/backers/), and learn how you can contribute to the future of Material-UI.
+Veja a lista completa dos [nossos patrocinadores](/discover-more/backers/) e saiba como você pode contribuir com o futuro do Material-UI.
