@@ -19,7 +19,7 @@ components: Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedi
 
 ### Outlined Card
 
-Set `variant="outlined` to render an outlined card.
+Set `variant="outlined"` to render an outlined card.
 
 {{"demo": "pages/components/cards/OutlinedCard.js", "bg": true}}
 
