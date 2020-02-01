@@ -18,4 +18,4 @@ Nossos valores fundamentais incluem transparência (a maior parte do tempo nosso
 
 O Material-UI começou em 2014 para unificar o React e o Material Design.
 
-Today, Material-UI has grown to become one of the world's most popular React UI libraries – backed by a vibrant community of more than 1M developers in over 180 countries.
+Hoje, o Material-UI cresceu e se tornou uma das bibliotecas de UI com React mais populadores do mundo.
