@@ -41,7 +41,7 @@ Em geral, você pode esperar o seguinte ciclo de lançamento:
 | Data                       | Versão | Situação |
 |:-------------------------- |:------ |:-------- |
 | Maio de 2018               | v1.0.0 | Liberada |
-| Setembro de 2018           | v3.0.0 | Liberada |
+| September 2018             | v3.0.0 | Liberada |
 | Maio de 2019               | v4.0.0 | Liberada |
 | Terceiro trimestre de 2020 | v5.0.0 | ⏳        |
 
