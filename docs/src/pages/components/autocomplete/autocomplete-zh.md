@@ -78,13 +78,13 @@ For this demo, we need to load the [Google Maps JavaScript](https://developers.g
 
 > ⚠️ Before you can start using the Google Maps JavaScript API, you must sign up and create a billing account.
 
-## Multiple values
+## Multiple values（多重值）
 
-Also known as tags, the user is allowed to enter more than one value.
+这也称为标签，允许用户输入多个值。
 
 {{"demo": "pages/components/autocomplete/Tags.js"}}
 
-### Fixed options
+### 固定选项
 
 In the event that you need to lock certain tag so that they can't be removed in the interface, you can set the chips disabled.
 
@@ -102,7 +102,7 @@ Fancy smaller inputs? Use the `size` prop.
 
 ## 定制的自动完成组件
 
-This demo reproduces the GitHub's label picker:
+该演示再现了GitHub的标签选择器：
 
 {{"demo": "pages/components/autocomplete/GitHubLabel.js"}}
 
