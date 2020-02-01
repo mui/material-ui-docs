@@ -41,7 +41,7 @@ Im Allgemeinen können Sie den folgenden Release-Zyklus erwarten:
 | Datum          | Version | Status         |
 |:-------------- |:------- |:-------------- |
 | May 2018       | v1.0.0  | Veröffentlicht |
-| Septembre 2018 | v3.0.0  | Veröffentlicht |
+| September 2018 | v3.0.0  | Veröffentlicht |
 | May 2019       | v4.0.0  | Veröffentlicht |
 | Q3 2020        | v5.0.0  | ⏳              |
 
