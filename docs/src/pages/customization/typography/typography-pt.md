@@ -53,7 +53,7 @@ const raleway = {
 
 Em seguida, você precisa alterar o tema para usar essa nova fonte. Para definir globalmente o Raleway como uma fonte, o componente [`CssBaseline`](/components/css-baseline/) pode ser usado (ou qualquer outra solução CSS de sua escolha).
 
-```js
+```jsx
 const theme = createMuiTheme({
   typography: {
     fontFamily: 'Raleway, Arial',
@@ -68,10 +68,12 @@ const theme = createMuiTheme({
 });
 
 // ...
-<ThemeProvider theme={theme}>
-  <CssBaseline />
-  {children}
-</ThemeProvider>;
+return (
+  <ThemeProvider theme={theme}>
+    <CssBaseline />
+    {children}
+  </ThemeProvider>
+);
 ```
 
 ## Tamanho da fonte
