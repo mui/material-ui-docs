@@ -19,7 +19,7 @@ Aunque las tarjetas pueden permitir múltiples acciones, controles de la interfa
 
 ### Outlined Card
 
-Set `variant="outlined` to render an outlined card.
+Set `variant="outlined"` to render an outlined card.
 
 {{"demo": "pages/components/cards/OutlinedCard.js", "bg": true}}
 
