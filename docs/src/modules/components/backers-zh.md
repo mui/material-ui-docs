@@ -1,6 +1,6 @@
 <h2 align="center">Material-UI 的赞助商</h2>
 
-The continued development and maintenance of Material-UI is made possible by these generous sponsors:
+这些慷慨的赞助商使 Material-UI 的持续开发和维护成为可能：
 
 ### 钻石级💎
 
