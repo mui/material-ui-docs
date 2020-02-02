@@ -1,5 +1,5 @@
 ---
-title: 提醒组件
+title: React 提醒组件
 components: 提醒
 ---
 
@@ -71,8 +71,8 @@ You can use the Snackbar to [display a toast](/components/snackbars/#customized-
 
 (WAI-ARIA: https://www.w3.org/TR/wai-aria-practices/#alert)
 
-动态显示组件时，大部分屏幕都会自动显示其内容。 此时，屏幕不会将页面加载时出现的提醒通知给用户。
+动态显示组件时，大部分屏幕都会自动朗读其内容。 此时，屏幕不会将页面加载时出现的提醒通知给用户。
 
-Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (for example the visible text), or is included through alternative means, such as additional hidden text.
+使用颜色来增加意义只提供了一个视觉指示，而不会传达给用户的辅助技术，如屏幕阅读器。 确保用颜色表示的信息对于内容本身是明显的(例如可见的文本)，或者通过其他方法包含进来，例如附加的隐藏文本。
 
-Actions must have a tab index of 0 so that they can be reached by keyboard-only users.
+动作的选项卡索引必须为0，这样只有键盘的用户才能访问它们。
