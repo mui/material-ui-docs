@@ -19,4 +19,4 @@ The continued development and maintenance of Material-UI is made possible by the
 
 ### Узнать больше!
 
-See the full list of [our sponsors](/discover-more/backers/), and learn how you can contribute to the future of Material-UI.
+Ознакомьтесь с полным списком [наших спонсоров](/discover-more/backers/), и узнайте, как вы можете внести свой вклад в будущее Material-UI.
