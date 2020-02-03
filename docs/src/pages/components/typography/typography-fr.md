@@ -4,9 +4,9 @@ components: Typography
 
 # Typography
 
-<p class="description">Use typography to present your design and content as clearly and efficiently as possible.</p>
+<p class="description">Utilisez la typographie pour présenter votre design et votre contenu aussi clairement et efficacement que possible.</p>
 
-Too many type sizes and styles at once can spoil any layout. A [typographic scale](https://material.io/design/typography/#type-scale) has a limited set of type sizes that work well together along with the layout grid.
+Trop de types de formats et de styles à la fois peuvent gâcher n'importe quelle mise en page. A [typographic scale](https://material.io/design/typography/#type-scale) has a limited set of type sizes that work well together along with the layout grid.
 
 ## General
 
