@@ -6,21 +6,21 @@ components: Typography
 
 <p class="description">Utilisez la typographie pour présenter votre design et votre contenu aussi clairement et efficacement que possible.</p>
 
-Trop de types de formats et de styles à la fois peuvent gâcher n'importe quelle mise en page. A [typographic scale](https://material.io/design/typography/#type-scale) has a limited set of type sizes that work well together along with the layout grid.
+Trop de types de formats et de styles à la fois peuvent gâcher n'importe quelle mise en page. Une [échelle typographique](https://material.io/design/typography/#type-scale) a un ensemble limité de tailles de type qui fonctionnent bien ensemble avec la grille de mise en page.
 
-## General
+## Général
 
-The *Roboto* font will **not** be automatically loaded by Material-UI. The developer is responsible for loading all fonts used in their application. Roboto Font has a few easy ways to get started. For more advanced configuration, check out [the theme customization section](/customization/typography/).
+La police *Roboto* ne sera **pas** automatiquement chargée par Material-UI. Le développeur est responsable du chargement de toutes les polices utilisées dans leur application. Roboto Font a quelques moyens faciles pour commencer. Pour une configuration plus avancée, consultez [la section de personnalisation du thème](/customization/typography/).
 
 ## Roboto Font CDN
 
-Shown below is a sample link markup used to load the Roboto font from a CDN:
+Afficher ci-dessous est un exemple de balisage de lien utilisé pour charger la police Roboto à partir d'un CDN :
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
 ```
 
-## Install with npm
+## Installer via npm
 
 You can [install it](https://www.npmjs.com/package/typeface-roboto) by typing the below command in your terminal:
 
