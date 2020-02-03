@@ -22,21 +22,21 @@ Afficher ci-dessous est un exemple de balisage de lien utilisé pour charger la 
 
 ## Installer via npm
 
-You can [install it](https://www.npmjs.com/package/typeface-roboto) by typing the below command in your terminal:
+Vous pouvez [l'installer](https://www.npmjs.com/package/typeface-roboto) en tapant la commande ci-dessous dans votre terminal :
 
 `npm install typeface-roboto --save`
 
-Then, you can import it in your entry-point.
+Ensuite, vous pouvez l'importer dans votre point d'entrée.
 
 ```js
 import 'typeface-roboto';
 ```
 
-For more info check out the [typeface](https://github.com/KyleAMathews/typefaces/tree/master/packages/roboto) project.
+Pour plus d'informations, consultez le projet [police de caractère](https://github.com/KyleAMathews/typefaces/tree/master/packages/roboto).
 
-⚠️ Be careful when using this approach. Make sure your bundler doesn't eager load all the font variations (100/300/400/500/700/900, italic/regular, SVG/woff). Inlining all the font files can significantly increase the size of your bundle. Material-UI default typography configuration only relies on 300, 400, 500, and 700 font weights.
+⚠️ Soyez prudent lorsque vous utilisez cette approche. Make sure your bundler doesn't eager load all the font variations (100/300/400/500/700/900, italic/regular, SVG/woff). Inlining all the font files can significantly increase the size of your bundle. Material-UI default typography configuration only relies on 300, 400, 500, and 700 font weights.
 
-## Component
+## Composant
 
 {{"demo": "pages/components/typography/Types.js"}}
 
