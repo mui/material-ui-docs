@@ -1,6 +1,6 @@
 <h2 align="center">Sponsoren von Material-UI</h2>
 
-The continued development and maintenance of Material-UI is made possible by these generous sponsors:
+Die kontinuierliche Weiterentwicklung und Wartung von Material-UI wird durch diese großzügigen Sponsoren ermöglicht:
 
 ### Diamant 💎
 
