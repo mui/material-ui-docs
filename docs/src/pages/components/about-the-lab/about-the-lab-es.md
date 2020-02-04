@@ -1,4 +1,4 @@
-# Acerca de lab
+# Acerca del laboratorio
 
 <p class="description">Este paquete almacena componentes en desarrollo, que todavía no están listos para estar en core.</p>
 
