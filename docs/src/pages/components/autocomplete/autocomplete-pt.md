@@ -96,7 +96,7 @@ In the event that you need to lock certain tag so that they can't be removed in 
 
 ## Tamanhos
 
-Fancy smaller inputs? Use a propriedade `size`.
+Gosta mais de campos de texto menores? Use a propriedade `size`.
 
 {{"demo": "pages/components/autocomplete/Sizes.js"}}
 
