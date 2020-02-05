@@ -33,37 +33,37 @@ A propriedade `error` habilita o estado de erro, e, utilizando a propriedade `he
 
 ## Multiline
 
-A propriedade `multiline` transforma o `TextField` em um `<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">TextArea</a> `.
+A propriedade `multiline` transforma o `textfield` em um `<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">TextArea</a>.</p>
 
-{{"demo": "pages/components/text-fields/MultilineTextFields.js"}}
+<p>{{"demo": "pages/components/text-fields/MultilineTextFields.js"}}</p>
 
-## Select
+<h2>Select</h2>
 
-The `select` prop makes the text field use the [Select](/components/selects/) component internally.
+<p>A propriedade <code>select` transforma o `textfield` em um componente [Select](/components/selects/).
 
 {{"demo": "pages/components/text-fields/SelectTextFields.js"}}
 
 ## Ícones
 
-There are multiple ways to display an icon with a text field.
+Há muitas formas de incluir um icone em um `textfield`.
 
 {{"demo": "pages/components/text-fields/InputWithIcon.js"}}
 
 ### Decoração de inputs
 
-The main way is with an `InputAdornment`. Estes podem ser usados para adicionar um prefixo, sufixo ou uma ação para uma entrada. Por exemplo, você pode usar um botão com ícone para ocultar ou revelar a senha.
+A forma principal é utilizando um `InputAdornment`. Estes podem ser usados para adicionar um prefixo, sufixo ou uma ação para uma entrada. Por exemplo, você pode usar um botão com ícone para ocultar ou revelar a senha.
 
 {{"demo": "pages/components/text-fields/InputAdornments.js"}}
 
 ## Tamanhos
 
-Fancy smaller inputs? Use a propriedade `size`.
+Gosta mais de campos de texto menores? Use a propriedade `size`.
 
 {{"demo": "pages/components/text-fields/TextFieldSizes.js"}}
 
 ## Leiaute
 
-`margin` can be used to alter the vertical spacing of inputs. Using `none` (default) will not apply margins to the `FormControl`, whereas `dense` and `normal` will. `dense` and `normal` alter other styles to meet the specification.
+`margin` pode ser utilizado para alterar o espaçamento vertical entre os inputs. Using `none` (default) will not apply margins to the `FormControl`, whereas `dense` and `normal` will. `dense` and `normal` alter other styles to meet the specification.
 
 `fullWidth` can be used to make the input take up the full width of its container.
 
