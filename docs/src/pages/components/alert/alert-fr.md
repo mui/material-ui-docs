@@ -37,17 +37,17 @@ Vous pouvez utiliser un [composant de transition](/components/transitions/) tel 
 
 ## Icônes
 
-La propriété `icône` vous permet d'ajouter une icône au début du composant d'alerte. Cela remplacera l'icône par défaut pour la sévérité spécifiée.
+La propriété `icon` vous permet d'ajouter une icône au début du composant d'alerte. Cela remplacera l'icône par défaut pour la sévérité spécifiée.
 
-You can change the default severity to icon mapping with the `iconMapping` prop. This can be defined globally using [theme customization](/customization/globals/#default-props).
+Vous pouvez changer la sévérité par défaut pour le mapping d'icône avec la propriété `iconMapping`. Ceci peut être défini globalement en utilisant [la personnalisation du thème](/customization/globals/#default-props).
 
-Setting the icon prop to false will remove the icon altogether.
+Définir la propriété `icon` à `false` supprimera complètement l'icône.
 
 {{"demo": "pages/components/alert/IconAlerts.js"}}
 
 ## Variants
 
-Two additional variants are available – outlined, and filled:
+Deux variantes supplémentaires sont disponibles – `outlined` et `filled` :
 
 ### Outlined
 
@@ -59,11 +59,11 @@ Two additional variants are available – outlined, and filled:
 
 ## Toast
 
-You can use the Snackbar to [display a toast](/components/snackbars/#customized-snackbars) with the Alert.
+Vous pouvez utiliser la `Snackbar` pour [afficher un toast](/components/snackbars/#customized-snackbars) avec l'alerte.
 
 ## Couleur
 
-The `color` prop will override the default color for the specified severity.
+La propriété `color` remplacera la couleur par défaut pour la sévérité spécifiée.
 
 {{"demo": "pages/components/alert/ColorAlerts.js"}}
 
@@ -71,8 +71,8 @@ The `color` prop will override the default color for the specified severity.
 
 (WAI-ARIA: https://www.w3.org/TR/wai-aria-practices/#alert)
 
-When the component is dynamically displayed, the content is automatically announced by most screen readers. At this time, screen readers do not inform users of alerts that are present when the page loads.
+Lorsque le composant est affiché dynamiquement, le contenu est automatiquement annoncé par la plupart des lecteurs d'écran. À l'heure actuelle, les lecteurs d'écran n'informent pas les utilisateurs des alertes présentes lors du chargement de la page.
 
-Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (for example the visible text), or is included through alternative means, such as additional hidden text.
+L'utilisation de la couleur pour ajouter de la signification ne fournit qu'une indication visuelle qui ne sera pas transmise aux utilisateurs de technologies d'assistance telles que les lecteurs d'écran. Assurez-vous que les informations indiquées par la couleur sont soit évidentes à partir du contenu lui-même (par exemple le texte visible), ou est inclus par d'autres moyens, tels que le texte caché supplémentaire.
 
-Actions must have a tab index of 0 so that they can be reached by keyboard-only users.
+Les actions doivent avoir un index de tabulation de 0 pour être accessibles aux utilisateurs utilisant uniquement le clavier.
