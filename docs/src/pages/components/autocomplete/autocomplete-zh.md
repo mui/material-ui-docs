@@ -3,7 +3,7 @@ title: React Autocomplete（自动补全）组件
 components: TextField, Popper, Autocomplete
 ---
 
-# Autocomplete（自动补全）
+# Autocomplete 自动补全
 
 <p class="description">自动补全是一个通过一组建议选项来帮助用户输入的普通文本输入框。</p>
 
@@ -60,7 +60,7 @@ import useAutocomplete from '@material-ui/lab/useAutocomplete';
 
 ### 自定义钩子
 
-{{"demo": "pages/components/autocomplete/CustomizedHook.js"}}
+{{"demo": "pages/components/autocomplete/CustomizedHook.js"}} 
 
 Head to the [Customized Autocomplete](#customized-autocomplete) section for a customization example with the `Autocomplete` component instead of the hook.
 
