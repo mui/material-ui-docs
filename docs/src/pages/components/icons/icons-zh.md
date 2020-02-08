@@ -3,7 +3,7 @@ title: React Icon（图标）组件
 components: Icon, SvgIcon
 ---
 
-# Icons（图标）
+# Icons 图标
 
 <p class="description">一些在 Material-UI 中使用图标的建议和指导。</p>
 
