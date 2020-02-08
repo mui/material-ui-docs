@@ -1,9 +1,9 @@
 ---
 title: React 提醒组件
-components: 提醒
+components: Alert
 ---
 
-# 提醒
+# Alert 提醒
 
 <p class="description">「提醒」是简短且重要的信息，在不影响用户操作的同时能够吸引用户的注意力。</p>
 
