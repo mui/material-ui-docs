@@ -35,7 +35,7 @@ components: Alert
 
 {{"demo": "pages/components/alert/TransitionAlerts.js"}}
 
-## Icons（图标）
+## Icons 图标
 
 `icon`是指可以在「提醒」组件的开始的地方加一个图标。 以此来改变不同程度「提醒」的默认图标。
 
