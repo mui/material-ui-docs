@@ -3,7 +3,7 @@ title: React Avatar（头像）组件
 components: Avatar, AvatarGroup, Badge
 ---
 
-# Avatar (头像)
+# Avatar 头像
 
 <p class="description">在整个 material design 中，无论是在表格中还是到对话框菜单中，都可以找到使用头像的身影。</p>
 
