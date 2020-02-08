@@ -3,7 +3,7 @@ title: 树视图组件
 components: TreeView, TreeItem
 ---
 
-# 树视图
+# Tree View 树视图
 
 <p class="description">用树视图，展现出层级关系。</p>
 
