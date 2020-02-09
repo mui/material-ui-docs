@@ -1,6 +1,6 @@
 <h2 align="center">Спонсоры Material-UI</h2>
 
-The continued development and maintenance of Material-UI is made possible by these generous sponsors:
+Дальнейшее развитие и поддержание Material-UI возможно благодаря этим щедрым спонсорам:
 
 ### Алмазные 💎
 
