@@ -57,9 +57,9 @@ components: Alert
 
 {{"demo": "pages/components/alert/FilledAlerts.js"}}
 
-## Toast
+## Toast（提示）
 
-You can use the Snackbar to [display a toast](/components/snackbars/#customized-snackbars) with the Alert.
+你可以使用「消息条」来显示[ 带确认按钮的Toast 提示](/components/snackbars/#customized-snackbars) 。
 
 ## 颜色
 
