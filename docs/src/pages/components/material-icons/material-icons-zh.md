@@ -3,7 +3,7 @@ title: Material Icons (材料图标)
 components: Icon, SvgIcon
 ---
 
-# Material Icons (材料图标)
+# Material Icons 材料图标
 
 <p class="description">可以从官方网站上使用超过1,000个React Material图标。</p>
 
