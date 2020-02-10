@@ -76,7 +76,7 @@ A customized UI for Google Maps Places Autocomplete.
 
 对于这个演示，我们需要加载 [谷歌地图JavaScript](https://developers. google. com/maps/documentation/javascript/tutorial) API。
 
-> ⚠️ Before you can start using the Google Maps JavaScript API, you must sign up and create a billing account.
+> 在你开始使用谷歌地图javascript API之前，你需要创建一个帐户 (用于使用谷歌地图api).
 
 ## Multiple values（多重值）
 
