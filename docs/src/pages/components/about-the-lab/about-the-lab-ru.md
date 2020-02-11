@@ -17,7 +17,7 @@ For a component to be ready to move to the core, the following criteria are cons
 
 ## Инструкция по установке
 
-Install the package in your project directory with:
+Установите пакет в каталог проекта командой:
 
 ```sh
 // для npm
