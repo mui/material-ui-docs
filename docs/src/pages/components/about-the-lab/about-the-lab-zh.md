@@ -2,7 +2,7 @@
 
 <p class="description">此依赖包包含了一些还在开发中的组件，它们还不能移到 core（核心）库中。</p>
 
-核心版本（core）和实验室版本（lab）之间的主要差别就是组件是如何版本化的 Having a separate lab package allows us to release breaking changes when necessary while the core package follows a [slower-moving policy](https://material-ui.com/versions/#release-frequency).
+核心库（core）和实验室（lab）之间的主要差别就是组件是如何版本化的 Having a separate lab package allows us to release breaking changes when necessary while the core package follows a [slower-moving policy](https://material-ui.com/versions/#release-frequency).
 
 As developers use and test the components and report issues, the maintainers learn more about shortcomings of the components: missing features, accessibility issues, bugs, API design, etc. The older and more used a component is, the less likely it is that new issues will be found and subsequently need to introduce breaking changes.
 
