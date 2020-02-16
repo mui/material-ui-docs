@@ -227,6 +227,11 @@
     "/components/rating": "Rating 评分",
     "/components/skeleton": "Skeleton 骨架屏",
     "/components/tree-view": "Tree View 树视图",
-    "/customization/density": "间距"
+    "/customization/density": "间距",
+    "/components/button-group": "Button Group",
+    "/components/floating-action-button": "Floating Action Button",
+    "/components/backdrop": "Backdrop",
+    "/components/alert": "Alert",
+    "/components/pagination": "Pagination"
   }
 }
