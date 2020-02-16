@@ -34,9 +34,19 @@ components: TextField, Popper, Autocomplete
 
 Set `freeSolo` to true so the textbox can contain any arbitrary value. The prop is designed to cover the primary use case of a search box with suggestions, e.g. Google search.
 
-However, if you intend to use it for a [combo box](#combo-box) like experience (an enhanced version of a select element) we recommend setting `selectOnFocus`.
+However, if you intend to use it for a [combo box](#combo-box) like experience (an enhanced version of a select element) we recommend setting `selectOnFocus` (it helps the user clearning the selected value).
 
 {{"demo": "pages/components/autocomplete/FreeSolo.js"}}
+
+### Helper message
+
+Sometimes you want to make explicit to the user that he/she can add whatever value he/she wants. The following demo adds a last option: `Add "YOUR SEARCH"`.
+
+{{"demo": "pages/components/autocomplete/FreeSoloCreateOption.js"}}
+
+You could also display a dialog when the user wants to add a new value.
+
+{{"demo": "pages/components/autocomplete/FreeSoloCreateOptionDialog.js"}}
 
 ## 分组
 
@@ -58,9 +68,9 @@ import useAutocomplete from '@material-ui/lab/useAutocomplete';
 
 {{"demo": "pages/components/autocomplete/UseAutocomplete.js", "defaultCodeOpen": false}}
 
-### 自定义钩子
+### Customized hook
 
-{{"demo": "pages/components/autocomplete/CustomizedHook.js"}} 
+{{"demo": "pages/components/autocomplete/CustomizedHook.js"}}
 
 Head to the [Customized Autocomplete](#customized-autocomplete) section for a customization example with the `Autocomplete` component instead of the hook.
 
@@ -74,23 +84,23 @@ A customized UI for Google Maps Places Autocomplete.
 
 {{"demo": "pages/components/autocomplete/GoogleMaps.js"}}
 
-对于这个演示，我们需要加载 [谷歌地图JavaScript](https://developers. google. com/maps/documentation/javascript/tutorial) API。
+For this demo, we need to load the [Google Maps JavaScript](https://developers.google.com/maps/documentation/javascript/tutorial) API.
 
 > 在你开始使用谷歌地图javascript API之前，你需要创建一个帐户 (用于使用谷歌地图api).
 
 ## Multiple values（多重值）
 
-这也称为标签，允许用户输入多个值。
+Also known as tags, the user is allowed to enter more than one value.
 
 {{"demo": "pages/components/autocomplete/Tags.js"}}
 
-### 固定选项
+### Fixed options
 
 In the event that you need to lock certain tag so that they can't be removed in the interface, you can set the chips disabled.
 
 {{"demo": "pages/components/autocomplete/FixedTags.js"}}
 
-### Checkboxes（复选框）
+### Checkboxes
 
 {{"demo": "pages/components/autocomplete/CheckboxesTags.js"}}
 
@@ -102,7 +112,7 @@ Fancy smaller inputs? Use the `size` prop.
 
 ## 定制的自动完成组件
 
-该演示再现了GitHub的标签选择器：
+This demo reproduces the GitHub's label picker:
 
 {{"demo": "pages/components/autocomplete/GitHubLabel.js"}}
 
