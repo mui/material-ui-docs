@@ -227,6 +227,11 @@
     "/components/rating": "レート",
     "/components/skeleton": "スケルトン",
     "/components/tree-view": "ツリービュー (Tree View)",
-    "/customization/density": "密度(Density)"
+    "/customization/density": "密度(Density)",
+    "/components/button-group": "Button Group",
+    "/components/floating-action-button": "Floating Action Button",
+    "/components/backdrop": "Backdrop",
+    "/components/alert": "Alert",
+    "/components/pagination": "Pagination"
   }
 }
