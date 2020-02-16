@@ -227,6 +227,11 @@
     "/components/rating": "crwdns100764:0crwdne100764:0",
     "/components/skeleton": "crwdns100766:0crwdne100766:0",
     "/components/tree-view": "crwdns100768:0crwdne100768:0",
-    "/customization/density": "crwdns100770:0crwdne100770:0"
+    "/customization/density": "crwdns100770:0crwdne100770:0",
+    "/components/button-group": "crwdns110054:0crwdne110054:0",
+    "/components/floating-action-button": "crwdns110056:0crwdne110056:0",
+    "/components/backdrop": "crwdns110058:0crwdne110058:0",
+    "/components/alert": "crwdns110060:0crwdne110060:0",
+    "/components/pagination": "crwdns110062:0crwdne110062:0"
   }
 }
