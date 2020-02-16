@@ -94,7 +94,7 @@ const theme = createMuiTheme({
 
 ブラウザで計算されるフォントサイズは、次の数式に従います。
 
-![フォント サイズ](/static/images/font-size.gif)
+![font-size](/static/images/font-size.gif)
 
 <!-- https://latex.codecogs.com/gif.latex?computed&space;=&space;specification&space;\frac{typography.fontSize}{14}&space;\frac{html&space;font&space;size}{typography.htmlFontSize} -->
 
