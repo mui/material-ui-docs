@@ -227,6 +227,11 @@
     "/components/rating": "Рейтинг",
     "/components/skeleton": "Скелет",
     "/components/tree-view": "Иерархическое представление",
-    "/customization/density": "Density"
+    "/customization/density": "Density",
+    "/components/button-group": "Button Group",
+    "/components/floating-action-button": "Floating Action Button",
+    "/components/backdrop": "Backdrop",
+    "/components/alert": "Alert",
+    "/components/pagination": "Pagination"
   }
 }
