@@ -36,7 +36,7 @@ Material Design 已经将1,100多个官方图标标准化，而每个图标都�
 
 当然了，方法 1 比方法 2 安全得多，但是方法 2 提供了最好的开发体验。 在使用第二个方法之前，请确保您遵循 [最小化捆绑包大小指南](/guides/minimizing-bundle-size/#option-2)。 我们强烈建议您配置一个 Babel 插件。
 
-其中我们给每个图标配备了一个”主题“：Filled (default), Outlined, Rounded, Two tone 以及 Sharp。 若您想导入一个不是默认主题的图标组件，在图标名加主题做为后缀可以帮助你实现。 例如，`@material-ui/icons/Delete` 图标可以：
+其中我们给每个图标配备了一个”主题“：Filled (default), Outlined, Rounded, Two tone 以及 Sharp。 若您想导入一个不是默认主题的图标组件，在图标名加主题做为后缀即可。 例如，`@material-ui/icons/Delete` 图标可以：
 
 - 导出为 Filled 主题（默认值）：`@material-ui/icons/Delete`，
 - 导出为 Outlined 主题：`@material-ui/icons/DeleteOutlined`，
