@@ -50,9 +50,9 @@ Material Design 已经将1,100多个官方图标标准化，而每个图标都�
 
 ## SvgIcon Svg 图标
 
-If you need a custom SVG icon (not available in the Material Icons [default set](/components/material-icons/)) you can use the `SvgIcon` wrapper. This component extends the native `<svg>` element:
+如果你想导入一个自定义的 SVG 图标（但是又无法在 Material 图标[默认系列](/components/material-icons/)中找到），你可以使用 `SvgIcon` 来包装你的图标。 此组件是原生 `<svg>` 元素的拓展版：
 
-- It comes with built-in accessibility.
+- 它具备一些内置的可及性。
 - SVG elements should be scaled for a 24x24px viewport, so the resulting icon can be used as is, or included as a child for other Material-UI components that use icons. (This can be customized with the `viewBox` attribute).
 - By default, the component inherits the current color. Optionally, you can apply one of the theme colors using the `color` prop.
 
