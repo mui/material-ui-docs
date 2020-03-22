@@ -76,7 +76,7 @@ function HomeIcon(props) {
 
 ### 组件属性
 
-即使图标以 `.svg` 格式保存，你依然可以使用 `SvgIcon` 来包装它。 [svgr](https://github.com/smooth-code/svgr) has loaders to import svg files and use them as React components. For instance, with webpack:
+即使图标以 `.svg` 格式保存，你依然可以使用 `SvgIcon` 来包装它。 通过 [svgr](https://github.com/smooth-code/svgr) 提供的加载装置，您将 svg 图标作为 React 组件导入。 譬如，使用 webpack ：
 
 **webpack.config.js**
 ```js
@@ -92,15 +92,15 @@ import StarIcon from './star.svg';
 <SvgIcon component={StarIcon} viewBox="0 0 600 476.6" />
 ```
 
-### 库
+### 相关的库
 
-#### Material Design (recommended)
+#### Material Design （强烈推荐）
 
-Material Design has standardized over [1,100 official icons](#material-icons).
+Material Design 将 [1100 多个海量官方图标 ](#material-icons)标准化。
 
 #### MDI
 
-[materialdesignicons.com](https://materialdesignicons.com/) provides over 2,000 icons. For the wanted icon, copy the SVG `path` they provide, and use it as the child of the `SvgIcon` component.
+[materialdesignicons.com](https://materialdesignicons.com/) 提供了 2000 多个图标。 For the wanted icon, copy the SVG `path` they provide, and use it as the child of the `SvgIcon` component.
 
 Note: [mdi-material-ui](https://github.com/TeamWertarbyte/mdi-material-ui) has already wrapped each of these SVG icons with the `SvgIcon` component, so you don't have to do it yourself.
 
