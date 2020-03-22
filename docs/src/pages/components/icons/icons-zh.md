@@ -54,7 +54,7 @@ Material Design 已经将1,100多个官方图标标准化，而每个图标都�
 
 - 它具备一些内置的可及性。
 - SVG 元素应缩放为 24x24px 的视图，这样一来其他一些 Material-UI 组件可以将此图标直接使用，或者包含为其子元素。 （使用 `viewBox` 属性，您可以随意自定义）。
-- 默认情况下，此组件会继承当前的颜色。 Optionally, you can apply one of the theme colors using the `color` prop.
+- 默认情况下，此组件会继承当前的颜色。 当然，通过 `color` 这个属性，你可以让图标使用主题里的颜色。
 
 ```jsx
 function HomeIcon(props) {
@@ -66,17 +66,17 @@ function HomeIcon(props) {
 }
 ```
 
-### 颜色
+### Color 颜色
 
 {{"demo": "pages/components/icons/SvgIconsColor.js"}}
 
-### Size
+### Size 大小
 
 {{"demo": "pages/components/icons/SvgIconsSize.js"}}
 
-### Component prop
+### 组件属性
 
-You can use the `SvgIcon` wrapper even if your icons are saved the `.svg` format. [svgr](https://github.com/smooth-code/svgr) has loaders to import svg files and use them as React components. For instance, with webpack:
+即使图标以 `.svg` 格式保存，你依然可以使用 `SvgIcon` 来包装它。 [svgr](https://github.com/smooth-code/svgr) has loaders to import svg files and use them as React components. For instance, with webpack:
 
 **webpack.config.js**
 ```js
