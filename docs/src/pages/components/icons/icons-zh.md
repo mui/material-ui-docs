@@ -102,7 +102,7 @@ Material Design 将 [1100 多个海量官方图标 ](#material-icons)标准化�
 
 [materialdesignicons.com](https://materialdesignicons.com/) 提供了 2000 多个图标。 若想使用任何图标，只需复制图标的 SVG `path`，并将其作为 `SvgIcon` 组件的子元素使用。
 
-Note: [mdi-material-ui](https://github.com/TeamWertarbyte/mdi-material-ui) has already wrapped each of these SVG icons with the `SvgIcon` component, so you don't have to do it yourself.
+友情提示：[mdi-material-ui](https://github.com/TeamWertarbyte/mdi-material-ui) 已经将每个 SVG 图标用 `SvgIcon` 组件包装起来，你可以高枕无忧了。
 
 ## Icon (Font icons)
 
