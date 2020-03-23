@@ -1,15 +1,15 @@
 ---
-title: React Table（表格）组件
+title: React Table 表格组件
 components: Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TableRow, TableSortLabel
 ---
 
 # Table 表格
 
-<p class="description">Tables display sets of data. They can be fully customized.</p>
+<p class="description">表格展示数据组。 它们是完全可以自定义的。</p>
 
-[表格](https://material.io/design/components/data-tables.html)以一种一目了然地方式显示信息，这便于用户寻找一些规律和深入的见解。 表格可以被内嵌在主要内容中，如 cards（卡片）。
+[表格](https://material.io/design/components/data-tables.html)以一目了然的方式显示信息，这样一来用户可以寻找规律并探索见解。 表格可以被内嵌在主要内容中，如 卡片（cards）。
 
-表格可以包括这些：
+表格可以包括：
 
 - 相应的可视化
 - 导航
