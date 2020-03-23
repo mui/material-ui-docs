@@ -108,7 +108,7 @@ In the event that you need to lock certain tag so that they can't be removed in 
 
 ## 尺寸
 
-想要使用外观看起来比较小的输入框吗？ Use the `size` prop.
+想要使用外观看起来比较小的输入框吗？ 您可以使用 `size` 属性。
 
 {{"demo": "pages/components/autocomplete/Sizes.js"}}
 
