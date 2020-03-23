@@ -5,7 +5,7 @@ components: Rating
 
 # Rating 评分
 
-<p class="description">Ratings provide insight regarding others’ opinions and experiences with a product. Users can also rate products they’ve purchased.</p>
+<p class="description">评分可以展现大家对于某一产品的态度和使用体验。 Users can also rate products they’ve purchased.</p>
 
 ## Simple ratings
 
