@@ -175,7 +175,7 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 
 ### 语义字体图标
 
-如果您的图标具有语义含义，您则需要提供一个对协助的技术可见的文本替代方法。
+如果您的图标包含了一些语义，您则需要提供一个只对协助技术可见的文本替代方案。
 
 ```jsx
 import Icon from '@material-ui/core/Icon';
