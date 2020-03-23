@@ -106,15 +106,15 @@ Material Design 将 [1100 多个海量官方图标 ](#material-icons)标准化�
 
 ## Icon (Font icons)
 
-对于支持连字的任何图标字体，`Icon` 组件能够将其显示为一个图标。 作为先决条件，您必须在项目中包括一个 [Material icon font](https://google.github.io/material-design-icons/#icon-font-for-the-web)，举例来说，您可以由 Google Web Fonts 引入：
+通过使用 `Icon` 组件，任何支持连字的图标字体将会作为一个图标加载。 作为先决条件，你的项目里必须包含 [Material icon font](https://google.github.io/material-design-icons/#icon-font-for-the-web)，譬如说，您可以通过 Google Web Fonts 来导入：
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
 
-`Icon` will set the correct class name for the Material icon font. For other fonts, you must supply the class name using the Icon component's `className` property.
+`Icon`  将为 Material icon font 设置正确的 class 名字。 对于其他字体来说，则需要通过 Icon 组件的 `className` 属性来传递类名称（class name)。
 
-若想要使用图标，您只需把图标名（字体连字）和 `Icon` 组件包装到一起，例如：
+您只需将图标的名字（字体连字）和 `Icon` 组件包装到一起，例如：
 
 ```jsx
 import Icon from '@material-ui/core/Icon';
@@ -122,29 +122,29 @@ import Icon from '@material-ui/core/Icon';
 <Icon>star</Icon>
 ```
 
-默认情况下，一个图标会继承使用当前的文本颜色。 您也可以选择使用以下任何一个主题颜色属性来设置图标的颜色：`primary`，`secondary`，`action`，`error` 以及 `disabled`。
+默认情况下，一个图标会继承当前的文本颜色。 您也可以选择使用以下任何一个主题颜色属性来设置图标的颜色：`primary`，`secondary`，`action`，`error` 以及 `disabled`。
 
-### Font Material 图标
+### Font Material icons
 
 {{"demo": "pages/components/icons/Icons.js"}}
 
 ### Font Awesome
 
-如下是一个同时使用[Font Awesome](https://fontawesome.com/icons) 与 `Icon` 的示例：
+以下是同时使用 [Font Awesome](https://fontawesome.com/icons) 与 `Icon` 的例子：
 
 {{"demo": "pages/components/icons/FontAwesome.js", "hideEditButton": true}}
 
-## Font vs SVG. Which approach to use?
+## Font vs SVG。 使用哪个更好呢？
 
-这两种方法都能管用，然而，它们之间还是有着一些微妙的差异，特别当涉及到整体性能和渲染质量。 我们推荐尽可能选择 SVG，因为它允许代码分割、支持更多图标、而且渲染得更快、更好。
+这两种方法都可以被采纳，但是，特别当涉及到整体性能和渲染质量的时候，两者还是存在一些微妙的差异。 我们推荐尽可能选择 SVG，因为它允许代码分割、支持更多图标、而且渲染得更快、更好。
 
 若您想了解更多细节，请查看 [ 为什么 GitHub 从字体图标迁移到 SVG 图标](https://github.blog/2016-02-22-delivering-octicons-with-svg/)这篇文章。
 
 ## 可访问性
 
-图标可以传达各种各样有意义的信息，所以将他们传递给尽可能多的受众是至关重要的。 There are two use cases you’ll want to consider:
-- **Decorative Icons** are only being used for visual or branding reinforcement. 如果将它们从页面中删除，用户仍然可以理解并能够使用您的页面。
-- **Semantic Icons** are ones that you’re using to convey meaning, rather than just pure decoration. 这包括将边上不带有文本的图标用作一些交互式控件 — 按钮，表单元素，切换等。
+图标可以传达各种各样有意义的信息，所以越多受众接触到是越好的。 您可能会注意到这两个用例：
+- **装饰性的图标（Decorative Icons）** 只在视觉或者品牌强化中使用。 即使将它们从页面中移除，用户仍然可以理解并能够使用整个界面。
+- **语义图标（Semantic Icons）** 则是那些承载含义的图标，而不只有纯粹的装饰用途。 这也包括了将一些不带着文本的图标作为交互式控件使用 — 按钮，表单元素，切换等。
 
 ### 装饰 SVG 图标
 
