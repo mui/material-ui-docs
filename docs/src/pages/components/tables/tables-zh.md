@@ -33,25 +33,25 @@ components: Table, TableBody, TableCell, TableContainer, TableFooter, TableHead,
 
 ## Dense Table 紧凑的表格
 
-一个没有多余修饰的简单紧凑型表格。
+这是一个简单紧凑型表格，并且没有多余的装饰。
 
 {{"demo": "pages/components/tables/DenseTable.js", "bg": true}}
 
-## 排序& 筛选
+## 排序 & 筛选
 
-此示例演示了 ` Checkbox（选择框）` 和单击选择行的用法, 该表格具有自定义的 `Toolbar（工具条）`。 该示例使用 `TableSortLabel` 组件来辅助实现列标题的样式效果。
+此示例演示了在表格内使用了 ` 选择框组件（Checkbox）` 以及单击选择行，而且这个表格带有一个自定义的 `工具条组件（Toolbar）`。 它也展示了如何使用 `TableSortLabel` 组件来给列标题添加样式。
 
-此表已被赋予固定宽度，这样能够展示水平方向的滚动。 在表格外部使用 TablePagination 组件，能够防止分页控件的滚动。 (以下的['Custom Table Pagination Action' （自定义表分页操作示例）](#custom-table-pagination-action)展示了 TableFooter 中的分页。)
+这个表格已被赋予一个固定的宽度，您可以查看如何实现横向滚动。 在表格外部使用 TablePagination 组件，能够防止分页控件的滚动。 (以下这个[ “自定义表分页操作”（Custom Table Pagination Action”）的示例](#custom-table-pagination-action)在 TableFooter 中进行分页。)
 
 {{"demo": "pages/components/tables/EnhancedTable.js", "bg": true}}
 
 ## 自定义表格
 
-以下是自定义组件的一个示例。 您可以在[重写文档页](/customization/components/)中了解有关此内容的更多信息。
+以下是自定义组件的一个示例。 您可以在[重写文档页面](/customization/components/)中了解更多有关此内容的信息。
 
 {{"demo": "pages/components/tables/CustomizedTables.js", "bg": true}}
 
-### Custom pagination options
+### 自定义的分页选项
 
 It's possible to customise the options shown in the "Rows per page" select using the `rowsPerPageOptions` prop. You should either provide an array of:
 
