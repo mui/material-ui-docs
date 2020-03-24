@@ -3,7 +3,7 @@ title: Fab React component
 components: Fab
 ---
 
-# Floating action button
+# Floating Action Button 悬浮操作按钮
 
 <p class="description">A floating action button (FAB) performs the primary, or most common, action on a screen.</p>
 
