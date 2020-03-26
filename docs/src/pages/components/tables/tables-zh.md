@@ -73,9 +73,9 @@ components: Table, TableBody, TableCell, TableContainer, TableFooter, TableHead,
 
 {{"demo": "pages/components/tables/CustomPaginationActionsTable.js", "bg": true}}
 
-## 固定的 header
+## 固定表头
 
-具有可滚动行和固定列标题的表格示例。 它利用了 `stickyheader` 这个属性（⚠️不支持 IE11）。
+一个具有可滚动行和固定表头的表格示例。 它利用了 `stickyheader` 这个属性（⚠️不支持 IE11）。
 
 {{"demo": "pages/components/tables/StickyHeadTable.js", "bg": true}}
 
@@ -97,24 +97,24 @@ components: Table, TableBody, TableCell, TableContainer, TableFooter, TableHead,
 
 ### material-table
 
-![stars](https://img.shields.io/github/stars/mbrn/material-table.svg?style=social&label=Stars) ![npm下载](https://img.shields.io/npm/dm/material-table.svg)
+![点赞数](https://img.shields.io/github/stars/mbrn/material-table.svg?style=social&label=Stars) ![npm下载](https://img.shields.io/npm/dm/material-table.svg)
 
-[material-table](https://github.com/mbrn/material-table) 是一款针对 React 的简洁有效的的数据库，它基于 Material-UI Table 并且添加了一些额外的功能。 它们支持了不同的用户案例（可编辑，筛选，分组，排序，选择，国际化，树形数据等等）。 您应该看一下。
+[material-table](https://github.com/mbrn/material-table) 是一款针对 React 的简洁有效的的数据库，它基于 Material-UI Table 并且添加了一些额外的功能。 而这个库则支持各种各样的使用案例（可编辑的，筛选，分组，排序，选择，国际化，树形数据等等）。 您可以查看以下这个库。
 
 {{"demo": "pages/components/tables/MaterialTableDemo.js", "bg": true}}
 
-### 其他
+### 其他的
 
-- [dx-react-grid-material-ui](https://devexpress.github.io/devextreme-reactive/react/grid/): A data grid for Material-UI with paging, sorting, filtering, grouping and editing features ([paid license](https://js.devexpress.com/licensing/)).
-- [mui-datatables](https://github.com/gregnb/mui-datatables): Responsive data tables for Material-UI with filtering, sorting, search and more.
-- [tubular-react](https://github.com/unosquare/tubular-react): A Material-UI table with local or remote data-source. Featuring filtering, sorting, free-text search, export to CSV locally, and aggregations.
+- [dx-react-grid-material-ui](https://devexpress.github.io/devextreme-reactive/react/grid/)：针对 Material-UI 的兼并对数据进行排序、搜索、筛选、分组、操作等功能的数据网格（[付费的许可证](https://js.devexpress.com/licensing/)）。
+- [mui-datatables](https://github.com/gregnb/mui-datatables)：Material-UI 的响应式数据表格，包括筛选，排序，搜索等功能。
+- [tubular-response](https://github.com/unosquare/tubular-react): 一个带有本地或者远程的数据来源的 Material-UI 表格。 它能够对数据进行筛选、排序、自由搜索、导出为本地 CSV 以及汇总。
 
 ## 可访问性
 
-(WAI tutorial: https://www.w3.org/WAI/tutorials/tables/)
+（WAI 教程：https://www.w3.org/WAI/tutorials/tables/）
 
-### Caption
+### Caption 字幕
 
-A caption functions like a heading for a table. Most screen readers announce the content of captions. Captions help users to find a table and understand what it’s about and decide if they want to read it.
+字幕能够充当表格的表头。 大多数屏幕阅读器能够宣读字幕的内容。 字幕能够帮助用户找到一个表格，并且描述这个表格的内容，从而协助用户决定是不是想继续阅读这个表格。
 
 {{"demo": "pages/components/tables/AcccessibleTable.js", "bg": true}}
