@@ -53,41 +53,41 @@ components: Table, TableBody, TableCell, TableContainer, TableFooter, TableHead,
 
 ### 自定义的分页选项
 
-It's possible to customise the options shown in the "Rows per page" select using the `rowsPerPageOptions` prop. You should either provide an array of:
+通过 `rowsPerPageOptions` 属性，也可以自定义 "Rows per page" 显示的选择项。 你应该提供以下一种数组：
 
-- **numbers**, each number will be used for the option's label and value.
+- **数字（numbers）**，而每个数字用作为选择项的标签（label）和值（value）。
     
     ```jsx
     <TablePagination rowsPerPageOptions={[10, 50]} />
     ```
 
-- **objects**, the `value` and `label` keys will be used respectively for the value and label of the option (useful for language strings such as 'All').
+- **对象（objects）**，而 `value` 和 `label` 键则相应的对照选择项的标签（label）和值（value）（譬如，当有一个语言字符串为“All” 时你会受益匪浅）。
     
     ```jsx
     <TablePagination rowsPerPageOptions={[10, 50, { value: -1, label: 'All' }]} />
     ```
 
-### Custom pagination actions
+### 自定义表格分页操作
 
-`TablePagination` 组件的 `Action` 属性允许实现自定义操作。
+通过 `TablePagination` 组件的 `Action` 属性，可以实现自定义操作。
 
 {{"demo": "pages/components/tables/CustomPaginationActionsTable.js", "bg": true}}
 
-## Fixed header
+## 固定的 header
 
-具有可滚动行和固定列标题的表的示例。 It leverages the `stickyHeader` prop (⚠️ no IE 11 support).
+具有可滚动行和固定列标题的表格示例。 它利用了 `stickyheader` 这个属性（⚠️不支持 IE11）。
 
 {{"demo": "pages/components/tables/StickyHeadTable.js", "bg": true}}
 
-## Spanning Table（合并的表格）
+## Spanning Table 合并的表格
 
-一个行 & 列跨越的简单例子
+一个简单的合并行 & 列的示例。
 
 {{"demo": "pages/components/tables/SpanningTable.js", "bg": true}}
 
-## 大型列表渲染（Virtualized Table）
+## 大型列表渲染 Virtualized Table
 
-在下面的示例中，我们演示了如何将 [react-virtualized](https://github.com/bvaughn/react-virtualized) 与 `Table` 组件一起使用。 它渲染了200行，可以轻松处理更多行。 可视化优化了整体的性能。
+以下例子展示了将 [react-virtualized](https://github.com/bvaughn/react-virtualized) 与 `表格` 组件一起使用的方法。 它能够渲染 200 行，并且可以轻松处理更多行。 可视化优化了整体的性能。
 
 {{"demo": "pages/components/tables/ReactVirtualizedTable.js", "bg": true}}
 
@@ -99,7 +99,7 @@ It's possible to customise the options shown in the "Rows per page" select using
 
 ![stars](https://img.shields.io/github/stars/mbrn/material-table.svg?style=social&label=Stars) ![npm下载](https://img.shields.io/npm/dm/material-table.svg)
 
-[material-table](https://github.com/mbrn/material-table) 是一款 React 的简单且强大的数据库。它基于 Material-UI Table 并且添加了一些额外的功能。 它们支持了不同的用户案例（可编辑，筛选，分组，排序，选择，国际化，树形数据等等）。 您应该看一下。
+[material-table](https://github.com/mbrn/material-table) 是一款针对 React 的简洁有效的的数据库，它基于 Material-UI Table 并且添加了一些额外的功能。 它们支持了不同的用户案例（可编辑，筛选，分组，排序，选择，国际化，树形数据等等）。 您应该看一下。
 
 {{"demo": "pages/components/tables/MaterialTableDemo.js", "bg": true}}
 
