@@ -1,5 +1,5 @@
 ---
-title: React Stepper（步骤条）组件
+title: React Stepper 步骤条组件
 components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIcon, StepLabel, Stepper
 ---
 
@@ -82,7 +82,7 @@ This is essentially a back/next button positioned correctly. You must implement 
 
 {{"demo": "pages/components/steppers/DotsMobileStepper.js", "bg": true}}
 
-### Progress 进度条
+### 进度条
 
 当有许多步骤时，或者如果在此过程中需要插入步骤（基于对早期步骤的响应），请使用进度条。
 
