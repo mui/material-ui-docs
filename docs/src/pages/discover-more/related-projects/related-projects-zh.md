@@ -32,7 +32,7 @@ This is a collection of third-party projects that extend Material-UI.
 
 - [@mui-treasury/layout](https://mui-treasury.com/layout): Components to handle the overall layout of a page. You can find a couple of examples, e.g. [a reactjs.org clone](https://mui-treasury.com/layout/clones/reactjs).
 
-### Table（表格）
+### Table 表格
 
 - [material-table](https://github.com/mbrn/material-table): A simple and powerful Datatable for React based on Material-UI Table with some additional features. It supports many different use cases (editable, filtering, grouping, sorting, selection, i18n, tree data and more).
 - [dx-react-grid-material-ui](https://devexpress.github.io/devextreme-reactive/react/grid/)：针对 Material-UI 的兼并对数据进行排序、搜索、筛选、分组、操作等功能的数据网格（[付费的许可证](https://js.devexpress.com/licensing/)）。
