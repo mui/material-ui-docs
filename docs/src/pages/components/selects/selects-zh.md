@@ -9,7 +9,7 @@ components: Select, NativeSelect
 
 ## 简单的选择器
 
-我们通常将菜单（Menus）放置在其所点击的元素上，以确保当前选定的菜单项在点击元素之上显示。
+我们通常将菜单（Menus）放置在其所点击的元素上，这样的话能够确保当前选定的菜单项显示在点击的元素之上。
 
 {{"demo": "pages/components/selects/SimpleSelect.js"}}
 
