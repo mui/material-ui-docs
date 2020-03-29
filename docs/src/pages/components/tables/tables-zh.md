@@ -31,7 +31,7 @@ components: Table, TableBody, TableCell, TableContainer, TableFooter, TableHead,
 
 {{"demo": "pages/components/tables/SimpleTable.js", "bg": true}}
 
-## Dense Table 紧凑的表格
+## 紧凑的表格
 
 这是一个简单紧凑型表格，并且没有多余的装饰。
 
@@ -79,13 +79,13 @@ components: Table, TableBody, TableCell, TableContainer, TableFooter, TableHead,
 
 {{"demo": "pages/components/tables/StickyHeadTable.js", "bg": true}}
 
-## Spanning Table 合并的表格
+## 合并的表格
 
 一个简单的合并行 & 列的示例。
 
 {{"demo": "pages/components/tables/SpanningTable.js", "bg": true}}
 
-## 大型列表渲染 Virtualized Table
+## 大型列表渲染
 
 以下例子展示了将 [react-virtualized](https://github.com/bvaughn/react-virtualized) 与 `表格` 组件一起使用的方法。 它能够渲染 200 行，并且可以轻松处理更多行。 可视化优化了整体的性能。
 
