@@ -107,7 +107,7 @@ components: Table, TableBody, TableCell, TableContainer, TableFooter, TableHead,
 
 - [dx-react-grid-material-ui](https://devexpress.github.io/devextreme-reactive/react/grid/)：针对 Material-UI 的兼并对数据进行排序、搜索、筛选、分组、操作等功能的数据网格（[付费的许可证](https://js.devexpress.com/licensing/)）。
 - [mui-datatables](https://github.com/gregnb/mui-datatables)：Material-UI 的响应式数据表格，包括筛选，排序，搜索等功能。
-- [tubular-response](https://github.com/unosquare/tubular-react): 一个带有本地或者远程的数据来源的 Material-UI 表格。 它能够对数据进行筛选、排序、自由搜索、导出为本地 CSV 以及汇总。
+- [tubular-react](https://github.com/unosquare/tubular-react): 一个带有本地或者远程的数据来源的 Material-UI 表格。 它能够对数据进行筛选、排序、自由搜索、导出为本地 CSV 以及汇总。
 
 ## 可访问性
 
