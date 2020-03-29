@@ -73,7 +73,7 @@ Select 组件的设计原理是和一个原生的 `<select>` 元素能够互相�
 </Select>
 ```
 
-Alternatively a `TextField` with an `id` and `label` creates the proper markup and ids for you:
+或者，使用一个带有 `id` 和 `label` 的 `TextField` 组件也能创建合适的标记和 id：
 
 ```jsx
 <TextField id="select" label="Age" value="20" select>
