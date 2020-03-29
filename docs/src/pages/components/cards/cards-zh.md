@@ -49,6 +49,6 @@ components: Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedi
 
 {{"demo": "pages/components/cards/MediaControlCard.js", "bg": true}}
 
-## Customization 个性化
+## 个性化
 
 👑如果您还在寻找灵感，请查看 [MUI Treasury 的自定义案例](https://mui-treasury.com/components/card)。
