@@ -15,7 +15,7 @@ components: Select, NativeSelect
 
 ## 高级功能
 
-The Select component is meant to be interchangeable with a native `<select>` element.
+Select 组件的设计原理是和一个原生的 `<select>` 元素能够互相替代。
 
 If you are looking for more advanced features, like combobox, multiselect, autocomplete, async or creatable support, head to the [`Autocomplete` component](/components/autocomplete/). It's meant to be an improved version of the "react-select" and "downshift" packages.
 
