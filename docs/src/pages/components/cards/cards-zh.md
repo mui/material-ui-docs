@@ -29,7 +29,7 @@ components: Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedi
 
 {{"demo": "pages/components/cards/RecipeReviewCard.js", "bg": true}}
 
-## 多媒体内容
+## Media 多媒体内容
 
 下面的例子则一个使用图像来增强内容的卡片。
 
@@ -45,10 +45,10 @@ components: Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedi
 
 卡片内部的一些补充操作可使用图标、文本和 UI 控件显式调用，我们通常将其放在卡片组件的底部。
 
-下面是一个媒体控制卡片的例子。
+以下是一个多媒体内容控制的卡片的例子。
 
 {{"demo": "pages/components/cards/MediaControlCard.js", "bg": true}}
 
-## 个性化
+## Customization 个性化
 
-👑如果您还在寻找灵感，请查看 [MUI Treasury 的自定义案例](https://mui-treasury.com/components/card)。
+👑如果您还在寻找灵感，您可以查看一下 [MUI Treasury 自定义的例子](https://mui-treasury.com/components/card)。
