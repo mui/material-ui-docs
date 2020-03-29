@@ -31,39 +31,39 @@ Select 组件的设计原理是和一个原生的 `<select>` 元素能够互相�
 
 ## 自定义选择器
 
-以下是自定义组件的一些例子。 您可以在[重写文档页](/customization/components/)中了解有关此内容的更多信息。
+你可以参考以下一些例子来自定义组件。 您可以在[重写文档页](/customization/components/)中了解有关此内容的更多信息。
 
-第一步是设置 `InputBase` 组件的样式。 一旦设置好样式，您就可以直接将其用作文本字段，也可以将其提供给 select 组件的 `input` 属性作为一个 `select` 字段。
+首先，需要设置 `InputBase` 组件的样式。 一旦设置好了样式，您就可以直接将其用作文本字段，也可以将其作为一个 `select` 字段提供给 select 组件的 `input` 属性。
 
 {{"demo": "pages/components/selects/CustomizedSelects.js"}}
 
-## 多选
+## 多重选择
 
-The `Select` component can handle multiple selections. It's enabled with the `multiple` property.
+`Select` 组件也支持多项选择。 使用 `multiple` 属性，就能启用多选功能。
 
-Like with the single selection, you can pull out the new value by accessing `event.target.value` in the `onChange` callback. It's always an array.
+与单项选择一样，您可以通过访问 `onChange` 属性中的回调` event.target.value `来提取新值。 它总是以一个数组的形式出现。
 
 {{"demo": "pages/components/selects/MultipleSelect.js"}}
 
-## 可控制地打开选择器
+## 控制选择器的打开
 
 {{"demo": "pages/components/selects/ControlledOpenSelect.js"}}
 
-## 与对话框组件使用
+## 与对话框组件（Dialog）一起使用
 
-虽然Material Design的规范不鼓励，但您可以在对话框组件中使用选择。
+尽管 Material Design 的不鼓励这样使用，您仍然可以在对话框组件内使用一个选择器。
 
 {{"demo": "pages/components/selects/DialogSelect.js"}}
 
-## Grouping
+## 联动
 
-Display categories with the `ListSubheader` component or the native `<optgroup>` element.
+可以和 `ListSubheader` 组件一起罗列分类，或者和原生的 `<optgroup>` 元素一起使用。
 
 {{"demo": "pages/components/selects/GroupedSelect.js"}}
 
 ## 可访问性
 
-To properly label your `Select` input you need an extra element with an `id` that contains a label. That `id` needs to match the `labelId` of the `Select` e.g.
+若想正确的给 `Select` 加上标签，你的 input 控件需要一个额外的带有 label 的 `id` 属性。 `id` 的内容需要和 `Select` 的 `labelId` 值相同，例如：
 
 ```jsx
 <InputLabel id="label">Age</InputLabel>
