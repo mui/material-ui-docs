@@ -17,17 +17,17 @@ components: Select, NativeSelect
 
 Select 组件的设计原理是和一个原生的 `<select>` 元素能够互相替代。
 
-If you are looking for more advanced features, like combobox, multiselect, autocomplete, async or creatable support, head to the [`Autocomplete` component](/components/autocomplete/). It's meant to be an improved version of the "react-select" and "downshift" packages.
+若您需要一个更优雅的功能，譬如 combobox，multiselect，autocomplete，async 或者 creatable support，请查看 [`Autocomplete` 组件](/components/autocomplete/)。 此组件旨在改进 “react-select” 和 “downshift” 这两个包。
 
-## 原生的选择器
+## Native Select 原生的选择器
 
-我们允许这种模式，如此一来，选择在移动设备上使用平台的原生选择器能够改进用户体验。
+为了提高用户体验，对于在移动设备上使用平台的原生选择器这样的模式，我们是支持的。
 
 {{"demo": "pages/components/selects/NativeSelects.js"}}
 
-## Text Fields
+## Text Fields 文本输入框
 
-`TextField` wrapper 组件是一个完整的表单控件，它包括了标签，输入和帮助文本。 您可以在本节中找到具有[select模式](/components/text-fields/#select)的示例
+`TextField` wrapper 组件是一个完整的表单控件，它包括了标签，输入和帮助文本。 您可以在[在此章节中](/components/text-fields/#select)查看使用 select 模式的示例。
 
 ## 自定义选择器
 
