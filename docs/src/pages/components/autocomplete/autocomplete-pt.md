@@ -36,8 +36,8 @@ Escolha um dos 248 países.
 
 O componente tem dois estados que podem ser controlados:
 
-1. o estado "value" com a combinação das propriedades `value`/`onChange`. This state represents the value selected by the user, for instance when pressing <kbd>Enter</kbd>.
-2. o estado "input value" com a combinação das propriedades `inputValue`/`onInputChange`. This state represents the value displayed in the textbox.
+1. o estado "value" com a combinação das propriedades `value`/`onChange`. Esse estado representa o valor selecionado pelo usuário, por exemplo, quando é pressionado a tecla <kbd>Enter</kbd>.
+2. o estado "input value" com a combinação das propriedades `inputValue`/`onInputChange`. Esse estado representa o valor exibido na caixa de texto.
 
 > ⚠️ Esses dois estados estão isolados, eles podem ser controlados de forma independente.
 
