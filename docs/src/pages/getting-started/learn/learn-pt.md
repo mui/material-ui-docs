@@ -22,6 +22,8 @@ Ao começar a aprender o Material-UI, você pode encontrar postagens de blogs de
 
 ### Grátis
 
+- **Introduction to Material-UI**: a series of videos covering all the important Material-UI components. 
+  - 📹 [Os vídeos](https://www.youtube.com/watch?v=pHclLuRolzE&list=PLQg6GaokU5CwiVmsZ0d_9Zsg_DnIP_xwr)
 - **Meet Material-UI — your new favorite user interface library**: uma postagem de blog que o guia na construção de um Todo MVC enquanto aborda alguns conceitos importantes de Material-UI. 
   - 📝 [A postagem do blog](https://medium.freecodecamp.org/meet-your-material-ui-your-new-favorite-user-interface-library-6349a1c88a8c)
 - **Learn React & Material-UI**: uma série de vídeos cobrindo todos os componentes importantes do Material-UI. 
