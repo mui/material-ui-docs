@@ -51,4 +51,4 @@ Set `variant="outlined"` to render an outlined card.
 
 ## Кастомизация
 
-👑 If you are looking for inspiration, you can check [MUI Treasury's customization examples](https://mui-treasury.com/components/card).
+👑 If you are looking for inspiration, you can check [MUI Treasury's customization examples](https://deprecate.mui-treasury.com/components/card).
