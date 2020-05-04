@@ -37,7 +37,7 @@ The `multiline` prop transforms the text field into a [textarea](https://develop
 
 {{"demo": "pages/components/text-fields/MultilineTextFields.js"}}
 
-## Select
+## Selección
 
 The `select` prop makes the text field use the [Select](/components/selects/) component internally.
 
