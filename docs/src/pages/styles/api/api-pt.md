@@ -40,11 +40,11 @@ Esta função realmente não "faz nada" em tempo de execução, é apenas uma fu
 
 ### Argumentos
 
-1. `styles` (*Object*): A styles object.
+1. `styles` (*Object*): Um objeto de estilos.
 
 ### Retornos
 
-`styles`: A styles object.
+`styles`: Um objeto de estilos.
 
 ### Exemplos
 
