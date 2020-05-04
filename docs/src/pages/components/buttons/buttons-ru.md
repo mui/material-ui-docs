@@ -21,7 +21,7 @@ components: Button, IconButton, ButtonBase
 
 {{"demo": "pages/components/buttons/ContainedButtons.js"}}
 
-Вы можете убрать эффект "всплытия" с помощью опции `disableElevation`.
+Вы можете убрать эффект "всплытия" с помощью пропа `disableElevation`.
 
 {{"demo": "pages/components/buttons/DisableElevation.js"}}
 
@@ -74,7 +74,7 @@ Fancy larger or smaller buttons? Use the `size` property.
 
 {{"demo": "pages/components/buttons/CustomizedButtons.js", "defaultCodeOpen": false}}
 
-Если вам нужно вдохновение обратитве внимание на библиотеку компонентов [MUI Treasury](https://mui-treasury.com/components/button).
+👑 If you are looking for inspiration, you can check [MUI Treasury's customization examples](https://mui-treasury.com/styles/button).
 
 ## Сложные кнопки
 
