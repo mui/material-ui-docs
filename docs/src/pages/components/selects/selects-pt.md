@@ -82,7 +82,7 @@ Alternativamente, um `TextField` com `id` e `label` cria a marcação adequada e
 </TextField>
 ```
 
-For a [native select](#native-select), you should mention a label by giving the value of the `id` attribute of the select element to the `InputLabel`'s `htmlFor` attribute:
+Para uma [seleção nativa](#native-select), você deve utilizar um rótulo fornecendo o atributo `id` do elemento de seleção para o atributo `htmlFor` do `InputLabel`:
 
 ```jsx
 <InputLabel htmlFor="select">Age</InputLabel>
