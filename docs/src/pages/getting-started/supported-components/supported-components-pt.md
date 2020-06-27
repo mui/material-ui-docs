@@ -2,7 +2,7 @@
 
 <p class="description">A seguir, uma lista de componentes e recursos do Material Design. Aqueles atualmente suportados pelo Material-UI são destacados com ✓.</p>
 
-Nós trabalhamos para seguir as orientações sempre que possível (aplicando senso comum onde as diretrizes contradizem - uma ocorrência mais comum do que se poderia esperar), não esperamos suportar cada componente, ou cada característica de cada componente, mas sim fornecer os blocos de construção que permitem que os desenvolvedores criem interfaces e experiências de usuário atraentes.
+Nós trabalhamos para seguir as orientações sempre que possível (aplicando senso comum onde as diretrizes contradizem - uma ocorrência mais comum do que se poderia esperar), não esperamos suportar cada componente, ou cada característica de cada componente, mas sim fornecer elementos base que permitem que os desenvolvedores criem interfaces e experiências de usuário atraentes.
 
 Se você deseja adicionar suporte a um componente ou recurso não destacado aqui, pesquise o problema relevante no [GitHub](https://github.com/mui-org/material-ui/issues) ou crie um novo para discutir a abordagem antes de enviar um pull request.
 
