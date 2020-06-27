@@ -8,9 +8,9 @@ Se mesmo assim você não encontrar o que você está procurando, você pode con
 
 Existem muitas maneiras de apoiar o Material-UI:
 
-- **Espalhe a palavra**. Evangelize Material-UI [vinculando o material-ui.com](https://material-ui.com/) no seu site, todo backlink conta. Siga-nos no [Twitter](https://twitter.com/MaterialUI) e veja ou retuite as notícias importantes. Ou apenas fale sobre nós com os seus amigos.
-- **Dê-nos sua opinião**. Conte-nos o que estamos fazendo bem ou onde podemos melhorar. Por favor vote (👍) os problemas que você está mais interessado em ver resolvidos.
-- **Ajude novos usuários**. Você pode responder a perguntas em [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui).
+- **Espalhe a palavra**. Evangelize Material-UI [vinculando o material-ui.com](https://material-ui.com/) no seu site, todo backlink conta. Siga-nos no [Twitter](https://twitter.com/MaterialUI), curta e retuíte as notícias importantes. Ou apenas fale sobre nós com os seus amigos.
+- **Dê-nos sua opinião**. Conte-nos o que estamos fazendo bem ou onde podemos melhorar. Por favor vote (👍) nos issues do GitHub que você está mais interessado em ver resolvidos.
+- **Ajude novos usuários**. Você pode responder a perguntas no [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui).
 - **Faça as alterações acontecerem**. 
   - Edite a documentação. Cada página da versão em inglês tem um link "EDIT THIS PAGE" no canto superior direito.
   - Reporte erros ou recursos faltantes [criando uma issue](https://github.com/mui-org/material-ui/issues/new).
@@ -108,7 +108,7 @@ Observe que o uso de `CssBaseline` é necessário para que a abordagem acima fun
 
 Não, não é obrigatório. Mas essa dependência vem embutida, portanto, não sobrecarrega o tamanho do pacote.
 
-No entanto, talvez você esteja adicionando os componentes Material-UI para uma aplicação que já usa outra solução de estilos, ou já esta familiarizado com uma API diferente, e não quer aprender uma nova? Nesse caso, dirija-se à seção de [interoperabilidade da biblioteca de estilos](/guides/interoperability/), onde mostramos como é simples reestilizar os componentes do Material-UI com bibliotecas de estilos alternativas.
+No entanto, talvez você esteja adicionando os componentes Material-UI para uma aplicação que já usa outra solução de estilos, ou, já esta familiarizado com uma API diferente e não quer aprender uma nova? Nesse caso, dirija-se à seção de [interoperabilidade da biblioteca de estilos](/guides/interoperability/), onde mostramos como é simples reestilizar os componentes do Material-UI com bibliotecas de estilos alternativas.
 
 ## Quando devo usar o estilo em linha vs CSS?
 
