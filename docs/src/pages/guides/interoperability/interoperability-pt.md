@@ -140,7 +140,7 @@ export default function GlobalCssButton() {
 }
 ```
 
-### Controlar prioridade ⚠️
+### Controlando prioridade ⚠️
 
 **Nota:** O JSS injeta seus estilos na parte inferior do `<head>`. Se você não quiser marcar atributos de estilo com **!important**, você precisa alterar [a ordem de injeção do CSS](/styles/advanced/#css-injection-order), como na demonstração:
 
