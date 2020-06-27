@@ -74,18 +74,18 @@ const theme = createMuiTheme({
 - [material-ui-theme-editor](https://in-your-saas.github.io/material-ui-theme-editor/)：只需要选择颜色即可为你的 Material-UI 应用生成主题的工具，同时还支持在线预览。
 - [Material palette generator](https://material.io/inline-tools/color/)：它可用于通过您输入的任何颜色生成一系列的调色板。
 
-## 2014 Material Design color palettes
+## 2014 Material Design 调色板
 
-These color palettes, originally created by Material Design in 2014, are comprised of colors designed to work together harmoniously, and can be used to develop your brand palette. To generate your own harmonious palettes, use the palette generation tool.
+这些调色板最初由 Material Design 于 2014 年创建，由旨在和谐配合的颜色组成，可用于开发您的品牌调色板。 要生成您专属的颜色协调的调色板，请使用调色板生成工具。
 
 ### 一些重要的术语
 
-- **Palette**: A palette is a collection of colors, i.e. hues and their shades. Material-UI 提供Material Design 指南中的所有颜色. 设计[此调色板](#color-palette)时，我们确保了各个颜色之间的协调。
-- **Hue" & "Shade**: A single color within the palette is made up of a hue such as "red", and shade, such as "500". "rad 50" 是红色的最浅的阴影 (* 粉红色! *), 而 "red 900" 是最暗的。 此外, 大多数色调都带有强调色调, 以 ` A ` 为前缀。
+- **调色板**：调色板是颜色的集合，包括色调及其阴影。 Material-UI 提供 Material Design 指南中的所有颜色。 设计 [此调色板](#color-palette) 时，我们确保了各个颜色之间的协调。
+- **色调" & "阴影**：调色板中的单个颜色由色调（如 "red"）和阴影（如 "500"）组成。 "rad 50" 是红色的最浅的阴影（* 粉红色! *），而 "red 900" 是最深的红色。 此外, 大多数色调都带有强调色调, 以 `A` 为前缀。
 
 ### 调色板
 
-若给定了一种*色调*（如红色，粉红色等）以及一个*阴影* （500，600等），你可以这样导入颜色：
+若给定了一种*色调*（如红色，粉红色等）以及一个*阴影* （500，600 等），您可以像这样导入颜色：
 
 ```jsx
 import HUE from '@material-ui/core/colors/HUE';
@@ -97,7 +97,7 @@ const color = HUE[SHADE];
 
 ### 例子
 
-For instance, you can refer to complementary primary and accent colors, "red 500" and "purple A200" like so:
+例如：您可以参考互补的主色和重点色，像 "red 500" 和 "purple A200" 这样的：
 
 ```js
 import purple from '@material-ui/core/colors/purple';
@@ -105,5 +105,5 @@ import red from '@material-ui/core/colors/red';
 
 const primary = red[500]; // #f44336
 const accent = purple['A200']; // #e040fb
-const accent = purple.A200; // #e040fb (alternative method)
+const accent = purple.A200; // #e040fb (替代方法)
 ```
