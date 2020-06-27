@@ -95,4 +95,4 @@ function ListItemLink(props) {
 
 ## 个性化
 
-🎨如果你是在寻找灵感，你可以查看 [MUI Treasury's customization examples](https://mui-treasury.com/styles/list-item)。
+🎨 如果您还在寻找灵感，您可以看看 [MUI Treasury 特别定制的一些例子](https://mui-treasury.com/styles/list-item)。
