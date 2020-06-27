@@ -188,7 +188,7 @@ const theme = {
 
 ### Kollokation
 
-If you want to group the breakpoint values, you can use the `breakpoints()` helper.
+Wenn Sie möchten, die Gruppe der breakpoint-Werte verwenden, können Sie die `breakpoints()` helfer.
 
 ```jsx
 import { compose, spacing, palette, breakpoints } from '@material-ui/system';
