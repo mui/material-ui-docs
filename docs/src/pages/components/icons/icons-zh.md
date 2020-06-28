@@ -1,5 +1,5 @@
 ---
-title: React Icon 图标组件
+title: React 图标组件
 components: Icon, SvgIcon
 ---
 
@@ -15,7 +15,7 @@ Material-UI 通过以下三种方式来支持图标的使用：
 
 ## Material Icons 图标
 
-Material Design 已经将1,100多个官方图标标准化，而每个图标都有五个不同的“主题”(见下文)。 对于每个 SVG 图标，我们从 @ material-ui/icons 包中导出相应的React组件。 您可以 [搜索完整的图标列表](/components/material-icons/)。
+Material Design 已经将 1100 多个官方图标标准化，而每个图标都有五个不同的“主题”(见下文)。 对于每个 SVG 图标，我们从 @ material-ui/icons 包中导出相应的React组件。 您可以 [搜索完整的图标列表](/components/material-icons/)。
 
 ### 安装
 
@@ -29,9 +29,9 @@ npm install @material-ui/icons
 yarn add @material-ui/icons
 ```
 
-这些组件使用Material-UI的SvgIcon组件通过SVG路径来对各图标进行渲染，因此它们与下一个Material-UI的发布版本之间具有对等依赖性。
+这些组件使用 Material-UI 的 SvgIcon 组件，这样可以通过 SVG 路径来对各个图标进行渲染，因此它们与下一个发布的版本的 Material-UI 具有对等依赖性。
 
-如果你尚未在你的项目中使用Material-UI, 你可以按如下方式安装:
+如果你尚未在你的项目中使用 Material-UI，你可以这样添加:
 
 ```sh
 // 用 npm 安装
@@ -60,7 +60,7 @@ yarn add @material-ui/core
 
 当然了，方法 1 比方法 2 安全得多，但是方法 2 提供了最好的开发体验。 在使用第二个方法之前，请确保您遵循 [最小化捆绑包大小指南](/guides/minimizing-bundle-size/#option-2)。 我们强烈建议您配置一个 Babel 插件。
 
-其中我们给每个图标配备了一个”主题“：Filled (default), Outlined, Rounded, Two tone 以及 Sharp。 若您想导入一个不是默认主题的图标组件，在图标名加主题做为后缀即可。 例如，`@material-ui/icons/Delete` 图标可以：
+其中我们给每个图标配备了一个”主题“：Filled (default)，Outlined，Rounded，Two tone 以及 Sharp。 若您想导入一个不是默认主题的图标组件，在图标名加主题做为后缀即可。 例如，`@material-ui/icons/Delete` 图标可以：
 
 - 导出为 Filled 主题（默认值）：`@material-ui/icons/Delete`，
 - 导出为 Outlined 主题：`@material-ui/icons/DeleteOutlined`，
@@ -72,9 +72,9 @@ yarn add @material-ui/core
 
 {{"demo": "pages/components/icons/SvgMaterialIcons.js"}}
 
-## SvgIcon Svg 图标
+## SvgIcon
 
-如果你想导入一个自定义的 SVG 图标（但是又无法在 Material 图标[默认系列](/components/material-icons/)中找到），你可以使用 `SvgIcon` 来包装你的图标。 此组件是原生 `<svg>` 元素的拓展版：
+如果你想导入一个自定义的 SVG 图标（但是又无法在 Material 图标 [默认系列](/components/material-icons/) 中找到），你可以使用 `SvgIcon` 来包装你的图标。 此组件是原生 `<svg>` 元素的拓展版：
 
 - 它具备一些内置的无障碍设计。
 - SVG 元素应缩放为 24x24px 的视图，这样一来其他一些 Material-UI 组件可以将此图标直接使用，或者包含为其子元素。 （使用 `viewBox` 属性，您可以随意自定义）。
@@ -100,7 +100,7 @@ function HomeIcon(props) {
 
 ### 组件属性
 
-即使图标以 `.svg` 格式保存，你依然可以使用 `SvgIcon` 来包装它。 通过 [svgr](https://github.com/smooth-code/svgr) 提供的加载器，您可以导入 svg 文件，并以 React 组件形式使用。 譬如，使用 webpack ：
+即使图标以 `.svg` 的格式保存，你依然可以使用 `SvgIcon` 来包装它。 通过 [svgr](https://github.com/smooth-code/svgr) 提供的加载器，您可以导入 SVG 文件，并以 React 组件形式使用。 譬如，使用 webpack ：
 
 ```jsx
 // webpack.config.js
@@ -115,7 +115,7 @@ import StarIcon from './star.svg';
 <SvgIcon component={StarIcon} viewBox="0 0 600 476.6" />
 ```
 
-也可以通过“url-loader”或“file-loader”来使用它。 Create React App 也是这样使用的。
+通过 “url-loader” 或 “file-loader” 加载也是可行的。 Create React App 也是这样使用的。
 
 ```jsx
 // webpack.config.js
@@ -134,7 +134,7 @@ import { ReactComponent as StarIcon } from './star.svg';
 
 #### Material Design （强烈推荐）
 
-Material Design 将 [1100 多个海量官方图标 ](#material-icons)标准化。
+Material Design 将 [1100 多个海量官方图标](#material-icons) 标准化。
 
 #### MDI
 
@@ -150,7 +150,7 @@ Material Design 将 [1100 多个海量官方图标 ](#material-icons)标准化�
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
 
-`Icon`  将为 Material icon font 设置正确的 class 名字。 对于其他字体来说，则需要通过 Icon 组件的 `className` 属性来传递类名称（class name)。
+`Icon`  将为 Material icon font 设置正确的类名。 对于其他字体来说，则需要通过 Icon 组件的 `className` 属性来传递类名称（class name)。
 
 若想要使用图标，您只需把图标名（字体连字）和 `Icon` 组件包装到一起，例如：
 
