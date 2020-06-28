@@ -58,16 +58,16 @@
     - **Expand/collapse（展开/折叠）✓** (又名 Nested 内嵌的)
     - **Switch（开关）✓**
     - Reorder（重新排序）
-- **[Menus](https://material.io/design/components/menus.html) ✓** 
-  - ** [下拉菜单](https://material.io/design/components/menus.html#dropdown-menu) ✓ ** （可以组成） 
-    - [Cascade](https://material.io/design/components/menus.html#dropdown-menu)
-  - [Exposed dropdown menus](https://material.io/design/components/menus.html#exposed-dropdown-menu) 
-    - **Text field dropdown menu ✓** (Select)
-    - Editable dropdown menu
-  - **Contextual ✓**
-- **[Progress indicators](https://material.io/design/components/progress-indicators.html) ✓** 
-  - **[Linear](https://material.io/design/components/progress-indicators.html#linear-progress-indicators) ✓**
-  - **[Circular](https://material.io/design/components/progress-indicators.html#circular-progress-indicators) ✓**
+- **[Menus（菜单）](https://material.io/design/components/menus.html) ✓** 
+  - **[下拉菜单（Dropdown menu）](https://material.io/design/components/menus.html#dropdown-menu)** ✓（可被封装的） 
+    - [Cascade（级联菜单）](https://material.io/design/components/menus.html#dropdown-menu)
+  - [Exposed dropdown menus（公开的下拉菜单）](https://material.io/design/components/menus.html#exposed-dropdown-menu) 
+    - **Text field dropdown menu（文本框下拉菜单）** ✓（Select 选择框）
+    - Editable dropdown menu（可编辑的下拉菜单）
+  - **Contextual（上下文相关的）✓**
+- **[Progress indicators（进度条指示）](https://material.io/design/components/progress-indicators.html) ✓** 
+  - **[Linear（线性进度条）](https://material.io/design/components/progress-indicators.html#linear-progress-indicators) ✓**
+  - **[Circular（环状进度条）](https://material.io/design/components/progress-indicators.html#circular-progress-indicators) ✓**
   - **[Loading](https://material.io/archive/guidelines/components/progress-activity.html) ✓** (*旧 Material v1*)
 - **[Selection controls](https://material.io/design/components/selection-controls.html) ✓** 
   - **[Checkbox](https://material.io/design/components/selection-controls.html#checkboxes) ✓**
