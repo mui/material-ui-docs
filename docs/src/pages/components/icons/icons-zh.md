@@ -13,7 +13,7 @@ Material-UI 通过以下三种方式来支持图标的使用：
 1. 或者可以将自定义的 SVG 图标通过 [SvgIcon](#svgicon) 组件来包装成一个 React 组件。
 1. 或者可以将自定义的 font 图标通过 [ Icon ](#icon-font-icons) 组件来包装成一个 React 组件。
 
-## Material Icons 图标
+## Material 图标
 
 Material Design 已经将 1100 多个官方图标标准化，而每个图标都有五个不同的“主题”(见下文)。 对于每个 SVG 图标，我们从 @ material-ui/icons 包中导出相应的React组件。 您可以 [搜索完整的图标列表](/components/material-icons/)。
 
@@ -168,15 +168,15 @@ import Icon from '@material-ui/core/Icon';
 
 ### Font Awesome
 
-如下是一个同时使用[Font Awesome](https://fontawesome.com/icons) 与 `Icon` 的示例：
+如下是一个同时使用 [Font Awesome](https://fontawesome.com/icons) 与 `Icon` 的示例：
 
 {{"demo": "pages/components/icons/FontAwesome.js", "hideEditButton": true}}
 
 ## Font vs SVG。 使用哪个更好呢？
 
-这两种方法都能管用，然而，它们之间还是有着一些微妙的差异，特别当涉及到整体性能和渲染质量。 我们推荐尽可能选择 SVG，因为它允许代码分割、支持更多图标、而且渲染得更快、更好。
+这两种方法都能管用，然而，它们之间还是有着一些微妙的差异，特别当涉及到整体性能和渲染质量的时候。 我们推荐尽可能选择 SVG，因为它允许代码分割、支持更多图标、而且渲染得更快、更好。
 
-若您想了解更多细节，请查看 [ 为什么 GitHub 从字体图标迁移到 SVG 图标](https://github.blog/2016-02-22-delivering-octicons-with-svg/)这篇文章。
+若您想了解更多细节，请查看 [ why GitHub migrated from font icons to SVG icons](https://github.blog/2016-02-22-delivering-octicons-with-svg/) 这篇文章。
 
 ## 无障碍设计
 
