@@ -96,29 +96,29 @@ components: Tabs, Tab, TabScrollButton, TabContext, TabList, TabPanel
 您需要采取以下步骤，来为无障碍技术提供一些必要的信息：
 
 1. 在 `Tabs` 上应用 `aria-label` 或 `aria-labelledby` 标签。
-2. `Tab` 需要连接到其 相应的 `id`、`aria-controls` 和 `aria-labelledby` 中对应的 `[role="tabpanel"]`。
+2. 通过设置 `id`、`aria-controls` 和 `aria-labelledby` ，`Tab` 需要连接到其对应的 `[role="tabpanel"]`。
 
-当前实现的例子可以在本页面的演示中找到。 我们还在 `@material-ui/lab` 中发布了不需要额外工作就能使用的 [实验性 API](#experimental-api)
+实现这样的设计例子可以在本页面的演示中找到。 我们还在 `@material-ui/lab` 中发布了不需要额外工作就能使用的 [一个实验性的 API](#experimental-api)。
 
 ### 键盘导航
 
-该组件使用 “手动激活” 的行为来实现键盘导航。 如果你想切换到 “选择自动跟随焦点(selection automatically follows focus)”的行为，你必须将 `selectionFollowsFocus` 传递给 `Tabs` 组件。 WAI-ARIA 项目实践中有一个详细的指南 [如何决定什么时候选择自动跟随焦点](https://www.w3.org/TR/wai-aria-practices/#kbd_selection_follows_focus)。
+该组件使用“手动激活”的行为来实现键盘导航。 如果你想切换到“选择自动跟随焦点”（selection automatically follows focus）的行为，你必须将 `selectionFollowsFocus` 传递给 `Tabs` 组件。 WAI-ARIA 项目实践中有一个详细的指南关于 [how to decide when to make selection automatically follow focus](https://www.w3.org/TR/wai-aria-practices/#kbd_selection_follows_focus)。
 
 #### 演示
 
 下面的两个演示只是在键盘导航行为上有所区别。 聚焦到其中一个选项卡，然后用方向键导航你就可以注意到其中的差异。
 
 ```jsx
-/* 选择跟随焦点的选项卡 */
+/* 那个跟随焦点的选项卡 */
 <Tabs selectionFollowsFocus />
-/* 需要手动选择选项卡中的每一部分 */
+/* 需要手动选择选项卡中的每一个选项 */
 <Tabs />
 ```
 
 {{"demo": "pages/components/tabs/AccessibleTabs.js", "bg": true}}
 
-## 实验性 API
+## 实验性的 API
 
-遵循 [WAI-ARIA 项目实践](https://www.w3.org/TR/wai-aria-practices/#tabpanel)，`@material-ui/lab` 提供了工具集组件，该组件通过注入属性的方式来实现具有可访问性(accessible) 功能的选项卡。
+遵循 [WAI-ARIA 项目实践](https://www.w3.org/TR/wai-aria-practices/#tabpanel)，`@material-ui/lab` 提供了工具集组件，该组件通过注入属性的方式来实现无障碍设计的选项卡。
 
 {{"demo": "pages/components/tabs/LabTabs.js", "bg": true}}
