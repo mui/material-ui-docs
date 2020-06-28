@@ -1,5 +1,5 @@
 ---
-title: React Slide 滑块组件
+title: React 滑块组件
 components: Slider
 ---
 
