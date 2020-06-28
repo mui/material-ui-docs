@@ -9,40 +9,40 @@
 - App bars（应用栏） 
   - **[顶部（Top）](https://material.io/design/components/app-bars-top.html) ✓**
   - **[底部（Bottom）](https://material.io/design/components/app-bars-bottom.html) ✓**
-- **[横幅（Banners）](https://material.io/design/components/banners.html)** ([可组装](https://medium.com/material-ui/introducing-material-ui-design-system-93e921beb8df))
-- **[底部导航栏（Bottom navigation）](https://material.io/design/components/bottom-navigation.html) ✓**
+- **[Banners（横幅）](https://material.io/design/components/banners.html)** ([可组装](https://medium.com/material-ui/introducing-material-ui-design-system-93e921beb8df))
+- **[Bottom navigation（底部导航栏）](https://material.io/design/components/bottom-navigation.html) ✓**
 - **[Buttons（按钮）](https://material.io/design/components/buttons.html) ✓** 
   - **[Text & contained buttons（以前被称作 flat & raised）](https://material.io/design/components/buttons.html) ✓**
-  - **[Toggle buttons](https://material.io/design/components/buttons.html#buttons-toggle-buttons) ~** ([实验室](/components/about-the-lab/))
-  - **[Icon toggle buttons](https://material.io/design/components/buttons.html#toggle-button) ✓** (自定义 Checkbox)
-- **[Buttons: Floating Action Button](https://material.io/design/components/buttons-floating-action-button.html) ✓** 
-  - 过渡动画: 
-    - **[Speed dial](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions) ~** ([实验室](/components/about-the-lab/))
-    - [Menu](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions)
-    - [变形(Morph)](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions)
-    - [全屏(Full screen)](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions)
-  - **[Extended FAB](https://material.io/design/components/buttons-floating-action-button.html#extended-fab) ✓** 
-    - Speed dial
-- **[卡片(Cards)](https://material.io/design/components/cards.html) ✓**
-- **[Chips](https://material.io/design/components/chips.html) ✓** 
-  - **[Input](https://material.io/design/components/chips.html#input-chips) ✓**
-  - [Choice](https://material.io/design/components/chips.html#choice-chips)
-  - [Filter](https://material.io/design/components/chips.html#filter-chips)
-  - [Action](https://material.io/design/components/chips.html#action-chips)
-- **[数据表(Data tables)](https://material.io/design/components/data-tables.html) ✓** 
-  - **Sortable ✓**
-  - **可选择(Selectable) ✓**
-  - **分页(Pagination) ✓**
-- **[Dialogs](https://material.io/design/components/dialogs.html) ✓** 
-  - **[Alert dialog](https://material.io/design/components/dialogs.html#alert-dialog) ✓**
-  - **[Simple dialogs](https://material.io/design/components/dialogs.html#simple-dialog) ✓** （可以用Dialog和List组成。）
-  - **[Confirmation dialogs](https://material.io/design/components/dialogs.html#confirmation-dialog) ✓**
-  - **[Full screen dialogs](https://material.io/design/components/dialogs.html#full-screen-dialog) ✓**
-- **[Dividers](https://material.io/design/components/dividers.html) ✓** 
-  - **[Full bleed](https://material.io/design/components/dividers.html#types) ✓**
-  - **[Inset](https://material.io/design/components/dividers.html#types) ✓**
-  - **[Middle](https://material.io/design/components/dividers.html#types) ✓**
-  - **[Subheader](https://material.io/design/components/dividers.html#types) ✓**
+  - **[Toggle buttons（切换按钮）](https://material.io/design/components/buttons.html#buttons-toggle-buttons) ~** （[实验室](/components/about-the-lab/)）
+  - **[Icon toggle buttons（图标切换按钮）](https://material.io/design/components/buttons.html#toggle-button) ✓**（自定义 Checkbox）
+- **[Buttons: Floating Action Button（按钮：浮动操作按钮）](https://material.io/design/components/buttons-floating-action-button.html) ✓** 
+  - Transitions（过渡动画）： 
+    - **[Speed dial（快速拨号）](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions) ~**（[实验室](/components/about-the-lab/)）
+    - [Menu（菜单）](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions)
+    - [变形（Morph）](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions)
+    - [全屏（Full screen）](https://material.io/design/components/buttons-floating-action-button.html#types-of-transitions)
+  - **[Extended FAB（扩展的浮动操作按钮）](https://material.io/design/components/buttons-floating-action-button.html#extended-fab) ✓** 
+    - Speed dial（快速拨号）
+- **[Cards（卡片）](https://material.io/design/components/cards.html) ✓**
+- **[Chips（纸片）](https://material.io/design/components/chips.html) ✓** 
+  - **[Input（输入）](https://material.io/design/components/chips.html#input-chips) ✓**
+  - [Choice（选择项）](https://material.io/design/components/chips.html#choice-chips)
+  - [Filter（筛选）](https://material.io/design/components/chips.html#filter-chips)
+  - [Action（操作）](https://material.io/design/components/chips.html#action-chips)
+- **[Data tables（数据表格）](https://material.io/design/components/data-tables.html) ✓** 
+  - **Sortable（可排序的）✓**
+  - **Selectable（可选择的）✓**
+  - **Pagination（分页） ✓**
+- **[Dialogs（对话框）](https://material.io/design/components/dialogs.html) ✓** 
+  - **[Alert dialog（警告对话框）](https://material.io/design/components/dialogs.html#alert-dialog) ✓**
+  - **[Simple dialogs（简单的对话框）](https://material.io/design/components/dialogs.html#simple-dialog) ✓** （可以用 Dialog 和 List 组成。）
+  - **[Confirmation dialogs（确认对话框）](https://material.io/design/components/dialogs.html#confirmation-dialog) ✓**
+  - **[Full screen dialogs（全屏对话框）](https://material.io/design/components/dialogs.html#full-screen-dialog) ✓**
+- **[Dividers（分隔线）](https://material.io/design/components/dividers.html) ✓** 
+  - **[Full bleed（等屏宽分隔线）](https://material.io/design/components/dividers.html#types) ✓**
+  - **[Inset（内凹分隔线）](https://material.io/design/components/dividers.html#types) ✓**
+  - **[Middle（居中分隔线）](https://material.io/design/components/dividers.html#types) ✓**
+  - **[Subheader（副标题分隔线）](https://material.io/design/components/dividers.html#types) ✓**
 - **[Expansion Panels](https://material.io/archive/guidelines/components/expansion-panels.html) ✓** (*旧 Material v1*)
 - **[Image lists](https://material.io/design/components/image-lists.html) ✓** (又名 Grid Lists)
 - **[Lists](https://material.io/design/components/lists.html) ✓** 
