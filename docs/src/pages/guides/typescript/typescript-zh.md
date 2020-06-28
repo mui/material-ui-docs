@@ -300,13 +300,13 @@ function ThirdPartyComponent({ prop1 } : { prop1: string }) {
 <GenericCustomComponent component={ThirdPartyComponent} prop1="some value" />;
 ```
 
-The `prop1` became required for the `GenericCustomComponent` as the `ThirdPartyComponent` has it as a requirement.
+当所需的 `ThirdPartyComponent` 是明确要求时，`prop1` 也成为 `GenericCustomComponent` 的必需属性。
 
-但是，并不是每个组件都完全支持您传入的任何组件类型。 如果您在 TypeScript 中遇到一个不接受其 `component` 属性的组件，请提起一个 issue。 通过使组件道具具有通用性，一直在努力解决这个问题。
+但是，并不是每个组件都完全支持您传入的任何组件类型。 如果您在 TypeScript 中遇到一个不接受其 `component` 属性的组件，请新建一个 issue。 我们也一直在努力实现组件属性的通用化。
 
-## 处理`值`和事件处理器
+## 处理 `value` 和事件处理器
 
-很多与用户输入有关的组件会提供一个 `value` 属性或者包含当前`值`的事件处理器。 大多数情况下`值`只在 React 内被处理，这样的话它能够是任何类型，譬如 objects 或者 arrays。
+很多与用户输入有关的组件会提供一个 `value` 属性或者包含当前 `value` 的事件处理器。 大多数情况下`值`只在 React 内被处理，这样的话它能够是任何类型，譬如 objects 或者 arrays。
 
 然而，如果是它依赖于组件子项的情况，此类型无法在编译时被验证，例如对于 `Select` 或者 `RadioGroup` 来说。 这意味着留给我们的最合适的选项是将其输入为 `unknown` 并让开发者自行决定如何来缩小该类型。 与 [`event.target` 在 React 中并不通用的原因](https://github.com/DefinitelyTyped/DefinitelyTyped/issues/11508#issuecomment-256045682)相同，我们并不推荐您在这些案例中尝试使用一个通用的类型。
 
