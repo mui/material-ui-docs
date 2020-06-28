@@ -19,7 +19,7 @@ Material-UI 需要最低 TypeScript 的版本为 3.2。
 }
 ```
 
-对每个发布在 `@types/` 命名空间下的类型声明包，同样需要启用严格模式（strict mode）。 使用不太严格的 `tsconfig.json` 或省略某些库可能会带来一些错误。 要获得最佳类型检查的体验，我们建议设置 `"strict": true` 。
+对每个发布在 `@types/` 命名空间下的类型声明包，同样需要启用严格模式（strict mode）。 使用不太严格的 `tsconfig.json` 或省略某些库可能会造成一些错误。 若您想获得最佳类型（type）的体验，我们建议设置 `"strict": true` 。
 
 ## `withStyles` 的使用
 
