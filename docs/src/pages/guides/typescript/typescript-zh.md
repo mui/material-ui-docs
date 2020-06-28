@@ -207,11 +207,11 @@ const DecoratedClass = withStyles(styles)(
 );
 ```
 
-不幸的是，由于[TypeScript 装饰器现有的限制 ](https://github.com/Microsoft/TypeScript/issues/4881)， `withStyles(styles)` 不能用在 TypeScript 中作为一个装饰器。
+不幸的是，由于 [TypeScript 装饰器现有的限制](https://github.com/Microsoft/TypeScript/issues/4881)， 在 TypeScript 中，`withStyles(styles)`作为一个装饰器使用。
 
-## 自定义 `主题`
+## 定制的`主题`
 
-将自定义属性添加到`主题`中时，您可以通过以强类型的方式实现 [TypeScript 的模块扩充](https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation)而继续使用它 。
+将自定义属性添加到 `Theme` 中时，您可以通过以强类型的方式实现 [TypeScript 的模块扩充](https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation) 而继续使用它 。
 
 以下示例添加了一个 `appDrawer` 属性，并将其合并到由 `material-ui` 提供的属性中：
 
@@ -226,7 +226,7 @@ declare module '@material-ui/core/styles/createMuiTheme' {
       breakpoint: Breakpoint
     }
   }
-  // 使用 `createMuiTheme` 来配置
+  // 允许用 `createMuiTheme` 来配置
   interface ThemeOptions {
     appDrawer?: {
       width?: React.CSSProperties['width']
@@ -236,7 +236,7 @@ declare module '@material-ui/core/styles/createMuiTheme' {
 }
 ```
 
-以及一个带有其他默认选项的自定义主题仓库：
+以及一个带有额外的默认选项的一个自定义主题仓库：
 
 **./styles/createMyTheme**:
 
@@ -262,11 +262,11 @@ import createMyTheme from './styles/createMyTheme';
 const theme = createMyTheme({ appDrawer: { breakpoint: 'md' }});
 ```
 
-## `component` 属性用法
+## `component` 属性的用法
 
-Material-UI 的许多组件允许你通过 `component` 属性替换它们的根节点，这将在组件的 API 文档中详细说明。 例如，一个按钮（Button）的根节点可以被替换成一个 React Router 的链接（Link），并且传入按钮（Button）的任何额外的属性，例如 `to` ，会被传递到链接（Link）组件。 关于按钮和 react-router-dom 的代码示例查看[这些示例](/guides/composition/#routing-libraries)。
+你可以通过 `component` 属性替换许多 Material-UI 的许多组件的根节点，我们在组件的 API 文档中做了详细的说明。 例如，一个按钮（Button）的根节点可以被替换成一个 React Router 的链接（Link），并且，任何传入按钮（Button）的额外的属性，例如 `to` ，都会被传递到链接（Link）组件中。 关于按钮组件和 react-router-dom 的代码示例查看 [这些示例](/guides/composition/#routing-libraries)。
 
-为了能够单独使用 Material-UI 组件（component）的这种属性，所以该属性应该与类型参数一起使用。 否则，`component` 属性将不会出现在 Material-UI 组件的属性中。
+为了能够单独使用 Material-UI 组件的属性，该属性应该与类型参数一起使用。 否则，`component` 属性将不会出现在 Material-UI 组件的属性中。
 
 下面的示例使用了 `TypographyProps`，这也同样适用于那些带有 `OverrideProps` 定义的属性的组件。
 
