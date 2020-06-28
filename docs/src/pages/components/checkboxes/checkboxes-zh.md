@@ -1,5 +1,5 @@
 ---
-title: React Checkbox 多选框组件
+title: React 多选框组件
 components: Checkbox, FormControl, FormGroup, FormLabel, FormControlLabel
 ---
 
