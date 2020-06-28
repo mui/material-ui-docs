@@ -39,8 +39,8 @@ const styles = {
 
 withStyles（styles）;
 //         ^^^^^^
-//        属性 'flexDirection' 的类型是不兼容的。
-//           'string' 类型不能赋予给这些类型：'"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "column" | "column-reverse" | "row"...'。
+//        属性 “flexDirection”` 的类型是不兼容的。
+//           “string” 类型不能赋予给这些类型：'"-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "column" | "column-reverse" | "row"...'。
 ```
 
 问题是 `flexDirection` 属性的类型被推断为 `string`，这太过随意。 要解决此问题，您可以将样式对象直接传递给 `withStyles`：
@@ -54,7 +54,7 @@ withStyles({
 });
 ```
 
-然而，如果您尝试让样式随主题而变化，那么类型扩展会再次显示其不怎么雅观的部分：
+然而，如果您尝试根据主题来构建样式，那么类型扩展会再次显示其不怎么雅观的部分：
 
 ```ts
 withStyles(({ palette, spacing }) => ({
@@ -70,7 +70,7 @@ withStyles(({ palette, spacing }) => ({
 
 这是因为 TypeScript [扩展了函数表达式的返回类型](https://github.com/Microsoft/TypeScript/issues/241)。
 
-因此，我们建议使用 `createStyles` 助手函数来构造样式规则对象：
+因此，我们建议使用我们的 `createStyles` 帮助函数来构造样式规则对象：
 
 ```ts
 // 不依赖于主题的样式
@@ -93,7 +93,7 @@ const styles = ({ palette, spacing }: Theme) => createStyles({
 });
 ```
 
-`createStyles` 只是一个标识功能的函数；它不会在运行时“做任何事情”，只是在编译时帮助指导类型推断。
+`createStyles` 只是一个恒等函数（identity function)；它不会在运行时“做任何事情”，只是在编译时帮助指导类型推断。
 
 ### Media queries（媒体查询）
 
@@ -112,7 +112,7 @@ const styles = createStyles({
 });
 ```
 
-但是，为了允许这些样式传递 TypeScript，鉴于CSS 类的名称和实际的 CSS 属性名称不一致，定义必须是模糊的。 由于类名称应与 CSS 属性相同，因此应避免使用。
+但是，为了允许这些样式来传递 TypeScript，鉴于CSS 类的名称和实际的 CSS 属性名称不一致，所赋予的定义必须是模糊的。 由于类名称应与 CSS 属性相同，因此应避免使用。
 
 ```ts
 // 这样是错误的，由于 TypeScript 认为 `@media (min-width: 960px)` 是一个类名
@@ -128,7 +128,7 @@ const ambiguousStyles = createStyles({
   },
 });
 
-// 这样定义就可以
+// 这样定义即可
 const ambiguousStyles = createStyles({
   contentClass: {
     minHeight: '100vh',
@@ -153,10 +153,10 @@ const styles = (theme: Theme) => createStyles({
 });
 
 interface Props {
-  // 未被注入样式的属性
+  // 非样式的属性
   foo: number;
   bar: boolean;
-  // 被注入样式的属性
+  // 注入的样式的属性
   classes: {
     root: string;
     paper: string;
@@ -165,7 +165,7 @@ interface Props {
 }
 ```
 
-然而，这是不是很 [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) ，因为它需要你在两个不同的地方保持类名（`'root'`， `'paper'`， `'button'`，...）。 我们提供了一个类型操作符 `WithStyles` 来帮助解决这个问题，因此您可以直接写入：:
+然而，这是不是很 [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) ，因为它需要你在两个不同的地方保持类名（如 `“root”`， `“paper”`， `“button”`，...）。 我们提供了一个类型操作符 `WithStyles` 来帮助解决这个问题，因此您可以直接写入：:
 
 ```ts
 import { WithStyles, createStyles } from '@material-ui/core';
