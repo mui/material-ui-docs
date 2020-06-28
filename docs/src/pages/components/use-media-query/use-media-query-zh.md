@@ -1,5 +1,5 @@
 ---
-title: 用于响应式设计的 React 中的媒体查询（Media queries）
+title: 用于响应式设计的 React 中的媒体查询
 ---
 
 # useMediaQuery
