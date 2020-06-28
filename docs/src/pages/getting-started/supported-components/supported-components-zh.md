@@ -41,23 +41,23 @@
 - **[Dividers（分隔线）](https://material.io/design/components/dividers.html) ✓** 
   - **[Full bleed（等屏宽分隔线）](https://material.io/design/components/dividers.html#types) ✓**
   - **[Inset（内凹分隔线）](https://material.io/design/components/dividers.html#types) ✓**
-  - **[Middle（居中分隔线）](https://material.io/design/components/dividers.html#types) ✓**
+  - **[Middle（中段分隔线）](https://material.io/design/components/dividers.html#types) ✓**
   - **[Subheader（副标题分隔线）](https://material.io/design/components/dividers.html#types) ✓**
-- **[Expansion Panels](https://material.io/archive/guidelines/components/expansion-panels.html) ✓** (*旧 Material v1*)
-- **[Image lists](https://material.io/design/components/image-lists.html) ✓** (又名 Grid Lists)
-- **[Lists](https://material.io/design/components/lists.html) ✓** 
-  - [Types:](https://material.io/design/components/lists.html#types) 
-    - **Single line ✓**
-    - **Two line ✓**
-    - Three line
-  - **Avatar ✓**
-  - **Icon ✓**
-  - Thumbnail
-  - **Controls ✓** 
-    - **复选框 ✓**
-    - **Expand/collapse ✓** (又名 Nested)
-    - **开关 ✓**
-    - Reorder
+- **[Expansion Panels（扩展面板）](https://material.io/archive/guidelines/components/expansion-panels.html) ✓** (*旧的 Material v1*)
+- **[Image lists（图像列表）](https://material.io/design/components/image-lists.html) ✓** (又名 Grid Lists 网格列表)
+- **[Lists（列表）](https://material.io/design/components/lists.html) ✓** 
+  - [类型:](https://material.io/design/components/lists.html#types) 
+    - **Single line （单行）✓**
+    - **Two line（两行）✓**
+    - Three line（三行）
+  - **Avatar（头像）✓**
+  - **Icon（图标）✓**
+  - Thumbnail（缩略图）
+  - **Controls（控件）✓** 
+    - **Checkbox（复选框）✓**
+    - **Expand/collapse（展开/折叠）✓** (又名 Nested 内嵌的)
+    - **Switch（开关）✓**
+    - Reorder（重新排序）
 - **[Menus](https://material.io/design/components/menus.html) ✓** 
   - ** [下拉菜单](https://material.io/design/components/menus.html#dropdown-menu) ✓ ** （可以组成） 
     - [Cascade](https://material.io/design/components/menus.html#dropdown-menu)
