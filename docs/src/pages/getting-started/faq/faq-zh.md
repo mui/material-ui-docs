@@ -1,23 +1,23 @@
 # 常见问题解答
 
-<p class="description">您在一个特定的问题上停滞不前吗？ 您可以先在我们的常见 FAQ (问题解答) 中检索一下常见问题。</p>
+<p class="description">您在一个特定的问题上停滞不前吗？ 您可以先在常见 FAQ（问题解答）中检索一下常见问题。</p>
 
-如果仍然找不到所需的内容，可以参考我们的[支持页面](/getting-started/support/) 。
+如果仍然找不到所需的内容，您可以参考我们的 [支持页面](/getting-started/support/) 。
 
-## Material-UI 很棒。 我该如何支持该项目？
+## Material-UI 超赞。 我该如何支持该项目？
 
-有很多方法可以支持 Material-UI：
+其实有很多方法可以支持 Material-UI：
 
-- **口口相传**。 通过[链接到material-ui.com来传播Material-UI ](https://material-ui.com/)在您的网站上，每个反向链接都很重要。 在[ Twitter上关注我们](https://twitter.com/MaterialUI) ，点赞并转发重要新闻。 或者只是与您的朋友谈论我们。
-- **给我们反馈** 。 告诉我们我们做得好或可以改进的地方。 请投票（👍）您最想解决的问题。
-- **帮助新用户** 。 您可以在 [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) 中回答问题
-- **Make changes happen**. 
-  - Edit the documentation. Every page has an "EDIT THIS PAGE" link in the top right.
-  - 通过[创建问题](https://github.com/mui-org/material-ui/issues/new)来报告错误或缺少的功能 。
-  - Review and comment on existing [pull requests](https://github.com/mui-org/material-ui/pulls) and [issues](https://github.com/mui-org/material-ui/issues).
-  - 帮忙[翻译文档](https://translate.material-ui.com)
-  - [Improve our documentation](https://github.com/mui-org/material-ui/tree/master/docs), fix bugs, or add features by [submitting a pull request](https://github.com/mui-org/material-ui/pulls).
-- **在[OpenCollective](https://opencollective.com/material-ui)**上资助我们。 如果您在商业项目中使用了Material-UI，并希望通过成为我们的赞助商 来支持我们的持续发展，或者您一个业余项目或者爱好项目，并想成为我们的支持者， 您都可以通过OpenCollective实现。 筹集的所有资金都是透明管理的，赞助商在README和Material-UI主页上获得认可。
+- **口口相传**。 通过在您的网站上 [链接到 material-ui.com](https://material-ui.com/) 来传播 Material-UI ，每个反向链接对我们来说都很重要。 在 [Twitter 上关注我们](https://twitter.com/MaterialUI) ，点赞并转发一些重要的新闻。 或者只是与您的朋友谈论我们。
+- **给我们反馈** 。 告诉我们一些做得好的地方或者可以改进的地方。 请给您最希望看到能够解决的问题投票（👍）。
+- **帮助新的用户** 。 您可以在 [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui) 中回答一些问题。
+- **做出一些改变吧**。 
+  - 编辑文档。 每个页面右上角都有一个“编辑此页面”的链接。
+  - 通过 [创建一个问题](https://github.com/mui-org/material-ui/issues/new) 来报告错误或缺少的功能 。
+  - 查看和评论一些现有的 [pull requests](https://github.com/mui-org/material-ui/pulls) 和 [issues](https://github.com/mui-org/material-ui/issues)。
+  - 帮助我们 [翻译](https://translate.material-ui.com) 文档。
+  - 通过 [提交的一个 pull request](https://github.com/mui-org/material-ui/pulls) 来 [优化我们的文档](https://github.com/mui-org/material-ui/tree/master/docs)，修复错误，或者添加功能。
+- **在 [OpenCollective](https://opencollective.com/material-ui)** 上资助我们。 如果您在商业项目中使用了Material-UI，并希望通过成为我们的赞助商 来支持我们的持续发展，或者您一个业余项目或者爱好项目，并想成为我们的支持者， 您都可以通过OpenCollective实现。 筹集的所有资金都是透明管理的，赞助商在README和Material-UI主页上获得认可。
 
 ## 为什么我的组件在生产版本中没有正确地渲染？
 
