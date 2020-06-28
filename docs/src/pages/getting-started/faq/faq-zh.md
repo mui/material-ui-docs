@@ -21,9 +21,9 @@
 
 ## 为什么我的组件在生产构造中没有正确地渲染？
 
-The #1 reason this likely happens is due to class name conflicts once your code is in a production bundle. 如果想要 Material-UI 正常工作, 页面上所有组件的 `classname` 值必须由 [类名称生成器](/styles/advanced/#class-names) 的单个实例生成。
+发生这种情况的首要原因是由于您的代码在生产环境中的捆绑包中出现了类名冲突。 如果想要 Material-UI 正常工作, 页面上所有组件的 `classname` 值必须由 [类名称生成器](/styles/advanced/#class-names) 的单个实例生成。
 
-To correct this issue, all components on the page need to be initialized such that there is only ever **one class name generator** among them.
+要纠正这个问题，您需要对页面上的所有组件进行初始化，使它们之间永远只有**一个类名生成器**。 
 
 在很多情况下，您可能最终会意外地使用两个类名生成器：
 
