@@ -280,7 +280,7 @@ function CustomComponent(props: TypographyProps<'a', { component: 'a' }>) {
 
 按照以上示例来设置，现在的 `CustomComponent` 就可以与 `component` 属性一起使用了，并且该属性应该设置为 `'a'`。 此外，`CustomComponent` 将拥有 `<a>` 这个 HTML 元素的所有属性。 `Typography` 组件的其他属性也会出现在 `CustomComponent` 的属性中。
 
-It is possible to have generic `CustomComponent` which will accept any React component, custom and HTML elements.
+而通过一个通用的 `CustomComponent` 来接受任何React组件、自定义的和 HTML 元素也是有可能的。
 
 ```ts
 function GenericCustomComponent<C extends React.ElementType>(
