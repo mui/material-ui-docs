@@ -27,7 +27,7 @@ Material-UI 需要最低 TypeScript 的版本为 3.2。
 
 ### 使用 `createStyles` 来杜绝类型扩展
 
-造成混淆的一个常见原因是 TypeScript的 [类型扩展](https://mariusschulz.com/blog/typescript-2-1-literal-type-widening)，这会导致以下示例无法按预期工作：
+造成混淆的一个常见原因是 TypeScript的 [类型扩展（type widening）](https://mariusschulz.com/blog/typescript-2-1-literal-type-widening)，这会导致以下示例无法按预期工作：
 
 ```ts
 const styles = {
