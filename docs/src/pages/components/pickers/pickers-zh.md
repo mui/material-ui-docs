@@ -1,5 +1,5 @@
 ---
-title: React Date Picker 日期选择器和 Time Picker时间选择器组件
+title: React 日期和时间选择器组件
 components: TextField
 ---
 
