@@ -1,5 +1,5 @@
 ---
-title: React List 列表组件
+title: React 列表组件
 components: Collapse, Divider, List, ListItem, ListItemAvatar, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader
 ---
 
