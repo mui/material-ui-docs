@@ -46,7 +46,7 @@ const theme = createMuiTheme({
 
 {{"demo": "pages/customization/color/ColorTool.js", "hideToolbar": true, "bg": true}}
 
-您可以直接把在颜色的例子显示的输出结果直接粘贴到 [`createMuiTheme()`](/customization/theming/#createmuitheme-options-theme) 函数里（需要与 [`ThemeProvider`](/customization/theming/#theme-provider) 配合使用）：
+您可以把颜色的例子中显示的输出结果直接粘贴到一个 [`createMuiTheme()`](/customization/theming/#createmuitheme-options-theme) 函数里（需要与 [`ThemeProvider`](/customization/theming/#theme-provider) 配合使用）：
 
 ```jsx
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -64,24 +64,24 @@ const theme = createMuiTheme({
 });
 ```
 
-您只需提供 `主要的` 深度（shades）（除非您希望进一步自定义 `light`，`dark` 或 `contrastText` 这几个属性），在 [定制主题](/customization/palette/) 章节中提到了这样做的原因是因为其他颜色会由 `createMuiTheme()` 自动计算。
+您只需提供 `主要的` 阴影（shades）（除非您希望进一步自定义 `light`，`dark` 或 `contrastText` 这几个属性），在 [定制主题](/customization/palette/) 章节中提到，这是因为其他颜色会由 `createMuiTheme()` 自动计算。
 
-如果你通过提供 color object 的方式 使用默认的主要阴影 和/或 次要阴影，`createMuiTheme()` 将会根据 主、亮和暗 三种 material 颜色选择合适的阴影。
+如果你在使用默认的主要和/或次要阴影，那么通过提供一个颜色对象（color object） ，`createMuiTheme()` 将会根据主（main）、亮（light）和暗（dark）三种 material 颜色使用合适的阴影。
 
-### 社区工具
+### 社区提供的一些工具
 
-- [create-mui-theme](https://react-theming.github.io/create-mui-theme/): 使用 Material Design 颜色工具来创建 Material-UI 主题的在线工具。
+- [create-mui-theme](https://react-theming.github.io/create-mui-theme/)：使用 Material Design 颜色工具来创建 Material-UI 主题的在线工具。
 - [material-ui-theme-editor](https://in-your-saas.github.io/material-ui-theme-editor/)：只需要选择颜色即可为你的 Material-UI 应用生成主题的工具，同时还支持在线预览。
 - [Material palette generator](https://material.io/inline-tools/color/)：它可用于通过您输入的任何颜色生成一系列的调色板。
 
 ## 2014 Material Design 调色板
 
-这些调色板最初由 Material Design 于 2014 年创建，由旨在和谐配合的颜色组成，可用于开发您的品牌调色板。 要生成您专属的颜色协调的调色板，请使用调色板生成工具。
+这些调色板最初由 Material Design 于 2014 年创建，由一些旨在和谐搭配的颜色组成，您可以用它们来开发品牌调色板。 要生成您专属的颜色协调的调色板，请使用调色板生成工具。
 
 ### 一些重要的术语
 
-- **调色板**：调色板是颜色的集合，包括色调及其阴影。 Material-UI 提供 Material Design 指南中的所有颜色。 设计 [此调色板](#color-palette) 时，我们确保了各个颜色之间的协调。
-- **色调" & "阴影**：调色板中的单个颜色由色调（如 "red"）和阴影（如 "500"）组成。 "rad 50" 是红色的最浅的阴影（* 粉红色! *），而 "red 900" 是最深的红色。 此外, 大多数色调都带有强调色调, 以 `A` 为前缀。
+- **调色板（Palette ）**：调色板是一个颜色的集合，例如色调及其阴影。 Material-UI 提供 Material Design 指南中的所有颜色。 设计 [此调色板](#color-palette) 时，我们确保了各个颜色之间的协调呈现。
+- **色调（Hue）和阴影（Hue ）**：调色板中的单个颜色是由色调（如 "red"）和阴影（如 "500"）组成。 "red 50" 是红色的最浅的阴影（* pink! *），而 "red 900" 是最深的红色。 除此之外，大多数的色调都带有以 `A` 为前缀的强调（accent）色调。
 
 ### 调色板
 
