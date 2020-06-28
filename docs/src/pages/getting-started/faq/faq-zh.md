@@ -95,7 +95,7 @@ const theme = createMuiTheme({
 });
 ```
 
-Notice that the usage of `CssBaseline` is required for the above approach to work. If you choose not to use it, you can still disable transitions and animations by including these CSS rules:
+请注意，上述方法需要使用 `CssBaseline`。 如果您选择不使用它，您仍然可以通过加入这些 CSS 规则来禁用过渡和动画：
 
 ```css
 *, *::before, *::after {
@@ -106,33 +106,33 @@ Notice that the usage of `CssBaseline` is required for the above approach to wor
 
 ## 我是否必须使用 JSS 给 app 来设置样式呢？
 
-No, it's not required. But this dependency comes built in, so carries no additional bundle size overhead.
+不用的，JSS 不是一个必须选择。 But this dependency comes built in, so carries no additional bundle size overhead.
 
-Perhaps, however, you're adding some Material-UI components to an app that already uses another styling solution, or are already familiar with a different API, and don't want to learn a new one? 在这种情况下，请转到[Style Library Interoperability（样式库互用）](/guides/interoperability/) 部分，在哪里你可以找到我们提供的用其他样式库来替换 Material-UI 组件样式的简单方法。
+然而，也许您正在为一个已经使用其他样式解决方案的应用程序添加一些 Material-UI 组件，或者已经l熟悉了不同的 API，而不想学习新的 API？ 在这种情况下，请访问 [样式库互用](/guides/interoperability/) 部分，在那里我们展示了使用替代样式库来重新设置 Material-UI 组件的样式是多么简单。
 
-## When should I use inline-style vs CSS?
+## 内联样式与 CSS 之间我应该怎么选择使用的时机？
 
 根据经验，仅对动态样式属性使用内联样式。 CSS 替代方案也有更多优势，例如：
 
 - 自动前缀
 - 更好地调试
 - 媒体查询
-- keyframes
+- 关键帧
 
-## 如何使用 react-router？
+## 我应该怎么使用 react-router？
 
-We detail the [integration with third-party routing libraries](/guides/composition/#routing-libraries) like react-router, Gatsby or Next.js in our guide.
+在我们的指南中详细介绍了与 react-router、Gatsby 或 Next.js 等 [第三方路由库](/guides/composition/#routing-libraries) 的集成。
 
-## 如何访问 DOM 元素？
+## 我应该怎么访问 DOM 元素？
 
-All Material-UI components that should render something in the DOM forward their ref to the underlying DOM component. This means that you can get DOM elements by reading the ref attached to Material-UI components:
+所有应该在 DOM 中渲染内容的 Material-UI 组件都会都将其 ref 转发给底层的 DOM 组件。 这意味着您可以通过读取附加在 Material-UI 组件上的 ref 来获取 DOM 元素。 
 
 ```jsx
-// or a ref setter function
+// 或者为一个 ref setter 函数
 const ref = React.createRef();
-// render
+// 渲染
 <Button ref={ref} />;
-// usage
+// 使用
 const element = ref.current;
 ```
 
