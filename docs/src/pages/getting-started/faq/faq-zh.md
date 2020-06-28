@@ -136,29 +136,29 @@ const ref = React.createRef();
 const element = ref.current;
 ```
 
-If you're not sure if the Material-UI component in question forwards its ref you can check the API documentation under "Props" e.g. the [Button API](/api/button/#props) includes
+如果您对相关 Material-UI 组件是否转发了它的 ref 存在疑问的时候，你可以查看“Props”下的 API 文档，例如 [Button API](/api/button/#props)
 
-> The ref is forwarded to the root element.
+> ref 会被转发到根元素。
 
-indicating that you can access the DOM element with a ref.
+这就表明您可以使用 ref 来访问这个 DOM 元素。
 
-## I have several instances of styles on the page
+## 我的页面上有多个样式实例。
 
-If you are seeing a warning message in the console like the one below, you probably have several instances of `@material-ui/styles` initialized on the page.
+如果您在控制台中看到类似下面的警告消息，那么您可能已经在页面上初始化了多个 `@material-ui/styles` 实例。
 
-> It looks like there are several instances of `@material-ui/styles` initialized in this application. This may cause theme propagation issues, broken class names, specificity issues, and make your application bigger without a good reason.
+> 看起来在这个应用程序中初始化了多个 `@material-ui/styles` 实例。 这可能会导致主题传播问题、类名称损坏、专一性问题，并使你的应用程序尺寸无端变大。 
 
-### Possible reasons
+### 可能的原因
 
-There are several common reasons for this to happen:
+出现这些问题通常有几个常见的原因：
 
-- You have another `@material-ui/styles` library somewhere in your dependencies.
-- You have a monorepo structure for your project (e.g, lerna, yarn workspaces) and `@material-ui/styles` module is a dependency in more than one package (this one is more or less the same as the previous one).
-- You have several applications that are using `@material-ui/styles` running on the same page (e.g., several entry points in webpack are loaded on the same page).
+- 在您的依赖关系中还有一个 `@material-ui/styles` 库。
+- 您的项目是 monorepo 结构（例如，lerna，yarn workspaces），并且 `@material-ui/styles` 模块是多个包中的依赖（与前一个包或多或少相同）。
+- 您有几个使用 `@material-ui/styles` 的应用程序在同一页面上运行（例如，webpack 中的几个入口点被加载在同一页面上）。
 
-### Duplicated module in node_modules
+### 在 node_modules 中重复的模块。 
 
-If you think that the issue may be in the duplication of the @material-ui/styles module somewhere in your dependencies, there are several ways to check this. You can use `npm ls @material-ui/styles`, `yarn list @material-ui/styles` or `find -L ./node_modules | grep /@material-ui/styles/package.json` commands in your application folder.
+如果您认为问题可能出现在您的依赖关系中的 @material-ui/styles 模块的重复，那么有几种方法可以检查。 You can use `npm ls @material-ui/styles`, `yarn list @material-ui/styles` or `find -L ./node_modules | grep /@material-ui/styles/package.json` commands in your application folder.
 
 If none of these commands identified the duplication, try analyzing your bundle for multiple instances of @material-ui/styles. You can just check your bundle source, or use a tool like [source-map-explorer](https://github.com/danvk/source-map-explorer) or [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer).
 
