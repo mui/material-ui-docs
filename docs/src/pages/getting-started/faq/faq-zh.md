@@ -31,13 +31,13 @@
 - You are using `StylesProvider` for a **subset** of your React tree.
 - 您正在使用打包的代码分割功能，这会生成多个 class 名字
 
-> 如果你正使用带有[SplitChunksPlugin](https://webpack.js.org/plugins/split-chunks-plugin/) 的webpack，请尝试在[`优化项(optimizations)`下配置 `runtimeChunk`](https://webpack.js.org/configuration/optimization/#optimization-runtimechunk) 。
+> 如果你正使用的 webpack 带有 [SplitChunksPlugin](https://webpack.js.org/plugins/split-chunks-plugin/) 插件 ，请尝试在设置里的 [`optimizations` 下配置 `runtimeChunk`](https://webpack.js.org/configuration/optimization/#optimization-runtimechunk) 。
 
-Overall, it's simple to recover from this problem by wrapping each Material-UI application with [`StylesProvider`](/styles/api/#stylesprovider) components at the top of their component trees **and using a single class name generator shared among them**.
+总的来说，您只需要在每个 Material-UI 应用程序的组件树顶部使用 [`StylesProvider`](/styles/api/#stylesprovider) 组件进行包装，**并在它们之间共享一个单一的类名生成器**，就可以很容易地解决这个问题。
 
 ## 为什么当打开Modal（模态框）时，fixed positioned（位置固定的）元素会移动？
 
-当Modal（模态框）打开时，滚动会被禁止。 This prevents interacting with the background when the modal should be the only interactive content. However, removing the scrollbar can make your **fixed positioned elements** move. 在这种情况下，您可以应用全局`.mui-fixed`类名称来告知 Material-UI 来处理这些元素。
+当Modal（模态框）打开时，滚动会被禁止。 这样就能够阻止用户与下层背景内容进行交互以确保模态框应该是唯一的交互内容。 然而，移除滚动条会使您的**固定定位的元素**移动。 在这种情况下，您可以应用全局 `.mui-fixed` 类来通知 Material-UI 处理这些元素。
 
 ## 如何在全局禁用 ripple effect（涟漪效果）？
 
@@ -57,9 +57,9 @@ const theme = createMuiTheme({
 });
 ```
 
-## 如何禁用全局transition
+## 如何禁用全局过渡？
 
-Material-UI uses the same theme helper for creating all its transitions. Therefore you can disable all transitions by overriding the helper in your theme:
+Material-UI 使用相同的主题助手来创建所有的过渡。 因此，您可以通过覆盖主题助手来禁用所有的过渡：
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
@@ -72,18 +72,18 @@ const theme = createMuiTheme({
 });
 ```
 
-It can be useful to disable transitions during visual testing or to improve performance on low-end devices.
+在视觉测试过程中禁用过渡，或者在低端设备上提高性能，这样做都是很有用的。
 
-You can go one step further by disabling all transitions and animations effects:
+您可以更进一步地禁用所有的过渡和动画效果。
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
 
 const theme = createMuiTheme({
   overrides: {
-    // Name of the component ⚛️
+    // 组件名称 ⚛️
     MuiCssBaseline: {
-      // Name of the rule
+      // 规则名称
       '@global': {
         '*, *::before, *::after': {
           transition: 'none !important',
