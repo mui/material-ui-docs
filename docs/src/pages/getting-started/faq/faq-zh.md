@@ -186,7 +186,7 @@ lerna bootstrap --hoist
 
 另外，您也可以在 package.json 文件中删除 @material-ui/styles 项，然后手动将它移动到顶层 package.json 文件中。 
 
-Example of a package.json file in a Lerna root folder
+Lerna 根目录下的 package.json 文件示例： 
 
 ```json
 {
