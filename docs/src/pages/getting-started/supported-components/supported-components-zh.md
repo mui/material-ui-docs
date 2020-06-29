@@ -71,16 +71,16 @@
   - **[Loading（加载）](https://material.io/archive/guidelines/components/progress-activity.html) ✓** (*旧 Material v1*)
 - **[Selection controls（选择控件）](https://material.io/design/components/selection-controls.html) ✓** 
   - **[Checkbox（单选按钮）](https://material.io/design/components/selection-controls.html#checkboxes) ✓**
-  - **[Radio button](https://material.io/design/components/selection-controls.html#radio-buttons) ✓**
-  - **[Switch](https://material.io/design/components/selection-controls.html#switches) ✓**
-- **[Sliders](https://material.io/design/components/sliders.html) ✓** 
-  - **[Continuous](https://material.io/design/components/sliders.html#continuous-slider) ✓**
-  - **[Discrete](https://material.io/design/components/sliders.html#discrete-slider) ✓**
-- **[Snackbars](https://material.io/design/components/snackbars.html) ✓** (*旧 Material v1*)
-- **[Subheaders](https://material.io/archive/guidelines/components/subheaders.html) ✓** (*旧 Material v1*) 
-  - **[List](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders) ✓**
-  - **[Grid](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders) ✓**
-  - [Menu](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders)
+  - **[Radio button（单选按钮）](https://material.io/design/components/selection-controls.html#radio-buttons) ✓**
+  - **[Switch（切换开关）](https://material.io/design/components/selection-controls.html#switches) ✓**
+- **[Sliders（滑块控件）](https://material.io/design/components/sliders.html) ✓** 
+  - **[Continuous（连续滑块）](https://material.io/design/components/sliders.html#continuous-slider) ✓**
+  - **[Discrete（间续滑块）](https://material.io/design/components/sliders.html#discrete-slider) ✓**
+- **[Snackbars（消息条）](https://material.io/design/components/snackbars.html) ✓** (*旧 Material v1*)
+- **[Subheaders（副标题）](https://material.io/archive/guidelines/components/subheaders.html) ✓** (*旧 Material v1*) 
+  - **[Lists（列表）](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders) ✓**
+  - **[ Grid（网格）](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders) ✓**
+  - [Menu（菜单）](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders)
 - **[Steppers](https://material.io/archive/guidelines/components/steppers.html) ✓** (*旧 Material v1*) 
   - **[Horizontal](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steppers) ✓**
   - **[Vertical](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steppers) ✓**
