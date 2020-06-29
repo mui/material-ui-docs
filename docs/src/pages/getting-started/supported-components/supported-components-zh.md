@@ -78,17 +78,17 @@
   - **[Discrete（间续滑块）](https://material.io/design/components/sliders.html#discrete-slider) ✓**
 - **[Snackbars（消息条）](https://material.io/design/components/snackbars.html) ✓** (*旧 Material v1*)
 - **[Subheaders（副标题）](https://material.io/archive/guidelines/components/subheaders.html) ✓** (*旧 Material v1*) 
-  - **[Lists（列表）](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders) ✓**
-  - **[ Grid（网格）](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders) ✓**
-  - [Menu（菜单）](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders)
-- **[Steppers](https://material.io/archive/guidelines/components/steppers.html) ✓** (*旧 Material v1*) 
-  - **[Horizontal](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steppers) ✓**
-  - **[Vertical](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steppers) ✓**
-  - **[Mobile steps](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steps) ✓**
-- **[Tabs](https://material.io/design/components/tabs.html) ✓** 
-  - **[Fixed tabs](https://material.io/design/components/tabs.html#fixed-tabs) ✓**
-  - **[Scrollable tabs](https://material.io/design/components/tabs.html#scrollable-tabs) ✓**
-- **[Text fields](https://material.io/design/components/text-fields.html) ✓** 
+  - **[Lists（列表副标题）](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders) ✓**
+  - **[ Grid（网格副标题）](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders) ✓**
+  - [Menu（菜单副标题）](https://material.io/archive/guidelines/components/subheaders.html#subheaders-list-subheaders)
+- **[Steppers（步骤条）](https://material.io/archive/guidelines/components/steppers.html) ✓** (*旧 Material v1*) 
+  - **[Horizontal（横向的步骤条）](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steppers) ✓**
+  - **[Vertical（垂直的步骤条）](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steppers) ✓**
+  - **[Mobile steps（移动设备上的步骤条）](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steps) ✓**
+- **[Tabs（选项卡）](https://material.io/design/components/tabs.html) ✓** 
+  - **[Fixed tabs（固定的选项卡）](https://material.io/design/components/tabs.html#fixed-tabs) ✓**
+  - **[Scrollable tabs（可滚动的选项卡）](https://material.io/design/components/tabs.html#scrollable-tabs) ✓**
+- **[Text fields（文本框）](https://material.io/design/components/text-fields.html) ✓** 
   - **[Standard](https://material.io/archive/guidelines/components/text-fields.html) ✓** (旧 Material v1)
   - **[Filled](https://material.io/design/components/text-fields.html#filled-text-field) ✓**
   - **[Outline](https://material.io/design/components/text-fields.html#outlined-text-field) ✓**
