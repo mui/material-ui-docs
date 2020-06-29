@@ -95,7 +95,7 @@ const theme = createMuiTheme({
 });
 ```
 
-请注意，上述方法需要使用 `CssBaseline`。 如果您选择不使用它，您仍然可以通过加入这些 CSS 规则来禁用过渡和动画：
+请注意，若想使用上述方法，您必须使用 `CssBaseline` 使其奏效。 如果您选择不使用它，您仍然可以通过加入这些 CSS 规则来禁用过渡和动画：
 
 ```css
 *, *::before, *::after {
@@ -104,11 +104,11 @@ const theme = createMuiTheme({
 }
 ```
 
-## 我是否必须使用 JSS 给 app 来设置样式呢？
+## 我是否必须使用 JSS 给我的应用程序来设置样式呢？
 
-不用的，JSS 不是一个必须选择。 But this dependency comes built in, so carries no additional bundle size overhead.
+不用的，JSS 不是一个必须选择。 但是它是一个内置的插件，所以使用它并不会产生额外的捆绑包尺寸。
 
-然而，也许您正在为一个已经使用其他样式解决方案的应用程序添加一些 Material-UI 组件，或者已经l熟悉了不同的 API，而不想学习新的 API？ 在这种情况下，请访问 [样式库互用](/guides/interoperability/) 部分，在那里我们展示了使用替代样式库来重新设置 Material-UI 组件的样式是多么简单。
+然而，也许您正在给应用程序添加一些 Material-UI 组件，而应用程序以及使用了其他的样式解决方案，或者您已经熟悉了不同的 API，而不想学习一个新的 API？ 在这种情况下，请访问 [样式库互用](/guides/interoperability/) 部分，在那里我们展示了使用替代样式库来重新设置 Material-UI 组件的样式是多么简单。
 
 ## 内联样式与 CSS 之间我应该怎么选择使用的时机？
 
@@ -341,9 +341,9 @@ function Portal({ children, container }) {
 }
 ```
 
-这个简单的方法可能会启发您，`Portal` 可能会在挂载后重新渲染，因为在任何效果运行之前，refs 都是最新的。 然而，仅仅因为 ref 是最新的并不意味着它会指向定义的实例。 如果 ref 是附着在 ref 转发组件上的话，那么就不会清楚 DOM 节点何时可用。 在上面的例子中，`Portal` 将产生一次效果，但可能不会重新渲染，因为 `ref.current` 的值仍然是 `null`。 This is especially apparent for React.lazy components in Suspense. The above implementation could also not account for a change in the DOM node.
+这个简单的方法可能会启发您，`Portal` 可能会在挂载后重新渲染，因为在任何效果运行之前，refs 都是最新的。 然而，仅仅因为 ref 是最新的并不意味着它会指向定义的实例。 如果 ref 是附着在 ref 转发组件上的话，那么就不会清楚 DOM 节点何时可用。 在上面的例子中，`Portal` 将产生一次效果，但可能不会重新渲染，因为 `ref.current` 的值仍然是 `null`。 这一点对于 Suspense 中的 React.lazy 组件尤为明显。 上述实现也无法说明 DOM 节点的变化。 
 
-This is why we require a prop with the actual DOM node so that React can take care of determining when the `Portal` should re-render:
+综上所述，这就是为什么我们需要一个具有实际 DOM 节点的属性，这样 React 就可以负责确定 `Portal` 何时应该重新渲染。 
 
 ```jsx
 function App() {
@@ -363,9 +363,9 @@ function App() {
 
 ## clsx 依赖什么？
 
-[clsx](https://github.com/lukeed/clsx) is a tiny utility for constructing `className` strings conditionally, out of an object with keys being the class strings, and values being booleans.
+[clsx](https://github.com/lukeed/clsx)是一个小型工具集，用于有条件地从一个对象中构造 `className` 字符串，对象（object）的键是类字符串（class strings），值是布尔值（booleans）。 
 
-Instead of writing:
+不要这样写：
 
 ```jsx
 // let disabled = false, selected = true;
@@ -377,7 +377,7 @@ return (
 );
 ```
 
-你可以这样做：
+您可以这样做：
 
 ```jsx
 import clsx from 'clsx';
