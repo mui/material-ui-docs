@@ -24,7 +24,7 @@ components: TextField
 
 ### Datepickers 日期选择器
 
-示例展示了当 `type="time"` 时的原生的日期选择器 。
+示例展示了当 `type="date"` 时的原生的日期选择器 。
 
 {{"demo": "pages/components/pickers/DatePickers.js"}}
 
