@@ -68,9 +68,9 @@
 - **[Progress indicators（进度条指示）](https://material.io/design/components/progress-indicators.html) ✓** 
   - **[Linear（线性进度条）](https://material.io/design/components/progress-indicators.html#linear-progress-indicators) ✓**
   - **[Circular（环状进度条）](https://material.io/design/components/progress-indicators.html#circular-progress-indicators) ✓**
-  - **[Loading](https://material.io/archive/guidelines/components/progress-activity.html) ✓** (*旧 Material v1*)
-- **[Selection controls](https://material.io/design/components/selection-controls.html) ✓** 
-  - **[Checkbox](https://material.io/design/components/selection-controls.html#checkboxes) ✓**
+  - **[Loading（加载）](https://material.io/archive/guidelines/components/progress-activity.html) ✓** (*旧 Material v1*)
+- **[Selection controls（选择控件）](https://material.io/design/components/selection-controls.html) ✓** 
+  - **[Checkbox（单选按钮）](https://material.io/design/components/selection-controls.html#checkboxes) ✓**
   - **[Radio button](https://material.io/design/components/selection-controls.html#radio-buttons) ✓**
   - **[Switch](https://material.io/design/components/selection-controls.html#switches) ✓**
 - **[Sliders](https://material.io/design/components/sliders.html) ✓** 
