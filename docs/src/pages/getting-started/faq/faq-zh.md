@@ -226,17 +226,17 @@ Lerna 根目录下的 package.json 文件示例：
   }
 ```
 
-## 我的应用程序在服务器上没有正确渲染
+## 我的应用没有在服务器上正确的渲染。
 
-如果您的程序渲染不正常，99% 的情况下都是配置问题： 缺少属性、调用顺序错误或缺少组件 — 服务端渲染对配置的要求是很严格的，要找出问题的最好方法是将您的项目与已经可以正常运行的程序的设置项进行比较。 请逐位查看 [参考实现](/guides/server-rendering/#reference-implementations)。
+如果您的程序渲染不正常，99% 的情况下都是配置问题： 缺少属性、调用顺序错误或缺少组件 — 服务端渲染对配置的要求是很严格的，要找出问题的最好方法是将您的项目与一个已经正常运行的项目配置进行比较。 请逐位查看 [参考实现](/guides/server-rendering/#reference-implementations)。
 
 ### CSS 仅在第一次加载时生效，然后就消失了
 
-CSS 只在页面第一次加载时生成。 那么，连续请求服务器就会导致 CSS 丢失。
+CSS 只在页面第一次加载时生成。 那么，若连续地请求服务器，就会导致 CSS 的丢失。
 
-#### 要采取的行动
+#### 要运行的操作
 
-样式解决方案依赖于缓存，即 *sheets manager*，来为每个组件类只注入一次CSS（如果您使用了两个按钮，则只需要应用一次 CSS）。 您需要为每个请求创建 **一个新的 `sheet` 实例**。
+样式解决方案依赖于缓存，即 *sheets manager*，来为每个组件类只注入一次 CSS（如果您使用了两个按钮，则只需要应用一次按钮的 CSS）。 您需要为每个请求创建 **一个新的 `sheet` 实例**。
 
 *修复示例：*
 
@@ -247,20 +247,20 @@ CSS 只在页面第一次加载时生成。 那么，连续请求服务器就会
 
 function handleRender(req, res) {
 
-+ // 创建一个 sheets 实例.
++ // 创建一个 sheets 实例。
 + const sheets = new ServerStyleSheets();
 
   //…
 
-  // 将组件渲染成字符串。
+  // 将组件渲染成一个字符串。
   const html = ReactDOMServer.renderToString(
 ```
 
-### React class name hydration mismatch
+### React 类名渲染不匹配
 
-客户端和服务端之间存在类名不匹配的情况。 可能在第一次请求时会出现这种情况。 另一个症状是，在初始页面加载和下载客户端脚本之间，样式会发生变化。
+您会遇到客户端和服务端之间存在类名不匹配的情况。 可能在第一次请求时会出现这种情况。 另一个征兆是，在初始页面加载和下载客户端脚本之间，样式会发生变化。
 
-#### 要采取的行动
+#### 要运行的操作
 
 类名值依赖于 [类名生成器](/styles/advanced/#class-names) 的概念。 整个页面需要用**一个类名生成器**来渲染。 这个生成器需要在服务端和客户端上的行为一致。 就像这样：
 
@@ -269,7 +269,7 @@ function handleRender(req, res) {
 *修复示例：*
 
 ```diff
--  //创建一个新的类名生成器。
+-  // 创建一个新的类名生成器。
 -const generateClassName = createGenerateClassName();
 
 function handleRender(req, res) {
@@ -279,11 +279,11 @@ function handleRender(req, res) {
 
   //…
 
-  // 将组件渲染为字符串。
+  // 将组件渲染为一个字符串。
   const html = ReactDOMServer.renderToString(
 ```
 
-- 您需要验证您的客户端和服务端运行的 Material-UI 的**版本** 是否完全相同。 即使是次要版本的不匹配也可能导致样式问题。 要检查版本号，请在构建应用程序的环境和部署环境中运行 `npm list @material-ui/core`。
+- 您需要验证您的客户端和服务端运行的 Material-UI 的**版本** 是否完全相同。 即使是小小的版本的不匹配也可能导致样式问题。 若想检查版本号，您可以在搭建应用程序的环境以及部署环境中都运行 `npm list @material-ui/core`。
   
     您也可以通过在 package.json 的依赖项中指定特定的 MUI 版本来确保在不同环境中使用相同的版本。
 
