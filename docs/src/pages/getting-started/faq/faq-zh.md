@@ -146,27 +146,27 @@ const element = ref.current;
 
 如果您在控制台中看到类似下面的警告消息，那么您可能已经在页面上初始化了多个 `@material-ui/styles` 实例。
 
-> 看起来在这个应用程序中初始化了多个 `@material-ui/styles` 实例。 这可能会导致主题传播问题、类名称损坏、专一性问题，并使你的应用程序尺寸无端变大。 
+> It looks like there are several instances of `@material-ui/styles` initialized in this application. This may cause theme propagation issues, broken class names, specificity issues, and make your application bigger without a good reason. 
 
 ### 可能的原因
 
 出现这些问题通常有几个常见的原因：
 
-- 在您的依赖关系中还有一个 `@material-ui/styles` 库。
-- 您的项目是 monorepo 结构（例如，lerna，yarn workspaces），并且 `@material-ui/styles` 模块是多个包中的依赖（与前一个包或多或少相同）。
+- 在您的依赖包中还存在另一个 `@material-ui/styles` 库。
+- 您的项目是 monorepo 结构（例如，lerna，yarn workspaces），并且有多个包依赖着 `@material-ui/styles` 模块（这与前一个包或多或少相同）。
 - 您有几个使用 `@material-ui/styles` 的应用程序在同一页面上运行（例如，webpack 中的几个入口点被加载在同一页面上）。
 
-### 在 node_modules 中重复的模块。 
+### 在 node_modules 中重复的模块
 
-如果您认为问题可能出现在您的依赖关系中的 @material-ui/styles 模块的重复，那么有几种方法可以检查。 您可以在应用程序文件夹中使用 `npm ls @material-ui/styles`、`yarn list @material-ui/styles` 或 `find -L ./node_modules | grep /@material-ui/styles/package.json` 命令来进行检查。
+如果您认为问题可能出现在您的依赖关系中的 @material-ui/styles 模块的重复，那么有几种方法可以检查。 您可以在应用程序文件夹中使用 `npm ls @material-ui/styles`、`yarn list @material-ui/styles` 或 `find -L ./node_modules | grep /@material-ui/styles/package.json` 这些命令行来检查。
 
 如果使用了这些命令之后都没有发现重复的依赖，请尝试分析您的捆绑包中是否有多个 @material-ui/styles 实例。 您可以直接去检查捆绑包的源代码，或者使用 [source-map-explorer](https://github.com/danvk/source-map-explorer) 或 [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer) 这样的工具来帮助检查。
 
-如果您确定当前遇到的问题是模块重复，那么您可以尝试解决以下几个问题： 
+如果您确定当前遇到的问题是模块重复，那么您可以尝试这样解决：
 
-如果您正在使用的是 npm，那么您可以尝试运行 `npm dedupe` 命令。 这条命令将会搜索本地的依赖关系，并试图通过将共同的依赖关系移到树的更上层来简化结构。 
+如果您正在使用的是 npm，那么您可以尝试运行 `npm dedupe` 命令。 这条命令将会搜索本地的依赖关系，并试图通过将共同的依赖包移到树的更上层，这样来简化结构。
 
-如果您使用的是 webpack，您可以更改 [解析](https://webpack.js.org/configuration/resolve/#resolve-modules) @material-ui/styles 模块的方式。 您可以通过覆盖 webpack 查找依赖项的默认顺序的方法来使您的应用程序中的 node_modules 比默认的 node 解析模块顺序更优先进行渲染。 
+如果您使用的是 webpack，您可以更改 [解析](https://webpack.js.org/configuration/resolve/#resolve-modules) @material-ui/styles 模块的方式。 您可以使用覆盖 webpack 查找依赖项的默认顺序这个方法，这样应用程序中的 node_modules 比默认的 node module 解析顺序更优先地进行渲染。
 
 ```diff
   resolve: {
