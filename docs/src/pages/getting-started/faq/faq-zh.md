@@ -238,7 +238,7 @@ CSS 只在页面第一次加载时生成。 那么，连续请求服务器就会
 
 样式解决方案依赖于缓存，即 *sheets manager*，来为每个组件类只注入一次CSS（如果您使用了两个按钮，则只需要应用一次 CSS）。 您需要为每个请求创建 **一个新的 `sheet` 实例**。
 
-*修复的例子：*
+*修复示例：*
 
 ```diff
 -// 创建一个 sheets 实例
@@ -266,7 +266,7 @@ function handleRender(req, res) {
 
 - 您需要为每个请求提供一个新的类名生成器。 但是您不应该在不同的请求之间共享 `createGenerateClassName()`：
 
-*修复的例子：*
+*修复示例：*
 
 ```diff
 -  //创建一个新的类名生成器。
@@ -283,11 +283,11 @@ function handleRender(req, res) {
   const html = ReactDOMServer.renderToString(
 ```
 
-- You need to verify that your client and server are running the **exactly the same version** of Material-UI. It is possible that a mismatch of even minor versions can cause styling problems. 要检查版本号，请在构建应用程序的环境中以及部署环境中运行 `npm list @material-ui/core`。
+- 您需要验证您的客户端和服务端运行的 Material-UI 的**版本** 是否完全相同。 即使是次要版本的不匹配也可能导致样式问题。 要检查版本号，请在构建应用程序的环境和部署环境中运行 `npm list @material-ui/core`。
   
-    You can also ensure the same version in different environments by specifying a specific MUI version in the dependencies of your package.json.
+    您也可以通过在 package.json 的依赖项中指定特定的 MUI 版本来确保在不同环境中使用相同的版本。
 
-*修复示例 (package.json）：*
+*修复示例（package.json）：*
 
 ```diff
   "dependencies": {
@@ -299,15 +299,15 @@ function handleRender(req, res) {
   },
 ```
 
-- You need to make sure that the server and the client share the same `process.env.NODE_ENV` value.
+- 您需要确保服务端和客户端之间共享的是相同的 `process.env.NODE_ENV` 值。
 
 ## 为什么我的应用程序看到的颜色和文档里的颜色大相径庭？
 
-文档网站使用了一个自定义的主题。 因此，调色板和 Material-UI 传播的默认的主题是截然不同的。 请参考[这页](/customization/theming/) 来了解自定义主题。
+这是因为文档网站使用了一个自定义的主题。 因此，调色板和 Material-UI 的默认的主题是截然不同的。 请参考 [这个页面](/customization/theming/) 来了解自定义主题。
 
-## 为什么组件X 需要一个 DOM 节点，而不是 ref 对象？
+## 为什么组件 X 需要属性中的 DOM 节点而不是 ref 对象？
 
-Components like the [Portal](/api/portal/#props) or [Popper](/api/popper/#props) require a DOM node in the `container` or `anchorEl` prop respectively. It seems convenient to simply pass a ref object in those props and let Material-UI access the current value. This works in a simple scenario:
+像 [Portal](/api/portal/#props) 或 [Popper](/api/popper/#props) 这样的组件分别需要 `container` 或 `anchorEl` 属性中的 DOM 节点。 所以只需在这些属性中传递一个 ref 对象并让 Material-UI 访问当前值是很方便的。 这在一个简单的方案中就可以实现：
 
 ```jsx
 function App() {
@@ -324,7 +324,7 @@ function App() {
 }
 ```
 
-where `Portal` would only mount the children into the container when `container.current` is available. Here is a naive implementation of Portal:
+其中，`Portal` 仅在 `container.current` 可用时才会将其子项挂载到容器中。 下面是一个简单的 Portal 实现例子：
 
 ```jsx
 function Portal({ children, container }) {
@@ -341,7 +341,7 @@ function Portal({ children, container }) {
 }
 ```
 
-With this simple heuristic `Portal` might re-render after it mounts because refs are up-to-date before any effects run. However, just because a ref is up-to-date doesn't mean it points to a defined instance. If the ref is attached to a ref forwarding component it is not clear when the DOM node will be available. In the example above, the `Portal` would run an effect once, but might not re-render because `ref.current` is still `null`. This is especially apparent for React.lazy components in Suspense. The above implementation could also not account for a change in the DOM node.
+这个简单的方法可能会启发您，`Portal` 可能会在挂载后重新渲染，因为在任何效果运行之前，refs 都是最新的。 然而，仅仅因为 ref 是最新的并不意味着它会指向定义的实例。 如果 ref 是附着在 ref 转发组件上的话，那么就不会清楚 DOM 节点何时可用。 在上面的例子中，`Portal` 将产生一次效果，但可能不会重新渲染，因为 `ref.current` 的值仍然是 `null`。 This is especially apparent for React.lazy components in Suspense. The above implementation could also not account for a change in the DOM node.
 
 This is why we require a prop with the actual DOM node so that React can take care of determining when the `Portal` should re-render:
 
