@@ -49,7 +49,7 @@
 
 Material-UI CE（社区版本）从最开始就是 100% 的开源项目（MIT 开源协议）并且永远都会是。 开发者可以通过 Material-UI 的社区维护策略来确保选择他们的 React 应用是可靠的。 Material-UI 团队会定期发布新版本，修复 bug，并非常欢迎社区的拉取请求（pull requests）。
 
-Given the reality of time and resource constraints, as well as the desire to keep innovating, over time it becomes necessary to shift focus to newer versions of the framework ([our release schedule](https://material-ui.com/versions/#release-frequency)), while making the transition to newer versions as smooth as possible, including publishing migration guides such as [this one for v4](/guides/migration-v3/). The open-source community is always welcome to submit new features and bug fixes as well.
+我们考虑到时间和资源限制的现实，以及需要不断创新的愿望，所以随着时间的推移，我们有必要将更新的重点转移到框架的最新版本（[我们的版本发布时间表](https://material-ui.com/versions/#release-frequency)），同时让用户尽可能平稳地过渡到新的版本，所以我们做了包括迁移指南在内的多个工作，例如 [这个 v4](/guides/migration-v3/) 迁移指南。 我们始终欢迎开源社区提交新特性和错误修复。
 
 The current status of each Material-UI version is as follows:
 
