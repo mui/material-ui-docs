@@ -27,52 +27,52 @@
 
 在很多情况下，您可能最终会意外地使用两个类名生成器：
 
-- 比如你一不小心 **打包**了 两个版本的 Material-UI。 你可能错误地将一个依赖和 material-ui 设置为同版本依赖了。
-- You are using `StylesProvider` for a **subset** of your React tree.
-- 您正在使用打包的代码分割功能，这会生成多个 class 名字
+- 您不小心**打包**了两个版本的 Material-UI。 您没有正确设置某个和 material-ui 的同等依赖的依赖包。
+- 对于你的 React 树控件而言，你在使用 `JssProvider` 构建一个 **subject（分支）**。
+- 您正在使用打包根据，而它拆分代码的方式导致创建了多个类名生成器的实例。
 
 > 如果你正使用的 webpack 带有 [SplitChunksPlugin](https://webpack.js.org/plugins/split-chunks-plugin/) 插件 ，请尝试在设置里的 [`optimizations` 下配置 `runtimeChunk`](https://webpack.js.org/configuration/optimization/#optimization-runtimechunk) 。
 
 总的来说，您只需要在每个 Material-UI 应用程序的组件树顶部使用 [`StylesProvider`](/styles/api/#stylesprovider) 组件进行包装，**并在它们之间共享一个单一的类名生成器**，就可以很容易地解决这个问题。
 
-## 为什么当打开Modal（模态框）时，fixed positioned（位置固定的）元素会移动？
+## 为什么当打开一个 Modal（模态框）时，位置固定的元素会移动？
 
-当Modal（模态框）打开时，滚动会被禁止。 这样就能够阻止用户与下层背景内容进行交互以确保模态框应该是唯一的交互内容。 然而，移除滚动条会使您的**固定定位的元素**移动。 在这种情况下，您可以应用全局 `.mui-fixed` 类来通知 Material-UI 处理这些元素。
+当模态框打开的那一刹那，滚动行为就会被禁止。 这样就能够阻止用户与下层背景内容进行交互，而模态框应该是唯一的交互内容。 然而，移除滚动条会移动一些**固定位置的元素**。 在这种情况下，您可以应用全局 `.mui-fixed` 类名来告知 Material-UI 去处理这些元素。
 
 ## 如何在全局禁用 ripple effect（涟漪效果）？
 
-涟漪效果完全来自` BaseButton `零件。 您可以通过在您的主题中提供以下内容，来全局地禁用涟漪效果：
+涟漪效果完全来自 `BaseButton` 组件。 您可以通过在您的主题中提供以下内容，来全局地禁用涟漪效果：
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
 
 const theme = createMuiTheme({
   props: {
-    // Name of the component ⚛️
+    // 组件的名字 ⚛️
     MuiButtonBase: {
-      // The properties to apply
-      disableRipple: true, // No more ripple, on the whole application 💣!
+      // 需要应用的属性
+      disableRipple: true, // 在整个应用中都不会有涟漪效果 💣！
     },
   },
 });
 ```
 
-## 如何禁用全局过渡？
+## 如何禁用全局过渡动画？
 
-Material-UI 使用相同的主题助手来创建所有的过渡。 因此，您可以通过覆盖主题助手来禁用所有的过渡：
+Material-UI 使用相同的主题助手来创建其所有的过渡动画。 因此，您可以通过覆盖主题助手来禁用所有的过渡：
 
 ```js
 import { createMuiTheme } from '@material-ui/core';
 
 const theme = createMuiTheme({
   transitions: {
-    // 这样就得到了全局的 `transition: none;`
+    // 这样就设定了全局的 `transition: none;`
     create: () => 'none',
   },
 });
 ```
 
-在视觉测试过程中禁用过渡，或者在低端设备上提高性能，这样做都是很有用的。
+而在视觉测试过程，或者在低端设备上提高性能的时候，禁用过渡动画是很有帮助的。
 
 您可以更进一步地禁用所有的过渡和动画效果。
 
@@ -206,9 +206,9 @@ Lerna 根目录下的 package.json 文件示例：
 }
 ```
 
-### Running multiple applications on one page
+### 在一个页面上运行多个应用程序
 
-If you have several applications running on one page, consider using one @material-ui/styles module for all of them. If you are using webpack, you can use [CommonsChunkPlugin](https://webpack.js.org/plugins/commons-chunk-plugin/) to create an explicit [vendor chunk](https://webpack.js.org/plugins/commons-chunk-plugin/#explicit-vendor-chunk), that will contain the @material-ui/styles module:
+如果您在一个页面上需要运行多个程序，那么请考虑为所有程序使用一个 @material-ui/styles 模块。 如果您正在使用 webpack，那么您可以使用 [CommonsChunkPlugin](https://webpack.js.org/plugins/commons-chunk-plugin/) 来创建一个显式的 [vendor chunk](https://webpack.js.org/plugins/commons-chunk-plugin/#explicit-vendor-chunk)，其中将包含 @material-ui/styles 模块：
 
 ```diff
   module.exports = {
@@ -228,44 +228,45 @@ If you have several applications running on one page, consider using one @materi
 
 ## 我的应用程序在服务器上没有正确渲染
 
-If it doesn't work, in 99% of cases it's a configuration issue. A missing property, a wrong call order, or a missing component – server-side rendering is strict about configuration, and the best way to find out what's wrong is to compare your project to an already working setup. Check out the [reference implementations](/guides/server-rendering/#reference-implementations), bit by bit.
+如果您的程序渲染不正常，99% 的情况下都是配置问题： 缺少属性、调用顺序错误或缺少组件 — 服务端渲染对配置的要求是很严格的，要找出问题的最好方法是将您的项目与已经可以正常运行的程序的设置项进行比较。 请逐位查看 [参考实现](/guides/server-rendering/#reference-implementations)。
 
-### CSS works only on first load then is missing
+### CSS 仅在第一次加载时生效，然后就消失了
 
-The CSS is only generated on the first load of the page. Then, the CSS is missing on the server for consecutive requests.
+CSS 只在页面第一次加载时生成。 那么，连续请求服务器就会导致 CSS 丢失。
 
 #### 要采取的行动
 
-The styling solution relies on a cache, the *sheets manager*, to only inject the CSS once per component type (if you use two buttons, you only need the CSS of the button one time). You need to create **a new `sheets` instance for each request**.
+样式解决方案依赖于缓存，即 *sheets manager*，来为每个组件类只注入一次CSS（如果您使用了两个按钮，则只需要应用一次 CSS）。 您需要为每个请求创建 **一个新的 `sheet` 实例**。
 
-*example of fix:*
+*修复的例子：*
 
 ```diff
--// Create a sheets instance.
+-// 创建一个 sheets 实例
+
 -const sheets = new ServerStyleSheets();
 
 function handleRender(req, res) {
 
-+ // Create a sheets instance.
++ // 创建一个 sheets 实例.
 + const sheets = new ServerStyleSheets();
 
   //…
 
-  // Render the component to a string.
+  // 将组件渲染成字符串。
   const html = ReactDOMServer.renderToString(
 ```
 
 ### React class name hydration mismatch
 
-There is a class name mismatch between the client and the server. It might work for the first request. Another symptom is that the styling changes between initial page load and the downloading of the client scripts.
+客户端和服务端之间存在类名不匹配的情况。 可能在第一次请求时会出现这种情况。 另一个症状是，在初始页面加载和下载客户端脚本之间，样式会发生变化。
 
 #### 要采取的行动
 
-The class names value relies on the concept of [class name generator](/styles/advanced/#class-names). The whole page needs to be rendered with **a single generator**. This generator needs to behave identically on the server and on the client. 就像这样：
+类名值依赖于 [类名生成器](/styles/advanced/#class-names) 的概念。 整个页面需要用**一个类名生成器**来渲染。 这个生成器需要在服务端和客户端上的行为一致。 就像这样：
 
-- You need to provide a new class name generator for each request. But you shouldn't share a `createGenerateClassName()` between different requests:
+- 您需要为每个请求提供一个新的类名生成器。 但是您不应该在不同的请求之间共享 `createGenerateClassName()`：
 
-*example of fix:*
+*修复的例子：*
 
 ```diff
 -  //创建一个新的类名生成器。
