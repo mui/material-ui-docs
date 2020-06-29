@@ -178,13 +178,13 @@ const element = ref.current;
 
 ### 和 Learn 一起使用
 
-如果您想要让 @material-ui/styles 在 Lerna monorepo 中跨包运行，一个可能的修复方法是将 [hoist](https://github.com/lerna/lerna/blob/master/doc/hoist.md) 的共享依赖项移动到 monorepo 文件的根部。 您可以尝试使用 - -hoist 标识运行引导选项。 
+如果您想要让 @material-ui/styles 在 Lerna monorepo 中跨包运行，一个可行的修复方法是 [提升（hoist）](https://github.com/lerna/lerna/blob/master/doc/hoist.md)共享的依赖包到 monorepo 文件的根部。 您可以尝试使用 --hoist 标识运行引导的选项。
 
 ```sh
 lerna bootstrap --hoist
 ```
 
-另外，您也可以在 package.json 文件中删除 @material-ui/styles 项，然后手动将它移动到顶层 package.json 文件中。 
+另外，您也可以从 package.json 文件中删除 @material-ui/styles 项，然后手动将它移动到您顶层的 package.json 文件中。
 
 Lerna 根目录下的 package.json 文件示例： 
 
@@ -208,7 +208,7 @@ Lerna 根目录下的 package.json 文件示例：
 
 ### 在一个页面上运行多个应用程序
 
-如果您在一个页面上需要运行多个程序，那么请考虑为所有程序使用一个 @material-ui/styles 模块。 如果您正在使用 webpack，那么您可以使用 [CommonsChunkPlugin](https://webpack.js.org/plugins/commons-chunk-plugin/) 来创建一个显式的 [vendor chunk](https://webpack.js.org/plugins/commons-chunk-plugin/#explicit-vendor-chunk)，其中将包含 @material-ui/styles 模块：
+如果您在一个页面上需要运行多个程序，那么请考虑在所有程序中使用一个 @material-ui/styles 模块。 如果您正在使用 webpack，那么您可以使用 [CommonsChunkPlugin](https://webpack.js.org/plugins/commons-chunk-plugin/) 来创建一个显式的 [第三方代码块（vendor chunk）](https://webpack.js.org/plugins/commons-chunk-plugin/#explicit-vendor-chunk)，其中将包含 @material-ui/styles 模块：
 
 ```diff
   module.exports = {
