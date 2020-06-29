@@ -108,27 +108,27 @@ const theme = createMuiTheme({
 
 不用的，JSS 不是一个必须选择。 但是它是一个内置的插件，所以使用它并不会产生额外的捆绑包尺寸。
 
-然而，也许您正在给应用程序添加一些 Material-UI 组件，而应用程序以及使用了其他的样式解决方案，或者您已经熟悉了不同的 API，而不想学习一个新的 API？ 在这种情况下，请访问 [样式库互用](/guides/interoperability/) 部分，在那里我们展示了使用替代样式库来重新设置 Material-UI 组件的样式是多么简单。
+然而，也许您正在给应用程序添加一些 Material-UI 组件，而应用程序以及使用了其他的样式解决方案，或者您已经熟悉了不同的 API，而不想学习一个新的 API？ 在这种情况下，请访问 [样式库互用](/guides/interoperability/) 章节，在那你可以发现我们使用了一些替代样式库来重新设置 Material-UI 组件的样式，而这是多么的简单。
 
 ## 内联样式与 CSS 之间我应该怎么选择使用的时机？
 
-根据经验，仅对动态样式属性使用内联样式。 CSS 替代方案也有更多优势，例如：
+根据经验，仅对动态的样式属性使用内联样式。 CSS 的替代方案也有诸多优势，例如：
 
 - 自动前缀
 - 更好地调试
 - 媒体查询
-- 关键帧
+- keyframes
 
 ## 我应该怎么使用 react-router？
 
-在我们的指南中详细介绍了与 react-router、Gatsby 或 Next.js 等 [第三方路由库](/guides/composition/#routing-libraries) 的集成。
+在我们的指南中详细介绍了如何与 react-router、Gatsby 或 Next.js 这样的 [第三方路由库](/guides/composition/#routing-libraries) 整合。
 
 ## 我应该怎么访问 DOM 元素？
 
-所有应该在 DOM 中渲染内容的 Material-UI 组件都会都将其 ref 转发给底层的 DOM 组件。 这意味着您可以通过读取附加在 Material-UI 组件上的 ref 来获取 DOM 元素。 
+所有应该在 DOM 中渲染内容的 Material-UI 组件都会都将其 ref 转发给底层的 DOM 组件。 这意味着您可以通过读取附加在 Material-UI 组件上的 ref 来获取 DOM 元素。
 
 ```jsx
-// 或者为一个 ref setter 函数
+// 或者使用一个 ref setter 函数
 const ref = React.createRef();
 // 渲染
 <Button ref={ref} />;
@@ -136,11 +136,11 @@ const ref = React.createRef();
 const element = ref.current;
 ```
 
-如果您对相关 Material-UI 组件是否转发了它的 ref 存在疑问的时候，你可以查看“Props”下的 API 文档，例如 [Button API](/api/button/#props)
+如果您对相关 Material-UI 组件是否转发了它的 ref 存在疑问的时候，你可以查看“Props”下的 API 文档，例如 [Button API](/api/button/#props) 包含了
 
 > ref 会被转发到根元素。
 
-这就表明您可以使用 ref 来访问这个 DOM 元素。
+这就表明您可以使用一个 ref 来访问这个 DOM 元素。
 
 ## 我的页面上有多个样式实例。
 
