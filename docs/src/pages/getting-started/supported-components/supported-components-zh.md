@@ -103,6 +103,6 @@
     - **Icons（图标）✓**
     - 字符计数器（Character counter）
 - **[Toolbars（工具栏）](https://material.io/archive/guidelines/components/toolbars.html) ✓** (旧 Material v1)
-- **[Tooltips](https://material.io/design/components/tooltips.html) ✓** 
-  - **桌面 ✓**
-  - **移动设备(Mobile) ✓**
+- **[Tooltips（工具提示）](https://material.io/design/components/tooltips.html) ✓** 
+  - **Desktop（桌面 ）✓**
+  - **移动设备（Mobile）✓**
