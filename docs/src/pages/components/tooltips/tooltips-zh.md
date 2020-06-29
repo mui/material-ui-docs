@@ -56,27 +56,27 @@ const MyComponent = React.forwardRef(function MyComponent(props, ref) {
 
 {{"demo": "pages/components/tooltips/TriggersTooltips.js"}}
 
-## 可控的文字提示
+## 可控的工具提示
 
-使用 `open`， `onOpen` 和 `onClose` 这些属性，您可以控制文字提示的行为。
+使用 `open`， `onOpen` 和 `onClose` 这些属性，您可以控制工具提示的行为。
 
 {{"demo": "pages/components/tooltips/ControlledTooltips.js"}}
 
 ## 可变的宽度
 
-为了保证可阅读性，`文字提示组件` 默认将较长的文字折行。
+为了保证可阅读性，`工具提示组件` 默认将较长的文字折行。
 
 {{"demo": "pages/components/tooltips/VariableWidth.js"}}
 
 ## 交互式
 
-文字提示可以是可交互的。 若用户在 `leaveDelay` 过期之前将鼠标悬停在文字提示上时，它则不会被关闭。
+工具提示可以是可交互的。 若用户在 `leaveDelay` 过期之前将鼠标悬停在工具提示上时，它则不会被关闭。
 
 {{"demo": "pages/components/tooltips/InteractiveTooltips.js"}}
 
 ## 禁用的元素
 
-默认情况下，被禁用的元素（如 `<Button>`）不会触发用户交互行为，因此 hover 等普通的事件不会激活 `文字提示组件` 的显示。 若想容纳已禁用的元素激活文字提示，请添加一个简单的包装元素，如 `span`。
+默认情况下，被禁用的元素（如 `<Button>`）不会触发用户交互行为，因此 hover 等普通的事件不会激活`工具提示`的显示。 若想容纳已禁用的元素激活工具提示，请添加一个简单的包装元素，如 `span`。
 
 > ⚠️ 为了在 Safari 中正常显示，在文字提示的包装组件中，您至少需要一个 display 为 block 或 flex 的元素。
 
@@ -102,7 +102,7 @@ const MyComponent = React.forwardRef(function MyComponent(props, ref) {
 
 ## 显示和隐藏组件
 
-一般情况下，当用户的鼠标悬停在元素上时，文字提示会立即显示，而用户的鼠标离开当前元素时，它则会立即隐藏。 您也可以使用 `enterDelay` 和 `leaveDelay` 属性来控制显示和隐藏文字提示的延迟，请参考以上“可控的文字提示”的演示。
+一般情况下，当用户的鼠标悬停在元素上时，工具提示会立即显示，而用户的鼠标离开当前元素时，它则会立即隐藏。 您也可以使用 `enterDelay` 和 `leaveDelay` 属性来控制显示和隐藏文字提示的延迟，请参考以上“可控的工具提示”的演示。
 
 在移动设备上使用时，用户长按元素就会显示出文字提示，并且持续 1500ms 之后就会自动隐藏。 您可以使用 `disableTouchListener` 属性禁用此功能。
 
