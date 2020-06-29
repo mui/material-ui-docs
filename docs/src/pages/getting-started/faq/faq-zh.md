@@ -158,15 +158,15 @@ const element = ref.current;
 
 ### 在 node_modules 中重复的模块。 
 
-如果您认为问题可能出现在您的依赖关系中的 @material-ui/styles 模块的重复，那么有几种方法可以检查。 You can use `npm ls @material-ui/styles`, `yarn list @material-ui/styles` or `find -L ./node_modules | grep /@material-ui/styles/package.json` commands in your application folder.
+如果您认为问题可能出现在您的依赖关系中的 @material-ui/styles 模块的重复，那么有几种方法可以检查。 您可以在应用程序文件夹中使用 `npm ls @material-ui/styles`、`yarn list @material-ui/styles` 或 `find -L ./node_modules | grep /@material-ui/styles/package.json` 命令来进行检查。
 
-If none of these commands identified the duplication, try analyzing your bundle for multiple instances of @material-ui/styles. You can just check your bundle source, or use a tool like [source-map-explorer](https://github.com/danvk/source-map-explorer) or [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer).
+如果使用了这些命令之后都没有发现重复的依赖，请尝试分析您的捆绑包中是否有多个 @material-ui/styles 实例。 您可以直接去检查捆绑包的源代码，或者使用 [source-map-explorer](https://github.com/danvk/source-map-explorer) 或 [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer) 这样的工具来帮助检查。
 
-If you identified that duplication is the issue that you are encountering there are several things you can try to solve it:
+如果您确定当前遇到的问题是模块重复，那么您可以尝试解决以下几个问题： 
 
-If you are using npm you can try running `npm dedupe`. This command searches the local dependencies and tries to simplify the structure by moving common dependencies further up the tree.
+如果您正在使用的是 npm，那么您可以尝试运行 `npm dedupe` 命令。 这条命令将会搜索本地的依赖关系，并试图通过将共同的依赖关系移到树的更上层来简化结构。 
 
-If you are using webpack, you can change the way it will [resolve](https://webpack.js.org/configuration/resolve/#resolve-modules) the @material-ui/styles module. You can overwrite the default order in which webpack will look for your dependencies and make your application node_modules more prioritized than default node module resolution order:
+如果您使用的是 webpack，您可以更改 [解析](https://webpack.js.org/configuration/resolve/#resolve-modules) @material-ui/styles 模块的方式。 您可以通过覆盖 webpack 查找依赖项的默认顺序的方法来使您的应用程序中的 node_modules 比默认的 node 解析模块顺序更优先进行渲染。 
 
 ```diff
   resolve: {
@@ -176,15 +176,15 @@ If you are using webpack, you can change the way it will [resolve](https://webpa
   }
 ```
 
-### Usage with Lerna
+### 和 Learn 一起使用
 
-One possible fix to get @material-ui/styles to run in a Lerna monorepo across packages is to [hoist](https://github.com/lerna/lerna/blob/master/doc/hoist.md) shared dependencies to the root of your monorepo file. Try running the bootstrap option with the --hoist flag.
+如果您想要让 @material-ui/styles 在 Lerna monorepo 中跨包运行，一个可能的修复方法是将 [hoist](https://github.com/lerna/lerna/blob/master/doc/hoist.md) 的共享依赖项移动到 monorepo 文件的根部。 您可以尝试使用 - -hoist 标识运行引导选项。 
 
 ```sh
 lerna bootstrap --hoist
 ```
 
-Alternatively, you can remove @material-ui/styles from your package.json file and hoist it manually to your top-level package.json file.
+另外，您也可以在 package.json 文件中删除 @material-ui/styles 项，然后手动将它移动到顶层 package.json 文件中。 
 
 Example of a package.json file in a Lerna root folder
 
