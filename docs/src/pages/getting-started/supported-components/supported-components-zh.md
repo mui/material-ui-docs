@@ -89,20 +89,20 @@
   - **[Fixed tabs（固定的选项卡）](https://material.io/design/components/tabs.html#fixed-tabs) ✓**
   - **[Scrollable tabs（可滚动的选项卡）](https://material.io/design/components/tabs.html#scrollable-tabs) ✓**
 - **[Text fields（文本框）](https://material.io/design/components/text-fields.html) ✓** 
-  - **[Standard](https://material.io/archive/guidelines/components/text-fields.html) ✓** (旧 Material v1)
-  - **[Filled](https://material.io/design/components/text-fields.html#filled-text-field) ✓**
-  - **[Outline](https://material.io/design/components/text-fields.html#outlined-text-field) ✓**
-  - [Types](https://material.io/design/components/text-fields.html#input-types): 
-    - **Single-line ✓**
-    - **Multi-line ✓**
-    - Text-area
-    - **Full-width ✓**
-  - [Assistive elements:](https://material.io/design/components/text-fields.html#anatomy) 
-    - **Helper text ✓**
-    - **Error message ✓**
-    - **图标 ✓**
-    - Character counter
-- **[Toolbars](https://material.io/archive/guidelines/components/toolbars.html) ✓** (旧 Material v1)
+  - **[Standard（标准的文本框）](https://material.io/archive/guidelines/components/text-fields.html) ✓** (旧 Material v1)
+  - **[Filled（填充的文本框）](https://material.io/design/components/text-fields.html#filled-text-field) ✓**
+  - **[Outline（描边的文本框）](https://material.io/design/components/text-fields.html#outlined-text-field) ✓**
+  - [类型](https://material.io/design/components/text-fields.html#input-types): 
+    - **Single-line（单行文本框）✓**
+    - **Multi-line（多行文本框）✓**
+    - Text-area（文本区域）
+    - **Full-width（全宽文本框）✓**
+  - [Assistive elements（辅助的元素）：](https://material.io/design/components/text-fields.html#anatomy) 
+    - **Helper text（帮助文本）✓**
+    - **Error message（错误消息）✓**
+    - **Icons（图标）✓**
+    - 字符计数器（Character counter）
+- **[Toolbars（工具栏）](https://material.io/archive/guidelines/components/toolbars.html) ✓** (旧 Material v1)
 - **[Tooltips](https://material.io/design/components/tooltips.html) ✓** 
   - **桌面 ✓**
   - **移动设备(Mobile) ✓**
