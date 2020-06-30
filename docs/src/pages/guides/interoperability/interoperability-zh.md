@@ -2,7 +2,7 @@
 
 <p class="description">当您可以使用 Materal-UI 提供的基于 JSS 的样式解决方案来装饰应用程序，也可以用您已经熟知和喜欢的工具（从纯 CSS 到 styled-components）。</p>
 
-本指南旨在归档当前比较流行的一些替代方案，但是您会发现在这里运用的法则也可以在其他库里适用。 我们为以下的样式方案提供了一些示例：
+本指南旨在归档当前比较流行的一些替代方案，但是您会发现在这里运用的法则，也可以在其他库里适用。 我们为以下的样式方案提供了一些示例：
 
 - [纯 CSS](#plain-css)
 - [全局 CSS](#global-css)
@@ -13,7 +13,7 @@
 
 ## 纯 CSS
 
-没有什么特别花哨的，只是普通的旧版 CSS。
+没有什么特别花哨的，只是纯 CSS。
 
 {{"demo": "pages/guides/interoperability/StyledComponents.js", "hideToolbar": true}}
 
@@ -43,16 +43,16 @@ import './PlainCssButton.css';
 export default function PlainCssButton() {
   return (
     <div>
-      <Button>Default</Button>
-      <Button className="button">Customized</Button>
+      <Button>默认的按钮</Button>
+      <Button className="button">自定义按钮</Button>
     </div>
   );
 }
 ```
 
-### Controlling priority ⚠️
+### 控制的优先权 ⚠️
 
-**请注意：** JSS 在 `<head>` 底部注入其样式表。 If you don't want to mark style attributes with **!important**, you need to change [the CSS injection order](/styles/advanced/#css-injection-order), as in the demo:
+**请注意：** JSS 在 `<head>` 底部注入其样式表。 如果您不想使用 **!important** 来标记样式属性的话，则需要更改 [CSS 的注入顺序](/styles/advanced/#css-injection-order)，如下所示：
 
 ```jsx
 import { StylesProvider } from '@material-ui/core/styles';
@@ -142,7 +142,7 @@ export default function GlobalCssButton() {
 
 ### Controlling priority ⚠️
 
-**请注意：** JSS 在 `<head>` 底部注入其样式表。 If you don't want to mark style attributes with **!important**, you need to change [the CSS injection order](/styles/advanced/#css-injection-order), as in the demo:
+**请注意：** JSS 在 `<head>` 底部注入其样式表。 如果您不想使用 **!important** 来标记样式属性的话，则需要更改 [CSS 的注入顺序](/styles/advanced/#css-injection-order)，如下所示：
 
 ```jsx
 import { StylesProvider } from '@material-ui/core/styles';
@@ -368,7 +368,7 @@ export default function CssModulesButton() {
 
 ### Controlling priority ⚠️
 
-**请注意：** JSS 在 `<head>` 底部注入其样式表。 If you don't want to mark style attributes with **!important**, you need to change [the CSS injection order](/styles/advanced/#css-injection-order), as in the demo:
+**请注意：** JSS 在 `<head>` 底部注入其样式表。 如果您不想使用 **!important** 来标记样式属性的话，则需要更改 [CSS 的注入顺序](/styles/advanced/#css-injection-order)，如下所示：
 
 ```jsx
 import { StylesProvider } from '@material-ui/core/styles';
@@ -460,9 +460,9 @@ export default function EmotionCSS() {
 }
 ```
 
-### Controlling priority ⚠️
+### 控制的优先权 ⚠️
 
-**请注意：** JSS 在 `<head>` 底部注入其样式表。 If you don't want to mark style attributes with **!important**, you need to change [the CSS injection order](/styles/advanced/#css-injection-order), as in the demo:
+**请注意：** JSS 在 `<head>` 底部注入其样式表。 如果您不想使用 **!important** 来标记样式属性的话，则需要更改 [CSS 的注入顺序](/styles/advanced/#css-injection-order)，如下所示：
 
 ```jsx
 import { StylesProvider } from '@material-ui/core/styles';
