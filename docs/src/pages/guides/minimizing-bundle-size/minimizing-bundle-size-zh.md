@@ -213,6 +213,6 @@ import { Button, TextField } from '@material-ui/core';
 
 考虑到一些 [支持的平台](/getting-started/supported-platforms/)，在 npm 上发布的这个依赖包是和 [Babel](https://github.com/babel/babel) 一起被**编译**过的。
 
-第二个版本的组件也已经发布，你可以在 [`/es` 文件夹](https://unpkg.com/@material-ui/core/es/) 下找到。 所有非官方的语义都被编译成 [ECMA-262 的标准](https://www.ecma-international.org/publications/standards/Ecma-262.htm)，仅此而已。 这样一来，针对不同的浏览器，您可以编译出不同的打包文件。 一些旧的浏览器需编译一些 JavaScript 的功能，这样会增加打包文件的大小。 ES2015 运行的时候的功能中不包含兼容性的库的补充（polyfills）。 IE11+ 和一些长青浏览器会支持所有必要的功能。 如果您需要支持其他浏览器，请考虑使用 [`@ babel/polyfill`](https://www.npmjs.com/package/@babel/polyfill)。
+第二个版本的组件也已经发布，你可以在 [`/es` 文件夹](https://unpkg.com/@material-ui/core/es/) 下找到。 所有非官方的语义都被编译成 [ECMA-262 的标准](https://www.ecma-international.org/publications/standards/Ecma-262.htm)，仅此而已。 这样一来，针对不同的浏览器，您可以编译出不同的打包文件。 一些旧的浏览器需编译一些 JavaScript 的功能，这样会增加打包文件的大小。 ES2015 运行的时候的功能中不包含兼容性的库的补充（polyfills）。 IE11+ 和一些长青浏览器会支持所有必要的功能。 如果您需要支持其他浏览器，请考虑使用 [`@babel/polyfill`](https://www.npmjs.com/package/@babel/polyfill)。
 
 ⚠️为了最大限度地减少用户捆绑包中的代码重复，我们**强烈建议**库作者不要使用 `/es` 文件夹。
