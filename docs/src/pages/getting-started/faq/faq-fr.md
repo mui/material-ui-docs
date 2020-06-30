@@ -1,6 +1,6 @@
 # FAQ
 
-<p class="description">Bloqué sur un problème particulier ? Check some of these common gotchas first in the FAQ.</p>
+<p class="description">Bloqué sur un problème particulier ? Vérifiez les solutions proposées dans la FAQ.</p>
 
 If you still can't find what you're looking for, you can refer to our [support page](/getting-started/support/).
 
