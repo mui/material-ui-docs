@@ -2,16 +2,16 @@
 
 <p class="description">Bloqué sur un problème particulier ? Vérifiez les solutions proposées dans la FAQ.</p>
 
-If you still can't find what you're looking for, you can refer to our [support page](/getting-started/support/).
+Si vous ne pouvez toujours pas trouver ce que vous cherchez, vous pouvez consulter notre [page de support](/getting-started/support/).
 
-## Material-UI is awesome. How can I support the project?
+## Material-UI est génial. Comment puis-je soutenir le projet?
 
-There are many ways to support Material-UI:
+Il y a plusieurs façons de soutenir Material-UI :
 
-- **Spread the word**. Evangelize Material-UI by [linking to material-ui.com](https://material-ui.com/) on your website, every backlink matters. Follow us on [Twitter](https://twitter.com/MaterialUI), like and retweet the important news. Or just talk about us with your friends.
-- **Give us feedback**. Tell us what we're doing well or where we can improve. Please upvote (👍) the issues that you are the most interested in seeing solved.
-- **Help new users**. You can answer questions on [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui).
-- **Make changes happen**. 
+- **Faites passer le mot**. Évangéliser Material-UI en affichant un [lien vers material-ui.com](https://material-ui.com/) sur votre site web, chaque lien compte. Suivez-nous sur [Twitter](https://twitter.com/MaterialUI), aimer et retweeter les nouvelles importantes. Ou parlez simplement de nous avec vos amis.
+- **donnez nous vos retours**. Dites-nous ce que nous faisons bien ou ce que nous pouvons améliorer. Merci de voter 👍 les problèmes qui vous voudriez le plus voir résolus.
+- **Aidez les nouveaux utilisateurs**. Vous pouvez répondre aux questions sur [StackOverflow](https://stackoverflow.com/questions/tagged/material-ui).
+- **Apportez des modifications**. 
   - Edit the documentation. Every page has an "EDIT THIS PAGE" link in the top right.
   - Report bugs or missing features by [creating an issue](https://github.com/mui-org/material-ui/issues/new).
   - Review and comment on existing [pull requests](https://github.com/mui-org/material-ui/pulls) and [issues](https://github.com/mui-org/material-ui/issues).
