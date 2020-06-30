@@ -75,19 +75,19 @@ Tidelift 订阅为您管理您的依赖关系：
 - 您的订阅有助于向您使用的软件包的开源社区维护者支付费用，以确保它们符合您要求的标准。
 - 您可以利用可扫描软件安全、许可和维护问题的工具来主动解决问题，并且也可以向参与的开源维护者发出警告，以便他们能够帮助您解决这些问题。 
 - Tidelift 有助于衡量和改善你使用的开源软件依赖项的健康状况 — 从而改善您的应用程序的健康状况 — 并会给出一个简短的列表，列出您的团队可以采取的积极影响的步骤，以便您进一步改进它们。 
-- 您可以获得商业保证，而不是只使用免费的开源软件包，例如知识产权赔偿和服务级别协议（SLA）的支持。 You expect these guarantees from proprietary software, and you can get them when using open-source as well.
+- 您可以获得商业保证，而不是只使用免费的开源软件包，例如知识产权赔偿和服务级别协议（SLA）的支持。 您可以期望从专有软件中获得这些商业保证，并且在使用开源软件时也可以获得这些商业保证。
 
-The end result? All of the capabilities you expect from commercial-grade software, for the full breadth of open-source you use. That means less time grappling with esoteric open-source trivia, and more time building your own applications – and your business.
-
-<a
-  data-ga-event-category="support"
-  data-ga-event-action="tidelift"
-  href="https://tidelift.com/subscription/pkg/npm-material-ui?utm_source=npm-material-ui&utm_medium=referral&utm_campaign=enterprise"> Get more details </a>
+最终结果是什么？ 所有您期望从商业级软件中获得的功能都可以适用于您所使用的所有开源软件。 这意味着花更少的时间来处理深奥的开源软件的琐事，并且能够花更多的时间处理您自己的应用程序 — 以及您的业务。
 
 <a
   data-ga-event-category="support"
   data-ga-event-action="tidelift"
-  href="https://tidelift.com/subscription/request-a-demo?utm_source=npm-material-ui&utm_medium=referral&utm_campaign=enterprise"> Request a demo </a>
+  href="https://tidelift.com/subscription/pkg/npm-material-ui?utm_source=npm-material-ui&utm_medium=referral&utm_campaign=enterprise"> 获得更多详细信息 </a>
+
+<a
+  data-ga-event-category="support"
+  data-ga-event-action="tidelift"
+  href="https://tidelift.com/subscription/request-a-demo?utm_source=npm-material-ui&utm_medium=referral&utm_campaign=enterprise"> 请求演示 </a>
 
 ### 定制工作🛠
 
@@ -97,6 +97,6 @@ The end result? All of the capabilities you expect from commercial-grade softwar
 - 建议可能不需要 Material-UI 的替代方法
 - 由于时间或相关性而拒绝合作
 
-请注意，工作必须与 Material-UI 相关。 我们不接受一般的 React 开发工作。 Our contracting price is $200/hour or $1,500/day.
+请注意，工作必须与 Material-UI 相关。 我们不接受一般的 React 开发工作。 我们的合同价格是 200美元/小时 或 1500美元/天。
 
 [给我们发送电子邮件](mailto:custom-work@material-ui.com)
