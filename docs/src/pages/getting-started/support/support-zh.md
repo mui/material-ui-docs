@@ -51,13 +51,13 @@ Material-UI CE（社区版本）从最开始就是 100% 的开源项目（MIT �
 
 我们考虑到时间和资源限制的现实，以及需要不断创新的愿望，所以随着时间的推移，我们有必要将更新的重点转移到框架的最新版本（[我们的版本发布时间表](https://material-ui.com/versions/#release-frequency)），同时让用户尽可能平稳地过渡到新的版本，所以我们做了包括迁移指南在内的多个工作，例如 [这个 v4](/guides/migration-v3/) 迁移指南。 我们始终欢迎开源社区提交新特性和错误修复。
 
-The current status of each Material-UI version is as follows:
+各个 Material-UI 版本的当前状态如下所示： 
 
-- Material-UI v4 (hooks): ✅ In active development.
-- Material-UI v3 (change supported browsers): ⚠️ Only handle security fixes.
-- ~Material-UI v2 (never existed)~.
-- Material-UI v1 (rewrite): ❌ Inactive.
-- Material-UI v0.x: ❌ Inactive.
+- Material-UI v4 (hooks)：✅ 积极开发。
+- Material-UI v3（更改支持的浏览器）：⚠️ 只处理安全修复。
+- ~Material-UI v2 （根本不存在）~. 
+- Material-UI v1（重写）: ❌ 闲置. 
+- Material-UI v0.x：❌闲置
 
 For teams and organizations that require additional support for older versions, Material-UI has [options available](#enterprise).
 
