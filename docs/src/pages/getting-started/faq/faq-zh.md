@@ -285,9 +285,9 @@ function handleRender(req, res) {
 
 - 您需要验证您的客户端和服务端运行的 Material-UI 的**版本** 是否完全相同。 即使是小小的版本的不匹配也可能导致样式问题。 若想检查版本号，您可以在搭建应用程序的环境以及部署环境中都运行 `npm list @material-ui/core`。
   
-    您也可以通过在 package.json 的依赖项中指定特定的 MUI 版本来确保在不同环境中使用相同的版本。
+    您也可以通过在 package.json 的依赖项中指定某一个特定的 MUI 版本，这样能够确保在不同环境中使用的版本是一致的。
 
-*修复示例（package.json）：*
+*修复（package.json）的示例：*
 
 ```diff
   "dependencies": {
@@ -299,15 +299,15 @@ function handleRender(req, res) {
   },
 ```
 
-- 您需要确保服务端和客户端之间共享的是相同的 `process.env.NODE_ENV` 值。
+- 请确保服务端和客户端之间所共享的是相同的 `process.env.NODE_ENV` 值。
 
-## 为什么我的应用程序看到的颜色和文档里的颜色大相径庭？
+## 为什么我看到的颜色和文档这里的颜色大相径庭？
 
-这是因为文档网站使用了一个自定义的主题。 因此，调色板和 Material-UI 的默认的主题是截然不同的。 请参考 [这个页面](/customization/theming/) 来了解自定义主题。
+这是因为文档网站使用了一个自定义的主题。 因此，调色板和 Material-UI 的默认的主题所展示的效果是截然不同的。 请参考 [这个页面](/customization/theming/) 来了解自定义主题。
 
-## 为什么组件 X 需要属性中的 DOM 节点而不是 ref 对象？
+## 为什么组件 X 需要属性中的 DOM 节点而不是一个 ref 对象？
 
-像 [Portal](/api/portal/#props) 或 [Popper](/api/popper/#props) 这样的组件分别需要 `container` 或 `anchorEl` 属性中的 DOM 节点。 所以只需在这些属性中传递一个 ref 对象并让 Material-UI 访问当前值是很方便的。 这在一个简单的方案中就可以实现：
+像 [Portal](/api/portal/#props) 或 [Popper](/api/popper/#props) 这样的组件分别需要 `container` 或 `anchorEl` 属性中的 DOM 节点。 若需在这些属性中传递一个 ref 对象，并让 Material-UI 访问当前值，这看起来更加简洁有效。 这在一个简单的方案中就可以实现：
 
 ```jsx
 function App() {
@@ -316,7 +316,7 @@ function App() {
   return (
     <div className="App">
       <Portal container={container}>
-        <span>portaled children</span>
+        <span>传送门的子组件</span>
       </Portal>
       <div ref={container} />
     </div>
@@ -341,7 +341,7 @@ function Portal({ children, container }) {
 }
 ```
 
-这个简单的方法可能会启发您，`Portal` 可能会在挂载后重新渲染，因为在任何效果运行之前，refs 都是最新的。 然而，仅仅因为 ref 是最新的并不意味着它会指向定义的实例。 如果 ref 是附着在 ref 转发组件上的话，那么就不会清楚 DOM 节点何时可用。 在上面的例子中，`Portal` 将产生一次效果，但可能不会重新渲染，因为 `ref.current` 的值仍然是 `null`。 这一点对于 Suspense 中的 React.lazy 组件尤为明显。 上述实现也无法说明 DOM 节点的变化。 
+这个简单的方法可能会启发您，`Portal` 可能会在挂载后重新渲染，因为在任何效果运行之前，refs 都是最新的。 然而，仅仅因为 ref 是最新的并不意味着它会指向一个定义好的实例。 如果 ref 是附着在一个 ref 所转发组件上的话，那么 DOM 节点何时可用是不明确的。 在上面的例子中，`Portal` 将产生一次效果，但可能不会重新渲染，因为 `ref.current` 的值仍然是 `null`。 而 Suspense 中的 React.lazy 组件中，这一点尤为明显。 上述实现也并不能代表 DOM 节点的一个变化。 
 
 综上所述，这就是为什么我们需要一个具有实际 DOM 节点的属性，这样 React 就可以负责确定 `Portal` 何时应该重新渲染。 
 
@@ -353,7 +353,7 @@ function App() {
   return (
     <div className="App">
       <Portal container={container}>
-        <span>Portaled</span>
+        <span>传送的子组件</span>
       </Portal>
       <div ref={handleRef} />
     </div>
@@ -361,11 +361,11 @@ function App() {
 }
 ```
 
-## clsx 依赖什么？
+## clsx 依赖是用于什么？
 
-[clsx](https://github.com/lukeed/clsx)是一个小型工具集，用于有条件地从一个对象中构造 `className` 字符串，对象（object）的键是类字符串（class strings），值是布尔值（booleans）。 
+[clsx](https://github.com/lukeed/clsx)是一个小型工具集，用于有条件地从一个对象中构造 `className` 字符串，此对象的键是类字符串（class strings），而值是布尔值（booleans）。 
 
-不要这样写：
+请不要这样写：
 
 ```jsx
 // let disabled = false, selected = true;
