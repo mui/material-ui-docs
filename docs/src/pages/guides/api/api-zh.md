@@ -6,7 +6,7 @@
 
 [@sebmarkbage](https://twitter.com/sebmarkbage/status/728433349337841665)
 
-正如Sebastian Markbage [指出](https://2014.jsconf.eu/speakers/sebastian-markbage-minimal-api-surface-area-learning-patterns-instead-of-frameworks.html)，没有抽象优于错误的抽象。 我们提供低级的组件以最大化保留可用性。
+正如Sebastian Markbage [指出](https://2014.jsconf.eu/speakers/sebastian-markbage-minimal-api-surface-area-learning-patterns-instead-of-frameworks.html)，没有抽象也优于错误的抽象。 我们提供低级的组件以最大化保留可用性。
 
 ## 构成
 
