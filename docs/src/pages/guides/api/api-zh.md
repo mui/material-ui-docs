@@ -1,8 +1,8 @@
-# API设计方法
+# API 的设计方法
 
-<p class="description">开发团队在之前的版本了解了 Material-UI 如何被使用。在v1重写时，重新考虑了组件API的设计方法论。</p>
+<p class="description">我们在如何使用 Material-UI 方面学到了很多相关的只是，而通过 v1 版本的重写，我们能够彻底重新考虑组件的 API。</p>
 
-> API设计的难点在于你可以让一些复杂的东西看起来简单，也可能把简单的东西搞得复杂。
+> API 设计的难点在于你可以让一些复杂的东西看起来简单，也可能把简单的东西搞得复杂。
 
 [@sebmarkbage](https://twitter.com/sebmarkbage/status/728433349337841665)
 
