@@ -59,23 +59,23 @@ Material-UI CE（社区版本）从最开始就是 100% 的开源项目（MIT �
 - Material-UI v1（重写）: ❌ 闲置. 
 - Material-UI v0.x：❌闲置
 
-For teams and organizations that require additional support for older versions, Material-UI has [options available](#enterprise).
+对于需要对旧版本提供额外支持的团队和组织，Material-UI 提供了 [可选方案](#enterprise)。
 
-## Professional support (premium)
+## 专业支持（高级）
 
-### Tidelift subscription <img src="/static/images/logos/tidelift.svg" width="24" height="24" alt="Tidelift" loading="lazy" />
+### Tidelift 订阅 <img src="/static/images/logos/tidelift.svg" width="24" height="24" alt="Tidelift" loading="lazy" />
 
-Material-UI and the maintainers of thousands of other packages are working with Tidelift to deliver one enterprise subscription that covers all of the open-source you use.
+Material-UI 同其他数千种软件包的维护者一样都在与 Tidelift 合作，目的是提供一个维护涵盖您使用的所有开源软件的企业订阅。 
 
-If you want the flexibility of open-source and the confidence of commercial-grade software, this is worth looking at.
+如果您想要开源的灵活性和商业级软件的信心，这是值得一试的。
 
-The Tidelift Subscription manages your dependencies for you:
+Tidelift 订阅为您管理您的依赖关系： 
 
 - Get the tools you need to continuously catalog and understand the open-source software that your application depends on.
-- Your subscription helps pay the open-source community maintainers of the packages you use, to ensure they meet the standards you require.
-- Address issues proactively, with tools that scan for new security, licensing, and maintenance issues, and alert participating open-source maintainers so they can resolve them on your behalf.
-- Tidelift helps measure and improve your open-source dependencies' health – which improves your app's health – and gives a shortlist of high-impact steps your team can take to improve them even more.
-- Get commercial assurances that don't come for free with open-source packages, such as intellectual property indemnification and support under a service level agreement. You expect these guarantees from proprietary software, and you can get them when using open-source as well.
+- 您的订阅有助于向您使用的软件包的开源社区维护者支付费用，以确保它们符合您要求的标准。
+- 您可以利用可扫描软件安全、许可和维护问题的工具来主动解决问题，并且也可以向参与的开源维护者发出警告，以便他们能够帮助您解决这些问题。 
+- Tidelift 有助于衡量和改善你使用的开源软件依赖项的健康状况 — 从而改善您的应用程序的健康状况 — 并会给出一个简短的列表，列出您的团队可以采取的积极影响的步骤，以便您进一步改进它们。 
+- 您可以获得商业保证，而不是只使用免费的开源软件包，例如知识产权赔偿和服务级别协议（SLA）的支持。 You expect these guarantees from proprietary software, and you can get them when using open-source as well.
 
 The end result? All of the capabilities you expect from commercial-grade software, for the full breadth of open-source you use. That means less time grappling with esoteric open-source trivia, and more time building your own applications – and your business.
 
