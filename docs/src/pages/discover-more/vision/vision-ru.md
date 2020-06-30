@@ -1,6 +1,6 @@
 # Наше видение
 
-<p class="description">Наш образ вам давать элега́нтная реализация для React от Material Design рекомендации, который вы можoты настроить полностью для ваш бренд.</p>
+<p class="description">Наше видение заключается в том, чтобы обеспечить элегантную реализацию React рекомендаций по Material Design, которые можно настроить в соответствии с вашим брендом.</p>
 
 The Material Design guidelines are an incredible starting point, but they do not provide guidance on all aspects or needs of an application. In addition to the guidelines-specific implementation, we want Material-UI to become whatever is generally useful for application development, all in the spirit of the Material Design guidelines.
 
