@@ -208,7 +208,7 @@ import { StylesProvider } from '@material-ui/core/styles';
 
 如果您尝试赋予Drawer（抽屉）组件以永久的变体的样式，您很可能会需要涉及抽屉组件的子纸张元素。 但是，这不是抽屉组件的根元素，因此上面的样式组件自定义将不起作用。 您则需要使用 Material-UI 的 API 中的 [`classes`](/styles/advanced/#overriding-styles-classes-prop) 来达到目的。
 
-以下示例除了按钮本身的自定义样式外，还会覆盖 `label` 的 `Button` 样式。 它还解决了 [这个styled-components问题](https://github.com/styled-components/styled-components/issues/439) 由不应该在底层组件来通过“消耗”的特性。
+以下示例除了按钮本身的自定义样式外，还会覆盖 `label` 的 `Button` 样式。 通过“消费”不应该传递到底层的那些属性，它还解决了 [这个 styled-components 问题](https://github.com/styled-components/styled-components/issues/439)，
 
 {{"demo": "pages/guides/interoperability/StyledComponentsDeep.js"}}
 
@@ -239,7 +239,7 @@ export default function StyledComponentsDeep() {
 }
 ```
 
-以上的例子依赖于[默认的`类`的值](/styles/advanced/#with-material-ui-core)，但是您也可以提供自定义的类名：`.label`。
+以上的例子依赖于 [默认的`类`的值](/styles/advanced/#with-material-ui-core)，但是您也可以提供自定义的类名：`.label`。
 
 ```jsx
 import React from 'react';
@@ -274,7 +274,7 @@ export default function StyledComponentsDeep() {
 
 Material-UI 有着一个丰富的主题架构，而您可以利用它来做一些颜色的处理，过渡动画，媒体查询等等。
 
-We encourage to share the same theme object between Material-UI and your styles.
+我们鼓励在 Materal-UI 和您的样式之间分享相同的主题对象（theme object）。
 
 ```jsx
 const StyledButton = styled(Button)`
@@ -328,7 +328,7 @@ const StyledMenu = styled(({ className, ...props }) => (
 
 ![stars](https://img.shields.io/github/stars/css-modules/css-modules.svg?style=social&label=Star)
 
-鉴于它全权依赖于大家使用的打包方案，我们很难得知[此种样式方案](https://github.com/css-modules/css-modules)的市场占有率。
+鉴于它全权依赖于大家使用的打包方案，我们很难得知 [此种样式方案](https://github.com/css-modules/css-modules) 的市场占有率。
 
 {{"demo": "pages/guides/interoperability/StyledComponents.js", "hideToolbar": true}}
 
@@ -352,15 +352,15 @@ const StyledMenu = styled(({ className, ...props }) => (
 
 ```jsx
 import React from 'react';
-// webpack, parcel or else will inject the CSS into the page
+// webpack，parcel 或者其他会将 CSS 注入页面
 import styles from './CssModulesButton.css';
 import Button from '@material-ui/core/Button';
 
 export default function CssModulesButton() {
   return (
     <div>
-      <Button>Default</Button>
-      <Button className={styles.button}>Customized</Button>
+      <Button>默认</Button>
+      <Button className={styles.button}>自定义</Button>
     </div>
   );
 }
@@ -427,7 +427,7 @@ export default function CssModulesButtonDeep() {
 
 ### `css` 属性
 
-Emotion的 **css()** 方法与Material-UI无缝协作。
+Emotion的 **css()** 方法与 Material-UI 无缝协作。
 
 {{"demo": "pages/guides/interoperability/EmotionCSS.js", "hideToolbar": true}}
 
@@ -477,7 +477,7 @@ import { StylesProvider } from '@material-ui/core/styles';
 
 Material-UI 有着一个丰富的主题架构，而您可以利用它来做一些颜色的处理，过渡动画，媒体查询等等。
 
-We encourage to share the same theme object between Material-UI and your styles.
+我们鼓励在 Materal-UI 和您的样式之间分享相同的主题对象（theme object）。
 
 ```jsx
 <Button
@@ -502,6 +502,6 @@ We encourage to share the same theme object between Material-UI and your styles.
 
 {{"demo": "pages/guides/interoperability/EmotionTheme.js"}}
 
-### `styled()` 的 API
+### `styled()` API
 
-它完全和 styled components 一样起作用。 您可以[使用相同的指南](/guides/interoperability/#styled-components) 。
+它会像 styled components 一样起作用。 您可以 [使用相同的指南](/guides/interoperability/#styled-components) 。
