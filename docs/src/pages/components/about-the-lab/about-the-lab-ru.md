@@ -39,7 +39,7 @@ yarn add @material-ui/core
 
 ## TypeScript
 
-Чтобы получить возможность пользоваться [переопределением CSS](/customization/globals/#css) и [изменением свойств по умолчанию](/customization/globals/#default-props), разработчикам, использующим TypeScript, нужно импортировать следующие типы. Internally, it uses [module augmentation](/guides/typescript/#customization-of-theme) to extend the default theme structure with the extension components available in the lab.
+Чтобы получить возможность пользоваться [переопределением CSS](/customization/globals/#css) и [изменением свойств по умолчанию](/customization/globals/#default-props), разработчикам, использующим TypeScript, нужно импортировать следующие типы. Чтобы расширить структуру темы по умолчанию для использования компонентов доступных в пакете lab, внутри используется [аугментация модулей](/guides/typescript/#customization-of-theme).
 
 ```tsx
 import type '@material-ui/lab/themeAugmentation';
