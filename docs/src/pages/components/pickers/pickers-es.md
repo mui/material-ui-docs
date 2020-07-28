@@ -1,11 +1,11 @@
 ---
-title: Date picker, Time picker React components
+title: Componentes de React de Selectores de Fecha y Selectores de Hora
 components: TextField
 ---
 
-# Date / Time pickers
+# Selectores de Fecha / Hora
 
-<p class="description">Date pickers and Time pickers provide a simple way to select a single value from a pre-determined set.</p>
+<p class="description">Los selectores de fecha y hora proporcionan una forma simple de seleccionar un solo valor de un conjunto predeterminado.</p>
 
 - En móvil, los selectores son los mas adecuados para despliegue en diálogos de confirmación.
 - Para despliegue en línea, como en un formulario, considere usar controles compactos tales como los botones desplegables segmentados.
