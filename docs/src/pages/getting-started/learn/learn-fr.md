@@ -14,7 +14,7 @@ There are [some example projects](/getting-started/example-projects/) available,
 
 ## Templates
 
-This [selection of basic templates](/getting-started/templates/) will help you get started building your app.
+Cette [sélection de modèles de base](/getting-started/templates/) vous aidera à commencer à construire votre application.
 
 ## Ressources recommandées
 
