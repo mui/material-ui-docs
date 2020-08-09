@@ -3,7 +3,7 @@ title: Transition React component
 components: Collapse, Fade, Grow, Slide, Zoom
 ---
 
-# Transições
+# Transition
 
 <p class="description">Transition helps make a UI expressive and easy to use.</p>
 
