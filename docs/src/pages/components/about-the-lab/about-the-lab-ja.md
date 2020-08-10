@@ -9,8 +9,8 @@ Labパッケージとcoreパッケージの明確な違いはどのようにバ�
 Coreパッケージに移るためには以下の基準を考慮します。
 
 * **使用されている**必要があります。 Material-UIチームはそれぞれのコンポーネントの使用量を、他の指標よりもGoogleアナリティクスの統計を重視して評価しています。 実験的なコンポーネントで使用率が低いものは、動作が不完全であるか需要がないかのどちらかを意味します。
-* It needs to match the **code quality** of the core components. It doesn't have to be perfect to be a part of the core, but the component should be reliable enough that developers can depend on it. 
-    * Each component needs **type definitions**. It is not currently required that a lab component is typed, but it would need to be typed to move to the core.
+* Coreコンポーネントと同**品質**である必要が あります。 Coreパッケージに含まれるほど完璧である必要はないが、開発者が頼れる信頼性はひつようです。 
+    * 各コンポーネントが**型定義**を持つこと。 現在、Labパッケージへの採用基準に型はひつようないですが、Coreパッケージに移すためには必要です。
     * Requires good **test coverage**. Some of the lab components don't currently have comprehensive tests.
 * Can it be used as **leverage** to incentivize users to upgrade to the latest major release? The less fragmented the community is, the better.
 * It needs to have a low probability of a **breaking change** in the short/medium future. For instance, if it needs a new feature that will likely require a breaking change, it may be preferable to delay its promotion to the core.
