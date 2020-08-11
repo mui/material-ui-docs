@@ -9,7 +9,7 @@ components: AppBar, Toolbar, Menu
 
 [top App Bar](https://material.io/design/components/app-bars-top.html) は、現在の画面に関連するコンテンツとアクションを提供します。 ブランディング、画面タイトル、ナビゲーション、およびアクションに使用されます。
 
-It can transform into a contextual action bar or be used as a navbar.
+アクションバーに変換したり、ナビゲーションバーとして使うことができます。
 
 ## シンプルなアプリバー
 
@@ -37,7 +37,7 @@ It can transform into a contextual action bar or be used as a navbar.
 
 ## Prominent
 
-A prominent app bar.
+目立つアプリバー
 
 {{"demo": "pages/components/app-bar/ProminentAppBar.js", "bg": true}}
 
@@ -65,7 +65,7 @@ function App() {
 }
 ```
 
-3. You can use `theme.mixins.toolbar` CSS:
+3. `theme.mixins.toolbar` CSSを使えます。: 
 
 ```jsx
 const useStyles = makeStyles(theme => ({
