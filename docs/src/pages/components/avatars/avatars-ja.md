@@ -41,18 +41,18 @@ Image Avatars(画像アバター) は通常の`img` propsである、 `src` も�
 
 アバター画像の読み込み時に問題が発生した場合、コンポーネントは以下の順序に沿って代替手段をとります。
 
-- the provided children
-- the first letter of the `alt` text
-- a generic avatar icon
+- 指定された`children`(子要素)
+- `alt`に指定された文字列の頭文字
+- 汎用アバターアイコン
 
 {{"demo": "pages/components/avatars/FallbackAvatars.js"}}
 
 ## Grouped
 
-`AvatarGroup` renders its children as a stack.
+`AvatarGroup`は与えられた子要素をスタックとしてレンダリングします。
 
 {{"demo": "pages/components/avatars/GroupAvatars.js"}}
 
-## With badge
+## バッジをつける
 
 {{"demo": "pages/components/avatars/BadgeAvatars.js"}}
