@@ -59,7 +59,7 @@ Setting the icon prop to false will remove the icon altogether.
 
 ## トースト
 
-Snackbar を使って [アラートで乾杯](/components/snackbars/#customized-snackbars) を表示できます。
+Snackbar を使ってアラートで [乾杯を表示](/components/snackbars/#customized-snackbars)できます。
 
 ## カラー
 
