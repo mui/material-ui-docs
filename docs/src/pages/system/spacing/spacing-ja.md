@@ -1,25 +1,25 @@
 # 間隔
 
-<p class="description">要素の外観を変更するための、応答の短いマージンとパディングユーティリティークラス。</p>
+<p class="description">簡単に要素のmarginとpaddingをレスポンシブに変更するためのユーティリティクラスです。</p>
 
 ## 表記
 
 スペースユーティリティは、簡易マージンとパディングプロップをマージンとパディングのCSS宣言に変換します。 プロップには、`{property}{sides}`という形式で名前が付けられます。 プロップには、`{property}{sides}`という形式で名前が付けられます。
 
-Where *property* is one of:
+*property*は次のいずれかであり
 
-- `m` - for classes that set *margin*
-- `p` - for classes that set *padding*
+- `m` - *margin*を設定するためのclass
+- `p` - *padding*を設定するためのclass
 
-Where *sides* is one of:
+*sides* は次のいずれかである。
 
-- `t` - for classes that set *margin-top* or *padding-top*
-- `b` - for classes that set *margin-bottom* or *padding-bottom*
-- `l` - for classes that set *margin-left* or *padding-left*
-- `r` - for classes that set *margin-right* or *padding-right*
-- `x` - for classes that set both **-left* and **-right*
+- `t` - *margin-top*もしくは *padding-top*を設定するためのclass 
+- `t` - *margin-bottom*もしくは *padding-bottom*を設定するためのclass 
+- `t` - *margin-left*もしくは *padding-left*を設定するためのclass
+- `t` - *margin-right*もしくは *padding-right*を設定するためのclass 
+- `x` - 水平方向（**-left* および **-right*）を設定するためのclass 
 - `y` - for classes that set both **-top* and **-bottom*
-- blank - for classes that set a margin or padding on all 4 sides of the element
+- (指定なし) - HTML要素の四方向のmarginもしくはpaddingを設定するためのクラス
 
 ## Transformation
 
