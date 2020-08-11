@@ -172,17 +172,17 @@ import { createFilterOptions } from '@material-ui/lab/Autocomplete';
 
 1. `config` (*Object* [optional]): 
   - `config.ignoreAccents` (*Boolean* [optional]): デフォルトは`true`. 発音記号を削除する
-  - `config.ignoreCase` (*Boolean* [optional]): Defaults to `true`. Lowercase everything.
-  - `config.limit` (*Number* [optional]): Default to null. Limit the number of suggested options to be shown. For example, if `config.limit` is `100`, only the first `100` matching options are shown. It can be useful if a lot of options match and virtualization wasn't set up.
-  - `config.matchFrom` (*'any' | 'start'* [optional]): Defaults to `'any'`.
-  - `config.stringify` (*Func* [optional]): Controls how an option is converted into a string so that it can be matched against the input text fragment.
-  - `config.trim` (*Boolean* [optional]): Defaults `false`. Remove trailing spaces.
+  - `config.ignoreCase` (*Boolean* [optional]): デフォルトは`true`. すべて小文字にする。
+  - `config.limit` (*Number* [optional]): デフォルトはnull. 表示される推奨オプションの数を制限する。 例えば、 `config.limit` が `100`の時、頭の`100`個のマッチングオプションのみが表示されます。 バーチャライズせずに、大量の選択肢を扱うのに有効です。
+  - `config.matchFrom` (*'any' | 'start'* [optional]): デフォルトは `'any'`. 
+  - `config.stringify` (*Func* [optional]): オプションがどのようにstringに変換されるか制御します。入力文字片に対してマッチさせることができます。
+  - `config.trim` (*Boolean* [optional]): デフォルトは `false`. 末尾のスペースを削除します。
 
 #### 戻り値
 
-`filterOptions`: the returned filter method can be provided directly to the `filterOptions` prop of the `Autocomplete` component, or the parameter of the same name for the hook.
+`filterOptions`: 返り値のフィルターメソッドは、`Autocomplete`コンポーネントの`filterOptions`propに直接渡すことができます。hookにも渡すことができます。 
 
-In the following demo, the options need to start with the query prefix:
+以下のデモでは、選択肢が前方一致する必要があります。
 
 ```js
 const filterOptions = createFilterOptions({
@@ -197,7 +197,7 @@ const filterOptions = createFilterOptions({
 
 ### 高度な機能(Advanced)
 
-For richer filtering mechanisms, like fuzzy matching, it's recommended to look at [match-sorter](https://github.com/kentcdodds/match-sorter). 例えば：
+fuzzy matchingのような高度なメカニズの為には [match-sorter](https://github.com/kentcdodds/match-sorter)を見ることをおすすめします。 例えば：
 
 ```jsx
 import matchSorter from 'match-sorter';
@@ -210,7 +210,7 @@ const filterOptions = (options, { inputValue }) =>
 
 ## Virtualization
 
-Search within 10,000 randomly generated options. The list is virtualized thanks to [react-window](https://github.com/bvaughn/react-window).
+10,000のランダム生成された選択肢内で検索します。 [react-window](https://github.com/bvaughn/react-window)でリストをバーチャライズしています。
 
 {{"demo": "pages/components/autocomplete/Virtualize.js"}}
 
@@ -218,14 +218,14 @@ Search within 10,000 randomly generated options. The list is virtualized thanks 
 
 ### autocomplete/autofill
 
-The browsers have heuristics to help the users fill the form inputs. However, it can harm the UX of the component.
+ブラウザは入力補助のために経験則を持っています。 しかし、これはコンポーネントのUXを損なう可能性があります。
 
-By default, the component disable the **autocomplete** feature (remembering what the user has typed for a given field in a previous session) with the `autoComplete="off"` attribute.
+デフォルトでは, **autocomplete** 機能(特定の欄に以前入力した内容を保持しておくもの) は `autoComplete="off"` で無効化しています。 
 
-However, in addition to remembering past entered values, the browser might also propose **autofill** suggestions (saved login, address, or payment details). In the event you want the avoid autofill, you can try the following:
+しかし、過去に入力された値を記憶しておくことに加えて、ブラウザは**autofill** を提案してくることがあります。(ログイン情報、住所、支払い情報) autofillを避けたい場合、以下の方法を取れます。
 
-- Name the input without leaking any information the browser can use. e.g. `id="field1"` instead of `id="country"`. If you leave the id empty, the component uses a random id.
-- Set `autoComplete="new-password"`: 
+- ブラウザが判断できない命名を入力欄に使う。 例: `id="country"`の代わりに、`id="field1"`を使う idを空にした場合、コンポーネントはランダムなidを保管します。
+- `autoComplete="new-password"`を設定する: 
         jsx
         <TextField
         {...params}
@@ -237,7 +237,7 @@ However, in addition to remembering past entered values, the browser might also 
 
 ### iOS VoiceOver
 
-VoiceOver on iOS Safari doesn't support the `aria-owns` attribute very well. You can work around the issue with the `disablePortal` prop.
+iOS Safariのボイスオーバーは`aria-owns` を十分にサポートしていません。 `disablePortal`を用いて、この問題を回避できます。 
 
 ### ListBox コンポーネント
 
