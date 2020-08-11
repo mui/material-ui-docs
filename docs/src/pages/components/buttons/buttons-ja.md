@@ -17,7 +17,7 @@ components: Button, IconButton, ButtonBase
 
 ## Contained Buttons
 
-[Contained buttons](https://material.io/design/components/buttons.html#contained-button) are high-emphasis, distinguished by their use of elevation and fill. 重要なアクションを含みますが、アプリ内では最も重要ではない、といった場合に使われます。
+[Contained buttons](https://material.io/design/components/buttons.html#contained-button) are high-emphasis, distinguished by their use of elevation and fill. アプリ内で強調すべきアクションを含みます。
 
 {{"demo": "pages/components/buttons/ContainedButtons.js"}}
 
