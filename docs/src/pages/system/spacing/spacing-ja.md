@@ -1,4 +1,4 @@
-# 間隔
+# Spacing(間隔)
 
 <p class="description">簡単に要素のmarginとpaddingをレスポンシブに変更するためのユーティリティクラスです。</p>
 
@@ -18,14 +18,14 @@
 - `t` - *margin-left*もしくは *padding-left*を設定するためのclass
 - `t` - *margin-right*もしくは *padding-right*を設定するためのclass 
 - `x` - 水平方向（**-left* および **-right*）を設定するためのclass 
-- `y` - for classes that set both **-top* and **-bottom*
+- `y` - 垂直方向( **-top* および **-bottom*) を設定するためのclass
 - (指定なし) - HTML要素の四方向のmarginもしくはpaddingを設定するためのクラス
 
-## Transformation
+## 変形
 
-Depending on the input and the theme configuration, the following transformation is applied:
+入力内容とTheme (テーマ) 設定によって、以下の様に間隔の変更ができます。
 
-- input: `number` & theme: `number`: the property is multiplied by the theme value.
+- 入力: `number` & テーマ: `number`: テーマに設定された間隔を入力された数字倍に変形します。.
 
 ```jsx
 const theme = {
@@ -38,7 +38,7 @@ const theme = {
 <Box m={2} /> // margin: 16px;
 ```
 
-- input: `number` & theme: `array`: the property is value is used as the array index.
+- 入力: `number` & テーマ: `配列`: テーマに設定された値を配列としてインデックスから参照できます。
 
 ```jsx
 const theme = {
@@ -50,7 +50,7 @@ const theme = {
 <Box m={2} /> // margin: 3px;
 ```
 
-- input: `number` & theme: `function`: the function is called with the property value.
+- 入力: `number` & テーマ: `関数`: 入力された値が関数に渡され、結果をプロパティとして利用します。
 
 ```jsx
 const theme = {
