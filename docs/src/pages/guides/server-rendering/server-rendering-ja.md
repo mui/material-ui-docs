@@ -1,17 +1,17 @@
 # サーバーサイドレンダリング
 
-<p class="description">サーバー側レンダリングの最も一般的な使用例は、ユーザー（または検索エンジンのクローラー）が最初にアプリを要求したときに最初のレンダリングを処理することです。</p>
+<p class="description">サーバーサイドレンダリングの最も一般的な使用例は、ユーザー（または検索エンジンのクローラー）が最初にアプリを要求した際に、最初に提示される画面を描画するのに使われます。</p>
 
-The key step in server-side rendering is to render the initial HTML of the component **before** we send it to the client side. To do this, we use [ReactDOMServer.renderToString()](https://reactjs.org/docs/react-dom-server.html).
+サーバはリクエストを受け付けると、必要なコンポーネントをHTMLフォーマットの文字列として書き出し、クライアント側に送り返します。 そして、初回リクエスト以降のレンダリングはクライアント側で行います。
 
-## サーバー上のMaterial-UI
+## Material-UIをサーバ上で使用する
 
-The client side is straightforward. All we need to do is remove the server-side generated CSS. Let's take a look at the client file:
+Material-UIは、サーバーでのレンダリングの制約を考慮してゼロから設計されましたが、正しく統合されるかどうかはユーザー次第です。 サーバサイドレンダリングでは必要とされるCSSが正しく渡される必要があります。HTML要素だけを返しクライアントサイドでCSSが挿入されるのを待つようにコード書かれた場合、CSSが適用される前後でチラつき（俗にいうFOUC）が発生する場合があります。 クライアントにスタイルを注入するには、次のことが必要です。
 
-1. Create a fresh, new [`ServerStyleSheets`](/styles/api/#serverstylesheets) instance on every request.
-2. Render the React tree with the server-side collector.
-3. Pull the CSS out.
-4. Pass the CSS along to the client.
+1. 新しい[`ServerStyleSheets`](/styles/api/#serverstylesheets) のインスタンスを毎リクエストごとに作成する。
+2. Server-side collectorを使用しReactのコンポーネントツリーを描画する。
+3. コンポーネントツリーで必要となるCSSを読み込む
+4. CSSをツリーと一緒にクライアント側へ渡す。
 
 On the client side, the CSS will be injected a second time before removing the server-side injected CSS.
 
