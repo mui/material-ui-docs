@@ -61,7 +61,7 @@ const theme = {
 <Box m={2} /> // margin: 4px;
 ```
 
-- input: `string`: the property is passed as raw CSS value.
+- 入力: `string`: 入力された値はそのまま生のCSSの値として適用されます。
 
 ```jsx
 <Box m="2rem" /> // margin: 2rem;
@@ -78,7 +78,7 @@ const theme = {
 <Box p={2}>…
 ```
 
-## Horizontal centering
+## 水平方向に中央寄せする
 
 {{"demo": "pages/system/spacing/HorizontalCentering.js", "defaultCodeOpen": false, "bg": true}}
 
@@ -110,7 +110,7 @@ import { spacing } from '@material-ui/system';
 | `spacing`   | `py` | `padding-top`, `padding-bottom` | [`spacing`](/customization/default-theme/?expand-path=$.spacing) |
 
 
-*Some people find the prop shorthand confusing, you can use the full version if you prefer:*
+*もしPropsの略称が難しいと感じた場合、正称を使用することもできます。*
 
 ```diff
 -<Box pt={2} />
