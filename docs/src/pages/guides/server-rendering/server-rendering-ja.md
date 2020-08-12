@@ -13,15 +13,15 @@ Material-UIは、サーバーでのレンダリングの制約を考慮してゼ
 3. コンポーネントツリーで必要となるCSSを読み込む
 4. CSSをツリーと一緒にクライアント側へ渡す。
 
-On the client side, the CSS will be injected a second time before removing the server-side injected CSS.
+クライアントサイドでは上記のサーバサイドで書かれたCSSが取り除かれるより前に、本来のCSSが挿入されます。
 
 ## 設定する
 
-In the following recipe, we are going to look at how to set up server-side rendering.
+ここからは、サーバーサイドレンダリングをどう設定するかについて見ていきます。
 
 ### テーマ
 
-Create a theme that will be shared between the client and the server:
+サーバー側とクライアント側で共有されるテーマを作成します。
 
 `theme.js`
 
@@ -50,9 +50,9 @@ const theme = createMuiTheme({
 export default theme;
 ```
 
-### The server-side
+### サーバーサイドの設定
 
-The following is the outline for what the server-side is going to look like. We are going to set up an [Express middleware](https://expressjs.com/en/guide/using-middleware.html) using [app.use](https://expressjs.com/en/api.html) to handle all requests that come in to the server. If you're unfamiliar with Express or middleware, just know that the handleRender function will be called every time the server receives a request.
+サーバーサイドのコードは概ね次の様になります。 We are going to set up an [Express middleware](https://expressjs.com/en/guide/using-middleware.html) using [app.use](https://expressjs.com/en/api.html) to handle all requests that come in to the server. If you're unfamiliar with Express or middleware, just know that the handleRender function will be called every time the server receives a request.
 
 `server.js`
 
