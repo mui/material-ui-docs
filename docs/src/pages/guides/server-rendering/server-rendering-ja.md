@@ -50,7 +50,7 @@ const theme = createMuiTheme({
 export default theme;
 ```
 
-### サーバーサイドの設定
+### サーバーサイド
 
 サーバーサイドのコードは概ね次の様になります。 ここでは[Express](https://expressjs.com/en/guide/using-middleware.html) 使用し、[app.use](https://expressjs.com/en/api.html)を用いてサーバへの全てのリクエストを捌いていきます。 もしExpressや他のサーバーアプリケーションにあまり馴染みがない場合、サーバーへのリクエストごとにhandleRender関数が呼ばれるということだけを覚えておいてください。
 
@@ -77,29 +77,18 @@ const port = 3000;
 app.listen(port);
 ```
 
-### Handling the Request
+### リクエストハンドリング
 
-The first thing that we need to do on every request is create a new `ServerStyleSheets`.
+リクエストをサーバで受け付けた後、まず最初に行わなくてはいけないのは新しい`ServerStyleSheets`インスタンスの作成です。
 
-When rendering, we will wrap `App`, the root component, inside a [`StylesProvider`](/styles/api/#stylesprovider) and [`ThemeProvider`](/styles/api/#themeprovider) to make the style configuration and the `theme` available to all components in the component tree.
+画面を描画する際に、ルートコンポーネントである`App`コンポーネントを [`StylesProvider`](/styles/api/#stylesprovider)と [`ThemeProvider`](/styles/api/#themeprovider)でラップします。 これによりスタイルの設定が行われ、コンポーネントツリー内に存在する全てのコンポーネントが`theme`インスタンスにアクセスできる様になります。
 
-The key step in server-side rendering is to render the initial HTML of the component **before** we send it to the client side. To do this, we use [ReactDOMServer.renderToString()](https://reactjs.org/docs/react-dom-server.html).
+サーバーサイドレンダリングにおいて最も重要なステップは、最初に描画されるHTMLをクライアントに**渡す前**に描画しきることです。 これを実現するために [ReactDOMServer.renderToString()](https://reactjs.org/docs/react-dom-server.html)を使用します。
 
-We then get the CSS from the `sheets` using `sheets.toString()`. We will see how this is passed along in the `renderFullPage` function.
+その後、対象のCSS を`sheets` インスタンスから`sheets.toString()`を用いて文字列として取得します。 ここで、先ほどの`renderFullPage`関数の中で、これらの値がどの様に受け渡されるを見ていきます。
 
 ```jsx
-res.send(renderFullPage(html, css));
-}
-
-const app = express();
-
-app.use('/build', express.static('build'));
-
-// This is fired every time the server-side receives a request.
-  const css = sheets.toString();
-
-  // Send the rendered page back to the client.
-  import express from 'express';
+import express from 'express';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import { ServerStyleSheets, ThemeProvider } from '@material-ui/core/styles';
@@ -109,7 +98,7 @@ import theme from './theme';
 function handleRender(req, res) {
   const sheets = new ServerStyleSheets();
 
-  // Render the component to a string.
+  // コンポーネントを文字列として描画する
   const html = ReactDOMServer.renderToString(
     sheets.collect(
       <ThemeProvider theme={theme}>
@@ -118,16 +107,27 @@ function handleRender(req, res) {
     ),
   );
 
-  // Grab the CSS from the sheets.
+  // CSSをsheetsから取得する
+  const css = sheets.toString();
+
+  // 描画したページをclientに投げ返す
+  res.send(renderFullPage(html, css));
+}
+
+const app = express();
+
+app.use('/build', express.static('build'));
+
+// サーバーでリクエストを受け付けるごとにこの関数が発火します。
 app.use(handleRender);
 
 const port = 3000;
 app.listen(port);
 ```
 
-### Inject Initial Component HTML and CSS
+### コンポーネントHTML・CSSをテンプレートに挿入する
 
-The final step on the server-side is to inject the initial component HTML and CSS into a template to be rendered on the client side.
+最後に、コンポーネントツリーから作成されたCSSとHTMLをクライアントサイドで描画するためのテンプレートに差し込みます。
 
 ```js
 function renderFullPage(html, css) {
@@ -146,9 +146,9 @@ function renderFullPage(html, css) {
 }
 ```
 
-### The Client Side
+### クライアントサイド
 
-The client side is straightforward. All we need to do is remove the server-side generated CSS. Let's take a look at the client file:
+クライアント側は簡単です。 サーバーサイドで生成された CSS を削除するだけです。 クライアント側のコードを見てみましょう:
 
 `client.js`
 
@@ -177,14 +177,14 @@ function Main() {
 ReactDOM.hydrate(<Main />, document.querySelector('#root'));
 ```
 
-## Reference implementations
+## 参考実装
 
-We host different reference implementations which you can find in the [GitHub repository](https://github.com/mui-org/material-ui) under the [`/examples`](https://github.com/mui-org/material-ui/tree/master/examples) folder:
+[GitHubリポジトリ](https://github.com/mui-org/material-ui)の下の[`/examples`](https://github.com/mui-org/material-ui/tree/master/examples)フォルダにいくつかのサンプルプロジェクトを用意しています。
 
-- [The reference implementation of this tutorial](https://github.com/mui-org/material-ui/tree/master/examples/ssr)
+- [このチュートリアルの実装サンプル](https://github.com/mui-org/material-ui/tree/master/examples/ssr)
 - [Gatsby](https://github.com/mui-org/material-ui/tree/master/examples/gatsby)
 - [Next.js](https://github.com/mui-org/material-ui/tree/master/examples/nextjs)
 
-## Troubleshooting
+## トラブルシューティング
 
-Check out the FAQ answer: [My App doesn't render correctly on the server](/getting-started/faq/#my-app-doesnt-render-correctly-on-the-server).
+FAQに投稿された [My App doesn't render correctly on the server](/getting-started/faq/#my-app-doesnt-render-correctly-on-the-server)を参照してみてください。
