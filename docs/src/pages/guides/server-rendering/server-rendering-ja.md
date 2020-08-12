@@ -52,14 +52,14 @@ export default theme;
 
 ### サーバーサイドの設定
 
-サーバーサイドのコードは概ね次の様になります。 We are going to set up an [Express middleware](https://expressjs.com/en/guide/using-middleware.html) using [app.use](https://expressjs.com/en/api.html) to handle all requests that come in to the server. If you're unfamiliar with Express or middleware, just know that the handleRender function will be called every time the server receives a request.
+サーバーサイドのコードは概ね次の様になります。 ここでは[Express](https://expressjs.com/en/guide/using-middleware.html) 使用し、[app.use](https://expressjs.com/en/api.html)を用いてサーバへの全てのリクエストを捌いていきます。 もしExpressや他のサーバーアプリケーションにあまり馴染みがない場合、サーバーへのリクエストごとにhandleRender関数が呼ばれるということだけを覚えておいてください。
 
 `server.js`
 
 ```js
 import express from 'express';
 
-// We are going to fill these out in the sections to follow.
+// この箇所は後のセクションで埋めていきます。
 function renderFullPage(html, css) {
   /* ... */
 }
@@ -70,7 +70,7 @@ function handleRender(req, res) {
 
 const app = express();
 
-// Isso é acionado toda vez que o servidor recebe uma solicitação.
+// サーバーでリクエストを受け付けるごとにこの関数が発火します。
 app.use(handleRender);
 
 const port = 3000;
