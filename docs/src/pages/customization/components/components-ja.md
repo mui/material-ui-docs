@@ -14,35 +14,40 @@
 
 次のソリューションを使用できる特定の実装のコンポーネントのスタイルを変更する必要がある場合があります。
 
-### クラス名でスタイルをオーバーライドする
+### クラス名classNameでスタイルをオーバーライドする
 
-コンポーネントのスタイルをオーバーライドする最初の方法は、**class names**を使用することです。 すべてのコンポーネントには、常にルート要素に適用される`className`プロパティがあります。 コンポーネントのスタイルをオーバーライドする最初の方法は、**class names**を使用することです。 すべてのコンポーネントには、常にルート要素に適用される`className`プロパティがあります。
+コンポーネントのスタイルをオーバーライドする最初の方法は、**class names**を使用することです。 すべてのコンポーネントには、常にルート要素に適用される`className`プロパティがあります。
 
-CSSを使用してコンポーネントのすべてのインスタンスをカスタマイズすることもできます。 Components expose [global class names](/styles/advanced/#with-material-ui-core) to enable this. Bootstrapをカスタマイズする方法と非常によく似ています。
+この例では、[`withStyles()`](/styles/basics/#higher-order-component-api)の高次(higher-order) を使用します。 コンポーネントの`classes`プロパティを使用して、カスタムスタイルをDOMに挿入し、クラス名を`ClassNames`コンポーネントに渡します。 他のスタイリングソリューション</a>、またはプレーンCSSを選択してスタイルを作成することもできますが、必ず CSSがDOMに注入されるときの[CSS注入順序](/styles/advanced/#css-injection-order)を考えてみてください。 Material-UIを使用してコンポーネントをスタイル設定すると、`<link>`が下に挿入されるため、高い特異性が得られます。 の`<head />`を使用して、コンポーネントが常に正しくレンダリングされるようにします。
 
 {{"demo": "pages/customization/components/ClassNames.js"}}
 
-### クラスでスタイルをオーバーライドする
+### クラスclassesによるスタイルのオーバーライド
 
 `className`プロパティでは不十分で、より深い要素にアクセスする必要がある場合は、`classes`オブジェクトプロパティを利用して、特定のコンポーネントに対してMaterial-UIによって注入されるすべてのCSSをカスタマイズできます。
 
-それぞれのクラスのリスト コンポーネントについては、コンポーネントAPIページの**CSS section**および**rule name column**を参照してください。 例えば、[Button CSS API](/api/button/#css)で見ることができます。 文 または、[browser dev tools](#using-the-dev-tools)を使用することもできます。 例えば、[Button CSS API](/api/button/#css)で見ることができます。 文 または、[browser dev tools](#using-the-dev-tools)を使用することもできます。
+それぞれのクラスのリスト コンポーネントについては、コンポーネントAPIページの**CSS section**および**rule name column**を参照してください。 例えば、[Button CSS API](/api/button/#css)で見ることができます。 文 または、[browser dev tools](#using-the-dev-tools)を使用することもできます。 例えば、[Button CSS API](/api/button/#css)で見ることができます。 または、[ブラウザの開発ツール](#using-the-dev-tools)を使用することもできます。
 
-CSSを使用してコンポーネントのすべてのインスタンスをカスタマイズすることもできます。 Components expose [global class names](/styles/advanced/#with-material-ui-core) to enable this. Bootstrapをカスタマイズする方法と非常によく似ています。
+この例では、`withStyles()`</code></code>も使用していますが、ここでは、`ClassesNesting(上記参照) は<code>Button`の`classes propを使用して、
+オーバーライドするクラスの<strong>名</strong>を適用するCSSクラス名(スタイルルール)</strong>にマップするオブジェクトを提供します(values)。
+コンポーネントの既存のクラスは引き続き注入されるため、必要なのは特定のスタイルを指定することだけです。
+追加またはオーバーライドします。</p>
 
-ボタンのスタイル設定に加えて、ボタンのラベルの大文字と小文字が変更されていることに注意してください。
+<p>ボタンのスタイル設定に加えて、ボタンのラベルの大文字と小文字が変更されていることに注意してください。</p>
 
-{{"demo": "pages/customization/components/ClassesNesting.js"}}
+<p>{{"demo": "pages/customization/components/ClassesNesting.js"}}</p>
 
-### グローバルクラス名でスタイルをオーバーライドする
+<h3>グローバルクラス名でスタイルをオーバーライドする</h3>
 
-[このセクションに従ってください](/styles/advanced/#with-material-ui-core) 。
+<p><a href="/styles/advanced/#with-material-ui-core">このセクションに従ってください</a> 。</p>
 
-### 開発ツール(dev tools) を使用する
+<h3>開発ツール(dev tools) を使用する</h3>
 
-ブラウザ開発ツールを使えば、時間を大幅に節約できます。 ブラウザ開発ツールを使えば、時間を大幅に節約できます。 Material-UIのクラス名は、開発モードでは[ a simple patternに従います](/styles/advanced/#class-names)。 `Mui[component name]-[style rule name]-[UUID]`。
+<p>ブラウザ開発ツールを使えば、時間を大幅に節約できます。
+Material-UIのクラス名は、開発モードでは<a href="/styles/advanced/#class-names"> a simple patternに従います</a>。
+<code>Mui[component name]-[style rule name]-[UUID]`。
 
-上記のデモに戻りましょう。 上記のデモに戻りましょう。 ボタン・ラベルを上書きする方法は?
+上記のデモに戻りましょう。 ボタン・ラベルを上書きする方法は?
 
 ![dev-tools](/static/images/customization/dev-tools.png)
 
