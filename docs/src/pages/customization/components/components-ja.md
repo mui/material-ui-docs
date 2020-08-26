@@ -5,7 +5,7 @@
 コンポーネントはさまざまなコンテキストで使用できるため、これにはいくつかのアプローチがあります。 最小のユースケースから最大のユースケースまで、次をご覧ください
 
 1. [一時的な状況の特定のバリエーション](#1-specific-variation-for-a-one-time-situation)
-2. [1回の状況に対する動的変化](#2-dynamic-variation-for-a-one-time-situation)
+2. [一時的な状況の動的変化](#2-dynamic-variation-for-a-one-time-situation)
 3. 異なるコンテキストで再使用される[特定のバリエーションのコンポーネント](#3-specific-variation-of-a-component)
 4. [Material Design variations](#4-material-design-variations)のボタンコンポーネントなど
 5. [グローバルテーマバリエーション](#5-global-theme-variation)
@@ -54,7 +54,7 @@ CSSを使用してコンポーネントのすべてのインスタンスをカ�
 
 ### ショートハンド
 
-上記のコード例は、子コンポーネントとして**同じCSS API**を使用することで要約できます。 上記のコード例は、子コンポーネントとして**同じCSS API**を使用することで要約できます。 この例では、`withStyles()`の上位(高次) コンポーネントは、[`Button`コンポーネント](/api/button/#css)が使用する`classes`プロパティーを注入しています。
+上記のコード例は、子コンポーネントとして**同じCSS API**を使用することで要約できます。 この例では、`withStyles()`の上位(高次) コンポーネントは、[`Button`コンポーネント](/api/button/#css)が使用する`classes`プロパティーを注入しています。
 
 ```jsx
 const StyledButton = withStyles({
@@ -77,9 +77,9 @@ const StyledButton = withStyles({
 
 ### 擬似クラス
 
-CSSを使用してコンポーネントのすべてのインスタンスをカスタマイズすることもできます。 Components expose [global class names](/styles/advanced/#with-material-ui-core) to enable this. Bootstrapをカスタマイズする方法と非常によく似ています。
+*hover*、*focus*、*disabled*、*selected*などのコンポーネントの特殊状態は、より高いCSS 特異性(specificity) が設定されています。 [特異性の重み](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)は、特定のCSS宣言に適用されます。 
 
-コンポーネントの特別な状態をオーバーライドするには、**特異性を高める必要があります** 。 *disable*状態と、 **pseudo-class**(`:disabled`)を使用したボタンコンポーネントの例を示します。 コンポーネントの特別な状態をオーバーライドするには、**特異性を高める必要があります** 。 *disable*状態と、 **pseudo-class**(`:disabled`)を使用したボタンコンポーネントの例を示します。
+コンポーネントの特別な状態をオーバーライドするには、**特異性を高める必要があります** 。 *擬似クラス*(**:disabled**)を使用して`disable`状態とボタンコンポーネントを使った例を示します。
 
 ```css
 .Button {
@@ -94,7 +94,7 @@ CSSを使用してコンポーネントのすべてのインスタンスをカ�
 <Button disabled className="Button">
 ```
 
-時にはこのプラットフォームではstateとして**pseudo-class**は使うことができない。 メニュー項目の構成要素と*選ばれた*例として述べる。 時にはこのプラットフォームではstateとして**pseudo-class**は使うことができない。 メニュー項目の構成要素と*選ばれた*例として述べる。 ネストされた要素にアクセスする以外にも、`classes`プロパティを使用して、Material-UIコンポーネントの特殊な状態をカスタマイズできます。
+プラットフォームにstateがないため、**擬似クラス** を使用できない場合があります。 例として、メニュー項目コンポーネントと *selected* 状態を取り上げましょう。 ネストされた要素にアクセスする以外にも、`classes`プロパティを使用して、Material-UIコンポーネントの特殊な状態をカスタマイズできます。
 
 ```css
 .MenuItem {
@@ -111,29 +111,29 @@ CSSを使用してコンポーネントのすべてのインスタンスをカ�
 
 #### 1つのコンポーネント状態をオーバーライドするために、特異性を高める必要があるのはなぜですか。
 
-設計上、CSS仕様では疑似クラスを使用することで、特定性を高めています。 設計上、CSS仕様では疑似クラスを使用することで、特定性を高めています。 一貫性を保つために、Material-UIはそのカスタム擬似クラスの特異性を高めます。 これには重要な利点が1つあり、カスタマイズしたい状態を選択することができます。 これには重要な利点が1つあり、カスタマイズしたい状態を選択することができます。
+設計上、CSS仕様では疑似クラスを使用することで、特定性を高めています。 一貫性を保つために、Material-UIはそのカスタム擬似クラスの特異性を高めます。 これには1つの重要な利点があり、カスタマイズしたい状態を簡単に選択できます。
 
 #### より少ない定型文を必要とする別のAPIを使用できますか?
 
-CSSを使用してコンポーネントのすべてのインスタンスをカスタマイズすることもできます。 Components expose [global class names](/styles/advanced/#with-material-ui-core) to enable this. Bootstrapをカスタマイズする方法と非常によく似ています。
+`classes` prop APIに値を指定する代わりに、Material-UIによって生成される[the global class names](/styles/advanced/#with-material-ui-core) を使用できます。 これらすべてのカスタム擬似クラスを実装します。
 
-| クラスキー        | グローバルクラス名        |
-|:------------ |:---------------- |
-| チェック済み       | Mui-checked      |
-| 無効           | Mui-disabled     |
-| エラー          | Mui-error        |
-| focused      | Mui-focused      |
-| focusVisible | Mui-focusVisible |
-| 必須           | Mui-required     |
-| 展開済み         | Mui-expanded     |
-| 選択済み         | Mui-selected     |
+| クラスキー(class key) | グローバルクラス名(global class name) |
+|:---------------- |:---------------------------- |
+| checked          | Mui-checked                  |
+| disabled         | Mui-disabled                 |
+| error            | Mui-error                    |
+| focused          | Mui-focused                  |
+| focusVisible     | Mui-focusVisible             |
+| required         | Mui-required                 |
+| expanded         | Mui-expanded                 |
+| selected         | Mui-selected                 |
 
 
 ```css
 .MenuItem {
   color: black;
 }
-.MenuItem.Mui-selected { /* Increase the specificity */
+.MenuItem.Mui-selected { /* 特異性を高める */
   color: blue;
 }
 ```
@@ -144,7 +144,7 @@ CSSを使用してコンポーネントのすべてのインスタンスをカ�
 
 ### 同じスタイルシート内のローカルルールを参照するには、`$ruleName`を使用します
 
-[jss-nested](https://github.com/cssinjs/jss/tree/master/packages/jss-plugin-nested)プラグイン(デフォルトで使用可能) は、特異性を高めるプロセスを容易にします。
+[jss-nested](https://github.com/cssinjs/jss/tree/master/packages/jss-plugin-nested)プラグイン(デフォルトで使用可能) は、特異性を高めるプロセスをより簡単にします。
 
 ```js
 const styles = {
@@ -157,7 +157,7 @@ const styles = {
 };
 ```
 
-コンパイル：
+コンパイル結果：
 
 ```css
 .root-x.disable-x {
@@ -181,7 +181,7 @@ const styles = {
 
 ### インラインスタイルでオーバーライドする
 
-コンポーネントのスタイルをオーバーライドするもう一つの方法は、 **inline-style**アプローチを使用することです。 すべてのコンポーネントには、`style` プロパティがあります。 これらのプロパティは常にルート要素に適用されます。 すべてのコンポーネントには、`style` プロパティがあります。 これらのプロパティは常にルート要素に適用されます。
+コンポーネントのスタイルをオーバーライドするもう一つの方法は、 **inline-style**アプローチを使用することです。 すべてのコンポーネントには、`style` プロパティがあります。 これらのプロパティは常にルート要素に適用されます。
 
 インラインスタイルは通常のCSSよりも優先されるため、CSSの特異性について心配する必要はありません。
 
@@ -189,9 +189,9 @@ const styles = {
 
 [inline-styleもしくはclassesどちらを使うべきですか？](/getting-started/faq/#when-should-i-use-inline-style-vs-css)
 
-## 2. 1回の状況に対する動的変化
+## 2. 一時的な状況の動的変化
 
-前のセクションでMaterial-UIコンポーネントのスタイルをオーバーライドする方法を学習しました。 では、これらのオーバーライドを動的にする方法を見てみましょう。 Here are five alternatives; each has its pros and cons. では、これらのオーバーライドを動的にする方法を見てみましょう。 Here are five alternatives; each has its pros and cons.
+前のセクションでMaterial-UIコンポーネントのスタイルをオーバーライドする方法を学習しました。 では、これらのオーバーライドを動的にする方法を見てみましょう。 ここに5つの選択肢があります。 それぞれに長所と短所があります。
 
 ### 動的CSS
 
@@ -209,7 +209,7 @@ const styles = {
 
 {{"demo": "pages/customization/components/DynamicInlineStyle.js"}}
 
-### ネストテーマ
+### テーマのネスティング
 
 {{"demo": "pages/customization/components/DynamicThemeNesting.js"}}
 
@@ -225,7 +225,7 @@ const styles = {
 
 Material Design仕様には、ボタンの形状が異なるなど、特定のコンポーネントのさまざまなバリエーションが記載されています。たとえば、[text](https://material.io/design/components/buttons.html#text-button)(以前の"flat")、[contained](https://material.io/design/components/buttons.html#contained-button)(以前の "raised")、[FAB](https://material.io/design/components/buttons-floating-action-button.html)などです。
 
-Material-UIは、これらすべてのバリエーションを実装しようとします。 Material-UIは、これらすべてのバリエーションを実装しようとします。 サポートされているMaterial Design コンポーネントの現在のステータスについては、[Supported Components](/getting-started/supported-components/)のマニュアルを参照してください。
+Material-UIは、これらすべてのバリエーションを実装しようとします。 サポートされているMaterial Design コンポーネントの現状については、[Supported Components](/getting-started/supported-components/)のマニュアルを参照してください。
 
 ## 5. グローバルテーマバリエーション
 
@@ -251,7 +251,7 @@ const theme = createMuiTheme({
 
 ### グローバルCSSのオーバーライド
 
-CSSを使用してコンポーネントのすべてのインスタンスをカスタマイズすることもできます。 CSSを使用してコンポーネントのすべてのインスタンスをカスタマイズすることもできます。 Components expose [global class names](/styles/advanced/#with-material-ui-core) to enable this. Bootstrapをカスタマイズする方法と非常によく似ています。
+CSSを使用してコンポーネントのすべてのインスタンスをカスタマイズすることもできます。 これを可能にするために、コンポーネントは[グローバルクラス名](/styles/advanced/#with-material-ui-core)を公開します。 Bootstrapをカスタマイズする方法と非常によく似ています。
 
 ```jsx
 const GlobalCss = withStyles({
@@ -271,9 +271,9 @@ const GlobalCss = withStyles({
 
 {{"demo": "pages/customization/components/GlobalCssOverride.js", "iframe": true, "height": 70}}
 
-### グローバルテーマオーバーライド
+### グローバルテーマのオーバーライド
 
-CSSを使用してコンポーネントのすべてのインスタンスをカスタマイズすることもできます。 Components expose [global class names](/styles/advanced/#with-material-ui-core) to enable this. Bootstrapをカスタマイズする方法と非常によく似ています。
+`theme`の`overrides`キーを利用すると、Material-UIによってDOMに注入されるすべてのスタイルを潜在的に変更できます。 詳細については、ドキュメントの[テーマセクションをご覧ください](/customization/globals/#css)。
 
 ```jsx
 const theme = createMuiTheme({
