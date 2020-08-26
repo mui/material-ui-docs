@@ -261,7 +261,7 @@ export default function StyledComponentsDeep() {
 }
 ```
 
-### Theme
+### Темы
 
 Material-UI has a rich theme structure that you can leverage for the color manipulations, the transitions, the media queries, and more.
 
@@ -458,7 +458,7 @@ export default function EmotionCSS() {
       Now, you can override Material-UI's styles. Styled components can override Material-UI's styles.
 ```
 
-### Theme
+### Темы
 
 Material-UI has a rich theme structure that you can leverage for the color manipulations, the transitions, the media queries, and more.
 
