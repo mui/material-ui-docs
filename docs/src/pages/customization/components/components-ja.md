@@ -30,7 +30,7 @@ CSSを使用してコンポーネントのすべてのインスタンスをカ�
 
 CSSを使用してコンポーネントのすべてのインスタンスをカスタマイズすることもできます。 Components expose [global class names](/styles/advanced/#with-material-ui-core) to enable this. Bootstrapをカスタマイズする方法と非常によく似ています。
 
-Notice that in addition to the button styling, the button label's capitalization has been changed:
+ボタンのスタイル設定に加えて、ボタンのラベルの大文字と小文字が変更されていることに注意してください。
 
 {{"demo": "pages/customization/components/ClassesNesting.js"}}
 
