@@ -10,7 +10,7 @@ Too many type sizes and styles at once can spoil any layout. A [typographic scal
 
 ## General
 
-The *Roboto* font will **not** be automatically loaded by Material-UI. The developer is responsible for loading all fonts used in their application. Roboto Font has a few easy ways to get started. For more advanced configuration, check out [the theme customization section](/customization/typography/).
+The *Roboto* font will **not** be automatically loaded by Material-UI. The developer is responsible for loading all fonts used in their application. Roboto Font has a few easy ways to get started. Для более продвинутой конфигурации ознакомьтесь с [разделом настроек темы](/customization/typography/).
 
 ## Roboto Font CDN
 
@@ -53,10 +53,10 @@ The Typography component uses the `variantMapping` property to associate a UI va
 - You can change the underlying element for a one time occasion with the `component` property:
 
 ```jsx
-Heading
-</Typography> {/* There is already an h1 in the page, let's not duplicate it. */}
+{/* На странице уже есть один тег h1, не дублируйте его. */}
 <Typography variant="h1" component="h2">
-  h1.
+  h1. Заголовок
+</Typography>
 ```
 
 - You can change the mapping [globally using the theme](/customization/globals/#default-props):
