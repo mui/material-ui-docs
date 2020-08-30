@@ -6,7 +6,7 @@ Material-UI requires a minimum version of TypeScript 3.2.
 
 [Create React AppでのTypeScript](https://github.com/mui-org/material-ui/tree/master/examples/create-react-app-with-typescript)の使用例を参考にしてください。
 
-In order for types to work, you have to at least have the following options enabled in your `tsconfig.json`:
+型が機能するためには、少なくともあなたの`tsconfig.json` の次のオプションを有効にする必要があります
 
 ```json
 {
