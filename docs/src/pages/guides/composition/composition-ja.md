@@ -48,7 +48,7 @@ This pattern is very powerful and allows for great flexibility, as well as a way
 
 ### インラインのある警告
 
-Using an inline function as an argument for the `component` prop may result in **unexpected unmounting**, since a new component is passed every time React renders. ⚠️ However, since we are using an inline function to change the rendered component, React will unmount the link every time `ListItemLink` is rendered.
+Using an inline function as an argument for the `component` prop may result in **unexpected unmounting**, since a new component is passed every time React renders. Not only will React update the DOM unnecessarily, the ripple effect of the `ListItem` will also not work correctly.
 
 ```jsx
 import { Link } from 'react-router-dom';
