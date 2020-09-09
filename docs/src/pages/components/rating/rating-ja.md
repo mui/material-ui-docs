@@ -9,7 +9,7 @@ packageName: '@material-ui/lab'
 
 # レート
 
-<p class="description">評価は、他の人の意見や製品に関する経験に関する洞察を提供します。 ユーザーは購入した製品を評価することもできます。 ユーザーは購入した製品を評価することもできます。</p>
+<p class="description">評価は、他の人の意見や製品に関する経験に関する洞察を提供します。 ユーザーは購入した製品を評価することもできます。 ユーザーは購入した製品を評価することもできます。 ユーザーは購入した製品を評価することもできます。</p>
 
 {{"component": "modules/components/ComponentLinkHeader.js"}}
 
@@ -19,7 +19,7 @@ packageName: '@material-ui/lab'
 
 ## カスタマイズされた評価
 
-コンポーネントのカスタマイズの例を次に示します。 詳細については、 [オーバーライドのドキュメントページ](/customization/components/)を参照してください。
+コンポーネントのカスタマイズの例を次に示します。 コンポーネントのカスタマイズ例を次に示します。 詳細については、 [オーバーライドのドキュメントページ](/customization/components/)を参照してください。
 
 {{"demo": "pages/components/rating/CustomizedRatings.js"}}
 
