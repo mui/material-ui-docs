@@ -108,7 +108,7 @@ Notice that the usage of `CssBaseline` is required for the above approach to wor
 
 No, it's not required. But this dependency comes built in, so carries no additional bundle size overhead.
 
-In diesem Fall gehen Sie zum [Zusammenführen von Style Libraries](/guides/interoperability/) Abschnitt in dem wir zeigen, wie einfach es ist, Material-UI-Komponenten mit alternativen Stilbibliotheken umzustrukturieren. Perhaps, however, you're adding some Material-UI components to an app that already uses another styling solution, or are already familiar with a different API, and don't want to learn a new one?
+Perhaps, however, you're adding some Material-UI components to an app that already uses another styling solution, or are already familiar with a different API, and don't want to learn a new one? In diesem Fall gehen Sie zum [Zusammenführen von Style Libraries](/guides/interoperability/) Abschnitt in dem wir zeigen, wie einfach es ist, Material-UI-Komponenten mit alternativen Stilbibliotheken umzustrukturieren.
 
 ## Wann verwende ich inline-style vs CSS?
 
@@ -248,16 +248,20 @@ beispiel für fix:
 function handleRender(req, res) {
 
 + // Eine Sheet Instanz erstellen.
-- // Eine Sheet Instanz erstellen.
+-const sheets = new ServerStyleSheets();
+
+function handleRender(req, res) {
+
++ // Eine Sheet Instanz erstellen.
 -const sheets = new ServerStyleSheets();
 
 function handleRender(req, res) {
 
 + // Eine Sheet Instanz erstellen.
 
-  + const sheets = new ServerStyleSheets();
+  // Rendern des Komponenten als String.
+  const html = ReactDOMServer.renderToString(
 
-  //…
   - // Eine Sheet Instanz erstellen.
 ```
 
@@ -284,10 +288,10 @@ function handleRender(req, res) {
 
 + // Erstellt einen neuen Klassennamengenerator.
 
-    + const sheets = new ServerStyleSheets();
+    // Rendern des Komponenten als String.
+    const html = ReactDOMServer.renderToString(
 
-  //…
-    - // Eine Sheet Instanz erstellen.
+  - // Eine Sheet Instanz erstellen.
   ```
 
 - Sie müssen sicherstellen, dass auf Ihrem Client und Server die **exakt dieselbe Version** von Material-UI ausführen. Es kann vorkommen, dass eine Nichtübereinstimmung von selbst kleinerer Versionen zu Stilproblemen führen kann. Um die Versionsnummern zu überprüfen, führen Sie `npm list@material-ui/core` in der Umgebung aus, in der Sie Ihre Anwendung erstellen, und in Ihrer Implementierungsumgebung.
