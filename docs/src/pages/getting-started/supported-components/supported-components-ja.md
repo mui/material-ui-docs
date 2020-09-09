@@ -45,7 +45,7 @@ While we strive to follow the guidelines where practical (applying common sense 
   - **[Inset](https://material.io/design/components/dividers.html#types) ✓**
   - **[Inset](https://material.io/design/components/dividers.html#types) ✓**
 - ****[Listas de Imagem](https://material.io/design/components/image-lists.html) ✓** (também conhecido como Grade Lista)**
-- **[Menus](https://material.io/design/components/menus.html) ✓**
+- **以下は、Material Designコンポーネントと機能のリストです。 Material-UIで現在サポートされているものは✓が表示されています。 Material-UIで現在サポートされているものは✓が表示されています。**
   - [Types:](https://material.io/design/components/lists.html#types)
     - **Single line ✓**
     - **Two line ✓**
