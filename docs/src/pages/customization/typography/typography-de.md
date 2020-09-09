@@ -29,9 +29,9 @@ const theme = createMuiTheme({
 
 ### Self-hosted fonts
 
-Um Schriftarten selbst zu hosten, laden Sie diese als ` ttf`, ` woff ` und/oder ` woff2 ` herunter und importieren Sie diese in Ihren Code.
+Um Schriftarten selbst zu hosten, laden Sie diese als `ttf`, `woff` und/oder `woff2` herunter und importieren Sie diese in Ihren Code.
 
-⚠️ Voraussetzung dafür ist, dass Sie in Ihrem Build-Prozess ein Plugin oder Loader haben, dass das Laden von `ttf`, `woff` und `woff2` Datein ermöglicht. Schriftarten werden *nicht * in deinen Bundle eingebettet sein. Sie werden von Ihrem Webserver anstelle von CDN geladen.
+⚠️ Voraussetzung dafür ist, dass Sie in Ihrem Build-Prozess ein Plugin oder Loader haben, dass das Laden von `ttf`, `woff` und `woff2` Datein ermöglicht. Schriftarten werden _nicht _ in deinen Bundle eingebettet sein. Sie werden von Ihrem Webserver anstelle von CDN geladen.
 
 ```js
 import RalewayWoff2 from './fonts/Raleway-Regular.woff2';
@@ -56,18 +56,7 @@ Next, you need to change the theme to use this new font. In order to globally de
 ```jsx
 const theme = createMuiTheme({
   typography: {
-    fontFamily: 'Raleway, Arial',
-  },
-  overrides: {
-    MuiCssBaseline: {
-      '@global': {
-        '@font-face': [raleway],
-      },
-    },
-  },
-});
-
-// ...
+    // Informiere die Material-UI über die Schriftgröße des HTML-Elements.
 return (
   <ThemeProvider theme={theme}>
     <CssBaseline />
@@ -160,7 +149,7 @@ html {
 }
 ```
 
-*Sie müssen das obige CSS auf das HTML-Element dieser Seite anwenden, um die unten stehende Demo korrekt anzuzeigen*
+_Sie müssen das obige CSS auf das HTML-Element dieser Seite anwenden, um die unten stehende Demo korrekt anzuzeigen_
 
 {{"demo": "pages/customization/typography/FontSizeTheme.js"}}
 
