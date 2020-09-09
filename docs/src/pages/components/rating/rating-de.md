@@ -1,11 +1,17 @@
 ---
 title: Rating React component
 components: Bewertung
+githubLabel:
+  component: Bewertung
+waiAria: 'https://www.w3.org/WAI/tutorials/forms/custom-controls/#a-star-rating'
+packageName: '@material-ui/lab'
 ---
 
 # Bewertung
 
 <p class="description">Bewertungen geben Einblicke in die Meinungen und Erfahrungen anderer mit einem Produkt. Benutzer können auch Produkte bewerten, die sie gekauft haben.</p>
+
+{{"component": "modules/components/ComponentLinkHeader.js"}}
 
 ## Einfache Bewertungen
 
