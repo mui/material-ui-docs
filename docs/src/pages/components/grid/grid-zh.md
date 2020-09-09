@@ -94,12 +94,9 @@ https://www.w3.org/TR/css-flexbox-1/#box-model
 
    ```jsx
    <body>
-    <div style={{ padding: 20 }}>
-      <Grid container spacing={5}>
-        //...
-      </Grid>
-    </div>
-  </body>
+     <div style={{ padding: 20 }}>
+       <Grid container spacing={5}>
+         //...
        </Grid>
      </div>
    </body>
