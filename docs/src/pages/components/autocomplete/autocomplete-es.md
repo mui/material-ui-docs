@@ -28,7 +28,7 @@ El valor debe elegirse de un conjunto predefinido de valores permitidos.
 
 ### Campo de pruebas
 
-By default, the component accepts the following options structures:
+Por defecto, el componente acepta la siguiente estructura de opciones:
 
 ```ts
 const filterOptions = createFilterOptions({
@@ -39,7 +39,7 @@ const filterOptions = createFilterOptions({
 <Autocomplete filterOptions={filterOptions} />
 ```
 
-Selecciona uno de los 248 países.
+por ejemplo:
 
 ```js
 const options = [
@@ -102,7 +102,7 @@ También puedes mostrar un diálogo cuando el usuario quiere añadir un nuevo va
 
 ## Agrupado
 
-You can group the options with the `groupBy` prop. If you do so, make sure that the options are also sorted with the same dimension that they are grouped by, otherwise you will notice duplicate headers.
+Puedes agrupar las opciones con el accesorio `groupBy`. Si lo haces, asegúrate de que las opciones también están ordenadas con la misma dimensión con la que están agrupadas, de lo contrario se crearan cabeceras duplicadas.
 
 {{"demo": "pages/components/autocomplete/Grouped.js"}}
 
@@ -271,7 +271,8 @@ Dirígete a la sección [Autocompletar Personalizado](#customized-autocomplete) 
 Sin embargo, además de recordar el valor introducido anteriormente, el navegador también puede proponer sugerencias **autorellenadas** (inicio de sesión guardado, la dirección o detalles de pago). En el caso de que desees evitar el autorellenar, puedes intentar lo siguiente:
 
 - Nombra la entrada sin filtrar ninguna información que el navegador pueda utilizar. p.e. `id="field1"` en vez de `id="country"`. Si dejas el id de vacío, el componente utiliza un identificador aleatorio.
-- Establecer `autoComplete="new-password"`: jsx
+- Establecer `autoComplete="new-password"`: jsx Establecer `autoComplete="new-password": 
+        jsx`
 
   ```jsx
   inputProps={{
