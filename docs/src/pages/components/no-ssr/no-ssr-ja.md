@@ -15,6 +15,8 @@ components: NoSsr
 - サーバーの負荷が高すぎる場合、サービスの低下を有効にできます。
 - 重要なものだけをレンダリングすることにより、対話までの時間を改善します（ `defer` プロパティを使用）。
 
+[The palette](/system/palette/) style関数。
+
 ## クライアント側の遅延
 
 {{"demo": "pages/components/no-ssr/SimpleNoSsr.js"}}
