@@ -13,7 +13,7 @@ githubLabel:
 
 ## Avatares de Imágenes
 
-Las imágenes de avatar pueden ser creadas pasándoles las propiedades estándar de `img`,   `src` o  `srcSet` al componente.
+Las imágenes de avatar pueden ser creadas pasándoles las propiedades estándar de `img`, `src` o `srcSet` al componente.
 
 {{"demo": "pages/components/avatars/ImageAvatars.js"}}
 
