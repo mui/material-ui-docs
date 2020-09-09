@@ -1,6 +1,9 @@
 ---
-title: React Stepper 步骤条组件
+title: React 步骤条组件
 components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIcon, StepLabel, Stepper
+githubLabel:
+  component: Stepper 步骤条组件
+materialDesign: https://material.io/archive/guidelines/components/steppers.html
 ---
 
 # Stepper 步骤条组件
@@ -12,11 +15,13 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 - **步骤的类型**：可编辑的，不可编辑的，移动端的，可选择的
 - **步骤条的类型**：横向的，竖向的，线性的，非线性的
 
+{{"component": "modules/components/ComponentLinkHeader.js"}}
+
 > **请注意：**步骤条不再出现在 [Material Design 指南](https://material.io/)中, 但 Material-UI 会继续支持此组件。
 
 ## 横向的步骤条
 
-### 线性的步骤条
+### 线性进度条
 
 您可以在 `activeStep` 属性中传入一个初始值为0的当前步骤值来控制`步骤条`。 您也可以借助 `orientation` 属性来设置 `步骤条` 的方向。
 
@@ -32,7 +37,7 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 
 ### 定制的步骤器
 
-以下是自定义组件的一个示例。 您可以在[样式重写文档页](/customization/components/)中了解有关此内容的更多信息。
+以下是自定义组件的一个示例。 您可以在[重写文档页](/customization/components/)中了解有关此内容的更多信息。
 
 {{"demo": "pages/components/steppers/CustomizedSteppers.js", "bg": true}}
 
@@ -40,9 +45,9 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 
 非线性步进器允许用户在任何点输入多步流程。
 
-此示例类似于常规的水平步进器，但步骤不再基于` activeStep `属性自动设置` disabled = {true} `。
+This example is similar to the regular horizontal stepper, except steps are no longer automatically set to `disabled={true}` based on the `activeStep` prop.
 
-在这里使用 `StepButton` 演示了一个可单击的步进器标签，并且设置了 `completed` 标志。 但是，由于可以以非线性方式访问每个步骤，因此需要由您自己的实现来确定何时完成所有步骤（甚至是是否需要完成）。
+在这里使用 `StepButton` 演示了一个可单击的步骤器标签，并且设置了 `completed` 标志。 但是，由于可以以非线性方式访问每个步骤，因此需要由您自己的实现来确定何时完成所有步骤（甚至是是否需要完成）。
 
 {{"demo": "pages/components/steppers/HorizontalNonLinearStepper.js", "bg": true}}
 
@@ -62,17 +67,17 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 
 ## 移动设备上的步骤条
 
-该组件实现了适用于移动设备上的紧凑型步骤条。 有关这方面的详细介绍，请参阅 [移动设备上的步骤条](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steps)。
+该组件实现了适用于移动设备上的紧凑型步骤条。 如果你还在寻找灵感，请参阅 [移动设备上的步骤条](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steps)。
 
 ### 文本
 
-本质上，这是一个被正确定位的 back/next 按钮。 您必须自己实现文本描述，但是，下面提供了一个参考示例。
+本质上，这是一个被正确定位的 back/next 按钮。 您必须自己实现文本描述，但以下的示例也可供参考。
 
 {{"demo": "pages/components/steppers/TextMobileStepper.js", "bg": true}}
 
-### 文本与幻灯片效果
+### 带有幻灯片效果的文本
 
-这个实例与之前的非常相似，不同之处在于使用[ react-swipeable-views ](https://github.com/oliviertassinari/react-swipeable-views)以进行步骤转换。
+这个实例与之前的非常相似，不同之处在于使用 [react-swipeable-views](https://github.com/oliviertassinari/react-swipeable-views) 以进行步骤的过渡动画。
 
 {{"demo": "pages/components/steppers/SwipeableTextMobileStepper.js", "bg": true}}
 
@@ -82,7 +87,7 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 
 {{"demo": "pages/components/steppers/DotsMobileStepper.js", "bg": true}}
 
-### 进度条
+### Progress 进度条组件
 
 当有许多步骤时，或者如果在此过程中需要插入步骤（基于对早期步骤的响应），请使用进度条。
 
