@@ -8,7 +8,7 @@ githubLabel:
 
 <p class="description">Boxコンポーネントは、CSSユーティリティーのほとんどのニーズに対応するラッパーコンポーネントとして機能します</p>
 
-Boxコンポーネントは、`@material-ui/system`で公開される[すべてのスタイル関数](/system/basics/#all-inclusive) をパッケージ化します。 It's created using the [`styled()`](/styles/api/#styled-style-function-component) function of `@material-ui/core/styles`.
+Boxコンポーネントは、`@material-ui/system`で公開される[すべてのスタイル関数](/system/basics/#all-inclusive) をパッケージ化します。 It's created using the [`styled()`](/styles/api/#styled-style-function-component) function of `@material-ui/core/styles`. It's created using the [`styled()`](/styles/api/#styled-style-function-component) function of `@material-ui/core/styles`.
 
 [The palette](/system/palette/) style関数。
 
@@ -26,7 +26,7 @@ The Box componentは、コンポーネントをラップします。 新しいDO
 </Box>
 ```
 
-これは、新しいDOM要素に分離する変更の場合に非常に有効です。 たとえば、この方法で余白を変更できます。
+これは、新しいDOM要素に分離する変更の場合に非常に有効です。 たとえば、この方法で余白を変更できます。 たとえば、この方法で余白を変更できます。
 
 ただし、場合によっては基礎となるDOM要素をターゲットにする必要があります。 たとえば、ボタンのテキストカラーを変更するとします。 Buttonコンポーネントは、独自のカラーを定義します。 CSS継承は役に立ちません。 この問題を回避するには、次の2つの方法があります。
 
