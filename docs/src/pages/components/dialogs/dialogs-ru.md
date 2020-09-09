@@ -1,15 +1,21 @@
 ---
 title: Диалог, компонент React
 components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Slide
+githubLabel:
+  component: Dialog
+materialDesign: https://material.io/components/dialogs
+waiAria: 'https://www.w3.org/TR/wai-aria-practices/#dialog_modal'
 ---
 
-# Dialog (диалог)
+# Dialog
 
 <p class="description">Диалоги информируют пользователей о задаче и могут содержать критическую информацию, требовать решения или включать несколько задач.</p>
 
 [Диалог](https://material.io/design/components/dialogs.html) представляет собой тип [модальных](/components/modal/) окон, который появляется над приложением, чтобы предоставить важную информацию или для предоставления решения. Диалоги отключают все функции приложения, когда они появляются, и остаются на экране до тех пор, пока не будут подтверждены, отклонены или пока не будут предприняты необходимые действия.
 
 Диалоги целенаправленно останавливают, поэтому их следует использовать с осторожностью.
+
+{{"component": "modules/components/ComponentLinkHeader.js"}}
 
 ## Простые диалоги
 
@@ -66,7 +72,7 @@ Use title bar alerts only for high-risk situations, such as the potential loss o
 
 ## Опциональные размеры
 
-Вы можете установить максимальную ширину диалога с помощью числового значения `maxWidth` в сочетании с булевым значением `fullWidth`. Когда свойство `fullWidth` имеет значение true, диалоговое окно будет адаптировано на основе значения `maxWidth`.
+Вы можете установить максимальную ширину диалога с помощью числового значения `maxWidth` в сочетании с булевым значением `fullWidth`. Вы можете установить максимальную ширину диалога с помощью числового значения `maxWidth` в сочетании с булевым значением `fullWidth`.
 
 {{"demo": "pages/components/dialogs/MaxWidthDialog.js"}}
 
@@ -97,7 +103,7 @@ function MyComponent() {
 
 ## Перетаскиваемый диалог
 
-Вы можете создать перетаскиваемый диалог, используя [react-draggable](https://github.com/mzabriskie/react-draggable). Для этого вы можете передать импортированный компонент `Draggable` как компонент `PaperComponent` компонента `Dialog`. Это сделает весь диалог перетаскиваемым.
+Вы можете создать перетаскиваемый диалог, используя [react-draggable](https://github.com/mzabriskie/react-draggable). Вы можете создать перетаскиваемый диалог, используя [react-draggable](https://github.com/mzabriskie/react-draggable). Это сделает весь диалог перетаскиваемым.
 
 {{"demo": "pages/components/dialogs/DraggableDialog.js"}}
 
