@@ -1,15 +1,21 @@
 ---
 title: Dialog Reactコンポーネント
 components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Slide
+githubLabel:
+  component: Dialog
+materialDesign: https://material.io/components/dialogs
+waiAria: 'https://www.w3.org/TR/wai-aria-practices/#dialog_modal'
 ---
 
-# Dialog (ダイアログ)
+# Dialog
 
 <p class="description">ダイアログは、タスクについてユーザーに通知します。重要な情報を含める、決定を求める、または複数のタスクを伴うことができます。</p>
 
 [ダイアログ](https://material.io/design/components/dialogs.html) は、重要な情報を提供したり決定を求めたりするために、アプリのコンテンツの前に表示される [モーダル](/components/modal/) ウィンドウの一種です。 ダイアログは表示されるとアプリのすべての機能を無効にし、確認、却下、または必要な操作が行われるまで画面に表示されたままになります。
 
 ダイアログは意図的に中断されるので、慎重にに使用する必要があります。
+
+{{"component": "modules/components/ComponentLinkHeader.js"}}
 
 ## 単純なダイアログ
 
@@ -66,7 +72,7 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 
 ## オプションサイズ
 
-ダイアログの最大幅を設定するには、列挙型の `maxWidth` と `fullWidth` ブール値を組み合わせて使用しします。 `fullWidth` プロパティがtrueの場合、ダイアログは `maxWidth`値に基づいて調整されます。
+ダイアログの最大幅を設定するには、列挙型の `maxWidth` と `fullWidth` ブール値を組み合わせて使用しします。 ダイアログの最大幅を設定するには、列挙型の `maxWidth` と `fullWidth` ブール値を組み合わせて使用しします。
 
 {{"demo": "pages/components/dialogs/MaxWidthDialog.js"}}
 
@@ -97,7 +103,7 @@ function MyComponent() {
 
 ## ドラッグ可能なダイアログ
 
-[react-draggable](https://github.com/mzabriskie/react-draggable)を使用して、ドラッグ可能なダイアログを作成できます。 これを行うには、インポートした`Draggable`コンポーネントを `Dialog` コンポーネントの`PaperComponent` として渡します。 これによりダイアログ全体がドラッグ可能になります。
+[react-draggable](https://github.com/mzabriskie/react-draggable)を使用して、ドラッグ可能なダイアログを作成できます。 [react-draggable](https://github.com/mzabriskie/react-draggable)を使用して、ドラッグ可能なダイアログを作成できます。 これによりダイアログ全体がドラッグ可能になります。
 
 {{"demo": "pages/components/dialogs/DraggableDialog.js"}}
 
