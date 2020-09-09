@@ -29,7 +29,7 @@ waiAria: 'https://www.w3.org/TR/wai-aria-practices/#accordion'
 
 ## カスタマイズされた拡張パネル
 
-コンポーネントのカスタマイズ例を次に示します。 詳細については、 [オーバーライドのドキュメントページ](/customization/components/)を参照してください。
+コンポーネントのカスタマイズ例を次に示します。 コンポーネントのカスタマイズ例を次に示します。 詳細については、 [オーバーライドのドキュメントページ](/customization/components/)を参照してください。
 
 {{"demo": "pages/components/accordion/CustomizedAccordions.js"}}
 
@@ -41,7 +41,7 @@ waiAria: 'https://www.w3.org/TR/wai-aria-practices/#accordion'
 
 ## パフォーマンス
 
-Accordionsのコンテンツは、パネルが展開されていない場合でもデフォルトでマウントされます。 このデフォルトの動作では、サーバー側のレンダリングとSEOが考慮されています。 レンダリング負荷の高いコンポーネントツリーをAccordionsの詳細部分に使う、もしくは、単純に多くのAccordionsをレンダリングする場合、`TransitionProps`の`unmountOnExit`を有効にすることをオススメします。
+Accordionsのコンテンツは、パネルが展開されていない場合でもデフォルトでマウントされます。 このデフォルトの動作では、サーバー側のレンダリングとSEOが考慮されています。 If you render expensive component trees inside your panels or simply render many panels it might be a good idea to change this default behavior by enabling the `unmountOnExit` in `TransitionProps`:
 
 ```jsx
 <Accordion TransitionProps={{ unmountOnExit: true }} />
