@@ -9,7 +9,6 @@ This guide aims to document the most popular alternatives, but you should find t
 - [Styled Components](#styled-components)
 - [CSS Modules](#css-modules)
 - [Emotion](#emotion)
-- [React JSS](#react-jss)
 
 ## Plain CSS
 
@@ -186,7 +185,6 @@ export default function StyledComponents() {
     </div>
   );
 }
-
 ```
 
 ### Controlling priority ⚠️
@@ -270,7 +268,7 @@ export default function StyledComponentsDeep() {
 }
 ```
 
-### Theme
+### Темы
 
 Material-UI has a rich theme structure that you can leverage for the color manipulations, the transitions, the media queries, and more.
 
@@ -473,7 +471,7 @@ import { StylesProvider } from '@material-ui/core/styles';
 </StylesProvider>
 ```
 
-### Theme
+### Темы
 
 Material-UI has a rich theme structure that you can leverage for the color manipulations, the transitions, the media queries, and more.
 
