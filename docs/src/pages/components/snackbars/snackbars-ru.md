@@ -1,6 +1,10 @@
 ---
 title: Snackbar React component
 components: Snackbar, SnackbarContent
+githubLabel:
+  component: Snackbar
+materialDesign: https://material.io/components/snackbars
+waiAria: 'https://www.w3.org/TR/wai-aria-1.1/#alert'
 ---
 
 # Snackbar
@@ -10,6 +14,8 @@ components: Snackbar, SnackbarContent
 [Snackbars](https://material.io/design/components/snackbars.html) inform users of a process that an app has performed or will perform. They appear temporarily, towards the bottom of the screen. They shouldn’t interrupt the user experience, and they don’t require user input to disappear.
 
 Snackbars contain a single line of text directly related to the operation performed. They may contain a text action, but no icons. You can use them to display notifications.
+
+{{"component": "modules/components/ComponentLinkHeader.js"}}
 
 #### Frequency
 
@@ -39,7 +45,7 @@ Some snackbars with varying message length.
 
 {{"demo": "pages/components/snackbars/LongTextSnackbar.js"}}
 
-## Transições
+## Переходы
 
 ### Consecutive Snackbars
 
