@@ -1,6 +1,9 @@
 ---
 title: React Icon Component
-components: Icon, SvgIcon
+components: Icones, SvgIcon
+githubLabel:
+  components: SvgIcon
+materialDesign: https://material.io/design/iconography/system-icons.html
 ---
 
 # Icônes
@@ -19,7 +22,7 @@ Material Design has standardized over 1,100 official icons, each in five differe
 
 ### Installation
 
-Install the package in your project directory with:
+Installez le package dans votre répertoire de projet avec:
 
 ```sh
 // with npm
@@ -150,7 +153,7 @@ Le composant `Icon` affichera une icône à partir de toute police d’icône pr
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
 
-`Icon` will set the correct class name for the Material icon font. For other fonts, you must supply the class name using the Icon component's `className` property.
+`Icon` will set the correct class name for the Material icon font. `Icon` will set the correct class name for the Material icon font.
 
 Pour utiliser une icône, enveloppez simplement le nom de l'icône (ligature de police) avec le composant `Icon` , par exemple:
 
@@ -181,6 +184,7 @@ Pour plus de détails, vous pouvez voir [pourquoi GitHub a migré d'icônes de p
 ## Accessibilité
 
 Les icônes peuvent transmettre toutes sortes d'informations utiles. Il est donc important qu'elles atteignent le plus grand nombre de personnes possible. There are two use cases you’ll want to consider:
+
 - **Decorative Icons** are only being used for visual or branding reinforcement. S'ils étaient supprimés de la page, les utilisateurs comprendraient toujours et pourraient utiliser votre page.
 - **Les Icônes sémantiques** sont celles que vous utilisez pour transmettre du sens, plutôt que de simples décorations. Cela inclut les icônes sans texte adjacentes utilisées comme commandes interactives - boutons, éléments de formulaire, bascules, etc.
 
