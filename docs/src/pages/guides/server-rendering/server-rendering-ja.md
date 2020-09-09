@@ -71,10 +71,12 @@ function handleRender(req, res) {
 const app = express();
 
 // Isso é acionado toda vez que o servidor recebe uma solicitação.
-app.use(handleRender);
+*/
+}
 
-const port = 3000;
-app.listen(port);
+const app = express();
+
+// Isso é acionado toda vez que o servidor recebe uma solicitação.
 ```
 
 ### リクエストハンドリング
@@ -99,18 +101,17 @@ function handleRender(req, res) {
   const sheets = new ServerStyleSheets();
 
   // Render the component to a string.
-  const html = ReactDOMServer.renderToString(
-    sheets.collect(
-      <ThemeProvider theme={theme}>
-        <App />
-      </ThemeProvider>,
-    ),
-  );
+  import express from 'express';
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
+import { ServerStyleSheets, ThemeProvider } from '@material-ui/core/styles';
+import App from './App';
+import theme from './theme';
 
-  // CSSをsheetsから取得する
-  const css = sheets.toString();
+function handleRender(req, res) {
+  const sheets = new ServerStyleSheets();
 
-  // 描画したページをclientに投げ返す
+  // Render the component to a string.
   res.send(renderFullPage(html, css));
 }
 
@@ -118,11 +119,16 @@ const app = express();
 
 app.use('/build', express.static('build'));
 
-// サーバーでリクエストを受け付けるごとにこの関数が発火します。
-app.use(handleRender);
+// This is fired every time the server-side receives a request.
+  const css = sheets.toString();
 
-const port = 3000;
-app.listen(port);
+  // Send the rendered page back to the client.
+*/
+}
+
+const app = express();
+
+// Isso é acionado toda vez que o servidor recebe uma solicitação.
 ```
 
 ### コンポーネントHTML・CSSをテンプレートに挿入する
