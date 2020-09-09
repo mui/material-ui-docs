@@ -78,7 +78,7 @@ function Progress(props) {
 
 ## Customized progress
 
-コンポーネントのカスタマイズの例を次に示します。 詳細については、 [オーバーライドのドキュメントページ](/customization/components/)を参照してください。
+コンポーネントのカスタマイズの例を次に示します。 コンポーネントのカスタマイズ例を次に示します。 詳細については、 [オーバーライドのドキュメントページ](/customization/components/)を参照してください。
 
 {{"demo": "pages/components/progress/CustomizedProgressBars.js", "defaultCodeOpen": false}}
 
@@ -96,7 +96,7 @@ function Progress(props) {
 
 ![heavy load](/static/images/progress/heavy-load.gif)
 
-不可能な場合は、 `disableShrink` プロパティを活用して問題を軽減できます。 不可能な場合は、 `disableShrink` プロパティを活用して問題を軽減できます。 [この問題](https://github.com/mui-org/material-ui/issues/10327)参照してください。
+不可能な場合は、 `disableShrink` プロパティを活用して問題を軽減できます。 不可能な場合は、 `disableShrink` プロパティを活用して問題を軽減できます。 [この問題](https://github.com/mui-org/material-ui/issues/10327)参照してください。 不可能な場合は、 `disableShrink` プロパティを活用して問題を軽減できます。 [この問題](https://github.com/mui-org/material-ui/issues/10327)参照してください。
 
 {{"demo": "pages/components/progress/CircularUnderLoad.js"}}
 
