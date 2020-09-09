@@ -59,7 +59,7 @@ const styles = theme => ({
 
 ## JavaScriptメディアクエリ
 
-CSSだけでは不十分な場合もあります。 CSSだけでは不十分な場合もあります。 JavaScriptで、ブレークポイントの値に基づいてReactレンダリングツリーを変更できます。
+CSSだけでは不十分な場合もあります。 CSSだけでは不十分な場合もあります。 CSSだけでは不十分な場合もあります。 JavaScriptで、ブレークポイントの値に基づいてReactレンダリングツリーを変更できます。
 
 ### useMediaQueryフック
 
