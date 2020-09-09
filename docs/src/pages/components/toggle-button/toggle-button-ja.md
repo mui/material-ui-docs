@@ -11,7 +11,7 @@ packageName: '@material-ui/lab'
 
 <p class="description">トグルボタンを使用して、関連するオプションをグループ化できます。</p>
 
-関連する [Toggle buttons](https://material.io/components/buttons#toggle-button)のグループを強調するには、次の操作を行います。 グループは共通のコンテナーを共用する必要があります。 You should label each button with `aria-label`.
+関連する [Toggle buttons](https://material.io/components/buttons#toggle-button)のグループを強調するには、次の操作を行います。 グループは共通のコンテナーを共用する必要があります。 ToggleButton sets `aria-pressed="<bool>"` according to the button state.
 
 {{"component": "modules/components/ComponentLinkHeader.js"}}
 
@@ -63,7 +63,7 @@ const handleAlignment = (event, newAlignment) => {
 
 ## Customized toggle button
 
-コンポーネントのカスタマイズ例を次に示します。 詳細については、 [オーバーライドのドキュメントページ](/customization/components/)を参照してください。
+コンポーネントのカスタマイズ例を次に示します。 コンポーネントのカスタマイズ例を次に示します。 詳細については、 [オーバーライドのドキュメントページ](/customization/components/)を参照してください。
 
 {{"demo": "pages/components/toggle-button/CustomizedDividers.js", "bg": true}}
 
