@@ -2,7 +2,7 @@
 
 <p class="description">This section covers the details of setting up a CSP.</p>
 
-## Was ist CSP und warum ist es nützlich?
+## Wie kann man CSP implementieren?
 
 CSP mitigates cross-site scripting (XSS) attacks by requiring developers to whitelist the sources their assets are retrieved from. Diese Liste wird vom Server als Header zurückgegeben. Angenommen, Sie haben eine Website unter `https://example.com` gehostet. Der CSP-Header `default-src: 'self';` erlaubt alle Assets, die sich unter `https://example.com/*` befinden und blockt alle anderen. Wenn es auf Ihrer Website einen für XSS anfälligen Bereich gibt, in dem nicht eingegebene Benutzereingaben angezeigt werden, könnte ein Angreifer Folgendes eingeben:
 
@@ -16,7 +16,7 @@ Diese Sicherheitsanfälligkeit ermöglicht es dem Angreifer, irgendetwas auszuf�
 
 Weitere Informationen zu CSP finden Sie in den [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).
 
-## Wie kann man CSP implementieren?
+## Was ist CSP und warum ist es nützlich?
 
 ### Server-Side Rendering (SSR)
 
@@ -50,7 +50,7 @@ You should pass the nonce in the `<style>` tag on the server.
 />
 ```
 
-Dann müssen Sie dieses Nonce an JSS übergeben, damit es den nachfolgenden `<style>`-Tags hinzugefügt werden kann.
+JSS will then, by convention, look for a `<meta property="csp-nonce"` tag and use the `content` value as the nonce.
 
 The way that you do this is by passing a `<meta property="csp-nonce" content={nonce} />` tag in the `<head>` of your HTML. JSS will then, by convention, look for a `<meta property="csp-nonce"` tag and use the `content` value as the nonce.
 
