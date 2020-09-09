@@ -1,6 +1,9 @@
 ---
 title: App Bar コンポーネント
 components: AppBar, Toolbar, Menu
+githubLabel:
+  component: サイド検索バー
+materialDesign: https://material.io/components/app-bars-top
 ---
 
 # App Bar
@@ -9,7 +12,9 @@ components: AppBar, Toolbar, Menu
 
 [top App Bar](https://material.io/design/components/app-bars-top.html) は、現在の画面に関連するコンテンツとアクションを提供します。 ブランディング、画面タイトル、ナビゲーション、およびアクションに使用されます。
 
-It can transform into a contextual action bar or be used as a navbar.
+アクションバーに変換したり、ナビゲーションバーとして使うことができます。
+
+{{"component": "modules/components/ComponentLinkHeader.js"}}
 
 ## シンプルなアプリバー
 
@@ -37,7 +42,7 @@ It can transform into a contextual action bar or be used as a navbar.
 
 ## Prominent
 
-A prominent app bar.
+目立つアプリバー
 
 {{"demo": "pages/components/app-bar/ProminentAppBar.js", "bg": true}}
 
@@ -65,7 +70,7 @@ function App() {
 }
 ```
 
-3. You can use `theme.mixins.toolbar` CSS:
+3. `theme.mixins.toolbar` CSSを使えます。:
 
 ```jsx
 const useStyles = makeStyles(theme => ({
@@ -113,13 +118,13 @@ function App() {
 
 1. `オプション` (*オプジェクト* [任意]):
 
-- `options.disableHysteresis` (*ブール値* [任意]): デフォルト値 `false`. ヒステリシスを無効にします。 ` trigger ` 値を決定するときにスクロール方向を無視します。
-- `options.target` (*ノード* [任意]): デフォルト地 `window`.
-- `options.threshold` (*Number* [optional]): デフォルトは`100`. 垂直スクロールがこのしきい値(排他的) を厳密に超えたときに`trigger` 値を変更します。
+   - `options.disableHysteresis` (*ブール値* [任意]): デフォルト値 `false`. ヒステリシスを無効にします。 ` trigger ` 値を決定するときにスクロール方向を無視します。
+   - `options.target` (*ノード* [任意]): デフォルト地 `window`.
+   - `options.threshold` (*Number* [optional]): デフォルトは`100`. 垂直スクロールがこのしきい値(排他的) を厳密に超えたときに`trigger` 値を変更します。
 
 #### 戻り値
 
-` trigger `：スクロール位置が基準に合っていますか？
+`trigger`：スクロール位置が基準に合っていますか？
 
 #### 例
 
