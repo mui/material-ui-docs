@@ -1,12 +1,12 @@
-# 断点
+# Breakpoints 断点
 
-<p class="description">API that enables the use of breakpoints in a wide variety of contexts.</p>
+<p class="description">API 解锁了各种情况下断点的使用。</p>
 
-为了获得最佳的用户体验，material design 的接口需要在各种断点范围下自适应布局需要。 Material-UI 使用了原先 [specification](https://material.io/design/layout/responsive-layout-grid.html#breakpoints) 的 **简化** 实现。
+为了获得最佳的用户体验，在不同的断点下，material design 的接口需要适应它们的布局。 Material-UI 使用了原先 [specification](https://material.io/design/layout/responsive-layout-grid.html#breakpoints) 的 **简化** 实现。
 
-许多组件内部都使用了断点来实现响应式要求，同时你也可以利用断点来控制应用的布局，这可借助于 [Grid](/components/grid/) 和 [Hidden](/components/hidden/) 组件。
+不同组件内部也使用了断点来实现响应式的布局，同时借助于 [Grid](/components/grid/) 和 [Hidden](/components/hidden/) 组件，你也可以用其来控制应用的布局。
 
-## Default breakpoints
+## 默认的断点
 
 每个断点（一个键）匹配一个*固定*的屏幕宽度（一个值）：
 
@@ -16,7 +16,7 @@
 - ** lg， **大：1280px
 - ** xl， **超大：1920px
 
-These breakpoint values are used to determine breakpoint ranges. 每个范围包含起始断点，不包含终止断点。
+这些断点值用于确定断点范围。 一个断点范围包含了起始的断点值，不包含终止的断点值。
 
 ```js
 value         |0px     600px    960px    1280px   1920px
@@ -25,18 +25,18 @@ screen width  |--------|--------|--------|--------|-------->
 range         |   xs   |   sm   |   md   |   lg   |   xl
 ```
 
-These values can be [customized](#custom-breakpoints).
+这些值可以是 [定制](#custom-breakpoints) 的。
 
-## CSS 媒体查询
+## CSS 媒体查询（Media queries）
 
-CSS media queries are the idiomatic approach to make your UI responsive. The theme provides four styles helpers to do so:
+CSS media queries 是一种做出响应式的用户界面的特有方法。 而 theme 提供了四种样式的辅助方式：
 
 - [theme.breakpoints.up(key)](#theme-breakpoints-up-key-media-query)
 - [theme.breakpoints.down(key)](#theme-breakpoints-down-key-media-query)
 - [theme.breakpoints.only(key)](#theme-breakpoints-only-key-media-query)
 - [theme.breakpoints.between(start, end)](#theme-breakpoints-between-start-end-media-query)
 
-在下面的演示中, 我们根据屏幕宽度更改背景颜色 (红色、蓝色和绿色)。
+在下面的演示中，我们根据屏幕宽度来更改背景颜色 (红色、蓝色和绿色)。
 
 ```jsx
 const styles = theme => ({
@@ -57,23 +57,23 @@ const styles = theme => ({
 
 {{"demo": "pages/customization/breakpoints/MediaQuery.js"}}
 
-## JavaScript媒体查询
+## JavaScript 媒体查询
 
-有时, 使用 CSS 是不够的。 您可能希望基于 JavaScript 中的断点值更改 React 渲染树。
+有的时候，仅使用 CSS 是远远不够的。 您可能会有基于 JavaScript 中的断点值来更改 React 渲染树的需求。
 
-### useMediaQuery钩子
+### useMediaQuery hook
 
 您可以在 [userMediaQuery](/components/use-media-query/) 页面上了解更多信息。
 
 ### withWidth()
 
-> ⚠️ This higher-order component will be deprecated for the [useMediaQuery](/components/use-media-query/) hook.
+> ⚠️  有了 [useMediaQuery](/components/use-media-query/) hook，这个高阶组件（higher-order component）将被弃用。
 
 ```jsx
 import withWidth from '@material-ui/core/withWidth';
 
 function MyComponent(props) {
-  return <div>{`Current width: ${props.width}`}</div>;
+  return <div>{`当前宽度: ${props.width}`}</div>;
 }
 
 export default withWidth()(MyComponent);
@@ -83,15 +83,15 @@ export default withWidth()(MyComponent);
 
 {{"demo": "pages/customization/breakpoints/WithWidth.js"}}
 
-## Custom breakpoints
+## 自定义断点
 
-You define your project's breakpoints in the `theme.breakpoints` section of your theme.
+您可以选择在 theme 中的 `theme.breakpoints` 部分定义项目的断点。
 
-- [`theme.breakpoints.values`](/customization/default-theme/?expand-path=$.breakpoints.values): Default to the [above values](#default-breakpoints). The keys are your screen names, and the values are the min-width where that breakpoint should start.
-- `theme.breakpoints.unit`: Default to `px`. The unit used for the breakpoint's values.
-- `theme.breakpoints.step`: Default to 5 (`0.05px`). The increment used to implement exclusive breakpoints.
+- [`theme.breakpoints.values`](/customization/default-theme/?expand-path=$.breakpoints.values)：默认为 [以上值](#default-breakpoints)。 键值（key）为屏幕的名字（screen names），而值（values）是该断点应开始的最小宽度。
+- `theme.breakpoints.unit`：默认为 `px`。 这个用于断点值的单位。
+- `theme.breakpoints.step`：默认为 5 (`0.05px`)。 这个增量用于实现专用的断点。
 
-If you change the default breakpoints's values, you need to provide them all:
+如果您需要更改断点的默认值，则需要提供所有的断点值：
 
 ```jsx
 const theme = createMuiTheme({
@@ -107,7 +107,7 @@ const theme = createMuiTheme({
 })
 ```
 
-Feel free to have as few or as many breakpoints as you want, naming them in whatever way you'd prefer for your project.
+您可以随意设置任意数量的断点，并且也可以在项目中以您喜欢的任何方式为断点命名。
 
 ```js
 const theme = createMuiTheme({
@@ -121,7 +121,7 @@ const theme = createMuiTheme({
 });
 ```
 
-If you are using TypeScript, you would also need to use [module augmentation](/guides/typescript/#customization-of-theme) for the theme to accept the above values.
+如果您使用的是 TypeScript，您还需要使用 [module augmentation](/guides/typescript/#customization-of-theme) 来让主题接受上述值。
 
 ```ts
 declare module "@material-ui/core/styles/createBreakpoints" {
@@ -246,22 +246,23 @@ const styles = theme => ({
 
 ### `withWidth([options]) => higher-order component`
 
-注入`width`属性。 它不会修改传递给它的组件；相反，它返回一个新组件。 这个`width`断点属性与当前屏幕宽度匹配。 它可以是以下断点之一：
+注入`width`属性。 它不会修改传递给它的组件；相反，它会返回一个新组件。 这个`width`断点属性与当前屏幕宽度匹配。 它可以是以下断点之一：
 
 ```ts
 type Breakpoint = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 ```
 
-一些可能有趣的实现细节：
+你可能会注意到一些有趣的细节：
 
-- 它将转发*非 React 的静态* 属性，以便 HOC 更 "透明"。 例如，它可用于定义 ` getInitialProps()` 静态方法 (next.js)。
+- 它将转发*非 React 的静态* 属性，以便 HOC 更 "透明"。 例如，您可以用它来定义一个 `getInitialProps()` 的静态方法 (next.js)。
 
 #### 参数
 
-1. `options` (*Object* [optional]): 
-  - ` options.withTheme ` (*Boolean* [optional]): 默认值为 `false`。 将 ` theme ` 对象作为属性提供给组件。
-  - `options.noSSR` (*Boolean* [可选的]): 默认值为`false`。 为了执行服务器端呈现协调，它需要呈现两次。 第一次没有任何东西，第二次与孩子们在一起。 这种双遍渲染周期有一个缺点。 UI显示的时候可能会发生闪烁，如果你不打算使用SSR服务器端渲染 你可以将其设置为`true`来避免这种情况发生
-  - `options.initialWidth` （*Breakpoint* [可选的]）： 为`window.innerWidth`在服务器上不可用， 我们默认在第一次安装期间呈现空组件。 You might want to use an heuristic to approximate the screen width of the client browser screen width. For instance, you could be using the user-agent or the client-hints. https://caniuse.com/#search=client%20hint, we also can set the initial width globally using [`custom properties`](/customization/globals/#default-props) on the theme. In order to set the initialWidth we need to pass a custom property with this shape:
+1. `options` (*Object* [optional]):
+
+- `options.withTheme` (*Boolean* [optional]): 默认值为 `false`。 将 `theme` 对象作为属性提供给组件。
+- `options.noSSR` (*Boolean* [可选的]): 默认值为`false`。 为了呈现服务器端渲染的协调性，我们需要将它渲染两次。 第一次什么也没渲染，第二次与子组件一起渲染。 这个双向渲染周期带有一个缺点。 UI 会有闪烁。 如果你不进行服务器端渲染，那么可以将此标志设置为 `true`。
+- `options.initialWidth` （*Breakpoint* [可选的]）： 为`window.innerWidth`在服务器上不可用， 我们默认在第一次安装期间呈现空组件。 You might want to use an heuristic to approximate the screen width of the client browser screen width. For instance, you could be using the user-agent or the client-hints. https://caniuse.com/#search=client%20hint, we also can set the initial width globally using [`custom properties`](/customization/globals/#default-props) on the theme. In order to set the initialWidth we need to pass a custom property with this shape: For instance, you could be using the user-agent or the [client-hints](https://caniuse.com/#search=client%20hint). we also can set the initial width globally using [`custom props`](/customization/globals/#default-props) in the theme. In order to set the initialWidth we need to pass a custom prop with this shape:
 
 ```js
 const theme = createMuiTheme({
@@ -273,9 +274,13 @@ const theme = createMuiTheme({
     },
   },
 });
+      },
+    },
+  },
+});
 ```
 
-- `options.resizeInterval` (*Number* [optional]): 默认为166，对应于60 Hz的10帧。 Number of milliseconds to wait before responding to a screen resize event.
+- `options.resizeInterval` (*Number* [optional]): 默认为166，对应于60 Hz的10帧。 响应屏幕调整大小事件前等待的毫秒数。
 
 #### 返回结果
 
@@ -299,4 +304,4 @@ export default withWidth()(MyComponent);
 
 ## 默认值
 
-You can explore the default values of the breakpoints using [the theme explorer](/customization/default-theme/?expand-path=$.breakpoints) or by opening the dev tools console on this page (`window.theme.breakpoints`).
+您可以使用 [主题资源管理器（theme explorer）](/customization/default-theme/?expand-path=$.breakpoints) 或通过打开此页面上的开发工具控制台（dev tools console）（`window.theme.breakpoints`）来探索断点的一些默认值。
