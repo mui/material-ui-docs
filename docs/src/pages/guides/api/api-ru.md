@@ -122,7 +122,7 @@ The `ref` is forwarded to the root element. This means that, without changing th
 
 ## Словарь
 
-- **host component**: a DOM node type in the context of `react-dom`, e.g. a `'div'`. См. также [React Implementation Notes:](https://reactjs.org/docs/implementation-notes.html#mounting-host-elements).
+- **host component**: a DOM node type in the context of `react-dom`, e.g. a `'div'`. экземляр `window.HTMLDivElement`.
 - **host element**: DOM-нода в контексте `react-dom`, т.е. экземляр `window.HTMLDivElement`.
 - **outermost**: The first component when reading the component tree from top to bottom i.e. breadth-first search.
 - **root component**: the outermost component that renders a host component.
