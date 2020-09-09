@@ -2,7 +2,7 @@
 
 <p class="description">Ce package contient des composants en incubation (en développement) qui ne sont pas encore prêts à être ajoutés au package principal.</p>
 
-La principale différence entre le laboratoire et le noyau est la façon dont les composants sont versionnés. Avoir un paquet laboratoire séparer nous permets de pouvoir effectuer des changements ou d'intégrer de nouvelles fonctionnalités tandis que le noyau suit une  [politique plus lente](https://material-ui.com/versions/#release-frequency).
+La principale différence entre le laboratoire et le noyau est la façon dont les composants sont versionnés. Avoir un paquet laboratoire séparer nous permets de pouvoir effectuer des changements ou d'intégrer de nouvelles fonctionnalités tandis que le noyau suit une [politique plus lente](https://material-ui.com/versions/#release-frequency).
 
 Lorsque les développeur utilise et test les composant en signalant les éventuels problèmes, les contributeurs en apprennent plus sur se que le composant pourrait manquer, fonctionnalité manquante, problème d'accessibilité, bugs, API design, etc. Plus un composant est âgé, plus il est utilisé, moins il y aura de chances de trouver de nouveaux problèmes et par conséquent de devoir subir d'important changement.
 
@@ -39,7 +39,7 @@ yarn add @material-ui/core
 
 ## TypeScript
 
-De manière à pouvoir  [outrepasser le CSS](/customization/globals/#css) et [à customiser les props par défaut](/customization/globals/#default-props) avec le theme, les utilisateurs de TypeScript devront importés les types suivant. En interne, il utilise [le module d'augmentation](/guides/typescript/#customization-of-theme) pour étendre la structure du thème par défaut avec l'extension de composant disponible dans le laboratoire.
+De manière à pouvoir [ outrepasser le CSS ](/customization/globals/#css) et [ à customiser les props par défaut ](/customization/globals/#default-props) avec le theme, les utilisateurs de TypeScript devront importés les types suivant. En interne, il utilise [le module d'augmentation](/guides/typescript/#customization-of-theme) pour étendre la structure du thème par défaut avec l'extension de composant disponible dans le laboratoire.
 
 ```tsx
 import '@material-ui/lab/themeAugmentation';
