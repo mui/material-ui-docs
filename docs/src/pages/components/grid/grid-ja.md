@@ -10,7 +10,7 @@ materialDesign: https://material.io/design/layout/understanding-layout.html
 
 <p class="description">Material Designのレスポンシブレイアウトグリッドは、画面サイズと向きに適応し、レイアウト間の一貫性を保証します。</p>
 
-[grid](https://material.io/design/layout/responsive-layout-grid.html) は、レイアウト間の視覚的な一貫性を実現しながら、さまざまなデザインでの柔軟性を可能にします。 Material DesignのレスポンシブUIは12列のグリッドレイアウトに基づいています。
+[grid](https://material.io/design/layout/responsive-layout-grid.html) は、レイアウト間の視覚的な一貫性を実現しながら、さまざまなデザインでの柔軟性を可能にします。 [grid](https://material.io/design/layout/responsive-layout-grid.html) は、レイアウト間の視覚的な一貫性を実現しながら、さまざまなデザインでの柔軟性を可能にします。 Material DesignのレスポンシブUIは12列のグリッドレイアウトに基づいています。 Material DesignのレスポンシブUIは12列のグリッドレイアウトに基づいています。
 
 {{"component": "modules/components/ComponentLinkHeader.js"}}
 
