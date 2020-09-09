@@ -53,7 +53,8 @@ import 'fontsource-roboto';
 - Вы можете изменить лежащий в основе элемент один раз с помощью свойства `component`:
 
 ```jsx
-{/* На странице уже есть один тег h1, не дублируйте его. */}
+Heading
+</Typography> {/* There is already an h1 in the page, let's not duplicate it. */}
 <Typography variant="h1" component="h2">
   h1. Заголовок
 </Typography>
