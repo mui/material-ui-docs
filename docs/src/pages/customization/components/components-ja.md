@@ -190,7 +190,7 @@ const styles = {
 
 ## 2. 一時的な状況の動的変化
 
-前のセクションでMaterial-UIコンポーネントのスタイルをオーバーライドする方法を学習しました。 では、これらのオーバーライドを動的にする方法を見てみましょう。 ここに5つの選択肢があります。 それぞれに長所と短所があります。
+前のセクションでMaterial-UIコンポーネントのスタイルをオーバーライドする方法を学習しました。 では、これらのオーバーライドを動的にする方法を見てみましょう。 では、これらのオーバーライドを動的にする方法を見てみましょう。 Here are five alternatives; each has its pros and cons.
 
 ### 動的CSS
 
@@ -250,7 +250,7 @@ const theme = createMuiTheme({
 
 ### グローバルCSSのオーバーライド
 
-CSSを使用してコンポーネントのすべてのインスタンスをカスタマイズすることもできます。 これを可能にするために、コンポーネントは[グローバルクラス名](/styles/advanced/#with-material-ui-core)を公開します。 Bootstrapをカスタマイズする方法と非常によく似ています。
+CSSを使用してコンポーネントのすべてのインスタンスをカスタマイズすることもできます。 CSSを使用してコンポーネントのすべてのインスタンスをカスタマイズすることもできます。 Components expose [global class names](/styles/advanced/#with-material-ui-core) to enable this. これを可能にするために、コンポーネントは[グローバルクラス名](/styles/advanced/#with-material-ui-core)を公開します。 Bootstrapをカスタマイズする方法と非常によく似ています。
 
 ```jsx
 const GlobalCss = withStyles({
