@@ -1,6 +1,9 @@
 ---
 title: Componente React para Lista cuadriculada
 components: ImageList, ImageListItem, ImageListItemBar, ListSubheader, IconButton
+materialDesign: https://material.io/components/image-lists
+githubLabel:
+  component: ImageList
 ---
 
 # Lista cuadriculada
@@ -9,11 +12,13 @@ components: ImageList, ImageListItem, ImageListItemBar, ListSubheader, IconButto
 
 Las [Listas cuadriculadas](https://material.io/design/components/image-lists.html) representan una colección de ítems con un patrón repetitivo. Ayudan a mejorar la comprensión visual del contenido que tienen.
 
+{{"component": "modules/components/ComponentLinkHeader.js"}}
+
 ## Lista cuadriculada sólo con imágenes
 
-Un ejemplo simple de una lista cuadriculada (`ImageList`) con imágenes desplazables.
-
 {{"demo": "pages/components/image-list/ImageImageList.js", "hideEditButton": true}}
+
+{{"demo": "pages/components/image-list/BasicImageList.js", "hideEditButton": true}}
 
 ## Lista cuadriculada con barras de título
 
