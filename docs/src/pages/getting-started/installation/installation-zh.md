@@ -2,17 +2,17 @@
 
 <p class="description">安装 Material-UI —— 世界上最受欢迎的 React UI 框架。</p>
 
-Material-UI 可以通过 [npm 包](https://www.npmjs.com/package/@material-ui/core)来安装。
+Material-UI 可以通过 [npm 包](https://www.npmjs.com/package/@material-ui/core) 来安装。
 
 ## npm
 
 若想安装并写入您的 `package.json` 依赖包，请运行以下命令：
 
 ```sh
-// 用npm安装
+// 用 npm 安装
 npm install @material-ui/core
 
-// 用yarn安装
+// 用 yarn 安装
 yarn add @material-ui/core
 ```
 
@@ -60,3 +60,14 @@ yarn add @material-ui/icons
 尽管我们**不赞成**在**生产环境**中使用这种方式 —— 无论实际使用哪些组件，客户端必须下载整个库，而这将会影响到整体性能和带宽利用率。
 
 ⚠️带有 `latest` 标签的 UMD 会指向我们最新版本的库。 这个指向是**不稳定的**，它会随着我们发布的新版本而改变。 您应该考虑使用一个具体的版本，如 [v4.4.0](https://unpkg.com/@material-ui/core@4.4.0/umd/material-ui.development.js)。
+
+## 设计资源
+
+<a href="https://material-ui.com/store/items/sketch-react/?utm_source=docs&utm_medium=referral&utm_campaign=installation-sketch" style="margin-left: 8px; margin-top: 8px; display: inline-block;"><img src="/static/images/download-sketch.svg" alt="sketch" /></a>
+<a href="https://material-ui.com/store/items/figma-react/?utm_source=docs&utm_medium=referral&utm_campaign=installation-figma" style="margin-left: 32px; margin-top: 8px; display: inline-block;"><img src="/static/images/download-figma.svg" alt="figma" /></a>
+
+A set of reusable components for design tools is available, designed to match the React components, and to help you craft great products:
+
+- **Sketch**: [Sketch for Material-UI](https://material-ui.com/store/items/sketch-react/?utm_source=docs&utm_medium=referral&utm_campaign=related-projects-sketch) — A large UI kit with over 600 handcrafted Material-UI's symbols 💎.
+- **Figma**: [Figma for Material-UI](https://material-ui.com/store/items/figma-react/?utm_source=docs&utm_medium=referral&utm_campaign=related-projects-sketch) — A large UI kit with over 600 handcrafted Material-UI's components 🎨.
+- **Framer**: [Framer for Material-UI](https://packages.framer.com/package/material-ui/material-ui) — A small MIT UI kit preview of handcrafted Material-UI's component.
