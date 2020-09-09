@@ -27,7 +27,7 @@ Select 组件的设计原理是和一个原生的 `<select>` 元素能够互相�
 
 ### Filled and outlined variants
 
-{{"demo": "pages/components/selects/NativeSelects.js"}}
+{{"demo": "pages/components/selects/SelectVariants.js"}}
 
 ### Labels and helper text
 
