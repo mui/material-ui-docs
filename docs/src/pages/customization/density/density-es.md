@@ -4,7 +4,7 @@
 
 ## Aplicando densidad
 
-Esta sección explica cómo aplicar densidad. Las guias Material Design tienen una [guia extensa](https://material.io/design/layout/applying-density.html#typographic-density) que cubre estos temas con mayor detalle. No cubre todos los casos de uso posibles, ni consideraciones que debas tomar en cuenta para usar densidad en tu aplicación.
+Esta sección explica cómo aplicar densidad. Las guias Material Design tienen una [guia extensa](https://material.io/design/layout/applying-density.html#typographic-density) que cubre estos temas con mayor detalle. Las guias Material Design tienen una [guia extensa](https://material.io/design/layout/applying-density.html#typographic-density) que cubre estos temas con mayor detalle.
 
 ## Implementando la densidad
 
