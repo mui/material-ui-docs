@@ -63,7 +63,7 @@ export default function Hook() {
 
 ### Styled components API
 
-注：これは呼び出し構文にのみ適用されます。スタイル定義は引き続きJSSオブジェクトを使用します。 [この動作を変更することもできます](/styles/advanced/#string-templates) が、いくつかの制限があります。 [この動作を変更することもできます](/styles/advanced/#string-templates) が、いくつかの制限があります。
+注：これは呼び出し構文にのみ適用されます。スタイル定義は引き続きJSSオブジェクトを使用します。 [この動作を変更することもできます](/styles/advanced/#string-templates) が、いくつかの制限があります。 注：これは呼び出し構文にのみ適用されます。スタイル定義は引き続きJSSオブジェクトを使用します。 [この動作を変更することもできます](/styles/advanced/#string-templates) が、いくつかの制限があります。 [この動作を変更することもできます](/styles/advanced/#string-templates) が、いくつかの制限があります。
 
 ```jsx
 import * as React from 'react';
@@ -123,7 +123,7 @@ export default withStyles(styles)(HigherOrderComponent);
 
 ## Nesting selectors
 
-現在のクラスやコンポーネント内のターゲット要素に、セレクターを入れ子にすることができます。 以下の例はHook APIを使用していますが、他のAPIでも同様に機能します。 以下の例はHook APIを使用していますが、他のAPIでも同様に機能します。
+現在のクラスやコンポーネント内のターゲット要素に、セレクターを入れ子にすることができます。 以下の例はHook APIを使用していますが、他のAPIでも同様に機能します。 以下の例はHook APIを使用していますが、他のAPIでも同様に機能します。 以下の例はHook APIを使用していますが、他のAPIでも同様に機能します。
 
 ```js
 const useStyles = makeStyles({
