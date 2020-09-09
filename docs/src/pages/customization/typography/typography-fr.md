@@ -1,4 +1,4 @@
-# Typography
+# Typographie
 
 <p class="description">The theme provides a set of type sizes that work well together, and also with the layout grid.</p>
 
@@ -160,7 +160,7 @@ html {
 }
 ```
 
-*You need to apply the above CSS on the html element of this page to see the below demo rendered correctly*
+_You need to apply the above CSS on the html element of this page to see the below demo rendered correctly_
 
 {{"demo": "pages/customization/typography/FontSizeTheme.js"}}
 
