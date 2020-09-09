@@ -4,7 +4,9 @@
 
 ## CSS
 
-当配置变量不够强大的时候，您可以使用`theme`的`overrides`来让Material-UI隐式地为您注入**样式规则**。 这是一个非常强大的特性。
+当配置变量不够强大的时候，您可以使用`theme`的`overrides`来让Material-UI隐式地为您注入**样式规则**。 这是一个十分有效的功能。
+
+To override lab components styles with TypeScript, check [this documentation](/components/about-the-lab/#typescript).
 
 ```js
 const theme = createMuiTheme({
@@ -23,11 +25,11 @@ const theme = createMuiTheme({
 
 {{"demo": "pages/customization/globals/GlobalCss.js"}}
 
-每个组件可自定义的部分列在文档的**Component API**部分。 例如，你可以看一下[Button](/api/button/#css)， 而且你总可以查阅 [implementation](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/Button/Button.js)。
+每个组件可自定义的部分列在文档的**Component API**部分。 例如，您可以参考以下 [Button](/api/button/#css) 组件。 例如，你可以看一下[Button](/api/button/#css)， 而且你总可以查阅 [implementation](https://github.com/mui-org/material-ui/blob/next/packages/material-ui/src/Button/Button.js)。
 
 ## 全局 CSS
 
-如果你使用 [CssBaseline](/components/css-baseline/) 组件来应用全局重置(global resets)，那么也可以用它来应用全局样式。 就像这样：
+如果您使用 [CssBaseline](/components/css-baseline/) 组件来应用全局重置（global resets），那么也可以将它应用于全局样式。 就像这样：
 
 ```jsx
 const theme = createMuiTheme({
@@ -49,11 +51,19 @@ return (
     {children}
   </ThemeProvider>
 );
+return (
+  <ThemeProvider theme={theme}>
+    <CssBaseline />
+    {children}
+  </ThemeProvider>
+);
 ```
 
 ## 默认属性
 
-您可以更改所有Material-UI组件的默认属性。 该用例展示了在 `主题` 中的一个 `props` 键(key)。 
+您可以更改所有 Material-UI 组件的默认属性。 该用例展示了在 `主题` 中的一个 `props` 键(key)。
+
+To override lab components styles with TypeScript, check [this documentation](/components/about-the-lab/#typescript).
 
 ```js
 const theme = createMuiTheme({
@@ -62,6 +72,10 @@ const theme = createMuiTheme({
     MuiButtonBase: {
       // 需要修改的默认属性
       disableRipple: true, // 在整个程序中没有更多的ripple 💣!
+    },
+  },
+});
+      },
     },
   },
 });
