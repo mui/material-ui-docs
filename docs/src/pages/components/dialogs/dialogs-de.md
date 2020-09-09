@@ -1,6 +1,10 @@
 ---
 title: Dialog React-Komponente
 components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Slide
+githubLabel:
+  component: Dialog
+materialDesign: https://material.io/components/dialogs
+waiAria: 'https://www.w3.org/TR/wai-aria-practices/#dialog_modal'
 ---
 
 # Dialog
@@ -10,6 +14,8 @@ components: Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions
 Ein [Dialog](https://material.io/design/components/dialogs.html) ist ein Typ von [modalen](/components/modal/) Fenstern, der vor dem App-Inhalt angezeigt wird, um wichtige Informationen bereitzustellen oder um eine Entscheidung zu bitten. Dialoge deaktivieren alle App-Funktionen, wenn sie angezeigt werden, und bleiben auf dem Bildschirm, bis sie bestätigt, abgewiesen oder eine erforderliche Aktion ausgeführt wurde.
 
 Dialoge sind absichtlich unterbrechend und sollten sparsam eingesetzt werden.
+
+{{"component": "modules/components/ComponentLinkHeader.js"}}
 
 ## Einfache Dialoge
 
@@ -66,7 +72,7 @@ Das Dialogfeld verfügt über eine Schaltfläche zum Schließen, um die Benutzer
 
 ## Optionale Größen
 
-Sie können die maximale Breite eines Dialogs festlegen, indem Sie die `maxWidth` Eigenschaft in Kombination mit dem boolean `fullWidth` verwenden. Wenn die Eigenschaft `fullWidth` wahr ist, wird der Dialog basierend auf dem Wert `maxWidth` angepasst.
+Sie können die maximale Breite eines Dialogs festlegen, indem Sie die `maxWidth` Eigenschaft in Kombination mit dem boolean `fullWidth` verwenden. Sie können die maximale Breite eines Dialogs festlegen, indem Sie die `maxWidth` Eigenschaft in Kombination mit dem boolean `fullWidth` verwenden.
 
 {{"demo": "pages/components/dialogs/MaxWidthDialog.js"}}
 
@@ -97,7 +103,7 @@ Durch Berühren von „Abbrechen“ in einem Bestätigungsdialogfeld oder durch 
 
 ## Ziehbarer Dialog
 
-Sie können einen ziehbaren Dialog erstellen, indem Sie [react-draggable](https://github.com/mzabriskie/react-draggable) nutzen. Dazu können Sie die importierte `Draggable` Komponente als `PaperComponent` der `Dialog` Komponente übergeben. Dadurch wird der gesamte Dialog verschiebbar.
+Sie können einen ziehbaren Dialog erstellen, indem Sie [react-draggable](https://github.com/mzabriskie/react-draggable) nutzen. Sie können einen ziehbaren Dialog erstellen, indem Sie [react-draggable](https://github.com/mzabriskie/react-draggable) nutzen. Dadurch wird der gesamte Dialog verschiebbar.
 
 {{"demo": "pages/components/dialogs/DraggableDialog.js"}}
 
