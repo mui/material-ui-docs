@@ -258,6 +258,7 @@ function handleRender(req, res) {
   + const sheets = new ServerStyleSheets();
 
   //…
+  const html = ReactDOMServer.renderToString(
   -// Create a sheets instance.
 ```
 
@@ -287,7 +288,8 @@ function handleRender(req, res) {
     + const sheets = new ServerStyleSheets();
 
   //…
-    -// Create a sheets instance.
+    const html = ReactDOMServer.renderToString(
+  -// Create a sheets instance.
   ```
 
 - You need to verify that your client and server are running the **exactly the same version** of Material-UI. It is possible that a mismatch of even minor versions can cause styling problems. To check version numbers, run `npm list @material-ui/core` in the environment where you build your application and also in your deployment environment.
@@ -347,7 +349,7 @@ function Portal({ children, container }) {
 }
 ```
 
-With this simple heuristic `Portal` might re-render after it mounts because refs are up-to-date before any effects run. However, just because a ref is up-to-date doesn't mean it points to a defined instance. If the ref is attached to a ref forwarding component it is not clear when the DOM node will be available. This is especially apparent for React.lazy components in Suspense. The above implementation could also not account for a change in the DOM node. In the example above, the `Portal` would run an effect once, but might not re-render because `ref.current` is still `null`.
+With this simple heuristic `Portal` might re-render after it mounts because refs are up-to-date before any effects run. However, just because a ref is up-to-date doesn't mean it points to a defined instance. If the ref is attached to a ref forwarding component it is not clear when the DOM node will be available. The above implementation could also not account for a change in the DOM node. In the example above, the `Portal` would run an effect once, but might not re-render because `ref.current` is still `null`. This is especially apparent for React.lazy components in Suspense.
 
 This is why we require a prop with the actual DOM node so that React can take care of determining when the `Portal` should re-render:
 
