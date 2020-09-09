@@ -13,7 +13,7 @@ packageName: '@material-ui/lab'
 
 Le widget est utile pour définir la valeur d'une zone de texte simple d'une seule ligne dans l'un des deux types de scénarios suivants:
 
-1. La valeur de la textbox doit être préalablement définit, ex: un champ de location doit contenir de valide nom de location:  [combo box](#combo-box).
+1. La valeur de la textbox doit être préalablement définit, ex: un champ de location doit contenir de valide nom de location: [combo box](#combo-box).
 2. La zone de texte peut contenir n'importe quelle valeur arbitraire, mais il est avantageux de proposer des valeurs à l'utilisateur, par exemple, un champ de recherche peut suggérer similaires ou recherches antérieures pour gagner du temps aux utilisateurs: [gratuit solo](#free-solo).
 
 C'est censé être une version améliorée de la "react-select" et de "downshift".
@@ -271,7 +271,7 @@ Par défaut, le composant désactive la fonctionnalité **auto-complétion** (ra
 Cependant, en plus de se souvenir des valeurs entrées passées, le navigateur peut également proposer des suggestions de **remplissage automatique** (connexion, adresse ou détails de paiement enregistrés). Dans le cas où vous voulez le remplissage automatique, vous pouvez essayer ce qui suit :
 
 - Nommez l'input sans fuir les informations que le navigateur peut utiliser. par exemple `id="field1"` au lieu de `id="country"`. Si vous laissez l'id vide, le composant utilise un id aléatoire.
-- Définir `autoComplete="new-password"`:
+- Définir `autoComplete="new-password"`: jsx
 
   ```jsx
   inputProps={{
