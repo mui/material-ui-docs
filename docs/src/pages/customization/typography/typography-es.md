@@ -31,7 +31,7 @@ const theme = createMuiTheme({
 
 Para fuentes auto-hospedadas, descargue los archivos de fuente en `ttf`, `woff`, and/or `woff2` añada el formato e importelo dentro de su código.
 
-⚠️ This requires that you have a plugin or loader in your build process that can handle loading `ttf`, `woff`, and `woff2` files. Las fuentes no podran ser empotradas dentro de su bundle. Estas se podrán cargar desde su servidor en vez de servirlas desde un CDN.
+⚠️ This requires that you have a plugin or loader in your build process that can handle loading `ttf`, `woff`, and `woff2` files. Fonts will _not_ be embedded within your bundle. Estas se podrán cargar desde su servidor en vez de servirlas desde un CDN.
 
 ```js
 import RalewayWoff2 from './fonts/Raleway-Regular.woff2';
@@ -56,18 +56,7 @@ Luego, usted podrá lo necesario en el cambiar el tema para usar la nueva fuente
 ```jsx
 const theme = createMuiTheme({
   typography: {
-    fontFamily: 'Raleway, Arial',
-  },
-  overrides: {
-    MuiCssBaseline: {
-      '@global': {
-        '@font-face': [raleway],
-      },
-    },
-  },
-});
-
-// ...
+    // Tell Material-UI what's the font-size on the html element is.
 return (
   <ThemeProvider theme={theme}>
     <CssBaseline />
@@ -160,11 +149,11 @@ html {
 }
 ```
 
-*You need to apply the above CSS on the html element of this page to see the below demo rendered correctly*
+_You need to apply the above CSS on the html element of this page to see the below demo rendered correctly_
 
 {{"demo": "pages/customization/typography/FontSizeTheme.js"}}
 
-## Variants
+## Variantes
 
 The typography object comes with [13 variants](/components/typography/#component) by default:
 
