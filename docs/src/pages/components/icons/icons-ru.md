@@ -1,6 +1,9 @@
 ---
 title: React-компонент Icon
 components: Icon, SvgIcon
+githubLabel:
+  components: SvgIcon
+materialDesign: https://material.io/design/iconography/system-icons.html
 ---
 
 # Иконки
@@ -9,13 +12,13 @@ components: Icon, SvgIcon
 
 Material-UI обеспечивает поддержку иконок тремя способами:
 
-1. Standardized [Material Design icons](#material-icons) exported as React components (SVG icons).
-1. With the [SvgIcon](#svgicon) component, a React wrapper for custom SVG icons.
-1. With the [Icon](#icon-font-icons) component, a React wrapper for custom font icons.
+1. Стандартные [иконки Material Design](#material-icons) экспортированы как React компоненты (SVG иконки).
+1. С помощью компонента [SvgIcon](#svgicon), React-обёртки для пользовательских SVG иконок.
+1. С помощью компонента [Icon](#icon-font-icons), React-обёртки для пользовательских иконочных шрифтов.
 
 ## Material Иконки
 
-Material Design has standardized over 1,100 official icons, each in five different "themes" (see below). For each SVG icon, we export the respective React component from the @material-ui/icons package. You can [search the full list of these icons](/components/material-icons/).
+Material Design has standardized over 1,100 official icons, each in five different "themes" (see below). For each SVG icon, we export the respective React component from the @material-ui/icons package. Вы можете [найти полный список этих иконок здесь](/components/material-icons/).
 
 ### Инструкция по установке
 
@@ -29,9 +32,9 @@ npm install @material-ui/icons
 yarn add @material-ui/icons
 ```
 
-These components use the Material-UI SvgIcon component to render the SVG path for each icon, and so they have a peer-dependency on the next release of Material-UI.
+Эти компоненты используют компонент Material-UI SvgIcon для отрисовки пути SVG для каждой иконки, и поэтому у них есть peer-зависимость от следующего выпуска Material-UI.
 
-If you are not already using Material-UI in your project, you can add it with:
+Если вы еще не используете Material-UI в вашем проекте, вы можете добавить его командой:
 
 ```sh
 // with npm
@@ -43,16 +46,16 @@ yarn add @material-ui/core
 
 ### Использование
 
-Import icons using one of these two options:
+Импорт иконок с помощью одного из этих двух вариантов:
 
-- Option 1:
+- Вариант 1:
 
   ```jsx
   import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
   import ThreeDRotation from '@material-ui/icons/ThreeDRotation';
   ```
 
-- Option 2:
+- Вариант 2:
 
   ```jsx
   import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
@@ -150,7 +153,7 @@ Note: [mdi-material-ui](https://github.com/TeamWertarbyte/mdi-material-ui) has a
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
 
-`Icon` will set the correct class name for the Material icon font. For other fonts, you must supply the class name using the Icon component's `className` property.
+`Icon` will set the correct class name for the Material icon font. `Icon` will set the correct class name for the Material icon font.
 
 Чтобы использовать иконку, просто оберните её имя (лигатуру шрифта) в компонент `Icon`, например:
 
@@ -181,6 +184,7 @@ For more details, you can check out [why GitHub migrated from font icons to SVG 
 ## Доступность
 
 Иконки могут передавать всевозможную значимую информацию, поэтому важно, чтобы они охватывали максимально возможное количество людей. There are two use cases you’ll want to consider:
+
 - **Decorative Icons** are only being used for visual or branding reinforcement. Если удалить их со страницы, пользователи всё равно смогут её использовать, им всё будет понятно.
 - **Семантические иконки** – это те, которые используются для передачи смысла, а не только для украшения. В данную группу входят иконки без текста, используемые в качестве интерактивных элементов управления – кнопки, элементы форм, переключатели, и так далее.
 
