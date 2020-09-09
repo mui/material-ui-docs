@@ -1,6 +1,9 @@
 ---
 title: Grid List React Komponente
 components: ImageList, ImageListItem, ImageListItemBar, ListSubheader, IconButton
+materialDesign: https://material.io/components/image-lists
+githubLabel:
+  component: ImageList
 ---
 
 # Rasterliste (Grid List)
@@ -9,11 +12,13 @@ components: ImageList, ImageListItem, ImageListItemBar, ListSubheader, IconButto
 
 [Rasterlisten](https://material.io/design/components/image-lists.html) repräsentieren eine Sammlung von Elementen in einem sich wiederholenden Muster. Sie verbessern das visuelle Verständnis der Inhalte, die sie enthalten.
 
+{{"component": "modules/components/ComponentLinkHeader.js"}}
+
 ## Nur-Bild Raster Liste
 
-Ein einfaches Beispiel für ein scrollbare `RasterList` mit Bildern.
-
 {{"demo": "pages/components/image-list/ImageImageList.js", "hideEditButton": true}}
+
+{{"demo": "pages/components/image-list/BasicImageList.js", "hideEditButton": true}}
 
 ## Rasterliste mit Titelleisten
 
