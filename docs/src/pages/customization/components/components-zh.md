@@ -5,20 +5,20 @@
 由于组件可以在不同的上下文环境中使用，因此有几种方法。 从最狭窄到最广泛的用例，这些是：
 
 1. [一次性使用的特定变体](#1-specific-variation-for-a-one-time-situation)
-2. [一次性使用的动态变体](#2-dynamic-variation-for-a-one-time-situation)
-3. 在不同环境中重复使用的[特定组件的变体](#3-specific-variation-of-a-component) 
-4. [Material Design 的变体](#4-material-design-variations)，例如按钮组件
-5. [全局化主题变体](#5-global-theme-variation)
+1. [一次性使用的动态变体](#2-dynamic-variation-for-a-one-time-situation)
+1. 在不同环境中重复使用的[特定组件的变体](#3-specific-variation-of-a-component)
+1. [Material Design 的变体](#4-material-design-variations)，例如按钮组件
+1. [全局化主题变体](#5-global-theme-variation)
 
-## 1、 一次性使用的特定变体
+## 1. 一次性使用的特定变体
 
 您可能需要为实现特定的组件而更改样式，以下有几种解决方案：
 
 ### 用类名（class names）覆盖样式
 
-覆盖组件样式的第一种方法是使用**类名（class names）** 。 每个组件都提供一个` className `属性，它通常作用于 root 元素。
+覆盖组件样式的第一种方法是使用**类名（class names）** 。 每个组件都提供一个`className`属性，它通常作用于 root 元素。
 
-此示例使用一个高阶组件[` withStyles() `](/styles/basics/#higher-order-component-api)将自定义样式注入 DOM 之中，并通过它的` classes `属性将类名传递给 `ClassNames` 组件。 您可以选择[任何其他的样式解决方案](/guides/interoperability/)，或使用纯 CSS 来创建样式，但一定要 考虑[ CSS 的注入顺序](/styles/advanced/#css-injection-order) ，当通过 Material-UI 将 CSS 注入 DOM 中而来实现组件的样式时，这些 CSS 将具有最高的优先级，因为`<link>`被注入到` <head />` 的底部，这样的话始终正确地渲染组件。
+此示例使用一个高阶组件[`withStyles()`](/styles/basics/#higher-order-component-api)将自定义样式注入 DOM 之中，并通过它的`classes`属性将类名传递给 `ClassNames` 组件。 您可以选择[任何其他的样式解决方案](/guides/interoperability/)，或使用纯 CSS 来创建样式，但一定要 考虑[ CSS 的注入顺序](/styles/advanced/#css-injection-order) ，当通过 Material-UI 将 CSS 注入 DOM 中而来实现组件的样式时，这些 CSS 将具有最高的优先级，因为`<link>`被注入到` <head />` 的底部，这样的话始终正确地渲染组件。
 
 {{"demo": "pages/customization/components/ClassNames.js"}}
 
@@ -77,7 +77,7 @@ const StyledButton = withStyles({
 
 ### CSS 伪类（Pseudo-classes）
 
-组件会有一些特殊的状态，如 *hover* ，*focus* ，*disabled* 和 *selected* ，它们被一些更高的 CSS 特异性所装饰。 [特异性是一种加权](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)，它适用于给定的 CSS 声明。
+组件会有一些特殊的状态，如 *hover* ，*focus* ，*disabled* 和 *selected* ，它们被一些更高的 CSS 特异性所装饰。 [优先级是一种加权](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)，它适用于给定的 CSS 声明。
 
 为了覆盖组件的特殊状态，**你会需要提高特殊性** 。 下面是一个示例，它展示了 *disabled* 状态，以及一个使用**伪类**的按钮组件（`disabled`）：
 
@@ -109,9 +109,9 @@ const StyledButton = withStyles({
 <MenuItem selected classes={{ root: 'MenuItem', selected: 'selected' }}>
 ```
 
-#### 为什么我需要增加特殊性来覆盖一个组件的状态呢？
+#### 为什么我需要增加优先级来覆盖一个组件的状态呢？
 
-通过一些设计，CSS 的一些特殊要求让伪类增加了特异性。 为了保持一致性，通过一些其自定义的伪类，Material-UI 提高了特殊性。 这有一个重要的优点，您可以自由挑选那些想要自定义状态。
+通过一些设计，CSS 的一些特殊要求让伪类提高了优先级。 为了保持一致性，通过一些其自定义的伪类，Material-UI 提高了优先级。 这有一个重要的优点，您可以自由挑选那些想要自定义状态。
 
 #### 我可以使用那些需要更少样板的不同 API 吗？
 
@@ -128,7 +128,6 @@ const StyledButton = withStyles({
 | expanded     | Mui-expanded     |
 | selected     | Mui-selected     |
 
-
 ```css
 .MenuItem {
   color: black;
@@ -144,7 +143,7 @@ const StyledButton = withStyles({
 
 ### 在同一样式表中，可以使用 `$ruleName` 来引用当前的规则
 
-[jss-nested](https://github.com/cssinjs/jss/tree/master/packages/jss-plugin-nested) 插件 (默认情况下可用) 简化了增加特异性的过程。
+[jss-nested](https://github.com/cssinjs/jss/tree/master/packages/jss-plugin-nested) 插件 (默认情况下可用) 简化了提高优先级的过程。
 
 ```js
 const styles = {
@@ -183,13 +182,13 @@ const styles = {
 
 第二种覆盖组件样式的方法是使用 **inline-style**。 每个组件都会提供一个 `style` 属性。 这些属性始终应用于根元素。
 
-您不必担心 CSS 特殊性，因为内联样式将优先于常规 CSS。
+您不必担心 CSS 优先级，因为内联样式将优先于常规 CSS。
 
 {{"demo": "pages/customization/components/InlineStyle.js"}}
 
 [和 classes 比起来，我什么时候应该使用内嵌样式？](/getting-started/faq/#when-should-i-use-inline-style-vs-css)
 
-## 2。 一次性使用的动态变体
+## 2. 一次性使用的动态变体
 
 您在上一节中，已经学习了如何覆盖 Material-UI 组件的样式。 现在，让我们看看我们如何使动态地应用这个覆盖。 以下是五种选择，各有利弊。
 
@@ -267,6 +266,8 @@ const GlobalCss = withStyles({
 // …
 
 <GlobalCss />
+
+<GlobalCss />;
 ```
 
 {{"demo": "pages/customization/components/GlobalCssOverride.js", "iframe": true, "height": 70}}
@@ -288,3 +289,45 @@ const theme = createMuiTheme({
 ```
 
 {{"demo": "pages/customization/components/GlobalThemeOverride.js"}}
+
+### Adding new component variants
+
+You can take advantage of the `variants` key in the `theme`'s components section to add new variants to Material-UI components. These new variants, can specify which styles the component should have, if specific props are defined together.
+
+The definitions are specified in an array, under the component's name. For every one of them a class is added in the head. The order is **important**, so make sure that the styles that should win will be specified lastly.
+
+```jsx
+const theme = createMuiTheme({
+  components: {
+    MuiButton: {
+      variants: [
+        {
+          props: { variant: 'dashed' },
+          style: {
+            textTransform: 'none',
+            border: `2px dashed grey${blue[500]}`,
+          },
+        },
+        {
+          props: { variant: 'dashed', color: 'secondary' },
+          style: {
+            border: `4px dashed ${red[500]}`,
+          },
+        },
+      ],
+    },
+  },
+});
+```
+
+If you are using TypeScript, you will need to specify your new variants/colors, using module augmentation.
+
+```tsx
+declare module '@material-ui/core/Button/Button' {
+  interface ButtonPropsVariantOverrides {
+    dashed: true;
+  }
+}
+```
+
+{{"demo": "pages/customization/components/GlobalThemeVariants.js"}}
