@@ -27,7 +27,7 @@ waiAria: 'https://www.w3.org/TR/wai-aria-practices/#tooltip'
 
 ## Customized tooltips
 
-コンポーネントのカスタマイズの例を次に示します。 詳細については、 [オーバーライドのドキュメントページ](/customization/components/)を参照してください。
+コンポーネントのカスタマイズの例を次に示します。 コンポーネントのカスタマイズ例を次に示します。 詳細については、 [オーバーライドのドキュメントページ](/customization/components/)を参照してください。
 
 {{"demo": "pages/components/tooltips/CustomizedTooltips.js"}}
 
@@ -39,7 +39,7 @@ You can use the `arrow` prop to give your tooltip an arrow indicating which elem
 
 ## Custom child element
 
-ツールチップは、DOMイベントリスナーをその子要素に適用する必要があります。 If the child is a custom React element, you need to make sure that it spreads its properties to the underlying DOM element.
+ツールチップは、DOMイベントリスナーをその子要素に適用する必要があります。 ツールチップは、DOMイベントリスナーをその子要素に適用する必要があります。 If the child is a custom React element, you need to make sure that it spreads its properties to the underlying DOM element. If the child is a custom React element, you need to make sure that it spreads its properties to the underlying DOM element.
 
 ```jsx
 const MyComponent = React.forwardRef(function MyComponent(props, ref) {
@@ -110,6 +110,6 @@ const MyComponent = React.forwardRef(function MyComponent(props, ref) {
 
 ツールチップは通常、ユーザーのマウスが要素の上に移動するとすぐに表示され、ユーザーのマウスが離れるとすぐに非表示になります。 ツールチップの表示または非表示の遅延は、上記のControlled Tooltipsデモに示すように、プロパティ `enterDelay` および `leaveDelay`を使用して追加できます。 ツールチップの表示または非表示の遅延は、上記のControlled Tooltipsデモに示すように、プロパティ `enterDelay` および `leaveDelay`を使用して追加できます。
 
-モバイルでは、ユーザーが要素を長押しして1500msの遅延後に非表示になると、ツールチップが表示されます。 `disableTouchListener` プロパティでこの機能を無効にできます。 `disableTouchListener` プロパティでこの機能を無効にできます。
+モバイルでは、ユーザーが要素を長押しして1500msの遅延後に非表示になると、ツールチップが表示されます。 `disableTouchListener` プロパティでこの機能を無効にできます。 モバイルでは、ユーザーが要素を長押しして1500msの遅延後に非表示になると、ツールチップが表示されます。 `disableTouchListener` プロパティでこの機能を無効にできます。 `disableTouchListener` プロパティでこの機能を無効にできます。
 
 {{"demo": "pages/components/tooltips/DelayTooltips.js"}}
