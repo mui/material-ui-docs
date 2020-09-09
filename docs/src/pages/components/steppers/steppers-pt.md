@@ -1,16 +1,21 @@
 ---
-title: Componente React Stepper
+title: Componente React para Assistente
 components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIcon, StepLabel, Stepper
+githubLabel:
+  component: Assistente
+materialDesign: https://material.io/archive/guidelines/components/steppers.html
 ---
 
 # Assistente
 
 <p class="description">Assistentes transmitem progresso através de etapas numeradas. Ele fornece um fluxo de trabalho com etapas.</p>
 
-[Assistentes](https://material.io/archive/guidelines/components/steppers.html) exibem o progresso através de uma sequência de etapas lógicas e numeradas. Elas também podem ser usadas para navegação. Assistentes podem exibir uma mensagem de feedback transiente depois que uma etapa é salva.
+[Assistentes](https://material.io/archive/guidelines/components/steppers.html) exibem o progresso através de uma sequência de etapas lógicas e numeradas. Eles também podem ser usados para navegação. Assistentes podem exibir uma mensagem de feedback transiente depois que uma etapa é salva.
 
 - **Tipos de etapas**: Editável, Somente leitura, Mobile, Opcional
 - **Tipos de assistentes**: Horizontal, Vertical, Linear, Não linear
+
+{{"component": "modules/components/ComponentLinkHeader.js"}}
 
 > **Nota:** Os assistentes não estão mais documentados nas [diretrizes do Material Design](https://material.io/), mas o Material-UI continuará a suportá-los.
 
@@ -38,9 +43,9 @@ Aqui está um exemplo de customização do componente. Você pode aprender mais 
 
 ### Não linear
 
-Os assistentes não lineares permitem que os usuários insiram um fluxo de várias etapas a qualquer momento.
+Os assistentes não lineares permitem que os usuários entrem em um fluxo de várias etapas a qualquer momento.
 
-Este exemplo é semelhante ao não linear, porém as etapas não são mais automaticamente definidas `disabled={true}` com base na propriedade `activeStep`.
+This example is similar to the regular horizontal stepper, except steps are no longer automatically set to `disabled={true}` based on the `activeStep` prop.
 
 O uso do `StepButton` aqui, demonstra rótulos de etapas clicáveis, além de definir a propriedade sinalizadora `completed`. No entanto, como as etapas podem ser acessadas de maneira não linear, cabe a sua própria implementação determinar quando todas as etapas são concluídas (ou mesmo se precisam ser concluídas).
 
