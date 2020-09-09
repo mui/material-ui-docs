@@ -93,10 +93,10 @@ const DeepChild = withTheme(DeepChildRaw);
 通过 `makeStyles` (hook generator) 和 `withStyles` (HOC) 这两个 API， 用户可以为每个样式表创建多种样式规则。 每个样式规则都有自己的类名。 组件的 `classes` 变量会提供类名（class names）。 这在设置组件中嵌套元素的样式时特别有用。
 
 ```jsx
-// 一个样式内联表
+// A style sheet
 const useStyles = makeStyles({
-  root: {}, // 一个样式规则
-  label: {}, // 一个嵌套的样式规则
+  root: {}, // a style rule
+  label: {}, // a nested style rule
 });
 
 function Nested(props) {
@@ -104,7 +104,7 @@ function Nested(props) {
   return (
     <button className={classes.root}> // 'jss1'
       <span className={classes.label}> // 'jss2'
-        嵌套的
+        nested
       </span>
     </button>
   );
@@ -115,7 +115,7 @@ function Parent() {
 }
 ```
 
-然而，这些类名称往往不是决定性的。 父级组件如何覆盖嵌套元素的样式呢？
+但是，类名通常是不确定的。 父级组件如何覆盖嵌套元素的样式呢？
 
 ### `withStyles`
 
@@ -144,8 +144,8 @@ function Parent() {
 
 ```jsx
 const useStyles = makeStyles({
-  root: {}, // 一个样式规则
-  label: {}, // 一个嵌套的样式规则
+  root: {}, // a style rule
+  label: {}, // a nested style rule
 });
 
 function Nested(props) {
@@ -153,7 +153,7 @@ function Nested(props) {
   return (
     <button className={classes.root}>
       <span className={classes.label}> // 'jss2 my-label'
-        嵌套的
+        nested
       </span>
     </button>
   );
@@ -263,9 +263,11 @@ export default function MyComponent() {
   const classesBase = useStylesBase();
 
   // Order doesn't matter
-  const className = clsx(classes.root, classesBase.root);
+  const className = clsx(classes.root, classesBase.root)
 
   // color: red 🔴 wins.
+  return <div className={className} />;
+}
   return <div className={className} />;
 }
 ```
