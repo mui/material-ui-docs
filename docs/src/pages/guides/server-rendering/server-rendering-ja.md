@@ -68,13 +68,14 @@ function handleRender(req, res) {
   /* ... */
 }
 
+function handleRender(req, res) {
+  /* ...
+*/
+}
+
 const app = express();
 
-// サーバーでリクエストを受け付けるごとにこの関数が発火します。
-app.use(handleRender);
-
-const port = 3000;
-app.listen(port);
+// Isso é acionado toda vez que o servidor recebe uma solicitação.
 ```
 
 ### リクエストハンドリング
@@ -88,7 +89,16 @@ app.listen(port);
 その後、対象のCSS を`sheets` インスタンスから`sheets.toString()`を用いて文字列として取得します。 ここで、先ほどの`renderFullPage`関数の中で、これらの値がどの様に受け渡されるを見ていきます。
 
 ```jsx
-import express from 'express';
+const html = ReactDOMServer.renderToString(
+    sheets.collect(
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>,
+    ),
+  );
+
+  // Grab the CSS from the sheets.
+  import express from 'express';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import { ServerStyleSheets, ThemeProvider } from '@material-ui/core/styles';
@@ -98,19 +108,7 @@ import theme from './theme';
 function handleRender(req, res) {
   const sheets = new ServerStyleSheets();
 
-  // コンポーネントを文字列として描画する
-  const html = ReactDOMServer.renderToString(
-    sheets.collect(
-      <ThemeProvider theme={theme}>
-        <App />
-      </ThemeProvider>,
-    ),
-  );
-
-  // CSSをsheetsから取得する
-  const css = sheets.toString();
-
-  // 描画したページをclientに投げ返す
+  // Render the component to a string.
   res.send(renderFullPage(html, css));
 }
 
@@ -118,7 +116,10 @@ const app = express();
 
 app.use('/build', express.static('build'));
 
-// サーバーでリクエストを受け付けるごとにこの関数が発火します。
+// This is fired every time the server-side receives a request.
+  const css = sheets.toString();
+
+  // Send the rendered page back to the client.
 app.use(handleRender);
 
 const port = 3000;
