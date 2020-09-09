@@ -10,7 +10,7 @@ materialDesign: https://material.io/components/dividers
 
 <p class="description">分隔线是对列表和布局中的内容进行分组的一条细线。</p>
 
-Dividers separate content into clear groups.
+[分隔线](https://material.io/design/components/dividers.html) 可以将内容分成清晰地小组。
 
 {{"component": "modules/components/ComponentLinkHeader.js"}}
 
