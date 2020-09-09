@@ -1,6 +1,9 @@
 ---
 title: Componente Grid React
 components: Grid
+githubLabel:
+  component: Grid
+materialDesign: https://material.io/design/layout/understanding-layout.html
 ---
 
 # Grid
@@ -8,6 +11,8 @@ components: Grid
 <p class="description">El grid responsive de Material Design se adapta al tamaño y orientación de la pantalla, garantizando la consistencia en todos los diseños.</p>
 
 La [cuadrícula](https://material.io/design/layout/responsive-layout-grid.html) crea consistencia visual en la distribución de elementos a la vez que permite flexibilidad en una amplia variedad de diseños. La IU responsive de Material Design se basa en una distribución de cuadrícula de 12 columnas.
+
+{{"component": "modules/components/ComponentLinkHeader.js"}}
 
 ## Cómo funciona
 
@@ -18,8 +23,9 @@ El sistema de cuadrícula se implementa con el componente `Grid`:
 - Los anchos de los elementos se establecen en porcentajes, por lo que siempre son fluidos y tienen un tamaño relativo al elemento principal.
 - Los elementos tienen padding para crear el espacio entre los elementos individuales.
 - Hay cinco puntos de interrupción de la cuadrícula: xs, sm, md, lg y xl.
+- Integer values can be given to each breakpoint, indicating how many of the 12 available columns are occupied by the component when the viewport width satisfies the [breakpoint contraints](/customization/breakpoints/#default-breakpoints).
 
-Si recién comienzas y no estás familiarizado con flexbox, te recomendamos leer la siguiente guía [CSS-Tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
+If you are **new to or unfamiliar with flexbox**, we encourage you to read this [CSS-Tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) guide.
 
 ## Espaciado
 
@@ -35,13 +41,17 @@ El fluid grid usa columnas que escalan y redimencionan el contenido. Un layout d
 
 ### Grid básica
 
-Los anchos de columna se aplican en todos los breakepoints (ej. `xs` y superiores).
+Column widths are integer values between 1 and 12; they apply at any breakpoint and indicate how many columns are occupied by the component.
+
+A value given to a breakpoint applies to all the other breakpoints wider than it (unless overridden, as you can read later in this page). For example, `xs={12}` sizes a component to occupy the whole viewport width regardless of its size.
 
 {{"demo": "pages/components/grid/CenteredGrid.js", "bg": true}}
 
 ### Grid con breakpoints
 
-Algunas columnas tienen varios anchos definidos, causando que el layout cambie en el correspondiente breakpoint definido.
+Algunas columnas tienen varios anchos definidos, causando que el layout cambie en el correspondiente breakpoint definido. Width values given to larger breakpoints override those given to smaller breakpoints.
+
+For example, `xs={12} sm={6}` sizes a component to occupy half of the viewport width (6 columns) when viewport width is [600 or more pixels](/customization/breakpoints/#default-breakpoints). For smaller viewports, the component fills all 12 available columns.
 
 {{"demo": "pages/components/grid/FullWidthGrid.js", "bg": true}}
 
@@ -65,7 +75,7 @@ El siguiente ejemplo no sigue las directrices de Material Design, pero ilustra c
 
 ## Grid Anidada
 
-Las propiedades `container` y `item` son booleaneas e independientes. Pueden ser combinadas. 
+Las propiedades `container` y `item` son booleaneas e independientes. Pueden ser combinadas.
 
 > Un **contenedor** de flex es la caja generada por un elemento con la propiedad computada display con el valor de `flex` o `inline-flex`. Los hijos en el flujo de un contenedor flex se denominan flex **items** y se establecen mediante el modelo de layout flex.
 
@@ -82,28 +92,28 @@ Existe una limitación con el margen negativo que utilizamos para implementar el
 1. No usar la función de espaciado e implementarla en el espacio de usuario `spacing={0}` (por defecto).
 2. Aplicar padding al padre con al menos la mitad del valor de espaciado aplicado al hijo:
 
-```jsx
-  <body>
+   ```jsx
+   <body>
     <div style={{ padding: 20 }}>
       <Grid container spacing={5}>
         //...
-      </Grid>
+       </Grid>
     </div>
   </body>
-```
+   ```
 
 3. Añadiendo `overflow-x: hidden;` al padre.
 
 ### white-space: nowrap;
 
-La configuración inicial en los elementos flex es `min-width: auto`. Esto causa un conflicto en el posicionamiento cuando el hijo está usando `white-space: nowrap;`. Puede experimentar este problema con: 
+La configuración inicial en los elementos flex es `min-width: auto`. Esto causa un conflicto en el posicionamiento cuando el hijo está usando `white-space: nowrap;`. Puede experimentar este problema con:
 
 ```jsx
 <Grid item xs>
   <Typography noWrap>
 ```
 
-Para que el item permanezca dentro del contenedor necesita establecer `min-width: 0`. En la practica, puede establecer la propiedad `zeroMinWidth`:
+Para que el item permanezca dentro del contenedor necesita establecer `min-width: 0`. Para que el item permanezca dentro del contenedor necesita establecer `min-width: 0`.
 
 ```jsx
 <Grid item xs zeroMinWidth>
