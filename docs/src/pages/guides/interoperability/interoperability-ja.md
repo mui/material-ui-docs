@@ -9,7 +9,6 @@ This guide aims to document the most popular alternatives, but you should find t
 - [Styled Components](#styled-components)
 - [CSS Modules](#css-modules)
 - [Emotion](#emotion)
-- [React JSS](#react-jss)
 
 ## Plain CSS
 
@@ -186,7 +185,6 @@ export default function StyledComponents() {
     </div>
   );
 }
-
 ```
 
 ### Controlling priority ⚠️
