@@ -26,7 +26,7 @@
 
 `className`プロパティでは不十分で、より深い要素にアクセスする必要がある場合は、`classes`オブジェクトプロパティを利用して、特定のコンポーネントに対してMaterial-UIによって注入されるすべてのCSSをカスタマイズできます。
 
-それぞれのクラスのリスト コンポーネントについては、コンポーネントAPIページの**CSS section**および**rule name column**を参照してください。 例えば、[Button CSS API](/api/button/#css)で見ることができます。 文 または、[browser dev tools](#using-the-dev-tools)を使用することもできます。 例えば、[Button CSS API](/api/button/#css)で見ることができます。 または、[ブラウザの開発ツール](#using-the-dev-tools)を使用することもできます。
+それぞれのクラスのリスト コンポーネントについては、コンポーネントAPIページの**CSS section**および**rule name column**を参照してください。 例えば、[Button CSS API](/api/button/#css)で見ることができます。 文 または、[browser dev tools](#using-the-dev-tools)を使用することもできます。 例えば、[Button CSS API](/api/button/#css)で見ることができます。 文 または、[browser dev tools](#using-the-dev-tools)を使用することもできます。 例えば、[Button CSS API](/api/button/#css)で見ることができます。 または、[ブラウザの開発ツール](#using-the-dev-tools)を使用することもできます。
 
 この例では、`withStyles()`</code></code>も使用していますが、ここでは、`ClassesNesting(上記参照) は<code>Button`の`classes propを使用して、
 オーバーライドするクラスの<strong>名</strong>を適用するCSSクラス名(スタイルルール)</strong>にマップするオブジェクトを提供します(values)。
@@ -59,7 +59,7 @@ Material-UIのクラス名は、開発モードでは<a href="/styles/advanced/#
 
 ### ショートハンド
 
-上記のコード例は、子コンポーネントとして**同じCSS API**を使用することで要約できます。 この例では、`withStyles()`の上位(高次) コンポーネントは、[`Button`コンポーネント](/api/button/#css)が使用する`classes`プロパティーを注入しています。
+上記のコード例は、子コンポーネントとして**同じCSS API**を使用することで要約できます。 上記のコード例は、子コンポーネントとして**同じCSS API**を使用することで要約できます。 この例では、`withStyles()`の上位(高次) コンポーネントは、[`Button`コンポーネント](/api/button/#css)が使用する`classes`プロパティーを注入しています。 この例では、`withStyles()`の上位(高次) コンポーネントは、[`Button`コンポーネント](/api/button/#css)が使用する`classes`プロパティーを注入しています。
 
 ```jsx
 const StyledButton = withStyles({
@@ -84,7 +84,7 @@ const StyledButton = withStyles({
 
 *hover*、*focus*、*disabled*、*selected*などのコンポーネントの特殊状態は、より高いCSS 特異性(specificity) が設定されています。 [特異性の重み](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)は、特定のCSS宣言に適用されます。 
 
-コンポーネントの特別な状態をオーバーライドするには、**特異性を高める必要があります** 。 *擬似クラス*(**:disabled**)を使用して`disable`状態とボタンコンポーネントを使った例を示します。
+コンポーネントの特別な状態をオーバーライドするには、**特異性を高める必要があります** 。 コンポーネントの特別な状態をオーバーライドするには、**特異性を高める必要があります** 。 *disable*状態と、 **pseudo-class**(`:disabled`)を使用したボタンコンポーネントの例を示します。 コンポーネントの特別な状態をオーバーライドするには、**特異性を高める必要があります** 。 *disable*状態と、 **pseudo-class**(`:disabled`)を使用したボタンコンポーネントの例を示します。
 
 ```css
 .Button {
@@ -99,7 +99,7 @@ const StyledButton = withStyles({
 <Button disabled className="Button">
 ```
 
-プラットフォームにstateがないため、**擬似クラス** を使用できない場合があります。 例として、メニュー項目コンポーネントと *selected* 状態を取り上げましょう。 ネストされた要素にアクセスする以外にも、`classes`プロパティを使用して、Material-UIコンポーネントの特殊な状態をカスタマイズできます。
+時にはこのプラットフォームではstateとして**pseudo-class**は使うことができない。 メニュー項目の構成要素と*選ばれた*例として述べる。 時にはこのプラットフォームではstateとして**pseudo-class**は使うことができない。 メニュー項目の構成要素と*選ばれた*例として述べる。 ネストされた要素にアクセスする以外にも、`classes`プロパティを使用して、Material-UIコンポーネントの特殊な状態をカスタマイズできます。 例として、メニュー項目コンポーネントと *selected* 状態を取り上げましょう。 ネストされた要素にアクセスする以外にも、`classes`プロパティを使用して、Material-UIコンポーネントの特殊な状態をカスタマイズできます。
 
 ```css
 .MenuItem {
@@ -196,7 +196,7 @@ const styles = {
 
 ## 2. 一時的な状況の動的変化
 
-前のセクションでMaterial-UIコンポーネントのスタイルをオーバーライドする方法を学習しました。 では、これらのオーバーライドを動的にする方法を見てみましょう。 ここに5つの選択肢があります。 それぞれに長所と短所があります。
+前のセクションでMaterial-UIコンポーネントのスタイルをオーバーライドする方法を学習しました。 では、これらのオーバーライドを動的にする方法を見てみましょう。 では、これらのオーバーライドを動的にする方法を見てみましょう。 Here are five alternatives; each has its pros and cons.
 
 ### 動的CSS
 
@@ -256,7 +256,7 @@ const theme = createMuiTheme({
 
 ### グローバルCSSのオーバーライド
 
-CSSを使用してコンポーネントのすべてのインスタンスをカスタマイズすることもできます。 これを可能にするために、コンポーネントは[グローバルクラス名](/styles/advanced/#with-material-ui-core)を公開します。 Bootstrapをカスタマイズする方法と非常によく似ています。
+CSSを使用してコンポーネントのすべてのインスタンスをカスタマイズすることもできます。 CSSを使用してコンポーネントのすべてのインスタンスをカスタマイズすることもできます。 Components expose [global class names](/styles/advanced/#with-material-ui-core) to enable this. これを可能にするために、コンポーネントは[グローバルクラス名](/styles/advanced/#with-material-ui-core)を公開します。 Bootstrapをカスタマイズする方法と非常によく似ています。
 
 ```jsx
 const GlobalCss = withStyles({
