@@ -1,11 +1,17 @@
 ---
-title: Componente React de avaliação
+title: Componente React para Avaliações
 components: Rating
+githubLabel:
+  component: Rating
+waiAria: 'https://www.w3.org/WAI/tutorials/forms/custom-controls/#a-star-rating'
+packageName: '@material-ui/lab'
 ---
 
-# Avaliação
+# Rating
 
 <p class="description">As avaliações fornecem informações sobre opiniões e experiências de outros usuários com um produto. Os usuários também podem avaliar os produtos que compraram.</p>
+
+{{"component": "modules/components/ComponentLinkHeader.js"}}
 
 ## Avaliações simples
 
@@ -17,7 +23,7 @@ Aqui estão alguns exemplos de customização do componente. Você pode aprender
 
 {{"demo": "pages/components/rating/CustomizedRatings.js"}}
 
-## Feedback ao passar mouse
+## Feedback ao passar o mouse
 
 Você pode exibir um rótulo ao passar o mouse para ajudar os usuários a escolher o valor de avaliação correto. A demonstração usa a propriedade `onChangeActive`.
 
