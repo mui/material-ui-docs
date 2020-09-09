@@ -102,10 +102,12 @@ As in the example above, if the intention object contains custom colors using an
 “色调偏移（tonalOffset）” 和 “对比度阈值（contrastThreshold）” 这两个值都可以根据需要进行定制。 “色调偏移（tonalOffset）” 值可以是一个 0 和 1 之间的数字，它将适用于亮色变量和暗色变量，或者是由以下 TypeScript 类型（type）指定的具有明暗变量的对象：
 
 ```ts
-type PaletteTonalOffset = number | {
-  light: number;
-  dark: number;
-};
+type PaletteTonalOffset =
+  | number
+  | {
+      light: number;
+      dark: number;
+    };
 ```
 
 “色调偏移（tonalOffset）” 的值越高，那么计算后的“light” 值就会变得更浅，“dark” 的值会变得更暗。 “对比度阈值（contrastThreshold）”  的值越高，那么背景色越会被认为是浅色的，这就会赋予一个深色的 “对比度文本（contrastText）”。
@@ -128,6 +130,10 @@ const theme = createMuiTheme({
     danger: '#e53e3e',
   },
   palette: {
+    primary: {
+      main: '#0971f1',
+      darker: '#053e85',
+    },
     neutral: {
       main: '#5c6ac4',
     },
@@ -203,18 +209,6 @@ function App() {
       createMuiTheme({
         palette: {
           type: prefersDarkMode ? 'dark' : 'light',
-        },
-      }),
-    [prefersDarkMode],
-  );
-
-  return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline/>
-      <Routes />
-    </ThemeProvider>
-  );
-} 'dark' : 'light',
         },
       }),
     [prefersDarkMode],
