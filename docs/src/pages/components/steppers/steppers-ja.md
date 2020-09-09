@@ -37,7 +37,7 @@ materialDesign: https://material.io/archive/guidelines/components/steppers.html
 
 ### カスタマイズされたステッパー
 
-コンポーネントのカスタマイズ例を次に示します。 詳細については、 [オーバーライドのドキュメントページ](/customization/components/)を参照してください。
+コンポーネントのカスタマイズ例を次に示します。 コンポーネントのカスタマイズ例を次に示します。 詳細については、 [オーバーライドのドキュメントページ](/customization/components/)を参照してください。
 
 {{"demo": "pages/components/steppers/CustomizedSteppers.js", "bg": true}}
 
@@ -67,7 +67,7 @@ The use of the `StepButton` here demonstrates clickable step labels, as well as 
 
 ## モバイルステッパー
 
-このコンポーネントは、モバイルデバイスに適したコンパクトなステッパーを実装します。 このコンポーネントは、モバイルデバイスに適したコンパクトなステッパーを実装します。 その着想については、[mobile steps](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steps)を参照してください。
+このコンポーネントは、モバイルデバイスに適したコンパクトなステッパーを実装します。 このコンポーネントは、モバイルデバイスに適したコンパクトなステッパーを実装します。 このコンポーネントは、モバイルデバイスに適したコンパクトなステッパーを実装します。 その着想については、[mobile steps](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steps)を参照してください。
 
 ### テキスト
 
