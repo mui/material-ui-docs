@@ -1,17 +1,21 @@
 ---
-title: React Container 容器组件
+title: React 容器组件
 components: Container
+githubLabel:
+  component: Container
 ---
 
-# Container 容器
+# Container
 
 <p class="description">通过容器组件，您页面的内容会呈现水平居中。 这是最基本的布局元素。</p>
 
 虽然容器可以嵌套，但大多数布局不需要嵌套的容器。
 
+查看[调色板](/system/palette/)样式功能。
+
 ## Fluid 流体布局
 
-一个 fluid 容器所能达到的宽度被 `maxWidth` 属性的值所限制。
+A fluid container width is bounded by the `maxWidth` prop value.
 
 {{"demo": "pages/components/container/SimpleContainer.js", "iframe": true, "defaultCodeOpen": false}}
 
