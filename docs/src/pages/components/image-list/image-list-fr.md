@@ -1,6 +1,9 @@
 ---
 title: Composant React Grid List
 components: ImageList, ImageListItem, ImageListItemBar, ListSubheader, IconButton
+materialDesign: https://material.io/components/image-lists
+githubLabel:
+  component: ImageList
 ---
 
 # Grid list
@@ -9,11 +12,13 @@ components: ImageList, ImageListItem, ImageListItemBar, ListSubheader, IconButto
 
 [Les listes de grille](https://material.io/design/components/image-lists.html) représentent une collection d'éléments dans un motif répété. Ils aident à améliorer la compréhension visuelle du contenu qu'ils contiennent.
 
+{{"component": "modules/components/ComponentLinkHeader.js"}}
+
 ## Grid list contenant uniquement des images
 
-Un exemple simple d'image défilable `ImageList`.
-
 {{"demo": "pages/components/image-list/ImageImageList.js", "hideEditButton": true}}
+
+{{"demo": "pages/components/image-list/BasicImageList.js", "hideEditButton": true}}
 
 ## Grid list avec barres de titre
 
