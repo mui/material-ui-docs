@@ -102,7 +102,9 @@ const theme = createMuiTheme({
 请注意，若想使用上述方法，您必须使用 `CssBaseline` 使其奏效。 如果您选择不使用它，您仍然可以通过加入这些 CSS 规则来禁用过渡和动画：
 
 ```css
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   transition: 'none !important';
   animation: 'none !important';
 }
@@ -309,13 +311,9 @@ function handleRender(req, res) {
   ```diff
     "dependencies": {
       ...
-  "dependencies": {
-    ...
-
--   "@material-ui/core": "^4.0.0",
-+   "@material-ui/core": "4.0.0",
-    ...
-  },
+  -   "@material-ui/core": "^4.0.0",
+  +   "@material-ui/core": "4.0.0",
+      ...
     },
   ```
 
