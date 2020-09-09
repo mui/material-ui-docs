@@ -1,6 +1,9 @@
 ---
 title: Stepper React component
 components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIcon, StepLabel, Stepper
+githubLabel:
+  component: Stepper (Pasos a pasos)
+materialDesign: https://material.io/archive/guidelines/components/steppers.html
 ---
 
 # Stepper (Pasos a pasos)
@@ -11,6 +14,8 @@ components: MobileStepper, Step, StepButton, StepConnector, StepContent, StepIco
 
 - **Types of Steps**: Editable, Non-editable, Mobile, Optional
 - **Types of Steppers**: Horizontal, Vertical, Linear, Non-linear
+
+{{"component": "modules/components/ComponentLinkHeader.js"}}
 
 > **Note:** Steppers are no longer documented in the [Material Design guidelines](https://material.io/), but Material-UI will continue to support them.
 
@@ -32,7 +37,7 @@ Labels can be placed below the step icon by setting the `alternativeLabel` prop 
 
 ### Customized Stepper
 
-Here is an example of customizing the component. You can learn more about this in the [overrides documentation page](/customization/components/).
+He aquí un ejemplo de personalización del componente. You can learn more about this in the [overrides documentation page](/customization/components/).
 
 {{"demo": "pages/components/steppers/CustomizedSteppers.js", "bg": true}}
 
