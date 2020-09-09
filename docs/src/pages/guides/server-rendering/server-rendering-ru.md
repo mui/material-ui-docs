@@ -6,7 +6,7 @@
 
 ## Material-UI on the server
 
-Material-UI was designed from the ground-up with the constraint of rendering on the server, but it's up to you to make sure it's correctly integrated. It's important to provide the page with the required CSS, otherwise the page will render with just the HTML then wait for the CSS to be injected by the client, causing it to flicker (FOUC). Чтобы добавить стили на клиент, вам необходимо:
+Material-UI was designed from the ground-up with the constraint of rendering on the server, but it's up to you to make sure it's correctly integrated. It's important to provide the page with the required CSS, otherwise the page will render with just the HTML then wait for the CSS to be injected by the client, causing it to flicker (FOUC). It's important to provide the page with the required CSS, otherwise the page will render with just the HTML then wait for the CSS to be injected by the client, causing it to flicker (FOUC).
 
 1. Create a fresh, new [`ServerStyleSheets`](/styles/api/#serverstylesheets) instance on every request.
 2. Render the React tree with the server-side collector.
@@ -71,10 +71,12 @@ function handleRender(req, res) {
 const app = express();
 
 // Isso é acionado toda vez que o servidor recebe uma solicitação.
-app.use(handleRender);
+*/
+}
 
-const port = 3000;
-app.listen(port);
+const app = express();
+
+// Isso é acionado toda vez que o servidor recebe uma solicitação.
 ```
 
 ### Обработка запроса
@@ -99,9 +101,6 @@ function handleRender(req, res) {
   const sheets = new ServerStyleSheets();
 
   // Render the component to a string.
-  const css = sheets.toString();
-
-  // Send the rendered page back to the client.
   import express from 'express';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
@@ -113,19 +112,23 @@ function handleRender(req, res) {
   const sheets = new ServerStyleSheets();
 
   // Render the component to a string.
-  const html = ReactDOMServer.renderToString(
-    sheets.collect(
-      <ThemeProvider theme={theme}>
-        <App />
-      </ThemeProvider>,
-    ),
-  );
+  res.send(renderFullPage(html, css));
+}
 
-  // Grab the CSS from the sheets.
-app.use(handleRender);
+const app = express();
 
-const port = 3000;
-app.listen(port);
+app.use('/build', express.static('build'));
+
+// This is fired every time the server-side receives a request.
+  const css = sheets.toString();
+
+  // Send the rendered page back to the client.
+*/
+}
+
+const app = express();
+
+// Isso é acionado toda vez que o servidor recebe uma solicitação.
 ```
 
 ### Inject Initial Component HTML and CSS
