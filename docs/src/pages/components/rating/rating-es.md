@@ -1,11 +1,17 @@
 ---
 title: Componente de React Rating
 components: Rating
+githubLabel:
+  component: Rating
+waiAria: 'https://www.w3.org/WAI/tutorials/forms/custom-controls/#a-star-rating'
+packageName: '@material-ui/lab'
 ---
 
-# Rating (Calificación)
+# Rating
 
 <p class="description">Las calificaciones proporcionan información sobre las opiniones y experiencias de otros con un producto. Los usuarios también pueden calificar los productos que han comprado.</p>
+
+{{"component": "modules/components/ComponentLinkHeader.js"}}
 
 ## Calificaciones simples
 
