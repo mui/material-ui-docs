@@ -92,7 +92,7 @@ const styles = {
   type Props = {
     contained: boolean;
     fab: boolean;
-    };
+  };
   ```
 
   该 API 启用了简写的表示法：`<Button>`，`<Button contained />`，`<Button fab />`。
@@ -101,8 +101,8 @@ const styles = {
 
   ```tsx
   type Props = {
-      variant: 'text' | 'contained' | 'fab';
-    }
+    variant: 'text' | 'contained' | 'fab';
+  };
   ```
 
   这个 API 会更加详细：`<Button>`，`<Button variant="contained">`， `<Button variant="fab">`。
