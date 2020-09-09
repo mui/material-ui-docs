@@ -1,11 +1,16 @@
 ---
 title: Breadcrumbs Reactコンポーネント
 components: Breadcrumbs, Link, Typography
+githubLabel:
+  component: Breadcrumbs
+waiAria: 'https://www.w3.org/TR/wai-aria-practices/#breadcrumb'
 ---
 
 # Breadcrumbs
 
 <p class="description">Breadcrumbsを使用すると、値の範囲から選択できます。</p>
+
+{{"component": "modules/components/ComponentLinkHeader.js"}}
 
 ## シンプルなbreadcurmbs
 
