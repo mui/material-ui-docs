@@ -1,11 +1,17 @@
 ---
 title: Rating React component
 components: レート
+githubLabel:
+  component: レート
+waiAria: 'https://www.w3.org/WAI/tutorials/forms/custom-controls/#a-star-rating'
+packageName: '@material-ui/lab'
 ---
 
-# レート （Rating）
+# レート
 
-<p class="description">評価は、他の人の意見や製品に関する経験に関する洞察を提供します。 ユーザーは購入した製品を評価することもできます。</p>
+<p class="description">評価は、他の人の意見や製品に関する経験に関する洞察を提供します。 ユーザーは購入した製品を評価することもできます。 ユーザーは購入した製品を評価することもできます。</p>
+
+{{"component": "modules/components/ComponentLinkHeader.js"}}
 
 ## 簡単な評価
 
@@ -19,13 +25,13 @@ components: レート
 
 ## ホバーのフィードバック
 
-ユーザーが正しい評価値を選択するのに役立つように、ホバーにラベルを表示できます。 The demo uses the `onChangeActive` prop.
+大きな評価ボタンと小さな評価ボタンがありますか? `size`propを使用します。
 
 {{"demo": "pages/components/rating/HoverRating.js"}}
 
 ## 半分の評価
 
-評価は`value`propを持つ任意の浮動小数点数を表示できます。 `precision` prop を使用して、許可される最小増分値の変更を定義します。
+大きな評価ボタンと小さな評価ボタンがありますか? `size`propを使用します。
 
 {{"demo": "pages/components/rating/HalfRating.js"}}
 
