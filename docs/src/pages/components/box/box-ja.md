@@ -1,5 +1,7 @@
 ---
 title: Box Reactコンポーネント
+githubLabel:
+  component: Box
 ---
 
 # Box
@@ -8,13 +10,15 @@ title: Box Reactコンポーネント
 
 Boxコンポーネントは、`@material-ui/system`で公開される[すべてのスタイル関数](/system/basics/#all-inclusive) をパッケージ化します。 It's created using the [`styled()`](/styles/api/#styled-style-function-component) function of `@material-ui/core/styles`.
 
+[The palette](/system/palette/) style関数。
+
 ## 例
 
 [The palette](/system/palette/) style関数。
 
 ## Material-UI componentsのオーバーライド
 
-The Box componentは、コンポーネントをラップします。 新しいDOM要素を作成します。この要素はデフォルトで`<div>`であり、`component` プロパティを使用して変更できます。</code> 代わりに `<span>` を使用すると
+The Box componentは、コンポーネントをラップします。 新しいDOM要素を作成します。 この要素はデフォルトで`<div>`であり、`component` プロパティを使用して変更できます。 代わりに `<span>` を使用すると
 
 ```jsx
 <Box component="span" m={1}>
@@ -28,7 +32,7 @@ The Box componentは、コンポーネントをラップします。 新しいDO
 
 1. [`React.cloneElement()`](https://reactjs.org/docs/react-api.html#cloneelement)を使う
 
-ボックスコンポーネントには、Reactのクローン要素メソッドの使用を有効にする`clone` プロパティーがあります。
+ボックスの子は、レンダープロップス機能を受け入れます `className`を取り出すことができます。
 
 ```jsx
 <Box color="text.primary" clone>
@@ -54,11 +58,10 @@ The Box componentは、コンポーネントをラップします。 新しいDO
 import Box from '@material-ui/core/Box';
 ```
 
-| Name                                                    | Type                                                                                                              | Default                                 | Description                                                    |
-|:------------------------------------------------------- |:----------------------------------------------------------------------------------------------------------------- |:--------------------------------------- |:-------------------------------------------------------------- |
-| <span class="prop-name required">children&nbsp;*</span> | <span class="prop-type">union:&nbsp;node&nbsp;&#124;<br />&nbsp;func<br /></span>                                 |                                         | ボックスレンダー関数またはノード。                                              |
-| <span class="prop-name">clone</span>                    | <span class="prop-type">bool</span>                                                                               | <span class="prop-default">false</span> | `true`の場合、ボックスはその子DOM要素をリサイクルします。 内部的には`React.cloneElement`です。 |
-| <span class="prop-name">component</span>                | <span class="prop-type">union:&nbsp;string&nbsp;&#124;<br />&nbsp;func&nbsp;&#124;<br />&nbsp;object<br /></span> | <span class="prop-default">'div'</span> | ルートノードに使用されるコンポーネント。 DOM要素またはコンポーネントを使用する文字列。                  |
-
+| Name                                                    | Type                                                                                                                          | Default                                 | Description                                                    |
+|:------------------------------------------------------- |:----------------------------------------------------------------------------------------------------------------------------- |:--------------------------------------- |:-------------------------------------------------------------- |
+| <span class="prop-name required">children&nbsp;*</span> | <span class="prop-type">union:&nbsp;node&nbsp;&#124;<br>&nbsp;func<br></span>                                     |                                         | ボックスレンダー関数またはノード。                                              |
+| <span class="prop-name">clone</span>                    | <span class="prop-type">bool</span>                                                                                           | <span class="prop-default">false</span> | `true`の場合、ボックスはその子DOM要素をリサイクルします。 内部的には`React.cloneElement`です。 |
+| <span class="prop-name">component</span>                | <span class="prop-type">union:&nbsp;string&nbsp;&#124;<br>&nbsp;func&nbsp;&#124;<br>&nbsp;object<br></span> | <span class="prop-default">'div'</span> | ルートノードに使用されるコンポーネント。 DOM要素またはコンポーネントを使用する文字列。                  |
 
 指定したその他のプロパティは、 [the style functions](/system/basics/#all-inclusive)で使用されるか、ルート要素に展開されます。
