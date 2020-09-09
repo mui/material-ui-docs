@@ -1,6 +1,9 @@
 ---
 title: Сеть изображений, компонент React
 components: ImageList, ImageListItem, ImageListItemBar, ListSubheader, IconButton
+materialDesign: https://material.io/components/image-lists
+githubLabel:
+  component: ImageList
 ---
 
 # Сеть изображений
@@ -9,11 +12,13 @@ components: ImageList, ImageListItem, ImageListItemBar, ListSubheader, IconButto
 
 [Сеть изображений](https://material.io/design/components/image-lists.html) являются коллекцией элементов в повторяющемся шаблоне. Они помогают улучшить визуальное восприятие своего содержания.
 
+{{"component": "modules/components/ComponentLinkHeader.js"}}
+
 ## Простая сеть изображений
 
-Простой пример прокручиваемой `Сети изображений`.
-
 {{"demo": "pages/components/image-list/ImageImageList.js", "hideEditButton": true}}
+
+{{"demo": "pages/components/image-list/BasicImageList.js", "hideEditButton": true}}
 
 ## Сеть изображений с заголовками
 
