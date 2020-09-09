@@ -135,12 +135,7 @@ import useAutocomplete from '@material-ui/lab/useAutocomplete';
 有时候你需要锁定某个标签，这样他们不会被从界面中移除，这时你可以将 chips 设置为禁用。
 
 ```jsx
-import matchSorter from 'match-sorter';
-
-const filterOptions = (options, { inputValue }) =>
-  matchSorter(options, inputValue);
-
-<Autocomplete filterOptions={filterOptions} />
+<Autocomplete filterOptions={(x) => x} />
 ```
 
 ### Google Maps Places
