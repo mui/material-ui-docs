@@ -1,13 +1,18 @@
 ---
 title: Switch React component
 components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
+githubLabel:
+  component: Interrupteur (switch)
+materialDesign: 'https://material.io/components/selection-controls#switches'
 ---
 
-# Switch (interrupteur)
+# Interrupteur (switch)
 
 <p class="description">Switches toggle the state of a single setting on or off.</p>
 
 [Switches](https://material.io/design/components/selection-controls.html#switches) are the preferred way to adjust settings on mobile. The option that the switch controls, as well as the state it’s in, should be made clear from the corresponding inline label.
+
+{{"component": "modules/components/ComponentLinkHeader.js"}}
 
 ## Basic switches
 
@@ -35,7 +40,7 @@ Here are some examples of customizing the component. Vous pouvez en savoir plus 
 
 ## Tailles
 
-Fancy smaller switches? Use the `size` property.
+Fancy smaller switches? Use the `size` prop.
 
 {{"demo": "pages/components/switches/SwitchesSize.js"}}
 
