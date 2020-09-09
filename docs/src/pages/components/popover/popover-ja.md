@@ -1,6 +1,8 @@
 ---
 title: Popper React component
 components: Grow, Popover
+githubLabel:
+  component: Popover
 ---
 
 # Popover
@@ -11,6 +13,8 @@ components: Grow, Popover
 
 - コンポーネントは、 [`Modal`](/components/modal/) コンポーネントの上に構築されます。
 - [`Popper`](/components/popper/) コンポーネントとは異なり、スクロールとクリックはブロックされます。
+
+[The palette](/system/palette/) style関数。
 
 ## Simple Popover
 
