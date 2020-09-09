@@ -1,6 +1,9 @@
 ---
 title: Switch React Komponente
 components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
+githubLabel:
+  component: Switch
+materialDesign: 'https://material.io/components/selection-controls#switches'
 ---
 
 # Switch
@@ -8,6 +11,8 @@ components: Switch, FormControl, FormGroup, FormLabel, FormControlLabel
 <p class="description">Schalter ändern den Status einer einzelnen Einstellung ein oder aus.</p>
 
 [Schalter](https://material.io/design/components/selection-controls.html#switches) sind die bevorzugte Methode zum Anpassen der Einstellungen auf dem Handy. Die Option, die der Schalter steuert, sowie der Status, in dem er sich befindet, sollte aus dem entsprechenden Inline-Label hervorgehen.
+
+{{"component": "modules/components/ComponentLinkHeader.js"}}
 
 ## Basic switches
 
@@ -35,7 +40,7 @@ Hier einige Beispiele zum Anpassen der Komponente. Mehr dazu erfahren Sie auf de
 
 ## Größen
 
-Fancy smaller switches? Verwende die Eigenschaft `size`.
+Fancy smaller switches? Verwenden Sie die `size` Prop.
 
 {{"demo": "pages/components/switches/SwitchesSize.js"}}
 
