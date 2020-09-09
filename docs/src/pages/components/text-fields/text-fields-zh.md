@@ -1,6 +1,9 @@
 ---
-title: React Text Field 文本框组件
+title: React 文本框组件
 components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, InputBase, InputLabel, OutlinedInput, TextField
+githubLabel:
+  component: TextField
+materialDesign: https://material.io/components/text-fields
 ---
 
 # TextField 文本框
@@ -8,6 +11,8 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 <p class="description">用户可以在文本框内输入或编辑文字。</p>
 
 用户可以通过[文本框](https://material.io/design/components/text-fields.html)在界面中输入文本。 通常，我们会在表单域和对话框中使用它们。
+
+{{"component": "modules/components/ComponentLinkHeader.js"}}
 
 ## TextField
 
@@ -21,7 +26,7 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 ## Form props 表单的属性
 
-我们支持一些基本的表单属性，例如： `required`，`disabled`，`type` 等等。 这也包含了 `helperText`，通常我们用这个属性来描述一个表单域的输入框，譬如说，如何使用这个输入框。
+`TextField` 是由一些较小的组件组成的 ( [`FormControl`](/api/form-control/)， [`Input`](/api/input/)， [`FilledInput`](/api/filled-input/)， [`InputLabel`](/api/input-label/)， [`OutlinedInput`](/api/outlined-input/)， and [`FormHelperText`](/api/form-helper-text/) ) ，而你可以直接使用这些小的组件，来自定制你的表单域输入框。
 
 {{"demo": "pages/components/text-fields/FormPropsTextFields.js"}}
 
@@ -33,7 +38,7 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 ## 多行属性
 
-使用 `multiline` 属性，能将一个文本框转换成[多行文本框](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)或者 [自适应的多行文本框](/components/textarea-autosize/)。
+使用 `multiline` 属性，能将一个文本框转换成[多行文本框](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)或者 [自适应的多行文本框](/components/textarea-autosize/)。 Unless the `rows` prop is set, the height of the text field dynamically matches its content (using [TextareaAutosize](/components/textarea-autosize/)). You can use the `rowsMin` and `rowsMax` props to bound it.
 
 {{"demo": "pages/components/text-fields/MultilineTextFields.js"}}
 
@@ -43,7 +48,7 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 {{"demo": "pages/components/text-fields/SelectTextFields.js"}}
 
-## 图标
+## Icons 图标
 
 我们提供了在文本框内展示图标的不同的方式。
 
@@ -55,9 +60,9 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 {{"demo": "pages/components/text-fields/InputAdornments.js"}}
 
-## 大小
+## 尺寸
 
-想要使用外观看起来比较小的输入框吗？ 你可以使用 `size` 属性。
+想要使用外观看起来比较小的输入框吗？ 试着使用 `size` 属性吧。
 
 {{"demo": "pages/components/text-fields/TextFieldSizes.js"}}
 
@@ -87,7 +92,7 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 {{"demo": "pages/components/text-fields/Inputs.js"}}
 
-## 颜色属性
+## Color 颜色
 
 当使用 `color` 属性时，聚焦文本框时的高亮颜色会被改变。
 
@@ -95,7 +100,7 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 ## 自定义输入
 
-以下是自定义组件的一些例子。 您可以在[重写文档页面](/customization/components/)中了解更多有关此内容的信息。
+你可以参考以下一些例子来自定义组件。 您可以在[重写文档页](/customization/components/)中了解有关此内容的更多信息。
 
 {{"demo": "pages/components/text-fields/CustomizedInputs.js"}}
 
@@ -103,7 +108,7 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 
 {{"demo": "pages/components/text-fields/CustomizedInputBase.js", "bg": true}}
 
-🎨如果你是在寻找灵感，你可以查看 [MUI Treasury's customization examples](https://mui-treasury.com/styles/text-field)。
+🎨 如果您还在寻找灵感，您可以看看 [MUI Treasury 特别定制的一些例子](https://mui-treasury.com/styles/text-field)。
 
 ## 局限性
 
@@ -128,6 +133,33 @@ components: FilledInput, FormControl, FormHelperText, Input, InputAdornment, Inp
 ### 悬浮的标签
 
 悬浮的标签被定义了一个绝对的位置，这样的话，它将不会影响到页面的整体布局。 想要正确显示你的组件，你只要确保输入框的比输入标签大。
+
+### type="number"
+
+Inputs of type="number" have potential usability issues:
+
+- Allowing certain non-numeric characters ('e', '+', '-', '.') and silently discarding others
+- 如果您正在构造一个组件：
+
+and more - see [this article](https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/) by the GOV.UK Design System team for a more detailed explanation.
+
+For number validation, one viable alternative is to use the default input type="text" with the _pattern_ attribute, for example:
+
+```jsx
+<TextField inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} />
+```
+
+In the future, we might provide a [number input component](https://github.com/mui-org/material-ui/issues/19154).
+
+### Helper text
+
+The helper text prop affects the height of the text field. If two text fields are placed side by side, one with a helper text and one without, they will have different heights. 例如:
+
+{{"demo": "pages/components/text-fields/HelperTextMisaligned.js"}}
+
+This can be fixed by passing a space character to the `helperText` prop:
+
+{{"demo": "pages/components/text-fields/HelperTextAligned.js"}}
 
 ## 与第三方 input 库的整合
 
@@ -171,7 +203,7 @@ function MyInputComponent(props) {
 />;
 ```
 
-## 可及性
+## 无障碍设计
 
 为了确保您的文本框是可及的，**输入框必须和标签以及帮助文本连在一起调用**。 而且，深层的 DOM 节点应该遵循这个结构。
 
@@ -179,7 +211,7 @@ function MyInputComponent(props) {
 <div class="form-control">
   <label for="my-input">电子邮件</label>
   <input id="my-input" aria-describedby="my-helper-text" />
-  <span id="my-helper-text">我们绝不会分享您的邮件地址。</span>
+  <span id="my-helper-text">我们绝不会分享您的邮件地址。 </span>
 </div>
 ```
 
@@ -190,14 +222,16 @@ function MyInputComponent(props) {
 <FormControl>
   <InputLabel htmlFor="my-input">电子邮件</InputLabel>
   <Input id="my-input" aria-describedby="my-helper-text" />
-  <FormHelperText id="my-helper-text">我们绝不会分享您的邮件地址。</FormHelperText>
+  <FormHelperText id="my-helper-text">我们绝不会分享您的邮件地址。
+  </FormHelperText>
 </FormControl>
 ```
 
-## 辅助项目
+## 补充项目
 
-对于更高级的用例，您可以使用这些：
+对于更高级的用例，您可以利用：
 
-- 使用 [formik-material-ui](https://github.com/stackworx/formik-material-ui) 将 Material-UI 和 [formik](https://jaredpalmer.com/formik) 结合使用。
-- 使用 [redux-form-material-ui](https://github.com/erikras/redux-form-material-ui) 将 Material-UI 和 [Redux Form](https://redux-form.com/) 结合使用。
 - 使用 [mui-rff](https://github.com/lookfirst/mui-rff) 将 Material-UI 和 [React Final Form](https://final-form.org/react) 结合使用。
+- [formik-material-ui](https://github.com/stackworx/formik-material-ui): Bindings for using Material-UI with [formik](https://jaredpalmer.com/formik).
+- [redux-form-material-ui](https://github.com/erikras/redux-form-material-ui): Bindings for using Material-UI with [Redux Form](https://redux-form.com/).
+- [mui-rff](https://github.com/lookfirst/mui-rff): Bindings for using Material-UI with [React Final Form](https://final-form.org/react).
