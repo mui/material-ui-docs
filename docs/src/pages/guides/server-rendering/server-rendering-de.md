@@ -71,10 +71,12 @@ function handleRender(req, res) {
 const app = express();
 
 // Isso é acionado toda vez que o servidor recebe uma solicitação.
-app.use(handleRender);
+*/
+}
 
-const port = 3000;
-app.listen(port);
+const app = express();
+
+// Isso é acionado toda vez que o servidor recebe uma solicitação.
 ```
 
 ### Verarbeiten der Anfrage
@@ -99,9 +101,6 @@ function handleRender(req, res) {
   const sheets = new ServerStyleSheets();
 
   // Render the component to a string.
-  const css = sheets.toString();
-
-  // Zurücksenden der gerenderten Seite an den Client.
   import express from 'express';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
@@ -113,19 +112,23 @@ function handleRender(req, res) {
   const sheets = new ServerStyleSheets();
 
   // Render the component to a string.
-  const html = ReactDOMServer.renderToString(
-    sheets.collect(
-      <ThemeProvider theme={theme}>
-        <App />
-      </ThemeProvider>,
-    ),
-  );
+  res.send(renderFullPage(html, css));
+}
 
-  // Grab the CSS from the sheets.
-app.use(handleRender);
+const app = express();
 
-const port = 3000;
-app.listen(port);
+app.use('/build', express.static('build'));
+
+// Dies wird jedes Mal ausgelöst, wenn der Server eine Anfrage erhält.
+  const css = sheets.toString();
+
+  // Zurücksenden der gerenderten Seite an den Client.
+*/
+}
+
+const app = express();
+
+// Isso é acionado toda vez que o servidor recebe uma solicitação.
 ```
 
 ### Injizieren der ursprüngliche HTML Komponente und CSS
