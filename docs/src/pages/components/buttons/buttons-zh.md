@@ -126,9 +126,9 @@ The loading buttons can show pending state and disable interactions.
 
 ```css
 .MuiButtonBase-root:disabled {
-    cursor: not-allowed;
-    pointer-events: auto;
-  }
+  cursor: not-allowed;
+  pointer-events: auto;
+}
 ```
 
 然而：
