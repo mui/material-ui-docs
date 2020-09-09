@@ -33,11 +33,13 @@ const theme = createMuiTheme({
 
 ```jsx
 const theme = createMuiTheme({
-  overrides: {
+  components: {
     MuiCssBaseline: {
-      '@global': {
-        html: {
-          WebkitFontSmoothing: 'auto',
+      styleOverrides: {
+        '@global': {
+          html: {
+            WebkitFontSmoothing: 'auto',
+          },
         },
       },
     },
@@ -45,12 +47,6 @@ const theme = createMuiTheme({
 });
 
 // ...
-return (
-  <ThemeProvider theme={theme}>
-    <CssBaseline />
-    {children}
-  </ThemeProvider>
-);
 return (
   <ThemeProvider theme={theme}>
     <CssBaseline />
