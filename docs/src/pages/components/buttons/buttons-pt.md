@@ -141,10 +141,10 @@ Então:
 
 ```jsx
 <span style={{ cursor: 'not-allowed' }}>
-  <Button component={Link} disabled>
-    disabled
-  </Button>
-</span>
+    <Button component={Link} disabled>
+      disabled
+    </Button>
+  </span>
 ```
 
 Isso tem a vantagem de suportar qualquer elemento, por exemplo, um elemento de link `<a>`.
