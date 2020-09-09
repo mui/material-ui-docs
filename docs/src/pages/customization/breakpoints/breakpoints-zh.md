@@ -39,7 +39,7 @@ CSS media queries 是一种做出响应式的用户界面的特有方法。 而 
 在下面的演示中，我们根据屏幕宽度来更改背景颜色 (红色、蓝色和绿色)。
 
 ```jsx
-const styles = theme => ({
+const styles = (theme) => ({
   root: {
     padding: theme.spacing(1),
     [theme.breakpoints.down('sm')]: {
@@ -104,7 +104,7 @@ const theme = createMuiTheme({
       xl: 1920,
     },
   },
-})
+});
 ```
 
 您可以随意设置任意数量的断点，并且也可以在项目中以您喜欢的任何方式为断点命名。
@@ -126,12 +126,12 @@ const theme = createMuiTheme({
 ```ts
 declare module "@material-ui/core/styles/createBreakpoints" {
   interface BreakpointOverrides {
-    xs: false; // removes the `xs` breakpoint
+    xs: false; // 移除 `xs` 断点
     sm: false;
     md: false;
     lg: false;
     xl: false;
-    tablet: true; // adds the `tablet` breakpoint
+    tablet: true; // 添加 `tablet` 断点
     laptop: true;
     desktop: true;
   }
