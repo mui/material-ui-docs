@@ -1,6 +1,9 @@
 ---
 title: React Grid List 网格列表组件
 components: ImageList, ImageListItem, ImageListItemBar, ListSubheader, IconButton
+materialDesign: https://material.io/components/image-lists
+githubLabel:
+  component: ImageList
 ---
 
 # Grid List 网格列表
@@ -9,11 +12,13 @@ components: ImageList, ImageListItem, ImageListItemBar, ListSubheader, IconButto
 
 [网格列表](https://material.io/design/components/image-lists.html)展示了一个在重复的模式中的子集。 它们有助于提高对所持内容的视觉理解。
 
+{{"component": "modules/components/ComponentLinkHeader.js"}}
+
 ## 仅有图像的网格列表
 
-这是一个可滚动的图像的`网格列表`的简单示例。
-
 {{"demo": "pages/components/image-list/ImageImageList.js", "hideEditButton": true}}
+
+{{"demo": "pages/components/image-list/BasicImageList.js", "hideEditButton": true}}
 
 ## 带有标题栏的网格列表
 
