@@ -99,6 +99,20 @@ function handleRender(req, res) {
   const sheets = new ServerStyleSheets();
 
   // Render the component to a string.
+  const css = sheets.toString();
+
+  // Send the rendered page back to the client.
+  import express from 'express';
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
+import { ServerStyleSheets, ThemeProvider } from '@material-ui/core/styles';
+import App from './App';
+import theme from './theme';
+
+function handleRender(req, res) {
+  const sheets = new ServerStyleSheets();
+
+  // Render the component to a string.
   const html = ReactDOMServer.renderToString(
     sheets.collect(
       <ThemeProvider theme={theme}>
@@ -108,17 +122,6 @@ function handleRender(req, res) {
   );
 
   // Grab the CSS from the sheets.
-  const css = sheets.toString();
-
-  // Send the rendered page back to the client.
-  res.send(renderFullPage(html, css));
-}
-
-const app = express();
-
-app.use('/build', express.static('build'));
-
-// This is fired every time the server-side receives a request.
 app.use(handleRender);
 
 const port = 3000;
@@ -181,9 +184,9 @@ ReactDOM.hydrate(<Main />, document.querySelector('#root'));
 
 We host different reference implementations which you can find in the [GitHub repository](https://github.com/mui-org/material-ui) under the [`/examples`](https://github.com/mui-org/material-ui/tree/master/examples) folder:
 
-- [The reference implementation of this tutorial](https://github.com/mui-org/material-ui/tree/master/examples/ssr)
-- [Gatsby](https://github.com/mui-org/material-ui/tree/master/examples/gatsby)
-- [Next.js](https://github.com/mui-org/material-ui/tree/master/examples/nextjs)
+- [The reference implementation of this tutorial](https://github.com/mui-org/material-ui/tree/next/examples/ssr)
+- [Gatsby](https://github.com/mui-org/material-ui/tree/next/examples/gatsby)
+- https://github.com/mui-org/material-ui/tree/master/examples/nextjs
 
 ## Résolution de problèmes
 
