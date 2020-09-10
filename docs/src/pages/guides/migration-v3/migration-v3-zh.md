@@ -12,7 +12,7 @@
 
 ## 为什么您需要迁移呢
 
-此文档介绍了*h如何*从v3版本迁移到v4版本。 关于迁移的*原因*，我们则在 [Medium上发布了一篇博客](https://medium.com/material-ui/material-ui-v4-is-out-4b7587d1e701)来详细解说。
+此文档介绍了 _如何_ 从 v3 版本迁移到 v4 版本。 关于 _为什么_ 需要迁移，我们在 [Medium 上发布了一篇博客](https://medium.com/material-ui/material-ui-v4-is-out-4b7587d1e701) 来详细说明。
 
 ## 更新您的依赖包
 
@@ -80,14 +80,14 @@ yarn add @material-ui/styles
   +const DeepChild = withTheme(DeepChildRaw);
   ```
 
-- Rename `convertHexToRGB` to `hexToRgb`.
+- 重命名 `convertHexToRGB` 为 `hexToRgb`。
 
   ```diff
   -import { convertHexToRgb } from '@material-ui/core/styles/colorManipulator';
   +import { hexToRgb } from '@material-ui/core/styles';
   ```
 
-- Scope the [keyframes API](https://cssinjs.org/jss-syntax/#keyframes-animation). 您应该在您的代码中做出以下改变。 您应该在您的代码中做出以下改变。 这对分离动画的逻辑有所帮助：
+- 设置 [keyframes API](https://cssinjs.org/jss-syntax/#keyframes-animation) 的范围。 您应该在您的代码中做出以下改变。 这对分离动画的逻辑有所帮助：
 
   ```diff
     rippleVisible: {
@@ -138,7 +138,7 @@ yarn add @material-ui/styles
 
   _提示：您可以提供多个参数：`theme.spacing(1, 2) // = '8px 16px'。`_
 
-  您可以在项目中使用 [迁移小帮手](https://github.com/mui-org/material-ui/tree/master/packages/material-ui-codemod/README.md#theme-spacing-api)来让您的迁移流程更加顺畅。
+  您可以在项目中使用 [迁移小帮手](https://github.com/mui-org/material-ui/tree/master/packages/material-ui-codemod/README.md#theme-spacing-api) 来让您的迁移流程更加顺畅。
 
 ### 布局
 
@@ -406,7 +406,7 @@ function MySelect({ children }) {
 
 - [Typography] 将默认的字体从 `body2` 换成 `body1`。 默认为16px的字体大小比默认为14px好。 Bootstrap，material.io，甚至本文档都使用的是 16px 作为默认字体大小。 像 Ant Design 一样使用14px是可以理解的，因为中国的用户使用了不同的字母表。 我们建议将 12px 作为日语的默认字体大小。
 - [Typography] 移除了铸排变体的默认颜色。 大多数情况下，字体颜色应该是继承而来的。 这是网站的默认行为。
-- [Typography] 按照 [该讨论](https://github.com/mui-org/material-ui/issues/13028) 的逻辑，我们将 `color="default"` 重命名为 `color="initial"`。 您不应该再使用 _default_，它缺少明确的语义。
+- [Typography] 按照 [该讨论](https://github.com/mui-org/material-ui/issues/13028) 的逻辑，我们将 `color="default"` 重命名为 `color="initial"`。 你不应该再使用 _default_，因为它缺少明确的语义。
 
 ### Node
 
