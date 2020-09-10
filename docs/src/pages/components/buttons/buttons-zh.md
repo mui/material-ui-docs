@@ -94,7 +94,7 @@ waiAria: 'https://www.w3.org/TR/wai-aria-practices/#button'
 
 ## Complex Buttons（复杂按钮）
 
-The loading buttons can show pending state and disable interactions.
+加载按钮可以显示加载状态并且禁用与此交互。
 
 {{"demo": "pages/components/buttons/LoadingButtons.js"}}
 
@@ -110,7 +110,7 @@ The loading buttons can show pending state and disable interactions.
 
 ## Third-party routing library（第三方路由库）
 
-一个常见的用例是使用按钮触发导航到新页面的操作。 一个常见的用例是使用按钮触发导航到新页面的操作。 然而，一些特定 `ButtonBase` 的代码需要所给组件的 DOM 节点。 在组件上附加一个 ref，并且预期此组件能够将这个 ref 传递到下层 DOM 节点，通过这样的方法可以实现。 鉴于我们的许多交互式组件都依赖于 `ButtonBase`，您可以在任何情况都能受益于它。
+一个常见的用例是使用按钮触发导航到新页面的操作。 `ButtonBase` 组件提供了 `component` 属性来处理此用例。 然而，一些特定 `ButtonBase` 的代码需要所给组件的 DOM 节点。 在组件上附加一个 ref，并且预期此组件能够将这个 ref 传递到下层 DOM 节点，通过这样的方法可以实现。 鉴于我们的许多交互式组件都依赖于 `ButtonBase`，您可以在任何情况都能受益于它。
 
 这有一个[与 react-router 交互的例子](/guides/composition/#button)。
 
@@ -122,7 +122,7 @@ The loading buttons can show pending state and disable interactions.
 
 若您希望使用 `not-allowed`， 您有以下两种选择：
 
-1. **CSS only**。 您可以移除作用在 `<button>` 元素上的指针事件的样式：
+1. **仅使用 CSS**。 您可以移除作用在 `<button>` 元素上的指针事件的样式：
 
 ```css
 .MuiButtonBase-root:disabled {
