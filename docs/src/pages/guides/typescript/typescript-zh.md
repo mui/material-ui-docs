@@ -170,11 +170,18 @@ interface Props {
 ```ts
 import { WithStyles, createStyles } from '@material-ui/core';
 
-const styles = (theme: Theme) => createStyles({
-  root: { /* ... */ },
-  paper: { /* ... */ },
-  button: { /* ... */ },
-});
+const styles = (theme: Theme) =>
+  createStyles({
+    root: {
+      /* ... */
+    },
+    paper: {
+      /* ... */
+    },
+    button: {
+      /* ... */
+    },
+  });
 
 interface Props extends WithStyles<typeof styles> {
   foo: number;
@@ -187,23 +194,25 @@ interface Props extends WithStyles<typeof styles> {
 将 `withStyles(styles)` 作为函数来如期使用：
 
 ```tsx
-const DecoratedSFC = withStyles(styles)(({ text, type, color, classes }: Props) => (
-  <Typography variant={type} color={color} classes={classes}>
-    {text}
-  </Typography>
-));
+const DecoratedSFC = withStyles(styles)(
+  ({ text, type, color, classes }: Props) => (
+    <Typography variant={type} color={color} classes={classes}>
+      {text}
+    </Typography>
+  ),
+);
 
 const DecoratedClass = withStyles(styles)(
   class extends React.Component<Props> {
     render() {
-      const { text, type, color, classes } = this.props
+      const { text, type, color, classes } = this.props;
       return (
         <Typography variant={type} color={color} classes={classes}>
           {text}
         </Typography>
       );
     }
-  }
+  },
 );
 ```
 
@@ -250,7 +259,7 @@ export default function createMyTheme(options: ThemeOptions) {
       breakpoint: 'lg',
     },
     ...options,
-  })
+  });
 }
 ```
 
@@ -259,7 +268,9 @@ export default function createMyTheme(options: ThemeOptions) {
 ```ts
 import createMyTheme from './styles/createMyTheme';
 
-const theme = createMyTheme({ appDrawer: { breakpoint: 'md' }});
+const theme = createMyTheme({
+  appDrawer: { breakpoint: 'md' },
+});
 ```
 
 ## `component` 属性的用法
@@ -293,11 +304,10 @@ function GenericCustomComponent<C extends React.ElementType>(
 现在，如果将 `GenericCustomComponent` 与所提供的 `component` 属性一起使用，它也应该拥有所提供的组件所需的所有属性。
 
 ```ts
-function ThirdPartyComponent({ prop1 } : { prop1: string }) {
-  return <div />
+function ThirdPartyComponent({ prop1 }: { prop1: string }) {
+  return <div />;
 }
 // ...
-<GenericCustomComponent component={ThirdPartyComponent} prop1="some value" />;
 <GenericCustomComponent component={ThirdPartyComponent} prop1="some value" />;
 ```
 
