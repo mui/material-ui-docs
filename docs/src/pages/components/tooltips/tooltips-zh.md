@@ -11,7 +11,7 @@ waiAria: 'https://www.w3.org/TR/wai-aria-practices/#tooltip'
 
 <p class="description">当用户鼠标悬停，聚焦或者轻触一个元素时，工具提示组件会显示一段有意义的文本。</p>
 
-当它触发时， [Tooltips](https://material.io/design/components/tooltips.html) 会显示一个标识一个元素的文本标签，比如对该功能的描述。
+当它触发时， Tooltips 会显示标识一个元素的文本标签，比如对该功能的描述。
 
 {{"component": "modules/components/ComponentLinkHeader.js"}}
 
@@ -21,7 +21,7 @@ waiAria: 'https://www.w3.org/TR/wai-aria-practices/#tooltip'
 
 ## 工具提示的定位
 
-`Tooltip` 有12个**位置**选项。 它们没有方向箭头，而是依靠代码指示的移动情况来移动文字提示的出现位置。
+`Tooltip` 有 12 个**位置** 选项。 它们没有方向箭头，而是依靠代码指示的移动情况来移动文字提示的出现位置。
 
 {{"demo": "pages/components/tooltips/PositionedTooltips.js"}}
 
