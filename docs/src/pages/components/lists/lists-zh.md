@@ -90,9 +90,9 @@ function ListItemLink(props) {
 
 {{"demo": "pages/components/lists/InsetList.js", "bg": true}}
 
-## 大型列表渲染
+## 没有边距的列表
 
-When rendering a list within a component that defines its own gutters, `ListItem` gutters can be disabled with `disableGutters`.
+当在一个定义了边距（gutters）的组件中渲染一个列表时，`ListItem` 的边距可以通过 `disableGutters` 来禁用。
 
 {{"demo": "pages/components/lists/GutterlessList.js", "bg": true}}
 
