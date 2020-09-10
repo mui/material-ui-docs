@@ -66,7 +66,7 @@ import { usePagination } from '@material-ui/lab/Pagination';
 
 {{"demo": "pages/components/pagination/TablePagination.js"}}
 
-> ⚠️ Note that the `Pagination` page prop starts at 1 to match the requirement of including the value in the URL, while the `TablePagination` page prop stats at 0 to match the requirement of zero-based JavaScript arrays that comes with rendering a lot of tabular data.
+> ⚠️注意，`Pagination` 页面的属性从 1 开始，以符合在 URL 中包含当前页面参数值的要求，而 `TablePagination` 页面的属性则从 0 开始，以符合渲染大量表格数据时基于零开始的 JavaScript 数组的要求。
 
 您可以在文档的 [表格部分](/components/tables/#custom-pagination-options) 中了解更多关于此用例的信息。
 
