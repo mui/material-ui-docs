@@ -6,7 +6,7 @@
 
 您可以使用 `theme.typography.fontFamily` 属性来更改 font family。
 
-For instance, this demo uses the system font instead of the default Roboto font:
+例如，这个例子使用是系统字体而不是默认的 Roboto 字体：
 
 ```js
 const theme = createMuiTheme({
@@ -31,7 +31,7 @@ const theme = createMuiTheme({
 
 若想使用自托管的字体，请下载`ttf`，`woff`，以及/或者 `woff2` 格式的字体文件，然后将它们导入到你的代码中去。
 
-⚠️ 这则需要在你的生成过程中有一个插件或者加载器，用它们可以处理 `ttf`， `woff` 和 `woff2` 文件的加载。 字体将_不会_内嵌入你的资源文件包（bundle）。 它们将从您的网络服务器上而不是 CDN 中加载。
+⚠️ 这则需要在你的生成过程中有一个插件或者加载器，用它们可以处理 `ttf`， `woff` 和 `woff2` 文件的加载。 字体将 _不会_ 内嵌入你的资源文件包（bundle）。 它们将从您的网络服务器上而不是 CDN 中加载。
 
 ```js
 import RalewayWoff2 from './fonts/Raleway-Regular.woff2';
@@ -56,7 +56,20 @@ const raleway = {
 ```jsx
 const theme = createMuiTheme({
   typography: {
-    // 告诉Material-UI html元素的字体大小是什么。
+    fontFamily: 'Raleway, Arial',
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        '@global': {
+          '@font-face': [raleway],
+        },
+      },
+    },
+  },
+});
+
+// ...
 return (
   <ThemeProvider theme={theme}>
     <CssBaseline />
@@ -89,7 +102,7 @@ const theme = createMuiTheme({
 
 ### 响应的字体大小
 
-The `theme.typography.*` [variant](#variants) properties map directly to the generated CSS. 您可以在当中使用 [媒体查询（media queries）](/customization/breakpoints/#api)：
+`theme.typography.*` [variant](#variants) 属性会直接映射到生成的 CSS。 您可以在当中使用 [媒体查询（media queries）](/customization/breakpoints/#api)：
 
 ```js
 const theme = createMuiTheme();
@@ -111,7 +124,7 @@ theme.typography.h3 = {
 
 {{"demo": "pages/customization/typography/ResponsiveFontSizesChart.js", "hideToolbar": true}}
 
-您可以在下面的示例中看到这个操作。 You can see this in action in the example below. adjust your browser's window size, and notice how the font size changes as the width crosses the different [breakpoints](/customization/breakpoints/):
+您可以在下面的示例中看到这个操作。 请尝试调整浏览器的窗口大小，您可以注意到当切换到不同的 [breakpoints](/customization/breakpoints/) 设置的宽度，字体的大小也随之改变。
 
 ```js
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
@@ -132,7 +145,7 @@ theme = responsiveFontSizes(theme);
 
 > ⚠️  更改字体的大小会对无障碍设计造成影响 ♿️。 大多数浏览器遵循默认的 16 pixels 的字体大小，但是用户可以改变这个值。 譬如，一个视力受损的客户可以将浏览器的默认字体值设置的更大一些。
 
-An `htmlFontSize` theme property is provided for this use case, which tells Material-UI what the font-size on the `<html>` element is. This is used to adjust the `rem` value so the calculated font-size always match the specification. 这可以用于调整  `rem`  值，如此一来计算后的 font-size 总是与规范相符合。
+`theme.typography.htmlFontSize` 属性是为这个用例提供的，它会告诉 Material-UI 元素的字体大小`<html>`是多少。 这可以用于调整  `rem`  值，如此一来计算后的 font-size 总是与规范相符合。
 
 ```js
 const theme = createMuiTheme({
