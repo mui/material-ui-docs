@@ -10,7 +10,7 @@ materialDesign: https://material.io/components/cards
 
 <p class="description">卡片组件能够承载与单个主题相关的内容和操作。</p>
 
-[卡片](https://material.io/design/components/cards.html) 是一个显示与单个主题相关的内容和操作的容器。
+卡片是一个显示与单个主题相关的内容和操作的容器。
 
 通过卡片组件，扫描相关的和可操作的信息更为便捷了。 像文本和图像这样的元素，则应按照清晰的布局来排列，以此呈现结构层次。
 
@@ -30,7 +30,7 @@ materialDesign: https://material.io/components/cards
 
 ## 复杂的交互情况
 
-在桌面上，卡片内容是可以展开的。 (Click the downward chevron to view the recipe.)
+在桌面上，卡片内容是可以展开的。 （点击向下箭头的按钮来查看食谱）
 
 {{"demo": "pages/components/cards/RecipeReviewCard.js", "bg": true}}
 
@@ -40,7 +40,7 @@ materialDesign: https://material.io/components/cards
 
 {{"demo": "pages/components/cards/MediaCard.js", "bg": true}}
 
-默认情况下，我们结合`<div>` 元素和一个 *背景图片* 来展示多媒体元素。 譬如，你会有显示一个视频或一张响应式的图片的需求。 使用 `component` 属性可以解决这样的情况：
+默认情况下，我们结合 `<div>` 元素和一张 _背景图片_ 来展示多媒体元素。 譬如，你会有显示一个视频或一张响应式的图片的需求。 使用 `component` 属性可以解决这样的情况：
 
 {{"demo": "pages/components/cards/ImgMediaCard.js", "bg": true}}
 
