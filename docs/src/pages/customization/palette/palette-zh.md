@@ -6,12 +6,12 @@
 
 主题提供了以下这些调色板的颜色（在 `theme.palette.` 中获取）：
 
-- *primary* - used to represent primary interface elements for a user. It's the color displayed most frequently across your app's screens and components. 它是在您的应用屏幕和组件中显示最频繁的一个颜色。
-- *secondary* - used to represent secondary interface elements for a user. It provides more ways to accent and distinguish your product. Having it is optional. 它给予了更多的方法来强调和区分您的产品。 此颜色是可选的。
-- *error* - used to represent interface elements that the user should be made aware of.
-- *warning* - used to represent potentially dangerous actions or important messages.
-- *info* - used to present information to the user that is neutral and not necessarily important.
-- *success* - used to indicate the successful completion of an action that user triggered.
+- _primary_ - 用于展示一个给用户的主要界面元素。 它是在您的应用屏幕和组件中显示最频繁的一个颜色。
+- _secondary_ - 用于呈现给用户的次要界面元素。 它给予了更多的方法来强调和区分您的产品。 此颜色是可选的。
+- _error_ - 用于呈现用户应该注意到的界面元素。
+- _warning_ - 用于呈现潜在的一些危险的操作或者重要的信息。
+- _info_ - 用于向用户呈现一些中立的且不一定重要的信息。
+- _success_ - 用于指示一个用户触发的操作的成功完成。
 
 如果想要了解更多关于色彩的知识，您可以查看 [色彩章节](/customization/color/)。
 
@@ -21,7 +21,7 @@
 
 {{"demo": "pages/customization/palette/Intentions.js", "bg": "inline", "hideToolbar": true}}
 
-The default palette uses the shades prefixed with `A` (`A200`, etc.) for the secondary intention, and the un-prefixed shades for the other intentions.
+默认调色板使用前缀为 `A`（`A200` 等）的深度作为辅助调色，其他调色使用无前缀的阴影。
 
 ## Customization 个性化
 
@@ -34,7 +34,7 @@ The default palette uses the shades prefixed with `A` (`A200`, etc.) for the sec
 - [`palette.info`](/customization/default-theme/?expand-path=$.palette.info)
 - [`palette.success`](/customization/default-theme/?expand-path=$.palette.success)
 
-palette color objects are provided, they will replace the defaults.
+这提供了调色板对象，它们将取代默认的颜色对象。
 
 调色板颜色值可以是[颜色（color）](/customization/color/#2014-material-design-color-palettes)对象，也可以是具有以下 TypeScript 接口指定的一个或多个键（key）的对象：
 
@@ -49,7 +49,7 @@ interface PaletteColor {
 
 ### 使用一个颜色对象
 
-The simplest way to customize an intention is to import one or more of the provided colors and apply them to a palette intention:
+自定义调色板的最简单方法是导入一个或多个提供的颜色：
 
 ```js
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -64,7 +64,7 @@ const theme = createMuiTheme({
 
 ### 直接提供颜色
 
-If you wish to provide more customized colors, you can either create your own color object, or directly supply colors to some or all of the intention's keys:
+如果你想要提供更多的自定义颜色，你可以创建你自己的调色板，或者直接为一些或者所有的 `theme.palette` 键提供颜色：
 
 ```js
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -94,7 +94,7 @@ const theme = createMuiTheme({
 });
 ```
 
-As in the example above, if the intention object contains custom colors using any of the "main", "light", "dark" or "contrastText" keys, these map as follows:
+如同上面的例子，如果调色板包含使用 "main"、"light"、"dark" 或 "contrastText" 键中的任何一个自定义颜色，那么这些颜色映射如下所示：
 
 - 如果没有设置 “dark” 和 / 或 “light” 键，那么这将从 "main" 中根据 “色调偏移（tonalOffset）” 值来进行计算。
 - 如果没有设置 “对比度文本（contrastText）”，那么这将根据 “对比度阈值（contrastThreshold）” 来计算出与 "main" 的对比度。
@@ -173,7 +173,7 @@ declare module "@material-ui/core/styles/createPalette" {
 
 ## 暗色模式
 
-材质界面有两种调色板的类型，亮色（light）（默认值）和 暗色（dark）模式。 您可以通过设置 `type: 'dark'` 来运用暗色主题。 While it's only a single value change, internally it modifies several palette values.
+材质界面有两种调色板的类型，亮色（light）（默认值）和 暗色（dark）模式。 您可以通过设置 `type: 'dark'` 来运用暗色主题。 虽然只是单一的数值变化，但在其内部却修改了多个调色板的数值。
 
 ```js
 const darkTheme = createMuiTheme({
