@@ -434,7 +434,7 @@ export default function CssModulesButtonDeep() {
 
 ### `css` 属性
 
-Emotion的 **css()** 方法与Material-UI无缝协作。
+Emotion 的 **css()** 方法与 Material-UI 无缝协作。
 
 {{"demo": "pages/guides/interoperability/EmotionCSS.js", "hideToolbar": true}}
 
