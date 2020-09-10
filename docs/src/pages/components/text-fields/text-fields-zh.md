@@ -38,7 +38,7 @@ materialDesign: https://material.io/components/text-fields
 
 ## 多行属性
 
-使用 `multiline` 属性，能将一个文本框转换成[多行文本框](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)或者 [自适应的多行文本框](/components/textarea-autosize/)。 Unless the `rows` prop is set, the height of the text field dynamically matches its content (using [TextareaAutosize](/components/textarea-autosize/)). You can use the `rowsMin` and `rowsMax` props to bound it.
+`multiline` 属性将文本字段转换为 [`<textarea>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) 元素。 除非设置了 `rows` 属性，否则文本字段的高度会动态匹配其内容（使用 [TextareaAutosize](/components/textarea-autosize/) 时）。 你可以使用 `rowsMin` 和 `rowsMax` 属性来绑定它。
 
 {{"demo": "pages/components/text-fields/MultilineTextFields.js"}}
 
@@ -136,28 +136,28 @@ materialDesign: https://material.io/components/text-fields
 
 ### type="number"
 
-Inputs of type="number" have potential usability issues:
+type="number" 的输入存在潜在的可用性问题。
 
-- Allowing certain non-numeric characters ('e', '+', '-', '.') and silently discarding others
-- 如果您正在构造一个组件：
+- 这将允许某些非数字字符（'e', '+', '-', '.'） 并且丢失其他字符
+- 滚动增加/减少数字的功能可能会导致意外和难以察觉的变化。
 
-and more - see [this article](https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/) by the GOV.UK Design System team for a more detailed explanation.
+有关该话题的更多信息 - 请参阅 GOV.UK 设计系统团队的 [这篇文章](https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/)，来了解更详细的解释。
 
-For number validation, one viable alternative is to use the default input type="text" with the _pattern_ attribute, for example:
+对于数字验证，一个可行的替代方法是使用默认的 type="text" 和 _pattern_ 属性，例如：
 
 ```jsx
 <TextField inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} />
 ```
 
-In the future, we might provide a [number input component](https://github.com/mui-org/material-ui/issues/19154).
+以后我们可能会提供 [数字（number）输入组件](https://github.com/mui-org/material-ui/issues/19154)。
 
-### Helper text
+### 助手文本
 
-The helper text prop affects the height of the text field. If two text fields are placed side by side, one with a helper text and one without, they will have different heights. 例如:
+助手文本属性会影响文本字段的高度。 如果两个文本字段并排放置，一个有辅助文本，另一个没有，那么它们的高度就会不同。 例如:
 
 {{"demo": "pages/components/text-fields/HelperTextMisaligned.js"}}
 
-This can be fixed by passing a space character to the `helperText` prop:
+可以通过向 `helperText` 属性传递一个空格字符来解决这个问题。
 
 {{"demo": "pages/components/text-fields/HelperTextAligned.js"}}
 
@@ -205,7 +205,7 @@ function MyInputComponent(props) {
 
 ## 无障碍设计
 
-为了确保您的文本框是可及的，**输入框必须和标签以及帮助文本连在一起调用**。 而且，深层的 DOM 节点应该遵循这个结构。
+为了确保您的文本框可提供无障碍访问，**输入框必须和标签以及帮助文本连在一起调用**。 而且，深层的 DOM 节点应该遵循这个结构。
 
 ```jsx
 <div class="form-control">
@@ -231,7 +231,7 @@ function MyInputComponent(props) {
 
 对于更高级的用例，您可以利用：
 
-- 使用 [mui-rff](https://github.com/lookfirst/mui-rff) 将 Material-UI 和 [React Final Form](https://final-form.org/react) 结合使用。
-- [formik-material-ui](https://github.com/stackworx/formik-material-ui): Bindings for using Material-UI with [formik](https://jaredpalmer.com/formik).
-- [redux-form-material-ui](https://github.com/erikras/redux-form-material-ui): Bindings for using Material-UI with [Redux Form](https://redux-form.com/).
-- [mui-rff](https://github.com/lookfirst/mui-rff): Bindings for using Material-UI with [React Final Form](https://final-form.org/react).
+- [react-hook-form](https://react-hook-form.com/)：用于表单验证的 React 钩子。
+- [formik-material-ui](https://github.com/stackworx/formik-material-ui)：用于 [formik](https://jaredpalmer.com/formik) 和 Material-UI 捆绑使用。
+- [redux-form-material-ui](https://github.com/erikras/redux-form-material-ui)：用于 [Redux Form](https://redux-form.com/) 和 Material-UI 捆绑使用。
+- [mui-rff](https://github.com/lookfirst/mui-rff)：用于 [React Final Form](https://final-form.org/react) 和 Material-UI 捆绑使用。
