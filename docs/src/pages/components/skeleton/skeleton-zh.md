@@ -16,7 +16,7 @@ packageName: '@material-ui/lab'
 
 ## 使用
 
-这个组件可以**直接在你的组件中**使用。 就像这样：
+这个组件可以 **直接在你的组件中** 使用。 就像这样：
 
 ```jsx
 {
@@ -35,7 +35,7 @@ packageName: '@material-ui/lab'
 
 ## 动画
 
-默认情况下，骨骼使用 "pulsate"，但是您可以更改为 "wave" 动画或完全禁用它。
+默认情况下，骨架屏组件使用 pulsates 动画，但是你也可以更改为 wave 动画或者完全禁用它。
 
 {{"demo": "pages/components/skeleton/Animations.js"}}
 
@@ -54,9 +54,7 @@ packageName: '@material-ui/lab'
 当您在排版的时候会得心应手，因为它的高度是用 `em` 单位设置的。
 
 ```jsx
-<Typography variant="h1">
-  {loading ? <Skeleton /> : 'h1'}
-</Typography> <Skeleton /> : 'h1'}</Typography>
+<Typography variant="h1">{loading ? <Skeleton /> : 'h1'}</Typography>
 ```
 
 {{"demo": "pages/components/skeleton/SkeletonTypography.js", "defaultCodeOpen": false}}
