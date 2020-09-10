@@ -42,7 +42,7 @@
 
 你 [可以访问](/styles/advanced/#accessing-the-theme-in-a-component) React 组件内部的主题变量。
 
-- [material-ui-theme-editor](https://in-your-saas.github.io/material-ui-theme-editor/)：只需要选择颜色即可为你的 Material-UI 应用生成主题的工具，同时还支持在线预览。 Includes basic site templates to show various components and how they are affected by the theme
+- [mui-theme-creator](https://bareynol.github.io/mui-theme-creator/)：一个帮助设计和定制 Material-UI 组件库主题的工具。 包括基本的网站模板，并且展示各种组件及其受主题影响的方式。
 - [create-mui-theme](https://react-theming.github.io/create-mui-theme/)：使用 Material Design 颜色工具来创建 Material-UI 主题的在线工具。
 - [Material palette generator](https://material.io/inline-tools/color/)：它可用于通过您输入的任何颜色生成一系列的调色板。
 
@@ -113,7 +113,7 @@ const theme = createMuiTheme({
 - `breakpoints` (*Array\<String\>* [optional]): Default to `['sm', 'md', 'lg']`. Array of [breakpoints](/customization/breakpoints/) (identifiers). 一个 [breakpoints](/customization/breakpoints/) 的数组（identifiers）。
 - `disableAlign` (_Boolean_ [optional]): 默认值为`false`。 字体大小是否略有变化，这样能够保持行高并与 Material Design 的 4px 行高网格相对齐。 这需要主题样式中的无单位行高度。
 - ` factor ` (_Number_ [optional]): 默认值是 `2`。 此值决定了字体大小调整的强度。 值越高的话，在较小的屏幕上字体大小之间的差异就越小。 值越低的话，在较小屏幕上的字体就越大。 该值必须大于1。
-- `variants` (*Array\<String\>* [optional]): Default to all. The typography variants to handle. 需要处理的文字变体。
+- `variants` (_Array\<String\>_ [optional])：默认值为 all。 需要处理的文字变体。
 
 #### 返回结果
 
