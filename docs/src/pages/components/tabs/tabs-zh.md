@@ -11,7 +11,7 @@ waiAria: 'https://www.w3.org/TR/wai-aria-practices/#tabpanel'
 
 <p class="description">使用选项卡，你可以轻松地浏览和切换不同的视图。</p>
 
-对于在同一层次，并且息息相关的内容组，使用[选项卡](https://material.io/design/components/tabs.html) 能够将它们分组并且在其之间切换。
+对于在同一层次，并且息息相关的内容组，使用选项卡能够将它们分组并且在其之间切换。
 
 {{"component": "modules/components/ComponentLinkHeader.js"}}
 
@@ -63,7 +63,7 @@ waiAria: 'https://www.w3.org/TR/wai-aria-practices/#tabpanel'
 
 {{"demo": "pages/components/tabs/ScrollableTabsButtonForce.js", "bg": true}}
 
-If you want to make sure the buttons are always visible, you should customize the opacity.
+如果你想确保按钮始终可见，那么你应该自定义不透明度。
 
 ```css
 .MuiTabs-scrollButtons.Mui-disabled {
