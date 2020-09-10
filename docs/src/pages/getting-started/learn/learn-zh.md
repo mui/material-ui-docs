@@ -33,21 +33,21 @@
 - **Elegant UX in React with Material-UI**：一篇涵盖某些重要的 Material-UI 概念的博客文章
   - 📝 [The blog post](https://medium.com/codingthesmartway-com-blog/getting-started-with-material-ui-for-react-material-design-for-react-364b2688b555)
   - 📹 [The video](https://www.youtube.com/watch?v=PWadEeOuv5o)
-- **Implement high fidelity designs**: Bridge the gap between Design & Development. Break down detailed designs and bring them to life with Material-UI and React.
+- **Implement high fidelity designs**：一篇博客文章，涵盖了一些重要的 Material-UI 概念。
   - 📝 [The blog post](https://alligator.io/react/material-ui/)
 
 ### 付费的资源
 
-- **Implement high fidelity designs**: Bridge the gap between Design & Development. Break down detailed designs and bring them to life with Material-UI and React.
+- **Implement high fidelity designs**：在设计与开发之间架起一座桥梁。 Break down detailed designs and bring them to life with Material-UI and React.
 
   - 💻 [The Course](https://click.linksynergy.com/deeplink?id=IVuPfk1F/Ow&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fimplement-high-fidelity-designs-with-material-ui-and-reactjs%2F)
 
-- **Apply Google Material Design**: This course teaches the fundamentals of Google Material Design and how to develop an end-to-end flight search and booking application using Material-UI and React.
+- **Apply Google Material Design**：本课程教授 Google Material Design 的基础知识，以及如何使用 Material-UI 和 React 开发一个端到端的航班搜索和预订应用。
 
   - 📹 [Watch Course Trailer](https://www.youtube.com/watch?v=hhZ6yFvCWho)
   - 💻 [The Course](https://bonsaiilabs.com/courseDetail/material-ui-with-react)
 
-- **Cookbook**: Build modern-day applications by implementing Material Design principles in React, using Material-UI.
+- **Cookbook**：通过使用 Material-UI 在 React 中实现 Material Design 原则来构建现代应用程序。
   - 📘 [The book](https://www.amazon.com/gp/product/1789615224/)
 
 [![参考手册](/static/blog/material-ui-v4-is-out/cookbook.png)](https://www.amazon.com/gp/product/1789615224/)
