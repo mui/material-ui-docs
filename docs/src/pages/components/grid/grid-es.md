@@ -23,9 +23,9 @@ El sistema de cuadrícula se implementa con el componente `Grid`:
 - Los anchos de los elementos se establecen en porcentajes, por lo que siempre son fluidos y tienen un tamaño relativo al elemento principal.
 - Los elementos tienen padding para crear el espacio entre los elementos individuales.
 - Hay cinco puntos de interrupción de la cuadrícula: xs, sm, md, lg y xl.
-- Integer values can be given to each breakpoint, indicating how many of the 12 available columns are occupied by the component when the viewport width satisfies the [breakpoint contraints](/customization/breakpoints/#default-breakpoints).
+- Se pueden dar valores enteros a cada punto de interrupción, indicando cuántas de las 12 columnas disponibles están ocupadas por el componente cuando el ancho de la vista se ajusta a las restricciones del breakpoint [](/customization/breakpoints/#default-breakpoints).
 
-If you are **new to or unfamiliar with flexbox**, we encourage you to read this [CSS-Tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) guide.
+**Si recién comienzas y no estás familiarizado con flexbox **, te recomendamos leer la siguiente guía [CSS-Tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
 ## Espaciado
 
@@ -41,17 +41,17 @@ El fluid grid usa columnas que escalan y redimencionan el contenido. Un layout d
 
 ### Grid básica
 
-Column widths are integer values between 1 and 12; they apply at any breakpoint and indicate how many columns are occupied by the component.
+Los anchos de las columnas son valores enteros entre 1 y 12; se aplican en cualquier punto de interrupción e indican cuántas columnas están ocupadas por el componente.
 
-A value given to a breakpoint applies to all the other breakpoints wider than it (unless overridden, as you can read later in this page). For example, `xs={12}` sizes a component to occupy the whole viewport width regardless of its size.
+Un valor dado a un breakpoint se aplica a todos los demás breakpoints más anchos que él (a menos que se sobreescriba, como se puede leer despues en esta página). Por ejemplo, `xs={12}` escala un componente para ocupar el ancho de toda la vista independientemente de su tamaño.
 
 {{"demo": "pages/components/grid/CenteredGrid.js", "bg": true}}
 
 ### Grid con breakpoints
 
-Algunas columnas tienen varios anchos definidos, causando que el layout cambie en el correspondiente breakpoint definido. Width values given to larger breakpoints override those given to smaller breakpoints.
+Algunas columnas tienen varios anchos definidos, causando que el layout cambie en el correspondiente breakpoint definido. Los valores de ancho, dados a breakpoints más grandes, anulan los dados breakpoints más pequeños.
 
-For example, `xs={12} sm={6}` sizes a component to occupy half of the viewport width (6 columns) when viewport width is [600 or more pixels](/customization/breakpoints/#default-breakpoints). For smaller viewports, the component fills all 12 available columns.
+Por ejemplo, `xs={12} sm={6}` escala un componente para ocupar la mitad del ancho de la vista (6 columnas) cuando el ancho de la vista es [600 o más píxeles](/customization/breakpoints/#default-breakpoints). Para viweports mas pequeños, el componente rellena las 12 columnas disponibles.
 
 {{"demo": "pages/components/grid/FullWidthGrid.js", "bg": true}}
 
