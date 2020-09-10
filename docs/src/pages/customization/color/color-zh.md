@@ -8,7 +8,7 @@
 
 ### 官方的色彩工具
 
-The Material Design team has also built an awesome palette configuration tool: [material.io/resources/color/](https://material.io/resources/color/). 它会帮助你为你的 UI 建立自己的色彩集合，同时也会帮助测量每个颜色组合的可访问性。 您可以用它来为 UI 创建调色板，以及检测任何颜色组合的无障碍水平。
+Material Design 团队也搭建了一个非常棒的调色板配置工具： [material.io/resources/color/](https://material.io/resources/color/)。 您可以用它来为 UI 创建调色板，以及检测任何颜色组合的无障碍水平。
 
 <a href="https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=3F51B5&secondary.color=F44336" target="_blank" rel="noopener nofollow">
   <img src="/static/images/color/colorTool.png" alt="官方的色彩工具" style="width: 574px" />
@@ -71,7 +71,7 @@ const theme = createMuiTheme({
 ### 社区提供的一些工具
 
 - [create-mui-theme](https://react-theming.github.io/create-mui-theme/)：使用 Material Design 颜色工具来创建 Material-UI 主题的在线工具。
-- [material-ui-theme-editor](https://in-your-saas.github.io/material-ui-theme-editor/)：只需要选择颜色即可为你的 Material-UI 应用生成主题的工具，同时还支持在线预览。 Includes basic site templates to show various components and how they are affected by the theme
+- [mui-theme-creator](https://bareynol.github.io/mui-theme-creator/)：一个帮助设计和定制 Material-UI 组件库主题的工具。 包括基本的网站模板，并且展示各种组件及其受主题影响的方式。
 - [Material palette generator](https://material.io/inline-tools/color/)：它可用于通过您输入的任何颜色生成一系列的调色板。
 
 ## 2014 Material Design 调色板
@@ -80,8 +80,8 @@ const theme = createMuiTheme({
 
 ### 一些重要的术语
 
-- **Palette**: A palette is a collection of colors, i.e. hues and their shades. Material-UI 提供Material Design 指南中的所有颜色. 设计[此调色板](#color-palette)时，我们确保了各个颜色之间的协调。 Material-UI 提供 Material Design 指南中的所有颜色。 设计 [此调色板](#color-palette) 时，我们确保了各个颜色之间的协调呈现。
-- **Hue" & "Shade**: A single color within the palette is made up of a hue such as "red", and shade, such as "500". "rad 50" 是红色的最浅的阴影 (* 粉红色! *), 而 "red 900" 是最暗的。 "rad 50" 是红色的最浅的阴影 (_ 粉红色! _), 而 "red 900" 是最暗的。 除此之外，大多数的色调都带有以 `A` 为前缀的强调（accent）色调。
+- **Palette**：调色板是颜色的集合，即色调及其深度。 Material-UI 提供 Material Design 指南中的所有颜色。 设计 [此调色板](#color-palette) 时，我们确保了各个颜色之间的协调呈现。
+- **Hue & Shade**：调色板中的单一颜色由色调（如“red”）和深度（如“500”）组成。 "rad 50" 是红色的最浅的阴影（_ 粉红色！ _），而 "red 900" 是最暗的深红色。 除此之外，大多数的色调都带有以 `A` 为前缀的强调（accent）色调。
 
 ### 调色板
 
