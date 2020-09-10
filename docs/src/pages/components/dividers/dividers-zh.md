@@ -10,13 +10,13 @@ materialDesign: https://material.io/components/dividers
 
 <p class="description">分隔线是对列表和布局中的内容进行分组的一条细线。</p>
 
-[分隔线](https://material.io/design/components/dividers.html) 可以将内容分成清晰地小组。
+分隔线可以将内容清晰地分成几组。
 
 {{"component": "modules/components/ComponentLinkHeader.js"}}
 
 ## 列表分隔线
 
-默认情况下，分割线会渲染成一个 `<hr>`。 您可以使用 `ListItem` 组件上的 `divider` 属性来保存渲染此DOM元素。
+默认情况下，分割线会渲染成一个 `<hr>`。 您可以使用 `ListItem` 组件上的 `divider` 属性来保存渲染此 DOM 元素。
 
 {{"demo": "pages/components/dividers/ListDividers.js", "bg": true}}
 
@@ -36,13 +36,13 @@ materialDesign: https://material.io/components/dividers
 
 {{"demo": "pages/components/dividers/MiddleDividers.js", "bg": true}}
 
-## 垂直分割线
+## 文本分隔线
 
-You can also render a divider with content.
+你也可以使用文本内容来渲染分隔线。
 
 {{"demo": "pages/components/dividers/DividerText.js"}}
 
-## Divider 分隔线
+## 垂直分隔线
 
 您也可以使用 `orientation` 属性将分割线渲染成垂直形状。
 
@@ -50,8 +50,8 @@ You can also render a divider with content.
 
 > 请注意这其中使用了 `flexItem` 属性来适应 flex 容器。
 
-### Vertical with text
+### 垂直的文本分隔线
 
-You can also render a vertical divider with content.
+你也可以使用文本内容来渲染垂直的分隔线。
 
 {{"demo": "pages/components/dividers/VerticalDividerText.js"}}
