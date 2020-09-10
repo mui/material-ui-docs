@@ -15,7 +15,7 @@ githubLabel:
 
 ## Fluid 流体布局
 
-A fluid container width is bounded by the `maxWidth` prop value.
+一个 fluid 容器所能达到的宽度被 `maxWidth` 属性的值所限制。
 
 {{"demo": "pages/components/container/SimpleContainer.js", "iframe": true, "defaultCodeOpen": false}}
 
@@ -25,7 +25,7 @@ A fluid container width is bounded by the `maxWidth` prop value.
 
 ## 固定大小
 
-通过设置`fixed` 属性，您可以设计固定的大小而不是尝试完全流体布局的视口。 max-width 和当前断点的 min-width 则相同。
+通过设置 `fixed` 属性，您可以设计固定的大小而不是尝试完全流体布局的视口。 max-width 和当前断点的 min-width 则相同。
 
 {{"demo": "pages/components/container/FixedContainer.js", "iframe": true, "defaultCodeOpen": false}}
 
