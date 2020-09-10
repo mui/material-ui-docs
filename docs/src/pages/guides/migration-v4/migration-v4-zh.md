@@ -1,18 +1,18 @@
-# Migration from v4 to v5
+# 从 v4 迁移到 v5 版本
 
-<p class="description">Yeah, v5 has been released!</p>
+<p class="description">是的，我们已经发布了 v5 版本！</p>
 
-Looking for the v4 docs? [您可以在这里找到它们](https://material-ui.com/versions/) 。
+你在找 v3 版本的文档吗？ [您可以在这里找到它们](https://material-ui.com/versions/) 。
 
 > 此文档尚未完成。 您是否已经升级了站点并且遇到了一些并没有在此涉及的问题？ [请在 GitHub 添加您的更改](https://github.com/mui-org/material-ui/blob/next/docs/src/pages/guides/migration-v4/migration-v4.md)。
 
 ## 简介
 
-This is a reference for upgrading your site from Material-UI v4 to v5. 您可能不会将这里所有涵盖的内容运用到你的站点上。 We'll do our best to keep things easy to follow, and as sequential as possible so you can quickly get rocking on v5!
+当你将站点从 Material-UI 的 v4 版本升级到 v5 版本时，这篇文章会为你提供一些参考。 您可能不会将这里所有涵盖的内容运用到你的站点上。 我们会尽我们最大的努力让文档简单易懂，并尽可能有序地介绍，这样你可以迅速对 v5 版本游刃有余。
 
 ## 为什么您需要迁移呢
 
-This documentation page covers the _how_ of migrating from v4 to v5. 关于迁移的*原因*，我们则在 [Medium上发布了一篇博客](https://medium.com/material-ui/material-ui-v4-is-out-4b7587d1e701)来详细解说。
+这篇文章介绍了 _如何_ 从 v4 版本迁移到 v5 版本。 关于 _为什么_ 需要迁移，我们在 [Medium 上发布了一篇博客](https://medium.com/material-ui/material-ui-v4-is-out-4b7587d1e701) 来详细说明。
 
 ## 更新您的依赖包
 
@@ -40,9 +40,9 @@ yarn add @material-ui/core@next
 
 ## 处理变化带来的系统崩溃
 
-### non-ref-forwarding class components
+### 非转发类（non-ref-forwarding class）组件
 
-Support for non-ref-forwarding class components in the `component` prop or as an immediate `children` has been dropped. If you were using `unstable_createStrictModeTheme` or didn't see any warnings related to `findDOMNode` in `React.StrictMode` then you don't need to do anything. Otherwise check out the ["Caveat with refs" section in our composition guide](/guides/composition/#caveat-with-refs) to find out how to migrate. This change affects almost all components where you're using the `component` prop or passing `children` to components that require `children` to be elements (e.g. `<MenuList><CustomMenuItem /></MenuList>`)
+对 `component` 属性中的非转发类组件或作为直接 `子类` 的支持已被放弃。 如果你使用了 `unstable_createStrictModeTheme` 或者在 `React.StrictMode` 中没有看到任何与 `findDOMNode` 相关的任何警告，那么你不需要做任何事情。 Otherwise check out the ["Caveat with refs" section in our composition guide](/guides/composition/#caveat-with-refs) to find out how to migrate. This change affects almost all components where you're using the `component` prop or passing `children` to components that require `children` to be elements (e.g. `<MenuList><CustomMenuItem /></MenuList>`)
 
 ### 主题
 
