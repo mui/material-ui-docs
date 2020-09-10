@@ -28,7 +28,7 @@ packageName: '@material-ui/lab'
 
 ### 练习
 
-By default, the component accepts the following options structures:
+默认情况下，该组件接受和以下结构相同的选项：
 
 ```ts
 const filterOptions = createFilterOptions({
@@ -50,7 +50,7 @@ const options = [
 const options = ['The Godfather', 'Pulp Fiction'];
 ```
 
-However, you can use different structures by providing a `getOptionLabel` prop.
+然而，你也可以通过提供 `getOptionLabel` 属性来使用不同的结构。
 
 ### 练习
 
@@ -102,7 +102,7 @@ However, you can use different structures by providing a `getOptionLabel` prop.
 
 ## 分组
 
-You can group the options with the `groupBy` prop. If you do so, make sure that the options are also sorted with the same dimension that they are grouped by, otherwise you will notice duplicate headers.
+你可以使用 `groupBy` 属性对选项进行分组。 如果你要这样做，请先确保选项也按照它们分组的相同维度进行排序， 否则你将会注意到重复的标题。
 
 {{"demo": "pages/components/autocomplete/Grouped.js"}}
 
@@ -126,7 +126,7 @@ import useAutocomplete from '@material-ui/lab/useAutocomplete';
 
 {{"demo": "pages/components/autocomplete/CustomizedHook.js"}}
 
-这也称为标签，允许用户输入多个值。
+前往 [自定义](#customization) 部分，查看使用 `自动完成` 组件代替钩子的示例。
 
 ## 异步请求
 
@@ -288,4 +288,4 @@ iOS Safari 中的 VoiceOver 对 `aria-owns` 属性的支持并不是很到位。
 
 (WAI-ARIA: https://www.w3.org/TR/wai-aria-practices/#combobox)
 
-我们鼓励用户在 textbox 中使用标签。 组件带入了 WAI-ARIA 授权的一些标准。
+我们鼓励用户在 textbox 中使用标签。 该组件实现了 WAI-ARIA 的指导标准。
