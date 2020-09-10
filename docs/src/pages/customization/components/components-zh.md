@@ -16,19 +16,19 @@
 
 ### 用类名（class names）覆盖样式
 
-覆盖组件样式的第一种方法是使用**类名（class names）** 。 每个组件都提供一个`className`属性，它通常作用于 root 元素。
+覆盖组件样式的第一种方法是使用 **类名（class names）** 。 每个组件都提供一个 `className` 属性，它通常作用于 root 元素。
 
-此示例使用一个高阶组件[`withStyles()`](/styles/basics/#higher-order-component-api)将自定义样式注入 DOM 之中，并通过它的`classes`属性将类名传递给 `ClassNames` 组件。 您可以选择[任何其他的样式解决方案](/guides/interoperability/)，或使用纯 CSS 来创建样式，但一定要 考虑[ CSS 的注入顺序](/styles/advanced/#css-injection-order) ，当通过 Material-UI 将 CSS 注入 DOM 中而来实现组件的样式时，这些 CSS 将具有最高的优先级，因为`<link>`被注入到` <head />` 的底部，这样的话始终正确地渲染组件。
+此示例使用一个高阶组件 [`withStyles()`](/styles/basics/#higher-order-component-api) 将自定义样式注入 DOM 之中，并通过它的 `classes` 属性将类名传递给 `ClassNames` 组件。 您可以选择[任何其他的样式解决方案](/guides/interoperability/)，或使用纯 CSS 来创建样式，但一定要 考虑[ CSS 的注入顺序](/styles/advanced/#css-injection-order) ，当通过 Material-UI 将 CSS 注入 DOM 中而来实现组件的样式时，这些 CSS 将具有最高的优先级，因为`<link>`被注入到` <head />` 的底部，这样的话始终正确地渲染组件。
 
 {{"demo": "pages/customization/components/ClassNames.js"}}
 
 ### 用类覆盖样式
 
-当 `className` 属性不足够时，你需要访问更深层的元素，这时则可使用`classes` 对象属性，这样就能够自定义该组件中所有由 Material-UI 注入的 CSS。
+当 `className` 属性不足以访问更深层的元素时，那么就可以使用 `classes` 对象属性，这样就能够自定义该组件中所有由 Material-UI 注入的 CSS。
 
-每一个组件的类列表已记录在组件 API 页面中， 请参阅 **CSS 部分**以及**规则名称栏**来获取更多信息。 例如，您可以查看 [Button CSS API](/api/button/#css)。 或者，您也可以使用[浏览器的 dev tools](#using-the-dev-tools)。
+每一个组件的类列表已记录在组件 API 页面中， 请参阅 **CSS 部分** 以及 **规则名称列** 来获取更多信息。 例如，您可以查看 [Button CSS API](/api/button/#css)。 或者，您也可以使用[浏览器的 dev tools](#using-the-dev-tools)。
 
-这个例子也使用了 `withStyles()` （见上文），但在这里， `ClassesNesting` 使用 `Button` 的 `classes` 属性来提供一个对象，该对象将 **要覆盖的 classes 子项名** （样式规则）映射到 **对应的CSS属性名称** （值）当中。 组件的现有类将继续被注入，因此只需要提供你想要添加或覆盖的特定样式。
+这个例子也使用了 `withStyles()` （见上文），但在这里， `ClassesNesting` 使用 `Button` 的 `classes` 属性来提供一个对象，该对象将 **要覆盖的 classes 子项名** （样式规则）映射到 **对应的 CSS 属性名称** （值）当中。 组件的现有类将继续被注入，因此只需要提供你想要添加或覆盖的特定样式。
 
 请注意，除按钮样式外，按钮标签的大小写也已更改：
 
@@ -54,7 +54,7 @@
 
 ### 简而言之
 
-上面的代码示例可以通过使用**相同的 CSS API** 作为子组件被固定。 在此示例中， `withStyles()` 高阶组件正在注入一个 `classes` 属性，而此属性在 [`Button` 组件](/api/button/#css)用到 。
+可以使用 **与子组件相同的 CSS API** 来压缩上面的代码示例。 在此示例中， `withStyles()` 高阶组件正在注入一个 `classes` 属性，而此属性在 [`Button` 组件](/api/button/#css) 中被用到 。
 
 ```jsx
 const StyledButton = withStyles({
@@ -290,11 +290,11 @@ const theme = createMuiTheme({
 
 {{"demo": "pages/customization/components/GlobalThemeOverride.js"}}
 
-### Adding new component variants
+### 添加新的组件变量
 
-You can take advantage of the `variants` key in the `theme`'s components section to add new variants to Material-UI components. These new variants, can specify which styles the component should have, if specific props are defined together.
+你可以利用 `theme` 的组件部分的 `variants` 键为 Material-UI 组件添加新的变量。 如果特定的属性是一起定义的，那么这些新的变量可以指定组件应该具有哪些样式。
 
-The definitions are specified in an array, under the component's name. For every one of them a class is added in the head. The order is **important**, so make sure that the styles that should win will be specified lastly.
+这些定义在组件的名称下由一个数组指定。 每一个的组件的顶部都会增加一个类（class）。 他们顺序是 **很重要**，所以要确保最后指定的是应该启用的样式。
 
 ```jsx
 const theme = createMuiTheme({
@@ -320,7 +320,7 @@ const theme = createMuiTheme({
 });
 ```
 
-If you are using TypeScript, you will need to specify your new variants/colors, using module augmentation.
+如果你正在使用 TypeScript，那么你需要使用模块增强功能来指定你的新变量/颜色。
 
 ```tsx
 declare module '@material-ui/core/Button/Button' {
