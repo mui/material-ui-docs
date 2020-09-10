@@ -23,9 +23,9 @@ materialDesign: https://material.io/archive/guidelines/components/steppers.html
 
 ### 线性进度条
 
-您可以在 `activeStep` 属性中传入一个初始值为0的当前步骤值来控制`步骤条`。 您也可以借助 `orientation` 属性来设置 `步骤条` 的方向。
+你可以在 `activeStep` 属性中传入一个初始值为 0 的当前步骤值来控制 `步骤条`。 你也可以借助 `orientation` 属性来设置 `步骤条` 的方向。
 
-这个例子把`optional` 属性放在第二个 `步骤` 的组件上，它展示了如何使用一个可选的步骤条。 请注意，您可以自行选择管理跳过一个可选的步骤。 一旦决定将一个特定步骤设置为可选的，您就必须配置这个属性 `completed={false}` 以表示即使激活的步骤索引超出了可选的步骤，步骤条并没有完成。
+这个例子还展示了通过在第二个 `步骤条` 组件上放置 `optional` 属性来使用可选步骤。 请注意，您可以自行选择管理跳过一个可选的步骤。 一旦决定将一个特定步骤设置为可选的，您就必须配置这个属性 `completed={false}` 以表示即使激活的步骤索引超出了可选的步骤，步骤条并没有完成。
 
 {{"demo": "pages/components/steppers/HorizontalLinearStepper.js", "bg": true}}
 
@@ -45,7 +45,7 @@ materialDesign: https://material.io/archive/guidelines/components/steppers.html
 
 非线性步进器允许用户在任何点输入多步流程。
 
-This example is similar to the regular horizontal stepper, except steps are no longer automatically set to `disabled={true}` based on the `activeStep` prop.
+这个例子类似于常规的水平步骤条，不同之处在于步骤条不再根据 `activeStep` 属性将其自动设置为 `disabled={true}`。
 
 在这里使用 `StepButton` 演示了一个可单击的步骤器标签，并且设置了 `completed` 标志。 但是，由于可以以非线性方式访问每个步骤，因此需要由您自己的实现来确定何时完成所有步骤（甚至是是否需要完成）。
 
