@@ -10,12 +10,12 @@ materialDesign: https://material.io/components/progress-indicators
 
 <p class="description">Progress indicators（进度指示器）也称为微调器 (spinners) ，它表示了一个不明确的等待时间，或者显示处理过程的时间长短。</p>
 
-[进度指示器](https://material.io/design/components/progress-indicators.html)能够将当前处理过程的状态通知用户，例如加载一个应用，提交一个表单或保存一些更新。
+进度指示器能够将当前处理过程的状态通知用户，例如加载一个应用，提交一个表单或保存一些更新。
 
-- **定量**环形指示器填充了不可见区域，指示器从0到360度推进，并用颜色来进行环形追踪。
+- **定量**的环形指示器填充了不可见区域，指示器从 0 到 360 度推进，并用颜色来进行环形追踪。
 - **不定量**指示器可视化了一个不确定的操作等待时间。
 
-**定量**指示器显示一个操作消耗多长时间。
+甚至在加载 JavaScript 之前，组件的动画就尽可能地依赖 CSS 来工作。
 
 {{"component": "modules/components/ComponentLinkHeader.js"}}
 
@@ -108,11 +108,11 @@ function Progress(props) {
 
 {{"demo": "pages/components/progress/CircularUnderLoad.js"}}
 
-### High frequency updates
+### 高频更新
 
-The `LinearProgress` uses a transition on the CSS transform property to provide a smooth update between different values. The default transition duration is 200ms. In the event a parent component updates the `value` prop too quickly, you will at least experience a 200ms delay between the re-render and the progress bar fully updated.
+`LinearProgress` 在 CSS transform 属性上使用过渡参数来提供不同值之间的平滑更新。 默认过渡的持续时间为 200ms。 在父组件更新 `value` 属性过快的情况下，重新渲染和进度条完全更新之间至少会有 200ms 的延迟。
 
-If you need to perform 30 re-renders per second or more, we recommend disabling the transition:
+如果你需要每秒执行 30 次或更多次数的渲染，我们建议禁用过渡。
 
 ```css
 .MuiLinearProgress-bar {
