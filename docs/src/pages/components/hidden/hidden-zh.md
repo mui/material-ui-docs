@@ -53,7 +53,7 @@ mdDown      |                     hide | show
 
 `only` 属性可以两种方式使用：
 
-The `only` prop can be used in two ways:
+`only` 属性可以通过以下两种方式来调用：
 
 - 列出单独一个断点
 - 列出一个断点数组
