@@ -23,13 +23,13 @@ materialDesign: https://material.io/design/layout/understanding-layout.html
 - 而项目宽度以百分比设置，因此相对于其父元素，它们总是流动的和变换大小的。
 - 子元素则自带 padding 来和其他元素间隔。
 - 你可以找到五个网格断点：xs，sm，md，lg 和 xl。
-- Integer values can be given to each breakpoint, indicating how many of the 12 available columns are occupied by the component when the viewport width satisfies the [breakpoint contraints](/customization/breakpoints/#default-breakpoints).
+- 你可以为每个断点提供整数值，表示当视口宽度满足 [断点约束](/customization/breakpoints/#default-breakpoints) 时，12 个可用列中有多少列被组件占用。
 
-若你**对 flexbox 不太熟悉**，我们建议你阅读 [CSS-Tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) 手册。
+若你对 **flexbox 不太熟悉**，我们建议你阅读 [CSS-Tricks flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) 手册。
 
 ## Spacing（间距）
 
-响应式栅格侧重于的一致的水平间距，而不是列宽。 Material design 外边距（margins）和列（col）都遵循** 8px **的方块形基线栅格。 The `spacing` prop value is an integer between 0 and 10 inclusive. 默认情况下，两个网格项之间的间距遵循这样的线性函数： `output(spacing) = spacing * 8px`，例如 `spacing={2}` 会创建一个 16px 的宽间距。
+响应式栅格侧重于的一致的水平间距，而不是列宽。 Material design 外边距（margins）和列（col）都遵循 **8px** 的方块形基线栅格。 你可以将 `spacing` 的属性值设置为一个在 0 到 10 之间的整数 默认情况下，两个网格项之间的间距遵循这样的线性函数： `output(spacing) = spacing * 8px`，例如 `spacing={2}` 会创建一个 16px 的宽间距。
 
 通过[使用主题](/customization/spacing/)，该变换函数的输出是可定制的。
 
@@ -41,17 +41,17 @@ materialDesign: https://material.io/design/layout/understanding-layout.html
 
 ### 基本栅格
 
-Column widths are integer values between 1 and 12; they apply at any breakpoint and indicate how many columns are occupied by the component.
+每一列的宽度是 1 到 12 之间的整数值；它们适用于任何断点，并且表明了组件占用多少列。
 
-A value given to a breakpoint applies to all the other breakpoints wider than it (unless overridden, as you can read later in this page). For example, `xs={12}` sizes a component to occupy the whole viewport width regardless of its size.
+你可以给定一个断点值来应用于比它更宽的所有其他断点（除非被覆盖，你可以在本页的后面部分阅读被覆盖后的行为）。 例如，无论组件的大小如何，`xs={12}` 都会占据整个视口的宽度。
 
 {{"demo": "pages/components/grid/CenteredGrid.js", "bg": true}}
 
 ### 有断点的栅格
 
-一些列（columns）会定义多种宽度，这会导致布局会根据事先定义的断点（breakpoint）来改变其宽度。 Width values given to larger breakpoints override those given to smaller breakpoints.
+一些列（columns）会定义多种宽度，这会导致布局会根据事先定义的断点（breakpoint）来改变其宽度。 你可以给较大断点指定宽度值。那么它会覆盖给较小断点指定的宽度值。
 
-For example, `xs={12} sm={6}` sizes a component to occupy half of the viewport width (6 columns) when viewport width is [600 or more pixels](/customization/breakpoints/#default-breakpoints). For smaller viewports, the component fills all 12 available columns.
+例如，`xs={12} sm={6}` 表示当视口宽度为 [600 或更多像素](/customization/breakpoints/#default-breakpoints) 时，将组件的大小调整为占据视口宽度的一半（6列）。 对于较小的视口，该组件将填充所有 12 个可用的列。
 
 {{"demo": "pages/components/grid/FullWidthGrid.js", "bg": true}}
 
