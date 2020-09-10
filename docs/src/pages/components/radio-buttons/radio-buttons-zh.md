@@ -11,7 +11,7 @@ waiAria: 'https://www.w3.org/TR/wai-aria-practices/#radiobutton'
 
 <p class="description">用户可以通过单选按钮从一组中选择一个选项。</p>
 
-当用户想要看到所有的选项时，可以使用[单选按钮](https://material.io/design/components/selection-controls.html#radio-buttons)。 如果可用选项可以折叠，请您考虑使用占用空间更少的下拉菜单。
+当用户想要看到所有的选项时，可以使用单选按钮。 如果可用选项可以折叠，请您考虑使用占用空间更少的下拉菜单。
 
 默认情况下，单选按钮应该选择了最常用的选项。
 
@@ -51,7 +51,7 @@ waiAria: 'https://www.w3.org/TR/wai-aria-practices/#radiobutton'
 
 ## `useRadioGroup`
 
-For advanced customization use cases, a `useRadioGroup()` hook is exposed. It returns the context value of the parent radio group. The Radio component uses this hook internally.
+对于需要高级定制用例的情况，它会暴露一个 `useRadioGroup()` 钩子以供被调用。 这将会返回单选框组上下文的值。 单选框组件在其内部会使用这个钩子。
 
 ### API
 
@@ -66,9 +66,9 @@ For advanced customization use cases, a `useRadioGroup()` hook is exposed. It re
 
 `value` (_Object_):
 
-- `value.name` (_String_ [optional]): The name used to reference the value of the control.
-- `value.onChange` (_Void_ [optional]): Callback fired when a radio button is selected.
-- 要横向布置按钮，请设置 `row`prop: `<RadioGroup row />`.
+- `value.name` (_String_ [optional])：用于引用控件值的名称。
+- `value.onChange` (_Void_ [optional])：当单选框被选中时会触发的回调。
+- `value.value` (_Any_ [optional])：所被选定的单选框的值。
 
 #### 示例
 
