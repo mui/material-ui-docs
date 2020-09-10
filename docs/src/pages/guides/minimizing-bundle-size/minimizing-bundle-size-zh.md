@@ -161,10 +161,10 @@ import { Button, TextField } from '@material-ui/core';
 在根目录创建一个 `config-overrides.js` 文件：
 
 ```js
-"scripts": {
--  "start": "react-scripts start"
-+  "start": "react-app-rewired start"
-  }
+/* config-overrides.js */
+const { useBabelRc, override } = require('customize-cra');
+
+module.exports = override(useBabelRc());
 ```
 
 如果您愿意，使用此 [配置](https://github.com/arackaf/customize-cra/blob/master/api.md#fixbabelimportslibraryname-options) ，那么就可以通过 `config-overrides.js` 而不是 `.babelrc` 来配置 `babel-plugin-import` 。
