@@ -22,7 +22,7 @@ export default function MyApp() {
   return (
     <React.Fragment>
       <CssBaseline />
-      {/* The rest of your application */}
+      {/* 其余的应用程序 */}
     </React.Fragment>
   );
 }
@@ -40,7 +40,7 @@ import MyApp from './MyApp';
 export default function MyApp() {
   return (
     <ScopedCssBaseline>
-      {/* The rest of your application */}
+      {/* 其余的应用程序 */}
       <MyApp />
     </ScopedCssBaseline>
   );
