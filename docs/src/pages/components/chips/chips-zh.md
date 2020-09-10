@@ -33,7 +33,7 @@ materialDesign: https://material.io/components/chips
 
 ## 纸片阵列
 
-下面是一个通过数组呈现多个纸片的示例。 删除一个纸片元素，则会将其从纸片组的数组中删除。 Note that since no `onClick` prop is defined, the Chip can be focused, but does not gain depth while clicked or touched.
+下面是一个通过数组呈现多个纸片的示例。 删除一个纸片元素，则会将其从纸片组的数组中删除。 请注意，由于没有定义 `onClick` 属性，所以这些纸片在被点击或触碰时可以被对焦，但不会在立体和阴影上有所变化。
 
 {{"demo": "pages/components/chips/ChipsArray.js", "bg": true}}
 
