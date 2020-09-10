@@ -79,7 +79,7 @@ function MyComponent(props) {
 export default withWidth()(MyComponent);
 ```
 
-在下面的演示中，我们基于屏幕宽度更改了渲染的DOM元素 (*em* ，<u>u</u> ，~~del~~ & span)。
+在下面的演示中，我们基于屏幕宽度更改了渲染的 DOM 元素（_em_, <u>u</u>, ~~del~~ & span）。
 
 {{"demo": "pages/customization/breakpoints/WithWidth.js"}}
 
@@ -144,11 +144,11 @@ declare module "@material-ui/core/styles/createBreakpoints" {
 
 #### 参数
 
-1. `key` （*String* | *Number* ）：断点键（`xs` ，`sm`等等）或以像素为单位的屏幕宽度数。
+1. `key` (_String_ | _Number_)：断点键（`xs` ，`sm` 等等）或以像素为单位的屏幕宽度数。
 
 #### 返回结果
 
-`media query`: A media query string ready to be used with most styling solutions, which matches screen widths greater than and including the screen size given by the breakpoint key.
+`media query`：一个媒体查询字符串，适用于大多数的样式解决方案，它匹配的屏幕宽度大于（包含）断点键给出的屏幕尺寸。
 
 #### 例子
 
@@ -169,11 +169,11 @@ const styles = theme => ({
 
 #### 参数
 
-1. `key` （*String* | *Number* ）：断点键（`xs` ，`sm`等等）或以像素为单位的屏幕宽度数。
+1. `key` (_String_ | _Number_)：断点键（`xs` ，`sm` 等等）或以像素为单位的屏幕宽度数。
 
 #### 返回结果
 
-`media query`: A media query string ready to be used with most styling solutions, which matches screen widths less than and including the screen size given by the breakpoint key.
+`media query`：一个媒体查询字符串，适用于大多数的样式解决方案，它匹配的屏幕宽度小于（不包含）断点键给出的屏幕尺寸。
 
 #### 例子
 
@@ -199,7 +199,7 @@ const styles = theme => ({
 
 #### 返回结果
 
-`media query`: A media query string ready to be used with most styling solutions, which matches screen widths including the screen size given by the breakpoint key.
+`media query`：一个媒体查询字符串，适用于大多数的样式解决方案，它会匹配屏幕宽度，并包括断点键给出的屏幕尺寸。
 
 #### 例子
 
@@ -221,12 +221,12 @@ const styles = theme => ({
 
 #### 参数
 
-1. `start` (*String*): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in pixels.
-2. `end` (*String*): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in pixels.
+1. `start` (_String_)：断点键（`xs`、`sm` 等）或屏幕宽度的数字（像素）。
+2. `end` (_String_)：断点键（`xs`、`sm` 等）或屏幕宽度的数字（像素）。
 
 #### 返回结果
 
-`media query`: A media query string ready to be used with most styling solutions, which matches screen widths greater than the screen size given by the breakpoint key in the first argument and less than the the screen size given by the breakpoint key in the second argument.
+`media query`：一个媒体查询字符串，适用于大多数的样式解决方案，它匹配的屏幕宽度大于第一个参数（包括）中断点键给出的屏幕尺寸，小于第二个参数（不包括）中断点键给出的屏幕尺寸。
 
 #### 例子
 
@@ -246,7 +246,7 @@ const styles = theme => ({
 
 ### `withWidth([options]) => higher-order component`
 
-注入`width`属性。 它不会修改传递给它的组件；相反，它会返回一个新组件。 这个`width`断点属性与当前屏幕宽度匹配。 它可以是以下断点之一：
+注入 `width` 属性。 它不会修改传递给它的组件；相反，它会返回一个新组件。 这个 `width` 断点属性与当前屏幕宽度匹配。 它可以是以下断点之一：
 
 ```ts
 type Breakpoint = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
@@ -254,33 +254,31 @@ type Breakpoint = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 
 你可能会注意到一些有趣的细节：
 
-- 它将转发*非 React 的静态* 属性，以便 HOC 更 "透明"。 例如，您可以用它来定义一个 `getInitialProps()` 的静态方法 (next.js)。
+- 它将转发 _非 React 的静态_ 属性，以便 HOC 更 "透明"。 例如，您可以用它来定义一个 `getInitialProps()` 的静态方法 (next.js)。
 
 #### 参数
 
 1. `options` (*Object* [optional]):
 
 - `options.withTheme` (*Boolean* [optional]): 默认值为 `false`。 将 `theme` 对象作为属性提供给组件。
-- `options.noSSR` (*Boolean* [可选的]): 默认值为`false`。 为了呈现服务器端渲染的协调性，我们需要将它渲染两次。 第一次什么也没渲染，第二次与子组件一起渲染。 这个双向渲染周期带有一个缺点。 UI 会有闪烁。 如果你不进行服务器端渲染，那么可以将此标志设置为 `true`。
-- `options.initialWidth` （*Breakpoint* [可选的]）： 为`window.innerWidth`在服务器上不可用， 我们默认在第一次安装期间呈现空组件。 You might want to use an heuristic to approximate the screen width of the client browser screen width. For instance, you could be using the user-agent or the client-hints. https://caniuse.com/#search=client%20hint, we also can set the initial width globally using [`custom properties`](/customization/globals/#default-props) on the theme. In order to set the initialWidth we need to pass a custom property with this shape: For instance, you could be using the user-agent or the [client-hints](https://caniuse.com/#search=client%20hint). we also can set the initial width globally using [`custom props`](/customization/globals/#default-props) in the theme. In order to set the initialWidth we need to pass a custom prop with this shape:
+- `options.noSSR` (_Boolean_ [optional]): 默认值为 `false`。 为了呈现服务器端渲染的协调性，我们需要将它渲染两次。 第一次什么也没渲染，第二次与子组件一起渲染。 这个双向渲染周期带有一个缺点。 UI 会有闪烁。 如果你不进行服务器端渲染，那么可以将此标志设置为 `true`。
+- `options.initialWidth` （*Breakpoint* [可选的]）： 为`window.innerWidth`在服务器上不可用， 我们默认在第一次安装期间呈现空组件。 你可能需要使用一个启发式方法来估计客户端浏览器的屏幕宽度。 例如，你可以使用 user-agent 或 [client-hints](https://caniuse.com/#search=client%20hint)。 我们也可以在主题中使用 [`自定义属性`](/customization/globals/#default-props) 来设置全局的初始宽度。 为了设置 initialWidth，我们需要传递一个类似于以下结构的自定义属性：
 
 ```js
 const theme = createMuiTheme({
-  props: {
+  components: {
     // withWidth component ⚛️
     MuiWithWidth: {
-      // Initial width property
-      initialWidth: 'lg', // 断点全局设置 🌎!
-    },
-  },
-});
+      defaultProps: {
+        // Initial width prop
+        initialWidth: 'lg', // 断点的全局设置 🌎!
       },
     },
   },
 });
 ```
 
-- `options.resizeInterval` (*Number* [optional]): 默认为166，对应于60 Hz的10帧。 响应屏幕调整大小事件前等待的毫秒数。
+- `options.resizeInterval` (_Number_ [optional])：默认为 166，对应于 60 Hz 的 10帧。 响应屏幕调整大小事件前等待的毫秒数。
 
 #### 返回结果
 
