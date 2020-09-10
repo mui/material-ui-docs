@@ -116,9 +116,9 @@ import { ThemeProvider } from '@material-ui/core/styles';
 
 function handleRender(req, res) {
   const deviceType = parser(req.headers['user-agent']).device.type || 'desktop';
-  const ssrMatchMedia = query => ({
+  const ssrMatchMedia = (query) => ({
     matches: mediaQuery.match(query, {
-      // The estimated CSS width of the browser.
+      // 浏览器的 CSS 宽度预计值
       width: deviceType === 'mobile' ? '0px' : '1024px',
     }),
   });
@@ -127,26 +127,7 @@ function handleRender(req, res) {
     <ThemeProvider
       theme={{
         props: {
-          // Change the default options of useMediaQuery
-          MuiUseMediaQuery: { ssrMatchMedia },
-        },
-      }}
-    >
-      <App />
-    </ThemeProvider>,
-  );
-
-  // …
-}
-      width: deviceType === 'mobile' ? '0px' : '1024px',
-    }),
-  });
-
-  const html = ReactDOMServer.renderToString(
-    <ThemeProvider
-      theme={{
-        props: {
-          // Change the default options of useMediaQuery
+          // 更改 useMediaQuery 的默认选项
           MuiUseMediaQuery: {
             ssrMatchMedia,
           },
@@ -156,8 +137,6 @@ function handleRender(req, res) {
       <App />
     </ThemeProvider>,
   );
-
-  // …
 }
 ```
 
@@ -177,13 +156,13 @@ function handleRender(req, res) {
 
 #### 参数
 
-1. `query` (*String* | *Function*): A string representing the media query to handle or a callback function accepting the theme (in the context) that returns a string.
+1. `query` (_String_ | _Function_)：代表要处理的媒体查询的字符串或接受主题（在上下文中）的回调函数，它会返回一个字符串。
 2. `options` (*Object* [optional]):
 
 - `options.defaultMatches` （*布尔值* [optional]）： 作为 `window.matchMedia()` 在服务器上不可用， 我们在第一次安装时返回默认匹配。 默认值为 `false`。
-- `options.matchMedia` (*Function* [optional]) You can provide your own implementation of *matchMedia*. This can be used for handling an iframe content window. 用其您可以处理一个 iframe 内容窗口。
-- `options.noSsr` (*Boolean* [optional]): 默认值为`false`。 为了呈现服务器端渲染的协调性，我们需要将它渲染两次。 第一次什么也没渲染，第二次与子组件一起渲染。 这个双向渲染周期带有一个缺点。 速度较慢。 It's slower. You can set this flag to `true` if you are **not doing server-side rendering**.
-- `options.ssrMatchMedia` (*Function* [optional]) You can provide your own implementation of *matchMedia* in a [server-side rendering context](#server-side-rendering).
+- `options.matchMedia` (_Function_ [optional])：你可以提供你自己的 _matchMedia_ 实现。 用其您可以处理一个 iframe 内容窗口。
+- `options.noSsr` (*Boolean* [optional]): 默认值为 `false`。 为了呈现服务器端渲染的协调性，我们需要将它渲染两次。 第一次什么也没渲染，第二次与子组件一起渲染。 这个双向渲染周期带有一个缺点。 速度较慢。 如果你 **不需要服务端渲染**，那么可以将此标志设置为 `true`。
+- `options.ssrMatchMedia` (_Function_ [optional])：你可以在 [服务器端渲染上下文](#server-side-rendering) 中提供你自己的 _matchMedia_ 实现。
 
 注意：你可以使用主题的 [`默认属性`](/customization/globals/#default-props) 功能和 `MuiUseMediaQuery` 键（key）来更改默认的选项。
 
