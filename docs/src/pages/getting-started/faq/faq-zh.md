@@ -16,8 +16,8 @@
   - 通过 [创建一个问题](https://github.com/mui-org/material-ui/issues/new) 来报告错误或缺少的功能 。
   - 查看和评论一些现有的 [pull requests](https://github.com/mui-org/material-ui/pulls) 和 [issues](https://github.com/mui-org/material-ui/issues)。
   - 帮助我们 [翻译](https://translate.material-ui.com) 文档。
-  - [Improve our documentation](https://github.com/mui-org/material-ui/tree/master/docs), fix bugs, or add features by [submitting a pull request](https://github.com/mui-org/material-ui/pulls).
-- **在[OpenCollective](https://opencollective.com/material-ui)**上资助我们。 如果您在商业项目中使用了 Material-UI，并希望通过成为我们的赞助商来支持我们的持续发展，或者在一个业余的或者爱好的项目中使用了，并想成为我们的一个支持者， 您都可以通过 OpenCollective 来资助我们。 筹集的所有资金都是透明管理的，赞助商在 README 和 Material-UI 主页上都会获得认可。
+  - [改进我们的文档](https://github.com/mui-org/material-ui/tree/next/docs)，修复错误，或者通过 [拉取请求](https://github.com/mui-org/material-ui/pulls) 来添加功能。
+- **在 [OpenCollective](https://opencollective.com/material-ui)**上资助我们。 如果您在商业项目中使用了 Material-UI，并希望通过成为我们的赞助商来支持我们的持续发展，或者在一个业余的或者爱好的项目中使用了，并想成为我们的一个支持者， 您都可以通过 OpenCollective 来资助我们。 筹集的所有资金都是透明管理的，赞助商在 README 和 Material-UI 主页上都会获得认可。
 
 ## 为什么我的组件在生产构造中没有正确地渲染？
 
@@ -47,14 +47,12 @@
 import { createMuiTheme } from '@material-ui/core';
 
 const theme = createMuiTheme({
-  props: {
+  components: {
     // Name of the component ⚛️
     MuiButtonBase: {
-      // The properties to apply
-      disableRipple: true, // No more ripple, on the whole application 💣!
-    },
-  },
-});
+      defaultProps: {
+        // The props to apply
+        disableRipple: true, // 全局禁用波纹 💣!
       },
     },
   },
@@ -234,9 +232,9 @@ Lerna 根目录下的 package.json 文件示例：
 
 ## 我的应用没有在服务器上正确的渲染。
 
-如果您的程序渲染不正常，99% 的情况下都是配置问题： A missing property, a wrong call order, or a missing component – server-side rendering is strict about configuration.
+如果您的程序渲染不正常，99% 的情况下都是配置问题： 缺少属性、调用顺序错误或缺少组件 - 服务器端渲染对配置有严格要求。
 
-The best way to find out what's wrong is to compare your project to an **already working setup**. 请逐位查看 [参考实现](/guides/server-rendering/#reference-implementations)。
+找出所在问题的最佳方法是将你的项目与 **已经在正常工作的设置** 进行比较。 请逐位查看 [参考实现](/guides/server-rendering/#reference-implementations)。
 
 ### CSS 仅在第一次加载时生效，然后就消失了
 
@@ -244,9 +242,9 @@ CSS 只在页面第一次加载时生成。 那么，若连续地请求服务器
 
 #### 要运行的操作
 
-The styling solution relies on a cache, the *sheets manager*, to only inject the CSS once per component type (if you use two buttons, you only need the CSS of the button one time). You need to create **a new `sheets` instance for each request**. 您需要为每个请求创建 **一个新的 `sheet` 实例**。
+样式解决方案依赖于缓存，即 _sheets manager_，来为每个组件类只注入一次 CSS（如果您使用了两个按钮，则只需要应用一次按钮的 CSS）。 您需要为每个请求创建 **一个新的 `sheet` 实例**。
 
-There is a class name mismatch between the client and the server. It might work for the first request. Another symptom is that the styling changes between initial page load and the downloading of the client scripts.
+修复示例：
 
 ```diff
 -// 创建一个 sheets 实例
@@ -279,11 +277,11 @@ function handleRender(req, res) {
 
 #### 要运行的操作
 
-类名值依赖于 [类名生成器](/styles/advanced/#class-names) 的概念。 整个页面需要用**一个类名生成器**来渲染。 这个生成器需要在服务端和客户端上的行为一致。 就像这样：
+类名值依赖于 [类名生成器](/styles/advanced/#class-names) 的概念。 整个页面需要用 **一个类名生成器** 来渲染。 这个生成器需要在服务端和客户端上的行为一致。 就像这样：
 
 - 您需要为每个请求提供一个新的类名生成器。 但是您不应该在不同的请求之间共享 `createGenerateClassName()`：
 
-  There is a class name mismatch between the client and the server. It might work for the first request. Another symptom is that the styling changes between initial page load and the downloading of the client scripts.
+  修复示例：
 
   ```diff
   -  // 创建一个新的类名生成器。
@@ -302,7 +300,7 @@ function handleRender(req, res) {
     const html = ReactDOMServer.renderToString(
   ```
 
-- You need to verify that your client and server are running the **exactly the same version** of Material-UI. It is possible that a mismatch of even minor versions can cause styling problems. 要检查版本号，请在构建应用程序的环境中以及部署环境中运行 `npm list @material-ui/core`。 即使是小小的版本的不匹配也可能导致样式问题。 若想检查版本号，您可以在搭建应用程序的环境以及部署环境中都运行 `npm list @material-ui/core`。
+- 你需要验证你的客户端和服务端运行的 Material-UI 的**版本** 是否完全相同。 即使是小小的版本的不匹配也可能导致样式问题。 若想检查版本号，您可以在搭建应用程序的环境以及部署环境中都运行 `npm list @material-ui/core`。
 
   您也可以通过在 package.json 的依赖项中指定某一个特定的 MUI 版本，这样能够确保在不同环境中使用的版本是一致的。
 
@@ -366,7 +364,9 @@ function Portal({ children, container }) {
 ```jsx
 function App() {
   const [container, setContainer] = React.useState(null);
-  const handleRef = React.useCallback(instance => setContainer(instance), [setContainer])
+  const handleRef = React.useCallback((instance) => setContainer(instance), [
+    setContainer,
+  ]);
 
   return (
     <div className="App">
