@@ -34,8 +34,8 @@ SpeedDialActions工具提示可以持久显示，这样用户无需长按即可�
 
 ## 恒定不变的操作的工具提示
 
-The SpeedDialActions tooltips can be displayed persistently so that users don't have to long-press in order to see the tooltip on touch devices.
+SpeedDialActions 提示组件可以持续显示，这样一来用户不用长按就能在触摸设备上看到提示内容了。
 
-It is enabled here across all devices for demo purposes, but in production it could use the `isTouch` logic to conditionally set the prop.
+为了演示的目的，该示例为所有设备都启用了该功能，但在生产环境中，它可以使用 `isTouch` 逻辑来有条件地设置属性。
 
 {{"demo": "pages/components/speed-dial/SpeedDialTooltipOpen.js"}}
