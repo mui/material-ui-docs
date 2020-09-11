@@ -88,16 +88,14 @@ const MyComponent = React.forwardRef(function MyComponent(props, ref) {
 
 {{"demo": "pages/components/tooltips/DisabledTooltips.js"}}
 
-> 如果您没有包装从 `ButtonBase` 继承的Material-UI组件，如原生的 `<button>` 元素，您应该在禁用时将CSS属性 *pointer-events：none;* 添加到您的元素中：
+> 如果你没有包装从 `ButtonBase` 继承的 Material-UI 组件，譬如一个原生的 `<button>` 元素，当禁用元素的时候，你应该将 _pointer-events: none;_ 这个CSS 属性添加到您的元素中：
 
 ```jsx
-<Tooltip title="您没有足够的权限">
+<Tooltip title="你没有足够的权限">
   <span>
-    <button disabled={disabled} style={disabled ? { pointerEvents: "none" } : {}}>
-      {'一个被禁用的按钮'}
-    </button>
-  </span>
-</Tooltip> { pointerEvents: 'none' } : {}}
+    <button
+      disabled={disabled}
+      style={disabled ? { pointerEvents: 'none' } : {}}
     >
       {'A disabled button'}
     </button>
