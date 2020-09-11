@@ -42,11 +42,11 @@ yarn add @material-ui/core@next
 
 ### 非转发类（non-ref-forwarding class）组件
 
-对 `component` 属性中的非转发类组件或作为直接 `子类` 的支持已被放弃。 如果你使用了 `unstable_createStrictModeTheme` 或者在 `React.StrictMode` 中没有看到任何与 `findDOMNode` 相关的任何警告，那么你不需要做任何事情。 Otherwise check out the ["Caveat with refs" section in our composition guide](/guides/composition/#caveat-with-refs) to find out how to migrate. This change affects almost all components where you're using the `component` prop or passing `children` to components that require `children` to be elements (e.g. `<MenuList><CustomMenuItem /></MenuList>`)
+对 `component` 属性中的非转发类组件或作为直接 `子类` 的支持已被放弃。 如果你使用了 `unstable_createStrictModeTheme` 或者在 `React.StrictMode` 中没有看到任何与 `findDOMNode` 相关的任何警告，那么你不需要做任何事情。 否则请查看我们指南中的 [“注意事项与参考文献”部分](/guides/composition/#caveat-with-refs) 来了解如何迁移。 这个变化几乎影响了所有使用 `component` 属性的组件或者将 `children` 传递给要求 `children` 作为元素的组件（例如 `<MenuList><CustomMenuItem /></MenuList>`）
 
 ### 主题
 
-For a smoother transition, the `adaptV4Theme` helper allows you to iteratively upgrade to the new theme structure.
+为了能实现更平滑的过渡，`adaptV4Theme` 助手允许你迭代升级到新的主题结构。
 
 ```diff
 -import { createMuiTheme } from '@material-ui/core/styles';
@@ -59,9 +59,9 @@ For a smoother transition, the `adaptV4Theme` helper allows you to iteratively u
 +}));
 ```
 
-#### Changes
+#### 变更
 
-- The "gutters" abstraction hasn't proven to be used frequently enough to be valuable.
+- 事实证明，“水槽（gutters）”这个抽象的概念还没有被频繁使用，所以是没有价值的。
 
   ```diff
   -theme.mixins.gutters(),
@@ -73,7 +73,7 @@ For a smoother transition, the `adaptV4Theme` helper allows you to iteratively u
   +},
   ```
 
-- The components' definition inside the theme were restructure under the `components` key, to allow people easier discoverability about the definitions regarding one component.
+- 主题内的组件定义在 `components` 键下进行了重构，以便人们更容易地发现一个组件的定义。
 
 1. `属性`
 
@@ -96,7 +96,7 @@ const theme = createMuitheme({
 });
 ```
 
-2. `文本替换`
+2. `覆盖`
 
 ```diff
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -119,7 +119,7 @@ const theme = createMuitheme({
 
 ### Avatar 头像组件
 
-- Rename `circle` to `circular` for consistency. The possible values should be adjectives, not nouns:
+- 为保持一致性，我们将 `circle` 重命名为 `circular`。 可能的值应该是形容词，而不是名词。
 
   ```diff
   -<Avatar variant="circle">
@@ -130,7 +130,7 @@ const theme = createMuitheme({
 
 ### Badge
 
-- Rename `circle` to `circular` and `rectangle` to `rectangular` for consistency. The possible values should be adjectives, not nouns:
+- 为保持一致性，我们将 `circle` 重命名为 `circular`，`rectangle` 重命名为 `rectangular`。 可能的值应该是形容词，而不是名词。
 
   ```diff
   -<Badge overlap="circle">
@@ -157,7 +157,7 @@ const theme = createMuitheme({
 
 ### BottomNavigation
 
-- TypeScript: The `event` in `onChange` is no longer typed as a `React.ChangeEvent` but `React.SyntheticEvent`.
+- TypeScript：`onChange` 中的 `event` 的类型不再是 `React.ChangeEvent`，而是`React.SyntheticEvent`。
 
   ```diff
   -<BottomNavigation onChange={(event: React.ChangeEvent<{}>) => {}} />
@@ -166,7 +166,7 @@ const theme = createMuitheme({
 
 ### Button
 
-- The button `color` prop is now "primary" by default, and "default" has been removed. This makes the button closer to the Material Design specification and simplifies the API.
+- 按钮的 `颜色（color）` 属性默认情况下为 "primary"，同时 "default" 属性已被删除。 这使得按钮更接近于 Material Design 规范，并且也简化了 API。
 
   ```diff
   -<Button color="primary" />
@@ -177,7 +177,7 @@ const theme = createMuitheme({
 
 ### CircularProgress
 
-- The `static` variant has been merged into the `determinate` variant, with the latter assuming the appearance of the former. The removed variant was rarely useful. It was an exception to Material Design, and was removed from the specification.
+- `static` 变量已合并到 `determinate` 变量中，后者将采用前者的外观。 这是因为删除的这个变量很少有用。 这属于 Material Design 的例外情况，并且它在规范中已被删除。
 
   ```diff
   -<CircularProgress variant="determinate" />
@@ -188,18 +188,18 @@ const theme = createMuitheme({
   +<CircularProgress variant="determinate" classes={{ determinate: 'className' }} />
   ```
 
-> NB: If you had previously customized determinate, your customizations are probably no longer valid. Please remove them.
+> 注意：如果你之前已经定制了 determinate，那么你的定制可能不再有效。 所以请删除它们。
 
 ### Collapse 折叠
 
-- The `collapsedHeight` prop was renamed `collapsedSize` to support the horizontal direction.
+- `collapsedHeight` 属性已重命名为 `collapsedSize` 以便支持水平方向的大小。
 
   ```diff
   -<Collapse collapsedHeight={40}>
   +<Collapse collapsedSize={40}>
   ```
 
-- The `classes.container` key was changed to match the convention of the other components.
+- 已更改 `classes.containe` 键以匹配其他组件的约定行为。
 
   ```diff
   -<Collapse classes={{ container: 'collapse' }}>
@@ -208,7 +208,7 @@ const theme = createMuitheme({
 
 ### Dialog
 
-- The onE\* transition props were removed. Use TransitionProps instead.
+- onE\* 过渡属性已被删除。 请使用 TransitionProps 来代替它。
 
   ```diff
   <Dialog
@@ -231,7 +231,7 @@ const theme = createMuitheme({
 
 ### Divider
 
-- Use border instead of background color. It prevents inconsistent height on scaled screens. For people customizing the color of the border, the change requires changing the override CSS property:
+- 你需要使用边框来代替背景色。 这个改动可以防止在缩放屏幕上出现高度不一致的情况。 对于需要自定义边框颜色的用户，你可以改变其需要覆盖的 CSS 属性。
 
   ```diff
   .MuiDivider-root {
@@ -242,7 +242,7 @@ const theme = createMuitheme({
 
 ### ExpansionPanel（扩展面板）
 
-- Rename the `ExpansionPanel` components to `Accordion` to use a more common naming convention:
+- 为使用更通用的命名约定，我们将 `ExpansionPanel` 组件重命名为 `Accordion`：
 
   ```diff
   -import ExpansionPanel from '@material-ui/core/ExpansionPanel';
@@ -279,7 +279,7 @@ const theme = createMuitheme({
   +</Accordion>
   ```
 
-- TypeScript: The `event` in `onChange` is no longer typed as a `React.ChangeEvent` but `React.SyntheticEvent`.
+- TypeScript：`onChange` 中的 `event` 的类型不再是 `React.ChangeEvent`，而是`React.SyntheticEvent`。
 
   ```diff
   -<Accordion onChange={(event: React.ChangeEvent<{}>, expanded: boolean) => {}} />
@@ -288,7 +288,7 @@ const theme = createMuitheme({
 
 ### Fab
 
-- Rename `round` to `circular` for consistency. The possible values should be adjectives, not nouns:
+- 为保持一致性，我们将 `round` 重命名为 `circular`。 可能的值应该是形容词，而不是名词。
 
   ```diff
   -<Fab variant="round">
@@ -297,7 +297,7 @@ const theme = createMuitheme({
 
 ### Grid
 
-- Rename `justify` prop with `justifyContent` to be aligned with the CSS property name.
+- 为保持和 CSS 原生属性名字的一致性，我们将 `justify` 属性重命名为 `justifyContent`。
 
   ```diff
   -<Grid justify="center">
@@ -306,7 +306,7 @@ const theme = createMuitheme({
 
 ### GridList
 
-- Rename the `GridList` components to `ImageList` to align with the current Material Design naming.
+- 为保持和当前 Material Design 命名的一致性，我们将 `GridList` 组件重命名为 `ImageList`。
 
 ```diff
 -import GridList from '@material-ui/core/GridList';
@@ -334,7 +334,7 @@ const theme = createMuitheme({
 
 ### Menu
 
-- The onE\* transition props were removed. Use TransitionProps instead.
+- onE\* 过渡属性已被删除。 请使用 TransitionProps 来代替它。
 
   ```diff
   <Menu
@@ -357,11 +357,11 @@ const theme = createMuitheme({
 
 ### Modal
 
-- Remove `onRendered` prop. Depending on your use case either use a [callback ref](https://reactjs.org/docs/refs-and-the-dom.html#callback-refs) on the child element or an effect hook in the child component.
+- 移除 `onRendered` 属性。 具体迁移方法根据你的使用情况而定，你可以在子元素上使用 [callback ref](https://reactjs.org/docs/refs-and-the-dom.html#callback-refs)，也可以在子组件中使用 effect 钩子。
 
 ### 分页
 
-- Rename `round` to `circular` for consistency. The possible values should be adjectives, not nouns:
+- 为保持一致性，我们将 `round` 重命名为 `circular`。 可能的值应该是形容词，而不是名词。
 
   ```diff
   -<Pagination shape="round">
@@ -370,7 +370,7 @@ const theme = createMuitheme({
 
 ### PaginationItem
 
-- Rename `round` to `circular` for consistency. The possible values should be adjectives, not nouns:
+- 为保持一致性，我们将 `round` 重命名为 `circular`。 可能的值应该是形容词，而不是名词。
 
   ```diff
   -<PaginationItem shape="round">
@@ -380,7 +380,7 @@ const theme = createMuitheme({
 
   ### Popover
 
-- The onE\* transition props were removed. Use TransitionProps instead.
+- onE\* 过渡属性已被删除。 请使用 TransitionProps 来代替它。
 
   ```diff
   <Popover
@@ -403,11 +403,11 @@ const theme = createMuitheme({
 
 ### Portal
 
-- Remove `onRendered` prop. Depending on your use case either use a [callback ref](https://reactjs.org/docs/refs-and-the-dom.html#callback-refs) on the child element or an effect hook in the child component.
+- 移除 `onRendered` 属性。 具体迁移方法根据你的使用情况而定，你可以在子元素上使用 [callback ref](https://reactjs.org/docs/refs-and-the-dom.html#callback-refs)，也可以在子组件中使用 effect 钩子。
 
 ### Rating
 
-- Rename `visuallyhidden` to `visuallyHidden` for consistency:
+- 为保持一致性，我们将 `visuallyhidden` 重命名为 `visuallyHidden`：
 
   ```diff
   <Rating
@@ -420,7 +420,7 @@ const theme = createMuitheme({
 
 ### RootRef
 
-- This component was removed. You can get a reference to the underlying DOM node of our components via `ref` prop. The component relied on [`ReactDOM.findDOMNode`](https://reactjs.org/docs/react-dom.html#finddomnode) which is [deprecated in `React.StrictMode`](https://reactjs.org/docs/strict-mode.html#warning-about-deprecated-finddomnode-usage).
+- 该组件已被移除。 你可以通过 `ref` 属性来获取对我们组件的底层 DOM 节点的引用。 该组件依赖 [`ReactDOM.findDOMNode`](https://reactjs.org/docs/react-dom.html#finddomnode)，在 [`React.StrictMode`  中已被弃用](https://reactjs.org/docs/strict-mode.html#warning-about-deprecated-finddomnode-usage)。
 
   ```diff
   -<RootRef rootRef={ref}>
@@ -431,7 +431,7 @@ const theme = createMuitheme({
 
 ### Slider
 
-- TypeScript: The `event` in `onChange` is no longer typed as a `React.ChangeEvent` but `React.SyntheticEvent`.
+- TypeScript：`onChange` 中的 `event` 的类型不再是 `React.ChangeEvent`，而是`React.SyntheticEvent`。
 
   ```diff
   -<Slider onChange={(event: React.ChangeEvent<{}>, value: unknown) => {}} />
@@ -440,14 +440,14 @@ const theme = createMuitheme({
 
 ### Snackbar（消息条）
 
-- The notification now displays at the bottom left on large screens. This better matches the behavior of Gmail, Google Keep, material.io, etc. You can restore the previous behavior with:
+- 现在在大屏幕上的消息条通知会在左下角显示。 这更符合 Gmail、Google Keep、material.io 等应用的行为。 你可以用以下方法恢复到以前的行为：
 
   ```diff
   -<Snackbar />
   +<Snackbar anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }} />
   ```
 
-- The onE\* transition props were removed. Use TransitionProps instead.
+- onE\* 过渡属性已被删除。 请使用 TransitionProps 来代替它。
 
   ```diff
   <Snackbar
@@ -471,7 +471,7 @@ const theme = createMuitheme({
 
   ### Skeleton
 
-- Rename `circle` to `circular` and `rect` to `rectangular` for consistency. The possible values should be adjectives, not nouns:
+- Rename `circle` to `circular` and `rect` to `rectangular` for consistency. 可能的值应该是形容词，而不是名词。
 
   ```diff
   -<Skeleton variant="circle" />
@@ -495,7 +495,7 @@ const theme = createMuitheme({
 
 ### Tabs 选项卡
 
-- TypeScript: The `event` in `onChange` is no longer typed as a `React.ChangeEvent` but `React.SyntheticEvent`.
+- TypeScript：`onChange` 中的 `event` 的类型不再是 `React.ChangeEvent`，而是`React.SyntheticEvent`。
 
   ```diff
   -<Tabs onChange={(event: React.ChangeEvent<{}>, value: unknown) => {}} />
