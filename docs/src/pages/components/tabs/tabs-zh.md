@@ -93,7 +93,7 @@ waiAria: 'https://www.w3.org/TR/wai-aria-practices/#tabpanel'
 
 {{"demo": "pages/components/tabs/VerticalTabs.js", "bg": true}}
 
-Note that you can restore the scrollbar with `visibleScrollbar`.
+请注意，你可以使用 `visibleScrollbar` 恢复滚动条。
 
 ## 导航选项卡
 
