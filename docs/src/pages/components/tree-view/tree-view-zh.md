@@ -2,7 +2,7 @@
 title: React 树视图组件
 components: TreeView, TreeItem
 githubLabel:
-  component: 受控的树视图
+  component: 树视图
 waiAria: 'https://www.w3.org/TR/wai-aria-practices/#TreeView'
 packages: '@material-ui/lab'
 ---
@@ -65,15 +65,15 @@ const data = {
 
 {{"demo": "pages/components/tree-view/GmailTreeView.js"}}
 
-## Disabled tree items
+## 禁用树项
 
 {{"demo": "pages/components/tree-view/DisabledTreeItems.js"}}
 
-The behavior of disabled tree items depends on the `disabledItemsFocusable` prop.
+被禁用的树项的行为取决于 `disabledItemsFocusable` 属性。
 
-If it is false:
+如果为假（false）：
 
-- Arrow keys will not focus disabled items and, the next non-disabled item will be focused.
+- 箭头键不会聚焦已禁用的项目，下一个非禁用的项目将会被聚焦。
 - Typing the first character of a disabled item's label will not focus the item.
 - Mouse or keyboard interaction will not expand/collapse disabled items.
 - Mouse or keyboard interaction will not select disabled items.
