@@ -2,7 +2,7 @@
 
 <p class="description">是的，我们已经发布了 v5 版本！</p>
 
-你在找 v3 版本的文档吗？ [您可以在这里找到它们](https://material-ui.com/versions/) 。
+你在找 v4 版本的文档吗？ [您可以在这里找到它们](https://material-ui.com/versions/) 。
 
 > 此文档尚未完成。 您是否已经升级了站点并且遇到了一些并没有在此涉及的问题？ [请在 GitHub 添加您的更改](https://github.com/mui-org/material-ui/blob/next/docs/src/pages/guides/migration-v4/migration-v4.md)。
 
@@ -471,7 +471,7 @@ const theme = createMuitheme({
 
   ### Skeleton
 
-- Rename `circle` to `circular` and `rect` to `rectangular` for consistency. 可能的值应该是形容词，而不是名词。
+- 为保持一致性，我们将 `circle` 重命名为 `circular`，`rect` 重命名为 `rectangular`。 可能的值应该是形容词，而不是名词。
 
   ```diff
   -<Skeleton variant="circle" />
@@ -482,9 +482,9 @@ const theme = createMuitheme({
   +<Skeleton classes={{ circular: 'custom-circle-classname', rectangular: 'custom-rect-classname',  }} />
   ```
 
-### TablePagination
+### TablePagination（表格分页）
 
-- The customization of the table pagination's actions labels must be done with the `getItemAriaLabel` prop. This increases consistency with the `Pagination` component.
+- 如果你需要自定义表格分页的操作标签（actions labels），那么就必须使用 `getItemAriaLabel` 属性。 这是为了与 `Pagination` 组件保持一致。
 
   ```diff
   <TablePagination
@@ -504,14 +504,14 @@ const theme = createMuitheme({
 
 ### TextField
 
-- Better isolate the fixed textarea height behavior to the dynamic one. You need to use the `minRows` prop in the following case:
+- 最佳实践是将固定文本区域高度行为与动态文本区域高度行为分开。 要达到此效果，你需要像下面的示例一样使用 `minRows` 属性：
 
   ```diff
   -<TextField rows={2} maxRows={5} />
   +<TextField minRows={2} maxRows={5} />
   ```
 
-- Rename `rowsMax` prop with `maxRows` for consistency with HTML attributes.
+- 为保持与 HTML 属性的一致性，我们将 `rowsMax` 属性重命名为 `maxRows`。
 
   ```diff
   -<TextField rowsMax={6}>
@@ -520,21 +520,21 @@ const theme = createMuitheme({
 
 ### TextareaAutosize
 
-- Remove the `rows` prop, use the `minRows` prop instead. This change aims to clarify the behavior of the prop.
+- 我们移除了 `rows` 属性，你需要使用 `minRows` 属性来代替它。 这一变化旨在明确该属性的行为。
 
   ```diff
   -<TextareaAutosize rows={2} />
   +<TextareaAutosize minRows={2} />
   ```
 
-- Rename `rowsMax` prop with `maxRows` for consistency with HTML attributes.
+- 为保持与 HTML 属性的一致性，我们将 `rowsMax` 属性重命名为 `maxRows`。
 
   ```diff
   -<TextareAutosize rowsMax={6}>
   +<TextareAutosize maxRows={6}>
   ```
 
-- Rename `rowsMin` prop with `minRows` for consistency with HTML attributes.
+- 为保持与 HTML 属性的一致性，我们将 `rowsMin` 属性重命名为 `minRows`。
 
   ```diff
   -<TextareAutosize rowsMin={1}>
