@@ -50,13 +50,13 @@ const theme = createMuiTheme({
       shortest: 150,
       shorter: 200,
       short: 250,
-      // most basic recommended timing
+      // 最基本的建议时间
       standard: 300,
-      // this is to be used in complex animations
+      // 这将用于复杂的动画中
       complex: 375,
-      // recommended when something is entering screen
+      // 当有东西转进屏幕时建议使用
       enteringScreen: 225,
-      // recommended when something is leaving screen
+      // 当有东西转出屏幕时建议使用
       leavingScreen: 195,
     },
   },
@@ -71,10 +71,10 @@ You can change some or all of the easing values, or provide your own, by providi
 const theme = createMuiTheme({
   transitions: {
     easing: {
-      // This is the most common easing curve.
+      // 这是最常见的缓和曲线（easing curve）。
       easeInOut: 'cubic-bezier(0.4, 0, 0.2, 1)',
-      // Objects enter the screen at full velocity from off-screen and
-      // slowly decelerate to a resting point.
+      // 物体以全速从屏幕外进入屏幕，并在屏幕上以全速前进。
+      // 缓慢减速至静止点。
       easeOut: 'cubic-bezier(0.0, 0, 0.2, 1)',
       // Objects leave the screen at full velocity. They do not decelerate when off-screen.
       easeIn: 'cubic-bezier(0.4, 0, 1, 1)',
