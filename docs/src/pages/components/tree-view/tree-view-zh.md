@@ -95,4 +95,4 @@ If it is true:
 
 组件遵循了 WAI-ARIA 授权的一些标准。
 
-To have an accessible tree view you must use `aria-labelledby` or `aria-label` to reference or provide a label on the TreeView, otherwise screen readers will announce it as "tree", making it hard to understand the context of a specific tree item.
+如果你想让树视图具有无障碍设计，那么你必须使用 `aria-labelledby` 或 `aria-label` 在树视图上引用或提供标签，否则屏幕阅读器会将其声明为“树（tree）”，从而会使人很难理解特定树项的上下文的含义。
