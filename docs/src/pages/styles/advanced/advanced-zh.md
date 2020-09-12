@@ -6,7 +6,7 @@
 
 若您想将主题传递到 React 组件树，请将添加 `ThemeProvider` 包装到应用程序的顶层。 然后，您可以在样式函数中访问主题对象。
 
-> 此示例为自定义组件创建了一个主题对象（theme object）。 如果你想要使用 Material-UI 的部分组件，那么则需要通过使用 `createMuiTheme()` 方法来提供一个更丰富的主题结构。 This example creates a theme object for custom-built components. If you intend to use some of the Material-UI's components you need to provide a richer theme structure using the `createMuiTheme()` method. Head to the the [theming section](/customization/theming/) to learn how to build your custom Material-UI theme.
+> 此示例为自定义组件创建了一个主题对象（theme object）。 如果你想要使用 Material-UI 的部分组件，那么则需要通过使用 `createMuiTheme()` 方法来提供一个更丰富的主题结构。 请前往 [theming 部分](/customization/theming/) 学习如何构建自己的 Material-UI 主题。
 
 ```jsx
 import { ThemeProvider } from '@material-ui/core/styles';
@@ -93,25 +93,24 @@ const DeepChild = withTheme(DeepChildRaw);
 通过 `makeStyles` (hook generator) 和 `withStyles` (HOC) 这两个 API， 用户可以为每个样式表创建多种样式规则。 每个样式规则都有自己的类名。 组件的 `classes` 变量会提供类名（class names）。 这在设置组件中嵌套元素的样式时特别有用。
 
 ```jsx
-// A style sheet
+// 样式表
 const useStyles = makeStyles({
-  root: {}, // a style rule
-  label: {}, // a nested style rule
+  root: {}, // 样式规则
+  label: {}, // 嵌套的样式规则
 });
 
 function Nested(props) {
   const classes = useStyles();
   return (
-    <button className={classes.root}> // 'jss1'
-      <span className={classes.label}> // 'jss2'
-        nested
-      </span>
+    <button className={classes.root}>
+      {/* 'jss1' */}
+      <span className={classes.label}>{/* 'jss2' 嵌套规则 */}</span>
     </button>
   );
 }
 
 function Parent() {
-  return <Nested />
+  return <Nested />;
 }
 ```
 
@@ -142,23 +141,21 @@ function Parent() {
 
 ```jsx
 const useStyles = makeStyles({
-  root: {}, // a style rule
-  label: {}, // a nested style rule
+  root: {}, // 样式规则
+  label: {}, // 嵌套的样式规则
 });
 
 function Nested(props) {
   const classes = useStyles(props);
   return (
     <button className={classes.root}>
-      <span className={classes.label}> // 'jss2 my-label'
-        nested
-      </span>
+      <span className={classes.label}>{/* 'jss2 my-label' 嵌套规则 */}</span>
     </button>
   );
 }
 
 function Parent() {
-  return <Nested classes={{ label: 'my-label' }} />
+  return <Nested classes={{ label: 'my-label' }} />;
 }
 ```
 
@@ -217,7 +214,7 @@ const useStyles = makeStyles({
 
 ## CSS 注入顺序
 
-> It's **really important** to understand how the CSS specificity is calculated by the browser, as it's one of the key elements to know when overriding styles. You are encouraged to read this MDN paragraph: [How is specificity calculated?](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#How_is_specificity_calculated) 我们推荐您阅读 MDN 上的这段内容：[如何计算优先级？](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#How_is_specificity_calculated)
+> 了解浏览器如何计算 CSS 优先级是**非常重要的**，因为它是您在覆盖样式时需要了解的重点之一。 我们推荐您阅读 MDN 上的这段内容：[如何计算优先级？](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#How_is_specificity_calculated)
 
 默认情况下，注入的style标签会被插入到页面`<head>`元素的最后。 它们的优先级高于您页面上的任何其他样式标签，如 CSS 模块、styled components。
 
@@ -256,16 +253,14 @@ const useStyles = makeStyles({
 });
 
 export default function MyComponent() {
-  // Order doesn't matter
+  // 先后顺序不重要
   const classes = useStyles();
   const classesBase = useStylesBase();
 
-  // Order doesn't matter
-  const className = clsx(classes.root, classesBase.root)
+  // 先后顺序不重要
+  const className = clsx(classes.root, classesBase.root);
 
   // color: red 🔴 wins.
-  return <div className={className} />;
-}
   return <div className={className} />;
 }
 ```
@@ -384,13 +379,13 @@ function render() {
 
 这个 [官方的 Gatsby 插件](https://github.com/hupe1980/gatsby-plugin-material-ui)，可以利用它来实现 `@material-ui/style` 的服务器端渲染。 请参考插件页面的设置和使用说明。
 
-Refer to [this example Gatsby project](https://github.com/mui-org/material-ui/blob/next/examples/gatsby) for an up-to-date usage example.
+请参考 [Gatsby 项目案例](https://github.com/mui-org/material-ui/blob/next/examples/gatsby) 以了解最新的使用方法。
 
 ### Next.js
 
-You need to have a custom `pages/_document.js`, then copy [this logic](https://github.com/mui-org/material-ui/blob/next/examples/nextjs/pages/_document.js) to inject the server-side rendered styles into the `<head>` element.
+您需要有一个自定义的 `pages/_document.js`，然后复制 [此逻辑](https://github.com/mui-org/material-ui/blob/next/examples/nextjs/pages/_document.js) 以注入服务器侧渲染的样式到 `<head>` 元素中。
 
-Refer to [this example project](https://github.com/mui-org/material-ui/blob/next/examples/nextjs) for an up-to-date usage example.
+请参考 [示例项目](https://github.com/mui-org/material-ui/blob/next/examples/nextjs) 以获取最新的使用方法。
 
 ## 类名（Class names）
 
@@ -398,7 +393,7 @@ Refer to [this example project](https://github.com/mui-org/material-ui/blob/next
 
 ### 默认值
 
-By default, the class names generated by `@material-ui/core/styles` are **non-deterministic**; you can't rely on them to stay the same. Let's take the following style as an example: 让我们以下面的样式（style）作为示例：
+默认情况下，`@material-ui/core/styles` 生成的类名 **不是固定值**； 所以你不能指望它们保持不变。 让我们以下面的样式（style）作为示例：
 
 ```js
 const useStyles = makeStyles({
@@ -493,7 +488,7 @@ const useStyles = makeStyles(
 
 _这是对 `@material-ui/core/Button` 组件样式表的简化。_
 
-Customization of the TextField can be cumbersome with the [`classes` API](#overriding-styles-classes-prop), where you have to define the the classes prop. It's easier to use the default values, as described above. For example: 如上文所述，使用默认值会比较容易。 例如:
+使用 [`classes` API](#overriding-styles-classes-prop) 来自定义 TextField 可能会很麻烦，所以你必须定义类属性（classes prop）。 如上文所述，使用默认值会比较容易。 例如:
 
 ```jsx
 import styled from 'styled-components';
