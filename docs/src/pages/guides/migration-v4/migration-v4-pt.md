@@ -359,7 +359,7 @@ const theme = createMuitheme({
 
 - Remove `onRendered` prop. Depending on your use case either use a [callback ref](https://reactjs.org/docs/refs-and-the-dom.html#callback-refs) on the child element or an effect hook in the child component.
 
-### Paginação
+### Pagination
 
 - Rename `round` to `circular` for consistency. The possible values should be adjectives, not nouns:
 
