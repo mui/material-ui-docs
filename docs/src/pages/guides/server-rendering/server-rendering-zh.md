@@ -60,29 +60,17 @@ export default theme;
 import express from 'express';
 
 // 我们将在章节中填写这些需要遵守的内容。
-import express from 'express';
-import * as React from 'react';
-import ReactDOMServer from 'react-dom/server';
-import { ServerStyleSheets, ThemeProvider } from '@material-ui/core/styles';
-import App from './App';
-import theme from './theme';
+function renderFullPage(html, css) {
+  /* ... */
+}
 
 function handleRender(req, res) {
-  const sheets = new ServerStyleSheets();
+  /* ... */
+}
 
-  // Render the component to a string.
-  const html = ReactDOMServer.renderToString(
-    sheets.collect(
-      <ThemeProvider theme={theme}>
-        <App />
-      </ThemeProvider>,
-    ),
-  );
+const app = express();
 
-  // Grab the CSS from the sheets.
-  const css = sheets.toString();
-
-  // 将渲染的页面送回到客户端。
+// 每当服务器端接收到一个请求时，这个功能就会被触发。
 app.use(handleRender);
 
 const port = 3000;
@@ -110,7 +98,7 @@ import theme from './theme';
 function handleRender(req, res) {
   const sheets = new ServerStyleSheets();
 
-  // Render the component to a string.
+  // 将组件渲染成字符串。
   const html = ReactDOMServer.renderToString(
     sheets.collect(
       <ThemeProvider theme={theme}>
@@ -191,7 +179,7 @@ ReactDOM.hydrate(<Main />, document.querySelector('#root'));
 
 ## 参考实现
 
-您可以在 [GitHub 存储库中](https://github.com/mui-org/material-ui)的 [`/examples`](https://github.com/mui-org/material-ui/tree/master/examples) 的文件夹下面，找到我们托管的不同的范例项目：
+我们托管了不同的参考实现，您可以在 [GitHub仓库](https://github.com/mui-org/material-ui) 的 [`/examples`](https://github.com/mui-org/material-ui/tree/next/examples) 文件夹下找到。
 
 - [本教程的参考实现](https://github.com/mui-org/material-ui/tree/next/examples/ssr)
 - [Gatsby](https://github.com/mui-org/material-ui/tree/next/examples/gatsby)
