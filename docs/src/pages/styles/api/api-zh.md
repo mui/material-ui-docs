@@ -80,7 +80,7 @@ export default function MyComponent {
 
 ### 返回结果
 
-`hook` ： 一个 hook。 该 hook 可以在一个功能组件中使用。 文档通常会调用这个回调 hook `useStyles`。 It accepts one argument: the props that will be used for "interpolation" in the style sheet.
+`hook` ： 一个 hook。 该 hook 可以在一个功能组件中使用。 文档通常会调用这个回调 hook `useStyles`。 它接受一个参数：在样式表中用于 “插值（interpolation）”的属性。
 
 ### 例子
 
@@ -199,13 +199,13 @@ export default function StyledComponents() {
 
 ### 属性
 
-| 名称                | 类型     | 默认值   | 描述                                                                                                                                                                             |
-|:----------------- |:------ |:----- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| children&nbsp;*   | node   |       | 您的组件树。                                                                                                                                                                         |
-| disableGeneration | bool   | false | 使用此选项，你可以禁用样式表的生成。 当在服务端的 HTML 之外渲染步骤中遍历 React  树的时候，这个属性卓有成效。 举个例子，若你正在使用 react-apillo 来提取服务端接口发出的所有查询（queries）。 You can significantly speed up the traversal with this prop. |
-| generateClassName | func   |       | JSS 的类名生成器。                                                                                                                                                                    |
-| injectFirst       | bool   | false | 默认情况下，在页面中注入的 style会被插入到 `<head>` 元素的最后。 因此，相比其他样式表单，它们能够表现地更为具体。 如果您想要覆盖 Material-UI 的样式，请设置此属性。                                                                        |
-| jss               | object |       | JSS 的实例。                                                                                                                                                                       |
+| 名称                | 类型     | 默认值   | 描述                                                                                                                                   |
+|:----------------- |:------ |:----- |:------------------------------------------------------------------------------------------------------------------------------------ |
+| children&nbsp;*   | node   |       | 您的组件树。                                                                                                                               |
+| disableGeneration | bool   | false | 使用此选项，你可以禁用样式表的生成。 当在服务端的 HTML 之外渲染步骤中遍历 React  树的时候，这个属性卓有成效。 举个例子，若你正在使用 react-apillo 来提取服务端接口发出的所有查询（queries）。 使用这个属性可以大大加快遍历的速度。 |
+| generateClassName | func   |       | JSS 的类名生成器。                                                                                                                          |
+| injectFirst       | bool   | false | 默认情况下，在页面中注入的 style会被插入到 `<head>` 元素的最后。 因此，相比其他样式表单，它们能够表现地更为具体。 如果您想要覆盖 Material-UI 的样式，请设置此属性。                              |
+| jss               | object |       | JSS 的实例。                                                                                                                             |
 
 ### 例子
 
@@ -225,14 +225,14 @@ ReactDOM.render(<App />, document.querySelector('#app'));
 
 ## `ThemeProvider`
 
-This component takes a `theme` property, and makes it available down the React tree thanks to the context. 它最好应在**组件树的根目录中使用** 。 它最好应在**组件树的根目录中使用** 。
+该组件使用了 `theme` 属性，并通过上下文的方式使其在 React 树下可用。 它最好应在**组件树的根目录中使用** 。
 
 ### 属性
 
 | 名称              | 类型                                       | 默认值 | 描述                                        |
 |:--------------- |:---------------------------------------- |:--- |:----------------------------------------- |
 | children&nbsp;* | node                                     |     | 您的组件树。                                    |
-| theme&nbsp;*    | union:&nbsp;object&nbsp;&#124;&nbsp;func |     | 一个主题对象（theme object）。 您可以提供一个能够扩展外层主题的函数。 |
+| theme&nbsp;\* | union:&nbsp;object&nbsp;&#124;&nbsp;func |     | 一个主题对象（theme object）。 您可以提供一个能够扩展外层主题的函数。 |
 
 ### 例子
 
@@ -282,7 +282,7 @@ export default function MyComponent() {
 - 它添加了一个 `classes` 属性，因此您可以从外部覆盖注入的类名。
 - 它将 refs 转发给内部的组件。
 - 而 `innerRef` 属性已不再使用了。 请使用 `ref`。
-- It does **not** copy over statics. 例如，它可用于定义 `getInitialProps()` 静态方法 (next.js)。 例如，您可以用它来定义一个 `getInitialProps()` 的静态方法 (next.js)。
+- 它 **不会** 拷贝静态文件。 例如，您可以用它来定义一个 `getInitialProps()` 的静态方法 (next.js)。
 
 ### 参数
 
@@ -342,7 +342,7 @@ export default MyComponent;
 
 ## `withTheme(Component) => Component`
 
-提供`theme` object作为输入组件的属性，因此可以在render方法中使用 。
+提供 `theme` 对象作为输入组件的属性，因此可以在 render 方法中使用 。
 
 ### 参数
 
