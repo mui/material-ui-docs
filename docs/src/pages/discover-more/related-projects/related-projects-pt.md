@@ -64,7 +64,7 @@ Esta é uma coleção de projetos de terceiros que estendem Material-UI.
 
 - [material-ui-image](https://mui.wertarbyte.com/#material-ui-image): Imagens são feias até serem carregadas. Materialize elas com material image! Irá desvanecer, como sugere o padrão de carregamento de imagem material.
 
-### Paginação
+### Pagination
 
 - [material-ui-flat-pagination](https://github.com/szmslab/material-ui-flat-pagination): Um componente de paginação de design plano para Material-UI.
 
