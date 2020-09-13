@@ -22,7 +22,7 @@
 
 ### 扩展
 
-Props supplied to a component which are not explictly documented, are spread to the root element; for instance, the `className` property is applied to the root.
+如果没有明确规定，那么提供给组件的属性会被传播到根元素；例如，`className` 属性就被应用到根元素了。
 
 现在，假设您要禁用 `MenuItem` 上的涟漪效果。 您可以使用扩展的行为：
 
@@ -30,7 +30,7 @@ Props supplied to a component which are not explictly documented, are spread to 
 <MenuItem disableRipple />
 ```
 
-`disableRipple`属性将以这种方式流动：[`MenuItem`](/api/menu-item/)> [`ListItem`](/api/list-item/)> [`ButtonBase`](/api/button-base/)。
+`disableRipple` 属性将以这种方式流动：[`MenuItem`](/api/menu-item/)> [`ListItem`](/api/list-item/)> [`ButtonBase`](/api/button-base/)。
 
 ### 原生属性
 
@@ -67,7 +67,7 @@ const styles = {
 - their own flattened properties when these are key to the top level component abstraction, for instance an `id` prop for the `Input` component.
 - 当用户可能需要调整内部render方法的子组件时，他们自己的`xxxProps`属性，例如，在内部使用`input`的组件上公开`inputProps`和`InputProps`属性。
 - 他们自己的`xxxComponent`属性，用于执行组件注入。
-- 当您可能需要执行命令性操作时，例如，公开 `inputRef` 属性以访问 `input` 组件上的原生`input`，您就可以使用它们自己的 `xxxRef` 属性。 This helps answer the question ["How can I access the DOM element?"](/getting-started/faq/#how-can-i-access-the-dom-element)
+- 当您可能需要执行命令性操作时，例如，公开 `inputRef` 属性以访问 `input` 组件上的原生`input`，您就可以使用它们自己的 `xxxRef` 属性。 这有助于回答 [“我如何访问DOM元素？”](/getting-started/faq/#how-can-i-access-the-dom-element)。
 
 ### 属性名称
 
@@ -107,14 +107,14 @@ const styles = {
 
   这个 API 会更加详细：`<Button>`，`<Button variant="contained">`， `<Button variant="fab">`。
 
-  However it prevents an invalid combination from being used, bounds the number of properties exposed, and can easily support new values in the future.
+  但是它可以防止无效的组合被使用，约束暴露的属性数量，并且可以在未来轻松支持新的值。
 
 Material-UI 组件根据以下规则将两种方法结合使用：
 
-- A *boolean* is used when **2** possible values are required.
-- An *enum* is used when **> 2** possible values are required, or if there is the possibility that additional possible values may be required in the future.
+- 当需要 **2** 个可能的值时，我们使用 _boolean_。
+- 当需要 **> 2** 个可能的值时，或者如果将来有可能需要更多的可能值时，就会使用 _enum_。
 
-Going back to the previous button example; since it requires 3 possible values, we use an *enum*.
+若回到之前的按钮组件示例；因为它需要 3 个可能的值，所以我们使用了 _enum_。
 
 ### Ref
 
@@ -122,7 +122,7 @@ Going back to the previous button example; since it requires 3 possible values, 
 
 ## 术语表
 
-- **host component**: a DOM node type in the context of `react-dom`, e.g. a `'div'`. See also [React Implementation Notes](https://reactjs.org/docs/implementation-notes.html#mounting-host-elements). 另请参阅 [React 实施说明](https://reactjs.org/docs/implementation-notes.html#mounting-host-elements)。
+- **host component**：`react-dom` 的 DOM 节点类型，例如，一个 `“div”`。 另请参阅 [React 实施说明](https://reactjs.org/docs/implementation-notes.html#mounting-host-elements)。
 - **host element**：`react-dom` 中的一个 DOM 节点，例如 `window.HTMLDivElement` 的实例。
 - **outermost**：从上到下读取组件树时的第一个组件，例如，广度优先（breadth-first）搜索。
 - **root component**：渲染一个宿主组件的最外层的那个组件。
