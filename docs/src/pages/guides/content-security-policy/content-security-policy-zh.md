@@ -1,6 +1,6 @@
 # 内容安全策略（CSP）
 
-<p class="description">This section covers the details of setting up a CSP.</p>
+<p class="description">本节介绍了建立 CSP 的详细信息。</p>
 
 ## 什么是 CSP，为什么它有用？
 
