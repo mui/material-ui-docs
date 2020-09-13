@@ -543,7 +543,7 @@ const theme = createMuitheme({
 
 ### 文字排版
 
-- Replace the `srOnly` prop so as to not duplicate the capabilities of [System](https://material-ui.com/system/basics/):
+- 为了避免 [System](https://material-ui.com/system/basics/) 功能重复，我们替换了 `srOnly` 属性。
 
   ```diff
   -import Typography from '@material-ui/core/Typography';
