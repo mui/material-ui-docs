@@ -1,10 +1,11 @@
 # 过渡动画
 
-<p class="description">The theme key enables you to customize the durations and easings of the various transitions used across Material-UI components, and offers a utility for creating custom transitions.</p>
+<p class="description">主题键使您能够自定义使用跨 Material-UI 组件的各种过渡动画的持续时间和缓动效果，并且它也提供了一个用于创建自定义过渡动画的工具集。</p>
 
 ## API
 
-### `theme.transitions.create(props, options) => transition`
+### `theme.transitions.create(props, options) => transition
+`
 
 #### 参数
 
@@ -39,9 +40,9 @@ theme.transitions.create(['background-color', 'transform']);
 
 `duration`: The calculated duration based on the height.
 
-## Durations
+## 时长
 
-You can change some or all of the duration values, or provide your own (for use in the `create()` helper). This example shows all the default values (in milliseconds), but you only need to provide the keys you wish to change or add.
+你可以更改其中部分或全部的时长，或者提供你想要的时长（供 `create()` 助手使用）。 此示例显示了所有默认值（以毫秒为单位），但你只需要提供你想要更改或添加的键。
 
 ```js
 const theme = createMuiTheme({
@@ -85,6 +86,6 @@ const theme = createMuiTheme({
 });
 ```
 
-## References
+## 参考
 
-Check out the [Transitions](/components/transitions/) page to explore the transition components that are included with Material-UI.
+请查看 [过渡](/components/transitions/) 页面来了解 Material-UI 中所包含的过渡组件。
