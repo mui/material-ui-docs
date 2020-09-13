@@ -1,13 +1,13 @@
-# Screen readers
+# 屏幕阅读器
 
-<p class="description">Collection of utilities for improving accessibility with screen readers.</p>
+<p class="description">用于提高屏幕阅读器无障碍功能的工具集。</p>
 
-## Visually hidden elements
+## 视觉上被隐藏的元素
 
-The visually hidden style utility provides a common mechanism for hidings elements visually, but making them available for the assistive technology.
+隐藏元素的样式工具集提供了一个通用的机制来隐藏可以观察到的元素，所以它们可用于这样的辅助技术。
 
 ### 使用
 
-The visually hidden style utility can help provide context to read more links.
+视觉上隐藏元素的样式工具集可以帮助其提供上下文的解释，以便于读者阅读更多的内容。
 
 {{"demo": "pages/system/screen-readers/VisuallyHiddenUsage.js"}}
