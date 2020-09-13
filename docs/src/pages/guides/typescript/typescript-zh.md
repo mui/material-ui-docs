@@ -4,7 +4,7 @@
 
 Material-UI 需要的最低 TypeScript 的版本为 3.2。
 
-请查看一下 [Create React App with TypeScript](https://github.com/mui-org/material-ui/tree/master/examples/create-react-app-with-typescript) 的例子。
+请查看 [Create React App with TypeScript](https://github.com/mui-org/material-ui/tree/next/examples/create-react-app-with-typescript) 的例子。
 
 若想使用类型，你必须在 `tsconfig.json` 里启用以下的一些选项：
 
