@@ -1,19 +1,19 @@
 ---
-title: Snackbar React component
+title: Всплывающее уведомление
 components: Snackbar, SnackbarContent
 ---
 
-# Snackbar
+# Всплывающий компонент
 
-<p class="description">Snackbars provide brief messages about app processes. The component is also known as a toast.</p>
+<p class="description">Всплывающие компоненты показывают краткие сообщения о процессах приложения. The component is also known as a toast.</p>
 
-[Snackbars](https://material.io/design/components/snackbars.html) inform users of a process that an app has performed or will perform. They appear temporarily, towards the bottom of the screen. They shouldn’t interrupt the user experience, and they don’t require user input to disappear.
+[Snackbars](https://material.io/design/components/snackbars.html) inform users of a process that an app has performed or will perform. They appear temporarily, towards the bottom of the screen. Они не должны прерывать использование приложения пользователем, и они не требуют никаких действий для их закрытия.
 
-Snackbars contain a single line of text directly related to the operation performed. They may contain a text action, but no icons. You can use them to display notifications.
+Всплывающие компоненты содержат одну строку текста, непосредственно связанную с выполненной операцией. Они могут содержать текстовое действие, но не иконки. Вы можете использовать их для отображения уведомлений.
 
 #### Frequency
 
-Only one snackbar may be displayed at a time.
+В один момент на странице можно отобразить только один всплывающий компонент.
 
 ## Simple snackbars
 
@@ -33,7 +33,7 @@ In wide layouts, snackbars can be left-aligned or center-aligned if they are con
 
 {{"demo": "pages/components/snackbars/PositionedSnackbar.js"}}
 
-## Message Length
+## Длина сообщения
 
 Some snackbars with varying message length.
 
