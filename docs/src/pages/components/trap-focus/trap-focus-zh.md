@@ -1,47 +1,47 @@
 ---
-title: Trap Focus React component
+title: React 陷阱焦点组件
 components: Unstable_TrapFocus
 githubLabel:
-  component: TrapFocus
+  component: 陷阱焦点
 ---
 
-# Trap Focus
+# 陷阱焦点
 
-<p class="description">Trap focus within a DOM node.</p>
+<p class="description">在 DOM 节点内捕获焦点。</p>
 
-TrapFocus is a component that manages focus for its descendants. This is useful when implementing overlays such as modal dialogs, which should not allow focus to escape while open.
+陷阱焦点是一个为其子节点管理焦点的组件。 这在实现对话框之类的叠加层时非常有用，因为打开对话框时焦点不应该转移。
 
-When `open={true}` the trap is enabled, and pressing <kbd>Tab</kbd> or <kbd>Shift</kbd>+<kbd>Tab</kbd> will rotate focus within the inner focusable elements of the component.
+当使用 `open={true}` 来启用陷阱时，按夏 <kbd>Tab</kbd> 或 <kbd>Shift</kbd> + <kbd>Tab</kbd> 将在组件的内部可聚焦元素内变动焦点位置。
 
 - 📦 [1.5kB 已压缩的包](https://material-ui.com/size-snapshot)。
 - ⚛️ 支持传送门组件
 
 查看[调色板](/system/palette/)样式功能。
 
-> ⚠️ The component is experimental and unstable.
+> 该组件处于试验阶段，是不稳定的。
 
 ## 示例
 
 {{"demo": "pages/components/trap-focus/BasicTrapFocus.js"}}
 
-## Disable enforce focus
+## 禁用强制对焦
 
-Clicks within the focus trap behave normally; but clicks outside the focus trap are blocked.
+在焦点陷阱内的点击会正常进行，但在焦点陷阱外的点击会被阻止。
 
-You can disable this behavior with the `disableEnforceFocus` prop.
+你可以使用 `disableEnforceFocus` 属性来禁用此行为。
 
 {{"demo": "pages/components/trap-focus/DisableEnforceFocus.js"}}
 
-## Lazy activation
+## 延迟激活
 
-By default, the component moves the focus to its descendants as soon as it opens: `open={true}`.
+默认情况下，组件在打开后就会立刻将其焦点移到其子节点：`open={true}`。
 
-You can disable this behavior and make it lazy with the `disableAutoFocus` prop. When auto focus is disabled, as in the demo below, the component only traps the focus once it gets focused.
+你可以使用 `disableAutoFocus` 属性来禁止这种行为，并使其变成惰性加载。 当禁用自动聚焦时，就像下面的演示一样，组件只有在聚焦后才会捕捉焦点。
 
 {{"demo": "pages/components/trap-focus/LazyTrapFocus.js"}}
 
 ## Portal
 
-The following demo uses the [`Portal`](/components/portal/) component to render a subset of the trap focus children into a new "subtree" outside of the current DOM hierarchy, so that they no longer form part of the focus loop.
+下面的演示使用  [`Portal`](/components/portal/)  组件将陷阱焦点子集渲染到当前 DOM 层次结构之外的新“子树（subtree）”中，这样它们就不再是焦点循环的一部分。
 
 {{"demo": "pages/components/trap-focus/PortalTrapFocus.js"}}
