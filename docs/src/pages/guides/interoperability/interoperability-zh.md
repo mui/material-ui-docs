@@ -243,6 +243,7 @@ export default function StyledComponentsDeep() {
     </div>
   );
 }
+
 ```
 
 以上的例子依赖于 [默认的`类`的值](/styles/advanced/#with-material-ui-core)，但是您也可以提供自定义的类名：`.label`。
@@ -358,7 +359,7 @@ const StyledMenu = styled(({ className, ...props }) => (
 
 ```jsx
 import * as React from 'react';
-// webpack, parcel or else will inject the CSS into the page
+// webpack, parcel 或者其他程序将会把 CSS 注入到页面中
 import styles from './CssModulesButton.css';
 import Button from '@material-ui/core/Button';
 
@@ -414,7 +415,7 @@ import { StylesProvider } from '@material-ui/core/styles';
 
 ```jsx
 import * as React from 'react';
-// webpack, parcel or else will inject the CSS into the page
+// webpack, parcel 或者其他程序将会把 CSS 注入到页面中
 import styles from './CssModulesButtonDeep.css';
 import Button from '@material-ui/core/Button';
 
