@@ -4,11 +4,11 @@
 
 ## 用户空间
 
-通常情况下，我们建议测试应用程序时不要将测试程序与 Material-UI 捆绑得太紧。 这就是 Material-UI 组件内部的测试方式。 A library that has a first-class API for this approach is [`@testing-library/react`](https://testing-library.com/docs/react-testing-library/intro).
+通常情况下，我们建议测试应用程序时不要将测试程序与 Material-UI 捆绑得太紧。 这就是 Material-UI 组件内部的测试方式。 要实现此方法可以使用一个广泛流行的 API 库 [`@test-library/reaction`](https://testing-library.com/docs/react-testing-library/intro)。
 
-For example, when rendering a `TextField` your test should not need to query for the specific Material-UI instance of the `TextField` but rather for the `input`, or `[role="textbox"]`.
+例如，当渲染 `TextField` 时，你的测试用例不应该查询有关 `TextField` 的特定 Material-UI 实例，而是应该查询 `input` 或 `[role="textbox"]`。
 
-By not relying on the React component tree you make your test more robust against internal changes in Material-UI or, if you need snapshot testing, adding additional wrapper components such as context providers. We don't recommend snapshot testing though. ["Effective snapshot testing" by Kent C. Dodds](https://kentcdodds.com/blog/effective-snapshot-testing) goes into more details why snapshot testing might be misleading for React component tests.
+通过不依赖 React 组件树的方式，你可以使你的测试应对 Material-UI 的内部变化时变得更加健壮，或者如果你需要快照测试时，也可以添加额外的包装器组件，如上下文提供器。 我们不建议进行快照测试。 ["Effective snapshot testing" by Kent C. Dodds](https://kentcdodds.com/blog/effective-snapshot-testing) 详细介绍了为什么快照测试可能会对 React 组件测试产生误导。
 
 ## 内部
 
