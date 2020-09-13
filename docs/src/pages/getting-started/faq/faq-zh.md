@@ -265,7 +265,7 @@ function handleRender(req, res) {
 
   //…
 
-  // Render the component to a string.
+  // 将组件渲染为字符串。
   const html = ReactDOMServer.renderToString(
 ```
 
@@ -296,7 +296,7 @@ function handleRender(req, res) {
 
   // 将组件渲染为字符串。
 
-    // Render the component to a string.
+    // 将组件渲染为字符串。
     const html = ReactDOMServer.renderToString(
   ```
 
