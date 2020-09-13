@@ -118,7 +118,7 @@ function Parent() {
 
 ### `withStyles`
 
-这是最简单的一种情况。 包装组件接受`classes` 属性， 它简单地合并了样式表提供的类名。
+这是最简单的一种情况。 封装的组件接受 `classes` 属性， 它简单地合并了样式表提供的类名。
 
 ```jsx
 const Nested = withStyles({
@@ -407,7 +407,7 @@ const useStyles = makeStyles({
 
 您必须使用组件的 `classes` 属性来覆盖样式。 类名的不确定性使样式隔离成为可能。
 
-- In **development**, the class name is: `.makeStyles-root-123`, following this logic:
+- 在**开发环境中**，类名为：`.makeStyles-root-123`，它遵循以下逻辑：
 
 ```js
 const sheetName = 'makeStyles';
@@ -417,7 +417,7 @@ const identifier = 123;
 const className = `${sheetName}-${ruleName}-${identifier}`;
 ```
 
-- In **production**, the class name is: `.jss123`, following this logic:
+- 在**生产环境中**，类名为：`.jss123`，它遵循以下逻辑：
 
 ```js
 const productionPrefix = 'jss';
@@ -428,9 +428,9 @@ const className = `${productionPrefix}-${identifier}`;
 
 ### 与 `@material-ui/core` 一起使用
 
-`@material-ui/core` 组件生成的类名表现大相径庭。 The generated class names of the `@material-ui/core` components behave differently. When the following conditions are met, the class names are **deterministic**:
+`@material-ui/core` 组件生成的类名表现大相径庭。 当满足以下条件时，类名是 **确定的**：
 
-- Only one theme provider is used (**No theme nesting**)
+- 仅使用一个主题提供程序（**无主题嵌套**）。
 - 样式表的名称以 `Mui` 开头（包含所有 Material-UI 组件）。
 - [类名生成器](/styles/api/#creategenerateclassname-options-class-name-generator)的 `disableGlobal` 选项为 `false`（默认值）。
 
