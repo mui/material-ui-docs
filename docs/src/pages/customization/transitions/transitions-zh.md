@@ -20,7 +20,7 @@
 
 `transition`: A CSS transition value, which composes all CSS properties that should be transitioned, together with the defined duration, easing and duration.
 
-Use the <code>theme.transitions.create()</code> helper to create consistent transitions for the elements of your UI.</p>
+使用 <code>theme.transitions.create()</code> 助手来为你的 UI 元素创建一致的过渡动画。</p>
 
 ```js
 theme.transitions.create(['background-color', 'transform']);
