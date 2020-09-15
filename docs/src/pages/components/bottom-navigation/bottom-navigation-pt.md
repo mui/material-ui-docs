@@ -25,3 +25,9 @@ Se existir **quatro** ou **cinco** ações, exiba os destinos inativos somente c
 Se existir **quatro** ou **cinco** ações, exiba os destinos inativos somente com ícone.
 
 {{"demo": "pages/components/bottom-navigation/LabelBottomNavigation.js", "bg": true}}
+
+## Fixed positioning
+
+This demo keeps bottom navigation fixed to the bottom, no matter the amount of content on-screen.
+
+{{"demo": "pages/components/bottom-navigation/FixedBottomNavigation.js", "bg": true, "iframe": true, "maxWidth": 600}}
