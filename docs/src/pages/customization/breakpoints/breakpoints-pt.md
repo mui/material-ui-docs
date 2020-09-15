@@ -144,7 +144,7 @@ declare module "@material-ui/core/styles/createBreakpoints" {
 
 #### Argumentos
 
-1. `key` (*String* | *Number*): Uma chave de ponto de quebra (`xs`, `sm`, etc.) ou um número de largura de tela em pixels.
+1. `key` (_String_ | _Number_): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in px.
 
 #### Retornos
 
@@ -169,7 +169,7 @@ const styles = theme => ({
 
 #### Argumentos
 
-1. `key` (*String* | *Number*): Uma chave de ponto de quebra (`xs`, `sm`, etc.) ou um número de largura de tela em pixels.
+1. `key` (_String_ | _Number_): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in px.
 
 #### Retornos
 
@@ -221,8 +221,8 @@ const styles = theme => ({
 
 #### Argumentos
 
-1. `start` (*String*): Uma chave de ponto de quebra (`xs`, `sm`, etc.) ou um número de largura de tela em pixels.
-2. `end` (*String*): Uma chave de ponto de quebra (`xs`, `sm`, etc.) ou um número de largura de tela em pixels.
+1. `start` (_String_): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in px.
+2. `end` (_String_): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in px.
 
 #### Retornos
 
