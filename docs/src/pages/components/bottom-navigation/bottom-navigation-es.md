@@ -25,3 +25,9 @@ Si hay **cuatro ** o **cinco** acciones, mostrar vistas inactivas solamente como
 Si hay **cuatro ** o **cinco** acciones, mostrar vistas inactivas solamente como iconos.
 
 {{"demo": "pages/components/bottom-navigation/LabelBottomNavigation.js", "bg": true}}
+
+## Fixed positioning
+
+This demo keeps bottom navigation fixed to the bottom, no matter the amount of content on-screen.
+
+{{"demo": "pages/components/bottom-navigation/FixedBottomNavigation.js", "bg": true, "iframe": true, "maxWidth": 600}}
