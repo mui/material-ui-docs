@@ -1,6 +1,6 @@
 ---
 title: Componente React para Lista de Grade
-components: ImageList, ImageListItem, ImageListItemBar, ListSubheader, IconButton
+components: ImageList, ImageListItem, ImageListItemBar
 materialDesign: https://material.io/components/image-lists
 githubLabel:
   component: ImageList
@@ -14,26 +14,48 @@ githubLabel:
 
 {{"component": "modules/components/ComponentLinkHeader.js"}}
 
-## Lista de grade com imagens
+## Standard image list
 
-{{"demo": "pages/components/image-list/ImageImageList.js", "hideEditButton": true}}
+Standard image lists are best for items of equal importance. They have a uniform container size, ratio, and spacing.
 
-{{"demo": "pages/components/image-list/BasicImageList.js", "hideEditButton": true}}
+{{"demo": "pages/components/image-list/StandardImageList.js"}}
 
-## Lista de grade com barras de título
+## Quilted image list
 
-Este exemplo demonstra o uso do `ImageListItemBar` para adicionar uma sobreposição a cada `ImageListItem`. A sobreposição pode acomodar um `title`, `subtitle` e ação secundária - neste exemplo utilizamos um `IconButton`.
+Quilted image lists emphasize certain items over others in a collection. They create hierarchy using varied container sizes and ratios.
 
-{{"demo": "pages/components/image-list/TitlebarImageList.js", "hideEditButton": true}}
+{{"demo": "pages/components/image-list/QuiltedImageList.js"}}
 
-## Lista de grade em linha única
+## Woven image list
 
-Este exemplo demonstra uma lista de grade com imagens, em linha unica e rolável horizontalmente. As listas de grade de rolagem horizontal não são recomendadas porque a rolagem interfere nos padrões de leitura típicos, afetando a compreensão. Uma exceção notável para rolagem horizontal, seria uma lista de grade com imagens em linha única, como uma galeria.
+Woven image lists use alternating container ratios to create a rhythmic layout. A woven image list is best for browsing peer content.
 
-{{"demo": "pages/components/image-list/SingleLineImageList.js", "hideEditButton": true}}
+{{"demo": "pages/components/image-list/WovenImageList.js"}}
 
-## Lista de grade avançada
+## Masonry image list
 
-Este exemplo demonstra blocos "em destaque", usando as propriedades `rows` e `cols` para ajustar o tamanho do bloco, e a propriedade `padding` para ajustar o espaçamento. Os blocos tem uma barra de título customizada, posicionada no topo e com um gradiente personalizado `titleBackground`. A ação secundária `IconButton` está posicionada à esquerda.
+Masonry image lists use dynamically sized container heights that reflect the aspect ratio of each image. This image list is best used for browsing uncropped peer content.
 
-{{"demo": "pages/components/image-list/AdvancedImageList.js", "hideEditButton": true, "defaultCodeOpen": false}}
+{{"demo": "pages/components/image-list/MasonryImageList.js"}}
+
+## Image list with title bars
+
+This example demonstrates the use of the `ImageListItemBar` to add an overlay to each item. A sobreposição pode acomodar um `title`, `subtitle` e ação secundária - neste exemplo utilizamos um `IconButton`.
+
+{{"demo": "pages/components/image-list/TitlebarImageList.js"}}
+
+### Title bar below image (standard)
+
+The title bar can be placed below the image.
+
+{{"demo": "pages/components/image-list/TitlebarBelowImageList.js"}}
+
+### Title bar below image (masonry)
+
+{{"demo": "pages/components/image-list/TitlebarBelowMasonryImageList.js"}}
+
+## Custom image list
+
+In this example the items have a customized titlebar, positioned at the top and with a custom gradient `titleBackground`. A ação secundária `IconButton` está posicionada à esquerda. The `gap` prop is used to adjust the gap between items.
+
+{{"demo": "pages/components/image-list/CustomImageList.js", "defaultCodeOpen": false}}
