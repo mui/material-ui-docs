@@ -25,3 +25,9 @@ Si il y a **quatre** ou **cinq** actions, affichage inactif points de vue unique
 S'il y a **quatre actions** ou **cinq actions** , afficher les vues inactives uniquement sous forme d'icônes.
 
 {{"demo": "pages/components/bottom-navigation/LabelBottomNavigation.js", "bg": true}}
+
+## Fixed positioning
+
+This demo keeps bottom navigation fixed to the bottom, no matter the amount of content on-screen.
+
+{{"demo": "pages/components/bottom-navigation/FixedBottomNavigation.js", "bg": true, "iframe": true, "maxWidth": 600}}
