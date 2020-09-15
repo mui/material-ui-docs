@@ -26,7 +26,7 @@ O componente `Switch` pode ser fornecido com uma descrição graças ao componen
 
 ## Interruptores com FormGroup
 
-`FormGroup` é usado para agrupar componentes de seleção para facilitar o uso da API. No entanto, é recomendado usar [caixas de seleção](/components/checkboxes/), se vários controles relacionados forem necessários. (Veja: [Quando usar](#when-to-use)).
+`FormGroup` é usado para agrupar componentes de seleção para facilitar o uso da API. However, you are encouraged to use [Checkboxes](/components/checkboxes/) instead if multiple related controls are required. (Veja: [Quando usar](#when-to-use)).
 
 {{"demo": "pages/components/switches/SwitchesGroup.js"}}
 
