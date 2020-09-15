@@ -1,6 +1,6 @@
 ---
 title: Componente React para Lista cuadriculada
-components: ImageList, ImageListItem, ImageListItemBar, ListSubheader, IconButton
+components: ImageList, ImageListItem, ImageListItemBar
 materialDesign: https://material.io/components/image-lists
 githubLabel:
   component: ImageList
@@ -14,26 +14,48 @@ Las [Listas cuadriculadas](https://material.io/design/components/image-lists.htm
 
 {{"component": "modules/components/ComponentLinkHeader.js"}}
 
-## Lista cuadriculada sólo con imágenes
+## Standard image list
 
-{{"demo": "pages/components/image-list/ImageImageList.js", "hideEditButton": true}}
+Standard image lists are best for items of equal importance. They have a uniform container size, ratio, and spacing.
 
-{{"demo": "pages/components/image-list/BasicImageList.js", "hideEditButton": true}}
+{{"demo": "pages/components/image-list/StandardImageList.js"}}
 
-## Lista cuadriculada con barras de título
+## Quilted image list
 
-Este ejemplo demuestra el uso de una barra para cuadro de lista cuadriculada (`ImageListItemBar`) que agrega una capa sobrepuesta a cada cuadro en una lista cuadriculada (`ImageListItem`). La capa sobrepuesta puede acomodar un título (`title`), subtítulo (`subtitle`), y acción secundaria (en este ejemplo un `IconButton`).
+Quilted image lists emphasize certain items over others in a collection. They create hierarchy using varied container sizes and ratios.
 
-{{"demo": "pages/components/image-list/TitlebarImageList.js", "hideEditButton": true}}
+{{"demo": "pages/components/image-list/QuiltedImageList.js"}}
 
-## Lista cuadriculada con una línea
+## Woven image list
 
-Este ejemplo muestra una lista cuadrícula con una sola línea desplazable horizontalmente. Se desaconseja usar listas cuadriculadas con desplazamiento horizontal ya que estas interfieren con los patrones típicos de lectura, afectando la comprensión. Una excepción notable es una lista cuadriculada que desplaza imágenes horizontalmente en una sola línea, como una galería.
+Woven image lists use alternating container ratios to create a rhythmic layout. A woven image list is best for browsing peer content.
 
-{{"demo": "pages/components/image-list/SingleLineImageList.js", "hideEditButton": true}}
+{{"demo": "pages/components/image-list/WovenImageList.js"}}
 
-## Lista cuadriculada avanzada
+## Masonry image list
 
-Este ejemplo muestra cuadros "destacados" usando los props filas (`rows`) y columnas (`cols`) para ajustar el tamaño del cuadro, y la prop relleno (`padding`) para ajustar el espaciado. Los cuadros tienen una barra de título personalizada, ubicada en la parte superior y un fondo de titulo (`titleBackground`) con degradado personalizado. La acción secundaria `IconButton` está ubicada a la izquierda.
+Masonry image lists use dynamically sized container heights that reflect the aspect ratio of each image. This image list is best used for browsing uncropped peer content.
 
-{{"demo": "pages/components/image-list/AdvancedImageList.js", "hideEditButton": true, "defaultCodeOpen": false}}
+{{"demo": "pages/components/image-list/MasonryImageList.js"}}
+
+## Image list with title bars
+
+This example demonstrates the use of the `ImageListItemBar` to add an overlay to each item. La capa sobrepuesta puede acomodar un título (`title`), subtítulo (`subtitle`), y acción secundaria (en este ejemplo un `IconButton`).
+
+{{"demo": "pages/components/image-list/TitlebarImageList.js"}}
+
+### Title bar below image (standard)
+
+The title bar can be placed below the image.
+
+{{"demo": "pages/components/image-list/TitlebarBelowImageList.js"}}
+
+### Title bar below image (masonry)
+
+{{"demo": "pages/components/image-list/TitlebarBelowMasonryImageList.js"}}
+
+## Custom image list
+
+In this example the items have a customized titlebar, positioned at the top and with a custom gradient `titleBackground`. La acción secundaria `IconButton` está ubicada a la izquierda. The `gap` prop is used to adjust the gap between items.
+
+{{"demo": "pages/components/image-list/CustomImageList.js", "defaultCodeOpen": false}}
