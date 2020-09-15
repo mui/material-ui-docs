@@ -1,6 +1,6 @@
 ---
 title: React Grid List 网格列表组件
-components: ImageList, ImageListItem, ImageListItemBar, ListSubheader, IconButton
+components: ImageList, ImageListItem, ImageListItemBar
 materialDesign: https://material.io/components/image-lists
 githubLabel:
   component: ImageList
@@ -14,26 +14,48 @@ githubLabel:
 
 {{"component": "modules/components/ComponentLinkHeader.js"}}
 
-## 仅有图像的网格列表
+## Standard image list
 
-{{"demo": "pages/components/image-list/ImageImageList.js", "hideEditButton": true}}
+Standard image lists are best for items of equal importance. They have a uniform container size, ratio, and spacing.
 
-{{"demo": "pages/components/image-list/BasicImageList.js", "hideEditButton": true}}
+{{"demo": "pages/components/image-list/StandardImageList.js"}}
 
-## 带有标题栏的网格列表
+## Quilted image list
 
-此示例演示如何使用 `ImageListItemBar` 为每个 `ImageListItem` 添加一个叠加层。 叠加层可以容纳 `title`， `subtitle` 和辅助操作—在本例中为 `IconButton`。
+Quilted image lists emphasize certain items over others in a collection. They create hierarchy using varied container sizes and ratios.
 
-{{"demo": "pages/components/image-list/TitlebarImageList.js", "hideEditButton": true}}
+{{"demo": "pages/components/image-list/QuiltedImageList.js"}}
 
-## 单行网格列表
+## Woven image list
 
-此示例演示了可以在水平方向滚动的单行纯图像网格列表。 我们其实不鼓励水平滚动网格列表，因为滚动会干扰典型的阅读模式，从而影响用户的理解。 一个值得注意的例外是水平滚动的单行网格图像列表，例如图库。
+Woven image lists use alternating container ratios to create a rhythmic layout. A woven image list is best for browsing peer content.
 
-{{"demo": "pages/components/image-list/SingleLineImageList.js", "hideEditButton": true}}
+{{"demo": "pages/components/image-list/WovenImageList.js"}}
 
-## 高级网格列表
+## Masonry image list
 
-此示例演示了“精选的”瓷砖效果 ，使用 `rows` 和 `cols` props 来调整磁贴的大小，并使用 `padding` 属性来调整间距。 瓷砖有一个位于顶部的自定义标题栏，并带有自定义渐变的 `titleBackground `。 而辅助操作的 `IconButton` 则位于左侧。
+Masonry image lists use dynamically sized container heights that reflect the aspect ratio of each image. This image list is best used for browsing uncropped peer content.
 
-{{"demo": "pages/components/image-list/AdvancedImageList.js", "hideEditButton": true, "defaultCodeOpen": false}}
+{{"demo": "pages/components/image-list/MasonryImageList.js"}}
+
+## Image list with title bars
+
+This example demonstrates the use of the `ImageListItemBar` to add an overlay to each item. 叠加层可以容纳 `title`， `subtitle` 和辅助操作—在本例中为 `IconButton`。
+
+{{"demo": "pages/components/image-list/TitlebarImageList.js"}}
+
+### Title bar below image (standard)
+
+The title bar can be placed below the image.
+
+{{"demo": "pages/components/image-list/TitlebarBelowImageList.js"}}
+
+### Title bar below image (masonry)
+
+{{"demo": "pages/components/image-list/TitlebarBelowMasonryImageList.js"}}
+
+## Custom image list
+
+In this example the items have a customized titlebar, positioned at the top and with a custom gradient `titleBackground`. 而辅助操作的 `IconButton` 则位于左侧。 The `gap` prop is used to adjust the gap between items.
+
+{{"demo": "pages/components/image-list/CustomImageList.js", "defaultCodeOpen": false}}
