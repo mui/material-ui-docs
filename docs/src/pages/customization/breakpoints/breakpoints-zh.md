@@ -144,7 +144,7 @@ declare module "@material-ui/core/styles/createBreakpoints" {
 
 #### 参数
 
-1. `key` (_String_ | _Number_)：断点键（`xs` ，`sm` 等等）或以像素为单位的屏幕宽度数。
+1. `key` (_String_ | _Number_): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in px.
 
 #### 返回结果
 
@@ -169,7 +169,7 @@ const styles = theme => ({
 
 #### 参数
 
-1. `key` (_String_ | _Number_)：断点键（`xs` ，`sm` 等等）或以像素为单位的屏幕宽度数。
+1. `key` (_String_ | _Number_): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in px.
 
 #### 返回结果
 
@@ -221,8 +221,8 @@ const styles = theme => ({
 
 #### 参数
 
-1. `start` (_String_)：断点键（`xs`、`sm` 等）或屏幕宽度的数字（像素）。
-2. `end` (_String_)：断点键（`xs`、`sm` 等）或屏幕宽度的数字（像素）。
+1. `start` (_String_): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in px.
+2. `end` (_String_): A breakpoint key (`xs`, `sm`, etc.) or a screen width number in px.
 
 #### 返回结果
 
