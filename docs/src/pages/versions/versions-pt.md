@@ -47,7 +47,7 @@ Em geral, você pode esperar o seguinte ciclo de lançamento:
 
 Você pode seguir os [milestones](https://github.com/mui-org/material-ui/milestones) para uma visão geral mais detalhada.
 
-> ⚠️ ** Isenção de responsabilidade **: Operamos em um ambiente dinâmico e as coisas estão sujeitas a alterações. As informações disponibilizadas destinam-se a traçar a orientação geral do framework. Destina-se apenas a fins informativos. Podemos decidir adicionar/remover itens novos a qualquer momento, com base em nossos recursos de capacidade de entrega ou para manter nossos padrões de qualidade. O desenvolvimento, lançamentos e disponibilidade de recursos ou funcionalidades do Material-UI permanece a critério exclusivo da equipe. O roadmap não representa um compromisso, obrigação ou promessa que será entregue em um determinado momento.
+> ⚠️ ** Isenção de responsabilidade **: Operamos em um ambiente dinâmico e as coisas estão sujeitas a alterações. The information provided is intended to outline the general framework direction, for informational purposes only. We may decide to add or remove new items at any time, depending on our capability to deliver while meeting our quality standards. The development, releases, and timing of any features or functionality remains at the sole discretion of Material-UI. The roadmap does not represent a commitment, obligation, or promise to deliver at any time.
 
 ## Política de suporte
 
