@@ -4,7 +4,7 @@
 
 Looking for the v4 docs? [Find them here](https://material-ui.com/versions/).
 
-> This document is a work in progress. Have you upgraded your site and run into something that's not covered here? [Add your changes on GitHub](https://github.com/mui-org/material-ui/blob/next/docs/src/pages/guides/migration-v4/migration-v4.md).
+> This document is a work in progress. Have you upgraded your site and run into something that's not covered here? Have you upgraded your site and run into something that's not covered here? [Add your changes on GitHub](https://github.com/mui-org/material-ui/blob/next/docs/src/pages/guides/migration-v4/migration-v4.md).
 
 ## Introduction
 
@@ -72,6 +72,49 @@ For a smoother transition, the `adaptV4Theme` helper allows you to iteratively u
   +  paddingRight: theme.spacing(3),
   +},
   ```
+
+- `theme.spacing` now returns single values with px units by default. This change improves the integration with styled-components & emotion.
+
+  Before:
+
+  ```
+  theme.spacing(2) => 16
+  ```
+
+  After:
+
+  ```
+  theme.spacing(2) => '16px'
+  ```
+
+  You can restore the previous behavior with:
+
+  ```diff
+  -const theme = createMuiTheme();
+  +const theme = createMuiTheme({
+  +  spacing: x => x * 8,
+  +});
+  ```
+
+- The `theme.palette.text.hint` key was unused in Material-UI components, and has been removed.
+
+```diff
+import { createMuiTheme } from '@material-ui/core/styles';
+
+-const theme = createMuitheme(),
++const theme = createMuitheme({
++  palette: { text: { hint: 'rgba(0, 0, 0, 0.38)' } },
++});
+```
+
+```diff
+import { createMuiTheme } from '@material-ui/core/styles';
+
+-const theme = createMuitheme({palette: { type: 'dark' }}),
++const theme = createMuitheme({
++  palette: { type: 'dark', text: { hint: 'rgba(0, 0, 0, 0.38)' } },
++});
+```
 
 - The components' definition inside the theme were restructure under the `components` key, to allow people easier discoverability about the definitions regarding one component.
 
@@ -286,6 +329,17 @@ const theme = createMuitheme({
   +<Accordion onChange={(event: React.SyntheticEvent, expanded: boolean) => {}} />
   ```
 
+- Rename `focused` to `focusVisible` for consistency:
+
+  ```diff
+  <Accordion
+    classes={{
+  -    focused: 'custom-focus-visible-classname',
+  +    focusVisible: 'custom-focus-visible-classname',
+    }}
+  />
+  ```
+
 ### Fab
 
 - Rename `round` to `circular` for consistency. The possible values should be adjectives, not nouns:
@@ -307,6 +361,11 @@ const theme = createMuitheme({
 ### GridList
 
 - Rename the `GridList` components to `ImageList` to align with the current Material Design naming.
+- Rename the GridList `spacing` prop to `gap` to align with the CSS attribute.
+- Rename the GridList `cellHeight` prop to `rowHieght`.
+- Add the `variant` prop to GridList.
+- Rename the GridListItemBar `actionPosition` prop to `position`. (Note also the related classname changes.)
+- Use CSS object-fit. For IE11 support either use a polyfill such as https://www.npmjs.com/package/object-fit-images, or continue to use the v4 component.
 
 ```diff
 -import GridList from '@material-ui/core/GridList';
@@ -316,9 +375,9 @@ const theme = createMuitheme({
 +import ImageListItem from '@material-ui/core/ImageListItem';
 +import ImageListItemBar from '@material-ui/core/ImageListItemBar';
 
--<GridList>
+-<GridList spacing={8} cellHeight={200}>
 -  <GridListTile>
-+<ImageList>
++<ImageList gap={8} rowHeight={200}>
 +  <ImageListItem>
      <img src="file.jpg" alt="Image title" />
 -    <GridListTileBar
@@ -407,6 +466,15 @@ const theme = createMuitheme({
 
 ### Rating
 
+- Change the default empty icon to improve accessibility. If you have a custom `icon` prop but no `emptyIcon` prop, you can restore the previous behavior with:
+
+  ```diff
+  <Rating
+    icon={customIcon}
+  + emptyIcon={null}
+  />
+  ```
+
 - Rename `visuallyhidden` to `visuallyHidden` for consistency:
 
   ```diff
@@ -427,6 +495,19 @@ const theme = createMuitheme({
   -  <Button />
   -</RootRef>
   +<Button ref={ref} />
+  ```
+
+### Skeleton
+
+- Rename `circle` to `circular` and `rect` to `rectangular` for consistency. The possible values should be adjectives, not nouns:
+
+  ```diff
+  -<Skeleton variant="circle" />
+  -<Skeleton variant="rect" />
+  -<Skeleton classes={{ circle: 'custom-circle-classname', rect: 'custom-rect-classname',  }} />
+  +<Skeleton variant="circular" />
+  +<Skeleton variant="rectangular" />
+  +<Skeleton classes={{ circular: 'custom-circle-classname', rectangular: 'custom-rect-classname',  }} />
   ```
 
 ### Slider
@@ -468,19 +549,39 @@ const theme = createMuitheme({
   />
   ```
 
+### Stepper (Pasos a pasos)
 
-  ### Skeleton
+- The root component (Paper) was replaced with a div. Stepper no longer has elevation, nor inherits Paper's props. This change is meant to encourage composition.
 
-- Rename `circle` to `circular` and `rect` to `rectangular` for consistency. The possible values should be adjectives, not nouns:
+```diff
+-<Stepper elevation={2}>
+-  <Step>
+-    <StepLabel>Hello world</StepLabel>
+-  </Step>
+-</Stepper>
++<Paper square elevation={2}>
++  <Stepper>
++    <Step>
++      <StepLabel>Hello world</StepLabel>
++    </Step>
++  </Stepper>
++<Paper>
+```
 
-  ```diff
-  -<Skeleton variant="circle" />
-  -<Skeleton variant="rect" />
-  -<Skeleton classes={{ circle: 'custom-circle-classname', rect: 'custom-rect-classname',  }} />
-  +<Skeleton variant="circular" />
-  +<Skeleton variant="rectangular" />
-  +<Skeleton classes={{ circular: 'custom-circle-classname', rectangular: 'custom-rect-classname',  }} />
-  ```
+- Remove the built-in 24px padding.
+
+```diff
+-<Stepper>
+-  <Step>
+-    <StepLabel>Hello world</StepLabel>
+-  </Step>
+-</Stepper>
++<Stepper style={{ padding: 24 }}>
++  <Step>
++    <StepLabel>Hello world</StepLabel>
++  </Step>
++</Stepper>
+```
 
 ### TablePagination
 
