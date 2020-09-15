@@ -14,7 +14,7 @@ Para questões técnicas colaborativas, conte com o apoio de desenvolvedores de 
 
 ### GitHub <img src="/static/images/logos/github.svg" width="24" height="24" alt="GitHub logo" loading="lazy" />
 
-Usamos issues do GitHub exclusivamente para rastrear bugs e solicitações de recursos. Se você acha que encontrou um bug ou tem uma nova idéia de recurso, comece certificando-se de que ele ainda não foi [relatado ou corrigido](https://github.com/mui-org/material-ui/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aclosed). Você pode pesquisar nas issues existentes e pull requests para ver se alguém relatou algo semelhante ao seu.
+We use GitHub issues exclusively as a bug and feature request tracker. Se você acha que encontrou um bug ou tem uma nova idéia de recurso, comece certificando-se de que ele ainda não foi [relatado ou corrigido](https://github.com/mui-org/material-ui/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aclosed). Você pode pesquisar nas issues existentes e pull requests para ver se alguém relatou algo semelhante ao seu.
 
 [Abra uma issue](https://github.com/mui-org/material-ui/issues/new/choose)
 
@@ -53,8 +53,9 @@ Dada a realidade das restrições de tempo e recursos, bem como o desejo de cont
 
 O status atual de cada versão do Material-UI é o seguinte:
 
-- Material-UI v4 (hooks): ✅ Em desenvolvimento ativo.
-- Material-UI v3 (alteração de navegadores suportados): ⚠️ Somente correções de segurança.
+- Material-UI v5 (emotion): ✅ In active development.
+- Material-UI v4 (hooks): ⚠️ Only handle security fixes.
+- Material-UI v3 (change supported browsers): ❌ Inactive.
 - ~Material-UI v2 (nunca existiu)~.
 - Material-UI v1 (reescrita): ❌ Inativa.
 - Material-UI v0.x: ❌ Inativa.
