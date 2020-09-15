@@ -49,3 +49,9 @@ packageName: '@material-ui/lab'
 
 - ラジオグループは、フィールドを視覚的に非表示にして使用されます。 これには6つのラジオボタンがあり、それぞれが星1つ、星が0つ星です。デフォルトではオンになっています。 親フォームに固有の `name` プロパティを指定していることを確認します。
 - ラジオボタンのラベルには実際のテキスト（ "1 Star"、 "2 Stars"、…）が含まれています。ページの言語が英語でない場合は、必ず `getLabelText` propを指定してください。
+
+By default, the rating component uses both a difference of color and shape between the filled and empty icons to indicate the value.
+
+In the event that you are using color as the only means to indicate the value, the information should also be also displayed as text, as in this demo. This is important to match [success Criterion 1.4.1](https://www.w3.org/TR/WCAG21/#use-of-color) of WCAG2.1.
+
+{{"demo": "pages/components/rating/TextRating.js"}}
