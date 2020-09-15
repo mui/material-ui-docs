@@ -26,7 +26,7 @@ materialDesign: 'https://material.io/components/selection-controls#switches'
 
 ## 带有 FormGroup 的开关
 
-`FormGroup` 会提供相对简单的 API 对选择控件进行分组。 但是，若您需要多个相关控件，我们建议改用 [Checkboxes](/components/checkboxes/) 组件。 (参见: [何时使用](#when-to-use))。
+`FormGroup` 会提供相对简单的 API 对选择控件进行分组。 However, you are encouraged to use [Checkboxes](/components/checkboxes/) instead if multiple related controls are required. (参见: [何时使用](#when-to-use))。
 
 {{"demo": "pages/components/switches/SwitchesGroup.js"}}
 
