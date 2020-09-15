@@ -47,7 +47,7 @@ Material-UI 遵循[Semantic Versioning 2.0.0](https://semver.org/)。 Material-U
 
 查看 [里程碑](https://github.com/mui-org/material-ui/milestones) 可以得到一个更详细的总览。
 
-> ⚠️**免责声明** ：我们在动态的环境中运作，情况随时可能发生变化。 提供的信息旨在规划框架总体的发展方向。 它意味着以上信息仅供参考。 根据我们的交付能力，我们随时可能决定增加或删除一些新的项目，去目的是保证项目的质量标准。 Material-UI 的任何功能的开发，发布和时间安排，均由 Material-UI 自行决定。 指导方针不代表我们在任何时间交付的承诺，义务或者保证。
+> ⚠️**免责声明** ：我们在动态的环境中运作，情况随时可能发生变化。 The information provided is intended to outline the general framework direction, for informational purposes only. We may decide to add or remove new items at any time, depending on our capability to deliver while meeting our quality standards. The development, releases, and timing of any features or functionality remains at the sole discretion of Material-UI. The roadmap does not represent a commitment, obligation, or promise to deliver at any time.
 
 ## 政策支持
 
