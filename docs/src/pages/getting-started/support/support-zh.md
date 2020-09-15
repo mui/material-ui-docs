@@ -14,7 +14,7 @@
 
 ### GitHub <img src="/static/images/logos/github.svg" width="24" height="24" alt="GitHub logo" loading="lazy" />
 
-我们用 GitHub issues 作为唯一一个跟踪错误以及功能需求的工具。 如果你认为发现了一个 bug，或有一个新功能的想法，在您提交之前，请先确保它没有被 [报告过或解决过](https://github.com/mui-org/material-ui/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aclosed)。  您可以搜索已有的 Issues 或者 Pull Requests，这样可以知晓是否有人已报告过类似的问题。
+We use GitHub issues exclusively as a bug and feature request tracker. 如果你认为发现了一个 bug，或有一个新功能的想法，在您提交之前，请先确保它没有被 [报告过或解决过](https://github.com/mui-org/material-ui/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aclosed)。  您可以搜索已有的 Issues 或者 Pull Requests，这样可以知晓是否有人已报告过类似的问题。
 
 [开一个 issue](https://github.com/mui-org/material-ui/issues/new/choose)
 
@@ -53,8 +53,9 @@ Material-UI CE（社区版本）最初的时候就是 100% 的开源项目（MIT
 
 各个 Material-UI 版本的当前状态如下所示：
 
-- Material-UI v4（hooks）：✅ 积极开发中。
-- Material-UI v3（更改支持的浏览器）：⚠️ 只处理安全性能的修复。
+- Material-UI v5 (emotion): ✅ In active development.
+- Material-UI v4 (hooks): ⚠️ Only handle security fixes.
+- Material-UI v3 (change supported browsers): ❌ Inactive.
 - ~Material-UI v2 （根本不存在）~。
 - Material-UI v1（重写）: ❌ 闲置。
 - Material-UI v0.x：❌闲置。
