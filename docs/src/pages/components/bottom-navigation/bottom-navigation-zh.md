@@ -25,3 +25,9 @@ materialDesign: https://material.io/components/bottom-navigation
 如果有**四个**或**五个**导航项，那些未被选中的导航项会以图标的样式显示。
 
 {{"demo": "pages/components/bottom-navigation/LabelBottomNavigation.js", "bg": true}}
+
+## Fixed positioning
+
+This demo keeps bottom navigation fixed to the bottom, no matter the amount of content on-screen.
+
+{{"demo": "pages/components/bottom-navigation/FixedBottomNavigation.js", "bg": true, "iframe": true, "maxWidth": 600}}
