@@ -36,7 +36,7 @@ Ao usar o tema do Material-UI com a [solução de estilo](/styles/basics/) ou [q
 
 ## Acessando o tema em um componente
 
-<video autoPlay muted width="320">
+<video autoPlay muted loop width="320">
   <source src="/static/studies.mp4" type="video/mp4" >
 </video>
 
