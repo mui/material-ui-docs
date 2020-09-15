@@ -26,7 +26,7 @@ materialDesign: 'https://material.io/components/selection-controls#switches'
 
 ## Переключатели с FormGroup
 
-`FormGroup` - это полезная обертка, используемая для группировки компонентов элементов управления выбором, она предоставляет более простой API. However, you are encouraged you to use [Checkboxes](/components/checkboxes/) instead if multiple related controls are required. (See: [When to use](#when-to-use)).
+`FormGroup` - это полезная обертка, используемая для группировки компонентов элементов управления выбором, она предоставляет более простой API. However, you are encouraged to use [Checkboxes](/components/checkboxes/) instead if multiple related controls are required. (See: [When to use](#when-to-use)).
 
 {{"demo": "pages/components/switches/SwitchesGroup.js"}}
 
