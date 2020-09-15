@@ -36,7 +36,7 @@
 
 ## 访问组件中的主题
 
-<video autoPlay muted width="320">
+<video autoPlay muted loop width="320">
   <source src="/static/studies.mp4" type="video/mp4" >
 </video>
 
