@@ -73,6 +73,49 @@ yarn add @material-ui/core@next
   +},
   ```
 
+- `theme.spacing` now returns single values with px units by default. This change improves the integration with styled-components & emotion.
+
+  Before:
+
+  ```
+  theme.spacing(2) => 16
+  ```
+
+  After:
+
+  ```
+  theme.spacing(2) => '16px'
+  ```
+
+  你可以用以下方法恢复到以前的行为：
+
+  ```diff
+  -const theme = createMuiTheme();
+  +const theme = createMuiTheme({
+  +  spacing: x => x * 8,
+  +});
+  ```
+
+- The `theme.palette.text.hint` key was unused in Material-UI components, and has been removed.
+
+```diff
+import { createMuiTheme } from '@material-ui/core/styles';
+
+-const theme = createMuitheme(),
++const theme = createMuitheme({
++  palette: { text: { hint: 'rgba(0, 0, 0, 0.38)' } },
++});
+```
+
+```diff
+import { createMuiTheme } from '@material-ui/core/styles';
+
+-const theme = createMuitheme({palette: { type: 'dark' }}),
++const theme = createMuitheme({
++  palette: { type: 'dark', text: { hint: 'rgba(0, 0, 0, 0.38)' } },
++});
+```
+
 - 主题内的组件定义在 `components` 键下进行了重构，以便人们更容易地发现一个组件的定义。
 
 1. `属性`
@@ -286,6 +329,17 @@ const theme = createMuitheme({
   +<Accordion onChange={(event: React.SyntheticEvent, expanded: boolean) => {}} />
   ```
 
+- Rename `focused` to `focusVisible` for consistency:
+
+  ```diff
+  <Accordion
+    classes={{
+  -    focused: 'custom-focus-visible-classname',
+  +    focusVisible: 'custom-focus-visible-classname',
+    }}
+  />
+  ```
+
 ### Fab
 
 - 为保持一致性，我们将 `round` 重命名为 `circular`。 可能的值应该是形容词，而不是名词。
@@ -307,6 +361,11 @@ const theme = createMuitheme({
 ### GridList
 
 - 为保持和当前 Material Design 命名的一致性，我们将 `GridList` 组件重命名为 `ImageList`。
+- Rename the GridList `spacing` prop to `gap` to align with the CSS attribute.
+- Rename the GridList `cellHeight` prop to `rowHieght`.
+- Add the `variant` prop to GridList.
+- Rename the GridListItemBar `actionPosition` prop to `position`. (Note also the related classname changes.)
+- Use CSS object-fit. For IE11 support either use a polyfill such as https://www.npmjs.com/package/object-fit-images, or continue to use the v4 component.
 
 ```diff
 -import GridList from '@material-ui/core/GridList';
@@ -316,9 +375,9 @@ const theme = createMuitheme({
 +import ImageListItem from '@material-ui/core/ImageListItem';
 +import ImageListItemBar from '@material-ui/core/ImageListItemBar';
 
--<GridList>
+-<GridList spacing={8} cellHeight={200}>
 -  <GridListTile>
-+<ImageList>
++<ImageList gap={8} rowHeight={200}>
 +  <ImageListItem>
      <img src="file.jpg" alt="Image title" />
 -    <GridListTileBar
@@ -407,6 +466,15 @@ const theme = createMuitheme({
 
 ### Rating
 
+- Change the default empty icon to improve accessibility. If you have a custom `icon` prop but no `emptyIcon` prop, you can restore the previous behavior with:
+
+  ```diff
+  <Rating
+    icon={customIcon}
+  + emptyIcon={null}
+  />
+  ```
+
 - 为保持一致性，我们将 `visuallyhidden` 重命名为 `visuallyHidden`：
 
   ```diff
@@ -427,6 +495,19 @@ const theme = createMuitheme({
   -  <Button />
   -</RootRef>
   +<Button ref={ref} />
+  ```
+
+### Skeleton
+
+- 为保持一致性，我们将 `circle` 重命名为 `circular`，`rect` 重命名为 `rectangular`。 可能的值应该是形容词，而不是名词。
+
+  ```diff
+  -<Skeleton variant="circle" />
+  -<Skeleton variant="rect" />
+  -<Skeleton classes={{ circle: 'custom-circle-classname', rect: 'custom-rect-classname',  }} />
+  +<Skeleton variant="circular" />
+  +<Skeleton variant="rectangular" />
+  +<Skeleton classes={{ circular: 'custom-circle-classname', rectangular: 'custom-rect-classname',  }} />
   ```
 
 ### Slider
@@ -468,19 +549,39 @@ const theme = createMuitheme({
   />
   ```
 
+### Stepper 步骤条组件
 
-  ### Skeleton
+- The root component (Paper) was replaced with a div. Stepper no longer has elevation, nor inherits Paper's props. This change is meant to encourage composition.
 
-- 为保持一致性，我们将 `circle` 重命名为 `circular`，`rect` 重命名为 `rectangular`。 可能的值应该是形容词，而不是名词。
+```diff
+-<Stepper elevation={2}>
+-  <Step>
+-    <StepLabel>Hello world</StepLabel>
+-  </Step>
+-</Stepper>
++<Paper square elevation={2}>
++  <Stepper>
++    <Step>
++      <StepLabel>Hello world</StepLabel>
++    </Step>
++  </Stepper>
++<Paper>
+```
 
-  ```diff
-  -<Skeleton variant="circle" />
-  -<Skeleton variant="rect" />
-  -<Skeleton classes={{ circle: 'custom-circle-classname', rect: 'custom-rect-classname',  }} />
-  +<Skeleton variant="circular" />
-  +<Skeleton variant="rectangular" />
-  +<Skeleton classes={{ circular: 'custom-circle-classname', rectangular: 'custom-rect-classname',  }} />
-  ```
+- Remove the built-in 24px padding.
+
+```diff
+-<Stepper>
+-  <Step>
+-    <StepLabel>Hello world</StepLabel>
+-  </Step>
+-</Stepper>
++<Stepper style={{ padding: 24 }}>
++  <Step>
++    <StepLabel>Hello world</StepLabel>
++  </Step>
++</Stepper>
+```
 
 ### TablePagination（表格分页）
 
