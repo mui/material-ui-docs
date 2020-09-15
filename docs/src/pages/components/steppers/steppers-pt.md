@@ -19,71 +19,75 @@ materialDesign: https://material.io/archive/guidelines/components/steppers.html
 
 > **Nota:** Os assistentes não estão mais documentados nas [diretrizes do Material Design](https://material.io/), mas o Material-UI continuará a suportá-los.
 
-## Assistente horizontal
+## Horizontal stepper
+
+Horizontal steppers are ideal when the contents of one step depend on an earlier step.
+
+Avoid using long step names in horizontal steppers.
 
 ### Linear
+
+A linear stepper allows the user to complete the steps in sequence.
 
 O assistente (`Stepper`) pode ser controlado passando o índice da etapa atual (baseado em zero) com a propriedade `activeStep`. A orientação do asisstente (`Stepper`) é definida usando a propriedade `orientation`.
 
 Este exemplo também mostra o uso de uma etapa opcional, colocando a propriedade `optional` no segundo componente de `Step`. Observe que cabe a você gerenciar quando uma etapa opcional é ignorada. Depois de determinar isso para uma etapa específica, você deve definir `completed={false}` para indicar que, embora o índice da etapa ativa tenha ultrapassado a etapa opcional, ele não está realmente concluído.
 
-{{"demo": "pages/components/steppers/HorizontalLinearStepper.js", "bg": true}}
-
-### Linear - Rótulo Alternativo
-
-Os rótulos podem ser colocados abaixo do ícone da etapa, definindo a propriedade `alternativeLabel` no componente `Stepper`.
-
-{{"demo": "pages/components/steppers/HorizontalLinearAlternativeLabelStepper.js", "bg": true}}
-
-### Assistente customizado
-
-Aqui está um exemplo de customização do componente. Você pode aprender mais sobre isso na [página de documentação de sobrescritas](/customization/components/).
-
-{{"demo": "pages/components/steppers/CustomizedSteppers.js", "bg": true}}
+{{"demo": "pages/components/steppers/HorizontalLinearStepper.js"}}
 
 ### Não linear
 
-Os assistentes não lineares permitem que os usuários entrem em um fluxo de várias etapas a qualquer momento.
+Non-linear steppers allow the user to enter a multi-step flow at any point.
 
 This example is similar to the regular horizontal stepper, except steps are no longer automatically set to `disabled={true}` based on the `activeStep` prop.
 
 O uso do `StepButton` aqui, demonstra rótulos de etapas clicáveis, além de definir a propriedade sinalizadora `completed`. No entanto, como as etapas podem ser acessadas de maneira não linear, cabe a sua própria implementação determinar quando todas as etapas são concluídas (ou mesmo se precisam ser concluídas).
 
-{{"demo": "pages/components/steppers/HorizontalNonLinearStepper.js", "bg": true}}
+{{"demo": "pages/components/steppers/HorizontalNonLinearStepper.js"}}
 
-### Não Linear - Rótulo Alternativo
+### Alternative label
 
 Os rótulos podem ser colocados abaixo do ícone da etapa, definindo a propriedade `alternativeLabel` no componente `Stepper`.
 
-{{"demo": "pages/components/steppers/HorizontalNonLinearAlternativeLabelStepper.js", "bg": true}}
+{{"demo": "pages/components/steppers/HorizontalLinearAlternativeLabelStepper.js"}}
 
-### Não Linear - Etapa de Erro
+### Error step
 
-{{"demo": "pages/components/steppers/HorizontalNonLinearStepperWithError.js", "bg": true}}
+{{"demo": "pages/components/steppers/HorizontalStepperWithError.js"}}
 
-## Assistente vertical
+### Customized horizontal stepper
 
-{{"demo": "pages/components/steppers/VerticalLinearStepper.js", "bg": true}}
+Aqui está um exemplo de customização do componente. Você pode aprender mais sobre isso na [página de documentação de sobrescritas](/customization/components/).
 
-## Assistente Mobile
+{{"demo": "pages/components/steppers/CustomizedSteppers.js"}}
 
-Este componente implementa um assistente compacto adequado para um dispositivo mobile. Veja [mobile steps](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steps) para essa inspiração.
+## Vertical stepper
+
+Vertical steppers are designed for narrow screen sizes. They are ideal for mobile. All the features of the horizontal stepper can be implemented.
+
+{{"demo": "pages/components/steppers/VerticalLinearStepper.js"}}
+
+## Mobile stepper
+
+Este componente implementa um assistente compacto adequado para um dispositivo mobile. IT has more limited functionality than the vertical stepper. Veja [mobile steps](https://material.io/archive/guidelines/components/steppers.html#steppers-types-of-steps) para essa inspiração.
+
+The mobile stepper supports three variants to display progress through the available steps: text, dots, and progress.
 
 ### Texto
 
-Este é essencialmente um botão de voltar/próximo posicionado corretamente. Você deve implementar a descrição textual por conta própria, no entanto, um exemplo é fornecido abaixo para referência.
+The current step and total number of steps are displayed as text.
 
 {{"demo": "pages/components/steppers/TextMobileStepper.js", "bg": true}}
 
-### Texto com efeito carrossel
+### Text with carousel effect
 
-Esta demonstração é muito similiar a anterior, a diferença é o uso de [react-swipeable-views](https://github.com/oliviertassinari/react-swipeable-views) para fazer a transição de etapas.
+This demo uses [react-swipeable-views](https://github.com/oliviertassinari/react-swipeable-views) to create a carousel.
 
 {{"demo": "pages/components/steppers/SwipeableTextMobileStepper.js", "bg": true}}
 
 ### Pontos
 
-Use pontos quando o número de etapas não for grande.
+Use dots when the number of steps is small.
 
 {{"demo": "pages/components/steppers/DotsMobileStepper.js", "bg": true}}
 
