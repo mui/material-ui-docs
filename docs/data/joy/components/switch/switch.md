@@ -140,6 +140,7 @@ Here are a few tips to make sure you have an accessible switch component:
   This includes radio buttons, checkboxes, and switches.
   In most cases, this is done using the `<label>` element.
   - If a label can't be applied, make sure to add an attribute (e.g. `aria-label`, `aria-labelledby`, `title`) to the input slot inside the `slotProps` prop.
+
   ```jsx
-  <Switch value="checkedA" slotProps={{ 'aria-label': 'Switch A' }} />
+  <Switch value="checkedA" slotProps={{ input: { 'aria-label': 'Switch A' } }} />
   ```
